@@ -1,0 +1,402 @@
+{
+  "source": {
+    "en": "https://www.pm.gc.ca/en/cabinet",
+    "fr": "https://www.pm.gc.ca/fr/cabinet"
+  },
+  "scrapedAt": "2026-07-07T18:25:39.174Z",
+  "count": 28,
+  "ministers": [
+    {
+      "name": "Mark Carney",
+      "role": {
+        "en": "Prime Minister of Canada",
+        "fr": "Premier ministre du Canada"
+      },
+      "isPM": true,
+      "party": "LPC",
+      "personId": 28286,
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/28286",
+        "fr": "https://www.ourcommons.ca/members/fr/28286"
+      }
+    },
+    {
+      "name": "Dominic LeBlanc",
+      "role": {
+        "en": "President of the King’s Privy Council for Canada and Minister responsible for Canada-U.S. Trade, Intergovernmental Affairs, Internal Trade and One Canadian Economy",
+        "fr": "Président du Conseil privé du Roi pour le Canada et ministre responsable du Commerce Canada–États-Unis, des Affaires intergouvernementales, du Commerce intérieur et de l’Unité de l’économie canadienne"
+      },
+      "isPM": false,
+      "party": "LPC",
+      "personId": 1813,
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/1813",
+        "fr": "https://www.ourcommons.ca/members/fr/1813"
+      }
+    },
+    {
+      "name": "Mélanie Joly",
+      "role": {
+        "en": "Minister of Industry and Minister responsible for Canada Economic Development for Quebec Regions",
+        "fr": "Ministre de l’Industrie et ministre responsable de Développement économique Canada pour les régions du Québec"
+      },
+      "isPM": false,
+      "party": "LPC",
+      "personId": 88384,
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/88384",
+        "fr": "https://www.ourcommons.ca/members/fr/88384"
+      }
+    },
+    {
+      "name": "François-Philippe Champagne",
+      "role": {
+        "en": "Minister of Finance and National Revenue",
+        "fr": "Ministre des Finances et du Revenu national"
+      },
+      "isPM": false,
+      "party": "LPC",
+      "personId": 88633,
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/88633",
+        "fr": "https://www.ourcommons.ca/members/fr/88633"
+      }
+    },
+    {
+      "name": "Anita Anand",
+      "role": {
+        "en": "Minister of Foreign Affairs",
+        "fr": "Ministre des Affaires étrangères"
+      },
+      "isPM": false,
+      "party": "LPC",
+      "personId": 96081,
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/96081",
+        "fr": "https://www.ourcommons.ca/members/fr/96081"
+      }
+    },
+    {
+      "name": "Patty Hajdu",
+      "role": {
+        "en": "Minister of Jobs and Families and Minister responsible for the Federal Economic Development Agency for Northern Ontario",
+        "fr": "Ministre de l’Emploi et des Familles et ministre responsable de l’Agence fédérale de développement économique pour le Nord de l’Ontario"
+      },
+      "isPM": false,
+      "party": "LPC",
+      "personId": 88984,
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/88984",
+        "fr": "https://www.ourcommons.ca/members/fr/88984"
+      }
+    },
+    {
+      "name": "Marc Miller",
+      "role": {
+        "en": "Minister of Canadian Identity and Culture and Minister responsible for Official Languages",
+        "fr": "Ministre de l’Identité et de la Culture canadiennes et ministre responsable des Langues officielles"
+      },
+      "isPM": false,
+      "party": "LPC",
+      "personId": 88660,
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/88660",
+        "fr": "https://www.ourcommons.ca/members/fr/88660"
+      }
+    },
+    {
+      "name": "Sean Fraser",
+      "role": {
+        "en": "Minister of Justice and Attorney General of Canada and Minister responsible for the Atlantic Canada Opportunities Agency",
+        "fr": "Ministre de la Justice et procureur général du Canada et ministre responsable de l’Agence de promotion économique du Canada atlantique"
+      },
+      "isPM": false,
+      "party": "LPC",
+      "personId": 88316,
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/88316",
+        "fr": "https://www.ourcommons.ca/members/fr/88316"
+      }
+    },
+    {
+      "name": "Gary Anandasangaree",
+      "role": {
+        "en": "Minister of Public Safety",
+        "fr": "Ministre de la Sécurité publique"
+      },
+      "isPM": false,
+      "party": "LPC",
+      "personId": 89449,
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/89449",
+        "fr": "https://www.ourcommons.ca/members/fr/89449"
+      }
+    },
+    {
+      "name": "Rechie Valdez",
+      "role": {
+        "en": "Minister of Women and Gender Equality and Secretary of State (Small Business and Tourism)",
+        "fr": "Ministre des Femmes et de l’Égalité des genres et secrétaire d’État (Petites Entreprises et Tourisme)"
+      },
+      "isPM": false,
+      "party": "LPC",
+      "personId": 110538,
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/110538",
+        "fr": "https://www.ourcommons.ca/members/fr/110538"
+      }
+    },
+    {
+      "name": "Steven MacKinnon",
+      "role": {
+        "en": "Minister of Transport and Leader of the Government in the House of Commons",
+        "fr": "Ministre des Transports et leader du gouvernement à la Chambre des communes"
+      },
+      "isPM": false,
+      "party": "LPC",
+      "personId": 88468,
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/88468",
+        "fr": "https://www.ourcommons.ca/members/fr/88468"
+      }
+    },
+    {
+      "name": "David J. McGuinty",
+      "role": {
+        "en": "Minister of National Defence",
+        "fr": "Ministre de la Défense nationale"
+      },
+      "isPM": false,
+      "party": "LPC",
+      "personId": 9486,
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/9486",
+        "fr": "https://www.ourcommons.ca/members/fr/9486"
+      }
+    },
+    {
+      "name": "Joanne Thompson",
+      "role": {
+        "en": "Minister of Fisheries",
+        "fr": "Ministre des Pêches"
+      },
+      "isPM": false,
+      "party": "LPC",
+      "personId": 109877,
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/109877",
+        "fr": "https://www.ourcommons.ca/members/fr/109877"
+      }
+    },
+    {
+      "name": "Shafqat Ali",
+      "role": {
+        "en": "President of the Treasury Board",
+        "fr": "Président du Conseil du Trésor"
+      },
+      "isPM": false,
+      "party": "LPC",
+      "personId": 110339,
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/110339",
+        "fr": "https://www.ourcommons.ca/members/fr/110339"
+      }
+    },
+    {
+      "name": "Rebecca Alty",
+      "role": {
+        "en": "Minister of Crown-Indigenous Relations",
+        "fr": "Ministre des Relations Couronne-Autochtones"
+      },
+      "isPM": false,
+      "party": "LPC",
+      "personId": 123675,
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/123675",
+        "fr": "https://www.ourcommons.ca/members/fr/123675"
+      }
+    },
+    {
+      "name": "Rebecca Chartrand",
+      "role": {
+        "en": "Minister of Northern and Arctic Affairs and Minister responsible for the Canadian Northern Economic Development Agency",
+        "fr": "Ministre des Affaires du Nord et de l'Arctique et ministre responsable de l’Agence canadienne de développement économique du Nord"
+      },
+      "isPM": false,
+      "party": "LPC",
+      "personId": 89464,
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/89464",
+        "fr": "https://www.ourcommons.ca/members/fr/89464"
+      }
+    },
+    {
+      "name": "Julie Aviva Dabrusin",
+      "role": {
+        "en": "Minister of the Environment, Climate Change and Nature",
+        "fr": "Ministre de l’Environnement, du Changement climatique et de la Nature"
+      },
+      "isPM": false,
+      "party": "LPC",
+      "personId": 88994,
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/88994",
+        "fr": "https://www.ourcommons.ca/members/fr/88994"
+      }
+    },
+    {
+      "name": "Lena Metlege Diab",
+      "role": {
+        "en": "Minister of Immigration, Refugees and Citizenship",
+        "fr": "Ministre de l’Immigration, des Réfugiés et de la Citoyenneté"
+      },
+      "isPM": false,
+      "party": "LPC",
+      "personId": 109915,
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/109915",
+        "fr": "https://www.ourcommons.ca/members/fr/109915"
+      }
+    },
+    {
+      "name": "Mandy Gull-Masty",
+      "role": {
+        "en": "Minister of Indigenous Services",
+        "fr": "Ministre des Services aux Autochtones"
+      },
+      "isPM": false,
+      "party": "LPC",
+      "personId": 122492,
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/122492",
+        "fr": "https://www.ourcommons.ca/members/fr/122492"
+      }
+    },
+    {
+      "name": "Tim Hodgson",
+      "role": {
+        "en": "Minister of Energy and Natural Resources",
+        "fr": "Ministre de l’Énergie et des Ressources naturelles"
+      },
+      "isPM": false,
+      "party": "LPC",
+      "personId": 123019,
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/123019",
+        "fr": "https://www.ourcommons.ca/members/fr/123019"
+      }
+    },
+    {
+      "name": "Joël Lightbound",
+      "role": {
+        "en": "Minister of Government Transformation, Public Works and Procurement and Québec Lieutenant",
+        "fr": "Ministre de la Transformation du gouvernement, des Travaux publics et de l’Approvisionnement et lieutenant du Québec"
+      },
+      "isPM": false,
+      "party": "LPC",
+      "personId": 88532,
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/88532",
+        "fr": "https://www.ourcommons.ca/members/fr/88532"
+      }
+    },
+    {
+      "name": "Heath MacDonald",
+      "role": {
+        "en": "Minister of Agriculture and Agri-Food",
+        "fr": "Ministre de l’Agriculture et de l’Agroalimentaire"
+      },
+      "isPM": false,
+      "party": "LPC",
+      "personId": 109891,
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/109891",
+        "fr": "https://www.ourcommons.ca/members/fr/109891"
+      }
+    },
+    {
+      "name": "Jill McKnight",
+      "role": {
+        "en": "Minister of Veterans Affairs and Associate Minister of National Defence",
+        "fr": "Ministre des Anciens Combattants et ministre associée de la Défense nationale"
+      },
+      "isPM": false,
+      "party": "LPC",
+      "personId": 123556,
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/123556",
+        "fr": "https://www.ourcommons.ca/members/fr/123556"
+      }
+    },
+    {
+      "name": "Marjorie Michel",
+      "role": {
+        "en": "Minister of Health",
+        "fr": "Ministre de la Santé"
+      },
+      "isPM": false,
+      "party": "LPC",
+      "personId": 122684,
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/122684",
+        "fr": "https://www.ourcommons.ca/members/fr/122684"
+      }
+    },
+    {
+      "name": "Eleanor Olszewski",
+      "role": {
+        "en": "Minister of Emergency Management and Community Resilience and Minister responsible for Prairies Economic Development Canada",
+        "fr": "Ministre de la Gestion des urgences et de la Résilience des communautés et ministre responsable de Développement économique Canada pour les Prairies"
+      },
+      "isPM": false,
+      "party": "LPC",
+      "personId": 89171,
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/89171",
+        "fr": "https://www.ourcommons.ca/members/fr/89171"
+      }
+    },
+    {
+      "name": "Gregor Robertson",
+      "role": {
+        "en": "Minister of Housing and Infrastructure and Minister responsible for Pacific Economic Development Canada",
+        "fr": "Ministre du Logement et de l’Infrastructure et ministre responsable de Développement économique Canada pour le Pacifique"
+      },
+      "isPM": false,
+      "party": "LPC",
+      "personId": 123644,
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/123644",
+        "fr": "https://www.ourcommons.ca/members/fr/123644"
+      }
+    },
+    {
+      "name": "Maninder Sidhu",
+      "role": {
+        "en": "Minister of International Trade",
+        "fr": "Ministre du Commerce international"
+      },
+      "isPM": false,
+      "party": "LPC",
+      "personId": 105045,
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/105045",
+        "fr": "https://www.ourcommons.ca/members/fr/105045"
+      }
+    },
+    {
+      "name": "Evan Solomon",
+      "role": {
+        "en": "Minister of Artificial Intelligence and Digital Innovation and Minister responsible for the Federal Economic Development Agency for Southern Ontario",
+        "fr": "Ministre de l’Intelligence artificielle et de l’Innovation numérique et ministre responsable de l’Agence fédérale de développement économique pour le Sud de l’Ontario"
+      },
+      "isPM": false,
+      "party": "LPC",
+      "personId": 123229,
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/123229",
+        "fr": "https://www.ourcommons.ca/members/fr/123229"
+      }
+    }
+  ]
+}

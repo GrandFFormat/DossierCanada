@@ -1,122 +1,114 @@
-// Scraper — Conseil des ministres (liste officielle)
+// Scraper — Conseil des ministres fédéral (cabinet)
 //
-// Source : quebec.ca/premiere-ministre/equipe/conseil-des-ministres — HTML
-// statique normal, un seul fetch (pas besoin de Playwright). Contient un
-// <div class="ministre-item"> par personne, avec son nom et un ou plusieurs
-// <p> listant chaque portefeuille/fonction.
+// Source : la page officielle du Cabinet sur le site du premier ministre,
+//   https://www.pm.gc.ca/en/cabinet  et  https://www.pm.gc.ca/fr/cabinet
+//   HTML server-rendu (pas de JS ni de reCAPTCHA), bilingue via /en et /fr.
+//   (Contrairement à petitions.ourcommons.ca, dont l'export est protégé par
+//    reCAPTCHA — écarté volontairement, comme le registre des lobbyistes QC.)
 //
-// Cette page liste aussi 2 rôles qui ne sont PAS des ministres (Président du
-// caucus du gouvernement, Whip en chef du gouvernement) — exclus ici, ce ne
-// sont pas des sièges au Conseil des ministres.
+// Chaque fiche `.minister-teaser` donne le nom et le portefeuille (`.role`). On
+// rapproche ensuite chaque ministre de data/deputes.json PAR NOM NORMALISÉ pour
+// récupérer son parti, son PersonId et son lien officiel — sans jamais deviner :
+// si le rapprochement échoue (ex. un·e sénateur·rice ministre, ou une graphie
+// différente), les champs liés restent à null plutôt que d'inventer.
 //
-// Le parti n'est pas indiqué sur cette page (gouvernement à parti unique
-// actuellement) : résolu par recoupement avec data/deputes.json (vraie
-// source), jamais supposé.
-//
-// Homonymie connue : deux personnes nommées "Eric Girard" siègent toutes les
-// deux au Conseil des ministres (Finances, à Groulx ; Développement
-// économique régional, à Lac-Saint-Jean — vérifié par recherche externe, voir
-// contexte-pour-claude-code.md). La page ne donne pas la circonscription ;
-// on applique donc ici la correspondance déjà vérifiée plutôt que de deviner.
-//
-// L'anglais (roleEn) n'existe pas sur cette page (site officiel FR/EN séparé,
-// pas scrapé ici) : préservé depuis l'ancien tableau `ministers` par
-// correspondance de nom quand disponible ; sinon, traduit manuellement dans
-// MANUAL_EN_OVERRIDES ci-dessous (2 nouveaux ministres non couverts avant).
+// Modèle produit (data/ministers.json → ministers[]) :
+//   { name, role:{en,fr}, isPM, party|null, personId|null, url:{en,fr}|null }
 
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import * as cheerio from 'cheerio';
 
-const PAGE_URL = 'https://www.quebec.ca/premiere-ministre/equipe/conseil-des-ministres';
-const HTML_PATH = 'index.html';
+const URL_EN = 'https://www.pm.gc.ca/en/cabinet';
+const URL_FR = 'https://www.pm.gc.ca/fr/cabinet';
+const DEPUTES_PATH = 'data/deputes.json';
 const OUT_PATH = 'data/ministers.json';
-const USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36';
-const START_MARKER = '/* MINISTERS_DATA_START';
-const END_MARKER = '/* MINISTERS_DATA_END */';
+const USER_AGENT =
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0 Safari/537.36';
 
-// Rôles réels mais qui ne sont pas des postes de ministre — exclus du Conseil.
-const NON_MINISTER_ROLES = ['président du caucus', 'whip en chef'];
-
-// Vérifié par recherche externe (pas dans la page source) : voir le
-// commentaire en tête de fichier.
-const KNOWN_RIDING_BY_NAME_AND_ROLE = {
-  'eric girard|ministre des finances': 'Groulx',
-  'eric girard|ministre délégué au développement économique régional': 'Lac-Saint-Jean',
-};
-
-function foldName(name) {
-  return name.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[-–—']/g, ' ').replace(/\s+/g, ' ').trim();
+// Enlève le préfixe honorifique pour ne garder que le nom (clé de rapprochement).
+function stripHonorific(raw) {
+  return raw
+    .replace(/^\s*The\s+(Right\s+)?Honou?rable\s+/i, '')
+    .replace(/^\s*(Le\s+très\s+honorable|La\s+très\s+honorable|L['’]honorable)\s+/i, '')
+    .trim();
 }
 
-function loadExistingRoleEn() {
-  // Clé par nom COMPLET (avec suffixe "(Circonscription)" s'il est présent) en
-  // priorité — deux personnes homonymes (les deux "Eric Girard") ont chacune
-  // leur propre traduction, et les confondre via une clé par nom nu écraserait
-  // silencieusement l'une des deux. Le nom nu ne sert de repli que si un seul
-  // ministre porte ce nom (donc pas d'ambiguïté possible).
-  const html = readFileSync(HTML_PATH, 'utf-8');
-  const startIdx = html.indexOf('const ministers = [');
-  const endIdx = html.indexOf('\n];', startIdx);
-  const block = html.slice(startIdx, endIdx);
-  const rows = [...block.matchAll(/\{name:'([^']+)', role:'((?:[^'\\]|\\.)*)', party:'([^']+)', roleEn:'((?:[^'\\]|\\.)*)'\}/g)];
-  const bareNameCounts = new Map();
-  for (const [, rawName] of rows) {
-    const bareName = foldName(rawName.replace(/\s*\([^)]*\)\s*/g, '').trim());
-    bareNameCounts.set(bareName, (bareNameCounts.get(bareName) ?? 0) + 1);
-  }
-  const roleEnByName = new Map();
-  for (const [, rawName, , , rawRoleEn] of rows) {
-    const roleEn = rawRoleEn.replace(/\\'/g, "'");
-    roleEnByName.set(foldName(rawName), roleEn);
-    const bareName = foldName(rawName.replace(/\s*\([^)]*\)\s*/g, '').trim());
-    if (bareNameCounts.get(bareName) === 1) roleEnByName.set(bareName, roleEn);
-  }
-  return roleEnByName;
+// Même normalisation que le front (norm) : insensible aux accents, casse, tirets.
+function fold(s) {
+  return String(s ?? '')
+    .normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .toLowerCase().replace(/[-–—'’]/g, ' ').replace(/\s+/g, ' ').trim();
 }
 
-const MANUAL_EN_OVERRIDES = {
-  'mathieu lacombe': 'Minister of Culture and Communications',
-  'amelie dionne': 'Minister of Tourism',
-};
+async function fetchCabinet(url) {
+  const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT } });
+  if (!res.ok) throw new Error(`HTTP ${res.status} pour ${url}`);
+  const $ = cheerio.load(await res.text());
+  const out = [];
+  $('.minister-teaser').each((_, el) => {
+    const name = $(el).find('.name').text().replace(/\s+/g, ' ').trim();
+    const role = $(el).find('.role').text().replace(/\s+/g, ' ').trim();
+    if (name) out.push({ rawName: name, name: stripHonorific(name), role });
+  });
+  return out;
+}
 
 async function main() {
-  const roleEnByName = loadExistingRoleEn();
-  const { deputes } = JSON.parse(readFileSync('data/deputes.json', 'utf-8'));
+  const [en, fr] = await Promise.all([fetchCabinet(URL_EN), fetchCabinet(URL_FR)]);
 
-  const res = await fetch(PAGE_URL, { headers: { 'User-Agent': USER_AGENT } });
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  const html = await res.text();
-  const $ = cheerio.load(html);
+  // Rôle FR par nom normalisé (les deux pages listent les mêmes personnes).
+  const roleFrByName = new Map(fr.map((m) => [fold(m.name), m.role]));
 
-  const ministers = [];
-  const warnings = [];
+  // Roster pour le rapprochement parti / PersonId / lien.
+  const deputes = JSON.parse(readFileSync(DEPUTES_PATH, 'utf-8')).deputes;
+  const depByName = new Map(deputes.map((d) => [fold(d.name), d]));
 
-  $('.ministre-item').each((_, el) => {
-    const name = $(el).find('h3').first().text().replace(/\s+/g, ' ').trim();
-    const roles = $(el).find('.description-ministre p').map((_, p) => $(p).text().replace(/\s+/g, ' ').trim()).get().filter(Boolean);
-    if (roles.length === 0) return;
+  // Repli robuste par (prénom, nom) : pm.gc.ca inclut parfois un second prénom
+  // (« David J. McGuinty ») absent du roster (« David McGuinty »). On indexe par
+  // prénom+nom officiels et on n'apparie QUE si la clé est unique — sinon on
+  // refuse de deviner (deux homonymes possibles).
+  const byFirstLast = new Map();
+  const ambiguous = new Set();
+  for (const d of deputes) {
+    const key = fold(d.firstName) + '|' + fold(d.lastName);
+    if (byFirstLast.has(key)) ambiguous.add(key);
+    else byFirstLast.set(key, d);
+  }
+  const matchByFirstLast = (name) => {
+    const toks = name.split(/\s+/);
+    if (toks.length < 2) return null;
+    const key = fold(toks[0]) + '|' + fold(toks[toks.length - 1]);
+    return ambiguous.has(key) ? null : byFirstLast.get(key) || null;
+  };
 
-    const isNonMinister = roles.every((r) => NON_MINISTER_ROLES.some((nm) => r.toLowerCase().includes(nm)));
-    if (isNonMinister) return;
-
-    const ridingHint = KNOWN_RIDING_BY_NAME_AND_ROLE[`${foldName(name)}|${roles[0].toLowerCase()}`] ?? null;
-    const candidates = deputes.filter((d) => foldName(d.name) === foldName(name));
-    const dep = ridingHint ? candidates.find((d) => d.riding === ridingHint) : (candidates.length === 1 ? candidates[0] : null);
-    if (!dep) warnings.push(`${name} : aucune correspondance fiable dans deputes.json (parti laissé à null)`);
-
-    const displayName = ridingHint ? `${name} (${ridingHint})` : name;
-    const role = roles.join(' · ');
-    const roleEn = roleEnByName.get(foldName(displayName)) ?? roleEnByName.get(foldName(name)) ?? MANUAL_EN_OVERRIDES[foldName(name)] ?? null;
-    if (!roleEn) warnings.push(`${name} : pas de traduction anglaise connue (ni ancienne, ni manuelle) — laissé à null`);
-
-    ministers.push({ name: displayName, role, roleEn, party: dep ? dep.party : null });
+  const unmatched = [];
+  const ministers = en.map((m) => {
+    const dep = depByName.get(fold(m.name)) || matchByFirstLast(m.name);
+    if (!dep) unmatched.push(m.name);
+    return {
+      name: m.name,
+      role: { en: m.role, fr: roleFrByName.get(fold(m.name)) ?? null },
+      isPM: /^prime minister|^premier ministre/i.test(m.role),
+      party: dep ? dep.party.code : null,
+      personId: dep ? dep.id : null,
+      url: dep ? dep.url : null,
+    };
   });
 
   mkdirSync('data', { recursive: true });
-  writeFileSync(OUT_PATH, JSON.stringify({ source: PAGE_URL, scrapedAt: new Date().toISOString(), count: ministers.length, ministers }, null, 2));
+  writeFileSync(
+    OUT_PATH,
+    JSON.stringify(
+      { source: { en: URL_EN, fr: URL_FR }, scrapedAt: new Date().toISOString(), count: ministers.length, ministers },
+      null,
+      2
+    )
+  );
 
+  const matched = ministers.filter((m) => m.personId).length;
   console.log(`${ministers.length} ministres écrits dans ${OUT_PATH}`);
-  warnings.forEach((w) => console.log(`  ⚠ ${w}`));
+  console.log(`  rapprochés au roster (parti/PersonId) : ${matched} · non rapprochés : ${ministers.length - matched}`);
+  if (unmatched.length) console.log(`  ⚠ sans correspondance député : ${unmatched.join(', ')}`);
 }
 
 main().catch((err) => {
