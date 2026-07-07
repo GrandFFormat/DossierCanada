@@ -729,6 +729,14 @@
     <div class="grid" id="ministresGrid"></div>
     <div class="info-box" id="ministresInfoBox"><b data-i18n="min.incomplete.b">Liste à jour.</b> <span data-i18n="min.incomplete.pre">Les </span><span id="ministresCount2"></span><span data-i18n="min.incomplete.post"> ministres viennent directement de la page officielle du Conseil des ministres sur quebec.ca, scrapée en direct — pas une liste maintenue à la main.</span></div>
 
+          <div id="findMp" style="background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:14px 16px; margin:18px 0;">
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--slate); margin-bottom:8px;" data-i18n="findmp.label">Trouver votre député·e par code postal</div>
+        <div style="display:flex; gap:8px; flex-wrap:wrap;">
+          <input type="text" id="postalInput" maxlength="7" data-i18n-placeholder="findmp.ph" placeholder="Ex. K1A 0A6" style="flex:1; min-width:160px; padding:8px 10px; border:1px solid var(--line); border-radius:var(--radius); font-family:'IBM Plex Mono',monospace;" onkeydown="if(event.key==='Enter')findMyMp()">
+          <button class="sort-toggle" onclick="findMyMp()" data-i18n="findmp.btn">Chercher</button>
+        </div>
+        <div id="findMpResult" style="margin-top:12px;"></div>
+      </div>
     <div class="role-group-title" id="deputesTitle" data-i18n="min.restTitle">Les député·e·s de la Chambre des communes — tous les partis</div>
     <div class="grid" id="deputesList"></div>
     <div class="info-box" id="deputesInfoBox" data-i18n="trouve.info">Ces 125 entrées viennent directement de la liste officielle des députés en fonction de l'Assemblée nationale. Certains sièges peuvent changer entre deux mises à jour (démission, élection partielle) — cette liste est une photo prise au moment de la dernière mise à jour, pas un flux automatiquement à jour.</div>
@@ -1218,6 +1226,9 @@ const translations = {
     'filter.statuts':"Statuses", 'filter.etapes':"Chamber",
     'ph.searchDeputes':"Name, riding, or region…",
     'ph.searchVotes':"Keyword: subject, vote or bill number…",
+    'findmp.label':"Find your MP by postal code",
+    'findmp.ph':"e.g. K1A 0A6",
+    'findmp.btn':"Search",
     'btn.follow':"+ Follow",'btn.following':"✓ Following",
     'btn.viewSummary':"+ View summary",'btn.hideSummary':"− Hide summary",
     'btn.viewFull':"View full text on assnat.qc.ca →",
@@ -2274,6 +2285,47 @@ function norm(s){
     .replace(/[-–—']/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
+}
+
+// « Trouver mon député » — code postal → circonscription (API Represent d'OpenNorth,
+// CORS ouvert) → correspondance avec notre roster par nom de circonscription
+// normalisé. Fonctionnalité optionnelle : si le réseau échoue, le reste du site
+// (autonome, sans fetch) fonctionne quand même — la liste complète reste dessous.
+// Aucune donnée inventée : on n'affiche que le·la député·e réellement associé·e.
+async function findMyMp(){
+  const isEn = currentLang === 'en';
+  const out = document.getElementById('findMpResult');
+  const raw = (document.getElementById('postalInput').value || '').toUpperCase().replace(/\s+/g,'');
+  const msg = t => `<p style="font-size:12.5px; color:var(--slate); margin:4px 0 0;">${t}</p>`;
+  if(!/^[A-Z]\d[A-Z]\d[A-Z]\d$/.test(raw)){
+    out.innerHTML = msg(isEn ? 'Please enter a valid postal code (e.g. K1A 0A6).' : 'Entrez un code postal valide (ex. K1A 0A6).');
+    return;
+  }
+  out.innerHTML = msg(isEn ? 'Searching…' : 'Recherche…');
+  const L = o => (o && typeof o === 'object') ? (isEn ? (o.en ?? o.fr ?? '') : (o.fr ?? o.en ?? '')) : (o ?? '');
+  try{
+    const res = await fetch(`https://represent.opennorth.ca/postcodes/${raw}/`);
+    if(!res.ok) throw new Error('http ' + res.status);
+    const j = await res.json();
+    const reps = [...(j.representatives_centroid || []), ...(j.representatives_concordance || [])]
+      .filter(r => /House of Commons/i.test(r.representative_set_name || ''));
+    if(!reps.length){
+      out.innerHTML = msg(isEn ? 'No MP found for this postal code.' : 'Aucun·e député·e trouvé·e pour ce code postal.');
+      return;
+    }
+    const riding = reps[0].district_name;
+    const dep = deputes.find(d => norm(d.constituency.en) === norm(riding) || norm(d.constituency.fr) === norm(riding));
+    if(!dep){
+      out.innerHTML = msg((isEn ? 'Riding: ' : 'Circonscription : ') + riding + (isEn ? ' — not found in the current roster.' : ' — introuvable dans le roster courant.'));
+      return;
+    }
+    out.innerHTML = msg((isEn ? 'Your riding: ' : 'Votre circonscription : ') + '<b style="color:var(--ink)">' + L(dep.constituency) + '</b>')
+      + '<div class="grid" style="margin-top:10px;">' + deputeCardFed(dep, isEn, L) + '</div>';
+  }catch(e){
+    out.innerHTML = msg(isEn
+      ? 'Lookup unavailable (offline?). The full list of MPs is below.'
+      : 'Recherche indisponible (hors ligne ?). La liste complète des député·e·s est ci-dessous.');
+  }
 }
 
 function renderDeputes(filter){
