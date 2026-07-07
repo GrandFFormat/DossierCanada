@@ -1,80 +1,133 @@
 # DossierCanada
 
 Site citoyen **indépendant** qui suit le **Parlement du Canada** — députés, projets de loi,
-votes, ministres — bilingue FR/EN, dans l'esprit de [nosdeputes.fr](https://www.nosdeputes.fr)
+votes, cabinet — bilingue FR/EN, dans l'esprit de [nosdeputes.fr](https://www.nosdeputes.fr)
 et [datan.fr](https://datan.fr).
 
 C'est la version fédérale de **DossierQuébec** (qui suit l'Assemblée nationale du Québec).
 
 ## Principes
 
-- **Uniquement de vraies données publiques vérifiées** — jamais inventées.
+- **Uniquement de vraies données publiques vérifiées** — jamais inventées. Quand une donnée
+  manque ou ne peut être rapprochée de façon sûre, on l'affiche comme telle plutôt que de deviner.
 - **Aucun verdict** sur de vraies personnes : on organise et on clarifie, on ne juge pas.
 - **Bilingue FR/EN** — un avantage au fédéral, où le contenu parlementaire est *nativement*
   bilingue officiel (pas de traduction « maison » à vérifier).
-- Le site officiel du Parlement reste la source la plus fiable ; ce site ne cherche jamais
-  à le remplacer, seulement à le rendre plus facile à suivre.
+- Les sites officiels du Parlement restent la source la plus fiable ; ce site ne cherche jamais
+  à les remplacer, seulement à les rendre plus faciles à suivre.
 
 ## État du projet
 
-Coquille **forkée depuis DossierQuébec** : toute l'infrastructure citoyenne (interface,
-i18n, comptes, alertes courriel) est réutilisée. Le travail restant = brancher les
-**sources de données fédérales** et enrichir le **modèle** (bicaméral, étapes des projets
-de loi).
+Le **MVP Chambre des communes est construit** — données *et* interface — sur de vraies données
+fédérales bilingues et reliées entre elles. Les 6 onglets sont fédéraux (aucune donnée QC visible).
 
-**Plan par phases :**
+**Fait :**
 
-1. **MVP Chambre des communes** — députés + projets de loi + votes
-2. Sénat, pétitions fédérales, comités
-3. Digest courriel hebdomadaire rebranché sur l'état LEGISinfo
+- **Projets de loi** — 185 projets de la session courante, avec la **timeline bicamérale** datée
+  (1re/2e/3e lecture aux Communes + au Sénat + sanction royale) et les votes rattachés.
+- **Députés** — les ~341 député·e·s en fonction (circonscription, province, parti), avec un
+  **taux de participation** aux votes, un filtre par parti, et **« Trouver mon député » par code
+  postal** (API Represent, côté navigateur).
+- **Votes** — les scrutins par appel nominal avec le **détail nominatif « qui a voté quoi »**
+  (par parti + noms), décomptes validés contre l'officiel.
+- **Cabinet** — le Conseil des ministres actuel (portefeuilles bilingues), rapproché du roster.
+- **Lexique** fédéral, **sources** exactes, comptes/abonnements (Supabase) réutilisés de la coquille.
 
-## Sources de données (fédéral)
+**Phases suivantes :** Sénat (sénateur·rice·s + votes du Sénat, `sencanada.ca`) ; comités ;
+digest courriel hebdomadaire rebranché sur l'état LEGISinfo.
 
-| Domaine | Source |
-|---|---|
-| Projets de loi (C-xx / S-xx) | **LEGISinfo** — `parl.ca/legisinfo` (exports XML/JSON par session) |
-| Députés, votes, débats | **OpenParliament API** — `api.openparliament.ca` (REST JSON documentée) |
-| Membres / votes / comités | **Chambre des communes** — `ourcommons.ca` (exports XML) |
-| « Trouve ton député » | **Represent API** (OpenNorth) — code postal → élus |
-| Pétitions | `petitions.ourcommons.ca` |
-| Sénateurs, votes du Sénat | `sencanada.ca` (phase 2, peu d'API — un peu de scraping) |
+## Sources de données
 
-## Différences vs DossierQuébec (modèle à adapter)
+| Domaine | Source | Rôle |
+|---|---|---|
+| Projets de loi (C-xx / S-xx) | **LEGISinfo** — `parl.ca/legisinfo` (JSON par session) | **primaire** — bilingue natif, jalons des deux chambres |
+| Députés (roster) | **Chambre des communes** — `ourcommons.ca` (export XML EN+FR) | **primaire** — clé `PersonId`, bilingue |
+| Votes par appel nominal | **Chambre des communes** — `ourcommons.ca` (XML, par vote) | **primaire** — ballots par `PersonId` |
+| Cabinet | **Cabinet du PM** — `pm.gc.ca/{en,fr}/cabinet` (HTML) | **primaire** — portefeuilles bilingues |
+| « Trouver mon député » | **Represent** (OpenNorth) — code postal → circonscription | runtime (fetch navigateur, CORS ouvert) |
+| Recoupement projets de loi | **OpenParliament** — `api.openparliament.ca` | vérification (`legisinfo_id == BillId`) |
+| Sénateurs, votes du Sénat | `sencanada.ca` | **phase 2** |
 
-- **Bicaméral** : Chambre des communes (338 sièges) **+ Sénat** (~105).
-- **Cycle des projets de loi plus long** : 1re/2e/3e lecture + comité + rapport, **dans
-  chaque chambre**, puis **sanction royale** → le « stepper » doit être enrichi.
-- **Partis** : Libéral (rouge), Conservateur (bleu), NPD (orange), Bloc (cyan), Vert.
-  Souvent gouvernement **minoritaire** (votes de confiance).
-- **Cabinet** plus gros (~38 ministres) ; sanction royale par le gouverneur général.
+> **Pourquoi ourcommons plutôt qu'OpenParliament** pour les députés/votes ? OpenParliament ne
+> donne parti et circonscription qu'en **anglais** ; l'export de la Chambre est nativement
+> bilingue et clé par `PersonId` (le pivot naturel entre député·e·s et ballots).
+
+**Écartés délibérément :**
+
+- **Pétitions** (`petitions.ourcommons.ca`) — l'export XML/CSV est protégé par **reCAPTCHA**
+  (anti-automatisation). Le contourner ne serait pas une pratique honnête — abandonné.
+- **Photos de député·e·s** — choix éditorial : on s'en tient à la fonction et aux faits, pas de
+  personnalisation. Les fiches utilisent les initiales + un lien vers la fiche officielle.
+
+## Clés de jointure (modèle de données)
+
+- Projet de loi : **`BillId`** de LEGISinfo (= `legisinfo_id` d'OpenParliament, vérifié). Le
+  numéro seul (« C-1 ») n'est **pas** une clé — il est réutilisé à chaque session.
+- Député·e : **`PersonId`** de la Chambre des communes (= `parl_mp_id` d'OpenParliament).
+- Vote ↔ projet : par **(session, numéro)**. Vote ↔ député : par **`PersonId`** (les ballots).
+
+## Régénérer les données
+
+```bash
+npm install
+
+npm run explore          # reconnaissance : à quoi ressemblent les sources (écrit data/samples/)
+
+npm run scrape:bills     # LEGISinfo   -> data/bills.json
+npm run scrape:deputes   # ourcommons  -> data/deputes.json
+npm run scrape:votes     # ourcommons  -> data/votes.json   (~1 min, un fetch par scrutin)
+npm run scrape:ministers # pm.gc.ca    -> data/ministers.json (nécessite data/deputes.json)
+
+npm run build:frontend   # fusionne le tout -> data/frontend.json ET injecte
+                         # projets/députés/votes/ministres dans index.html
+```
+
+Chaque scraper tape **une** source et n'invente rien. `build:frontend` résout les jointures,
+calcule les agrégats (bilan de votes des député·e·s, divisions par projet) et injecte les
+données directement dans `index.html` (le site reste un fichier autonome, sans fetch au chargement,
+sauf la recherche optionnelle par code postal).
+
+## Développement local
+
+Dans Claude Code, lance le serveur de preview **`dossiercanada`** (défini dans
+`.claude/launch.json`, port 8080). Ou directement :
+
+```bash
+node scripts/static-server.js   # http://localhost:8080
+```
 
 ## Structure du dépôt
 
 ```
-index.html                     Application (coquille + i18n FR/EN + JS)  — template à adapter
+index.html                     Application complète (i18n FR/EN + JS + données injectées)
+scrapers/
+  bills.js                     LEGISinfo   -> data/bills.json
+  deputes.js                   ourcommons  -> data/deputes.json
+  votes.js                     ourcommons  -> data/votes.json
+  ministers.js                 pm.gc.ca    -> data/ministers.json
+  build-frontend-data.js       Fusion + injection dans index.html
+  (bill-details.js, bill-summaries.js, … : patrons QC laissés en RÉFÉRENCE)
+scripts/
+  explore-sources.js           Reconnaissance des sources fédérales (npm run explore)
+  static-server.js             Serveur statique local (dev / preview)
+  supabase-schema*.sql         Schémas Supabase (suivis, demandes d'explication, état, optout)
 api/
   weekly-digest.js             Cron hebdo : détecte les changements d'étape, envoie le digest
   unsubscribe.js               Désabonnement CASL en un clic (jeton HMAC)
-scripts/
-  static-server.js             Serveur statique local (dev / preview)
-  supabase-schema*.sql         Schémas Supabase (suivis, demandes d'explication, état, optout)
-scrapers/                      Patron QC (build-*-data.js) — RÉFÉRENCE à réécrire pour le fédéral
-data/                          Données générées (JSON) — à produire depuis les sources fédérales
+data/                          Données générées (JSON). data/samples/ = reconnaissance (gitignore)
 vercel.json                    Config Vercel (cron)
 ```
 
-## Développement local
+## Différences vs DossierQuébec (modèle)
 
-```bash
-npm install
-```
-
-Puis, dans Claude Code, lance le serveur de preview **`dossiercanada`** (défini dans
-`.claude/launch.json`, port 8080). Ou directement :
-
-```bash
-node scripts/static-server.js
-```
+- **Bicaméral** : Chambre des communes (**343 sièges**, redécoupage 2023) **+ Sénat** (~105,
+  nommés) — le Sénat est en phase 2.
+- **Cycle des projets de loi plus long** : 1re/2e/3e lecture + comité + rapport **dans chaque
+  chambre**, puis **sanction royale** (gouverneur général) → timeline bicamérale, pas un stepper
+  linéaire à 5 cases.
+- **Partis** : Libéral (rouge), Conservateur (bleu), NPD (orange), Bloc (cyan), Vert. Gouvernement
+  possiblement **minoritaire** (votes de confiance).
+- **Cabinet** : le Conseil des ministres actuel (source `pm.gc.ca`).
 
 ## Pile de déploiement (comme DossierQuébec)
 
@@ -87,7 +140,7 @@ node scripts/static-server.js
 
 - **Secrets** (clés Supabase service_role, Resend, `CRON_SECRET`) : **uniquement** dans les
   variables d'environnement Vercel. Jamais dans le code, jamais commités.
-  - La clé Supabase *publishable* et l'URL du projet sont publiques par design (protégées
-    par RLS) et peuvent vivre dans le code.
-- **Licences** : attribuer les sources — Licence du gouvernement ouvert – Canada
-  (ourcommons / LEGISinfo) et les conditions d'OpenParliament.
+  - La clé Supabase *publishable* et l'URL du projet sont publiques par design (protégées par RLS)
+    et peuvent vivre dans le code.
+- **Licences** : attribuer les sources — **Licence du gouvernement ouvert – Canada** (LEGISinfo,
+  Chambre des communes, pm.gc.ca) et les **conditions d'OpenParliament** pour les recoupements.
