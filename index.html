@@ -275,7 +275,8 @@
   .bar .seg.pour{background:var(--green);}
   .bar .seg.contre{background:var(--red);}
   .bar .seg.abst{background:var(--slate); opacity:0.5;}
-  .tally{display:flex; flex-direction:column; gap:14px; margin-top:10px; font-family:'IBM Plex Mono',monospace; font-size:12px;}
+  .tally{display:flex; flex-direction:column; gap:6px; margin-top:10px; font-family:'IBM Plex Mono',monospace; font-size:12px;}
+  @media (max-width:640px){ .tally{gap:14px;} }
   .tally b{font-size:14px;}
   .tally-row{display:flex; align-items:center; flex-wrap:wrap; gap:8px;}
   .tally-row .tally-label{flex:none;}
