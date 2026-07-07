@@ -155,6 +155,7 @@ function main() {
     state: b.state,
     reinstated: b.reinstated,
     summary: b.summary ?? { en: null, fr: null },
+    summarySource: b.summarySource ?? null,
     fullSummaryAvailable: b.fullSummaryAvailable ?? false,
     milestones: b.milestones,
     lastActivity: b.lastActivity,
