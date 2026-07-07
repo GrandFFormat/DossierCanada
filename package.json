@@ -5,6 +5,7 @@
   "description": "Scrapers pour la veille citoyenne de l'Assemblée nationale du Québec",
   "type": "module",
   "scripts": {
+    "explore": "node scripts/explore-sources.js",
     "scrape:bills": "node scrapers/bills.js",
     "scrape:bill-details": "node scrapers/bill-details.js",
     "scrape:bill-summaries": "node --env-file=api.env scrapers/bill-summaries.js",

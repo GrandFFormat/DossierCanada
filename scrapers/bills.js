@@ -1,159 +1,178 @@
-// Scraper — Projets de loi (Données Québec)
+// Scraper — Projets de loi fédéraux (LEGISinfo)
 //
-// Source : jeu de données "Projets de loi" sur donneesquebec.ca, distribué par
-// l'Assemblée nationale du Québec. Contient un enregistrement par (projet de loi,
-// session) avec la dernière étape franchie à ce moment-là.
-// https://www.donneesquebec.ca/recherche/dataset/projets-de-loi
+// Source : LEGISinfo (Parlement du Canada), export JSON d'une session complète.
+//   https://www.parl.ca/legisinfo/fr/projets-de-loi
+//   Licence du gouvernement ouvert – Canada.
 //
-// Limite connue : ce CSV peut avoir un léger retard sur les pages individuelles
-// des projets de loi sur assnat.qc.ca (qui sont mises à jour en direct et sont
-// du HTML statique lisible sans navigateur). Amélioration future possible :
-// enrichir chaque projet de loi avec un fetch de sa page individuelle.
+// L'export JSON de LEGISinfo est nativement bilingue (champs *En / *Fr) et contient
+// déjà les dates des grands jalons du cycle bicaméral. On ne fabrique donc aucune
+// donnée : on lit, on structure, et on dérive uniquement des faits vérifiables
+// (ex. l'ordre chronologique des lectures, qui découle des dates fournies).
 //
-// Champs volontairement laissés à `null` (sponsor, summary) : ce ne sont pas des
-// données présentes dans ce jeu de données, et le projet interdit d'inventer une
-// donnée manquante. À compléter manuellement ou par un futur scraper dédié.
+// Clé unique : `id` = BillId de LEGISinfo (identique au legisinfo_id d'OpenParliament,
+// concordance vérifiée — voir scripts/explore-sources.js). Le NUMÉRO (« C-1 ») N'EST
+// PAS une clé : il est réutilisé à chaque session (le C-1 pro forma revient à chaque
+// ouverture). Utiliser `id`, jamais `num`.
 //
-// Important : `num` (ex. « PL 2 ») N'EST PAS un identifiant unique. Le Québec
-// réutilise les petits numéros à chaque nouvelle session — deux projets de loi
-// bien réels et distincts peuvent tous les deux s'appeler « PL 2 ». Utiliser `id`
-// (ou `url`) comme clé, jamais `num`.
-//
-// `status` peut valoir :
-//   - 'encours'        : dossier actif, session en cours ou précédente
-//   - 'sanctionne'      : devenu loi
-//   - 'laisse_de_cote'  : d'une session antérieure du même mandat, jamais
-//                         sanctionné, jamais réinscrit depuis — abandonné en
-//                         cours de route (fait vérifiable dans les données,
-//                         pas une supposition).
+// Modèle produit (data/bills.json → bills[]) :
+//   /**
+//    * @typedef {Object} Bill
+//    * @property {number} id            BillId LEGISinfo (= legisinfo_id) — clé unique
+//    * @property {string} num           Numéro affiché, ex. "C-3" (PAS une clé)
+//    * @property {string} session       Code de session, ex. "45-1"
+//    * @property {number} parliament    Numéro de législature, ex. 45
+//    * @property {number} sessionNumber Numéro de session, ex. 1
+//    * @property {'commons'|'senate'} chamber  Chambre d'origine du projet
+//    * @property {{en:string, fr:string}} type       Type de projet (gouv., député, Sénat…)
+//    * @property {boolean} isGovernment  Vrai si projet émanant du gouvernement
+//    * @property {{en:string, fr:string}} title      Titre long officiel
+//    * @property {{en:string, fr:string}|null} shortTitle  Titre abrégé (souvent absent)
+//    * @property {{en:string, fr:string}|null} sponsor     Parrain, ex. "Hon. …" / "Sen. …"
+//    * @property {{en:string, fr:string}} status     Statut courant textuel (LEGISinfo)
+//    * @property {'loi'|'rejete'|'encours'} state    Statut grossier dérivé, pour filtrage UI
+//    * @property {Milestone[]} milestones  Jalons FRANCHIS uniquement, en ordre chronologique
+//    * @property {string|null} royalAssent  Date de sanction royale (AAAA-MM-JJ) ou null
+//    * @property {boolean} reinstated       Réinscrit d'une session précédente
+//    * @property {{en:string, fr:string, date:string|null}} latestActivity  Dernière activité
+//    * @property {string|null} lastActivity Date de dernière activité (AAAA-MM-JJ), pour tri
+//    * @property {{en:string, fr:string}} url  Page LEGISinfo du projet
+//    */
+//   /**
+//    * @typedef {Object} Milestone
+//    * @property {string} stage    Code, ex. "commons_third_reading", "royal_assent"
+//    * @property {'commons'|'senate'|null} chamber  Chambre concernée (null pour sanction)
+//    * @property {number|null} reading  1|2|3 pour une lecture, null sinon
+//    * @property {string} date     Date du jalon (AAAA-MM-JJ)
+//    */
 
 import { writeFileSync, mkdirSync } from 'node:fs';
-import { parse } from 'csv-parse/sync';
 
-const CSV_URL = 'https://www.donneesquebec.ca/recherche/dataset/2bde70f9-15ff-455b-b3ea-c6e229b24074/resource/93c74b8c-51d1-49e6-9ab9-1f8d96dbd735/download/projets-de-loi.csv';
+// Session ciblée. Par défaut la 45e législature, 1re session (débutée le 26 mai 2025).
+// Surchargable en argument : `node scrapers/bills.js 44-1`.
+const SESSION = process.argv[2] || '45-1';
 const OUT_PATH = 'data/bills.json';
 
-// Ordre des 5 grandes étapes affichées dans le prototype (index.html, `steps`).
-// `depot_commission_consultation` n'a pas d'étape dédiée dans ce modèle à 5 cases :
-// elle se produit après la présentation et avant l'adoption du principe, donc elle
-// reste rattachée à l'étape 1 tant que le principe n'est pas adopté.
-const STEP_BY_CODE = {
-  presentation: 1,
-  depot_commission_consultation: 1,
-  adoption_principe: 2,
-  depot_commission_etude_detaillee: 3,
-  sanction: 5,
-};
+const USER_AGENT = 'DossierCanada/0.1 (veille citoyenne; mart.archambault@gmail.com)';
 
-const NOTE_BY_CODE = {
-  presentation: (date) => `Présenté le ${date}`,
-  depot_commission_consultation: (date) => `Déposé en commission pour consultations particulières le ${date}`,
-  adoption_principe: (date) => `Adoption du principe le ${date}`,
-  depot_commission_etude_detaillee: (date) => `Étude détaillée entreprise le ${date}`,
-  sanction: (date) => `Sanctionné le ${date}`,
-};
+// OriginatingChamberId observé dans les données : 1 = Chambre des communes, 2 = Sénat.
+const CHAMBER_BY_ID = { 1: 'commons', 2: 'senate' };
 
-const STEP_LABEL_BY_CODE = {
-  presentation: 'présentation',
-  depot_commission_consultation: 'dépôt en commission (consultations particulières)',
-  adoption_principe: 'adoption du principe',
-  depot_commission_etude_detaillee: 'étude détaillée',
-  sanction: 'sanction',
-};
+// Les 7 jalons datés de LEGISinfo, avec leur code de modèle. L'ordre CANONIQUE dans
+// lequel un projet les franchit dépend de sa chambre d'origine : un projet des
+// Communes (C-) passe d'abord ses 3 lectures aux Communes puis au Sénat ; un projet
+// du Sénat (S-) fait l'inverse. La sanction royale vient toujours en dernier.
+const HOUSE_STAGES = [
+  { field: 'PassedHouseFirstReadingDateTime', stage: 'commons_first_reading', chamber: 'commons', reading: 1 },
+  { field: 'PassedHouseSecondReadingDateTime', stage: 'commons_second_reading', chamber: 'commons', reading: 2 },
+  { field: 'PassedHouseThirdReadingDateTime', stage: 'commons_third_reading', chamber: 'commons', reading: 3 },
+];
+const SENATE_STAGES = [
+  { field: 'PassedSenateFirstReadingDateTime', stage: 'senate_first_reading', chamber: 'senate', reading: 1 },
+  { field: 'PassedSenateSecondReadingDateTime', stage: 'senate_second_reading', chamber: 'senate', reading: 2 },
+  { field: 'PassedSenateThirdReadingDateTime', stage: 'senate_third_reading', chamber: 'senate', reading: 3 },
+];
+const ROYAL_ASSENT = { field: 'ReceivedRoyalAssentDateTime', stage: 'royal_assent', chamber: null, reading: null };
 
-function cleanTitle(rawTitle) {
-  // Format brut : "43-2 PL 1  Loi constitutionnelle de 2025 sur le Québec"
-  const match = rawTitle.match(/^\d+-\d+\s+PL\s+\d+\s+(.*)$/);
-  return (match ? match[1] : rawTitle).trim();
+// Réduit un horodatage ISO de LEGISinfo (ex. "2025-11-20T…") à une date AAAA-MM-JJ.
+// LEGISinfo ne fournit qu'une date utile (heures = minuit local), on ne garde donc
+// que la date pour éviter de suggérer une précision horaire qui n'existe pas.
+function toDate(iso) {
+  return iso ? iso.slice(0, 10) : null;
 }
 
-async function fetchCsv() {
-  const res = await fetch(CSV_URL);
-  if (!res.ok) throw new Error(`Échec du téléchargement du CSV : HTTP ${res.status}`);
-  return await res.text();
+// Nettoie une chaîne bilingue : LEGISinfo laisse parfois des balises HTML (ex.
+// "45<sup>e</sup> législature") et des chaînes vides "" qu'on préfère traiter comme
+// absentes.
+function clean(str) {
+  if (str == null) return null;
+  const stripped = String(str).replace(/<[^>]+>/g, '').trim();
+  return stripped === '' ? null : stripped;
 }
 
-function buildBills(rows) {
-  const currentLegislature = Math.max(...rows.map((r) => Number(r.No_legislature)));
-  const rowsCurrentLeg = rows.filter((r) => Number(r.No_legislature) === currentLegislature);
+function bilingual(en, fr) {
+  return { en: clean(en), fr: clean(fr) };
+}
 
-  // `Id` identifie un vrai projet de loi de façon stable à travers ses réinscriptions
-  // d'une session à l'autre (prorogation). `Numero_projet_loi`, lui, N'EST PAS un
-  // identifiant fiable à lui seul : le Québec réutilise les petits numéros (PL 1, PL 2...)
-  // à chaque nouvelle session — ex. le "PL 2" de la session 2 (sanctionné en oct. 2025)
-  // et le "PL 2" de la session 3 (encore à l'étude) sont deux projets de loi distincts.
-  // On regroupe donc par Id, et `num` ne sert que d'étiquette d'affichage (« PL 2 »),
-  // pas de clé unique.
-  const byId = new Map();
-  for (const row of rowsCurrentLeg) {
-    if (!byId.has(row.Id)) byId.set(row.Id, []);
-    byId.get(row.Id).push(row);
+// Statut grossier dérivé, pour le filtrage côté UI. On s'appuie sur des faits
+// non ambigus de LEGISinfo (sanction royale reçue, projet rejeté) et on retombe
+// sinon sur « en cours ». Le statut textuel exact reste disponible dans `status`.
+function deriveState(row) {
+  if (row.ReceivedRoyalAssentDateTime) return 'loi';
+  const status = (row.CurrentStatusEn || '').toLowerCase();
+  if (status.includes('defeated') || status.includes('not proceeded') || status.includes('withdrawn')) {
+    return 'rejete';
   }
+  return 'encours';
+}
 
-  const maxSession = Math.max(...rowsCurrentLeg.map((r) => Number(r.No_session)));
+// Construit la liste des jalons réellement franchis, en ordre chronologique.
+// L'ordre canonique (selon la chambre d'origine) sert de départage quand deux
+// lectures partagent la même date (fréquent au Sénat : 1re et 2e le même jour).
+function buildMilestones(row, chamber) {
+  const canonical =
+    chamber === 'senate'
+      ? [...SENATE_STAGES, ...HOUSE_STAGES, ROYAL_ASSENT]
+      : [...HOUSE_STAGES, ...SENATE_STAGES, ROYAL_ASSENT];
 
-  const bills = [];
-  for (const [id, group] of byId) {
-    const sessionsInGroup = group.map((r) => Number(r.No_session));
-    const maxSessionInGroup = Math.max(...sessionsInGroup);
+  return canonical
+    .map((s, order) => ({ ...s, order, date: toDate(row[s.field]) }))
+    .filter((s) => s.date)
+    .sort((a, b) => a.date.localeCompare(b.date) || a.order - b.order)
+    .map(({ stage, chamber, reading, date }) => ({ stage, chamber, reading, date }));
+}
 
-    // L'étape la plus avancée atteinte, tous exemplaires (sessions) confondus —
-    // un projet de loi ne recule jamais dans le processus.
-    let best = group[0];
-    for (const row of group) {
-      const bestStep = STEP_BY_CODE[best.Derniere_etape_franchie] ?? 0;
-      const rowStep = STEP_BY_CODE[row.Derniere_etape_franchie] ?? 0;
-      if (rowStep > bestStep || (rowStep === bestStep && row.Date_derniere_etape > best.Date_derniere_etape)) {
-        best = row;
-      }
-    }
-    const code = best.Derniere_etape_franchie;
+function buildBill(row) {
+  const chamber = CHAMBER_BY_ID[row.OriginatingChamberId] ?? null;
+  const num = row.BillNumberFormatted; // ex. "C-3"
+  const slug = num.toLowerCase(); // ex. "c-3" pour l'URL LEGISinfo
+  const milestones = buildMilestones(row, chamber);
 
-    // Heuristique : "sur la table" = le dossier touche la session en cours ou celle
-    // juste avant (prorogation récente), sans dépendre d'un numéro de session codé
-    // en dur. Un dossier plus ancien qui a été sanctionné est une loi déjà adoptée —
-    // on l'exclut, il n'est pas "laissé de côté", il est simplement terminé et hors
-    // du champ de la veille "affaires en cours". Un dossier plus ancien qui n'a
-    // JAMAIS été sanctionné et n'a pas été réinscrit, lui, est vraiment laissé de côté.
-    const onTable = maxSessionInGroup >= maxSession - 1;
-    if (!onTable && code === 'sanction') continue;
+  return {
+    id: row.BillId,
+    num,
+    session: row.ParlSessionCode,
+    parliament: row.ParliamentNumber,
+    sessionNumber: row.SessionNumber,
+    chamber,
+    type: bilingual(row.BillTypeEn, row.BillTypeFr),
+    isGovernment: /government/i.test(row.BillTypeEn || ''),
+    title: bilingual(row.LongTitleEn, row.LongTitleFr),
+    shortTitle: clean(row.ShortTitleEn) || clean(row.ShortTitleFr)
+      ? bilingual(row.ShortTitleEn, row.ShortTitleFr)
+      : null,
+    sponsor: clean(row.SponsorEn) || clean(row.SponsorFr) ? bilingual(row.SponsorEn, row.SponsorFr) : null,
+    status: bilingual(row.CurrentStatusEn, row.CurrentStatusFr),
+    state: deriveState(row),
+    milestones,
+    royalAssent: toDate(row.ReceivedRoyalAssentDateTime),
+    reinstated: Boolean(row.DidReinstateFromPreviousSession),
+    latestActivity: {
+      en: clean(row.LatestActivityEn),
+      fr: clean(row.LatestActivityFr),
+      date: toDate(row.LatestActivityDateTime),
+    },
+    lastActivity: toDate(row.LatestActivityDateTime),
+    url: {
+      en: `https://www.parl.ca/legisinfo/en/bill/${row.ParlSessionCode}/${slug}`,
+      fr: `https://www.parl.ca/legisinfo/fr/projet-de-loi/${row.ParlSessionCode}/${slug}`,
+    },
+  };
+}
 
-    const num = Number(group[0].Numero_projet_loi);
-    const introSession = Math.min(...sessionsInGroup);
-    const step = STEP_BY_CODE[code] ?? null;
-    const date = best.Date_derniere_etape || null;
+async function fetchBills() {
+  const url = `https://www.parl.ca/legisinfo/en/bills/json?parlsession=${SESSION}`;
+  const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT, Accept: 'application/json' } });
+  if (!res.ok) throw new Error(`Échec du téléchargement LEGISinfo : HTTP ${res.status}`);
+  const rows = await res.json();
+  if (!Array.isArray(rows)) throw new Error('Réponse LEGISinfo inattendue : tableau attendu.');
+  return { url, rows };
+}
 
-    let status, note;
-    if (onTable) {
-      status = code === 'sanction' ? 'sanctionne' : 'encours';
-      note = date && NOTE_BY_CODE[code] ? NOTE_BY_CODE[code](date) : null;
-    } else {
-      status = 'laisse_de_cote';
-      const stepLabel = STEP_LABEL_BY_CODE[code] ?? code;
-      note = `Resté à l'étape « ${stepLabel} » (session ${maxSessionInGroup}) — non réinscrit depuis${date ? `, dernière activité le ${date}` : ''}`;
-    }
+async function main() {
+  const { url, rows } = await fetchBills();
+  const bills = rows.map(buildBill);
 
-    bills.push({
-      id: Number(id),
-      num,
-      legislature: currentLegislature,
-      introSession,
-      type: best.Type_projet_loi,
-      title: cleanTitle(best.Titre_projet_loi),
-      status,
-      step,
-      note,
-      lastActivity: date,
-      url: `https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-${num}-${currentLegislature}-${introSession}.html`,
-      urlEn: `https://www.assnat.qc.ca/en/travaux-parlementaires/projets-loi/projet-loi-${num}-${currentLegislature}-${introSession}.html`,
-      sponsor: null,
-      summary: null,
-      titleEn: null,
-      noteEn: null,
-      summaryEn: null,
-    });
-  }
-
+  // Tri par dernière activité décroissante (les projets sans date en fin de liste).
   bills.sort((a, b) => {
     if (!a.lastActivity && !b.lastActivity) return 0;
     if (!a.lastActivity) return 1;
@@ -161,34 +180,17 @@ function buildBills(rows) {
     return b.lastActivity.localeCompare(a.lastActivity);
   });
 
-  return bills;
-}
-
-async function main() {
-  const csv = await fetchCsv();
-  const rows = parse(csv, { columns: true, skip_empty_lines: true });
-  const bills = buildBills(rows);
-
   mkdirSync('data', { recursive: true });
   writeFileSync(
     OUT_PATH,
-    JSON.stringify(
-      {
-        source: CSV_URL,
-        scrapedAt: new Date().toISOString(),
-        count: bills.length,
-        bills,
-      },
-      null,
-      2
-    )
+    JSON.stringify({ source: url, session: SESSION, scrapedAt: new Date().toISOString(), count: bills.length, bills }, null, 2)
   );
 
-  const byStatus = bills.reduce((acc, b) => {
-    acc[b.status] = (acc[b.status] ?? 0) + 1;
-    return acc;
-  }, {});
-  console.log(`${bills.length} projets de loi écrits dans ${OUT_PATH}`, byStatus);
+  const byChamber = bills.reduce((acc, b) => ((acc[b.chamber] = (acc[b.chamber] ?? 0) + 1), acc), {});
+  const byState = bills.reduce((acc, b) => ((acc[b.state] = (acc[b.state] ?? 0) + 1), acc), {});
+  console.log(`${bills.length} projets de loi (session ${SESSION}) écrits dans ${OUT_PATH}`);
+  console.log('  par chambre :', byChamber);
+  console.log('  par statut  :', byState);
 }
 
 main().catch((err) => {

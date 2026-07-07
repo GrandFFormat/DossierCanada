@@ -1,120 +1,147 @@
-// Scraper — Liste des 125 député·e·s (nom, circonscription, parti)
+// Scraper — Liste des député·e·s de la Chambre des communes (roster)
 //
-// Source : la page d'index des députés sur assnat.qc.ca (HTML statique, un seul
-// fetch — même page déjà utilisée par depute-emails.js pour les courriels).
-// Contrairement au courriel (voir depute-emails.js), la région administrative
-// n'est PAS dans ce tableau — seulement nom, circonscription et parti. On la
-// préserve donc depuis le tableau `deputesRaw` déjà présent dans index.html
-// (assignation géographique stable : une circonscription ne change pas de région
-// d'une élection à l'autre, contrairement au nom du député ou à son parti).
+// Source : export XML officiel de la Chambre des communes, en deux langues :
+//   https://www.ourcommons.ca/members/en/search/xml   (anglais)
+//   https://www.ourcommons.ca/members/fr/search/xml   (français)
+//   Licence du gouvernement ouvert – Canada.
 //
-// Si une nouvelle circonscription apparaît sans correspondance dans l'ancien
-// tableau (élection partielle, redécoupage), la région est laissée à `null`
-// plutôt que devinée — jamais de donnée inventée.
+// Pourquoi ourcommons plutôt qu'OpenParliament pour le roster ? OpenParliament ne
+// fournit le parti et la circonscription qu'en anglais ; l'export de la Chambre est
+// nativement bilingue (parti, circonscription ET province diffèrent en français —
+// ex. « Quebec » / « Québec », « Conservative » / « Conservateur »). Pour un site
+// bilingue officiel, on prend la source qui donne les deux langues vérifiées, sans
+// jamais inventer de traduction.
+//
+// Clé unique : `id` = PersonId de la Chambre des communes (ex. 89156). C'est aussi
+// le `parl_mp_id` d'OpenParliament — donc le pivot naturel pour enrichir plus tard
+// (photo, dossier de votes) sans dépendre du nom, qui peut être ambigu. On joint les
+// deux feeds EN/FR par ce PersonId.
+//
+// Le nombre de député·e·s est LU depuis la source (≈343 sièges à la 45e législature,
+// vacances comprises) — jamais codé en dur.
+//
+// Modèle produit (data/deputes.json → deputes[]) :
+//   /**
+//    * @typedef {Object} Depute
+//    * @property {number} id            PersonId (= parl_mp_id OpenParliament) — clé unique
+//    * @property {string|null} honorific  Titre honorifique court (ex. "Hon."/"L'hon.") ou null
+//    * @property {string} firstName
+//    * @property {string} lastName
+//    * @property {string} name          "Prénom Nom"
+//    * @property {{code:string|null, en:string, fr:string}} party  Parti (code court + noms bilingues)
+//    * @property {{en:string, fr:string}} constituency  Circonscription
+//    * @property {{en:string, fr:string}} province       Province ou territoire
+//    * @property {string|null} memberSince  Début du mandat courant (AAAA-MM-JJ)
+//    * @property {{en:string, fr:string}} url  Profil sur ourcommons.ca
+//    */
 
-import { readFileSync, writeFileSync } from 'node:fs';
+import { writeFileSync, mkdirSync } from 'node:fs';
 import * as cheerio from 'cheerio';
 
-const INDEX_URL = 'https://www.assnat.qc.ca/fr/deputes/index.html';
-const HTML_PATH = 'index.html';
+const XML_EN = 'https://www.ourcommons.ca/members/en/search/xml';
+const XML_FR = 'https://www.ourcommons.ca/members/fr/search/xml';
 const OUT_PATH = 'data/deputes.json';
-const USER_AGENT = 'veille-assnat-scraper/0.1 (projet citoyen independant, usage non commercial)';
-const START_MARKER = '/* DEPUTES_DATA_START';
-const END_MARKER = '/* DEPUTES_DATA_END */';
+const USER_AGENT = 'DossierCanada/0.1 (veille citoyenne; mart.archambault@gmail.com)';
 
-const PARTY_CODES = {
-  'Coalition avenir Québec': 'CAQ',
-  'Parti libéral du Québec': 'PLQ',
-  'Québec solidaire': 'QS',
-  'Parti québécois': 'PQ',
-  'Parti conservateur du Québec': 'PCQ',
-  'Indépendant': 'IND',
-  'Indépendante': 'IND',
+// Code court par nom de caucus ANGLAIS (les noms bilingues eux-mêmes viennent des
+// feeds, pas d'ici). Le code ne sert que d'étiquette stable côté front-end (couleurs
+// de parti, etc.). Un caucus inconnu → code null + avertissement, jamais deviné.
+const PARTY_CODE_BY_EN = {
+  Liberal: 'LPC',
+  Conservative: 'CPC',
+  'Bloc Québécois': 'BQ',
+  NDP: 'NDP',
+  'Green Party': 'GPC',
+  Independent: 'IND',
 };
 
-// Même logique que norm() dans index.html — insensible aux accents/casse,
-// pour tolérer les petites incohérences de graphie entre les pages assnat.qc.ca
-// (ex. "Etienne Grandmont" sans accent sur une page, "Étienne Grandmont" ailleurs).
-function foldName(name) {
-  return name
-    .normalize('NFD').replace(/[̀-ͯ]/g, '')
-    .toLowerCase()
-    .replace(/[-–—']/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim();
+function textOf($, el, tag) {
+  const t = $(el).find(tag).first().text().trim();
+  return t === '' ? null : t;
 }
 
-function normalizeName(rawName) {
-  // Format brut : "Bachand, André " (Nom, Prénom) -> "André Bachand"
-  const cleaned = rawName.replace(/\s+/g, ' ').trim();
-  const match = cleaned.match(/^([^,]+),\s*(.+)$/);
-  return match ? `${match[2]} ${match[1]}` : cleaned;
+// Réduit un horodatage "2025-04-28T00:00:00" à une date AAAA-MM-JJ (l'heure est
+// toujours minuit dans ce feed — pas de précision horaire à laisser entendre).
+function toDate(dt) {
+  return dt ? dt.slice(0, 10) : null;
 }
 
-function loadExistingRegions() {
-  const html = readFileSync(HTML_PATH, 'utf-8');
-  const startIdx = html.indexOf(START_MARKER);
-  const endIdx = html.indexOf(END_MARKER);
-  if (startIdx === -1 || endIdx === -1) {
-    throw new Error(`Marqueurs DEPUTES_DATA_START/END introuvables dans ${HTML_PATH}`);
-  }
-  const block = html.slice(startIdx, endIdx);
-  const rows = [...block.matchAll(/\["([^"]+)","([^"]+)","([^"]+)","([^"]+)"\]/g)];
-  const regionByName = new Map();
-  for (const [, name, , region] of rows) regionByName.set(foldName(name), region);
-  return regionByName;
+async function fetchXml(url) {
+  const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT, Accept: 'application/xml' } });
+  if (!res.ok) throw new Error(`HTTP ${res.status} pour ${url}`);
+  return res.text();
+}
+
+// Indexe un feed par PersonId → { party, constituency, province } (dans la langue
+// du feed). Sert à récupérer la version française à partir du feed anglais.
+function indexByPerson(xml) {
+  const $ = cheerio.load(xml, { xml: true });
+  const byId = new Map();
+  $('MemberOfParliament').each((_, el) => {
+    const id = Number(textOf($, el, 'PersonId'));
+    byId.set(id, {
+      party: textOf($, el, 'CaucusShortName'),
+      constituency: textOf($, el, 'ConstituencyName'),
+      province: textOf($, el, 'ConstituencyProvinceTerritoryName'),
+    });
+  });
+  return byId;
 }
 
 async function main() {
-  const regionByName = loadExistingRegions();
+  const [xmlEn, xmlFr] = await Promise.all([fetchXml(XML_EN), fetchXml(XML_FR)]);
+  const fr = indexByPerson(xmlFr);
 
-  const res = await fetch(INDEX_URL, { headers: { 'User-Agent': USER_AGENT } });
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  const html = await res.text();
-  const $ = cheerio.load(html);
-
+  const $ = cheerio.load(xmlEn, { xml: true });
   const deputes = [];
-  $('tbody tr').each((_, row) => {
-    const cells = $(row).find('td');
-    if (cells.length < 3) return;
+  const missingFr = [];
+  const unknownParty = new Set();
 
-    const nameLink = $(cells[0]).find('a').first();
-    if (nameLink.length === 0) return;
-    const name = normalizeName(nameLink.text());
-    const riding = $(cells[1]).text().replace(/\s+/g, ' ').trim();
-    const partyFull = $(cells[2]).text().replace(/\s+/g, ' ').trim();
-    const party = PARTY_CODES[partyFull] ?? null;
+  $('MemberOfParliament').each((_, el) => {
+    const id = Number(textOf($, el, 'PersonId'));
+    const firstName = textOf($, el, 'PersonOfficialFirstName') ?? '';
+    const lastName = textOf($, el, 'PersonOfficialLastName') ?? '';
+    const partyEn = textOf($, el, 'CaucusShortName');
+    const frRow = fr.get(id);
+    if (!frRow) missingFr.push(id);
 
-    const region = regionByName.get(foldName(name)) ?? null;
+    const code = partyEn ? (PARTY_CODE_BY_EN[partyEn] ?? null) : null;
+    if (partyEn && code === null) unknownParty.add(partyEn);
 
-    // ID numérique interne assnat.qc.ca (ex. "/fr/deputes/bachand-andre-17859/index.html"
-    // -> 17859). Sert de clé fiable pour rapprocher chaque député·e du détail nominatif
-    // des votes, où le même ID identifie la personne sans ambiguïté (contrairement au
-    // nom de famille seul, que plusieurs député·e·s peuvent partager).
-    const href = nameLink.attr('href') || '';
-    const idMatch = href.match(/-(\d+)\/index\.html$/);
-    const assnatId = idMatch ? Number(idMatch[1]) : null;
-
-    deputes.push({ name, riding, region, party, partyFull, assnatId });
+    deputes.push({
+      id,
+      honorific: textOf($, el, 'PersonShortHonorific'),
+      firstName,
+      lastName,
+      name: `${firstName} ${lastName}`.trim(),
+      party: { code, en: partyEn, fr: frRow?.party ?? null },
+      constituency: { en: textOf($, el, 'ConstituencyName'), fr: frRow?.constituency ?? null },
+      province: { en: textOf($, el, 'ConstituencyProvinceTerritoryName'), fr: frRow?.province ?? null },
+      memberSince: toDate(textOf($, el, 'FromDateTime')),
+      url: {
+        en: `https://www.ourcommons.ca/members/en/${id}`,
+        fr: `https://www.ourcommons.ca/members/fr/${id}`,
+      },
+    });
   });
 
-  const missingRegion = deputes.filter((d) => !d.region);
-  const missingParty = deputes.filter((d) => !d.party);
-  const missingId = deputes.filter((d) => !d.assnatId);
+  deputes.sort((a, b) => a.lastName.localeCompare(b.lastName, 'fr'));
 
+  mkdirSync('data', { recursive: true });
   writeFileSync(
     OUT_PATH,
     JSON.stringify(
-      { source: INDEX_URL, scrapedAt: new Date().toISOString(), count: deputes.length, deputes },
+      { source: { en: XML_EN, fr: XML_FR }, scrapedAt: new Date().toISOString(), count: deputes.length, deputes },
       null,
       2
     )
   );
 
+  const byParty = deputes.reduce((acc, d) => ((acc[d.party.code ?? '(?)'] = (acc[d.party.code ?? '(?)'] ?? 0) + 1), acc), {});
   console.log(`${deputes.length} député·e·s écrit·e·s dans ${OUT_PATH}`);
-  if (missingRegion.length) console.log(`  ⚠ ${missingRegion.length} sans région connue : ${missingRegion.map((d) => d.name).join(', ')}`);
-  if (missingParty.length) console.log(`  ⚠ ${missingParty.length} avec un intitulé de parti non reconnu : ${missingParty.map((d) => `${d.name} (${d.partyFull})`).join(', ')}`);
-  if (missingId.length) console.log(`  ⚠ ${missingId.length} sans ID assnat détecté : ${missingId.map((d) => d.name).join(', ')}`);
+  console.log('  par parti :', byParty);
+  if (missingFr.length) console.log(`  ⚠ ${missingFr.length} sans correspondance dans le feed FR : ${missingFr.join(', ')}`);
+  if (unknownParty.size) console.log(`  ⚠ caucus sans code connu : ${[...unknownParty].join(', ')}`);
 }
 
 main().catch((err) => {
