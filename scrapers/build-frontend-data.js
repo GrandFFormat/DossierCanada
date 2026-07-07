@@ -154,6 +154,8 @@ function main() {
     sponsor: b.sponsor,
     state: b.state,
     reinstated: b.reinstated,
+    summary: b.summary ?? { en: null, fr: null },
+    fullSummaryAvailable: b.fullSummaryAvailable ?? false,
     milestones: b.milestones,
     lastActivity: b.lastActivity,
     latestActivity: { fr: b.latestActivity.fr, en: b.latestActivity.en },
