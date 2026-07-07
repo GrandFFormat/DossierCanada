@@ -14,7 +14,7 @@
 // QC n'est pas encore adapté au modèle fédéral bicaméral). Le frontand, une fois
 // adapté, consommera ce fichier.
 
-import { readFileSync, writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 
 const BILLS_PATH = 'data/bills.json';
 const DEPUTES_PATH = 'data/deputes.json';
@@ -27,6 +27,9 @@ const DEP_START_MARKER = '/* DEPUTES_DATA_START';
 const DEP_END_MARKER = '/* DEPUTES_DATA_END */';
 const VOTES_START_MARKER = '/* VOTES_DATA_START';
 const VOTES_END_MARKER = '/* VOTES_DATA_END */';
+const MIN_START_MARKER = '/* MINISTERS_DATA_START';
+const MIN_END_MARKER = '/* MINISTERS_DATA_END */';
+const MINISTERS_PATH = 'data/ministers.json';
 
 function read(path) {
   return JSON.parse(readFileSync(path, 'utf-8'));
@@ -190,6 +193,11 @@ function main() {
   html = injectBlock(html, START_MARKER, END_MARKER, 'bills', frontendBills, stamp);
   html = injectBlock(html, DEP_START_MARKER, DEP_END_MARKER, 'deputes', frontendDeputes, stamp);
   html = injectBlock(html, VOTES_START_MARKER, VOTES_END_MARKER, 'votes', frontendVotes, stamp);
+  // Ministres : fichier séparé (scrapers/ministers.js) — injecté s'il existe.
+  if (existsSync(MINISTERS_PATH)) {
+    const ministers = read(MINISTERS_PATH).ministers;
+    html = injectBlock(html, MIN_START_MARKER, MIN_END_MARKER, 'ministers', ministers, stamp);
+  }
   writeFileSync(HTML_PATH, html);
 
   console.log(`Fusion écrite dans ${OUT_PATH}`);
