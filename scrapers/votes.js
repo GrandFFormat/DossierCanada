@@ -1,184 +1,188 @@
-// Scraper — Registre des votes réel (détail nominatif par député·e)
+// Scraper — Votes par appel nominal de la Chambre des communes
 //
-// Source : les pages individuelles du registre des votes sur assnat.qc.ca
-// (ex. /fr/travaux-parlementaires/registre-des-votes/43-3-63/index.html).
+// Source : exports XML officiels de la Chambre des communes.
+//   Liste des votes  : https://www.ourcommons.ca/members/{en,fr}/votes/xml
+//   Détail nominatif : https://www.ourcommons.ca/members/en/votes/{parl}/{sess}/{num}/xml
+//   Licence du gouvernement ouvert – Canada.
 //
-// Découverte importante : la page de LISTE des votes charge son contenu par
-// AJAX (JS requis pour la voir), mais chaque page de détail de vote individuel
-// est du HTML statique normal — un simple fetch fonctionne, comme le reste du
-// site, à condition d'envoyer un user-agent réaliste (le site a un pare-feu
-// anti-bot qui bloque les user-agents génériques/vides, pas juste "pas de JS").
-// Playwright a servi à explorer/confirmer ça, mais n'est PAS requis pour ce
-// scraper en production.
+// Pourquoi ourcommons et pas OpenParliament ? OpenParliament identifie chaque
+// votant par un slug (« ziad-aboultaif ») alors que data/deputes.json est clé par
+// PersonId. La source officielle donne le détail nominatif directement clé par
+// PersonId — jointure propre avec les député·e·s, sans pont fragile par le nom. Elle
+// est aussi bilingue (le sujet et le résultat du vote diffèrent en français) et fait
+// autorité sur les décomptes.
 //
-// Chaque projet de loi identifié dans le titre du vote ("Projet de loi n° X")
-// est laissé à résoudre au moment de la fusion avec data/bills.json — voir
-// build-votes-data.js — car le numéro de projet de loi seul n'est pas unique
-// (voir bills.js). Ce scraper se contente de capter fidèlement ce qui est
-// affiché : titre, étape, numéro de projet de loi si mentionné, date, et le
-// détail nominatif (POUR/CONTRE/ABSTENTION) avec l'ID assnat de chaque
-// député·e (voir deputes.js pour le même ID, utilisé comme clé de jonction).
+// Chaque vote peut être rattaché à un projet de loi (BillNumberCode, ex. « C-30 »).
+// On stocke ce numéro + la session ; la RÉSOLUTION vers l'id stable de data/bills.json
+// est laissée à l'étape de fusion (le couple session+numéro est unique dans une
+// session, mais le numéro seul ne l'est pas — voir bills.js). 77 des 173 votes ne
+// portent sur aucun projet de loi (motions, autres affaires) → billNumber = null.
 //
-// Pas de donnée inventée : si une page de vote n'existe pas (hors limites),
-// le scraper s'arrête pour cette session — il ne devine jamais un numéro
-// suivant qui n'existe pas.
+// Aucune donnée inventée : la valeur du vote de chaque député·e vient des drapeaux
+// officiels IsVoteYea/IsVoteNay/IsVotePaired (indépendants de la langue). Un·e
+// député·e absent·e n'apparaît tout simplement pas dans la liste — on ne suppose rien.
+// Garde-fou : on compare notre décompte extrait au décompte officiel de la liste, et
+// on avertit à la moindre divergence plutôt que de publier un total silencieusement faux.
+//
+// Modèle produit (data/votes.json → votes[]) :
+//   /**
+//    * @typedef {Object} Vote
+//    * @property {number} number        Numéro de scrutin dans la session (ex. 173)
+//    * @property {string} session       Code de session, ex. "45-1"
+//    * @property {number} parliament
+//    * @property {number} sessionNumber
+//    * @property {string} date          AAAA-MM-JJ
+//    * @property {{en:string, fr:string}} description  Sujet du scrutin
+//    * @property {{en:string, fr:string}} result       Résultat textuel (ex. "Agreed To"/"Adoptée")
+//    * @property {boolean} passed        Vrai si la motion est adoptée
+//    * @property {{yea:number, nay:number, paired:number}} totals  Décomptes officiels
+//    * @property {{en:string, fr:string}} documentType  Type de décision (ex. "Legislative Process")
+//    * @property {string|null} billNumber  Projet de loi visé (ex. "C-30") ou null
+//    * @property {{en:string, fr:string}} url  Page du scrutin sur ourcommons.ca
+//    * @property {Object.<string,'yea'|'nay'|'paired'>} ballots  PersonId → vote nominal
+//    */
 
-import { writeFileSync } from 'node:fs';
+import { writeFileSync, mkdirSync } from 'node:fs';
+import * as cheerio from 'cheerio';
 
-const LEGISLATURE = 43;
-const SESSIONS = [1, 2, 3];
-const MAX_VOTES_PER_SESSION = 2000; // garde-fou, bien au-delà de ce qu'on attend
-const REQUEST_DELAY_MS = 350;
-const USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36';
+// Session ciblée. Par défaut 45e législature, 1re session. Surchargable : `node scrapers/votes.js 44-1`.
+const SESSION = process.argv[2] || '45-1';
+const [PARLIAMENT, SESSION_NUMBER] = SESSION.split('-').map(Number);
 const OUT_PATH = 'data/votes.json';
+const USER_AGENT = 'DossierCanada/0.1 (veille citoyenne; mart.archambault@gmail.com)';
+const REQUEST_DELAY_MS = 250; // politesse entre les fetch de détail
+// Plafond de test : `VOTE_LIMIT=5 node scrapers/votes.js` ne traite que 5 scrutins.
+const VOTE_LIMIT = process.env.VOTE_LIMIT ? Number(process.env.VOTE_LIMIT) : Infinity;
 
-const FRENCH_MONTHS = {
-  janvier: '01', février: '02', mars: '03', avril: '04', mai: '05', juin: '06',
-  juillet: '07', août: '08', septembre: '09', octobre: '10', novembre: '11', décembre: '12',
-};
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-function parseFrenchDate(text) {
-  const match = text.match(/(\d{1,2})\s+(janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre)\s+(\d{4})/i);
-  if (!match) return null;
-  const [, day, monthName, year] = match;
-  return `${year}-${FRENCH_MONTHS[monthName.toLowerCase()]}-${day.padStart(2, '0')}`;
+async function fetchXml(url) {
+  const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT, Accept: 'application/xml' } });
+  if (!res.ok) throw new Error(`HTTP ${res.status} pour ${url}`);
+  return cheerio.load(await res.text(), { xml: true });
 }
 
-function sleep(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
+function toDate(dt) {
+  return dt ? dt.slice(0, 10) : null;
 }
 
-// Découverte (juillet 2026) : un panneau (Pour/Contre/Abstentions) qui contient
-// beaucoup de noms est affiché sur PLUSIEURS <div class="colonneVote"> côte à
-// côte, pas une seule liste. Délimiter le panneau en cherchant le premier
-// "</div></div>" (comme avant) coupe donc à la fin de la 1re colonne et perd
-// tout le monde après — silencieusement, sans erreur. Repéré parce que deux
-// ministres (Lafrenière, LeBel) n'apparaissaient dans AUCUN des 735 votes alors
-// qu'ils sont visibles dans le HTML brut. Corrigé en délimitant plutôt par la
-// position du panneau SUIVANT (les 3 panneaux se suivent toujours dans le même
-// ordre Pour/Contre/Abstentions) : plus besoin de faire confiance à un
-// découpage de balises div qui peut varier selon le nombre de colonnes.
-function extractPanelHtml(html, panelId, nextPanelId) {
-  const startIdx = html.indexOf(`id="${panelId}"`);
-  if (startIdx === -1) return '';
-  const endIdx = nextPanelId ? html.indexOf(`id="${nextPanelId}"`, startIdx) : -1;
-  return endIdx === -1 ? html.slice(startIdx) : html.slice(startIdx, endIdx);
+// Lit la liste des votes d'un feed (une langue) → Map(numéro → champs utiles).
+function parseVoteList($) {
+  const byNumber = new Map();
+  $('Vote').each((_, el) => {
+    const $v = $(el);
+    if (Number($v.find('ParliamentNumber').text()) !== PARLIAMENT) return;
+    if (Number($v.find('SessionNumber').text()) !== SESSION_NUMBER) return;
+    const number = Number($v.find('DecisionDivisionNumber').text());
+    byNumber.set(number, {
+      number,
+      date: toDate($v.find('DecisionEventDateTime').text()),
+      subject: $v.find('DecisionDivisionSubject').text().trim(),
+      result: $v.find('DecisionResultName').text().trim(),
+      documentType: $v.find('DecisionDivisionDocumentTypeName').text().trim(),
+      yea: Number($v.find('DecisionDivisionNumberOfYeas').text()),
+      nay: Number($v.find('DecisionDivisionNumberOfNays').text()),
+      paired: Number($v.find('DecisionDivisionNumberOfPaired').text()),
+      billNumber: $v.find('BillNumberCode').text().trim() || null,
+    });
+  });
+  return byNumber;
 }
 
-// Deuxième découverte : quand deux député·e·s partagent le même nom de famille
-// (ex. deux "Caron", deux "Dufour", deux "Girard"), la page insère un span
-// <span class="circonscription">&nbsp;(Nom de la circonscription)</span> entre
-// le nom et le parti pour les distinguer. Absent la plupart du temps, présent
-// seulement pour ces cas d'homonymie — la regex doit le rendre optionnel,
-// sinon ces entrées précises (et seulement celles-là) disparaissent en silence.
-function extractNameList(html, panelId, nextPanelId) {
-  const panelHtml = extractPanelHtml(html, panelId, nextPanelId);
-  const people = [];
-  const re = /<div id="(\d+)" class="depute">\s*<span class="nom">([^<]+)<\/span>(?:<span class="circonscription">&nbsp;\(([^)]+)\)<\/span>)?<span class="parti">&nbsp;\(([^)]+)\)<\/span>/g;
-  let m;
-  while ((m = re.exec(panelHtml))) {
-    people.push({ assnatId: Number(m[1]), lastName: m[2].trim(), riding: m[3] ? m[3].trim() : null, party: m[4].trim() });
-  }
-  return people;
-}
-
-async function fetchVote(legislature, session, num) {
-  const url = `https://www.assnat.qc.ca/fr/travaux-parlementaires/registre-des-votes/${legislature}-${session}-${num}/index.html`;
-  const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT } });
-  if (res.status === 404) return null;
-  if (!res.ok) throw new Error(`HTTP ${res.status} sur ${url}`);
-  const html = await res.text();
-
-  const titleMatch = html.match(/<h1 id="titreMotion">([^<]+)<\/h1>/);
-  if (!titleMatch) return null; // page atypique, on ne devine pas sa structure
-  const fullTitle = titleMatch[1].replace(/\s+/g, ' ').trim();
-
-  const voteHeaderMatch = html.match(/<h2 id="titreVote"[^>]*>([\s\S]*?)<\/h2>/);
-  const voteHeaderText = voteHeaderMatch ? voteHeaderMatch[1].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim() : '';
-  const date = parseFrenchDate(voteHeaderText);
-
-  const [, stage, rest] = fullTitle.match(/^([^–]+)–\s*(.*)$/) || [null, null, fullTitle];
-  const billMatch = fullTitle.match(/Projet de loi n[°o]\s*(\d+)/i);
-  const billNum = billMatch ? Number(billMatch[1]) : null;
-
-  const pour = extractNameList(html, 'ctl00_ColCentre_ContenuColonneGauche_pnlPour', 'ctl00_ColCentre_ContenuColonneGauche_pnlContre');
-  const contre = extractNameList(html, 'ctl00_ColCentre_ContenuColonneGauche_pnlContre', 'ctl00_ColCentre_ContenuColonneGauche_pnlAbstentions');
-  const abstentions = extractNameList(html, 'ctl00_ColCentre_ContenuColonneGauche_pnlAbstentions', null);
-
-  // Garde-fou : la page affiche elle-même le compte officiel (champs cachés
-  // nbPour/nbContre/nbAbstentions) — comparé à ce qu'on a extrait, pour
-  // détecter tout de suite une future régression de ce genre plutôt que de
-  // laisser passer des décomptes silencieusement incomplets.
-  const officialPour = Number(html.match(/id="nbPour" value="(\d+)"/)?.[1]);
-  const officialContre = Number(html.match(/id="nbContre" value="(\d+)"/)?.[1]);
-  const officialAbstentions = Number(html.match(/id="nbAbstentions" value="(\d+)"/)?.[1]);
-  if (!Number.isNaN(officialPour) && officialPour !== pour.length) {
-    console.error(`  ⚠ ${legislature}-${session}-${num} : pour extrait=${pour.length} mais officiel=${officialPour}`);
-  }
-  if (!Number.isNaN(officialContre) && officialContre !== contre.length) {
-    console.error(`  ⚠ ${legislature}-${session}-${num} : contre extrait=${contre.length} mais officiel=${officialContre}`);
-  }
-  if (!Number.isNaN(officialAbstentions) && officialAbstentions !== abstentions.length) {
-    console.error(`  ⚠ ${legislature}-${session}-${num} : abstentions extrait=${abstentions.length} mais officiel=${officialAbstentions}`);
-  }
-
-  return {
-    legislature,
-    session,
-    num,
-    url,
-    date,
-    title: fullTitle,
-    stage: stage ? stage.trim() : null,
-    subject: rest ? rest.trim() : fullTitle,
-    billNum,
-    pour,
-    contre,
-    abstentions,
-    totals: { pour: pour.length, contre: contre.length, abstentions: abstentions.length },
-  };
+// Récupère le détail nominatif d'un scrutin → { ballots, extracted }.
+// ballots : PersonId (chaîne) → 'yea' | 'nay' | 'paired'.
+async function fetchBallots(number) {
+  const url = `https://www.ourcommons.ca/members/en/votes/${PARLIAMENT}/${SESSION_NUMBER}/${number}/xml`;
+  const $ = await fetchXml(url);
+  const ballots = {};
+  const extracted = { yea: 0, nay: 0, paired: 0 };
+  $('VoteParticipant').each((_, el) => {
+    const $p = $(el);
+    const personId = $p.find('PersonId').text().trim();
+    if (!personId) return;
+    let value = null;
+    if ($p.find('IsVoteYea').text() === 'true') value = 'yea';
+    else if ($p.find('IsVoteNay').text() === 'true') value = 'nay';
+    else if ($p.find('IsVotePaired').text() === 'true') value = 'paired';
+    if (!value) return; // pas de drapeau reconnu → on ne devine pas
+    ballots[personId] = value;
+    extracted[value]++;
+  });
+  return { ballots, extracted };
 }
 
 async function main() {
+  const [$en, $fr] = await Promise.all([
+    fetchXml('https://www.ourcommons.ca/members/en/votes/xml'),
+    fetchXml('https://www.ourcommons.ca/members/fr/votes/xml'),
+  ]);
+  const listEn = parseVoteList($en);
+  const listFr = parseVoteList($fr);
+
+  // Ordre croissant des numéros ; on plafonne éventuellement pour les tests.
+  let numbers = [...listEn.keys()].sort((a, b) => a - b);
+  if (VOTE_LIMIT !== Infinity) numbers = numbers.slice(-VOTE_LIMIT); // les plus récents
+
   const votes = [];
-  let errors = 0;
+  let mismatches = 0;
+  for (const number of numbers) {
+    const en = listEn.get(number);
+    const fr = listFr.get(number) ?? {};
+    const { ballots, extracted } = await fetchBallots(number);
 
-  const sessionsToRun = process.env.SCRAPE_SESSION ? [Number(process.env.SCRAPE_SESSION)] : SESSIONS;
-  const maxPerSession = process.env.SCRAPE_LIMIT ? Number(process.env.SCRAPE_LIMIT) : MAX_VOTES_PER_SESSION;
-
-  for (const session of sessionsToRun) {
-    let num = 1;
-    let consecutiveMisses = 0;
-    while (num <= maxPerSession && consecutiveMisses < 2) {
-      try {
-        const vote = await fetchVote(LEGISLATURE, session, num);
-        if (vote) {
-          votes.push(vote);
-          consecutiveMisses = 0;
-        } else {
-          consecutiveMisses++;
-        }
-      } catch (err) {
-        errors++;
-        console.error(`  ⚠ ${LEGISLATURE}-${session}-${num} : ${err.message}`);
-        consecutiveMisses++;
+    // Garde-fou : le détail nominatif doit reproduire les décomptes officiels de la liste.
+    for (const key of ['yea', 'nay', 'paired']) {
+      if (extracted[key] !== en[key]) {
+        mismatches++;
+        console.error(`  ⚠ scrutin ${number} : ${key} extrait=${extracted[key]} ≠ officiel=${en[key]}`);
       }
-      num++;
-      await sleep(REQUEST_DELAY_MS);
     }
-    console.log(`Session ${session} : ${votes.filter((v) => v.session === session).length} votes trouvés (arrêt à ${num - 1}).`);
+
+    votes.push({
+      number,
+      session: SESSION,
+      parliament: PARLIAMENT,
+      sessionNumber: SESSION_NUMBER,
+      date: en.date,
+      description: { en: en.subject, fr: fr.subject ?? null },
+      result: { en: en.result, fr: fr.result ?? null },
+      passed: /agreed/i.test(en.result),
+      totals: { yea: en.yea, nay: en.nay, paired: en.paired },
+      documentType: { en: en.documentType, fr: fr.documentType ?? null },
+      billNumber: en.billNumber,
+      url: {
+        en: `https://www.ourcommons.ca/members/en/votes/${PARLIAMENT}/${SESSION_NUMBER}/${number}`,
+        fr: `https://www.ourcommons.ca/members/fr/votes/${PARLIAMENT}/${SESSION_NUMBER}/${number}`,
+      },
+      ballots,
+    });
+
+    if (votes.length % 25 === 0) console.log(`  … ${votes.length}/${numbers.length} scrutins traités`);
+    await sleep(REQUEST_DELAY_MS);
   }
 
+  votes.sort((a, b) => b.number - a.number); // plus récent d'abord
+
+  mkdirSync('data', { recursive: true });
   writeFileSync(
     OUT_PATH,
     JSON.stringify(
-      { legislature: LEGISLATURE, scrapedAt: new Date().toISOString(), count: votes.length, votes },
+      {
+        source: 'https://www.ourcommons.ca/members/en/votes/xml',
+        session: SESSION,
+        scrapedAt: new Date().toISOString(),
+        count: votes.length,
+        votes,
+      },
       null,
       2
     )
   );
 
-  console.log(`Terminé. ${votes.length} votes écrits dans ${OUT_PATH}, ${errors} erreurs.`);
+  const withBill = votes.filter((v) => v.billNumber).length;
+  console.log(`${votes.length} scrutins (session ${SESSION}) écrits dans ${OUT_PATH}`);
+  console.log(`  rattachés à un projet de loi : ${withBill} | motions/autres : ${votes.length - withBill}`);
+  console.log(mismatches ? `  ⚠ ${mismatches} divergence(s) de décompte — à investiguer.` : '  ✓ tous les décomptes concordent avec l\'officiel.');
 }
 
 main().catch((err) => {
