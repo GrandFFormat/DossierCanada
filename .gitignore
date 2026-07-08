@@ -5,3 +5,6 @@ node_modules/
 
 # Échantillons de reconnaissance (régénérables via `npm run explore`)
 data/samples/
+
+# Visuel provenant du projet Québec (hors de ce dépôt)
+dossierquebec-cover-c.png
