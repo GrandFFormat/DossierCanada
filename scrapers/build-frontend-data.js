@@ -162,6 +162,42 @@ function main() {
 
   writeFileSync(OUT_PATH, JSON.stringify(out, null, 2));
 
+  // ---- Parti / groupe parlementaire du parrain de chaque projet ----
+  // Communes : bills.js fournit SponsorPersonId (= PersonId ourcommons) → jointure
+  // directe au roster des députés, par une vraie clé. Sénat : le PersonId du parrain
+  // appartient à un autre espace d'identifiants — on rapproche son nom OFFICIEL
+  // (Nom + Prénom, fournis par LEGISinfo) du roster des sénateurs, exact puis repli
+  // « nom + 1er prénom » seulement s'il est sans ambiguïté. Introuvable → null
+  // (aucune pastille), jamais deviné.
+  const deputeByIdMap = new Map(deputes.map((d) => [d.id, d]));
+  const senatorsForSponsors = existsSync(SENATORS_PATH) ? read(SENATORS_PATH).senators : [];
+  const spExact = new Map();
+  const spLooseCount = new Map();
+  const spLoose = new Map();
+  const spLooseKey = (last, first) => normName(`${last}${(first || '').split(/\s+/)[0]}`);
+  for (const s of senatorsForSponsors) {
+    spExact.set(normName(`${s.lastName}${s.firstName}`), s);
+    const lk = spLooseKey(s.lastName, s.firstName);
+    spLooseCount.set(lk, (spLooseCount.get(lk) || 0) + 1);
+    spLoose.set(lk, s);
+  }
+  function sponsorPartyOf(b) {
+    if (b.sponsorPersonId) {
+      const d = deputeByIdMap.get(b.sponsorPersonId);
+      if (d && d.party && d.party.code) {
+        return { kind: 'party', code: d.party.code, abbr: { en: d.party.code, fr: d.party.code }, name: { en: d.party.en, fr: d.party.fr } };
+      }
+    }
+    if (b.sponsorName) {
+      const lk = spLooseKey(b.sponsorName.last, b.sponsorName.first);
+      const s = spExact.get(normName(`${b.sponsorName.last}${b.sponsorName.first}`)) ?? (spLooseCount.get(lk) === 1 ? spLoose.get(lk) : null);
+      if (s && s.group && s.group.code) {
+        return { kind: 'group', code: s.group.code, abbr: { en: s.group.en, fr: s.group.fr }, name: { en: s.group.enName || s.group.en, fr: s.group.frName || s.group.fr } };
+      }
+    }
+    return null;
+  }
+
   // Injecte les projets de loi (prêts pour billCard) directement dans index.html
   // entre les marqueurs BILLS_DATA — le prototype reste un fichier HTML autonome,
   // sans fetch. On ne garde que les champs consommés par le rendu.
@@ -172,6 +208,7 @@ function main() {
     title: b.title,
     type: b.type,
     sponsor: b.sponsor,
+    sponsorParty: sponsorPartyOf(b),
     state: b.state,
     reinstated: b.reinstated,
     summary: b.summary ?? { en: null, fr: null },
@@ -183,6 +220,7 @@ function main() {
     url: b.url,
     divisions: b.divisions,
   }));
+  const sponsorResolved = frontendBills.filter((b) => b.sponsorParty).length;
 
   // Députés prêts pour le rendu (roster fédéral + bilan de votes précalculé).
   const frontendDeputes = deputesOut.map((d) => ({
@@ -341,6 +379,7 @@ function main() {
   console.log(`  ${frontendBills.length} projets · ${frontendDeputes.length} députés · ${frontendVotes.length} scrutins injectés dans ${HTML_PATH}`);
   console.log(`  ${billsOut.length} projets · ${deputesOut.length} députés · ${resolvedVotes.length} scrutins`);
   console.log(`  scrutins reliés à un projet : ${out.meta.votesLinkedToBill}`);
+  console.log(`  parti du parrain résolu : ${sponsorResolved}/${frontendBills.length} projets`);
   console.log(`  ancien·ne·s député·e·s présent·e·s dans les votes : ${formerVoterIds.size}`);
   if (unresolved.length) {
     console.log(`  ⚠ ${unresolved.length} vote(s) avec projet non résolu : ${unresolved.map((v) => `#${v.number}→${v.billNumber}`).join(', ')}`);
