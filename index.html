@@ -3221,12 +3221,48 @@ const lexiconTerms = [
     fr: "L'équipe de ministres, dirigée par le premier ministre, qui oriente le gouvernement et propose la plupart des projets de loi. Les ministres sont presque toujours des député·e·s.",
     en: "The team of ministers, led by the Prime Minister, that directs the government and proposes most bills. Ministers are almost always MPs." } },
 ];
+// Qui gravite autour du Parlement — les acteurs qu'on croise dans l'actualité
+// parlementaire, au-delà des député·e·s et sénateur·rice·s. Faits vérifiables,
+// jamais de jugement sur les personnes qui occupent ces rôles.
+const lexiconPeople = [
+  { term: { fr: "Le gouverneur général / la Couronne", en: "The Governor General / the Crown" }, def: {
+    fr: "Représente la Couronne : donne la <b>sanction royale</b> qui transforme un projet adopté en loi, convoque et dissout le Parlement, et nomme les sénateur·rice·s sur recommandation du premier ministre. C'est le chaînon derrière plusieurs étapes affichées sur ce site.",
+    en: "Represents the Crown: grants <b>royal assent</b> (which turns a passed bill into law), summons and dissolves Parliament, and appoints senators on the Prime Minister's recommendation. The link behind several stages shown on this site." } },
+  { term: { fr: "Les présidences des deux chambres", en: "The Speakers of the two chambers" }, def: {
+    fr: "Le <b>Président de la Chambre des communes</b> est un·e député·e élu·e par ses pairs pour arbitrer les débats avec neutralité — c'est pourquoi il ou elle ne vote qu'en cas d'égalité (son taux de présence aux votes paraît donc très bas, sans être une absence). Le <b>Président du Sénat</b> est nommé par le gouverneur général.",
+    en: "The <b>Speaker of the House of Commons</b> is an MP elected by peers to referee debates neutrally — which is why they only vote to break a tie (their vote-attendance figure looks very low without meaning absence). The <b>Speaker of the Senate</b> is appointed by the Governor General." } },
+  { term: { fr: "Les agents du Parlement", en: "Officers of Parliament" }, def: {
+    fr: "Des chiens de garde <b>indépendants du gouvernement</b>, qui relèvent du Parlement lui-même : le <b>vérificateur général</b> (les dépenses publiques), le <b>directeur général des élections</b> (Élections Canada), le <b>commissaire aux conflits d'intérêts et à l'éthique</b>, le <b>commissaire au lobbying</b> (qui tient le registre des lobbyistes), le <b>commissaire aux langues officielles</b>, et les <b>commissaires à la vie privée et à l'information</b>.",
+    en: "Watchdogs <b>independent from the government</b>, reporting to Parliament itself: the <b>Auditor General</b> (public spending), the <b>Chief Electoral Officer</b> (Elections Canada), the <b>Conflict of Interest and Ethics Commissioner</b>, the <b>Commissioner of Lobbying</b> (who keeps the lobbyist registry), the <b>Commissioner of Official Languages</b>, and the <b>Privacy and Information Commissioners</b>." } },
+  { term: { fr: "Le directeur parlementaire du budget (DPB)", en: "The Parliamentary Budget Officer (PBO)" }, def: {
+    fr: "Chiffre de façon <b>indépendante</b> ce que coûtent réellement les projets de loi et les mesures du gouvernement, pour que les parlementaires (et le public) votent en connaissance de cause. Ses rapports sont publics.",
+    en: "Provides <b>independent</b> costings of what bills and government measures actually cost, so parliamentarians (and the public) can decide with real numbers. Its reports are public." } },
+  { term: { fr: "Les comités parlementaires", en: "Parliamentary committees" }, def: {
+    fr: "De petits groupes de député·e·s (ou de sénateur·rice·s) qui étudient les projets de loi article par article entre la 2e et la 3e lecture, entendent des témoins et proposent des amendements. C'est souvent là que le vrai travail de fond se fait.",
+    en: "Small groups of MPs (or senators) that study bills clause by clause between 2nd and 3rd reading, hear witnesses and propose amendments. It's often where the real substantive work happens." } },
+  { term: { fr: "Leaders parlementaires et whips", en: "House leaders and whips" }, def: {
+    fr: "Dans chaque parti : le <b>leader parlementaire</b> négocie le déroulement des travaux ; le <b>whip</b> s'assure que les député·e·s du parti sont présent·e·s et votent selon la ligne du parti. C'est ce qui explique que, dans le détail « qui a voté quoi », les votes suivent presque toujours les lignes de parti.",
+    en: "In each party: the <b>House leader</b> negotiates the flow of business; the <b>whip</b> makes sure the party's MPs show up and vote the party line. It's why, in the \"who voted what\" detail, votes almost always follow party lines." } },
+  { term: { fr: "La fonction publique et les ministères", en: "The public service and departments" }, def: {
+    fr: "Les fonctionnaires qui appliquent concrètement les lois une fois adoptées, sous la direction des ministres. Le <b>Bureau du Conseil privé</b> est le ministère qui appuie directement le premier ministre et le Cabinet.",
+    en: "The civil servants who actually implement laws once passed, under the ministers' direction. The <b>Privy Council Office</b> is the department that directly supports the Prime Minister and Cabinet." } },
+  { term: { fr: "La Cour suprême du Canada", en: "The Supreme Court of Canada" }, def: {
+    fr: "Le plus haut tribunal du pays : elle peut <b>invalider une loi</b> contraire à la Constitution (dont la Charte), et le gouvernement peut lui demander son avis sur un projet (un « renvoi ») avant même de légiférer.",
+    en: "The country's highest court: it can <b>strike down a law</b> that violates the Constitution (including the Charter), and the government can ask for its opinion on a question (a \"reference\") before even legislating." } },
+  { term: { fr: "L'huissier du bâton noir et le sergent d'armes", en: "The Usher of the Black Rod and the Sergeant-at-Arms" }, def: {
+    fr: "Les figures de cérémonie qu'on voit aux grands moments télévisés : l'<b>huissier du bâton noir</b> (Sénat) frappe à la porte des Communes pour convoquer les député·e·s à la sanction royale ; le <b>sergent d'armes</b> porte la masse, symbole de l'autorité de la Chambre.",
+    en: "The ceremonial figures seen at big televised moments: the <b>Usher of the Black Rod</b> (Senate) knocks on the Commons' door to summon MPs to royal assent; the <b>Sergeant-at-Arms</b> carries the mace, symbol of the House's authority." } },
+];
 function renderLexique(){
   const el = document.getElementById('lexiqueList');
   if(!el) return;
   const isEn = currentLang === 'en';
   const L = o => isEn ? (o.en || o.fr) : (o.fr || o.en);
-  el.innerHTML = lexiconTerms.map(t => `<div class="lexique-item"><dt>${L(t.term)}</dt><dd>${L(t.def)}</dd></div>`).join('');
+  const item = t => `<div class="lexique-item"><dt>${L(t.term)}</dt><dd>${L(t.def)}</dd></div>`;
+  const peopleTitle = isEn ? 'Who’s involved around Parliament' : 'Qui gravite autour du Parlement';
+  el.innerHTML = lexiconTerms.map(item).join('')
+    + `<div class="role-group-title" style="margin-top:26px;">${peopleTitle}</div>`
+    + lexiconPeople.map(item).join('');
 }
 
 function updateChamberLabels(){
