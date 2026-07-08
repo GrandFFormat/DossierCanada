@@ -870,22 +870,7 @@
     <div class="role-group-title" data-i18n="roadmap.title">Feuille de route — ce qui existe déjà, ce qui s'en vient</div>
     <div id="roadmapList"></div>
 
-    <div class="section-head" id="sec-apropos"><div><h2 data-i18n="h.apropos">D'où viennent ces données, et comment aller plus loin</h2></div><span class="snooze-pill" onclick="toggleSnooze('apropos')" id="snooze-apropos"><span data-i18n="snooze.label">😴 Réduire</span></span></div>
 
-    <div id="body-apropos">
-
-    <div class="bill">
-      <h3 data-i18n="apropos.sources.h">Sources publiques utilisées ici</h3>
-      <p style="font-size:13px; line-height:1.7; color:var(--slate);" data-i18n="apropos.sources.p">
-        <b style="color:var(--ink)">Projets de loi</b> — LEGISinfo (parl.ca), l'outil officiel du Parlement du Canada, bilingue, avec les dates de chaque lecture et de la sanction royale dans les deux chambres.<br>
-        <b style="color:var(--ink)">Députés</b> — Chambre des communes (ourcommons.ca), la liste officielle des membres en fonction (nom, circonscription, province, parti), bilingue.<br>
-        <b style="color:var(--ink)">Votes</b> — Chambre des communes (ourcommons.ca), le détail par appel nominal de chaque scrutin (Pour / Contre / pairé), relié à chaque député·e par son identifiant officiel (PersonId).<br>
-        <b style="color:var(--ink)">Taux de présence</b> — calculé à partir des votes ci-dessus (voir le Lexique) ; aucune source externe.<br>
-        <b style="color:var(--ink)">Licences</b> — Licence du gouvernement ouvert – Canada ; conditions d'OpenParliament pour les recoupements.
-      </p>
-    </div>
-
-    </div>
   </section>
 
 
@@ -1038,10 +1023,27 @@
     <div class="quick-nav">
       <span class="quick-nav-label" data-i18n="quicknav.label">Aller à :</span>
       <a onclick="document.getElementById('sec-lexique-people').scrollIntoView({behavior:'auto', block:'start'})" data-i18n="nav.personnes">Qui gravite autour</a>
-      <a onclick="document.getElementById('lexiqueList').scrollIntoView({behavior:'auto', block:'start'})" data-i18n="nav.lexique">Lexique</a>
+      <a onclick="document.getElementById('sec-lexique-terms').scrollIntoView({behavior:'auto', block:'start'})" data-i18n="nav.lexique">Lexique</a>
       <a onclick="jumpToApropos()" data-i18n="nav.apropos">D'où viennent ces données</a>
     </div>
     <dl id="lexiqueList"></dl>
+
+    <div class="section-head" id="sec-apropos"><div><h2 data-i18n="h.apropos">D'où viennent ces données, et comment aller plus loin</h2></div><span class="snooze-pill" onclick="toggleSnooze('apropos')" id="snooze-apropos"><span data-i18n="snooze.label">😴 Réduire</span></span></div>
+
+    <div id="body-apropos">
+
+    <div class="bill">
+      <h3 data-i18n="apropos.sources.h">Sources publiques utilisées ici</h3>
+      <p style="font-size:13px; line-height:1.7; color:var(--slate);" data-i18n="apropos.sources.p">
+        <b style="color:var(--ink)">Projets de loi</b> — LEGISinfo (parl.ca), l'outil officiel du Parlement du Canada, bilingue, avec les dates de chaque lecture et de la sanction royale dans les deux chambres.<br>
+        <b style="color:var(--ink)">Députés</b> — Chambre des communes (ourcommons.ca), la liste officielle des membres en fonction (nom, circonscription, province, parti), bilingue.<br>
+        <b style="color:var(--ink)">Votes</b> — Chambre des communes (ourcommons.ca), le détail par appel nominal de chaque scrutin (Pour / Contre / pairé), relié à chaque député·e par son identifiant officiel (PersonId).<br>
+        <b style="color:var(--ink)">Taux de présence</b> — calculé à partir des votes ci-dessus (voir le Lexique) ; aucune source externe.<br>
+        <b style="color:var(--ink)">Licences</b> — Licence du gouvernement ouvert – Canada ; conditions d'OpenParliament pour les recoupements.
+      </p>
+    </div>
+
+    </div>
   </section>
 
 </div>
@@ -3265,20 +3267,18 @@ const lexiconPeople = [
 // Compte, déplie la section si elle est réduite (😴), puis défile jusqu'à elle
 // (saut instantané après l'animation de changement d'onglet).
 function jumpToApropos(){
-  goToTab('compte');
+  // La section vit maintenant au bas de l'onglet Lexique : saut interne direct.
   const body = document.getElementById('body-apropos');
   if(body && body.classList.contains('collapsed')) toggleSnooze('apropos', true);
-  setTimeout(() => {
-    const e = document.getElementById('sec-apropos');
-    if(!e) return;
-    e.scrollIntoView({ behavior: 'auto', block: 'start' });
-    // La section est la dernière de l'onglet : elle ne peut pas toujours atteindre
-    // le haut de l'écran. Un flash de surbrillance guide l'œil vers elle.
-    e.classList.remove('jump-highlight');
-    void e.offsetWidth; // relance l'animation si déjà jouée
-    e.classList.add('jump-highlight');
-    setTimeout(() => e.classList.remove('jump-highlight'), 2000);
-  }, 850);
+  const e = document.getElementById('sec-apropos');
+  if(!e) return;
+  e.scrollIntoView({ behavior: 'auto', block: 'start' });
+  // Dernière section de l'onglet : elle ne peut pas toujours atteindre le haut de
+  // l'écran. Un flash de surbrillance guide l'œil vers elle.
+  e.classList.remove('jump-highlight');
+  void e.offsetWidth; // relance l'animation si déjà jouée
+  e.classList.add('jump-highlight');
+  setTimeout(() => e.classList.remove('jump-highlight'), 2000);
 }
 
 function renderLexique(){
@@ -3288,9 +3288,11 @@ function renderLexique(){
   const L = o => isEn ? (o.en || o.fr) : (o.fr || o.en);
   const item = t => `<div class="lexique-item"><dt>${L(t.term)}</dt><dd>${L(t.def)}</dd></div>`;
   const peopleTitle = isEn ? 'Who’s involved around Parliament' : 'Qui gravite autour du Parlement';
-  el.innerHTML = lexiconTerms.map(item).join('')
-    + `<div class="role-group-title" id="sec-lexique-people" style="margin-top:26px;">${peopleTitle}</div>`
-    + lexiconPeople.map(item).join('');
+  const termsTitle = isEn ? 'Parliamentary jargon' : 'Le jargon parlementaire';
+  el.innerHTML = `<div class="role-group-title" id="sec-lexique-people">${peopleTitle}</div>`
+    + lexiconPeople.map(item).join('')
+    + `<div class="role-group-title" id="sec-lexique-terms" style="margin-top:26px;">${termsTitle}</div>`
+    + lexiconTerms.map(item).join('');
 }
 
 function updateChamberLabels(){
