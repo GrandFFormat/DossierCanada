@@ -2191,7 +2191,7 @@ const roadmapItems = [
   { status: 'now', h: { fr: "Coordonnées publiques des député·e·s", en: "Public contact details for MPs" }, p: { fr: "Le courriel parlementaire officiel de chaque député·e, lu directement sur sa fiche ourcommons.ca (jamais deviné), affiché sur sa carte et dans le comparateur. Réseaux sociaux volontairement exclus : pas de source officielle fiable pour les rattacher sans risque de se tromper de personne.", en: "Each MP's official parliamentary email, read straight from their ourcommons.ca profile (never guessed), shown on their card and in the comparator. Social media deliberately left out: no reliable official source to match them without risk of mixing up people." } },
   { status: 'now', h: { fr: "Calendrier des séances, jour par jour", en: "Day-by-day sitting calendar" }, p: { fr: "Les prochains jours de séance de la Chambre des communes, en page d'accueil — depuis le calendrier officiel adopté (qui peut changer). Les horaires des comités et le calendrier du Sénat ne sont pas encore couverts.", en: "The House of Commons' upcoming sitting days, on the front page — from the official adopted calendar (which can change). Committee schedules and the Senate calendar are not covered yet." } },
   { status: 'later', h: { fr: "Recherche dans le texte intégral des projets", en: "Full-text search of bills" }, p: { fr: "La recherche couvre les titres et les sommaires ; l'étendre au texte complet des projets de loi pour retrouver un mot précis qui n'apparaît que dans le texte.", en: "Search covers titles and summaries; extend it to the full text of bills to surface a specific word that only appears in the text." } },
-  { status: 'later', h: { fr: "Registre fédéral des lobbyistes", en: "Federal lobbyist registry" }, p: { fr: "Le Canada a un registre officiel (Commissariat au lobbying, lobbycanada.gc.ca). À évaluer : voir si les données sont accessibles honnêtement (comme la liste des pétitions), sans contourner de protection anti-automatisation.", en: "Canada has an official registry (Office of the Commissioner of Lobbying, lobbycanada.gc.ca). To assess: whether the data is honestly accessible (like the petitions list), without bypassing any anti-automation protection." } },
+  { status: 'now', h: { fr: "Registre fédéral des lobbyistes", en: "Federal lobbyist registry" }, p: { fr: "Évalué : les données ouvertes du Commissariat au lobbying ne sont distribuées qu'en fichiers de masse hébergés sur un site qui refuse tout accès automatisé (même un vrai navigateur obtient une réponse vide), sans API interrogeable — impossible d'en faire un flux fiable et à jour sans risquer une donnée périmée. On oriente donc honnêtement, dans le lexique, vers les outils publics officiels (recherche du registre, communications récentes, données ouvertes).", en: "Assessed: the Commissioner of Lobbying's open data is only distributed as bulk files on a host that blocks automated access (even a real browser gets an empty reply), with no queryable API — it can't be turned into a reliable, up-to-date feed without risking stale data. So we honestly point, in the glossary, to the official public tools (registry search, recent communications, open data)." } },
   { status: 'later', h: { fr: "Dons volontaires pour soutenir le projet", en: "Voluntary donations to support the project" }, p: { fr: "Modèle « soutenir le projet » par don volontaire (Stripe), sans aucune publicité. Un simple bouton vers un lien de paiement, sans serveur.", en: "A \"support the project\" model via a voluntary donation (Stripe), with no advertising. A simple button to a payment link, no server needed." } },
   { status: 'caution', h: { fr: "Promesses vs actions du gouvernement", en: "Campaign promises vs. government actions" }, p: { fr: "À considérer avec prudence : jamais un verdict « tenue / brisée » écrit par moi — seulement la promesse et l'action, chacune sourcée, côte à côte, pour que vous jugiez. Devrait couvrir tous les partis représentés (LPC, CPC, BQ, NPD, GPC), pas seulement le gouvernement.", en: "To consider, with caution: never a \"kept / broken\" verdict written by me — only the promise and the action, each sourced, side by side, for you to judge. Should cover every represented party (LPC, CPC, BQ, NDP, GPC), not just the government." } },
   { status: 'dropped', h: { fr: "Système de notation des ministres", en: "Minister rating system" }, p: { fr: "Écarté délibérément : ça ferait passer le site de « je rapporte des faits vérifiables » à « je juge de vraies personnes », sans méthodologie solide. Gardé ici pour mémoire.", en: "Deliberately dropped: it would shift the site from \"I report verifiable facts\" to \"I judge real people,\" without a solid methodology. Kept here for the record." } },
@@ -3291,8 +3291,39 @@ function renderLexique(){
   const termsTitle = isEn ? 'Parliamentary jargon' : 'Le jargon parlementaire';
   el.innerHTML = `<div class="role-group-title" id="sec-lexique-people">${peopleTitle}</div>`
     + lexiconPeople.map(item).join('')
+    + lobbyRegistryBlock(isEn)
     + `<div class="role-group-title" id="sec-lexique-terms" style="margin-top:26px;">${termsTitle}</div>`
     + lexiconTerms.map(item).join('');
+}
+
+// Registre des lobbyistes — bloc de RÉFÉRENCE (pas de donnée ingérée). Les fichiers
+// ouverts du Commissariat au lobbying ne sont distribués que via un hôte qui refuse
+// tout accès automatisé (curl, node, et même un vrai navigateur headless obtiennent
+// une réponse vide), et il n'existe pas d'API interrogeable — impossible de garantir
+// un flux fiable et à jour comme le reste du site. On oriente donc honnêtement vers
+// les outils publics officiels (qui, eux, s'ouvrent dans le navigateur du visiteur).
+function lobbyRegistryBlock(isEn){
+  const title = isEn ? 'The lobbyist registry' : 'Le registre des lobbyistes';
+  const body = isEn
+    ? `Anyone paid to communicate with federal <b>public office holders</b> about laws, policies, grants or contracts must register in a <b>public registry</b>, overseen by the independent <b>Commissioner of Lobbying</b>. Registered lobbyists must also file <b>monthly reports</b> of their arranged communications with designated office holders (ministers, senior officials, MPs, senators).`
+    : `Toute personne payée pour communiquer avec des <b>titulaires de charge publique</b> fédéraux au sujet de lois, politiques, subventions ou contrats doit s'inscrire à un <b>registre public</b>, supervisé par le <b>Commissaire au lobbying</b> (indépendant). Les lobbyistes inscrits doivent aussi déposer des <b>rapports mensuels</b> de leurs communications organisées avec les titulaires désignés (ministres, hauts fonctionnaires, député·e·s, sénateur·rice·s).`;
+  const note = isEn
+    ? `We don't reproduce this registry on DossierCanada: its open data is only distributed in bulk files that block automated access, with no queryable API — so rather than risk stale data, we link straight to the official public tools.`
+    : `On ne reproduit pas ce registre sur DossierCanada : ses données ouvertes ne sont distribuées qu'en fichiers de masse bloquant l'accès automatisé, sans API interrogeable — plutôt que de risquer une donnée périmée, on renvoie directement aux outils publics officiels.`;
+  const odUrl = isEn ? 'https://lobbycanada.gc.ca/en/open-data/' : 'https://lobbycanada.gc.ca/fr/donnees-ouvertes/';
+  const links = [
+    [isEn ? 'Search the registry ↗' : 'Rechercher dans le registre ↗', 'https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/guest'],
+    [isEn ? 'Recent communications ↗' : 'Communications récentes ↗', 'https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/rcntCmLgs'],
+    [isEn ? 'Open data ↗' : 'Données ouvertes ↗', odUrl],
+  ];
+  const linksHtml = links.map(([t, u]) => `<a href="${u}" target="_blank" rel="noopener" style="color:var(--gold); white-space:nowrap;">${t}</a>`).join('<span style="color:var(--line); margin:0 8px;">·</span>');
+  return `
+    <div style="background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:14px 16px; margin:14px 0 4px;">
+      <div style="font-family:'Fraunces',serif; font-size:15px; font-weight:600; margin-bottom:6px;">🏢 ${title}</div>
+      <p style="font-size:13px; line-height:1.65; color:var(--ink); margin:0 0 8px; max-width:680px;">${body}</p>
+      <p style="font-size:12px; line-height:1.6; color:var(--slate); margin:0 0 10px; max-width:680px;">${note}</p>
+      <div style="font-size:12.5px;">${linksHtml}</div>
+    </div>`;
 }
 
 function updateChamberLabels(){
