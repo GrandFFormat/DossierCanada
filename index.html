@@ -485,6 +485,8 @@
   .vote-row-who{ font-size:11px; color:var(--slate); opacity:.7; }
   .vote-row-sub{ font-size:12px; color:var(--slate); margin-top:3px; }
   .vote-row-sub a{ color:var(--gold); }
+  @keyframes jumpFlash { 0%, 60% { background:#D8062118; box-shadow:0 0 0 3px #D8062155; } 100% { background:transparent; box-shadow:none; } }
+  .jump-highlight{ animation: jumpFlash 1.8s ease-out; border-radius:6px; }
   .roadmap-plus{
     font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:600; color:#fff;
     background:var(--ink); border:none; border-radius:50%; width:18px; height:18px;
@@ -1035,9 +1037,9 @@
     </div>
     <div class="quick-nav">
       <span class="quick-nav-label" data-i18n="quicknav.label">Aller à :</span>
-      <a data-jump="sec-lexique-people" data-i18n="nav.personnes">Qui gravite autour</a>
-      <a data-jump="lexiqueList" data-i18n="nav.lexique">Lexique</a>
-      <a onclick="goToTab('compte'); setTimeout(()=>{ const e=document.getElementById('sec-apropos'); if(e) e.scrollIntoView({behavior:'smooth'}); }, 400)" data-i18n="nav.apropos">D'où viennent ces données</a>
+      <a onclick="document.getElementById('sec-lexique-people').scrollIntoView({behavior:'auto', block:'start'})" data-i18n="nav.personnes">Qui gravite autour</a>
+      <a onclick="document.getElementById('lexiqueList').scrollIntoView({behavior:'auto', block:'start'})" data-i18n="nav.lexique">Lexique</a>
+      <a onclick="jumpToApropos()" data-i18n="nav.apropos">D'où viennent ces données</a>
     </div>
     <dl id="lexiqueList"></dl>
   </section>
@@ -3259,6 +3261,26 @@ const lexiconPeople = [
     fr: "Les figures de cérémonie qu'on voit aux grands moments télévisés : l'<b>huissier du bâton noir</b> (Sénat) frappe à la porte des Communes pour convoquer les député·e·s à la sanction royale ; le <b>sergent d'armes</b> porte la masse, symbole de l'autorité de la Chambre.",
     en: "The ceremonial figures seen at big televised moments: the <b>Usher of the Black Rod</b> (Senate) knocks on the Commons' door to summon MPs to royal assent; the <b>Sergeant-at-Arms</b> carries the mace, symbol of the House's authority." } },
 ];
+// Saut « D'où viennent ces données » depuis le lexique : bascule vers l'onglet
+// Compte, déplie la section si elle est réduite (😴), puis défile jusqu'à elle
+// (saut instantané après l'animation de changement d'onglet).
+function jumpToApropos(){
+  goToTab('compte');
+  const body = document.getElementById('body-apropos');
+  if(body && body.classList.contains('collapsed')) toggleSnooze('apropos', true);
+  setTimeout(() => {
+    const e = document.getElementById('sec-apropos');
+    if(!e) return;
+    e.scrollIntoView({ behavior: 'auto', block: 'start' });
+    // La section est la dernière de l'onglet : elle ne peut pas toujours atteindre
+    // le haut de l'écran. Un flash de surbrillance guide l'œil vers elle.
+    e.classList.remove('jump-highlight');
+    void e.offsetWidth; // relance l'animation si déjà jouée
+    e.classList.add('jump-highlight');
+    setTimeout(() => e.classList.remove('jump-highlight'), 2000);
+  }, 850);
+}
+
 function renderLexique(){
   const el = document.getElementById('lexiqueList');
   if(!el) return;
