@@ -2730,6 +2730,33 @@ function billCard(b, ctx){
     <div id="${divWrapId}-detailed" style="display:none">${detailedRows}</div>
   </div>` : '';
 
+  // Votes du Sénat sur ce projet (même présentation ; le Sénat n'expose pas d'ID
+  // joignable, le détail nominatif est groupé par groupe parlementaire).
+  const senVotes = (typeof senateVotesByBillId !== 'undefined') ? (senateVotesByBillId.get(b.id) || []) : [];
+  const senWrapId = `senvotes-${ctx}-${b.id}`;
+  const absL = isEn ? 'abstentions' : 'abstentions';
+  const senCompact = senVotes.map(sv => `<div style="font-size:12px; padding:3px 0; border-top:1px solid var(--line);"><span style="font-family:'IBM Plex Mono',monospace; color:var(--slate);">${sv.date}</span> · <b style="color:${sv.passed ? 'var(--green)' : 'var(--red)'}">${L(sv.result)}</b> · <b style="color:var(--green)">${sv.totals.yea}</b> ${yeaL} / <b style="color:var(--red)">${sv.totals.nay}</b> ${nayL}${sv.totals.abstention ? ` · ${sv.totals.abstention} ${absL}` : ''}</div>`).join('');
+  const senDetailed = senVotes.map(sv => {
+    const sDomId = `senbillvote-${ctx}-${b.id}-${sv.id}`;
+    const bl = grp => sv.ballots.filter(x => x.vote === grp);
+    return `<div class="vote-inline-block">
+        <div class="vote-inline-date">${sv.date} — <b style="color:${sv.passed ? 'var(--green)' : 'var(--red)'}">${L(sv.result)}</b></div>
+        <div class="tally">
+          <div class="tally-row"><span class="tally-plus" onclick="event.stopPropagation(); toggleSenateNominal('${sDomId}',${sv.id},'yea')" id="plus-${sDomId}-yea">+</span><span class="tally-label" style="color:var(--green)"><b>${sv.totals.yea}</b> ${yeaL}</span><span class="tally-breakdown">${senateGroupBreakdown(bl('yea'))}</span></div>
+          <div class="tally-row"><span class="tally-plus" onclick="event.stopPropagation(); toggleSenateNominal('${sDomId}',${sv.id},'nay')" id="plus-${sDomId}-nay">+</span><span class="tally-label" style="color:var(--red)"><b>${sv.totals.nay}</b> ${nayL}</span><span class="tally-breakdown">${senateGroupBreakdown(bl('nay'))}</span></div>
+          <div class="tally-row"><span class="tally-plus" onclick="event.stopPropagation(); toggleSenateNominal('${sDomId}',${sv.id},'abstention')" id="plus-${sDomId}-abstention">+</span><span class="tally-label" style="color:var(--slate)"><b>${sv.totals.abstention}</b> ${absL}</span><span class="tally-breakdown">${senateGroupBreakdown(bl('abstention'))}</span></div>
+        </div>
+        <div class="nominal-detail" id="${sDomId}-yea"></div>
+        <div class="nominal-detail" id="${sDomId}-nay"></div>
+        <div class="nominal-detail" id="${sDomId}-abstention"></div>
+      </div>`;
+  }).join('');
+  const senateDivisionsHtml = senVotes.length ? `<div style="margin-top:10px;">
+    <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--slate); margin-bottom:4px;">${isEn ? 'Senate votes on this bill' : 'Votes du Sénat sur ce projet'} <span class="tally-plus" id="plus-${senWrapId}" onclick="event.stopPropagation(); toggleBillVotes('${senWrapId}')">+</span> <span style="opacity:.7">${isEn ? 'who voted what' : 'qui a voté quoi'}</span></div>
+    <div id="${senWrapId}-compact">${senCompact}</div>
+    <div id="${senWrapId}-detailed" style="display:none">${senDetailed}</div>
+  </div>` : '';
+
   const reinstatedNote = b.reinstated ? ` · ${isEn ? 'reinstated from a previous session' : 'réinscrit d\'une session précédente'}` : '';
 
   return `
@@ -2748,6 +2775,7 @@ function billCard(b, ctx){
       ${followRow}
       <div style="display:flex; flex-wrap:wrap; gap:4px; margin:10px 0 2px;">${timeline}</div>
       ${divisionsHtml}
+      ${senateDivisionsHtml}
       <div class="expand-hint" id="hint-${domId}">${isEn ? 'View summary & details' : 'Voir le sommaire et les détails'}</div>
       <div class="bill-summary" id="${domId}">
         ${billSummaryHtml(b, isEn)}
@@ -2902,6 +2930,18 @@ const voteById = new Map(votes.map(v=>[v.number, v]));
 /* ---------------- SÉNAT (deuxième chambre) ---------------- */
 const senatorBySlug = new Map((typeof senators !== 'undefined' ? senators : []).map(s => [s.slug, s]));
 const senateVoteById = new Map((typeof senateVotes !== 'undefined' ? senateVotes : []).map(v => [v.id, v]));
+// Votes du Sénat regroupés par projet de loi (pour les afficher dans la carte du
+// projet, comme les votes des Communes). Triés du plus récent au plus ancien.
+const senateVotesByBillId = (() => {
+  const m = new Map();
+  for(const v of (typeof senateVotes !== 'undefined' ? senateVotes : [])){
+    if(v.billId == null) continue;
+    if(!m.has(v.billId)) m.set(v.billId, []);
+    m.get(v.billId).push(v);
+  }
+  for(const arr of m.values()) arr.sort((a, b) => (b.date || '').localeCompare(a.date || '') || b.id - a.id);
+  return m;
+})();
 // Couleurs des groupes parlementaires du Sénat (le C = caucus conservateur, même
 // bleu que les Communes ; les autres groupes sont non partisans).
 const groupColors = { ISG:'#6D5BA6', CSG:'#0E7C7B', PSG:'#B0568C', C:'#1A4782', GRO:'#5B6B7A', 'Non-affiliated':'#8a8f99' };
@@ -3130,33 +3170,20 @@ function senateGroupBreakdown(ballots){
     .join(' · ');
 }
 
-function renderSenateVotes(keyword){
-  const isEn = currentLang === 'en';
-  const L = o => (o && typeof o === 'object') ? (isEn ? (o.en ?? o.fr ?? '') : (o.fr ?? o.en ?? '')) : (o ?? '');
-  keyword = keyword !== undefined ? keyword : (document.getElementById('searchVotes')?.value || '');
-  const kw = norm(keyword);
-  const list = senateVotes.filter(v => {
-    if(!showMotions && !v.billNumber) return false;
-    if(!kw) return true;
-    const bill = v.billId ? bills.find(b => b.id === v.billId) : null;
-    return norm([L(v.title), v.billNumber, bill ? L(bill.title) : ''].join(' ')).includes(kw);
-  }).sort((a, b) => (b.date || '').localeCompare(a.date || '') || b.id - a.id);
-
+// Liste compacte de votes du Sénat (utilisée pour les votes sur MOTIONS du Sénat).
+function senateVotePanel(list, isEn, L){
   const yeaL = isEn ? 'Yea' : 'Pour', nayL = isEn ? 'Nay' : 'Contre', absL = isEn ? 'abstentions' : 'abstentions';
   const srcNote = isEn ? 'source' : 'source';
   const whoLabel = isEn ? 'who voted what' : 'qui a voté quoi';
-
-  const el = document.getElementById('votesList');
   const rows = list.map(v => {
     const domId = 'snominal-' + v.id;
-    const subject = `${v.billNumber ? `<b>${v.billNumber}</b> — ` : ''}${L(v.title)}`;
     return `
       <div class="vote-row">
         <div class="vote-row-head">
           <span class="vote-row-line"><span class="vote-row-date">${v.date}</span> · <b style="color:${v.passed?'var(--green)':'var(--red)'}">${L(v.result)}</b> · <b style="color:var(--green)">${v.totals.yea}</b> ${yeaL} / <b style="color:var(--red)">${v.totals.nay}</b> ${nayL}${v.totals.abstention?` · <b style="color:var(--slate)">${v.totals.abstention}</b> ${absL}`:''}</span>
           <span class="vote-row-toggle"><span class="tally-plus" id="plus-svrow-${v.id}" onclick="toggleVoteDetail('svrow-${v.id}')">+</span> <span class="vote-row-who">${whoLabel}</span></span>
         </div>
-        <div class="vote-row-sub">${subject} · <a href="${L(v.url)}" target="_blank" rel="noopener">${srcNote}</a></div>
+        <div class="vote-row-sub">${L(v.title)} · <a href="${L(v.url)}" target="_blank" rel="noopener">${srcNote}</a></div>
         <div id="svrow-${v.id}-detail" style="display:none">
           <div class="tally-row"><span class="tally-plus" onclick="toggleSenateNominal('${domId}',${v.id},'yea')" id="plus-${domId}-yea">+</span><span class="tally-label" style="color:var(--green)"><b>${v.totals.yea}</b> ${yeaL}</span><span class="tally-breakdown">${senateGroupBreakdown(v.ballots.filter(b => b.vote === 'yea'))}</span></div>
           <div class="tally-row"><span class="tally-plus" onclick="toggleSenateNominal('${domId}',${v.id},'nay')" id="plus-${domId}-nay">+</span><span class="tally-label" style="color:var(--red)"><b>${v.totals.nay}</b> ${nayL}</span><span class="tally-breakdown">${senateGroupBreakdown(v.ballots.filter(b => b.vote === 'nay'))}</span></div>
@@ -3167,7 +3194,33 @@ function renderSenateVotes(keyword){
         </div>
       </div>`;
   }).join('');
-  el.innerHTML = list.length ? `<div class="vote-list-panel">${rows}</div>` : `<div class="no-results">${isEn ? 'No vote matches this search.' : 'Aucun vote ne correspond à cette recherche.'}</div>`;
+  return `<div class="vote-list-panel">${rows}</div>`;
+}
+
+function renderSenateVotes(keyword){
+  const isEn = currentLang === 'en';
+  const L = o => (o && typeof o === 'object') ? (isEn ? (o.en ?? o.fr ?? '') : (o.fr ?? o.en ?? '')) : (o ?? '');
+  keyword = keyword !== undefined ? keyword : (document.getElementById('searchVotes')?.value || '');
+  const kw = norm(keyword);
+  // Un carré par projet de loi ayant au moins un vote au Sénat, trié du plus récent.
+  const latestDate = b => (senateVotesByBillId.get(b.id) || []).reduce((mx, v) => (v.date > mx ? v.date : mx), '');
+  const list = bills
+    .filter(b => senateVotesByBillId.has(b.id))
+    .filter(b => !kw || norm([L(b.title), b.num].concat((senateVotesByBillId.get(b.id) || []).map(v => L(v.title))).join(' ')).includes(kw))
+    .sort((a, b) => latestDate(b).localeCompare(latestDate(a)));
+  const cards = list.map(b => billCard(b, 'svotes')).join('');
+
+  let motionsHtml = '';
+  if(showMotions){
+    const motions = senateVotes.filter(v => !v.billNumber && (!kw || norm(L(v.title)).includes(kw)))
+      .sort((a, b) => (b.date || '').localeCompare(a.date || '') || b.id - a.id);
+    if(motions.length) motionsHtml = `<div class="role-group-title" style="margin-top:22px;">${isEn ? 'Senate votes on motions (not tied to a bill)' : 'Votes du Sénat sur des motions (hors projet de loi)'}</div>` + senateVotePanel(motions, isEn, L);
+  }
+
+  const el = document.getElementById('votesList');
+  el.innerHTML = (list.length || motionsHtml)
+    ? cards + motionsHtml
+    : `<div class="no-results">${isEn ? 'No bill matches this search.' : 'Aucun projet ne correspond à cette recherche.'}</div>`;
 }
 
 function toggleSenateNominal(domId, voteId, group){
@@ -3262,38 +3315,24 @@ function partyBreakdownHtml(pids){
   return Object.keys(partyColors).filter(p => counts[p]).map(p => `<span style="color:${partyColors[p]}">${counts[p]} ${p}</span>`).join('');
 }
 
-function renderVotes(keyword){
-  if(voteChamber === 'senate') return renderSenateVotes(keyword);
-  const isEn = currentLang === 'en';
-  const L = o => (o && typeof o === 'object') ? (isEn ? (o.en ?? o.fr ?? '') : (o.fr ?? o.en ?? '')) : (o ?? '');
-  keyword = keyword !== undefined ? keyword : (document.getElementById('searchVotes')?.value || '');
-  const kw = norm(keyword);
-  const list = votes.filter(v=>{
-    if(!showMotions && !v.billNumber) return false;
-    if(!kw) return true;
-    const bill = v.billId ? bills.find(b=>b.id===v.billId) : null;
-    const haystack = norm([L(v.description), v.billNumber, bill?L(bill.title):''].join(' '));
-    return haystack.includes(kw);
-  }).sort((a,b)=> (b.date||'').localeCompare(a.date||'') || b.number - a.number);
-
+// Liste compacte de votes des Communes (utilisée pour les votes sur MOTIONS, qui
+// ne sont rattachés à aucun projet de loi et n'ont donc pas de carte).
+function commonsVotePanel(list, isEn, L){
   const yeaL = isEn ? 'Yea' : 'Pour', nayL = isEn ? 'Nay' : 'Contre', pairL = isEn ? 'paired' : 'pairés';
   const srcNote = isEn ? 'source' : 'source';
   const whoLabel = isEn ? 'who voted what' : 'qui a voté quoi';
-
-  const el = document.getElementById('votesList');
   const rows = list.map(v=>{
     const domId = 'nominal-' + v.number;
     const yeaPids = Object.keys(v.ballots).filter(p=>v.ballots[p]==='yea');
     const nayPids = Object.keys(v.ballots).filter(p=>v.ballots[p]==='nay');
     const pairPids = Object.keys(v.ballots).filter(p=>v.ballots[p]==='paired');
-    const subject = `${v.billNumber ? `<b>${v.billNumber}</b> — ` : ''}${L(v.description)}`;
     return `
       <div class="vote-row">
         <div class="vote-row-head">
           <span class="vote-row-line"><span class="vote-row-date">${v.date}</span> · <b style="color:${v.passed?'var(--green)':'var(--red)'}">${L(v.result)}</b> · <b style="color:var(--green)">${v.totals.yea}</b> ${yeaL} / <b style="color:var(--red)">${v.totals.nay}</b> ${nayL}${v.totals.paired?` · <b style="color:var(--slate)">${v.totals.paired}</b> ${pairL}`:''}</span>
           <span class="vote-row-toggle"><span class="tally-plus" id="plus-vrow-${v.number}" onclick="toggleVoteDetail('vrow-${v.number}')">+</span> <span class="vote-row-who">${whoLabel}</span></span>
         </div>
-        <div class="vote-row-sub">${subject} · <a href="${L(v.url)}" target="_blank" rel="noopener">${srcNote}</a></div>
+        <div class="vote-row-sub">${L(v.description)} · <a href="${L(v.url)}" target="_blank" rel="noopener">${srcNote}</a></div>
         <div id="vrow-${v.number}-detail" style="display:none">
           <div class="tally-row"><span class="tally-plus" onclick="toggleNominalGroup('${domId}',${v.number},'yea')" id="plus-${domId}-yea">+</span><span class="tally-label" style="color:var(--green)"><b>${v.totals.yea}</b> ${yeaL}</span><span class="tally-breakdown">${partyBreakdownHtml(yeaPids)}</span></div>
           <div class="tally-row"><span class="tally-plus" onclick="toggleNominalGroup('${domId}',${v.number},'nay')" id="plus-${domId}-nay">+</span><span class="tally-label" style="color:var(--red)"><b>${v.totals.nay}</b> ${nayL}</span><span class="tally-breakdown">${partyBreakdownHtml(nayPids)}</span></div>
@@ -3304,7 +3343,37 @@ function renderVotes(keyword){
         </div>
       </div>`;
   }).join('');
-  el.innerHTML = list.length ? `<div class="vote-list-panel">${rows}</div>` : `<div class="no-results">${isEn ? 'No vote matches this search.' : 'Aucun vote ne correspond à cette recherche.'}</div>`;
+  return `<div class="vote-list-panel">${rows}</div>`;
+}
+
+function renderVotes(keyword){
+  if(voteChamber === 'senate') return renderSenateVotes(keyword);
+  const isEn = currentLang === 'en';
+  const L = o => (o && typeof o === 'object') ? (isEn ? (o.en ?? o.fr ?? '') : (o.fr ?? o.en ?? '')) : (o ?? '');
+  keyword = keyword !== undefined ? keyword : (document.getElementById('searchVotes')?.value || '');
+  const kw = norm(keyword);
+  // Un carré par projet de loi ayant au moins un vote aux Communes, comme dans
+  // l'onglet Projets — trié du vote le plus récent au plus ancien.
+  const latestDate = b => (b.divisions || []).reduce((mx, d) => (d.date > mx ? d.date : mx), '');
+  const list = bills
+    .filter(b => (b.divisions || []).length)
+    .filter(b => !kw || norm([L(b.title), b.num].concat((b.divisions || []).map(d => L(d.description))).join(' ')).includes(kw))
+    .sort((a, b) => latestDate(b).localeCompare(latestDate(a)));
+  const cards = list.map(b => billCard(b, 'votes')).join('');
+
+  // Votes sur des motions (hors projet de loi) : affichés en liste sous les cartes
+  // seulement si le bouton « motions » est activé — ils n'ont pas de projet support.
+  let motionsHtml = '';
+  if(showMotions){
+    const motions = votes.filter(v => !v.billNumber && (!kw || norm(L(v.description)).includes(kw)))
+      .sort((a, b) => (b.date || '').localeCompare(a.date || '') || b.number - a.number);
+    if(motions.length) motionsHtml = `<div class="role-group-title" style="margin-top:22px;">${isEn ? 'Votes on motions (not tied to a bill)' : 'Votes sur des motions (hors projet de loi)'}</div>` + commonsVotePanel(motions, isEn, L);
+  }
+
+  const el = document.getElementById('votesList');
+  el.innerHTML = (list.length || motionsHtml)
+    ? cards + motionsHtml
+    : `<div class="no-results">${isEn ? 'No bill matches this search.' : 'Aucun projet ne correspond à cette recherche.'}</div>`;
   document.getElementById('statVotes').textContent = votes.length;
 }
 
