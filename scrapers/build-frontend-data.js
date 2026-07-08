@@ -223,9 +223,14 @@ function main() {
   }));
   const sponsorResolved = frontendBills.filter((b) => b.sponsorParty).length;
 
+  // Courriels officiels (scrapers/depute-emails.js) — joints par PersonId.
+  const EMAILS_PATH = 'data/depute-emails.json';
+  const emailById = existsSync(EMAILS_PATH) ? read(EMAILS_PATH).emails : {};
+
   // Députés prêts pour le rendu (roster fédéral + bilan de votes précalculé).
   const frontendDeputes = deputesOut.map((d) => ({
     id: d.id,
+    email: emailById[d.id] ?? null,
     name: d.name,
     honorific: d.honorific,
     party: d.party,
