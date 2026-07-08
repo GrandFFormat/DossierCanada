@@ -168,9 +168,54 @@ async function fetchBills() {
   return { url, rows };
 }
 
+// Petit pool pour limiter la concurrence des requêtes de détail (politesse).
+async function mapPool(items, limit, fn) {
+  const results = new Array(items.length);
+  let i = 0;
+  async function worker() {
+    while (i < items.length) {
+      const idx = i++;
+      results[idx] = await fn(items[idx], idx);
+    }
+  }
+  await Promise.all(Array.from({ length: Math.min(limit, items.length) }, worker));
+  return results;
+}
+
+// Le feed de liste ne remplit PAS SponsorId/PoliticalAffiliationId (toujours 0) —
+// mais le JSON de détail de chaque projet fournit SponsorPersonId (le PersonId
+// ourcommons pour un projet des Communes) et le nom officiel du parrain. On va le
+// chercher pour permettre, au build, de résoudre le PARTI du parrain par une vraie
+// clé (PersonId → roster des députés) plutôt que par le nom affiché. Pour un projet
+// du Sénat, le PersonId appartient à un autre espace d'identifiants : c'est le nom
+// officiel (Nom + Prénom) qui servira au rapprochement avec le roster du Sénat.
+async function fetchSponsorDetails(bills) {
+  let failures = 0;
+  await mapPool(bills, 8, async (b) => {
+    const url = `https://www.parl.ca/legisinfo/en/bill/${b.session}/${b.num.toLowerCase()}/json`;
+    try {
+      const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT, Accept: 'application/json' } });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      let d = await res.json();
+      if (Array.isArray(d)) d = d[0];
+      if (!d) throw new Error('détail vide');
+      b.sponsorPersonId = d.SponsorPersonId || null;
+      const first = clean(d.SponsorPersonOfficialFirstName);
+      const last = clean(d.SponsorPersonOfficialLastName);
+      b.sponsorName = first || last ? { first: first ?? '', last: last ?? '' } : null;
+    } catch (err) {
+      failures++;
+      b.sponsorPersonId = null;
+      b.sponsorName = null;
+    }
+  });
+  return failures;
+}
+
 async function main() {
   const { url, rows } = await fetchBills();
   const bills = rows.map(buildBill);
+  const sponsorFailures = await fetchSponsorDetails(bills);
 
   // Tri par dernière activité décroissante (les projets sans date en fin de liste).
   bills.sort((a, b) => {
@@ -191,6 +236,8 @@ async function main() {
   console.log(`${bills.length} projets de loi (session ${SESSION}) écrits dans ${OUT_PATH}`);
   console.log('  par chambre :', byChamber);
   console.log('  par statut  :', byState);
+  const withSponsorId = bills.filter((b) => b.sponsorPersonId).length;
+  console.log(`  parrains : ${withSponsorId} avec SponsorPersonId${sponsorFailures ? ` · ⚠ ${sponsorFailures} détail(s) en échec` : ''}`);
 }
 
 main().catch((err) => {
