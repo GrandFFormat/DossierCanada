@@ -1023,6 +1023,7 @@
     <div class="quick-nav">
       <span class="quick-nav-label" data-i18n="quicknav.label">Aller à :</span>
       <a onclick="document.getElementById('sec-lexique-people').scrollIntoView({behavior:'auto', block:'start'})" data-i18n="nav.personnes">Qui gravite autour</a>
+      <a onclick="document.getElementById('sec-lobby').scrollIntoView({behavior:'auto', block:'start'})" data-i18n="nav.lobby">Registre des lobbyistes</a>
       <a onclick="document.getElementById('sec-lexique-terms').scrollIntoView({behavior:'auto', block:'start'})" data-i18n="nav.lexique">Lexique</a>
       <a onclick="jumpToApropos()" data-i18n="nav.apropos">D'où viennent ces données</a>
     </div>
@@ -1079,7 +1080,7 @@ const translations = {
   fr: {
     'nav.close':"Fermer",'nav.apercu':"Aperçu",'nav.ministres':"Députés",'nav.projets':"Projets de loi",
     'nav.votes':"Votes",'nav.quoideneuf':"Quoi de neuf",'nav.compte':"Compte & à propos",'nav.trouve':"Trouvez votre député",
-    'nav.lexique':"Lexique",'nav.personnes':"Qui gravite autour",'nav.petitions':"Pétitions",'nav.apropos':"D'où viennent ces données",
+    'nav.lexique':"Lexique",'nav.personnes':"Qui gravite autour",'nav.lobby':"Registre des lobbyistes",'nav.petitions':"Pétitions",'nav.apropos':"D'où viennent ces données",
     'stat.ministres':"Députés",'stat.projets':"Projets de loi",'stat.votes':"Votes enregistrés",
     'h.composition':"Composition de la Chambre des communes",
     'h.billsrecent':"Projets de loi récemment actifs",
@@ -1112,7 +1113,7 @@ const translations = {
   en: {
     'nav.close':"Close",'nav.apercu':"Overview",'nav.ministres':"MPs",'nav.projets':"Bills",
     'nav.votes':"Votes",'nav.quoideneuf':"What's new",'nav.compte':"Account & about",'nav.trouve':"Find your MNA",
-    'nav.lexique':"Glossary",'nav.personnes':"Who's involved",'nav.petitions':"Petitions",'nav.apropos':"Where this data comes from",
+    'nav.lexique':"Glossary",'nav.personnes':"Who's involved",'nav.lobby':"Lobbyist registry",'nav.petitions':"Petitions",'nav.apropos':"Where this data comes from",
     'stat.ministres':"MPs",'stat.projets':"Bills",'stat.votes':"Votes recorded",
     'h.composition':"Composition of the House of Commons",
     'h.billsrecent':"Recently active bills",
@@ -3318,7 +3319,7 @@ function lobbyRegistryBlock(isEn){
   ];
   const linksHtml = links.map(([t, u]) => `<a href="${u}" target="_blank" rel="noopener" style="color:var(--gold); white-space:nowrap;">${t}</a>`).join('<span style="color:var(--line); margin:0 8px;">·</span>');
   return `
-    <div style="background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:14px 16px; margin:14px 0 4px;">
+    <div id="sec-lobby" style="background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:14px 16px; margin:14px 0 4px; scroll-margin-top:12px;">
       <div style="font-family:'Fraunces',serif; font-size:15px; font-weight:600; margin-bottom:6px;">🏢 ${title}</div>
       <p style="font-size:13px; line-height:1.65; color:var(--ink); margin:0 0 8px; max-width:680px;">${body}</p>
       <p style="font-size:12px; line-height:1.6; color:var(--slate); margin:0 0 10px; max-width:680px;">${note}</p>
