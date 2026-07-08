@@ -35,6 +35,9 @@ const PET_END_MARKER = '/* PETITIONS_DATA_END */';
 const PETITIONS_PATH = 'data/petitions.json';
 const SENATORS_PATH = 'data/senators.json';
 const SENATE_VOTES_PATH = 'data/senate-votes.json';
+const CALENDAR_PATH = 'data/house-calendar.json';
+const SIT_START_MARKER = '/* SITTINGS_DATA_START';
+const SIT_END_MARKER = '/* SITTINGS_DATA_END */';
 const SEN_START_MARKER = '/* SENATORS_DATA_START';
 const SEN_END_MARKER = '/* SENATORS_DATA_END */';
 const SENVOTES_START_MARKER = '/* SENATE_VOTES_DATA_START';
@@ -269,6 +272,12 @@ function main() {
   if (existsSync(PETITIONS_PATH)) {
     const petitions = read(PETITIONS_PATH).petitions;
     html = injectBlock(html, PET_START_MARKER, PET_END_MARKER, 'petitions', petitions, stamp);
+  }
+
+  // Calendrier des séances de la Chambre (scrapers/house-calendar.js) — injecté s'il existe.
+  if (existsSync(CALENDAR_PATH)) {
+    const sittingDays = read(CALENDAR_PATH).sittingDays;
+    html = injectBlock(html, SIT_START_MARKER, SIT_END_MARKER, 'sittingDays', sittingDays, stamp);
   }
 
   // Sénat : roster + votes nominatifs (fichiers séparés) — injectés s'ils existent.

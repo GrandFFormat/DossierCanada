@@ -20,8 +20,9 @@
     "scrape:petitions": "node scrapers/petitions.js",
     "scrape:senators": "node scrapers/senators.js",
     "scrape:senate-votes": "node scrapers/senate-votes.js",
+    "scrape:house-calendar": "node scrapers/house-calendar.js",
     "build:ministers": "node scrapers/build-ministers-data.js",
-    "refresh": "npm run scrape:bills && npm run scrape:bill-summaries && npm run scrape:deputes && npm run scrape:depute-emails && npm run scrape:votes && npm run scrape:ministers && npm run scrape:petitions && npm run scrape:senators && npm run scrape:senate-votes && npm run build:frontend"
+    "refresh": "npm run scrape:bills && npm run scrape:bill-summaries && npm run scrape:deputes && npm run scrape:depute-emails && npm run scrape:votes && npm run scrape:ministers && npm run scrape:petitions && npm run scrape:senators && npm run scrape:senate-votes && npm run scrape:house-calendar && npm run build:frontend"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.68.0",
