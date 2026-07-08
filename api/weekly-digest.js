@@ -1,24 +1,32 @@
-// Fonction planifiée (Vercel Cron) — digest hebdomadaire par courriel.
+// Fonction planifiée (Vercel Cron) — digest hebdomadaire par courriel (fédéral).
 //
-// Une fois par semaine : relit les projets de loi depuis Données Québec, détecte
-// ceux qui ont changé d'étape depuis la dernière exécution, puis envoie UN seul
-// courriel résumé à chaque personne concernée — soit parce qu'elle suit ce projet
-// de loi (bouton « Suivre »), soit parce qu'elle a demandé des explications
+// Une fois par semaine : relit les projets de loi fédéraux depuis data/bills.json
+// (regénéré chaque jour par le rafraîchissement automatique), détecte ceux qui
+// ont eu une nouvelle activité datée depuis la dernière exécution, puis envoie UN
+// seul courriel résumé à chaque personne concernée — soit parce qu'elle suit ce
+// projet (bouton « Suivre »), soit parce qu'elle a demandé des explications
 // dessus (bill_flags). Un courriel par personne, jamais un par changement.
 //
 // Tous les secrets viennent des variables d'environnement Vercel — RIEN n'est
 // codé en dur ici, et ce fichier ne contient aucune clé.
 //
-// Variables d'environnement attendues (à définir dans Vercel > Settings > Env) :
-//   SUPABASE_URL                 ex. https://wfgcqftgtmptfutrbujz.supabase.co
+// Variables d'environnement attendues (Vercel > Settings > Environment Variables) :
+//   SUPABASE_URL                 ex. https://vbxhwckbnanhuvrotnwo.supabase.co
 //   SUPABASE_SERVICE_ROLE_KEY    clé secrète service_role (contourne RLS)
 //   RESEND_API_KEY               clé API Resend
-//   DIGEST_FROM                  ex. "DossierQuébec <alertes@dossierquebec.com>"
-//   CRON_SECRET                  fourni automatiquement par Vercel pour sécuriser le cron
-//   PUBLIC_SITE_URL              ex. https://dossierquebec.com (pour les liens du courriel)
+//   DIGEST_FROM                  ex. "DossierCanada <digest@dossiercanada.ca>"
+//   CRON_SECRET                  fourni par Vercel pour sécuriser le cron
+//   PUBLIC_SITE_URL              ex. https://dossiercanada.ca (liens du courriel)
 
-import { parse } from 'csv-parse/sync';
 import crypto from 'node:crypto';
+import { readFileSync } from 'node:fs';
+
+// Données fédérales embarquées au déploiement (data/bills.json est regénéré et
+// redéployé chaque jour). Lues une fois au démarrage à froid de la fonction.
+const bills = (() => {
+  const raw = JSON.parse(readFileSync(new URL('../data/bills.json', import.meta.url), 'utf8'));
+  return Array.isArray(raw) ? raw : (raw.bills || []);
+})();
 
 // Jeton signé pour le lien « Se désabonner » — voir api/unsubscribe.js, qui le
 // vérifie avec le même secret. Impossible à forger sans CRON_SECRET.
@@ -27,53 +35,28 @@ function unsubscribeToken(userId) {
   return `${userId}.${sig}`;
 }
 
-const CSV_URL = 'https://www.donneesquebec.ca/recherche/dataset/2bde70f9-15ff-455b-b3ea-c6e229b24074/resource/93c74b8c-51d1-49e6-9ab9-1f8d96dbd735/download/projets-de-loi.csv';
-
-const STEP_BY_CODE = {
-  presentation: 1,
-  depot_commission_consultation: 1,
-  adoption_principe: 2,
-  depot_commission_etude_detaillee: 3,
-  sanction: 5,
-};
-const STEP_LABEL = {
-  1: 'Présentation',
-  2: 'Adoption du principe',
-  3: 'Étude détaillée',
-  4: 'Prise en considération',
-  5: 'Adoption / Sanction',
-};
-
-function cleanTitle(rawTitle) {
-  const match = rawTitle.match(/^\d+-\d+\s+PL\s+\d+\s+(.*)$/);
-  return (match ? match[1] : rawTitle).trim();
+// Repère de progression = date de dernière activité au format AAAAMMJJ (un entier
+// monotone : il ne fait qu'augmenter à mesure que le projet avance). On l'utilise
+// pour détecter « il s'est passé quelque chose de nouveau » sans dépendre du rang
+// des étapes, qui diffère selon la chambre d'origine (Communes vs Sénat).
+function activityKey(lastActivity) {
+  if (!lastActivity) return 0;
+  const n = Number(String(lastActivity).replace(/-/g, ''));
+  return Number.isFinite(n) ? n : 0;
 }
 
-// Étape la plus avancée atteinte par chaque projet de loi (regroupé par Id, la
-// vraie clé unique — voir scrapers/bills.js pour pourquoi `num` ne suffit pas).
-// Source : le CSV Données Québec, entièrement automatique. Il peut avoir un léger
-// retard sur les pages individuelles d'assnat.qc.ca (que bill-details.js scrape
-// pour enrichir le site) — donc le digest rattrape toutes les étapes réelles,
-// parfois quelques jours après. Limite assumée pour rester 100 % automatique.
-function computeCurrentSteps(rows) {
-  const currentLeg = Math.max(...rows.map((r) => Number(r.No_legislature)));
-  const rowsCurrent = rows.filter((r) => Number(r.No_legislature) === currentLeg);
-  const byId = new Map();
-  for (const row of rowsCurrent) {
-    if (!byId.has(row.Id)) byId.set(row.Id, []);
-    byId.get(row.Id).push(row);
-  }
-  const result = new Map(); // billId -> { step, num, title }
-  for (const [id, group] of byId) {
-    let bestStep = 0;
-    for (const row of group) {
-      const s = STEP_BY_CODE[row.Derniere_etape_franchie] ?? 0;
-      if (s > bestStep) bestStep = s;
-    }
-    result.set(Number(id), {
-      step: bestStep,
-      num: Number(group[0].Numero_projet_loi),
-      title: cleanTitle(group[0].Titre_projet_loi),
+// État courant de chaque projet : sa dernière activité datée + le texte bilingue
+// déjà sourcé (latestActivity) pour l'afficher tel quel dans le courriel.
+function computeCurrent() {
+  const result = new Map(); // billId -> { key, num, title, latest }
+  for (const b of bills) {
+    const key = activityKey(b.lastActivity);
+    if (!key) continue;
+    result.set(Number(b.id), {
+      key,
+      num: b.num,
+      title: b.title || { fr: '', en: '' },
+      latest: b.latestActivity || { fr: '', en: '' },
     });
   }
   return result;
@@ -92,8 +75,8 @@ async function supaFetch(path, { method = 'GET', body, headers = {} } = {}) {
     body: body ? JSON.stringify(body) : undefined,
   });
   if (!res.ok) throw new Error(`Supabase ${method} ${path} -> ${res.status} ${await res.text()}`);
-  // Certaines écritures (upsert avec return=minimal) renvoient un corps vide —
-  // res.json() planterait dessus. On lit le texte et on ne parse que s'il y en a.
+  // Certaines écritures (return=minimal) renvoient un corps vide — res.json()
+  // planterait dessus. On lit le texte et on ne parse que s'il y en a.
   const text = await res.text();
   return text ? JSON.parse(text) : null;
 }
@@ -120,19 +103,32 @@ async function sendEmail(to, subject, html) {
   return res.json();
 }
 
+// Courriel bilingue (français puis anglais) — on ne connaît pas la langue de
+// préférence de chaque personne, et le contenu parlementaire est officiellement
+// bilingue. Chaque ligne réutilise le texte latestActivity déjà sourcé.
 function digestHtml(changes, siteUrl, unsubUrl) {
-  const rows = changes.map((c) =>
-    `<li style="margin-bottom:10px;"><b>Projet de loi n° ${c.num}</b> — ${c.title}<br>` +
-    `<span style="color:#5C6270;">Nouvelle étape : ${STEP_LABEL[c.step] || c.step}</span></li>`
-  ).join('');
+  const row = (c, lang) => {
+    const title = (c.title && (c.title[lang] || c.title.fr || c.title.en)) || '';
+    const latest = (c.latest && (c.latest[lang] || c.latest.fr || c.latest.en)) || '';
+    return `<li style="margin-bottom:10px;"><b>${c.num}</b> — ${title}<br>` +
+      `<span style="color:#5C6270;">${latest}</span></li>`;
+  };
+  const frRows = changes.map((c) => row(c, 'fr')).join('');
+  const enRows = changes.map((c) => row(c, 'en')).join('');
   return `
     <div style="font-family:Arial,sans-serif; max-width:560px; color:#16213E; line-height:1.5;">
-      <h2 style="font-size:18px;">DossierQuébec — résumé de la semaine</h2>
-      <p>Voici les projets de loi que vous suivez (ou sur lesquels vous avez demandé des explications) qui ont changé d'étape cette semaine :</p>
-      <ul style="padding-left:18px;">${rows}</ul>
-      <p style="font-size:13px; color:#5C6270;">Vous recevez ce courriel parce que vous suivez ces projets de loi sur DossierQuébec.
-      Gérez vos suivis sur <a href="${siteUrl}" style="color:#A9782E;">${siteUrl}</a>.</p>
-      <p style="font-size:12px; color:#8891A8;"><a href="${unsubUrl}" style="color:#8891A8;">Se désabonner de ces courriels</a></p>
+      <h2 style="font-size:18px; color:#D80621;">DossierCanada — résumé de la semaine</h2>
+      <p>Voici les projets de loi que vous suivez (ou sur lesquels vous avez demandé des explications) qui ont eu du nouveau cette semaine :</p>
+      <ul style="padding-left:18px;">${frRows}</ul>
+      <p style="font-size:13px; color:#5C6270;">Vous recevez ce courriel parce que vous suivez ces projets de loi sur DossierCanada.
+      Gérez vos suivis sur <a href="${siteUrl}" style="color:#D80621;">${siteUrl}</a>.</p>
+      <hr style="border:none; border-top:1px solid #e0e0da; margin:20px 0;">
+      <h2 style="font-size:18px; color:#D80621;">DossierCanada — this week's summary</h2>
+      <p>Here are the bills you follow (or asked for explanations on) that had activity this week:</p>
+      <ul style="padding-left:18px;">${enRows}</ul>
+      <p style="font-size:13px; color:#5C6270;">You're receiving this because you follow these bills on DossierCanada.
+      Manage your follows at <a href="${siteUrl}" style="color:#D80621;">${siteUrl}</a>.</p>
+      <p style="font-size:12px; color:#8891A8;"><a href="${unsubUrl}" style="color:#8891A8;">Se désabonner / Unsubscribe</a></p>
     </div>`;
 }
 
@@ -144,26 +140,24 @@ export default async function handler(req, res) {
   }
 
   try {
-    // 1. État courant des projets de loi.
-    const csv = await (await fetch(CSV_URL)).text();
-    const rows = parse(csv, { columns: true, skip_empty_lines: true });
-    const current = computeCurrentSteps(rows);
+    // 1. État courant des projets de loi (dernière activité datée).
+    const current = computeCurrent();
 
     // 2. État précédent mémorisé.
     const stored = await supaFetch('/rest/v1/bill_state?select=bill_id,step');
-    const prevStep = new Map(stored.map((r) => [Number(r.bill_id), r.step]));
+    const prevKey = new Map(stored.map((r) => [Number(r.bill_id), r.step]));
 
-    // 3. Projets de loi dont l'étape a avancé (jamais d'alerte au premier
-    //    passage sur un projet inconnu : on enregistre son état sans alerter).
-    const changed = new Map(); // billId -> { num, title, step }
+    // 3. Projets dont l'activité a avancé (jamais d'alerte au premier passage sur
+    //    un projet inconnu : on enregistre son état sans alerter).
+    const changed = new Map(); // billId -> { num, title, latest }
     for (const [billId, info] of current) {
-      const before = prevStep.get(billId);
-      if (before !== undefined && info.step > before) changed.set(billId, info);
+      const before = prevKey.get(billId);
+      if (before !== undefined && info.key > before) changed.set(billId, info);
     }
 
     // 4. Toujours mettre à jour la mémoire (même sans changement) pour la
     //    prochaine comparaison.
-    const upsertRows = [...current].map(([billId, info]) => ({ bill_id: billId, step: info.step, updated_at: new Date().toISOString() }));
+    const upsertRows = [...current].map(([billId, info]) => ({ bill_id: billId, step: info.key, updated_at: new Date().toISOString() }));
     if (upsertRows.length) {
       await supaFetch('/rest/v1/bill_state?on_conflict=bill_id', {
         method: 'POST',
@@ -200,7 +194,7 @@ export default async function handler(req, res) {
 
     // 7. Courriels des utilisateurs.
     const emailById = await getAllUserEmails();
-    const siteUrl = process.env.PUBLIC_SITE_URL || 'https://dossierquebec.com';
+    const siteUrl = process.env.PUBLIC_SITE_URL || 'https://dossiercanada.ca';
 
     // 8. Un courriel par personne (sauf désabonnées), avec lien de désabonnement.
     let sent = 0;
@@ -211,7 +205,7 @@ export default async function handler(req, res) {
       const list = [...billIdSet].map((id) => changed.get(id)).filter(Boolean);
       if (list.length === 0) continue;
       const unsubUrl = `${siteUrl}/api/unsubscribe?token=${encodeURIComponent(unsubscribeToken(uid))}`;
-      await sendEmail(email, 'DossierQuébec — résumé de la semaine', digestHtml(list, siteUrl, unsubUrl));
+      await sendEmail(email, 'DossierCanada — résumé de la semaine / weekly summary', digestHtml(list, siteUrl, unsubUrl));
       sent++;
     }
 

@@ -21,11 +21,11 @@ function verifyToken(token) {
 function page(message) {
   return `<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DossierQuébec</title>
+    <title>DossierCanada</title>
     <style>body{font-family:Arial,sans-serif;background:#EDEEE8;color:#16213E;display:flex;
       align-items:center;justify-content:center;min-height:100vh;margin:0;padding:24px;}
       .card{background:#fff;border:1px solid #e0e0da;border-radius:12px;padding:32px;max-width:440px;
-      text-align:center;line-height:1.55;} a{color:#A9782E;} h1{font-size:20px;margin:0 0 12px;}</style>
+      text-align:center;line-height:1.55;} a{color:#D80621;} h1{font-size:20px;margin:0 0 12px;}</style>
     </head><body><div class="card">${message}</div></body></html>`;
 }
 
@@ -50,19 +50,19 @@ export default async function handler(req, res) {
   res.setHeader('Content-Type', 'text/html; charset=utf-8');
   const userId = verifyToken(req.query.token);
   if (!userId) {
-    return res.status(400).send(page('<h1>Lien invalide</h1><p>Ce lien de désabonnement n\'est pas valide ou a expiré.</p>'));
+    return res.status(400).send(page('<h1>Lien invalide / Invalid link</h1><p>Ce lien de désabonnement n\'est pas valide ou a expiré.<br>This unsubscribe link is invalid or has expired.</p>'));
   }
   try {
     await optOut(userId);
     return res.status(200).send(page(
-      '<h1>Désabonnement confirmé</h1>' +
-      '<p>Vous ne recevrez plus le résumé hebdomadaire par courriel.</p>' +
-      '<p style="font-size:13px;color:#5C6270;">Vos suivis et demandes d\'explications restent intacts sur le site — seuls les courriels s\'arrêtent. ' +
-      'Pour reprendre les alertes plus tard, écrivez-nous ou re-suivez un projet de loi une fois cette option rétablie.</p>' +
-      '<p><a href="https://dossierquebec.com">Retour à DossierQuébec</a></p>'
+      '<h1>Désabonnement confirmé / Unsubscribed</h1>' +
+      '<p>Vous ne recevrez plus le résumé hebdomadaire par courriel.<br>You will no longer receive the weekly email summary.</p>' +
+      '<p style="font-size:13px;color:#5C6270;">Vos suivis et demandes d\'explications restent intacts sur le site — seuls les courriels s\'arrêtent.<br>' +
+      'Your follows and explanation requests stay intact on the site — only the emails stop.</p>' +
+      '<p><a href="https://dossiercanada.ca">Retour à DossierCanada / Back to DossierCanada</a></p>'
     ));
   } catch (err) {
     console.error('unsubscribe failed:', err);
-    return res.status(500).send(page('<h1>Erreur</h1><p>Une erreur est survenue. Réessayez dans un moment.</p>'));
+    return res.status(500).send(page('<h1>Erreur / Error</h1><p>Une erreur est survenue. Réessayez dans un moment.<br>Something went wrong. Please try again shortly.</p>'));
   }
 }
