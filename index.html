@@ -2713,36 +2713,30 @@ function billCard(b, ctx){
   const divs = (b.divisions || []);
   const divTitle = isEn ? 'Recorded votes on this bill' : 'Votes enregistrés sur ce projet';
   const yeaL = isEn ? 'Yea' : 'Pour', nayL = isEn ? 'Nay' : 'Contre', pairL = isEn ? 'paired' : 'pairés';
-  const divisionsHtml = divs.length ? `<div style="margin-top:10px;">
-    <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--slate); margin-bottom:4px;">${divTitle} <span style="opacity:.7">— ${isEn ? 'click + to see who voted' : 'cliquez + pour voir qui a voté'}</span></div>
-    ${divs.map(dv => {
-      const v = (typeof voteById !== 'undefined') ? voteById.get(dv.number) : null;
-      const domId = `billvote-${ctx}-${b.id}-${dv.number}`;
-      const pids = grp => v ? Object.keys(v.ballots).filter(p => v.ballots[p] === grp) : [];
-      return `<div class="vote-inline-block">
+  const divWrapId = `billvotes-${ctx}-${b.id}`;
+  // Vue compacte (par défaut) : une ligne par scrutin, propre et ordonnée.
+  const compactRows = divs.map(dv => `<div style="font-size:12px; padding:3px 0; border-top:1px solid var(--line);"><span style="font-family:'IBM Plex Mono',monospace; color:var(--slate);">${dv.date}</span> · <b style="color:${dv.passed ? 'var(--green)' : 'var(--red)'}">${L(dv.result)}</b> · <b style="color:var(--green)">${dv.totals.yea}</b> ${yeaL} / <b style="color:var(--red)">${dv.totals.nay}</b> ${nayL}${dv.totals.paired ? ` · ${dv.totals.paired} ${pairL}` : ''}</div>`).join('');
+  // Vue détaillée (dépliée par le + du haut) : chaque scrutin avec ses + pour voir qui a voté.
+  const detailedRows = divs.map(dv => {
+    const v = (typeof voteById !== 'undefined') ? voteById.get(dv.number) : null;
+    const domId = `billvote-${ctx}-${b.id}-${dv.number}`;
+    const pids = grp => v ? Object.keys(v.ballots).filter(p => v.ballots[p] === grp) : [];
+    return `<div class="vote-inline-block">
         <div class="vote-inline-date">${dv.date} — <b style="color:${dv.passed ? 'var(--green)' : 'var(--red)'}">${L(dv.result)}</b></div>
         <div class="tally">
-          <div class="tally-row">
-            <span class="tally-plus" onclick="event.stopPropagation(); toggleNominalGroup('${domId}',${dv.number},'yea')" id="plus-${domId}-yea">+</span>
-            <span class="tally-label" style="color:var(--green)"><b>${dv.totals.yea}</b> ${yeaL}</span>
-            <span class="tally-breakdown">${partyBreakdownHtml(pids('yea'))}</span>
-          </div>
-          <div class="tally-row">
-            <span class="tally-plus" onclick="event.stopPropagation(); toggleNominalGroup('${domId}',${dv.number},'nay')" id="plus-${domId}-nay">+</span>
-            <span class="tally-label" style="color:var(--red)"><b>${dv.totals.nay}</b> ${nayL}</span>
-            <span class="tally-breakdown">${partyBreakdownHtml(pids('nay'))}</span>
-          </div>
-          <div class="tally-row">
-            <span class="tally-plus" onclick="event.stopPropagation(); toggleNominalGroup('${domId}',${dv.number},'paired')" id="plus-${domId}-paired">+</span>
-            <span class="tally-label" style="color:var(--slate)"><b>${dv.totals.paired}</b> ${pairL}</span>
-            <span class="tally-breakdown">${partyBreakdownHtml(pids('paired'))}</span>
-          </div>
+          <div class="tally-row"><span class="tally-plus" onclick="event.stopPropagation(); toggleNominalGroup('${domId}',${dv.number},'yea')" id="plus-${domId}-yea">+</span><span class="tally-label" style="color:var(--green)"><b>${dv.totals.yea}</b> ${yeaL}</span><span class="tally-breakdown">${partyBreakdownHtml(pids('yea'))}</span></div>
+          <div class="tally-row"><span class="tally-plus" onclick="event.stopPropagation(); toggleNominalGroup('${domId}',${dv.number},'nay')" id="plus-${domId}-nay">+</span><span class="tally-label" style="color:var(--red)"><b>${dv.totals.nay}</b> ${nayL}</span><span class="tally-breakdown">${partyBreakdownHtml(pids('nay'))}</span></div>
+          <div class="tally-row"><span class="tally-plus" onclick="event.stopPropagation(); toggleNominalGroup('${domId}',${dv.number},'paired')" id="plus-${domId}-paired">+</span><span class="tally-label" style="color:var(--slate)"><b>${dv.totals.paired}</b> ${pairL}</span><span class="tally-breakdown">${partyBreakdownHtml(pids('paired'))}</span></div>
         </div>
         <div class="nominal-detail" id="${domId}-yea"></div>
         <div class="nominal-detail" id="${domId}-nay"></div>
         <div class="nominal-detail" id="${domId}-paired"></div>
       </div>`;
-    }).join('')}
+  }).join('');
+  const divisionsHtml = divs.length ? `<div style="margin-top:10px;">
+    <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--slate); margin-bottom:4px;">${divTitle} <span class="tally-plus" id="plus-${divWrapId}" onclick="event.stopPropagation(); toggleBillVotes('${divWrapId}')">+</span> <span style="opacity:.7">${isEn ? 'who voted what' : 'qui a voté quoi'}</span></div>
+    <div id="${divWrapId}-compact">${compactRows}</div>
+    <div id="${divWrapId}-detailed" style="display:none">${detailedRows}</div>
   </div>` : '';
 
   const reinstatedNote = b.reinstated ? ` · ${isEn ? 'reinstated from a previous session' : 'réinscrit d\'une session précédente'}` : '';
@@ -2771,6 +2765,19 @@ function billCard(b, ctx){
       </div>
     </div>
   `;
+}
+
+// Bascule des votes d'un projet : vue compacte (par défaut) ↔ vue détaillée avec
+// les + pour voir qui a voté quoi. Un seul + en haut, plutôt qu'un + par ligne.
+function toggleBillVotes(id){
+  const compact = document.getElementById(id + '-compact');
+  const detailed = document.getElementById(id + '-detailed');
+  const plus = document.getElementById('plus-' + id);
+  if(!compact || !detailed) return;
+  const opening = detailed.style.display === 'none';
+  detailed.style.display = opening ? '' : 'none';
+  compact.style.display = opening ? 'none' : '';
+  if(plus) plus.textContent = opening ? '−' : '+';
 }
 
 function toggleBillSummary(domId, evt){
