@@ -3013,7 +3013,7 @@ function renderVotes(keyword){
     const nayPids = Object.keys(v.ballots).filter(p=>v.ballots[p]==='nay');
     const pairPids = Object.keys(v.ballots).filter(p=>v.ballots[p]==='paired');
     return `
-      <div class="vote-card">
+      <div class="vote-card"${bill && bill.summary && (bill.summary.en || bill.summary.fr) ? ` style="cursor:pointer" onclick="toggleBillSummary('votesum-${v.number}', event)"` : ''}>
         <div class="head">
           <div>
             <div class="num" style="color:var(--gold); font-family:'IBM Plex Mono',monospace; font-size:12px; font-weight:600;">${numLine}</div>
@@ -3046,8 +3046,8 @@ function renderVotes(keyword){
         <div class="nominal-detail" id="${domId}-yea"></div>
         <div class="nominal-detail" id="${domId}-nay"></div>
         <div class="nominal-detail" id="${domId}-paired"></div>
-        ${bill && bill.summary && (bill.summary.en || bill.summary.fr) ? `<div class="expand-hint" id="hint-votesum-${v.number}" onclick="event.stopPropagation(); toggleBillSummary('votesum-${v.number}', event)">${isEn ? 'View bill summary' : 'Voir le sommaire du projet'}</div><div class="bill-summary" id="votesum-${v.number}">${billSummaryHtml(bill, isEn)}</div>` : ''}
-        <div class="meta" style="margin-top:8px;">${bill?`${isEn?'Bill':'Projet'} : ${bill.num} · `:''}<a href="${L(v.url)}" target="_blank" rel="noopener">${srcNote}</a></div>
+        ${bill && bill.summary && (bill.summary.en || bill.summary.fr) ? `<div class="expand-hint" id="hint-votesum-${v.number}">${isEn ? 'View bill summary' : 'Voir le sommaire du projet'}</div><div class="bill-summary" id="votesum-${v.number}">${billSummaryHtml(bill, isEn)}</div>` : ''}
+        <div class="meta" style="margin-top:8px;">${bill?`${isEn?'Bill':'Projet'} : ${bill.num} · `:''}<a href="${L(v.url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${srcNote}</a></div>
       </div>
     `;
   }).join('') : `<div class="no-results">${isEn ? 'No vote matches this search.' : 'Aucun vote ne correspond à cette recherche.'}</div>`;
