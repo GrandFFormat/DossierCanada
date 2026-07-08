@@ -17,6 +17,7 @@
     "scrape:votes": "node scrapers/votes.js",
     "build:votes": "node scrapers/build-votes-data.js",
     "scrape:ministers": "node scrapers/ministers.js",
+    "scrape:petitions": "node scrapers/petitions.js",
     "build:ministers": "node scrapers/build-ministers-data.js"
   },
   "dependencies": {
