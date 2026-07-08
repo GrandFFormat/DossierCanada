@@ -68,24 +68,41 @@ digest courriel hebdomadaire rebranché sur l'état LEGISinfo.
 
 ## Régénérer les données
 
+**Tout d'un coup :**
+
 ```bash
 npm install
+npm run refresh   # tous les scrapers + build, dans le bon ordre (~3 min)
+```
 
-npm run explore          # reconnaissance : à quoi ressemblent les sources (écrit data/samples/)
+**Ou étape par étape :**
 
-npm run scrape:bills     # LEGISinfo   -> data/bills.json
-npm run scrape:deputes   # ourcommons  -> data/deputes.json
-npm run scrape:votes     # ourcommons  -> data/votes.json   (~1 min, un fetch par scrutin)
-npm run scrape:ministers # pm.gc.ca    -> data/ministers.json (nécessite data/deputes.json)
+```bash
+npm run explore            # reconnaissance : à quoi ressemblent les sources (data/samples/)
 
-npm run build:frontend   # fusionne le tout -> data/frontend.json ET injecte
-                         # projets/députés/votes/ministres dans index.html
+npm run scrape:bills       # LEGISinfo   -> data/bills.json
+npm run scrape:bill-summaries # LEGISinfo/texte de loi -> ajoute le sommaire officiel aux bills
+npm run scrape:deputes     # ourcommons  -> data/deputes.json
+npm run scrape:votes       # ourcommons  -> data/votes.json   (~1 min, un fetch par scrutin)
+npm run scrape:ministers   # pm.gc.ca    -> data/ministers.json (nécessite data/deputes.json)
+npm run scrape:petitions   # ourcommons  -> data/petitions.json (liste publique, pas l'export reCAPTCHA)
+
+npm run build:frontend     # fusionne le tout -> data/frontend.json ET injecte
+                           # projets/députés/votes/ministres/pétitions dans index.html
 ```
 
 Chaque scraper tape **une** source et n'invente rien. `build:frontend` résout les jointures,
 calcule les agrégats (bilan de votes des député·e·s, divisions par projet) et injecte les
 données directement dans `index.html` (le site reste un fichier autonome, sans fetch au chargement,
 sauf la recherche optionnelle par code postal).
+
+## Rafraîchissement automatique
+
+Le workflow [`.github/workflows/refresh.yml`](.github/workflows/refresh.yml) lance `npm run refresh`
+**chaque jour** (cron, 08:00 UTC ; ou manuellement via « Run workflow »), puis committe et pousse les
+données mises à jour. Si le dépôt est connecté à Vercel, ce push **redéploie le site automatiquement**.
+Les scrapers re-téléchargent tout à neuf à chaque exécution (rafraîchissement complet, pas incrémental) ;
+le workflow ne committe que s'il y a un changement.
 
 ## Développement local
 

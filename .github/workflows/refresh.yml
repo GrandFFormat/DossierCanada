@@ -1,0 +1,48 @@
+name: Rafraîchir les données fédérales
+
+# Relance tous les scrapers + le build, puis committe et pousse les données
+# mises à jour (ce qui déclenche un redéploiement Vercel si le dépôt y est connecté).
+on:
+  schedule:
+    - cron: '0 8 * * *' # tous les jours à 08:00 UTC (~3-4 h, heure de l'Est)
+  workflow_dispatch: {} # bouton « Run workflow » pour un lancement manuel
+
+# Jamais deux exécutions en parallèle.
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
+# Nécessaire pour que le job puisse committer et pousser.
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Installer Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Installer les dépendances
+        run: npm ci
+
+      - name: Rafraîchir les données (scrapers + build)
+        run: npm run refresh
+
+      - name: Committer et pousser si des données ont changé
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ index.html
+          if git diff --cached --quiet; then
+            echo "Aucun changement — rien à committer."
+          else
+            git commit -m "chore: rafraîchissement automatique des données fédérales"
+            git push
+          fi
