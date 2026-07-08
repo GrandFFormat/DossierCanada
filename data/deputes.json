@@ -3,8 +3,8 @@
     "en": "https://www.ourcommons.ca/members/en/search/xml",
     "fr": "https://www.ourcommons.ca/members/fr/search/xml"
   },
-  "scrapedAt": "2026-07-07T12:42:00.091Z",
-  "count": 341,
+  "scrapedAt": "2026-07-08T02:50:52.256Z",
+  "count": 339,
   "deputes": [
     {
       "id": 89156,
@@ -2554,31 +2554,6 @@
       "url": {
         "en": "https://www.ourcommons.ca/members/en/105082",
         "fr": "https://www.ourcommons.ca/members/fr/105082"
-      }
-    },
-    {
-      "id": 88687,
-      "honorific": "Hon.",
-      "firstName": "Nathaniel",
-      "lastName": "Erskine-Smith",
-      "name": "Nathaniel Erskine-Smith",
-      "party": {
-        "code": "LPC",
-        "en": "Liberal",
-        "fr": "Libéral"
-      },
-      "constituency": {
-        "en": "Beaches—East York",
-        "fr": "Beaches—East York"
-      },
-      "province": {
-        "en": "Ontario",
-        "fr": "Ontario"
-      },
-      "memberSince": "2025-04-28",
-      "url": {
-        "en": "https://www.ourcommons.ca/members/en/88687",
-        "fr": "https://www.ourcommons.ca/members/fr/88687"
       }
     },
     {
@@ -5579,31 +5554,6 @@
       "url": {
         "en": "https://www.ourcommons.ca/members/en/123282",
         "fr": "https://www.ourcommons.ca/members/fr/123282"
-      }
-    },
-    {
-      "id": 100521,
-      "honorific": null,
-      "firstName": "Richard",
-      "lastName": "Martel",
-      "name": "Richard Martel",
-      "party": {
-        "code": "CPC",
-        "en": "Conservative",
-        "fr": "Conservateur"
-      },
-      "constituency": {
-        "en": "Chicoutimi—Le Fjord",
-        "fr": "Chicoutimi—Le Fjord"
-      },
-      "province": {
-        "en": "Quebec",
-        "fr": "Québec"
-      },
-      "memberSince": "2025-04-28",
-      "url": {
-        "en": "https://www.ourcommons.ca/members/en/100521",
-        "fr": "https://www.ourcommons.ca/members/fr/100521"
       }
     },
     {
