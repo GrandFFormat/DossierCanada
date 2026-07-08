@@ -2668,6 +2668,11 @@ function ministerCardFed(m, isEn, L){
     ? `<a class="avatar" href="${url}" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="${isEn?'Official profile on ourcommons.ca':'Fiche officielle sur ourcommons.ca'}">${ini}</a>`
     : `<span class="avatar">${ini}</span>`;
   const pmTag = m.isPM ? (isEn ? 'Prime Minister' : 'Premier ministre') : '';
+  const attDep = (typeof deputeById !== 'undefined' && m.personId) ? deputeById.get(m.personId) : null;
+  const attVr = attDep && attDep.votingRecord ? attDep.votingRecord : null;
+  const attPct = (attVr && attVr.participationRate != null) ? Math.round(attVr.participationRate * 100) : null;
+  const attTxt = attPct != null ? (isEn ? `attendance: ${attPct}% (${attVr.cast}/${attVr.eligible})` : `présence : ${attPct} % (${attVr.cast}/${attVr.eligible})`) : (isEn ? 'attendance: not available' : 'présence : non disponible');
+  const attTitle = isEn ? 'Share of recorded votes this minister took part in as an MP since taking office — a proxy for attendance; ministers often pair or are away on government business.' : "Part des votes nominaux auxquels ce·tte ministre a pris part comme député·e depuis son entrée en fonction — indicateur de présence ; les ministres se font souvent pairer ou sont en fonction gouvernementale.";
   return `
     <div class="m-card">
       <div class="top-row">${avatar}${followBtn}</div>
@@ -2675,7 +2680,7 @@ function ministerCardFed(m, isEn, L){
       <div class="role">${role}</div>
       <div class="meta-row">
         <span class="depute-party" style="background:${color}22; color:${color}">${m.party || '—'}</span>
-        <span class="vp-note">${pmTag}</span>
+        <span class="vp-note" title="${attTitle}">${attTxt}</span>
       </div>
     </div>
   `;
@@ -3197,25 +3202,21 @@ function renderVotes(keyword){
           <div class="seg abst" style="width:${total?(v.totals.paired/total*100).toFixed(1):0}%"></div>
         </div>
         <div class="tally">
-          <div class="tally-row">
-            <span class="tally-plus" onclick="event.stopPropagation(); toggleNominalGroup('${domId}',${v.number},'yea')" id="plus-${domId}-yea">+</span>
-            <span class="tally-label" style="color:var(--green)"><b>${v.totals.yea}</b> ${yeaLabel}</span>
-            <span class="tally-breakdown">${partyBreakdownHtml(yeaPids)}</span>
+          <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--slate); margin-bottom:4px;">${isEn ? 'Breakdown' : 'Décompte'} <span class="tally-plus" id="plus-votewrap-${v.number}" onclick="event.stopPropagation(); toggleBillVotes('votewrap-${v.number}')">+</span> <span style="opacity:.7">${isEn ? 'who voted what' : 'qui a voté quoi'}</span></div>
+          <div id="votewrap-${v.number}-compact">
+            <div class="tally-row"><span class="tally-label" style="color:var(--green)"><b>${v.totals.yea}</b> ${yeaLabel}</span><span class="tally-breakdown">${partyBreakdownHtml(yeaPids)}</span></div>
+            <div class="tally-row"><span class="tally-label" style="color:var(--red)"><b>${v.totals.nay}</b> ${nayLabel}</span><span class="tally-breakdown">${partyBreakdownHtml(nayPids)}</span></div>
+            <div class="tally-row"><span class="tally-label" style="color:var(--slate)"><b>${v.totals.paired}</b> ${pairLabel}</span><span class="tally-breakdown">${partyBreakdownHtml(pairPids)}</span></div>
           </div>
-          <div class="tally-row">
-            <span class="tally-plus" onclick="event.stopPropagation(); toggleNominalGroup('${domId}',${v.number},'nay')" id="plus-${domId}-nay">+</span>
-            <span class="tally-label" style="color:var(--red)"><b>${v.totals.nay}</b> ${nayLabel}</span>
-            <span class="tally-breakdown">${partyBreakdownHtml(nayPids)}</span>
-          </div>
-          <div class="tally-row">
-            <span class="tally-plus" onclick="event.stopPropagation(); toggleNominalGroup('${domId}',${v.number},'paired')" id="plus-${domId}-paired">+</span>
-            <span class="tally-label" style="color:var(--slate)"><b>${v.totals.paired}</b> ${pairLabel}</span>
-            <span class="tally-breakdown">${partyBreakdownHtml(pairPids)}</span>
+          <div id="votewrap-${v.number}-detailed" style="display:none">
+            <div class="tally-row"><span class="tally-plus" onclick="event.stopPropagation(); toggleNominalGroup('${domId}',${v.number},'yea')" id="plus-${domId}-yea">+</span><span class="tally-label" style="color:var(--green)"><b>${v.totals.yea}</b> ${yeaLabel}</span><span class="tally-breakdown">${partyBreakdownHtml(yeaPids)}</span></div>
+            <div class="tally-row"><span class="tally-plus" onclick="event.stopPropagation(); toggleNominalGroup('${domId}',${v.number},'nay')" id="plus-${domId}-nay">+</span><span class="tally-label" style="color:var(--red)"><b>${v.totals.nay}</b> ${nayLabel}</span><span class="tally-breakdown">${partyBreakdownHtml(nayPids)}</span></div>
+            <div class="tally-row"><span class="tally-plus" onclick="event.stopPropagation(); toggleNominalGroup('${domId}',${v.number},'paired')" id="plus-${domId}-paired">+</span><span class="tally-label" style="color:var(--slate)"><b>${v.totals.paired}</b> ${pairLabel}</span><span class="tally-breakdown">${partyBreakdownHtml(pairPids)}</span></div>
+            <div class="nominal-detail" id="${domId}-yea"></div>
+            <div class="nominal-detail" id="${domId}-nay"></div>
+            <div class="nominal-detail" id="${domId}-paired"></div>
           </div>
         </div>
-        <div class="nominal-detail" id="${domId}-yea"></div>
-        <div class="nominal-detail" id="${domId}-nay"></div>
-        <div class="nominal-detail" id="${domId}-paired"></div>
         ${bill && bill.summary && (bill.summary.en || bill.summary.fr) ? `<div class="expand-hint" id="hint-votesum-${v.number}">${isEn ? 'View bill summary' : 'Voir le sommaire du projet'}</div><div class="bill-summary" id="votesum-${v.number}">${billSummaryHtml(bill, isEn)}</div>` : ''}
         <div class="meta" style="margin-top:8px;">${bill?`${isEn?'Bill':'Projet'} : ${bill.num} · `:''}<a href="${L(v.url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${srcNote}</a></div>
       </div>
