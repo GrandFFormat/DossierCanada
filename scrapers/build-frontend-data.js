@@ -208,6 +208,7 @@ function main() {
     title: b.title,
     type: b.type,
     sponsor: b.sponsor,
+    sponsorPersonId: b.sponsorPersonId ?? null,
     sponsorParty: sponsorPartyOf(b),
     state: b.state,
     reinstated: b.reinstated,
