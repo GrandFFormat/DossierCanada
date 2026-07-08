@@ -1,0 +1,2480 @@
+{
+  "source": {
+    "en": "https://sencanada.ca/umbraco/surface/SenatorsAjax/GetSenators?displayFor=senatorslist&culture=en-CA",
+    "fr": "https://sencanada.ca/umbraco/surface/SenatorsAjax/GetSenators?displayFor=senatorslist&culture=fr-CA"
+  },
+  "scrapedAt": "2026-07-08T18:50:32.303Z",
+  "count": 95,
+  "senators": [
+    {
+      "slug": "adler-charles",
+      "firstName": "Charles S.",
+      "lastName": "Adler",
+      "name": "Charles S. Adler",
+      "postNominal": null,
+      "group": {
+        "code": "CSG",
+        "en": "CSG",
+        "fr": "GSC",
+        "enName": "Canadian Senators Group",
+        "frName": "Groupe des sénateurs canadiens"
+      },
+      "province": {
+        "code": "MB",
+        "en": "Manitoba",
+        "fr": "Manitoba"
+      },
+      "appointedOn": "2024-08-16",
+      "retirementOn": "2029-08-25",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/adler-charles/",
+        "fr": "https://sencanada.ca/fr/senateurs/adler-charles/"
+      }
+    },
+    {
+      "slug": "al-zaibak-mohammad-khair",
+      "firstName": "Mohammad Khair",
+      "lastName": "Al Zaibak",
+      "name": "Mohammad Khair Al Zaibak",
+      "postNominal": null,
+      "group": {
+        "code": "CSG",
+        "en": "CSG",
+        "fr": "GSC",
+        "enName": "Canadian Senators Group",
+        "frName": "Groupe des sénateurs canadiens"
+      },
+      "province": {
+        "code": "ON",
+        "en": "Ontario",
+        "fr": "Ontario"
+      },
+      "appointedOn": "2024-01-28",
+      "retirementOn": "2026-08-09",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/al-zaibak-mohammad-khair/",
+        "fr": "https://sencanada.ca/fr/senateurs/al-zaibak-mohammad-khair/"
+      }
+    },
+    {
+      "slug": "anderson-dawn",
+      "firstName": "Dawn",
+      "lastName": "Anderson",
+      "name": "Dawn Anderson",
+      "postNominal": null,
+      "group": {
+        "code": "C",
+        "en": "C",
+        "fr": "C",
+        "enName": "Conservative Party of Canada",
+        "frName": "Parti conservateur du Canada"
+      },
+      "province": {
+        "code": "NT",
+        "en": "Northwest Territories",
+        "fr": "Territoires du Nord-Ouest"
+      },
+      "appointedOn": "2018-12-12",
+      "retirementOn": "2042-04-14",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/anderson-dawn/",
+        "fr": "https://sencanada.ca/fr/senateurs/anderson-dawn/"
+      }
+    },
+    {
+      "slug": "arnold-dawn",
+      "firstName": "Dawn",
+      "lastName": "Arnold",
+      "name": "Dawn Arnold",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "NB",
+        "en": "New Brunswick",
+        "fr": "Nouveau-Brunswick"
+      },
+      "appointedOn": "2025-03-07",
+      "retirementOn": "2041-04-23",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/arnold-dawn/",
+        "fr": "https://sencanada.ca/fr/senateurs/arnold-dawn/"
+      }
+    },
+    {
+      "slug": "arnot-david",
+      "firstName": "David M.",
+      "lastName": "Arnot",
+      "name": "David M. Arnot",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "SK",
+        "en": "Saskatchewan",
+        "fr": "Saskatchewan"
+      },
+      "appointedOn": "2021-07-29",
+      "retirementOn": "2027-04-16",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/arnot-david/",
+        "fr": "https://sencanada.ca/fr/senateurs/arnot-david/"
+      }
+    },
+    {
+      "slug": "ataullahjan-salma",
+      "firstName": "Salma",
+      "lastName": "Ataullahjan",
+      "name": "Salma Ataullahjan",
+      "postNominal": null,
+      "group": {
+        "code": "C",
+        "en": "C",
+        "fr": "C",
+        "enName": "Conservative Party of Canada",
+        "frName": "Parti conservateur du Canada"
+      },
+      "province": {
+        "code": "ON",
+        "en": "Ontario",
+        "fr": "Ontario"
+      },
+      "appointedOn": "2010-07-09",
+      "retirementOn": "2027-04-29",
+      "appointedBy": "Harper, Stephen (C)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/ataullahjan-salma/",
+        "fr": "https://sencanada.ca/fr/senateurs/ataullahjan-salma/"
+      }
+    },
+    {
+      "slug": "aucoin-rejean",
+      "firstName": "Réjean",
+      "lastName": "Aucoin",
+      "name": "Réjean Aucoin",
+      "postNominal": null,
+      "group": {
+        "code": "CSG",
+        "en": "CSG",
+        "fr": "GSC",
+        "enName": "Canadian Senators Group",
+        "frName": "Groupe des sénateurs canadiens"
+      },
+      "province": {
+        "code": "NS",
+        "en": "Nova Scotia",
+        "fr": "Nouvelle-Écosse"
+      },
+      "appointedOn": "2023-10-31",
+      "retirementOn": "2030-07-04",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/aucoin-rejean/",
+        "fr": "https://sencanada.ca/fr/senateurs/aucoin-rejean/"
+      }
+    },
+    {
+      "slug": "audette-michele",
+      "firstName": "Michèle",
+      "lastName": "Audette",
+      "name": "Michèle Audette",
+      "postNominal": null,
+      "group": {
+        "code": "PSG",
+        "en": "PSG",
+        "fr": "GPS",
+        "enName": "Progressive Senate Group",
+        "frName": "Groupe progressiste du Sénat"
+      },
+      "province": {
+        "code": "QC",
+        "en": "Quebec",
+        "fr": "Québec"
+      },
+      "appointedOn": "2021-07-29",
+      "retirementOn": "2046-07-20",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/audette-michele/",
+        "fr": "https://sencanada.ca/fr/senateurs/audette-michele/"
+      }
+    },
+    {
+      "slug": "batters-denise",
+      "firstName": "Denise",
+      "lastName": "Batters",
+      "name": "Denise Batters",
+      "postNominal": null,
+      "group": {
+        "code": "C",
+        "en": "C",
+        "fr": "C",
+        "enName": "Conservative Party of Canada",
+        "frName": "Parti conservateur du Canada"
+      },
+      "province": {
+        "code": "SK",
+        "en": "Saskatchewan",
+        "fr": "Saskatchewan"
+      },
+      "appointedOn": "2013-01-25",
+      "retirementOn": "2045-06-18",
+      "appointedBy": "Harper, Stephen (C)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/batters-denise/",
+        "fr": "https://sencanada.ca/fr/senateurs/batters-denise/"
+      }
+    },
+    {
+      "slug": "bernard-wanda-thomas",
+      "firstName": "Wanda Thomas",
+      "lastName": "Bernard",
+      "name": "Wanda Thomas Bernard",
+      "postNominal": null,
+      "group": {
+        "code": "PSG",
+        "en": "PSG",
+        "fr": "GPS",
+        "enName": "Progressive Senate Group",
+        "frName": "Groupe progressiste du Sénat"
+      },
+      "province": {
+        "code": "NS",
+        "en": "Nova Scotia",
+        "fr": "Nouvelle-Écosse"
+      },
+      "appointedOn": "2016-11-10",
+      "retirementOn": "2028-08-01",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/bernard-wanda-thomas/",
+        "fr": "https://sencanada.ca/fr/senateurs/bernard-wanda-thomas/"
+      }
+    },
+    {
+      "slug": "black-robert",
+      "firstName": "Robert",
+      "lastName": "Black",
+      "name": "Robert Black",
+      "postNominal": null,
+      "group": {
+        "code": "CSG",
+        "en": "CSG",
+        "fr": "GSC",
+        "enName": "Canadian Senators Group",
+        "frName": "Groupe des sénateurs canadiens"
+      },
+      "province": {
+        "code": "ON",
+        "en": "Ontario",
+        "fr": "Ontario"
+      },
+      "appointedOn": "2018-02-15",
+      "retirementOn": "2037-03-27",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/black-robert/",
+        "fr": "https://sencanada.ca/fr/senateurs/black-robert/"
+      }
+    },
+    {
+      "slug": "boehm-peter",
+      "firstName": "Peter M.",
+      "lastName": "Boehm",
+      "name": "Peter M. Boehm",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "ON",
+        "en": "Ontario",
+        "fr": "Ontario"
+      },
+      "appointedOn": "2018-10-03",
+      "retirementOn": "2029-04-26",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/boehm-peter/",
+        "fr": "https://sencanada.ca/fr/senateurs/boehm-peter/"
+      }
+    },
+    {
+      "slug": "boudreau-victor",
+      "firstName": "Victor",
+      "lastName": "Boudreau",
+      "name": "Victor Boudreau",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "NB",
+        "en": "New Brunswick",
+        "fr": "Nouveau-Brunswick"
+      },
+      "appointedOn": "2024-06-28",
+      "retirementOn": "2045-05-03",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/boudreau-victor/",
+        "fr": "https://sencanada.ca/fr/senateurs/boudreau-victor/"
+      }
+    },
+    {
+      "slug": "boyer-yvonne",
+      "firstName": "Yvonne",
+      "lastName": "Boyer",
+      "name": "Yvonne Boyer",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "ON",
+        "en": "Ontario",
+        "fr": "Ontario"
+      },
+      "appointedOn": "2018-03-15",
+      "retirementOn": "2028-10-25",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/boyer-yvonne/",
+        "fr": "https://sencanada.ca/fr/senateurs/boyer-yvonne/"
+      }
+    },
+    {
+      "slug": "brazeau-patrick",
+      "firstName": "Patrick",
+      "lastName": "Brazeau",
+      "name": "Patrick Brazeau",
+      "postNominal": null,
+      "group": {
+        "code": "Non-affiliated",
+        "en": "Non-affiliated",
+        "fr": "Non affilié(e)",
+        "enName": "Non-affiliated",
+        "frName": "Non affilié(e)"
+      },
+      "province": {
+        "code": "QC",
+        "en": "Quebec",
+        "fr": "Québec"
+      },
+      "appointedOn": "2009-01-08",
+      "retirementOn": "2049-11-11",
+      "appointedBy": "Harper, Stephen (C)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/brazeau-patrick/",
+        "fr": "https://sencanada.ca/fr/senateurs/brazeau-patrick/"
+      }
+    },
+    {
+      "slug": "burey-sharon",
+      "firstName": "Sharon",
+      "lastName": "Burey",
+      "name": "Sharon Burey",
+      "postNominal": null,
+      "group": {
+        "code": "CSG",
+        "en": "CSG",
+        "fr": "GSC",
+        "enName": "Canadian Senators Group",
+        "frName": "Groupe des sénateurs canadiens"
+      },
+      "province": {
+        "code": "ON",
+        "en": "Ontario",
+        "fr": "Ontario"
+      },
+      "appointedOn": "2022-11-21",
+      "retirementOn": "2032-12-04",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/burey-sharon/",
+        "fr": "https://sencanada.ca/fr/senateurs/burey-sharon/"
+      }
+    },
+    {
+      "slug": "busson-bev",
+      "firstName": "Bev",
+      "lastName": "Busson",
+      "name": "Bev Busson",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "BC",
+        "en": "British Columbia",
+        "fr": "Colombie-Britannique"
+      },
+      "appointedOn": "2018-09-24",
+      "retirementOn": "2026-08-23",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/busson-bev/",
+        "fr": "https://sencanada.ca/fr/senateurs/busson-bev/"
+      }
+    },
+    {
+      "slug": "cardozo-andrew",
+      "firstName": "Andrew",
+      "lastName": "Cardozo",
+      "name": "Andrew Cardozo",
+      "postNominal": null,
+      "group": {
+        "code": "PSG",
+        "en": "PSG",
+        "fr": "GPS",
+        "enName": "Progressive Senate Group",
+        "frName": "Groupe progressiste du Sénat"
+      },
+      "province": {
+        "code": "ON",
+        "en": "Ontario",
+        "fr": "Ontario"
+      },
+      "appointedOn": "2022-11-21",
+      "retirementOn": "2031-03-21",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/cardozo-andrew/",
+        "fr": "https://sencanada.ca/fr/senateurs/cardozo-andrew/"
+      }
+    },
+    {
+      "slug": "carignan-claude",
+      "firstName": "Claude",
+      "lastName": "Carignan",
+      "name": "Claude Carignan",
+      "postNominal": "P.C.",
+      "group": {
+        "code": "C",
+        "en": "C",
+        "fr": "C",
+        "enName": "Conservative Party of Canada",
+        "frName": "Parti conservateur du Canada"
+      },
+      "province": {
+        "code": "QC",
+        "en": "Quebec",
+        "fr": "Québec"
+      },
+      "appointedOn": "2009-08-27",
+      "retirementOn": "2039-12-04",
+      "appointedBy": "Harper, Stephen (C)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/carignan-claude/",
+        "fr": "https://sencanada.ca/fr/senateurs/carignan-claude/"
+      }
+    },
+    {
+      "slug": "clement-bernadette",
+      "firstName": "Bernadette",
+      "lastName": "Clement",
+      "name": "Bernadette Clement",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "ON",
+        "en": "Ontario",
+        "fr": "Ontario"
+      },
+      "appointedOn": "2021-06-22",
+      "retirementOn": "2040-05-17",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/clement-bernadette/",
+        "fr": "https://sencanada.ca/fr/senateurs/clement-bernadette/"
+      }
+    },
+    {
+      "slug": "cormier-rene",
+      "firstName": "René",
+      "lastName": "Cormier",
+      "name": "René Cormier",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "NB",
+        "en": "New Brunswick",
+        "fr": "Nouveau-Brunswick"
+      },
+      "appointedOn": "2016-11-10",
+      "retirementOn": "2031-04-27",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/cormier-rene/",
+        "fr": "https://sencanada.ca/fr/senateurs/cormier-rene/"
+      }
+    },
+    {
+      "slug": "coyle-mary",
+      "firstName": "Mary",
+      "lastName": "Coyle",
+      "name": "Mary Coyle",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "NS",
+        "en": "Nova Scotia",
+        "fr": "Nouvelle-Écosse"
+      },
+      "appointedOn": "2017-12-04",
+      "retirementOn": "2029-11-05",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/coyle-mary/",
+        "fr": "https://sencanada.ca/fr/senateurs/coyle-mary/"
+      }
+    },
+    {
+      "slug": "cuzner-rodger",
+      "firstName": "Rodger",
+      "lastName": "Cuzner",
+      "name": "Rodger Cuzner",
+      "postNominal": null,
+      "group": {
+        "code": "PSG",
+        "en": "PSG",
+        "fr": "GPS",
+        "enName": "Progressive Senate Group",
+        "frName": "Groupe progressiste du Sénat"
+      },
+      "province": {
+        "code": "NS",
+        "en": "Nova Scotia",
+        "fr": "Nouvelle-Écosse"
+      },
+      "appointedOn": "2023-10-31",
+      "retirementOn": "2030-11-04",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/cuzner-rodger/",
+        "fr": "https://sencanada.ca/fr/senateurs/cuzner-rodger/"
+      }
+    },
+    {
+      "slug": "dalphond-pierre",
+      "firstName": "Pierre J.",
+      "lastName": "Dalphond",
+      "name": "Pierre J. Dalphond",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "QC",
+        "en": "Quebec",
+        "fr": "Québec"
+      },
+      "appointedOn": "2018-06-06",
+      "retirementOn": "2029-05-01",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/dalphond-pierre/",
+        "fr": "https://sencanada.ca/fr/senateurs/dalphond-pierre/"
+      }
+    },
+    {
+      "slug": "dasko-donna",
+      "firstName": "Donna",
+      "lastName": "Dasko",
+      "name": "Donna Dasko",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "ON",
+        "en": "Ontario",
+        "fr": "Ontario"
+      },
+      "appointedOn": "2018-06-06",
+      "retirementOn": "2026-08-19",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/dasko-donna/",
+        "fr": "https://sencanada.ca/fr/senateurs/dasko-donna/"
+      }
+    },
+    {
+      "slug": "deacon-colin",
+      "firstName": "Colin",
+      "lastName": "Deacon",
+      "name": "Colin Deacon",
+      "postNominal": null,
+      "group": {
+        "code": "CSG",
+        "en": "CSG",
+        "fr": "GSC",
+        "enName": "Canadian Senators Group",
+        "frName": "Groupe des sénateurs canadiens"
+      },
+      "province": {
+        "code": "NS",
+        "en": "Nova Scotia",
+        "fr": "Nouvelle-Écosse"
+      },
+      "appointedOn": "2018-06-15",
+      "retirementOn": "2034-11-01",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/deacon-colin/",
+        "fr": "https://sencanada.ca/fr/senateurs/deacon-colin/"
+      }
+    },
+    {
+      "slug": "deacon-marty",
+      "firstName": "Marty",
+      "lastName": "Deacon",
+      "name": "Marty Deacon",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "ON",
+        "en": "Ontario",
+        "fr": "Ontario"
+      },
+      "appointedOn": "2018-02-15",
+      "retirementOn": "2033-04-23",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/deacon-marty/",
+        "fr": "https://sencanada.ca/fr/senateurs/deacon-marty/"
+      }
+    },
+    {
+      "slug": "dean-tony",
+      "firstName": "Tony",
+      "lastName": "Dean",
+      "name": "Tony Dean",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "ON",
+        "en": "Ontario",
+        "fr": "Ontario"
+      },
+      "appointedOn": "2016-11-10",
+      "retirementOn": "2028-08-19",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/dean-tony/",
+        "fr": "https://sencanada.ca/fr/senateurs/dean-tony/"
+      }
+    },
+    {
+      "slug": "dhillon-baltej-s",
+      "firstName": "Baltej S.",
+      "lastName": "Dhillon",
+      "name": "Baltej S. Dhillon",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "BC",
+        "en": "British Columbia",
+        "fr": "Colombie-Britannique"
+      },
+      "appointedOn": "2025-02-07",
+      "retirementOn": "2041-11-13",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/dhillon-baltej-s/",
+        "fr": "https://sencanada.ca/fr/senateurs/dhillon-baltej-s/"
+      }
+    },
+    {
+      "slug": "downe-percy-e",
+      "firstName": "Percy E.",
+      "lastName": "Downe",
+      "name": "Percy E. Downe",
+      "postNominal": null,
+      "group": {
+        "code": "CSG",
+        "en": "CSG",
+        "fr": "GSC",
+        "enName": "Canadian Senators Group",
+        "frName": "Groupe des sénateurs canadiens"
+      },
+      "province": {
+        "code": "PE",
+        "en": "Prince Edward Island",
+        "fr": "Île-du-Prince-Édouard"
+      },
+      "appointedOn": "2003-06-26",
+      "retirementOn": "2029-07-08",
+      "appointedBy": "Chrétien, Jean (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/downe-percy-e/",
+        "fr": "https://sencanada.ca/fr/senateurs/downe-percy-e/"
+      }
+    },
+    {
+      "slug": "duncan-pat",
+      "firstName": "Pat",
+      "lastName": "Duncan",
+      "name": "Pat Duncan",
+      "postNominal": null,
+      "group": {
+        "code": "GRO",
+        "en": "GRO",
+        "fr": "BRG",
+        "enName": "Government Representative Office",
+        "frName": "Bureau du représentant du gouvernement"
+      },
+      "province": {
+        "code": "YT",
+        "en": "Yukon",
+        "fr": "Yukon"
+      },
+      "appointedOn": "2018-12-12",
+      "retirementOn": "2035-04-08",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/duncan-pat/",
+        "fr": "https://sencanada.ca/fr/senateurs/duncan-pat/"
+      }
+    },
+    {
+      "slug": "forest-eric",
+      "firstName": "Éric",
+      "lastName": "Forest",
+      "name": "Éric Forest",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "QC",
+        "en": "Quebec",
+        "fr": "Québec"
+      },
+      "appointedOn": "2016-11-21",
+      "retirementOn": "2027-04-06",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/forest-eric/",
+        "fr": "https://sencanada.ca/fr/senateurs/forest-eric/"
+      }
+    },
+    {
+      "slug": "francis-brian",
+      "firstName": "Brian",
+      "lastName": "Francis",
+      "name": "Brian Francis",
+      "postNominal": null,
+      "group": {
+        "code": "PSG",
+        "en": "PSG",
+        "fr": "GPS",
+        "enName": "Progressive Senate Group",
+        "frName": "Groupe progressiste du Sénat"
+      },
+      "province": {
+        "code": "PE",
+        "en": "Prince Edward Island",
+        "fr": "Île-du-Prince-Édouard"
+      },
+      "appointedOn": "2018-10-11",
+      "retirementOn": "2032-09-28",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/francis-brian/",
+        "fr": "https://sencanada.ca/fr/senateurs/francis-brian/"
+      }
+    },
+    {
+      "slug": "fridhandler-daryl",
+      "firstName": "Daryl S.",
+      "lastName": "Fridhandler",
+      "name": "Daryl S. Fridhandler",
+      "postNominal": null,
+      "group": {
+        "code": "PSG",
+        "en": "PSG",
+        "fr": "GPS",
+        "enName": "Progressive Senate Group",
+        "frName": "Groupe progressiste du Sénat"
+      },
+      "province": {
+        "code": "AB",
+        "en": "Alberta",
+        "fr": "Alberta"
+      },
+      "appointedOn": "2024-08-30",
+      "retirementOn": "2031-10-09",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/fridhandler-daryl/",
+        "fr": "https://sencanada.ca/fr/senateurs/fridhandler-daryl/"
+      }
+    },
+    {
+      "slug": "gagne-raymonde",
+      "firstName": "Raymonde",
+      "lastName": "Gagné",
+      "name": "Raymonde Gagné",
+      "postNominal": null,
+      "group": {
+        "code": "Non-affiliated",
+        "en": "Non-affiliated",
+        "fr": "Non affilié(e)",
+        "enName": "Non-affiliated",
+        "frName": "Non affilié(e)"
+      },
+      "province": {
+        "code": "MB",
+        "en": "Manitoba",
+        "fr": "Manitoba"
+      },
+      "appointedOn": "2016-04-01",
+      "retirementOn": "2031-01-07",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/gagne-raymonde/",
+        "fr": "https://sencanada.ca/fr/senateurs/gagne-raymonde/"
+      }
+    },
+    {
+      "slug": "galvez-rosa",
+      "firstName": "Rosa",
+      "lastName": "Galvez",
+      "name": "Rosa Galvez",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "QC",
+        "en": "Quebec",
+        "fr": "Québec"
+      },
+      "appointedOn": "2016-12-06",
+      "retirementOn": "2036-06-21",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/galvez-rosa/",
+        "fr": "https://sencanada.ca/fr/senateurs/galvez-rosa/"
+      }
+    },
+    {
+      "slug": "gerba-amina",
+      "firstName": "Amina",
+      "lastName": "Gerba",
+      "name": "Amina Gerba",
+      "postNominal": null,
+      "group": {
+        "code": "PSG",
+        "en": "PSG",
+        "fr": "GPS",
+        "enName": "Progressive Senate Group",
+        "frName": "Groupe progressiste du Sénat"
+      },
+      "province": {
+        "code": "QC",
+        "en": "Quebec",
+        "fr": "Québec"
+      },
+      "appointedOn": "2021-07-29",
+      "retirementOn": "2036-03-14",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/gerba-amina/",
+        "fr": "https://sencanada.ca/fr/senateurs/gerba-amina/"
+      }
+    },
+    {
+      "slug": "gignac-clement",
+      "firstName": "Clément",
+      "lastName": "Gignac",
+      "name": "Clément Gignac",
+      "postNominal": null,
+      "group": {
+        "code": "CSG",
+        "en": "CSG",
+        "fr": "GSC",
+        "enName": "Canadian Senators Group",
+        "frName": "Groupe des sénateurs canadiens"
+      },
+      "province": {
+        "code": "QC",
+        "en": "Quebec",
+        "fr": "Québec"
+      },
+      "appointedOn": "2021-07-29",
+      "retirementOn": "2030-05-07",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/gignac-clement/",
+        "fr": "https://sencanada.ca/fr/senateurs/gignac-clement/"
+      }
+    },
+    {
+      "slug": "greenwood-margo",
+      "firstName": "Margo",
+      "lastName": "Greenwood",
+      "name": "Margo Greenwood",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "BC",
+        "en": "British Columbia",
+        "fr": "Colombie-Britannique"
+      },
+      "appointedOn": "2022-11-10",
+      "retirementOn": "2028-09-02",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/greenwood-margo/",
+        "fr": "https://sencanada.ca/fr/senateurs/greenwood-margo/"
+      }
+    },
+    {
+      "slug": "harder-peter-pc",
+      "firstName": "Peter",
+      "lastName": "Harder",
+      "name": "Peter Harder",
+      "postNominal": "P.C.",
+      "group": {
+        "code": "PSG",
+        "en": "PSG",
+        "fr": "GPS",
+        "enName": "Progressive Senate Group",
+        "frName": "Groupe progressiste du Sénat"
+      },
+      "province": {
+        "code": "ON",
+        "en": "Ontario",
+        "fr": "Ontario"
+      },
+      "appointedOn": "2016-03-23",
+      "retirementOn": "2027-08-25",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/harder-peter-pc/",
+        "fr": "https://sencanada.ca/fr/senateurs/harder-peter-pc/"
+      }
+    },
+    {
+      "slug": "hay-katherine",
+      "firstName": "Katherine",
+      "lastName": "Hay",
+      "name": "Katherine Hay",
+      "postNominal": null,
+      "group": {
+        "code": "PSG",
+        "en": "PSG",
+        "fr": "GPS",
+        "enName": "Progressive Senate Group",
+        "frName": "Groupe progressiste du Sénat"
+      },
+      "province": {
+        "code": "ON",
+        "en": "Ontario",
+        "fr": "Ontario"
+      },
+      "appointedOn": "2025-03-07",
+      "retirementOn": "2036-01-16",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/hay-katherine/",
+        "fr": "https://sencanada.ca/fr/senateurs/hay-katherine/"
+      }
+    },
+    {
+      "slug": "hebert-martine",
+      "firstName": "Martine",
+      "lastName": "Hébert",
+      "name": "Martine Hébert",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "QC",
+        "en": "Quebec",
+        "fr": "Québec"
+      },
+      "appointedOn": "2025-02-07",
+      "retirementOn": "2040-10-07",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/hebert-martine/",
+        "fr": "https://sencanada.ca/fr/senateurs/hebert-martine/"
+      }
+    },
+    {
+      "slug": "henkel-daniele",
+      "firstName": "Danièle",
+      "lastName": "Henkel",
+      "name": "Danièle Henkel",
+      "postNominal": null,
+      "group": {
+        "code": "PSG",
+        "en": "PSG",
+        "fr": "GPS",
+        "enName": "Progressive Senate Group",
+        "frName": "Groupe progressiste du Sénat"
+      },
+      "province": {
+        "code": "QC",
+        "en": "Quebec",
+        "fr": "Québec"
+      },
+      "appointedOn": "2025-02-14",
+      "retirementOn": "2031-01-16",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/henkel-daniele/",
+        "fr": "https://sencanada.ca/fr/senateurs/henkel-daniele/"
+      }
+    },
+    {
+      "slug": "housakos-leo",
+      "firstName": "Leo",
+      "lastName": "Housakos",
+      "name": "Leo Housakos",
+      "postNominal": null,
+      "group": {
+        "code": "C",
+        "en": "C",
+        "fr": "C",
+        "enName": "Conservative Party of Canada",
+        "frName": "Parti conservateur du Canada"
+      },
+      "province": {
+        "code": "QC",
+        "en": "Quebec",
+        "fr": "Québec"
+      },
+      "appointedOn": "2009-01-08",
+      "retirementOn": "2043-01-10",
+      "appointedBy": "Harper, Stephen (C)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/housakos-leo/",
+        "fr": "https://sencanada.ca/fr/senateurs/housakos-leo/"
+      }
+    },
+    {
+      "slug": "ince-tony",
+      "firstName": "Tony",
+      "lastName": "Ince",
+      "name": "Tony Ince",
+      "postNominal": null,
+      "group": {
+        "code": "CSG",
+        "en": "CSG",
+        "fr": "GSC",
+        "enName": "Canadian Senators Group",
+        "frName": "Groupe des sénateurs canadiens"
+      },
+      "province": {
+        "code": "NS",
+        "en": "Nova Scotia",
+        "fr": "Nouvelle-Écosse"
+      },
+      "appointedOn": "2025-03-07",
+      "retirementOn": "2032-12-16",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/ince-tony/",
+        "fr": "https://sencanada.ca/fr/senateurs/ince-tony/"
+      }
+    },
+    {
+      "slug": "karetak-lindell-nancy",
+      "firstName": "Nancy",
+      "lastName": "Karetak-Lindell",
+      "name": "Nancy Karetak-Lindell",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "NU",
+        "en": "Nunavut",
+        "fr": "Nunavut"
+      },
+      "appointedOn": "2024-12-19",
+      "retirementOn": "2032-12-10",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/karetak-lindell-nancy/",
+        "fr": "https://sencanada.ca/fr/senateurs/karetak-lindell-nancy/"
+      }
+    },
+    {
+      "slug": "kingston-joan",
+      "firstName": "Joan",
+      "lastName": "Kingston",
+      "name": "Joan Kingston",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "NB",
+        "en": "New Brunswick",
+        "fr": "Nouveau-Brunswick"
+      },
+      "appointedOn": "2023-10-31",
+      "retirementOn": "2030-01-08",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/kingston-joan/",
+        "fr": "https://sencanada.ca/fr/senateurs/kingston-joan/"
+      }
+    },
+    {
+      "slug": "klyne-marty",
+      "firstName": "Marty",
+      "lastName": "Klyne",
+      "name": "Marty Klyne",
+      "postNominal": null,
+      "group": {
+        "code": "PSG",
+        "en": "PSG",
+        "fr": "GPS",
+        "enName": "Progressive Senate Group",
+        "frName": "Groupe progressiste du Sénat"
+      },
+      "province": {
+        "code": "SK",
+        "en": "Saskatchewan",
+        "fr": "Saskatchewan"
+      },
+      "appointedOn": "2018-09-24",
+      "retirementOn": "2032-03-06",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/klyne-marty/",
+        "fr": "https://sencanada.ca/fr/senateurs/klyne-marty/"
+      }
+    },
+    {
+      "slug": "laboucane-benson-patti",
+      "firstName": "Patti",
+      "lastName": "LaBoucane-Benson",
+      "name": "Patti LaBoucane-Benson",
+      "postNominal": null,
+      "group": {
+        "code": "GRO",
+        "en": "GRO",
+        "fr": "BRG",
+        "enName": "Government Representative Office",
+        "frName": "Bureau du représentant du gouvernement"
+      },
+      "province": {
+        "code": "AB",
+        "en": "Alberta",
+        "fr": "Alberta"
+      },
+      "appointedOn": "2018-10-03",
+      "retirementOn": "2044-02-20",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/laboucane-benson-patti/",
+        "fr": "https://sencanada.ca/fr/senateurs/laboucane-benson-patti/"
+      }
+    },
+    {
+      "slug": "lewis-todd",
+      "firstName": "Todd",
+      "lastName": "Lewis",
+      "name": "Todd Lewis",
+      "postNominal": null,
+      "group": {
+        "code": "CSG",
+        "en": "CSG",
+        "fr": "GSC",
+        "enName": "Canadian Senators Group",
+        "frName": "Groupe des sénateurs canadiens"
+      },
+      "province": {
+        "code": "SK",
+        "en": "Saskatchewan",
+        "fr": "Saskatchewan"
+      },
+      "appointedOn": "2025-02-07",
+      "retirementOn": "2036-07-21",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/lewis-todd/",
+        "fr": "https://sencanada.ca/fr/senateurs/lewis-todd/"
+      }
+    },
+    {
+      "slug": "loffreda-tony",
+      "firstName": "Tony",
+      "lastName": "Loffreda",
+      "name": "Tony Loffreda",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "QC",
+        "en": "Quebec",
+        "fr": "Québec"
+      },
+      "appointedOn": "2019-07-22",
+      "retirementOn": "2037-08-14",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/loffreda-tony/",
+        "fr": "https://sencanada.ca/fr/senateurs/loffreda-tony/"
+      }
+    },
+    {
+      "slug": "macadam-jane",
+      "firstName": "Jane",
+      "lastName": "MacAdam",
+      "name": "Jane MacAdam",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "PE",
+        "en": "Prince Edward Island",
+        "fr": "Île-du-Prince-Édouard"
+      },
+      "appointedOn": "2023-05-03",
+      "retirementOn": "2032-03-01",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/macadam-jane/",
+        "fr": "https://sencanada.ca/fr/senateurs/macadam-jane/"
+      }
+    },
+    {
+      "slug": "macdonald-michael-l",
+      "firstName": "Michael L.",
+      "lastName": "MacDonald",
+      "name": "Michael L. MacDonald",
+      "postNominal": null,
+      "group": {
+        "code": "C",
+        "en": "C",
+        "fr": "C",
+        "enName": "Conservative Party of Canada",
+        "frName": "Parti conservateur du Canada"
+      },
+      "province": {
+        "code": "NS",
+        "en": "Nova Scotia",
+        "fr": "Nouvelle-Écosse"
+      },
+      "appointedOn": "2009-01-02",
+      "retirementOn": "2030-05-04",
+      "appointedBy": "Harper, Stephen (C)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/macdonald-michael-l/",
+        "fr": "https://sencanada.ca/fr/senateurs/macdonald-michael-l/"
+      }
+    },
+    {
+      "slug": "manning-fabian",
+      "firstName": "Fabian",
+      "lastName": "Manning",
+      "name": "Fabian Manning",
+      "postNominal": null,
+      "group": {
+        "code": "C",
+        "en": "C",
+        "fr": "C",
+        "enName": "Conservative Party of Canada",
+        "frName": "Parti conservateur du Canada"
+      },
+      "province": {
+        "code": "NL",
+        "en": "Newfoundland and Labrador",
+        "fr": "Terre-Neuve-et-Labrador"
+      },
+      "appointedOn": "2011-05-25 1",
+      "retirementOn": "2039-05-21",
+      "appointedBy": "Harper, Stephen (C)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/manning-fabian/",
+        "fr": "https://sencanada.ca/fr/senateurs/manning-fabian/"
+      }
+    },
+    {
+      "slug": "martin-yonah",
+      "firstName": "Yonah",
+      "lastName": "Martin",
+      "name": "Yonah Martin",
+      "postNominal": null,
+      "group": {
+        "code": "C",
+        "en": "C",
+        "fr": "C",
+        "enName": "Conservative Party of Canada",
+        "frName": "Parti conservateur du Canada"
+      },
+      "province": {
+        "code": "BC",
+        "en": "British Columbia",
+        "fr": "Colombie-Britannique"
+      },
+      "appointedOn": "2009-01-02",
+      "retirementOn": "2040-04-11",
+      "appointedBy": "Harper, Stephen (C)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/martin-yonah/",
+        "fr": "https://sencanada.ca/fr/senateurs/martin-yonah/"
+      }
+    },
+    {
+      "slug": "mcbean-marnie",
+      "firstName": "Marnie",
+      "lastName": "McBean",
+      "name": "Marnie McBean",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "ON",
+        "en": "Ontario",
+        "fr": "Ontario"
+      },
+      "appointedOn": "2023-12-20",
+      "retirementOn": "2043-01-28",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/mcbean-marnie/",
+        "fr": "https://sencanada.ca/fr/senateurs/mcbean-marnie/"
+      }
+    },
+    {
+      "slug": "mccallum-mary-jane",
+      "firstName": "Mary Jane",
+      "lastName": "McCallum",
+      "name": "Mary Jane McCallum",
+      "postNominal": null,
+      "group": {
+        "code": "C",
+        "en": "C",
+        "fr": "C",
+        "enName": "Conservative Party of Canada",
+        "frName": "Parti conservateur du Canada"
+      },
+      "province": {
+        "code": "MB",
+        "en": "Manitoba",
+        "fr": "Manitoba"
+      },
+      "appointedOn": "2017-12-04",
+      "retirementOn": "2027-05-01",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/mccallum-mary-jane/",
+        "fr": "https://sencanada.ca/fr/senateurs/mccallum-mary-jane/"
+      }
+    },
+    {
+      "slug": "mcnair-john-m",
+      "firstName": "John M.",
+      "lastName": "McNair",
+      "name": "John M. McNair",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "NB",
+        "en": "New Brunswick",
+        "fr": "Nouveau-Brunswick"
+      },
+      "appointedOn": "2023-10-31",
+      "retirementOn": "2032-06-03",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/mcnair-john-m/",
+        "fr": "https://sencanada.ca/fr/senateurs/mcnair-john-m/"
+      }
+    },
+    {
+      "slug": "mcphedran-marilou",
+      "firstName": "Marilou",
+      "lastName": "McPhedran",
+      "name": "Marilou McPhedran",
+      "postNominal": null,
+      "group": {
+        "code": "Non-affiliated",
+        "en": "Non-affiliated",
+        "fr": "Non affilié(e)",
+        "enName": "Non-affiliated",
+        "frName": "Non affilié(e)"
+      },
+      "province": {
+        "code": "MB",
+        "en": "Manitoba",
+        "fr": "Manitoba"
+      },
+      "appointedOn": "2016-11-10",
+      "retirementOn": "2026-07-22",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/mcphedran-marilou/",
+        "fr": "https://sencanada.ca/fr/senateurs/mcphedran-marilou/"
+      }
+    },
+    {
+      "slug": "miville-dechene-julie",
+      "firstName": "Julie",
+      "lastName": "Miville-Dechêne",
+      "name": "Julie Miville-Dechêne",
+      "postNominal": null,
+      "group": {
+        "code": "PSG",
+        "en": "PSG",
+        "fr": "GPS",
+        "enName": "Progressive Senate Group",
+        "frName": "Groupe progressiste du Sénat"
+      },
+      "province": {
+        "code": "QC",
+        "en": "Quebec",
+        "fr": "Québec"
+      },
+      "appointedOn": "2018-06-20",
+      "retirementOn": "2034-07-10",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/miville-dechene-julie/",
+        "fr": "https://sencanada.ca/fr/senateurs/miville-dechene-julie/"
+      }
+    },
+    {
+      "slug": "mohamed-farah",
+      "firstName": "Farah",
+      "lastName": "Mohamed",
+      "name": "Farah Mohamed",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "ON",
+        "en": "Ontario",
+        "fr": "Ontario"
+      },
+      "appointedOn": "2025-03-07",
+      "retirementOn": "2045-07-05",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/mohamed-farah/",
+        "fr": "https://sencanada.ca/fr/senateurs/mohamed-farah/"
+      }
+    },
+    {
+      "slug": "moncion-lucie",
+      "firstName": "Lucie",
+      "lastName": "Moncion",
+      "name": "Lucie Moncion",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "ON",
+        "en": "Ontario",
+        "fr": "Ontario"
+      },
+      "appointedOn": "2016-11-10",
+      "retirementOn": "2033-10-25",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/moncion-lucie/",
+        "fr": "https://sencanada.ca/fr/senateurs/moncion-lucie/"
+      }
+    },
+    {
+      "slug": "moodie-rosemary",
+      "firstName": "Rosemary",
+      "lastName": "Moodie",
+      "name": "Rosemary Moodie",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "ON",
+        "en": "Ontario",
+        "fr": "Ontario"
+      },
+      "appointedOn": "2018-12-12",
+      "retirementOn": "2031-11-24",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/moodie-rosemary/",
+        "fr": "https://sencanada.ca/fr/senateurs/moodie-rosemary/"
+      }
+    },
+    {
+      "slug": "moreau-pierre",
+      "firstName": "Pierre",
+      "lastName": "Moreau",
+      "name": "Pierre Moreau",
+      "postNominal": "P.C.",
+      "group": {
+        "code": "GRO",
+        "en": "GRO",
+        "fr": "BRG",
+        "enName": "Government Representative Office",
+        "frName": "Bureau du représentant du gouvernement"
+      },
+      "province": {
+        "code": "QC",
+        "en": "Quebec",
+        "fr": "Québec"
+      },
+      "appointedOn": "2024-09-10",
+      "retirementOn": "2032-12-12",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/moreau-pierre/",
+        "fr": "https://sencanada.ca/fr/senateurs/moreau-pierre/"
+      }
+    },
+    {
+      "slug": "muggli-tracy",
+      "firstName": "Tracy",
+      "lastName": "Muggli",
+      "name": "Tracy Muggli",
+      "postNominal": null,
+      "group": {
+        "code": "PSG",
+        "en": "PSG",
+        "fr": "GPS",
+        "enName": "Progressive Senate Group",
+        "frName": "Groupe progressiste du Sénat"
+      },
+      "province": {
+        "code": "SK",
+        "en": "Saskatchewan",
+        "fr": "Saskatchewan"
+      },
+      "appointedOn": "2024-08-16",
+      "retirementOn": "2040-09-18",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/muggli-tracy/",
+        "fr": "https://sencanada.ca/fr/senateurs/muggli-tracy/"
+      }
+    },
+    {
+      "slug": "osler-flordeliz",
+      "firstName": "Flordeliz (Gigi)",
+      "lastName": "Osler",
+      "name": "Flordeliz (Gigi) Osler",
+      "postNominal": null,
+      "group": {
+        "code": "CSG",
+        "en": "CSG",
+        "fr": "GSC",
+        "enName": "Canadian Senators Group",
+        "frName": "Groupe des sénateurs canadiens"
+      },
+      "province": {
+        "code": "MB",
+        "en": "Manitoba",
+        "fr": "Manitoba"
+      },
+      "appointedOn": "2022-09-26",
+      "retirementOn": "2043-09-09",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/osler-flordeliz/",
+        "fr": "https://sencanada.ca/fr/senateurs/osler-flordeliz/"
+      }
+    },
+    {
+      "slug": "oudar-manuelle",
+      "firstName": "Manuelle",
+      "lastName": "Oudar",
+      "name": "Manuelle Oudar",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "QC",
+        "en": "Quebec",
+        "fr": "Québec"
+      },
+      "appointedOn": "2024-02-13",
+      "retirementOn": "2038-07-05",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/oudar-manuelle/",
+        "fr": "https://sencanada.ca/fr/senateurs/oudar-manuelle/"
+      }
+    },
+    {
+      "slug": "pate-kim",
+      "firstName": "Kim",
+      "lastName": "Pate",
+      "name": "Kim Pate",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "ON",
+        "en": "Ontario",
+        "fr": "Ontario"
+      },
+      "appointedOn": "2016-11-10",
+      "retirementOn": "2034-11-10",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/pate-kim/",
+        "fr": "https://sencanada.ca/fr/senateurs/pate-kim/"
+      }
+    },
+    {
+      "slug": "patterson-rebecca",
+      "firstName": "Rebecca",
+      "lastName": "Patterson",
+      "name": "Rebecca Patterson",
+      "postNominal": null,
+      "group": {
+        "code": "CSG",
+        "en": "CSG",
+        "fr": "GSC",
+        "enName": "Canadian Senators Group",
+        "frName": "Groupe des sénateurs canadiens"
+      },
+      "province": {
+        "code": "ON",
+        "en": "Ontario",
+        "fr": "Ontario"
+      },
+      "appointedOn": "2022-11-21",
+      "retirementOn": "2040-06-15",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/patterson-rebecca/",
+        "fr": "https://sencanada.ca/fr/senateurs/patterson-rebecca/"
+      }
+    },
+    {
+      "slug": "petitclerc-chantal",
+      "firstName": "Chantal",
+      "lastName": "Petitclerc",
+      "name": "Chantal Petitclerc",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "QC",
+        "en": "Quebec",
+        "fr": "Québec"
+      },
+      "appointedOn": "2016-04-01",
+      "retirementOn": "2044-12-15",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/petitclerc-chantal/",
+        "fr": "https://sencanada.ca/fr/senateurs/petitclerc-chantal/"
+      }
+    },
+    {
+      "slug": "petten-iris",
+      "firstName": "Iris G.",
+      "lastName": "Petten",
+      "name": "Iris G. Petten",
+      "postNominal": null,
+      "group": {
+        "code": "GRO",
+        "en": "GRO",
+        "fr": "BRG",
+        "enName": "Government Representative Office",
+        "frName": "Bureau du représentant du gouvernement"
+      },
+      "province": {
+        "code": "NL",
+        "en": "Newfoundland and Labrador",
+        "fr": "Terre-Neuve-et-Labrador"
+      },
+      "appointedOn": "2023-05-03",
+      "retirementOn": "2034-02-05",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/petten-iris/",
+        "fr": "https://sencanada.ca/fr/senateurs/petten-iris/"
+      }
+    },
+    {
+      "slug": "poirier-rose-may",
+      "firstName": "Rose-May",
+      "lastName": "Poirier",
+      "name": "Rose-May Poirier",
+      "postNominal": null,
+      "group": {
+        "code": "C",
+        "en": "C",
+        "fr": "C",
+        "enName": "Conservative Party of Canada",
+        "frName": "Parti conservateur du Canada"
+      },
+      "province": {
+        "code": "NB",
+        "en": "New Brunswick",
+        "fr": "Nouveau-Brunswick"
+      },
+      "appointedOn": "2010-02-28",
+      "retirementOn": "2029-03-02",
+      "appointedBy": "Harper, Stephen (C)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/poirier-rose-may/",
+        "fr": "https://sencanada.ca/fr/senateurs/poirier-rose-may/"
+      }
+    },
+    {
+      "slug": "prosper-paul",
+      "firstName": "Paul (PJ)",
+      "lastName": "Prosper",
+      "name": "Paul (PJ) Prosper",
+      "postNominal": null,
+      "group": {
+        "code": "CSG",
+        "en": "CSG",
+        "fr": "GSC",
+        "enName": "Canadian Senators Group",
+        "frName": "Groupe des sénateurs canadiens"
+      },
+      "province": {
+        "code": "NS",
+        "en": "Nova Scotia",
+        "fr": "Nouvelle-Écosse"
+      },
+      "appointedOn": "2023-07-06",
+      "retirementOn": "2039-11-04",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/prosper-paul/",
+        "fr": "https://sencanada.ca/fr/senateurs/prosper-paul/"
+      }
+    },
+    {
+      "slug": "pupatello-sandra",
+      "firstName": "Sandra",
+      "lastName": "Pupatello",
+      "name": "Sandra Pupatello",
+      "postNominal": null,
+      "group": {
+        "code": "GRO",
+        "en": "GRO",
+        "fr": "BRG",
+        "enName": "Government Representative Office",
+        "frName": "Bureau du représentant du gouvernement"
+      },
+      "province": {
+        "code": "ON",
+        "en": "Ontario",
+        "fr": "Ontario"
+      },
+      "appointedOn": "2025-03-07",
+      "retirementOn": "2037-10-06",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/pupatello-sandra/",
+        "fr": "https://sencanada.ca/fr/senateurs/pupatello-sandra/"
+      }
+    },
+    {
+      "slug": "quinn-jim",
+      "firstName": "Jim",
+      "lastName": "Quinn",
+      "name": "Jim Quinn",
+      "postNominal": null,
+      "group": {
+        "code": "CSG",
+        "en": "CSG",
+        "fr": "GSC",
+        "enName": "Canadian Senators Group",
+        "frName": "Groupe des sénateurs canadiens"
+      },
+      "province": {
+        "code": "NB",
+        "en": "New Brunswick",
+        "fr": "Nouveau-Brunswick"
+      },
+      "appointedOn": "2021-06-22",
+      "retirementOn": "2032-01-25",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/quinn-jim/",
+        "fr": "https://sencanada.ca/fr/senateurs/quinn-jim/"
+      }
+    },
+    {
+      "slug": "ravalia-mohamed-iqbal",
+      "firstName": "Mohamed-Iqbal",
+      "lastName": "Ravalia",
+      "name": "Mohamed-Iqbal Ravalia",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "NL",
+        "en": "Newfoundland and Labrador",
+        "fr": "Terre-Neuve-et-Labrador"
+      },
+      "appointedOn": "2018-06-01",
+      "retirementOn": "2032-08-15",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/ravalia-mohamed-iqbal/",
+        "fr": "https://sencanada.ca/fr/senateurs/ravalia-mohamed-iqbal/"
+      }
+    },
+    {
+      "slug": "ringuette-pierrette",
+      "firstName": "Pierrette",
+      "lastName": "Ringuette",
+      "name": "Pierrette Ringuette",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "NB",
+        "en": "New Brunswick",
+        "fr": "Nouveau-Brunswick"
+      },
+      "appointedOn": "2002-12-12",
+      "retirementOn": "2030-12-31",
+      "appointedBy": "Chrétien, Jean (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/ringuette-pierrette/",
+        "fr": "https://sencanada.ca/fr/senateurs/ringuette-pierrette/"
+      }
+    },
+    {
+      "slug": "robinson-mary",
+      "firstName": "Mary",
+      "lastName": "Robinson",
+      "name": "Mary Robinson",
+      "postNominal": null,
+      "group": {
+        "code": "CSG",
+        "en": "CSG",
+        "fr": "GSC",
+        "enName": "Canadian Senators Group",
+        "frName": "Groupe des sénateurs canadiens"
+      },
+      "province": {
+        "code": "PE",
+        "en": "Prince Edward Island",
+        "fr": "Île-du-Prince-Édouard"
+      },
+      "appointedOn": "2024-01-22",
+      "retirementOn": "2045-08-03",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/robinson-mary/",
+        "fr": "https://sencanada.ca/fr/senateurs/robinson-mary/"
+      }
+    },
+    {
+      "slug": "ross-krista-ann",
+      "firstName": "Krista",
+      "lastName": "Ross",
+      "name": "Krista Ross",
+      "postNominal": null,
+      "group": {
+        "code": "CSG",
+        "en": "CSG",
+        "fr": "GSC",
+        "enName": "Canadian Senators Group",
+        "frName": "Groupe des sénateurs canadiens"
+      },
+      "province": {
+        "code": "NB",
+        "en": "New Brunswick",
+        "fr": "Nouveau-Brunswick"
+      },
+      "appointedOn": "2023-10-31",
+      "retirementOn": "2042-09-30",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/ross-krista-ann/",
+        "fr": "https://sencanada.ca/fr/senateurs/ross-krista-ann/"
+      }
+    },
+    {
+      "slug": "saint-germain-raymonde",
+      "firstName": "Raymonde",
+      "lastName": "Saint-Germain",
+      "name": "Raymonde Saint-Germain",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "QC",
+        "en": "Quebec",
+        "fr": "Québec"
+      },
+      "appointedOn": "2016-11-25",
+      "retirementOn": "2026-10-07",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/saint-germain-raymonde/",
+        "fr": "https://sencanada.ca/fr/senateurs/saint-germain-raymonde/"
+      }
+    },
+    {
+      "slug": "senior-paulette",
+      "firstName": "Paulette",
+      "lastName": "Senior",
+      "name": "Paulette Senior",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "ON",
+        "en": "Ontario",
+        "fr": "Ontario"
+      },
+      "appointedOn": "2023-12-20",
+      "retirementOn": "2036-12-04",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/senior-paulette/",
+        "fr": "https://sencanada.ca/fr/senateurs/senior-paulette/"
+      }
+    },
+    {
+      "slug": "simons-paula",
+      "firstName": "Paula",
+      "lastName": "Simons",
+      "name": "Paula Simons",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "AB",
+        "en": "Alberta",
+        "fr": "Alberta"
+      },
+      "appointedOn": "2018-10-03",
+      "retirementOn": "2039-09-07",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/simons-paula/",
+        "fr": "https://sencanada.ca/fr/senateurs/simons-paula/"
+      }
+    },
+    {
+      "slug": "sorensen-karen",
+      "firstName": "Karen",
+      "lastName": "Sorensen",
+      "name": "Karen Sorensen",
+      "postNominal": null,
+      "group": {
+        "code": "PSG",
+        "en": "PSG",
+        "fr": "GPS",
+        "enName": "Progressive Senate Group",
+        "frName": "Groupe progressiste du Sénat"
+      },
+      "province": {
+        "code": "AB",
+        "en": "Alberta",
+        "fr": "Alberta"
+      },
+      "appointedOn": "2021-07-29",
+      "retirementOn": "2034-05-20",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/sorensen-karen/",
+        "fr": "https://sencanada.ca/fr/senateurs/sorensen-karen/"
+      }
+    },
+    {
+      "slug": "surette-allister",
+      "firstName": "Allister",
+      "lastName": "Surette",
+      "name": "Allister Surette",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "NS",
+        "en": "Nova Scotia",
+        "fr": "Nouvelle-Écosse"
+      },
+      "appointedOn": "2024-12-19",
+      "retirementOn": "2036-09-21",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/surette-allister/",
+        "fr": "https://sencanada.ca/fr/senateurs/surette-allister/"
+      }
+    },
+    {
+      "slug": "tannas-scott",
+      "firstName": "Scott",
+      "lastName": "Tannas",
+      "name": "Scott Tannas",
+      "postNominal": null,
+      "group": {
+        "code": "CSG",
+        "en": "CSG",
+        "fr": "GSC",
+        "enName": "Canadian Senators Group",
+        "frName": "Groupe des sénateurs canadiens"
+      },
+      "province": {
+        "code": "AB",
+        "en": "Alberta",
+        "fr": "Alberta"
+      },
+      "appointedOn": "2013-03-25",
+      "retirementOn": "2037-02-25",
+      "appointedBy": "Harper, Stephen (C)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/tannas-scott/",
+        "fr": "https://sencanada.ca/fr/senateurs/tannas-scott/"
+      }
+    },
+    {
+      "slug": "varone-toni",
+      "firstName": "Toni",
+      "lastName": "Varone",
+      "name": "Toni Varone",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "ON",
+        "en": "Ontario",
+        "fr": "Ontario"
+      },
+      "appointedOn": "2023-12-20",
+      "retirementOn": "2033-06-20",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/varone-toni/",
+        "fr": "https://sencanada.ca/fr/senateurs/varone-toni/"
+      }
+    },
+    {
+      "slug": "verner-josee",
+      "firstName": "Josée",
+      "lastName": "Verner",
+      "name": "Josée Verner",
+      "postNominal": "P.C.",
+      "group": {
+        "code": "CSG",
+        "en": "CSG",
+        "fr": "GSC",
+        "enName": "Canadian Senators Group",
+        "frName": "Groupe des sénateurs canadiens"
+      },
+      "province": {
+        "code": "QC",
+        "en": "Quebec",
+        "fr": "Québec"
+      },
+      "appointedOn": "2011-06-13",
+      "retirementOn": "2034-12-30",
+      "appointedBy": "Harper, Stephen (C)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/verner-josee/",
+        "fr": "https://sencanada.ca/fr/senateurs/verner-josee/"
+      }
+    },
+    {
+      "slug": "wallin-pamela",
+      "firstName": "Pamela",
+      "lastName": "Wallin",
+      "name": "Pamela Wallin",
+      "postNominal": null,
+      "group": {
+        "code": "CSG",
+        "en": "CSG",
+        "fr": "GSC",
+        "enName": "Canadian Senators Group",
+        "frName": "Groupe des sénateurs canadiens"
+      },
+      "province": {
+        "code": "SK",
+        "en": "Saskatchewan",
+        "fr": "Saskatchewan"
+      },
+      "appointedOn": "2009-01-02",
+      "retirementOn": "2028-04-10",
+      "appointedBy": "Harper, Stephen (C)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/wallin-pamela/",
+        "fr": "https://sencanada.ca/fr/senateurs/wallin-pamela/"
+      }
+    },
+    {
+      "slug": "wells-david-m",
+      "firstName": "David M.",
+      "lastName": "Wells",
+      "name": "David M. Wells",
+      "postNominal": null,
+      "group": {
+        "code": "C",
+        "en": "C",
+        "fr": "C",
+        "enName": "Conservative Party of Canada",
+        "frName": "Parti conservateur du Canada"
+      },
+      "province": {
+        "code": "NL",
+        "en": "Newfoundland and Labrador",
+        "fr": "Terre-Neuve-et-Labrador"
+      },
+      "appointedOn": "2013-01-25",
+      "retirementOn": "2037-02-28",
+      "appointedBy": "Harper, Stephen (C)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/wells-david-m/",
+        "fr": "https://sencanada.ca/fr/senateurs/wells-david-m/"
+      }
+    },
+    {
+      "slug": "wells-kristopher",
+      "firstName": "Kristopher",
+      "lastName": "Wells",
+      "name": "Kristopher Wells",
+      "postNominal": null,
+      "group": {
+        "code": "PSG",
+        "en": "PSG",
+        "fr": "GPS",
+        "enName": "Progressive Senate Group",
+        "frName": "Groupe progressiste du Sénat"
+      },
+      "province": {
+        "code": "AB",
+        "en": "Alberta",
+        "fr": "Alberta"
+      },
+      "appointedOn": "2024-08-30",
+      "retirementOn": "2046-10-07",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/wells-kristopher/",
+        "fr": "https://sencanada.ca/fr/senateurs/wells-kristopher/"
+      }
+    },
+    {
+      "slug": "white-judy",
+      "firstName": "Judy A.",
+      "lastName": "White",
+      "name": "Judy A. White",
+      "postNominal": null,
+      "group": {
+        "code": "PSG",
+        "en": "PSG",
+        "fr": "GPS",
+        "enName": "Progressive Senate Group",
+        "frName": "Groupe progressiste du Sénat"
+      },
+      "province": {
+        "code": "NL",
+        "en": "Newfoundland and Labrador",
+        "fr": "Terre-Neuve-et-Labrador"
+      },
+      "appointedOn": "2023-07-06",
+      "retirementOn": "2039-01-11",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/white-judy/",
+        "fr": "https://sencanada.ca/fr/senateurs/white-judy/"
+      }
+    },
+    {
+      "slug": "wilson-duncan",
+      "firstName": "Duncan",
+      "lastName": "Wilson",
+      "name": "Duncan Wilson",
+      "postNominal": null,
+      "group": {
+        "code": "PSG",
+        "en": "PSG",
+        "fr": "GPS",
+        "enName": "Progressive Senate Group",
+        "frName": "Groupe progressiste du Sénat"
+      },
+      "province": {
+        "code": "BC",
+        "en": "British Columbia",
+        "fr": "Colombie-Britannique"
+      },
+      "appointedOn": "2025-02-28",
+      "retirementOn": "2042-09-26",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/wilson-duncan/",
+        "fr": "https://sencanada.ca/fr/senateurs/wilson-duncan/"
+      }
+    },
+    {
+      "slug": "woo-yuen-pau",
+      "firstName": "Yuen Pau",
+      "lastName": "Woo",
+      "name": "Yuen Pau Woo",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "BC",
+        "en": "British Columbia",
+        "fr": "Colombie-Britannique"
+      },
+      "appointedOn": "2016-11-10",
+      "retirementOn": "2038-03-02",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/woo-yuen-pau/",
+        "fr": "https://sencanada.ca/fr/senateurs/woo-yuen-pau/"
+      }
+    },
+    {
+      "slug": "youance-suze",
+      "firstName": "Suze",
+      "lastName": "Youance",
+      "name": "Suze Youance",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "QC",
+        "en": "Quebec",
+        "fr": "Québec"
+      },
+      "appointedOn": "2024-09-25",
+      "retirementOn": "2045-08-11",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/youance-suze/",
+        "fr": "https://sencanada.ca/fr/senateurs/youance-suze/"
+      }
+    },
+    {
+      "slug": "yussuff-hassan",
+      "firstName": "Hassan",
+      "lastName": "Yussuff",
+      "name": "Hassan Yussuff",
+      "postNominal": null,
+      "group": {
+        "code": "ISG",
+        "en": "ISG",
+        "fr": "GSI",
+        "enName": "Independent Senators Group",
+        "frName": "Groupe des sénateurs indépendants"
+      },
+      "province": {
+        "code": "ON",
+        "en": "Ontario",
+        "fr": "Ontario"
+      },
+      "appointedOn": "2021-06-22",
+      "retirementOn": "2031-12-15",
+      "appointedBy": "Trudeau, Justin (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/yussuff-hassan/",
+        "fr": "https://sencanada.ca/fr/senateurs/yussuff-hassan/"
+      }
+    }
+  ]
+}

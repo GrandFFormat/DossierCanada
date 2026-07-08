@@ -33,6 +33,23 @@ const MINISTERS_PATH = 'data/ministers.json';
 const PET_START_MARKER = '/* PETITIONS_DATA_START';
 const PET_END_MARKER = '/* PETITIONS_DATA_END */';
 const PETITIONS_PATH = 'data/petitions.json';
+const SENATORS_PATH = 'data/senators.json';
+const SENATE_VOTES_PATH = 'data/senate-votes.json';
+const SEN_START_MARKER = '/* SENATORS_DATA_START';
+const SEN_END_MARKER = '/* SENATORS_DATA_END */';
+const SENVOTES_START_MARKER = '/* SENATE_VOTES_DATA_START';
+const SENVOTES_END_MARKER = '/* SENATE_VOTES_DATA_END */';
+
+// Clé de rapprochement d'un nom de sénateur·rice : minuscule, sans accents ni
+// ponctuation. "Ringuette, Pierrette" et lastName+firstName du roster convergent
+// vers la même chaîne, ce qui permet la jointure bulletin → fiche par le nom
+// (le Sénat n'expose pas d'identifiant stable comme le PersonId des Communes).
+function normName(s) {
+  return (s || '')
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[^a-z]/g, '');
+}
 
 function read(path) {
   return JSON.parse(readFileSync(path, 'utf-8'));
@@ -209,6 +226,114 @@ function main() {
     const petitions = read(PETITIONS_PATH).petitions;
     html = injectBlock(html, PET_START_MARKER, PET_END_MARKER, 'petitions', petitions, stamp);
   }
+
+  // Sénat : roster + votes nominatifs (fichiers séparés) — injectés s'ils existent.
+  let senateStats = null;
+  if (existsSync(SENATORS_PATH) && existsSync(SENATE_VOTES_PATH)) {
+    const senators = read(SENATORS_PATH).senators;
+    const senateVotesData = read(SENATE_VOTES_PATH);
+    const senateSession = senateVotesData.session;
+    const senateVotes = senateVotesData.votes;
+
+    // Jointure bulletin → fiche (le Sénat n'expose pas ici d'identifiant stable
+    // comme le PersonId des Communes). D'abord le nom complet normalisé, puis un
+    // repli sur « nom + 1er prénom » qui tolère un 2e prénom ou des post-nominaux
+    // présents d'un seul côté — et seulement si ce repli est SANS ambiguïté.
+    const exactBySlug = new Map();
+    const looseCount = new Map();
+    const looseBySlug = new Map();
+    const looseKey = (last, first) => normName(`${last}${(first || '').split(/\s+/)[0]}`);
+    for (const s of senators) {
+      exactBySlug.set(normName(`${s.lastName}${s.firstName}`), s.slug);
+      const lk = looseKey(s.lastName, s.firstName);
+      looseCount.set(lk, (looseCount.get(lk) || 0) + 1);
+      looseBySlug.set(lk, s.slug);
+    }
+    const slugForBallot = (name) => {
+      const exact = exactBySlug.get(normName(name));
+      if (exact) return exact;
+      const [last = '', first = ''] = name.split(',').map((p) => p.trim());
+      const lk = looseKey(last, first);
+      return looseCount.get(lk) === 1 ? looseBySlug.get(lk) : null;
+    };
+
+    const resolvedSenateVotes = senateVotes.map((v) => ({
+      ...v,
+      billId: v.billNumber ? billIdByKey.get(`${senateSession}/${v.billNumber}`) ?? null : null,
+      ballots: v.ballots.map((b) => ({ ...b, slug: slugForBallot(b.name) })),
+    }));
+
+    // Bilan de votes par sénateur·rice : dénominateur = scrutins tenus depuis sa
+    // nomination (on ne pénalise pas pour des votes d'avant son arrivée).
+    const mineBySlug = new Map();
+    for (const v of resolvedSenateVotes)
+      for (const b of v.ballots)
+        if (b.slug) {
+          if (!mineBySlug.has(b.slug)) mineBySlug.set(b.slug, new Map());
+          mineBySlug.get(b.slug).set(v.id, b.vote);
+        }
+    const senatorsOut = senators.map((s) => {
+      let eligible = 0;
+      const tally = { yea: 0, nay: 0, abstention: 0 };
+      const mine = mineBySlug.get(s.slug);
+      for (const v of resolvedSenateVotes) {
+        if (s.appointedOn && v.date && v.date < s.appointedOn) continue;
+        eligible++;
+        const vote = mine ? mine.get(v.id) : undefined;
+        if (vote) tally[vote]++;
+      }
+      const cast = tally.yea + tally.nay + tally.abstention;
+      return {
+        ...s,
+        votingRecord: {
+          eligible,
+          cast,
+          ...tally,
+          absent: eligible - cast,
+          participationRate: eligible ? Number((cast / eligible).toFixed(3)) : null,
+        },
+      };
+    });
+
+    // Bulletins sans fiche = ancien·ne·s sénateur·rice·s (parti·e·s depuis leur vote).
+    const formerSenators = new Set();
+    for (const v of resolvedSenateVotes) for (const b of v.ballots) if (!b.slug) formerSenators.add(normName(b.name));
+
+    const frontendSenators = senatorsOut.map((s) => ({
+      slug: s.slug,
+      name: s.name,
+      group: s.group,
+      province: s.province,
+      appointedOn: s.appointedOn,
+      retirementOn: s.retirementOn,
+      appointedBy: s.appointedBy,
+      url: s.url,
+      votingRecord: s.votingRecord,
+    }));
+    const frontendSenateVotes = resolvedSenateVotes.map((v) => ({
+      id: v.id,
+      date: v.date,
+      title: v.title,
+      billNumber: v.billNumber,
+      billId: v.billId,
+      totals: v.totals,
+      result: v.result,
+      passed: v.passed,
+      url: v.url,
+      ballots: v.ballots.map((b) => ({ slug: b.slug, name: b.name, affiliation: b.affiliation, vote: b.vote })),
+    }));
+
+    html = injectBlock(html, SEN_START_MARKER, SEN_END_MARKER, 'senators', frontendSenators, stamp);
+    html = injectBlock(html, SENVOTES_START_MARKER, SENVOTES_END_MARKER, 'senateVotes', frontendSenateVotes, stamp);
+
+    senateStats = {
+      senators: frontendSenators.length,
+      votes: frontendSenateVotes.length,
+      linked: resolvedSenateVotes.filter((v) => v.billId != null).length,
+      former: formerSenators.size,
+    };
+  }
+
   writeFileSync(HTML_PATH, html);
 
   console.log(`Fusion écrite dans ${OUT_PATH}`);
@@ -218,6 +343,10 @@ function main() {
   console.log(`  ancien·ne·s député·e·s présent·e·s dans les votes : ${formerVoterIds.size}`);
   if (unresolved.length) {
     console.log(`  ⚠ ${unresolved.length} vote(s) avec projet non résolu : ${unresolved.map((v) => `#${v.number}→${v.billNumber}`).join(', ')}`);
+  }
+  if (senateStats) {
+    console.log(`  Sénat : ${senateStats.senators} sénateur·rice·s · ${senateStats.votes} votes (${senateStats.linked} reliés à un projet) injectés`);
+    if (senateStats.former) console.log(`  ⚠ ${senateStats.former} nom(s) de bulletin sans fiche au roster (ancien·ne·s sénateur·rice·s)`);
   }
 }
 
