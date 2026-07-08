@@ -1033,6 +1033,12 @@
         <div class="sub" data-i18n="h.lexique.sub">Pour comprendre le reste du site sans avoir fait un cours de science politique</div>
       </div>
     </div>
+    <div class="quick-nav">
+      <span class="quick-nav-label" data-i18n="quicknav.label">Aller à :</span>
+      <a data-jump="sec-lexique-people" data-i18n="nav.personnes">Qui gravite autour</a>
+      <a data-jump="lexiqueList" data-i18n="nav.lexique">Lexique</a>
+      <a onclick="goToTab('compte'); setTimeout(()=>{ const e=document.getElementById('sec-apropos'); if(e) e.scrollIntoView({behavior:'smooth'}); }, 400)" data-i18n="nav.apropos">D'où viennent ces données</a>
+    </div>
     <dl id="lexiqueList"></dl>
   </section>
 
@@ -3261,7 +3267,7 @@ function renderLexique(){
   const item = t => `<div class="lexique-item"><dt>${L(t.term)}</dt><dd>${L(t.def)}</dd></div>`;
   const peopleTitle = isEn ? 'Who’s involved around Parliament' : 'Qui gravite autour du Parlement';
   el.innerHTML = lexiconTerms.map(item).join('')
-    + `<div class="role-group-title" style="margin-top:26px;">${peopleTitle}</div>`
+    + `<div class="role-group-title" id="sec-lexique-people" style="margin-top:26px;">${peopleTitle}</div>`
     + lexiconPeople.map(item).join('');
 }
 
