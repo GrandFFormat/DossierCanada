@@ -1014,6 +1014,16 @@
     </div>
   </section>
 
+  <!-- LEXIQUE -->
+  <section class="view" id="view-lexique">
+    <div class="section-head">
+      <div>
+        <h2 data-i18n="h.lexique">Lexique du jargon parlementaire</h2>
+        <div class="sub" data-i18n="h.lexique.sub">Pour comprendre le reste du site sans avoir fait un cours de science politique</div>
+      </div>
+    </div>
+    <dl id="lexiqueList"></dl>
+  </section>
 
 </div>
 
@@ -1329,6 +1339,7 @@ function applyLanguage(){
   renderApercuPetitions();
   renderNews();
   renderRoadmap();
+  renderLexique();
   updateChamberLabels();
   setChamber(chamberView);
   setVoteChamber(voteChamber);
@@ -2981,6 +2992,56 @@ function renderSenateHemicycle(){
   const sEl = document.getElementById('senateCompoSub');
   if(tEl) tEl.textContent = isEn ? 'Senate composition' : 'Composition du Sénat';
   if(sEl) sEl.textContent = isEn ? `${SENATE_SEATS_TOTAL} seats — by parliamentary group (appointed senators)` : `${SENATE_SEATS_TOTAL} sièges — répartition par groupe parlementaire (sénateur·rice·s nommé·e·s)`;
+}
+
+/* ---------------- LEXIQUE (glossaire parlementaire fédéral) ---------------- */
+const lexiconTerms = [
+  { term: { fr: "Projet de loi (C- / S-)", en: "Bill (C- / S-)" }, def: {
+    fr: "Un texte proposé qui doit franchir les deux chambres puis recevoir la sanction royale pour devenir loi. Les projets numérotés <b>C-</b> commencent à la Chambre des communes, les <b>S-</b> au Sénat. Les numéros sous 200 sont des projets du gouvernement ; à partir de C-200 / S-200, ce sont des projets émanant d'un·e député·e ou sénateur·rice.",
+    en: "A proposed text that must clear both chambers and then receive royal assent to become law. Bills numbered <b>C-</b> start in the House of Commons, <b>S-</b> in the Senate. Numbers below 200 are government bills; from C-200 / S-200 on, they are private members' or senators' bills." } },
+  { term: { fr: "Première, deuxième, troisième lecture", en: "First, second, third reading" }, def: {
+    fr: "Les trois grandes étapes d'un projet dans chaque chambre. <b>1re</b> : dépôt (pas de débat). <b>2e</b> : vote sur le principe. <b>3e</b> : vote final de la chambre. Un projet fait ce parcours <i>deux fois</i> — une fois par chambre.",
+    en: "The three main stages of a bill in each chamber. <b>1st</b>: introduction (no debate). <b>2nd</b>: vote on the principle. <b>3rd</b>: the chamber's final vote. A bill runs this course <i>twice</i> — once per chamber." } },
+  { term: { fr: "Étape du comité / du rapport", en: "Committee / report stage" }, def: {
+    fr: "Entre la 2e et la 3e lecture, un comité étudie le projet article par article et peut proposer des amendements ; l'étape du rapport ramène le résultat (et d'éventuels amendements) devant la chambre.",
+    en: "Between 2nd and 3rd reading, a committee studies the bill clause by clause and may propose amendments; report stage brings the result (and any amendments) back before the chamber." } },
+  { term: { fr: "Sanction royale", en: "Royal assent" }, def: {
+    fr: "La dernière étape : une fois adopté à l'identique par les deux chambres, le projet reçoit l'accord formel de la Couronne (le gouverneur général) et devient loi.",
+    en: "The final step: once passed in identical form by both chambers, the bill receives the Crown's formal agreement (the Governor General) and becomes law." } },
+  { term: { fr: "Vote par appel nominal", en: "Recorded (standing) vote" }, def: {
+    fr: "Un vote où le nom et la position de chaque parlementaire sont consignés. C'est la source du détail « qui a voté quoi » sur ce site — aux Communes (Pour / Contre / pairé) comme au Sénat (Pour / Contre / abstention).",
+    en: "A vote where each member's name and position are recorded. It is the source of the \"who voted what\" detail on this site — in the Commons (yea / nay / paired) and in the Senate (yea / nay / abstention)." } },
+  { term: { fr: "Pairé (Communes)", en: "Paired (Commons)" }, def: {
+    fr: "Aux Communes, deux député·e·s de camps opposés peuvent convenir de s'abstenir ensemble pour un vote : leurs voix s'annulent. « Pairé » est donc une position enregistrée, pas une absence.",
+    en: "In the Commons, two MPs on opposite sides may agree to abstain together for a vote: their votes cancel out. \"Paired\" is therefore a recorded position, not an absence." } },
+  { term: { fr: "Parrain / marraine d'un projet", en: "Bill sponsor" }, def: {
+    fr: "Le·la parlementaire (ministre, député·e ou sénateur·rice) qui présente le projet et le porte à travers les étapes.",
+    en: "The member (minister, MP or senator) who introduces the bill and carries it through the stages." } },
+  { term: { fr: "Sénateur·rice", en: "Senator" }, def: {
+    fr: "Membre du Sénat, la deuxième chambre. Les sénateur·rice·s sont <b>nommé·e·s</b> (non élu·e·s) sur recommandation du premier ministre et siègent jusqu'à 75 ans. Le Sénat compte 105 sièges.",
+    en: "A member of the Senate, the second chamber. Senators are <b>appointed</b> (not elected) on the Prime Minister's recommendation and serve until age 75. The Senate has 105 seats." } },
+  { term: { fr: "Groupes parlementaires du Sénat", en: "Senate parliamentary groups" }, def: {
+    fr: "Depuis les réformes de 2016, le Sénat s'organise surtout en groupes <b>non partisans</b>, pas en partis : <b>GSI</b> (Groupe des sénateurs indépendants), <b>GSC</b> (Groupe des sénateurs canadiens), <b>GPS</b> (Groupe progressiste du Sénat). S'y ajoutent le <b>C</b> (caucus conservateur, le seul parti restant), le <b>BRG</b> (Bureau du représentant du gouvernement, qui pilote le programme du gouvernement) et les sénateur·rice·s <b>non affilié·e·s</b>.",
+    en: "Since the 2016 reforms, the Senate is organized mostly into <b>non-partisan</b> groups rather than parties: <b>ISG</b> (Independent Senators Group), <b>CSG</b> (Canadian Senators Group), <b>PSG</b> (Progressive Senate Group). Alongside them sit the <b>C</b> (Conservative caucus, the only remaining party), the <b>GRO</b> (Government Representative Office, which steers the government's agenda) and <b>non-affiliated</b> senators." } },
+  { term: { fr: "Caucus", en: "Caucus" }, def: {
+    fr: "L'ensemble des parlementaires d'un même parti. Aux Communes : LPC (libéral), CPC (conservateur), BQ (Bloc), NPD, PVC (Vert).",
+    en: "All the members of a given party. In the Commons: LPC (Liberal), CPC (Conservative), BQ (Bloc), NDP, GPC (Green)." } },
+  { term: { fr: "Législature et session", en: "Parliament and session" }, def: {
+    fr: "Une <b>législature</b> couvre la période entre deux élections générales (la 45e a débuté en 2025). Elle se divise en <b>sessions</b> ; « 45-1 » désigne la 1re session de la 45e législature — la période couverte par ce site.",
+    en: "A <b>Parliament</b> spans the period between two general elections (the 45th began in 2025). It is divided into <b>sessions</b>; \"45-1\" means the 1st session of the 45th Parliament — the period this site covers." } },
+  { term: { fr: "Prorogation / dissolution", en: "Prorogation / dissolution" }, def: {
+    fr: "La <b>prorogation</b> met fin à une session (les projets non adoptés meurent, sauf rétablissement) ; la <b>dissolution</b> met fin à la législature et déclenche des élections.",
+    en: "<b>Prorogation</b> ends a session (bills not yet passed die, unless reinstated); <b>dissolution</b> ends the Parliament and triggers an election." } },
+  { term: { fr: "Cabinet (conseil des ministres)", en: "Cabinet" }, def: {
+    fr: "L'équipe de ministres, dirigée par le premier ministre, qui oriente le gouvernement et propose la plupart des projets de loi. Les ministres sont presque toujours des député·e·s.",
+    en: "The team of ministers, led by the Prime Minister, that directs the government and proposes most bills. Ministers are almost always MPs." } },
+];
+function renderLexique(){
+  const el = document.getElementById('lexiqueList');
+  if(!el) return;
+  const isEn = currentLang === 'en';
+  const L = o => isEn ? (o.en || o.fr) : (o.fr || o.en);
+  el.innerHTML = lexiconTerms.map(t => `<div class="lexique-item"><dt>${L(t.term)}</dt><dd>${L(t.def)}</dd></div>`).join('');
 }
 
 function updateChamberLabels(){
