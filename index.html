@@ -761,6 +761,18 @@
         <div id="findMpResult" style="margin-top:12px;"></div>
       </div>
     </div><!-- /commonsChrome -->
+    <div id="senateComposition" style="display:none">
+      <div class="section-head">
+        <div>
+          <h2 id="senateCompoTitle">Composition du Sénat</h2>
+          <div class="sub" id="senateCompoSub">105 sièges — répartition par groupe parlementaire (sénateur·rice·s nommé·e·s)</div>
+        </div>
+      </div>
+      <div class="hemicycle-wrap">
+        <svg id="senateHemicycleSvg" width="420" height="230" viewBox="0 0 420 230"></svg>
+        <div class="hemicycle-legend" id="senateHemicycleLegend"></div>
+      </div>
+    </div>
     <div class="role-group-title" id="deputesTitle" data-i18n="min.restTitle">Les député·e·s de la Chambre des communes — tous les partis</div>
     <div class="grid" id="deputesList"></div>
     <div class="info-box" id="deputesInfoBox" data-i18n="trouve.info">Ces entrées viennent directement de la liste officielle des député·e·s en fonction de la Chambre des communes (ourcommons.ca), bilingue. Certains sièges peuvent changer entre deux mises à jour (démission, élection partielle) — cette liste est une photo prise au moment de la dernière mise à jour, pas un flux automatiquement à jour.</div>
@@ -2915,6 +2927,62 @@ function renderSenators(filter){
     : `<div class="no-results">${isEn ? 'No results for this search.' : 'Aucun résultat pour cette recherche.'}</div>`;
 }
 
+// Hémicycle du Sénat : 105 sièges, colorés par groupe parlementaire, les sièges
+// vacants en gris. Mêmes maths que l'hémicycle des Communes, avec la légende en
+// noms complets bilingues (pour expliquer les groupes, pas juste les sigles).
+const SENATE_SEATS_TOTAL = 105;
+function renderSenateHemicycle(){
+  const svg = document.getElementById('senateHemicycleSvg');
+  if(!svg) return;
+  const isEn = currentLang === 'en';
+  const by = {}, info = {};
+  for(const s of senators){ const c = s.group.code || 'Non-affiliated'; by[c] = (by[c] || 0) + 1; info[c] = s.group; }
+  const order = ['ISG', 'CSG', 'PSG', 'C', 'GRO', 'Non-affiliated'].filter(c => by[c]);
+  const filled = order.reduce((a, c) => a + by[c], 0);
+  const vacant = Math.max(0, SENATE_SEATS_TOTAL - filled);
+
+  const seatList = [];
+  order.forEach(c => { for(let i = 0; i < by[c]; i++) seatList.push(c); });
+  for(let i = 0; i < vacant; i++) seatList.push('VACANT');
+  const total = seatList.length;
+
+  const cx = 210, cy = 210, rOuter = 195, rInner = 82, rows = 8;
+  const radii = [];
+  for(let row = 0; row < rows; row++) radii.push(rInner + (rOuter - rInner) * (row / (rows - 1)));
+  const wSum = radii.reduce((a, r) => a + r, 0);
+  let perRow = radii.map(r => Math.max(1, Math.round(total * r / wSum)));
+  let diff = total - perRow.reduce((a, b) => a + b, 0);
+  for(let k = rows - 1; diff !== 0; k = (k - 1 + rows) % rows){ const d = Math.sign(diff); perRow[k] += d; diff -= d; }
+  let positions = [];
+  for(let row = 0; row < rows; row++){
+    const r = radii[row], n = perRow[row];
+    for(let i = 0; i < n; i++){ const ang = n > 1 ? Math.PI * (i / (n - 1)) : Math.PI / 2; positions.push({ ang, x: cx - r * Math.cos(ang), y: cy - r * Math.sin(ang) }); }
+  }
+  positions.sort((a, b) => a.ang - b.ang);
+  svg.innerHTML = positions.map((p, i) => {
+    const c = seatList[i];
+    const color = c === 'VACANT' ? '#D8DAE0' : (groupColors[c] || '#999');
+    return `<circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="3.6" fill="${color}"/>`;
+  }).join('');
+
+  const legend = document.getElementById('senateHemicycleLegend');
+  const rowsHtml = order.map(c => {
+    const g = info[c];
+    const name = (isEn ? (g.enName || g.en) : (g.frName || g.fr)) || c;
+    return `<div class="row"><span class="dot" style="background:${groupColors[c]}"></span>${name} <b style="margin-left:auto">${by[c]}</b></div>`;
+  }).join('');
+  const vacantRow = vacant ? `<div class="row"><span class="dot" style="background:#D8DAE0"></span>${isEn ? 'Vacant seats' : 'Sièges vacants'} <b style="margin-left:auto">${vacant}</b></div>` : '';
+  const foot = isEn
+    ? 'Real count from the official list of senators. The Senate has 105 seats; senators are appointed (not elected), and mostly non-partisan groups — not parties — organize the chamber since the 2016 reforms.'
+    : 'Décompte réel tiré de la liste officielle des sénateur·rice·s. Le Sénat compte 105 sièges ; les sénateur·rice·s sont nommé·e·s (non élu·e·s), et depuis les réformes de 2016 ce sont surtout des groupes non partisans — pas des partis — qui organisent la chambre.';
+  legend.innerHTML = rowsHtml + vacantRow + `<div style="font-size:11px; color:var(--slate); margin-top:6px; max-width:250px;">${foot}</div>`;
+
+  const tEl = document.getElementById('senateCompoTitle');
+  const sEl = document.getElementById('senateCompoSub');
+  if(tEl) tEl.textContent = isEn ? 'Senate composition' : 'Composition du Sénat';
+  if(sEl) sEl.textContent = isEn ? `${SENATE_SEATS_TOTAL} seats — by parliamentary group (appointed senators)` : `${SENATE_SEATS_TOTAL} sièges — répartition par groupe parlementaire (sénateur·rice·s nommé·e·s)`;
+}
+
 function updateChamberLabels(){
   const isEn = currentLang === 'en';
   const set = (id, fr, en) => { const e = document.getElementById(id); if(e) e.textContent = isEn ? en : fr; };
@@ -2934,9 +3002,11 @@ function setChamber(c){
   document.getElementById('chamberSenateBtn')?.classList.toggle('on', senate);
   const show = (id, on) => { const e = document.getElementById(id); if(e) e.style.display = on ? '' : 'none'; };
   show('commonsChrome', !senate);
+  show('senateComposition', senate);
   show('deputesInfoBox', !senate);
   show('followInfoBox', !senate);
   show('senateInfoBox', senate);
+  if(senate) renderSenateHemicycle();
   const sBox = document.getElementById('senateInfoBox');
   if(sBox) sBox.innerHTML = isEn
     ? 'These cards come from the official list of senators (sencanada.ca), bilingual. Senators are <b>appointed</b> (not elected) and serve until age 75; the parliamentary group, region, appointment date and attendance rate come from the official source. The Senate has 105 seats; vacant seats are not shown. No "Follow" button here for now.'
