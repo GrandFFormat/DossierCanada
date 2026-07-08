@@ -302,6 +302,7 @@ function main() {
     const frontendSenators = senatorsOut.map((s) => ({
       slug: s.slug,
       name: s.name,
+      lastName: s.lastName,
       group: s.group,
       province: s.province,
       appointedOn: s.appointedOn,
