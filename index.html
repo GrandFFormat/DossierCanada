@@ -632,7 +632,7 @@
       <span class="quick-nav-label" data-i18n="quicknav.label">Aller à :</span>
       <a data-jump="sec-mission" data-i18n="quicknav.mission">Notre mission</a>
       <a data-jump="sec-projets-recents" data-i18n="quicknav.projets">Projets de loi</a>
-      <a data-jump="sec-quoideneuf" data-i18n="quicknav.quoideneuf" style="display:none">Quoi de neuf</a>
+      <a data-jump="sec-quoideneuf" data-i18n="quicknav.quoideneuf">Quoi de neuf</a>
       <a data-jump="sec-petitions" data-i18n="quicknav.petitions">Pétitions</a>
     </div>
 
@@ -682,17 +682,10 @@
     <div id="apercuBills"></div>
     </div>
 
-    <div class="section-head" id="sec-quoideneuf" style="display:none"><div><h2 data-i18n="h.quoideneuf">Quoi de neuf</h2><div class="sub" data-i18n="h.quoideneuf.sub">Dernières activités réelles à l'Assemblée nationale</div></div><span class="snooze-pill" onclick="toggleSnooze('quoideneuf', true)" id="snooze-quoideneuf"><span data-i18n="snooze.label">😴 Réduire</span></span></div>
+    <div class="section-head" id="sec-quoideneuf"><div><h2 data-i18n="h.quoideneuf">Quoi de neuf</h2><div class="sub" data-i18n="h.quoideneuf.sub">Dernières activités réelles à la Chambre des communes</div></div><span class="snooze-pill" onclick="toggleSnooze('quoideneuf', true)" id="snooze-quoideneuf"><span data-i18n="snooze.label">😴 Réduire</span></span></div>
 
-    <div id="body-quoideneuf" style="display:none">
-    <div class="calendar-box">
-      <div class="status" data-i18n="cal.status">● Travaux ajournés depuis le 12 juin 2026 · reprise le 15 septembre 2026</div>
-      <h3 data-i18n="cal.title">Calendrier des travaux</h3>
-      <p data-i18n="cal.p1">L'Assemblée ne siège pas en continu. Son Règlement fixe deux périodes de travaux : au printemps, à partir du 2e mardi de février (16 semaines, plus 2 semaines de travaux intensifs), et à l'automne, à partir du 3e mardi de septembre (10 semaines, plus 2 semaines intensives). En dehors de ces périodes, l'Assemblée est ajournée — sauf séance extraordinaire convoquée par la première ministre.</p>
-      <p style="color:#8891A8; font-size:11.5px;" data-i18n="cal.p2">Cette page résume les grandes périodes de travaux, pas l'horaire quotidien. Pour le détail jour par jour des prochaines séances et des commissions, le calendrier officiel de l'Assemblée reste la référence.</p>
-    </div>
-
-    <div class="section-head"><div><h2 data-i18n="h.filactu">Fil d'actualité</h2><div class="sub" data-i18n="news.sub">Les 7 derniers jours d'activité, à partir de la dernière donnée disponible (12 juin 2026)</div></div></div>
+    <div id="body-quoideneuf">
+    <div class="section-head"><div><h2 data-i18n="h.filactu">Fil d'actualité</h2><div class="sub" data-i18n="news.sub">Les activités parlementaires les plus récentes</div></div></div>
     <div id="newsList"></div>
     </div>
 
@@ -1336,7 +1329,7 @@ const translations = {
     'h.compte':"Compte et suivi",
     'h.trouve':"Trouvez votre député",
     'h.quoideneuf':"Quoi de neuf",
-    'h.quoideneuf.sub':"Dernières activités réelles à l'Assemblée nationale",
+    'h.quoideneuf.sub':"Dernières activités réelles à la Chambre des communes",
     'h.filactu':"Fil d'actualité",
     'h.lexique':"Lexique du jargon parlementaire",
     'h.lexique.sub':"Pour comprendre le reste du site sans avoir fait un cours de science politique",
@@ -1374,7 +1367,7 @@ const translations = {
     'h.compte':"Account and follows",
     'h.trouve':"Find your MNA",
     'h.quoideneuf':"What's new",
-    'h.quoideneuf.sub':"Real, recent activity from the National Assembly",
+    'h.quoideneuf.sub':"Real, recent activity from the House of Commons",
     'h.filactu':"News feed",
     'h.lexique':"Parliamentary glossary",
     'h.lexique.sub':"To understand the rest of the site without a political science degree",
@@ -1429,7 +1422,7 @@ const translations = {
     'cal.title':"Sitting calendar",
     'cal.p1':"The Assembly doesn't sit year-round. Its Standing Orders set two working periods: a spring period starting the 2nd Tuesday of February (16 weeks, plus 2 intensive weeks), and a fall period starting the 3rd Tuesday of September (10 weeks, plus 2 intensive weeks). Outside these periods the Assembly is adjourned — barring a special sitting called by the Premier.",
     'cal.p2':"This page outlines the main working periods, not the daily schedule. For a day-by-day view of upcoming sittings and committees, the Assembly's official calendar remains the reference.",
-    'news.sub':"The last 7 days of activity, from the latest available data (June 12, 2026)",
+    'news.sub':"The most recent parliamentary activity",
     // Lexicon
     'lex.1.t':"Bill (C- / S-)", 'lex.1.d':"The text a member or the government introduces in Parliament to become law. Numbers starting with \"C-\" come from the House of Commons, \"S-\" from the Senate. It becomes law only after both chambers pass it and it receives royal assent.",
     'lex.2.t':"First, second and third reading", 'lex.2.d':"The three main votes a bill clears in each chamber: first reading introduces it, second approves it in principle, third adopts the final text. A bill must clear all three in BOTH chambers (Commons and Senate).",
@@ -2308,39 +2301,31 @@ function initials(name){
   return name.split(' ').filter(w=>w[0]===w[0].toUpperCase()).slice(0,2).map(w=>w[0]).join('');
 }
 
-// Vrais éléments datés, tirés de la page d'accueil assnat.qc.ca (relevés le 12 juin 2026)
-const newsItems = [
-  {date:'2026-06-12', label:'12 juin 2026', labelEn:'June 12, 2026', text:"L'Assemblée nationale a ajourné ses travaux.", textEn:"The National Assembly adjourned its proceedings."},
-  {date:'2026-06-12', label:'12 juin 2026', labelEn:'June 12, 2026', text:"Dépôt du projet de loi n° 692 — Loi visant à créer un nouvel outil de conservation volontaire des milieux naturels.", textEn:"Bill 692 introduced — An Act to create a new tool for the voluntary conservation of natural environments."},
-  {date:'2026-06-11', label:'11 juin 2026', labelEn:'June 11, 2026', text:"Les joueuses de la Victoire célébrées à l'Assemblée nationale.", textEn:"Members of the Victoire hockey team honoured at the National Assembly."},
-  {date:'2026-06-10', label:'10 juin 2026', labelEn:'June 10, 2026', text:"La Commission de la culture et de l'éducation entreprend l'étude détaillée du projet de loi n° 2 (souveraineté parlementaire et Charte de la langue française).", textEn:"The Committee on Culture and Education begins clause-by-clause review of Bill 2 (parliamentary sovereignty and the Charter of the French Language)."},
-  {date:'2026-06-09', label:'9 juin 2026', labelEn:'June 9, 2026', text:"La Commission de l'agriculture, des pêcheries, de l'énergie et des ressources naturelles entreprend l'étude détaillée du projet de loi n° 17 (stockage de gaz naturel).", textEn:"The Committee on Agriculture, Fisheries, Energy and Natural Resources begins clause-by-clause review of Bill 17 (natural gas storage)."},
-];
-const newsAnchor = newsItems.reduce((max,n)=> n.date > max ? n.date : max, newsItems[0].date);
-let newsWindows = 1; // nombre de fenêtres de 7 jours affichées
-
+// Fil d'actualité fédéral : généré à partir des dernières activités RÉELLES des
+// projets de loi (LEGISinfo, via data/bills.json), triées par date décroissante.
+// Rien n'est inventé : chaque entrée est la dernière activité datée d'un projet.
+let newsShown = 8;
 function renderNews(){
   const isEn = currentLang === 'en';
-  const cutoff = new Date(newsAnchor);
-  cutoff.setDate(cutoff.getDate() - 7*newsWindows);
-  const cutoffStr = cutoff.toISOString().slice(0,10);
-  const visible = newsItems.filter(n => n.date >= cutoffStr);
-  const hasMore = newsItems.some(n => n.date < cutoffStr);
-  const moreBtn = isEn ? '+ 7 more days' : '+ 7 jours de plus';
-  const noMore = isEn ? 'Data not yet confirmed beyond this — to be added later.' : 'Donnée manquante au-delà de cette date — à confirmer plus tard.';
-
-  document.getElementById('newsList').innerHTML = visible.map(n => `
+  const el = document.getElementById('newsList');
+  if(!el) return;
+  const items = bills
+    .filter(b => b.lastActivity && b.latestActivity && (b.latestActivity.fr || b.latestActivity.en))
+    .slice()
+    .sort((a, b) => (b.lastActivity || '').localeCompare(a.lastActivity || ''));
+  const shown = items.slice(0, newsShown);
+  const hasMore = newsShown < items.length;
+  const moreBtn = isEn ? '+ Show more' : '+ Voir plus';
+  el.innerHTML = shown.map(b => {
+    const txt = isEn ? (b.latestActivity.en || b.latestActivity.fr) : (b.latestActivity.fr || b.latestActivity.en);
+    return `
     <div class="news-item">
-      <div class="news-date">${isEn ? (n.labelEn||n.label) : n.label}</div>
-      <div class="news-body"><p>${isEn ? (n.textEn||n.text) : n.text}</p></div>
-    </div>
-  `).join('') + (hasMore ? `<button class="bill-more" style="margin-top:14px; border:none; cursor:pointer;" onclick="loadMoreNews()">${moreBtn}</button>` : `<div class="no-results">${noMore}</div>`);
+      <div class="news-date">${b.lastActivity}</div>
+      <div class="news-body"><p><b>${b.num}</b> — ${txt}</p></div>
+    </div>`;
+  }).join('') + (hasMore ? `<button class="bill-more" style="margin-top:14px; border:none; cursor:pointer;" onclick="loadMoreNews()">${moreBtn}</button>` : '');
 }
-
-function loadMoreNews(){
-  newsWindows++;
-  renderNews();
-}
+function loadMoreNews(){ newsShown += 8; renderNews(); }
 
 function toggleRoadmapRecap(id){
   const el = document.getElementById(id);
