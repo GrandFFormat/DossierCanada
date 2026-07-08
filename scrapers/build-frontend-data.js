@@ -30,6 +30,9 @@ const VOTES_END_MARKER = '/* VOTES_DATA_END */';
 const MIN_START_MARKER = '/* MINISTERS_DATA_START';
 const MIN_END_MARKER = '/* MINISTERS_DATA_END */';
 const MINISTERS_PATH = 'data/ministers.json';
+const PET_START_MARKER = '/* PETITIONS_DATA_START';
+const PET_END_MARKER = '/* PETITIONS_DATA_END */';
+const PETITIONS_PATH = 'data/petitions.json';
 
 function read(path) {
   return JSON.parse(readFileSync(path, 'utf-8'));
@@ -200,6 +203,11 @@ function main() {
   if (existsSync(MINISTERS_PATH)) {
     const ministers = read(MINISTERS_PATH).ministers;
     html = injectBlock(html, MIN_START_MARKER, MIN_END_MARKER, 'ministers', ministers, stamp);
+  }
+  // Pétitions : fichier séparé (scrapers/petitions.js) — injecté s'il existe.
+  if (existsSync(PETITIONS_PATH)) {
+    const petitions = read(PETITIONS_PATH).petitions;
+    html = injectBlock(html, PET_START_MARKER, PET_END_MARKER, 'petitions', petitions, stamp);
   }
   writeFileSync(HTML_PATH, html);
 
