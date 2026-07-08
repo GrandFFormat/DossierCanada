@@ -2356,14 +2356,16 @@ function deputeCardFed(d, isEn, L){
   const url = L(d.url);
   const ini = d.name.split(/\s+/).map(w => w[0] || '').slice(0,2).join('').toUpperCase();
   const profileTitle = isEn ? 'Official profile on ourcommons.ca' : 'Fiche officielle sur ourcommons.ca';
-  // Courriel parlementaire officiel (lu sur la fiche ourcommons, jamais deviné).
-  const mailLink = d.email
-    ? `<a class="vp-note" href="mailto:${d.email}" title="${d.email}" onclick="event.stopPropagation()">✉ ${isEn ? 'email' : 'courriel'}</a>`
-    : '';
+  // Avatar = icône courriel cliquable (adresse parlementaire officielle, lue sur la
+  // fiche ourcommons, jamais devinée). Sans courriel : initiales → fiche officielle.
+  const avatar = d.email
+    ? `<a class="avatar" href="mailto:${d.email}" onclick="event.stopPropagation()" title="${d.email}">${mailIconSvg}</a>`
+    : `<a class="avatar" href="${url}" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="${profileTitle}">${ini}</a>`;
+  const profileLink = `<a class="vp-note" href="${url}" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="${profileTitle}">${isEn ? 'profile' : 'fiche'} ↗</a>`;
   return `
     <div class="m-card">
       <div class="top-row">
-        <a class="avatar" href="${url}" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="${profileTitle}">${ini}</a>
+        ${avatar}
         <button class="follow-btn ${isFollowed?'on':''}" onclick="toggleFollowDepute('${followKey}')">${isFollowed ? t('btn.following') : t('btn.follow')}</button>
       </div>
       <h3>${d.honorific ? d.honorific + ' ' : ''}${d.name}</h3>
@@ -2371,7 +2373,7 @@ function deputeCardFed(d, isEn, L){
       <div class="meta-row">
         <span class="depute-party" style="background:${color}22; color:${color}">${d.party.code || '—'}</span>
         <span class="vp-note" title="${attTitle}">${attTxt}</span>
-        ${mailLink}
+        ${profileLink}
       </div>
     </div>
   `;
@@ -2520,7 +2522,11 @@ function ministerCardFed(m, isEn, L){
   const followBtn = followKey
     ? `<button class="follow-btn ${isFollowed?'on':''}" onclick="toggleFollowDepute('${followKey}')">${isFollowed ? t('btn.following') : t('btn.follow')}</button>`
     : '';
-  const avatar = url
+  const minDep = (typeof deputeById !== 'undefined' && m.personId) ? deputeById.get(m.personId) : null;
+  const minEmail = minDep && minDep.email ? minDep.email : null;
+  const avatar = minEmail
+    ? `<a class="avatar" href="mailto:${minEmail}" onclick="event.stopPropagation()" title="${minEmail}">${mailIconSvg}</a>`
+    : url
     ? `<a class="avatar" href="${url}" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="${isEn?'Official profile on ourcommons.ca':'Fiche officielle sur ourcommons.ca'}">${ini}</a>`
     : `<span class="avatar">${ini}</span>`;
   const pmTag = m.isPM ? (isEn ? 'Prime Minister' : 'Premier ministre') : '';
