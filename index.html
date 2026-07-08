@@ -1980,6 +1980,14 @@ function renderPartyFilters(){
 function setPartyFilter(p){
   partyFilter = (partyFilter === p) ? '' : p;
   renderPartyFilters();
+  // Filtre de parti actif → on retire le bloc « Conseil des ministres » (redondant :
+  // les ministres sont des député·e·s et figurent déjà dans la grille) et on montre
+  // simplement tous les député·e·s du parti, en ordre alphabétique.
+  const showMin = !partyFilter;
+  ['ministresTitle','ministresGrid','ministresInfoBox'].forEach(id => {
+    const e = document.getElementById(id);
+    if(e) e.style.display = showMin ? '' : 'none';
+  });
   renderMinistres(document.getElementById('searchMinistres').value);
   renderDeputes(document.getElementById('searchMinistres').value);
 }
@@ -2329,6 +2337,22 @@ function renderDeputes(filter){
       norm(d.constituency.en).includes(f) ||
       norm(L(d.province)).includes(f))
   ).sort((a,b) => a.name.localeCompare(b.name, 'fr'));
+  // Titre : avec un filtre de parti, annoncer le parti et le compte (ministres
+  // compris — ce sont des député·e·s) ; sinon le titre générique habituel.
+  const titleEl = document.getElementById('deputesTitle');
+  if(titleEl){
+    if(partyFilter){
+      const sample = deputes.find(d => d.party.code === partyFilter);
+      const pName = sample ? L(sample.party) : partyFilter;
+      titleEl.textContent = isEn
+        ? `MPs — ${pName} (${list.length})`
+        : `Les député·e·s — ${pName} (${list.length})`;
+    } else {
+      titleEl.textContent = isEn
+        ? 'Members of the House of Commons — all parties'
+        : 'Les député·e·s de la Chambre des communes — tous les partis';
+    }
+  }
   const el = document.getElementById('deputesList');
   el.innerHTML = list.length
     ? list.map(d => deputeCardFed(d, isEn, L)).join('')
@@ -2585,8 +2609,12 @@ function renderMinistres(filter){
   }
 
   // Conseil des ministres fédéral (source pm.gc.ca — voir scrapers/ministers.js).
-  document.getElementById('ministresTitle').style.display = '';
-  document.getElementById('ministresInfoBox').style.display = '';
+  // Avec un filtre de parti actif, le bloc ministres reste masqué (les ministres
+  // figurent déjà dans la grille des député·e·s du parti) — voir setPartyFilter.
+  const hideMin = !!partyFilter;
+  document.getElementById('ministresTitle').style.display = hideMin ? 'none' : '';
+  document.getElementById('ministresInfoBox').style.display = hideMin ? 'none' : '';
+  document.getElementById('ministresGrid').style.display = hideMin ? 'none' : '';
   document.getElementById('combinedTitle').style.display = 'none';
   document.getElementById('deputesTitle').style.display = '';
   document.getElementById('deputesInfoBox').style.display = '';
