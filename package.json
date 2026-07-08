@@ -18,7 +18,8 @@
     "build:votes": "node scrapers/build-votes-data.js",
     "scrape:ministers": "node scrapers/ministers.js",
     "scrape:petitions": "node scrapers/petitions.js",
-    "build:ministers": "node scrapers/build-ministers-data.js"
+    "build:ministers": "node scrapers/build-ministers-data.js",
+    "refresh": "npm run scrape:bills && npm run scrape:bill-summaries && npm run scrape:deputes && npm run scrape:votes && npm run scrape:ministers && npm run scrape:petitions && npm run build:frontend"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.68.0",
