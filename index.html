@@ -1846,146 +1846,7 @@ async function renderAdminFlagCounts(){
 
 /* ---------------- RENDER ---------------- */
 const mailIconSvg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>';
-const deputesDirectoryUrl = 'https://www.assnat.qc.ca/fr/deputes/index.html';
-
-/* DEPUTE_EMAILS_START — généré automatiquement par scrapers/build-depute-emails-data.js
-   à partir de data/deputes-contacts.json (voir scrapers/depute-emails.js). Courriel
-   officiel assnat.qc.ca uniquement — pas de réseaux sociaux (voir la conversation :
-   pas de façon fiable de vérifier qu'un compte Google trouvé par nom appartient
-   vraiment à la bonne personne). Ne pas éditer ce bloc à la main.
-   Généré le 2026-07-04T00:33:10.381Z */
-const deputeEmails = {
-  "andre bachand": "Andre.Bachand.RICM@assnat.qc.ca",
-  "frantz benjamin": "Frantz.Benjamin.VIAU@assnat.qc.ca",
-  "chantal soucy": "Chantal.Soucy.SAHY@assnat.qc.ca",
-  "sylvie d amours": "Sylvie.DAmours.MIRA@assnat.qc.ca",
-  "christine labrie": "Christine.Labrie.SHER@assnat.qc.ca",
-  "louis lemieux": "Louis.Lemieux.SAJE@assnat.qc.ca",
-  "lucie lecours": "Lucie.Lecours.LPLA@assnat.qc.ca",
-  "simon allaire": "Simon.Allaire.MASK@assnat.qc.ca",
-  "marie claude nichols": "Marie-Claude.Nichols.VAUD@assnat.qc.ca",
-  "sebastien schneeberger": "Sebastien.Schneeberger.DRUM@assnat.qc.ca",
-  "pascal berube": "Pascal.Berube.MATN@assnat.qc.ca",
-  "suzanne blais": "Suzanne.Blais.ABOU@assnat.qc.ca",
-  "youri chassin": "Youri.Chassin.STJE@assnat.qc.ca",
-  "vincent caron": "Vincent.Caron.PORT@assnat.qc.ca",
-  "jean bernard emond": "Jean-Bernard.Emond.RICL@assnat.qc.ca",
-  "pierre dufour": "Pierre.Dufour.ABES@assnat.qc.ca",
-  "mario laframboise": "Mario.Laframboise.BLAI@assnat.qc.ca",
-  "sylvain levesque": "Sylvain.Levesque.CHAU@assnat.qc.ca",
-  "luc provencal": "Luc.Provencal.BENO@assnat.qc.ca",
-  "vincent marissal": "Vincent.Marissal.ROSE@assnat.qc.ca",
-  "ruba ghazal": "Ruba.Ghazal.MERC@assnat.qc.ca",
-  "alexandre leduc": "Alexandre.Leduc.HOCH@assnat.qc.ca",
-  "gabriel nadeau dubois": "Gabriel.Nadeau-Dubois.GOUI@assnat.qc.ca",
-  "manon masse": "Manon.Masse.SMSJ@assnat.qc.ca",
-  "francois tremblay": "Francois.Tremblay.DUBU@assnat.qc.ca",
-  "marwah rizqy": "Marwah.Rizqy.STLO@assnat.qc.ca",
-  "christian dube": "Christian.Dube.LAPR@assnat.qc.ca",
-  "gregory kelley": "Gregory.Kelley.JACA@assnat.qc.ca",
-  "andres fontecilla": "Andres.Fontecilla.LADO@assnat.qc.ca",
-  "andre fortin": "Andre.Fortin.PONT@assnat.qc.ca",
-  "francois jacques": "Francois.Jacques.MEGA@assnat.qc.ca",
-  "nathalie roy": "Nathalie.Roy.MOTA@assnat.qc.ca",
-  "enrico ciccone": "Enrico.Ciccone.MARQ@assnat.qc.ca",
-  "marie belle gendron": "Marie-Belle.Gendron.CHAT@assnat.qc.ca",
-  "isabelle poulet": "Isabelle.Poulet.LAPO@assnat.qc.ca",
-  "mathieu rivest": "Mathieu.Rivest.CDS@assnat.qc.ca",
-  "madwa nika cadet": "Madwa-Nika.Cadet.BOSA@assnat.qc.ca",
-  "linda caron": "Linda.Caron.LAPI@assnat.qc.ca",
-  "virginie dufour": "Virginie.Dufour.MIIL@assnat.qc.ca",
-  "brigitte b. garceau": "Brigitte.Garceau.ROBA@assnat.qc.ca",
-  "sona lakhoyan olivier": "Sona.LakhoyanOlivier.CHOM@assnat.qc.ca",
-  "andre albert morin": "Andre-A.Morin.ACAD@assnat.qc.ca",
-  "elisabeth prass": "Elisabeth.Prass.DMG@assnat.qc.ca",
-  "alejandra zaga mendez": "Alejandra.ZagaMendez.VERD@assnat.qc.ca",
-  "paul st pierre plamondon": "pspp.CALA@assnat.qc.ca",
-  "pascal paradis": "Pascal.Paradis.JETA@assnat.qc.ca",
-  "haroun bouazzi": "Haroun.Bouazzi.MAUR@assnat.qc.ca",
-  "joel arseneau": "Joel.Arseneau.IDLM@assnat.qc.ca",
-  "catherine gentilcore": "Catherine.Gentilcore.TERR@assnat.qc.ca",
-  "maite blanchette vezina": "Maite.BlanchetteVezina.RIMO@assnat.qc.ca",
-  "stephane sainte croix": "Stephane.Sainte-Croix.GASP@assnat.qc.ca",
-  "sol zanetti": "Sol.Zanetti.JELE@assnat.qc.ca",
-  "michelle setlakwe": "Michelle.Setlakwe.MROU@assnat.qc.ca",
-  "jean francois simard": "Jean-Francois.Simard.MONT@assnat.qc.ca",
-  "marc tanguay": "Marc.Tanguay-LAFO@assnat.qc.ca",
-  "jennifer maccarone": "Jennifer.Maccarone.WSL@assnat.qc.ca",
-  "filomena rotiroti": "Filomena.Rotiroti.JMV@assnat.qc.ca",
-  "alex boissonneault": "Alex.Boissonneault.ARTH@assnat.qc.ca",
-  "gilles belanger": "Gilles.Belanger.ORFO@assnat.qc.ca",
-  "marie karlynn laflamme": "Marie-Karlynn.Laflamme.CHIC@assnat.qc.ca",
-  "christine frechette": "Christine.Frechette.SAGU@assnat.qc.ca",
-  "ian lafreniere": "Ian.Lafreniere.VACHON@assnat.qc.ca",
-  "eric girard": "Eric.Girard.LSJ@assnat.qc.ca",
-  "sonia lebel": "Sonia.LeBel.CHMP@assnat.qc.ca",
-  "bernard drainville": "Bernard.Drainville.LEVI@assnat.qc.ca",
-  "mathieu lacombe": "Mathieu.Lacombe.PAPI@assnat.qc.ca",
-  "jean boulet": "Jean.Boulet.TRRI@assnat.qc.ca",
-  "pascale dery": "Pascale.Dery.REPE@assnat.qc.ca",
-  "martine biron": "Martine.Biron.CDLC@assnat.qc.ca",
-  "samuel poulin": "Samuel.Poulin.BESU@assnat.qc.ca",
-  "catherine blouin": "Catherine.Blouin.BONA@assnat.qc.ca",
-  "donald martel": "Donald.Martel.NICO@assnat.qc.ca",
-  "amelie dionne": "Amelie.Dionne.RDLT@assnat.qc.ca",
-  "karine boivin roy": "Karine.BoivinRoy.ANJO@assnat.qc.ca",
-  "kariane bourassa": "Kariane.Bourassa.CHCB@assnat.qc.ca",
-  "daniel bernard": "Daniel.Bernard.RNT@assnat.qc.ca",
-  "desiree mcgraw": "Desiree.McGraw.NDG@assnat.qc.ca",
-  "frederic beauchemin": "Frederic.Beauchemin.MABO@assnat.qc.ca",
-  "lionel carmant": "Lionel.Carmant.TAIL@assnat.qc.ca",
-  "france elaine duranceau": "France-Elaine.Duranceau.BERR@assnat.qc.ca",
-  "francois bonnardel": "Francois.Bonnardel.GRAN@assnat.qc.ca",
-  "kateri champagne jourdain": "Kateri.ChampagneJourdain.DUPL@assnat.qc.ca",
-  "jean francois roberge": "Jean-Francois.Roberge.CHMB@assnat.qc.ca",
-  "christopher skeete": "Christopher.Skeete.SARO@assnat.qc.ca",
-  "marie louise tardif": "Marie-Louise.Tardif.LASM@assnat.qc.ca",
-  "mathieu lemay": "Mathieu.Lemay.MASS@assnat.qc.ca",
-  "alice abou khalil": "Alice.Abou-Khalil.FABR@assnat.qc.ca",
-  "suzanne tremblay": "Suzanne.Tremblay.HULL@assnat.qc.ca",
-  "isabelle lecours": "Isabelle.Lecours.LOFR@assnat.qc.ca",
-  "louis charles thouin": "Louis-Charles.Thouin.ROUS@assnat.qc.ca",
-  "eric caire": "Eric.Caire.LAPE@assnat.qc.ca",
-  "shirley dorismond": "Shirley.Dorismond.MAVI@assnat.qc.ca",
-  "marilyne picard": "Marilyne.Picard.SOUL@assnat.qc.ca",
-  "carole mallette": "Carole.Mallette.HUNT@assnat.qc.ca",
-  "celine haytayan": "Celine.Haytayan.LDR@assnat.qc.ca",
-  "mario asselin": "Mario.Asselin.VANI@assnat.qc.ca",
-  "chantale jeannotte": "Chantale.Jeannotte.LABE@assnat.qc.ca",
-  "audrey bogemans": "Audrey.Bogemans.IBER@assnat.qc.ca",
-  "yannick gagnon": "Yannick.Gagnon.JONQ@assnat.qc.ca",
-  "denis lamothe": "Denis.Lamothe.UNGA@assnat.qc.ca",
-  "claude reid": "Claude.Reid.BEAU@assnat.qc.ca",
-  "agnes grondin": "Agnes.Grondin.ARGE@assnat.qc.ca",
-  "valerie schmaltz": "Valerie.Schmaltz.VIMO@assnat.qc.ca",
-  "genevieve hebert": "Genevieve.Hebert.SAFR@assnat.qc.ca",
-  "stephanie lachance": "Stephanie.Lachance.BELL@assnat.qc.ca",
-  "etienne grandmont": "Etienne.Grandmont.TASC@assnat.qc.ca",
-  "guillaume cliche rivard": "Guillaume.Cliche-Rivard.SHSA@assnat.qc.ca",
-  "mathieu levesque": "Mathieu.Levesque.CHAP@assnat.qc.ca",
-  "simon jolin barrette": "sjb.BORD@assnat.qc.ca",
-  "sonia belanger": "Sonia.Belanger.PREV@assnat.qc.ca",
-  "monsef derraji": "Monsef.Derraji.NELL@assnat.qc.ca",
-  "caroline proulx": "Caroline.Proulx.BERH@assnat.qc.ca",
-  "benoit charette": "Benoit.Charette.DEMO@assnat.qc.ca",
-  "andre lamontagne": "Andre.Lamontagne.JOHN@assnat.qc.ca",
-  "genevieve guilbault": "Genevieve.Guilbault.LOHE@assnat.qc.ca",
-  "isabelle charest": "Isabelle.Charest.BRMI@assnat.qc.ca",
-  "jonatan julien": "Jonatan.Julien.CHLB@assnat.qc.ca",
-  "robert bussiere": "Robert.Bussiere.GATI@assnat.qc.ca",
-  "nancy guillemette": "Nancy.Guillemette.ROBE@assnat.qc.ca",
-  "suzanne roy": "Suzanne.Roy.VERC@assnat.qc.ca",
-  "yves montigny": "Yves.Montigny.RELE@assnat.qc.ca",
-  "chantal rouleau": "Chantal.Rouleau.PAT@assnat.qc.ca",
-  "francois st louis": "Francois.St-Louis.JOLI@assnat.qc.ca"
-};
-/* DEPUTE_EMAILS_END */
-
-function findDeputeEmail(name){
-  if(!name) return null;
-  const clean = name.replace(/\s*\([^)]*\)\s*/g,'').trim();
-  return deputeEmails[norm(clean)] || null;
-}
+const deputesDirectoryUrl = 'https://www.ourcommons.ca/members/en/search';
 
 let partyFilter = '';
 const partyOrder = ['LPC','CPC','BQ','NDP','GPC','IND'];
@@ -2520,9 +2381,10 @@ function personCard(p){
     ? (p.combined ? (minDep ? `${minDep.riding} — ${minDep.region}` : '') : (isEn ? (p.m.roleEn||p.m.role) : p.m.role))
     : `${p.d.riding} — ${p.d.region}`;
   const party = isMin ? p.m.party : p.d.party;
-  const email = findDeputeEmail(name);
+  const emailDep = isMin ? (minDep || resolveDepute(name)) : p.d;
+  const email = emailDep && emailDep.email;
   const mailHref = email ? 'mailto:'+email : deputesDirectoryUrl;
-  const mailTitle = email ? email : (isEn ? 'Find the official email on assnat.qc.ca' : 'Trouver le courriel officiel sur assnat.qc.ca');
+  const mailTitle = email ? email : (isEn ? 'Find the official contact on ourcommons.ca' : 'Trouver le contact officiel sur ourcommons.ca');
   const followKey = isMin ? name : (p.d.name + '|' + p.d.riding);
   const isFollowed = isMin ? !!followed[name] : !!followedDeputes[followKey];
   const followOnclick = isMin
@@ -2701,7 +2563,7 @@ function renderMinistres(filter){
     const depList = deputes
       .filter(d => !ministerNames.has(norm(d.name)) && (!partyFilter || d.party===partyFilter) && (!f ||
         norm(d.name).includes(f) || norm(d.riding).includes(f) || norm(d.region).includes(f)))
-      .map(d => ({ type:'depute', d, att: attendanceForAssnatId(d.assnatId) }));
+      .map(d => ({ type:'depute', d, att: attendanceFromRecord(d) }));
     const combined = sortByAttendance([...minList, ...depList], ministresSortMode);
 
     combinedTitle.textContent = isEn
@@ -3640,45 +3502,21 @@ function toggleSenateNominal(domId, voteId, group){
   plus.textContent = isOpen ? '−' : '+';
 }
 
-// Proxy de présence : l'Assemblée ne publie pas d'assiduité en tant que telle
-// (voir onglet « D'où viennent ces données »). Le meilleur indicateur public est
-// le taux de participation aux votes nominaux enregistrés — même méthode que les
-// médias (ex. Radio-Canada). Calculé depuis le premier vote où la personne
-// apparaît (approximation honnête du début de son mandat actuel, sans donnée
-// externe inventée), jusqu'au dernier vote scrapé.
-const sortedVotesByDate = votes.filter(v=>v.date).slice().sort((a,b)=>a.date.localeCompare(b.date));
-const votesByAssnatId = new Map();
-// Assiduité des députés désormais précalculée (d.votingRecord, voir
-// build-frontend-data.js) — cette table QC n est plus alimentée.
-// La présidence et les 3 vice-présidences de l'Assemblée ne votent généralement
-// pas quand elles président une séance, pour préserver leur neutralité — un vrai
-// taux de présence très bas ou nul pour ces 4 personnes ne veut donc pas dire
-// « absent·e », contrairement à tout le monde d'autre. Sources : élection de la
-// présidence du 29 novembre 2022 (quebec.ca) et fiches assnat.qc.ca de chacun·e.
+// La présidence et les vice-présidences ne votent généralement pas quand elles
+// président une séance (neutralité) — leur taux de présence très bas ne veut donc
+// pas dire « absent·e » ; on les met en dernier dans le classement par présence.
+// À COMPLÉTER pour le fédéral : Président de la Chambre + vice-président·e·s
+// (voir scrapers/officeholders.js). Table vide = personne n'est exclu·e.
 const presidingRoles = {
-  'nathalie roy': { fr: "Présidente de l'Assemblée nationale", en: 'President of the National Assembly' },
-  'chantal soucy': { fr: '1ère vice-présidente de l\'Assemblée', en: '1st Vice-President of the Assembly' },
-  'sylvain levesque': { fr: '2e vice-président de l\'Assemblée', en: '2nd Vice-President of the Assembly' },
-  'frantz benjamin': { fr: '3e vice-président de l\'Assemblée', en: '3rd Vice-President of the Assembly' },
+  // 'nom normalisé': { fr: 'rôle', en: 'role' },
 };
 function presidingRoleNote(name, isEn){
   const bareName = name.replace(/\s*\([^)]*\)\s*/g, '').trim();
   const role = presidingRoles[norm(bareName)];
   return role ? (isEn ? role.en : role.fr) : null;
 }
-
-function attendanceForAssnatId(assnatId){
-  if(assnatId == null) return null;
-  const appeared = votesByAssnatId.get(assnatId);
-  if(!appeared || appeared.size === 0) return null;
-  const appearedVotes = sortedVotesByDate.filter(v => appeared.has(v.id));
-  const firstDate = appearedVotes[0].date;
-  const eligible = sortedVotesByDate.filter(v => v.date >= firstDate);
-  const participated = eligible.filter(v => appeared.has(v.id)).length;
-  return { participated, total: eligible.length, rate: Math.round(participated / eligible.length * 100) };
-}
 function resolveDepute(name){
-  // Même convention que sponsorParty()/findDeputeEmail() : un nom peut porter un
+  // Même convention que sponsorParty() : un nom peut porter un
   // suffixe "(Circonscription)" quand deux élu·e·s partagent le même nom (ex.
   // les deux "Eric Girard" — un vrai homonyme, pas une erreur). Si le nom est
   // ambigu sans ce suffixe et qu'aucune circonscription ne permet de trancher,
@@ -3690,10 +3528,15 @@ function resolveDepute(name){
   const candidates = deputes.filter(d => norm(d.name) === norm(bareName));
   return ridingHint ? candidates.find(d => norm(d.riding) === norm(ridingHint)) : (candidates.length === 1 ? candidates[0] : null);
 }
+// Présence à partir du bilan de votes fédéral précalculé (d.votingRecord, voir
+// build-frontend-data.js) : { rate %, participated, total }.
+function attendanceFromRecord(dep){
+  const vr = dep && dep.votingRecord;
+  if(!vr || vr.participationRate == null) return null;
+  return { rate: Math.round(vr.participationRate * 100), participated: vr.cast, total: vr.eligible };
+}
 function computeAttendance(name){
-  const dep = resolveDepute(name);
-  if(!dep) return null;
-  return attendanceForAssnatId(dep.assnatId);
+  return attendanceFromRecord(resolveDepute(name));
 }
 
 // Parti d'un·e votant·e à partir de son PersonId (via deputeById, clé PersonId).
