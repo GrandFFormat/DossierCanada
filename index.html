@@ -837,7 +837,6 @@
     <div class="grid" id="deputesList"></div>
     <div class="info-box" id="deputesInfoBox" data-i18n="trouve.info">Ces entrées viennent directement de la liste officielle des député·e·s en fonction de la Chambre des communes (ourcommons.ca), bilingue. Certains sièges peuvent changer entre deux mises à jour (démission, élection partielle) — cette liste est une photo prise au moment de la dernière mise à jour, pas un flux automatiquement à jour.</div>
     <div class="info-box" id="senateInfoBox" style="display:none">Ces fiches viennent de la liste officielle des sénateur·rice·s (sencanada.ca), bilingue. Les sénateur·rice·s sont <b>nommé·e·s</b> (non élu·e·s) et siègent jusqu'à 75 ans ; le groupe parlementaire, la région, la date de nomination et le taux de présence proviennent de la source officielle. Le Sénat compte 105 sièges ; les sièges vacants n'apparaissent pas. Pas de bouton « Suivre » ici pour l'instant.</div>
-    <div class="info-box" id="followInfoBox"><b data-i18n="min.follow.b">À propos du bouton « Suivre »</b> — <span data-i18n="min.follow.text">vos choix sont enregistrés dans votre navigateur (stockage propre à cet artefact) et vous suivront si vous rouvrez cette page. Aucune donnée n'est partagée avec quiconque.</span></div>
 
     <div class="section-head" id="sec-comparateur">
       <div>
@@ -1215,8 +1214,6 @@ const translations = {
     'min.incomplete.b':"Up to date.",
     'min.incomplete.pre':"These ",
     'min.incomplete.post':" ministers come directly from the official Cabinet page on pm.gc.ca, scraped live — not a hand-maintained list.",
-    'min.follow.b':"About the \u201cFollow\u201d button",
-    'min.follow.text':"your choices are saved in your browser (storage specific to this artifact) and will follow you when you reopen this page. No data is shared with anyone.",
     // Bills
     'proj.sub':"45th Parliament (1st session) — real status of bills",
     // Votes
@@ -3464,7 +3461,6 @@ function setChamber(c){
   show('commonsChrome', !senate);
   show('senateComposition', senate);
   show('deputesInfoBox', !senate);
-  show('followInfoBox', !senate);
   show('senateInfoBox', senate);
   // Le comparateur compare des député·e·s — sans objet en vue Sénat.
   show('sec-comparateur', !senate);
