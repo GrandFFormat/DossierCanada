@@ -1,0 +1,17 @@
+{
+  "scrapedAt": "2026-07-09T08:41:09.877Z",
+  "sources": [
+    {
+      "key": "house_speaker",
+      "url": "https://www.ourcommons.ca/speaker/en"
+    },
+    {
+      "key": "governor_general",
+      "url": "https://www.gg.ca/en/governor-general"
+    }
+  ],
+  "officeholders": {
+    "house_speaker": "Francis Scarpaleggia",
+    "governor_general": "Louise Arbour"
+  }
+}
