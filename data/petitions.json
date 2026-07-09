@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-07-08T02:52:09.515Z",
+  "scrapedAt": "2026-07-09T11:17:40.979Z",
   "count": 20,
   "petitions": [
     {
@@ -18,7 +18,7 @@
         "fr": "Ouverte pour signature jusqu'au 24 septembre 2026 à 14 h 50 (HAE)"
       },
       "sponsor": "Jenny Kwan",
-      "signatures": 6344,
+      "signatures": 7420,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7550",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7550"
@@ -39,7 +39,7 @@
         "fr": "Ouverte pour signature jusqu'au 15 août 2026 à 14 h 23 (HAE)"
       },
       "sponsor": "Michael Ma",
-      "signatures": 1463,
+      "signatures": 1471,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7523",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7523"
@@ -60,7 +60,7 @@
         "fr": "Ouverte pour signature jusqu'au 14 octobre 2026 à 14 h 21 (HAE)"
       },
       "sponsor": "Jamil Jivani",
-      "signatures": 1394,
+      "signatures": 1399,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7521",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7521"
@@ -81,7 +81,7 @@
         "fr": "Ouverte pour signature jusqu'au 14 septembre 2026 à 14 h 22 (HAE)"
       },
       "sponsor": "Leah Gazan",
-      "signatures": 1233,
+      "signatures": 1268,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7522",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7522"
@@ -102,7 +102,7 @@
         "fr": "Ouverte pour signature jusqu'au 26 juillet 2026 à 14 h 14 (HAE)"
       },
       "sponsor": "Sukh Dhaliwal",
-      "signatures": 887,
+      "signatures": 1058,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7515",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7515"
@@ -123,7 +123,7 @@
         "fr": "Ouverte pour signature jusqu'au 28 octobre 2026 à 13 h 43 (HAE)"
       },
       "sponsor": "Melissa Lantsman",
-      "signatures": 843,
+      "signatures": 875,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7558",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7558"
@@ -144,7 +144,7 @@
         "fr": "Ouverte pour signature jusqu'au 24 octobre 2026 à 14 h 19 (HAE)"
       },
       "sponsor": "Fraser Tolmie",
-      "signatures": 608,
+      "signatures": 659,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7535",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7535"
@@ -165,31 +165,10 @@
         "fr": "Ouverte pour signature jusqu'au 14 octobre 2026 à 14 h 18 (HAE)"
       },
       "sponsor": "Jenny Kwan",
-      "signatures": 517,
+      "signatures": 576,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7482",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7482"
-      }
-    },
-    {
-      "code": "e-7533",
-      "topic": {
-        "en": "Environment",
-        "fr": "Environnement"
-      },
-      "keywords": {
-        "en": "Marine conservation Mining industry Sea floor",
-        "fr": "Conservation des ressources marines Industrie minière Plancher océanique"
-      },
-      "status": {
-        "en": "Open for signature until September 23, 2026, at 2:59 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 23 septembre 2026 à 14 h 59 (HAE)"
-      },
-      "sponsor": "Alexis Deschênes",
-      "signatures": 421,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7533",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7533"
       }
     },
     {
@@ -207,31 +186,10 @@
         "fr": "Ouverte pour signature jusqu'au 26 juillet 2026 à 14 h 54 (HAE)"
       },
       "sponsor": "Helena Konanz",
-      "signatures": 420,
+      "signatures": 447,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7545",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7545"
-      }
-    },
-    {
-      "code": "e-7556",
-      "topic": {
-        "en": "Foreign affairs",
-        "fr": "Affaires étrangères"
-      },
-      "keywords": {
-        "en": "Civil and human rights Ethiopia Foreign policy",
-        "fr": "Droits de la personne Éthiopie Politique étrangère"
-      },
-      "status": {
-        "en": "Open for signature until October 28, 2026, at 1:42 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 28 octobre 2026 à 13 h 42 (HAE)"
-      },
-      "sponsor": "Gord Johns",
-      "signatures": 344,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7556",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7556"
       }
     },
     {
@@ -249,10 +207,52 @@
         "fr": "Ouverte pour signature jusqu'au 1 août 2026 à 14 h 23 (HAE)"
       },
       "sponsor": "Helena Jaczek",
-      "signatures": 334,
+      "signatures": 443,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7564",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7564"
+      }
+    },
+    {
+      "code": "e-7533",
+      "topic": {
+        "en": "Environment",
+        "fr": "Environnement"
+      },
+      "keywords": {
+        "en": "Marine conservation Mining industry Sea floor",
+        "fr": "Conservation des ressources marines Industrie minière Plancher océanique"
+      },
+      "status": {
+        "en": "Open for signature until September 23, 2026, at 2:59 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 23 septembre 2026 à 14 h 59 (HAE)"
+      },
+      "sponsor": "Alexis Deschênes",
+      "signatures": 429,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7533",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7533"
+      }
+    },
+    {
+      "code": "e-7556",
+      "topic": {
+        "en": "Foreign affairs",
+        "fr": "Affaires étrangères"
+      },
+      "keywords": {
+        "en": "Civil and human rights Ethiopia Foreign policy",
+        "fr": "Droits de la personne Éthiopie Politique étrangère"
+      },
+      "status": {
+        "en": "Open for signature until October 28, 2026, at 1:42 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 28 octobre 2026 à 13 h 42 (HAE)"
+      },
+      "sponsor": "Gord Johns",
+      "signatures": 369,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7556",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7556"
       }
     },
     {
@@ -270,7 +270,7 @@
         "fr": "Ouverte pour signature jusqu'au 10 septembre 2026 à 16 h 02 (HAE)"
       },
       "sponsor": "Alexandre Boulerice",
-      "signatures": 305,
+      "signatures": 312,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7235",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7235"
@@ -291,7 +291,7 @@
         "fr": "Ouverte pour signature jusqu'au 15 octobre 2026 à 12 h 09 (HAE)"
       },
       "sponsor": "Gord Johns",
-      "signatures": 121,
+      "signatures": 128,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7472",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7472"
@@ -312,7 +312,7 @@
         "fr": "Ouverte pour signature jusqu'au 19 juillet 2026 à 14 h 28 (HAE)"
       },
       "sponsor": "Juanita Nathan",
-      "signatures": 95,
+      "signatures": 101,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7503",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7503"
@@ -333,7 +333,7 @@
         "fr": "Ouverte pour signature jusqu'au 24 octobre 2026 à 14 h 16 (HAE)"
       },
       "sponsor": "Dan Albas",
-      "signatures": 82,
+      "signatures": 88,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7547",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7547"
@@ -354,7 +354,7 @@
         "fr": "Ouverte pour signature jusqu'au 30 septembre 2026 à 9 h 57 (HAE)"
       },
       "sponsor": "Terry Dowdall",
-      "signatures": 68,
+      "signatures": 85,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7540",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7540"
@@ -375,7 +375,7 @@
         "fr": "Ouverte pour signature jusqu'au 14 octobre 2026 à 14 h 19 (HAE)"
       },
       "sponsor": "Mark Strahl",
-      "signatures": 59,
+      "signatures": 60,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7504",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7504"
@@ -396,7 +396,7 @@
         "fr": "Ouverte pour signature jusqu'au 14 octobre 2026 à 14 h 20 (HAE)"
       },
       "sponsor": "David Bexte",
-      "signatures": 53,
+      "signatures": 54,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7518",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7518"
@@ -417,7 +417,7 @@
         "fr": "Ouverte pour signature jusqu'au 23 octobre 2026 à 15 h 00 (HAE)"
       },
       "sponsor": "Tako Van Popta",
-      "signatures": 36,
+      "signatures": 40,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7501",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7501"
