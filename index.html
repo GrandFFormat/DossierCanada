@@ -81,12 +81,13 @@
     line-height:1.05;
   }
   .brand-text p{margin:2px 0 0; font-size:12.5px; color:var(--slate); letter-spacing:0.02em;}
-  .brand-col{display:flex; flex-direction:column;}
-  .province-network{display:flex; align-items:center; gap:7px; margin-top:12px; padding-left:2px; flex-wrap:wrap;}
-  .pn-label{font-family:'IBM Plex Mono',monospace; font-size:10px; text-transform:uppercase; letter-spacing:0.06em; color:var(--slate);}
-  .pn-dot{width:23px; height:23px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono',monospace; font-size:12px; font-weight:800; letter-spacing:-0.03em; color:#fff; text-decoration:none; box-shadow:0 1px 3px rgba(0,0,0,.18); transition:transform .12s;}
-  .pn-dot:hover{transform:scale(1.14);}
-  .pn-soon{width:23px; height:23px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; font-size:14px; font-weight:700; color:var(--slate); border:1px dashed var(--line);}
+  /* Logo + pastilles côte à côte. Les pastilles s'empilent en colonne et
+     débordent vers la droite après 3 (max-height = 3 ronds), donc l'en-tête
+     ne grandit jamais même en ajoutant des provinces. */
+  .brand-col{display:flex; align-items:center; gap:14px;}
+  .province-network{display:flex; flex-direction:column; flex-wrap:wrap; align-content:flex-start; max-height:70px; gap:5px;}
+  .pn-dot{width:20px; height:20px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:800; letter-spacing:-0.04em; color:#fff; text-decoration:none; box-shadow:0 1px 3px rgba(0,0,0,.18); transition:transform .12s;}
+  .pn-dot:hover{transform:scale(1.15);}
   .top-meta{display:flex; gap:28px; align-items:baseline; flex-wrap:wrap;}
   .top-meta .stat{text-align:right;}
   .top-meta .stat b{
@@ -2142,15 +2143,9 @@ const provinceNetwork = [
 function renderProvinceNetwork(){
   const el = document.getElementById('provinceNetwork');
   if(!el) return;
-  const isEn = currentLang === 'en';
-  const dots = provinceNetwork.map(p =>
+  el.innerHTML = provinceNetwork.map(p =>
     `<a class="pn-dot" href="${p.url}" target="_blank" rel="noopener" title="${p.name}" style="background:${p.color}" onclick="event.stopPropagation()">${p.code}</a>`
   ).join('');
-  const soonTitle = isEn
-    ? 'More provinces to come — the project is open source; fork it to add yours.'
-    : 'D\'autres provinces à venir — le projet est libre; forkez-le pour ajouter la vôtre.';
-  const soon = `<span class="pn-soon" title="${soonTitle}">+</span>`;
-  el.innerHTML = `<span class="pn-label">${isEn ? 'Network' : 'Réseau'}</span>${dots}${soon}`;
 }
 
 const CHALLENGE_THRESHOLD = 1000;
