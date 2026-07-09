@@ -1142,7 +1142,7 @@ const translations = {
     'h.lexique':"Lexique du jargon parlementaire",
     'h.lexique.sub':"Pour comprendre le reste du site sans avoir fait un cours de science politique",
     'brand.tagline':"Qui siège, qui légifère, qui vote quoi",
-    'h.personnes':"Qui gravite autour de l'Assemblée",
+    'h.personnes':"Qui gravite autour du Parlement",
     'h.petitions':"Pétitions électroniques ouvertes à la Chambre des communes",
     'h.apropos':"D'où viennent ces données, et comment aller plus loin",
     'ph.searchMinistres':"Nom, circonscription, région ou ministère…",
@@ -1152,7 +1152,7 @@ const translations = {
     'ph.searchVotes':"Mot-clé : sujet, numéro de scrutin ou de projet de loi…",
     'btn.follow':"+ Suivre",'btn.following':"✓ Suivi",
     'btn.viewSummary':"+ Voir le résumé",'btn.hideSummary':"− Masquer le résumé",
-    'btn.viewFull':"Voir le texte complet sur assnat.qc.ca →",
+    'btn.viewFull':"Voir le texte complet →",
     'footer.left':"Site non officiel — données publiques du Parlement du Canada (LEGISinfo, Chambre des communes).",
     'footer.right':"Construit avec Claude",
     'footer.source':"Code source",
@@ -1181,7 +1181,7 @@ const translations = {
     'h.lexique':"Parliamentary glossary",
     'h.lexique.sub':"To understand the rest of the site without a political science degree",
     'brand.tagline':"Who sits, who legislates, who votes how",
-    'h.personnes':"Who's involved around the Assembly",
+    'h.personnes':"Who's involved around Parliament",
     'h.petitions':"E-petitions open at the House of Commons",
     'h.apropos':"Where this data comes from, and how to go further",
     'ph.searchMinistres':"Name, riding, region, or ministry…",
@@ -1206,7 +1206,7 @@ const translations = {
     'footer.etmoi':"and me",
     'btn.follow':"+ Follow",'btn.following':"✓ Following",
     'btn.viewSummary':"+ View summary",'btn.hideSummary':"− Hide summary",
-    'btn.viewFull':"View full text on assnat.qc.ca →",
+    'btn.viewFull':"View full text →",
     'footer.left':"Unofficial site — public data from the Parliament of Canada (LEGISinfo, House of Commons).",
     'footer.right':"Built with Claude",
     'footer.source':"Source code",
@@ -1226,13 +1226,9 @@ const translations = {
     'votes.info.b':"On the \u201cwho voted what\u201d detail",
     'votes.info.text':"— the House of Commons publishes each member's name for every recorded (nominal) vote (Yea / Nay / paired). The by-member breakdown above (the \"+\" button on each row) comes directly from that official source (ourcommons.ca), not an estimate. The party shown next to each name is taken from the current House roster; people who have since left the House appear separately under \"Former members\".",
     // Find your MP
-    'trouve.sub':"125 ridings — full list, real National Assembly data",
+    'trouve.sub':"343 ridings — full list, real House of Commons data",
     'trouve.info':"These entries come directly from the House of Commons official list of sitting members (ourcommons.ca), bilingual. Some seats may change between updates (resignation, by-election) — this list is a snapshot taken at the last update, not an automatically updated feed.",
     // What's new / calendar
-    'cal.status':"\u25CF Proceedings adjourned since June 12, 2026 \u00B7 resumes September 15, 2026",
-    'cal.title':"Sitting calendar",
-    'cal.p1':"The Assembly doesn't sit year-round. Its Standing Orders set two working periods: a spring period starting the 2nd Tuesday of February (16 weeks, plus 2 intensive weeks), and a fall period starting the 3rd Tuesday of September (10 weeks, plus 2 intensive weeks). Outside these periods the Assembly is adjourned — barring a special sitting called by the Premier.",
-    'cal.p2':"This page outlines the main working periods, not the daily schedule. For a day-by-day view of upcoming sittings and committees, the Assembly's official calendar remains the reference.",
     'news.sub':"The most recent parliamentary activity",
     // Lexicon
     'lex.1.t':"Bill (C- / S-)", 'lex.1.d':"The text a member or the government introduces in Parliament to become law. Numbers starting with \"C-\" come from the House of Commons, \"S-\" from the Senate. It becomes law only after both chambers pass it and it receives royal assent.",
@@ -2173,7 +2169,7 @@ function toggleRoadmapRecap(id){
   hint.textContent = isOpen ? '−' : '+';
 }
 
-// Vraies pétitions électroniques ouvertes pour signature — assnat.qc.ca
+// Vraies pétitions électroniques ouvertes pour signature — ourcommons.ca
 // Confirmées deux fois : une première fois par un fetch direct, une seconde fois
 // indépendamment par l'utilisateur qui les a copiées depuis son propre navigateur.
 /* PETITIONS_DATA_START — généré automatiquement par scrapers/build-frontend-data.js à partir des
