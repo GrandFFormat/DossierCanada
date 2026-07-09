@@ -512,6 +512,14 @@
   .vote-row-who{ font-size:11px; color:var(--slate); opacity:.7; }
   .vote-row-sub{ font-size:12px; color:var(--slate); margin-top:3px; }
   .vote-row-sub a{ color:var(--gold); }
+  .challenge-panel{ background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:2px 14px; }
+  .challenge-row{ display:flex; align-items:baseline; gap:11px; padding:11px 3px; border-top:1px solid var(--line); cursor:pointer; }
+  .challenge-row:first-child{ border-top:none; }
+  .challenge-row:hover{ background:var(--paper-2); }
+  .ch-rank{ font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--slate); min-width:16px; text-align:right; }
+  .ch-num{ font-weight:700; white-space:nowrap; }
+  .ch-title{ flex:1; color:var(--slate); font-size:13px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .ch-count{ white-space:nowrap; font-size:12.5px; }
   @keyframes jumpFlash { 0%, 60% { background:#D8062118; box-shadow:0 0 0 3px #D8062155; } 100% { background:transparent; box-shadow:none; } }
   .jump-highlight{ animation: jumpFlash 1.8s ease-out; border-radius:6px; }
   .roadmap-plus{
@@ -2178,10 +2186,10 @@ async function renderChallenged(){
   const seuil = CHALLENGE_THRESHOLD.toLocaleString(isEn ? 'en-CA' : 'fr-CA');
   const titleEl = document.getElementById('challengedTitle');
   const subEl = document.getElementById('challengedSub');
-  if(titleEl) titleEl.textContent = isEn ? 'Bills challenged by citizens' : 'Projets challengés par les citoyen·ne·s';
+  if(titleEl) titleEl.textContent = isEn ? 'Bills citizens want explained' : 'Ce que les citoyen·ne·s veulent voir expliqué';
   if(subEl) subEl.textContent = isEn
-    ? `When a bill reaches ${seuil} requests for explanations, it appears here first — a signal of real public interest`
-    : `Quand un projet de loi atteint ${seuil} demandes d'explications, il apparaît ici en premier — le signal d'un vrai intérêt citoyen`;
+    ? `The bills the most people are asking to have explained, live. At ${seuil} requests, a bill aims for a petition sponsored by an MP.`
+    : `Les projets de loi dont le plus de gens demandent des explications, en direct. À ${seuil} demandes, un projet vise une pétition parrainée par un·e député·e.`;
 
   if(challengedCache === null){
     try{
@@ -2190,39 +2198,39 @@ async function renderChallenged(){
     }catch(e){ challengedCache = []; }
   }
 
-  const challenged = challengedCache
+  // Tous les projets ayant au moins une demande, triés par nombre décroissant.
+  const ranked = challengedCache
     .map(c => ({ cnt: Number(c.cnt), bill: bills.find(b => b.id === Number(c.bill_id)) }))
-    .filter(c => c.bill && c.cnt >= CHALLENGE_THRESHOLD)
-    .sort((a, b) => b.cnt - a.cnt);
+    .filter(c => c.bill && c.cnt > 0)
+    .sort((a, b) => b.cnt - a.cnt)
+    .slice(0, 12);
 
-  if(challenged.length){
-    el.innerHTML = challenged.map(c => {
+  if(ranked.length){
+    const rows = ranked.map((c, i) => {
       const b = c.bill;
       const n = c.cnt.toLocaleString(isEn ? 'en-CA' : 'fr-CA');
-      const spColor = b.sponsorParty ? ((b.sponsorParty.kind === 'party' ? partyColors[b.sponsorParty.code] : groupColors[b.sponsorParty.code]) || '#8a8f99') : null;
-      const spChip = b.sponsorParty ? `<span class="depute-party" style="background:${spColor}22; color:${spColor}">${isEn ? b.sponsorParty.abbr.en : b.sponsorParty.abbr.fr}</span>` : '';
-      return `<div class="bill" onclick="goToTab('projets')" style="cursor:pointer;">
-        <div class="head">
-          <div>
-            <div class="num">${isEn ? 'BILL' : 'PROJET'} ${b.num}</div>
-            <h3>${L(b.title)}</h3>
-          </div>
-          <div style="display:flex; align-items:center; gap:6px; flex:none; flex-wrap:wrap; justify-content:flex-end;">${spChip}<span class="status-pill status-sanctionne">🔥 ${n} ${isEn ? 'requests' : 'demandes'}</span></div>
-        </div>
-        <div class="meta" style="margin-top:6px;">${isEn ? 'Citizens are asking for explanations on this bill. Open the Bills tab to add your voice.' : 'Des citoyen·ne·s demandent des explications sur ce projet. Ouvrez l\'onglet Projets de loi pour ajouter votre voix.'}</div>
+      const hot = c.cnt >= CHALLENGE_THRESHOLD;
+      const countHtml = hot
+        ? `<b style="color:#D80621;">🔥 ${n}</b> ${isEn ? 'requests' : 'demandes'}`
+        : `<b>${n}</b> <span style="opacity:.65;">/ ${seuil}</span>`;
+      return `<div class="challenge-row" onclick="goToTab('projets')">
+        <span class="ch-rank">${i + 1}</span>
+        <span class="ch-num">${b.num}</span>
+        <span class="ch-title">${L(b.title)}</span>
+        <span class="ch-count">${countHtml}</span>
       </div>`;
     }).join('');
+    el.innerHTML = `<div class="challenge-panel">${rows}</div>`;
   } else {
     el.innerHTML = `<div style="background:var(--card); border:1px dashed var(--line); border-radius:var(--radius); padding:22px 18px; text-align:center; color:var(--slate);">
       <div style="font-size:26px; margin-bottom:8px;">🔎</div>
       <div style="font-size:14px; line-height:1.65; max-width:580px; margin:0 auto;">${isEn
-        ? `No bill has reached ${seuil} requests yet. This is where the bills the most citizens want explained will appear — a clear, public signal of interest. Be the first to challenge one.`
-        : `Aucun projet n'a encore atteint ${seuil} demandes. C'est ici qu'apparaîtront les projets de loi que le plus de citoyen·ne·s veulent voir expliqués — un signal public et clair. Soyez la première personne à en challenger un.`}</div>
+        ? `No one has asked for explanations yet. This is where the bills the most citizens want explained will show up, ranked live. Be the first to challenge one.`
+        : `Personne n'a encore demandé d'explications. C'est ici qu'apparaîtront, classés en direct, les projets que le plus de citoyen·ne·s veulent voir expliqués. Soyez la première personne à en challenger un.`}</div>
       <button class="sort-toggle" style="margin-top:14px; cursor:pointer;" onclick="goToTab('projets')">${isEn ? 'Challenge a bill →' : 'Challenger un projet →'}</button>
     </div>`;
   }
 }
-
 // Prochaines séances de la Chambre des communes — depuis le calendrier officiel
 // adopté (sittingDays, injecté au build). Le calendrier PRÉVU peut changer.
 function renderSittings(){
