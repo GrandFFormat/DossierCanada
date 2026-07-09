@@ -280,6 +280,14 @@ function main() {
     html = injectBlock(html, SIT_START_MARKER, SIT_END_MARKER, 'sittingDays', sittingDays, stamp);
   }
 
+  // Titulaires à forte rotation (scrapers/officeholders.js) — noms validés qui
+  // REMPLACENT les noms codés en dur du lexique ; sinon on garde le codé en dur.
+  const OFFICEHOLDERS_PATH = 'data/officeholders.json';
+  if (existsSync(OFFICEHOLDERS_PATH)) {
+    const officeholders = read(OFFICEHOLDERS_PATH).officeholders;
+    html = injectBlock(html, '/* OFFICEHOLDERS_DATA_START', '/* OFFICEHOLDERS_DATA_END */', 'officeholderNames', officeholders, stamp);
+  }
+
   // Sénat : roster + votes nominatifs (fichiers séparés) — injectés s'ils existent.
   let senateStats = null;
   if (existsSync(SENATORS_PATH) && existsSync(SENATE_VOTES_PATH)) {
