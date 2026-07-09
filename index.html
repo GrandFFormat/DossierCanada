@@ -3236,33 +3236,62 @@ const lexiconTerms = [
 // parlementaire, au-delà des député·e·s et sénateur·rice·s. Faits vérifiables,
 // jamais de jugement sur les personnes qui occupent ces rôles.
 const lexiconPeople = [
-  { term: { fr: "Le gouverneur général / la Couronne", en: "The Governor General / the Crown" }, def: {
-    fr: "Représente la Couronne : donne la <b>sanction royale</b> qui transforme un projet adopté en loi, convoque et dissout le Parlement, et nomme les sénateur·rice·s sur recommandation du premier ministre. C'est le chaînon derrière plusieurs étapes affichées sur ce site.",
-    en: "Represents the Crown: grants <b>royal assent</b> (which turns a passed bill into law), summons and dissolves Parliament, and appoints senators on the Prime Minister's recommendation. The link behind several stages shown on this site." } },
-  { term: { fr: "Les présidences des deux chambres", en: "The Speakers of the two chambers" }, def: {
-    fr: "Le <b>Président de la Chambre des communes</b> est un·e député·e élu·e par ses pairs pour arbitrer les débats avec neutralité — c'est pourquoi il ou elle ne vote qu'en cas d'égalité (son taux de présence aux votes paraît donc très bas, sans être une absence). Le <b>Président du Sénat</b> est nommé par le gouverneur général.",
-    en: "The <b>Speaker of the House of Commons</b> is an MP elected by peers to referee debates neutrally — which is why they only vote to break a tie (their vote-attendance figure looks very low without meaning absence). The <b>Speaker of the Senate</b> is appointed by the Governor General." } },
-  { term: { fr: "Les agents du Parlement", en: "Officers of Parliament" }, def: {
-    fr: "Des chiens de garde <b>indépendants du gouvernement</b>, qui relèvent du Parlement lui-même : le <b>vérificateur général</b> (les dépenses publiques), le <b>directeur général des élections</b> (Élections Canada), le <b>commissaire aux conflits d'intérêts et à l'éthique</b>, le <b>commissaire au lobbying</b> (qui tient le registre des lobbyistes), le <b>commissaire aux langues officielles</b>, et les <b>commissaires à la vie privée et à l'information</b>.",
-    en: "Watchdogs <b>independent from the government</b>, reporting to Parliament itself: the <b>Auditor General</b> (public spending), the <b>Chief Electoral Officer</b> (Elections Canada), the <b>Conflict of Interest and Ethics Commissioner</b>, the <b>Commissioner of Lobbying</b> (who keeps the lobbyist registry), the <b>Commissioner of Official Languages</b>, and the <b>Privacy and Information Commissioners</b>." } },
-  { term: { fr: "Le directeur parlementaire du budget (DPB)", en: "The Parliamentary Budget Officer (PBO)" }, def: {
-    fr: "Chiffre de façon <b>indépendante</b> ce que coûtent réellement les projets de loi et les mesures du gouvernement, pour que les parlementaires (et le public) votent en connaissance de cause. Ses rapports sont publics.",
-    en: "Provides <b>independent</b> costings of what bills and government measures actually cost, so parliamentarians (and the public) can decide with real numbers. Its reports are public." } },
-  { term: { fr: "Les comités parlementaires", en: "Parliamentary committees" }, def: {
-    fr: "De petits groupes de député·e·s (ou de sénateur·rice·s) qui étudient les projets de loi article par article entre la 2e et la 3e lecture, entendent des témoins et proposent des amendements. C'est souvent là que le vrai travail de fond se fait.",
-    en: "Small groups of MPs (or senators) that study bills clause by clause between 2nd and 3rd reading, hear witnesses and propose amendments. It's often where the real substantive work happens." } },
-  { term: { fr: "Leaders parlementaires et whips", en: "House leaders and whips" }, def: {
-    fr: "Dans chaque parti : le <b>leader parlementaire</b> négocie le déroulement des travaux ; le <b>whip</b> s'assure que les député·e·s du parti sont présent·e·s et votent selon la ligne du parti. C'est ce qui explique que, dans le détail « qui a voté quoi », les votes suivent presque toujours les lignes de parti.",
-    en: "In each party: the <b>House leader</b> negotiates the flow of business; the <b>whip</b> makes sure the party's MPs show up and vote the party line. It's why, in the \"who voted what\" detail, votes almost always follow party lines." } },
-  { term: { fr: "La fonction publique et les ministères", en: "The public service and departments" }, def: {
-    fr: "Les fonctionnaires qui appliquent concrètement les lois une fois adoptées, sous la direction des ministres. Le <b>Bureau du Conseil privé</b> est le ministère qui appuie directement le premier ministre et le Cabinet.",
-    en: "The civil servants who actually implement laws once passed, under the ministers' direction. The <b>Privy Council Office</b> is the department that directly supports the Prime Minister and Cabinet." } },
-  { term: { fr: "La Cour suprême du Canada", en: "The Supreme Court of Canada" }, def: {
-    fr: "Le plus haut tribunal du pays : elle peut <b>invalider une loi</b> contraire à la Constitution (dont la Charte), et le gouvernement peut lui demander son avis sur un projet (un « renvoi ») avant même de légiférer.",
-    en: "The country's highest court: it can <b>strike down a law</b> that violates the Constitution (including the Charter), and the government can ask for its opinion on a question (a \"reference\") before even legislating." } },
-  { term: { fr: "L'huissier du bâton noir et le sergent d'armes", en: "The Usher of the Black Rod and the Sergeant-at-Arms" }, def: {
-    fr: "Les figures de cérémonie qu'on voit aux grands moments télévisés : l'<b>huissier du bâton noir</b> (Sénat) frappe à la porte des Communes pour convoquer les député·e·s à la sanction royale ; le <b>sergent d'armes</b> porte la masse, symbole de l'autorité de la Chambre.",
-    en: "The ceremonial figures seen at big televised moments: the <b>Usher of the Black Rod</b> (Senate) knocks on the Commons' door to summon MPs to royal assent; the <b>Sergeant-at-Arms</b> carries the mace, symbol of the House's authority." } },
+  { group: { fr: "À l'intérieur du Parlement", en: "Inside Parliament" }, entries: [
+    { role: { fr: "Président de la Chambre des communes", en: "Speaker of the House of Commons" }, name: "Francis Scarpaleggia", tag: { fr: "Élu par les député·e·s · neutralité", en: "Elected by MPs · neutral" }, desc: {
+      fr: "Préside les séances des Communes et applique le Règlement. Élu par les député·e·s le 26 mai 2025 ; député libéral de Lac-Saint-Louis, mais la présidence exige la neutralité — il ne vote qu'en cas d'égalité, ce qui explique son taux de présence très bas sur ce site.",
+      en: "Presides over Commons sittings and applies the rules. Elected by MPs on May 26, 2025; a Liberal MP for Lac-Saint-Louis, but the role demands neutrality — he only votes to break a tie, which is why his attendance figure on this site looks very low." } },
+    { role: { fr: "Présidente du Sénat", en: "Speaker of the Senate" }, name: "Raymonde Gagné", tag: { fr: "Nommée", en: "Appointed" }, desc: {
+      fr: "Préside les séances du Sénat. Sénatrice du Manitoba, à la présidence depuis mai 2023.",
+      en: "Presides over Senate sittings. A senator from Manitoba, Speaker since May 2023." } },
+  ] },
+  { group: { fr: "La représentante de la Couronne", en: "The Crown's representative" }, entries: [
+    { role: { fr: "Gouverneure générale du Canada", en: "Governor General of Canada" }, name: "Louise Arbour", tag: { fr: "Cérémoniel + sanction des lois", en: "Ceremonial + royal assent" }, desc: {
+      fr: "31e titulaire du poste, assermentée le 8 juin 2026. Ancienne juge de la Cour suprême du Canada et haut-commissaire des Nations Unies aux droits de l'homme. C'est elle qui donne la sanction royale citée dans chaque fiche de projet de loi de ce site.",
+      en: "31st holder of the office, sworn in on June 8, 2026. A former justice of the Supreme Court of Canada and UN High Commissioner for Human Rights. She grants the royal assent cited on every bill card on this site." } },
+  ] },
+  { group: { fr: "Agents du Parlement — chiens de garde indépendants du gouvernement", en: "Officers of Parliament — watchdogs independent from the government" }, entries: [
+    { role: { fr: "Vérificatrice générale du Canada", en: "Auditor General of Canada" }, name: "Karen Hogan", tag: { fr: "Agente du Parlement", en: "Officer of Parliament" }, desc: {
+      fr: "Audite les dépenses et la gestion de l'État fédéral, et fait rapport au Parlement.",
+      en: "Audits federal spending and management, and reports to Parliament." } },
+    { role: { fr: "Directeur général des élections", en: "Chief Electoral Officer" }, name: "Stéphane Perrault", tag: { fr: "Agent du Parlement", en: "Officer of Parliament" }, desc: {
+      fr: "Dirige Élections Canada : supervise les scrutins fédéraux et le découpage des circonscriptions. En poste depuis 2018.",
+      en: "Heads Elections Canada: oversees federal elections and electoral boundaries. In office since 2018." } },
+    { role: { fr: "Commissaire aux conflits d'intérêts et à l'éthique", en: "Conflict of Interest and Ethics Commissioner" }, name: "Konrad von Finckenstein", tag: { fr: "Agent du Parlement", en: "Officer of Parliament" }, desc: {
+      fr: "Conseille et enquête sur la conduite des parlementaires en matière de conflits d'intérêts et d'éthique.",
+      en: "Advises and investigates parliamentarians on conflict-of-interest and ethics matters." } },
+    { role: { fr: "Commissaire au lobbying", en: "Commissioner of Lobbying" }, name: "Nancy Bélanger", tag: { fr: "Agente du Parlement", en: "Officer of Parliament" }, desc: {
+      fr: "Administre le registre des lobbyistes et le Code de déontologie des lobbyistes — le lien direct avec le bloc « Registre des lobbyistes » ci-dessous.",
+      en: "Administers the lobbyist registry and the Lobbyists' Code of Conduct — the direct link to the \"Lobbyist registry\" block below." } },
+    { role: { fr: "Commissaire aux langues officielles", en: "Commissioner of Official Languages" }, name: "Kelly Burke", tag: { fr: "Agente du Parlement", en: "Officer of Parliament" }, desc: {
+      fr: "Veille au respect de la Loi sur les langues officielles. 8e commissaire, en poste depuis le 30 mars 2026.",
+      en: "Oversees compliance with the Official Languages Act. 8th commissioner, in office since March 30, 2026." } },
+    { role: { fr: "Commissaire à la protection de la vie privée", en: "Privacy Commissioner" }, name: "Philippe Dufresne", tag: { fr: "Agent du Parlement", en: "Officer of Parliament" }, desc: {
+      fr: "Protège les renseignements personnels des citoyens face au gouvernement et aux entreprises. En poste depuis 2022.",
+      en: "Protects citizens' personal information from government and business. In office since 2022." } },
+    { role: { fr: "Commissaire à l'information", en: "Information Commissioner" }, name: "Caroline Maynard", tag: { fr: "Agente du Parlement", en: "Officer of Parliament" }, desc: {
+      fr: "Tranche les plaintes sur l'accès à l'information détenue par le gouvernement fédéral.",
+      en: "Resolves complaints about access to information held by the federal government." } },
+    { role: { fr: "Directrice parlementaire du budget", en: "Parliamentary Budget Officer" }, name: "Annette Ryan", tag: { fr: "Agente du Parlement", en: "Officer of Parliament" }, desc: {
+      fr: "Chiffre de façon indépendante le coût des lois et des mesures du gouvernement. Nommée le 22 avril 2026.",
+      en: "Independently costs bills and government measures. Appointed April 22, 2026." } },
+  ] },
+  { group: { fr: "Autres rôles et institutions", en: "Other roles and institutions" }, entries: [
+    { role: { fr: "Les comités parlementaires", en: "Parliamentary committees" }, tag: { fr: "Étude des projets", en: "Bill study" }, desc: {
+      fr: "De petits groupes de parlementaires qui étudient les projets de loi article par article entre la 2e et la 3e lecture, entendent des témoins et proposent des amendements.",
+      en: "Small groups of parliamentarians that study bills clause by clause between 2nd and 3rd reading, hear witnesses and propose amendments." } },
+    { role: { fr: "Leaders parlementaires et whips", en: "House leaders and whips" }, tag: { fr: "Discipline de vote", en: "Vote discipline" }, desc: {
+      fr: "Dans chaque parti, le leader parlementaire négocie le déroulement des travaux et le whip s'assure que les député·e·s votent selon la ligne du parti — ce qui explique que « qui a voté quoi » suive presque toujours les lignes de parti.",
+      en: "In each party, the House leader negotiates the flow of business and the whip ensures MPs vote the party line — which is why \"who voted what\" almost always follows party lines." } },
+    { role: { fr: "La fonction publique et les ministères", en: "The public service and departments" }, tag: { fr: "Application des lois", en: "Implements laws" }, desc: {
+      fr: "Les fonctionnaires qui appliquent concrètement les lois, sous la direction des ministres. Le Bureau du Conseil privé appuie directement le premier ministre et le Cabinet.",
+      en: "The civil servants who implement laws, under the ministers' direction. The Privy Council Office directly supports the Prime Minister and Cabinet." } },
+    { role: { fr: "La Cour suprême du Canada", en: "The Supreme Court of Canada" }, tag: { fr: "Pouvoir judiciaire", en: "Judicial branch" }, desc: {
+      fr: "Le plus haut tribunal du pays : il peut invalider une loi contraire à la Constitution (dont la Charte), et le gouvernement peut lui demander un avis sur un projet (un « renvoi »).",
+      en: "The country's highest court: it can strike down a law that violates the Constitution (including the Charter), and the government can ask it for an opinion on a question (a \"reference\")." } },
+    { role: { fr: "L'huissier du bâton noir et le sergent d'armes", en: "The Usher of the Black Rod and the Sergeant-at-Arms" }, tag: { fr: "Cérémoniel", en: "Ceremonial" }, desc: {
+      fr: "Figures de cérémonie : l'huissier du bâton noir (Sénat) frappe à la porte des Communes pour convoquer les député·e·s à la sanction royale ; le sergent d'armes porte la masse, symbole de l'autorité de la Chambre.",
+      en: "Ceremonial figures: the Usher of the Black Rod (Senate) knocks on the Commons' door to summon MPs to royal assent; the Sergeant-at-Arms carries the mace, symbol of the House's authority." } },
+  ] },
 ];
 // Saut « D'où viennent ces données » depuis le lexique : bascule vers l'onglet
 // Compte, déplie la section si elle est réduite (😴), puis défile jusqu'à elle
@@ -3282,6 +3311,21 @@ function jumpToApropos(){
   setTimeout(() => e.classList.remove('jump-highlight'), 2000);
 }
 
+// Rendu riche de « Qui gravite » : groupes avec en-tête, chaque entrée = rôle,
+// nom réel (vérifié), description, et une petite étiquette. Les entrées sans nom
+// (comités, whips, Cour suprême…) sont des rôles collectifs/institutionnels.
+function renderPeopleGroups(isEn){
+  const L = o => isEn ? (o.en || o.fr) : (o.fr || o.en);
+  return lexiconPeople.map(g => {
+    const rows = g.entries.map(e => {
+      const nameHtml = e.name ? `<div style="font-weight:600; color:var(--ink); margin:1px 0 3px;">${e.name}</div>` : '';
+      const tagHtml = e.tag ? `<div style="margin-top:7px;"><span style="font-family:'IBM Plex Mono',monospace; font-size:10px; text-transform:uppercase; letter-spacing:.04em; color:var(--slate); background:var(--paper-2); border-radius:20px; padding:2px 9px;">${L(e.tag)}</span></div>` : '';
+      return `<div class="lexique-item"><dt>${L(e.role)}</dt><dd>${nameHtml}${L(e.desc)}${tagHtml}</dd></div>`;
+    }).join('');
+    return `<div style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; color:var(--gold); margin:22px 0 2px;">${L(g.group)}</div>${rows}`;
+  }).join('');
+}
+
 function renderLexique(){
   const el = document.getElementById('lexiqueList');
   if(!el) return;
@@ -3291,7 +3335,8 @@ function renderLexique(){
   const peopleTitle = isEn ? 'Who’s involved around Parliament' : 'Qui gravite autour du Parlement';
   const termsTitle = isEn ? 'Parliamentary jargon' : 'Le jargon parlementaire';
   el.innerHTML = `<div class="role-group-title" id="sec-lexique-people">${peopleTitle}</div>`
-    + lexiconPeople.map(item).join('')
+    + `<div style="font-size:12.5px; color:var(--slate); margin:-6px 0 4px; max-width:680px;">${isEn ? "The public roles we hadn't covered yet — real names, real current functions." : "Les r\u00f4les publics qu'on n'avait pas encore couverts \u2014 vrais noms, vraies fonctions actuelles."}</div>`
+    + renderPeopleGroups(isEn)
     + lobbyRegistryBlock(isEn)
     + `<div class="role-group-title" id="sec-lexique-terms" style="margin-top:26px;">${termsTitle}</div>`
     + lexiconTerms.map(item).join('');
