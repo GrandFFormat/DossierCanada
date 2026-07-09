@@ -1159,7 +1159,7 @@ const translations = {
   },
   en: {
     'nav.close':"Close",'nav.apercu':"Overview",'nav.ministres':"MPs",'nav.projets':"Bills",
-    'nav.votes':"Votes",'nav.quoideneuf':"What's new",'nav.compte':"Account & about",'nav.trouve':"Find your MNA",
+    'nav.votes':"Votes",'nav.quoideneuf':"What's new",'nav.compte':"Account & about",'nav.trouve':"Find your MP",
     'nav.lexique':"Glossary",'nav.personnes':"Who's involved",'nav.lobby':"Lobbyist registry",'nav.petitions':"Petitions",'nav.apropos':"Where this data comes from",
     'stat.ministres':"MPs",'stat.projets':"Bills",'stat.votes':"Votes recorded",
     'h.composition':"Composition of the House of Commons",
@@ -1174,7 +1174,7 @@ const translations = {
     'h.projets':"Bills",
     'h.votes':"Vote registry",
     'h.compte':"Account and follows",
-    'h.trouve':"Find your MNA",
+    'h.trouve':"Find your MP",
     'h.quoideneuf':"What's new",
     'h.quoideneuf.sub':"Real, recent activity from the House of Commons",
     'h.filactu':"News feed",
@@ -1225,7 +1225,7 @@ const translations = {
     'votes.sub':"45th Parliament (1st session) — official counts and by-MP recorded-vote breakdown",
     'votes.info.b':"On the \u201cwho voted what\u201d detail",
     'votes.info.text':"— the House of Commons publishes each member's name for every recorded (nominal) vote (Yea / Nay / paired). The by-member breakdown above (the \"+\" button on each row) comes directly from that official source (ourcommons.ca), not an estimate. The party shown next to each name is taken from the current House roster; people who have since left the House appear separately under \"Former members\".",
-    // Find your MNA
+    // Find your MP
     'trouve.sub':"125 ridings — full list, real National Assembly data",
     'trouve.info':"These entries come directly from the House of Commons official list of sitting members (ourcommons.ca), bilingual. Some seats may change between updates (resignation, by-election) — this list is a snapshot taken at the last update, not an automatically updated feed.",
     // What's new / calendar
@@ -1635,6 +1635,16 @@ async function loadFollowsFromSupabase(){
   }
 }
 
+// Demandes d'explication de la personne connectée (pour l'état ✓ sur les fiches).
+let myFlaggedBills = {};
+async function loadMyFlagsFromSupabase(){
+  if(!currentUser){ myFlaggedBills = {}; return; }
+  const { data, error } = await supabaseClient.from('bill_flags').select('bill_id').eq('user_id', currentUser.id);
+  if(error){ console.error(error); return; }
+  myFlaggedBills = {};
+  for(const row of (data || [])) myFlaggedBills[row.bill_id] = true;
+}
+
 async function signInWithMagicLink(email){
   const { error } = await supabaseClient.auth.signInWithOtp({
     email,
@@ -1685,7 +1695,7 @@ function renderAccountBox(){
         <span>${isEn ? 'Signed in as' : 'Connecté·e comme'} <span class="account-email">${displayName}</span></span>
         <button class="account-btn" onclick="signOutUser()">${isEn ? 'Sign out' : 'Se déconnecter'}</button>
       </div>
-      <div class="account-note">${isEn ? 'The ministers, MNAs, and bills you follow are now synced to your account, across devices.' : 'Les ministres, député·e·s et projets de loi que vous suivez sont maintenant synchronisés à votre compte, entre tous vos appareils.'}</div>
+      <div class="account-note">${isEn ? 'The ministers and MPs you follow are now synced to your account, across devices.' : 'Les ministres et député·e·s que vous suivez sont maintenant synchronisés à votre compte, entre tous vos appareils.'}</div>
     `;
   } else {
     box.innerHTML = `
@@ -1693,7 +1703,7 @@ function renderAccountBox(){
         <input type="email" id="accountEmailInput" placeholder="${isEn ? 'Your email' : 'Votre courriel'}">
         <button class="account-btn" id="magicLinkBtn" onclick="handleMagicLinkClick()">${isEn ? 'Send magic link' : 'Envoyer un lien de connexion'}</button>
       </div>
-      <div class="account-note" id="accountStatusNote">${isEn ? 'Sign in to sync the ministers, MNAs, and bills you follow across devices.' : 'Connectez-vous pour synchroniser les ministres, député·e·s et projets de loi que vous suivez entre vos appareils.'}</div>
+      <div class="account-note" id="accountStatusNote">${isEn ? 'Sign in to sync the ministers and MPs you follow across devices.' : 'Connectez-vous pour synchroniser les ministres et député·e·s que vous suivez entre vos appareils.'}</div>
     `;
   }
 }
@@ -1705,7 +1715,7 @@ async function initAuth(){
   try{
     const { data: { session } } = await supabaseClient.auth.getSession();
     currentUser = session?.user ?? null;
-    if(currentUser) await loadFollowsFromSupabase();
+    if(currentUser){ await loadFollowsFromSupabase(); await loadMyFlagsFromSupabase(); }
   }catch(e){
     console.error('initAuth failed:', e);
   }finally{
@@ -1717,7 +1727,7 @@ async function initAuth(){
   supabaseClient.auth.onAuthStateChange(async (event, newSession) => {
     try{
       currentUser = newSession?.user ?? null;
-      if(currentUser) await loadFollowsFromSupabase();
+      if(currentUser){ await loadFollowsFromSupabase(); await loadMyFlagsFromSupabase(); }
     }catch(e){
       console.error('onAuthStateChange failed:', e);
     }finally{
@@ -1759,7 +1769,7 @@ async function renderFlagBox(){
   if(!currentUser){
     box.innerHTML = `
       <div class="account-note">${isEn
-        ? `Sign in (Account tab) to ask a bill's sponsor for an explanation (up to ${FLAG_MONTHLY_LIMIT} requests per month, to prevent abuse). At 1,000 requests for the same bill, a public post goes up — hoping an MNA agrees to open a petition.`
+        ? `Sign in (Account tab) to ask a bill's sponsor for an explanation (up to ${FLAG_MONTHLY_LIMIT} requests per month, to prevent abuse). At 1,000 requests for the same bill, a public post goes up — hoping an MP agrees to open a petition.`
         : `Connectez-vous (onglet Compte) pour demander des explications sur un projet de loi (jusqu'à ${FLAG_MONTHLY_LIMIT} demandes par mois, pour éviter les abus). À 1000 demandes pour un même projet, une publication publique sera faite — dans l'espoir qu'un·e élu·e accepte d'ouvrir une pétition.`}</div>
     `;
     return;
@@ -1780,7 +1790,7 @@ async function renderFlagBox(){
   const remaining = FLAG_MONTHLY_LIMIT - usedThisMonth;
   box.innerHTML = `
     <div class="account-note">${isEn
-      ? `Enter the number of an active bill (not yet enacted) to ask its sponsor for an explanation. At 1,000 requests for the same bill, a public Facebook post goes up — hoping an MNA agrees to open a petition. (${remaining} of ${FLAG_MONTHLY_LIMIT} requests left this month.)`
+      ? `Enter the number of an active bill (not yet enacted) to ask its sponsor for an explanation. At 1,000 requests for the same bill, a public Facebook post goes up — hoping an MP agrees to open a petition. (${remaining} of ${FLAG_MONTHLY_LIMIT} requests left this month.)`
       : `Entrez le numéro d'un projet de loi actif (pas encore sanctionné) pour demander des explications à son parrain. À 1000 demandes pour un même projet, une publication publique sera faite sur Facebook — dans l'espoir qu'un·e élu·e accepte d'ouvrir une pétition. (${remaining} demande${remaining>1?'s':''} sur ${FLAG_MONTHLY_LIMIT} restante${remaining>1?'s':''} ce mois-ci.)`}</div>
     <div class="account-row" style="margin-top:10px;">
       <input type="text" id="flagBillNumberInput" inputmode="numeric" placeholder="${isEn ? 'Bill number (e.g. 24)' : 'Numéro du projet de loi (ex. 24)'}" oninput="checkBillNumberInput()">
@@ -1845,6 +1855,28 @@ async function submitBillFlag(){
     input.value = '';
     setTimeout(renderFlagBox, 1200);
   }
+}
+
+// Demande d'explication depuis la fiche d'un projet (remplace l'ancien « Suivre »).
+// Demander = être averti par courriel des moments qui comptent + faire monter le
+// compteur public. Une seule demande par personne et par projet (contrainte base).
+async function requestExplanation(billId, btnId){
+  const isEn = currentLang === 'en';
+  const btn = btnId ? document.getElementById(btnId) : null;
+  if(!currentUser){ goToTab('compte'); return; } // se connecter d'abord
+  if(btn) btn.disabled = true;
+  const { error } = await supabaseClient.from('bill_flags').insert({ user_id: currentUser.id, bill_id: billId });
+  if(error && error.code !== '23505'){
+    // Refus le plus courant : limite mensuelle atteinte (règle de sécurité serveur).
+    console.error('requestExplanation insert error:', error);
+    if(btn){ btn.disabled = false; btn.textContent = isEn ? 'Monthly limit reached — try later' : 'Limite mensuelle atteinte — réessayez plus tard'; }
+    return;
+  }
+  // Succès OU doublon (23505) → dans les deux cas la demande existe bien.
+  myFlaggedBills[billId] = true;
+  if(btn){ btn.disabled = true; btn.classList.add('on'); btn.textContent = isEn ? '✓ Explanation requested' : '✓ Explication demandée'; }
+  challengedCache = null;
+  try{ renderChallenged(); }catch(e){}
 }
 
 // Réservé aux comptes listés dans la table `admins` (voir
@@ -2176,7 +2208,13 @@ function renderProvinceNetwork(){
   ).join('');
 }
 
-const CHALLENGE_THRESHOLD = 1000;
+// Paliers de challenge : compteur CONTINU (une demande par personne, à vie) — il
+// ne se remet jamais à zéro. Chaque palier franchi déclenche un challenge public
+// au parrain, puis le compteur poursuit sa montée vers le palier suivant.
+const CHALLENGE_TIERS = [1000, 5000, 25000];
+const CHALLENGE_THRESHOLD = CHALLENGE_TIERS[0];
+const nextTier = cnt => CHALLENGE_TIERS.find(t => cnt < t) ?? null; // null = tous franchis
+const topTierReached = cnt => { let r = 0; for(const t of CHALLENGE_TIERS) if(cnt >= t) r = t; return r; };
 let challengedCache = null;
 async function renderChallenged(){
   const el = document.getElementById('challengedList');
@@ -2188,8 +2226,8 @@ async function renderChallenged(){
   const subEl = document.getElementById('challengedSub');
   if(titleEl) titleEl.textContent = isEn ? 'Bills citizens want explained' : 'Ce que les citoyen·ne·s veulent voir expliqué';
   if(subEl) subEl.textContent = isEn
-    ? `The bills the most people are asking to have explained, live. At ${seuil} requests, a bill aims for a petition sponsored by an MP.`
-    : `Les projets de loi dont le plus de gens demandent des explications, en direct. À ${seuil} demandes, un projet vise une pétition parrainée par un·e député·e.`;
+    ? `The bills the most people are asking to have explained, live. At ${seuil} requests, a first public challenge goes to the sponsor — and the counter keeps climbing, with higher tiers (5,000, 25,000).`
+    : `Les projets de loi dont le plus de gens demandent des explications, en direct. À ${seuil} demandes, un premier challenge public est lancé au parrain — et le compteur continue de monter, avec des paliers plus élevés (5 000, 25 000).`;
 
   if(challengedCache === null){
     try{
@@ -2209,10 +2247,12 @@ async function renderChallenged(){
     const rows = ranked.map((c, i) => {
       const b = c.bill;
       const n = c.cnt.toLocaleString(isEn ? 'en-CA' : 'fr-CA');
-      const hot = c.cnt >= CHALLENGE_THRESHOLD;
-      const countHtml = hot
-        ? `<b style="color:#D80621;">🔥 ${n}</b> ${isEn ? 'requests' : 'demandes'}`
-        : `<b>${n}</b> <span style="opacity:.65;">/ ${seuil}</span>`;
+      const reached = topTierReached(c.cnt);
+      const nt = nextTier(c.cnt);
+      const goal = nt ? nt.toLocaleString(isEn ? 'en-CA' : 'fr-CA') : null;
+      const countHtml = reached
+        ? `<b style="color:#D80621;">🔥 ${n}</b> ${isEn ? 'requests' : 'demandes'}${goal ? ` <span style="opacity:.65;">/ ${goal}</span>` : ''}`
+        : `<b>${n}</b> <span style="opacity:.65;">/ ${goal}</span>`;
       return `<div class="challenge-row" onclick="goToTab('projets')">
         <span class="ch-rank">${i + 1}</span>
         <span class="ch-num">${b.num}</span>
@@ -2568,10 +2608,10 @@ function personCard(p){
     ? (isEn ? `attendance: ${p.att.rate}% (${p.att.participated}/${p.att.total})` : `présence : ${p.att.rate} % (${p.att.participated}/${p.att.total})`)
     : (isEn ? 'attendance: not available' : 'présence : non disponible');
   const attTitle = presidingNote
-    ? (isEn ? 'The President and Vice-Presidents generally do not vote while presiding a sitting, to preserve their neutrality — so a low or absent vote count does not mean they were absent.' : 'La présidence et les vice-présidences ne votent généralement pas quand elles président une séance, pour préserver leur neutralité — un faible taux ou une absence de vote ne veut donc pas dire qu\'elles étaient absentes.')
+    ? (isEn ? 'The Speaker and Deputy Speakers generally do not vote while presiding a sitting, to preserve their neutrality — so a low or absent vote count does not mean they were absent.' : 'La présidence et les vice-présidences ne votent généralement pas quand elles président une séance, pour préserver leur neutralité — un faible taux ou une absence de vote ne veut donc pas dire qu\'elles étaient absentes.')
     : isEn
-    ? 'Share of recorded votes (all 3 sessions of the 43rd Legislature) this MNA appears in (Yea/Nay/Abstention), counted since their first recorded vote — a proxy for attendance, since the Assembly does not publish attendance directly.'
-    : "Part des votes nominaux enregistrés (3 sessions de la 43e législature) où cette personne apparaît (Pour/Contre/Abstention), comptée depuis son premier vote enregistré — un indicateur de présence, l'Assemblée ne publiant pas l'assiduité directement.";
+    ? 'Share of recorded votes this MP appears in (Yea/Nay/paired), counted since their first recorded vote — a proxy for attendance, since the House does not publish attendance directly.'
+    : "Part des votes nominaux enregistrés où cette personne apparaît (Pour/Contre/pairé), comptée depuis son premier vote enregistré — un indicateur de présence, la Chambre ne publiant pas l'assiduité directement.";
   return `
     <div class="m-card">
       <div class="top-row">
@@ -2940,13 +2980,17 @@ function billCard(b, ctx){
   const lastActivity = L(b.latestActivity) || b.lastActivity || '—';
   const chamberLabel = b.chamber === 'senate' ? (isEn ? 'Senate' : 'Sénat') : (isEn ? 'House of Commons' : 'Chambre des communes');
 
-  const isFollowed = !!followedBills[b.id];
-  // Suivi caché sur les projets devenus loi (finaux) ou rejetés — rien à suivre.
-  const canFollow = b.state === 'encours';
-  const followHint = isEn ? 'Email only when it changes stage' : 'Courriel seulement s\'il change d\'étape';
-  const followRow = canFollow ? `<div class="bill-follow-row">
-    <span class="follow-hint">${followHint}</span>
-    <button class="follow-btn ${isFollowed?'on':''}" onclick="event.stopPropagation(); toggleFollowBill(${b.id})">${isFollowed ? t('btn.following') : t('btn.follow')}</button>
+  const isFlagged = !!myFlaggedBills[b.id];
+  // On ne demande une explication que sur un projet encore actif (rien à
+  // expliquer sur un projet déjà sanctionné ou rejeté). Demander = aussi être
+  // averti par courriel des moments qui comptent (vote, adoption, rejet, sanction).
+  const canFlag = b.state === 'encours';
+  const flagHint = isEn ? 'Emailed on the moments that matter (a vote, passed, defeated, enacted)' : 'Un courriel aux moments qui comptent (vote, adoption, rejet, sanction)';
+  const flagBtnId = 'demand-' + ctx + '-' + b.id;
+  const flagLabel = isFlagged ? (isEn ? '✓ Explanation requested' : '✓ Explication demandée') : (isEn ? 'Ask for an explanation' : 'Demander une explication');
+  const followRow = canFlag ? `<div class="bill-follow-row">
+    <span class="follow-hint">${flagHint}</span>
+    <button class="follow-btn ${isFlagged?'on':''}" id="${flagBtnId}" ${isFlagged?'disabled':''} onclick="event.stopPropagation(); requestExplanation(${b.id}, '${flagBtnId}')">${flagLabel}</button>
   </div>` : '';
 
   // Timeline bicamérale : toutes les étapes canoniques, celles franchies portent
