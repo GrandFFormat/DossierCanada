@@ -2,10 +2,10 @@
 //
 // Une fois par semaine : relit les projets de loi fédéraux depuis data/bills.json
 // (regénéré chaque jour par le rafraîchissement automatique), détecte ceux qui
-// ont eu une nouvelle activité datée depuis la dernière exécution, puis envoie UN
-// seul courriel résumé à chaque personne concernée — soit parce qu'elle suit ce
-// projet (bouton « Suivre »), soit parce qu'elle a demandé des explications
-// dessus (bill_flags). Un courriel par personne, jamais un par changement.
+// ont franchi un MOMENT QUI COMPTE depuis la dernière exécution (2e/3e lecture =
+// un vote, sanction royale = devenu loi, ou rejet), puis envoie UN seul courriel
+// résumé à chaque personne qui a demandé une explication sur ces projets
+// (bill_flags). Un courriel par personne, jamais un par changement.
 //
 // Tous les secrets viennent des variables d'environnement Vercel — RIEN n'est
 // codé en dur ici, et ce fichier ne contient aucune clé.
@@ -45,12 +45,34 @@ function activityKey(lastActivity) {
   return Number.isFinite(n) ? n : 0;
 }
 
-// État courant de chaque projet : sa dernière activité datée + le texte bilingue
-// déjà sourcé (latestActivity) pour l'afficher tel quel dans le courriel.
+// Étapes qui « comptent » pour un courriel : 2e/3e lecture (= un vote) et sanction
+// royale (= devenu loi). Les étapes procédurales (1re lecture, dépôt) ne déclenchent
+// AUCUN courriel — on ne notifie que les moments qui changent quelque chose.
+const MEANINGFUL_STAGES = new Set([
+  'senate_second_reading', 'senate_third_reading',
+  'commons_second_reading', 'commons_third_reading',
+  'royal_assent',
+]);
+const TERMINAL_STATES = new Set(['loi', 'rejete']); // devenu loi / rejeté
+
+// Clé « moment qui compte » : la date la plus récente parmi les étapes ci-dessus,
+// et la dernière activité si le projet est devenu loi ou a été rejeté. Un projet
+// qui n'a franchi qu'une 1re lecture a une clé 0 → jamais de courriel.
+function meaningfulKey(b) {
+  let key = 0;
+  for (const m of (b.milestones || [])) {
+    if (MEANINGFUL_STAGES.has(m.stage)) key = Math.max(key, activityKey(m.date));
+  }
+  if (TERMINAL_STATES.has(b.state)) key = Math.max(key, activityKey(b.lastActivity));
+  return key;
+}
+
+// État courant de chaque projet : sa progression « moment qui compte » + le texte
+// bilingue déjà sourcé (latestActivity) pour l'afficher tel quel dans le courriel.
 function computeCurrent() {
   const result = new Map(); // billId -> { key, num, title, latest }
   for (const b of bills) {
-    const key = activityKey(b.lastActivity);
+    const key = meaningfulKey(b);
     if (!key) continue;
     result.set(Number(b.id), {
       key,
@@ -118,16 +140,16 @@ function digestHtml(changes, siteUrl, unsubUrl) {
   return `
     <div style="font-family:Arial,sans-serif; max-width:560px; color:#16213E; line-height:1.5;">
       <h2 style="font-size:18px; color:#D80621;">DossierCanada — résumé de la semaine</h2>
-      <p>Voici les projets de loi que vous suivez (ou sur lesquels vous avez demandé des explications) qui ont eu du nouveau cette semaine :</p>
+      <p>Voici les projets de loi sur lesquels vous avez demandé une explication et qui ont franchi un moment qui compte cette semaine (un vote, une adoption, un rejet ou la sanction royale) :</p>
       <ul style="padding-left:18px;">${frRows}</ul>
-      <p style="font-size:13px; color:#5C6270;">Vous recevez ce courriel parce que vous suivez ces projets de loi sur DossierCanada.
-      Gérez vos suivis sur <a href="${siteUrl}" style="color:#D80621;">${siteUrl}</a>.</p>
+      <p style="font-size:13px; color:#5C6270;">Vous recevez ce courriel parce que vous avez demandé une explication sur ces projets de loi sur DossierCanada.
+      Gérez vos demandes sur <a href="${siteUrl}" style="color:#D80621;">${siteUrl}</a>.</p>
       <hr style="border:none; border-top:1px solid #e0e0da; margin:20px 0;">
       <h2 style="font-size:18px; color:#D80621;">DossierCanada — this week's summary</h2>
-      <p>Here are the bills you follow (or asked for explanations on) that had activity this week:</p>
+      <p>Here are the bills you asked for an explanation on that reached a moment that matters this week (a vote, passage, defeat, or royal assent):</p>
       <ul style="padding-left:18px;">${enRows}</ul>
-      <p style="font-size:13px; color:#5C6270;">You're receiving this because you follow these bills on DossierCanada.
-      Manage your follows at <a href="${siteUrl}" style="color:#D80621;">${siteUrl}</a>.</p>
+      <p style="font-size:13px; color:#5C6270;">You're receiving this because you asked for an explanation on these bills on DossierCanada.
+      Manage your requests at <a href="${siteUrl}" style="color:#D80621;">${siteUrl}</a>.</p>
       <p style="font-size:12px; color:#8891A8;"><a href="${unsubUrl}" style="color:#8891A8;">Se désabonner / Unsubscribe</a></p>
     </div>`;
 }
@@ -173,8 +195,8 @@ export default async function handler(req, res) {
     const changedIds = [...changed.keys()];
     const inList = `(${changedIds.join(',')})`;
 
-    // 5. Qui suit ces projets de loi + qui a demandé des explications.
-    const follows = await supaFetch(`/rest/v1/follows?select=user_id,person_key&person_type=eq.bill&person_key=in.(${changedIds.map((id) => `"${id}"`).join(',')})`);
+    // 5. Qui a demandé une explication sur ces projets — les seuls destinataires :
+    //    demander = s'abonner. Le suivi de projet (« Suivre ») n'existe plus.
     const flags = await supaFetch(`/rest/v1/bill_flags?select=user_id,bill_id&bill_id=in.${inList}`);
 
     const userBills = new Map(); // user_id -> Set(billId)
@@ -182,7 +204,6 @@ export default async function handler(req, res) {
       if (!userBills.has(uid)) userBills.set(uid, new Set());
       userBills.get(uid).add(billId);
     };
-    for (const f of follows) add(f.user_id, Number(f.person_key));
     for (const f of flags) add(f.user_id, Number(f.bill_id));
 
     if (userBills.size === 0) {
