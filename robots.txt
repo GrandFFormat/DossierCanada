@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dossiercanada.ca/sitemap.xml

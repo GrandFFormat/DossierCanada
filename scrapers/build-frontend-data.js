@@ -398,6 +398,17 @@ function main() {
 
   writeFileSync(HTML_PATH, html);
 
+  // sitemap.xml — régénéré à chaque build pour garder <lastmod> à jour (le site
+  // change tous les jours). Une seule URL : c'est une application à page unique.
+  const today = new Date().toISOString().slice(0, 10);
+  writeFileSync(
+    'sitemap.xml',
+    `<?xml version="1.0" encoding="UTF-8"?>\n` +
+      `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
+      `  <url>\n    <loc>https://dossiercanada.ca/</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>\n` +
+      `</urlset>\n`
+  );
+
   console.log(`Fusion écrite dans ${OUT_PATH}`);
   console.log(`  ${frontendBills.length} projets · ${frontendDeputes.length} députés · ${frontendVotes.length} scrutins injectés dans ${HTML_PATH}`);
   console.log(`  ${billsOut.length} projets · ${deputesOut.length} députés · ${resolvedVotes.length} scrutins`);
