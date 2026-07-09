@@ -3442,10 +3442,15 @@ function lobbyRegistryBlock(isEn){
   const note = isEn
     ? `We don't reproduce this registry on DossierCanada: its open data is only distributed in bulk files that block automated access, with no queryable API — so rather than risk stale data, we link straight to the official public tools.`
     : `On ne reproduit pas ce registre sur DossierCanada : ses données ouvertes ne sont distribuées qu'en fichiers de masse bloquant l'accès automatisé, sans API interrogeable — plutôt que de risquer une donnée périmée, on renvoie directement aux outils publics officiels.`;
-  const odUrl = isEn ? 'https://lobbycanada.gc.ca/en/open-data/' : 'https://lobbycanada.gc.ca/fr/donnees-ouvertes/';
+  const lg = isEn ? '' : '?lang=fra';
+  // « Données ouvertes » → le portail officiel open.canada.ca (bilingue, fiable,
+  // hors du pare-feu de lobbycanada.gc.ca) : le jeu « Rapports de communication ».
+  const odUrl = isEn
+    ? 'https://open.canada.ca/data/en/dataset/a34eb330-7136-4f5e-9f5f-3ba41df58b06'
+    : 'https://open.canada.ca/data/fr/dataset/a34eb330-7136-4f5e-9f5f-3ba41df58b06';
   const links = [
-    [isEn ? 'Search the registry ↗' : 'Rechercher dans le registre ↗', 'https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/guest'],
-    [isEn ? 'Recent communications ↗' : 'Communications récentes ↗', 'https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/rcntCmLgs'],
+    [isEn ? 'Search the registry ↗' : 'Rechercher dans le registre ↗', 'https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/guest' + lg],
+    [isEn ? 'Recent communications ↗' : 'Communications récentes ↗', 'https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/rcntCmLgs' + lg],
     [isEn ? 'Open data ↗' : 'Données ouvertes ↗', odUrl],
   ];
   const linksHtml = links.map(([t, u]) => `<a href="${u}" target="_blank" rel="noopener" style="color:var(--gold); white-space:nowrap;">${t}</a>`).join('<span style="color:var(--line); margin:0 8px;">·</span>');
