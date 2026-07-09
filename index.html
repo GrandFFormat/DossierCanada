@@ -3341,7 +3341,7 @@ function renderLexique(){
   const peopleTitle = isEn ? 'Who’s involved around Parliament' : 'Qui gravite autour du Parlement';
   const termsTitle = isEn ? 'Parliamentary jargon' : 'Le jargon parlementaire';
   el.innerHTML = `<div class="role-group-title" id="sec-lexique-people">${peopleTitle}</div>`
-    + `<div style="font-size:12.5px; color:var(--slate); margin:-6px 0 4px; max-width:680px;">${isEn ? "The public roles we hadn't covered yet — real names, real current functions." : "Les r\u00f4les publics qu'on n'avait pas encore couverts \u2014 vrais noms, vraies fonctions actuelles."}</div>`
+    + `<div style="font-size:12.5px; line-height:1.6; color:var(--slate); margin:-4px 0 8px; max-width:680px;">${isEn ? "The real people around Parliament, beyond the elected members. These names live on a dozen scattered official sites, so — unlike the rest of this daily-refreshed site — they're hard to keep automatic: the two that change most often (House Speaker, Governor General) update on their own; the others are verified by hand and may lag briefly after a change." : "Les vraies personnes qui gravitent autour du Parlement, au-delà des élu·e·s. Ces noms sont éparpillés sur une dizaine de sites officiels différents : contrairement au reste du site (rafraîchi chaque jour), ils sont difficiles à garder automatiques. Les deux qui changent le plus souvent (présidence des Communes, gouverneure générale) se mettent à jour tout seuls ; les autres sont vérifiés à la main et peuvent accuser un court délai après un changement."}</div>`
     + renderPeopleGroups(isEn)
     + lobbyRegistryBlock(isEn)
     + `<div class="role-group-title" id="sec-lexique-terms" style="margin-top:26px;">${termsTitle}</div>`
