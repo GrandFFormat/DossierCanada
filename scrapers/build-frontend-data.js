@@ -201,6 +201,11 @@ function main() {
     return null;
   }
 
+  // Résumés « langage clair » générés par IA (scrapers/bill-ai-summaries.js),
+  // ancrés dans le texte officiel et mis en cache par projet. Joints par id.
+  const AI_SUMMARIES_PATH = 'data/bill-ai-summaries.json';
+  const aiById = existsSync(AI_SUMMARIES_PATH) ? (read(AI_SUMMARIES_PATH).summaries ?? {}) : {};
+
   // Injecte les projets de loi (prêts pour billCard) directement dans index.html
   // entre les marqueurs BILLS_DATA — le prototype reste un fichier HTML autonome,
   // sans fetch. On ne garde que les champs consommés par le rendu.
@@ -218,6 +223,9 @@ function main() {
     summary: b.summary ?? { en: null, fr: null },
     summarySource: b.summarySource ?? null,
     fullSummaryAvailable: b.fullSummaryAvailable ?? false,
+    aiSummary: aiById[String(b.id)]
+      ? { en: aiById[String(b.id)].en ?? null, fr: aiById[String(b.id)].fr ?? null }
+      : { en: null, fr: null },
     milestones: b.milestones,
     lastActivity: b.lastActivity,
     latestActivity: { fr: b.latestActivity.fr, en: b.latestActivity.en },
