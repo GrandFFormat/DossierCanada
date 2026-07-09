@@ -2767,13 +2767,28 @@ function billCard(b, ctx){
   // On ne demande une explication que sur un projet encore actif (rien à
   // expliquer sur un projet déjà sanctionné ou rejeté). Demander = aussi être
   // averti par courriel des moments qui comptent (vote, adoption, rejet, sanction).
+  // Trois états : déconnecté (connexion requise, aucune demande anonyme possible —
+  // c'est bloqué côté serveur par RLS), connecté (demander), déjà demandé.
   const canFlag = b.state === 'encours';
-  const flagHint = isEn ? 'Emailed on the moments that matter (a vote, passed, defeated, enacted)' : 'Un courriel aux moments qui comptent (vote, adoption, rejet, sanction)';
   const flagBtnId = 'demand-' + ctx + '-' + b.id;
-  const flagLabel = isFlagged ? (isEn ? '✓ Explanation requested' : '✓ Explication demandée') : (isEn ? 'Ask for an explanation' : 'Demander une explication');
+  const flagMailHint = isEn ? 'Emailed on the moments that matter (a vote, passed, defeated, enacted)' : 'Un courriel aux moments qui comptent (vote, adoption, rejet, sanction)';
+  let flagHint, flagLabel, flagOnclick = '', flagDisabled = '';
+  if(!currentUser){
+    flagHint = isEn ? 'Sign-in required — one request per person, no anonymous requests' : 'Connexion requise — une demande par personne, aucune demande anonyme';
+    flagLabel = isEn ? '🔒 Sign in to ask' : '🔒 Se connecter pour demander';
+    flagOnclick = `goToTab('compte')`;
+  } else if(isFlagged){
+    flagHint = flagMailHint;
+    flagLabel = isEn ? '✓ Explanation requested' : '✓ Explication demandée';
+    flagDisabled = 'disabled';
+  } else {
+    flagHint = flagMailHint;
+    flagLabel = isEn ? 'Ask for an explanation' : 'Demander une explication';
+    flagOnclick = `requestExplanation(${b.id}, '${flagBtnId}')`;
+  }
   const followRow = canFlag ? `<div class="bill-follow-row">
     <span class="follow-hint">${flagHint}</span>
-    <button class="follow-btn ${isFlagged?'on':''}" id="${flagBtnId}" ${isFlagged?'disabled':''} onclick="event.stopPropagation(); requestExplanation(${b.id}, '${flagBtnId}')">${flagLabel}</button>
+    <button class="follow-btn ${isFlagged?'on':''}" id="${flagBtnId}" ${flagDisabled} onclick="event.stopPropagation(); ${flagOnclick}">${flagLabel}</button>
   </div>` : '';
 
   // Timeline bicamérale : toutes les étapes canoniques, celles franchies portent
