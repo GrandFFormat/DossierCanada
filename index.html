@@ -81,6 +81,12 @@
     line-height:1.05;
   }
   .brand-text p{margin:2px 0 0; font-size:12.5px; color:var(--slate); letter-spacing:0.02em;}
+  .brand-col{display:flex; flex-direction:column;}
+  .province-network{display:flex; align-items:center; gap:7px; margin-top:12px; padding-left:2px; flex-wrap:wrap;}
+  .pn-label{font-family:'IBM Plex Mono',monospace; font-size:10px; text-transform:uppercase; letter-spacing:0.06em; color:var(--slate);}
+  .pn-dot{width:27px; height:27px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono',monospace; font-size:10.5px; font-weight:700; color:#fff; text-decoration:none; box-shadow:0 1px 3px rgba(0,0,0,.18); transition:transform .12s;}
+  .pn-dot:hover{transform:scale(1.12);}
+  .pn-soon{width:27px; height:27px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; font-size:13px; color:var(--slate); border:1px dashed var(--line);}
   .top-meta{display:flex; gap:28px; align-items:baseline; flex-wrap:wrap;}
   .top-meta .stat{text-align:right;}
   .top-meta .stat b{
@@ -605,6 +611,7 @@
 <body>
 
 <header class="top">
+  <div class="brand-col">
   <div class="brand" onclick="goToTab('apercu')" role="button" tabindex="0" aria-label="Retour à l'aperçu">
     <div class="brand-mark">
       <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="#D80621"/><path d="M9 12 L16 12 L19 16 L31 16 L31 30 L9 30 Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/></svg>
@@ -613,6 +620,8 @@
       <h1>DossierCanada</h1>
       <p data-i18n="brand.tagline">Qui siège, qui légifère, qui vote quoi</p>
     </div>
+  </div>
+  <div class="province-network" id="provinceNetwork"></div>
   </div>
   <div class="top-meta">
     <div class="stat"><b id="statMinistres">—</b><span data-i18n="stat.ministres">Ministres</span></div>
@@ -1374,6 +1383,7 @@ function applyLanguage(){
   renderRoadmap();
   renderSittings();
   renderChallenged();
+  renderProvinceNetwork();
   renderLexique();
   updateChamberLabels();
   setChamber(chamberView);
@@ -2123,6 +2133,26 @@ let newsShown = 8;
 // total public par projet — jamais qui a demandé quoi. Tant qu'aucun projet n'a
 // atteint le seuil (ou que l'agrégat n'est pas encore activé), un état vide invite
 // à participer. Mis en cache pour ne pas re-frapper Supabase à chaque rendu.
+// Réseau des « Dossier{Province} » — un rond cliquable par province, sous le logo.
+// Pour ajouter une province (après un fork du dépôt) : ajouter une entrée ici.
+// code = texte du rond ; name = infobulle ; url = site ; color = couleur du rond.
+const provinceNetwork = [
+  { code: 'QC', name: 'DossierQuébec', url: 'https://dossierquebec.com', color: '#0B3D91' },
+];
+function renderProvinceNetwork(){
+  const el = document.getElementById('provinceNetwork');
+  if(!el) return;
+  const isEn = currentLang === 'en';
+  const dots = provinceNetwork.map(p =>
+    `<a class="pn-dot" href="${p.url}" target="_blank" rel="noopener" title="${p.name}" style="background:${p.color}" onclick="event.stopPropagation()">${p.code}</a>`
+  ).join('');
+  const soonTitle = isEn
+    ? 'More provinces to come — the project is open source; fork it to add yours.'
+    : 'D\'autres provinces à venir — le projet est libre; forkez-le pour ajouter la vôtre.';
+  const soon = `<span class="pn-soon" title="${soonTitle}">+</span>`;
+  el.innerHTML = `<span class="pn-label">${isEn ? 'Network' : 'Réseau'}</span>${dots}${soon}`;
+}
+
 const CHALLENGE_THRESHOLD = 1000;
 let challengedCache = null;
 async function renderChallenged(){
@@ -3856,6 +3886,7 @@ function sortRoadmapItems(){
   renderRoadmap();
   renderSittings();
   renderChallenged();
+  renderProvinceNetwork();
   await loadSnoozedSections();
   applyLanguage();
 })();
