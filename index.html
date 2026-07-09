@@ -688,6 +688,15 @@
       </div>
     </div>
 
+    <!-- PROJETS CHALLENGÉS PAR LES CITOYEN·NE·S (demandes d'explications ≥ seuil) -->
+    <div class="section-head" id="sec-challenged">
+      <div>
+        <h2 id="challengedTitle">Projets challengés par les citoyen·ne·s</h2>
+        <div class="sub" id="challengedSub"></div>
+      </div>
+    </div>
+    <div id="challengedList"></div>
+
     <div class="section-head" id="sec-projets-recents">
       <div>
         <h2 data-i18n="h.billsrecent">Projets de loi récemment actifs</h2>
@@ -1364,6 +1373,7 @@ function applyLanguage(){
   renderNews();
   renderRoadmap();
   renderSittings();
+  renderChallenged();
   renderLexique();
   updateChamberLabels();
   setChamber(chamberView);
@@ -2107,6 +2117,66 @@ function initials(name){
 // projets de loi (LEGISinfo, via data/bills.json), triées par date décroissante.
 // Rien n'est inventé : chaque entrée est la dernière activité datée d'un projet.
 let newsShown = 8;
+
+// Projets « challengés » : ceux qui ont atteint le seuil de demandes d'explications.
+// La source est un agrégat Supabase (fonction flag_counts) qui n'expose QUE le
+// total public par projet — jamais qui a demandé quoi. Tant qu'aucun projet n'a
+// atteint le seuil (ou que l'agrégat n'est pas encore activé), un état vide invite
+// à participer. Mis en cache pour ne pas re-frapper Supabase à chaque rendu.
+const CHALLENGE_THRESHOLD = 1000;
+let challengedCache = null;
+async function renderChallenged(){
+  const el = document.getElementById('challengedList');
+  if(!el) return;
+  const isEn = currentLang === 'en';
+  const L = o => (o && typeof o === 'object') ? (isEn ? (o.en ?? o.fr ?? '') : (o.fr ?? o.en ?? '')) : (o ?? '');
+  const seuil = CHALLENGE_THRESHOLD.toLocaleString(isEn ? 'en-CA' : 'fr-CA');
+  const titleEl = document.getElementById('challengedTitle');
+  const subEl = document.getElementById('challengedSub');
+  if(titleEl) titleEl.textContent = isEn ? 'Bills challenged by citizens' : 'Projets challengés par les citoyen·ne·s';
+  if(subEl) subEl.textContent = isEn
+    ? `When a bill reaches ${seuil} requests for explanations, it appears here first — a signal of real public interest`
+    : `Quand un projet de loi atteint ${seuil} demandes d'explications, il apparaît ici en premier — le signal d'un vrai intérêt citoyen`;
+
+  if(challengedCache === null){
+    try{
+      const { data, error } = await supabaseClient.rpc('flag_counts');
+      challengedCache = (!error && Array.isArray(data)) ? data : [];
+    }catch(e){ challengedCache = []; }
+  }
+
+  const challenged = challengedCache
+    .map(c => ({ cnt: Number(c.cnt), bill: bills.find(b => b.id === Number(c.bill_id)) }))
+    .filter(c => c.bill && c.cnt >= CHALLENGE_THRESHOLD)
+    .sort((a, b) => b.cnt - a.cnt);
+
+  if(challenged.length){
+    el.innerHTML = challenged.map(c => {
+      const b = c.bill;
+      const n = c.cnt.toLocaleString(isEn ? 'en-CA' : 'fr-CA');
+      const spColor = b.sponsorParty ? ((b.sponsorParty.kind === 'party' ? partyColors[b.sponsorParty.code] : groupColors[b.sponsorParty.code]) || '#8a8f99') : null;
+      const spChip = b.sponsorParty ? `<span class="depute-party" style="background:${spColor}22; color:${spColor}">${isEn ? b.sponsorParty.abbr.en : b.sponsorParty.abbr.fr}</span>` : '';
+      return `<div class="bill" onclick="goToTab('projets')" style="cursor:pointer;">
+        <div class="head">
+          <div>
+            <div class="num">${isEn ? 'BILL' : 'PROJET'} ${b.num}</div>
+            <h3>${L(b.title)}</h3>
+          </div>
+          <div style="display:flex; align-items:center; gap:6px; flex:none; flex-wrap:wrap; justify-content:flex-end;">${spChip}<span class="status-pill status-sanctionne">🔥 ${n} ${isEn ? 'requests' : 'demandes'}</span></div>
+        </div>
+        <div class="meta" style="margin-top:6px;">${isEn ? 'Citizens are asking for explanations on this bill. Open the Bills tab to add your voice.' : 'Des citoyen·ne·s demandent des explications sur ce projet. Ouvrez l\'onglet Projets de loi pour ajouter votre voix.'}</div>
+      </div>`;
+    }).join('');
+  } else {
+    el.innerHTML = `<div style="background:var(--card); border:1px dashed var(--line); border-radius:var(--radius); padding:22px 18px; text-align:center; color:var(--slate);">
+      <div style="font-size:26px; margin-bottom:8px;">🔎</div>
+      <div style="font-size:14px; line-height:1.65; max-width:580px; margin:0 auto;">${isEn
+        ? `No bill has reached ${seuil} requests yet. This is where the bills the most citizens want explained will appear — a clear, public signal of interest. Be the first to challenge one.`
+        : `Aucun projet n'a encore atteint ${seuil} demandes. C'est ici qu'apparaîtront les projets de loi que le plus de citoyen·ne·s veulent voir expliqués — un signal public et clair. Soyez la première personne à en challenger un.`}</div>
+      <button class="sort-toggle" style="margin-top:14px; cursor:pointer;" onclick="goToTab('projets')">${isEn ? 'Challenge a bill →' : 'Challenger un projet →'}</button>
+    </div>`;
+  }
+}
 
 // Prochaines séances de la Chambre des communes — depuis le calendrier officiel
 // adopté (sittingDays, injecté au build). Le calendrier PRÉVU peut changer.
@@ -3780,6 +3850,7 @@ function sortRoadmapItems(){
   renderNews();
   renderRoadmap();
   renderSittings();
+  renderChallenged();
   await loadSnoozedSections();
   applyLanguage();
 })();
