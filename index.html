@@ -3324,9 +3324,19 @@ function renderPeopleGroups(isEn){
   const L = o => isEn ? (o.en || o.fr) : (o.fr || o.en);
   return lexiconPeople.map(g => {
     const rows = g.entries.map(e => {
-      const nameHtml = e.name ? `<div style="font-weight:600; color:var(--ink); margin:1px 0 3px;">${(typeof officeholderNames !== 'undefined' && e.key && officeholderNames[e.key]) || e.name}</div>` : '';
-      const tagHtml = e.tag ? `<div style="margin-top:7px;"><span style="font-family:'IBM Plex Mono',monospace; font-size:10px; text-transform:uppercase; letter-spacing:.04em; color:var(--slate); background:var(--paper-2); border-radius:20px; padding:2px 9px;">${L(e.tag)}</span></div>` : '';
-      return `<div class="lexique-item"><dt>${L(e.role)}</dt><dd>${nameHtml}${L(e.desc)}${tagHtml}</dd></div>`;
+      const name = (typeof officeholderNames !== 'undefined' && e.key && officeholderNames[e.key]) || e.name;
+      const tagHtml = e.tag ? `<div style="margin-top:8px;"><span style="font-family:'IBM Plex Mono',monospace; font-size:10px; text-transform:uppercase; letter-spacing:.04em; color:var(--slate); background:var(--paper-2); border-radius:20px; padding:2px 9px;">${L(e.tag)}</span></div>` : '';
+      if(name){
+        // Entrée nommée → carte blanche (comme sur DossierQuébec).
+        return `<div style="background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:12px 15px; margin:8px 0;">
+            <div style="font-family:'Fraunces',serif; font-size:13.5px; font-weight:600; color:var(--slate);">${L(e.role)}</div>
+            <div style="font-size:16px; font-weight:600; color:var(--ink); margin:1px 0 4px;">${name}</div>
+            <div style="font-size:13px; line-height:1.6; color:var(--slate);">${L(e.desc)}</div>
+            ${tagHtml}
+          </div>`;
+      }
+      // Rôle collectif sans nom → item de liste classique.
+      return `<div class="lexique-item"><dt>${L(e.role)}</dt><dd>${L(e.desc)}${tagHtml}</dd></div>`;
     }).join('');
     return `<div style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; color:var(--gold); margin:22px 0 2px;">${L(g.group)}</div>${rows}`;
   }).join('');
