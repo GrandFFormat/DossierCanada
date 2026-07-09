@@ -3501,10 +3501,13 @@ function toggleSenateNominal(domId, voteId, group){
 // La présidence et les vice-présidences ne votent généralement pas quand elles
 // président une séance (neutralité) — leur taux de présence très bas ne veut donc
 // pas dire « absent·e » ; on les met en dernier dans le classement par présence.
-// À COMPLÉTER pour le fédéral : Président de la Chambre + vice-président·e·s
-// (voir scrapers/officeholders.js). Table vide = personne n'est exclu·e.
+// Seul le PRÉSIDENT est ici : il ne vote (presque) jamais → un taux ~0 % qui ne
+// veut PAS dire « absent ». Les vice-président·e·s, eux, votent normalement hors
+// présidence (taux réels élevés) — on ne les exclut donc PAS, leur présence
+// affichée est juste. Titulaire vérifié 2026-07 sur
+// ourcommons.ca/members/en/chair-occupants (codé en dur : re-vérifier au besoin).
 const presidingRoles = {
-  // 'nom normalisé': { fr: 'rôle', en: 'role' },
+  'francis scarpaleggia': { fr: 'Président de la Chambre des communes', en: 'Speaker of the House of Commons' },
 };
 function presidingRoleNote(name, isEn){
   const bareName = name.replace(/\s*\([^)]*\)\s*/g, '').trim();
