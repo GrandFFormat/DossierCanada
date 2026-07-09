@@ -729,7 +729,7 @@
     <!-- PROJETS CHALLENGÉS PAR LES CITOYEN·NE·S (demandes d'explications ≥ seuil) -->
     <div class="section-head" id="sec-challenged">
       <div>
-        <h2 id="challengedTitle">Projets challengés par les citoyen·ne·s</h2>
+        <h2 id="challengedTitle">Ce que les citoyen·ne·s veulent voir expliqué</h2>
         <div class="sub" id="challengedSub"></div>
       </div>
     </div>
@@ -2225,9 +2225,9 @@ async function renderChallenged(){
     el.innerHTML = `<div style="background:var(--card); border:1px dashed var(--line); border-radius:var(--radius); padding:22px 18px; text-align:center; color:var(--slate);">
       <div style="font-size:26px; margin-bottom:8px;">🔎</div>
       <div style="font-size:14px; line-height:1.65; max-width:580px; margin:0 auto;">${isEn
-        ? `No one has asked for explanations yet. This is where the bills the most citizens want explained will show up, ranked live. Be the first to challenge one.`
-        : `Personne n'a encore demandé d'explications. C'est ici qu'apparaîtront, classés en direct, les projets que le plus de citoyen·ne·s veulent voir expliqués. Soyez la première personne à en challenger un.`}</div>
-      <button class="sort-toggle" style="margin-top:14px; cursor:pointer;" onclick="goToTab('projets')">${isEn ? 'Challenge a bill →' : 'Challenger un projet →'}</button>
+        ? `No one has asked for explanations yet. This is where the bills the most citizens want explained will show up, ranked live. Be the first to ask for one.`
+        : `Personne n'a encore demandé d'explications. C'est ici qu'apparaîtront, classés en direct, les projets que le plus de citoyen·ne·s veulent voir expliqués. Soyez la première personne à en demander une.`}</div>
+      <button class="sort-toggle" style="margin-top:14px; cursor:pointer;" onclick="goToTab('projets')">${isEn ? 'Ask for an explanation →' : 'Demander une explication →'}</button>
     </div>`;
   }
 }
