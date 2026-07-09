@@ -17,11 +17,13 @@ stable
 security definer
 set search_path = public
 as $$
+  -- Tous les projets ayant au moins une demande, du plus au moins demandé
+  -- (le palmarès de la page d'accueil n'affiche que le total, jamais les identités).
   select bill_id, count(*)::bigint as cnt
   from public.bill_flags
   group by bill_id
-  having count(*) >= 1000
-  order by cnt desc;
+  order by cnt desc
+  limit 50;
 $$;
 
 -- Lisible par tout le monde (visiteurs non connectés compris), en lecture seule.
