@@ -3,7 +3,7 @@
     "en": "https://sencanada.ca/umbraco/surface/SenatorsAjax/GetSenators?displayFor=senatorslist&culture=en-CA",
     "fr": "https://sencanada.ca/umbraco/surface/SenatorsAjax/GetSenators?displayFor=senatorslist&culture=fr-CA"
   },
-  "scrapedAt": "2026-07-08T18:50:32.303Z",
+  "scrapedAt": "2026-07-09T11:17:41.835Z",
   "count": 95,
   "senators": [
     {
@@ -1937,11 +1937,11 @@
       "name": "Jim Quinn",
       "postNominal": null,
       "group": {
-        "code": "CSG",
-        "en": "CSG",
-        "fr": "GSC",
-        "enName": "Canadian Senators Group",
-        "frName": "Groupe des sénateurs canadiens"
+        "code": "C",
+        "en": "C",
+        "fr": "C",
+        "enName": "Conservative Party of Canada",
+        "frName": "Parti conservateur du Canada"
       },
       "province": {
         "code": "NB",
