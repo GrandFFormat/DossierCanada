@@ -9,6 +9,7 @@
     "scrape:bills": "node scrapers/bills.js",
     "scrape:bill-details": "node scrapers/bill-details.js",
     "scrape:bill-summaries": "node scrapers/bill-summaries.js",
+    "scrape:bill-ai-summaries": "node scrapers/bill-ai-summaries.js",
     "build:frontend": "node scrapers/build-frontend-data.js",
     "scrape:depute-emails": "node scrapers/depute-emails.js",
     "build:depute-emails": "node scrapers/build-depute-emails-data.js",
@@ -23,7 +24,7 @@
     "scrape:house-calendar": "node scrapers/house-calendar.js",
     "scrape:officeholders": "node scrapers/officeholders.js",
     "build:ministers": "node scrapers/build-ministers-data.js",
-    "refresh": "npm run scrape:bills && npm run scrape:bill-summaries && npm run scrape:deputes && npm run scrape:depute-emails && npm run scrape:votes && npm run scrape:ministers && npm run scrape:petitions && npm run scrape:senators && npm run scrape:senate-votes && npm run scrape:house-calendar && npm run scrape:officeholders && npm run build:frontend"
+    "refresh": "npm run scrape:bills && npm run scrape:bill-summaries && npm run scrape:bill-ai-summaries && npm run scrape:deputes && npm run scrape:depute-emails && npm run scrape:votes && npm run scrape:ministers && npm run scrape:petitions && npm run scrape:senators && npm run scrape:senate-votes && npm run scrape:house-calendar && npm run scrape:officeholders && npm run build:frontend"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.68.0",

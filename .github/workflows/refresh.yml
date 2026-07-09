@@ -34,6 +34,10 @@ jobs:
 
       - name: Rafraîchir les données (scrapers + build)
         run: npm run refresh
+        env:
+          # Résumés « langage clair » par IA (Claude). Absente → génération sautée,
+          # le cache existant est conservé et le build ne casse pas.
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
       - name: Committer et pousser si des données ont changé
         run: |
