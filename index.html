@@ -46,13 +46,13 @@
   :root{
     --ink:#101828;
     --ink-2:#1D2939;
-    --paper:#F7F8FA;
-    --paper-2:#FCFCFD;
+    --paper:#F3F6FB;
+    --paper-2:#F9FBFD;
     --card:#FFFFFF;
-    --line:#E7E9EE;
+    --line:#E2E8F2;
     --slate:#66707F;
-    --gold:#C8102E;
-    --gold-soft:#FDE8EA;
+    --gold:#175CD3;
+    --gold-soft:#EAF1FD;
     --amber:#B77816;
     --amber-soft:#FBF0DA;
     --green:#12805C;
@@ -505,8 +505,8 @@
   .roadmap-body h4{font-family:'Inter',sans-serif; font-size:14.5px; font-weight:600; margin:0 0 4px; display:flex; align-items:center; gap:8px;}
   .chamber-toggle{ display:flex; gap:8px; margin:16px 0 12px; flex-wrap:wrap; }
   .chamber-btn{ font-family:'Inter',sans-serif; font-size:12.5px; padding:7px 15px; border:1px solid var(--line); border-radius:999px; background:var(--card); color:var(--slate); cursor:pointer; transition:background .15s, color .15s; }
-  .chamber-btn:hover{ border-color:#C8102E; color:#C8102E; }
-  .chamber-btn.on{ background:#C8102E; color:#fff; border-color:#C8102E; }
+  .chamber-btn:hover{ border-color:var(--gold); color:var(--gold); }
+  .chamber-btn.on{ background:var(--gold); color:#fff; border-color:var(--gold); }
   .vote-list-panel{ background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:2px 16px; }
   .vote-row{ padding:11px 2px; border-top:1px solid var(--line); }
   .vote-row:first-child{ border-top:none; }
@@ -525,7 +525,7 @@
   .ch-num{ font-weight:700; white-space:nowrap; }
   .ch-title{ flex:1; color:var(--slate); font-size:13px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
   .ch-count{ white-space:nowrap; font-size:12.5px; }
-  @keyframes jumpFlash { 0%, 60% { background:#C8102E18; box-shadow:0 0 0 3px #C8102E55; } 100% { background:transparent; box-shadow:none; } }
+  @keyframes jumpFlash { 0%, 60% { background:#175CD318; box-shadow:0 0 0 3px #175CD355; } 100% { background:transparent; box-shadow:none; } }
   .jump-highlight{ animation: jumpFlash 1.8s ease-out; border-radius:6px; }
   .roadmap-plus{
     font-family:'Inter',sans-serif; font-size:11px; font-weight:600; color:#fff;
