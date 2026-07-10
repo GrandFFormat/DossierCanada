@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-07-09T11:17:40.979Z",
+  "scrapedAt": "2026-07-10T11:16:19.026Z",
   "count": 20,
   "petitions": [
     {
@@ -18,10 +18,31 @@
         "fr": "Ouverte pour signature jusqu'au 24 septembre 2026 à 14 h 50 (HAE)"
       },
       "sponsor": "Jenny Kwan",
-      "signatures": 7420,
+      "signatures": 9229,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7550",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7550"
+      }
+    },
+    {
+      "code": "e-7567",
+      "topic": {
+        "en": "Justice",
+        "fr": "Justice"
+      },
+      "keywords": {
+        "en": "Criminal rehabilitation Offenders Safety",
+        "fr": "Criminels Réadaptation des criminels Sécurité publique"
+      },
+      "status": {
+        "en": "Open for signature until November 6, 2026, at 9:45 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 6 novembre 2026 à 9 h 45 (HAE)"
+      },
+      "sponsor": "Adam Chambers",
+      "signatures": 2263,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7567",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7567"
       }
     },
     {
@@ -39,7 +60,7 @@
         "fr": "Ouverte pour signature jusqu'au 15 août 2026 à 14 h 23 (HAE)"
       },
       "sponsor": "Michael Ma",
-      "signatures": 1471,
+      "signatures": 1479,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7523",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7523"
@@ -60,31 +81,10 @@
         "fr": "Ouverte pour signature jusqu'au 14 octobre 2026 à 14 h 21 (HAE)"
       },
       "sponsor": "Jamil Jivani",
-      "signatures": 1399,
+      "signatures": 1402,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7521",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7521"
-      }
-    },
-    {
-      "code": "e-7522",
-      "topic": {
-        "en": "Environment",
-        "fr": "Environnement"
-      },
-      "keywords": {
-        "en": "Energy and fuel Environmental protection Green economy",
-        "fr": "Économie verte Énergie et combustibles Protection de l'environnement"
-      },
-      "status": {
-        "en": "Open for signature until September 14, 2026, at 2:22 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 14 septembre 2026 à 14 h 22 (HAE)"
-      },
-      "sponsor": "Leah Gazan",
-      "signatures": 1268,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7522",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7522"
       }
     },
     {
@@ -102,10 +102,31 @@
         "fr": "Ouverte pour signature jusqu'au 26 juillet 2026 à 14 h 14 (HAE)"
       },
       "sponsor": "Sukh Dhaliwal",
-      "signatures": 1058,
+      "signatures": 1333,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7515",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7515"
+      }
+    },
+    {
+      "code": "e-7522",
+      "topic": {
+        "en": "Environment",
+        "fr": "Environnement"
+      },
+      "keywords": {
+        "en": "Energy and fuel Environmental protection Green economy",
+        "fr": "Économie verte Énergie et combustibles Protection de l'environnement"
+      },
+      "status": {
+        "en": "Open for signature until September 14, 2026, at 2:22 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 14 septembre 2026 à 14 h 22 (HAE)"
+      },
+      "sponsor": "Leah Gazan",
+      "signatures": 1285,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7522",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7522"
       }
     },
     {
@@ -123,7 +144,7 @@
         "fr": "Ouverte pour signature jusqu'au 28 octobre 2026 à 13 h 43 (HAE)"
       },
       "sponsor": "Melissa Lantsman",
-      "signatures": 875,
+      "signatures": 894,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7558",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7558"
@@ -144,31 +165,31 @@
         "fr": "Ouverte pour signature jusqu'au 24 octobre 2026 à 14 h 19 (HAE)"
       },
       "sponsor": "Fraser Tolmie",
-      "signatures": 659,
+      "signatures": 705,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7535",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7535"
       }
     },
     {
-      "code": "e-7482",
+      "code": "e-7533",
       "topic": {
-        "en": "Health",
-        "fr": "Santé"
+        "en": "Environment",
+        "fr": "Environnement"
       },
       "keywords": {
-        "en": "Education and training Endometriosis Information dissemination",
-        "fr": "Diffusion de l'information Éducation et formation Endométriose"
+        "en": "Marine conservation Mining industry Sea floor",
+        "fr": "Conservation des ressources marines Industrie minière Plancher océanique"
       },
       "status": {
-        "en": "Open for signature until October 14, 2026, at 2:18 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 14 octobre 2026 à 14 h 18 (HAE)"
+        "en": "Open for signature until September 23, 2026, at 2:59 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 23 septembre 2026 à 14 h 59 (HAE)"
       },
-      "sponsor": "Jenny Kwan",
-      "signatures": 576,
+      "sponsor": "Alexis Deschênes",
+      "signatures": 523,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7482",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7482"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7533",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7533"
       }
     },
     {
@@ -186,7 +207,7 @@
         "fr": "Ouverte pour signature jusqu'au 26 juillet 2026 à 14 h 54 (HAE)"
       },
       "sponsor": "Helena Konanz",
-      "signatures": 447,
+      "signatures": 492,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7545",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7545"
@@ -207,31 +228,10 @@
         "fr": "Ouverte pour signature jusqu'au 1 août 2026 à 14 h 23 (HAE)"
       },
       "sponsor": "Helena Jaczek",
-      "signatures": 443,
+      "signatures": 478,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7564",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7564"
-      }
-    },
-    {
-      "code": "e-7533",
-      "topic": {
-        "en": "Environment",
-        "fr": "Environnement"
-      },
-      "keywords": {
-        "en": "Marine conservation Mining industry Sea floor",
-        "fr": "Conservation des ressources marines Industrie minière Plancher océanique"
-      },
-      "status": {
-        "en": "Open for signature until September 23, 2026, at 2:59 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 23 septembre 2026 à 14 h 59 (HAE)"
-      },
-      "sponsor": "Alexis Deschênes",
-      "signatures": 429,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7533",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7533"
       }
     },
     {
@@ -249,31 +249,10 @@
         "fr": "Ouverte pour signature jusqu'au 28 octobre 2026 à 13 h 42 (HAE)"
       },
       "sponsor": "Gord Johns",
-      "signatures": 369,
+      "signatures": 386,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7556",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7556"
-      }
-    },
-    {
-      "code": "e-7235",
-      "topic": {
-        "en": "Parliament and politics",
-        "fr": "Parlement et politique"
-      },
-      "keywords": {
-        "en": "Government accountability Government advertising",
-        "fr": "Imputabilité du gouvernement Publicité gouvernementale"
-      },
-      "status": {
-        "en": "Open for signature until September 10, 2026, at 4:02 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 10 septembre 2026 à 16 h 02 (HAE)"
-      },
-      "sponsor": "Alexandre Boulerice",
-      "signatures": 312,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7235",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7235"
       }
     },
     {
@@ -291,7 +270,7 @@
         "fr": "Ouverte pour signature jusqu'au 15 octobre 2026 à 12 h 09 (HAE)"
       },
       "sponsor": "Gord Johns",
-      "signatures": 128,
+      "signatures": 135,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7472",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7472"
@@ -312,31 +291,10 @@
         "fr": "Ouverte pour signature jusqu'au 19 juillet 2026 à 14 h 28 (HAE)"
       },
       "sponsor": "Juanita Nathan",
-      "signatures": 101,
+      "signatures": 106,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7503",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7503"
-      }
-    },
-    {
-      "code": "e-7547",
-      "topic": {
-        "en": "Social affairs and equality",
-        "fr": "Affaires sociales et égalité"
-      },
-      "keywords": {
-        "en": "British Columbia Condominium housing Government assistance",
-        "fr": "Aide gouvernementale Colombie-Britannique Immeubles en copropriété"
-      },
-      "status": {
-        "en": "Open for signature until October 24, 2026, at 2:16 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 24 octobre 2026 à 14 h 16 (HAE)"
-      },
-      "sponsor": "Dan Albas",
-      "signatures": 88,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7547",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7547"
       }
     },
     {
@@ -354,31 +312,31 @@
         "fr": "Ouverte pour signature jusqu'au 30 septembre 2026 à 9 h 57 (HAE)"
       },
       "sponsor": "Terry Dowdall",
-      "signatures": 85,
+      "signatures": 91,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7540",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7540"
       }
     },
     {
-      "code": "e-7504",
+      "code": "e-7547",
       "topic": {
-        "en": "Economy and finance",
-        "fr": "Économie et finance"
+        "en": "Social affairs and equality",
+        "fr": "Affaires sociales et égalité"
       },
       "keywords": {
-        "en": "Government expenditures International development and aid",
-        "fr": "Aide au développement international Dépenses publiques"
+        "en": "British Columbia Condominium housing Government assistance",
+        "fr": "Aide gouvernementale Colombie-Britannique Immeubles en copropriété"
       },
       "status": {
-        "en": "Open for signature until October 14, 2026, at 2:19 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 14 octobre 2026 à 14 h 19 (HAE)"
+        "en": "Open for signature until October 24, 2026, at 2:16 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 24 octobre 2026 à 14 h 16 (HAE)"
       },
-      "sponsor": "Mark Strahl",
-      "signatures": 60,
+      "sponsor": "Dan Albas",
+      "signatures": 89,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7504",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7504"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7547",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7547"
       }
     },
     {
@@ -396,10 +354,31 @@
         "fr": "Ouverte pour signature jusqu'au 14 octobre 2026 à 14 h 20 (HAE)"
       },
       "sponsor": "David Bexte",
-      "signatures": 54,
+      "signatures": 55,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7518",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7518"
+      }
+    },
+    {
+      "code": "e-7505",
+      "topic": {
+        "en": "Public safety",
+        "fr": "Sécurité publique"
+      },
+      "keywords": {
+        "en": "Firearms permits",
+        "fr": "Permis d'armes à feu"
+      },
+      "status": {
+        "en": "Open for signature until September 7, 2026, at 9:38 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 7 septembre 2026 à 9 h 38 (HAE)"
+      },
+      "sponsor": "Jason Groleau",
+      "signatures": 48,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7505",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7505"
       }
     },
     {
@@ -417,10 +396,31 @@
         "fr": "Ouverte pour signature jusqu'au 23 octobre 2026 à 15 h 00 (HAE)"
       },
       "sponsor": "Tako Van Popta",
-      "signatures": 40,
+      "signatures": 41,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7501",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7501"
+      }
+    },
+    {
+      "code": "e-7509",
+      "topic": {
+        "en": "Media and telecommunications",
+        "fr": "Médias et télécommunications"
+      },
+      "keywords": {
+        "en": "e-Security Spam Telecommunications and telecommunication ...",
+        "fr": "Pourriels Sécurité électronique Télécommunications et industrie des télé ..."
+      },
+      "status": {
+        "en": "Open for signature until November 6, 2026, at 9:41 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 6 novembre 2026 à 9 h 41 (HAE)"
+      },
+      "sponsor": "Kody Blois",
+      "signatures": 32,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7509",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7509"
       }
     }
   ]
