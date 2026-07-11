@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-07-10T11:16:19.026Z",
+  "scrapedAt": "2026-07-11T09:56:27.409Z",
   "count": 20,
   "petitions": [
     {
@@ -18,7 +18,7 @@
         "fr": "Ouverte pour signature jusqu'au 24 septembre 2026 à 14 h 50 (HAE)"
       },
       "sponsor": "Jenny Kwan",
-      "signatures": 9229,
+      "signatures": 10221,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7550",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7550"
@@ -39,52 +39,10 @@
         "fr": "Ouverte pour signature jusqu'au 6 novembre 2026 à 9 h 45 (HAE)"
       },
       "sponsor": "Adam Chambers",
-      "signatures": 2263,
+      "signatures": 2937,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7567",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7567"
-      }
-    },
-    {
-      "code": "e-7523",
-      "topic": {
-        "en": "Holidays and observances",
-        "fr": "Congés et commémorations"
-      },
-      "keywords": {
-        "en": "Canadian Chinese Heritage Month Chinese Canadians Cultural heritage",
-        "fr": "Canadiens d'origine chinoise Mois du patrimoine chinois canadien Patrimoine culturel"
-      },
-      "status": {
-        "en": "Open for signature until August 15, 2026, at 2:23 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 15 août 2026 à 14 h 23 (HAE)"
-      },
-      "sponsor": "Michael Ma",
-      "signatures": 1479,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7523",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7523"
-      }
-    },
-    {
-      "code": "e-7521",
-      "topic": {
-        "en": "Holidays and observances",
-        "fr": "Congés et commémorations"
-      },
-      "keywords": {
-        "en": "Canadian identity Cultural heritage",
-        "fr": "Identité canadienne Patrimoine culturel"
-      },
-      "status": {
-        "en": "Open for signature until October 14, 2026, at 2:21 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 14 octobre 2026 à 14 h 21 (HAE)"
-      },
-      "sponsor": "Jamil Jivani",
-      "signatures": 1402,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7521",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7521"
       }
     },
     {
@@ -102,31 +60,10 @@
         "fr": "Ouverte pour signature jusqu'au 26 juillet 2026 à 14 h 14 (HAE)"
       },
       "sponsor": "Sukh Dhaliwal",
-      "signatures": 1333,
+      "signatures": 1416,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7515",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7515"
-      }
-    },
-    {
-      "code": "e-7522",
-      "topic": {
-        "en": "Environment",
-        "fr": "Environnement"
-      },
-      "keywords": {
-        "en": "Energy and fuel Environmental protection Green economy",
-        "fr": "Économie verte Énergie et combustibles Protection de l'environnement"
-      },
-      "status": {
-        "en": "Open for signature until September 14, 2026, at 2:22 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 14 septembre 2026 à 14 h 22 (HAE)"
-      },
-      "sponsor": "Leah Gazan",
-      "signatures": 1285,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7522",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7522"
       }
     },
     {
@@ -144,7 +81,7 @@
         "fr": "Ouverte pour signature jusqu'au 28 octobre 2026 à 13 h 43 (HAE)"
       },
       "sponsor": "Melissa Lantsman",
-      "signatures": 894,
+      "signatures": 914,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7558",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7558"
@@ -165,7 +102,7 @@
         "fr": "Ouverte pour signature jusqu'au 24 octobre 2026 à 14 h 19 (HAE)"
       },
       "sponsor": "Fraser Tolmie",
-      "signatures": 705,
+      "signatures": 726,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7535",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7535"
@@ -186,7 +123,7 @@
         "fr": "Ouverte pour signature jusqu'au 23 septembre 2026 à 14 h 59 (HAE)"
       },
       "sponsor": "Alexis Deschênes",
-      "signatures": 523,
+      "signatures": 552,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7533",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7533"
@@ -207,7 +144,7 @@
         "fr": "Ouverte pour signature jusqu'au 26 juillet 2026 à 14 h 54 (HAE)"
       },
       "sponsor": "Helena Konanz",
-      "signatures": 492,
+      "signatures": 513,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7545",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7545"
@@ -228,7 +165,7 @@
         "fr": "Ouverte pour signature jusqu'au 1 août 2026 à 14 h 23 (HAE)"
       },
       "sponsor": "Helena Jaczek",
-      "signatures": 478,
+      "signatures": 492,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7564",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7564"
@@ -249,73 +186,31 @@
         "fr": "Ouverte pour signature jusqu'au 28 octobre 2026 à 13 h 42 (HAE)"
       },
       "sponsor": "Gord Johns",
-      "signatures": 386,
+      "signatures": 394,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7556",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7556"
       }
     },
     {
-      "code": "e-7472",
+      "code": "e-7574",
       "topic": {
-        "en": "Natural resources and energy",
-        "fr": "Ressources naturelles et énergie"
+        "en": "Media and telecommunications",
+        "fr": "Médias et télécommunications"
       },
       "keywords": {
-        "en": "Green economy Indigenous peoples Renewable energy and fuel",
-        "fr": "Économie verte Énergie et combustibles renouvelables Peuples autochtones"
+        "en": "Closing of facilities Local and regional programming Radio broadcasting",
+        "fr": "Fermeture d'installations Programmation locale et régionale Radiodiffusion"
       },
       "status": {
-        "en": "Open for signature until October 15, 2026, at 12:09 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 15 octobre 2026 à 12 h 09 (HAE)"
+        "en": "Open for signature until October 8, 2026, at 9:56 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 8 octobre 2026 à 9 h 56 (HAE)"
       },
-      "sponsor": "Gord Johns",
-      "signatures": 135,
+      "sponsor": "Kelly DeRidder",
+      "signatures": 236,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7472",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7472"
-      }
-    },
-    {
-      "code": "e-7503",
-      "topic": {
-        "en": "Social affairs and equality",
-        "fr": "Affaires sociales et égalité"
-      },
-      "keywords": {
-        "en": "Building and construction industry Home ownership Price determination",
-        "fr": "Accession à la propriété Détermination des prix Industrie du bâtiment et de la construction"
-      },
-      "status": {
-        "en": "Open for signature until July 19, 2026, at 2:28 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 19 juillet 2026 à 14 h 28 (HAE)"
-      },
-      "sponsor": "Juanita Nathan",
-      "signatures": 106,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7503",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7503"
-      }
-    },
-    {
-      "code": "e-7540",
-      "topic": {
-        "en": "Justice",
-        "fr": "Justice"
-      },
-      "keywords": {
-        "en": "Criminal investigations and hearings Domestic violence Sexual assault Victims of crime",
-        "fr": "Agression sexuelle Enquêtes criminelles et audiences d'inve ... Victimes d'actes criminels Violence familiale"
-      },
-      "status": {
-        "en": "Open for signature until September 30, 2026, at 9:57 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 30 septembre 2026 à 9 h 57 (HAE)"
-      },
-      "sponsor": "Terry Dowdall",
-      "signatures": 91,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7540",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7540"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7574",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7574"
       }
     },
     {
@@ -333,31 +228,73 @@
         "fr": "Ouverte pour signature jusqu'au 24 octobre 2026 à 14 h 16 (HAE)"
       },
       "sponsor": "Dan Albas",
-      "signatures": 89,
+      "signatures": 232,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7547",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7547"
       }
     },
     {
-      "code": "e-7518",
+      "code": "e-7503",
       "topic": {
-        "en": "Agriculture",
-        "fr": "Agriculture"
+        "en": "Social affairs and equality",
+        "fr": "Affaires sociales et égalité"
       },
       "keywords": {
-        "en": "Agricultural products C-273, An Act to amend the Feeds Act, th ... Regulation",
-        "fr": "C-273, Loi modifiant la Loi relative aux ... Produits agricoles Réglementation"
+        "en": "Building and construction industry Home ownership Price determination",
+        "fr": "Accession à la propriété Détermination des prix Industrie du bâtiment et de la construction"
       },
       "status": {
-        "en": "Open for signature until October 14, 2026, at 2:20 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 14 octobre 2026 à 14 h 20 (HAE)"
+        "en": "Open for signature until July 19, 2026, at 2:28 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 19 juillet 2026 à 14 h 28 (HAE)"
       },
-      "sponsor": "David Bexte",
-      "signatures": 55,
+      "sponsor": "Juanita Nathan",
+      "signatures": 109,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7518",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7518"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7503",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7503"
+      }
+    },
+    {
+      "code": "e-7553",
+      "topic": {
+        "en": "Environment",
+        "fr": "Environnement"
+      },
+      "keywords": {
+        "en": "Artificial intelligence Data centres Environmental protection",
+        "fr": "Centres de traitement de données Intelligence artificielle Protection de l'environnement"
+      },
+      "status": {
+        "en": "Open for signature until November 7, 2026, at 1:20 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 7 novembre 2026 à 13 h 20 (HAE)"
+      },
+      "sponsor": "John Williamson",
+      "signatures": 97,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7553",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7553"
+      }
+    },
+    {
+      "code": "e-7540",
+      "topic": {
+        "en": "Justice",
+        "fr": "Justice"
+      },
+      "keywords": {
+        "en": "Criminal investigations and hearings Domestic violence Sexual assault Victims of crime",
+        "fr": "Agression sexuelle Enquêtes criminelles et audiences d'inve ... Victimes d'actes criminels Violence familiale"
+      },
+      "status": {
+        "en": "Open for signature until September 30, 2026, at 9:57 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 30 septembre 2026 à 9 h 57 (HAE)"
+      },
+      "sponsor": "Terry Dowdall",
+      "signatures": 93,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7540",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7540"
       }
     },
     {
@@ -375,7 +312,7 @@
         "fr": "Ouverte pour signature jusqu'au 7 septembre 2026 à 9 h 38 (HAE)"
       },
       "sponsor": "Jason Groleau",
-      "signatures": 48,
+      "signatures": 60,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7505",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7505"
@@ -396,7 +333,7 @@
         "fr": "Ouverte pour signature jusqu'au 23 octobre 2026 à 15 h 00 (HAE)"
       },
       "sponsor": "Tako Van Popta",
-      "signatures": 41,
+      "signatures": 44,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7501",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7501"
@@ -417,10 +354,73 @@
         "fr": "Ouverte pour signature jusqu'au 6 novembre 2026 à 9 h 41 (HAE)"
       },
       "sponsor": "Kody Blois",
-      "signatures": 32,
+      "signatures": 37,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7509",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7509"
+      }
+    },
+    {
+      "code": "e-7541",
+      "topic": {
+        "en": "Environment",
+        "fr": "Environnement"
+      },
+      "keywords": {
+        "en": "Environmental protection Pesticides Public health Regulation",
+        "fr": "Pesticides Protection de l'environnement Réglementation Santé publique"
+      },
+      "status": {
+        "en": "Open for signature until November 7, 2026, at 1:34 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 7 novembre 2026 à 13 h 34 (HAE)"
+      },
+      "sponsor": "Elizabeth May",
+      "signatures": 17,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7541",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7541"
+      }
+    },
+    {
+      "code": "e-7569",
+      "topic": {
+        "en": "Health",
+        "fr": "Santé"
+      },
+      "keywords": {
+        "en": "Health care system Private health care",
+        "fr": "Médecine privée Système de soins de santé"
+      },
+      "status": {
+        "en": "Open for signature until September 8, 2026, at 1:23 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 8 septembre 2026 à 13 h 23 (HAE)"
+      },
+      "sponsor": "Vincent Ho",
+      "signatures": 16,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7569",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7569"
+      }
+    },
+    {
+      "code": "e-7577",
+      "topic": {
+        "en": "Media and telecommunications",
+        "fr": "Médias et télécommunications"
+      },
+      "keywords": {
+        "en": "Closing of facilities Local and regional programming Radio broadcasting",
+        "fr": "Fermeture d'installations Programmation locale et régionale Radiodiffusion"
+      },
+      "status": {
+        "en": "Open for signature until September 8, 2026, at 1:26 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 8 septembre 2026 à 13 h 26 (HAE)"
+      },
+      "sponsor": "Kelly DeRidder",
+      "signatures": 12,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7577",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7577"
       }
     }
   ]

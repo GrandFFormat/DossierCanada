@@ -3,8 +3,8 @@
     "en": "https://sencanada.ca/umbraco/surface/SenatorsAjax/GetSenators?displayFor=senatorslist&culture=en-CA",
     "fr": "https://sencanada.ca/umbraco/surface/SenatorsAjax/GetSenators?displayFor=senatorslist&culture=fr-CA"
   },
-  "scrapedAt": "2026-07-10T11:16:19.847Z",
-  "count": 95,
+  "scrapedAt": "2026-07-11T09:56:28.387Z",
+  "count": 97,
   "senators": [
     {
       "slug": "adler-charles",
@@ -1749,6 +1749,32 @@
       }
     },
     {
+      "slug": "ouellette-rodney",
+      "firstName": "Rodney",
+      "lastName": "Ouellette",
+      "name": "Rodney Ouellette",
+      "postNominal": null,
+      "group": {
+        "code": "Non-affiliated",
+        "en": "Non-affiliated",
+        "fr": "Non affilié(e)",
+        "enName": "Non-affiliated",
+        "frName": "Non affilié(e)"
+      },
+      "province": {
+        "code": "NB",
+        "en": "New Brunswick",
+        "fr": "Nouveau-Brunswick"
+      },
+      "appointedOn": "2026-07-09",
+      "retirementOn": "2040-10-02",
+      "appointedBy": "Carney, Mark ()",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/ouellette-rodney/",
+        "fr": "https://sencanada.ca/fr/senateurs/ouellette-rodney/"
+      }
+    },
+    {
       "slug": "pate-kim",
       "firstName": "Kim",
       "lastName": "Pate",
@@ -2214,6 +2240,32 @@
       "url": {
         "en": "https://sencanada.ca/en/senators/tannas-scott/",
         "fr": "https://sencanada.ca/fr/senateurs/tannas-scott/"
+      }
+    },
+    {
+      "slug": "tucker-geeta",
+      "firstName": "Geeta",
+      "lastName": "Tucker",
+      "name": "Geeta Tucker",
+      "postNominal": null,
+      "group": {
+        "code": "Non-affiliated",
+        "en": "Non-affiliated",
+        "fr": "Non affilié(e)",
+        "enName": "Non-affiliated",
+        "frName": "Non affilié(e)"
+      },
+      "province": {
+        "code": "MB",
+        "en": "Manitoba",
+        "fr": "Manitoba"
+      },
+      "appointedOn": "2026-07-09",
+      "retirementOn": "2046-05-02",
+      "appointedBy": "Carney, Mark ()",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/tucker-geeta/",
+        "fr": "https://sencanada.ca/fr/senateurs/tucker-geeta/"
       }
     },
     {
