@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-07-13T11:27:12.127Z",
+  "scrapedAt": "2026-07-14T10:16:47.791Z",
   "count": 20,
   "petitions": [
     {
@@ -18,7 +18,7 @@
         "fr": "Ouverte pour signature jusqu'au 24 septembre 2026 à 14 h 50 (HAE)"
       },
       "sponsor": "Jenny Kwan",
-      "signatures": 11139,
+      "signatures": 11786,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7550",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7550"
@@ -39,7 +39,7 @@
         "fr": "Ouverte pour signature jusqu'au 6 novembre 2026 à 9 h 45 (HAE)"
       },
       "sponsor": "Adam Chambers",
-      "signatures": 3855,
+      "signatures": 4589,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7567",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7567"
@@ -60,7 +60,7 @@
         "fr": "Ouverte pour signature jusqu'au 26 juillet 2026 à 14 h 14 (HAE)"
       },
       "sponsor": "Sukh Dhaliwal",
-      "signatures": 1511,
+      "signatures": 1537,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7515",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7515"
@@ -81,7 +81,7 @@
         "fr": "Ouverte pour signature jusqu'au 28 octobre 2026 à 13 h 43 (HAE)"
       },
       "sponsor": "Melissa Lantsman",
-      "signatures": 929,
+      "signatures": 935,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7558",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7558"
@@ -102,31 +102,10 @@
         "fr": "Ouverte pour signature jusqu'au 24 octobre 2026 à 14 h 19 (HAE)"
       },
       "sponsor": "Fraser Tolmie",
-      "signatures": 779,
+      "signatures": 798,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7535",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7535"
-      }
-    },
-    {
-      "code": "e-7533",
-      "topic": {
-        "en": "Environment",
-        "fr": "Environnement"
-      },
-      "keywords": {
-        "en": "Marine conservation Mining industry Sea floor",
-        "fr": "Conservation des ressources marines Industrie minière Plancher océanique"
-      },
-      "status": {
-        "en": "Open for signature until September 23, 2026, at 2:59 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 23 septembre 2026 à 14 h 59 (HAE)"
-      },
-      "sponsor": "Alexis Deschênes",
-      "signatures": 575,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7533",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7533"
       }
     },
     {
@@ -144,7 +123,7 @@
         "fr": "Ouverte pour signature jusqu'au 24 octobre 2026 à 14 h 16 (HAE)"
       },
       "sponsor": "Dan Albas",
-      "signatures": 568,
+      "signatures": 680,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7547",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7547"
@@ -165,31 +144,10 @@
         "fr": "Ouverte pour signature jusqu'au 26 juillet 2026 à 14 h 54 (HAE)"
       },
       "sponsor": "Helena Konanz",
-      "signatures": 519,
+      "signatures": 559,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7545",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7545"
-      }
-    },
-    {
-      "code": "e-7564",
-      "topic": {
-        "en": "Health",
-        "fr": "Santé"
-      },
-      "keywords": {
-        "en": "Gynecologic cancer Mirvetuximab soravtansine Pharmacare Pharmaceuticals",
-        "fr": "Cancers gynécologiques Médicaments Mirvétuximab soravtansine Régime d'assurance-médicaments"
-      },
-      "status": {
-        "en": "Open for signature until August 1, 2026, at 2:23 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 1 août 2026 à 14 h 23 (HAE)"
-      },
-      "sponsor": "Helena Jaczek",
-      "signatures": 504,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7564",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7564"
       }
     },
     {
@@ -207,10 +165,31 @@
         "fr": "Ouverte pour signature jusqu'au 8 octobre 2026 à 9 h 56 (HAE)"
       },
       "sponsor": "Kelly DeRidder",
-      "signatures": 480,
+      "signatures": 542,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7574",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7574"
+      }
+    },
+    {
+      "code": "e-7564",
+      "topic": {
+        "en": "Health",
+        "fr": "Santé"
+      },
+      "keywords": {
+        "en": "Gynecologic cancer Mirvetuximab soravtansine Pharmacare Pharmaceuticals",
+        "fr": "Cancers gynécologiques Médicaments Mirvétuximab soravtansine Régime d'assurance-médicaments"
+      },
+      "status": {
+        "en": "Open for signature until August 1, 2026, at 2:23 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 1 août 2026 à 14 h 23 (HAE)"
+      },
+      "sponsor": "Helena Jaczek",
+      "signatures": 514,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7564",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7564"
       }
     },
     {
@@ -228,7 +207,7 @@
         "fr": "Ouverte pour signature jusqu'au 28 octobre 2026 à 13 h 42 (HAE)"
       },
       "sponsor": "Gord Johns",
-      "signatures": 444,
+      "signatures": 457,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7556",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7556"
@@ -249,31 +228,10 @@
         "fr": "Ouverte pour signature jusqu'au 7 novembre 2026 à 13 h 20 (HAE)"
       },
       "sponsor": "John Williamson",
-      "signatures": 301,
+      "signatures": 393,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7553",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7553"
-      }
-    },
-    {
-      "code": "e-7503",
-      "topic": {
-        "en": "Social affairs and equality",
-        "fr": "Affaires sociales et égalité"
-      },
-      "keywords": {
-        "en": "Building and construction industry Home ownership Price determination",
-        "fr": "Accession à la propriété Détermination des prix Industrie du bâtiment et de la construction"
-      },
-      "status": {
-        "en": "Open for signature until July 19, 2026, at 2:28 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 19 juillet 2026 à 14 h 28 (HAE)"
-      },
-      "sponsor": "Juanita Nathan",
-      "signatures": 109,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7503",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7503"
       }
     },
     {
@@ -291,10 +249,52 @@
         "fr": "Ouverte pour signature jusqu'au 30 septembre 2026 à 9 h 57 (HAE)"
       },
       "sponsor": "Terry Dowdall",
-      "signatures": 96,
+      "signatures": 98,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7540",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7540"
+      }
+    },
+    {
+      "code": "e-7580",
+      "topic": {
+        "en": "Foreign affairs",
+        "fr": "Affaires étrangères"
+      },
+      "keywords": {
+        "en": "Economic sanctions Foreign policy International conflict and international ... Israel Military weapons Palestine",
+        "fr": "Armes militaires Conflits internationaux et résolution de ... Israël Palestine Politique étrangère Sanctions économiques"
+      },
+      "status": {
+        "en": "Open for signature until October 11, 2026, at 3:49 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 11 octobre 2026 à 15 h 49 (HAE)"
+      },
+      "sponsor": "Leah Gazan",
+      "signatures": 82,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7580",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7580"
+      }
+    },
+    {
+      "code": "e-7559",
+      "topic": {
+        "en": "Environment",
+        "fr": "Environnement"
+      },
+      "keywords": {
+        "en": "Greenhouse gases",
+        "fr": "Gaz à effet de serre"
+      },
+      "status": {
+        "en": "Open for signature until November 10, 2026, at 3:49 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 10 novembre 2026 à 15 h 49 (HAE)"
+      },
+      "sponsor": "Karina Gould",
+      "signatures": 76,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7559",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7559"
       }
     },
     {
@@ -312,7 +312,7 @@
         "fr": "Ouverte pour signature jusqu'au 7 septembre 2026 à 9 h 38 (HAE)"
       },
       "sponsor": "Jason Groleau",
-      "signatures": 70,
+      "signatures": 74,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7505",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7505"
@@ -333,7 +333,7 @@
         "fr": "Ouverte pour signature jusqu'au 7 novembre 2026 à 13 h 34 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 52,
+      "signatures": 60,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7541",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7541"
@@ -354,7 +354,7 @@
         "fr": "Ouverte pour signature jusqu'au 6 novembre 2026 à 9 h 41 (HAE)"
       },
       "sponsor": "Kody Blois",
-      "signatures": 49,
+      "signatures": 55,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7509",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7509"
@@ -375,7 +375,7 @@
         "fr": "Ouverte pour signature jusqu'au 23 octobre 2026 à 15 h 00 (HAE)"
       },
       "sponsor": "Tako Van Popta",
-      "signatures": 45,
+      "signatures": 48,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7501",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7501"
@@ -396,7 +396,7 @@
         "fr": "Ouverte pour signature jusqu'au 8 septembre 2026 à 13 h 26 (HAE)"
       },
       "sponsor": "Kelly DeRidder",
-      "signatures": 31,
+      "signatures": 41,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7577",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7577"
@@ -417,7 +417,7 @@
         "fr": "Ouverte pour signature jusqu'au 8 septembre 2026 à 13 h 23 (HAE)"
       },
       "sponsor": "Vincent Ho",
-      "signatures": 20,
+      "signatures": 27,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7569",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7569"
