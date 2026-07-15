@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-07-14T10:16:47.791Z",
+  "scrapedAt": "2026-07-15T10:14:39.145Z",
   "count": 20,
   "petitions": [
     {
@@ -18,7 +18,7 @@
         "fr": "Ouverte pour signature jusqu'au 24 septembre 2026 à 14 h 50 (HAE)"
       },
       "sponsor": "Jenny Kwan",
-      "signatures": 11786,
+      "signatures": 12388,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7550",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7550"
@@ -39,7 +39,7 @@
         "fr": "Ouverte pour signature jusqu'au 6 novembre 2026 à 9 h 45 (HAE)"
       },
       "sponsor": "Adam Chambers",
-      "signatures": 4589,
+      "signatures": 4821,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7567",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7567"
@@ -60,7 +60,7 @@
         "fr": "Ouverte pour signature jusqu'au 26 juillet 2026 à 14 h 14 (HAE)"
       },
       "sponsor": "Sukh Dhaliwal",
-      "signatures": 1537,
+      "signatures": 1674,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7515",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7515"
@@ -81,10 +81,31 @@
         "fr": "Ouverte pour signature jusqu'au 28 octobre 2026 à 13 h 43 (HAE)"
       },
       "sponsor": "Melissa Lantsman",
-      "signatures": 935,
+      "signatures": 940,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7558",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7558"
+      }
+    },
+    {
+      "code": "e-7505",
+      "topic": {
+        "en": "Public safety",
+        "fr": "Sécurité publique"
+      },
+      "keywords": {
+        "en": "Firearms permits",
+        "fr": "Permis d'armes à feu"
+      },
+      "status": {
+        "en": "Open for signature until September 7, 2026, at 9:38 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 7 septembre 2026 à 9 h 38 (HAE)"
+      },
+      "sponsor": "Jason Groleau",
+      "signatures": 821,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7505",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7505"
       }
     },
     {
@@ -102,7 +123,7 @@
         "fr": "Ouverte pour signature jusqu'au 24 octobre 2026 à 14 h 19 (HAE)"
       },
       "sponsor": "Fraser Tolmie",
-      "signatures": 798,
+      "signatures": 813,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7535",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7535"
@@ -123,7 +144,7 @@
         "fr": "Ouverte pour signature jusqu'au 24 octobre 2026 à 14 h 16 (HAE)"
       },
       "sponsor": "Dan Albas",
-      "signatures": 680,
+      "signatures": 726,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7547",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7547"
@@ -144,7 +165,7 @@
         "fr": "Ouverte pour signature jusqu'au 26 juillet 2026 à 14 h 54 (HAE)"
       },
       "sponsor": "Helena Konanz",
-      "signatures": 559,
+      "signatures": 579,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7545",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7545"
@@ -165,7 +186,7 @@
         "fr": "Ouverte pour signature jusqu'au 8 octobre 2026 à 9 h 56 (HAE)"
       },
       "sponsor": "Kelly DeRidder",
-      "signatures": 542,
+      "signatures": 576,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7574",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7574"
@@ -186,31 +207,10 @@
         "fr": "Ouverte pour signature jusqu'au 1 août 2026 à 14 h 23 (HAE)"
       },
       "sponsor": "Helena Jaczek",
-      "signatures": 514,
+      "signatures": 523,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7564",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7564"
-      }
-    },
-    {
-      "code": "e-7556",
-      "topic": {
-        "en": "Foreign affairs",
-        "fr": "Affaires étrangères"
-      },
-      "keywords": {
-        "en": "Civil and human rights Ethiopia Foreign policy",
-        "fr": "Droits de la personne Éthiopie Politique étrangère"
-      },
-      "status": {
-        "en": "Open for signature until October 28, 2026, at 1:42 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 28 octobre 2026 à 13 h 42 (HAE)"
-      },
-      "sponsor": "Gord Johns",
-      "signatures": 457,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7556",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7556"
       }
     },
     {
@@ -228,31 +228,31 @@
         "fr": "Ouverte pour signature jusqu'au 7 novembre 2026 à 13 h 20 (HAE)"
       },
       "sponsor": "John Williamson",
-      "signatures": 393,
+      "signatures": 492,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7553",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7553"
       }
     },
     {
-      "code": "e-7540",
+      "code": "e-7556",
       "topic": {
-        "en": "Justice",
-        "fr": "Justice"
+        "en": "Foreign affairs",
+        "fr": "Affaires étrangères"
       },
       "keywords": {
-        "en": "Criminal investigations and hearings Domestic violence Sexual assault Victims of crime",
-        "fr": "Agression sexuelle Enquêtes criminelles et audiences d'inve ... Victimes d'actes criminels Violence familiale"
+        "en": "Civil and human rights Ethiopia Foreign policy",
+        "fr": "Droits de la personne Éthiopie Politique étrangère"
       },
       "status": {
-        "en": "Open for signature until September 30, 2026, at 9:57 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 30 septembre 2026 à 9 h 57 (HAE)"
+        "en": "Open for signature until October 28, 2026, at 1:42 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 28 octobre 2026 à 13 h 42 (HAE)"
       },
-      "sponsor": "Terry Dowdall",
-      "signatures": 98,
+      "sponsor": "Gord Johns",
+      "signatures": 463,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7540",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7540"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7556",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7556"
       }
     },
     {
@@ -262,15 +262,15 @@
         "fr": "Affaires étrangères"
       },
       "keywords": {
-        "en": "Economic sanctions Foreign policy International conflict and international ... Israel Military weapons Palestine",
-        "fr": "Armes militaires Conflits internationaux et résolution de ... Israël Palestine Politique étrangère Sanctions économiques"
+        "en": "Economic sanctions Foreign policy Israel Military weapons Palestine",
+        "fr": "Armes militaires Israël Palestine Politique étrangère Sanctions économiques"
       },
       "status": {
         "en": "Open for signature until October 11, 2026, at 3:49 p.m. (EDT)",
         "fr": "Ouverte pour signature jusqu'au 11 octobre 2026 à 15 h 49 (HAE)"
       },
       "sponsor": "Leah Gazan",
-      "signatures": 82,
+      "signatures": 228,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7580",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7580"
@@ -291,31 +291,31 @@
         "fr": "Ouverte pour signature jusqu'au 10 novembre 2026 à 15 h 49 (HAE)"
       },
       "sponsor": "Karina Gould",
-      "signatures": 76,
+      "signatures": 186,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7559",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7559"
       }
     },
     {
-      "code": "e-7505",
+      "code": "e-7540",
       "topic": {
-        "en": "Public safety",
-        "fr": "Sécurité publique"
+        "en": "Justice",
+        "fr": "Justice"
       },
       "keywords": {
-        "en": "Firearms permits",
-        "fr": "Permis d'armes à feu"
+        "en": "Criminal investigations and hearings Domestic violence Sexual assault Victims of crime",
+        "fr": "Agression sexuelle Enquêtes criminelles et audiences d'inve ... Victimes d'actes criminels Violence familiale"
       },
       "status": {
-        "en": "Open for signature until September 7, 2026, at 9:38 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 7 septembre 2026 à 9 h 38 (HAE)"
+        "en": "Open for signature until September 30, 2026, at 9:57 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 30 septembre 2026 à 9 h 57 (HAE)"
       },
-      "sponsor": "Jason Groleau",
-      "signatures": 74,
+      "sponsor": "Terry Dowdall",
+      "signatures": 108,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7505",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7505"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7540",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7540"
       }
     },
     {
@@ -333,7 +333,7 @@
         "fr": "Ouverte pour signature jusqu'au 7 novembre 2026 à 13 h 34 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 60,
+      "signatures": 80,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7541",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7541"
@@ -354,7 +354,7 @@
         "fr": "Ouverte pour signature jusqu'au 6 novembre 2026 à 9 h 41 (HAE)"
       },
       "sponsor": "Kody Blois",
-      "signatures": 55,
+      "signatures": 61,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7509",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7509"
@@ -375,7 +375,7 @@
         "fr": "Ouverte pour signature jusqu'au 23 octobre 2026 à 15 h 00 (HAE)"
       },
       "sponsor": "Tako Van Popta",
-      "signatures": 48,
+      "signatures": 49,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7501",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7501"
@@ -396,7 +396,7 @@
         "fr": "Ouverte pour signature jusqu'au 8 septembre 2026 à 13 h 26 (HAE)"
       },
       "sponsor": "Kelly DeRidder",
-      "signatures": 41,
+      "signatures": 48,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7577",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7577"
@@ -417,7 +417,7 @@
         "fr": "Ouverte pour signature jusqu'au 8 septembre 2026 à 13 h 23 (HAE)"
       },
       "sponsor": "Vincent Ho",
-      "signatures": 27,
+      "signatures": 30,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7569",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7569"
