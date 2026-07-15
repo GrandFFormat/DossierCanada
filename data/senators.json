@@ -3,7 +3,7 @@
     "en": "https://sencanada.ca/umbraco/surface/SenatorsAjax/GetSenators?displayFor=senatorslist&culture=en-CA",
     "fr": "https://sencanada.ca/umbraco/surface/SenatorsAjax/GetSenators?displayFor=senatorslist&culture=fr-CA"
   },
-  "scrapedAt": "2026-07-14T10:16:48.754Z",
+  "scrapedAt": "2026-07-15T10:14:40.344Z",
   "count": 97,
   "senators": [
     {
@@ -1768,7 +1768,7 @@
       },
       "appointedOn": "2026-07-09",
       "retirementOn": "2040-10-02",
-      "appointedBy": "Carney, Mark ()",
+      "appointedBy": "Carney, Mark (Lib.)",
       "url": {
         "en": "https://sencanada.ca/en/senators/ouellette-rodney/",
         "fr": "https://sencanada.ca/fr/senateurs/ouellette-rodney/"
@@ -2262,7 +2262,7 @@
       },
       "appointedOn": "2026-07-09",
       "retirementOn": "2046-05-02",
-      "appointedBy": "Carney, Mark ()",
+      "appointedBy": "Carney, Mark (Lib.)",
       "url": {
         "en": "https://sencanada.ca/en/senators/tucker-geeta/",
         "fr": "https://sencanada.ca/fr/senateurs/tucker-geeta/"
