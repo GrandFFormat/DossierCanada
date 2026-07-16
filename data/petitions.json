@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-07-15T10:14:39.145Z",
+  "scrapedAt": "2026-07-16T10:23:14.061Z",
   "count": 20,
   "petitions": [
     {
@@ -18,7 +18,7 @@
         "fr": "Ouverte pour signature jusqu'au 24 septembre 2026 à 14 h 50 (HAE)"
       },
       "sponsor": "Jenny Kwan",
-      "signatures": 12388,
+      "signatures": 13209,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7550",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7550"
@@ -39,52 +39,10 @@
         "fr": "Ouverte pour signature jusqu'au 6 novembre 2026 à 9 h 45 (HAE)"
       },
       "sponsor": "Adam Chambers",
-      "signatures": 4821,
+      "signatures": 4922,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7567",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7567"
-      }
-    },
-    {
-      "code": "e-7515",
-      "topic": {
-        "en": "Citizenship and immigration",
-        "fr": "Citoyenneté et immigration"
-      },
-      "keywords": {
-        "en": "Backlogs Immigration policy Live-in caregivers Permanent resident status Work permits",
-        "fr": "Aides familiaux résidants Arriéré Permis de travail Politique en matière d'immigration Statut de résident permanent"
-      },
-      "status": {
-        "en": "Open for signature until July 26, 2026, at 2:14 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 26 juillet 2026 à 14 h 14 (HAE)"
-      },
-      "sponsor": "Sukh Dhaliwal",
-      "signatures": 1674,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7515",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7515"
-      }
-    },
-    {
-      "code": "e-7558",
-      "topic": {
-        "en": "Foreign affairs",
-        "fr": "Affaires étrangères"
-      },
-      "keywords": {
-        "en": "Embassies and consulates Foreign policy Iran",
-        "fr": "Ambassades et consulats Iran Politique étrangère"
-      },
-      "status": {
-        "en": "Open for signature until October 28, 2026, at 1:43 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 28 octobre 2026 à 13 h 43 (HAE)"
-      },
-      "sponsor": "Melissa Lantsman",
-      "signatures": 940,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7558",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7558"
       }
     },
     {
@@ -102,10 +60,52 @@
         "fr": "Ouverte pour signature jusqu'au 7 septembre 2026 à 9 h 38 (HAE)"
       },
       "sponsor": "Jason Groleau",
-      "signatures": 821,
+      "signatures": 1021,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7505",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7505"
+      }
+    },
+    {
+      "code": "e-7558",
+      "topic": {
+        "en": "Foreign affairs",
+        "fr": "Affaires étrangères"
+      },
+      "keywords": {
+        "en": "Embassies and consulates Foreign policy Iran",
+        "fr": "Ambassades et consulats Iran Politique étrangère"
+      },
+      "status": {
+        "en": "Open for signature until October 28, 2026, at 1:43 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 28 octobre 2026 à 13 h 43 (HAE)"
+      },
+      "sponsor": "Melissa Lantsman",
+      "signatures": 944,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7558",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7558"
+      }
+    },
+    {
+      "code": "e-7574",
+      "topic": {
+        "en": "Media and telecommunications",
+        "fr": "Médias et télécommunications"
+      },
+      "keywords": {
+        "en": "Closing of facilities Local and regional programming Radio broadcasting",
+        "fr": "Fermeture d'installations Programmation locale et régionale Radiodiffusion"
+      },
+      "status": {
+        "en": "Open for signature until October 8, 2026, at 9:56 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 8 octobre 2026 à 9 h 56 (HAE)"
+      },
+      "sponsor": "Kelly DeRidder",
+      "signatures": 932,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7574",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7574"
       }
     },
     {
@@ -123,7 +123,7 @@
         "fr": "Ouverte pour signature jusqu'au 24 octobre 2026 à 14 h 19 (HAE)"
       },
       "sponsor": "Fraser Tolmie",
-      "signatures": 813,
+      "signatures": 823,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7535",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7535"
@@ -144,73 +144,10 @@
         "fr": "Ouverte pour signature jusqu'au 24 octobre 2026 à 14 h 16 (HAE)"
       },
       "sponsor": "Dan Albas",
-      "signatures": 726,
+      "signatures": 742,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7547",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7547"
-      }
-    },
-    {
-      "code": "e-7545",
-      "topic": {
-        "en": "Correctional system",
-        "fr": "Système correctionnel"
-      },
-      "keywords": {
-        "en": "Conditional release Domestic violence GPS tracking device High risk offenders",
-        "fr": "Délinquant à risque élevé Dispositif de pistage avec GPS Libération conditionnelle Violence familiale"
-      },
-      "status": {
-        "en": "Open for signature until July 26, 2026, at 2:54 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 26 juillet 2026 à 14 h 54 (HAE)"
-      },
-      "sponsor": "Helena Konanz",
-      "signatures": 579,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7545",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7545"
-      }
-    },
-    {
-      "code": "e-7574",
-      "topic": {
-        "en": "Media and telecommunications",
-        "fr": "Médias et télécommunications"
-      },
-      "keywords": {
-        "en": "Closing of facilities Local and regional programming Radio broadcasting",
-        "fr": "Fermeture d'installations Programmation locale et régionale Radiodiffusion"
-      },
-      "status": {
-        "en": "Open for signature until October 8, 2026, at 9:56 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 8 octobre 2026 à 9 h 56 (HAE)"
-      },
-      "sponsor": "Kelly DeRidder",
-      "signatures": 576,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7574",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7574"
-      }
-    },
-    {
-      "code": "e-7564",
-      "topic": {
-        "en": "Health",
-        "fr": "Santé"
-      },
-      "keywords": {
-        "en": "Gynecologic cancer Mirvetuximab soravtansine Pharmacare Pharmaceuticals",
-        "fr": "Cancers gynécologiques Médicaments Mirvétuximab soravtansine Régime d'assurance-médicaments"
-      },
-      "status": {
-        "en": "Open for signature until August 1, 2026, at 2:23 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 1 août 2026 à 14 h 23 (HAE)"
-      },
-      "sponsor": "Helena Jaczek",
-      "signatures": 523,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7564",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7564"
       }
     },
     {
@@ -228,10 +165,52 @@
         "fr": "Ouverte pour signature jusqu'au 7 novembre 2026 à 13 h 20 (HAE)"
       },
       "sponsor": "John Williamson",
-      "signatures": 492,
+      "signatures": 638,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7553",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7553"
+      }
+    },
+    {
+      "code": "e-7545",
+      "topic": {
+        "en": "Correctional system",
+        "fr": "Système correctionnel"
+      },
+      "keywords": {
+        "en": "Conditional release Domestic violence GPS tracking device High risk offenders",
+        "fr": "Délinquant à risque élevé Dispositif de pistage avec GPS Libération conditionnelle Violence familiale"
+      },
+      "status": {
+        "en": "Open for signature until July 26, 2026, at 2:54 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 26 juillet 2026 à 14 h 54 (HAE)"
+      },
+      "sponsor": "Helena Konanz",
+      "signatures": 585,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7545",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7545"
+      }
+    },
+    {
+      "code": "e-7564",
+      "topic": {
+        "en": "Health",
+        "fr": "Santé"
+      },
+      "keywords": {
+        "en": "Gynecologic cancer Mirvetuximab soravtansine Pharmacare Pharmaceuticals",
+        "fr": "Cancers gynécologiques Médicaments Mirvétuximab soravtansine Régime d'assurance-médicaments"
+      },
+      "status": {
+        "en": "Open for signature until August 1, 2026, at 2:23 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 1 août 2026 à 14 h 23 (HAE)"
+      },
+      "sponsor": "Helena Jaczek",
+      "signatures": 540,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7564",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7564"
       }
     },
     {
@@ -249,31 +228,10 @@
         "fr": "Ouverte pour signature jusqu'au 28 octobre 2026 à 13 h 42 (HAE)"
       },
       "sponsor": "Gord Johns",
-      "signatures": 463,
+      "signatures": 469,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7556",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7556"
-      }
-    },
-    {
-      "code": "e-7580",
-      "topic": {
-        "en": "Foreign affairs",
-        "fr": "Affaires étrangères"
-      },
-      "keywords": {
-        "en": "Economic sanctions Foreign policy Israel Military weapons Palestine",
-        "fr": "Armes militaires Israël Palestine Politique étrangère Sanctions économiques"
-      },
-      "status": {
-        "en": "Open for signature until October 11, 2026, at 3:49 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 11 octobre 2026 à 15 h 49 (HAE)"
-      },
-      "sponsor": "Leah Gazan",
-      "signatures": 228,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7580",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7580"
       }
     },
     {
@@ -291,10 +249,31 @@
         "fr": "Ouverte pour signature jusqu'au 10 novembre 2026 à 15 h 49 (HAE)"
       },
       "sponsor": "Karina Gould",
-      "signatures": 186,
+      "signatures": 356,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7559",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7559"
+      }
+    },
+    {
+      "code": "e-7580",
+      "topic": {
+        "en": "Foreign affairs",
+        "fr": "Affaires étrangères"
+      },
+      "keywords": {
+        "en": "Economic sanctions Foreign policy Israel Military weapons Palestine",
+        "fr": "Armes militaires Israël Palestine Politique étrangère Sanctions économiques"
+      },
+      "status": {
+        "en": "Open for signature until October 11, 2026, at 3:49 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 11 octobre 2026 à 15 h 49 (HAE)"
+      },
+      "sponsor": "Leah Gazan",
+      "signatures": 320,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7580",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7580"
       }
     },
     {
@@ -312,7 +291,7 @@
         "fr": "Ouverte pour signature jusqu'au 30 septembre 2026 à 9 h 57 (HAE)"
       },
       "sponsor": "Terry Dowdall",
-      "signatures": 108,
+      "signatures": 119,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7540",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7540"
@@ -333,52 +312,10 @@
         "fr": "Ouverte pour signature jusqu'au 7 novembre 2026 à 13 h 34 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 80,
+      "signatures": 98,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7541",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7541"
-      }
-    },
-    {
-      "code": "e-7509",
-      "topic": {
-        "en": "Media and telecommunications",
-        "fr": "Médias et télécommunications"
-      },
-      "keywords": {
-        "en": "e-Security Spam Telecommunications and telecommunication ...",
-        "fr": "Pourriels Sécurité électronique Télécommunications et industrie des télé ..."
-      },
-      "status": {
-        "en": "Open for signature until November 6, 2026, at 9:41 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 6 novembre 2026 à 9 h 41 (HAE)"
-      },
-      "sponsor": "Kody Blois",
-      "signatures": 61,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7509",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7509"
-      }
-    },
-    {
-      "code": "e-7501",
-      "topic": {
-        "en": "Business and trade",
-        "fr": "Affaires et commerce"
-      },
-      "keywords": {
-        "en": "Interprovincial trade Labour force mobility Trade barriers",
-        "fr": "Barrières commerciales Commerce interprovincial Mobilité de la main-d'œuvre"
-      },
-      "status": {
-        "en": "Open for signature until October 23, 2026, at 3:00 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 23 octobre 2026 à 15 h 00 (HAE)"
-      },
-      "sponsor": "Tako Van Popta",
-      "signatures": 49,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7501",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7501"
       }
     },
     {
@@ -396,10 +333,52 @@
         "fr": "Ouverte pour signature jusqu'au 8 septembre 2026 à 13 h 26 (HAE)"
       },
       "sponsor": "Kelly DeRidder",
-      "signatures": 48,
+      "signatures": 72,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7577",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7577"
+      }
+    },
+    {
+      "code": "e-7509",
+      "topic": {
+        "en": "Media and telecommunications",
+        "fr": "Médias et télécommunications"
+      },
+      "keywords": {
+        "en": "e-Security Spam Telecommunications and telecommunication ...",
+        "fr": "Pourriels Sécurité électronique Télécommunications et industrie des télé ..."
+      },
+      "status": {
+        "en": "Open for signature until November 6, 2026, at 9:41 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 6 novembre 2026 à 9 h 41 (HAE)"
+      },
+      "sponsor": "Kody Blois",
+      "signatures": 65,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7509",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7509"
+      }
+    },
+    {
+      "code": "e-7571",
+      "topic": {
+        "en": "Veterans' affairs",
+        "fr": "Anciens combattants"
+      },
+      "keywords": {
+        "en": "Housing Veterans Veterans benefits",
+        "fr": "Anciens combattants Logement Prestations sociales pour anciens combattants"
+      },
+      "status": {
+        "en": "Open for signature until November 12, 2026, at 11:02 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 12 novembre 2026 à 11 h 02 (HAE)"
+      },
+      "sponsor": "John Brassard",
+      "signatures": 47,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7571",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7571"
       }
     },
     {
@@ -417,10 +396,31 @@
         "fr": "Ouverte pour signature jusqu'au 8 septembre 2026 à 13 h 23 (HAE)"
       },
       "sponsor": "Vincent Ho",
-      "signatures": 30,
+      "signatures": 37,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7569",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7569"
+      }
+    },
+    {
+      "code": "e-7573",
+      "topic": {
+        "en": "Social affairs and equality",
+        "fr": "Affaires sociales et égalité"
+      },
+      "keywords": {
+        "en": "Canada Pension Plan Disability Benefits Disability benefits Pensions and pensioners Persons with disabilities",
+        "fr": "Pensions et pensionnés Personnes ayant des limitations fonction ... Prestations d'invalidité Programme de prestations d’invalidité du ..."
+      },
+      "status": {
+        "en": "Open for signature until October 13, 2026, at 11:05 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 13 octobre 2026 à 11 h 05 (HAE)"
+      },
+      "sponsor": "Aslam Rana",
+      "signatures": 18,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7573",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7573"
       }
     }
   ]
