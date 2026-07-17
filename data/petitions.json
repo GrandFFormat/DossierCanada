@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-07-16T10:23:14.061Z",
+  "scrapedAt": "2026-07-17T10:11:01.390Z",
   "count": 20,
   "petitions": [
     {
@@ -18,7 +18,7 @@
         "fr": "Ouverte pour signature jusqu'au 24 septembre 2026 à 14 h 50 (HAE)"
       },
       "sponsor": "Jenny Kwan",
-      "signatures": 13209,
+      "signatures": 15369,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7550",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7550"
@@ -39,7 +39,7 @@
         "fr": "Ouverte pour signature jusqu'au 6 novembre 2026 à 9 h 45 (HAE)"
       },
       "sponsor": "Adam Chambers",
-      "signatures": 4922,
+      "signatures": 4980,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7567",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7567"
@@ -60,31 +60,10 @@
         "fr": "Ouverte pour signature jusqu'au 7 septembre 2026 à 9 h 38 (HAE)"
       },
       "sponsor": "Jason Groleau",
-      "signatures": 1021,
+      "signatures": 1084,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7505",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7505"
-      }
-    },
-    {
-      "code": "e-7558",
-      "topic": {
-        "en": "Foreign affairs",
-        "fr": "Affaires étrangères"
-      },
-      "keywords": {
-        "en": "Embassies and consulates Foreign policy Iran",
-        "fr": "Ambassades et consulats Iran Politique étrangère"
-      },
-      "status": {
-        "en": "Open for signature until October 28, 2026, at 1:43 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 28 octobre 2026 à 13 h 43 (HAE)"
-      },
-      "sponsor": "Melissa Lantsman",
-      "signatures": 944,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7558",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7558"
       }
     },
     {
@@ -102,52 +81,31 @@
         "fr": "Ouverte pour signature jusqu'au 8 octobre 2026 à 9 h 56 (HAE)"
       },
       "sponsor": "Kelly DeRidder",
-      "signatures": 932,
+      "signatures": 1044,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7574",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7574"
       }
     },
     {
-      "code": "e-7535",
+      "code": "e-7558",
       "topic": {
-        "en": "National defence and military operations",
-        "fr": "Défense nationale et opérations militaires"
+        "en": "Foreign affairs",
+        "fr": "Affaires étrangères"
       },
       "keywords": {
-        "en": "431 Air Demonstration Squadron (Snowbirds) Cultural symbols Military aircraft",
-        "fr": "431e Escadron de démonstration aérienne ... Aéronefs militaires Symboles culturels"
+        "en": "Embassies and consulates Foreign policy Iran",
+        "fr": "Ambassades et consulats Iran Politique étrangère"
       },
       "status": {
-        "en": "Open for signature until October 24, 2026, at 2:19 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 24 octobre 2026 à 14 h 19 (HAE)"
+        "en": "Open for signature until October 28, 2026, at 1:43 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 28 octobre 2026 à 13 h 43 (HAE)"
       },
-      "sponsor": "Fraser Tolmie",
-      "signatures": 823,
+      "sponsor": "Melissa Lantsman",
+      "signatures": 946,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7535",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7535"
-      }
-    },
-    {
-      "code": "e-7547",
-      "topic": {
-        "en": "Social affairs and equality",
-        "fr": "Affaires sociales et égalité"
-      },
-      "keywords": {
-        "en": "British Columbia Condominium housing Government assistance",
-        "fr": "Aide gouvernementale Colombie-Britannique Immeubles en copropriété"
-      },
-      "status": {
-        "en": "Open for signature until October 24, 2026, at 2:16 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 24 octobre 2026 à 14 h 16 (HAE)"
-      },
-      "sponsor": "Dan Albas",
-      "signatures": 742,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7547",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7547"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7558",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7558"
       }
     },
     {
@@ -165,7 +123,7 @@
         "fr": "Ouverte pour signature jusqu'au 7 novembre 2026 à 13 h 20 (HAE)"
       },
       "sponsor": "John Williamson",
-      "signatures": 638,
+      "signatures": 749,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7553",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7553"
@@ -186,10 +144,31 @@
         "fr": "Ouverte pour signature jusqu'au 26 juillet 2026 à 14 h 54 (HAE)"
       },
       "sponsor": "Helena Konanz",
-      "signatures": 585,
+      "signatures": 595,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7545",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7545"
+      }
+    },
+    {
+      "code": "e-7559",
+      "topic": {
+        "en": "Environment",
+        "fr": "Environnement"
+      },
+      "keywords": {
+        "en": "Greenhouse gases",
+        "fr": "Gaz à effet de serre"
+      },
+      "status": {
+        "en": "Open for signature until November 10, 2026, at 3:49 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 10 novembre 2026 à 15 h 49 (HAE)"
+      },
+      "sponsor": "Karina Gould",
+      "signatures": 591,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7559",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7559"
       }
     },
     {
@@ -207,7 +186,7 @@
         "fr": "Ouverte pour signature jusqu'au 1 août 2026 à 14 h 23 (HAE)"
       },
       "sponsor": "Helena Jaczek",
-      "signatures": 540,
+      "signatures": 585,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7564",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7564"
@@ -228,31 +207,10 @@
         "fr": "Ouverte pour signature jusqu'au 28 octobre 2026 à 13 h 42 (HAE)"
       },
       "sponsor": "Gord Johns",
-      "signatures": 469,
+      "signatures": 478,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7556",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7556"
-      }
-    },
-    {
-      "code": "e-7559",
-      "topic": {
-        "en": "Environment",
-        "fr": "Environnement"
-      },
-      "keywords": {
-        "en": "Greenhouse gases",
-        "fr": "Gaz à effet de serre"
-      },
-      "status": {
-        "en": "Open for signature until November 10, 2026, at 3:49 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 10 novembre 2026 à 15 h 49 (HAE)"
-      },
-      "sponsor": "Karina Gould",
-      "signatures": 356,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7559",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7559"
       }
     },
     {
@@ -270,10 +228,31 @@
         "fr": "Ouverte pour signature jusqu'au 11 octobre 2026 à 15 h 49 (HAE)"
       },
       "sponsor": "Leah Gazan",
-      "signatures": 320,
+      "signatures": 402,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7580",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7580"
+      }
+    },
+    {
+      "code": "e-7598",
+      "topic": {
+        "en": "Public safety",
+        "fr": "Sécurité publique"
+      },
+      "keywords": {
+        "en": "Palestine Palestine Action Terrorist entities watch lists",
+        "fr": "Listes de surveillance d'entités terroristes Palestine Palestine Action"
+      },
+      "status": {
+        "en": "Open for signature until September 14, 2026, at 1:53 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 14 septembre 2026 à 13 h 53 (HAE)"
+      },
+      "sponsor": "Melissa Lantsman",
+      "signatures": 372,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7598",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7598"
       }
     },
     {
@@ -291,7 +270,7 @@
         "fr": "Ouverte pour signature jusqu'au 30 septembre 2026 à 9 h 57 (HAE)"
       },
       "sponsor": "Terry Dowdall",
-      "signatures": 119,
+      "signatures": 138,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7540",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7540"
@@ -312,7 +291,7 @@
         "fr": "Ouverte pour signature jusqu'au 7 novembre 2026 à 13 h 34 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 98,
+      "signatures": 118,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7541",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7541"
@@ -333,31 +312,10 @@
         "fr": "Ouverte pour signature jusqu'au 8 septembre 2026 à 13 h 26 (HAE)"
       },
       "sponsor": "Kelly DeRidder",
-      "signatures": 72,
+      "signatures": 79,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7577",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7577"
-      }
-    },
-    {
-      "code": "e-7509",
-      "topic": {
-        "en": "Media and telecommunications",
-        "fr": "Médias et télécommunications"
-      },
-      "keywords": {
-        "en": "e-Security Spam Telecommunications and telecommunication ...",
-        "fr": "Pourriels Sécurité électronique Télécommunications et industrie des télé ..."
-      },
-      "status": {
-        "en": "Open for signature until November 6, 2026, at 9:41 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 6 novembre 2026 à 9 h 41 (HAE)"
-      },
-      "sponsor": "Kody Blois",
-      "signatures": 65,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7509",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7509"
       }
     },
     {
@@ -375,31 +333,31 @@
         "fr": "Ouverte pour signature jusqu'au 12 novembre 2026 à 11 h 02 (HAE)"
       },
       "sponsor": "John Brassard",
-      "signatures": 47,
+      "signatures": 78,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7571",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7571"
       }
     },
     {
-      "code": "e-7569",
+      "code": "e-7509",
       "topic": {
-        "en": "Health",
-        "fr": "Santé"
+        "en": "Media and telecommunications",
+        "fr": "Médias et télécommunications"
       },
       "keywords": {
-        "en": "Health care system Private health care",
-        "fr": "Médecine privée Système de soins de santé"
+        "en": "e-Security Spam Telecommunications and telecommunication ...",
+        "fr": "Pourriels Sécurité électronique Télécommunications et industrie des télé ..."
       },
       "status": {
-        "en": "Open for signature until September 8, 2026, at 1:23 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 8 septembre 2026 à 13 h 23 (HAE)"
+        "en": "Open for signature until November 6, 2026, at 9:41 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 6 novembre 2026 à 9 h 41 (HAE)"
       },
-      "sponsor": "Vincent Ho",
-      "signatures": 37,
+      "sponsor": "Kody Blois",
+      "signatures": 70,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7569",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7569"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7509",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7509"
       }
     },
     {
@@ -417,10 +375,52 @@
         "fr": "Ouverte pour signature jusqu'au 13 octobre 2026 à 11 h 05 (HAE)"
       },
       "sponsor": "Aslam Rana",
-      "signatures": 18,
+      "signatures": 41,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7573",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7573"
+      }
+    },
+    {
+      "code": "e-7569",
+      "topic": {
+        "en": "Health",
+        "fr": "Santé"
+      },
+      "keywords": {
+        "en": "Health care system Private health care",
+        "fr": "Médecine privée Système de soins de santé"
+      },
+      "status": {
+        "en": "Open for signature until September 8, 2026, at 1:23 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 8 septembre 2026 à 13 h 23 (HAE)"
+      },
+      "sponsor": "Vincent Ho",
+      "signatures": 40,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7569",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7569"
+      }
+    },
+    {
+      "code": "e-7543",
+      "topic": {
+        "en": "Media and telecommunications",
+        "fr": "Médias et télécommunications"
+      },
+      "keywords": {
+        "en": "Media and the press Meta Platforms Inc. Online News Act Social networking sites",
+        "fr": "Loi sur les nouvelles en ligne Médias Meta Platforms Inc. Sites de réseautage social"
+      },
+      "status": {
+        "en": "Open for signature until October 14, 2026, at 1:52 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 14 octobre 2026 à 13 h 52 (HAE)"
+      },
+      "sponsor": "Melissa Lantsman",
+      "signatures": 16,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7543",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7543"
       }
     }
   ]
