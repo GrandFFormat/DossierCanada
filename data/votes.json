@@ -1,7 +1,7 @@
 {
   "source": "https://www.ourcommons.ca/members/en/votes/xml",
   "session": "45-1",
-  "scrapedAt": "2026-07-16T10:23:07.564Z",
+  "scrapedAt": "2026-07-17T10:10:53.251Z",
   "count": 173,
   "votes": [
     {
@@ -2571,7 +2571,7 @@
       "date": "2026-06-16",
       "description": {
         "en": "Government Business No. 11 (Proceedings on Bill C-26, An Act to authorize certain payments to be made out of the Consolidated Revenue Fund for the purpose of improving housing supply)",
-        "fr": "Affaires émanant du gouvernement no 11 (Délibérations sur le projet de loi C-26, Loi autorisant certains paiements sur le Trésor pour améliorer l'offre de logements\r\n)"
+        "fr": "Affaires émanant du gouvernement no 11 (Délibérations sur le projet de loi C-26, Loi autorisant certains paiements sur le Trésor pour améliorer l'offre de logements\n)"
       },
       "result": {
         "en": "Agreed To",
