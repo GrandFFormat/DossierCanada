@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-07-19T10:05:35.834Z",
+  "scrapedAt": "2026-07-20T11:13:22.596Z",
   "count": 20,
   "petitions": [
     {
@@ -18,7 +18,7 @@
         "fr": "Ouverte pour signature jusqu'au 6 novembre 2026 à 9 h 45 (HAE)"
       },
       "sponsor": "Adam Chambers",
-      "signatures": 5050,
+      "signatures": 5065,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7567",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7567"
@@ -39,7 +39,7 @@
         "fr": "Ouverte pour signature jusqu'au 7 septembre 2026 à 9 h 38 (HAE)"
       },
       "sponsor": "Jason Groleau",
-      "signatures": 1128,
+      "signatures": 1143,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7505",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7505"
@@ -60,7 +60,7 @@
         "fr": "Ouverte pour signature jusqu'au 8 octobre 2026 à 9 h 56 (HAE)"
       },
       "sponsor": "Kelly DeRidder",
-      "signatures": 1113,
+      "signatures": 1133,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7574",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7574"
@@ -81,31 +81,10 @@
         "fr": "Ouverte pour signature jusqu'au 28 octobre 2026 à 13 h 43 (HAE)"
       },
       "sponsor": "Melissa Lantsman",
-      "signatures": 1066,
+      "signatures": 1130,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7558",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7558"
-      }
-    },
-    {
-      "code": "e-7553",
-      "topic": {
-        "en": "Environment",
-        "fr": "Environnement"
-      },
-      "keywords": {
-        "en": "Artificial intelligence Data centres Environmental protection",
-        "fr": "Centres de traitement de données Intelligence artificielle Protection de l'environnement"
-      },
-      "status": {
-        "en": "Open for signature until November 7, 2026, at 1:20 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 7 novembre 2026 à 13 h 20 (HAE)"
-      },
-      "sponsor": "John Williamson",
-      "signatures": 848,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7553",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7553"
       }
     },
     {
@@ -123,10 +102,31 @@
         "fr": "Ouverte pour signature jusqu'au 14 septembre 2026 à 13 h 53 (HAE)"
       },
       "sponsor": "Melissa Lantsman",
-      "signatures": 746,
+      "signatures": 1000,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7598",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7598"
+      }
+    },
+    {
+      "code": "e-7553",
+      "topic": {
+        "en": "Environment",
+        "fr": "Environnement"
+      },
+      "keywords": {
+        "en": "Artificial intelligence Data centres Environmental protection",
+        "fr": "Centres de traitement de données Intelligence artificielle Protection de l'environnement"
+      },
+      "status": {
+        "en": "Open for signature until November 7, 2026, at 1:20 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 7 novembre 2026 à 13 h 20 (HAE)"
+      },
+      "sponsor": "John Williamson",
+      "signatures": 893,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7553",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7553"
       }
     },
     {
@@ -144,31 +144,10 @@
         "fr": "Ouverte pour signature jusqu'au 10 novembre 2026 à 15 h 49 (HAE)"
       },
       "sponsor": "Karina Gould",
-      "signatures": 727,
+      "signatures": 746,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7559",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7559"
-      }
-    },
-    {
-      "code": "e-7564",
-      "topic": {
-        "en": "Health",
-        "fr": "Santé"
-      },
-      "keywords": {
-        "en": "Gynecologic cancer Mirvetuximab soravtansine Pharmacare Pharmaceuticals",
-        "fr": "Cancers gynécologiques Médicaments Mirvétuximab soravtansine Régime d'assurance-médicaments"
-      },
-      "status": {
-        "en": "Open for signature until August 1, 2026, at 2:23 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 1 août 2026 à 14 h 23 (HAE)"
-      },
-      "sponsor": "Helena Jaczek",
-      "signatures": 677,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7564",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7564"
       }
     },
     {
@@ -186,10 +165,31 @@
         "fr": "Ouverte pour signature jusqu'au 26 juillet 2026 à 14 h 54 (HAE)"
       },
       "sponsor": "Helena Konanz",
-      "signatures": 659,
+      "signatures": 718,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7545",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7545"
+      }
+    },
+    {
+      "code": "e-7564",
+      "topic": {
+        "en": "Health",
+        "fr": "Santé"
+      },
+      "keywords": {
+        "en": "Gynecologic cancer Mirvetuximab soravtansine Pharmacare Pharmaceuticals",
+        "fr": "Cancers gynécologiques Médicaments Mirvétuximab soravtansine Régime d'assurance-médicaments"
+      },
+      "status": {
+        "en": "Open for signature until August 1, 2026, at 2:23 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 1 août 2026 à 14 h 23 (HAE)"
+      },
+      "sponsor": "Helena Jaczek",
+      "signatures": 695,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7564",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7564"
       }
     },
     {
@@ -228,7 +228,7 @@
         "fr": "Ouverte pour signature jusqu'au 11 octobre 2026 à 15 h 49 (HAE)"
       },
       "sponsor": "Leah Gazan",
-      "signatures": 453,
+      "signatures": 467,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7580",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7580"
@@ -249,7 +249,7 @@
         "fr": "Ouverte pour signature jusqu'au 15 octobre 2026 à 13 h 34 (HAE)"
       },
       "sponsor": "Eric St-Pierre",
-      "signatures": 162,
+      "signatures": 260,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7592",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7592"
@@ -270,7 +270,7 @@
         "fr": "Ouverte pour signature jusqu'au 30 septembre 2026 à 9 h 57 (HAE)"
       },
       "sponsor": "Terry Dowdall",
-      "signatures": 152,
+      "signatures": 161,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7540",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7540"
@@ -291,10 +291,31 @@
         "fr": "Ouverte pour signature jusqu'au 7 novembre 2026 à 13 h 34 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 151,
+      "signatures": 156,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7541",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7541"
+      }
+    },
+    {
+      "code": "e-7573",
+      "topic": {
+        "en": "Social affairs and equality",
+        "fr": "Affaires sociales et égalité"
+      },
+      "keywords": {
+        "en": "Canada Pension Plan Disability Benefits Disability benefits Pensions and pensioners Persons with disabilities",
+        "fr": "Pensions et pensionnés Personnes ayant des limitations fonction ... Prestations d'invalidité Programme de prestations d’invalidité du ..."
+      },
+      "status": {
+        "en": "Open for signature until October 13, 2026, at 11:05 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 13 octobre 2026 à 11 h 05 (HAE)"
+      },
+      "sponsor": "Aslam Rana",
+      "signatures": 119,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7573",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7573"
       }
     },
     {
@@ -312,7 +333,7 @@
         "fr": "Ouverte pour signature jusqu'au 12 novembre 2026 à 11 h 02 (HAE)"
       },
       "sponsor": "John Brassard",
-      "signatures": 109,
+      "signatures": 115,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7571",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7571"
@@ -333,31 +354,10 @@
         "fr": "Ouverte pour signature jusqu'au 8 septembre 2026 à 13 h 26 (HAE)"
       },
       "sponsor": "Kelly DeRidder",
-      "signatures": 86,
+      "signatures": 92,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7577",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7577"
-      }
-    },
-    {
-      "code": "e-7573",
-      "topic": {
-        "en": "Social affairs and equality",
-        "fr": "Affaires sociales et égalité"
-      },
-      "keywords": {
-        "en": "Canada Pension Plan Disability Benefits Disability benefits Pensions and pensioners Persons with disabilities",
-        "fr": "Pensions et pensionnés Personnes ayant des limitations fonction ... Prestations d'invalidité Programme de prestations d’invalidité du ..."
-      },
-      "status": {
-        "en": "Open for signature until October 13, 2026, at 11:05 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 13 octobre 2026 à 11 h 05 (HAE)"
-      },
-      "sponsor": "Aslam Rana",
-      "signatures": 83,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7573",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7573"
       }
     },
     {
@@ -375,7 +375,7 @@
         "fr": "Ouverte pour signature jusqu'au 6 novembre 2026 à 9 h 41 (HAE)"
       },
       "sponsor": "Kody Blois",
-      "signatures": 76,
+      "signatures": 77,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7509",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7509"
@@ -417,7 +417,7 @@
         "fr": "Ouverte pour signature jusqu'au 14 octobre 2026 à 13 h 52 (HAE)"
       },
       "sponsor": "Melissa Lantsman",
-      "signatures": 26,
+      "signatures": 31,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7543",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7543"
