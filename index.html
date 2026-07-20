@@ -854,7 +854,13 @@
     /* Les sélecteurs avec .compact sont répétés exprès : sans eux, la règle
        desktop « #dq-topbar.compact header.top » gagnerait en spécificité et
        replierait l'en-tête sur mobile aussi. */
-    #dq-topbar, #dq-topbar.compact{position:static; border-bottom:none; box-shadow:none; background:transparent;}
+    /* Collant sur mobile aussi. Fond opaque obligatoire : en sticky, le contenu
+       défile DERRIÈRE la barre. */
+    #dq-topbar, #dq-topbar.compact{position:sticky; top:0; z-index:90; border-bottom:none; background:var(--paper);}
+    #dq-topbar.compact{box-shadow:0 4px 12px rgb(0 0 0 / 12%);}
+    /* Une fois défilé, la rangée des provinces se replie pour garder une barre fine */
+    #dq-topbar.compact .header-left{display:none;}
+    #dq-topbar.compact .dq-ticker{display:none;}
     #dq-topbar header.top, #dq-topbar.compact header.top{
       max-height:none; overflow:visible; opacity:1;
       border-bottom:1px solid var(--line);
@@ -3498,7 +3504,18 @@ function apercuBillRow(b, ctx){
 }
 function toggleApercuBill(rowId){
   const r = document.getElementById(rowId);
-  if(r) r.classList.toggle('open');
+  if(!r) return;
+  const opened = r.classList.toggle('open');
+  // À l'ouverture on déplie aussi le résumé : sinon la description restait
+  // cachée derrière un second clic, ce qui n'était pas devinable.
+  if(opened){
+    const sum = r.querySelector('.bill-summary');
+    if(sum && !sum.classList.contains('open')){
+      sum.classList.add('open');
+      const hint = r.querySelector('.expand-hint');
+      if(hint) hint.textContent = t('btn.hideSummary');
+    }
+  }
 }
 function renderApercuBills(){
   const el = document.getElementById('apercuBills');
