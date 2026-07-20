@@ -1946,9 +1946,30 @@ async function requestExplanation(billId, btnId){
   if(btn) btn.disabled = true;
   const { error } = await supabaseClient.from('bill_flags').insert({ user_id: currentUser.id, bill_id: billId });
   if(error && error.code !== '23505'){
-    // Refus le plus courant : limite mensuelle atteinte (règle de sécurité serveur).
+    // On ne DEVINE pas la cause : la règle RLS refuse aussi bien une session
+    // expirée (auth.uid() nul) qu'un dépassement de quota. On vérifie ce qui est
+    // vrai avant d'afficher un message, sinon on accuse à tort la limite.
     console.error('requestExplanation insert error:', error);
-    if(btn){ btn.disabled = false; btn.textContent = isEn ? 'Monthly limit reached — try later' : 'Limite mensuelle atteinte — réessayez plus tard'; }
+    let msg;
+    try{
+      const { data: s } = await supabaseClient.auth.getSession();
+      if(!s || !s.session){
+        msg = isEn ? 'Session expired — sign in again' : 'Session expirée — reconnectez-vous';
+      } else {
+        const used = await checkMonthlyFlagCount();
+        msg = (used >= FLAG_MONTHLY_LIMIT)
+          ? (isEn ? 'Monthly limit reached (' + used + '/' + FLAG_MONTHLY_LIMIT + ')'
+                  : 'Limite mensuelle atteinte (' + used + '/' + FLAG_MONTHLY_LIMIT + ')')
+          : (isEn ? 'Request failed — try again' : 'Échec de la demande — réessayez');
+      }
+    }catch(e){
+      msg = isEn ? 'Request failed — try again' : 'Échec de la demande — réessayez';
+    }
+    if(btn){
+      btn.disabled = false;
+      btn.textContent = msg;
+      btn.title = (error.message || error.code || '');   // vraie cause au survol
+    }
     return;
   }
   // Succès OU doublon (23505) → dans les deux cas la demande existe bien.
@@ -3983,7 +4004,7 @@ function renderSenateVotes(keyword){
     .filter(b => senateVotesByBillId.has(b.id))
     .filter(b => !kw || norm([L(b.title), b.num].concat((senateVotesByBillId.get(b.id) || []).map(v => L(v.title))).join(' ')).includes(kw))
     .sort((a, b) => latestDate(b).localeCompare(latestDate(a)));
-  const cards = list.map(b => billCard(b, 'svotes')).join('');
+  const cards = list.map(b => apercuBillRow(b, 'sv')).join('');
 
   let motionsHtml = '';
   if(showMotions){
