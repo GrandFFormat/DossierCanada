@@ -81,11 +81,14 @@
   header.top .lang-toggle{ background:var(--ink) !important; color:var(--paper) !important; }
   @media (max-width:640px){
     .header-date{display:none;}
-    header.top{grid-template-columns:1fr auto; padding:14px 18px !important;}
-    .brand{grid-column:1; grid-row:1; text-align:left; font-size:26px;}
-    .header-right{grid-column:2; grid-row:1;}
+    /* minmax(0,1fr) : sans ça la colonne refuse de descendre sous le min-content
+       du logo (283px) et, additionné aux contrôles (183px), le header force la
+       page à 484px sur un écran de 412px. */
+    header.top{grid-template-columns:minmax(0,1fr) auto; padding:14px 18px !important; gap:10px;}
+    .brand{grid-column:1; grid-row:1; text-align:left; font-size:24px; min-width:0; overflow-wrap:anywhere;}
+    .header-right{grid-column:2; grid-row:1; gap:6px;}
     /* Le réseau des provinces s'ouvre sous le logo principal */
-    .header-left{grid-column:1 / -1; grid-row:2; justify-content:center; margin-top:6px;}
+    .header-left{grid-column:1 / -1; grid-row:2; justify-content:center; margin-top:6px; min-width:0;}
   }
   .dq-ticker > div{display:flex; white-space:nowrap; width:max-content; animation:dcTicker 32s linear infinite; font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; padding:7px 0;}
   .dq-ticker:hover > div{animation-play-state:paused;}
@@ -471,10 +474,10 @@
 
   .lexique-grid{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:14px;}
   @media(max-width:640px){ .lexique-grid{grid-template-columns:1fr;} }
-  .lexique-item{padding:20px 22px; background:#fff; border:3px solid var(--ink); box-shadow:6px 6px 0 var(--ink); margin-bottom:12px;}
+  .lexique-item{padding:20px 22px; background:#fff; border:3px solid var(--ink); box-shadow:6px 6px 0 var(--ink); margin-bottom:12px; min-width:0;}
   .lexique-grid .lexique-item{margin-bottom:0;}
   .lexique-item dt{font-family:'IBM Plex Mono',monospace; font-size:20px; font-weight:600; margin-bottom:0; line-height:1.15;}
-  .lex-head{ display:flex; align-items:flex-start; justify-content:space-between; gap:12px; margin-bottom:10px; }
+  .lex-head{ display:flex; align-items:flex-start; justify-content:space-between; gap:8px 12px; margin-bottom:10px; flex-wrap:wrap; min-width:0; }
   .lex-badge{ flex:none; font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; border:2px solid var(--ink); padding:2px 9px; white-space:nowrap; color:var(--ink); }
   .lex-cats{ display:flex; gap:8px; flex-wrap:wrap; margin:14px 0 4px; }
   .lex-chip{ font-family:'IBM Plex Mono',monospace; font-size:12px; font-weight:700; text-transform:uppercase; border:2px solid var(--ink); background:#fff; color:var(--ink); padding:6px 12px; cursor:pointer; user-select:none; }
@@ -617,11 +620,11 @@
   /* ---- Aperçu : grille 3 colonnes (comme le proto) ---- */
   .apercu-3col{ display:grid; grid-template-columns:300px 1fr 280px; margin:0 calc(-1 * var(--gutter)) 28px; }
   .a3-left{ border-right:3px solid var(--ink); padding:22px; display:flex; flex-direction:column; gap:14px; }
-  .a3-left .news-item{ flex-direction:column; gap:3px; padding:11px 0; }
-  .a3-left .news-date{ width:auto; padding-top:0; }
-  .a3-left .news-body p{ font-size:12.5px; line-height:1.5; }
+  .a3-left .news-item, .a3-right .news-item{ flex-direction:column; gap:3px; padding:11px 0; }
+  .a3-left .news-date, .a3-right .news-date{ width:auto; padding-top:0; }
+  .a3-left .news-body p, .a3-right .news-body p{ font-size:12.5px; line-height:1.5; }
   .a3-main{ border-right:3px solid var(--ink); padding:22px 24px; min-width:0; }
-  .a3-right{ padding:22px 20px; background:#fff; }
+  .a3-right{ padding:22px 20px; background:#fff; display:flex; flex-direction:column; gap:14px; }
   @media (max-width:900px){ .apercu-3col{ grid-template-columns:1fr; } .a3-left, .a3-main{ border-right:none; border-bottom:3px solid var(--ink); } }
   .a3-hero{ font-family:'Archivo Black',sans-serif !important; font-size:28px; line-height:1.05; text-transform:uppercase; margin:0; }
   .a3-hero .hlp{ background:var(--pink); padding:0 4px; }
@@ -663,6 +666,16 @@
   .ab-detail .bill{ border:none !important; box-shadow:none !important; padding:0 !important; margin:0 !important; cursor:default; background:transparent !important; }
   .ab-detail .bill:hover{ transform:none !important; box-shadow:none !important; }
   .ab-detail .bill > .head{ display:none !important; }
+  /* Sur mobile, le titre était écrasé entre les badges : il passe seul sur la
+     première ligne, et numéro / parti / statut se regroupent en dessous. */
+  @media (max-width:640px){
+    .ab-head{ flex-wrap:wrap; row-gap:9px; align-items:center; }
+    .ab-head .ab-title{ order:1; flex:1 1 100%; min-width:0; font-size:14px; }
+    .ab-head .ab-num{ order:2; }
+    .ab-head .depute-party{ order:3; }
+    .ab-head .status-pill{ order:4; }
+    .ab-head .ab-caret{ order:5; margin-left:auto; }
+  }
   @media (max-width:900px){ .challenge-track .challenge-card{ flex:0 0 calc((100% - 16px)/2); } }
   @media (max-width:640px){ .challenge-track .challenge-card{ flex:0 0 100%; } }
   .challenge-card{ background:#fff; border:3px solid var(--ink); padding:16px 18px; box-shadow:5px 5px 0 var(--ink); display:flex; flex-direction:column; cursor:pointer; transition:transform .08s, box-shadow .08s; border-radius:0; }
@@ -930,9 +943,12 @@
 
     <div class="apercu-3col">
       <aside class="a3-left">
-        <h2 class="a3-hiw-h" data-i18n="h.quoideneuf">Quoi de neuf</h2>
-        <div id="sittingBox"></div>
-        <div id="newsList"></div>
+        <h2 class="a3-hiw-h" data-i18n="a3.hiw">Comment ça marche</h2>
+        <div class="a3-steps">
+          <div class="a3-step"><span class="a3-step-n" style="background:var(--yellow)">1</span><p data-i18n="a3.step1">Un projet de loi vous semble opaque ? Demandez une explication.</p></div>
+          <div class="a3-step"><span class="a3-step-n" style="background:var(--pink)">2</span><p data-i18n="a3.step2">Les demandes s'additionnent — les plus demandés passent en priorité.</p></div>
+          <div class="a3-step"><span class="a3-step-n" style="background:var(--cyan)">3</span><p data-i18n="a3.step3">On pousse pour une explication en langage clair, sourcée.</p></div>
+        </div>
       </aside>
       <main class="a3-main">
         <div class="a3-main-head">
@@ -952,12 +968,9 @@
         </div>
       </main>
       <aside class="a3-right">
-        <h2 class="a3-hiw-h" data-i18n="a3.hiw">Comment ça marche</h2>
-        <div class="a3-steps">
-          <div class="a3-step"><span class="a3-step-n" style="background:var(--yellow)">1</span><p data-i18n="a3.step1">Un projet de loi vous semble opaque ? Demandez une explication.</p></div>
-          <div class="a3-step"><span class="a3-step-n" style="background:var(--pink)">2</span><p data-i18n="a3.step2">Les demandes s'additionnent — les plus demandés passent en priorité.</p></div>
-          <div class="a3-step"><span class="a3-step-n" style="background:var(--cyan)">3</span><p data-i18n="a3.step3">On pousse pour une explication en langage clair, sourcée.</p></div>
-        </div>
+        <h2 class="a3-hiw-h" data-i18n="h.quoideneuf">Quoi de neuf</h2>
+        <div id="sittingBox"></div>
+        <div id="newsList"></div>
       </aside>
     </div>
 
@@ -3881,7 +3894,7 @@ function lobbyRegistryBlock(isEn){
       <div style="font-family:'IBM Plex Mono',monospace; font-size:15px; font-weight:600; margin-bottom:6px;">🏢 ${title}</div>
       <p style="font-size:13px; line-height:1.65; color:var(--ink); margin:0 0 8px; max-width:680px;">${body}</p>
       <p style="font-size:12px; line-height:1.6; color:var(--slate); margin:0 0 10px; max-width:680px;">${note}</p>
-      <div style="font-size:12.5px;">${linksHtml}</div>
+      <div style="font-size:12.5px; display:flex; flex-wrap:wrap; align-items:center; row-gap:6px;">${linksHtml}</div>
     </div>`;
 }
 
