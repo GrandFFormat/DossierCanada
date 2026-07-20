@@ -8,15 +8,17 @@
 --    Vérifie le nom du projet en haut à gauche de Supabase avant d'exécuter : DC et QC
 --    ont deux projets distincts qui se ressemblent.
 
--- 1) Palmarès public : les projets à partir de 500 demandes (1er palier).
---    (Remplace la version sans seuil.) N'expose que le total, jamais les identités.
+-- 1) Palmarès public : les projets dès la 1re demande.
+--    (Le frontend affiche un projet dès qu'il a au moins 1 demande — CHALLENGE_THRESHOLD=1.
+--     Les paliers/flammes restent sur CHALLENGE_TIERS [500,1000,…].) N'expose que le total,
+--     jamais les identités.
 create or replace function public.flag_counts()
 returns table (bill_id bigint, cnt bigint)
 language sql stable security definer set search_path = public as $$
   select bill_id, count(*)::bigint as cnt
   from public.bill_flags
   group by bill_id
-  having count(*) >= 500
+  having count(*) >= 1
   order by count(*) desc;
 $$;
 grant execute on function public.flag_counts() to anon, authenticated;

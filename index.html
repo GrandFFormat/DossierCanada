@@ -41,37 +41,65 @@
 </script>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='19' fill='%23C8102E'/%3E%3Cpath d='M9 12 L16 12 L19 16 L31 16 L31 30 L9 30 Z' stroke='%23FFFFFF' stroke-width='1.8' stroke-linejoin='round' stroke-linecap='round' fill='%23FFFFFF'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#101828;
-    --ink-2:#1D2939;
-    --paper:#F3F6FB;
-    --paper-2:#F9FBFD;
+    --ink:#131313;
+    --ink-2:#131313;
+    --paper:#FFFDF5;
+    --paper-2:#FFFBEA;
     --card:#FFFFFF;
-    --line:#E2E8F2;
-    --slate:#66707F;
-    --gold:#175CD3;
-    --gold-soft:#EAF1FD;
-    --amber:#B77816;
-    --amber-soft:#FBF0DA;
-    --green:#12805C;
-    --green-soft:#DDF3EA;
-    --red:#D92D20;
-    --red-soft:#FDE7E4;
-    --radius:12px;
-    --shadow:0 1px 2px rgba(16,24,40,0.04), 0 12px 32px -16px rgba(16,24,40,0.12);
+    --line:#131313;
+    --slate:#555555;
+    --gold:#131313;
+    --gold-soft:#FFDD33;
+    --amber:#131313;
+    --amber-soft:#FFF7D6;
+    --green:#2E7D32;
+    --green-soft:#C6F24E;
+    --red:#C0143C;
+    --red-soft:#FF90C8;
+    --yellow:#FFDD33;
+    --pink:#FF90C8;
+    --cyan:#7DE0E6;
+    --lime:#C6F24E;
+    --radius:0px;
+    --shadow:5px 5px 0 #131313;
   }
+  h1, h2, .brand-text h1{ font-family:'Archivo Black',sans-serif !important; text-transform:uppercase; letter-spacing:-0.015em; font-weight:400; }
+  .bill h3, .m-card h3, .vote-card h3, .depute-card h3, .petition-card h3, .role-card h3, .lexique-item dt, .calendar-box h3, .mission-box h2, .issue-body h3, .roadmap-body h4, .role-group-title{ font-family:'Archivo Black',sans-serif !important; text-transform:uppercase; letter-spacing:-0.01em; font-weight:400; line-height:1.15; }
+  .dq-ticker{background:var(--ink); color:var(--paper); overflow:hidden;}
+  header.top{ display:grid !important; grid-template-columns:1fr auto 1fr; align-items:center !important; gap:16px; padding:14px 26px !important; border-bottom:5px solid var(--ink) !important; }
+  .brand{ display:block !important; font-family:'Archivo Black',sans-serif; font-size:38px; text-transform:uppercase; letter-spacing:-0.02em; text-align:center; cursor:pointer; line-height:1; color:var(--ink); }
+  .brand .hl{ background:var(--yellow); padding:0 8px; }
+  .header-date{ font-size:12px; font-weight:600; text-transform:uppercase; color:var(--ink); white-space:nowrap; }
+  .header-left{ display:flex; align-items:center; gap:12px; min-width:0; }
+  .header-right{ display:flex; gap:6px; justify-content:flex-end; align-items:center; }
+  header.top .font-size-ctrl{ border:none !important; padding:0; gap:6px; background:transparent; }
+  header.top .font-size-ctrl button, header.top .lang-toggle{ border:2px solid var(--ink) !important; border-radius:0 !important; background:var(--paper) !important; color:var(--ink) !important; font-weight:700; height:30px; box-shadow:none; }
+  header.top .lang-toggle{ background:var(--ink) !important; color:var(--paper) !important; }
+  @media (max-width:640px){
+    .header-date{display:none;}
+    header.top{grid-template-columns:1fr auto; padding:14px 18px !important;}
+    .brand{grid-column:1; grid-row:1; text-align:left; font-size:26px;}
+    .header-right{grid-column:2; grid-row:1;}
+    /* Le réseau des provinces s'ouvre sous le logo principal */
+    .header-left{grid-column:1 / -1; grid-row:2; justify-content:center; margin-top:6px;}
+  }
+  .dq-ticker > div{display:flex; white-space:nowrap; width:max-content; animation:dcTicker 32s linear infinite; font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; padding:7px 0;}
+  .dq-ticker:hover > div{animation-play-state:paused;}
+  @keyframes dcTicker{from{transform:translateX(0);} to{transform:translateX(-50%);}}
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
   body{
     background:var(--paper);
     color:var(--ink);
-    font-family:'Inter',system-ui,sans-serif;
+    font-family:'IBM Plex Mono',monospace;
     -webkit-font-smoothing:antialiased;
     min-height:100vh;
   }
-  .app{max-width:1280px;margin:0 auto;padding:0 28px 80px;}
+  .app{--gutter:28px; max-width:1280px;margin:0 auto;padding:0 var(--gutter) 24px;}
 
   /* ---------- HEADER ---------- */
   header.top{
@@ -95,7 +123,7 @@
   }
   .brand-mark svg{position:absolute;inset:0;}
   .brand-text h1{
-    font-family:'Inter',sans-serif;
+    font-family:'IBM Plex Mono',monospace;
     font-weight:600;
     font-size:22px;
     letter-spacing:-0.01em;
@@ -107,22 +135,27 @@
      débordent vers la droite après 3 (max-height = 3 ronds), donc l'en-tête
      ne grandit jamais même en ajoutant des provinces. */
   .brand-col{display:flex; align-items:center; gap:14px;}
-  .province-network{display:flex; flex-direction:column; flex-wrap:wrap; align-content:flex-start; max-height:70px; gap:5px;}
-  .pn-dot{width:20px; height:20px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; font-family:'Inter',sans-serif; font-size:11px; font-weight:800; letter-spacing:-0.04em; color:#fff; text-decoration:none; box-shadow:0 1px 3px rgba(0,0,0,.18); transition:transform .12s;}
+  .province-network{display:flex; flex-direction:row; flex-wrap:wrap; align-content:center; max-height:none; gap:6px;}
+  .pn-dot{width:26px; height:26px; border-radius:50%; border:2px solid var(--ink); display:inline-flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono',monospace; font-size:10.5px; font-weight:800; letter-spacing:-0.04em; color:#fff; text-decoration:none; box-shadow:none; transition:transform .12s;}
   .pn-dot:hover{transform:scale(1.15);}
+  .pn-dot.pn-off{ background:transparent !important; color:var(--slate); border-color:var(--slate); opacity:.5; cursor:default; }
+  .pn-dot.pn-off:hover{ transform:none; }
+  /* La seule pastille avec un vrai lien se retourne périodiquement pour se signaler */
+  .pn-dot.pn-live{ animation:pnFlip 5s ease-in-out infinite; }
+  @keyframes pnFlip{ 0%,80%{transform:rotateY(0);} 90%{transform:rotateY(180deg);} 100%{transform:rotateY(360deg);} }
+  .pn-dot.pn-live:hover{ animation-play-state:paused; transform:scale(1.15); }
   .top-meta{display:flex; gap:28px; align-items:baseline; flex-wrap:wrap;}
   .top-meta .stat{text-align:right;}
   .top-meta .stat b{
-    display:block; font-family:'Inter',sans-serif; font-size:20px; font-weight:600;
+    display:block; font-family:'IBM Plex Mono',monospace; font-size:20px; font-weight:600;
   }
   .top-meta .stat span{font-size:11px; color:var(--slate); text-transform:uppercase; letter-spacing:0.06em;}
 
   /* ---------- NAV TABS ---------- */
   nav.tabs{
     max-width:1280px;margin:0 auto; padding:0;
-    display:flex; gap:2px; margin-top:0;
-    border-bottom:1px solid var(--line);
-    overflow-x:auto;
+    display:grid; grid-template-columns:repeat(6,1fr); gap:0;
+    border-bottom:5px solid var(--ink); background:#fff;
   }
   nav.tabs::-webkit-scrollbar{height:32px; width:32px;}
   nav.tabs::-webkit-scrollbar-track{background:transparent;}
@@ -130,60 +163,64 @@
   nav.tabs::-webkit-scrollbar-thumb:hover{background:#a8a8a8;}
   nav.tabs{scrollbar-width:auto;}
   nav.tabs button{
-    font-family:'Inter',sans-serif;
-    font-size:13.5px; font-weight:600;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12.5px; font-weight:700; text-transform:uppercase;
     letter-spacing:0.01em;
-    background:none;border:none;
-    padding:16px 18px 14px;
-    color:var(--slate);
-    cursor:pointer;
-    border-bottom:2px solid transparent;
+    background:none; border:none; border-right:2px solid var(--ink);
+    padding:12px 6px; margin:0 !important;
+    color:var(--ink); cursor:pointer; text-align:center;
     white-space:nowrap;
   }
+  nav.tabs button:last-child{border-right:none;}
+  nav.tabs button[data-view='apercu']:hover, nav.tabs button[data-view='apercu'].active{background:var(--yellow);}
+  nav.tabs button[data-view='ministres']:hover, nav.tabs button[data-view='ministres'].active{background:var(--pink);}
+  nav.tabs button[data-view='projets']:hover, nav.tabs button[data-view='projets'].active{background:var(--lime);}
+  nav.tabs button[data-view='votes']:hover, nav.tabs button[data-view='votes'].active{background:var(--yellow);}
+  nav.tabs button[data-view='cabinet']:hover, nav.tabs button[data-view='cabinet'].active{background:var(--cyan);}
+  nav.tabs button[data-view='lexique']:hover, nav.tabs button[data-view='lexique'].active{background:var(--pink);}
   nav.tabs button .n{
-    font-family:'Inter',sans-serif; font-weight:500; font-size:11px;
-    color:var(--slate); margin-right:6px;
+    font-family:'IBM Plex Mono',monospace; font-weight:700; font-size:12.5px;
+    color:inherit; margin-right:5px;
   }
-  nav.tabs button.active{color:var(--ink); border-bottom-color:var(--gold);}
-  nav.tabs button:hover{color:var(--ink);}
+  nav.tabs button.active{color:var(--ink);}
 
   nav.tabs .close-menu{display:none;}
 
-  .view{display:none; padding-top:30px;}
+  .view{display:none; padding-top:0;}
   .view.active{display:block;}
 
   /* ---------- INTRO BANNER ---------- */
   .intro-toggle-row{display:flex; justify-content:flex-end; margin-bottom:8px;}
   .quick-nav{
     display:flex; flex-wrap:wrap; gap:8px; align-items:center;
-    margin-bottom:20px; padding-bottom:14px; border-bottom:1px solid var(--line);
+    margin-bottom:20px; padding-bottom:14px; border-bottom:3px solid var(--ink);
   }
-  .quick-nav-label{font-family:'Inter',sans-serif; font-size:11px; color:var(--slate); text-transform:uppercase; letter-spacing:0.03em; margin-right:4px;}
+  .quick-nav-label{font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--slate); text-transform:uppercase; letter-spacing:0.03em; margin-right:4px;}
   .quick-nav a{
-    font-family:'Inter',sans-serif; font-size:12.5px; font-weight:600; color:var(--ink);
-    background:var(--paper-2); border:1px solid var(--line); border-radius:20px;
+    font-family:'IBM Plex Mono',monospace; font-size:12px; font-weight:700; text-transform:uppercase; color:var(--ink);
+    background:#fff; border:2px solid var(--ink); border-radius:0;
     padding:6px 13px; cursor:pointer; text-decoration:none;
   }
-  .quick-nav a:hover{border-color:var(--gold); color:var(--gold);}
+  .quick-nav a:hover{background:var(--yellow); color:var(--ink);}
 
   .intro-compact{
     display:none; justify-content:space-between; align-items:center; gap:12px;
-    background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
-    padding:12px 16px; margin-bottom:24px; cursor:pointer; font-size:12.5px; color:var(--slate);
+    background:var(--card); border:3px solid var(--ink); border-radius:0; box-shadow:4px 4px 0 var(--ink);
+    padding:12px 16px; margin-bottom:24px; cursor:pointer; font-size:12.5px; color:var(--ink);
   }
   .intro-compact.open{display:flex;}
-  .intro-compact:hover{border-color:var(--gold);}
+  .intro-compact:hover{background:var(--paper-2);}
   #introBlock.collapsed{display:none;}
 
   .mission-box{
-    background:var(--card); border:1.5px solid var(--gold); border-radius:var(--radius);
+    background:var(--card); border:3px solid var(--ink); border-radius:0; box-shadow:5px 5px 0 var(--ink);
     padding:22px 24px; margin-bottom:28px;
   }
-  .mission-box h2{font-family:'Inter',sans-serif; font-weight:500; font-size:19px; margin:20px 0 10px; color:var(--ink);}
+  .mission-box h2{font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:19px; margin:20px 0 10px; color:var(--ink);}
   .mission-box .compare{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:16px;}
   @media (max-width:640px){.mission-box .compare{grid-template-columns:1fr;}}
-  .mission-box .compare-col{background:var(--paper-2); border-radius:var(--radius); padding:14px 16px;}
-  .mission-box .compare-col .tag{font-family:'Inter',sans-serif; font-size:10px; text-transform:uppercase; letter-spacing:0.03em; color:var(--slate); display:block; margin-bottom:8px;}
+  .mission-box .compare-col{background:var(--paper-2); border:2px solid var(--ink); border-radius:0; padding:14px 16px;}
+  .mission-box .compare-col .tag{font-family:'IBM Plex Mono',monospace; font-size:10px; text-transform:uppercase; letter-spacing:0.03em; color:var(--slate); display:block; margin-bottom:8px;}
   .mission-box .compare-col ul{margin:0; padding-left:18px; font-size:12.5px; line-height:1.7; color:var(--ink);}
 
   .banner{
@@ -194,117 +231,139 @@
     display:flex; gap:20px; justify-content:space-between; align-items:flex-start;
     flex-wrap:wrap;
   }
-  .banner h2{font-family:'Inter',sans-serif; font-weight:500; font-size:19px; margin:0 0 6px;}
+  .banner h2{font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:19px; margin:0 0 6px;}
   .banner p{margin:0; font-size:13.5px; line-height:1.55; color:#C9CEDD; max-width:640px;}
   .banner .badge{
-    font-family:'Inter',sans-serif; font-size:10.5px; letter-spacing:0.04em;
-    text-transform:uppercase; background:rgba(255,255,255,0.08);
-    border:1px solid rgba(255,255,255,0.2);
-    padding:5px 10px; border-radius:20px; color:#E4C77D; flex:none;
+    font-family:'IBM Plex Mono',monospace; font-size:10.5px; font-weight:700; letter-spacing:0.04em;
+    text-transform:uppercase; background:var(--yellow);
+    border:2px solid var(--ink);
+    padding:4px 10px; border-radius:0; color:var(--ink); flex:none;
   }
 
   /* ---------- SECTION HEADS ---------- */
-  .section-head{display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:16px; gap:16px; flex-wrap:wrap;}
-  .bd-back{ font-family:'Inter',sans-serif; font-weight:600; font-size:11px; color:var(--slate); background:var(--paper-2); border:1px solid var(--line); border-radius:20px; padding:6px 12px; cursor:pointer; flex:none; user-select:none; height:fit-content; }
+  .section-head{display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:22px; gap:16px 20px; flex-wrap:wrap;}
+  .section-head > div:first-child{ display:flex; flex-direction:column; gap:10px; }
+  .bd-back{ font-family:'IBM Plex Mono',monospace; font-weight:700; font-size:11px; text-transform:uppercase; color:var(--ink); background:#fff; border:2px solid var(--ink); border-radius:0; padding:6px 12px; cursor:pointer; flex:none; user-select:none; height:fit-content; box-shadow:2px 2px 0 var(--ink); }
   .bd-back:hover{ border-color:var(--gold); color:var(--gold); }
   .footer-etmoi{ cursor:pointer; color:var(--gold); margin-left:4px; }
   .footer-etmoi:hover{ text-decoration:underline; }
   .snooze-pill{
-    font-family:'Inter',sans-serif; font-weight:600; font-size:11px; color:var(--slate);
-    background:var(--paper-2); border:1px solid var(--line); border-radius:20px;
-    padding:6px 12px; cursor:pointer; flex:none; user-select:none; height:fit-content;
+    font-family:'IBM Plex Mono',monospace; font-weight:700; font-size:11px; text-transform:uppercase; color:var(--ink);
+    background:#fff; border:2px solid var(--ink); border-radius:0;
+    padding:6px 12px; cursor:pointer; flex:none; user-select:none; height:fit-content; box-shadow:2px 2px 0 var(--ink);
   }
   .snooze-pill:hover{border-color:var(--gold); color:var(--gold);}
-  .snooze-pill.snoozed{background:var(--ink); color:var(--paper-2); border-color:var(--ink);}
+  .snooze-pill.snoozed{background:var(--ink); color:var(--paper-2); border-color:var(--ink); box-shadow:none;}
   [id^="body-"].collapsed{display:none;}
-  .section-head h2{font-family:'Inter',sans-serif; font-size:20px; font-weight:600; margin:20px 0 0;}
-  .section-head .sub{font-size:12.5px; color:var(--slate); margin-top:4px;}
+  .view{ --page:var(--yellow); }
+  #view-ministres{ --page:var(--pink); }
+  #view-projets{ --page:var(--lime); }
+  #view-votes{ --page:var(--yellow); }
+  #view-cabinet{ --page:var(--cyan); }
+  #view-lexique{ --page:var(--pink); }
+  .section-head h2{ font-family:'Archivo Black',sans-serif !important; text-transform:uppercase; letter-spacing:-0.01em; font-weight:400; font-size:24px; margin:0; display:inline-block; background:var(--page); color:var(--ink); padding:6px 14px; border:3px solid var(--ink); box-shadow:5px 5px 0 var(--ink); line-height:1.1; }
+  .section-head .sub{font-size:12.5px; font-weight:600; text-transform:uppercase; letter-spacing:0.02em; color:var(--ink); margin-top:0;}
+  .page-band{ background:var(--page); border-bottom:5px solid var(--ink); padding:26px var(--gutter) 28px; margin:0 calc(-1 * var(--gutter)) 26px; display:flex; align-items:flex-end; justify-content:space-between; gap:18px 24px; flex-wrap:wrap; }
+  .band-search{ flex:1; min-width:280px; max-width:460px; border:3px solid var(--ink); background:#fff; padding:12px 16px; font-family:'IBM Plex Mono',monospace; font-size:13.5px; font-weight:600; box-shadow:5px 5px 0 var(--ink); outline:none; border-radius:0; }
+  .page-band h1{ font-family:'Archivo Black',sans-serif; font-size:44px; text-transform:uppercase; letter-spacing:-0.01em; font-weight:400; margin:0; line-height:1.04; }
+  .page-band .sub{ font-size:13px; font-weight:600; text-transform:uppercase; letter-spacing:0.04em; color:var(--ink); margin:8px 0 0; }
+  .page-toolbar{ display:flex; gap:10px 16px; flex-wrap:wrap; align-items:center; margin-bottom:20px; }
+  @media (max-width:640px){ .page-band h1{ font-size:30px; } }
   .toolbar{display:flex; gap:10px; flex-wrap:wrap;}
   .toolbar input, .toolbar select{
-    font-family:'Inter',sans-serif; font-size:13px;
-    border:1px solid var(--line); background:var(--card);
-    padding:9px 12px; border-radius:var(--radius); color:var(--ink);
+    font-family:'IBM Plex Mono',monospace; font-size:13px; font-weight:600;
+    border:2px solid var(--ink); background:#fff;
+    padding:9px 12px; border-radius:0; color:var(--ink);
   }
   .toolbar input{min-width:200px;}
 
   /* ---------- HEMICYCLE (signature element) ---------- */
   .hemicycle-wrap{
-    background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+    background:var(--card); border:3px solid var(--line); border-radius:var(--radius);
     padding:24px; margin-bottom:28px; display:flex; gap:28px; align-items:center; flex-wrap:wrap;
   }
   .hemicycle-wrap svg{flex:none; width:100%; max-width:420px; height:auto;}
   .hemicycle-legend{display:flex; flex-direction:column; gap:10px; font-size:13px;}
   .hemicycle-legend .row{display:flex; align-items:center; gap:8px;}
   .hemicycle-legend .dot{width:10px;height:10px;border-radius:50%;}
-  .hemicycle-legend b{font-family:'Inter',sans-serif; font-size:12.5px;}
+  .hemicycle-legend b{font-family:'IBM Plex Mono',monospace; font-size:12.5px;}
 
   /* ---------- MINISTER GRID ---------- */
   .grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(270px,1fr)); gap:14px;}
+  #view-cabinet .grid{ grid-template-columns:repeat(3,1fr); gap:20px; }
+  .min-more{ border:3px dashed var(--ink); background:var(--paper); padding:20px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px; text-align:center; cursor:pointer; text-decoration:none; color:var(--ink); }
+  .min-more:hover{ background:var(--amber-soft); }
+  .min-more-n{ font-family:'Archivo Black',sans-serif; font-size:30px; line-height:1; }
+  .min-more-t{ font-size:12.5px; font-weight:700; text-transform:uppercase; }
+  @media (max-width:900px){ #view-cabinet .grid{ grid-template-columns:repeat(2,1fr); } }
+  @media (max-width:640px){ #view-cabinet .grid{ grid-template-columns:1fr; } }
   .m-card{
-    background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+    background:var(--card); border:3px solid var(--line); border-radius:var(--radius);
     padding:16px; position:relative; box-shadow:var(--shadow);
   }
   .m-card .top-row{display:flex; justify-content:space-between; align-items:flex-start; gap:8px;}
   .m-card .avatar, .depute-card .avatar{
-    width:40px;height:40px;border-radius:50%;
-    background:var(--amber-soft); color:var(--amber);
+    width:40px;height:40px;border-radius:0; border:2px solid var(--ink);
+    background:var(--cyan); color:var(--ink);
     display:flex;align-items:center;justify-content:center;
-    flex:none; text-decoration:none; transition:background 0.15s;
+    flex:none; text-decoration:none; transition:background 0.15s; font-family:'Archivo Black',sans-serif; font-size:14px;
   }
-  .m-card .avatar:hover, .depute-card .avatar:hover{background:var(--amber); color:#fff;}
+  .m-card .avatar:hover, .depute-card .avatar:hover{background:var(--yellow); color:var(--ink);}
   .m-card .avatar svg, .depute-card .avatar svg{width:18px; height:18px;}
-  .m-card h3{font-size:15px; font-family:'Inter',sans-serif; font-weight:600; margin:10px 0 2px;}
+  .m-card h3{font-size:15px; font-family:'IBM Plex Mono',monospace; font-weight:600; margin:10px 0 2px;}
   .m-card .role{font-size:12.5px; color:var(--slate); line-height:1.4; min-height:34px;}
-  .m-card .meta-row{display:flex; justify-content:space-between; align-items:center; margin-top:14px; padding-top:12px; border-top:1px dashed var(--line);}
-  .m-card .party{font-size:11px; font-family:'Inter',sans-serif; color:var(--slate); text-transform:uppercase; letter-spacing:0.04em;}
+  .mc-role-wrap{ min-height:34px; margin:9px 0 2px; }
+  .mc-role{ display:inline-block; font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.02em; border:2px solid var(--ink); padding:3px 9px; line-height:1.35; }
+  .m-card .meta-row{display:flex; justify-content:space-between; align-items:center; margin-top:14px; padding-top:12px; border-top:2px solid var(--ink);}
+  .m-card .party{font-size:11px; font-family:'IBM Plex Mono',monospace; color:var(--slate); text-transform:uppercase; letter-spacing:0.04em;}
   .follow-btn{
-    font-family:'Inter',sans-serif; font-size:11.5px; font-weight:600;
-    border:1px solid var(--line); background:var(--paper-2); color:var(--ink);
-    padding:6px 10px; border-radius:20px; cursor:pointer;
+    font-family:'IBM Plex Mono',monospace; font-size:11.5px; font-weight:700; text-transform:uppercase;
+    border:2px solid var(--ink); background:#fff; color:var(--ink);
+    padding:6px 11px; border-radius:0; cursor:pointer; box-shadow:2px 2px 0 var(--ink);
   }
-  .follow-btn.on{background:var(--ink); color:var(--paper-2); border-color:var(--ink);}
+  .follow-btn.on{background:var(--lime); color:var(--ink); border-color:var(--ink); box-shadow:none;}
   .bill-follow-row{display:flex; align-items:center; justify-content:flex-end; gap:10px; flex-wrap:wrap; margin-top:12px;}
   .follow-hint{font-size:11px; color:var(--slate); text-align:right;}
-  .vp-note{font-size:10.5px; color:var(--slate); background:var(--paper-2); border-radius:20px; padding:4px 9px; font-family:'Inter',sans-serif;}
+  .vp-note{font-size:10.5px; color:var(--slate); background:var(--paper-2); border-radius:20px; padding:4px 9px; font-family:'IBM Plex Mono',monospace;}
 
   /* ---------- BILLS ---------- */
   .bill{
-    background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+    background:var(--card); border:3px solid var(--line); border-radius:var(--radius);
     padding:18px 20px; margin-bottom:20px; cursor:pointer;
     box-shadow:var(--shadow); transition:border-color .15s, box-shadow .15s;
   }
-  .bill:hover{border-color:#D5D9E2; box-shadow:0 2px 4px rgba(16,24,40,0.05), 0 16px 40px -16px rgba(16,24,40,0.16);}
+  .bill:hover{transform:translate(2px,2px); box-shadow:3px 3px 0 var(--ink);}
   .bill .head{display:flex; justify-content:space-between; gap:16px; align-items:flex-start; flex-wrap:wrap;}
   .bill .head > div:first-child{flex:1 1 0; min-width:0;}
-  .bill .num{font-family:'Inter',sans-serif; font-size:12px; color:var(--gold); font-weight:600;}
-  .bill h3{font-family:'Inter',sans-serif; font-size:16px; font-weight:600; margin:4px 0 8px; max-width:640px; line-height:1.35;}
+  .bill .num{font-family:'IBM Plex Mono',monospace; font-size:13px; color:var(--ink); font-weight:700; background:var(--cyan); border:2px solid var(--ink); padding:1px 7px; display:inline-block;}
+  .bill h3{font-family:'IBM Plex Mono',monospace; font-size:16px; font-weight:600; margin:4px 0 8px; max-width:640px; line-height:1.35;}
   .bill .meta, .vote-card .meta{font-size:12px; color:var(--slate); margin-top:2px;}
   .bill .last-activity{
-    font-family:'Inter',sans-serif; font-size:11px; color:var(--gold);
+    font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--gold);
     margin:2px 0 6px; text-transform:uppercase; letter-spacing:0.02em;
   }
   .bill .last-activity b{color:var(--gold); font-weight:600;}
-  .bill .expand-hint, .vote-card .expand-hint{font-family:'Inter',sans-serif; font-size:10.5px; color:var(--gold); margin-top:10px; text-transform:uppercase; letter-spacing:0.03em;}
+  .bill .expand-hint, .vote-card .expand-hint{font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:var(--gold); margin-top:10px; text-transform:uppercase; letter-spacing:0.03em;}
   .vote-card .expand-hint{margin-top:18px;}
   .bill-summary{
-    display:none; margin-top:14px; padding-top:14px; border-top:1px dashed var(--line);
+    display:none; margin-top:14px; padding-top:14px; border-top:2px solid var(--ink);
   }
   .bill-summary.open{display:block;}
   .bill-summary p{font-size:13px; line-height:1.65; color:var(--ink); margin:0 0 12px;}
   .bill-summary .src-note{font-size:11px; color:var(--slate); margin:0 0 12px;}
   .bill-more{
     display:inline-flex; align-items:center; gap:6px;
-    font-family:'Inter',sans-serif; font-weight:600; font-size:12.5px;
-    background:var(--ink); color:var(--paper-2); text-decoration:none;
-    padding:8px 14px; border-radius:var(--radius);
+    font-family:'IBM Plex Mono',monospace; font-weight:700; font-size:12.5px; text-transform:uppercase;
+    background:var(--ink); color:var(--yellow); text-decoration:none;
+    padding:8px 14px; border-radius:0; border:2px solid var(--ink); box-shadow:3px 3px 0 var(--ink);
   }
   .status-pill{
-    font-family:'Inter',sans-serif; font-size:10.5px; text-transform:uppercase; letter-spacing:0.04em;
-    padding:5px 10px; border-radius:20px; white-space:nowrap; flex:none;
+    font-family:'IBM Plex Mono',monospace; font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.04em;
+    padding:3px 10px; border-radius:0; white-space:nowrap; flex:none; border:2px solid var(--ink);
   }
-  .status-sanctionne{background:var(--green-soft); color:var(--green);}
-  .status-encours{background:var(--amber-soft); color:var(--amber);}
-  .status-glace{background:var(--paper); color:var(--slate); border:1px solid var(--line);}
+  .status-sanctionne{background:var(--lime); color:var(--ink);}
+  .status-encours{background:var(--yellow); color:var(--ink);}
+  .status-glace{background:#fff; color:var(--ink); border:2px solid var(--ink);}
 
   .stepper{display:flex; gap:4px; margin-top:14px;}
   .stepper .step{flex:1; height:6px; background:var(--line); border-radius:2px; position:relative;}
@@ -314,26 +373,26 @@
   .stepper-labels span{flex:1; font-size:9.5px; color:var(--slate); text-align:center; line-height:1.2;}
 
   .vote-inline-block{margin-top:12px; padding-top:12px; border-top:1px dashed var(--line);}
-  .vote-inline-date{font-family:'Inter',sans-serif; font-size:11px; color:var(--slate); text-transform:uppercase; letter-spacing:0.02em; margin-bottom:6px;}
+  .vote-inline-date{font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--slate); text-transform:uppercase; letter-spacing:0.02em; margin-bottom:6px;}
 
   /* ---------- VOTES TAB ---------- */
-  .vote-card{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:18px 20px; margin-bottom:12px; cursor:pointer; box-shadow:var(--shadow); transition:border-color .15s, box-shadow .15s;}
-  .vote-card:hover{border-color:#D5D9E2; box-shadow:0 2px 4px rgba(16,24,40,0.05), 0 16px 40px -16px rgba(16,24,40,0.16);}
+  .vote-card{background:var(--card); border:3px solid var(--line); border-radius:var(--radius); padding:18px 20px; margin-bottom:12px; cursor:pointer; box-shadow:var(--shadow); transition:border-color .15s, box-shadow .15s;}
+  .vote-card:hover{transform:translate(2px,2px); box-shadow:3px 3px 0 var(--ink);}
   .vote-card .head{display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap;}
-  .vote-card h3{font-family:'Inter',sans-serif; font-size:15.5px; font-weight:600; margin:2px 0 10px; max-width:600px;}
-  .bar{height:22px; border-radius:3px; background:var(--paper); display:flex; overflow:hidden; border:1px solid var(--line); margin-top:8px;}
+  .vote-card h3{font-family:'IBM Plex Mono',monospace; font-size:15.5px; font-weight:600; margin:2px 0 10px; max-width:600px;}
+  .bar{height:18px; border-radius:0; background:var(--paper); display:flex; overflow:hidden; border:2px solid var(--ink); margin-top:8px;}
   .bar .seg{height:100%;}
-  .bar .seg.pour{background:var(--green);}
-  .bar .seg.contre{background:var(--red);}
-  .bar .seg.abst{background:var(--slate); opacity:0.5;}
-  .tally{display:flex; flex-direction:column; gap:6px; margin-top:10px; font-family:'Inter',sans-serif; font-size:12px;}
+  .bar .seg.pour{background:var(--lime);}
+  .bar .seg.contre{background:var(--pink);}
+  .bar .seg.abst{background:var(--ink); opacity:0.35;}
+  .tally{display:flex; flex-direction:column; gap:6px; margin-top:10px; font-family:'IBM Plex Mono',monospace; font-size:12px;}
   @media (max-width:640px){ .tally{gap:14px;} }
   .tally b{font-size:14px;}
   .tally-row{display:flex; align-items:center; flex-wrap:wrap; gap:8px;}
   .tally-row .tally-label{flex:none;}
   .tally-breakdown{display:flex; flex-wrap:wrap; gap:2px 10px; color:var(--slate);}
   .tally-plus{
-    font-family:'Inter',sans-serif; font-size:11px; font-weight:600; color:#fff;
+    font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:600; color:#fff;
     background:var(--ink); border:none; border-radius:50%; width:18px; height:18px;
     display:inline-flex; align-items:center; justify-content:center; cursor:pointer; flex:none;
   }
@@ -343,131 +402,155 @@
   .nominal-detail.open{display:block;}
   .nominal-party-group{margin-bottom:10px;}
   .nominal-party-group:last-child{margin-bottom:0;}
-  .nominal-party-header{font-family:'Inter',sans-serif; font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.03em; margin-bottom:6px;}
+  .nominal-party-header{font-family:'IBM Plex Mono',monospace; font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.03em; margin-bottom:6px;}
   .nominal-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:6px;}
   .nominal-row{
     display:flex; justify-content:space-between; align-items:center; gap:8px;
-    background:var(--paper-2); border:1px solid var(--line); border-radius:var(--radius);
+    background:#fff; border:2px solid var(--ink); border-radius:0;
     padding:7px 10px; font-size:12px;
   }
 
   .depute-card{
-    background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+    background:var(--card); border:3px solid var(--line); border-radius:var(--radius);
     padding:16px; position:relative;
   }
   .depute-card .top-row{display:flex; justify-content:space-between; align-items:flex-start; gap:8px;}
-  .depute-card h3{font-family:'Inter',sans-serif; font-size:14.5px; font-weight:600; margin:9px 0 2px;}
+  .depute-card h3{font-family:'IBM Plex Mono',monospace; font-size:14.5px; font-weight:600; margin:9px 0 2px;}
   .depute-card .meta{font-size:12px; color:var(--slate); min-height:17px;}
-  .depute-card .meta-row{display:flex; justify-content:space-between; align-items:center; margin-top:12px; padding-top:10px; border-top:1px dashed var(--line);}
+  .depute-card .meta-row{display:flex; justify-content:space-between; align-items:center; margin-top:12px; padding-top:10px; border-top:2px solid var(--ink);}
   .depute-party{
-    font-family:'Inter',sans-serif; font-size:10.5px; font-weight:600; text-transform:uppercase;
-    padding:5px 10px; border-radius:20px; flex:none;
+    font-family:'IBM Plex Mono',monospace; font-size:10.5px; font-weight:700; text-transform:uppercase;
+    padding:3px 9px; border-radius:0; flex:none; border:2px solid var(--ink);
   }
   .depute-email{
-    font-family:'Inter',sans-serif; font-size:10.5px; color:var(--slate);
+    font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:var(--slate);
     text-decoration:none; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
     max-width:150px;
   }
   .depute-email:hover{color:var(--ink); text-decoration:underline;}
   .party-filters{display:flex; gap:6px; flex-wrap:wrap; align-items:center;}
   .party-chip{
-    font-family:'Inter',sans-serif; font-weight:600; font-size:11px;
-    padding:8px 12px; border-radius:20px; cursor:pointer; border:1.5px solid transparent;
-    background:var(--card); user-select:none;
+    font-family:'IBM Plex Mono',monospace; font-weight:700; font-size:11px; text-transform:uppercase;
+    padding:7px 12px; border-radius:0; cursor:pointer; border:2px solid var(--ink);
+    background:#fff; user-select:none;
   }
   .party-chip.active{color:#fff !important;}
+  #legendBtn.active{ background:var(--yellow); color:var(--ink) !important; }
+  #senateChip.active{ background:var(--cyan); color:var(--ink) !important; }
 
   .status-filters, .step-filters{display:flex; gap:6px; flex-wrap:wrap; align-items:center; margin-top:10px;}
   .step-filters{margin-top:6px;}
   .status-chip, .step-chip{
-    font-family:'Inter',sans-serif; font-weight:600; font-size:11px;
-    padding:7px 12px; border-radius:20px; cursor:pointer; user-select:none;
-    border:1.5px solid var(--line); background:var(--card); color:var(--slate);
+    font-family:'IBM Plex Mono',monospace; font-weight:700; font-size:11px; text-transform:uppercase;
+    padding:6px 12px; border-radius:0; cursor:pointer; user-select:none;
+    border:2px solid var(--ink); background:#fff; color:var(--ink);
   }
   .step-chip{font-size:10.5px; padding:5px 10px; text-transform:none; font-weight:500;}
-  .status-chip.active{background:var(--ink); border-color:var(--ink); color:#fff;}
-  .step-chip.active{background:var(--ink); border-color:var(--ink); color:#fff;}
+  .status-chip.active{background:var(--yellow); border-color:var(--ink); color:var(--ink);}
+  .step-chip.active{background:var(--yellow); border-color:var(--ink); color:var(--ink);}
   .filter-hamburger{display:none;}
   .sort-toggle{
-    font-family:'Inter',sans-serif; font-size:11px; font-weight:600;
-    padding:8px 14px; border-radius:var(--radius); cursor:pointer;
-    border:1px solid var(--line); background:var(--card); color:var(--ink);
+    font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase;
+    padding:7px 14px; border-radius:0; cursor:pointer;
+    border:2px solid var(--ink); background:#fff; color:var(--ink); box-shadow:2px 2px 0 var(--ink);
     white-space:nowrap;
   }
   .sort-toggle:hover{border-color:var(--ink);}
 
   .no-results{font-size:13px; color:var(--slate); padding:20px 0;}
+  .filters-row{ display:flex; align-items:center; gap:10px 8px; flex-wrap:wrap; margin-bottom:20px; }
+  .deputes-pager{ display:flex; align-items:center; gap:8px 10px; flex-wrap:wrap; margin-left:auto; font-family:'IBM Plex Mono',monospace; font-size:12px; font-weight:700; text-transform:uppercase; }
+  .deputes-pager:empty{ display:none; }
+  .deputes-pager .count{ color:var(--slate); }
+  .deputes-pager .controls{ display:flex; gap:6px; }
+  .pager-btn{ border:2px solid var(--ink); background:#fff; padding:6px 12px; cursor:pointer; font-family:inherit; font-weight:700; font-size:12px; text-transform:uppercase; border-radius:0; }
+  .pager-btn:hover:not(:disabled){ background:var(--yellow); }
+  .pager-btn:disabled{ opacity:.4; cursor:default; }
+  .pager-cur{ border:2px solid var(--ink); background:var(--ink); color:var(--paper); padding:6px 12px; }
+  #deputesList{ scroll-margin-top:24px; }
 
-  .lexique-item{padding:16px 0; border-bottom:1px solid var(--line);}
-  .lexique-item:last-child{border-bottom:none;}
-  .lexique-item dt{font-family:'Inter',sans-serif; font-size:15.5px; font-weight:600; margin-bottom:5px;}
+  .lexique-grid{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:14px;}
+  @media(max-width:640px){ .lexique-grid{grid-template-columns:1fr;} }
+  .lexique-item{padding:20px 22px; background:#fff; border:3px solid var(--ink); box-shadow:6px 6px 0 var(--ink); margin-bottom:12px;}
+  .lexique-grid .lexique-item{margin-bottom:0;}
+  .lexique-item dt{font-family:'IBM Plex Mono',monospace; font-size:20px; font-weight:600; margin-bottom:0; line-height:1.15;}
+  .lex-head{ display:flex; align-items:flex-start; justify-content:space-between; gap:12px; margin-bottom:10px; }
+  .lex-badge{ flex:none; font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; border:2px solid var(--ink); padding:2px 9px; white-space:nowrap; color:var(--ink); }
+  .lex-cats{ display:flex; gap:8px; flex-wrap:wrap; margin:14px 0 4px; }
+  .lex-chip{ font-family:'IBM Plex Mono',monospace; font-size:12px; font-weight:700; text-transform:uppercase; border:2px solid var(--ink); background:#fff; color:var(--ink); padding:6px 12px; cursor:pointer; user-select:none; }
+  .lex-chip:hover{ background:var(--amber-soft); }
+  .lex-chip.active{ background:var(--ink); color:var(--paper); }
+  .lex-chip.on{ color:var(--ink); }
+  .ppl-role{ font-family:'IBM Plex Mono',monospace; font-size:12px; font-weight:700; text-transform:uppercase; color:var(--slate); margin-bottom:6px; }
+  .ppl-tag{ margin-top:10px; display:inline-block; font-family:'IBM Plex Mono',monospace; font-size:10px; text-transform:uppercase; letter-spacing:.04em; color:var(--ink); background:var(--paper-2); border:2px solid var(--ink); padding:2px 9px; }
+  .ppl-badge{ white-space:normal; max-width:48%; text-align:right; line-height:1.25; }
   .news-item{display:flex; gap:16px; padding:14px 0; border-bottom:1px solid var(--line);}
   .news-item:last-child{border-bottom:none;}
-  .news-date{flex:none; width:90px; font-family:'Inter',sans-serif; font-size:11px; color:var(--gold); padding-top:2px;}
+  .news-date{flex:none; width:90px; font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--gold); padding-top:2px;}
   .news-body p{margin:0; font-size:13.5px; line-height:1.55; color:var(--ink);}
   .calendar-box{
     background:var(--ink); color:var(--paper-2); border-radius:var(--radius);
     padding:20px 22px; margin-bottom:26px;
   }
-  .calendar-box h3{font-family:'Inter',sans-serif; font-size:16px; font-weight:600; margin:0 0 10px;}
+  .calendar-box h3{font-family:'IBM Plex Mono',monospace; font-size:16px; font-weight:600; margin:0 0 10px;}
   .calendar-box p{font-size:12.5px; line-height:1.65; color:#C9CEDD; margin:0 0 8px;}
-  .calendar-box .status{font-family:'Inter',sans-serif; font-size:11.5px; color:#E4C77D; margin-bottom:12px;}
+  .calendar-box .status{font-family:'IBM Plex Mono',monospace; font-size:11.5px; font-weight:700; color:var(--cyan); margin-bottom:12px;}
 
   .promesse-card{
-    background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+    background:var(--card); border:3px solid var(--line); border-radius:var(--radius);
     padding:18px 20px; margin-bottom:14px;
   }
   .promesse-grid{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:12px;}
   @media (max-width:640px){.promesse-grid{grid-template-columns:1fr;}}
   .promesse-col{background:var(--paper-2); border-radius:var(--radius); padding:14px 16px;}
-  .promesse-col .tag{font-family:'Inter',sans-serif; font-size:10px; text-transform:uppercase; letter-spacing:0.03em; color:var(--gold); display:block; margin-bottom:8px;}
+  .promesse-col .tag{font-family:'IBM Plex Mono',monospace; font-size:10px; text-transform:uppercase; letter-spacing:0.03em; color:var(--gold); display:block; margin-bottom:8px;}
   .promesse-col p{font-size:13px; line-height:1.55; color:var(--ink); margin:0 0 8px;}
   .promesse-col a{font-size:11.5px; color:var(--slate); text-decoration:underline;}
 
   .role-card{
-    background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+    background:var(--card); border:3px solid var(--line); border-radius:var(--radius);
     padding:16px 18px; margin-bottom:10px; display:flex; justify-content:space-between; gap:14px; align-items:flex-start; flex-wrap:wrap;
   }
-  .role-card h3{font-family:'Inter',sans-serif; font-size:15px; font-weight:600; margin:0 0 3px;}
-  .role-card .role{font-size:11.5px; color:var(--gold); font-family:'Inter',sans-serif; text-transform:uppercase; letter-spacing:0.02em; margin-bottom:6px;}
+  .role-card h3{font-family:'IBM Plex Mono',monospace; font-size:15px; font-weight:600; margin:0 0 3px;}
+  .role-card .role{font-size:11.5px; color:var(--gold); font-family:'IBM Plex Mono',monospace; text-transform:uppercase; letter-spacing:0.02em; margin-bottom:6px;}
   .role-card p{font-size:12.5px; color:var(--slate); line-height:1.55; margin:0; max-width:520px;}
   .role-badge{
-    font-family:'Inter',sans-serif; font-size:10px; text-transform:uppercase; letter-spacing:0.03em;
-    background:var(--amber-soft); color:var(--amber); padding:4px 9px; border-radius:20px; flex:none;
+    font-family:'IBM Plex Mono',monospace; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.03em;
+    background:var(--cyan); color:var(--ink); padding:3px 9px; border-radius:0; flex:none; border:2px solid var(--ink);
   }
-  .role-group-title{font-family:'Inter',sans-serif; font-size:14px; font-weight:600; margin:24px 0 10px; color:var(--slate);}
+  .role-group-title{font-family:'IBM Plex Mono',monospace; font-size:14px; font-weight:600; margin:24px 0 10px; color:var(--slate);}
   .petition-card{
-    background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+    background:var(--card); border:3px solid var(--line); border-radius:var(--radius);
     padding:18px 20px; margin-bottom:12px;
   }
-  .petition-card h3{font-family:'Inter',sans-serif; font-size:15.5px; font-weight:600; margin:0 0 8px; max-width:600px; line-height:1.4;}
+  .petition-card h3{font-family:'IBM Plex Mono',monospace; font-size:15.5px; font-weight:600; margin:0 0 8px; max-width:600px; line-height:1.4;}
   .petition-meta{display:flex; gap:18px; flex-wrap:wrap; font-size:12px; color:var(--slate); margin-bottom:12px;}
-  .petition-meta b{color:var(--ink); font-family:'Inter',sans-serif;}
-  .petition-progress{height:8px; background:var(--paper-2); border-radius:4px; overflow:hidden; margin-bottom:8px;}
-  .petition-progress .fill{height:100%; background:var(--gold);}
-  .petition-count{font-family:'Inter',sans-serif; font-size:12.5px; color:var(--gold); font-weight:600;}
+  .petition-meta b{color:var(--ink); font-family:'IBM Plex Mono',monospace;}
+  .petition-progress{height:10px; background:#fff; border:2px solid var(--ink); border-radius:0; overflow:hidden; margin-bottom:8px;}
+  .petition-progress .fill{height:100%; background:var(--lime);}
+  .petition-count{font-family:'IBM Plex Mono',monospace; font-size:12.5px; color:var(--gold); font-weight:600;}
 
   .role-group-title:first-child{margin-top:0;}
 
-  .lexique-item dd{font-size:13px; line-height:1.65; color:var(--ink); margin:0; max-width:680px;}
+  .lexique-item dd{font-size:13.5px; line-height:1.6; color:var(--ink); margin:0; max-width:680px;}
 
   .info-box{
-    border:1px dashed var(--line); border-radius:var(--radius); padding:14px 16px;
-    background:var(--paper-2); font-size:12.5px; color:var(--slate); line-height:1.55; margin-top:14px;
+    border:2px solid var(--ink); border-radius:0; padding:14px 16px;
+    background:var(--paper-2); font-size:12.5px; color:var(--ink); line-height:1.55; margin-top:14px;
   }
   .info-box b{color:var(--ink);}
   .account-box{
-    border:1px solid var(--line); border-radius:var(--radius); padding:18px 20px;
+    border:3px solid var(--ink); border-radius:0; box-shadow:5px 5px 0 var(--ink); padding:18px 20px;
     background:var(--card); margin-bottom:20px;
   }
   .account-box .account-row{display:flex; gap:10px; flex-wrap:wrap; align-items:center;}
   .account-box input[type="email"], .account-box input[type="text"]{
-    font-family:'Inter',sans-serif; font-size:13px; border:1px solid var(--line);
+    font-family:'IBM Plex Mono',monospace; font-size:13px; border:1px solid var(--line);
     background:var(--paper); padding:9px 12px; border-radius:var(--radius); color:var(--ink);
     flex:1 1 220px; min-width:180px;
   }
   .account-box .account-btn{
-    font-family:'Inter',sans-serif; font-weight:600; font-size:12.5px;
+    font-family:'IBM Plex Mono',monospace; font-weight:600; font-size:12.5px;
     background:var(--ink); color:#fff; border:none; cursor:pointer;
     padding:9px 16px; border-radius:var(--radius); flex:none;
   }
@@ -479,56 +562,131 @@
   .issue-form{display:flex; gap:10px; margin-bottom:20px; flex-wrap:wrap;}
   .issue-form input{flex:1; min-width:220px;}
   .issue-form button{
-    font-family:'Inter',sans-serif; font-weight:600; font-size:13px;
+    font-family:'IBM Plex Mono',monospace; font-weight:600; font-size:13px;
     background:var(--ink); color:var(--paper-2); border:none; border-radius:var(--radius);
     padding:10px 18px; cursor:pointer;
   }
-  .issue-card{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:16px 18px; margin-bottom:10px; display:flex; gap:16px; align-items:flex-start;}
+  .issue-card{background:var(--card); border:3px solid var(--line); border-radius:var(--radius); padding:16px 18px; margin-bottom:10px; display:flex; gap:16px; align-items:flex-start;}
   .vote-btn{
     flex:none; display:flex; flex-direction:column; align-items:center; gap:2px;
     background:var(--paper-2); border:1px solid var(--line); border-radius:var(--radius);
-    padding:9px 15px; cursor:pointer; font-family:'Inter',sans-serif; user-select:none;
+    padding:9px 15px; cursor:pointer; font-family:'IBM Plex Mono',monospace; user-select:none;
   }
   .vote-btn.voted{background:var(--ink); color:var(--paper-2); border-color:var(--ink);}
   .vote-btn .count{font-size:17px; font-weight:600; line-height:1;}
   .vote-btn .label{font-size:9px; text-transform:uppercase; opacity:0.7; margin-top:3px;}
-  .issue-body h3{font-family:'Inter',sans-serif; font-size:15px; font-weight:600; margin:2px 0 4px;}
+  .issue-body h3{font-family:'IBM Plex Mono',monospace; font-size:15px; font-weight:600; margin:2px 0 4px;}
   .issue-body .meta{font-size:11.5px; color:var(--slate);}
 
   .roadmap-item{display:flex; gap:16px; padding:16px 0; border-bottom:1px solid var(--line);}
   .roadmap-item:last-child{border-bottom:none;}
-  .roadmap-status{flex:none; width:120px; font-family:'Inter',sans-serif; font-size:10.5px; text-transform:uppercase; letter-spacing:0.03em; padding-top:2px;}
+  .roadmap-status{flex:none; width:120px; font-family:'IBM Plex Mono',monospace; font-size:10.5px; text-transform:uppercase; letter-spacing:0.03em; padding-top:2px;}
   .roadmap-status.now{color:var(--green);}
   .roadmap-status.next{color:var(--gold);}
   .roadmap-status.later{color:var(--slate);}
   .roadmap-status.dropped{color:#B9BDC7;}
-  .roadmap-body h4{font-family:'Inter',sans-serif; font-size:14.5px; font-weight:600; margin:0 0 4px; display:flex; align-items:center; gap:8px;}
+  .roadmap-body h4{font-family:'IBM Plex Mono',monospace; font-size:14.5px; font-weight:600; margin:0 0 4px; display:flex; align-items:center; gap:8px;}
   .chamber-toggle{ display:flex; gap:8px; margin:16px 0 12px; flex-wrap:wrap; }
-  .chamber-btn{ font-family:'Inter',sans-serif; font-size:12.5px; padding:7px 15px; border:1px solid var(--line); border-radius:999px; background:var(--card); color:var(--slate); cursor:pointer; transition:background .15s, color .15s; }
+  .chamber-btn{ font-family:'IBM Plex Mono',monospace; font-size:12.5px; padding:7px 15px; border:1px solid var(--line); border-radius:999px; background:var(--card); color:var(--slate); cursor:pointer; transition:background .15s, color .15s; }
   .chamber-btn:hover{ border-color:var(--gold); color:var(--gold); }
   .chamber-btn.on{ background:var(--gold); color:#fff; border-color:var(--gold); }
-  .vote-list-panel{ background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:2px 16px; }
+  .vote-list-panel{ background:var(--card); border:3px solid var(--line); border-radius:var(--radius); padding:2px 16px; }
   .vote-row{ padding:11px 2px; border-top:1px solid var(--line); }
   .vote-row:first-child{ border-top:none; }
   .vote-row-head{ display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; }
   .vote-row-line{ font-size:13px; }
-  .vote-row-date{ font-family:'Inter',sans-serif; color:var(--slate); }
+  .vote-row-date{ font-family:'IBM Plex Mono',monospace; color:var(--slate); }
   .vote-row-toggle{ margin-left:auto; white-space:nowrap; }
   .vote-row-who{ font-size:11px; color:var(--slate); opacity:.7; }
   .vote-row-sub{ font-size:12px; color:var(--slate); margin-top:3px; }
   .vote-row-sub a{ color:var(--gold); }
-  .challenge-panel{ background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:2px 14px; }
+  .challenge-band{ background:var(--yellow); border:none; border-bottom:5px solid var(--ink); box-shadow:none; padding:24px var(--gutter) 28px; margin:0 calc(-1 * var(--gutter)) 0; }
+  .cb-head{ display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:6px; flex-wrap:wrap; }
+  .challenge-band h2{ background:none !important; border:none !important; box-shadow:none !important; padding:0 !important; font-size:26px !important; }
+  .cb-cta{ border:3px solid var(--ink); background:var(--ink); color:var(--yellow); padding:9px 16px; font-family:'IBM Plex Mono',monospace; font-weight:700; font-size:12.5px; text-transform:uppercase; cursor:pointer; box-shadow:4px 4px 0 var(--ink); transition:transform .08s, box-shadow .08s; }
+  .cb-cta:hover{ background:var(--pink); color:var(--ink); transform:translate(2px,2px); box-shadow:2px 2px 0 var(--ink); }
+  .cb-sub{ font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:0.04em; margin-bottom:0; }
+  .cb-subrow{ display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:18px; }
+  .cb-more{ flex:none; width:36px; height:36px; border:3px solid var(--ink); background:var(--ink); color:var(--yellow); font-family:'Archivo Black',sans-serif; font-size:20px; line-height:1; cursor:pointer; box-shadow:3px 3px 0 var(--ink); }
+  .cb-more:hover{ background:var(--pink); color:var(--ink); transform:translate(2px,2px); box-shadow:1px 1px 0 var(--ink); }
+  @keyframes challengeSwap{ 0%{opacity:1; transform:translateX(0);} 42%{opacity:0; transform:translateX(-18px);} 58%{opacity:0; transform:translateX(18px);} 100%{opacity:1; transform:translateX(0);} }
+  .challenge-swapping{ animation:challengeSwap .44s cubic-bezier(.4,0,.2,1); }
+  .challenge-viewport{ overflow:hidden; }
+  .challenge-track{ display:flex; gap:16px; will-change:transform; }
+  .challenge-track .challenge-card{ flex:0 0 calc((100% - 32px)/3); }
+  /* ---- Aperçu : grille 3 colonnes (comme le proto) ---- */
+  .apercu-3col{ display:grid; grid-template-columns:300px 1fr 280px; margin:0 calc(-1 * var(--gutter)) 28px; }
+  .a3-left{ border-right:3px solid var(--ink); padding:22px; display:flex; flex-direction:column; gap:14px; }
+  .a3-left .news-item{ flex-direction:column; gap:3px; padding:11px 0; }
+  .a3-left .news-date{ width:auto; padding-top:0; }
+  .a3-left .news-body p{ font-size:12.5px; line-height:1.5; }
+  .a3-main{ border-right:3px solid var(--ink); padding:22px 24px; min-width:0; }
+  .a3-right{ padding:22px 20px; background:#fff; }
+  @media (max-width:900px){ .apercu-3col{ grid-template-columns:1fr; } .a3-left, .a3-main{ border-right:none; border-bottom:3px solid var(--ink); } }
+  .a3-hero{ font-family:'Archivo Black',sans-serif !important; font-size:28px; line-height:1.05; text-transform:uppercase; margin:0; }
+  .a3-hero .hlp{ background:var(--pink); padding:0 4px; }
+  .a3-tagline{ margin:0; font-size:13px; line-height:1.55; color:var(--ink); }
+  .a3-stats{ border:3px solid var(--ink); background:#fff; padding:14px 16px; box-shadow:5px 5px 0 var(--cyan); }
+  .a3-stats-h{ font-size:11px; font-weight:700; text-transform:uppercase; margin-bottom:8px; }
+  .a3-stat{ display:flex; justify-content:space-between; align-items:center; font-size:13px; border-bottom:1px solid var(--ink); padding:6px 4px; cursor:pointer; text-decoration:none; color:var(--ink); }
+  .a3-stat:last-child{ border-bottom:none; }
+  .a3-stat:hover{ background:var(--amber-soft); }
+  .a3-stat strong{ font-family:'IBM Plex Mono',monospace; }
+  .a3-explore{ display:block; text-align:center; background:var(--ink); color:var(--paper); padding:12px; font-weight:700; font-size:13px; text-transform:uppercase; cursor:pointer; text-decoration:none; border:3px solid var(--ink); }
+  .a3-explore:hover{ background:var(--lime); color:var(--ink); }
+  .a3-main-head{ display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:14px; }
+  .a3-main-head h2{ font-family:'Archivo Black',sans-serif !important; font-size:20px; text-transform:uppercase; margin:0; background:none !important; border:none !important; box-shadow:none !important; padding:0 !important; }
+  .a3-seeall{ font-size:11px; text-transform:uppercase; color:var(--slate); font-weight:700; cursor:pointer; text-decoration:none; white-space:nowrap; }
+  .a3-seeall:hover{ color:var(--ink); }
+  .a3-tiles{ display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:16px; }
+  @media (max-width:560px){ .a3-tiles{ grid-template-columns:1fr; } }
+  .a3-tile{ border:3px solid var(--ink); background:#fff; padding:14px 16px; display:block; cursor:pointer; text-decoration:none; box-shadow:4px 4px 0 var(--ink); }
+  .a3-tile:hover{ background:var(--amber-soft); transform:translate(2px,2px); box-shadow:2px 2px 0 var(--ink); }
+  .a3-tile-tag{ font-size:11px; font-weight:700; text-transform:uppercase; border:2px solid var(--ink); display:inline-block; padding:2px 8px; margin-bottom:8px; }
+  .a3-tile p{ margin:0; font-size:13px; line-height:1.5; font-weight:600; color:var(--ink); }
+  .a3-hiw-h{ font-family:'Archivo Black',sans-serif !important; font-size:18px; text-transform:uppercase; border-bottom:3px solid var(--ink); padding-bottom:8px; margin:0 0 12px; }
+  .a3-steps{ display:flex; flex-direction:column; gap:10px; }
+  .a3-step{ border:2px solid var(--ink); padding:10px 12px; background:var(--paper); }
+  .a3-step-n{ font-size:12px; font-weight:700; border:2px solid var(--ink); display:inline-block; padding:0 7px; margin-bottom:6px; font-family:'IBM Plex Mono',monospace; }
+  .a3-step p{ margin:0; font-size:12.5px; font-weight:600; line-height:1.45; color:var(--ink); }
+  /* Aperçu : lignes compactes de projets de loi (déplient le détail au clic) */
+  .ab-row{ border:3px solid var(--ink); background:#fff; margin-bottom:10px; box-shadow:4px 4px 0 var(--ink); }
+  .ab-row:last-child{ margin-bottom:0; }
+  .ab-head{ display:flex; align-items:center; gap:10px; padding:11px 14px; cursor:pointer; }
+  .ab-head:hover{ background:var(--amber-soft); }
+  .ab-num{ flex:none; font-family:'IBM Plex Mono',monospace; font-weight:700; font-size:13px; background:var(--cyan); border:2px solid var(--ink); padding:1px 7px; white-space:nowrap; }
+  .ab-title{ flex:1; min-width:0; font-size:13.5px; font-weight:600; line-height:1.35; }
+  .ab-caret{ flex:none; font-size:11px; transition:transform .15s; }
+  .ab-row.open .ab-caret{ transform:rotate(180deg); }
+  .ab-detail{ display:none; }
+  .ab-row.open .ab-detail{ display:block; padding:12px 14px 14px; border-top:2px solid var(--ink); }
+  .ab-detail .bill{ border:none !important; box-shadow:none !important; padding:0 !important; margin:0 !important; cursor:default; background:transparent !important; }
+  .ab-detail .bill:hover{ transform:none !important; box-shadow:none !important; }
+  .ab-detail .bill > .head{ display:none !important; }
+  @media (max-width:900px){ .challenge-track .challenge-card{ flex:0 0 calc((100% - 16px)/2); } }
+  @media (max-width:640px){ .challenge-track .challenge-card{ flex:0 0 100%; } }
+  .challenge-card{ background:#fff; border:3px solid var(--ink); padding:16px 18px; box-shadow:5px 5px 0 var(--ink); display:flex; flex-direction:column; cursor:pointer; transition:transform .08s, box-shadow .08s; border-radius:0; }
+  .challenge-card:hover{ transform:translate(2px,2px); box-shadow:3px 3px 0 var(--ink); }
+  .cc-top{ display:flex; align-items:center; justify-content:space-between; gap:8px; margin-bottom:10px; }
+  .cc-num{ font-weight:700; font-size:14px; border:2px solid var(--ink); padding:2px 8px; white-space:nowrap; }
+  .cc-count{ background:var(--ink); color:var(--pink); font-size:11.5px; font-weight:700; padding:3px 9px; white-space:nowrap; }
+  .cc-title{ font-size:14px; font-weight:700; line-height:1.4; margin-bottom:10px; }
+  .cc-share{ display:flex; gap:6px; align-items:center; margin-bottom:8px; }
+  .cc-share button{ border:2px solid var(--ink); background:#fff; font-family:'IBM Plex Mono',monospace; font-weight:700; font-size:11px; padding:3px 8px; cursor:pointer; }
+  .cc-share button:hover{ background:var(--yellow); }
+  .cc-foot{ font-size:11px; font-weight:600; text-transform:uppercase; color:#555; margin-top:auto; padding-top:8px; border-top:2px solid var(--ink); }
+  .challenge-panel{ background:var(--card); border:3px solid var(--line); border-radius:var(--radius); padding:2px 14px; }
   .challenge-row{ display:flex; align-items:baseline; gap:11px; padding:11px 3px; border-top:1px solid var(--line); cursor:pointer; }
   .challenge-row:first-child{ border-top:none; }
   .challenge-row:hover{ background:var(--paper-2); }
-  .ch-rank{ font-family:'Inter',sans-serif; font-size:12px; color:var(--slate); min-width:16px; text-align:right; }
+  .ch-rank{ font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--slate); min-width:16px; text-align:right; }
   .ch-num{ font-weight:700; white-space:nowrap; }
   .ch-title{ flex:1; color:var(--slate); font-size:13px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
   .ch-count{ white-space:nowrap; font-size:12.5px; }
   @keyframes jumpFlash { 0%, 60% { background:#175CD318; box-shadow:0 0 0 3px #175CD355; } 100% { background:transparent; box-shadow:none; } }
   .jump-highlight{ animation: jumpFlash 1.8s ease-out; border-radius:6px; }
   .roadmap-plus{
-    font-family:'Inter',sans-serif; font-size:11px; font-weight:600; color:#fff;
+    font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:600; color:#fff;
     background:var(--ink); border:none; border-radius:50%; width:18px; height:18px;
     display:inline-flex; align-items:center; justify-content:center; cursor:pointer; flex:none;
   }
@@ -537,34 +695,35 @@
   .roadmap-recap p{font-size:12.5px; line-height:1.6; color:var(--ink); margin:0 0 10px; max-width:640px;}
   .roadmap-recap-table-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch;}
   .compare-table-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch; margin-top:14px;}
-  .compare-table{border-collapse:collapse; width:100%; min-width:560px; font-size:13px; background:var(--card); border:1px solid var(--line); border-radius:var(--radius); overflow:hidden;}
+  .compare-table{border-collapse:collapse; width:100%; min-width:560px; font-size:13px; background:var(--card); border:3px solid var(--line); border-radius:var(--radius); overflow:hidden;}
   .compare-table th, .compare-table td{text-align:left; padding:10px 14px; border-bottom:1px solid var(--line); vertical-align:top;}
-  .compare-table th{font-family:'Inter',sans-serif; font-size:11px; text-transform:uppercase; letter-spacing:0.03em; color:var(--slate); background:var(--paper-2);}
+  .compare-table th{font-family:'IBM Plex Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:0.03em; color:var(--slate); background:var(--paper-2);}
   .compare-table td:first-child{font-weight:600; color:var(--slate); white-space:nowrap;}
   .roadmap-recap table{border-collapse:collapse; width:100%; min-width:520px; font-size:12px;}
   .roadmap-recap th, .roadmap-recap td{text-align:left; padding:6px 10px; border-bottom:1px solid var(--line);}
-  .roadmap-recap th{font-family:'Inter',sans-serif; font-size:10.5px; text-transform:uppercase; color:var(--slate);}
+  .roadmap-recap th{font-family:'IBM Plex Mono',monospace; font-size:10.5px; text-transform:uppercase; color:var(--slate);}
   .roadmap-body p{font-size:12.5px; color:var(--slate); line-height:1.6; margin:0; max-width:640px;}
 
   footer{
-    max-width:1280px;margin:40px auto 0; padding:20px 28px 0; border-top:1px solid var(--line);
-    font-size:11.5px; color:var(--slate); display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;
+    max-width:1280px;margin:0 auto; padding:18px 28px 32px; border-top:3px solid var(--ink);
+    font-size:11px; color:var(--slate); text-transform:uppercase; letter-spacing:0.02em; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;
   }
   .footer-right-group{display:flex; align-items:center; gap:16px; flex-wrap:wrap;}
   .footer-gh{display:inline-flex; align-items:center; gap:5px; color:var(--slate); text-decoration:none;}
   .footer-gh:hover{color:var(--ink);}
-  .footer-coffee{cursor:pointer;}
+  .footer-coffee{cursor:pointer; background:var(--yellow); border:2px solid var(--ink); box-shadow:2px 2px 0 var(--ink); padding:5px 11px; color:var(--ink) !important; font-weight:700; text-transform:uppercase;}
+  .footer-coffee:hover{background:var(--pink);}
   .back-to-top{
     position:fixed; right:24px; bottom:24px; z-index:50;
-    width:46px; height:46px; border-radius:50%; border:none;
-    background:var(--ink); color:#fff; cursor:pointer;
+    width:46px; height:46px; border-radius:0; border:2px solid var(--ink);
+    background:var(--yellow); color:var(--ink); cursor:pointer;
     display:flex; align-items:center; justify-content:center;
-    box-shadow:0 4px 14px rgba(0,0,0,0.25);
+    box-shadow:3px 3px 0 var(--ink);
     opacity:0; visibility:hidden; transform:translateY(8px);
     transition:opacity 0.25s ease, transform 0.25s ease, visibility 0.25s, background 0.2s ease;
   }
   .back-to-top.visible{opacity:1; visibility:visible; transform:translateY(0);}
-  .back-to-top:hover{background:var(--gold);}
+  .back-to-top:hover{background:var(--pink);}
   @media (max-width:640px){
     .back-to-top{right:16px; bottom:16px; width:42px; height:42px;}
   }
@@ -572,13 +731,13 @@
 
   @media (max-width:640px){
     header.top{padding:24px 18px 18px;}
-    .app{padding:0 18px 60px;}
+    .app{--gutter:18px; padding:0 var(--gutter) 24px;}
     nav.tabs{padding:0 18px;}
     .hemicycle-wrap{flex-direction:column; align-items:flex-start;}
 
     .filter-hamburger{
       display:flex; align-items:center; gap:6px;
-      font-family:'Inter',sans-serif; font-weight:600; font-size:11.5px;
+      font-family:'IBM Plex Mono',monospace; font-weight:600; font-size:11.5px;
       padding:8px 14px; border-radius:20px; cursor:pointer;
       border:1.5px solid var(--line); background:var(--card); color:var(--ink);
       margin-top:10px; width:100%; justify-content:space-between;
@@ -594,17 +753,17 @@
 
   .font-size-ctrl{
     display:flex; align-items:center; gap:2px; flex:none;
-    background:var(--card); border:1px solid var(--line); border-radius:20px; padding:3px;
+    background:#fff; border:2px solid var(--ink); border-radius:0; padding:3px;
   }
   .font-size-ctrl button{
-    font-family:'Inter',sans-serif; font-weight:700; font-size:12px; color:var(--ink);
-    background:none; border:none; cursor:pointer; padding:6px 10px; border-radius:16px; line-height:1;
+    font-family:'IBM Plex Mono',monospace; font-weight:700; font-size:12px; color:var(--ink);
+    background:none; border:none; cursor:pointer; padding:6px 10px; border-radius:0; line-height:1;
   }
-  .font-size-ctrl button:hover{background:var(--paper-2);}
-  .font-size-ctrl #fontPct{font-family:'Inter',sans-serif; font-size:10.5px; color:var(--slate); min-width:34px; text-align:center;}
+  .font-size-ctrl button:hover{background:var(--yellow);}
+  .font-size-ctrl #fontPct{ display:none; }
 
   .lang-toggle{
-    font-family:'Inter',sans-serif; font-weight:600; font-size:12px;
+    font-family:'IBM Plex Mono',monospace; font-weight:600; font-size:12px;
     background:var(--card); color:var(--ink); border:1px solid var(--line); border-radius:20px;
     padding:8px 14px; cursor:pointer; flex:none;
   }
@@ -613,7 +772,7 @@
   /* ---------- HAMBURGER (mobile) ---------- */
   .hamburger{
     display:none; flex:none; width:36px; height:36px;
-    border:1px solid var(--line); border-radius:var(--radius); background:var(--card);
+    border:2px solid var(--ink); border-radius:0; background:#fff;
     align-items:center; justify-content:center; gap:4px; flex-direction:column; cursor:pointer;
   }
   .hamburger span{display:block; width:18px; height:1.5px; background:var(--ink); transition:transform 0.2s, opacity 0.2s;}
@@ -637,7 +796,7 @@
     nav.tabs button.active{border-left-color:var(--gold); border-bottom-color:var(--line); background:var(--card);}
     nav.tabs .close-menu{
       display:flex; justify-content:flex-end; padding:0 18px 12px;
-      font-family:'Inter',sans-serif; font-size:12px; color:var(--slate); cursor:pointer;
+      font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--slate); cursor:pointer;
     }
   }
 
@@ -661,18 +820,20 @@
     overflow:hidden; max-height:180px;
     transition:max-height 0.22s ease, opacity 0.18s ease, padding 0.22s ease;
   }
-  #dq-topbar nav.tabs{border-bottom:none;}
+  #dq-topbar nav.tabs{border-bottom:5px solid var(--ink);}
   #dq-topbar.compact header.top{
     max-height:0; opacity:0; padding-top:0; padding-bottom:0; pointer-events:none;
   }
   .tabs-minibrand{
     display:none; align-items:center; gap:8px;
     margin-left:28px; margin-right:4px; flex:none; cursor:pointer;
-    font-family:'Inter',sans-serif; font-weight:600; font-size:15px;
+    font-family:'IBM Plex Mono',monospace; font-weight:600; font-size:15px;
     color:var(--ink); white-space:nowrap;
   }
   .tabs-minibrand svg{width:22px; height:22px; flex:none;}
-  #dq-topbar.compact .tabs-minibrand{display:inline-flex;}
+  /* Au défilement, on ne fait PAS glisser « DossierCanada » dans la barre :
+     le mini-logo reste masqué, la nav garde ses 6 onglets sur une ligne. */
+  #dq-topbar.compact .tabs-minibrand{display:none !important;}
   #dq-topbar.compact nav.tabs button[data-view="apercu"]{margin-left:0 !important;}
   /* La barre collante couvre le haut des cibles de saut (Aller à…) */
   .view, [id^="sec-"]{scroll-margin-top:64px;}
@@ -693,34 +854,31 @@
 <body>
 
 <div id="dq-topbar">
+<div class="dq-ticker"><div><span>&nbsp;<span style="color:var(--yellow)">●</span> 45e législature — 1re session&nbsp;&nbsp;&nbsp;<span style="color:var(--pink)">●</span> votes nominatifs enregistrés&nbsp;&nbsp;&nbsp;<span style="color:var(--cyan)">●</span> projets de loi suivis&nbsp;&nbsp;&nbsp;<span style="color:var(--lime)">●</span> projets challengés par les citoyen·ne·s&nbsp;&nbsp;&nbsp;<span style="color:var(--yellow)">●</span> site citoyen indépendant · vraies données publiques&nbsp;&nbsp;&nbsp;</span><span>&nbsp;<span style="color:var(--yellow)">●</span> 45e législature — 1re session&nbsp;&nbsp;&nbsp;<span style="color:var(--pink)">●</span> votes nominatifs enregistrés&nbsp;&nbsp;&nbsp;<span style="color:var(--cyan)">●</span> projets de loi suivis&nbsp;&nbsp;&nbsp;<span style="color:var(--lime)">●</span> projets challengés par les citoyen·ne·s&nbsp;&nbsp;&nbsp;<span style="color:var(--yellow)">●</span> site citoyen indépendant · vraies données publiques&nbsp;&nbsp;&nbsp;</span></div></div>
 <header class="top">
-  <div class="brand-col">
-  <div class="brand" onclick="goToTab('apercu')" role="button" tabindex="0" aria-label="Retour à l'aperçu">
-    <div class="brand-mark">
-      <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="#C8102E"/><path d="M9 12 L16 12 L19 16 L31 16 L31 30 L9 30 Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/></svg>
-    </div>
-    <div class="brand-text">
-      <h1>DossierCanada</h1>
-      <p data-i18n="brand.tagline">Qui siège, qui légifère, qui vote quoi</p>
-    </div>
+  <div class="header-left">
+    <span class="header-date" id="headerDate"></span>
+    <div class="province-network" id="provinceNetwork"></div>
   </div>
-  <div class="province-network" id="provinceNetwork"></div>
+  <div class="brand" onclick="goToTab('apercu')" role="button" tabindex="0" aria-label="Retour à l'aperçu">Dossier<span class="hl">Canada</span></div>
+  <div class="header-right">
+    <div class="province-network" id="provinceNetworkR"></div>
+    <div class="font-size-ctrl" id="fontSizeCtrl">
+      <button id="fontMinus" aria-label="Réduire le texte">A−</button>
+      <span id="fontPct">100%</span>
+      <button id="fontPlus" aria-label="Agrandir le texte">A+</button>
+    </div>
+    <button class="lang-toggle" id="langToggle">EN</button>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
-  <div class="top-meta">
+  <span data-i18n="brand.tagline" style="display:none;">Qui siège, qui légifère, qui vote quoi</span>
+  <div class="top-meta" style="display:none;">
     <div class="stat"><b id="statMinistres">—</b><span data-i18n="stat.ministres">Ministres</span></div>
     <div class="stat"><b id="statProjets">—</b><span data-i18n="stat.projets">Projets de loi suivis</span></div>
     <div class="stat"><b id="statVotes">—</b><span data-i18n="stat.votes">Votes enregistrés</span></div>
   </div>
-  <div class="font-size-ctrl" id="fontSizeCtrl">
-    <button id="fontMinus" aria-label="Réduire le texte">A−</button>
-    <span id="fontPct">100%</span>
-    <button id="fontPlus" aria-label="Agrandir le texte">A+</button>
-  </div>
-  <button class="lang-toggle" id="langToggle">English</button>
-  <button class="hamburger" id="hamburgerBtn" aria-label="Ouvrir le menu" aria-expanded="false">
-    <span></span><span></span><span></span>
-  </button>
 </header>
+<script>(function(){var d=document.getElementById('headerDate'); if(d){try{d.textContent=new Date().toLocaleDateString('fr-CA',{weekday:'long',day:'numeric',month:'long',year:'numeric'});}catch(e){}}})();</script>
 
 <nav class="tabs">
   <div class="close-menu" id="closeMenuBtn"><span data-i18n="nav.close">Fermer</span> ✕</div>
@@ -730,9 +888,9 @@
   </span>
   <button class="active" data-view="apercu" style="margin-left:28px;"><span class="n">01</span><span data-i18n="nav.apercu">Aperçu</span></button>
   <button data-view="ministres"><span class="n">02</span><span data-i18n="nav.ministres">Députés</span></button>
-  <button data-view="projets"><span class="n">03</span><span data-i18n="nav.projets">Projets de loi</span></button>
-  <button data-view="votes"><span class="n">04</span><span data-i18n="nav.votes">Votes</span></button>
-  <button data-view="compte"><span class="n">05</span><span data-i18n="nav.compte">Compte &amp; à propos</span></button>
+  <button data-view="cabinet"><span class="n">03</span><span data-i18n="nav.cabinet">Ministres</span></button>
+  <button data-view="projets"><span class="n">04</span><span data-i18n="nav.projets">Projets de loi</span></button>
+  <button data-view="votes"><span class="n">05</span><span data-i18n="nav.votes">Votes</span></button>
   <button data-view="lexique" style="margin-right:28px;"><span class="n">06</span><span data-i18n="nav.lexique">Lexique</span></button>
 </nav>
 </div>
@@ -757,181 +915,98 @@
   <!-- APERÇU -->
   <section class="view active" id="view-apercu">
 
-    <div class="quick-nav" id="quickNav">
-      <span class="quick-nav-label" data-i18n="quicknav.label">Aller à :</span>
-      <a data-jump="sec-mission" data-i18n="quicknav.mission">Notre mission</a>
-      <a data-jump="sec-projets-recents" data-i18n="quicknav.projets">Projets de loi</a>
-      <a data-jump="sec-quoideneuf" data-i18n="quicknav.quoideneuf">Quoi de neuf</a>
-      <a data-jump="sec-petitions" data-i18n="quicknav.petitions">Pétitions</a>
-    </div>
-
-    <div class="intro-compact" id="introCompact" onclick="toggleIntro()">
-      <span data-i18n="intro.compact.text">Site citoyen indépendant · Notre mission</span>
-      <span class="snooze-pill" data-i18n="intro.show">😴 Afficher</span>
-    </div>
-
-    <div id="introBlock">
-      <div class="intro-toggle-row">
-        <span class="snooze-pill" id="introToggle" onclick="toggleIntro()"><span data-i18n="intro.hide">😴 Réduire</span></span>
-      </div>
-
-      <div class="mission-box" id="sec-mission">
-        <h2 data-i18n="mission.h">Notre mission — en quoi ce n'est pas juste une copie du site du Parlement</h2>
-        <p data-i18n="mission.intro"><b>Ceci est un site citoyen indépendant bâti avec de vraies données publiques du Parlement du Canada (LEGISinfo et Chambre des communes).</b></p>
-        <div class="compare">
-          <div class="compare-col">
-            <span class="tag" data-i18n="mission.assnat.tag">Les sites officiels font</span>
-            <ul>
-              <li data-i18n="mission.assnat.1">Organisent tout par document officiel</li>
-              <li data-i18n="mission.assnat.2">La source légale et complète de tout</li>
-              <li data-i18n="mission.assnat.3">Neutres — ne comparent et ne résument jamais</li>
-            </ul>
-          </div>
-          <div class="compare-col">
-            <span class="tag" data-i18n="mission.site.tag">Ce site essaie de faire</span>
-            <ul>
-              <li data-i18n="mission.site.1">Organise tout par personne : une fiche, tous ses dossiers</li>
-              <li data-i18n="mission.site.2">Traduit le jargon en langage clair (voir le Lexique)</li>
-              <li data-i18n="mission.site.3">Vous laisse suivre ce qui vous touche, sans jugement ni verdict</li>
-            </ul>
-          </div>
-        </div>
-        <p data-i18n="mission.p">Les sites officiels du Parlement (parl.ca, ourcommons.ca) sont la source la plus fiable qui existe, et ce site ne cherche jamais à les remplacer — seulement à les rendre plus faciles à suivre pour quelqu'un qui n'a pas le temps de fouiller dans les menus de procédure parlementaire.</p>
-      </div>
-    </div>
-
     <!-- PROJETS CHALLENGÉS PAR LES CITOYEN·NE·S (demandes d'explications ≥ seuil) -->
-    <div class="section-head" id="sec-challenged">
-      <div>
-        <h2 id="challengedTitle">Ce que les citoyen·ne·s veulent voir expliqué</h2>
-        <div class="sub" id="challengedSub"></div>
+    <section id="sec-challenged" class="challenge-band">
+      <div class="cb-head">
+        <h2 id="challengedTitle">Projets challengés</h2>
+        <button class="cb-cta" onclick="goToTab('projets')">✋ <span id="cbCtaLabel">Challenger un projet</span></button>
       </div>
-    </div>
-    <div id="challengedList"></div>
-
-    <div class="section-head" id="sec-projets-recents">
-      <div>
-        <h2 data-i18n="h.billsrecent">Projets de loi récemment actifs</h2>
-        <div class="sub" data-i18n="apercu.recent.sub">↓ Cliquez n'importe où dans le carré blanc pour voir le résumé ↓</div>
+      <div class="cb-subrow">
+        <div class="cb-sub" id="challengedSub"></div>
+        <button class="cb-more" id="challengeMoreBtn" onclick="rotateChallenged()" style="display:none" aria-label="Voir un autre projet challengé" title="Voir un autre projet">+</button>
       </div>
-      <span class="snooze-pill" onclick="toggleSnooze('projets-recents', true)" id="snooze-projets-recents"><span data-i18n="snooze.label">😴 Réduire</span></span>
-    </div>
-    <div id="body-projets-recents">
-    <div id="apercuBills"></div>
+      <div id="challengedList"></div>
+    </section>
+
+    <div class="apercu-3col">
+      <aside class="a3-left">
+        <h2 class="a3-hiw-h" data-i18n="h.quoideneuf">Quoi de neuf</h2>
+        <div id="sittingBox"></div>
+        <div id="newsList"></div>
+      </aside>
+      <main class="a3-main">
+        <div class="a3-main-head">
+          <h2 data-i18n="h.billsrecent">Projets de loi récemment actifs</h2>
+          <a class="a3-seeall" onclick="goToTab('projets')" data-i18n="a3.seeall">Tout voir →</a>
+        </div>
+        <div id="apercuBills"></div>
+        <div class="a3-tiles">
+          <a class="a3-tile" onclick="goToTab('votes')">
+            <span class="a3-tile-tag" style="background:var(--lime)" data-i18n="nav.votes">Votes</span>
+            <p data-i18n="a3.tileVotes">Chaque vote nominal — qui a voté quoi, et par quelle marge.</p>
+          </a>
+          <a class="a3-tile" onclick="goToTab('lexique')">
+            <span class="a3-tile-tag" style="background:var(--cyan)" data-i18n="nav.lexique">Lexique</span>
+            <p data-i18n="a3.tileLex">Le jargon parlementaire traduit en langage clair, sans cours de science po.</p>
+          </a>
+        </div>
+      </main>
+      <aside class="a3-right">
+        <h2 class="a3-hiw-h" data-i18n="a3.hiw">Comment ça marche</h2>
+        <div class="a3-steps">
+          <div class="a3-step"><span class="a3-step-n" style="background:var(--yellow)">1</span><p data-i18n="a3.step1">Un projet de loi vous semble opaque ? Demandez une explication.</p></div>
+          <div class="a3-step"><span class="a3-step-n" style="background:var(--pink)">2</span><p data-i18n="a3.step2">Les demandes s'additionnent — les plus demandés passent en priorité.</p></div>
+          <div class="a3-step"><span class="a3-step-n" style="background:var(--cyan)">3</span><p data-i18n="a3.step3">On pousse pour une explication en langage clair, sourcée.</p></div>
+        </div>
+      </aside>
     </div>
 
-    <div class="section-head" id="sec-quoideneuf"><div><h2 data-i18n="h.quoideneuf">Quoi de neuf</h2><div class="sub" data-i18n="h.quoideneuf.sub">Dernières activités réelles à la Chambre des communes</div></div><span class="snooze-pill" onclick="toggleSnooze('quoideneuf', true)" id="snooze-quoideneuf"><span data-i18n="snooze.label">😴 Réduire</span></span></div>
-
-    <div id="body-quoideneuf">
-    <div id="sittingBox"></div>
-    <div id="newsList"></div>
-    </div>
-
-    <div class="section-head" id="sec-petitions">
-      <div>
-        <h2 data-i18n="h.petitions">Pétitions électroniques ouvertes à la Chambre des communes</h2>
-        <div class="sub" data-i18n="pet.sub">Les pétitions électroniques actuellement ouvertes à la signature, les plus signées d'abord — instantané de la liste officielle</div>
-      </div>
-      <span class="snooze-pill" onclick="toggleSnooze('petitions', true)" id="snooze-petitions"><span data-i18n="snooze.label">😴 Réduire</span></span>
-    </div>
-    <div id="body-petitions">
-    <div id="apercuPetitions"></div>
-    <div class="info-box" data-i18n="pet.info">Chaque pétition ci-dessus est reproduite telle quelle depuis la liste publique des pétitions de la Chambre des communes (ourcommons.ca), avec un lien direct vers la page où la signer. Le nombre de signatures est celui relevé au moment de l'instantané — pour le décompte exact et à jour, ou pour signer, utilisez le lien de chaque carte. Seules les plus récentes sont affichées ici ; la liste complète est sur ourcommons.ca.</div>
-    </div>
   </section>
 
   <!-- MINISTRES & DÉPUTÉS -->
   <section class="view" id="view-ministres">
-    <div class="section-head">
+    <div class="page-band">
       <div>
-        <h2 data-i18n="h.ministres">Députés de la Chambre des communes</h2>
-        <div class="sub" data-i18n="min.merged.sub">Les député·e·s de la Chambre des communes, tous partis confondus — une seule recherche</div>
+        <h1 id="deputesCountTitle">343 députés</h1>
+        <div class="sub" data-i18n="deputes.bandsub">Qui vous représente, comment iel vote, à quelle fréquence iel siège.</div>
       </div>
-      <div class="toolbar">
-        <input type="text" id="searchMinistres" data-i18n-placeholder="ph.searchMinistres" placeholder="Nom, circonscription, région ou ministère…">
-        <div class="party-filters" id="partyFilters"></div>
-        <button class="sort-toggle" id="ministresSortToggle" onclick="toggleMinistresSort()" style="display:none"></button>
-      </div>
+      <input type="text" id="searchMinistres" class="band-search" data-i18n-placeholder="ph.searchMinistres" placeholder="Chercher un nom, une circonscription, un code postal…">
     </div>
-
-    <div class="chamber-toggle" id="peopleChamberToggle">
-      <button class="chamber-btn on" id="chamberCommonsBtn" onclick="setChamber('commons')">Chambre des communes</button>
-      <button class="chamber-btn" id="chamberSenateBtn" onclick="setChamber('senate')">Sénat</button>
+    <div class="filters-row">
+      <div class="party-filters" id="partyFilters"></div>
+      <button class="party-chip" id="legendBtn" onclick="toggleLegend()" data-i18n="deputes.legend">Légende</button>
+      <button class="party-chip" id="senateChip" onclick="toggleChamberChip()" data-i18n="deputes.senate">Sénat</button>
+      <div id="deputesPager" class="deputes-pager"></div>
+      <button class="sort-toggle" id="ministresSortToggle" onclick="toggleMinistresSort()" style="display:none"></button>
     </div>
+    <div class="info-box" id="deputesInfoBox" data-i18n="trouve.info" style="display:none; margin-bottom:20px;">Ces entrées viennent directement de la liste officielle des député·e·s en fonction de la Chambre des communes (ourcommons.ca), bilingue. Certains sièges peuvent changer entre deux mises à jour (démission, élection partielle) — cette liste est une photo prise au moment de la dernière mise à jour, pas un flux automatiquement à jour.</div>
+    <div class="grid" id="deputesList"></div>
 
-    <div id="commonsChrome">
-    <div class="quick-nav">
-      <span class="quick-nav-label" data-i18n="quicknav.label">Aller à :</span>
-      <a data-jump="sec-composition" data-i18n="quicknav.composition">Composition</a>
-      <a data-jump="ministresTitle" data-i18n="quicknav.ministres">Conseil des ministres</a>
-      <a data-jump="deputesTitle" data-i18n="quicknav.deputes">Reste de l'Assemblée</a>
-      <a data-jump="sec-comparateur" data-i18n="quicknav.comparateur">Comparateur de député·e·s</a>
-    </div>
 
-    <div class="section-head" id="sec-composition">
+  </section>
+
+  <!-- MINISTRES (Conseil des ministres / Cabinet) -->
+  <section class="view" id="view-cabinet">
+    <div class="page-band">
       <div>
-        <h2 data-i18n="h.composition">Composition de la Chambre des communes</h2>
-        <div class="sub" data-i18n="apercu.composition.sub">343 sièges — répartition par groupe parlementaire (45e législature)</div>
+        <h1 id="cabinetTitle">Le Cabinet — 30 ministres</h1>
+        <div class="sub" data-i18n="cabinet.sub">Qui décide quoi, depuis quand, et comment iel vote.</div>
       </div>
     </div>
-
-    <div class="hemicycle-wrap">
-      <svg id="hemicycleSvg" width="420" height="230" viewBox="0 0 420 230"></svg>
-      <div class="hemicycle-legend" id="hemicycleLegend"></div>
-    </div>
-
-    <div class="role-group-title" id="combinedTitle" style="display:none;"></div>
-
-    <div class="role-group-title" id="ministresTitle"><span data-i18n="h.ministres2">Conseil des ministres</span> — <span id="ministresCount"></span><span data-i18n="min.sub2b"> ministres, liste officielle complète</span></div>
     <div class="grid" id="ministresGrid"></div>
     <div class="info-box" id="ministresInfoBox"><b data-i18n="min.incomplete.b">Liste à jour.</b> <span data-i18n="min.incomplete.pre">Les </span><span id="ministresCount2"></span><span data-i18n="min.incomplete.post"> ministres viennent directement de la page officielle du Cabinet sur pm.gc.ca, scrapée en direct — pas une liste maintenue à la main.</span></div>
-
-          <div id="findMp" style="background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:14px 16px; margin:18px 0;">
-        <div style="font-family:'Inter',sans-serif; font-size:12px; color:var(--slate); margin-bottom:8px;" data-i18n="findmp.label">Trouver votre député·e par code postal</div>
-        <div style="display:flex; gap:8px; flex-wrap:wrap;">
-          <input type="text" id="postalInput" maxlength="7" data-i18n-placeholder="findmp.ph" placeholder="Ex. K1A 0A6" style="flex:1; min-width:160px; padding:8px 10px; border:1px solid var(--line); border-radius:var(--radius); font-family:'Inter',sans-serif;" onkeydown="if(event.key==='Enter')findMyMp()">
-          <button class="sort-toggle" onclick="findMyMp()" data-i18n="findmp.btn">Chercher</button>
-        </div>
-        <div id="findMpResult" style="margin-top:12px;"></div>
-      </div>
-    </div><!-- /commonsChrome -->
-    <div id="senateComposition" style="display:none">
-      <div class="section-head">
-        <div>
-          <h2 id="senateCompoTitle">Composition du Sénat</h2>
-          <div class="sub" id="senateCompoSub">105 sièges — répartition par groupe parlementaire (sénateur·rice·s nommé·e·s)</div>
-        </div>
-      </div>
-      <div class="hemicycle-wrap">
-        <svg id="senateHemicycleSvg" width="420" height="230" viewBox="0 0 420 230"></svg>
-        <div class="hemicycle-legend" id="senateHemicycleLegend"></div>
-      </div>
-    </div>
-    <div class="role-group-title" id="deputesTitle" data-i18n="min.restTitle">Les député·e·s de la Chambre des communes — tous les partis</div>
-    <div class="grid" id="deputesList"></div>
-    <div class="info-box" id="deputesInfoBox" data-i18n="trouve.info">Ces entrées viennent directement de la liste officielle des député·e·s en fonction de la Chambre des communes (ourcommons.ca), bilingue. Certains sièges peuvent changer entre deux mises à jour (démission, élection partielle) — cette liste est une photo prise au moment de la dernière mise à jour, pas un flux automatiquement à jour.</div>
-    <div class="info-box" id="senateInfoBox" style="display:none">Ces fiches viennent de la liste officielle des sénateur·rice·s (sencanada.ca), bilingue. Les sénateur·rice·s sont <b>nommé·e·s</b> (non élu·e·s) et siègent jusqu'à 75 ans ; le groupe parlementaire, la région, la date de nomination et le taux de présence proviennent de la source officielle. Le Sénat compte 105 sièges ; les sièges vacants n'apparaissent pas. Pas de bouton « Suivre » ici pour l'instant.</div>
-
-    <div class="section-head" id="sec-comparateur">
-      <div>
-        <h2 data-i18n="h.comparateur">Comparateur de député·e·s</h2>
-        <div class="sub" data-i18n="comp.sub">Choisissez deux député·e·s (ministres compris) pour voir leurs faits côte à côte</div>
-      </div>
-    </div>
-    <div class="toolbar" id="compareToolbar">
-      <select id="compareA" onchange="renderComparateurTable()"></select>
-      <select id="compareB" onchange="renderComparateurTable()"></select>
-    </div>
-    <div id="comparateurTable"></div>
   </section>
 
   <!-- PROJETS DE LOI -->
   <section class="view" id="view-projets">
-    <div class="section-head">
+    <div class="page-band">
       <div>
-        <h2 data-i18n="h.projets">Projets de loi</h2>
-        <div class="sub" data-i18n="proj.sub">45e législature (1re session) — statut réel des projets de loi</div>
+        <h1 id="projetsCountTitle">Projets de loi</h1>
+        <div class="sub" data-i18n="proj.bandsub">Chaque loi résumée en clair. Pas assez clair ? Demandez une explication.</div>
       </div>
+      <button class="cb-cta" onclick="document.getElementById('billsList').scrollIntoView({behavior:'smooth',block:'start'})">✋ <span data-i18n="proj.challenge">Challenger un projet</span></button>
+    </div>
+    <div class="page-toolbar">
       <div class="toolbar">
         <input type="text" id="searchBills" data-i18n-placeholder="ph.searchBills" placeholder="Mot-clé : logement, justice, immigration…">
         <button class="sort-toggle" id="sortToggle" onclick="toggleBillsSort()"></button>
@@ -946,29 +1021,40 @@
       </div>
     </div>
 
-    <div data-i18n="apercu.recent.sub" style="text-align:center; color:var(--slate); font-size:12.5px; margin:2px 0 16px;">↓ Cliquez n'importe où dans le carré blanc pour voir le résumé ↓</div>
 
     <div id="billsList"></div>
   </section>
 
   <!-- VOTES -->
   <section class="view" id="view-votes">
-    <div class="section-head">
+    <div class="page-band">
       <div>
-        <h2 data-i18n="h.votes">Registre des votes</h2>
-        <div class="sub" data-i18n="votes.sub">45e législature (1re session) — décomptes et détail nominatif officiels (par appel nominal)</div>
+        <h1 id="votesCountTitle">Registre des votes</h1>
+        <div class="sub" data-i18n="votes.bandsub">Chaque vote nominatif — qui a voté quoi, et par quelle marge.</div>
       </div>
+    </div>
+    <div class="page-toolbar">
       <div class="toolbar">
         <input type="text" id="searchVotes" data-i18n-placeholder="ph.searchVotes" placeholder="Mot-clé : sujet, numéro de projet de loi…">
         <button class="sort-toggle" id="motionsToggle" onclick="toggleShowMotions()"></button>
+        <button class="sort-toggle" id="petitionsToggle" onclick="togglePetitions()"></button>
       </div>
+    </div>
+    <div id="petitionsBlock" style="display:none">
+      <div class="section-head">
+        <div>
+          <h2 data-i18n="h.petitions">Pétitions électroniques ouvertes à la Chambre des communes</h2>
+          <div class="sub" data-i18n="pet.sub">Les pétitions électroniques actuellement ouvertes à la signature, les plus signées d'abord — instantané de la liste officielle</div>
+        </div>
+      </div>
+      <div id="apercuPetitions"></div>
+      <div class="info-box" data-i18n="pet.info">Chaque pétition ci-dessus est reproduite telle quelle depuis la liste publique des pétitions de la Chambre des communes (ourcommons.ca), avec un lien direct vers la page où la signer. Le nombre de signatures est celui relevé au moment de l'instantané — pour le décompte exact et à jour, ou pour signer, utilisez le lien de chaque carte. Seules les plus récentes sont affichées ici ; la liste complète est sur ourcommons.ca.</div>
     </div>
     <div class="chamber-toggle" id="voteChamberToggle">
       <button class="chamber-btn on" id="voteCommonsBtn" onclick="setVoteChamber('commons')">Communes</button>
       <button class="chamber-btn" id="voteSenateBtn" onclick="setVoteChamber('senate')">Sénat</button>
     </div>
 
-    <div id="votesSummaryHint" data-i18n="apercu.recent.sub" style="text-align:center; color:var(--slate); font-size:12.5px; margin:2px 0 16px;">↓ Cliquez n'importe où dans le carré blanc pour voir le résumé ↓</div>
 
     <div id="votesList"></div>
     <div class="info-box" id="votesInfoBox">
@@ -978,18 +1064,6 @@
   </section>
 
   <!-- COMPTE & ABONNEMENT -->
-  <section class="view" id="view-compte">
-    <div class="section-head"><div><h2 data-i18n="h.compte">Compte et suivi</h2></div></div>
-
-    <div class="account-box" id="accountBox"></div>
-
-    <div id="adminFlagCounts"></div>
-
-    <div class="role-group-title" data-i18n="roadmap.title">Feuille de route — ce qui existe déjà, ce qui s'en vient</div>
-    <div id="roadmapList"></div>
-
-
-  </section>
 
 
   <!-- PAGE CACHÉE — Le mot du créateur (accès via « et moi » dans le footer) -->
@@ -1132,37 +1206,19 @@
 
   <!-- LEXIQUE -->
   <section class="view" id="view-lexique">
-    <div class="section-head">
+    <div class="page-band">
       <div>
-        <h2 data-i18n="h.lexique">Lexique du jargon parlementaire</h2>
-        <div class="sub" data-i18n="h.lexique.sub">Pour comprendre le reste du site sans avoir fait un cours de science politique</div>
+        <h1 id="lexiqueCountTitle">Lexique</h1>
+        <div class="sub" data-i18n="lex.bandsub">Le jargon parlementaire, traduit en français de tous les jours.</div>
       </div>
+      <input type="text" id="searchLexique" class="band-search" data-i18n-placeholder="lex.ph" placeholder="Chercher un terme…">
     </div>
-    <div class="quick-nav">
-      <span class="quick-nav-label" data-i18n="quicknav.label">Aller à :</span>
-      <a onclick="document.getElementById('sec-lexique-people').scrollIntoView({behavior:'auto', block:'start'})" data-i18n="nav.personnes">Qui gravite autour</a>
-      <a onclick="document.getElementById('sec-lobby').scrollIntoView({behavior:'auto', block:'start'})" data-i18n="nav.lobby">Registre des lobbyistes</a>
-      <a onclick="document.getElementById('sec-lexique-terms').scrollIntoView({behavior:'auto', block:'start'})" data-i18n="nav.lexique">Lexique</a>
-      <a onclick="jumpToApropos()" data-i18n="nav.apropos">D'où viennent ces données</a>
-    </div>
+    <div class="role-group-title" data-i18n="h.compte" style="margin-top:0;">Compte et suivi</div>
+    <div class="account-box" id="accountBox"></div>
+    <div id="adminFlagCounts"></div>
+
     <dl id="lexiqueList"></dl>
 
-    <div class="section-head" id="sec-apropos"><div><h2 data-i18n="h.apropos">D'où viennent ces données, et comment aller plus loin</h2></div><span class="snooze-pill" onclick="toggleSnooze('apropos')" id="snooze-apropos"><span data-i18n="snooze.label">😴 Réduire</span></span></div>
-
-    <div id="body-apropos">
-
-    <div class="bill">
-      <h3 data-i18n="apropos.sources.h">Sources publiques utilisées ici</h3>
-      <p style="font-size:13px; line-height:1.7; color:var(--slate);" data-i18n="apropos.sources.p">
-        <b style="color:var(--ink)">Projets de loi</b> — LEGISinfo (parl.ca), l'outil officiel du Parlement du Canada, bilingue, avec les dates de chaque lecture et de la sanction royale dans les deux chambres.<br>
-        <b style="color:var(--ink)">Députés</b> — Chambre des communes (ourcommons.ca), la liste officielle des membres en fonction (nom, circonscription, province, parti), bilingue.<br>
-        <b style="color:var(--ink)">Votes</b> — Chambre des communes (ourcommons.ca), le détail par appel nominal de chaque scrutin (Pour / Contre / pairé), relié à chaque député·e par son identifiant officiel (PersonId).<br>
-        <b style="color:var(--ink)">Taux de présence</b> — calculé à partir des votes ci-dessus (voir le Lexique) ; aucune source externe.<br>
-        <b style="color:var(--ink)">Licences</b> — Licence du gouvernement ouvert – Canada ; conditions d'OpenParliament pour les recoupements.
-      </p>
-    </div>
-
-    </div>
   </section>
 
 </div>
@@ -1195,7 +1251,7 @@
 /* ---------------- I18N ---------------- */
 const translations = {
   fr: {
-    'nav.close':"Fermer",'nav.apercu':"Aperçu",'nav.ministres':"Députés",'nav.projets':"Projets de loi",
+    'nav.close':"Fermer",'nav.apercu':"Aperçu",'nav.ministres':"Députés",'nav.cabinet':"Ministres",'h.cabinet':"Le Cabinet fédéral",'cabinet.sub':"Qui décide quoi, depuis quand, et comment iel vote.",'nav.projets':"Projets de loi",
     'nav.votes':"Votes",'nav.quoideneuf':"Quoi de neuf",'nav.compte':"Compte & à propos",'nav.trouve':"Trouvez votre député",
     'nav.lexique':"Lexique",'nav.personnes':"Qui gravite autour",'nav.lobby':"Registre des lobbyistes",'nav.petitions':"Pétitions",'nav.apropos':"D'où viennent ces données",
     'stat.ministres':"Députés",'stat.projets':"Projets de loi",'stat.votes':"Votes enregistrés",
@@ -1211,10 +1267,23 @@ const translations = {
     'h.lexique':"Lexique du jargon parlementaire",
     'h.lexique.sub':"Pour comprendre le reste du site sans avoir fait un cours de science politique",
     'brand.tagline':"Qui siège, qui légifère, qui vote quoi",
+    'a3.tagline':"Le Parlement, réorganisé par personne et traduit en langage clair — sans jugement ni verdict.",
+    'a3.stats':"En chiffres",'a3.deputes':"députés",'a3.ministres':"ministres",'a3.projets':"projets de loi",'a3.votes':"votes",
+    'a3.explore':"Explorer les dossiers →",'a3.seeall':"Tout voir →",'a3.hiw':"Comment ça marche",
+    'a3.tileVotes':"Chaque vote nominal — qui a voté quoi, et par quelle marge.",
+    'a3.tileLex':"Le jargon parlementaire traduit en langage clair, sans cours de science po.",
+    'a3.step1':"Un projet de loi vous semble opaque ? Demandez une explication.",
+    'a3.step2':"Les demandes s'additionnent — les plus demandés passent en priorité.",
+    'a3.step3':"On pousse pour une explication en langage clair, sourcée.",
+    'proj.bandsub':"Chaque loi résumée en clair. Pas assez clair ? Demandez une explication.",'proj.challenge':"Challenger un projet",
+    'votes.bandsub':"Chaque vote nominatif — qui a voté quoi, et par quelle marge.",
+    'lex.bandsub':"Le jargon parlementaire, traduit en français de tous les jours.",'lex.ph':"Chercher un terme…",
     'h.personnes':"Qui gravite autour du Parlement",
     'h.petitions':"Pétitions électroniques ouvertes à la Chambre des communes",
     'h.apropos':"D'où viennent ces données, et comment aller plus loin",
-    'ph.searchMinistres':"Nom, circonscription, région ou ministère…",
+    'ph.searchMinistres':"Chercher un nom, une circonscription, un code postal…",
+    'deputes.bandsub':"Qui vous représente, comment iel vote, à quelle fréquence iel siège.",'deputes.legend':"Légende",'deputes.senate':"Sénat",
+    'trouve.info':"Ces entrées viennent directement de la liste officielle des député·e·s en fonction de la Chambre des communes (ourcommons.ca), bilingue. Certains sièges peuvent changer entre deux mises à jour (démission, élection partielle) — cette liste est une photo prise au moment de la dernière mise à jour, pas un flux automatiquement à jour.",
     'ph.searchBills':"Mot-clé : logement, justice, immigration…",
     'filter.statuts':"Statuts", 'filter.etapes':"Chambre",
     'ph.searchDeputes':"Nom, circonscription ou région…",
@@ -1228,7 +1297,7 @@ const translations = {
     'footer.coffee':"Offre-moi un café",
   },
   en: {
-    'nav.close':"Close",'nav.apercu':"Overview",'nav.ministres':"MPs",'nav.projets':"Bills",
+    'nav.close':"Close",'nav.apercu':"Overview",'nav.ministres':"MPs",'nav.cabinet':"Ministers",'h.cabinet':"The federal Cabinet",'cabinet.sub':"Who decides what, since when, and how they vote.",'nav.projets':"Bills",
     'nav.votes':"Votes",'nav.quoideneuf':"What's new",'nav.compte':"Account & about",'nav.trouve':"Find your MP",
     'nav.lexique':"Glossary",'nav.personnes':"Who's involved",'nav.lobby':"Lobbyist registry",'nav.petitions':"Petitions",'nav.apropos':"Where this data comes from",
     'stat.ministres':"MPs",'stat.projets':"Bills",'stat.votes':"Votes recorded",
@@ -1250,10 +1319,22 @@ const translations = {
     'h.lexique':"Parliamentary glossary",
     'h.lexique.sub':"To understand the rest of the site without a political science degree",
     'brand.tagline':"Who sits, who legislates, who votes how",
+    'a3.tagline':"Parliament, reorganized by person and translated into plain language — no judgment, no verdict.",
+    'a3.stats':"By the numbers",'a3.deputes':"MPs",'a3.ministres':"ministers",'a3.projets':"bills",'a3.votes':"votes",
+    'a3.explore':"Explore the files →",'a3.seeall':"See all →",'a3.hiw':"How it works",
+    'a3.tileVotes':"Every recorded vote — who voted what, and by what margin.",
+    'a3.tileLex':"Parliamentary jargon translated into plain language, no poli-sci degree needed.",
+    'a3.step1':"A bill seems opaque? Ask for an explanation.",
+    'a3.step2':"Requests add up — the most requested move to the top.",
+    'a3.step3':"We push for a plain-language, sourced explanation.",
+    'proj.bandsub':"Every bill summarized in plain language. Not clear enough? Ask for an explanation.",'proj.challenge':"Challenge a bill",
+    'votes.bandsub':"Every recorded vote — who voted what, and by what margin.",
+    'lex.bandsub':"Parliamentary jargon, translated into everyday language.",'lex.ph':"Search a term…",
     'h.personnes':"Who's involved around Parliament",
     'h.petitions':"E-petitions open at the House of Commons",
     'h.apropos':"Where this data comes from, and how to go further",
-    'ph.searchMinistres':"Name, riding, region, or ministry…",
+    'ph.searchMinistres':"Search a name, a riding, a postal code…",
+    'deputes.bandsub':"Who represents you, how they vote, how often they sit.",'deputes.legend':"Legend",'deputes.senate':"Senate",
     'ph.searchBills':"Keyword: housing, justice, immigration…",
     'filter.statuts':"Statuses", 'filter.etapes':"Chamber",
     'ph.searchDeputes':"Name, riding, or region…",
@@ -1374,7 +1455,7 @@ function applyLanguage(){
     const entry = translations[currentLang] && translations[currentLang][key];
     if(entry !== undefined){ el.placeholder = entry; }
   });
-  document.getElementById('langToggle').textContent = currentLang === 'fr' ? 'English' : 'Français';
+  document.getElementById('langToggle').textContent = currentLang === 'fr' ? 'EN' : 'FR';
   document.body.classList.toggle('lang-en', currentLang === 'en');
   document.getElementById('footerLeft').textContent = t('footer.left');
   document.getElementById('footerRight').textContent = t('footer.right');
@@ -1385,7 +1466,7 @@ function applyLanguage(){
   renderStatusFilters();
   renderStepFilters();
   updateSortToggleLabel();
-  updateMotionsToggleLabel();
+  updateMotionsToggleLabel(); updatePetitionsToggleLabel();
   updateMinistresSortLabel();
   renderAccountBox();
   renderFlagBox();
@@ -1395,7 +1476,7 @@ function applyLanguage(){
   renderBills();
   renderDeputes(document.getElementById('searchMinistres').value);
   renderVotes();
-  renderApercuBills();
+  renderApercuBills(); renderApercuStats(); renderPageBandCounts();
   renderApercuPetitions();
   renderNews();
   renderRoadmap();
@@ -1425,6 +1506,15 @@ document.getElementById('langToggle').addEventListener('click', ()=>{
 
 // Couleurs des partis fédéraux (teintes usuelles associées à chaque parti).
 const partyColors = { LPC:'#D71920', CPC:'#1A4782', BQ:'#33B2CC', NDP:'#F58220', GPC:'#3D9B35', IND:'#8a8f99' };
+// Texte lisible sur une bulle colorée : noir si le fond est clair, blanc s'il est foncé.
+function textOn(hex){
+  if(!hex || hex[0] !== '#') return 'var(--ink)';
+  let c = hex.slice(1);
+  if(c.length === 3) c = c.split('').map(x=>x+x).join('');
+  const r = parseInt(c.slice(0,2),16), g = parseInt(c.slice(2,4),16), b = parseInt(c.slice(4,6),16);
+  const yiq = (r*299 + g*587 + b*114) / 1000;
+  return yiq >= 150 ? 'var(--ink)' : '#fff';
+}
 
 // Répartition réelle des sièges à la Chambre des communes (45e législature) —
 // tirée du roster officiel ourcommons.ca (voir data/deputes.json). 341 sièges
@@ -1574,7 +1664,7 @@ async function toggleFollowBill(billId){
     try{ await window.storage.set('followed-bills', JSON.stringify(followedBills)); }catch(e){}
   }
   renderBills();
-  renderApercuBills();
+  renderApercuBills(); renderApercuStats(); renderPageBandCounts();
 }
 
 /* ---------------- COMPTES (Supabase) ---------------- */
@@ -1728,7 +1818,7 @@ async function initAuth(){
     renderMinistres(kw);
     renderDeputes(kw);
     renderBills();
-    renderApercuBills();
+    renderApercuBills(); renderApercuStats(); renderPageBandCounts();
   });
 }
 
@@ -1852,7 +1942,7 @@ async function submitBillFlag(){
 async function requestExplanation(billId, btnId){
   const isEn = currentLang === 'en';
   const btn = btnId ? document.getElementById(btnId) : null;
-  if(!currentUser){ goToTab('compte'); return; } // se connecter d'abord
+  if(!currentUser){ goToTab('lexique'); return; } // se connecter d'abord
   if(btn) btn.disabled = true;
   const { error } = await supabaseClient.from('bill_flags').insert({ user_id: currentUser.id, bill_id: billId });
   if(error && error.code !== '23505'){
@@ -1958,6 +2048,19 @@ function renderPartyFilters(){
   const el = document.getElementById('partyFilters');
   if(!el) return;
   const allLabel = currentLang==='en' ? 'All' : 'Tous';
+  // En vue Sénat, ce ne sont pas des partis mais des groupes parlementaires.
+  if(typeof chamberView !== 'undefined' && chamberView === 'senate'){
+    const counts = {};
+    (typeof senators !== 'undefined' ? senators : []).forEach(s => { const c = s.group.code || 'Non-affiliated'; counts[c] = (counts[c] || 0) + 1; });
+    const order = ['ISG','CSG','PSG','C','GRO','Non-affiliated'].filter(c => counts[c]);
+    el.innerHTML = `<span class="party-chip ${!senateGroupFilter?'active':''}" style="${!senateGroupFilter ? 'background:var(--ink); border-color:var(--ink);' : 'border-color:var(--line); color:var(--slate);'}" onclick="setSenateGroup('')">${allLabel}</span>`
+      + order.map(c => {
+          const col = groupColors[c] || '#8a8f99';
+          const on = senateGroupFilter === c;
+          return `<span class="party-chip ${on?'active':''}" style="${on ? 'background:' + col + '; border-color:' + col + ';' : 'border-color:' + col + '66; color:' + col + ';'}" onclick="setSenateGroup('${c}')">${c} · ${counts[c]}</span>`;
+        }).join('');
+    return;
+  }
   el.innerHTML = `<span class="party-chip ${!partyFilter?'active':''}" style="${!partyFilter ? 'background:var(--ink); border-color:var(--ink);' : 'border-color:var(--line); color:var(--slate);'}" onclick="setPartyFilter('')">${allLabel}</span>` +
     partyOrder.map(p => `
     <span class="party-chip ${partyFilter===p?'active':''}" style="${partyFilter===p ? `background:${partyColors[p]}; border-color:${partyColors[p]};` : `border-color:${partyColors[p]}66; color:${partyColors[p]};`}" onclick="setPartyFilter('${p}')">${p}</span>
@@ -1988,8 +2091,10 @@ async function loadIntroState(){
   applyIntroState();
 }
 function applyIntroState(){
-  document.getElementById('introBlock').classList.toggle('collapsed', introCollapsed);
-  document.getElementById('introCompact').classList.toggle('open', introCollapsed);
+  const ib = document.getElementById('introBlock');
+  const ic = document.getElementById('introCompact');
+  if(ib) ib.classList.toggle('collapsed', introCollapsed);
+  if(ic) ic.classList.toggle('open', introCollapsed);
 }
 async function toggleIntro(){
   introCollapsed = !introCollapsed;
@@ -2076,7 +2181,7 @@ function initials(name){
 // Fil d'actualité fédéral : généré à partir des dernières activités RÉELLES des
 // projets de loi (LEGISinfo, via data/bills.json), triées par date décroissante.
 // Rien n'est inventé : chaque entrée est la dernière activité datée d'un projet.
-let newsShown = 8;
+let newsShown = 2;
 
 // Projets « challengés » : ceux qui ont atteint le seuil de demandes d'explications.
 // La source est un agrégat Supabase (fonction flag_counts) qui n'expose QUE le
@@ -2086,22 +2191,45 @@ let newsShown = 8;
 // Réseau des « Dossier{Province} » — un rond cliquable par province, sous le logo.
 // Pour ajouter une province (après un fork du dépôt) : ajouter une entrée ici.
 // code = texte du rond ; name = infobulle ; url = site ; color = couleur du rond.
+// Réseau « Dossier » : 10 provinces d'ouest en est, 5 de chaque côté du logo.
+// url = null tant que le site n'existe pas — la pastille reste éteinte et inerte
+// (on n'annonce jamais un site qui n'est pas en ligne). Seule QC est active.
 const provinceNetwork = [
+  { code: 'BC', name: 'Colombie-Britannique', url: null, color: null },
+  { code: 'AB', name: 'Alberta',              url: null, color: null },
+  { code: 'SK', name: 'Saskatchewan',         url: null, color: null },
+  { code: 'MB', name: 'Manitoba',             url: null, color: null },
+  { code: 'ON', name: 'Ontario',              url: null, color: null },
   { code: 'QC', name: 'DossierQuébec', url: 'https://dossierquebec.com', color: '#0B3D91' },
+  { code: 'NB', name: 'Nouveau-Brunswick',        url: null, color: null },
+  { code: 'NS', name: 'Nouvelle-Écosse',          url: null, color: null },
+  { code: 'PE', name: 'Île-du-Prince-Édouard',    url: null, color: null },
+  { code: 'NL', name: 'Terre-Neuve-et-Labrador',  url: null, color: null }
 ];
 function renderProvinceNetwork(){
-  const el = document.getElementById('provinceNetwork');
-  if(!el) return;
-  el.innerHTML = provinceNetwork.map(p =>
-    `<a class="pn-dot" href="${p.url}" target="_blank" rel="noopener" title="${p.name}" style="background:${p.color}" onclick="event.stopPropagation()">${p.code}</a>`
-  ).join('');
+  const elL = document.getElementById('provinceNetwork');
+  const elR = document.getElementById('provinceNetworkR');
+  if(!elL) return;
+  const isEn = currentLang === 'en';
+  const soon = isEn ? 'coming soon' : 'à venir';
+  const dot = p => p.url
+    ? `<a class="pn-dot pn-live" href="${p.url}" target="_blank" rel="noopener" title="${p.name}" style="background:${p.color}" onclick="event.stopPropagation()">${p.code}</a>`
+    : `<span class="pn-dot pn-off" title="${p.name} — ${soon}" aria-disabled="true">${p.code}</span>`;
+  // Sur mobile tout se regroupe sous le logo ; sur desktop on répartit 5 / 5.
+  const mobile = window.matchMedia('(max-width:640px)').matches;
+  const half = Math.ceil(provinceNetwork.length / 2);
+  const left = mobile ? provinceNetwork : provinceNetwork.slice(0, half);
+  const right = mobile ? [] : provinceNetwork.slice(half);
+  elL.innerHTML = left.map(dot).join('');
+  if(elR) elR.innerHTML = right.map(dot).join('');
 }
+try{ window.matchMedia('(max-width:640px)').addEventListener('change', renderProvinceNetwork); }catch(e){}
 
 // Paliers de challenge : compteur CONTINU (une demande par personne, à vie) — il
 // ne se remet jamais à zéro. Chaque palier franchi déclenche un challenge public
 // au parrain, puis le compteur poursuit sa montée vers le palier suivant.
 const CHALLENGE_TIERS = [500, 1000, 2500, 5000, 25000];
-const CHALLENGE_THRESHOLD = CHALLENGE_TIERS[0];
+const CHALLENGE_THRESHOLD = 1; // apparaît dès la 1re demande (paliers/flammes restent sur CHALLENGE_TIERS)
 const PETITION_THRESHOLD = 1000; // seuil où l'on pousse pour une pétition
 const nextTier = cnt => CHALLENGE_TIERS.find(t => cnt < t) ?? null; // null = tous franchis
 const topTierReached = cnt => { let r = 0; for(const t of CHALLENGE_TIERS) if(cnt >= t) r = t; return r; };
@@ -2132,6 +2260,27 @@ function shareChallenge(billId, count, platform, evt){
       .catch(() => prompt(isEn ? 'Copy this:' : 'Copiez ceci :', full));
   }
 }
+let challengeOffset = 0;
+let challengeRotating = false;
+function rotateChallenged(){
+  const track = document.querySelector('.challenge-track');
+  if(!track || challengeRotating){ challengeOffset++; renderChallenged(); return; }
+  challengeRotating = true;
+  const card = track.querySelector('.challenge-card');
+  const gap = parseFloat(getComputedStyle(track).columnGap || getComputedStyle(track).gap) || 16;
+  const dist = card ? card.getBoundingClientRect().width + gap : 0;
+  let finished = false;
+  const done = () => {
+    if(finished) return; finished = true;
+    challengeOffset++;
+    renderChallenged();                // nouvelle piste à translateX(0)
+    challengeRotating = false;
+  };
+  track.style.transition = 'transform .42s cubic-bezier(.4,0,.2,1)';
+  track.style.transform = 'translateX(-' + dist + 'px)';
+  track.addEventListener('transitionend', done, { once:true });
+  setTimeout(done, 650);               // filet de sécurité
+}
 async function renderChallenged(){
   const el = document.getElementById('challengedList');
   if(!el) return;
@@ -2140,11 +2289,12 @@ async function renderChallenged(){
   const seuil = CHALLENGE_THRESHOLD.toLocaleString(isEn ? 'en-CA' : 'fr-CA');
   const titleEl = document.getElementById('challengedTitle');
   const subEl = document.getElementById('challengedSub');
-  if(titleEl) titleEl.textContent = isEn ? 'Bills citizens want explained' : 'Ce que les citoyen·ne·s veulent voir expliqué';
-  const petitionSeuil = PETITION_THRESHOLD.toLocaleString(isEn ? 'en-CA' : 'fr-CA');
+  if(titleEl) titleEl.textContent = isEn ? 'Challenged bills' : 'Projets challengés';
+  const cbCta = document.getElementById('cbCtaLabel');
+  if(cbCta) cbCta.textContent = isEn ? 'Challenge a bill' : 'Challenger un projet';
   if(subEl) subEl.textContent = isEn
-    ? `From ${seuil} requests for explanations a bill appears here — at ${petitionSeuil}, we push for a petition sponsored by an MP.`
-    : `Dès ${seuil} demandes d'explications, un projet apparaît ici — à ${petitionSeuil}, on pousse pour une pétition parrainée par un·e député·e.`;
+    ? 'Requested by citizens — more requests = more plain-language explanations'
+    : "Demandé par les citoyen·ne·s — plus de demandes = plus d'explications en clair";
 
   if(challengedCache === null){
     try{
@@ -2160,34 +2310,39 @@ async function renderChallenged(){
     .sort((a, b) => b.cnt - a.cnt)
     .slice(0, 12);
 
+  const moreBtn = document.getElementById('challengeMoreBtn');
+  if(moreBtn) moreBtn.style.display = ranked.length > 3 ? '' : 'none';
   if(ranked.length){
-    const rows = ranked.map((c, i) => {
+    const badgeColors = ['var(--cyan)','var(--lime)','var(--pink)','var(--yellow)'];
+    const N = ranked.length;
+    const win = [];
+    for(let i = 0; i < Math.min(4, N); i++){ win.push(ranked[(challengeOffset % N + i) % N]); }
+    const cards = win.map((c, i) => {
       const b = c.bill;
       const n = c.cnt.toLocaleString(isEn ? 'en-CA' : 'fr-CA');
       const nt = nextTier(c.cnt);
       const goal = nt ? nt.toLocaleString(isEn ? 'en-CA' : 'fr-CA') : null;
-      const flames = '🔥'.repeat(CHALLENGE_TIERS.filter(t => c.cnt >= t).length) || '🔥';
-      const progress = goal ? `${flames} ${n} <span style="opacity:.65;">/ ${goal}</span>` : `${flames} ${n}`;
-      const petitionReached = c.cnt >= PETITION_THRESHOLD;
-      const shareHint = petitionReached
-        ? (isEn ? '⚑ Petition threshold — share:' : '⚑ Seuil de pétition — partager :')
-        : (isEn ? 'Share:' : 'Partager :');
-      return `<div class="challenge-row" onclick="goToTab('projets')">
-        <span class="ch-rank">${i + 1}</span>
-        <span class="ch-num">${b.num}</span>
-        <span class="ch-title">${L(b.title)}</span>
-        <span class="ch-count"><b style="color:#C8102E;">${progress}</b></span>
-      </div>
-      <div class="bill-follow-row" style="padding:2px 6px 10px;">
-        <span class="follow-hint"${petitionReached ? ' style="color:#A9782E;"' : ''}>${shareHint}</span>
-        <button class="follow-btn" onclick="event.stopPropagation(); shareChallenge(${b.id}, ${c.cnt}, 'x', event)" aria-label="X">𝕏</button>
-        <button class="follow-btn" onclick="event.stopPropagation(); shareChallenge(${b.id}, ${c.cnt}, 'fb', event)" aria-label="Facebook">Facebook</button>
-        <button class="follow-btn" onclick="event.stopPropagation(); shareChallenge(${b.id}, ${c.cnt}, 'copy', event)">${isEn ? '⧉ Copy' : '⧉ Copier'}</button>
+      const state = L(b.latestActivity) || '';
+      const foot = goal
+        ? (isEn ? `next tier: ${goal}` : `prochain palier : ${goal}`)
+        : (isEn ? 'top tier reached' : 'dernier palier atteint');
+      return `<div class="challenge-card" onclick="goToTab('projets')">
+        <div class="cc-top">
+          <span class="cc-num" style="background:${badgeColors[i % badgeColors.length]};">${b.num}</span>
+          <span class="cc-count">🔥 ${n} ${isEn ? 'requests' : 'demandes'}</span>
+        </div>
+        <div class="cc-title">${L(b.title)}</div>
+        <div class="cc-share">
+          <button onclick="event.stopPropagation(); shareChallenge(${b.id}, ${c.cnt}, 'x', event)" aria-label="X">𝕏</button>
+          <button onclick="event.stopPropagation(); shareChallenge(${b.id}, ${c.cnt}, 'fb', event)" aria-label="Facebook">FB</button>
+          <button onclick="event.stopPropagation(); shareChallenge(${b.id}, ${c.cnt}, 'copy', event)">⧉</button>
+        </div>
+        <div class="cc-foot">${state ? state + ' · ' : ''}${foot}</div>
       </div>`;
     }).join('');
-    el.innerHTML = `<div class="challenge-panel">${rows}</div>`;
+    el.innerHTML = `<div class="challenge-viewport"><div class="challenge-track">${cards}</div></div>`;
   } else {
-    el.innerHTML = `<div style="background:var(--card); border:1px dashed var(--line); border-radius:var(--radius); padding:22px 18px; text-align:center; color:var(--slate);">
+    el.innerHTML = `<div style="background:#fff; border:3px solid var(--ink); box-shadow:5px 5px 0 var(--ink); padding:22px 18px; text-align:center; color:var(--ink);">
       <div style="font-size:26px; margin-bottom:8px;">🔎</div>
       <div style="font-size:14px; line-height:1.65; max-width:580px; margin:0 auto;">${isEn
         ? `No one has asked for explanations yet. This is where the bills the most citizens want explained will show up, ranked live. Be the first to ask for one.`
@@ -2232,7 +2387,7 @@ function renderSittings(){
   const srcUrl = isEn ? 'https://www.ourcommons.ca/en/sitting-calendar' : 'https://www.ourcommons.ca/fr/calendrier-seances';
 
   el.innerHTML = `
-    <div style="background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:12px 16px; margin-bottom:14px;">
+    <div style="background:var(--card); border:3px solid var(--line); border-radius:var(--radius); padding:12px 16px; margin-bottom:14px;">
       <div style="font-size:13.5px;">📅 ${headline}</div>
       <div style="font-size:12.5px; color:var(--slate); margin-top:4px;">${weeksLabel} : ${runsTxt}</div>
       <div style="font-size:11px; color:var(--slate); opacity:.8; margin-top:4px;">${note} <a href="${srcUrl}" target="_blank" rel="noopener" style="color:var(--gold);">${isEn?'Source':'Source'}</a></div>
@@ -2259,7 +2414,7 @@ function renderNews(){
     </div>`;
   }).join('') + (hasMore ? `<button class="bill-more" style="margin-top:14px; border:none; cursor:pointer;" onclick="loadMoreNews()">${moreBtn}</button>` : '');
 }
-function loadMoreNews(){ newsShown += 8; renderNews(); }
+function loadMoreNews(){ newsShown += 2; renderNews(); }
 
 // Feuille de route fédérale — rendue depuis une structure bilingue par renderRoadmap().
 const roadmapStatusLabels = {
@@ -2351,7 +2506,7 @@ function renderPetitions(targetId){
     <div class="petition-card">
       <h3>${esc(title)}</h3>
       <div class="petition-meta">
-        <span style="font-family:'Inter',sans-serif; color:var(--gold)">${p.code}</span>
+        <span style="font-family:'IBM Plex Mono',monospace; color:var(--gold)">${p.code}</span>
         ${cat ? `<span>${esc(cat)}</span>` : ''}
         <span>${sponsorLabel} : <b>${esc(p.sponsor || '—')}</b></span>
         <span>${esc(L(p.status) || '')}</span>
@@ -2425,6 +2580,22 @@ async function findMyMp(){
   }
 }
 
+let deputePage = 0, deputeLastKey = '', deputesShowAll = false;
+function showAllDeputes(){ deputesShowAll = true; renderDeputes(); }
+function deputeGo(delta){
+  deputePage += delta;
+  renderDeputes();
+  const el = document.getElementById('deputesList');
+  if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
+}
+function toggleLegend(){
+  const box = document.getElementById('deputesInfoBox');
+  if(!box) return;
+  const hidden = getComputedStyle(box).display === 'none';
+  box.style.display = hidden ? 'block' : 'none';
+  const btn = document.getElementById('legendBtn');
+  if(btn) btn.classList.toggle('active', hidden);
+}
 function renderDeputes(filter){
   if(chamberView === 'senate') return renderSenators(filter);
   // En mode trié (fusion ministres+députés) cette grille reste vide — non utilisé
@@ -2459,9 +2630,20 @@ function renderDeputes(filter){
     }
   }
   const el = document.getElementById('deputesList');
-  el.innerHTML = list.length
-    ? list.map(d => deputeCardFed(d, isEn, L)).join('')
+  const LIMIT = 11;
+  const key = f + '|' + (partyFilter || '');
+  if(key !== deputeLastKey){ deputesShowAll = false; deputeLastKey = key; }
+  const total = list.length;
+  const shown = (!deputesShowAll && total > LIMIT) ? list.slice(0, LIMIT) : list;
+  const remaining = total - shown.length;
+  const moreTile = remaining > 0
+    ? `<a class="min-more" onclick="showAllDeputes()"><span class="min-more-n">+${remaining}</span><span class="min-more-t">${isEn ? 'See all ' + total + ' MPs →' : 'Voir les ' + total + ' députés →'}</span></a>`
+    : '';
+  el.innerHTML = total
+    ? shown.map(d => deputeCardFed(d, isEn, L)).join('') + moreTile
     : `<div class="no-results">${isEn ? 'No results for this search.' : 'Aucun résultat pour cette recherche.'}</div>`;
+  const pager = document.getElementById('deputesPager');
+  if(pager) pager.innerHTML = '';
 }
 
 // Carte d'un·e député·e fédéral·e (roster ourcommons + bilan de votes précalculé
@@ -2500,7 +2682,7 @@ function deputeCardFed(d, isEn, L){
       <h3>${d.honorific ? d.honorific + ' ' : ''}${d.name}</h3>
       <div class="role">${riding}${prov ? ' · ' + prov : ''}</div>
       <div class="meta-row">
-        <span class="depute-party" style="background:${color}22; color:${color}">${d.party.code || '—'}</span>
+        <span class="depute-party" style="background:${color}; color:${textOn(color)}">${d.party.code || '—'}</span>
         <span class="vp-note" title="${attTitle}">${attTxt}</span>
         ${profileLink}
       </div>
@@ -2547,7 +2729,7 @@ function personCard(p){
       <h3>${name}</h3>
       <div class="role">${subtitle}</div>
       <div class="meta-row">
-        <span class="depute-party" style="background:${partyColors[party]}22; color:${partyColors[party]}">${party}</span>
+        <span class="depute-party" style="background:${partyColors[party]}; color:${textOn(partyColors[party])}">${party}</span>
         <span class="vp-note" title="${attTitle}">${attNote}</span>
       </div>
     </div>
@@ -2556,6 +2738,7 @@ function personCard(p){
 
 function renderHemicycle(){
   const svg = document.getElementById('hemicycleSvg');
+  if(!svg) return;
   const total = seats.reduce((a,s)=>a+s.n,0);
   const cx=210, cy=210, rOuter=195, rInner=70, rows=10;
   // Liste ordonnée des sièges, parti par parti.
@@ -2642,7 +2825,7 @@ function sortByAttendance(list, dir){
 
 // Carte d'un·e ministre fédéral·e (cabinet pm.gc.ca, rapproché·e du roster pour
 // le parti/PersonId — voir scrapers/ministers.js). Montre le portefeuille bilingue.
-function ministerCardFed(m, isEn, L){
+function ministerCardFed(m, isEn, L, idx){
   const color = partyColors[m.party] || '#8a8f99';
   const role = L(m.role);
   const url = m.url ? L(m.url) : null;
@@ -2654,11 +2837,13 @@ function ministerCardFed(m, isEn, L){
     : '';
   const minDep = (typeof deputeById !== 'undefined' && m.personId) ? deputeById.get(m.personId) : null;
   const minEmail = minDep && minDep.email ? minDep.email : null;
-  const avatar = minEmail
-    ? `<a class="avatar" href="mailto:${minEmail}" onclick="event.stopPropagation()" title="${minEmail}">${mailIconSvg}</a>`
-    : url
-    ? `<a class="avatar" href="${url}" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="${isEn?'Official profile on ourcommons.ca':'Fiche officielle sur ourcommons.ca'}">${ini}</a>`
-    : `<span class="avatar">${ini}</span>`;
+  const candy = ['var(--cyan)','var(--lime)','var(--pink)','var(--yellow)'][(idx || 0) % 4];
+  const avatar = url
+    ? `<a class="avatar" style="background:${candy}" href="${url}" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="${isEn?'Official profile on ourcommons.ca':'Fiche officielle sur ourcommons.ca'}">${ini}</a>`
+    : `<span class="avatar" style="background:${candy}">${ini}</span>`;
+  const emailHtml = minEmail
+    ? `<a class="depute-email" href="mailto:${minEmail}" onclick="event.stopPropagation()" title="${minEmail}">${minEmail}</a>`
+    : `<span class="depute-email" style="opacity:.55">${isEn?'no public email':'courriel non publié'}</span>`;
   const pmTag = m.isPM ? (isEn ? 'Prime Minister' : 'Premier ministre') : '';
   const attDep = (typeof deputeById !== 'undefined' && m.personId) ? deputeById.get(m.personId) : null;
   const attVr = attDep && attDep.votingRecord ? attDep.votingRecord : null;
@@ -2669,15 +2854,20 @@ function ministerCardFed(m, isEn, L){
     <div class="m-card">
       <div class="top-row">${avatar}${followBtn}</div>
       <h3>${m.name}</h3>
-      <div class="role">${role}</div>
+      <div class="mc-role-wrap"><span class="mc-role" style="background:${m.isPM ? 'var(--ink)' : candy}; color:${m.isPM ? 'var(--yellow)' : 'var(--ink)'}">${role}</span></div>
       <div class="meta-row">
-        <span class="depute-party" style="background:${color}22; color:${color}">${m.party || '—'}</span>
+        ${emailHtml}
         <span class="vp-note" title="${attTitle}">${attTxt}</span>
       </div>
     </div>
   `;
 }
 
+let ministresShowAll = false;
+function showAllMinistres(){
+  ministresShowAll = true;
+  renderMinistres(document.getElementById('searchMinistres') ? document.getElementById('searchMinistres').value : '');
+}
 function renderMinistres(filter){
   const grid = document.getElementById('ministresGrid');
   const isEn = currentLang === 'en';
@@ -2687,7 +2877,6 @@ function renderMinistres(filter){
     // Vue combinée : plus de priorité "Conseil des ministres" — tout le monde
     // (ministres + reste de l'Assemblée) sur un même pied d'égalité, classé
     // par présence. Voir toggleMinistresSort().
-    document.getElementById('ministresTitle').style.display = 'none';
     document.getElementById('ministresInfoBox').style.display = 'none';
     document.getElementById('deputesTitle').style.display = 'none';
     document.getElementById('deputesInfoBox').style.display = 'none';
@@ -2718,20 +2907,21 @@ function renderMinistres(filter){
   // Avec un filtre de parti actif, le bloc ministres reste masqué (les ministres
   // figurent déjà dans la grille des député·e·s du parti) — voir setPartyFilter.
   const hideMin = !!partyFilter;
-  document.getElementById('ministresTitle').style.display = hideMin ? 'none' : '';
   document.getElementById('ministresInfoBox').style.display = hideMin ? 'none' : '';
   document.getElementById('ministresGrid').style.display = hideMin ? 'none' : '';
-  document.getElementById('combinedTitle').style.display = 'none';
-  document.getElementById('deputesTitle').style.display = '';
-  document.getElementById('deputesInfoBox').style.display = '';
 
   const L = o => (o && typeof o === 'object') ? (isEn ? (o.en ?? o.fr ?? '') : (o.fr ?? o.en ?? '')) : (o ?? '');
   const f = norm(filter);
   const list = ministers.filter(m => (!partyFilter || m.party === partyFilter) && (!f || norm(m.name).includes(f) || norm(L(m.role)).includes(f)));
+  const shown = (!ministresShowAll && list.length > 8) ? list.slice(0, 8) : list;
+  const remaining = list.length - shown.length;
+  const moreTile = remaining > 0
+    ? `<a class="min-more" onclick="showAllMinistres()"><span class="min-more-n">+${remaining}</span><span class="min-more-t">${isEn ? 'See all ' + list.length + ' ministers →' : 'Voir les ' + list.length + ' ministres →'}</span></a>`
+    : '';
   grid.innerHTML = list.length
-    ? list.map(m => ministerCardFed(m, isEn, L)).join('')
+    ? shown.map((m, i) => ministerCardFed(m, isEn, L, i)).join('') + moreTile
     : `<div class="no-results">${isEn ? 'No minister matches this search.' : 'Aucun ministre ne correspond à cette recherche.'}</div>`;
-  document.getElementById('ministresCount').textContent = ministers.length;
+  { const ct = document.getElementById('cabinetTitle'); if(ct) ct.textContent = isEn ? `The Cabinet — ${ministers.length} ministers` : `Le Cabinet — ${ministers.length} ministres`; }
   document.getElementById('ministresCount2').textContent = ministers.length;
 }
 
@@ -2919,7 +3109,7 @@ function billCard(b, ctx){
   if(!currentUser){
     flagHint = isEn ? 'Sign-in required — one request per person, no anonymous requests' : 'Connexion requise — une demande par personne, aucune demande anonyme';
     flagLabel = isEn ? '🔒 Sign in to ask' : '🔒 Se connecter pour demander';
-    flagOnclick = `goToTab('compte')`;
+    flagOnclick = `goToTab('lexique')`;
   } else if(isFlagged){
     flagHint = flagMailHint;
     flagLabel = isEn ? '✓ Explanation requested' : '✓ Explication demandée';
@@ -2942,7 +3132,7 @@ function billCard(b, ctx){
     const style = date
       ? 'background:var(--green-soft); color:var(--green);'
       : 'background:var(--paper-2); color:var(--slate); opacity:.7;';
-    return `<span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'Inter',sans-serif; font-size:10.5px; padding:2px 7px; border-radius:2px; ${style}">${s.label}${date?`<b>${date}</b>`:''}</span>`;
+    return `<span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; ${style}">${s.label}${date?`<b>${date}</b>`:''}</span>`;
   }).join('');
 
   // Scrutins enregistrés sur ce projet (résumé). Le détail nominatif « qui a voté
@@ -2952,7 +3142,22 @@ function billCard(b, ctx){
   const yeaL = isEn ? 'Yea' : 'Pour', nayL = isEn ? 'Nay' : 'Contre', pairL = isEn ? 'paired' : 'pairés';
   const divWrapId = `billvotes-${ctx}-${b.id}`;
   // Vue compacte (par défaut) : une ligne par scrutin, propre et ordonnée.
-  const compactRows = divs.map(dv => `<div style="font-size:12px; padding:3px 0; border-top:1px solid var(--line);"><span style="font-family:'Inter',sans-serif; color:var(--slate);">${dv.date}</span> · <b style="color:${dv.passed ? 'var(--green)' : 'var(--red)'}">${L(dv.result)}</b> · <b style="color:var(--green)">${dv.totals.yea}</b> ${yeaL} / <b style="color:var(--red)">${dv.totals.nay}</b> ${nayL}${dv.totals.paired ? ` · ${dv.totals.paired} ${pairL}` : ''}</div>`).join('');
+  const compactRows = divs.map(dv => {
+    const yea = dv.totals.yea || 0, nay = dv.totals.nay || 0;
+    const tot = (yea + nay) || 1;
+    const pctY = Math.round(yea / tot * 100);
+    const badgeBg = dv.passed ? 'var(--lime)' : 'var(--pink)';
+    return `<div style="padding:11px 0 5px; border-top:2px solid var(--ink);">
+      <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:7px;">
+        <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:600; color:var(--slate);">${dv.date}</span>
+        <span style="font-size:10.5px; font-weight:700; text-transform:uppercase; background:${badgeBg}; border:2px solid var(--ink); padding:1px 8px;">${L(dv.result)}</span>
+      </div>
+      <div style="display:flex; align-items:center; gap:11px;">
+        <div class="bar" style="flex:1; margin-top:0;"><div class="seg pour" style="width:${pctY}%"></div><div class="seg contre" style="width:${100 - pctY}%"></div></div>
+        <span style="font-size:12px; font-weight:700; white-space:nowrap; font-family:'IBM Plex Mono',monospace;"><b>${yea}</b> ${yeaL} · <b>${nay}</b> ${nayL}${dv.totals.paired ? ' · ' + dv.totals.paired + ' ' + pairL : ''}</span>
+      </div>
+    </div>`;
+  }).join('');
   // Vue détaillée (dépliée par le + du haut) : chaque scrutin avec ses + pour voir qui a voté.
   const detailedRows = divs.map(dv => {
     const v = (typeof voteById !== 'undefined') ? voteById.get(dv.number) : null;
@@ -2971,7 +3176,7 @@ function billCard(b, ctx){
       </div>`;
   }).join('');
   const divisionsHtml = divs.length ? `<div style="margin-top:10px;">
-    <div style="font-family:'Inter',sans-serif; font-size:11px; color:var(--slate); margin-bottom:4px;">${divTitle} <span class="tally-plus" id="plus-${divWrapId}" onclick="event.stopPropagation(); toggleBillVotes('${divWrapId}')">+</span> <span style="opacity:.7">${isEn ? 'who voted what' : 'qui a voté quoi'}</span></div>
+    <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--slate); margin-bottom:4px;">${divTitle} <span class="tally-plus" id="plus-${divWrapId}" onclick="event.stopPropagation(); toggleBillVotes('${divWrapId}')">+</span> <span style="opacity:.7">${isEn ? 'who voted what' : 'qui a voté quoi'}</span></div>
     <div id="${divWrapId}-compact">${compactRows}</div>
     <div id="${divWrapId}-detailed" style="display:none">${detailedRows}</div>
   </div>` : '';
@@ -2981,7 +3186,22 @@ function billCard(b, ctx){
   const senVotes = (typeof senateVotesByBillId !== 'undefined') ? (senateVotesByBillId.get(b.id) || []) : [];
   const senWrapId = `senvotes-${ctx}-${b.id}`;
   const absL = isEn ? 'abstentions' : 'abstentions';
-  const senCompact = senVotes.map(sv => `<div style="font-size:12px; padding:3px 0; border-top:1px solid var(--line);"><span style="font-family:'Inter',sans-serif; color:var(--slate);">${sv.date}</span> · <b style="color:${sv.passed ? 'var(--green)' : 'var(--red)'}">${L(sv.result)}</b> · <b style="color:var(--green)">${sv.totals.yea}</b> ${yeaL} / <b style="color:var(--red)">${sv.totals.nay}</b> ${nayL}${sv.totals.abstention ? ` · ${sv.totals.abstention} ${absL}` : ''}</div>`).join('');
+  const senCompact = senVotes.map(sv => {
+    const yea = sv.totals.yea || 0, nay = sv.totals.nay || 0;
+    const tot = (yea + nay) || 1;
+    const pctY = Math.round(yea / tot * 100);
+    const badgeBg = sv.passed ? 'var(--lime)' : 'var(--pink)';
+    return `<div style="padding:11px 0 5px; border-top:2px solid var(--ink);">
+      <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:7px;">
+        <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:600; color:var(--slate);">${sv.date}</span>
+        <span style="font-size:10.5px; font-weight:700; text-transform:uppercase; background:${badgeBg}; border:2px solid var(--ink); padding:1px 8px;">${L(sv.result)}</span>
+      </div>
+      <div style="display:flex; align-items:center; gap:11px;">
+        <div class="bar" style="flex:1; margin-top:0;"><div class="seg pour" style="width:${pctY}%"></div><div class="seg contre" style="width:${100 - pctY}%"></div></div>
+        <span style="font-size:12px; font-weight:700; white-space:nowrap; font-family:'IBM Plex Mono',monospace;"><b>${yea}</b> ${yeaL} · <b>${nay}</b> ${nayL}${sv.totals.abstention ? ' · ' + sv.totals.abstention + ' ' + absL : ''}</span>
+      </div>
+    </div>`;
+  }).join('');
   const senDetailed = senVotes.map(sv => {
     const sDomId = `senbillvote-${ctx}-${b.id}-${sv.id}`;
     const bl = grp => sv.ballots.filter(x => x.vote === grp);
@@ -2998,7 +3218,7 @@ function billCard(b, ctx){
       </div>`;
   }).join('');
   const senateDivisionsHtml = senVotes.length ? `<div style="margin-top:10px;">
-    <div style="font-family:'Inter',sans-serif; font-size:11px; color:var(--slate); margin-bottom:4px;">${isEn ? 'Senate votes on this bill' : 'Votes du Sénat sur ce projet'} <span class="tally-plus" id="plus-${senWrapId}" onclick="event.stopPropagation(); toggleBillVotes('${senWrapId}')">+</span> <span style="opacity:.7">${isEn ? 'who voted what' : 'qui a voté quoi'}</span></div>
+    <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--slate); margin-bottom:4px;">${isEn ? 'Senate votes on this bill' : 'Votes du Sénat sur ce projet'} <span class="tally-plus" id="plus-${senWrapId}" onclick="event.stopPropagation(); toggleBillVotes('${senWrapId}')">+</span> <span style="opacity:.7">${isEn ? 'who voted what' : 'qui a voté quoi'}</span></div>
     <div id="${senWrapId}-compact">${senCompact}</div>
     <div id="${senWrapId}-detailed" style="display:none">${senDetailed}</div>
   </div>` : '';
@@ -3014,7 +3234,7 @@ function billCard(b, ctx){
     const spAbbr = (isEn ? sp.abbr.en : sp.abbr.fr) || sp.code;
     const spFull = (isEn ? sp.name.en : sp.name.fr) || sp.code;
     const spTip = `${spFull}${sponsor ? ` — ${sponsor}` : ''}`;
-    sponsorChip = `<span class="depute-party" style="background:${spColor}22; color:${spColor}" title="${spTip.replace(/"/g, '&quot;')}">${spAbbr}</span>`;
+    sponsorChip = `<span class="depute-party" style="background:${spColor}; color:${textOn(spColor)}" title="${spTip.replace(/"/g, '&quot;')}">${spAbbr}</span>`;
   }
 
   return `
@@ -3154,8 +3374,23 @@ function updateMotionsToggleLabel(){
 }
 function toggleShowMotions(){
   showMotions = !showMotions;
-  updateMotionsToggleLabel();
+  updateMotionsToggleLabel(); updatePetitionsToggleLabel();
   renderVotes();
+}
+let showPetitions = false;
+function updatePetitionsToggleLabel(){
+  const btn = document.getElementById('petitionsToggle');
+  if(!btn) return;
+  const n = (typeof petitions !== 'undefined' && petitions) ? petitions.length : 0;
+  const show = currentLang === 'en' ? 'Petitions (' + n + ')' : 'Pétitions (' + n + ')';
+  const hide = currentLang === 'en' ? 'Hide petitions' : 'Masquer les pétitions';
+  btn.textContent = showPetitions ? hide : show;
+}
+function togglePetitions(){
+  showPetitions = !showPetitions;
+  const box = document.getElementById('petitionsBlock');
+  if(box) box.style.display = showPetitions ? 'block' : 'none';
+  updatePetitionsToggleLabel();
 }
 
 function renderBills(keyword){
@@ -3175,12 +3410,66 @@ function renderBills(keyword){
     return billsSortDir === 'desc' ? db.localeCompare(da) : da.localeCompare(db);
   });
   const el = document.getElementById('billsList');
-  el.innerHTML = list.length ? list.map(b=>billCard(b,'full')).join('') : `<div class="no-results">${currentLang==='en' ? 'No bill matches this search.' : 'Aucun projet de loi ne correspond à cette recherche.'}</div>`;
+  el.innerHTML = list.length ? list.map(b=>apercuBillRow(b,'pr')).join('') : `<div class="no-results">${currentLang==='en' ? 'No bill matches this search.' : 'Aucun projet de loi ne correspond à cette recherche.'}</div>`;
   document.getElementById('statProjets').textContent = bills.length;
 }
 
+function renderPageBandCounts(){
+  const isEn = currentLang === 'en';
+  const loc = isEn ? 'en-CA' : 'fr-CA';
+  const n = arr => (typeof arr !== 'undefined' ? arr.length : 0).toLocaleString(loc);
+  const set = (id, txt) => { const e = document.getElementById(id); if(e) e.textContent = txt; };
+  set('projetsCountTitle', isEn ? n(bills) + ' bills' : n(bills) + ' projets de loi');
+  set('votesCountTitle', isEn ? n(votes) + ' recorded votes' : n(votes) + ' votes enregistrés');
+  set('lexiqueCountTitle', isEn ? 'Glossary — ' + n(typeof lexiconTerms!=='undefined'?lexiconTerms:[]) + ' terms' : 'Lexique — ' + n(typeof lexiconTerms!=='undefined'?lexiconTerms:[]) + ' termes');
+}
+function renderApercuStats(){
+  const isEn = currentLang === 'en';
+  const loc = isEn ? 'en-CA' : 'fr-CA';
+  const set = (id, val) => { const e = document.getElementById(id); if(e) e.textContent = (Number(val)||0).toLocaleString(loc); };
+  set('nbDeputes', typeof deputes !== 'undefined' ? deputes.length : 0);
+  set('nbMinistres', typeof ministers !== 'undefined' ? ministers.length : 0);
+  set('nbProjets', typeof bills !== 'undefined' ? bills.length : 0);
+  set('nbVotes', typeof votes !== 'undefined' ? votes.length : 0);
+  const hero = document.getElementById('a3hero');
+  if(hero) hero.innerHTML = isEn
+    ? 'Who sits, who legislates, <span class="hlp">who votes how.</span>'
+    : 'Qui siège, qui légifère, <span class="hlp">qui vote quoi.</span>';
+}
+function apercuBillRow(b, ctx){
+  ctx = ctx || 'ap';
+  const isEn = currentLang === 'en';
+  const L = o => (o && typeof o === 'object') ? (isEn ? (o.en ?? o.fr ?? '') : (o.fr ?? o.en ?? '')) : (o ?? '');
+  const rowId = 'abrow-' + ctx + '-' + b.id;
+  const title = L(b.title);
+  let partyBadge = '';
+  const sp = b.sponsorParty;
+  if(sp){
+    const c = (sp.kind === 'party' ? partyColors[sp.code] : groupColors[sp.code]) || '#8a8f99';
+    const ab = (isEn ? sp.abbr.en : sp.abbr.fr) || sp.code;
+    partyBadge = `<span class="depute-party" style="background:${c}; color:${textOn(c)}">${ab}</span>`;
+  }
+  const statusP = `<span class="status-pill ${statusClass(b.state)}">${statusLabel(b.state)}</span>`;
+  const full = billCard(b, ctx + b.id);
+  return `<div class="ab-row" id="${rowId}">
+    <div class="ab-head" onclick="toggleApercuBill('${rowId}')">
+      <span class="ab-num">${b.num}</span>
+      <span class="ab-title">${title}</span>
+      ${partyBadge}
+      ${statusP}
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail">${full}</div>
+  </div>`;
+}
+function toggleApercuBill(rowId){
+  const r = document.getElementById(rowId);
+  if(r) r.classList.toggle('open');
+}
 function renderApercuBills(){
-  document.getElementById('apercuBills').innerHTML = bills.slice(0,4).map(b=>billCard(b,'apercu')).join('');
+  const el = document.getElementById('apercuBills');
+  if(!el) return;
+  el.innerHTML = bills.slice(0,4).map(b => apercuBillRow(b, 'ap')).join('');
 }
 
 const deputeById = new Map(deputes.map(d=>[d.id, d]));
@@ -3204,6 +3493,14 @@ const senateVotesByBillId = (() => {
 // Couleurs des groupes parlementaires du Sénat (le C = caucus conservateur, même
 // bleu que les Communes ; les autres groupes sont non partisans).
 const groupColors = { ISG:'#6D5BA6', CSG:'#0E7C7B', PSG:'#B0568C', C:'#1A4782', GRO:'#5B6B7A', 'Non-affiliated':'#8a8f99' };
+let senateGroupFilter = '', senatorsShowAll = false;
+function setSenateGroup(c){
+  senateGroupFilter = (senateGroupFilter === c) ? '' : c;
+  senatorsShowAll = false;
+  renderPartyFilters();
+  renderDeputes();
+}
+function showAllSenators(){ senatorsShowAll = true; renderDeputes(); }
 let chamberView = 'commons';   // onglet « Députés » : 'commons' | 'senate'
 let voteChamber = 'commons';   // onglet « Votes »  : 'commons' | 'senate'
 
@@ -3237,7 +3534,7 @@ function senatorCardFed(s, isEn, L){
       <h3>${s.name}</h3>
       <div class="role">${region}</div>
       <div class="meta-row">
-        <span class="depute-party" style="background:${color}22; color:${color}" title="${groupFull}">${groupShort}</span>
+        <span class="depute-party" style="background:${color}; color:${textOn(color)}" title="${groupFull}">${groupShort}</span>
         <span class="vp-note" title="${attTitle}">${attTxt}</span>
       </div>
     </div>`;
@@ -3248,16 +3545,26 @@ function renderSenators(filter){
   const L = o => (o && typeof o === 'object') ? (isEn ? (o.en ?? o.fr ?? '') : (o.fr ?? o.en ?? '')) : (o ?? '');
   const f = norm(filter !== undefined ? filter : (document.getElementById('searchMinistres')?.value || ''));
   const list = senators.filter(s =>
-    !f ||
+    (!senateGroupFilter || (s.group.code || 'Non-affiliated') === senateGroupFilter) &&
+    (!f ||
     norm(s.name).includes(f) ||
     norm(L(s.province)).includes(f) ||
     norm(s.group.code || '').includes(f) ||
-    norm(L({ en: s.group.enName, fr: s.group.frName })).includes(f)
+    norm(L({ en: s.group.enName, fr: s.group.frName })).includes(f))
   ).sort((a, b) => a.lastName.localeCompare(b.lastName, 'fr'));
   const el = document.getElementById('deputesList');
-  el.innerHTML = list.length
-    ? list.map(s => senatorCardFed(s, isEn, L)).join('')
+  const LIMIT = 11;
+  const total = list.length;
+  const shown = (!senatorsShowAll && total > LIMIT) ? list.slice(0, LIMIT) : list;
+  const remaining = total - shown.length;
+  const moreTile = remaining > 0
+    ? `<a class="min-more" onclick="showAllSenators()"><span class="min-more-n">+${remaining}</span><span class="min-more-t">${isEn ? 'See all ' + total + ' senators →' : 'Voir les ' + total + ' sénateur·rice·s →'}</span></a>`
+    : '';
+  el.innerHTML = total
+    ? shown.map(s => senatorCardFed(s, isEn, L)).join('') + moreTile
     : `<div class="no-results">${isEn ? 'No results for this search.' : 'Aucun résultat pour cette recherche.'}</div>`;
+  const pg = document.getElementById('deputesPager');
+  if(pg) pg.innerHTML = '';
 }
 
 // Hémicycle du Sénat : 105 sièges, colorés par groupe parlementaire, les sièges
@@ -3317,6 +3624,31 @@ function renderSenateHemicycle(){
 }
 
 /* ---------------- LEXIQUE (glossaire parlementaire fédéral) ---------------- */
+// Catégories du lexique — classement validé avec Martin (2026-07). On garde une map
+// séparée (clé = terme FR) plutôt que de modifier les entrées : si un terme change,
+// il perd juste son badge au lieu de casser quoi que ce soit.
+const LEX_CATS = {
+  proc:  { fr:'Procédure',          en:'Procedure',      color:'var(--yellow)' },
+  votes: { fr:'Votes',              en:'Votes',          color:'var(--cyan)'   },
+  roles: { fr:'Personnes et rôles', en:'People & roles', color:'var(--lime)'   }
+};
+const lexiconCatByTerm = {
+  "Projet de loi (C- / S-)": 'proc',
+  "Première, deuxième, troisième lecture": 'proc',
+  "Étape du comité / du rapport": 'proc',
+  "Sanction royale": 'proc',
+  "Vote par appel nominal": 'votes',
+  "Pairé (Communes)": 'votes',
+  "Parrain / marraine d'un projet": 'roles',
+  "Sénateur·rice": 'roles',
+  "Groupes parlementaires du Sénat": 'roles',
+  "Caucus": 'roles',
+  "Législature et session": 'proc',
+  "Prorogation / dissolution": 'proc',
+  "Cabinet (conseil des ministres)": 'roles'
+};
+let lexCatFilter = null;
+function setLexCat(c){ lexCatFilter = (lexCatFilter === c) ? null : c; renderLexique(); }
 const lexiconTerms = [
   { term: { fr: "Projet de loi (C- / S-)", en: "Bill (C- / S-)" }, def: {
     fr: "Un texte proposé qui doit franchir les deux chambres puis recevoir la sanction royale pour devenir loi. Les projets numérotés <b>C-</b> commencent à la Chambre des communes, les <b>S-</b> au Sénat. Les numéros sous 200 sont des projets du gouvernement ; à partir de C-200 / S-200, ce sont des projets émanant d'un·e député·e ou sénateur·rice.",
@@ -3442,24 +3774,27 @@ function jumpToApropos(){
 // (comités, whips, Cour suprême…) sont des rôles collectifs/institutionnels.
 function renderPeopleGroups(isEn){
   const L = o => isEn ? (o.en || o.fr) : (o.fr || o.en);
-  return lexiconPeople.map(g => {
-    const rows = g.entries.map(e => {
+  // Même présentation que les termes du lexique : grille 2 colonnes, cartes néo,
+  // badge coloré = le groupe. On coupe la partie explicative après le tiret cadratin
+  // pour garder un badge court (le texte complet reste dans la donnée).
+  const colors = ['var(--yellow)','var(--cyan)','var(--lime)','var(--pink)'];
+  const shortGroup = s => String(s || '').split(' — ')[0];
+  const cards = [];
+  lexiconPeople.forEach((g, gi) => {
+    const color = colors[gi % colors.length];
+    const groupLabel = shortGroup(L(g.group));
+    g.entries.forEach(e => {
       const name = (typeof officeholderNames !== 'undefined' && e.key && officeholderNames[e.key]) || e.name;
-      const tagHtml = e.tag ? `<div style="margin-top:8px;"><span style="font-family:'Inter',sans-serif; font-size:10px; text-transform:uppercase; letter-spacing:.04em; color:var(--slate); background:var(--paper-2); border-radius:20px; padding:2px 9px;">${L(e.tag)}</span></div>` : '';
-      if(name){
-        // Entrée nommée → carte blanche (comme sur DossierQuébec).
-        return `<div style="background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:12px 15px; margin:8px 0;">
-            <div style="font-family:'Inter',sans-serif; font-size:13.5px; font-weight:600; color:var(--slate);">${L(e.role)}</div>
-            <div style="font-size:16px; font-weight:600; color:var(--ink); margin:1px 0 4px;">${name}</div>
-            <div style="font-size:13px; line-height:1.6; color:var(--slate);">${L(e.desc)}</div>
-            ${tagHtml}
-          </div>`;
-      }
-      // Rôle collectif sans nom → item de liste classique.
-      return `<div class="lexique-item"><dt>${L(e.role)}</dt><dd>${L(e.desc)}${tagHtml}</dd></div>`;
-    }).join('');
-    return `<div style="font-family:'Inter',sans-serif; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; color:var(--gold); margin:22px 0 2px;">${L(g.group)}</div>${rows}`;
-  }).join('');
+      const title = name || L(e.role);
+      const roleLine = name ? `<div class="ppl-role">${L(e.role)}</div>` : '';
+      const tagHtml = e.tag ? `<div class="ppl-tag">${L(e.tag)}</div>` : '';
+      cards.push(`<div class="lexique-item">
+          <div class="lex-head"><dt>${title}</dt><span class="lex-badge ppl-badge" style="background:${color}">${groupLabel}</span></div>
+          <dd>${roleLine}${L(e.desc)}${tagHtml}</dd>
+        </div>`);
+    });
+  });
+  return `<div class="lexique-grid">${cards.join('')}</div>`;
 }
 
 function renderLexique(){
@@ -3467,7 +3802,22 @@ function renderLexique(){
   if(!el) return;
   const isEn = currentLang === 'en';
   const L = o => isEn ? (o.en || o.fr) : (o.fr || o.en);
-  const item = t => `<div class="lexique-item"><dt>${L(t.term)}</dt><dd>${L(t.def)}</dd></div>`;
+  const catOf = t => lexiconCatByTerm[t.term && t.term.fr] || null;
+  const item = t => {
+    const c = catOf(t);
+    const badge = (c && LEX_CATS[c])
+      ? `<span class="lex-badge" style="background:${LEX_CATS[c].color}">${isEn ? LEX_CATS[c].en : LEX_CATS[c].fr}</span>`
+      : '';
+    return `<div class="lexique-item"><div class="lex-head"><dt>${L(t.term)}</dt>${badge}</div><dd>${L(t.def)}</dd></div>`;
+  };
+  const lexQ = norm(document.getElementById('searchLexique') ? document.getElementById('searchLexique').value : '');
+  let lexTerms = lexiconTerms;
+  if(lexCatFilter) lexTerms = lexTerms.filter(t => catOf(t) === lexCatFilter);
+  if(lexQ) lexTerms = lexTerms.filter(t => norm(L(t.term)).includes(lexQ) || norm(L(t.def)).includes(lexQ));
+  const lexChips = `<div class="lex-cats">
+      <span class="lex-chip${!lexCatFilter ? ' active' : ''}" onclick="setLexCat(null)">${isEn ? 'All' : 'Tout'}</span>
+      ${Object.keys(LEX_CATS).map(k => `<span class="lex-chip${lexCatFilter === k ? ' on' : ''}" style="${lexCatFilter === k ? 'background:' + LEX_CATS[k].color + ';' : ''}" onclick="setLexCat('${k}')">${isEn ? LEX_CATS[k].en : LEX_CATS[k].fr} (${lexiconTerms.filter(t => catOf(t) === k).length})</span>`).join('')}
+    </div>`;
   const peopleTitle = isEn ? 'Who’s involved around Parliament' : 'Qui gravite autour du Parlement';
   const termsTitle = isEn ? 'Parliamentary jargon' : 'Le jargon parlementaire';
   el.innerHTML = `<div class="role-group-title" id="sec-lexique-people">${peopleTitle}</div>`
@@ -3475,7 +3825,8 @@ function renderLexique(){
     + renderPeopleGroups(isEn)
     + lobbyRegistryBlock(isEn)
     + `<div class="role-group-title" id="sec-lexique-terms" style="margin-top:26px;">${termsTitle}</div>`
-    + lexiconTerms.map(item).join('');
+    + lexChips
+    + '<div class="lexique-grid">' + (lexTerms.length ? lexTerms.map(item).join('') : '<div class="no-results">' + (isEn ? 'No term matches this search.' : 'Aucun terme ne correspond à cette recherche.') + '</div>') + '</div>';
 }
 
 // Registre des lobbyistes — bloc de RÉFÉRENCE (pas de donnée ingérée). Les fichiers
@@ -3505,8 +3856,8 @@ function lobbyRegistryBlock(isEn){
   ];
   const linksHtml = links.map(([t, u]) => `<a href="${u}" target="_blank" rel="noopener" style="color:var(--gold); white-space:nowrap;">${t}</a>`).join('<span style="color:var(--line); margin:0 8px;">·</span>');
   return `
-    <div id="sec-lobby" style="background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:14px 16px; margin:14px 0 4px; scroll-margin-top:12px;">
-      <div style="font-family:'Inter',sans-serif; font-size:15px; font-weight:600; margin-bottom:6px;">🏢 ${title}</div>
+    <div id="sec-lobby" style="background:var(--card); border:3px solid var(--line); border-radius:var(--radius); padding:14px 16px; margin:14px 0 4px; scroll-margin-top:12px;">
+      <div style="font-family:'IBM Plex Mono',monospace; font-size:15px; font-weight:600; margin-bottom:6px;">🏢 ${title}</div>
       <p style="font-size:13px; line-height:1.65; color:var(--ink); margin:0 0 8px; max-width:680px;">${body}</p>
       <p style="font-size:12px; line-height:1.6; color:var(--slate); margin:0 0 10px; max-width:680px;">${note}</p>
       <div style="font-size:12.5px;">${linksHtml}</div>
@@ -3524,6 +3875,9 @@ function updateChamberLabels(){
 
 // Bascule Communes / Sénat de l'onglet « Députés » : masque le décor propre aux
 // Communes (hémicycle, cabinet, recherche par code postal) et échange la grille.
+function toggleChamberChip(){
+  setChamber(chamberView === 'senate' ? 'commons' : 'senate');
+}
 function setChamber(c){
   chamberView = c;
   const isEn = currentLang === 'en';
@@ -3533,21 +3887,33 @@ function setChamber(c){
   const show = (id, on) => { const e = document.getElementById(id); if(e) e.style.display = on ? '' : 'none'; };
   show('commonsChrome', !senate);
   show('senateComposition', senate);
-  show('deputesInfoBox', !senate);
   show('senateInfoBox', senate);
   // Le comparateur compare des député·e·s — sans objet en vue Sénat.
   show('sec-comparateur', !senate);
   show('compareToolbar', !senate);
   show('comparateurTable', !senate);
   if(senate) renderSenateHemicycle();
-  const sBox = document.getElementById('senateInfoBox');
-  if(sBox) sBox.innerHTML = isEn
-    ? 'These cards come from the official list of senators (sencanada.ca), bilingual. Senators are <b>appointed</b> (not elected) and serve until age 75; the parliamentary group, region, appointment date and attendance rate come from the official source. The Senate has 105 seats; vacant seats are not shown. No "Follow" button here for now.'
-    : "Ces fiches viennent de la liste officielle des sénateur·rice·s (sencanada.ca), bilingue. Les sénateur·rice·s sont <b>nommé·e·s</b> (non élu·e·s) et siègent jusqu'à 75 ans ; le groupe parlementaire, la région, la date de nomination et le taux de présence proviennent de la source officielle. Le Sénat compte 105 sièges ; les sièges vacants n'apparaissent pas. Pas de bouton « Suivre » ici pour l'instant.";
-  const title = document.getElementById('deputesTitle');
-  if(title) title.textContent = senate
-    ? (isEn ? 'Senators — all parliamentary groups' : 'Les sénateur·rice·s — tous les groupes parlementaires')
-    : (isEn ? 'Members of the House of Commons — all parties' : 'Les député·e·s de la Chambre des communes — tous les partis');
+  // La légende (bouton « Légende ») décrit la source de la liste affichée — elle
+  // doit donc changer avec la chambre, sinon on annonce les député·e·s alors qu'on
+  // affiche des sénateur·rice·s. L'état ouvert/fermé, lui, est conservé.
+  const legendBox = document.getElementById('deputesInfoBox');
+  if(legendBox) legendBox.innerHTML = senate
+    ? (isEn
+      ? 'These cards come from the official list of senators (sencanada.ca), bilingual. Senators are <b>appointed</b> (not elected) and serve until age 75; the parliamentary group, region, appointment date and attendance rate come from the official source. The Senate has 105 seats; vacant seats are not shown. No "Follow" button here for now.'
+      : "Ces fiches viennent de la liste officielle des sénateur·rice·s (sencanada.ca), bilingue. Les sénateur·rice·s sont <b>nommé·e·s</b> (non élu·e·s) et siègent jusqu'à 75 ans ; le groupe parlementaire, la région, la date de nomination et le taux de présence proviennent de la source officielle. Le Sénat compte 105 sièges ; les sièges vacants n'apparaissent pas. Pas de bouton « Suivre » ici pour l'instant.")
+    : t('trouve.info');
+  const bandTitle = document.getElementById('deputesCountTitle');
+  const nSen = (typeof senators !== 'undefined' && senators) ? senators.length : 0;
+  if(bandTitle) bandTitle.textContent = senate
+    ? (isEn ? nSen + ' senators' : nSen + ' sénateur·rice·s')
+    : (isEn ? deputes.length + ' MPs' : deputes.length + ' députés');
+  const chip = document.getElementById('senateChip');
+  if(chip) chip.classList.toggle('active', senate);
+  senatorsShowAll = false;
+  if(!senate) senateGroupFilter = '';
+  renderPartyFilters();
+  const pg = document.getElementById('deputesPager');
+  if(pg && senate) pg.innerHTML = '';
   renderDeputes();
 }
 
@@ -3752,7 +4118,7 @@ function renderVotes(keyword){
     .filter(b => (b.divisions || []).length)
     .filter(b => !kw || norm([L(b.title), b.num].concat((b.divisions || []).map(d => L(d.description))).join(' ')).includes(kw))
     .sort((a, b) => latestDate(b).localeCompare(latestDate(a)));
-  const cards = list.map(b => billCard(b, 'votes')).join('');
+  const cards = list.map(b => apercuBillRow(b, 'vo')).join('');
 
   // Votes sur des motions (hors projet de loi) : affichés en liste sous les cartes
   // seulement si le bouton « motions » est activé — ils n'ont pas de projet support.
@@ -3840,6 +4206,7 @@ window.addEventListener('scroll', ()=>{
 
 document.getElementById('searchMinistres').addEventListener('input', e=> { renderMinistres(e.target.value); renderDeputes(e.target.value); });
 document.getElementById('searchBills').addEventListener('input', ()=> renderBills());
+document.getElementById('searchLexique')?.addEventListener('input', ()=> renderLexique());
 document.getElementById('searchVotes').addEventListener('input', ()=> renderVotes());
 
 /* ---------------- INIT ---------------- */
@@ -3874,7 +4241,7 @@ function sortRoadmapItems(){
   renderStatusFilters();
   renderStepFilters();
   updateSortToggleLabel();
-  updateMotionsToggleLabel();
+  updateMotionsToggleLabel(); updatePetitionsToggleLabel();
   updateMinistresSortLabel();
   renderAccountBox();
   renderFlagBox();
@@ -3882,7 +4249,7 @@ function sortRoadmapItems(){
   renderComparateurSelects();
   renderComparateurTable();
   renderBills();
-  renderApercuBills();
+  renderApercuBills(); renderApercuStats(); renderPageBandCounts();
   renderVotes();
   renderDeputes();
   renderNews();
