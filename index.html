@@ -378,6 +378,62 @@
   .vote-inline-block{margin-top:12px; padding-top:12px; border-top:1px dashed var(--line);}
   .vote-inline-date{font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--slate); text-transform:uppercase; letter-spacing:0.02em; margin-bottom:6px;}
 
+  /* ---------- ONGLET VOTES : cartes par vote ---------- */
+  .vote-card{ border:3px solid var(--ink); box-shadow:var(--shadow); background:#fff; margin-bottom:16px; }
+  .vc-head{ display:flex; align-items:flex-start; gap:16px; padding:18px 20px; cursor:pointer; }
+  .vc-head:hover{ background:var(--amber-soft); }
+  .vc-head-main{ flex:1; min-width:0; }
+  .vc-head-main h3{ margin:0; font-family:'IBM Plex Mono',monospace !important; font-size:15px; font-weight:700; line-height:1.35; text-transform:none; letter-spacing:0; }
+  .vc-meta{ font-family:'IBM Plex Mono',monospace; font-size:11.5px; font-weight:600; color:var(--slate); text-transform:uppercase; letter-spacing:0.04em; margin-top:5px; }
+  .vc-counts{ display:flex; gap:14px; align-items:baseline; flex:none; }
+  .vcc{ font-family:'IBM Plex Mono',monospace; font-size:10.5px; font-weight:700; text-transform:uppercase; color:var(--slate); white-space:nowrap; }
+  .vcc b{ font-family:'Archivo Black',sans-serif; font-size:20px; font-weight:400; letter-spacing:-0.02em; display:block; }
+  .vcc.pour b{ color:#1E9E5A; } .vcc.contre b{ color:#D64545; } .vcc.abst b{ color:#8B8578; }
+  .vc-toggle{ flex:none; font-family:'Archivo Black',sans-serif; font-size:20px; line-height:1; min-width:20px; text-align:center; }
+  .vote-card > .vc-bar{ margin:0 20px 18px; cursor:pointer; }
+  .vc-detail{ display:none; border-top:3px solid var(--ink); padding:18px 20px; }
+  .vc-detail.open{ display:block; }
+  .vc-pgrid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(165px, 1fr)); gap:12px; margin-bottom:16px; }
+  .vc-pbox{ border:2px solid var(--ink); background:#fff; }
+  .vc-phead{ padding:7px 12px; font-family:'IBM Plex Mono',monospace; font-weight:700; font-size:12px; text-transform:uppercase; letter-spacing:0.04em; border-bottom:2px solid var(--ink); }
+  .vc-pbody{ padding:11px 12px; display:flex; flex-direction:column; gap:5px; }
+  .vc-prow{ display:flex; justify-content:space-between; gap:10px; font-size:13px; }
+  .vc-prow span{ font-family:'IBM Plex Mono',monospace; font-weight:600; text-transform:uppercase; letter-spacing:0.03em; color:var(--slate); }
+  .vc-prow b{ font-weight:700; }
+  .vc-ncols{ display:grid; grid-template-columns:repeat(3, 1fr); gap:12px; margin-bottom:16px; }
+  .vc-ncol{ border:2px solid var(--ink); background:#fff; display:flex; flex-direction:column; min-width:0; }
+  .vc-nhead{ padding:7px 12px; font-family:'IBM Plex Mono',monospace; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; color:#fff; border-bottom:2px solid var(--ink); }
+  .vc-nhead.pour{ background:#2E9958; } .vc-nhead.contre{ background:#D9442F; } .vc-nhead.abst{ background:#8B8578; }
+  .vc-nbody{ padding:10px 12px; max-height:260px; overflow-y:auto; display:flex; flex-direction:column; gap:5px; }
+  .vc-nrow{ display:flex; align-items:center; gap:8px; font-size:12.5px; font-weight:600; }
+  .vc-chip{ width:12px; height:12px; border:1px solid var(--ink); flex:none; }
+  .vc-empty{ font-size:12px; color:var(--slate); }
+  .vc-foot{ display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+  .vc-foot-note{ font-family:'IBM Plex Mono',monospace; font-size:11.5px; font-weight:600; text-transform:uppercase; letter-spacing:0.04em; color:var(--slate); max-width:60ch; }
+  @media (max-width:820px){ .vc-ncols{ grid-template-columns:1fr; } }
+  @media (max-width:640px){ .vc-head{ flex-wrap:wrap; } .vc-counts{ width:100%; order:3; } .vc-head-main{ flex:1 1 100%; order:2; } .result-badge{ order:1; } .vc-toggle{ order:1; margin-left:auto; } }
+  .result-badge{ font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.04em; border:2px solid var(--ink); padding:3px 10px; white-space:nowrap; flex:none; align-self:flex-start; }
+  .result-badge.adopte{ background:var(--lime); color:var(--ink); }
+  .result-badge.rejete{ background:var(--pink); color:var(--ink); }
+  .vc-bar{ height:16px; border:2px solid var(--ink); background:#D8D4C8; display:flex; overflow:hidden; }
+  .vc-bar .seg{ height:100%; }
+  .vc-bar .seg.pour{ background:#2E9958; }
+  .vc-bar .seg.contre{ background:#D9442F; border-left:2px solid var(--ink); }
+  .vc-bar .seg.abst{ background:#D8D4C8; border-left:2px solid var(--ink); }
+  .votes-more{ display:block; width:100%; margin-top:10px; border:3px solid var(--ink); background:var(--yellow); color:var(--ink); box-shadow:var(--shadow); cursor:pointer; font-family:'IBM Plex Mono',monospace; font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:0.05em; padding:14px 20px; text-align:center; }
+  .votes-more:hover{ background:var(--ink); color:var(--yellow); }
+  .votes-more-note{ margin-top:10px; text-align:center; font-family:'IBM Plex Mono',monospace; font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; color:var(--slate); }
+  /* Bande pédagogique « Comment lire un vote » (pleine largeur) */
+  .band-lire{ background:#12327A; color:#fff; padding:34px var(--gutter) 38px; margin:26px calc(-1 * var(--gutter)) 0; border-top:5px solid var(--ink); }
+  .band-lire h2{ font-family:'Archivo Black',sans-serif !important; text-transform:uppercase; letter-spacing:-0.02em; font-size:clamp(24px,3.2vw,38px); margin:0 0 26px; color:#fff; background:none !important; border:none !important; box-shadow:none !important; padding:0 !important; }
+  .lire-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+  .lire-box{ border:3px solid #fff; padding:20px 22px; }
+  .lire-box h3{ font-family:'Archivo Black',sans-serif !important; font-size:19px; margin:0 0 10px; color:#fff; letter-spacing:-0.01em; text-transform:uppercase; }
+  .lire-box p{ font-size:14px; line-height:1.55; margin:0; color:#D6E4FF; font-weight:500; }
+  .lire-box.hl{ border-color:var(--yellow); background:rgba(255,221,51,0.10); }
+  .lire-box.hl h3{ color:var(--yellow); }
+  .lire-box.hl p{ color:#fff; }
+  @media (max-width:900px){ .lire-grid{ grid-template-columns:1fr; } }
   /* ---------- VOTES TAB ---------- */
   .vote-card{background:var(--card); border:3px solid var(--line); border-radius:var(--radius); padding:18px 20px; margin-bottom:12px; cursor:pointer; box-shadow:var(--shadow); transition:border-color .15s, box-shadow .15s;}
   .vote-card:hover{transform:translate(2px,2px); box-shadow:3px 3px 0 var(--ink);}
@@ -1055,7 +1111,6 @@
     <div class="page-toolbar">
       <div class="toolbar">
         <input type="text" id="searchVotes" data-i18n-placeholder="ph.searchVotes" placeholder="Mot-clé : sujet, numéro de projet de loi…">
-        <button class="sort-toggle" id="motionsToggle" onclick="toggleShowMotions()"></button>
         <button class="sort-toggle" id="petitionsToggle" onclick="togglePetitions()"></button>
       </div>
     </div>
@@ -1080,6 +1135,24 @@
       <b data-i18n="votes.info.b">Sur le détail « qui a voté quoi »</b> <span data-i18n="votes.info.text">— la Chambre des communes publie le nom de chaque député·e pour chaque vote par appel nominal (Pour / Contre / pairé). Le détail nominatif ci-dessus (bouton « + » sur chaque ligne) vient directement de cette source officielle (ourcommons.ca), pas d'une estimation. Le parti affiché à côté de chaque nom provient du roster actuel de la Chambre ; les personnes ayant quitté la Chambre depuis apparaissent séparément sous « Ancien·ne·s député·e·s ».</span>
     </div>
     <div class="info-box" id="senateVotesInfoBox" style="display:none"></div>
+
+    <div class="band-lire" id="band-lire-vote">
+      <h2 data-i18n="lire.h">Comment lire un vote</h2>
+      <div class="lire-grid">
+        <div class="lire-box">
+          <h3 data-i18n="lire.1.h">Vote nominal</h3>
+          <p data-i18n="lire.1.p">Chaque élu·e vote un par un et son choix est inscrit au registre public. C'est ce qui permet de dire exactement qui a voté quoi — sans interprétation.</p>
+        </div>
+        <div class="lire-box">
+          <h3 data-i18n="lire.2.h">Adopté n'est pas loi</h3>
+          <p data-i18n="lire.2.p">Un vote adopté fait franchir UNE étape. Un projet doit passer les deux chambres puis recevoir la sanction royale avant de devenir une loi.</p>
+        </div>
+        <div class="lire-box hl">
+          <h3 data-i18n="lire.3.h">Pairé n'est pas absent</h3>
+          <p data-i18n="lire.3.p">Aux Communes, deux élu·e·s de camps opposés peuvent s'entendre pour ne pas voter : leurs voix s'annulent. Ce n'est ni une absence ni une abstention.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- COMPTE & ABONNEMENT -->
@@ -1296,6 +1369,10 @@ const translations = {
     'a3.step3':"On pousse pour une explication en langage clair, sourcée.",
     'proj.bandsub':"Chaque loi résumée en clair. Pas assez clair ? Demandez une explication.",'proj.challenge':"Challenger un projet",
     'votes.bandsub':"Chaque vote nominatif — qui a voté quoi, et par quelle marge.",
+    'lire.h':"Comment lire un vote",
+    'lire.1.h':"Vote nominal",'lire.1.p':"Chaque élu·e vote un par un et son choix est inscrit au registre public. C'est ce qui permet de dire exactement qui a voté quoi — sans interprétation.",
+    'lire.2.h':"Adopté n'est pas loi",'lire.2.p':"Un vote adopté fait franchir UNE étape. Un projet doit passer les deux chambres puis recevoir la sanction royale avant de devenir une loi.",
+    'lire.3.h':"Pairé n'est pas absent",'lire.3.p':"Aux Communes, deux élu·e·s de camps opposés peuvent s'entendre pour ne pas voter : leurs voix s'annulent. Ce n'est ni une absence ni une abstention.",
     'lex.bandsub':"Le jargon parlementaire, traduit en français de tous les jours.",'lex.ph':"Chercher un terme…",
     'h.personnes':"Qui gravite autour du Parlement",
     'h.petitions':"Pétitions électroniques ouvertes à la Chambre des communes",
@@ -1348,6 +1425,10 @@ const translations = {
     'a3.step3':"We push for a plain-language, sourced explanation.",
     'proj.bandsub':"Every bill summarized in plain language. Not clear enough? Ask for an explanation.",'proj.challenge':"Challenge a bill",
     'votes.bandsub':"Every recorded vote — who voted what, and by what margin.",
+    'lire.h':"How to read a vote",
+    'lire.1.h':"Recorded vote",'lire.1.p':"Members vote one by one and each choice is entered in the public record. That is what lets us say exactly who voted what — no interpretation.",
+    'lire.2.h':"Passed is not law",'lire.2.p':"A passed vote clears ONE stage. A bill must pass both chambers and then receive royal assent before it becomes law.",
+    'lire.3.h':"Paired is not absent",'lire.3.p':"In the Commons, two members from opposing sides can agree not to vote: their voices cancel out. It is neither an absence nor an abstention.",
     'lex.bandsub':"Parliamentary jargon, translated into everyday language.",'lex.ph':"Search a term…",
     'h.personnes':"Who's involved around Parliament",
     'h.petitions':"E-petitions open at the House of Commons",
@@ -3293,8 +3374,6 @@ function billCard(b, ctx){
       </div>
       ${followRow}
       <div style="display:flex; flex-wrap:wrap; gap:4px; margin:10px 0 2px;">${timeline}</div>
-      ${divisionsHtml}
-      ${senateDivisionsHtml}
       <div class="expand-hint" id="hint-${domId}">${isEn ? 'View summary & details' : 'Voir le sommaire et les détails'}</div>
       <div class="bill-summary" id="${domId}">
         ${billSummaryHtml(b, isEn)}
@@ -3969,6 +4048,7 @@ function setChamber(c){
 }
 
 function setVoteChamber(c){
+  votesShown = 6;
   voteChamber = c;
   const isEn = currentLang === 'en';
   const senate = c === 'senate';
@@ -4023,31 +4103,7 @@ function senateVotePanel(list, isEn, L){
   return `<div class="vote-list-panel">${rows}</div>`;
 }
 
-function renderSenateVotes(keyword){
-  const isEn = currentLang === 'en';
-  const L = o => (o && typeof o === 'object') ? (isEn ? (o.en ?? o.fr ?? '') : (o.fr ?? o.en ?? '')) : (o ?? '');
-  keyword = keyword !== undefined ? keyword : (document.getElementById('searchVotes')?.value || '');
-  const kw = norm(keyword);
-  // Un carré par projet de loi ayant au moins un vote au Sénat, trié du plus récent.
-  const latestDate = b => (senateVotesByBillId.get(b.id) || []).reduce((mx, v) => (v.date > mx ? v.date : mx), '');
-  const list = bills
-    .filter(b => senateVotesByBillId.has(b.id))
-    .filter(b => !kw || norm([L(b.title), b.num].concat((senateVotesByBillId.get(b.id) || []).map(v => L(v.title))).join(' ')).includes(kw))
-    .sort((a, b) => latestDate(b).localeCompare(latestDate(a)));
-  const cards = list.map(b => apercuBillRow(b, 'sv')).join('');
-
-  let motionsHtml = '';
-  if(showMotions){
-    const motions = senateVotes.filter(v => !v.billNumber && (!kw || norm(L(v.title)).includes(kw)))
-      .sort((a, b) => (b.date || '').localeCompare(a.date || '') || b.id - a.id);
-    if(motions.length) motionsHtml = `<div class="role-group-title" style="margin-top:22px;">${isEn ? 'Senate votes on motions (not tied to a bill)' : 'Votes du Sénat sur des motions (hors projet de loi)'}</div>` + senateVotePanel(motions, isEn, L);
-  }
-
-  const el = document.getElementById('votesList');
-  el.innerHTML = (list.length || motionsHtml)
-    ? cards + motionsHtml
-    : `<div class="no-results">${isEn ? 'No bill matches this search.' : 'Aucun projet ne correspond à cette recherche.'}</div>`;
-}
+function renderSenateVotes(keyword){ return renderVotes(keyword); } // fusionnée dans renderVotes
 
 function toggleSenateNominal(domId, voteId, group){
   const el = document.getElementById(domId + '-' + group);
@@ -4156,35 +4212,156 @@ function commonsVotePanel(list, isEn, L){
   return `<div class="vote-list-panel">${rows}</div>`;
 }
 
+/* ---------------- ONGLET VOTES : une carte PAR VOTE ----------------
+   Les catégories affichées sont celles du VRAI registre de chaque chambre :
+   Communes = Pour / Contre / Pairés (il n'y a PAS d'abstention aux Communes),
+   Sénat    = Pour / Contre / Abstentions.
+   On n'invente jamais une colonne « absents » (125 − votants) : absence et
+   abstention sont deux choses différentes.
+   Le résultat Adopté/Rejeté vient du champ officiel (v.passed), pas d'un calcul
+   pour > contre : une égalité est rejetée et la présidence peut trancher. */
+let votesShown = 6;
+function loadMoreVotes(){ votesShown += 6; renderVotes(); }
+
+function toggleVoteCard(id, evt){
+  if(evt) evt.stopPropagation();
+  const el = document.getElementById(id);
+  if(!el) return;
+  const willOpen = !el.classList.contains('open');
+  document.querySelectorAll('.vc-detail.open').forEach(other => {
+    if(other === el) return;
+    other.classList.remove('open');
+    const t = document.getElementById('vctog-' + other.id);
+    if(t) t.textContent = '+';
+  });
+  el.classList.toggle('open', willOpen);
+  const tog = document.getElementById('vctog-' + id);
+  if(tog) tog.textContent = willOpen ? '−' : '+';
+}
+
+function voteCardHtml(v, senate){
+  const isEn = currentLang === 'en';
+  const L = o => (o && typeof o === 'object') ? (isEn ? (o.en ?? o.fr ?? '') : (o.fr ?? o.en ?? '')) : (o ?? '');
+  const vid = 'vc-' + (senate ? 's' : 'c') + (senate ? v.id : v.number);
+  const t = v.totals || {};
+  const pour = t.yea || 0, contre = t.nay || 0;
+  const third = senate ? (t.abstention || 0) : (t.paired || 0);
+  const thirdLbl = senate ? (isEn ? 'abst.' : 'abst.') : (isEn ? 'paired' : 'pairés');
+  const sum = (pour + contre + third) || 1;
+  const p = n => (n / sum * 100).toFixed(2) + '%';
+  const adopted = !!v.passed;
+  const title = senate ? L(v.title) : L(v.description);
+  const url = v.url ? (typeof v.url === 'object' ? L(v.url) : v.url) : null;
+  const colorOf = code => (senate ? (groupColors[code] || '#8a8f99') : (partyColors[code] || '#8a8f99'));
+
+  // Détail nominatif -> comptes par parti + listes de noms
+  const per = {};
+  const names = { yea: [], nay: [], third: [] };
+  if(senate){
+    (v.ballots || []).forEach(b => {
+      const g = b.vote === 'yea' ? 'yea' : (b.vote === 'nay' ? 'nay' : 'third');
+      const code = b.affiliation || 'Non-affiliated';
+      (per[code] = per[code] || { yea:0, nay:0, third:0 })[g]++;
+      names[g].push({ name: b.name, code });
+    });
+  } else {
+    Object.keys(v.ballots || {}).forEach(pid => {
+      const raw = v.ballots[pid];
+      const g = raw === 'yea' ? 'yea' : (raw === 'nay' ? 'nay' : 'third');
+      const d = (typeof deputeById !== 'undefined') ? deputeById.get(Number(pid)) : null;
+      const code = (d && d.party && d.party.code) || 'IND';
+      (per[code] = per[code] || { yea:0, nay:0, third:0 })[g]++;
+      names[g].push({ name: d ? d.name : '#' + pid, code });
+    });
+  }
+  const ref = senate ? groupColors : partyColors;
+  const parties = Object.keys(ref).filter(c => per[c]).concat(Object.keys(per).filter(c => !(c in ref)));
+  const pourL = isEn ? 'Yea' : 'Pour', contreL = isEn ? 'Nay' : 'Contre';
+  const thirdFull = senate ? (isEn ? 'Abstentions' : 'Abstentions') : (isEn ? 'Paired' : 'Pairés');
+
+  const pgrid = parties.map(c => {
+    const col = colorOf(c);
+    return `<div class="vc-pbox">
+        <div class="vc-phead" style="background:${col}; color:${textOn(col)}">${c}</div>
+        <div class="vc-pbody">
+          <div class="vc-prow"><span>${pourL}</span><b>${per[c].yea}</b></div>
+          <div class="vc-prow"><span>${contreL}</span><b>${per[c].nay}</b></div>
+          <div class="vc-prow"><span>${thirdFull}</span><b>${per[c].third}</b></div>
+        </div>
+      </div>`;
+  }).join('');
+
+  const col = (g, label, cls) => {
+    const rows = names[g].slice().sort((a,b) => a.name.localeCompare(b.name, 'fr'))
+      .map(n => `<div class="vc-nrow"><span class="vc-chip" style="background:${colorOf(n.code)}"></span>${n.name}</div>`).join('');
+    return `<div class="vc-ncol">
+        <div class="vc-nhead ${cls}">${label} — ${names[g].length}</div>
+        <div class="vc-nbody">${rows || '<div class="vc-empty">' + (isEn ? 'Nobody' : 'Personne') + '</div>'}</div>
+      </div>`;
+  };
+
+  const srcName = senate ? 'sencanada.ca' : 'ourcommons.ca';
+  const foot = `<div class="vc-foot">
+      <span class="vc-foot-note">${senate
+        ? (isEn ? 'An abstention is not a "no" vote.' : "Une abstention n'est pas un vote « non ».")
+        : (isEn ? 'Paired is not absent: two members from opposing sides agree not to vote.' : "Pairé n'est pas absent : deux élu·e·s de camps opposés s'entendent pour ne pas voter.")}</span>
+      ${url ? `<a class="bill-more" href="${url}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${isEn ? 'Official record' : 'Procès-verbal officiel'} → ${srcName}</a>` : ''}
+    </div>`;
+
+  return `<div class="vote-card">
+    <div class="vc-head" onclick="toggleVoteCard('${vid}', event)">
+      <span class="result-badge ${adopted ? 'adopte' : 'rejete'}">${L(v.result)}</span>
+      <div class="vc-head-main">
+        <h3>${title}</h3>
+        <div class="vc-meta">${v.date} · ${isEn ? 'Recorded vote' : 'Vote nominal'}${v.billNumber ? ' · ' + v.billNumber : ' · ' + (isEn ? 'Motion' : 'Motion')}</div>
+      </div>
+      <div class="vc-counts">
+        <span class="vcc pour"><b>${pour}</b> ${pourL}</span>
+        <span class="vcc contre"><b>${contre}</b> ${contreL}</span>
+        <span class="vcc abst"><b>${third}</b> ${thirdLbl}</span>
+      </div>
+      <span class="vc-toggle" id="vctog-${vid}">+</span>
+    </div>
+    <div class="bar vc-bar" onclick="toggleVoteCard('${vid}', event)">
+      <div class="seg pour" style="width:${p(pour)}"></div>
+      <div class="seg contre" style="width:${p(contre)}"></div>
+      <div class="seg abst" style="width:${p(third)}"></div>
+    </div>
+    <div class="vc-detail" id="${vid}">
+      <div class="vc-pgrid">${pgrid}</div>
+      <div class="vc-ncols">${col('yea', pourL, 'pour')}${col('nay', contreL, 'contre')}${col('third', thirdFull, 'abst')}</div>
+      ${foot}
+    </div>
+  </div>`;
+}
 function renderVotes(keyword){
-  if(voteChamber === 'senate') return renderSenateVotes(keyword);
+  const senate = voteChamber === 'senate';
   const isEn = currentLang === 'en';
   const L = o => (o && typeof o === 'object') ? (isEn ? (o.en ?? o.fr ?? '') : (o.fr ?? o.en ?? '')) : (o ?? '');
   keyword = keyword !== undefined ? keyword : (document.getElementById('searchVotes')?.value || '');
   const kw = norm(keyword);
-  // Un carré par projet de loi ayant au moins un vote aux Communes, comme dans
-  // l'onglet Projets — trié du vote le plus récent au plus ancien.
-  const latestDate = b => (b.divisions || []).reduce((mx, d) => (d.date > mx ? d.date : mx), '');
-  const list = bills
-    .filter(b => (b.divisions || []).length)
-    .filter(b => !kw || norm([L(b.title), b.num].concat((b.divisions || []).map(d => L(d.description))).join(' ')).includes(kw))
-    .sort((a, b) => latestDate(b).localeCompare(latestDate(a)));
-  const cards = list.map(b => apercuBillRow(b, 'vo')).join('');
-
-  // Votes sur des motions (hors projet de loi) : affichés en liste sous les cartes
-  // seulement si le bouton « motions » est activé — ils n'ont pas de projet support.
-  let motionsHtml = '';
-  if(showMotions){
-    const motions = votes.filter(v => !v.billNumber && (!kw || norm(L(v.description)).includes(kw)))
-      .sort((a, b) => (b.date || '').localeCompare(a.date || '') || b.number - a.number);
-    if(motions.length) motionsHtml = `<div class="role-group-title" style="margin-top:22px;">${isEn ? 'Votes on motions (not tied to a bill)' : 'Votes sur des motions (hors projet de loi)'}</div>` + commonsVotePanel(motions, isEn, L);
-  }
-
+  // Votes ET motions ensemble : une motion est un vote comme un autre, seulement
+  // sans projet de loi rattaché. Plus de bouton pour les cacher.
+  const src = senate ? (typeof senateVotes !== 'undefined' ? senateVotes : []) : votes;
+  const full = src
+    .filter(v => !kw || norm([senate ? L(v.title) : L(v.description), v.billNumber || ''].join(' ')).includes(kw))
+    .sort((a, b) => (b.date || '').localeCompare(a.date || '') || ((b.number || b.id || 0) - (a.number || a.id || 0)));
+  const list = full.slice(0, votesShown);
   const el = document.getElementById('votesList');
-  el.innerHTML = (list.length || motionsHtml)
-    ? cards + motionsHtml
-    : `<div class="no-results">${isEn ? 'No bill matches this search.' : 'Aucun projet ne correspond à cette recherche.'}</div>`;
-  document.getElementById('statVotes').textContent = votes.length;
+  if(!el) return;
+  el.innerHTML = list.length
+    ? list.map(v => voteCardHtml(v, senate)).join('')
+    : `<div class="no-results">${isEn ? 'No vote matches this search.' : 'Aucun vote ne correspond à cette recherche.'}</div>`;
+  if(full.length > votesShown){
+    const step = Math.min(6, full.length - votesShown);
+    el.innerHTML += `<button class="votes-more" onclick="loadMoreVotes()">${isEn
+      ? 'See ' + step + ' more — ' + list.length + ' of ' + full.length + ' shown'
+      : 'Voir ' + step + ' de plus — ' + list.length + ' sur ' + full.length + ' affichés'}</button>`;
+  } else if(full.length > 6){
+    el.innerHTML += `<div class="votes-more-note">${isEn ? 'All ' + full.length + ' shown' : 'Les ' + full.length + ' affichés'}</div>`;
+  }
+  const st = document.getElementById('statVotes');
+  if(st) st.textContent = votes.length;
 }
 
 function toggleNominalGroup(domId, voteNum, group){
@@ -4258,7 +4435,7 @@ window.addEventListener('scroll', ()=>{
 document.getElementById('searchMinistres').addEventListener('input', e=> { renderMinistres(e.target.value); renderDeputes(e.target.value); });
 document.getElementById('searchBills').addEventListener('input', ()=> renderBills());
 document.getElementById('searchLexique')?.addEventListener('input', ()=> renderLexique());
-document.getElementById('searchVotes').addEventListener('input', ()=> renderVotes());
+document.getElementById('searchVotes').addEventListener('input', ()=> { votesShown = 6; renderVotes(); });
 
 /* ---------------- INIT ---------------- */
 function sortRoadmapItems(){
