@@ -3,8 +3,8 @@
     "en": "https://sencanada.ca/umbraco/surface/SenatorsAjax/GetSenators?displayFor=senatorslist&culture=en-CA",
     "fr": "https://sencanada.ca/umbraco/surface/SenatorsAjax/GetSenators?displayFor=senatorslist&culture=fr-CA"
   },
-  "scrapedAt": "2026-07-22T10:35:30.764Z",
-  "count": 97,
+  "scrapedAt": "2026-07-23T10:35:54.547Z",
+  "count": 96,
   "senators": [
     {
       "slug": "adler-charles",
@@ -1512,32 +1512,6 @@
       "url": {
         "en": "https://sencanada.ca/en/senators/mcnair-john-m/",
         "fr": "https://sencanada.ca/fr/senateurs/mcnair-john-m/"
-      }
-    },
-    {
-      "slug": "mcphedran-marilou",
-      "firstName": "Marilou",
-      "lastName": "McPhedran",
-      "name": "Marilou McPhedran",
-      "postNominal": null,
-      "group": {
-        "code": "Non-affiliated",
-        "en": "Non-affiliated",
-        "fr": "Non affilié(e)",
-        "enName": "Non-affiliated",
-        "frName": "Non affilié(e)"
-      },
-      "province": {
-        "code": "MB",
-        "en": "Manitoba",
-        "fr": "Manitoba"
-      },
-      "appointedOn": "2016-11-10",
-      "retirementOn": "2026-07-22",
-      "appointedBy": "Trudeau, Justin (Lib.)",
-      "url": {
-        "en": "https://sencanada.ca/en/senators/mcphedran-marilou/",
-        "fr": "https://sencanada.ca/fr/senateurs/mcphedran-marilou/"
       }
     },
     {
