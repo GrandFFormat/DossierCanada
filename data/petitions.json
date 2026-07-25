@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-07-24T10:30:58.152Z",
+  "scrapedAt": "2026-07-25T09:59:49.153Z",
   "count": 20,
   "petitions": [
     {
@@ -18,7 +18,7 @@
         "fr": "Ouverte pour signature jusqu'au 18 novembre 2026 à 15 h 41 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 6948,
+      "signatures": 7404,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7531",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7531"
@@ -39,7 +39,7 @@
         "fr": "Ouverte pour signature jusqu'au 6 novembre 2026 à 9 h 45 (HAE)"
       },
       "sponsor": "Adam Chambers",
-      "signatures": 5145,
+      "signatures": 5149,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7567",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7567"
@@ -60,31 +60,10 @@
         "fr": "Ouverte pour signature jusqu'au 14 septembre 2026 à 13 h 53 (HAE)"
       },
       "sponsor": "Melissa Lantsman",
-      "signatures": 1897,
+      "signatures": 2197,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7598",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7598"
-      }
-    },
-    {
-      "code": "e-7505",
-      "topic": {
-        "en": "Public safety",
-        "fr": "Sécurité publique"
-      },
-      "keywords": {
-        "en": "Firearms permits",
-        "fr": "Permis d'armes à feu"
-      },
-      "status": {
-        "en": "Open for signature until September 7, 2026, at 9:38 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 7 septembre 2026 à 9 h 38 (HAE)"
-      },
-      "sponsor": "Jason Groleau",
-      "signatures": 1200,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7505",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7505"
       }
     },
     {
@@ -102,7 +81,7 @@
         "fr": "Ouverte pour signature jusqu'au 8 octobre 2026 à 9 h 56 (HAE)"
       },
       "sponsor": "Kelly DeRidder",
-      "signatures": 1186,
+      "signatures": 1190,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7574",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7574"
@@ -123,7 +102,7 @@
         "fr": "Ouverte pour signature jusqu'au 10 novembre 2026 à 15 h 49 (HAE)"
       },
       "sponsor": "Karina Gould",
-      "signatures": 1116,
+      "signatures": 1148,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7559",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7559"
@@ -144,7 +123,7 @@
         "fr": "Ouverte pour signature jusqu'au 7 novembre 2026 à 13 h 20 (HAE)"
       },
       "sponsor": "John Williamson",
-      "signatures": 1078,
+      "signatures": 1096,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7553",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7553"
@@ -165,7 +144,7 @@
         "fr": "Ouverte pour signature jusqu'au 11 octobre 2026 à 15 h 49 (HAE)"
       },
       "sponsor": "Leah Gazan",
-      "signatures": 561,
+      "signatures": 596,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7580",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7580"
@@ -186,7 +165,7 @@
         "fr": "Ouverte pour signature jusqu'au 15 octobre 2026 à 13 h 34 (HAE)"
       },
       "sponsor": "Eric St-Pierre",
-      "signatures": 377,
+      "signatures": 392,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7592",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7592"
@@ -207,7 +186,7 @@
         "fr": "Ouverte pour signature jusqu'au 13 octobre 2026 à 11 h 05 (HAE)"
       },
       "sponsor": "Aslam Rana",
-      "signatures": 209,
+      "signatures": 222,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7573",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7573"
@@ -228,7 +207,7 @@
         "fr": "Ouverte pour signature jusqu'au 7 novembre 2026 à 13 h 34 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 190,
+      "signatures": 196,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7541",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7541"
@@ -249,7 +228,7 @@
         "fr": "Ouverte pour signature jusqu'au 14 octobre 2026 à 13 h 52 (HAE)"
       },
       "sponsor": "Melissa Lantsman",
-      "signatures": 143,
+      "signatures": 145,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7543",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7543"
@@ -312,7 +291,7 @@
         "fr": "Ouverte pour signature jusqu'au 6 novembre 2026 à 9 h 41 (HAE)"
       },
       "sponsor": "Kody Blois",
-      "signatures": 88,
+      "signatures": 89,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7509",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7509"
@@ -333,7 +312,7 @@
         "fr": "Ouverte pour signature jusqu'au 19 septembre 2026 à 11 h 17 (HAE)"
       },
       "sponsor": "Maxime Blanchette-Joncas",
-      "signatures": 48,
+      "signatures": 64,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7603",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7603"
@@ -354,10 +333,31 @@
         "fr": "Ouverte pour signature jusqu'au 8 septembre 2026 à 13 h 23 (HAE)"
       },
       "sponsor": "Vincent Ho",
-      "signatures": 43,
+      "signatures": 44,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7569",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7569"
+      }
+    },
+    {
+      "code": "e-7610",
+      "topic": {
+        "en": "Health",
+        "fr": "Santé"
+      },
+      "keywords": {
+        "en": "Emergency rooms Health services accessibility Mental health",
+        "fr": "Accessibilité des services de santé Salles d'urgence Santé mentale"
+      },
+      "status": {
+        "en": "Open for signature until November 21, 2026, at 10:04 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 21 novembre 2026 à 10 h 04 (HAE)"
+      },
+      "sponsor": "Dan Albas",
+      "signatures": 27,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7610",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7610"
       }
     },
     {
@@ -375,7 +375,7 @@
         "fr": "Ouverte pour signature jusqu'au 18 novembre 2026 à 15 h 42 (HAE)"
       },
       "sponsor": "Bruce Fanjoy",
-      "signatures": 18,
+      "signatures": 20,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7570",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7570"
@@ -396,7 +396,7 @@
         "fr": "Ouverte pour signature jusqu'au 19 octobre 2026 à 11 h 13 (HAE)"
       },
       "sponsor": "Doug Shipley",
-      "signatures": 13,
+      "signatures": 14,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7471",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7471"
@@ -417,7 +417,7 @@
         "fr": "Ouverte pour signature jusqu'au 20 novembre 2026 à 15 h 13 (HAE)"
       },
       "sponsor": "Anna Roberts",
-      "signatures": 8,
+      "signatures": 10,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7582",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7582"
