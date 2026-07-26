@@ -931,7 +931,7 @@
 <body>
 
 <div id="dq-topbar">
-<div class="dq-ticker"><div><span>&nbsp;<span style="color:var(--yellow)">●</span> 45e législature — 1re session&nbsp;&nbsp;&nbsp;<span style="color:var(--pink)">●</span> votes nominatifs enregistrés&nbsp;&nbsp;&nbsp;<span style="color:var(--cyan)">●</span> projets de loi suivis&nbsp;&nbsp;&nbsp;<span style="color:var(--lime)">●</span> projets challengés par les citoyen·ne·s&nbsp;&nbsp;&nbsp;<span style="color:var(--yellow)">●</span> site citoyen indépendant · vraies données publiques&nbsp;&nbsp;&nbsp;</span><span>&nbsp;<span style="color:var(--yellow)">●</span> 45e législature — 1re session&nbsp;&nbsp;&nbsp;<span style="color:var(--pink)">●</span> votes nominatifs enregistrés&nbsp;&nbsp;&nbsp;<span style="color:var(--cyan)">●</span> projets de loi suivis&nbsp;&nbsp;&nbsp;<span style="color:var(--lime)">●</span> projets challengés par les citoyen·ne·s&nbsp;&nbsp;&nbsp;<span style="color:var(--yellow)">●</span> site citoyen indépendant · vraies données publiques&nbsp;&nbsp;&nbsp;</span></div></div>
+<div class="dq-ticker"><div id="tickerTrack"></div></div>
 <header class="top">
   <div class="header-left">
     <span class="header-date" id="headerDate"></span>
@@ -1586,6 +1586,7 @@ function applyLanguage(){
   renderSittings();
   renderChallenged();
   renderProvinceNetwork();
+  renderTicker();
   renderLexique();
   updateChamberLabels();
   setChamber(chamberView);
@@ -2330,6 +2331,16 @@ const provinceNetwork = [
   { code: 'PE', name: 'Île-du-Prince-Édouard',    url: null, color: null },
   { code: 'NL', name: 'Terre-Neuve-et-Labrador',  url: null, color: null }
 ];
+function renderTicker(){
+  const el = document.getElementById('tickerTrack');
+  if(!el) return;
+  const isEn = currentLang === 'en';
+  const items = isEn
+    ? [['--yellow','45th Parliament — 1st session'],['--pink','recorded nominal votes'],['--cyan','bills tracked'],['--lime','bills challenged by citizens'],['--yellow','independent citizen-run site · real public data']]
+    : [['--yellow','45e législature — 1re session'],['--pink','votes nominatifs enregistrés'],['--cyan','projets de loi suivis'],['--lime','projets challengés par les citoyen·ne·s'],['--yellow','site citoyen indépendant · vraies données publiques']];
+  const seq = '&nbsp;' + items.map(([c,t]) => '<span style="color:var(' + c + ')">●</span> ' + t).join('&nbsp;&nbsp;&nbsp;') + '&nbsp;&nbsp;&nbsp;';
+  el.innerHTML = '<span>' + seq + '</span><span>' + seq + '</span>';
+}
 function renderProvinceNetwork(){
   const elL = document.getElementById('provinceNetwork');
   const elR = document.getElementById('provinceNetworkR');
@@ -4488,6 +4499,7 @@ function sortRoadmapItems(){
   renderSittings();
   renderChallenged();
   renderProvinceNetwork();
+  renderTicker();
   await loadSnoozedSections();
   applyLanguage();
 })();
