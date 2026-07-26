@@ -1372,7 +1372,7 @@ const translations = {
     'a3.step3':"On pousse pour une explication en langage clair, sourcée.",
     'proj.bandsub':"Chaque loi résumée en clair. Pas assez clair ? Demandez une explication.",'proj.challenge':"Challenger un projet",
     'votes.bandsub':"Chaque vote nominatif — qui a voté quoi, et par quelle marge.",
-    'lire.h':"Comment lire un vote",'seo.h1':"DossierCanada — qui siège, qui légifère et qui vote quoi au Parlement du Canada",
+    'lire.h':"Comment lire un vote",'seo.h1':"DossierCanada — qui siège, qui légifère et qui vote quoi au Parlement du Canada",'meta.title':"DossierCanada — Qui siège, qui légifère, qui vote quoi",'meta.desc':"Site citoyen indépendant qui suit le Parlement du Canada — députés, projets de loi, votes — en clair et sans jugement.",
     'lire.1.h':"Vote nominal",'lire.1.p':"Chaque élu·e vote un par un et son choix est inscrit au registre public. C'est ce qui permet de dire exactement qui a voté quoi — sans interprétation.",
     'lire.2.h':"Adopté n'est pas loi",'lire.2.p':"Un vote adopté fait franchir UNE étape. Un projet doit passer les deux chambres puis recevoir la sanction royale avant de devenir une loi.",
     'lire.3.h':"Pairé n'est pas absent",'lire.3.p':"Aux Communes, deux élu·e·s de camps opposés peuvent s'entendre pour ne pas voter : leurs voix s'annulent. Ce n'est ni une absence ni une abstention.",
@@ -1428,7 +1428,7 @@ const translations = {
     'a3.step3':"We push for a plain-language, sourced explanation.",
     'proj.bandsub':"Every bill summarized in plain language. Not clear enough? Ask for an explanation.",'proj.challenge':"Challenge a bill",
     'votes.bandsub':"Every recorded vote — who voted what, and by what margin.",
-    'lire.h':"How to read a vote",'seo.h1':"DossierCanada — who sits, who legislates and who votes how in Canada's Parliament",
+    'lire.h':"How to read a vote",'seo.h1':"DossierCanada — who sits, who legislates and who votes how in Canada's Parliament",'meta.title':"DossierCanada — Who sits, who legislates, who votes how",'meta.desc':"Independent citizen-run site tracking Canada's Parliament — MPs, bills, votes — in plain language.",
     'lire.1.h':"Recorded vote",'lire.1.p':"Members vote one by one and each choice is entered in the public record. That is what lets us say exactly who voted what — no interpretation.",
     'lire.2.h':"Passed is not law",'lire.2.p':"A passed vote clears ONE stage. A bill must pass both chambers and then receive royal assent before it becomes law.",
     'lire.3.h':"Paired is not absent",'lire.3.p':"In the Commons, two members from opposing sides can agree not to vote: their voices cancel out. It is neither an absence nor an abstention.",
@@ -1560,6 +1560,10 @@ function applyLanguage(){
   });
   document.getElementById('langToggle').textContent = currentLang === 'fr' ? 'EN' : 'FR';
   document.body.classList.toggle('lang-en', currentLang === 'en');
+  document.documentElement.lang = currentLang === 'en' ? 'en' : 'fr';
+  document.title = t('meta.title');
+  const metaDesc = document.querySelector('meta[name="description"]');
+  if(metaDesc) metaDesc.setAttribute('content', t('meta.desc'));
   document.getElementById('footerLeft').textContent = t('footer.left');
   document.getElementById('footerRight').textContent = t('footer.right');
   // Re-render dynamic lists so their JS-generated buttons pick up the new language
