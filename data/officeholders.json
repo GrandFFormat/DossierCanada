@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-07-26T10:13:37.803Z",
+  "scrapedAt": "2026-07-27T11:38:05.224Z",
   "sources": [
     {
       "key": "house_speaker",
@@ -11,7 +11,6 @@
     }
   ],
   "officeholders": {
-    "house_speaker": "Francis Scarpaleggia",
-    "governor_general": "Louise Arbour"
+    "house_speaker": "Francis Scarpaleggia"
   }
 }
