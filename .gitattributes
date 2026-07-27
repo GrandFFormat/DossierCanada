@@ -1,0 +1,26 @@
+# Fins de ligne cohérentes, indépendantes de la config Git locale
+# (core.autocrlf) et des éditeurs qui écrivent du LF.
+#
+#   - Dans le dépôt (blobs)        : LF   -> diffs propres, une seule convention
+#   - Dans l'arbre de travail Win  : CRLF -> les scripts de build détectent CRLF
+#                                            et le préservent (build-frontend-data.js,
+#                                            build-section-pages.js)
+#
+# « text » force le traitement texte (LF en dépôt) ; « eol=crlf » rétablit
+# CRLF au checkout. Les garde-fous « binary » ci-dessous excluent les images
+# et archives pour ne JAMAIS les convertir.
+* text eol=crlf
+
+# Binaires : aucune conversion de fins de ligne.
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.webp binary
+*.ico  binary
+*.pdf  binary
+*.zip  binary
+*.woff  binary
+*.woff2 binary
+*.ttf   binary
+*.eot   binary
