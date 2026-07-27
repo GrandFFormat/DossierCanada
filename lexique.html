@@ -3545,7 +3545,13 @@ function renderBills(keyword){
     return billsSortDir === 'desc' ? db.localeCompare(da) : da.localeCompare(db);
   });
   const el = document.getElementById('billsList');
+  // Mémorise les projets déjà dépliés pour les rouvrir après reconstruction :
+  // sinon un re-render asynchrone (événement d'auth INITIAL_SESSION, changement
+  // de langue…) referme la carte que l'utilisateur — ou un lien profond ?pl= —
+  // venait d'ouvrir.
+  const openIds = new Set([...el.querySelectorAll('.ab-row.open')].map(r => r.id));
   el.innerHTML = list.length ? list.map(b=>apercuBillRow(b,'pr')).join('') : `<div class="no-results">${currentLang==='en' ? 'No bill matches this search.' : 'Aucun projet de loi ne correspond à cette recherche.'}</div>`;
+  openIds.forEach(id => { const r = document.getElementById(id); if(r && !r.classList.contains('open')) toggleApercuBill(id); });
   document.getElementById('statProjets').textContent = bills.length;
 }
 
