@@ -47,6 +47,10 @@ jobs:
           if git diff --cached --quiet; then
             echo "Aucun changement — rien à committer."
           else
+            # Jour de changement : dater le sitemap et committer les pages de section
+            # (régénérées par « npm run refresh » -> build:pages depuis index.html).
+            node scripts/update-sitemap-lastmod.js "$(date -u +%F)"
+            git add deputes.html ministres.html projets-de-loi.html votes.html lexique.html sitemap.xml
             git commit -m "chore: rafraîchissement automatique des données fédérales"
             git push
           fi
