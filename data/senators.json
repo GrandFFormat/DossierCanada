@@ -3,8 +3,8 @@
     "en": "https://sencanada.ca/umbraco/surface/SenatorsAjax/GetSenators?displayFor=senatorslist&culture=en-CA",
     "fr": "https://sencanada.ca/umbraco/surface/SenatorsAjax/GetSenators?displayFor=senatorslist&culture=fr-CA"
   },
-  "scrapedAt": "2026-07-27T11:37:39.082Z",
-  "count": 96,
+  "scrapedAt": "2026-07-28T10:46:51.581Z",
+  "count": 97,
   "senators": [
     {
       "slug": "adler-charles",
@@ -1408,6 +1408,32 @@
       "url": {
         "en": "https://sencanada.ca/en/senators/manning-fabian/",
         "fr": "https://sencanada.ca/fr/senateurs/manning-fabian/"
+      }
+    },
+    {
+      "slug": "martel-richard",
+      "firstName": "Richard",
+      "lastName": "Martel",
+      "name": "Richard Martel",
+      "postNominal": null,
+      "group": {
+        "code": "Non-affiliated",
+        "en": "Non-affiliated",
+        "fr": "Non affilié(e)",
+        "enName": "Non-affiliated",
+        "frName": "Non affilié(e)"
+      },
+      "province": {
+        "code": "QC",
+        "en": "Quebec",
+        "fr": "Québec"
+      },
+      "appointedOn": "2026-07-24",
+      "retirementOn": "2036-03-23",
+      "appointedBy": "Carney, Mark (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/martel-richard/",
+        "fr": "https://sencanada.ca/fr/senateurs/martel-richard/"
       }
     },
     {
