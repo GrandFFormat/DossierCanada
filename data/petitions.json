@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-07-28T10:46:50.525Z",
+  "scrapedAt": "2026-07-29T10:50:00.532Z",
   "count": 20,
   "petitions": [
     {
@@ -18,7 +18,7 @@
         "fr": "Ouverte pour signature jusqu'au 18 novembre 2026 à 15 h 41 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 8311,
+      "signatures": 8621,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7531",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7531"
@@ -39,7 +39,7 @@
         "fr": "Ouverte pour signature jusqu'au 14 septembre 2026 à 13 h 53 (HAE)"
       },
       "sponsor": "Melissa Lantsman",
-      "signatures": 2484,
+      "signatures": 2514,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7598",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7598"
@@ -60,7 +60,7 @@
         "fr": "Ouverte pour signature jusqu'au 10 novembre 2026 à 15 h 49 (HAE)"
       },
       "sponsor": "Karina Gould",
-      "signatures": 1203,
+      "signatures": 1227,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7559",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7559"
@@ -81,7 +81,7 @@
         "fr": "Ouverte pour signature jusqu'au 7 novembre 2026 à 13 h 20 (HAE)"
       },
       "sponsor": "John Williamson",
-      "signatures": 1149,
+      "signatures": 1164,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7553",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7553"
@@ -102,10 +102,31 @@
         "fr": "Ouverte pour signature jusqu'au 11 octobre 2026 à 15 h 49 (HAE)"
       },
       "sponsor": "Leah Gazan",
-      "signatures": 646,
+      "signatures": 668,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7580",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7580"
+      }
+    },
+    {
+      "code": "e-7594",
+      "topic": {
+        "en": "Culture and heritage",
+        "fr": "Culture et patrimoine"
+      },
+      "keywords": {
+        "en": "Canadian Register of Historic Places Governance Heritage sites and buildings",
+        "fr": "Gouvernance Répertoire des lieux patrimoniaux du Canada Sites et édifices patrimoniaux"
+      },
+      "status": {
+        "en": "Open for signature until August 26, 2026, at 9:47 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 26 août 2026 à 9 h 47 (HAE)"
+      },
+      "sponsor": "Yasir Naqvi",
+      "signatures": 652,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7594",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7594"
       }
     },
     {
@@ -123,10 +144,31 @@
         "fr": "Ouverte pour signature jusqu'au 15 octobre 2026 à 13 h 34 (HAE)"
       },
       "sponsor": "Eric St-Pierre",
-      "signatures": 400,
+      "signatures": 403,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7592",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7592"
+      }
+    },
+    {
+      "code": "e-7603",
+      "topic": {
+        "en": "Democratic process",
+        "fr": "Processus démocratique"
+      },
+      "keywords": {
+        "en": "Province of Quebec Referenda Sovereignty",
+        "fr": "Province de Québec Référendums Souveraineté"
+      },
+      "status": {
+        "en": "Open for signature until September 19, 2026, at 11:17 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 19 septembre 2026 à 11 h 17 (HAE)"
+      },
+      "sponsor": "Maxime Blanchette-Joncas",
+      "signatures": 389,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7603",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7603"
       }
     },
     {
@@ -144,7 +186,7 @@
         "fr": "Ouverte pour signature jusqu'au 13 octobre 2026 à 11 h 05 (HAE)"
       },
       "sponsor": "Aslam Rana",
-      "signatures": 258,
+      "signatures": 280,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7573",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7573"
@@ -165,7 +207,7 @@
         "fr": "Ouverte pour signature jusqu'au 7 novembre 2026 à 13 h 34 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 219,
+      "signatures": 226,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7541",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7541"
@@ -186,7 +228,7 @@
         "fr": "Ouverte pour signature jusqu'au 14 octobre 2026 à 13 h 52 (HAE)"
       },
       "sponsor": "Melissa Lantsman",
-      "signatures": 207,
+      "signatures": 215,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7543",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7543"
@@ -207,7 +249,7 @@
         "fr": "Ouverte pour signature jusqu'au 8 septembre 2026 à 13 h 26 (HAE)"
       },
       "sponsor": "Kelly DeRidder",
-      "signatures": 174,
+      "signatures": 181,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7577",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7577"
@@ -228,7 +270,7 @@
         "fr": "Ouverte pour signature jusqu'au 12 novembre 2026 à 11 h 02 (HAE)"
       },
       "sponsor": "John Brassard",
-      "signatures": 133,
+      "signatures": 135,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7571",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7571"
@@ -249,94 +291,10 @@
         "fr": "Ouverte pour signature jusqu'au 21 novembre 2026 à 10 h 04 (HAE)"
       },
       "sponsor": "Dan Albas",
-      "signatures": 96,
+      "signatures": 103,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7610",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7610"
-      }
-    },
-    {
-      "code": "e-7603",
-      "topic": {
-        "en": "Democratic process",
-        "fr": "Processus démocratique"
-      },
-      "keywords": {
-        "en": "Province of Quebec Referenda Sovereignty",
-        "fr": "Province de Québec Référendums Souveraineté"
-      },
-      "status": {
-        "en": "Open for signature until September 19, 2026, at 11:17 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 19 septembre 2026 à 11 h 17 (HAE)"
-      },
-      "sponsor": "Maxime Blanchette-Joncas",
-      "signatures": 85,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7603",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7603"
-      }
-    },
-    {
-      "code": "e-7594",
-      "topic": {
-        "en": "Culture and heritage",
-        "fr": "Culture et patrimoine"
-      },
-      "keywords": {
-        "en": "Canadian Register of Historic Places Governance Heritage sites and buildings",
-        "fr": "Gouvernance Répertoire des lieux patrimoniaux du Canada Sites et édifices patrimoniaux"
-      },
-      "status": {
-        "en": "Open for signature until August 26, 2026, at 9:47 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 26 août 2026 à 9 h 47 (HAE)"
-      },
-      "sponsor": "Yasir Naqvi",
-      "signatures": 45,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7594",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7594"
-      }
-    },
-    {
-      "code": "e-7569",
-      "topic": {
-        "en": "Health",
-        "fr": "Santé"
-      },
-      "keywords": {
-        "en": "Health care system Private health care",
-        "fr": "Médecine privée Système de soins de santé"
-      },
-      "status": {
-        "en": "Open for signature until September 8, 2026, at 1:23 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 8 septembre 2026 à 13 h 23 (HAE)"
-      },
-      "sponsor": "Vincent Ho",
-      "signatures": 44,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7569",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7569"
-      }
-    },
-    {
-      "code": "e-7604",
-      "topic": {
-        "en": "Health",
-        "fr": "Santé"
-      },
-      "keywords": {
-        "en": "Canadian Dental Care Plan Oral and dental health",
-        "fr": "Régime canadien de soins dentaires Santé bucco-dentaire"
-      },
-      "status": {
-        "en": "Open for signature until September 25, 2026, at 12:19 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 25 septembre 2026 à 12 h 19 (HAE)"
-      },
-      "sponsor": "Kelly DeRidder",
-      "signatures": 32,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7604",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7604"
       }
     },
     {
@@ -354,10 +312,52 @@
         "fr": "Ouverte pour signature jusqu'au 18 novembre 2026 à 15 h 42 (HAE)"
       },
       "sponsor": "Bruce Fanjoy",
-      "signatures": 31,
+      "signatures": 63,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7570",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7570"
+      }
+    },
+    {
+      "code": "e-7604",
+      "topic": {
+        "en": "Health",
+        "fr": "Santé"
+      },
+      "keywords": {
+        "en": "Canadian Dental Care Plan Oral and dental health",
+        "fr": "Régime canadien de soins dentaires Santé bucco-dentaire"
+      },
+      "status": {
+        "en": "Open for signature until September 25, 2026, at 12:19 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 25 septembre 2026 à 12 h 19 (HAE)"
+      },
+      "sponsor": "Kelly DeRidder",
+      "signatures": 62,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7604",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7604"
+      }
+    },
+    {
+      "code": "e-7569",
+      "topic": {
+        "en": "Health",
+        "fr": "Santé"
+      },
+      "keywords": {
+        "en": "Health care system Private health care",
+        "fr": "Médecine privée Système de soins de santé"
+      },
+      "status": {
+        "en": "Open for signature until September 8, 2026, at 1:23 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 8 septembre 2026 à 13 h 23 (HAE)"
+      },
+      "sponsor": "Vincent Ho",
+      "signatures": 45,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7569",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7569"
       }
     },
     {
@@ -375,10 +375,31 @@
         "fr": "Ouverte pour signature jusqu'au 19 octobre 2026 à 11 h 13 (HAE)"
       },
       "sponsor": "Doug Shipley",
-      "signatures": 19,
+      "signatures": 20,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7471",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7471"
+      }
+    },
+    {
+      "code": "e-7609",
+      "topic": {
+        "en": "Business and trade",
+        "fr": "Affaires et commerce"
+      },
+      "keywords": {
+        "en": "Financial hardship Loans Small and medium-sized enterprises",
+        "fr": "Difficulté financière Petites et moyennes entreprises Prêts"
+      },
+      "status": {
+        "en": "Open for signature until November 24, 2026, at 12:22 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 24 novembre 2026 à 12 h 22 (HAE)"
+      },
+      "sponsor": "Sukh Dhaliwal",
+      "signatures": 16,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7609",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7609"
       }
     },
     {
@@ -396,31 +417,10 @@
         "fr": "Ouverte pour signature jusqu'au 20 novembre 2026 à 15 h 13 (HAE)"
       },
       "sponsor": "Anna Roberts",
-      "signatures": 15,
+      "signatures": 16,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7582",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7582"
-      }
-    },
-    {
-      "code": "e-7609",
-      "topic": {
-        "en": "Business and trade",
-        "fr": "Affaires et commerce"
-      },
-      "keywords": {
-        "en": "Financial hardship Small and medium-sized enterprises",
-        "fr": "Difficulté financière Petites et moyennes entreprises"
-      },
-      "status": {
-        "en": "Open for signature until November 24, 2026, at 12:22 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 24 novembre 2026 à 12 h 22 (HAE)"
-      },
-      "sponsor": "Sukh Dhaliwal",
-      "signatures": 14,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7609",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7609"
       }
     }
   ]
