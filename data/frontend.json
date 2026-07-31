@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T10:36:38.276Z",
+  "generatedAt": "2026-07-31T10:53:57.344Z",
   "session": "45-1",
   "meta": {
     "counts": {
@@ -353,8 +353,8 @@
           },
           "passed": false,
           "totals": {
-            "yea": 125,
-            "nay": 188,
+            "yea": 123,
+            "nay": 190,
             "paired": 10
           }
         },
@@ -24608,8 +24608,8 @@
       "votingRecord": {
         "eligible": 173,
         "cast": 173,
-        "yea": 93,
-        "nay": 80,
+        "yea": 92,
+        "nay": 81,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -25900,8 +25900,8 @@
       "votingRecord": {
         "eligible": 173,
         "cast": 173,
-        "yea": 93,
-        "nay": 80,
+        "yea": 92,
+        "nay": 81,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -56311,8 +56311,8 @@
       },
       "passed": false,
       "totals": {
-        "yea": 125,
-        "nay": 188,
+        "yea": 123,
+        "nay": 190,
         "paired": 10
       },
       "documentType": {
@@ -56572,7 +56572,7 @@
         "122492": "nay",
         "122518": "nay",
         "122533": "nay",
-        "122539": "yea",
+        "122539": "nay",
         "122552": "nay",
         "122559": "nay",
         "122579": "nay",
@@ -56639,7 +56639,7 @@
         "123552": "yea",
         "123556": "nay",
         "123563": "nay",
-        "123583": "yea",
+        "123583": "nay",
         "123586": "yea",
         "123608": "yea",
         "123622": "yea",
