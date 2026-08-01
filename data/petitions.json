@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-07-31T10:53:49.277Z",
+  "scrapedAt": "2026-08-01T10:10:05.244Z",
   "count": 20,
   "petitions": [
     {
@@ -18,7 +18,7 @@
         "fr": "Ouverte pour signature jusqu'au 18 novembre 2026 à 15 h 41 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 8798,
+      "signatures": 8850,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7531",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7531"
@@ -39,31 +39,10 @@
         "fr": "Ouverte pour signature jusqu'au 14 septembre 2026 à 13 h 53 (HAE)"
       },
       "sponsor": "Melissa Lantsman",
-      "signatures": 2549,
+      "signatures": 2553,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7598",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7598"
-      }
-    },
-    {
-      "code": "e-7559",
-      "topic": {
-        "en": "Environment",
-        "fr": "Environnement"
-      },
-      "keywords": {
-        "en": "Greenhouse gases",
-        "fr": "Gaz à effet de serre"
-      },
-      "status": {
-        "en": "Open for signature until November 10, 2026, at 3:49 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 10 novembre 2026 à 15 h 49 (HAE)"
-      },
-      "sponsor": "Karina Gould",
-      "signatures": 1266,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7559",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7559"
       }
     },
     {
@@ -81,7 +60,7 @@
         "fr": "Ouverte pour signature jusqu'au 26 août 2026 à 9 h 47 (HAE)"
       },
       "sponsor": "Yasir Naqvi",
-      "signatures": 1119,
+      "signatures": 1205,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7594",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7594"
@@ -102,7 +81,7 @@
         "fr": "Ouverte pour signature jusqu'au 19 septembre 2026 à 11 h 17 (HAE)"
       },
       "sponsor": "Maxime Blanchette-Joncas",
-      "signatures": 814,
+      "signatures": 852,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7603",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7603"
@@ -123,7 +102,7 @@
         "fr": "Ouverte pour signature jusqu'au 11 octobre 2026 à 15 h 49 (HAE)"
       },
       "sponsor": "Leah Gazan",
-      "signatures": 744,
+      "signatures": 831,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7580",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7580"
@@ -144,7 +123,7 @@
         "fr": "Ouverte pour signature jusqu'au 15 octobre 2026 à 13 h 34 (HAE)"
       },
       "sponsor": "Eric St-Pierre",
-      "signatures": 406,
+      "signatures": 408,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7592",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7592"
@@ -165,31 +144,10 @@
         "fr": "Ouverte pour signature jusqu'au 13 octobre 2026 à 11 h 05 (HAE)"
       },
       "sponsor": "Aslam Rana",
-      "signatures": 352,
+      "signatures": 364,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7573",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7573"
-      }
-    },
-    {
-      "code": "e-7541",
-      "topic": {
-        "en": "Environment",
-        "fr": "Environnement"
-      },
-      "keywords": {
-        "en": "Environmental protection Pesticides Public health Regulation",
-        "fr": "Pesticides Protection de l'environnement Réglementation Santé publique"
-      },
-      "status": {
-        "en": "Open for signature until November 7, 2026, at 1:34 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 7 novembre 2026 à 13 h 34 (HAE)"
-      },
-      "sponsor": "Elizabeth May",
-      "signatures": 249,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7541",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7541"
       }
     },
     {
@@ -207,31 +165,10 @@
         "fr": "Ouverte pour signature jusqu'au 14 octobre 2026 à 13 h 52 (HAE)"
       },
       "sponsor": "Melissa Lantsman",
-      "signatures": 220,
+      "signatures": 222,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7543",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7543"
-      }
-    },
-    {
-      "code": "e-7577",
-      "topic": {
-        "en": "Media and telecommunications",
-        "fr": "Médias et télécommunications"
-      },
-      "keywords": {
-        "en": "Closing of facilities Local and regional programming Radio broadcasting",
-        "fr": "Fermeture d'installations Programmation locale et régionale Radiodiffusion"
-      },
-      "status": {
-        "en": "Open for signature until September 8, 2026, at 1:26 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 8 septembre 2026 à 13 h 26 (HAE)"
-      },
-      "sponsor": "Kelly DeRidder",
-      "signatures": 187,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7577",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7577"
       }
     },
     {
@@ -256,6 +193,27 @@
       }
     },
     {
+      "code": "e-7570",
+      "topic": {
+        "en": "Environment",
+        "fr": "Environnement"
+      },
+      "keywords": {
+        "en": "Ottawa River Ottawa River Watershed Oversight mechanism Reservoirs",
+        "fr": "Bassin versant de la rivière des Outaouais Mécanisme de surveillance Réservoirs Rivière des Outaouais"
+      },
+      "status": {
+        "en": "Open for signature until November 18, 2026, at 3:42 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 18 novembre 2026 à 15 h 42 (HAE)"
+      },
+      "sponsor": "Bruce Fanjoy",
+      "signatures": 137,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7570",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7570"
+      }
+    },
+    {
       "code": "e-7610",
       "topic": {
         "en": "Health",
@@ -277,24 +235,24 @@
       }
     },
     {
-      "code": "e-7570",
+      "code": "e-7624",
       "topic": {
-        "en": "Environment",
-        "fr": "Environnement"
+        "en": "Citizenship and immigration",
+        "fr": "Citoyenneté et immigration"
       },
       "keywords": {
-        "en": "Ottawa River Ottawa River Watershed Oversight mechanism Reservoirs",
-        "fr": "Bassin versant de la rivière des Outaouais Mécanisme de surveillance Réservoirs Rivière des Outaouais"
+        "en": "Family reunification Permanent resident status Ukraine",
+        "fr": "Réunification des familles Statut de résident permanent Ukraine"
       },
       "status": {
-        "en": "Open for signature until November 18, 2026, at 3:42 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 18 novembre 2026 à 15 h 42 (HAE)"
+        "en": "Open for signature until August 30, 2026, at 3:16 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 30 août 2026 à 15 h 16 (HAE)"
       },
-      "sponsor": "Bruce Fanjoy",
-      "signatures": 111,
+      "sponsor": "Yvan Baker",
+      "signatures": 115,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7570",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7570"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7624",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7624"
       }
     },
     {
@@ -312,31 +270,10 @@
         "fr": "Ouverte pour signature jusqu'au 25 septembre 2026 à 12 h 19 (HAE)"
       },
       "sponsor": "Kelly DeRidder",
-      "signatures": 76,
+      "signatures": 81,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7604",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7604"
-      }
-    },
-    {
-      "code": "e-7616",
-      "topic": {
-        "en": "Employment and labour",
-        "fr": "Travail et emploi"
-      },
-      "keywords": {
-        "en": "Compensation Income and wages Layoffs and job losses",
-        "fr": "Indemnisation Mises à pied et pertes d'emplois Revenus et salaires"
-      },
-      "status": {
-        "en": "Open for signature until November 26, 2026, at 11:42 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 26 novembre 2026 à 11 h 42 (HAE)"
-      },
-      "sponsor": "Don Davies",
-      "signatures": 50,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7616",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7616"
       }
     },
     {
@@ -354,10 +291,73 @@
         "fr": "Ouverte pour signature jusqu'au 27 novembre 2026 à 9 h 43 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 32,
+      "signatures": 58,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7586",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7586"
+      }
+    },
+    {
+      "code": "e-7616",
+      "topic": {
+        "en": "Employment and labour",
+        "fr": "Travail et emploi"
+      },
+      "keywords": {
+        "en": "Compensation Income and wages Layoffs and job losses",
+        "fr": "Indemnisation Mises à pied et pertes d'emplois Revenus et salaires"
+      },
+      "status": {
+        "en": "Open for signature until November 26, 2026, at 11:42 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 26 novembre 2026 à 11 h 42 (HAE)"
+      },
+      "sponsor": "Don Davies",
+      "signatures": 58,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7616",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7616"
+      }
+    },
+    {
+      "code": "e-7620",
+      "topic": {
+        "en": "Justice",
+        "fr": "Justice"
+      },
+      "keywords": {
+        "en": "Child abuse Child sexual abuse and exploitation Sentencing",
+        "fr": "Abus à l'égard d'un enfant Exploitation et abus sexuel d'enfants Sentences pénales"
+      },
+      "status": {
+        "en": "Open for signature until September 29, 2026, at 1:01 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 29 septembre 2026 à 13 h 01 (HAE)"
+      },
+      "sponsor": "Dane Lloyd",
+      "signatures": 29,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7620",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7620"
+      }
+    },
+    {
+      "code": "e-7579",
+      "topic": {
+        "en": "Environment",
+        "fr": "Environnement"
+      },
+      "keywords": {
+        "en": "Gatineau Park Nature conservation",
+        "fr": "Conservation de la nature Parc de la Gatineau"
+      },
+      "status": {
+        "en": "Open for signature until October 29, 2026, at 1:00 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 29 octobre 2026 à 13 h 00 (HAE)"
+      },
+      "sponsor": "Greg Fergus",
+      "signatures": 23,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7579",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7579"
       }
     },
     {
