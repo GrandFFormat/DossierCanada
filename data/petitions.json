@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-08-01T10:10:05.244Z",
+  "scrapedAt": "2026-08-02T10:11:17.237Z",
   "count": 20,
   "petitions": [
     {
@@ -18,7 +18,7 @@
         "fr": "Ouverte pour signature jusqu'au 18 novembre 2026 à 15 h 41 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 8850,
+      "signatures": 8904,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7531",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7531"
@@ -39,7 +39,7 @@
         "fr": "Ouverte pour signature jusqu'au 14 septembre 2026 à 13 h 53 (HAE)"
       },
       "sponsor": "Melissa Lantsman",
-      "signatures": 2553,
+      "signatures": 2559,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7598",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7598"
@@ -60,7 +60,7 @@
         "fr": "Ouverte pour signature jusqu'au 26 août 2026 à 9 h 47 (HAE)"
       },
       "sponsor": "Yasir Naqvi",
-      "signatures": 1205,
+      "signatures": 1244,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7594",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7594"
@@ -81,7 +81,7 @@
         "fr": "Ouverte pour signature jusqu'au 19 septembre 2026 à 11 h 17 (HAE)"
       },
       "sponsor": "Maxime Blanchette-Joncas",
-      "signatures": 852,
+      "signatures": 872,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7603",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7603"
@@ -102,7 +102,7 @@
         "fr": "Ouverte pour signature jusqu'au 11 octobre 2026 à 15 h 49 (HAE)"
       },
       "sponsor": "Leah Gazan",
-      "signatures": 831,
+      "signatures": 856,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7580",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7580"
@@ -123,7 +123,7 @@
         "fr": "Ouverte pour signature jusqu'au 15 octobre 2026 à 13 h 34 (HAE)"
       },
       "sponsor": "Eric St-Pierre",
-      "signatures": 408,
+      "signatures": 412,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7592",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7592"
@@ -144,10 +144,31 @@
         "fr": "Ouverte pour signature jusqu'au 13 octobre 2026 à 11 h 05 (HAE)"
       },
       "sponsor": "Aslam Rana",
-      "signatures": 364,
+      "signatures": 383,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7573",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7573"
+      }
+    },
+    {
+      "code": "e-7624",
+      "topic": {
+        "en": "Citizenship and immigration",
+        "fr": "Citoyenneté et immigration"
+      },
+      "keywords": {
+        "en": "Family reunification Permanent resident status Ukraine",
+        "fr": "Réunification des familles Statut de résident permanent Ukraine"
+      },
+      "status": {
+        "en": "Open for signature until August 30, 2026, at 3:16 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 30 août 2026 à 15 h 16 (HAE)"
+      },
+      "sponsor": "Yvan Baker",
+      "signatures": 254,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7624",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7624"
       }
     },
     {
@@ -165,7 +186,7 @@
         "fr": "Ouverte pour signature jusqu'au 14 octobre 2026 à 13 h 52 (HAE)"
       },
       "sponsor": "Melissa Lantsman",
-      "signatures": 222,
+      "signatures": 224,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7543",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7543"
@@ -186,7 +207,7 @@
         "fr": "Ouverte pour signature jusqu'au 12 novembre 2026 à 11 h 02 (HAE)"
       },
       "sponsor": "John Brassard",
-      "signatures": 138,
+      "signatures": 143,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7571",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7571"
@@ -207,7 +228,7 @@
         "fr": "Ouverte pour signature jusqu'au 18 novembre 2026 à 15 h 42 (HAE)"
       },
       "sponsor": "Bruce Fanjoy",
-      "signatures": 137,
+      "signatures": 142,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7570",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7570"
@@ -228,31 +249,10 @@
         "fr": "Ouverte pour signature jusqu'au 21 novembre 2026 à 10 h 04 (HAE)"
       },
       "sponsor": "Dan Albas",
-      "signatures": 119,
+      "signatures": 123,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7610",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7610"
-      }
-    },
-    {
-      "code": "e-7624",
-      "topic": {
-        "en": "Citizenship and immigration",
-        "fr": "Citoyenneté et immigration"
-      },
-      "keywords": {
-        "en": "Family reunification Permanent resident status Ukraine",
-        "fr": "Réunification des familles Statut de résident permanent Ukraine"
-      },
-      "status": {
-        "en": "Open for signature until August 30, 2026, at 3:16 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 30 août 2026 à 15 h 16 (HAE)"
-      },
-      "sponsor": "Yvan Baker",
-      "signatures": 115,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7624",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7624"
       }
     },
     {
@@ -270,10 +270,31 @@
         "fr": "Ouverte pour signature jusqu'au 25 septembre 2026 à 12 h 19 (HAE)"
       },
       "sponsor": "Kelly DeRidder",
-      "signatures": 81,
+      "signatures": 83,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7604",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7604"
+      }
+    },
+    {
+      "code": "e-7579",
+      "topic": {
+        "en": "Environment",
+        "fr": "Environnement"
+      },
+      "keywords": {
+        "en": "Gatineau Park Nature conservation",
+        "fr": "Conservation de la nature Parc de la Gatineau"
+      },
+      "status": {
+        "en": "Open for signature until October 29, 2026, at 1:00 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 29 octobre 2026 à 13 h 00 (HAE)"
+      },
+      "sponsor": "Greg Fergus",
+      "signatures": 81,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7579",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7579"
       }
     },
     {
@@ -291,7 +312,7 @@
         "fr": "Ouverte pour signature jusqu'au 27 novembre 2026 à 9 h 43 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 58,
+      "signatures": 79,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7586",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7586"
@@ -312,7 +333,7 @@
         "fr": "Ouverte pour signature jusqu'au 26 novembre 2026 à 11 h 42 (HAE)"
       },
       "sponsor": "Don Davies",
-      "signatures": 58,
+      "signatures": 62,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7616",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7616"
@@ -333,31 +354,10 @@
         "fr": "Ouverte pour signature jusqu'au 29 septembre 2026 à 13 h 01 (HAE)"
       },
       "sponsor": "Dane Lloyd",
-      "signatures": 29,
+      "signatures": 40,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7620",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7620"
-      }
-    },
-    {
-      "code": "e-7579",
-      "topic": {
-        "en": "Environment",
-        "fr": "Environnement"
-      },
-      "keywords": {
-        "en": "Gatineau Park Nature conservation",
-        "fr": "Conservation de la nature Parc de la Gatineau"
-      },
-      "status": {
-        "en": "Open for signature until October 29, 2026, at 1:00 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 29 octobre 2026 à 13 h 00 (HAE)"
-      },
-      "sponsor": "Greg Fergus",
-      "signatures": 23,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7579",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7579"
       }
     },
     {
@@ -375,7 +375,7 @@
         "fr": "Ouverte pour signature jusqu'au 19 octobre 2026 à 11 h 13 (HAE)"
       },
       "sponsor": "Doug Shipley",
-      "signatures": 23,
+      "signatures": 25,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7471",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7471"
@@ -417,7 +417,7 @@
         "fr": "Ouverte pour signature jusqu'au 20 novembre 2026 à 15 h 13 (HAE)"
       },
       "sponsor": "Anna Roberts",
-      "signatures": 21,
+      "signatures": 22,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7582",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7582"
