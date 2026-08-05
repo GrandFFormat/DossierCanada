@@ -3,8 +3,8 @@
     "en": "https://sencanada.ca/umbraco/surface/SenatorsAjax/GetSenators?displayFor=senatorslist&culture=en-CA",
     "fr": "https://sencanada.ca/umbraco/surface/SenatorsAjax/GetSenators?displayFor=senatorslist&culture=fr-CA"
   },
-  "scrapedAt": "2026-08-04T10:54:19.318Z",
-  "count": 97,
+  "scrapedAt": "2026-08-05T10:48:31.147Z",
+  "count": 96,
   "senators": [
     {
       "slug": "adler-charles",
@@ -1278,32 +1278,6 @@
       "url": {
         "en": "https://sencanada.ca/en/senators/laboucane-benson-patti/",
         "fr": "https://sencanada.ca/fr/senateurs/laboucane-benson-patti/"
-      }
-    },
-    {
-      "slug": "lewis-todd",
-      "firstName": "Todd",
-      "lastName": "Lewis",
-      "name": "Todd Lewis",
-      "postNominal": null,
-      "group": {
-        "code": "CSG",
-        "en": "CSG",
-        "fr": "GSC",
-        "enName": "Canadian Senators Group",
-        "frName": "Groupe des sénateurs canadiens"
-      },
-      "province": {
-        "code": "SK",
-        "en": "Saskatchewan",
-        "fr": "Saskatchewan"
-      },
-      "appointedOn": "2025-02-07",
-      "retirementOn": "2036-07-21",
-      "appointedBy": "Trudeau, Justin (Lib.)",
-      "url": {
-        "en": "https://sencanada.ca/en/senators/lewis-todd/",
-        "fr": "https://sencanada.ca/fr/senateurs/lewis-todd/"
       }
     },
     {
