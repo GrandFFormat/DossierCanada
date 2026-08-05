@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-08-04T10:54:18.094Z",
+  "scrapedAt": "2026-08-05T10:48:29.908Z",
   "count": 20,
   "petitions": [
     {
@@ -18,7 +18,7 @@
         "fr": "Ouverte pour signature jusqu'au 18 novembre 2026 à 15 h 41 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 14146,
+      "signatures": 15420,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7531",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7531"
@@ -39,7 +39,7 @@
         "fr": "Ouverte pour signature jusqu'au 14 septembre 2026 à 13 h 53 (HAE)"
       },
       "sponsor": "Melissa Lantsman",
-      "signatures": 2566,
+      "signatures": 2567,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7598",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7598"
@@ -60,7 +60,7 @@
         "fr": "Ouverte pour signature jusqu'au 26 août 2026 à 9 h 47 (HAE)"
       },
       "sponsor": "Yasir Naqvi",
-      "signatures": 1312,
+      "signatures": 1413,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7594",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7594"
@@ -81,31 +81,10 @@
         "fr": "Ouverte pour signature jusqu'au 30 août 2026 à 15 h 16 (HAE)"
       },
       "sponsor": "Yvan Baker",
-      "signatures": 986,
+      "signatures": 1174,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7624",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7624"
-      }
-    },
-    {
-      "code": "e-7603",
-      "topic": {
-        "en": "Democratic process",
-        "fr": "Processus démocratique"
-      },
-      "keywords": {
-        "en": "Province of Quebec Referenda Sovereignty",
-        "fr": "Province de Québec Référendums Souveraineté"
-      },
-      "status": {
-        "en": "Open for signature until September 19, 2026, at 11:17 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 19 septembre 2026 à 11 h 17 (HAE)"
-      },
-      "sponsor": "Maxime Blanchette-Joncas",
-      "signatures": 895,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7603",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7603"
       }
     },
     {
@@ -123,10 +102,31 @@
         "fr": "Ouverte pour signature jusqu'au 11 octobre 2026 à 15 h 49 (HAE)"
       },
       "sponsor": "Leah Gazan",
-      "signatures": 892,
+      "signatures": 924,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7580",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7580"
+      }
+    },
+    {
+      "code": "e-7603",
+      "topic": {
+        "en": "Democratic process",
+        "fr": "Processus démocratique"
+      },
+      "keywords": {
+        "en": "Province of Quebec Referenda Sovereignty",
+        "fr": "Province de Québec Référendums Souveraineté"
+      },
+      "status": {
+        "en": "Open for signature until September 19, 2026, at 11:17 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 19 septembre 2026 à 11 h 17 (HAE)"
+      },
+      "sponsor": "Maxime Blanchette-Joncas",
+      "signatures": 899,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7603",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7603"
       }
     },
     {
@@ -144,7 +144,7 @@
         "fr": "Ouverte pour signature jusqu'au 13 octobre 2026 à 11 h 05 (HAE)"
       },
       "sponsor": "Aslam Rana",
-      "signatures": 444,
+      "signatures": 461,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7573",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7573"
@@ -165,7 +165,7 @@
         "fr": "Ouverte pour signature jusqu'au 15 octobre 2026 à 13 h 34 (HAE)"
       },
       "sponsor": "Eric St-Pierre",
-      "signatures": 415,
+      "signatures": 416,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7592",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7592"
@@ -186,7 +186,7 @@
         "fr": "Ouverte pour signature jusqu'au 27 novembre 2026 à 9 h 43 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 336,
+      "signatures": 383,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7586",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7586"
@@ -207,7 +207,7 @@
         "fr": "Ouverte pour signature jusqu'au 14 octobre 2026 à 13 h 52 (HAE)"
       },
       "sponsor": "Melissa Lantsman",
-      "signatures": 290,
+      "signatures": 292,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7543",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7543"
@@ -228,7 +228,7 @@
         "fr": "Ouverte pour signature jusqu'au 18 novembre 2026 à 15 h 42 (HAE)"
       },
       "sponsor": "Bruce Fanjoy",
-      "signatures": 164,
+      "signatures": 168,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7570",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7570"
@@ -256,27 +256,6 @@
       }
     },
     {
-      "code": "e-7610",
-      "topic": {
-        "en": "Health",
-        "fr": "Santé"
-      },
-      "keywords": {
-        "en": "Emergency rooms Health services accessibility Mental health",
-        "fr": "Accessibilité des services de santé Salles d'urgence Santé mentale"
-      },
-      "status": {
-        "en": "Open for signature until November 21, 2026, at 10:04 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 21 novembre 2026 à 10 h 04 (HAE)"
-      },
-      "sponsor": "Dan Albas",
-      "signatures": 127,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7610",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7610"
-      }
-    },
-    {
       "code": "e-7579",
       "topic": {
         "en": "Environment",
@@ -291,10 +270,31 @@
         "fr": "Ouverte pour signature jusqu'au 29 octobre 2026 à 13 h 00 (HAE)"
       },
       "sponsor": "Greg Fergus",
-      "signatures": 121,
+      "signatures": 144,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7579",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7579"
+      }
+    },
+    {
+      "code": "e-7610",
+      "topic": {
+        "en": "Health",
+        "fr": "Santé"
+      },
+      "keywords": {
+        "en": "Emergency rooms Health services accessibility Mental health",
+        "fr": "Accessibilité des services de santé Salles d'urgence Santé mentale"
+      },
+      "status": {
+        "en": "Open for signature until November 21, 2026, at 10:04 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 21 novembre 2026 à 10 h 04 (HAE)"
+      },
+      "sponsor": "Dan Albas",
+      "signatures": 129,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7610",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7610"
       }
     },
     {
@@ -312,7 +312,7 @@
         "fr": "Ouverte pour signature jusqu'au 25 septembre 2026 à 12 h 19 (HAE)"
       },
       "sponsor": "Kelly DeRidder",
-      "signatures": 89,
+      "signatures": 92,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7604",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7604"
@@ -333,7 +333,7 @@
         "fr": "Ouverte pour signature jusqu'au 26 novembre 2026 à 11 h 42 (HAE)"
       },
       "sponsor": "Don Davies",
-      "signatures": 68,
+      "signatures": 72,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7616",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7616"
@@ -354,7 +354,7 @@
         "fr": "Ouverte pour signature jusqu'au 29 septembre 2026 à 13 h 01 (HAE)"
       },
       "sponsor": "Dane Lloyd",
-      "signatures": 52,
+      "signatures": 55,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7620",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7620"
@@ -375,10 +375,31 @@
         "fr": "Ouverte pour signature jusqu'au 24 novembre 2026 à 12 h 22 (HAE)"
       },
       "sponsor": "Sukh Dhaliwal",
-      "signatures": 28,
+      "signatures": 31,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7609",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7609"
+      }
+    },
+    {
+      "code": "e-7582",
+      "topic": {
+        "en": "Parliament and politics",
+        "fr": "Parlement et politique"
+      },
+      "keywords": {
+        "en": "By-elections Canada Elections Act Parliament of Canada Act Political allegiance",
+        "fr": "Allégeance politique Élections partielles Loi électorale du Canada Loi sur le Parlement du Canada"
+      },
+      "status": {
+        "en": "Open for signature until November 20, 2026, at 3:13 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 20 novembre 2026 à 15 h 13 (HAE)"
+      },
+      "sponsor": "Anna Roberts",
+      "signatures": 26,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7582",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7582"
       }
     },
     {
@@ -400,27 +421,6 @@
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7471",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7471"
-      }
-    },
-    {
-      "code": "e-7582",
-      "topic": {
-        "en": "Parliament and politics",
-        "fr": "Parlement et politique"
-      },
-      "keywords": {
-        "en": "By-elections Canada Elections Act Parliament of Canada Act Political allegiance",
-        "fr": "Allégeance politique Élections partielles Loi électorale du Canada Loi sur le Parlement du Canada"
-      },
-      "status": {
-        "en": "Open for signature until November 20, 2026, at 3:13 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 20 novembre 2026 à 15 h 13 (HAE)"
-      },
-      "sponsor": "Anna Roberts",
-      "signatures": 25,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7582",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7582"
       }
     }
   ]
