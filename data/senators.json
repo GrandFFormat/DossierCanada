@@ -3,7 +3,7 @@
     "en": "https://sencanada.ca/umbraco/surface/SenatorsAjax/GetSenators?displayFor=senatorslist&culture=en-CA",
     "fr": "https://sencanada.ca/umbraco/surface/SenatorsAjax/GetSenators?displayFor=senatorslist&culture=fr-CA"
   },
-  "scrapedAt": "2026-08-06T10:55:28.862Z",
+  "scrapedAt": "2026-08-07T09:11:36.799Z",
   "count": 96,
   "senators": [
     {
