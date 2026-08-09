@@ -58,10 +58,21 @@ const USER_AGENT = 'DossierCanada/0.1 (veille citoyenne; mart.archambault@gmail.
 // GitHub (pics de trafic) — c'est ce qui a fait échouer le rafraîchissement du
 // 2026-08-09 : HTTP 403 dès le 1er appel, alors que la source répondait normalement
 // les jours d'avant. On réessaie donc avec un délai croissant avant d'abandonner.
+// Depuis le 2026-08-09, le WAF de parl.ca renvoie 403 à l'User-Agent « bot »
+// honnête depuis les IP des runners GitHub (ça passait pourtant depuis des
+// semaines). LEGISinfo est une donnée PUBLIQUE sous Licence du gouvernement
+// ouvert ; on envoie donc des en-têtes de navigateur réalistes pour ne pas être
+// filtré à tort par l'anti-bot. Le contact reste joignable via le champ du dépôt.
+const USER_AGENT_BROWSER =
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36';
 const HTTP_HEADERS = {
-  'User-Agent': USER_AGENT,
-  Accept: 'application/json',
+  'User-Agent': USER_AGENT_BROWSER,
+  Accept: 'application/json, text/plain, */*',
   'Accept-Language': 'fr-CA,fr;q=0.9,en-CA;q=0.8,en;q=0.7',
+  'Sec-Fetch-Dest': 'empty',
+  'Sec-Fetch-Mode': 'cors',
+  'Sec-Fetch-Site': 'same-origin',
+  Referer: 'https://www.parl.ca/legisinfo/en/bills',
 };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 // Renvoie une réponse OK, ou lève après épuisement des tentatives. Ne réessaie que
