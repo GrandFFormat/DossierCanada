@@ -33,6 +33,10 @@ jobs:
         run: npm ci
 
       - name: Rafraîchir les données (scrapers + build)
+        id: refresh
+        # Orchestrateur TOLÉRANT (scripts/refresh.js) : un scraper qui échoue
+        # n'arrête plus la chaîne. Il sort en échec (exit 1) UNIQUEMENT si le build
+        # casse ; sinon exit 0 et il expose deux sorties : builds_ok et failed.
         run: npm run refresh
         env:
           # Résumés « langage clair » par IA (Claude). Absente → génération sautée,
@@ -54,3 +58,14 @@ jobs:
             git commit -m "chore: rafraîchissement automatique des données fédérales"
             git push
           fi
+
+      # Les données des scrapers qui ont marché sont déjà committées ci-dessus ;
+      # on échoue quand même le run (courriel d'alerte) pour signaler qu'une ou
+      # plusieurs sources ont échoué et méritent qu'on regarde. success() = le
+      # build a réussi (sinon le run est déjà rouge à l'étape « Rafraîchir »).
+      - name: Signaler les scrapers en échec (alerte)
+        if: success() && steps.refresh.outputs.failed != ''
+        run: |
+          echo "::warning::Scrapers en échec : ${{ steps.refresh.outputs.failed }} — données précédentes conservées pour ces sources, le reste a été publié."
+          echo "Scrapers en échec : ${{ steps.refresh.outputs.failed }}"
+          exit 1
