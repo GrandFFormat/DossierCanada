@@ -54,6 +54,40 @@ const OUT_PATH = 'data/bills.json';
 
 const USER_AGENT = 'DossierCanada/0.1 (veille citoyenne; mart.archambault@gmail.com)';
 
+// Le WAF anti-bot de parl.ca renvoie parfois un 403 TRANSITOIRE à l'IP des runners
+// GitHub (pics de trafic) — c'est ce qui a fait échouer le rafraîchissement du
+// 2026-08-09 : HTTP 403 dès le 1er appel, alors que la source répondait normalement
+// les jours d'avant. On réessaie donc avec un délai croissant avant d'abandonner.
+const HTTP_HEADERS = {
+  'User-Agent': USER_AGENT,
+  Accept: 'application/json',
+  'Accept-Language': 'fr-CA,fr;q=0.9,en-CA;q=0.8,en;q=0.7',
+};
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+// Renvoie une réponse OK, ou lève après épuisement des tentatives. Ne réessaie que
+// sur les statuts typiquement transitoires (403/408/429/5xx) et les erreurs réseau.
+async function fetchWithRetry(url, { retries = 4, baseDelayMs = 2000 } = {}) {
+  let lastErr;
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    try {
+      const res = await fetch(url, { headers: HTTP_HEADERS });
+      if (res.ok) return res;
+      if (![403, 408, 429, 500, 502, 503, 504].includes(res.status)) {
+        throw new Error(`HTTP ${res.status}`); // définitif (ex. 404) → inutile de réessayer
+      }
+      lastErr = new Error(`HTTP ${res.status}`);
+    } catch (err) {
+      lastErr = err; // erreur réseau (DNS, socket…) : on réessaie aussi
+    }
+    if (attempt < retries) {
+      const delay = baseDelayMs * 2 ** attempt; // 2s, 4s, 8s, 16s
+      console.warn(`  … ${url} : tentative ${attempt + 1}/${retries + 1} (${lastErr.message}) — nouvel essai dans ${delay / 1000}s`);
+      await sleep(delay);
+    }
+  }
+  throw lastErr;
+}
+
 // OriginatingChamberId observé dans les données : 1 = Chambre des communes, 2 = Sénat.
 const CHAMBER_BY_ID = { 1: 'commons', 2: 'senate' };
 
@@ -161,8 +195,12 @@ function buildBill(row) {
 
 async function fetchBills() {
   const url = `https://www.parl.ca/legisinfo/en/bills/json?parlsession=${SESSION}`;
-  const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT, Accept: 'application/json' } });
-  if (!res.ok) throw new Error(`Échec du téléchargement LEGISinfo : HTTP ${res.status}`);
+  let res;
+  try {
+    res = await fetchWithRetry(url);
+  } catch (err) {
+    throw new Error(`Échec du téléchargement LEGISinfo : ${err.message}`);
+  }
   const rows = await res.json();
   if (!Array.isArray(rows)) throw new Error('Réponse LEGISinfo inattendue : tableau attendu.');
   return { url, rows };
@@ -194,8 +232,7 @@ async function fetchSponsorDetails(bills) {
   await mapPool(bills, 8, async (b) => {
     const url = `https://www.parl.ca/legisinfo/en/bill/${b.session}/${b.num.toLowerCase()}/json`;
     try {
-      const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT, Accept: 'application/json' } });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const res = await fetchWithRetry(url);
       let d = await res.json();
       if (Array.isArray(d)) d = d[0];
       if (!d) throw new Error('détail vide');
