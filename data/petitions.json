@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-08-08T08:56:32.083Z",
+  "scrapedAt": "2026-08-09T19:07:10.038Z",
   "count": 20,
   "petitions": [
     {
@@ -18,7 +18,7 @@
         "fr": "Ouverte pour signature jusqu'au 18 novembre 2026 à 15 h 41 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 27003,
+      "signatures": 28571,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7531",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7531"
@@ -39,7 +39,7 @@
         "fr": "Ouverte pour signature jusqu'au 5 octobre 2026 à 15 h 22 (HAE)"
       },
       "sponsor": "Jenny Kwan",
-      "signatures": 2591,
+      "signatures": 4637,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7636",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7636"
@@ -60,7 +60,7 @@
         "fr": "Ouverte pour signature jusqu'au 26 août 2026 à 9 h 47 (HAE)"
       },
       "sponsor": "Yasir Naqvi",
-      "signatures": 1634,
+      "signatures": 1680,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7594",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7594"
@@ -81,7 +81,7 @@
         "fr": "Ouverte pour signature jusqu'au 4 octobre 2026 à 12 h 39 (HAE)"
       },
       "sponsor": "Anita Vandenbeld",
-      "signatures": 1553,
+      "signatures": 1639,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7628",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7628"
@@ -102,7 +102,7 @@
         "fr": "Ouverte pour signature jusqu'au 30 août 2026 à 15 h 16 (HAE)"
       },
       "sponsor": "Yvan Baker",
-      "signatures": 1406,
+      "signatures": 1436,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7624",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7624"
@@ -130,6 +130,27 @@
       }
     },
     {
+      "code": "e-7645",
+      "topic": {
+        "en": "Public safety",
+        "fr": "Sécurité publique"
+      },
+      "keywords": {
+        "en": "Sex Offender Information Registration Act Sex offender registry",
+        "fr": "Loi sur l'enregistrement de renseignemen ... Registre des délinquants sexuels"
+      },
+      "status": {
+        "en": "Open for signature until December 5, 2026, at 9:18 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 5 décembre 2026 à 9 h 18 (HAE)"
+      },
+      "sponsor": "Ned Kuruc",
+      "signatures": 659,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7645",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7645"
+      }
+    },
+    {
       "code": "e-7586",
       "topic": {
         "en": "Environment",
@@ -144,7 +165,7 @@
         "fr": "Ouverte pour signature jusqu'au 27 novembre 2026 à 9 h 43 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 520,
+      "signatures": 555,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7586",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7586"
@@ -165,7 +186,7 @@
         "fr": "Ouverte pour signature jusqu'au 18 novembre 2026 à 15 h 42 (HAE)"
       },
       "sponsor": "Bruce Fanjoy",
-      "signatures": 285,
+      "signatures": 377,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7570",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7570"
@@ -186,7 +207,7 @@
         "fr": "Ouverte pour signature jusqu'au 5 novembre 2026 à 9 h 08 (HAE)"
       },
       "sponsor": "Michelle Rempel Garner",
-      "signatures": 207,
+      "signatures": 317,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7643",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7643"
@@ -207,7 +228,7 @@
         "fr": "Ouverte pour signature jusqu'au 29 octobre 2026 à 13 h 00 (HAE)"
       },
       "sponsor": "Greg Fergus",
-      "signatures": 175,
+      "signatures": 187,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7579",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7579"
@@ -228,10 +249,31 @@
         "fr": "Ouverte pour signature jusqu'au 21 novembre 2026 à 10 h 04 (HAE)"
       },
       "sponsor": "Dan Albas",
-      "signatures": 141,
+      "signatures": 147,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7610",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7610"
+      }
+    },
+    {
+      "code": "e-7639",
+      "topic": {
+        "en": "Justice",
+        "fr": "Justice"
+      },
+      "keywords": {
+        "en": "Corrections and Conditional Release Act Criminal harassment Imprisonment and prisoners",
+        "fr": "Harcèlement criminel Incarcération et prisonniers Loi sur le système correctionnel et la m ..."
+      },
+      "status": {
+        "en": "Open for signature until December 5, 2026, at 9:11 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 5 décembre 2026 à 9 h 11 (HAE)"
+      },
+      "sponsor": "Dean Allison",
+      "signatures": 145,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7639",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7639"
       }
     },
     {
@@ -249,7 +291,7 @@
         "fr": "Ouverte pour signature jusqu'au 25 septembre 2026 à 12 h 19 (HAE)"
       },
       "sponsor": "Kelly DeRidder",
-      "signatures": 126,
+      "signatures": 137,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7604",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7604"
@@ -270,7 +312,7 @@
         "fr": "Ouverte pour signature jusqu'au 26 novembre 2026 à 11 h 42 (HAE)"
       },
       "sponsor": "Don Davies",
-      "signatures": 119,
+      "signatures": 131,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7616",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7616"
@@ -291,52 +333,10 @@
         "fr": "Ouverte pour signature jusqu'au 29 septembre 2026 à 13 h 01 (HAE)"
       },
       "sponsor": "Dane Lloyd",
-      "signatures": 73,
+      "signatures": 83,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7620",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7620"
-      }
-    },
-    {
-      "code": "e-7645",
-      "topic": {
-        "en": "Public safety",
-        "fr": "Sécurité publique"
-      },
-      "keywords": {
-        "en": "Sex Offender Information Registration Act Sex offender registry",
-        "fr": "Loi sur l'enregistrement de renseignemen ... Registre des délinquants sexuels"
-      },
-      "status": {
-        "en": "Open for signature until December 5, 2026, at 9:18 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 5 décembre 2026 à 9 h 18 (HAE)"
-      },
-      "sponsor": "Ned Kuruc",
-      "signatures": 72,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7645",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7645"
-      }
-    },
-    {
-      "code": "e-7639",
-      "topic": {
-        "en": "Justice",
-        "fr": "Justice"
-      },
-      "keywords": {
-        "en": "Corrections and Conditional Release Act Criminal harassment Imprisonment and prisoners",
-        "fr": "Harcèlement criminel Incarcération et prisonniers Loi sur le système correctionnel et la m ..."
-      },
-      "status": {
-        "en": "Open for signature until December 5, 2026, at 9:11 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 5 décembre 2026 à 9 h 11 (HAE)"
-      },
-      "sponsor": "Dean Allison",
-      "signatures": 63,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7639",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7639"
       }
     },
     {
@@ -375,7 +375,7 @@
         "fr": "Ouverte pour signature jusqu'au 19 octobre 2026 à 11 h 13 (HAE)"
       },
       "sponsor": "Doug Shipley",
-      "signatures": 32,
+      "signatures": 35,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7471",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7471"
@@ -396,7 +396,7 @@
         "fr": "Ouverte pour signature jusqu'au 20 novembre 2026 à 15 h 13 (HAE)"
       },
       "sponsor": "Anna Roberts",
-      "signatures": 30,
+      "signatures": 32,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7582",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7582"
@@ -417,7 +417,7 @@
         "fr": "Ouverte pour signature jusqu'au 5 décembre 2026 à 9 h 20 (HAE)"
       },
       "sponsor": "Fred Davies",
-      "signatures": 13,
+      "signatures": 28,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7642",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7642"
