@@ -54,32 +54,29 @@ const OUT_PATH = 'data/bills.json';
 
 const USER_AGENT = 'DossierCanada/0.1 (veille citoyenne; mart.archambault@gmail.com)';
 
-// Le WAF anti-bot de parl.ca renvoie parfois un 403 TRANSITOIRE à l'IP des runners
-// GitHub (pics de trafic) — c'est ce qui a fait échouer le rafraîchissement du
-// 2026-08-09 : HTTP 403 dès le 1er appel, alors que la source répondait normalement
-// les jours d'avant. On réessaie donc avec un délai croissant avant d'abandonner.
-// Depuis le 2026-08-09, le WAF de parl.ca renvoie 403 à l'User-Agent « bot »
-// honnête depuis les IP des runners GitHub (ça passait pourtant depuis des
-// semaines). LEGISinfo est une donnée PUBLIQUE sous Licence du gouvernement
-// ouvert ; on envoie donc des en-têtes de navigateur réalistes pour ne pas être
-// filtré à tort par l'anti-bot. Le contact reste joignable via le champ du dépôt.
-const USER_AGENT_BROWSER =
-  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36';
+// Contexte (mis à jour le 2026-08-11) : après analyse de leurs journaux, l'IT du
+// Parlement confirme qu'il N'Y A PAS de blocage au pare-feu — l'User-Agent honnête
+// reçoit normalement des HTTP 200. Les 403 du 2026-08-09 étaient TRANSITOIRES (pic
+// de charge de leur site). Recommandation officielle : sur échec / redirection vers
+// la page d'erreur, attendre quelques MINUTES et réessayer. On garde donc l'User-
+// Agent honnête (il identifie l'outil + un contact) et on espace les réessais.
 const HTTP_HEADERS = {
-  'User-Agent': USER_AGENT_BROWSER,
+  'User-Agent': USER_AGENT,
   Accept: 'application/json, text/plain, */*',
   'Accept-Language': 'fr-CA,fr;q=0.9,en-CA;q=0.8,en;q=0.7',
-  'Sec-Fetch-Dest': 'empty',
-  'Sec-Fetch-Mode': 'cors',
-  'Sec-Fetch-Site': 'same-origin',
-  Referer: 'https://www.parl.ca/legisinfo/en/bills',
 };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+// Barèmes de réessai. La LISTE des projets est critique (1er appel de la chaîne) →
+// réessais à l'échelle des minutes, comme recommandé par le Parlement. Les DÉTAILS
+// de parrain sont non critiques et déjà tolérés → réessais courts, sinon un pic
+// généralisé ferait exploser la durée sur 185 appels.
+const RETRY_DELAYS_MS = [30000, 90000, 180000]; // 30 s · 1 min 30 · 3 min
+const RETRY_DELAYS_SHORT_MS = [2000, 6000]; // 2 s · 6 s
 // Renvoie une réponse OK, ou lève après épuisement des tentatives. Ne réessaie que
 // sur les statuts typiquement transitoires (403/408/429/5xx) et les erreurs réseau.
-async function fetchWithRetry(url, { retries = 4, baseDelayMs = 2000 } = {}) {
+async function fetchWithRetry(url, delays = RETRY_DELAYS_MS) {
   let lastErr;
-  for (let attempt = 0; attempt <= retries; attempt++) {
+  for (let attempt = 0; attempt <= delays.length; attempt++) {
     try {
       const res = await fetch(url, { headers: HTTP_HEADERS });
       if (res.ok) return res;
@@ -90,9 +87,9 @@ async function fetchWithRetry(url, { retries = 4, baseDelayMs = 2000 } = {}) {
     } catch (err) {
       lastErr = err; // erreur réseau (DNS, socket…) : on réessaie aussi
     }
-    if (attempt < retries) {
-      const delay = baseDelayMs * 2 ** attempt; // 2s, 4s, 8s, 16s
-      console.warn(`  … ${url} : tentative ${attempt + 1}/${retries + 1} (${lastErr.message}) — nouvel essai dans ${delay / 1000}s`);
+    if (attempt < delays.length) {
+      const delay = delays[attempt];
+      console.warn(`  … ${url} : tentative ${attempt + 1}/${delays.length + 1} (${lastErr.message}) — nouvel essai dans ${delay / 1000}s`);
       await sleep(delay);
     }
   }
@@ -243,7 +240,7 @@ async function fetchSponsorDetails(bills) {
   await mapPool(bills, 8, async (b) => {
     const url = `https://www.parl.ca/legisinfo/en/bill/${b.session}/${b.num.toLowerCase()}/json`;
     try {
-      const res = await fetchWithRetry(url);
+      const res = await fetchWithRetry(url, RETRY_DELAYS_SHORT_MS);
       let d = await res.json();
       if (Array.isArray(d)) d = d[0];
       if (!d) throw new Error('détail vide');
