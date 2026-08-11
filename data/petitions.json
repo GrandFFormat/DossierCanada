@@ -1,29 +1,8 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-08-10T09:45:54.664Z",
+  "scrapedAt": "2026-08-11T09:10:56.433Z",
   "count": 20,
   "petitions": [
-    {
-      "code": "e-7531",
-      "topic": {
-        "en": "Foreign affairs",
-        "fr": "Affaires étrangères"
-      },
-      "keywords": {
-        "en": "Diplomacy and diplomats Persona non grata United States of America",
-        "fr": "Diplomatie et diplomates États-Unis d'Amérique Persona non grata"
-      },
-      "status": {
-        "en": "Open for signature until November 18, 2026, at 3:41 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 18 novembre 2026 à 15 h 41 (HAE)"
-      },
-      "sponsor": "Elizabeth May",
-      "signatures": 28842,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7531",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7531"
-      }
-    },
     {
       "code": "e-7636",
       "topic": {
@@ -39,7 +18,7 @@
         "fr": "Ouverte pour signature jusqu'au 5 octobre 2026 à 15 h 22 (HAE)"
       },
       "sponsor": "Jenny Kwan",
-      "signatures": 5219,
+      "signatures": 5835,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7636",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7636"
@@ -60,7 +39,7 @@
         "fr": "Ouverte pour signature jusqu'au 26 août 2026 à 9 h 47 (HAE)"
       },
       "sponsor": "Yasir Naqvi",
-      "signatures": 1727,
+      "signatures": 1826,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7594",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7594"
@@ -81,7 +60,7 @@
         "fr": "Ouverte pour signature jusqu'au 4 octobre 2026 à 12 h 39 (HAE)"
       },
       "sponsor": "Anita Vandenbeld",
-      "signatures": 1673,
+      "signatures": 1759,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7628",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7628"
@@ -102,31 +81,10 @@
         "fr": "Ouverte pour signature jusqu'au 30 août 2026 à 15 h 16 (HAE)"
       },
       "sponsor": "Yvan Baker",
-      "signatures": 1449,
+      "signatures": 1498,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7624",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7624"
-      }
-    },
-    {
-      "code": "e-7603",
-      "topic": {
-        "en": "Democratic process",
-        "fr": "Processus démocratique"
-      },
-      "keywords": {
-        "en": "Province of Quebec Referenda Sovereignty",
-        "fr": "Province de Québec Référendums Souveraineté"
-      },
-      "status": {
-        "en": "Open for signature until September 19, 2026, at 11:17 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 19 septembre 2026 à 11 h 17 (HAE)"
-      },
-      "sponsor": "Maxime Blanchette-Joncas",
-      "signatures": 910,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7603",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7603"
       }
     },
     {
@@ -144,7 +102,7 @@
         "fr": "Ouverte pour signature jusqu'au 5 décembre 2026 à 9 h 18 (HAE)"
       },
       "sponsor": "Ned Kuruc",
-      "signatures": 741,
+      "signatures": 863,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7645",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7645"
@@ -165,31 +123,10 @@
         "fr": "Ouverte pour signature jusqu'au 27 novembre 2026 à 9 h 43 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 558,
+      "signatures": 633,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7586",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7586"
-      }
-    },
-    {
-      "code": "e-7570",
-      "topic": {
-        "en": "Environment",
-        "fr": "Environnement"
-      },
-      "keywords": {
-        "en": "Ottawa River Ottawa River Watershed Oversight mechanism Reservoirs",
-        "fr": "Bassin versant de la rivière des Outaouais Mécanisme de surveillance Réservoirs Rivière des Outaouais"
-      },
-      "status": {
-        "en": "Open for signature until November 18, 2026, at 3:42 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 18 novembre 2026 à 15 h 42 (HAE)"
-      },
-      "sponsor": "Bruce Fanjoy",
-      "signatures": 390,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7570",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7570"
       }
     },
     {
@@ -207,7 +144,7 @@
         "fr": "Ouverte pour signature jusqu'au 5 novembre 2026 à 9 h 08 (HAE)"
       },
       "sponsor": "Michelle Rempel Garner",
-      "signatures": 335,
+      "signatures": 361,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7643",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7643"
@@ -228,7 +165,7 @@
         "fr": "Ouverte pour signature jusqu'au 29 octobre 2026 à 13 h 00 (HAE)"
       },
       "sponsor": "Greg Fergus",
-      "signatures": 189,
+      "signatures": 213,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7579",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7579"
@@ -249,7 +186,7 @@
         "fr": "Ouverte pour signature jusqu'au 5 décembre 2026 à 9 h 11 (HAE)"
       },
       "sponsor": "Dean Allison",
-      "signatures": 171,
+      "signatures": 183,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7639",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7639"
@@ -270,31 +207,10 @@
         "fr": "Ouverte pour signature jusqu'au 21 novembre 2026 à 10 h 04 (HAE)"
       },
       "sponsor": "Dan Albas",
-      "signatures": 147,
+      "signatures": 151,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7610",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7610"
-      }
-    },
-    {
-      "code": "e-7616",
-      "topic": {
-        "en": "Employment and labour",
-        "fr": "Travail et emploi"
-      },
-      "keywords": {
-        "en": "Compensation Income and wages Layoffs and job losses",
-        "fr": "Indemnisation Mises à pied et pertes d'emplois Revenus et salaires"
-      },
-      "status": {
-        "en": "Open for signature until November 26, 2026, at 11:42 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 26 novembre 2026 à 11 h 42 (HAE)"
-      },
-      "sponsor": "Don Davies",
-      "signatures": 139,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7616",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7616"
       }
     },
     {
@@ -312,10 +228,31 @@
         "fr": "Ouverte pour signature jusqu'au 25 septembre 2026 à 12 h 19 (HAE)"
       },
       "sponsor": "Kelly DeRidder",
-      "signatures": 138,
+      "signatures": 143,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7604",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7604"
+      }
+    },
+    {
+      "code": "e-7616",
+      "topic": {
+        "en": "Employment and labour",
+        "fr": "Travail et emploi"
+      },
+      "keywords": {
+        "en": "Compensation Income and wages Layoffs and job losses",
+        "fr": "Indemnisation Mises à pied et pertes d'emplois Revenus et salaires"
+      },
+      "status": {
+        "en": "Open for signature until November 26, 2026, at 11:42 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 26 novembre 2026 à 11 h 42 (HAE)"
+      },
+      "sponsor": "Don Davies",
+      "signatures": 142,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7616",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7616"
       }
     },
     {
@@ -333,7 +270,7 @@
         "fr": "Ouverte pour signature jusqu'au 29 septembre 2026 à 13 h 01 (HAE)"
       },
       "sponsor": "Dane Lloyd",
-      "signatures": 85,
+      "signatures": 87,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7620",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7620"
@@ -361,24 +298,24 @@
       }
     },
     {
-      "code": "e-7471",
+      "code": "e-7642",
       "topic": {
-        "en": "Social affairs and equality",
-        "fr": "Affaires sociales et égalité"
+        "en": "Veterans' affairs",
+        "fr": "Anciens combattants"
       },
       "keywords": {
-        "en": "Pension Benefits Standards Act Pensions and pensioners",
-        "fr": "Loi sur les normes de prestation de pension Pensions et pensionnés"
+        "en": "Battle of Ridgeway Books of Remembrance War casualties",
+        "fr": "Bataille de Ridgeway Livres du Souvenir Pertes de guerre"
       },
       "status": {
-        "en": "Open for signature until October 19, 2026, at 11:13 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 19 octobre 2026 à 11 h 13 (HAE)"
+        "en": "Open for signature until December 5, 2026, at 9:20 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 5 décembre 2026 à 9 h 20 (HAE)"
       },
-      "sponsor": "Doug Shipley",
-      "signatures": 36,
+      "sponsor": "Fred Davies",
+      "signatures": 34,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7471",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7471"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7642",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7642"
       }
     },
     {
@@ -403,24 +340,87 @@
       }
     },
     {
-      "code": "e-7642",
+      "code": "e-7593",
       "topic": {
-        "en": "Veterans' affairs",
-        "fr": "Anciens combattants"
+        "en": "Indigenous affairs",
+        "fr": "Affaires autochtones"
       },
       "keywords": {
-        "en": "Battle of Ridgeway Books of Remembrance War casualties",
-        "fr": "Bataille de Ridgeway Livres du Souvenir Pertes de guerre"
+        "en": "C-37, An Act respecting water, source wa ... Drinking water First Nations Water resources",
+        "fr": "C-37, Loi concernant l'eau, les sources ... Eau potable Premières Nations Ressources en eau"
       },
       "status": {
-        "en": "Open for signature until December 5, 2026, at 9:20 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 5 décembre 2026 à 9 h 20 (HAE)"
+        "en": "Open for signature until December 8, 2026, at 3:07 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 15 h 07 (HAE)"
       },
-      "sponsor": "Fred Davies",
-      "signatures": 30,
+      "sponsor": "Leah Gazan",
+      "signatures": 8,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7642",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7642"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7593",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7593"
+      }
+    },
+    {
+      "code": "e-7656",
+      "topic": {
+        "en": "Public safety",
+        "fr": "Sécurité publique"
+      },
+      "keywords": {
+        "en": "Batteries Fire prevention",
+        "fr": "Piles Prévention des incendies"
+      },
+      "status": {
+        "en": "Open for signature until December 8, 2026, at 9:30 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 9 h 30 (HAE)"
+      },
+      "sponsor": "Wade Chang",
+      "signatures": 8,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7656",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7656"
+      }
+    },
+    {
+      "code": "e-7657",
+      "topic": {
+        "en": "Social affairs and equality",
+        "fr": "Affaires sociales et égalité"
+      },
+      "keywords": {
+        "en": "Emergency response and emergency responders Inflation Memorial Grant Program for First Responders",
+        "fr": "Inflation Intervention d'urgence et intervenants Programme de subvention commémoratif pou ..."
+      },
+      "status": {
+        "en": "Open for signature until December 8, 2026, at 9:28 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 9 h 28 (HAE)"
+      },
+      "sponsor": "Wade Chang",
+      "signatures": 8,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7657",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7657"
+      }
+    },
+    {
+      "code": "e-7655",
+      "topic": {
+        "en": "Public safety",
+        "fr": "Sécurité publique"
+      },
+      "keywords": {
+        "en": "Air safety Airports Firefighting services Setting of standards",
+        "fr": "Aéroports Mise aux normes Sécurité aérienne Services de lutte contre les incendies"
+      },
+      "status": {
+        "en": "Open for signature until December 8, 2026, at 9:32 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 9 h 32 (HAE)"
+      },
+      "sponsor": "Wade Chang",
+      "signatures": 7,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7655",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7655"
       }
     }
   ]
