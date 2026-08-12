@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-08-11T09:10:56.433Z",
+  "scrapedAt": "2026-08-12T09:27:53.204Z",
   "count": 20,
   "petitions": [
     {
@@ -18,31 +18,10 @@
         "fr": "Ouverte pour signature jusqu'au 5 octobre 2026 à 15 h 22 (HAE)"
       },
       "sponsor": "Jenny Kwan",
-      "signatures": 5835,
+      "signatures": 6136,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7636",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7636"
-      }
-    },
-    {
-      "code": "e-7594",
-      "topic": {
-        "en": "Culture and heritage",
-        "fr": "Culture et patrimoine"
-      },
-      "keywords": {
-        "en": "Canadian Register of Historic Places Governance Heritage sites and buildings",
-        "fr": "Gouvernance Répertoire des lieux patrimoniaux du Canada Sites et édifices patrimoniaux"
-      },
-      "status": {
-        "en": "Open for signature until August 26, 2026, at 9:47 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 26 août 2026 à 9 h 47 (HAE)"
-      },
-      "sponsor": "Yasir Naqvi",
-      "signatures": 1826,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7594",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7594"
       }
     },
     {
@@ -60,7 +39,7 @@
         "fr": "Ouverte pour signature jusqu'au 4 octobre 2026 à 12 h 39 (HAE)"
       },
       "sponsor": "Anita Vandenbeld",
-      "signatures": 1759,
+      "signatures": 1783,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7628",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7628"
@@ -81,7 +60,7 @@
         "fr": "Ouverte pour signature jusqu'au 30 août 2026 à 15 h 16 (HAE)"
       },
       "sponsor": "Yvan Baker",
-      "signatures": 1498,
+      "signatures": 1528,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7624",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7624"
@@ -102,7 +81,7 @@
         "fr": "Ouverte pour signature jusqu'au 5 décembre 2026 à 9 h 18 (HAE)"
       },
       "sponsor": "Ned Kuruc",
-      "signatures": 863,
+      "signatures": 920,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7645",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7645"
@@ -123,7 +102,7 @@
         "fr": "Ouverte pour signature jusqu'au 27 novembre 2026 à 9 h 43 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 633,
+      "signatures": 760,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7586",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7586"
@@ -144,7 +123,7 @@
         "fr": "Ouverte pour signature jusqu'au 5 novembre 2026 à 9 h 08 (HAE)"
       },
       "sponsor": "Michelle Rempel Garner",
-      "signatures": 361,
+      "signatures": 385,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7643",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7643"
@@ -165,7 +144,7 @@
         "fr": "Ouverte pour signature jusqu'au 29 octobre 2026 à 13 h 00 (HAE)"
       },
       "sponsor": "Greg Fergus",
-      "signatures": 213,
+      "signatures": 228,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7579",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7579"
@@ -186,31 +165,10 @@
         "fr": "Ouverte pour signature jusqu'au 5 décembre 2026 à 9 h 11 (HAE)"
       },
       "sponsor": "Dean Allison",
-      "signatures": 183,
+      "signatures": 205,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7639",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7639"
-      }
-    },
-    {
-      "code": "e-7610",
-      "topic": {
-        "en": "Health",
-        "fr": "Santé"
-      },
-      "keywords": {
-        "en": "Emergency rooms Health services accessibility Mental health",
-        "fr": "Accessibilité des services de santé Salles d'urgence Santé mentale"
-      },
-      "status": {
-        "en": "Open for signature until November 21, 2026, at 10:04 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 21 novembre 2026 à 10 h 04 (HAE)"
-      },
-      "sponsor": "Dan Albas",
-      "signatures": 151,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7610",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7610"
       }
     },
     {
@@ -228,7 +186,7 @@
         "fr": "Ouverte pour signature jusqu'au 25 septembre 2026 à 12 h 19 (HAE)"
       },
       "sponsor": "Kelly DeRidder",
-      "signatures": 143,
+      "signatures": 149,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7604",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7604"
@@ -249,7 +207,7 @@
         "fr": "Ouverte pour signature jusqu'au 26 novembre 2026 à 11 h 42 (HAE)"
       },
       "sponsor": "Don Davies",
-      "signatures": 142,
+      "signatures": 146,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7616",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7616"
@@ -270,31 +228,10 @@
         "fr": "Ouverte pour signature jusqu'au 29 septembre 2026 à 13 h 01 (HAE)"
       },
       "sponsor": "Dane Lloyd",
-      "signatures": 87,
+      "signatures": 91,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7620",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7620"
-      }
-    },
-    {
-      "code": "e-7609",
-      "topic": {
-        "en": "Business and trade",
-        "fr": "Affaires et commerce"
-      },
-      "keywords": {
-        "en": "Financial hardship Loans Small and medium-sized enterprises",
-        "fr": "Difficulté financière Petites et moyennes entreprises Prêts"
-      },
-      "status": {
-        "en": "Open for signature until November 24, 2026, at 12:22 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 24 novembre 2026 à 12 h 22 (HAE)"
-      },
-      "sponsor": "Sukh Dhaliwal",
-      "signatures": 38,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7609",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7609"
       }
     },
     {
@@ -312,31 +249,31 @@
         "fr": "Ouverte pour signature jusqu'au 5 décembre 2026 à 9 h 20 (HAE)"
       },
       "sponsor": "Fred Davies",
-      "signatures": 34,
+      "signatures": 40,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7642",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7642"
       }
     },
     {
-      "code": "e-7582",
+      "code": "e-7609",
       "topic": {
-        "en": "Parliament and politics",
-        "fr": "Parlement et politique"
+        "en": "Business and trade",
+        "fr": "Affaires et commerce"
       },
       "keywords": {
-        "en": "By-elections Canada Elections Act Parliament of Canada Act Political allegiance",
-        "fr": "Allégeance politique Élections partielles Loi électorale du Canada Loi sur le Parlement du Canada"
+        "en": "Financial hardship Loans Small and medium-sized enterprises",
+        "fr": "Difficulté financière Petites et moyennes entreprises Prêts"
       },
       "status": {
-        "en": "Open for signature until November 20, 2026, at 3:13 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 20 novembre 2026 à 15 h 13 (HAE)"
+        "en": "Open for signature until November 24, 2026, at 12:22 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 24 novembre 2026 à 12 h 22 (HAE)"
       },
-      "sponsor": "Anna Roberts",
-      "signatures": 33,
+      "sponsor": "Sukh Dhaliwal",
+      "signatures": 39,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7582",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7582"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7609",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7609"
       }
     },
     {
@@ -354,31 +291,31 @@
         "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 15 h 07 (HAE)"
       },
       "sponsor": "Leah Gazan",
-      "signatures": 8,
+      "signatures": 37,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7593",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7593"
       }
     },
     {
-      "code": "e-7656",
+      "code": "e-7601",
       "topic": {
         "en": "Public safety",
         "fr": "Sécurité publique"
       },
       "keywords": {
-        "en": "Batteries Fire prevention",
-        "fr": "Piles Prévention des incendies"
+        "en": "Emergency preparedness Environmental protection Fire prevention Forest fires",
+        "fr": "Incendies de forêt Préparation aux situations d'urgence Prévention des incendies Protection de l'environnement"
       },
       "status": {
-        "en": "Open for signature until December 8, 2026, at 9:30 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 9 h 30 (HAE)"
+        "en": "Open for signature until December 9, 2026, at 10:32 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 9 décembre 2026 à 10 h 32 (HAE)"
       },
-      "sponsor": "Wade Chang",
-      "signatures": 8,
+      "sponsor": "Vince Gasparro",
+      "signatures": 16,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7656",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7656"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7601",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7601"
       }
     },
     {
@@ -396,10 +333,31 @@
         "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 9 h 28 (HAE)"
       },
       "sponsor": "Wade Chang",
-      "signatures": 8,
+      "signatures": 12,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7657",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7657"
+      }
+    },
+    {
+      "code": "e-7667",
+      "topic": {
+        "en": "Public safety",
+        "fr": "Sécurité publique"
+      },
+      "keywords": {
+        "en": "Graphic symbols Kata'ib Hezbollah Terrorist entities watch lists",
+        "fr": "Kata'ib Hezbollah Listes de surveillance d'entités terroristes Symboles graphiques"
+      },
+      "status": {
+        "en": "Open for signature until October 10, 2026, at 1:27 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 10 octobre 2026 à 13 h 27 (HAE)"
+      },
+      "sponsor": "Anthony Housefather",
+      "signatures": 11,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7667",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7667"
       }
     },
     {
@@ -417,10 +375,52 @@
         "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 9 h 32 (HAE)"
       },
       "sponsor": "Wade Chang",
-      "signatures": 7,
+      "signatures": 11,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7655",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7655"
+      }
+    },
+    {
+      "code": "e-7656",
+      "topic": {
+        "en": "Public safety",
+        "fr": "Sécurité publique"
+      },
+      "keywords": {
+        "en": "Batteries Fire prevention",
+        "fr": "Piles Prévention des incendies"
+      },
+      "status": {
+        "en": "Open for signature until December 8, 2026, at 9:30 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 9 h 30 (HAE)"
+      },
+      "sponsor": "Wade Chang",
+      "signatures": 11,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7656",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7656"
+      }
+    },
+    {
+      "code": "e-7662",
+      "topic": {
+        "en": "Culture and heritage",
+        "fr": "Culture et patrimoine"
+      },
+      "keywords": {
+        "en": "Government lands Military history Naval museums",
+        "fr": "Histoire militaire Musées d'histoire de la marine Terres du gouvernement"
+      },
+      "status": {
+        "en": "Open for signature until November 9, 2026, at 2:09 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 9 novembre 2026 à 14 h 09 (HAE)"
+      },
+      "sponsor": "David McKenzie",
+      "signatures": 7,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7662",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7662"
       }
     }
   ]
