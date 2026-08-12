@@ -3,8 +3,8 @@
     "en": "https://sencanada.ca/umbraco/surface/SenatorsAjax/GetSenators?displayFor=senatorslist&culture=en-CA",
     "fr": "https://sencanada.ca/umbraco/surface/SenatorsAjax/GetSenators?displayFor=senatorslist&culture=fr-CA"
   },
-  "scrapedAt": "2026-08-11T09:10:57.341Z",
-  "count": 96,
+  "scrapedAt": "2026-08-12T09:27:53.878Z",
+  "count": 95,
   "senators": [
     {
       "slug": "adler-charles",
@@ -30,32 +30,6 @@
       "url": {
         "en": "https://sencanada.ca/en/senators/adler-charles/",
         "fr": "https://sencanada.ca/fr/senateurs/adler-charles/"
-      }
-    },
-    {
-      "slug": "al-zaibak-mohammad-khair",
-      "firstName": "Mohammad Khair",
-      "lastName": "Al Zaibak",
-      "name": "Mohammad Khair Al Zaibak",
-      "postNominal": null,
-      "group": {
-        "code": "CSG",
-        "en": "CSG",
-        "fr": "GSC",
-        "enName": "Canadian Senators Group",
-        "frName": "Groupe des sénateurs canadiens"
-      },
-      "province": {
-        "code": "ON",
-        "en": "Ontario",
-        "fr": "Ontario"
-      },
-      "appointedOn": "2024-01-28",
-      "retirementOn": "2026-08-09",
-      "appointedBy": "Trudeau, Justin (Lib.)",
-      "url": {
-        "en": "https://sencanada.ca/en/senators/al-zaibak-mohammad-khair/",
-        "fr": "https://sencanada.ca/fr/senateurs/al-zaibak-mohammad-khair/"
       }
     },
     {
