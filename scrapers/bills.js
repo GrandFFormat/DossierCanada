@@ -140,7 +140,7 @@ function bilingual(en, fr) {
 // sinon sur « en cours ». Le statut textuel exact reste disponible dans `status`.
 function deriveState(row) {
   if (row.ReceivedRoyalAssentDateTime) return 'loi';
-  const status = (row.CurrentStatusEn || '').toLowerCase();
+  const status = (row.StatusNameEn || '').toLowerCase();
   if (status.includes('defeated') || status.includes('not proceeded') || status.includes('withdrawn')) {
     return 'rejete';
   }
@@ -163,40 +163,55 @@ function buildMilestones(row, chamber) {
     .map(({ stage, chamber, reading, date }) => ({ stage, chamber, reading, date }));
 }
 
+// ⚠️ Schéma LEGISinfo mis à jour le 2026-08-15 : plusieurs champs de l'export JSON
+// ont été renommés (BillId→Id, BillNumberFormatted→NumberCode, BillTypeEn→
+// BillDocumentTypeNameEn, CurrentStatusEn→StatusNameEn, OriginatingChamberId→
+// OriginatingChamberOrganizationId), le code de session (ParlSessionCode) et la
+// « dernière activité » datée ne sont plus dans la liste, et le parrain a migré
+// vers le point d'accès de détail. `id` (= ancien BillId) est PRÉSERVÉ : la clé de
+// jointure du projet (résumés IA, votes, campagne challenge) reste intacte.
 function buildBill(row) {
-  const chamber = CHAMBER_BY_ID[row.OriginatingChamberId] ?? null;
-  const num = row.BillNumberFormatted; // ex. "C-3"
+  const num = clean(row.NumberCode); // ex. "C-3"
+  // Entrée sans numéro (placeholder / donnée incomplète) → pas d'identité ni d'URL
+  // utilisable : on l'ignore. Un schéma qui viderait TOUS les numéros est rattrapé
+  // par le garde-fou dans main() (on ne publie jamais du vide).
+  if (!num) return null;
   const slug = num.toLowerCase(); // ex. "c-3" pour l'URL LEGISinfo
+  const session = `${row.ParliamentNumber}-${row.SessionNumber}`; // ex. "45-1"
+  const chamber = CHAMBER_BY_ID[row.OriginatingChamberOrganizationId] ?? null;
   const milestones = buildMilestones(row, chamber);
+  // La liste ne fournit plus de « dernière activité » datée : on la dérive du
+  // dernier jalon franchi (lecture / sanction), en fin de la liste chronologique.
+  const lastMilestone = milestones.length ? milestones[milestones.length - 1].date : null;
 
   return {
-    id: row.BillId,
+    id: row.Id, // = ancien BillId (clé de jointure) — valeurs identiques
     num,
-    session: row.ParlSessionCode,
+    session,
     parliament: row.ParliamentNumber,
     sessionNumber: row.SessionNumber,
     chamber,
-    type: bilingual(row.BillTypeEn, row.BillTypeFr),
-    isGovernment: /government/i.test(row.BillTypeEn || ''),
+    type: bilingual(row.BillDocumentTypeNameEn, row.BillDocumentTypeNameFr),
+    isGovernment: /government/i.test(row.BillDocumentTypeNameEn || ''),
     title: bilingual(row.LongTitleEn, row.LongTitleFr),
     shortTitle: clean(row.ShortTitleEn) || clean(row.ShortTitleFr)
       ? bilingual(row.ShortTitleEn, row.ShortTitleFr)
       : null,
-    sponsor: clean(row.SponsorEn) || clean(row.SponsorFr) ? bilingual(row.SponsorEn, row.SponsorFr) : null,
-    status: bilingual(row.CurrentStatusEn, row.CurrentStatusFr),
+    sponsor: null, // rempli par fetchSponsorDetails (la liste ne le fournit plus)
+    status: bilingual(row.StatusNameEn, row.StatusNameFr),
     state: deriveState(row),
     milestones,
     royalAssent: toDate(row.ReceivedRoyalAssentDateTime),
     reinstated: Boolean(row.DidReinstateFromPreviousSession),
     latestActivity: {
-      en: clean(row.LatestActivityEn),
-      fr: clean(row.LatestActivityFr),
-      date: toDate(row.LatestActivityDateTime),
+      en: clean(row.StatusNameEn),
+      fr: clean(row.StatusNameFr),
+      date: lastMilestone,
     },
-    lastActivity: toDate(row.LatestActivityDateTime),
+    lastActivity: lastMilestone,
     url: {
-      en: `https://www.parl.ca/legisinfo/en/bill/${row.ParlSessionCode}/${slug}`,
-      fr: `https://www.parl.ca/legisinfo/fr/projet-de-loi/${row.ParlSessionCode}/${slug}`,
+      en: `https://www.parl.ca/legisinfo/en/bill/${session}/${slug}`,
+      fr: `https://www.parl.ca/legisinfo/fr/projet-de-loi/${session}/${slug}`,
     },
   };
 }
@@ -248,6 +263,17 @@ async function fetchSponsorDetails(bills) {
       const first = clean(d.SponsorPersonOfficialFirstName);
       const last = clean(d.SponsorPersonOfficialLastName);
       b.sponsorName = first || last ? { first: first ?? '', last: last ?? '' } : null;
+      // Nom affiché (honorifique + nom) — la liste ne le fournit plus (schéma
+      // 2026-08-15), on le prend au détail. Ex. "Sen. Margo Greenwood".
+      const dispName = clean(d.SponsorPersonName) || [first, last].filter(Boolean).join(' ');
+      if (dispName) {
+        const honEn = clean(d.SponsorPersonShortHonorificEn);
+        const honFr = clean(d.SponsorPersonShortHonorificFr);
+        b.sponsor = {
+          en: honEn ? `${honEn} ${dispName}` : dispName,
+          fr: honFr ? `${honFr} ${dispName}` : dispName,
+        };
+      }
     } catch (err) {
       failures++;
       b.sponsorPersonId = null;
@@ -259,7 +285,17 @@ async function fetchSponsorDetails(bills) {
 
 async function main() {
   const { url, rows } = await fetchBills();
-  const bills = rows.map(buildBill);
+  const bills = rows.map(buildBill).filter(Boolean);
+  const dropped = rows.length - bills.length;
+  if (dropped) console.warn(`  ⚠ ${dropped} entrée(s) sans numéro ignorée(s) (LEGISinfo).`);
+  // Garde-fou anti-catastrophe : si le schéma LEGISinfo rechange et qu'on n'extrait
+  // presque rien, on LÈVE au lieu d'écraser les bonnes données par du vide. La chaîne
+  // tolérante (scripts/refresh.js) conserve alors les données de la veille et alerte.
+  if (bills.length < 50) {
+    throw new Error(
+      `Trop peu de projets extraits (${bills.length}/${rows.length}) — schéma LEGISinfo suspect ; on n'écrase pas les données existantes.`,
+    );
+  }
   const sponsorFailures = await fetchSponsorDetails(bills);
 
   // Tri par dernière activité décroissante (les projets sans date en fin de liste).
