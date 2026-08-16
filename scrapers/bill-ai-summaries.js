@@ -14,7 +14,8 @@
 //   • Le résultat est mis en cache par empreinte de la source : un projet inchangé
 //     n'est jamais re-généré (coût quasi nul au rafraîchissement quotidien).
 //
-// Modèle : Claude Sonnet (claude-sonnet-5), via @anthropic-ai/sdk.
+// Modèle : Claude Opus 5 (claude-opus-5), pensée adaptative, via @anthropic-ai/sdk.
+// Résumé en FORMAT À PUCES (phrase d'intro + 3-4 puces) pour la lisibilité.
 // Clé : process.env.ANTHROPIC_API_KEY (jamais dans le code). En local, on lit aussi
 // un fichier api.env (git-ignoré). SANS clé, le script n'échoue PAS : il conserve le
 // cache existant et sort proprement — le build quotidien ne casse jamais.
@@ -26,7 +27,11 @@ import Anthropic from '@anthropic-ai/sdk';
 
 const BILLS_PATH = 'data/bills.json';
 const CACHE_PATH = 'data/bill-ai-summaries.json';
-const MODEL = 'claude-sonnet-5';
+const MODEL = 'claude-opus-5';
+// Version du prompt : entre dans l'empreinte de cache. La bumper force la
+// régénération de tous les résumés au prochain rafraîchissement (utile quand on
+// change le STYLE du prompt sans changer le modèle).
+const PROMPT_VERSION = 'v3-puces7';
 const MAX_SOURCE_CHARS = 40000; // ~13k tokens : couvre l'immense majorité des textes
 const REQUEST_DELAY_MS = 400;
 const USER_AGENT = 'DossierCanada/0.1 (veille citoyenne; mart.archambault@gmail.com)';
@@ -89,20 +94,28 @@ async function groundingFor(bill) {
 }
 
 function hashOf(bill, source) {
-  return createHash('sha256').update(`${bill.num}\n${MODEL}\n${source}`).digest('hex');
+  return createHash('sha256').update(`${bill.num}\n${MODEL}\n${PROMPT_VERSION}\n${source}`).digest('hex');
 }
 
 const SYSTEM = [
-  "Tu rédiges pour DossierCanada, un site citoyen non partisan de transparence parlementaire.",
-  "Ta tâche : résumer un projet de loi fédéral canadien en langage clair, à la fois en français et en anglais,",
-  "en te basant STRICTEMENT et UNIQUEMENT sur le texte officiel fourni.",
-  "Règles impératives :",
+  "Tu écris pour DossierCanada, un site citoyen non partisan de transparence parlementaire.",
+  "Lectorat : une personne curieuse, SANS formation juridique, qui veut comprendre vite ce qu'un projet de loi change.",
+  "Résume le projet de loi fédéral fourni, en français ET en anglais, STRICTEMENT et UNIQUEMENT d'après le texte officiel fourni.",
+  "",
+  "FORMAT (impératif — c'est ce qui rend le résumé facile à lire) :",
+  "- UNIQUEMENT une liste de puces. PAS de phrase d'introduction, PAS de conclusion, PAS de titre.",
+  "- Vise 6 à 8 puces (idéalement 7). CHAQUE puce commence par « - » et tient en UNE phrase courte et simple.",
+  "- Commence chaque puce par un verbe d'action quand c'est naturel : Oblige, Crée, Modifie, Fixe, Fait passer, Supprime, Interdit, Permet, Exige…",
+  "- Une seule idée concrète par puce : ce que le projet change · qui est touché · les chiffres clés (montants, seuils, dates) · organismes ou comités créés · échéances · entrée en vigueur.",
+  "- Factuel et précis. Pas de remplissage, pas de puce vague ou générique.",
+  "",
+  "Langue : le français et l'anglais disent la même chose, mais chacun sonne NATUREL (pas une traduction mot à mot). Zéro jargon juridique inutile ; si un terme technique est indispensable, explique-le en quelques mots.",
+  "",
+  "Honnêteté (impératif) :",
   "- N'invente RIEN. Si une information n'est pas dans le texte fourni, ne la mentionne pas.",
   "- Ton neutre et factuel. JAMAIS de jugement, d'opinion ni de recommandation, sur le projet comme sur des personnes.",
-  "- Explique concrètement ce que le projet CHANGE et qui est concerné, dans un langage accessible (pas de jargon inutile).",
-  "- 3 à 5 phrases par langue. Le résumé français et le résumé anglais doivent dire la même chose.",
   "- Ne dis pas que tu es une IA et ne parle pas de « ce texte » ou « ce résumé » ; va droit au contenu.",
-  'Réponds UNIQUEMENT avec un objet JSON valide, sans texte autour : {"fr": "...", "en": "..."}.',
+  'Réponds UNIQUEMENT avec un objet JSON valide, sans texte autour : {"fr": "...", "en": "..."}, où chaque valeur est la liste des puces (chaque puce sur sa propre ligne, commençant par « - », séparées par des sauts de ligne \\n).',
 ].join('\n');
 
 function extractJson(text) {
@@ -139,8 +152,10 @@ async function summarize(client, bill, grounding) {
 
   const res = await client.messages.create({
     model: MODEL,
-    max_tokens: 1500,
-    thinking: { type: 'disabled' },
+    max_tokens: 6000, // marge LARGE : opus-5 pense (adaptatif) ET écrit le JSON sous
+    // le même plafond ; 3000 tronquait parfois le JSON (« réponse non exploitable »).
+    thinking: { type: 'adaptive' },
+    output_config: { effort: 'medium' },
     system: SYSTEM,
     messages: [{ role: 'user', content: user }],
   });
@@ -172,6 +187,11 @@ async function main() {
   let reused = 0;
   let skipped = 0;
   let errors = 0;
+  // Génération par LOTS : `AI_BATCH=30 node scrapers/bill-ai-summaries.js` génère au
+  // plus 30 résumés puis s'arrête proprement et sauvegarde. Les projets restants
+  // seront faits au(x) lancement(s) suivant(s) — le cache saute ceux déjà générés.
+  // Sans la variable (ex. le cron quotidien), tout est généré d'un coup, comme avant.
+  const BATCH_LIMIT = Number(process.env.AI_BATCH) > 0 ? Number(process.env.AI_BATCH) : Infinity;
 
   for (const [i, bill] of bills.entries()) {
     const id = String(bill.id);
@@ -196,6 +216,10 @@ async function main() {
         console.error(`  ⚠ ${bill.num} : réponse IA non exploitable`);
       }
       await sleep(REQUEST_DELAY_MS);
+      if (generated >= BATCH_LIMIT) {
+        console.log(`  ⏸ Lot de ${BATCH_LIMIT} atteint — arrêt propre ; le reste au prochain lancement.`);
+        break;
+      }
     } catch (err) {
       errors++;
       console.error(`  ⚠ ${bill.num} : ${err.message}`);
