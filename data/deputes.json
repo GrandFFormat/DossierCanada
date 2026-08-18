@@ -3,8 +3,8 @@
     "en": "https://www.ourcommons.ca/members/en/search/xml",
     "fr": "https://www.ourcommons.ca/members/fr/search/xml"
   },
-  "scrapedAt": "2026-08-15T10:12:56.246Z",
-  "count": 339,
+  "scrapedAt": "2026-08-18T08:53:58.211Z",
+  "count": 338,
   "deputes": [
     {
       "id": 89156,
@@ -1504,31 +1504,6 @@
       "url": {
         "en": "https://www.ourcommons.ca/members/en/110225",
         "fr": "https://www.ourcommons.ca/members/fr/110225"
-      }
-    },
-    {
-      "id": 88953,
-      "honorific": null,
-      "firstName": "Shaun",
-      "lastName": "Chen",
-      "name": "Shaun Chen",
-      "party": {
-        "code": "LPC",
-        "en": "Liberal",
-        "fr": "Libéral"
-      },
-      "constituency": {
-        "en": "Scarborough North",
-        "fr": "Scarborough-Nord"
-      },
-      "province": {
-        "en": "Ontario",
-        "fr": "Ontario"
-      },
-      "memberSince": "2025-04-28",
-      "url": {
-        "en": "https://www.ourcommons.ca/members/en/88953",
-        "fr": "https://www.ourcommons.ca/members/fr/88953"
       }
     },
     {
