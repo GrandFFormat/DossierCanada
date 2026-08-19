@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-08-18T08:57:16.754Z",
+  "scrapedAt": "2026-08-19T08:55:17.494Z",
   "count": 20,
   "petitions": [
     {
@@ -18,7 +18,7 @@
         "fr": "Ouverte pour signature jusqu'au 5 octobre 2026 à 15 h 22 (HAE)"
       },
       "sponsor": "Jenny Kwan",
-      "signatures": 6691,
+      "signatures": 6732,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7636",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7636"
@@ -39,7 +39,7 @@
         "fr": "Ouverte pour signature jusqu'au 4 octobre 2026 à 12 h 39 (HAE)"
       },
       "sponsor": "Anita Vandenbeld",
-      "signatures": 1931,
+      "signatures": 1940,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7628",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7628"
@@ -60,7 +60,7 @@
         "fr": "Ouverte pour signature jusqu'au 30 août 2026 à 15 h 16 (HAE)"
       },
       "sponsor": "Yvan Baker",
-      "signatures": 1651,
+      "signatures": 1665,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7624",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7624"
@@ -81,31 +81,31 @@
         "fr": "Ouverte pour signature jusqu'au 5 décembre 2026 à 9 h 18 (HAE)"
       },
       "sponsor": "Ned Kuruc",
-      "signatures": 1389,
+      "signatures": 1412,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7645",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7645"
       }
     },
     {
-      "code": "e-7586",
+      "code": "e-7680",
       "topic": {
-        "en": "Environment",
-        "fr": "Environnement"
+        "en": "Official languages",
+        "fr": "Langues officielles"
       },
       "keywords": {
-        "en": "C-30, An Act to implement certain provis ... Environmental protection Pesticides",
-        "fr": "C-30, Loi portant exécution de certaines ... Pesticides Protection de l'environnement"
+        "en": "Canadian Forces Department of National Defence Language of work Official languages policy",
+        "fr": "Forces canadiennes Langue de travail Ministère de la Défense nationale Politique des langues officielles"
       },
       "status": {
-        "en": "Open for signature until November 27, 2026, at 9:43 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 27 novembre 2026 à 9 h 43 (HAE)"
+        "en": "Open for signature until September 17, 2026, at 1:40 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 17 septembre 2026 à 13 h 40 (HAE)"
       },
-      "sponsor": "Elizabeth May",
-      "signatures": 999,
+      "sponsor": "Pierre Paul-Hus",
+      "signatures": 951,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7586",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7586"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7680",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7680"
       }
     },
     {
@@ -123,7 +123,7 @@
         "fr": "Ouverte pour signature jusqu'au 11 octobre 2026 à 14 h 22 (HAE)"
       },
       "sponsor": "Leah Gazan",
-      "signatures": 763,
+      "signatures": 890,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7649",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7649"
@@ -144,7 +144,7 @@
         "fr": "Ouverte pour signature jusqu'au 5 novembre 2026 à 9 h 08 (HAE)"
       },
       "sponsor": "Michelle Rempel Garner",
-      "signatures": 589,
+      "signatures": 594,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7643",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7643"
@@ -165,7 +165,7 @@
         "fr": "Ouverte pour signature jusqu'au 5 décembre 2026 à 9 h 20 (HAE)"
       },
       "sponsor": "Fred Davies",
-      "signatures": 318,
+      "signatures": 342,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7642",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7642"
@@ -186,7 +186,7 @@
         "fr": "Ouverte pour signature jusqu'au 29 octobre 2026 à 13 h 00 (HAE)"
       },
       "sponsor": "Greg Fergus",
-      "signatures": 295,
+      "signatures": 312,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7579",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7579"
@@ -207,7 +207,7 @@
         "fr": "Ouverte pour signature jusqu'au 5 décembre 2026 à 9 h 11 (HAE)"
       },
       "sponsor": "Dean Allison",
-      "signatures": 243,
+      "signatures": 246,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7639",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7639"
@@ -228,31 +228,10 @@
         "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 15 h 07 (HAE)"
       },
       "sponsor": "Leah Gazan",
-      "signatures": 224,
+      "signatures": 244,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7593",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7593"
-      }
-    },
-    {
-      "code": "e-7616",
-      "topic": {
-        "en": "Employment and labour",
-        "fr": "Travail et emploi"
-      },
-      "keywords": {
-        "en": "Compensation Income and wages Layoffs and job losses",
-        "fr": "Indemnisation Mises à pied et pertes d'emplois Revenus et salaires"
-      },
-      "status": {
-        "en": "Open for signature until November 26, 2026, at 11:42 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 26 novembre 2026 à 11 h 42 (HAE)"
-      },
-      "sponsor": "Don Davies",
-      "signatures": 197,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7616",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7616"
       }
     },
     {
@@ -270,31 +249,10 @@
         "fr": "Ouverte pour signature jusqu'au 10 octobre 2026 à 13 h 27 (HAE)"
       },
       "sponsor": "Anthony Housefather",
-      "signatures": 130,
+      "signatures": 150,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7667",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7667"
-      }
-    },
-    {
-      "code": "e-7620",
-      "topic": {
-        "en": "Justice",
-        "fr": "Justice"
-      },
-      "keywords": {
-        "en": "Child abuse Child sexual abuse and exploitation Sentencing",
-        "fr": "Abus à l'égard d'un enfant Exploitation et abus sexuel d'enfants Sentences pénales"
-      },
-      "status": {
-        "en": "Open for signature until September 29, 2026, at 1:01 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 29 septembre 2026 à 13 h 01 (HAE)"
-      },
-      "sponsor": "Dane Lloyd",
-      "signatures": 118,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7620",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7620"
       }
     },
     {
@@ -312,10 +270,31 @@
         "fr": "Ouverte pour signature jusqu'au 9 décembre 2026 à 10 h 32 (HAE)"
       },
       "sponsor": "Vince Gasparro",
-      "signatures": 111,
+      "signatures": 121,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7601",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7601"
+      }
+    },
+    {
+      "code": "e-7620",
+      "topic": {
+        "en": "Justice",
+        "fr": "Justice"
+      },
+      "keywords": {
+        "en": "Child abuse Child sexual abuse and exploitation Sentencing",
+        "fr": "Abus à l'égard d'un enfant Exploitation et abus sexuel d'enfants Sentences pénales"
+      },
+      "status": {
+        "en": "Open for signature until September 29, 2026, at 1:01 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 29 septembre 2026 à 13 h 01 (HAE)"
+      },
+      "sponsor": "Dane Lloyd",
+      "signatures": 121,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7620",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7620"
       }
     },
     {
@@ -333,31 +312,10 @@
         "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 9 h 30 (HAE)"
       },
       "sponsor": "Wade Chang",
-      "signatures": 49,
+      "signatures": 52,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7656",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7656"
-      }
-    },
-    {
-      "code": "e-7609",
-      "topic": {
-        "en": "Business and trade",
-        "fr": "Affaires et commerce"
-      },
-      "keywords": {
-        "en": "Financial hardship Loans Small and medium-sized enterprises",
-        "fr": "Difficulté financière Petites et moyennes entreprises Prêts"
-      },
-      "status": {
-        "en": "Open for signature until November 24, 2026, at 12:22 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 24 novembre 2026 à 12 h 22 (HAE)"
-      },
-      "sponsor": "Sukh Dhaliwal",
-      "signatures": 48,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7609",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7609"
       }
     },
     {
@@ -375,10 +333,31 @@
         "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 9 h 32 (HAE)"
       },
       "sponsor": "Wade Chang",
-      "signatures": 38,
+      "signatures": 43,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7655",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7655"
+      }
+    },
+    {
+      "code": "e-7681",
+      "topic": {
+        "en": "Health",
+        "fr": "Santé"
+      },
+      "keywords": {
+        "en": "Canada Health Transfer Drug treatment centres Health services accessibility Vancouver Island",
+        "fr": "Accessibilité des services de santé Centres de désintoxication Île de Vancouver Transfert canadien en matière de santé"
+      },
+      "status": {
+        "en": "Open for signature until September 17, 2026, at 9:33 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 17 septembre 2026 à 9 h 33 (HAE)"
+      },
+      "sponsor": "Jeff Kibble",
+      "signatures": 31,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7681",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7681"
       }
     },
     {
@@ -396,7 +375,7 @@
         "fr": "Ouverte pour signature jusqu'au 9 novembre 2026 à 14 h 09 (HAE)"
       },
       "sponsor": "David McKenzie",
-      "signatures": 29,
+      "signatures": 30,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7662",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7662"
@@ -417,10 +396,31 @@
         "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 9 h 28 (HAE)"
       },
       "sponsor": "Wade Chang",
-      "signatures": 21,
+      "signatures": 22,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7657",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7657"
+      }
+    },
+    {
+      "code": "e-7622",
+      "topic": {
+        "en": "Foreign affairs",
+        "fr": "Affaires étrangères"
+      },
+      "keywords": {
+        "en": "Civil and human rights Pakistan Transnational repression",
+        "fr": "Droits de la personne Pakistan Répression transnationale"
+      },
+      "status": {
+        "en": "Open for signature until September 17, 2026, at 1:37 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 17 septembre 2026 à 13 h 37 (HAE)"
+      },
+      "sponsor": "Michael Kram",
+      "signatures": 7,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7622",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7622"
       }
     }
   ]
