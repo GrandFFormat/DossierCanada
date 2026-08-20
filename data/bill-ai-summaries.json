@@ -1,6 +1,6 @@
 {
   "model": "claude-opus-5",
-  "generatedAt": "2026-08-19T08:52:08.930Z",
+  "generatedAt": "2026-08-20T08:52:24.837Z",
   "summaries": {
     "13538627": {
       "num": "C-201",
@@ -11,10 +11,10 @@
     },
     "13538631": {
       "num": "C-204",
-      "hash": "4d2f1af9172f5f9ef2efaab89111bd094d45353d232f18c86c5ad8a3dd597d13",
-      "fr": "Ce projet de loi d'initiative parlementaire modifie la Loi de l'impôt sur le revenu pour faire passer de 6 000 $ à 10 000 $ le montant utilisé pour calculer les crédits d'impôt destinés aux pompiers volontaires et aux volontaires en recherche et sauvetage. Il modifie aussi la définition de « services admissibles de pompier volontaire », précisant qu'il s'agit de services rendus par une personne disponible ou en disponibilité pour effectuer des tâches de lutte contre les incendies, des services d'urgence et des tâches non urgentes pour un service d'incendie, en contrepartie d'une rémunération symbolique ne constituant pas un salaire suffisant pour vivre. Ces changements concernent les particuliers qui offrent bénévolement ces services et qui réclament ce crédit d'impôt lors de leur déclaration de revenus. Les modifications s'appliqueraient à compter de l'année d'imposition 2026.",
-      "en": "This private member's bill amends the Income Tax Act to increase, from $6,000 to $10,000, the amount used to calculate the tax credits for volunteer firefighting and search and rescue volunteer services. It also modifies the definition of \"eligible volunteer firefighting services,\" specifying that it refers to services provided by an individual who is available or on call to perform firefighting services, emergency services and non-emergency duties for a fire department, in return for a nominal remuneration that does not constitute a liveable wage. These changes concern individuals who volunteer for these services and claim this tax credit on their income tax return. The changes would apply starting with the 2026 taxation year.",
-      "at": "2026-07-09T15:35:45.444Z"
+      "hash": "efc8498f347bc2fe0f14749d23224ae5e65fd9857762ff3f6c8bc93700652ee7",
+      "fr": "- Fait passer de 6 000 $ à 10 000 $ le montant servant à calculer le crédit d'impôt des pompiers volontaires.\n- Fait passer de 6 000 $ à 10 000 $ le montant servant à calculer le crédit d'impôt des volontaires en recherche et sauvetage.\n- Précise que le crédit reste non remboursable : le montant est multiplié par le « taux de base » d'imposition pour donner la réduction d'impôt réelle.\n- Élargit la définition de « services admissibles de pompier volontaire » pour y inclure le fait d'être disponible ou en disponibilité, et pas seulement d'intervenir.\n- Ajoute les tâches non urgentes accomplies pour le service d'incendie, en plus des interventions d'urgence, parmi les services reconnus.\n- Précise qu'un pompier volontaire peut recevoir une rémunération symbolique, qui ne constitue pas un salaire permettant de vivre, sans perdre son admissibilité.\n- Prévoit que les nouvelles règles s'appliquent à l'année d'imposition 2026 et aux années suivantes.\n- Provient d'un député (M. Johns) et a été présenté en première lecture le 4 juin 2025.",
+      "en": "- Raises the amount used to calculate the volunteer firefighter tax credit from $6,000 to $10,000.\n- Raises the amount used to calculate the search and rescue volunteer tax credit from $6,000 to $10,000.\n- Keeps the credit non-refundable: the amount is multiplied by the lowest tax rate to determine the actual tax reduction.\n- Broadens the definition of \"eligible volunteer firefighting services\" to include simply being available or on call, not just responding.\n- Counts non-emergency duties done for the fire department, alongside emergency work, as qualifying service.\n- Clarifies that a volunteer may receive nominal pay that does not amount to a liveable wage and still qualify.\n- Applies the new rules starting with the 2026 tax year and all following years.\n- Introduced as a private member's bill by Mr. Johns, with first reading on June 4, 2025.",
+      "at": "2026-08-20T08:52:20.703Z"
     },
     "13539592": {
       "num": "C-202",

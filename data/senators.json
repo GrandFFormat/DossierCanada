@@ -3,8 +3,8 @@
     "en": "https://sencanada.ca/umbraco/surface/SenatorsAjax/GetSenators?displayFor=senatorslist&culture=en-CA",
     "fr": "https://sencanada.ca/umbraco/surface/SenatorsAjax/GetSenators?displayFor=senatorslist&culture=fr-CA"
   },
-  "scrapedAt": "2026-08-19T08:55:18.718Z",
-  "count": 95,
+  "scrapedAt": "2026-08-20T08:58:44.545Z",
+  "count": 94,
   "senators": [
     {
       "slug": "adler-charles",
@@ -602,32 +602,6 @@
       "url": {
         "en": "https://sencanada.ca/en/senators/dalphond-pierre/",
         "fr": "https://sencanada.ca/fr/senateurs/dalphond-pierre/"
-      }
-    },
-    {
-      "slug": "dasko-donna",
-      "firstName": "Donna",
-      "lastName": "Dasko",
-      "name": "Donna Dasko",
-      "postNominal": null,
-      "group": {
-        "code": "ISG",
-        "en": "ISG",
-        "fr": "GSI",
-        "enName": "Independent Senators Group",
-        "frName": "Groupe des sénateurs indépendants"
-      },
-      "province": {
-        "code": "ON",
-        "en": "Ontario",
-        "fr": "Ontario"
-      },
-      "appointedOn": "2018-06-06",
-      "retirementOn": "2026-08-19",
-      "appointedBy": "Trudeau, Justin (Lib.)",
-      "url": {
-        "en": "https://sencanada.ca/en/senators/dasko-donna/",
-        "fr": "https://sencanada.ca/fr/senateurs/dasko-donna/"
       }
     },
     {
