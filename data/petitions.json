@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-08-20T08:58:43.575Z",
+  "scrapedAt": "2026-08-22T08:47:59.052Z",
   "count": 20,
   "petitions": [
     {
@@ -18,7 +18,7 @@
         "fr": "Ouverte pour signature jusqu'au 5 octobre 2026 à 15 h 22 (HAE)"
       },
       "sponsor": "Jenny Kwan",
-      "signatures": 6753,
+      "signatures": 6790,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7636",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7636"
@@ -39,7 +39,7 @@
         "fr": "Ouverte pour signature jusqu'au 17 septembre 2026 à 13 h 40 (HAE)"
       },
       "sponsor": "Pierre Paul-Hus",
-      "signatures": 2026,
+      "signatures": 2700,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7680",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7680"
@@ -60,7 +60,7 @@
         "fr": "Ouverte pour signature jusqu'au 4 octobre 2026 à 12 h 39 (HAE)"
       },
       "sponsor": "Anita Vandenbeld",
-      "signatures": 1950,
+      "signatures": 1987,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7628",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7628"
@@ -81,7 +81,7 @@
         "fr": "Ouverte pour signature jusqu'au 30 août 2026 à 15 h 16 (HAE)"
       },
       "sponsor": "Yvan Baker",
-      "signatures": 1674,
+      "signatures": 1698,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7624",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7624"
@@ -102,7 +102,7 @@
         "fr": "Ouverte pour signature jusqu'au 5 décembre 2026 à 9 h 18 (HAE)"
       },
       "sponsor": "Ned Kuruc",
-      "signatures": 1424,
+      "signatures": 1446,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7645",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7645"
@@ -123,10 +123,31 @@
         "fr": "Ouverte pour signature jusqu'au 11 octobre 2026 à 14 h 22 (HAE)"
       },
       "sponsor": "Leah Gazan",
-      "signatures": 984,
+      "signatures": 1100,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7649",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7649"
+      }
+    },
+    {
+      "code": "e-7622",
+      "topic": {
+        "en": "Foreign affairs",
+        "fr": "Affaires étrangères"
+      },
+      "keywords": {
+        "en": "Civil and human rights Pakistan Transnational repression",
+        "fr": "Droits de la personne Pakistan Répression transnationale"
+      },
+      "status": {
+        "en": "Open for signature until September 17, 2026, at 1:37 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 17 septembre 2026 à 13 h 37 (HAE)"
+      },
+      "sponsor": "Michael Kram",
+      "signatures": 934,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7622",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7622"
       }
     },
     {
@@ -144,7 +165,7 @@
         "fr": "Ouverte pour signature jusqu'au 5 novembre 2026 à 9 h 08 (HAE)"
       },
       "sponsor": "Michelle Rempel Garner",
-      "signatures": 600,
+      "signatures": 613,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7643",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7643"
@@ -165,7 +186,7 @@
         "fr": "Ouverte pour signature jusqu'au 5 décembre 2026 à 9 h 20 (HAE)"
       },
       "sponsor": "Fred Davies",
-      "signatures": 355,
+      "signatures": 370,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7642",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7642"
@@ -186,7 +207,7 @@
         "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 15 h 07 (HAE)"
       },
       "sponsor": "Leah Gazan",
-      "signatures": 254,
+      "signatures": 268,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7593",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7593"
@@ -207,7 +228,7 @@
         "fr": "Ouverte pour signature jusqu'au 5 décembre 2026 à 9 h 11 (HAE)"
       },
       "sponsor": "Dean Allison",
-      "signatures": 248,
+      "signatures": 254,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7639",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7639"
@@ -228,7 +249,7 @@
         "fr": "Ouverte pour signature jusqu'au 10 octobre 2026 à 13 h 27 (HAE)"
       },
       "sponsor": "Anthony Housefather",
-      "signatures": 176,
+      "signatures": 190,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7667",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7667"
@@ -249,7 +270,7 @@
         "fr": "Ouverte pour signature jusqu'au 9 décembre 2026 à 10 h 32 (HAE)"
       },
       "sponsor": "Vince Gasparro",
-      "signatures": 131,
+      "signatures": 141,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7601",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7601"
@@ -270,10 +291,31 @@
         "fr": "Ouverte pour signature jusqu'au 29 septembre 2026 à 13 h 01 (HAE)"
       },
       "sponsor": "Dane Lloyd",
-      "signatures": 123,
+      "signatures": 125,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7620",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7620"
+      }
+    },
+    {
+      "code": "e-7513",
+      "topic": {
+        "en": "Holidays and observances",
+        "fr": "Congés et commémorations"
+      },
+      "keywords": {
+        "en": "A Million Acts of Love Month Community spirit Volunteering and volunteers",
+        "fr": "Bénévolat et bénévoles Esprit communautaire Mois d'un million de gestes d'amour"
+      },
+      "status": {
+        "en": "Open for signature until December 17, 2026, at 1:59 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 17 décembre 2026 à 13 h 59 (HAE)"
+      },
+      "sponsor": "Elizabeth May",
+      "signatures": 85,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7513",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7513"
       }
     },
     {
@@ -291,31 +333,10 @@
         "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 9 h 30 (HAE)"
       },
       "sponsor": "Wade Chang",
-      "signatures": 54,
+      "signatures": 59,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7656",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7656"
-      }
-    },
-    {
-      "code": "e-7655",
-      "topic": {
-        "en": "Public safety",
-        "fr": "Sécurité publique"
-      },
-      "keywords": {
-        "en": "Air safety Airports Firefighting services Setting of standards",
-        "fr": "Aéroports Mise aux normes Sécurité aérienne Services de lutte contre les incendies"
-      },
-      "status": {
-        "en": "Open for signature until December 8, 2026, at 9:32 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 9 h 32 (HAE)"
-      },
-      "sponsor": "Wade Chang",
-      "signatures": 44,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7655",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7655"
       }
     },
     {
@@ -333,31 +354,31 @@
         "fr": "Ouverte pour signature jusqu'au 17 septembre 2026 à 9 h 33 (HAE)"
       },
       "sponsor": "Jeff Kibble",
-      "signatures": 38,
+      "signatures": 50,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7681",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7681"
       }
     },
     {
-      "code": "e-7622",
+      "code": "e-7655",
       "topic": {
-        "en": "Foreign affairs",
-        "fr": "Affaires étrangères"
+        "en": "Public safety",
+        "fr": "Sécurité publique"
       },
       "keywords": {
-        "en": "Civil and human rights Pakistan Transnational repression",
-        "fr": "Droits de la personne Pakistan Répression transnationale"
+        "en": "Air safety Airports Firefighting services Setting of standards",
+        "fr": "Aéroports Mise aux normes Sécurité aérienne Services de lutte contre les incendies"
       },
       "status": {
-        "en": "Open for signature until September 17, 2026, at 1:37 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 17 septembre 2026 à 13 h 37 (HAE)"
+        "en": "Open for signature until December 8, 2026, at 9:32 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 9 h 32 (HAE)"
       },
-      "sponsor": "Michael Kram",
-      "signatures": 35,
+      "sponsor": "Wade Chang",
+      "signatures": 50,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7622",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7622"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7655",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7655"
       }
     },
     {
@@ -375,7 +396,7 @@
         "fr": "Ouverte pour signature jusqu'au 9 novembre 2026 à 14 h 09 (HAE)"
       },
       "sponsor": "David McKenzie",
-      "signatures": 32,
+      "signatures": 37,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7662",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7662"
@@ -396,31 +417,10 @@
         "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 9 h 28 (HAE)"
       },
       "sponsor": "Wade Chang",
-      "signatures": 23,
+      "signatures": 27,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7657",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7657"
-      }
-    },
-    {
-      "code": "e-7513",
-      "topic": {
-        "en": "Holidays and observances",
-        "fr": "Congés et commémorations"
-      },
-      "keywords": {
-        "en": "A Million Acts of Love Month Community spirit Volunteering and volunteers",
-        "fr": "Bénévolat et bénévoles Esprit communautaire Mois d'un million de gestes d'amour"
-      },
-      "status": {
-        "en": "Open for signature until December 17, 2026, at 1:59 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 17 décembre 2026 à 13 h 59 (HAE)"
-      },
-      "sponsor": "Elizabeth May",
-      "signatures": 8,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7513",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7513"
       }
     }
   ]
