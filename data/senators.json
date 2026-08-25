@@ -3,8 +3,8 @@
     "en": "https://sencanada.ca/umbraco/surface/SenatorsAjax/GetSenators?displayFor=senatorslist&culture=en-CA",
     "fr": "https://sencanada.ca/umbraco/surface/SenatorsAjax/GetSenators?displayFor=senatorslist&culture=fr-CA"
   },
-  "scrapedAt": "2026-08-24T09:01:45.545Z",
-  "count": 94,
+  "scrapedAt": "2026-08-25T08:56:55.370Z",
+  "count": 93,
   "senators": [
     {
       "slug": "adler-charles",
@@ -394,32 +394,6 @@
       "url": {
         "en": "https://sencanada.ca/en/senators/burey-sharon/",
         "fr": "https://sencanada.ca/fr/senateurs/burey-sharon/"
-      }
-    },
-    {
-      "slug": "busson-bev",
-      "firstName": "Bev",
-      "lastName": "Busson",
-      "name": "Bev Busson",
-      "postNominal": null,
-      "group": {
-        "code": "ISG",
-        "en": "ISG",
-        "fr": "GSI",
-        "enName": "Independent Senators Group",
-        "frName": "Groupe des sénateurs indépendants"
-      },
-      "province": {
-        "code": "BC",
-        "en": "British Columbia",
-        "fr": "Colombie-Britannique"
-      },
-      "appointedOn": "2018-09-24",
-      "retirementOn": "2026-08-23",
-      "appointedBy": "Trudeau, Justin (Lib.)",
-      "url": {
-        "en": "https://sencanada.ca/en/senators/busson-bev/",
-        "fr": "https://sencanada.ca/fr/senateurs/busson-bev/"
       }
     },
     {
