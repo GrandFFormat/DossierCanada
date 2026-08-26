@@ -1,7 +1,7 @@
 {
   "source": "https://www.ourcommons.ca/members/en/{PersonId}",
-  "scrapedAt": "2026-08-25T08:55:20.303Z",
-  "count": 338,
+  "scrapedAt": "2026-08-26T08:57:16.235Z",
+  "count": 337,
   "emails": {
     "376": "mario.beaulieu@parl.gc.ca",
     "413": "louis.plamondon@parl.gc.ca",
@@ -39,7 +39,6 @@
     "54157": "sameer.zuberi@parl.gc.ca",
     "58621": "alexandra.mendes@parl.gc.ca",
     "58757": "eric.lefebvre@parl.gc.ca",
-    "58775": "alexandre.boulerice@parl.gc.ca",
     "58841": "kyle.seeback@parl.gc.ca",
     "58858": "rob.oliphant@parl.gc.ca",
     "59148": "randy.hoback@parl.gc.ca",

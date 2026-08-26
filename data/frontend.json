@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-08-25T08:57:02.292Z",
+  "generatedAt": "2026-08-26T08:59:00.661Z",
   "session": "45-1",
   "meta": {
     "counts": {
       "bills": 185,
-      "deputes": 338,
+      "deputes": 337,
       "votes": 173
     },
     "votesLinkedToBill": 96,
-    "formerMembersInVotes": 8
+    "formerMembersInVotes": 9
   },
   "bills": [
     {
@@ -16215,40 +16215,6 @@
         "paired": 0,
         "absent": 0,
         "participationRate": 1
-      }
-    },
-    {
-      "id": 58775,
-      "honorific": null,
-      "firstName": "Alexandre",
-      "lastName": "Boulerice",
-      "name": "Alexandre Boulerice",
-      "party": {
-        "code": "IND",
-        "en": "Independent",
-        "fr": "Indépendant"
-      },
-      "constituency": {
-        "en": "Rosemont—La Petite-Patrie",
-        "fr": "Rosemont—La Petite-Patrie"
-      },
-      "province": {
-        "en": "Quebec",
-        "fr": "Québec"
-      },
-      "memberSince": "2025-04-28",
-      "url": {
-        "en": "https://www.ourcommons.ca/members/en/58775",
-        "fr": "https://www.ourcommons.ca/members/fr/58775"
-      },
-      "votingRecord": {
-        "eligible": 173,
-        "cast": 160,
-        "yea": 80,
-        "nay": 80,
-        "paired": 0,
-        "absent": 13,
-        "participationRate": 0.925
       }
     },
     {

@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-08-25T08:56:54.161Z",
+  "scrapedAt": "2026-08-26T08:58:51.831Z",
   "count": 20,
   "petitions": [
     {
@@ -18,10 +18,31 @@
         "fr": "Ouverte pour signature jusqu'au 5 octobre 2026 à 15 h 22 (HAE)"
       },
       "sponsor": "Jenny Kwan",
-      "signatures": 6820,
+      "signatures": 6826,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7636",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7636"
+      }
+    },
+    {
+      "code": "e-7703",
+      "topic": {
+        "en": "Public safety",
+        "fr": "Sécurité publique"
+      },
+      "keywords": {
+        "en": "Emergency response and emergency responders Missing persons National Public Alerting System Persons with disabilities",
+        "fr": "Intervention d'urgence et intervenants Personnes ayant des limitations fonction ... Personnes portées disparues Système national d'alertes au public"
+      },
+      "status": {
+        "en": "Open for signature until December 22, 2026, at 3:13 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 22 décembre 2026 à 15 h 13 (HAE)"
+      },
+      "sponsor": "Mike Lake",
+      "signatures": 4320,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7703",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7703"
       }
     },
     {
@@ -39,7 +60,7 @@
         "fr": "Ouverte pour signature jusqu'au 17 septembre 2026 à 13 h 40 (HAE)"
       },
       "sponsor": "Pierre Paul-Hus",
-      "signatures": 2976,
+      "signatures": 3090,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7680",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7680"
@@ -60,7 +81,7 @@
         "fr": "Ouverte pour signature jusqu'au 22 novembre 2026 à 9 h 32 (HAE)"
       },
       "sponsor": "Don Davies",
-      "signatures": 1676,
+      "signatures": 2488,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7691",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7691"
@@ -81,31 +102,10 @@
         "fr": "Ouverte pour signature jusqu'au 5 décembre 2026 à 9 h 18 (HAE)"
       },
       "sponsor": "Ned Kuruc",
-      "signatures": 1633,
+      "signatures": 1796,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7645",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7645"
-      }
-    },
-    {
-      "code": "e-7703",
-      "topic": {
-        "en": "Public safety",
-        "fr": "Sécurité publique"
-      },
-      "keywords": {
-        "en": "Emergency response and emergency responders Missing persons National Public Alerting System Persons with disabilities",
-        "fr": "Intervention d'urgence et intervenants Personnes ayant des limitations fonction ... Personnes portées disparues Système national d'alertes au public"
-      },
-      "status": {
-        "en": "Open for signature until December 22, 2026, at 3:13 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 22 décembre 2026 à 15 h 13 (HAE)"
-      },
-      "sponsor": "Mike Lake",
-      "signatures": 1490,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7703",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7703"
       }
     },
     {
@@ -123,7 +123,7 @@
         "fr": "Ouverte pour signature jusqu'au 11 octobre 2026 à 14 h 22 (HAE)"
       },
       "sponsor": "Leah Gazan",
-      "signatures": 1413,
+      "signatures": 1521,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7649",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7649"
@@ -144,7 +144,7 @@
         "fr": "Ouverte pour signature jusqu'au 17 septembre 2026 à 13 h 37 (HAE)"
       },
       "sponsor": "Michael Kram",
-      "signatures": 1150,
+      "signatures": 1165,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7622",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7622"
@@ -165,7 +165,7 @@
         "fr": "Ouverte pour signature jusqu'au 5 novembre 2026 à 9 h 08 (HAE)"
       },
       "sponsor": "Michelle Rempel Garner",
-      "signatures": 634,
+      "signatures": 663,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7643",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7643"
@@ -186,7 +186,7 @@
         "fr": "Ouverte pour signature jusqu'au 5 décembre 2026 à 9 h 20 (HAE)"
       },
       "sponsor": "Fred Davies",
-      "signatures": 419,
+      "signatures": 422,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7642",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7642"
@@ -207,7 +207,7 @@
         "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 15 h 07 (HAE)"
       },
       "sponsor": "Leah Gazan",
-      "signatures": 292,
+      "signatures": 301,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7593",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7593"
@@ -228,7 +228,7 @@
         "fr": "Ouverte pour signature jusqu'au 5 décembre 2026 à 9 h 11 (HAE)"
       },
       "sponsor": "Dean Allison",
-      "signatures": 259,
+      "signatures": 261,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7639",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7639"
@@ -249,10 +249,31 @@
         "fr": "Ouverte pour signature jusqu'au 10 octobre 2026 à 13 h 27 (HAE)"
       },
       "sponsor": "Anthony Housefather",
-      "signatures": 199,
+      "signatures": 225,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7667",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7667"
+      }
+    },
+    {
+      "code": "e-7657",
+      "topic": {
+        "en": "Social affairs and equality",
+        "fr": "Affaires sociales et égalité"
+      },
+      "keywords": {
+        "en": "Emergency response and emergency responders Inflation Memorial Grant Program for First Responders",
+        "fr": "Inflation Intervention d'urgence et intervenants Programme de subvention commémoratif pou ..."
+      },
+      "status": {
+        "en": "Open for signature until December 8, 2026, at 9:28 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 9 h 28 (HAE)"
+      },
+      "sponsor": "Wade Chang",
+      "signatures": 216,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7657",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7657"
       }
     },
     {
@@ -270,7 +291,7 @@
         "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 9 h 30 (HAE)"
       },
       "sponsor": "Wade Chang",
-      "signatures": 158,
+      "signatures": 200,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7656",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7656"
@@ -291,31 +312,10 @@
         "fr": "Ouverte pour signature jusqu'au 9 décembre 2026 à 10 h 32 (HAE)"
       },
       "sponsor": "Vince Gasparro",
-      "signatures": 151,
+      "signatures": 153,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7601",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7601"
-      }
-    },
-    {
-      "code": "e-7657",
-      "topic": {
-        "en": "Social affairs and equality",
-        "fr": "Affaires sociales et égalité"
-      },
-      "keywords": {
-        "en": "Emergency response and emergency responders Inflation Memorial Grant Program for First Responders",
-        "fr": "Inflation Intervention d'urgence et intervenants Programme de subvention commémoratif pou ..."
-      },
-      "status": {
-        "en": "Open for signature until December 8, 2026, at 9:28 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 9 h 28 (HAE)"
-      },
-      "sponsor": "Wade Chang",
-      "signatures": 141,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7657",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7657"
       }
     },
     {
@@ -333,7 +333,7 @@
         "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 9 h 32 (HAE)"
       },
       "sponsor": "Wade Chang",
-      "signatures": 122,
+      "signatures": 152,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7655",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7655"
@@ -354,10 +354,31 @@
         "fr": "Ouverte pour signature jusqu'au 17 décembre 2026 à 13 h 59 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 117,
+      "signatures": 124,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7513",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7513"
+      }
+    },
+    {
+      "code": "e-7686",
+      "topic": {
+        "en": "Health",
+        "fr": "Santé"
+      },
+      "keywords": {
+        "en": "Canada Health Act Federal-provincial-territorial relations Health services accessibility Private health care",
+        "fr": "Accessibilité des services de santé Loi canadienne sur la santé Médecine privée Relations fédérales-provinciales-territo ..."
+      },
+      "status": {
+        "en": "Open for signature until November 22, 2026, at 9:33 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 22 novembre 2026 à 9 h 33 (HAE)"
+      },
+      "sponsor": "Heather McPherson",
+      "signatures": 70,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7686",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7686"
       }
     },
     {
@@ -375,7 +396,7 @@
         "fr": "Ouverte pour signature jusqu'au 17 septembre 2026 à 9 h 33 (HAE)"
       },
       "sponsor": "Jeff Kibble",
-      "signatures": 63,
+      "signatures": 67,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7681",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7681"
@@ -396,31 +417,10 @@
         "fr": "Ouverte pour signature jusqu'au 9 novembre 2026 à 14 h 09 (HAE)"
       },
       "sponsor": "David McKenzie",
-      "signatures": 39,
+      "signatures": 67,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7662",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7662"
-      }
-    },
-    {
-      "code": "e-7686",
-      "topic": {
-        "en": "Health",
-        "fr": "Santé"
-      },
-      "keywords": {
-        "en": "Canada Health Act Federal-provincial-territorial relations Health services accessibility Private health care",
-        "fr": "Accessibilité des services de santé Loi canadienne sur la santé Médecine privée Relations fédérales-provinciales-territo ..."
-      },
-      "status": {
-        "en": "Open for signature until November 22, 2026, at 9:33 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 22 novembre 2026 à 9 h 33 (HAE)"
-      },
-      "sponsor": "Heather McPherson",
-      "signatures": 30,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7686",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7686"
       }
     }
   ]
