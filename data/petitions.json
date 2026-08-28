@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-08-27T19:21:57.412Z",
+  "scrapedAt": "2026-08-28T20:17:56.097Z",
   "count": 20,
   "petitions": [
     {
@@ -18,7 +18,7 @@
         "fr": "Ouverte pour signature jusqu'au 22 décembre 2026 à 15 h 13 (HAE)"
       },
       "sponsor": "Mike Lake",
-      "signatures": 6108,
+      "signatures": 7343,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7703",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7703"
@@ -39,7 +39,7 @@
         "fr": "Ouverte pour signature jusqu'au 17 septembre 2026 à 13 h 40 (HAE)"
       },
       "sponsor": "Pierre Paul-Hus",
-      "signatures": 3181,
+      "signatures": 3205,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7680",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7680"
@@ -60,31 +60,10 @@
         "fr": "Ouverte pour signature jusqu'au 22 novembre 2026 à 9 h 32 (HAE)"
       },
       "sponsor": "Don Davies",
-      "signatures": 2954,
+      "signatures": 3096,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7691",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7691"
-      }
-    },
-    {
-      "code": "e-7645",
-      "topic": {
-        "en": "Public safety",
-        "fr": "Sécurité publique"
-      },
-      "keywords": {
-        "en": "Sex Offender Information Registration Act Sex offender registry",
-        "fr": "Loi sur l'enregistrement de renseignemen ... Registre des délinquants sexuels"
-      },
-      "status": {
-        "en": "Open for signature until December 5, 2026, at 9:18 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 5 décembre 2026 à 9 h 18 (HAE)"
-      },
-      "sponsor": "Ned Kuruc",
-      "signatures": 1970,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7645",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7645"
       }
     },
     {
@@ -102,7 +81,7 @@
         "fr": "Ouverte pour signature jusqu'au 11 octobre 2026 à 14 h 22 (HAE)"
       },
       "sponsor": "Leah Gazan",
-      "signatures": 1792,
+      "signatures": 1841,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7649",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7649"
@@ -123,7 +102,7 @@
         "fr": "Ouverte pour signature jusqu'au 17 septembre 2026 à 13 h 37 (HAE)"
       },
       "sponsor": "Michael Kram",
-      "signatures": 1188,
+      "signatures": 1196,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7622",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7622"
@@ -144,7 +123,7 @@
         "fr": "Ouverte pour signature jusqu'au 5 décembre 2026 à 9 h 20 (HAE)"
       },
       "sponsor": "Fred Davies",
-      "signatures": 426,
+      "signatures": 430,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7642",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7642"
@@ -165,10 +144,52 @@
         "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 9 h 28 (HAE)"
       },
       "sponsor": "Wade Chang",
-      "signatures": 336,
+      "signatures": 369,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7657",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7657"
+      }
+    },
+    {
+      "code": "e-7656",
+      "topic": {
+        "en": "Public safety",
+        "fr": "Sécurité publique"
+      },
+      "keywords": {
+        "en": "Batteries Fire prevention",
+        "fr": "Piles Prévention des incendies"
+      },
+      "status": {
+        "en": "Open for signature until December 8, 2026, at 9:30 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 9 h 30 (HAE)"
+      },
+      "sponsor": "Wade Chang",
+      "signatures": 328,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7656",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7656"
+      }
+    },
+    {
+      "code": "e-7667",
+      "topic": {
+        "en": "Public safety",
+        "fr": "Sécurité publique"
+      },
+      "keywords": {
+        "en": "Graphic symbols Kata'ib Hezbollah Terrorist entities watch lists",
+        "fr": "Kata'ib Hezbollah Listes de surveillance d'entités terroristes Symboles graphiques"
+      },
+      "status": {
+        "en": "Open for signature until October 10, 2026, at 1:27 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 10 octobre 2026 à 13 h 27 (HAE)"
+      },
+      "sponsor": "Anthony Housefather",
+      "signatures": 321,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7667",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7667"
       }
     },
     {
@@ -193,48 +214,6 @@
       }
     },
     {
-      "code": "e-7656",
-      "topic": {
-        "en": "Public safety",
-        "fr": "Sécurité publique"
-      },
-      "keywords": {
-        "en": "Batteries Fire prevention",
-        "fr": "Piles Prévention des incendies"
-      },
-      "status": {
-        "en": "Open for signature until December 8, 2026, at 9:30 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 9 h 30 (HAE)"
-      },
-      "sponsor": "Wade Chang",
-      "signatures": 292,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7656",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7656"
-      }
-    },
-    {
-      "code": "e-7667",
-      "topic": {
-        "en": "Public safety",
-        "fr": "Sécurité publique"
-      },
-      "keywords": {
-        "en": "Graphic symbols Kata'ib Hezbollah Terrorist entities watch lists",
-        "fr": "Kata'ib Hezbollah Listes de surveillance d'entités terroristes Symboles graphiques"
-      },
-      "status": {
-        "en": "Open for signature until October 10, 2026, at 1:27 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 10 octobre 2026 à 13 h 27 (HAE)"
-      },
-      "sponsor": "Anthony Housefather",
-      "signatures": 266,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7667",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7667"
-      }
-    },
-    {
       "code": "e-7655",
       "topic": {
         "en": "Public safety",
@@ -249,7 +228,7 @@
         "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 9 h 32 (HAE)"
       },
       "sponsor": "Wade Chang",
-      "signatures": 240,
+      "signatures": 265,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7655",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7655"
@@ -270,7 +249,7 @@
         "fr": "Ouverte pour signature jusqu'au 9 décembre 2026 à 10 h 32 (HAE)"
       },
       "sponsor": "Vince Gasparro",
-      "signatures": 155,
+      "signatures": 156,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7601",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7601"
@@ -291,7 +270,7 @@
         "fr": "Ouverte pour signature jusqu'au 17 décembre 2026 à 13 h 59 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 132,
+      "signatures": 136,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7513",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7513"
@@ -312,7 +291,7 @@
         "fr": "Ouverte pour signature jusqu'au 22 novembre 2026 à 9 h 33 (HAE)"
       },
       "sponsor": "Heather McPherson",
-      "signatures": 93,
+      "signatures": 115,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7686",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7686"
@@ -333,7 +312,7 @@
         "fr": "Ouverte pour signature jusqu'au 9 novembre 2026 à 14 h 09 (HAE)"
       },
       "sponsor": "David McKenzie",
-      "signatures": 86,
+      "signatures": 97,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7662",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7662"
@@ -354,52 +333,10 @@
         "fr": "Ouverte pour signature jusqu'au 17 septembre 2026 à 9 h 33 (HAE)"
       },
       "sponsor": "Jeff Kibble",
-      "signatures": 73,
+      "signatures": 78,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7681",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7681"
-      }
-    },
-    {
-      "code": "e-7664",
-      "topic": {
-        "en": "Taxation",
-        "fr": "Fiscalité"
-      },
-      "keywords": {
-        "en": "Digital services tax Media streaming and webcasting",
-        "fr": "Taxe sur les services numériques Transmission multimédia en continu et we ..."
-      },
-      "status": {
-        "en": "Open for signature until December 24, 2026, at 11:31 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 24 décembre 2026 à 11 h 31 (HAE)"
-      },
-      "sponsor": "Gabriel Ste-Marie",
-      "signatures": 19,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7664",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7664"
-      }
-    },
-    {
-      "code": "e-7631",
-      "topic": {
-        "en": "Information and privacy",
-        "fr": "Information et vie privée"
-      },
-      "keywords": {
-        "en": "Artificial intelligence Privacy and data protection",
-        "fr": "Droit à la vie privée et protection de l ... Intelligence artificielle"
-      },
-      "status": {
-        "en": "Open for signature until December 24, 2026, at 11:29 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 24 décembre 2026 à 11 h 29 (HAE)"
-      },
-      "sponsor": "Eric Duncan",
-      "signatures": 12,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7631",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7631"
       }
     },
     {
@@ -417,10 +354,73 @@
         "fr": "Ouverte pour signature jusqu'au 25 décembre 2026 à 12 h 01 (HAE)"
       },
       "sponsor": "Patrick Bonin",
-      "signatures": 6,
+      "signatures": 44,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7638",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7638"
+      }
+    },
+    {
+      "code": "e-7664",
+      "topic": {
+        "en": "Taxation",
+        "fr": "Fiscalité"
+      },
+      "keywords": {
+        "en": "Digital services tax Media streaming and webcasting",
+        "fr": "Taxe sur les services numériques Transmission multimédia en continu et we ..."
+      },
+      "status": {
+        "en": "Open for signature until December 24, 2026, at 11:31 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 24 décembre 2026 à 11 h 31 (HAE)"
+      },
+      "sponsor": "Gabriel Ste-Marie",
+      "signatures": 34,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7664",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7664"
+      }
+    },
+    {
+      "code": "e-7460",
+      "topic": {
+        "en": "Information and privacy",
+        "fr": "Information et vie privée"
+      },
+      "keywords": {
+        "en": "Artificial intelligence Privacy and data protection",
+        "fr": "Droit à la vie privée et protection de l ... Intelligence artificielle"
+      },
+      "status": {
+        "en": "Open for signature until October 26, 2026, at 3:48 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 26 octobre 2026 à 15 h 48 (HAE)"
+      },
+      "sponsor": "Judy A. Sgro",
+      "signatures": 32,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7460",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7460"
+      }
+    },
+    {
+      "code": "e-7631",
+      "topic": {
+        "en": "Information and privacy",
+        "fr": "Information et vie privée"
+      },
+      "keywords": {
+        "en": "Artificial intelligence Privacy and data protection",
+        "fr": "Droit à la vie privée et protection de l ... Intelligence artificielle"
+      },
+      "status": {
+        "en": "Open for signature until December 24, 2026, at 11:29 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 24 décembre 2026 à 11 h 29 (HAE)"
+      },
+      "sponsor": "Eric Duncan",
+      "signatures": 20,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7631",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7631"
       }
     }
   ]
