@@ -1,7 +1,7 @@
 {
   "source": "https://www.ourcommons.ca/members/en/{PersonId}",
-  "scrapedAt": "2026-08-28T20:16:37.563Z",
-  "count": 337,
+  "scrapedAt": "2026-08-29T13:53:18.803Z",
+  "count": 336,
   "emails": {
     "376": "mario.beaulieu@parl.gc.ca",
     "413": "louis.plamondon@parl.gc.ca",
@@ -14,7 +14,6 @@
     "2897": "elizabeth.may@parl.gc.ca",
     "3306": "dan.mazier@parl.gc.ca",
     "9486": "david.mcguinty@parl.gc.ca",
-    "14171": "steven.guilbeault@parl.gc.ca",
     "17210": "rob.moore@parl.gc.ca",
     "25446": "dean.allison@parl.gc.ca",
     "25453": "francis.scarpaleggia@parl.gc.ca",
