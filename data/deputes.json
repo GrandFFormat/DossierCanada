@@ -3,8 +3,8 @@
     "en": "https://www.ourcommons.ca/members/en/search/xml",
     "fr": "https://www.ourcommons.ca/members/fr/search/xml"
   },
-  "scrapedAt": "2026-08-28T20:15:44.017Z",
-  "count": 337,
+  "scrapedAt": "2026-08-29T13:52:38.446Z",
+  "count": 336,
   "deputes": [
     {
       "id": 89156,
@@ -3504,31 +3504,6 @@
       "url": {
         "en": "https://www.ourcommons.ca/members/en/123248",
         "fr": "https://www.ourcommons.ca/members/fr/123248"
-      }
-    },
-    {
-      "id": 14171,
-      "honorific": "Hon.",
-      "firstName": "Steven",
-      "lastName": "Guilbeault",
-      "name": "Steven Guilbeault",
-      "party": {
-        "code": "LPC",
-        "en": "Liberal",
-        "fr": "Libéral"
-      },
-      "constituency": {
-        "en": "Laurier—Sainte-Marie",
-        "fr": "Laurier—Sainte-Marie"
-      },
-      "province": {
-        "en": "Quebec",
-        "fr": "Québec"
-      },
-      "memberSince": "2025-04-28",
-      "url": {
-        "en": "https://www.ourcommons.ca/members/en/14171",
-        "fr": "https://www.ourcommons.ca/members/fr/14171"
       }
     },
     {
