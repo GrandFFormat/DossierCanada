@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-08-29T13:55:00.631Z",
+  "scrapedAt": "2026-08-30T13:48:38.762Z",
   "count": 20,
   "petitions": [
     {
@@ -18,31 +18,10 @@
         "fr": "Ouverte pour signature jusqu'au 22 décembre 2026 à 15 h 13 (HAE)"
       },
       "sponsor": "Mike Lake",
-      "signatures": 7633,
+      "signatures": 7889,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7703",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7703"
-      }
-    },
-    {
-      "code": "e-7680",
-      "topic": {
-        "en": "Official languages",
-        "fr": "Langues officielles"
-      },
-      "keywords": {
-        "en": "Canadian Forces Department of National Defence Language of work Official languages policy",
-        "fr": "Forces canadiennes Langue de travail Ministère de la Défense nationale Politique des langues officielles"
-      },
-      "status": {
-        "en": "Open for signature until September 17, 2026, at 1:40 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 17 septembre 2026 à 13 h 40 (HAE)"
-      },
-      "sponsor": "Pierre Paul-Hus",
-      "signatures": 3214,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7680",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7680"
       }
     },
     {
@@ -60,10 +39,31 @@
         "fr": "Ouverte pour signature jusqu'au 22 novembre 2026 à 9 h 32 (HAE)"
       },
       "sponsor": "Don Davies",
-      "signatures": 3157,
+      "signatures": 3409,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7691",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7691"
+      }
+    },
+    {
+      "code": "e-7680",
+      "topic": {
+        "en": "Official languages",
+        "fr": "Langues officielles"
+      },
+      "keywords": {
+        "en": "Canadian Forces Department of National Defence Language of work Official languages policy",
+        "fr": "Forces canadiennes Langue de travail Ministère de la Défense nationale Politique des langues officielles"
+      },
+      "status": {
+        "en": "Open for signature until September 17, 2026, at 1:40 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 17 septembre 2026 à 13 h 40 (HAE)"
+      },
+      "sponsor": "Pierre Paul-Hus",
+      "signatures": 3232,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7680",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7680"
       }
     },
     {
@@ -81,7 +81,7 @@
         "fr": "Ouverte pour signature jusqu'au 11 octobre 2026 à 14 h 22 (HAE)"
       },
       "sponsor": "Leah Gazan",
-      "signatures": 1869,
+      "signatures": 1904,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7649",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7649"
@@ -102,7 +102,7 @@
         "fr": "Ouverte pour signature jusqu'au 17 septembre 2026 à 13 h 37 (HAE)"
       },
       "sponsor": "Michael Kram",
-      "signatures": 1199,
+      "signatures": 1203,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7622",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7622"
@@ -123,7 +123,7 @@
         "fr": "Ouverte pour signature jusqu'au 5 décembre 2026 à 9 h 20 (HAE)"
       },
       "sponsor": "Fred Davies",
-      "signatures": 430,
+      "signatures": 431,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7642",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7642"
@@ -144,31 +144,10 @@
         "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 9 h 28 (HAE)"
       },
       "sponsor": "Wade Chang",
-      "signatures": 391,
+      "signatures": 416,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7657",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7657"
-      }
-    },
-    {
-      "code": "e-7656",
-      "topic": {
-        "en": "Public safety",
-        "fr": "Sécurité publique"
-      },
-      "keywords": {
-        "en": "Batteries Fire prevention",
-        "fr": "Piles Prévention des incendies"
-      },
-      "status": {
-        "en": "Open for signature until December 8, 2026, at 9:30 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 9 h 30 (HAE)"
-      },
-      "sponsor": "Wade Chang",
-      "signatures": 348,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7656",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7656"
       }
     },
     {
@@ -186,10 +165,31 @@
         "fr": "Ouverte pour signature jusqu'au 10 octobre 2026 à 13 h 27 (HAE)"
       },
       "sponsor": "Anthony Housefather",
-      "signatures": 337,
+      "signatures": 377,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7667",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7667"
+      }
+    },
+    {
+      "code": "e-7656",
+      "topic": {
+        "en": "Public safety",
+        "fr": "Sécurité publique"
+      },
+      "keywords": {
+        "en": "Batteries Fire prevention",
+        "fr": "Piles Prévention des incendies"
+      },
+      "status": {
+        "en": "Open for signature until December 8, 2026, at 9:30 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 9 h 30 (HAE)"
+      },
+      "sponsor": "Wade Chang",
+      "signatures": 362,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7656",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7656"
       }
     },
     {
@@ -207,7 +207,7 @@
         "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 15 h 07 (HAE)"
       },
       "sponsor": "Leah Gazan",
-      "signatures": 320,
+      "signatures": 322,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7593",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7593"
@@ -228,31 +228,10 @@
         "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 9 h 32 (HAE)"
       },
       "sponsor": "Wade Chang",
-      "signatures": 281,
+      "signatures": 293,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7655",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7655"
-      }
-    },
-    {
-      "code": "e-7601",
-      "topic": {
-        "en": "Public safety",
-        "fr": "Sécurité publique"
-      },
-      "keywords": {
-        "en": "Emergency preparedness Environmental protection Fire prevention Forest fires",
-        "fr": "Incendies de forêt Préparation aux situations d'urgence Prévention des incendies Protection de l'environnement"
-      },
-      "status": {
-        "en": "Open for signature until December 9, 2026, at 10:32 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 9 décembre 2026 à 10 h 32 (HAE)"
-      },
-      "sponsor": "Vince Gasparro",
-      "signatures": 157,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7601",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7601"
       }
     },
     {
@@ -270,31 +249,31 @@
         "fr": "Ouverte pour signature jusqu'au 17 décembre 2026 à 13 h 59 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 147,
+      "signatures": 165,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7513",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7513"
       }
     },
     {
-      "code": "e-7686",
+      "code": "e-7601",
       "topic": {
-        "en": "Health",
-        "fr": "Santé"
+        "en": "Public safety",
+        "fr": "Sécurité publique"
       },
       "keywords": {
-        "en": "Canada Health Act Federal-provincial-territorial relations Health services accessibility Private health care",
-        "fr": "Accessibilité des services de santé Loi canadienne sur la santé Médecine privée Relations fédérales-provinciales-territo ..."
+        "en": "Emergency preparedness Environmental protection Fire prevention Forest fires",
+        "fr": "Incendies de forêt Préparation aux situations d'urgence Prévention des incendies Protection de l'environnement"
       },
       "status": {
-        "en": "Open for signature until November 22, 2026, at 9:33 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 22 novembre 2026 à 9 h 33 (HAE)"
+        "en": "Open for signature until December 9, 2026, at 10:32 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 9 décembre 2026 à 10 h 32 (HAE)"
       },
-      "sponsor": "Heather McPherson",
-      "signatures": 126,
+      "sponsor": "Vince Gasparro",
+      "signatures": 158,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7686",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7686"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7601",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7601"
       }
     },
     {
@@ -312,10 +291,31 @@
         "fr": "Ouverte pour signature jusqu'au 9 novembre 2026 à 14 h 09 (HAE)"
       },
       "sponsor": "David McKenzie",
-      "signatures": 105,
+      "signatures": 140,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7662",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7662"
+      }
+    },
+    {
+      "code": "e-7686",
+      "topic": {
+        "en": "Health",
+        "fr": "Santé"
+      },
+      "keywords": {
+        "en": "Canada Health Act Federal-provincial-territorial relations Health services accessibility Private health care",
+        "fr": "Accessibilité des services de santé Loi canadienne sur la santé Médecine privée Relations fédérales-provinciales-territo ..."
+      },
+      "status": {
+        "en": "Open for signature until November 22, 2026, at 9:33 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 22 novembre 2026 à 9 h 33 (HAE)"
+      },
+      "sponsor": "Heather McPherson",
+      "signatures": 131,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7686",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7686"
       }
     },
     {
@@ -354,7 +354,7 @@
         "fr": "Ouverte pour signature jusqu'au 25 décembre 2026 à 12 h 01 (HAE)"
       },
       "sponsor": "Patrick Bonin",
-      "signatures": 54,
+      "signatures": 72,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7638",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7638"
@@ -375,7 +375,7 @@
         "fr": "Ouverte pour signature jusqu'au 26 octobre 2026 à 15 h 48 (HAE)"
       },
       "sponsor": "Judy A. Sgro",
-      "signatures": 47,
+      "signatures": 54,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7460",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7460"
@@ -396,7 +396,7 @@
         "fr": "Ouverte pour signature jusqu'au 24 décembre 2026 à 11 h 31 (HAE)"
       },
       "sponsor": "Gabriel Ste-Marie",
-      "signatures": 38,
+      "signatures": 41,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7664",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7664"
@@ -417,7 +417,7 @@
         "fr": "Ouverte pour signature jusqu'au 24 décembre 2026 à 11 h 29 (HAE)"
       },
       "sponsor": "Eric Duncan",
-      "signatures": 23,
+      "signatures": 24,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7631",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7631"
