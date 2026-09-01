@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-08-31T16:10:16.921Z",
+  "generatedAt": "2026-09-01T13:28:36.968Z",
   "session": "45-1",
   "meta": {
     "counts": {
       "bills": 185,
-      "deputes": 336,
+      "deputes": 338,
       "votes": 173
     },
     "votesLinkedToBill": 96,
-    "formerMembersInVotes": 10
+    "formerMembersInVotes": 11
   },
   "bills": [
     {
@@ -16388,6 +16388,40 @@
       }
     },
     {
+      "id": 142764,
+      "honorific": null,
+      "firstName": "Braeden",
+      "lastName": "Caley",
+      "name": "Braeden Caley",
+      "party": {
+        "code": "LPC",
+        "en": "Liberal",
+        "fr": "Libéral"
+      },
+      "constituency": {
+        "en": "North Vancouver—Capilano",
+        "fr": "North Vancouver—Capilano"
+      },
+      "province": {
+        "en": "British Columbia",
+        "fr": "Colombie-Britannique"
+      },
+      "memberSince": "2026-08-31",
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/142764",
+        "fr": "https://www.ourcommons.ca/members/fr/142764"
+      },
+      "votingRecord": {
+        "eligible": 0,
+        "cast": 0,
+        "yea": 0,
+        "nay": 0,
+        "paired": 0,
+        "absent": 0,
+        "participationRate": null
+      }
+    },
+    {
       "id": 35897,
       "honorific": null,
       "firstName": "Blaine",
@@ -19241,6 +19275,40 @@
         "paired": 0,
         "absent": 0,
         "participationRate": 1
+      }
+    },
+    {
+      "id": 107294,
+      "honorific": null,
+      "firstName": "Daniel",
+      "lastName": "Gobeil",
+      "name": "Daniel Gobeil",
+      "party": {
+        "code": "LPC",
+        "en": "Liberal",
+        "fr": "Libéral"
+      },
+      "constituency": {
+        "en": "Chicoutimi—Le Fjord",
+        "fr": "Chicoutimi—Le Fjord"
+      },
+      "province": {
+        "en": "Quebec",
+        "fr": "Québec"
+      },
+      "memberSince": "2026-08-31",
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/107294",
+        "fr": "https://www.ourcommons.ca/members/fr/107294"
+      },
+      "votingRecord": {
+        "eligible": 0,
+        "cast": 0,
+        "yea": 0,
+        "nay": 0,
+        "paired": 0,
+        "absent": 0,
+        "participationRate": null
       }
     },
     {
@@ -24718,6 +24786,40 @@
       }
     },
     {
+      "id": 142763,
+      "honorific": null,
+      "firstName": "Tanveer",
+      "lastName": "Shahnawaz",
+      "name": "Tanveer Shahnawaz",
+      "party": {
+        "code": "LPC",
+        "en": "Liberal",
+        "fr": "Libéral"
+      },
+      "constituency": {
+        "en": "Beaches—East York",
+        "fr": "Beaches—East York"
+      },
+      "province": {
+        "en": "Ontario",
+        "fr": "Ontario"
+      },
+      "memberSince": "2026-08-31",
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/142763",
+        "fr": "https://www.ourcommons.ca/members/fr/142763"
+      },
+      "votingRecord": {
+        "eligible": 0,
+        "cast": 0,
+        "yea": 0,
+        "nay": 0,
+        "paired": 0,
+        "absent": 0,
+        "participationRate": null
+      }
+    },
+    {
       "id": 88944,
       "honorific": null,
       "firstName": "Terry",
@@ -25837,40 +25939,6 @@
         "paired": 12,
         "absent": 2,
         "participationRate": 0.988
-      }
-    },
-    {
-      "id": 89098,
-      "honorific": null,
-      "firstName": "Cathay",
-      "lastName": "Wagantall",
-      "name": "Cathay Wagantall",
-      "party": {
-        "code": "CPC",
-        "en": "Conservative",
-        "fr": "Conservateur"
-      },
-      "constituency": {
-        "en": "Yorkton—Melville",
-        "fr": "Yorkton—Melville"
-      },
-      "province": {
-        "en": "Saskatchewan",
-        "fr": "Saskatchewan"
-      },
-      "memberSince": "2025-04-28",
-      "url": {
-        "en": "https://www.ourcommons.ca/members/en/89098",
-        "fr": "https://www.ourcommons.ca/members/fr/89098"
-      },
-      "votingRecord": {
-        "eligible": 173,
-        "cast": 172,
-        "yea": 93,
-        "nay": 79,
-        "paired": 0,
-        "absent": 1,
-        "participationRate": 0.994
       }
     },
     {

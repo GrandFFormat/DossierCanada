@@ -3,8 +3,8 @@
     "en": "https://www.ourcommons.ca/members/en/search/xml",
     "fr": "https://www.ourcommons.ca/members/fr/search/xml"
   },
-  "scrapedAt": "2026-08-31T16:08:13.761Z",
-  "count": 336,
+  "scrapedAt": "2026-09-01T13:26:41.097Z",
+  "count": 338,
   "deputes": [
     {
       "id": 89156,
@@ -1179,6 +1179,31 @@
       "url": {
         "en": "https://www.ourcommons.ca/members/en/104786",
         "fr": "https://www.ourcommons.ca/members/fr/104786"
+      }
+    },
+    {
+      "id": 142764,
+      "honorific": null,
+      "firstName": "Braeden",
+      "lastName": "Caley",
+      "name": "Braeden Caley",
+      "party": {
+        "code": "LPC",
+        "en": "Liberal",
+        "fr": "Libéral"
+      },
+      "constituency": {
+        "en": "North Vancouver—Capilano",
+        "fr": "North Vancouver—Capilano"
+      },
+      "province": {
+        "en": "British Columbia",
+        "fr": "Colombie-Britannique"
+      },
+      "memberSince": "2026-08-31",
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/142764",
+        "fr": "https://www.ourcommons.ca/members/fr/142764"
       }
     },
     {
@@ -3279,6 +3304,31 @@
       "url": {
         "en": "https://www.ourcommons.ca/members/en/88938",
         "fr": "https://www.ourcommons.ca/members/fr/88938"
+      }
+    },
+    {
+      "id": 107294,
+      "honorific": null,
+      "firstName": "Daniel",
+      "lastName": "Gobeil",
+      "name": "Daniel Gobeil",
+      "party": {
+        "code": "LPC",
+        "en": "Liberal",
+        "fr": "Libéral"
+      },
+      "constituency": {
+        "en": "Chicoutimi—Le Fjord",
+        "fr": "Chicoutimi—Le Fjord"
+      },
+      "province": {
+        "en": "Quebec",
+        "fr": "Québec"
+      },
+      "memberSince": "2026-08-31",
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/107294",
+        "fr": "https://www.ourcommons.ca/members/fr/107294"
       }
     },
     {
@@ -7307,6 +7357,31 @@
       }
     },
     {
+      "id": 142763,
+      "honorific": null,
+      "firstName": "Tanveer",
+      "lastName": "Shahnawaz",
+      "name": "Tanveer Shahnawaz",
+      "party": {
+        "code": "LPC",
+        "en": "Liberal",
+        "fr": "Libéral"
+      },
+      "constituency": {
+        "en": "Beaches—East York",
+        "fr": "Beaches—East York"
+      },
+      "province": {
+        "en": "Ontario",
+        "fr": "Ontario"
+      },
+      "memberSince": "2026-08-31",
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/142763",
+        "fr": "https://www.ourcommons.ca/members/fr/142763"
+      }
+    },
+    {
       "id": 88944,
       "honorific": null,
       "firstName": "Terry",
@@ -8129,31 +8204,6 @@
       "url": {
         "en": "https://www.ourcommons.ca/members/en/89289",
         "fr": "https://www.ourcommons.ca/members/fr/89289"
-      }
-    },
-    {
-      "id": 89098,
-      "honorific": null,
-      "firstName": "Cathay",
-      "lastName": "Wagantall",
-      "name": "Cathay Wagantall",
-      "party": {
-        "code": "CPC",
-        "en": "Conservative",
-        "fr": "Conservateur"
-      },
-      "constituency": {
-        "en": "Yorkton—Melville",
-        "fr": "Yorkton—Melville"
-      },
-      "province": {
-        "en": "Saskatchewan",
-        "fr": "Saskatchewan"
-      },
-      "memberSince": "2025-04-28",
-      "url": {
-        "en": "https://www.ourcommons.ca/members/en/89098",
-        "fr": "https://www.ourcommons.ca/members/fr/89098"
       }
     },
     {
