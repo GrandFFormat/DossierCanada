@@ -1,7 +1,7 @@
 {
   "source": "https://www.ourcommons.ca/members/en/{PersonId}",
-  "scrapedAt": "2026-08-31T16:08:53.062Z",
-  "count": 336,
+  "scrapedAt": "2026-09-01T13:27:17.378Z",
+  "count": 335,
   "emails": {
     "376": "mario.beaulieu@parl.gc.ca",
     "413": "louis.plamondon@parl.gc.ca",
@@ -117,7 +117,6 @@
     "89027": "doug.eyolfson@parl.gc.ca",
     "89080": "michael.kram@parl.gc.ca",
     "89084": "kevin.waugh@parl.gc.ca",
-    "89098": "cathay.wagantall@parl.gc.ca",
     "89130": "pat.kelly@parl.gc.ca",
     "89136": "tom.kmiec@parl.gc.ca",
     "89150": "kerry.diotte@parl.gc.ca",

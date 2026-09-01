@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-08-31T16:10:11.581Z",
+  "scrapedAt": "2026-09-01T13:28:31.903Z",
   "count": 20,
   "petitions": [
     {
@@ -18,7 +18,7 @@
         "fr": "Ouverte pour signature jusqu'au 22 décembre 2026 à 15 h 13 (HAE)"
       },
       "sponsor": "Mike Lake",
-      "signatures": 8184,
+      "signatures": 8425,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7703",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7703"
@@ -39,7 +39,7 @@
         "fr": "Ouverte pour signature jusqu'au 22 novembre 2026 à 9 h 32 (HAE)"
       },
       "sponsor": "Don Davies",
-      "signatures": 3590,
+      "signatures": 3687,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7691",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7691"
@@ -60,7 +60,7 @@
         "fr": "Ouverte pour signature jusqu'au 17 septembre 2026 à 13 h 40 (HAE)"
       },
       "sponsor": "Pierre Paul-Hus",
-      "signatures": 3243,
+      "signatures": 3248,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7680",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7680"
@@ -81,7 +81,7 @@
         "fr": "Ouverte pour signature jusqu'au 11 octobre 2026 à 14 h 22 (HAE)"
       },
       "sponsor": "Leah Gazan",
-      "signatures": 1934,
+      "signatures": 1971,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7649",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7649"
@@ -102,94 +102,10 @@
         "fr": "Ouverte pour signature jusqu'au 17 septembre 2026 à 13 h 37 (HAE)"
       },
       "sponsor": "Michael Kram",
-      "signatures": 1215,
+      "signatures": 1232,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7622",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7622"
-      }
-    },
-    {
-      "code": "e-7657",
-      "topic": {
-        "en": "Social affairs and equality",
-        "fr": "Affaires sociales et égalité"
-      },
-      "keywords": {
-        "en": "Emergency response and emergency responders Inflation Memorial Grant Program for First Responders",
-        "fr": "Inflation Intervention d'urgence et intervenants Programme de subvention commémoratif pou ..."
-      },
-      "status": {
-        "en": "Open for signature until December 8, 2026, at 9:28 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 9 h 28 (HAE)"
-      },
-      "sponsor": "Wade Chang",
-      "signatures": 444,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7657",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7657"
-      }
-    },
-    {
-      "code": "e-7642",
-      "topic": {
-        "en": "Veterans' affairs",
-        "fr": "Anciens combattants"
-      },
-      "keywords": {
-        "en": "Battle of Ridgeway Books of Remembrance War casualties",
-        "fr": "Bataille de Ridgeway Livres du Souvenir Pertes de guerre"
-      },
-      "status": {
-        "en": "Open for signature until December 5, 2026, at 9:20 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 5 décembre 2026 à 9 h 20 (HAE)"
-      },
-      "sponsor": "Fred Davies",
-      "signatures": 433,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7642",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7642"
-      }
-    },
-    {
-      "code": "e-7667",
-      "topic": {
-        "en": "Public safety",
-        "fr": "Sécurité publique"
-      },
-      "keywords": {
-        "en": "Graphic symbols Kata'ib Hezbollah Terrorist entities watch lists",
-        "fr": "Kata'ib Hezbollah Listes de surveillance d'entités terroristes Symboles graphiques"
-      },
-      "status": {
-        "en": "Open for signature until October 10, 2026, at 1:27 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 10 octobre 2026 à 13 h 27 (HAE)"
-      },
-      "sponsor": "Anthony Housefather",
-      "signatures": 396,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7667",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7667"
-      }
-    },
-    {
-      "code": "e-7656",
-      "topic": {
-        "en": "Public safety",
-        "fr": "Sécurité publique"
-      },
-      "keywords": {
-        "en": "Batteries Fire prevention",
-        "fr": "Piles Prévention des incendies"
-      },
-      "status": {
-        "en": "Open for signature until December 8, 2026, at 9:30 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 9 h 30 (HAE)"
-      },
-      "sponsor": "Wade Chang",
-      "signatures": 388,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7656",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7656"
       }
     },
     {
@@ -207,10 +123,94 @@
         "fr": "Ouverte pour signature jusqu'au 24 décembre 2026 à 11 h 31 (HAE)"
       },
       "sponsor": "Gabriel Ste-Marie",
-      "signatures": 355,
+      "signatures": 496,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7664",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7664"
+      }
+    },
+    {
+      "code": "e-7657",
+      "topic": {
+        "en": "Social affairs and equality",
+        "fr": "Affaires sociales et égalité"
+      },
+      "keywords": {
+        "en": "Emergency response and emergency responders Inflation Memorial Grant Program for First Responders",
+        "fr": "Inflation Intervention d'urgence et intervenants Programme de subvention commémoratif pou ..."
+      },
+      "status": {
+        "en": "Open for signature until December 8, 2026, at 9:28 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 9 h 28 (HAE)"
+      },
+      "sponsor": "Wade Chang",
+      "signatures": 463,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7657",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7657"
+      }
+    },
+    {
+      "code": "e-7667",
+      "topic": {
+        "en": "Public safety",
+        "fr": "Sécurité publique"
+      },
+      "keywords": {
+        "en": "Graphic symbols Kata'ib Hezbollah Terrorist entities watch lists",
+        "fr": "Kata'ib Hezbollah Listes de surveillance d'entités terroristes Symboles graphiques"
+      },
+      "status": {
+        "en": "Open for signature until October 10, 2026, at 1:27 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 10 octobre 2026 à 13 h 27 (HAE)"
+      },
+      "sponsor": "Anthony Housefather",
+      "signatures": 451,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7667",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7667"
+      }
+    },
+    {
+      "code": "e-7642",
+      "topic": {
+        "en": "Veterans' affairs",
+        "fr": "Anciens combattants"
+      },
+      "keywords": {
+        "en": "Battle of Ridgeway Books of Remembrance War casualties",
+        "fr": "Bataille de Ridgeway Livres du Souvenir Pertes de guerre"
+      },
+      "status": {
+        "en": "Open for signature until December 5, 2026, at 9:20 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 5 décembre 2026 à 9 h 20 (HAE)"
+      },
+      "sponsor": "Fred Davies",
+      "signatures": 434,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7642",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7642"
+      }
+    },
+    {
+      "code": "e-7656",
+      "topic": {
+        "en": "Public safety",
+        "fr": "Sécurité publique"
+      },
+      "keywords": {
+        "en": "Batteries Fire prevention",
+        "fr": "Piles Prévention des incendies"
+      },
+      "status": {
+        "en": "Open for signature until December 8, 2026, at 9:30 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 9 h 30 (HAE)"
+      },
+      "sponsor": "Wade Chang",
+      "signatures": 400,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7656",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7656"
       }
     },
     {
@@ -228,7 +228,7 @@
         "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 15 h 07 (HAE)"
       },
       "sponsor": "Leah Gazan",
-      "signatures": 323,
+      "signatures": 327,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7593",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7593"
@@ -249,10 +249,31 @@
         "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 9 h 32 (HAE)"
       },
       "sponsor": "Wade Chang",
-      "signatures": 311,
+      "signatures": 327,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7655",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7655"
+      }
+    },
+    {
+      "code": "e-7662",
+      "topic": {
+        "en": "Culture and heritage",
+        "fr": "Culture et patrimoine"
+      },
+      "keywords": {
+        "en": "Government lands Military history Naval museums",
+        "fr": "Histoire militaire Musées d'histoire de la marine Terres du gouvernement"
+      },
+      "status": {
+        "en": "Open for signature until November 9, 2026, at 2:09 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 9 novembre 2026 à 14 h 09 (HAE)"
+      },
+      "sponsor": "David McKenzie",
+      "signatures": 207,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7662",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7662"
       }
     },
     {
@@ -270,7 +291,7 @@
         "fr": "Ouverte pour signature jusqu'au 17 décembre 2026 à 13 h 59 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 181,
+      "signatures": 190,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7513",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7513"
@@ -291,31 +312,10 @@
         "fr": "Ouverte pour signature jusqu'au 9 décembre 2026 à 10 h 32 (HAE)"
       },
       "sponsor": "Vince Gasparro",
-      "signatures": 158,
+      "signatures": 161,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7601",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7601"
-      }
-    },
-    {
-      "code": "e-7662",
-      "topic": {
-        "en": "Culture and heritage",
-        "fr": "Culture et patrimoine"
-      },
-      "keywords": {
-        "en": "Government lands Military history Naval museums",
-        "fr": "Histoire militaire Musées d'histoire de la marine Terres du gouvernement"
-      },
-      "status": {
-        "en": "Open for signature until November 9, 2026, at 2:09 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 9 novembre 2026 à 14 h 09 (HAE)"
-      },
-      "sponsor": "David McKenzie",
-      "signatures": 150,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7662",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7662"
       }
     },
     {
@@ -333,7 +333,7 @@
         "fr": "Ouverte pour signature jusqu'au 22 novembre 2026 à 9 h 33 (HAE)"
       },
       "sponsor": "Heather McPherson",
-      "signatures": 145,
+      "signatures": 151,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7686",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7686"
@@ -354,31 +354,10 @@
         "fr": "Ouverte pour signature jusqu'au 25 décembre 2026 à 12 h 01 (HAE)"
       },
       "sponsor": "Patrick Bonin",
-      "signatures": 89,
+      "signatures": 93,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7638",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7638"
-      }
-    },
-    {
-      "code": "e-7681",
-      "topic": {
-        "en": "Health",
-        "fr": "Santé"
-      },
-      "keywords": {
-        "en": "Canada Health Transfer Drug treatment centres Health services accessibility Vancouver Island",
-        "fr": "Accessibilité des services de santé Centres de désintoxication Île de Vancouver Transfert canadien en matière de santé"
-      },
-      "status": {
-        "en": "Open for signature until September 17, 2026, at 9:33 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 17 septembre 2026 à 9 h 33 (HAE)"
-      },
-      "sponsor": "Jeff Kibble",
-      "signatures": 82,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7681",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7681"
       }
     },
     {
@@ -396,10 +375,31 @@
         "fr": "Ouverte pour signature jusqu'au 26 octobre 2026 à 15 h 48 (HAE)"
       },
       "sponsor": "Judy A. Sgro",
-      "signatures": 75,
+      "signatures": 90,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7460",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7460"
+      }
+    },
+    {
+      "code": "e-7681",
+      "topic": {
+        "en": "Health",
+        "fr": "Santé"
+      },
+      "keywords": {
+        "en": "Canada Health Transfer Drug treatment centres Health services accessibility Vancouver Island",
+        "fr": "Accessibilité des services de santé Centres de désintoxication Île de Vancouver Transfert canadien en matière de santé"
+      },
+      "status": {
+        "en": "Open for signature until September 17, 2026, at 9:33 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 17 septembre 2026 à 9 h 33 (HAE)"
+      },
+      "sponsor": "Jeff Kibble",
+      "signatures": 87,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7681",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7681"
       }
     },
     {
@@ -417,7 +417,7 @@
         "fr": "Ouverte pour signature jusqu'au 24 décembre 2026 à 11 h 29 (HAE)"
       },
       "sponsor": "Eric Duncan",
-      "signatures": 30,
+      "signatures": 34,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7631",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7631"
