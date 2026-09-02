@@ -1,7 +1,7 @@
 {
   "source": "https://www.ourcommons.ca/members/en/{PersonId}",
-  "scrapedAt": "2026-09-01T13:27:17.378Z",
-  "count": 335,
+  "scrapedAt": "2026-09-02T12:45:12.360Z",
+  "count": 337,
   "emails": {
     "376": "mario.beaulieu@parl.gc.ca",
     "413": "louis.plamondon@parl.gc.ca",
@@ -200,6 +200,7 @@
     "105811": "tako.vanpopta@parl.gc.ca",
     "105863": "helena.konanz@parl.gc.ca",
     "105918": "patrick.weiler@parl.gc.ca",
+    "107294": "daniel.gobeil@parl.gc.ca",
     "108395": "branden.leslie@parl.gc.ca",
     "109867": "clifford.small@parl.gc.ca",
     "109872": "carol.anstey@parl.gc.ca",
@@ -337,6 +338,7 @@
     "123653": "wade.grant@parl.gc.ca",
     "123665": "will.greaves@parl.gc.ca",
     "123675": "rebecca.alty@parl.gc.ca",
-    "141713": "doly.begum@parl.gc.ca"
+    "141713": "doly.begum@parl.gc.ca",
+    "142763": "tanveer.shahnawaz@parl.gc.ca"
   }
 }
