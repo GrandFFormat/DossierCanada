@@ -1,7 +1,7 @@
 {
   "source": "https://www.ourcommons.ca/members/en/{PersonId}",
-  "scrapedAt": "2026-09-02T12:45:12.360Z",
-  "count": 337,
+  "scrapedAt": "2026-09-03T12:48:31.846Z",
+  "count": 338,
   "emails": {
     "376": "mario.beaulieu@parl.gc.ca",
     "413": "louis.plamondon@parl.gc.ca",
@@ -339,6 +339,7 @@
     "123665": "will.greaves@parl.gc.ca",
     "123675": "rebecca.alty@parl.gc.ca",
     "141713": "doly.begum@parl.gc.ca",
-    "142763": "tanveer.shahnawaz@parl.gc.ca"
+    "142763": "tanveer.shahnawaz@parl.gc.ca",
+    "142764": "braeden.caley@parl.gc.ca"
   }
 }
