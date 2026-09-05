@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-09-04T12:44:55.275Z",
+  "scrapedAt": "2026-09-05T11:53:27.844Z",
   "count": 20,
   "petitions": [
     {
@@ -18,7 +18,7 @@
         "fr": "Ouverte pour signature jusqu'au 22 décembre 2026 à 15 h 13 (HAE)"
       },
       "sponsor": "Mike Lake",
-      "signatures": 8892,
+      "signatures": 8962,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7703",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7703"
@@ -39,7 +39,7 @@
         "fr": "Ouverte pour signature jusqu'au 22 novembre 2026 à 9 h 32 (HAE)"
       },
       "sponsor": "Don Davies",
-      "signatures": 4367,
+      "signatures": 4512,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7691",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7691"
@@ -60,31 +60,10 @@
         "fr": "Ouverte pour signature jusqu'au 17 septembre 2026 à 13 h 40 (HAE)"
       },
       "sponsor": "Pierre Paul-Hus",
-      "signatures": 3284,
+      "signatures": 3300,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7680",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7680"
-      }
-    },
-    {
-      "code": "e-7649",
-      "topic": {
-        "en": "Foreign affairs",
-        "fr": "Affaires étrangères"
-      },
-      "keywords": {
-        "en": "Cuba Economic sanctions Foreign policy United States of America",
-        "fr": "Cuba États-Unis d'Amérique Politique étrangère Sanctions économiques"
-      },
-      "status": {
-        "en": "Open for signature until October 11, 2026, at 2:22 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 11 octobre 2026 à 14 h 22 (HAE)"
-      },
-      "sponsor": "Leah Gazan",
-      "signatures": 2133,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7649",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7649"
       }
     },
     {
@@ -102,7 +81,7 @@
         "fr": "Ouverte pour signature jusqu'au 17 septembre 2026 à 13 h 37 (HAE)"
       },
       "sponsor": "Michael Kram",
-      "signatures": 1268,
+      "signatures": 1280,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7622",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7622"
@@ -123,94 +102,10 @@
         "fr": "Ouverte pour signature jusqu'au 24 décembre 2026 à 11 h 31 (HAE)"
       },
       "sponsor": "Gabriel Ste-Marie",
-      "signatures": 544,
+      "signatures": 547,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7664",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7664"
-      }
-    },
-    {
-      "code": "e-7667",
-      "topic": {
-        "en": "Public safety",
-        "fr": "Sécurité publique"
-      },
-      "keywords": {
-        "en": "Graphic symbols Kata'ib Hezbollah Terrorist entities watch lists",
-        "fr": "Kata'ib Hezbollah Listes de surveillance d'entités terroristes Symboles graphiques"
-      },
-      "status": {
-        "en": "Open for signature until October 10, 2026, at 1:27 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 10 octobre 2026 à 13 h 27 (HAE)"
-      },
-      "sponsor": "Anthony Housefather",
-      "signatures": 457,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7667",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7667"
-      }
-    },
-    {
-      "code": "e-7593",
-      "topic": {
-        "en": "Indigenous affairs",
-        "fr": "Affaires autochtones"
-      },
-      "keywords": {
-        "en": "C-37, An Act respecting water, source wa ... Drinking water First Nations Water resources",
-        "fr": "C-37, Loi concernant l'eau, les sources ... Eau potable Premières Nations Ressources en eau"
-      },
-      "status": {
-        "en": "Open for signature until December 8, 2026, at 3:07 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 15 h 07 (HAE)"
-      },
-      "sponsor": "Leah Gazan",
-      "signatures": 343,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7593",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7593"
-      }
-    },
-    {
-      "code": "e-7662",
-      "topic": {
-        "en": "Culture and heritage",
-        "fr": "Culture et patrimoine"
-      },
-      "keywords": {
-        "en": "Government lands Military history Naval museums",
-        "fr": "Histoire militaire Musées d'histoire de la marine Terres du gouvernement"
-      },
-      "status": {
-        "en": "Open for signature until November 9, 2026, at 2:09 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 9 novembre 2026 à 14 h 09 (HAE)"
-      },
-      "sponsor": "David McKenzie",
-      "signatures": 241,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7662",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7662"
-      }
-    },
-    {
-      "code": "e-7686",
-      "topic": {
-        "en": "Health",
-        "fr": "Santé"
-      },
-      "keywords": {
-        "en": "Canada Health Act Federal-provincial-territorial relations Health services accessibility Private health care",
-        "fr": "Accessibilité des services de santé Loi canadienne sur la santé Médecine privée Relations fédérales-provinciales-territo ..."
-      },
-      "status": {
-        "en": "Open for signature until November 22, 2026, at 9:33 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 22 novembre 2026 à 9 h 33 (HAE)"
-      },
-      "sponsor": "Heather McPherson",
-      "signatures": 210,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7686",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7686"
       }
     },
     {
@@ -228,31 +123,31 @@
         "fr": "Ouverte pour signature jusqu'au 17 décembre 2026 à 13 h 59 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 202,
+      "signatures": 214,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7513",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7513"
       }
     },
     {
-      "code": "e-7601",
+      "code": "e-7686",
       "topic": {
-        "en": "Public safety",
-        "fr": "Sécurité publique"
+        "en": "Health",
+        "fr": "Santé"
       },
       "keywords": {
-        "en": "Emergency preparedness Environmental protection Fire prevention Forest fires",
-        "fr": "Incendies de forêt Préparation aux situations d'urgence Prévention des incendies Protection de l'environnement"
+        "en": "Canada Health Act Federal-provincial-territorial relations Health services accessibility Private health care",
+        "fr": "Accessibilité des services de santé Loi canadienne sur la santé Médecine privée Relations fédérales-provinciales-territo ..."
       },
       "status": {
-        "en": "Open for signature until December 9, 2026, at 10:32 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 9 décembre 2026 à 10 h 32 (HAE)"
+        "en": "Open for signature until November 22, 2026, at 9:33 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 22 novembre 2026 à 9 h 33 (HAE)"
       },
-      "sponsor": "Vince Gasparro",
-      "signatures": 168,
+      "sponsor": "Heather McPherson",
+      "signatures": 213,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7601",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7601"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7686",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7686"
       }
     },
     {
@@ -270,7 +165,7 @@
         "fr": "Ouverte pour signature jusqu'au 17 septembre 2026 à 9 h 33 (HAE)"
       },
       "sponsor": "Jeff Kibble",
-      "signatures": 144,
+      "signatures": 151,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7681",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7681"
@@ -291,7 +186,7 @@
         "fr": "Ouverte pour signature jusqu'au 26 octobre 2026 à 15 h 48 (HAE)"
       },
       "sponsor": "Judy A. Sgro",
-      "signatures": 140,
+      "signatures": 149,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7460",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7460"
@@ -312,7 +207,7 @@
         "fr": "Ouverte pour signature jusqu'au 25 décembre 2026 à 12 h 01 (HAE)"
       },
       "sponsor": "Patrick Bonin",
-      "signatures": 110,
+      "signatures": 114,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7638",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7638"
@@ -333,7 +228,7 @@
         "fr": "Ouverte pour signature jusqu'au 24 décembre 2026 à 11 h 29 (HAE)"
       },
       "sponsor": "Eric Duncan",
-      "signatures": 51,
+      "signatures": 53,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7631",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7631"
@@ -354,31 +249,10 @@
         "fr": "Ouverte pour signature jusqu'au 31 décembre 2026 à 10 h 11 (HAE)"
       },
       "sponsor": "Karina Gould",
-      "signatures": 45,
+      "signatures": 51,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7712",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7712"
-      }
-    },
-    {
-      "code": "e-7690",
-      "topic": {
-        "en": "Foreign affairs",
-        "fr": "Affaires étrangères"
-      },
-      "keywords": {
-        "en": "Canada-United States-Mexico Agreement Negotiations and negotiators Trade agreements",
-        "fr": "Accord Canada–États-Unis–Mexique Accords commerciaux Négociations et négociateurs"
-      },
-      "status": {
-        "en": "Open for signature until December 1, 2026, at 10:05 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 1 décembre 2026 à 10 h 05 (HAE)"
-      },
-      "sponsor": "Elizabeth May",
-      "signatures": 36,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7690",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7690"
       }
     },
     {
@@ -396,10 +270,73 @@
         "fr": "Ouverte pour signature jusqu'au 1 décembre 2026 à 10 h 11 (HAE)"
       },
       "sponsor": "Connie Cody",
-      "signatures": 22,
+      "signatures": 46,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7741",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7741"
+      }
+    },
+    {
+      "code": "e-7690",
+      "topic": {
+        "en": "Foreign affairs",
+        "fr": "Affaires étrangères"
+      },
+      "keywords": {
+        "en": "Canada-United States-Mexico Agreement Negotiations and negotiators Trade agreements",
+        "fr": "Accord Canada–États-Unis–Mexique Accords commerciaux Négociations et négociateurs"
+      },
+      "status": {
+        "en": "Open for signature until December 1, 2026, at 10:05 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 1 décembre 2026 à 10 h 05 (HAE)"
+      },
+      "sponsor": "Elizabeth May",
+      "signatures": 42,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7690",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7690"
+      }
+    },
+    {
+      "code": "e-7590",
+      "topic": {
+        "en": "Foreign affairs",
+        "fr": "Affaires étrangères"
+      },
+      "keywords": {
+        "en": "North Korea Peace South Korea",
+        "fr": "Corée du Nord Corée du Sud Paix"
+      },
+      "status": {
+        "en": "Open for signature until October 4, 2026, at 1:58 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 4 octobre 2026 à 13 h 58 (HAE)"
+      },
+      "sponsor": "Ali Ehsassi",
+      "signatures": 34,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7590",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7590"
+      }
+    },
+    {
+      "code": "e-7742",
+      "topic": {
+        "en": "Environment",
+        "fr": "Environnement"
+      },
+      "keywords": {
+        "en": "C-30, An Act to implement certain provis ... C-31, A second Act to implement certain ... Environmental protection Pesticides",
+        "fr": "C-30, Loi portant exécution de certaines ... C-31, Loi no 2 portant exécution de cert ... Pesticides Protection de l'environnement"
+      },
+      "status": {
+        "en": "Open for signature until November 3, 2026, at 12:33 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 3 novembre 2026 à 12 h 33 (HAE)"
+      },
+      "sponsor": "Maxime Blanchette-Joncas",
+      "signatures": 34,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7742",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7742"
       }
     },
     {
@@ -417,10 +354,73 @@
         "fr": "Ouverte pour signature jusqu'au 31 décembre 2026 à 10 h 10 (HAE)"
       },
       "sponsor": "Jamie Schmale",
-      "signatures": 17,
+      "signatures": 28,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7708",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7708"
+      }
+    },
+    {
+      "code": "e-7674",
+      "topic": {
+        "en": "Justice",
+        "fr": "Justice"
+      },
+      "keywords": {
+        "en": "Families and children Family law Justice system",
+        "fr": "Administration de la justice Droit de la famille Familles et enfants"
+      },
+      "status": {
+        "en": "Open for signature until December 3, 2026, at 2:01 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 3 décembre 2026 à 14 h 01 (HAE)"
+      },
+      "sponsor": "Lisa Hepfner",
+      "signatures": 15,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7674",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7674"
+      }
+    },
+    {
+      "code": "e-7705",
+      "topic": {
+        "en": "Foreign affairs",
+        "fr": "Affaires étrangères"
+      },
+      "keywords": {
+        "en": "Peacekeeping and peacemaking United Nations",
+        "fr": "Maintien de la paix et rétablissement de ... Nations Unies"
+      },
+      "status": {
+        "en": "Open for signature until December 3, 2026, at 1:59 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 3 décembre 2026 à 13 h 59 (HAE)"
+      },
+      "sponsor": "Salma Zahid",
+      "signatures": 10,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7705",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7705"
+      }
+    },
+    {
+      "code": "e-7737",
+      "topic": {
+        "en": "Holidays and observances",
+        "fr": "Congés et commémorations"
+      },
+      "keywords": {
+        "en": "Civic resilience National Resilience Day",
+        "fr": "Journée nationale de la résilience Résilience civique"
+      },
+      "status": {
+        "en": "Open for signature until January 2, 2027, at 12:36 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 2 janvier 2027 à 12 h 36 (HAE)"
+      },
+      "sponsor": "Kelly McCauley",
+      "signatures": 8,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7737",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7737"
       }
     }
   ]
