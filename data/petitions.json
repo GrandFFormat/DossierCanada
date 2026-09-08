@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-09-07T14:16:47.989Z",
+  "scrapedAt": "2026-09-08T12:55:38.299Z",
   "count": 20,
   "petitions": [
     {
@@ -18,7 +18,7 @@
         "fr": "Ouverte pour signature jusqu'au 22 décembre 2026 à 15 h 13 (HAE)"
       },
       "sponsor": "Mike Lake",
-      "signatures": 9120,
+      "signatures": 9148,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7703",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7703"
@@ -39,31 +39,10 @@
         "fr": "Ouverte pour signature jusqu'au 22 novembre 2026 à 9 h 32 (HAE)"
       },
       "sponsor": "Don Davies",
-      "signatures": 4713,
+      "signatures": 4887,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7691",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7691"
-      }
-    },
-    {
-      "code": "e-7680",
-      "topic": {
-        "en": "Official languages",
-        "fr": "Langues officielles"
-      },
-      "keywords": {
-        "en": "Canadian Forces Department of National Defence Language of work Official languages policy",
-        "fr": "Forces canadiennes Langue de travail Ministère de la Défense nationale Politique des langues officielles"
-      },
-      "status": {
-        "en": "Open for signature until September 17, 2026, at 1:40 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 17 septembre 2026 à 13 h 40 (HAE)"
-      },
-      "sponsor": "Pierre Paul-Hus",
-      "signatures": 3373,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7680",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7680"
       }
     },
     {
@@ -81,10 +60,31 @@
         "fr": "Ouverte pour signature jusqu'au 31 décembre 2026 à 10 h 11 (HAE)"
       },
       "sponsor": "Karina Gould",
-      "signatures": 2256,
+      "signatures": 4054,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7712",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7712"
+      }
+    },
+    {
+      "code": "e-7680",
+      "topic": {
+        "en": "Official languages",
+        "fr": "Langues officielles"
+      },
+      "keywords": {
+        "en": "Canadian Forces Department of National Defence Language of work Official languages policy",
+        "fr": "Forces canadiennes Langue de travail Ministère de la Défense nationale Politique des langues officielles"
+      },
+      "status": {
+        "en": "Open for signature until September 17, 2026, at 1:40 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 17 septembre 2026 à 13 h 40 (HAE)"
+      },
+      "sponsor": "Pierre Paul-Hus",
+      "signatures": 3381,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7680",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7680"
       }
     },
     {
@@ -102,7 +102,7 @@
         "fr": "Ouverte pour signature jusqu'au 17 septembre 2026 à 13 h 37 (HAE)"
       },
       "sponsor": "Michael Kram",
-      "signatures": 1297,
+      "signatures": 1309,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7622",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7622"
@@ -123,7 +123,7 @@
         "fr": "Ouverte pour signature jusqu'au 24 décembre 2026 à 11 h 31 (HAE)"
       },
       "sponsor": "Gabriel Ste-Marie",
-      "signatures": 557,
+      "signatures": 563,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7664",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7664"
@@ -144,7 +144,7 @@
         "fr": "Ouverte pour signature jusqu'au 17 décembre 2026 à 13 h 59 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 269,
+      "signatures": 279,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7513",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7513"
@@ -165,31 +165,10 @@
         "fr": "Ouverte pour signature jusqu'au 22 novembre 2026 à 9 h 33 (HAE)"
       },
       "sponsor": "Heather McPherson",
-      "signatures": 222,
+      "signatures": 228,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7686",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7686"
-      }
-    },
-    {
-      "code": "e-7681",
-      "topic": {
-        "en": "Health",
-        "fr": "Santé"
-      },
-      "keywords": {
-        "en": "Canada Health Transfer Drug treatment centres Health services accessibility Vancouver Island",
-        "fr": "Accessibilité des services de santé Centres de désintoxication Île de Vancouver Transfert canadien en matière de santé"
-      },
-      "status": {
-        "en": "Open for signature until September 17, 2026, at 9:33 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 17 septembre 2026 à 9 h 33 (HAE)"
-      },
-      "sponsor": "Jeff Kibble",
-      "signatures": 159,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7681",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7681"
       }
     },
     {
@@ -207,10 +186,31 @@
         "fr": "Ouverte pour signature jusqu'au 26 octobre 2026 à 15 h 48 (HAE)"
       },
       "sponsor": "Judy A. Sgro",
-      "signatures": 158,
+      "signatures": 163,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7460",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7460"
+      }
+    },
+    {
+      "code": "e-7681",
+      "topic": {
+        "en": "Health",
+        "fr": "Santé"
+      },
+      "keywords": {
+        "en": "Canada Health Transfer Drug treatment centres Health services accessibility Vancouver Island",
+        "fr": "Accessibilité des services de santé Centres de désintoxication Île de Vancouver Transfert canadien en matière de santé"
+      },
+      "status": {
+        "en": "Open for signature until September 17, 2026, at 9:33 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 17 septembre 2026 à 9 h 33 (HAE)"
+      },
+      "sponsor": "Jeff Kibble",
+      "signatures": 160,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7681",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7681"
       }
     },
     {
@@ -228,31 +228,10 @@
         "fr": "Ouverte pour signature jusqu'au 25 décembre 2026 à 12 h 01 (HAE)"
       },
       "sponsor": "Patrick Bonin",
-      "signatures": 120,
+      "signatures": 125,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7638",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7638"
-      }
-    },
-    {
-      "code": "e-7741",
-      "topic": {
-        "en": "Justice",
-        "fr": "Justice"
-      },
-      "keywords": {
-        "en": "Controlling or coercive conduct Criminalization",
-        "fr": "Conduite contrôlante ou coercitive Pénalisation"
-      },
-      "status": {
-        "en": "Open for signature until December 1, 2026, at 10:11 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 1 décembre 2026 à 10 h 11 (HAE)"
-      },
-      "sponsor": "Connie Cody",
-      "signatures": 87,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7741",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7741"
       }
     },
     {
@@ -270,10 +249,31 @@
         "fr": "Ouverte pour signature jusqu'au 4 octobre 2026 à 13 h 58 (HAE)"
       },
       "sponsor": "Ali Ehsassi",
-      "signatures": 85,
+      "signatures": 92,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7590",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7590"
+      }
+    },
+    {
+      "code": "e-7741",
+      "topic": {
+        "en": "Justice",
+        "fr": "Justice"
+      },
+      "keywords": {
+        "en": "Controlling or coercive conduct Criminalization",
+        "fr": "Conduite contrôlante ou coercitive Pénalisation"
+      },
+      "status": {
+        "en": "Open for signature until December 1, 2026, at 10:11 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 1 décembre 2026 à 10 h 11 (HAE)"
+      },
+      "sponsor": "Connie Cody",
+      "signatures": 92,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7741",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7741"
       }
     },
     {
@@ -291,7 +291,7 @@
         "fr": "Ouverte pour signature jusqu'au 3 novembre 2026 à 12 h 33 (HAE)"
       },
       "sponsor": "Maxime Blanchette-Joncas",
-      "signatures": 64,
+      "signatures": 73,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7742",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7742"
@@ -312,7 +312,7 @@
         "fr": "Ouverte pour signature jusqu'au 1 décembre 2026 à 10 h 05 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 56,
+      "signatures": 61,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7690",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7690"
@@ -333,7 +333,7 @@
         "fr": "Ouverte pour signature jusqu'au 24 décembre 2026 à 11 h 29 (HAE)"
       },
       "sponsor": "Eric Duncan",
-      "signatures": 53,
+      "signatures": 56,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7631",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7631"
@@ -375,7 +375,7 @@
         "fr": "Ouverte pour signature jusqu'au 3 décembre 2026 à 14 h 01 (HAE)"
       },
       "sponsor": "Lisa Hepfner",
-      "signatures": 21,
+      "signatures": 24,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7674",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7674"
@@ -396,7 +396,7 @@
         "fr": "Ouverte pour signature jusqu'au 3 décembre 2026 à 13 h 59 (HAE)"
       },
       "sponsor": "Salma Zahid",
-      "signatures": 14,
+      "signatures": 17,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7705",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7705"
@@ -417,7 +417,7 @@
         "fr": "Ouverte pour signature jusqu'au 2 janvier 2027 à 12 h 36 (HAE)"
       },
       "sponsor": "Kelly McCauley",
-      "signatures": 8,
+      "signatures": 9,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7737",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7737"
