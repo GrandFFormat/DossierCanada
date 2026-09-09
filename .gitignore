@@ -8,3 +8,8 @@ data/samples/
 
 # Visuel provenant du projet Québec (hors de ce dépôt)
 dossierquebec-cover-c.png
+
+# Notes de passation et archives locales — utiles en local, jamais versionnées
+handoff-*.md
+Website design improvement needed/
+Website design improvement needed.zip
