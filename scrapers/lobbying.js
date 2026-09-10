@@ -36,10 +36,16 @@ import { inflateRawSync } from 'node:zlib';
 const ZIP_PATH = process.env.LOBBY_ZIP || 'data/source/communications_ocl_cal.zip';
 const BILLS_PATH = 'data/bills.json';
 const OUT_PATH = 'data/lobbying.json';
+const PAST_PATH = 'data/past-bill-titles.json';
+const DEBUG_BILL = (process.env.LOBBY_DEBUG || '').toUpperCase() || null;
 
 // Combien on garde par projet (le reste est sur le registre officiel, qu'on lie).
 // Ces données partent en clair dans index.html : on reste frugal.
-const MAX_ORGS = 10;
+// MAX_ORGS est volontairement large : la recherche par mot-clé fouille les noms
+// d'organisations, et on refuse de trouver un projet sans pouvoir montrer POURQUOI
+// il correspond. Ce qui est indexé doit donc être affichable. Au 2026-09 le projet
+// le plus lobbyé en compte 25 ; 30 laisse de la marge pour ~1 Ko de plus.
+const MAX_ORGS = 30;
 const MAX_RECENT = 10;
 const MAX_DPOH = 3;
 
@@ -178,6 +184,60 @@ function billStems(bill) {
   return s;
 }
 
+// GARDE-FOU 1 — les mots creux, mesurés plutôt que devinés.
+// « Self-Government » dans un titre produisait le radical « gover », qui colle à
+// « government officials » et « data governance »… présents dans 24,5 % de TOUTES
+// les descriptions du registre. Résultat : 28 communications sur l'IA et la vie
+// privée (ancien C-27) attribuées au C-27 actuel sur l'autonomie gouvernementale
+// des Tlegohli Got'ine. On ne blackliste donc pas à la main : on calcule la
+// fréquence réelle de chaque radical dans le corpus et on écarte ceux qui sont
+// partout. Un mot présent dans un dixième des descriptions ne prouve rien.
+const CORPUS_STEM_MAX_SHARE = 0.10;
+
+// Et en deçà : un radical VRAIMENT rare (« cyber », « comba », « tlego ») est à
+// lui seul une preuve solide. Un radical banal mais pas éliminé (« prote » 5,1 %,
+// « syste » 5,0 %, « natio » 8,5 %) ne l'est pas : c'est lui qui rattachait Lenovo
+// (« protects video game consoles », vieux C-244 sur le droit de réparer) à la
+// Loi sur la lutte contre la pollution des côtes. Ceux-là exigent que la
+// description nomme explicitement la bonne loi.
+const CORPUS_STEM_RARE_SHARE = 0.03;
+
+function corpusStemFrequency(descriptions) {
+  const df = new Map();
+  let n = 0;
+  for (const d of descriptions) {
+    n++;
+    for (const k of stems(d)) df.set(k, (df.get(k) || 0) + 1);
+  }
+  const banned = new Set();
+  const rare = new Set();
+  for (const [k, c] of df) {
+    if (c / n > CORPUS_STEM_MAX_SHARE) banned.add(k);
+    else if (c / n < CORPUS_STEM_RARE_SHARE) rare.add(k);
+  }
+  return { banned, rare };
+}
+
+// GARDE-FOU 2 — une description qui nomme une AUTRE loi parle d'un autre projet.
+// C'est la signature des mentions périmées : « the Online Streaming Act (formerly
+// Bill C-11) », « An Act to enact the Consumer Privacy Protection Act… Bill C-27 ».
+// La fréquence seule ne les attrapait pas (« syste », 5 % du corpus, reliait le
+// « broadcasting system » du vieux C-11 au « système de justice militaire » de
+// l'actuel). Donc : si des noms de lois apparaissent et qu'AUCUN ne partage de
+// vocabulaire avec le titre du projet, on refuse — quel que soit le radical trouvé.
+const ACT_EN_RE = /((?:[A-Z][\w’'-]+|of|and|for|the|to|on|in)(?:\s+(?:[A-Z][\w’'-]+|of|and|for|the|to|on|in)){0,6}\s+Acts?)\b/g;
+const ACT_FR_RE = /Loi\s+(?:sur|visant|concernant|modifiant|portant|relative|instituant|edictant|de|des|du|no)\b[^,.;:()]{0,80}/gi;
+
+function namedActs(description) {
+  const out = [];
+  ACT_EN_RE.lastIndex = 0;
+  let m;
+  while ((m = ACT_EN_RE.exec(description))) out.push(m[1]);
+  ACT_FR_RE.lastIndex = 0;
+  while ((m = ACT_FR_RE.exec(description))) out.push(m[0]);
+  return out;
+}
+
 // Date à partir de laquelle le numéro existe : la 1re lecture. Une communication
 // antérieure ne peut pas parler de CE projet-là.
 function firstReading(bill) {
@@ -211,13 +271,56 @@ function main() {
   // 1) Descriptions → quels COMLOG_ID mentionnent quels projets
   // Corroboration OBLIGATOIRE par le titre, dans la MÊME description (voir la
   // note « piège central » plus haut) : le numéro seul ne prouve pas la session.
+  const detailsCsv = get('Communication_SubjectMatterDetailsExport.csv');
+
+  // Passe préalable : quels radicaux sont trop répandus pour prouver quoi que ce
+  // soit ? Mesuré sur le corpus lui-même, donc valable au fil des mois.
+  const { banned, rare } = (() => {
+    const it = csvRows(detailsCsv);
+    const idx = headerIndex(it.next().value);
+    const cDesc = need(idx, 'DESCRIPTION');
+    const descs = [];
+    for (const r of it) if (r[cDesc]) descs.push(r[cDesc]);
+    return corpusStemFrequency(descs);
+  })();
+
   const stemsByBill = new Map();
-  for (const [num, b] of known) stemsByBill.set(num, billStems(b));
+  for (const [num, b] of known) {
+    const s = billStems(b);
+    for (const k of banned) s.delete(k);
+    stemsByBill.set(num, s);
+  }
+
+  // GARDE-FOU 3 — comparer au projet qui portait CE numéro avant.
+  // Le décisif, quand deux titres partagent un mot banal : lequel des deux la
+  // description décrit-elle vraiment ? « Bill C-11, Copyright Modernization Act »
+  // partage « moder » avec la Loi sur la modernisation du système de justice
+  // militaire — mais il partage « copyr » ET « moder » avec le C-11 de la 41e
+  // législature. Le passé gagne, donc on refuse. Voir scrapers/past-bill-titles.js.
+  const pastStems = new Map();
+  if (existsSync(PAST_PATH)) {
+    const past = JSON.parse(readFileSync(PAST_PATH, 'utf-8')).titles || {};
+    for (const [num, list] of Object.entries(past)) {
+      if (!known.has(num)) continue;
+      pastStems.set(num, list.map((t) => {
+        const s = stems(t);
+        for (const k of banned) s.delete(k);
+        return s;
+      }));
+    }
+    console.log(`  ${pastStems.size} numéros confrontés à leurs anciens porteurs`);
+  } else {
+    console.warn(`  ⚠ ${PAST_PATH} absent — désambiguïsation par les législatures passées désactivée.`);
+  }
+  console.log(`  ${banned.size} radicaux écartés comme trop courants (> ${CORPUS_STEM_MAX_SHARE * 100} % des descriptions)`);
 
   const billsByComlog = new Map();
   let rejected = 0;
+  let rejectedOtherAct = 0;
+  let rejectedWeak = 0;
+  let rejectedOldBill = 0;
   {
-    const rows = csvRows(get('Communication_SubjectMatterDetailsExport.csv'));
+    const rows = csvRows(detailsCsv);
     const idx = headerIndex(rows.next().value);
     const cId = need(idx, 'COMLOG_ID');
     const cDesc = need(idx, 'DESCRIPTION');
@@ -227,14 +330,57 @@ function main() {
       const hits = numbersMentioned(desc);
       if (!hits.size) continue;
       let descStems = null;
+      let actStems = null; // vocabulaire des lois nommées dans la description
       const id = r[cId];
       for (const num of hits) {
         if (!known.has(num)) continue; // pas un projet de la session courante
         descStems ??= stems(desc);
         const wanted = stemsByBill.get(num);
-        let ok = false;
-        for (const k of wanted) if (descStems.has(k)) { ok = true; break; }
-        if (!ok) { rejected++; continue; } // numéro sans le titre → très probablement une autre législature
+        const matched = [...wanted].filter((k) => descStems.has(k));
+        if (!matched.length) { rejected++; continue; } // numéro sans le titre → autre législature
+
+        // Un ancien projet du même numéro colle-t-il STRICTEMENT mieux ?
+        // L'égalité ne prouve rien : « Building Canada Act (Bill C-5, Part 2) »
+        // marquait 1 pour l'actuel et 1 pour un vieux C-5 sur un mot sans rapport
+        // — refuser à égalité jetait 66 attributions parfaitement claires.
+        const olds = pastStems.get(num);
+        if (olds) {
+          let best = 0;
+          for (const s of olds) {
+            let n = 0;
+            for (const k of s) if (descStems.has(k)) n++;
+            if (n > best) best = n;
+          }
+          if (best > matched.length) {
+            rejectedOldBill++;
+            if (DEBUG_BILL === num) console.log(`\n  ✗ REFUSÉ (actuel ${matched.length} [${matched.join(',')}] vs ancien ${best})\n    ${desc.replace(/\s+/g, ' ').slice(0, 220)}`);
+            continue;
+          }
+        }
+
+        if (actStems === null) {
+          // On ne retient que les lois VRAIMENT nommées : « the Act » tout court
+          // ne donne aucun radical et ferait tout rejeter à tort.
+          const acts = namedActs(desc).map((a) => stems(a)).filter((s) => s.size);
+          actStems = acts.length ? acts : false;
+        }
+
+        if (actStems) {
+          // Des lois sont nommées : l'une d'elles doit être celle-ci. Sinon la
+          // description parle d'un autre texte — signature des mentions périmées.
+          if (!actStems.some((s) => matched.some((k) => s.has(k)))) { rejectedOtherAct++; continue; }
+        } else if (!matched.some((k) => rare.has(k))) {
+          // Aucune loi nommée : seul un mot rare peut porter la preuve à lui seul.
+          rejectedWeak++;
+          continue;
+        }
+
+        // Sonde d'audit : LOBBY_DEBUG=C-11 affiche ce qui est retenu pour ce
+        // projet et POURQUOI. Indispensable pour re-vérifier les appariements à
+        // chaque nouvelle archive — les collisions de numéros changent tous les mois.
+        if (DEBUG_BILL === num) {
+          console.log(`\n  [${matched.join(',')}]${actStems ? ' via loi nommée' : ' via mot rare'}\n    ${desc.replace(/\s+/g, ' ').slice(0, 260)}`);
+        }
         const set = billsByComlog.get(id) || new Set();
         set.add(num);
         billsByComlog.set(id, set);
@@ -333,7 +479,7 @@ function main() {
   const totalComms = Object.values(out).reduce((a, b) => a + b.total, 0);
   console.log(`Lobbying écrit dans ${OUT_PATH}`);
   console.log(`  ${Object.keys(out).length} projets de loi avec du lobbying déclaré · ${totalComms} communications (depuis ${sessionStart})`);
-  console.log(`  écartées : ${rejected} mentions d'un numéro sans le titre (autre législature), ${tooEarly} antérieures à la 1re lecture`);
+  console.log(`  écartées : ${rejected} numéros sans le titre, ${rejectedOldBill} décrivant un ancien projet du même numéro, ${rejectedOtherAct} nommant une autre loi, ${rejectedWeak} sur un mot trop banal, ${tooEarly} antérieures à la 1re lecture`);
   const top = Object.entries(out).sort((a, b) => b[1].total - a[1].total).slice(0, 5);
   console.log('  top projets :', top.map(([n, v]) => `${n} (${v.total})`).join(' · '));
 }

@@ -26,7 +26,8 @@
     "scrape:lobbying": "node scrapers/lobbying.js",
     "build:ministers": "node scrapers/build-ministers-data.js",
     "refresh": "node scripts/refresh.js",
-    "build:pages": "node scripts/build-section-pages.js"
+    "build:pages": "node scripts/build-section-pages.js",
+    "scrape:past-bill-titles": "node scrapers/past-bill-titles.js"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.68.0",
