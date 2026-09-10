@@ -141,6 +141,12 @@ function bilingual(en, fr) {
 function deriveState(row) {
   if (row.ReceivedRoyalAssentDateTime) return 'loi';
   const status = (row.StatusNameEn || '').toLowerCase();
+  // Projet PRO FORMA : le rituel d'ouverture de session (S-1 « Loi concernant les
+  // chemins de fer », C-1 « Loi concernant la prestation de serments d'office »).
+  // Chaque chambre en dépose un avant le discours du Trône pour affirmer qu'elle
+  // légifère de son propre chef. Il n'est jamais imprimé, débattu ni voté. Le
+  // compter « en cours » gonflait le nombre de projets réellement vivants.
+  if (status.includes('pro forma')) return 'proforma';
   if (status.includes('defeated') || status.includes('not proceeded') || status.includes('withdrawn')) {
     return 'rejete';
   }
