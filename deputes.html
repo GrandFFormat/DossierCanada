@@ -3375,9 +3375,15 @@ function billCard(b, ctx){
     <button class="follow-btn ${isFlagged?'on':''}" id="${flagBtnId}" ${flagDisabled} onclick="event.stopPropagation(); ${flagOnclick}">${flagLabel}</button>
   </div>` : '';
 
-  // Partage du projet : bouton natif si le navigateur le supporte (mobile), sinon
-  // repli 𝕏 / Facebook / copier. Le lien pointe vers /projets-de-loi?pl=NUM.
-  const canNativeShare = (typeof navigator !== 'undefined' && !!navigator.share);
+  // Partage du projet : 𝕏 / Facebook / copier, sauf sur un appareil tactile où la
+  // feuille de partage native est la bonne réponse.
+  // ⚠️ `navigator.share` NE VEUT PAS DIRE « mobile ». Edge et Chrome l'exposent
+  // aussi sous Windows : le seul bouton « ↗ Partager » y ouvrait le gros panneau
+  // de partage de l'OS (Nearby Sharing, Teams, Outlook…) au milieu de la page.
+  // Le vrai critère, c'est le pointeur : grossier + du multitouch = un doigt.
+  const canNativeShare = (typeof navigator !== 'undefined' && !!navigator.share
+    && typeof matchMedia === 'function' && matchMedia('(pointer: coarse)').matches
+    && (navigator.maxTouchPoints || 0) > 0);
   const shareCtrls = canNativeShare
     ? `<button class="bill-share-btn" onclick="event.stopPropagation(); shareBill(${b.id}, 'native', event)">${isEn ? '↗ Share' : '↗ Partager'}</button>`
     : `<button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(${b.id}, 'x', event)" aria-label="${isEn ? 'Share on X' : 'Partager sur X'}">𝕏</button>`
