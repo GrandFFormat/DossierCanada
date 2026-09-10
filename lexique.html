@@ -68,7 +68,7 @@
     --shadow:5px 5px 0 #131313;
   }
   h1, h2, .brand-text h1{ font-family:'Archivo Black',sans-serif !important; text-transform:uppercase; letter-spacing:-0.015em; font-weight:400; }
-  .bill h3, .m-card h3, .vote-card h3, .depute-card h3, .petition-card h3, .role-card h3, .lexique-item dt, .calendar-box h3, .mission-box h2, .issue-body h3, .roadmap-body h4, .role-group-title{ font-family:'Archivo Black',sans-serif !important; text-transform:uppercase; letter-spacing:-0.01em; font-weight:400; line-height:1.15; }
+  .bill h3, .m-card h3, .vote-card h3, .depute-card h3, .petition-card h3, .role-card h3, .lexique-item dt, .calendar-box h3, .mission-box h2, .issue-body h3, .role-group-title{ font-family:'Archivo Black',sans-serif !important; text-transform:uppercase; letter-spacing:-0.01em; font-weight:400; line-height:1.15; }
   .dq-ticker{background:var(--ink); color:var(--paper); overflow:hidden;}
   header.top{ display:grid !important; grid-template-columns:1fr auto 1fr; align-items:center !important; gap:16px; padding:14px 26px !important; border-bottom:5px solid var(--ink) !important; }
   .brand{ display:block !important; font-family:'Archivo Black',sans-serif; font-size:38px; text-transform:uppercase; letter-spacing:-0.02em; text-align:center; cursor:pointer; line-height:1; color:var(--ink); }
@@ -667,14 +667,6 @@
   .issue-body h3{font-family:'IBM Plex Mono',monospace; font-size:15px; font-weight:600; margin:2px 0 4px;}
   .issue-body .meta{font-size:11.5px; color:var(--slate);}
 
-  .roadmap-item{display:flex; gap:16px; padding:16px 0; border-bottom:1px solid var(--line);}
-  .roadmap-item:last-child{border-bottom:none;}
-  .roadmap-status{flex:none; width:120px; font-family:'IBM Plex Mono',monospace; font-size:10.5px; text-transform:uppercase; letter-spacing:0.03em; padding-top:2px;}
-  .roadmap-status.now{color:var(--green);}
-  .roadmap-status.next{color:var(--gold);}
-  .roadmap-status.later{color:var(--slate);}
-  .roadmap-status.dropped{color:#B9BDC7;}
-  .roadmap-body h4{font-family:'IBM Plex Mono',monospace; font-size:14.5px; font-weight:600; margin:0 0 4px; display:flex; align-items:center; gap:8px;}
   .chamber-toggle{ display:flex; gap:8px; margin:16px 0 12px; flex-wrap:wrap; }
   .chamber-btn{ font-family:'IBM Plex Mono',monospace; font-size:12.5px; padding:7px 15px; border:1px solid var(--line); border-radius:999px; background:var(--card); color:var(--slate); cursor:pointer; transition:background .15s, color .15s; }
   .chamber-btn:hover{ border-color:var(--gold); color:var(--gold); }
@@ -784,24 +776,11 @@
   .ch-count{ white-space:nowrap; font-size:12.5px; }
   @keyframes jumpFlash { 0%, 60% { background:#175CD318; box-shadow:0 0 0 3px #175CD355; } 100% { background:transparent; box-shadow:none; } }
   .jump-highlight{ animation: jumpFlash 1.8s ease-out; border-radius:6px; }
-  .roadmap-plus{
-    font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:600; color:#fff;
-    background:var(--ink); border:none; border-radius:50%; width:18px; height:18px;
-    display:inline-flex; align-items:center; justify-content:center; cursor:pointer; flex:none;
-  }
-  .roadmap-recap{display:none; margin-top:10px; padding:12px 14px; background:var(--paper-2); border-radius:var(--radius); border:1px dashed var(--line);}
-  .roadmap-recap.open{display:block;}
-  .roadmap-recap p{font-size:12.5px; line-height:1.6; color:var(--ink); margin:0 0 10px; max-width:640px;}
-  .roadmap-recap-table-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch;}
   .compare-table-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch; margin-top:14px;}
   .compare-table{border-collapse:collapse; width:100%; min-width:560px; font-size:13px; background:var(--card); border:3px solid var(--line); border-radius:var(--radius); overflow:hidden;}
   .compare-table th, .compare-table td{text-align:left; padding:10px 14px; border-bottom:1px solid var(--line); vertical-align:top;}
   .compare-table th{font-family:'IBM Plex Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:0.03em; color:var(--slate); background:var(--paper-2);}
   .compare-table td:first-child{font-weight:600; color:var(--slate); white-space:nowrap;}
-  .roadmap-recap table{border-collapse:collapse; width:100%; min-width:520px; font-size:12px;}
-  .roadmap-recap th, .roadmap-recap td{text-align:left; padding:6px 10px; border-bottom:1px solid var(--line);}
-  .roadmap-recap th{font-family:'IBM Plex Mono',monospace; font-size:10.5px; text-transform:uppercase; color:var(--slate);}
-  .roadmap-body p{font-size:12.5px; color:var(--slate); line-height:1.6; margin:0; max-width:640px;}
 
   footer{
     max-width:1280px;margin:0 auto; padding:18px 28px 32px; border-top:3px solid var(--ink);
@@ -1473,7 +1452,6 @@ const translations = {
     'findmp.label':"Find your MP by postal code",
     'findmp.ph':"e.g. K1A 0A6",
     'findmp.btn':"Search",
-    'roadmap.title':"Roadmap — what's already here, what's coming",
     'creator.h':"A word from the creator",
     'creator.sub':"Who I am and why I built this site",
     'bd.back':"← Back to overview",
@@ -1612,7 +1590,6 @@ function applyLanguage(){
   renderApercuBills(); renderApercuStats(); renderPageBandCounts();
   renderApercuPetitions();
   renderNews();
-  renderRoadmap();
   renderSittings();
   renderChallenged();
   renderProvinceNetwork();
@@ -2580,57 +2557,6 @@ function renderNews(){
   }).join('') + (hasMore ? `<button class="bill-more" style="margin-top:14px; border:none; cursor:pointer;" onclick="loadMoreNews()">${moreBtn}</button>` : '');
 }
 function loadMoreNews(){ newsShown += 2; renderNews(); }
-
-// Feuille de route fédérale — rendue depuis une structure bilingue par renderRoadmap().
-const roadmapStatusLabels = {
-  now: { fr: 'Déjà là', en: 'Already there' },
-  next: { fr: 'Prochaine étape', en: 'Next step' },
-  later: { fr: 'À faire', en: 'To do' },
-  caution: { fr: 'À faire — prudence', en: 'To do — with caution' },
-  dropped: { fr: 'Idée écartée', en: 'Dropped for now' },
-};
-const roadmapItems = [
-  { status: 'now', h: { fr: "Suivre des député·e·s et ministres, sans compte", en: "Follow MPs and ministers, no account needed" }, p: { fr: "Le bouton « Suivre » fonctionne : votre choix est enregistré dans votre navigateur. Limite actuelle : il ne vous suit pas si vous changez d'appareil ou effacez vos données.", en: "The \"Follow\" button works: your choice is saved in your browser. Current limit: it won't follow you if you switch devices or clear your data." } },
-  { status: 'now', h: { fr: "Site bilingue français / anglais", en: "Bilingual French / English site" }, p: { fr: "Le bouton de langue traduit toute l'interface ET le contenu (projets, votes, cabinet, lexique, pétitions). Avantage fédéral : le contenu parlementaire est nativement bilingue officiel — pas de traduction maison à vérifier, contrairement au provincial.", en: "The language button translates the whole interface AND the content (bills, votes, cabinet, glossary, petitions). Federal advantage: parliamentary content is natively bilingual and official — no home-made translation to double-check, unlike the provincial site." } },
-  { status: 'now', h: { fr: "Détail nominatif des votes — qui a voté quoi", en: "By-MP vote detail — who voted what" }, p: { fr: "Les 173 votes par appel nominal de la session, avec le nom et le parti de chaque député·e (Pour / Contre / pairé), reliés par identifiant officiel (PersonId). Ouvrez « qui a voté quoi » sur n'importe quel vote. Les décomptes sont validés contre l'officiel, pas estimés.", en: "All 173 recorded votes of the session, with each MP's name and party (Yea / Nay / paired), linked by official identifier (PersonId). Open \"who voted what\" on any vote. Counts are validated against the official record, not estimated." } },
-  { status: 'now', h: { fr: "Résumés des projets de loi en langage clair", en: "Plain-language bill summaries" }, p: { fr: "Pour presque tous les projets : un résumé en langage clair, généré par IA (Claude) à partir du TEXTE OFFICIEL du projet (première lecture), bilingue et neutre. L'IA ne fait que reformuler le texte officiel pour le rendre lisible — rien n'est inventé, aucun jugement — et le texte officiel reste lié sur chaque fiche.", en: "For nearly every bill: a plain-language summary, AI-generated (Claude) from the bill's OFFICIAL TEXT (first reading), bilingual and neutral. The AI only rewords the official text to make it readable — nothing invented, no judgment — and the official text stays linked on every card." } },
-  { status: 'now', h: { fr: "Trouver mon député par code postal", en: "Find my MP by postal code" }, p: { fr: "Entrez votre code postal dans l'onglet Députés pour trouver votre député·e — via l'API Represent d'OpenNorth, du contenu public.", en: "Enter your postal code in the MPs tab to find your MP — via OpenNorth's Represent API, public data." } },
-  { status: 'now', h: { fr: "Conseil des ministres (cabinet)", en: "Cabinet" }, p: { fr: "Le cabinet fédéral actuel avec les portefeuilles bilingues, depuis la page officielle du premier ministre, et le taux de présence de chaque ministre comme député·e.", en: "The current federal Cabinet with bilingual portfolios, from the Prime Minister's official page, plus each minister's attendance rate as an MP." } },
-  { status: 'now', h: { fr: "Pétitions électroniques ouvertes", en: "Open e-petitions" }, p: { fr: "Les pétitions actuellement ouvertes à la signature (les plus récentes), avec un lien direct pour les signer sur ourcommons.ca. Lu depuis la liste publique — jamais l'export protégé par reCAPTCHA.", en: "The e-petitions currently open for signature (most recent), with a direct link to sign them on ourcommons.ca. Read from the public list — never the reCAPTCHA-gated export." } },
-  { status: 'now', h: { fr: "Rafraîchissement automatique quotidien", en: "Automatic daily refresh" }, p: { fr: "Un robot (GitHub Actions) rescrape toutes les sources chaque jour et redéploie le site automatiquement — les données suivent le Parlement sans aucune intervention.", en: "A bot (GitHub Actions) re-scrapes every source daily and redeploys the site automatically — the data follows Parliament with no manual step." } },
-  { status: 'now', h: { fr: "Le Sénat — deuxième chambre", en: "The Senate — second chamber" }, p: { fr: "Les sénateur·rice·s (nommé·e·s, ~95 sièges pourvus sur 105) et les votes par appel nominal du Sénat, via sencanada.ca : groupe parlementaire, région, date de nomination, présence, et le détail nominatif « qui a voté quoi ». Accessible par le sélecteur Communes / Sénat dans les onglets Députés et Votes. Les deux chambres du Parlement sont désormais couvertes.", en: "Senators (appointed, ~95 of 105 seats filled) and the Senate's recorded votes, via sencanada.ca: parliamentary group, region, appointment date, attendance, and the by-senator \"who voted what\" detail. Reachable via the Commons / Senate switch in the MPs and Votes tabs. Both chambers of Parliament are now covered." } },
-  { status: 'now', h: { fr: "Comptes et suivis synchronisés entre appareils", en: "Accounts and follows synced across devices" }, p: { fr: "Connexion par lien magique (courriel gratuit, aucun mot de passe) via une base de données canadienne protégée. Vos suivis de député·e·s, ministres et projets de loi vous suivent d'un appareil à l'autre. Les courriels du site partent de notre propre domaine, authentifié.", en: "Magic-link sign-in (free, by email, no password) backed by a protected Canadian database. Your follows of MPs, ministers and bills go with you from one device to another. The site's emails are sent from our own authenticated domain." } },
-  { status: 'now', h: { fr: "Digest courriel hebdomadaire", en: "Weekly email digest" }, p: { fr: "Suivez un projet de loi et recevez un résumé bilingue quand il a du nouveau — un seul courriel par semaine (le lundi matin), jamais un par changement, avec désabonnement en un clic. Le texte de chaque changement est la dernière activité officielle du projet, jamais une reformulation.", en: "Follow a bill and get a bilingual summary when something happens — a single email per week (Monday morning), never one per change, with one-click unsubscribe. Each change's wording is the bill's official latest activity, never a paraphrase." } },
-  { status: 'later', h: { fr: "Demander des explications sur un projet (+ pétition)", en: "Ask for an explanation on a bill (+ petition)" }, p: { fr: "Permettre à toute personne connectée de demander des explications sur un projet actif ; à un certain seuil, viser une pétition parrainée par un·e député·e. Les pétitions fédérales sont justement parrainées par un·e député·e, ce qui colle au modèle. Jamais un verdict, seulement « ce dossier mérite des explications ».", en: "Let any signed-in person request explanations on an active bill; past a threshold, aim for a petition sponsored by an MP. Federal e-petitions are, precisely, sponsored by an MP, which fits the model. Never a verdict, only \"this file deserves some explanation.\"" } },
-  { status: 'now', h: { fr: "Comparateur de député·e·s", en: "MP comparator" }, p: { fr: "Comparez deux député·e·s (ministres compris) côte à côte — rôle, parti, circonscription, en fonction depuis, présence aux votes, projets parrainés. Onglet Députés, en bas. Même esprit que le reste du site : des faits, jamais un classement.", en: "Compare any two MPs (ministers included) side by side — role, party, riding, in office since, vote attendance, sponsored bills. MPs tab, at the bottom. Same spirit as the rest of the site: facts, never a ranking." } },
-  { status: 'now', h: { fr: "Coordonnées publiques des député·e·s", en: "Public contact details for MPs" }, p: { fr: "Le courriel parlementaire officiel de chaque député·e, lu directement sur sa fiche ourcommons.ca (jamais deviné), affiché sur sa carte et dans le comparateur. Réseaux sociaux volontairement exclus : pas de source officielle fiable pour les rattacher sans risque de se tromper de personne.", en: "Each MP's official parliamentary email, read straight from their ourcommons.ca profile (never guessed), shown on their card and in the comparator. Social media deliberately left out: no reliable official source to match them without risk of mixing up people." } },
-  { status: 'now', h: { fr: "Calendrier des séances, jour par jour", en: "Day-by-day sitting calendar" }, p: { fr: "Les prochains jours de séance de la Chambre des communes, en page d'accueil — depuis le calendrier officiel adopté (qui peut changer). Les horaires des comités et le calendrier du Sénat ne sont pas encore couverts.", en: "The House of Commons' upcoming sitting days, on the front page — from the official adopted calendar (which can change). Committee schedules and the Senate calendar are not covered yet." } },
-  { status: 'later', h: { fr: "Recherche dans le texte intégral des projets", en: "Full-text search of bills" }, p: { fr: "La recherche couvre les titres et les sommaires ; l'étendre au texte complet des projets de loi pour retrouver un mot précis qui n'apparaît que dans le texte.", en: "Search covers titles and summaries; extend it to the full text of bills to surface a specific word that only appears in the text." } },
-  { status: 'now', h: { fr: "Registre fédéral des lobbyistes", en: "Federal lobbyist registry" }, p: { fr: "Chaque projet de loi affiche désormais le <b>lobbying déclaré</b> qui le nomme : nombre de communications, organisations les plus actives, et les dix rencontres les plus récentes (date, organisation, personne rencontrée, institution), chacune liée à sa fiche officielle. Deux limites assumées : les fichiers du Commissariat n'ont pas d'API et leur hôte refuse l'accès automatisé — l'archive est donc rechargée à la main, environ une fois par mois, au rythme de sa publication ; et comme les numéros de projets sont recyclés d'une législature à l'autre, on ne compte que les communications dont la description nomme le numéro <i>et</i> le titre du projet. Le décompte affiché est donc un plancher, jamais une approximation gonflée.", en: "Every bill now shows the <b>registered lobbying</b> that names it: number of communications, most active organizations, and the ten most recent meetings (date, organization, person met, institution), each linked to its official record. Two acknowledged limits: the Commissioner's files have no API and their host blocks automated access — so the archive is refreshed by hand, roughly monthly, matching its publication rhythm; and because bill numbers are reused from one Parliament to the next, we only count communications whose description names both the number <i>and</i> the bill's title. The figure shown is a floor, never an inflated estimate." } },
-  { status: 'now', h: { fr: "Dons volontaires pour soutenir le projet", en: "Voluntary donations to support the project" }, p: { fr: "En ligne : le bouton « Offre-moi un café » du pied de page mène à un lien de paiement Stripe (don volontaire), sans aucune publicité et sans serveur.", en: "Live: the \"Buy me a coffee\" button in the footer links to a Stripe payment link (voluntary donation), with no advertising and no server." } },
-  { status: 'caution', h: { fr: "Promesses vs actions du gouvernement", en: "Campaign promises vs. government actions" }, p: { fr: "À considérer avec prudence : jamais un verdict « tenue / brisée » écrit par moi — seulement la promesse et l'action, chacune sourcée, côte à côte, pour que vous jugiez. Devrait couvrir tous les partis représentés (LPC, CPC, BQ, NPD, GPC), pas seulement le gouvernement.", en: "To consider, with caution: never a \"kept / broken\" verdict written by me — only the promise and the action, each sourced, side by side, for you to judge. Should cover every represented party (LPC, CPC, BQ, NDP, GPC), not just the government." } },
-  { status: 'dropped', h: { fr: "Système de notation des ministres", en: "Minister rating system" }, p: { fr: "Écarté délibérément : ça ferait passer le site de « je rapporte des faits vérifiables » à « je juge de vraies personnes », sans méthodologie solide. Gardé ici pour mémoire.", en: "Deliberately dropped: it would shift the site from \"I report verifiable facts\" to \"I judge real people,\" without a solid methodology. Kept here for the record." } },
-  { status: 'dropped', h: { fr: "Pas de photos de député·e·s", en: "No MP photos" }, p: { fr: "Choix éditorial : on s'en tient à la fonction et aux faits, sans personnaliser les individus. Les fiches utilisent les initiales et un lien vers la fiche officielle.", en: "Editorial choice: we stick to function and facts, without personalizing individuals. Cards use initials and a link to the official profile." } },
-];
-function renderRoadmap(){
-  const el = document.getElementById('roadmapList');
-  if(!el) return;
-  const isEn = currentLang === 'en';
-  const L = o => isEn ? (o.en || o.fr) : (o.fr || o.en);
-  const cls = { now: 'now', next: 'next', later: 'later', caution: 'later', dropped: 'dropped' };
-  el.innerHTML = roadmapItems.map(it => `
-    <div class="roadmap-item">
-      <div class="roadmap-status ${cls[it.status] || 'later'}">${L(roadmapStatusLabels[it.status])}</div>
-      <div class="roadmap-body"><h4>${L(it.h)}</h4><p>${L(it.p)}</p></div>
-    </div>`).join('');
-}
-
-function toggleRoadmapRecap(id){
-  const el = document.getElementById(id);
-  const hint = document.getElementById('hint-'+id);
-  const isOpen = el.classList.toggle('open');
-  hint.textContent = isOpen ? '−' : '+';
-}
 
 // Vraies pétitions électroniques ouvertes pour signature — ourcommons.ca
 // Confirmées deux fois : une première fois par un fetch direct, une seconde fois
@@ -4678,24 +4604,6 @@ document.getElementById('searchLexique')?.addEventListener('input', ()=> renderL
 document.getElementById('searchVotes').addEventListener('input', ()=> { votesShown = 6; renderVotes(); });
 
 /* ---------------- INIT ---------------- */
-function sortRoadmapItems(){
-  const container = document.getElementById('view-compte');
-  if(!container) return;
-  const items = [...container.querySelectorAll(':scope > .roadmap-item')];
-  const priority = { now: 0, next: 1, later: 2 };
-  const getPriority = (item) => {
-    const statusEl = item.querySelector('.roadmap-status');
-    for(const cls of statusEl.classList){
-      if(cls in priority) return priority[cls];
-    }
-    return 99;
-  };
-  items
-    .map((item, i) => ({ item, i, p: getPriority(item) }))
-    .sort((a,b) => a.p - b.p || a.i - b.i)
-    .forEach(({item}) => container.appendChild(item));
-}
-
 (async function init(){
   await loadFollowed();
   await loadIntroState();
@@ -4704,7 +4612,6 @@ function sortRoadmapItems(){
   await loadFollowedBills();
   await initAuth();
   renderHemicycle();
-  sortRoadmapItems();
   renderMinistres();
   renderStatusFilters();
   renderStepFilters();
@@ -4721,7 +4628,6 @@ function sortRoadmapItems(){
   renderVotes();
   renderDeputes();
   renderNews();
-  renderRoadmap();
   renderSittings();
   renderChallenged();
   renderProvinceNetwork();
