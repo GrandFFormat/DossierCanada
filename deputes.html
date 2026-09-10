@@ -2650,6 +2650,18 @@ function norm(s){
     .trim();
 }
 
+// Recherche tolérante aux traits d'union. norm() remplace « - » par une espace :
+// « C-5 » devient « c 5 », si bien que taper « c5 » ne trouvait rien alors que
+// « c-5 » marchait. On retente donc la comparaison sur les deux chaînes privées
+// de leurs espaces — « c5 » retrouve « C-5 », « troisrivieres » retrouve
+// « Trois-Rivières », « jeanpierre » retrouve « Jean-Pierre ».
+// Purement additif : tout ce qui trouvait déjà trouve encore.
+function matchesSearch(haystack, kw){
+  if(!kw) return true;
+  const h = norm(haystack);
+  return h.includes(kw) || h.replace(/ /g, '').includes(kw.replace(/ /g, ''));
+}
+
 // « Trouver mon député » — code postal → circonscription (API Represent d'OpenNorth,
 // CORS ouvert) → correspondance avec notre roster par nom de circonscription
 // normalisé. Fonctionnalité optionnelle : si le réseau échoue, le reste du site
@@ -2718,11 +2730,7 @@ function renderDeputes(filter){
   const L = o => (o && typeof o === 'object') ? (isEn ? (o.en ?? o.fr ?? '') : (o.fr ?? o.en ?? '')) : (o ?? '');
   const list = deputes.filter(d =>
     (!partyFilter || d.party.code === partyFilter) &&
-    (!f ||
-      norm(d.name).includes(f) ||
-      norm(L(d.constituency)).includes(f) ||
-      norm(d.constituency.en).includes(f) ||
-      norm(L(d.province)).includes(f))
+    matchesSearch([d.name, L(d.constituency), d.constituency.en, L(d.province)].join(' '), f)
   ).sort((a,b) => a.name.localeCompare(b.name, 'fr'));
   // Titre : avec un filtre de parti, annoncer le parti et le compte (ministres
   // compris — ce sont des député·e·s) ; sinon le titre générique habituel.
@@ -2996,12 +3004,12 @@ function renderMinistres(filter){
 
     const f = norm(filter);
     const minList = ministers
-      .filter(m => (!partyFilter || m.party===partyFilter) && (!f || norm(m.name).includes(f) || norm(m.role).includes(f) || norm(m.roleEn||'').includes(f)))
+      .filter(m => (!partyFilter || m.party===partyFilter) && matchesSearch([m.name, m.role, m.roleEn||''].join(' '), f))
       .map(m => ({ type:'minister', m, att: computeAttendance(m.name), combined: true }));
     const ministerNames = new Set(ministers.map(m => norm(m.name.replace(/\s*\([^)]*\)\s*/g,''))));
     const depList = deputes
-      .filter(d => !ministerNames.has(norm(d.name)) && (!partyFilter || d.party===partyFilter) && (!f ||
-        norm(d.name).includes(f) || norm(d.riding).includes(f) || norm(d.region).includes(f)))
+      .filter(d => !ministerNames.has(norm(d.name)) && (!partyFilter || d.party===partyFilter)
+        && matchesSearch([d.name, d.riding, d.region].join(' '), f))
       .map(d => ({ type:'depute', d, att: attendanceFromRecord(d) }));
     const combined = sortByAttendance([...minList, ...depList], ministresSortMode);
 
@@ -3023,7 +3031,7 @@ function renderMinistres(filter){
 
   const L = o => (o && typeof o === 'object') ? (isEn ? (o.en ?? o.fr ?? '') : (o.fr ?? o.en ?? '')) : (o ?? '');
   const f = norm(filter);
-  const list = ministers.filter(m => (!partyFilter || m.party === partyFilter) && (!f || norm(m.name).includes(f) || norm(L(m.role)).includes(f)));
+  const list = ministers.filter(m => (!partyFilter || m.party === partyFilter) && matchesSearch([m.name, L(m.role)].join(' '), f));
   const shown = (!ministresShowAll && list.length > 8) ? list.slice(0, 8) : list;
   const remaining = list.length - shown.length;
   const moreTile = remaining > 0
@@ -3636,8 +3644,8 @@ function renderBills(keyword){
     const statusOk = !billsStatusFilter || b.state === billsStatusFilter;
     const chamberOk = billsStepFilter === null || b.chamber === billsStepFilter;
     const lobbyOk = !billsLobbyFilter || !!(typeof lobbying !== 'undefined' && lobbying.bills && lobbying.bills[b.num]);
-    const haystack = norm([b.title && b.title.fr, b.title && b.title.en, 'projet de loi ' + b.num, b.sponsor && (b.sponsor.fr||b.sponsor.en)].join(' '));
-    const kwOk = !kw || haystack.includes(kw);
+    const haystack = [b.title && b.title.fr, b.title && b.title.en, 'projet de loi ' + b.num, 'bill ' + b.num, b.sponsor && (b.sponsor.fr||b.sponsor.en)].join(' ');
+    const kwOk = matchesSearch(haystack, kw);
     return statusOk && chamberOk && lobbyOk && kwOk;
   }).sort((a,b)=>{
     // Filtre lobbying actif : on classe du plus lobbyé au moins lobbyé — c'est
@@ -3864,11 +3872,7 @@ function renderSenators(filter){
   const f = norm(filter !== undefined ? filter : (document.getElementById('searchMinistres')?.value || ''));
   const list = senators.filter(s =>
     (!senateGroupFilter || (s.group.code || 'Non-affiliated') === senateGroupFilter) &&
-    (!f ||
-    norm(s.name).includes(f) ||
-    norm(L(s.province)).includes(f) ||
-    norm(s.group.code || '').includes(f) ||
-    norm(L({ en: s.group.enName, fr: s.group.frName })).includes(f))
+    matchesSearch([s.name, L(s.province), s.group.code || '', L({ en: s.group.enName, fr: s.group.frName })].join(' '), f)
   ).sort((a, b) => a.lastName.localeCompare(b.lastName, 'fr'));
   const el = document.getElementById('deputesList');
   const LIMIT = 11;
@@ -4131,7 +4135,7 @@ function renderLexique(){
   const lexQ = norm(document.getElementById('searchLexique') ? document.getElementById('searchLexique').value : '');
   let lexTerms = lexiconTerms;
   if(lexCatFilter) lexTerms = lexTerms.filter(t => catOf(t) === lexCatFilter);
-  if(lexQ) lexTerms = lexTerms.filter(t => norm(L(t.term)).includes(lexQ) || norm(L(t.def)).includes(lexQ));
+  if(lexQ) lexTerms = lexTerms.filter(t => matchesSearch([L(t.term), L(t.def)].join(' '), lexQ));
   const lexChips = `<div class="lex-cats">
       <span class="lex-chip${!lexCatFilter ? ' active' : ''}" onclick="setLexCat(null)">${isEn ? 'All' : 'Tout'}</span>
       ${Object.keys(LEX_CATS).map(k => `<span class="lex-chip${lexCatFilter === k ? ' on' : ''}" style="${lexCatFilter === k ? 'background:' + LEX_CATS[k].color + ';' : ''}" onclick="setLexCat('${k}')">${isEn ? LEX_CATS[k].en : LEX_CATS[k].fr} (${lexiconTerms.filter(t => catOf(t) === k).length})</span>`).join('')}
@@ -4532,7 +4536,7 @@ function renderVotes(keyword){
   // sans projet de loi rattaché. Plus de bouton pour les cacher.
   const src = senate ? (typeof senateVotes !== 'undefined' ? senateVotes : []) : votes;
   const full = src
-    .filter(v => !kw || norm([senate ? L(v.title) : L(v.description), v.billNumber || ''].join(' ')).includes(kw))
+    .filter(v => matchesSearch([senate ? L(v.title) : L(v.description), v.billNumber || ''].join(' '), kw))
     .sort((a, b) => (b.date || '').localeCompare(a.date || '') || ((b.number || b.id || 0) - (a.number || a.id || 0)));
   const list = full.slice(0, votesShown);
   const el = document.getElementById('votesList');
