@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T16:40:34.722Z",
+  "generatedAt": "2026-09-10T16:56:24.247Z",
   "session": "45-1",
   "meta": {
     "counts": {
@@ -14694,7 +14694,7 @@
         "en": "Introduced as pro forma bill",
         "fr": "Présenté en tant que projet de loi pro forma"
       },
-      "state": "encours",
+      "state": "proforma",
       "milestones": [
         {
           "stage": "commons_first_reading",
@@ -14753,7 +14753,7 @@
         "en": "Introduced as pro forma bill",
         "fr": "Présenté en tant que projet de loi pro forma"
       },
-      "state": "encours",
+      "state": "proforma",
       "milestones": [
         {
           "stage": "senate_first_reading",

@@ -1,7 +1,7 @@
 {
   "source": "https://www.parl.ca/legisinfo/en/bills/json?parlsession=45-1",
   "session": "45-1",
-  "scrapedAt": "2026-09-10T12:50:16.591Z",
+  "scrapedAt": "2026-09-10T16:54:17.901Z",
   "count": 185,
   "bills": [
     {
@@ -12737,7 +12737,7 @@
         "en": "Introduced as pro forma bill",
         "fr": "Présenté en tant que projet de loi pro forma"
       },
-      "state": "encours",
+      "state": "proforma",
       "milestones": [
         {
           "stage": "commons_first_reading",
@@ -12795,7 +12795,7 @@
         "en": "Introduced as pro forma bill",
         "fr": "Présenté en tant que projet de loi pro forma"
       },
-      "state": "encours",
+      "state": "proforma",
       "milestones": [
         {
           "stage": "senate_first_reading",
@@ -12829,5 +12829,5 @@
       "summarySource": null
     }
   ],
-  "summariesScrapedAt": "2026-09-10T12:52:13.012Z"
+  "summariesScrapedAt": "2026-09-10T16:56:24.157Z"
 }
