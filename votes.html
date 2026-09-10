@@ -385,6 +385,7 @@
   .lob.open .lob-body{cursor:auto;}
   .lob-title{font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.04em; color:var(--gold);}
   .lob-count{font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--ink); background:var(--cyan); padding:1px 6px; font-weight:700;}
+  .lob-asof{font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:var(--slate); white-space:nowrap;}
   .lob-toggle{margin-left:auto; font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--slate); white-space:nowrap;}
   .lob-orgs{display:flex; flex-wrap:wrap; gap:4px; margin:8px 0 0;}
   .lob-org{font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:var(--ink); background:var(--paper); border:1px solid var(--ink); padding:1px 6px;}
@@ -3306,12 +3307,27 @@ function lobbyingBlock(b, isEn){
 
   const shown = (src.recent||[]).length;
   const title = isEn ? 'Registered lobbying' : 'Lobbying déclaré';
+
+  // Date des données, TOUJOURS visible — pas seulement une fois le bloc déplié.
+  // Ce jeu est le seul que la machine ne rafraîchit pas seule : afficher « 157
+  // communications » sans dire de quand ça date reviendrait à laisser croire que
+  // c'est d'hier. Forme courte dans l'en-tête, date pleine dans la note.
+  const stamp = (typeof lobbying !== 'undefined' && lobbying.updatedAt) ? new Date(lobbying.updatedAt) : null;
+  const loc = isEn ? 'en-CA' : 'fr-CA';
+  const asOfShort = stamp ? stamp.toLocaleDateString(loc, { day: 'numeric', month: 'short', year: 'numeric' }) : null;
+  const asOfLong = stamp ? stamp.toLocaleDateString(loc, { day: 'numeric', month: 'long', year: 'numeric' }) : null;
+  const asOfChip = asOfShort ? `<span class="lob-asof">${isEn ? 'as of' : 'au'} ${esc(asOfShort)}</span>` : '';
   const count = isEn
     ? `${src.total} communication${src.total>1?'s':''} · ${nOrg} organization${nOrg>1?'s':''}`
     : `${src.total} communication${src.total>1?'s':''} · ${nOrg} organisation${nOrg>1?'s':''}`;
   const toggle = isEn
     ? `the ${shown} most recent +`
     : `les ${shown} plus récentes +`;
+  const freshness = asOfLong
+    ? (isEn
+        ? ` Registry archive read on ${asOfLong}; the Commissioner republishes it about monthly, and we refresh it by hand.`
+        : ` Archive du registre lue le ${asOfLong} ; le Commissariat la republie environ tous les mois, et on la rafraîchit à la main.`)
+    : '';
   const note = isEn
     ? `Communications reported to the Office of the Commissioner of Lobbying that name this bill. Lobbying is a lawful, publicly registered activity — this count is a fact, not a verdict. Only communications whose description names both the bill number and its title are counted, so the real total may be higher.`
     : `Communications déclarées au Commissariat au lobbying du Canada qui nomment ce projet de loi. Le lobbying est une activité légale et publiquement enregistrée — ce décompte est un fait, pas un verdict. On ne compte que les communications dont la description nomme le numéro <em>et</em> le titre du projet : le total réel peut être plus élevé.`;
@@ -3324,13 +3340,14 @@ function lobbyingBlock(b, isEn){
     <div class="lob-head">
       <span class="lob-title">${title}</span>
       <span class="lob-count">${count}</span>
+      ${asOfChip}
       <span class="lob-toggle">${toggle}</span>
     </div>
     <div class="lob-orgs">${orgs}</div>
     <div class="lob-body">
       ${orgsRest ? `<div class="lob-orgs" style="margin:0 0 10px;">${orgsRest}</div>` : ''}
       ${items}
-      <p class="lob-note">${note}</p>
+      <p class="lob-note">${note}${freshness}</p>
     </div>
   </div>`;
 }

@@ -16,7 +16,7 @@
 //
 // Lancé par « npm run refresh » (en local comme dans GitHub Actions).
 import { execSync } from 'node:child_process';
-import { appendFileSync } from 'node:fs';
+import { appendFileSync, readFileSync } from 'node:fs';
 
 // Ordre d'exécution des scrapers. Chacun écrit son propre data/*.json à la fin ;
 // ils sont indépendants (bill-summaries / bill-ai-summaries lisent bills.json, qui
@@ -55,6 +55,24 @@ for (const s of SCRAPERS) {
     failedScrapers.push(s.replace(/^scrape:/, ''));
     console.error(`⚠ ${s} a échoué — on garde ses données précédentes et on continue.`);
   }
+}
+
+// PÉREMPTION DU LOBBYING — le seul jeu de données que la machine ne peut pas
+// rafraîchir seule (l'hôte du registre bloque l'accès automatisé, l'archive est
+// téléchargée à la main). Le scraper sort donc en code 0 sans rien faire : sans
+// ce contrôle, les données vieilliraient en silence et personne ne le saurait.
+// Le Commissariat republie environ tous les mois ; 40 jours laisse de la marge.
+const LOBBY_MAX_DAYS = 40;
+try {
+  const lob = JSON.parse(readFileSync('data/lobbying.json', 'utf-8'));
+  const days = Math.floor((Date.now() - new Date(lob.scrapedAt)) / 86400000);
+  console.log(`\n  lobbying : données de ${days} jour(s)`);
+  if (days > LOBBY_MAX_DAYS) {
+    failedScrapers.push(`lobbying (données de ${days} j — retélécharger l'archive du registre)`);
+    console.error(`⚠ Lobbying périmé : ${days} jours. Voir l'en-tête de scrapers/lobbying.js.`);
+  }
+} catch {
+  console.warn('  lobbying : data/lobbying.json illisible ou absent — contrôle de fraîcheur sauté.');
 }
 
 let buildsOk = true;
