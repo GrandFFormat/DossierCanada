@@ -12,7 +12,12 @@
 <meta property="og:title" content="DossierCanada — Qui siège, qui légifère, qui vote quoi">
 <meta property="og:description" content="Site citoyen indépendant qui suit le Parlement du Canada — députés, projets de loi, votes — en clair et sans jugement. · Independent citizen-run site tracking Canada's Parliament — MPs, bills, votes — in plain language.">
 <meta property="og:url" content="https://dossiercanada.ca">
-<meta property="og:image" content="https://dossiercanada.ca/og-image.png">
+<!-- og:image et twitter:image pointent sur www, PAS sur l'apex : dossiercanada.ca
+     renvoie un 308 vers www, et un robot qui ne suit pas les redirections pour les
+     images recevait 15 octets de text/plain au lieu du PNG — d'ou une carte X sans
+     visuel. Le HTML, lui, garde l'apex (liens courts). Si le domaine principal
+     change dans Vercel, ces trois URL doivent suivre. -->
+<meta property="og:image" content="https://www.dossiercanada.ca/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="fr_CA">
@@ -20,7 +25,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="DossierCanada">
 <meta name="twitter:description" content="Site citoyen indépendant qui suit le Parlement du Canada — députés, projets de loi, votes — en clair et sans jugement. · Independent citizen-run site tracking Canada's Parliament — MPs, bills, votes — in plain language.">
-<meta name="twitter:image" content="https://dossiercanada.ca/og-image.png">
+<meta name="twitter:image" content="https://www.dossiercanada.ca/og-image.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -35,7 +40,7 @@
     "@type": "Organization",
     "name": "DossierCanada",
     "url": "https://dossiercanada.ca/",
-    "logo": "https://dossiercanada.ca/og-image.png"
+    "logo": "https://www.dossiercanada.ca/og-image.png"
   }
 }
 </script>
