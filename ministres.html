@@ -366,8 +366,9 @@
   .bill-summary .src-note{font-size:10.5px; color:var(--slate); margin:2px 0 0; font-style:italic;}
   /* Lobbying déclaré — bloc replié par défaut : la fiche reste courte, le détail
      s'ouvre à la demande (même logique que « qui a voté quoi »). */
-  .lob{margin:12px 0 0; border:2px solid var(--ink); background:var(--paper-2); padding:9px 11px;}
-  .lob-head{display:flex; align-items:baseline; gap:8px; flex-wrap:wrap; cursor:pointer;}
+  .lob{margin:12px 0 0; border:2px solid var(--ink); background:var(--paper-2); padding:9px 11px; cursor:pointer;}
+  .lob-head{display:flex; align-items:baseline; gap:8px; flex-wrap:wrap;}
+  .lob.open .lob-body{cursor:auto;}
   .lob-title{font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.04em; color:var(--gold);}
   .lob-count{font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--ink); background:var(--cyan); padding:1px 6px; font-weight:700;}
   .lob-toggle{margin-left:auto; font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--slate); white-space:nowrap;}
@@ -3203,6 +3204,16 @@ function billSummaryHtml(b, isEn){
 // de « pression », pas de verdict. Chaque ligne pointe vers sa fiche officielle
 // pour que le lecteur vérifie lui-même. Le bloc est replié par défaut : la fiche
 // de projet doit rester lisible.
+// Bascule du bloc de lobbying. Toujours stopPropagation : sans ça le clic
+// remonte à la fiche de projet et referme le sommaire sous les doigts du lecteur.
+// On ne bascule PAS depuis le corps déplié ni depuis un lien — sinon on referme
+// le bloc en plein milieu d'une lecture, ou en visant une fiche du registre.
+function toggleLobbying(el, evt){
+  evt.stopPropagation();
+  if(evt.target.closest('a') || evt.target.closest('.lob-body')) return;
+  el.classList.toggle('open');
+}
+
 function lobbyingBlock(b, isEn){
   const src = (typeof lobbying !== 'undefined' && lobbying && lobbying.bills) ? lobbying.bills[b.num] : null;
   if(!src || !src.total) return '';
@@ -3240,8 +3251,12 @@ function lobbyingBlock(b, isEn){
     ? `Communications reported to the Office of the Commissioner of Lobbying that name this bill. Lobbying is a lawful, publicly registered activity — this count is a fact, not a verdict. Only communications whose description names both the bill number and its title are counted, so the real total may be higher.`
     : `Communications déclarées au Commissariat au lobbying du Canada qui nomment ce projet de loi. Le lobbying est une activité légale et publiquement enregistrée — ce décompte est un fait, pas un verdict. On ne compte que les communications dont la description nomme le numéro <em>et</em> le titre du projet : le total réel peut être plus élevé.`;
 
-  return `<div class="lob" id="${id}">
-    <div class="lob-head" onclick="event.stopPropagation(); document.getElementById('${id}').classList.toggle('open')">
+  // Le clic est capté par TOUTE la boîte, pas seulement l'en-tête : cliquer sur
+  // une pastille d'organisation remontait jusqu'à la fiche de projet et refermait
+  // le sommaire. On arrête donc systématiquement la propagation. Une fois ouvert,
+  // un clic dans le corps (ou sur un lien) ne referme rien : on lit tranquille.
+  return `<div class="lob" id="${id}" onclick="toggleLobbying(this, event)">
+    <div class="lob-head">
       <span class="lob-title">${title}</span>
       <span class="lob-count">${count}</span>
       <span class="lob-toggle">${toggle}</span>
