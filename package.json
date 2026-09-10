@@ -23,6 +23,7 @@
     "scrape:senate-votes": "node scrapers/senate-votes.js",
     "scrape:house-calendar": "node scrapers/house-calendar.js",
     "scrape:officeholders": "node scrapers/officeholders.js",
+    "scrape:lobbying": "node scrapers/lobbying.js",
     "build:ministers": "node scrapers/build-ministers-data.js",
     "refresh": "node scripts/refresh.js",
     "build:pages": "node scripts/build-section-pages.js"

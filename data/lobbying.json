@@ -1,0 +1,6066 @@
+{
+  "source": "Commissariat au lobbying du Canada — Rapports mensuels de communications",
+  "sourceUrl": "https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=",
+  "session": "45-1",
+  "sessionStart": "2025-05-26",
+  "scrapedAt": "2026-09-10T10:44:55.325Z",
+  "billsWithLobbying": 50,
+  "bills": {
+    "C-5": {
+      "total": 180,
+      "orgTotal": 25,
+      "orgs": [
+        {
+          "name": {
+            "en": "Canadian Association of Petroleum Producers",
+            "fr": "Association Canadienne des Producteurs Pétroliers"
+          },
+          "n": 35
+        },
+        {
+          "name": "Kee Tas Kee Now Tribal Council",
+          "n": 26
+        },
+        {
+          "name": {
+            "en": "Food and Beverage Canada",
+            "fr": "Aliment et boissons Canada"
+          },
+          "n": 22
+        },
+        {
+          "name": {
+            "en": "Canadian Produce Marketing Association",
+            "fr": "Association canadienne de la distribution de fruits et légumes"
+          },
+          "n": 18
+        },
+        {
+          "name": {
+            "en": "Canadian Parks and Wilderness Society",
+            "fr": "Société pour la nature et les parcs du Canada"
+          },
+          "n": 14
+        },
+        {
+          "name": "Canada's Building Trade Unions",
+          "n": 7
+        },
+        {
+          "name": "Treaty 8 First Nations of Alberta",
+          "n": 7
+        },
+        {
+          "name": "Environmental Defence Canada",
+          "n": 7
+        },
+        {
+          "name": "Confederacy of Treaty Six First Nations",
+          "n": 6
+        },
+        {
+          "name": "Oil Sands Alliance Inc. (formerly Pathways Alliance Inc.)",
+          "n": 5
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "697937",
+          "date": "2026-08-12",
+          "org": "Canada's Building Trade Unions",
+          "dpoh": [
+            {
+              "name": "Keiran Gibbs",
+              "title": "Chief of Staff to the Minister",
+              "institution": "Employment and Social Development Canada (ESDC)"
+            },
+            {
+              "name": "Miles Wu",
+              "title": "Senior Policy Advisor to the Minister of Jobs and Families",
+              "institution": "Employment and Social Development Canada (ESDC)"
+            },
+            {
+              "name": "Sebastian Clarke",
+              "title": "Director",
+              "institution": "Employment and Social Development Canada (ESDC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "697935",
+          "date": "2026-08-12",
+          "org": "Canada's Building Trade Unions",
+          "dpoh": [
+            {
+              "name": "Paul Moen",
+              "title": "Chief of Staff",
+              "institution": "Innovation, Science and Economic Development Canada (ISED)"
+            }
+          ]
+        },
+        {
+          "comlogId": "699077",
+          "date": "2026-08-07",
+          "org": {
+            "en": "Quebec Environmental Law Centre",
+            "fr": "Centre québécois du droit de l'environnement"
+          },
+          "dpoh": [
+            {
+              "name": "Patrick Bonin",
+              "title": "Député",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "698538",
+          "date": "2026-07-28",
+          "org": {
+            "en": "Canadian Women's Chamber of Commerce",
+            "fr": "Chambre de commerce des Femmes Canadiennes"
+          },
+          "dpoh": [
+            {
+              "name": "Alana Powell",
+              "title": "Senior Policy Advisor",
+              "institution": "Employment and Social Development Canada (ESDC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "698076",
+          "date": "2026-07-22",
+          "org": "Oil Sands Alliance Inc. (formerly Pathways Alliance Inc.)",
+          "dpoh": [
+            {
+              "name": "Nasser Haidar",
+              "title": "Senior Policy Advisor",
+              "institution": "Privy Council Office (PCO)"
+            },
+            {
+              "name": "Galen Richardson",
+              "title": "Director of Stakeholder Relations",
+              "institution": "Privy Council Office (PCO)"
+            }
+          ]
+        },
+        {
+          "comlogId": "698535",
+          "date": "2026-07-08",
+          "org": {
+            "en": "Canadian Women's Chamber of Commerce",
+            "fr": "Chambre de commerce des Femmes Canadiennes"
+          },
+          "dpoh": [
+            {
+              "name": "Alana Powell",
+              "title": "Senior Policy Advisor",
+              "institution": "Employment and Social Development Canada (ESDC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "695634",
+          "date": "2026-07-08",
+          "org": "Canada's Building Trade Unions",
+          "dpoh": [
+            {
+              "name": "Paul Thompson",
+              "title": "Deputy Minister",
+              "institution": "Employment and Social Development Canada (ESDC)"
+            },
+            {
+              "name": "Michael MacPhee",
+              "title": "Assistant Deputy Minister",
+              "institution": "Employment and Social Development Canada (ESDC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "692165",
+          "date": "2026-07-06",
+          "org": {
+            "en": "Food, Health & Consumer Products of Canada",
+            "fr": "Produits alimentaires, de santé et de consommation du Canada"
+          },
+          "dpoh": [
+            {
+              "name": "Gelen Richardson",
+              "title": "Director of Stakeholder Relations",
+              "institution": "Privy Council Office (PCO)"
+            },
+            {
+              "name": "Elysee Atangana",
+              "title": "Policy Advisor",
+              "institution": "Privy Council Office (PCO)"
+            }
+          ]
+        },
+        {
+          "comlogId": "698534",
+          "date": "2026-06-30",
+          "org": {
+            "en": "Canadian Women's Chamber of Commerce",
+            "fr": "Chambre de commerce des Femmes Canadiennes"
+          },
+          "dpoh": [
+            {
+              "name": "Yasir Naqvi",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "691270",
+          "date": "2026-06-23",
+          "org": "Ecojustice Canada",
+          "dpoh": [
+            {
+              "name": "Brenna Walsh",
+              "title": "Senior Policy Advisor",
+              "institution": "Environment and Climate Change Canada (ECCC)"
+            },
+            {
+              "name": "Mike Morrice",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        }
+      ]
+    },
+    "C-36": {
+      "total": 1,
+      "orgTotal": 1,
+      "orgs": [
+        {
+          "name": "Google Canada Corporation",
+          "n": 1
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "698174",
+          "date": "2026-07-09",
+          "org": "Google Canada Corporation",
+          "dpoh": [
+            {
+              "name": "Anushka Kurian",
+              "title": "Director of Policy",
+              "institution": "Innovation, Science and Economic Development Canada (ISED)"
+            },
+            {
+              "name": "Simon Wood",
+              "title": "Senior Parliamentary Affairs Advisor",
+              "institution": "Innovation, Science and Economic Development Canada (ISED)"
+            }
+          ]
+        }
+      ]
+    },
+    "C-34": {
+      "total": 8,
+      "orgTotal": 4,
+      "orgs": [
+        {
+          "name": "Google Canada Corporation",
+          "n": 5
+        },
+        {
+          "name": "Actua",
+          "n": 1
+        },
+        {
+          "name": {
+            "en": "B'nai Brith National Organization of Canada",
+            "fr": "Organisation nationale de B'nai Brith Canada"
+          },
+          "n": 1
+        },
+        {
+          "name": {
+            "en": "Children's Healthcare Canada",
+            "fr": "Pediatric Chairs of Canada"
+          },
+          "n": 1
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "697954",
+          "date": "2026-07-30",
+          "org": "Google Canada Corporation",
+          "dpoh": [
+            {
+              "name": "Brian MacKay",
+              "title": "Deputy Chief of Staff",
+              "institution": "Canadian Heritage (PCH)"
+            },
+            {
+              "name": "Darren Choi",
+              "title": "Senior Policy Advisor",
+              "institution": "Canadian Heritage (PCH)"
+            }
+          ]
+        },
+        {
+          "comlogId": "697947",
+          "date": "2026-07-21",
+          "org": "Google Canada Corporation",
+          "dpoh": [
+            {
+              "name": "Thomas Law",
+              "title": "Senior Policy Advisor",
+              "institution": "Justice Canada (JC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "694926",
+          "date": "2026-06-30",
+          "org": "Actua",
+          "dpoh": [
+            {
+              "name": "Darren Choi",
+              "title": "Senior Policy Advisor",
+              "institution": "Canadian Heritage (PCH)"
+            }
+          ]
+        },
+        {
+          "comlogId": "693870",
+          "date": "2026-06-29",
+          "org": "Google Canada Corporation",
+          "dpoh": [
+            {
+              "name": "Brian MacKay",
+              "title": "Deputy Chief of Staff & Director of Policy, Minister’s Office",
+              "institution": "Canadian Heritage (PCH)"
+            }
+          ]
+        },
+        {
+          "comlogId": "694432",
+          "date": "2026-06-25",
+          "org": {
+            "en": "B'nai Brith National Organization of Canada",
+            "fr": "Organisation nationale de B'nai Brith Canada"
+          },
+          "dpoh": [
+            {
+              "name": "Hilary Leftick",
+              "title": "Chief of Staff",
+              "institution": "Canadian Heritage (PCH)"
+            }
+          ]
+        },
+        {
+          "comlogId": "691609",
+          "date": "2026-06-19",
+          "org": {
+            "en": "Children's Healthcare Canada",
+            "fr": "Pediatric Chairs of Canada"
+          },
+          "dpoh": [
+            {
+              "name": "Darren Choi",
+              "title": "Senior Policy Advisor",
+              "institution": "Canadian Heritage (PCH)"
+            }
+          ]
+        },
+        {
+          "comlogId": "693869",
+          "date": "2026-06-15",
+          "org": "Google Canada Corporation",
+          "dpoh": [
+            {
+              "name": "Brian MacKay",
+              "title": "Deputy Chief of Staff & Director of Policy, Minister’s Office",
+              "institution": "Canadian Heritage (PCH)"
+            }
+          ]
+        },
+        {
+          "comlogId": "694670",
+          "date": "2026-06-12",
+          "org": "Google Canada Corporation",
+          "dpoh": [
+            {
+              "name": "Jacob Mantle",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        }
+      ]
+    },
+    "C-22": {
+      "total": 47,
+      "orgTotal": 8,
+      "orgs": [
+        {
+          "name": "Amazon Web Services Canada, Inc.",
+          "n": 20
+        },
+        {
+          "name": "Google Canada Corporation",
+          "n": 17
+        },
+        {
+          "name": {
+            "en": "International Civil Liberties Monitoring Group",
+            "fr": "Coalition pour la surveillance internationale des libertés civiles"
+          },
+          "n": 4
+        },
+        {
+          "name": {
+            "en": "National Police Federation",
+            "fr": "Federation de la Police Nationale"
+          },
+          "n": 2
+        },
+        {
+          "name": "The Canadian Centre to End Human Trafficking",
+          "n": 1
+        },
+        {
+          "name": {
+            "en": "Canadian Muslim Public Affairs Council",
+            "fr": "Conseil des affaires publiques des musulman canadiens"
+          },
+          "n": 1
+        },
+        {
+          "name": "Internet Society",
+          "n": 1
+        },
+        {
+          "name": "Québecor Média inc.",
+          "n": 1
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "697506",
+          "date": "2026-07-29",
+          "org": "Amazon Web Services Canada, Inc.",
+          "dpoh": [
+            {
+              "name": "Rob Jamieson",
+              "title": "Chief of Staff",
+              "institution": "Public Safety Canada (PS)"
+            }
+          ]
+        },
+        {
+          "comlogId": "697948",
+          "date": "2026-07-21",
+          "org": "Google Canada Corporation",
+          "dpoh": [
+            {
+              "name": "Kristopher Wells",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "697947",
+          "date": "2026-07-21",
+          "org": "Google Canada Corporation",
+          "dpoh": [
+            {
+              "name": "Thomas Law",
+              "title": "Senior Policy Advisor",
+              "institution": "Justice Canada (JC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "697946",
+          "date": "2026-07-16",
+          "org": "Google Canada Corporation",
+          "dpoh": [
+            {
+              "name": "Sarah Cozzi",
+              "title": "Director of Policy, Minister’s Office",
+              "institution": "Public Safety Canada (PS)"
+            }
+          ]
+        },
+        {
+          "comlogId": "694670",
+          "date": "2026-06-12",
+          "org": "Google Canada Corporation",
+          "dpoh": [
+            {
+              "name": "Jacob Mantle",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "693495",
+          "date": "2026-06-09",
+          "org": {
+            "en": "National Police Federation",
+            "fr": "Federation de la Police Nationale"
+          },
+          "dpoh": [
+            {
+              "name": "Ben Carr",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "693492",
+          "date": "2026-06-08",
+          "org": {
+            "en": "National Police Federation",
+            "fr": "Federation de la Police Nationale"
+          },
+          "dpoh": [
+            {
+              "name": "Roman Baber",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "693525",
+          "date": "2026-06-04",
+          "org": "Amazon Web Services Canada, Inc.",
+          "dpoh": [
+            {
+              "name": "Baltej Singh Dhillon",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "693523",
+          "date": "2026-06-04",
+          "org": "Amazon Web Services Canada, Inc.",
+          "dpoh": [
+            {
+              "name": "Ruby Sahota",
+              "title": "Member of Parliament, Secretary of State (Combatting Crime)",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "693856",
+          "date": "2026-06-02",
+          "org": "Google Canada Corporation",
+          "dpoh": [
+            {
+              "name": "Thomas Law",
+              "title": "Senior Policy Advisor, Minister’s Office",
+              "institution": "Justice Canada (JC)"
+            }
+          ]
+        }
+      ]
+    },
+    "C-16": {
+      "total": 49,
+      "orgTotal": 10,
+      "orgs": [
+        {
+          "name": "Google Canada Corporation",
+          "n": 15
+        },
+        {
+          "name": "Toronto Metropolitan University",
+          "n": 10
+        },
+        {
+          "name": {
+            "en": "Canadian Civil Liberties Association",
+            "fr": "Association Canadienne Des Libertes Civiles"
+          },
+          "n": 8
+        },
+        {
+          "name": "Elder Abuse Prevention Ontario (EAPO)",
+          "n": 4
+        },
+        {
+          "name": {
+            "en": "Canadian Network for the Prevention of Elder Abuse (CNPEA)",
+            "fr": "Réseau canadien pour la prévention du mauvais traitement des aînés (RCPMTA)"
+          },
+          "n": 3
+        },
+        {
+          "name": {
+            "en": "Ending Sexual Violence Association of Canada",
+            "fr": "L’Association canadienne contre la violence sexuelle"
+          },
+          "n": 2
+        },
+        {
+          "name": "Ontario Child Sexual Exploitation Investigators Association (OCSEIA)",
+          "n": 2
+        },
+        {
+          "name": {
+            "en": "Canadian Federation of Humane Societies (also known as Humane Canada)",
+            "fr": "Fédération des sociétés canadiennes d’assistance aux animaux (aussi connu sous le nom Animaux Canada)"
+          },
+          "n": 2
+        },
+        {
+          "name": {
+            "en": "Canadian Centre for Child Protection Inc.",
+            "fr": "Centre canadien de protection de l’enfance inc."
+          },
+          "n": 2
+        },
+        {
+          "name": {
+            "en": "Women's Legal Education and Action Fund",
+            "fr": "Fonds d'action et d'éducation juridiques pour les femmes (FAEJ)"
+          },
+          "n": 1
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "696630",
+          "date": "2026-07-28",
+          "org": {
+            "en": "Ending Sexual Violence Association of Canada",
+            "fr": "L’Association canadienne contre la violence sexuelle"
+          },
+          "dpoh": [
+            {
+              "name": "Alana Powell",
+              "title": "Senior Policy Advisor",
+              "institution": "Employment and Social Development Canada (ESDC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "697947",
+          "date": "2026-07-21",
+          "org": "Google Canada Corporation",
+          "dpoh": [
+            {
+              "name": "Thomas Law",
+              "title": "Senior Policy Advisor",
+              "institution": "Justice Canada (JC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "694670",
+          "date": "2026-06-12",
+          "org": "Google Canada Corporation",
+          "dpoh": [
+            {
+              "name": "Jacob Mantle",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "692608",
+          "date": "2026-06-12",
+          "org": {
+            "en": "Canadian Civil Liberties Association",
+            "fr": "Association Canadienne Des Libertes Civiles"
+          },
+          "dpoh": [
+            {
+              "name": "Keith Torrie",
+              "title": "Senior Policy Advisor",
+              "institution": "Justice Canada (JC)"
+            },
+            {
+              "name": "Morgan MacDougall-Milne",
+              "title": "Director of Litigation",
+              "institution": "Justice Canada (JC)"
+            },
+            {
+              "name": "Zoe Romeo",
+              "title": "Director of Parliamentary Affairs",
+              "institution": "Justice Canada (JC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "692712",
+          "date": "2026-06-10",
+          "org": {
+            "en": "Ending Sexual Violence Association of Canada",
+            "fr": "L’Association canadienne contre la violence sexuelle"
+          },
+          "dpoh": [
+            {
+              "name": "Alana Powell",
+              "title": "Senior Policy Advisor",
+              "institution": "Employment and Social Development Canada (ESDC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "692607",
+          "date": "2026-06-08",
+          "org": {
+            "en": "Canadian Civil Liberties Association",
+            "fr": "Association Canadienne Des Libertes Civiles"
+          },
+          "dpoh": [
+            {
+              "name": "Claudine Santos",
+              "title": "Director of Parliamentary Affairs",
+              "institution": "Senate of Canada"
+            },
+            {
+              "name": "Paul (PJ) Prosper",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "693856",
+          "date": "2026-06-02",
+          "org": "Google Canada Corporation",
+          "dpoh": [
+            {
+              "name": "Thomas Law",
+              "title": "Senior Policy Advisor, Minister’s Office",
+              "institution": "Justice Canada (JC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "692605",
+          "date": "2026-06-01",
+          "org": {
+            "en": "Canadian Civil Liberties Association",
+            "fr": "Association Canadienne Des Libertes Civiles"
+          },
+          "dpoh": [
+            {
+              "name": "Claudine Santos",
+              "title": "Director of Parliamentary Affairs",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "687953",
+          "date": "2026-05-27",
+          "org": {
+            "en": "Canadian Civil Liberties Association",
+            "fr": "Association Canadienne Des Libertes Civiles"
+          },
+          "dpoh": [
+            {
+              "name": "Claudine Santos",
+              "title": "Director of Parliamentary Affairs",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "690355",
+          "date": "2026-05-22",
+          "org": "Google Canada Corporation",
+          "dpoh": [
+            {
+              "name": "Wade Chang",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        }
+      ]
+    },
+    "C-288": {
+      "total": 1,
+      "orgTotal": 1,
+      "orgs": [
+        {
+          "name": "FADOQ",
+          "n": 1
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "697822",
+          "date": "2026-07-15",
+          "org": "FADOQ",
+          "dpoh": [
+            {
+              "name": "Melissa Lantsman",
+              "title": "Member of Parliament for Thornhill  Deputy Leader of the Opposition",
+              "institution": "House of Commons"
+            }
+          ]
+        }
+      ]
+    },
+    "C-20": {
+      "total": 7,
+      "orgTotal": 1,
+      "orgs": [
+        {
+          "name": "National Apartment Council of Canada",
+          "n": 7
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "697793",
+          "date": "2026-07-30",
+          "org": "National Apartment Council of Canada",
+          "dpoh": [
+            {
+              "name": "Eamonn Schwartz",
+              "title": "Policy Advisor",
+              "institution": "Housing, Infrastructure and Communities Canada (HICC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "689832",
+          "date": "2026-05-27",
+          "org": "National Apartment Council of Canada",
+          "dpoh": [
+            {
+              "name": "Daryl Fridhandler",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "689838",
+          "date": "2026-05-26",
+          "org": "National Apartment Council of Canada",
+          "dpoh": [
+            {
+              "name": "Jenny Kwan",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "689835",
+          "date": "2026-05-26",
+          "org": "National Apartment Council of Canada",
+          "dpoh": [
+            {
+              "name": "Dawn Arnold",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "689804",
+          "date": "2026-05-26",
+          "org": "National Apartment Council of Canada",
+          "dpoh": [
+            {
+              "name": "Robert Morrisey",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "689801",
+          "date": "2026-05-26",
+          "org": "National Apartment Council of Canada",
+          "dpoh": [
+            {
+              "name": "Yash Nanda",
+              "title": "Senior Policy Advisor",
+              "institution": "Prime Minister's Office (PMO)"
+            }
+          ]
+        },
+        {
+          "comlogId": "689646",
+          "date": "2026-05-26",
+          "org": "National Apartment Council of Canada",
+          "dpoh": [
+            {
+              "name": "Colin Reynolds",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        }
+      ]
+    },
+    "C-223": {
+      "total": 14,
+      "orgTotal": 2,
+      "orgs": [
+        {
+          "name": "NATIONAL ASSOCIATION OF WOMEN AND THE LAW",
+          "n": 10
+        },
+        {
+          "name": {
+            "en": "Women's Legal Education and Action Fund",
+            "fr": "Fonds d'action et d'éducation juridiques pour les femmes (FAEJ)"
+          },
+          "n": 4
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "697335",
+          "date": "2026-08-11",
+          "org": "NATIONAL ASSOCIATION OF WOMEN AND THE LAW",
+          "dpoh": [
+            {
+              "name": "Lisa Hepfner",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "697332",
+          "date": "2026-07-23",
+          "org": "NATIONAL ASSOCIATION OF WOMEN AND THE LAW",
+          "dpoh": [
+            {
+              "name": "Doly Begum",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "694291",
+          "date": "2026-05-28",
+          "org": "NATIONAL ASSOCIATION OF WOMEN AND THE LAW",
+          "dpoh": [
+            {
+              "name": "Alicia Cooke",
+              "title": "Policy advisor",
+              "institution": "Justice Canada (JC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "687677",
+          "date": "2026-05-28",
+          "org": "NATIONAL ASSOCIATION OF WOMEN AND THE LAW",
+          "dpoh": [
+            {
+              "name": "Laura Colleony",
+              "title": "Conseillère régionale, Québec",
+              "institution": "Prime Minister's Office (PMO)"
+            }
+          ]
+        },
+        {
+          "comlogId": "687674",
+          "date": "2026-05-28",
+          "org": "NATIONAL ASSOCIATION OF WOMEN AND THE LAW",
+          "dpoh": [
+            {
+              "name": "Nathalie Provost",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "687673",
+          "date": "2026-05-28",
+          "org": "NATIONAL ASSOCIATION OF WOMEN AND THE LAW",
+          "dpoh": [
+            {
+              "name": "Marie-Gabrielle Ménard",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "694300",
+          "date": "2026-05-27",
+          "org": "NATIONAL ASSOCIATION OF WOMEN AND THE LAW",
+          "dpoh": [
+            {
+              "name": "Alicia Cooke",
+              "title": "Policy Advisor",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "687668",
+          "date": "2026-05-25",
+          "org": "NATIONAL ASSOCIATION OF WOMEN AND THE LAW",
+          "dpoh": [
+            {
+              "name": "Claire Farid",
+              "title": "Director General and Senior General Counsel",
+              "institution": "Justice Canada (JC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "687665",
+          "date": "2026-05-25",
+          "org": "NATIONAL ASSOCIATION OF WOMEN AND THE LAW",
+          "dpoh": [
+            {
+              "name": "Alyth Roos",
+              "title": "Special Assistant Policy",
+              "institution": "Prime Minister's Office (PMO)"
+            }
+          ]
+        },
+        {
+          "comlogId": "694301",
+          "date": "2026-05-21",
+          "org": "NATIONAL ASSOCIATION OF WOMEN AND THE LAW",
+          "dpoh": [
+            {
+              "name": "Alicia Cooke",
+              "title": "Policy Advisor",
+              "institution": "House of Commons"
+            }
+          ]
+        }
+      ]
+    },
+    "C-206": {
+      "total": 12,
+      "orgTotal": 1,
+      "orgs": [
+        {
+          "name": {
+            "en": "March of Dimes Canada",
+            "fr": "La Marche des Dix Sous du Canada"
+          },
+          "n": 12
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "697218",
+          "date": "2026-07-15",
+          "org": {
+            "en": "March of Dimes Canada",
+            "fr": "La Marche des Dix Sous du Canada"
+          },
+          "dpoh": [
+            {
+              "name": "Ted Falk",
+              "title": "Member of the House of Commons",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "672956",
+          "date": "2026-02-04",
+          "org": {
+            "en": "March of Dimes Canada",
+            "fr": "La Marche des Dix Sous du Canada"
+          },
+          "dpoh": [
+            {
+              "name": "Rachel Bendayan",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "672960",
+          "date": "2026-02-03",
+          "org": {
+            "en": "March of Dimes Canada",
+            "fr": "La Marche des Dix Sous du Canada"
+          },
+          "dpoh": [
+            {
+              "name": "Maggie Chi",
+              "title": "Member of Parliament, Don Valley North",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "672953",
+          "date": "2026-02-02",
+          "org": {
+            "en": "March of Dimes Canada",
+            "fr": "La Marche des Dix Sous du Canada"
+          },
+          "dpoh": [
+            {
+              "name": "Caroline Desrochers",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "672951",
+          "date": "2026-02-02",
+          "org": {
+            "en": "March of Dimes Canada",
+            "fr": "La Marche des Dix Sous du Canada"
+          },
+          "dpoh": [
+            {
+              "name": "Patty Hajdu",
+              "title": "Minister of Jobs and Families",
+              "institution": "Employment and Social Development Canada (ESDC)"
+            },
+            {
+              "name": "Amen Ben Ahmouda",
+              "title": "Policy Advisor",
+              "institution": "Employment and Social Development Canada (ESDC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "665661",
+          "date": "2025-12-03",
+          "org": {
+            "en": "March of Dimes Canada",
+            "fr": "La Marche des Dix Sous du Canada"
+          },
+          "dpoh": [
+            {
+              "name": "Maggie Chi",
+              "title": "Member of Parliament, Don Valley North",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "665703",
+          "date": "2025-12-02",
+          "org": {
+            "en": "March of Dimes Canada",
+            "fr": "La Marche des Dix Sous du Canada"
+          },
+          "dpoh": [
+            {
+              "name": "Eric Nicol",
+              "title": "Director",
+              "institution": "Employment and Social Development Canada (ESDC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "665701",
+          "date": "2025-12-02",
+          "org": {
+            "en": "March of Dimes Canada",
+            "fr": "La Marche des Dix Sous du Canada"
+          },
+          "dpoh": [
+            {
+              "name": "John Zerucelli",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "661761",
+          "date": "2025-12-02",
+          "org": {
+            "en": "March of Dimes Canada",
+            "fr": "La Marche des Dix Sous du Canada"
+          },
+          "dpoh": [
+            {
+              "name": "Stephanie McLean",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "661749",
+          "date": "2025-12-02",
+          "org": {
+            "en": "March of Dimes Canada",
+            "fr": "La Marche des Dix Sous du Canada"
+          },
+          "dpoh": [
+            {
+              "name": "Patty Hajdu",
+              "title": "Minister of Jobs and Families",
+              "institution": "Employment and Social Development Canada (ESDC)"
+            }
+          ]
+        }
+      ]
+    },
+    "C-262": {
+      "total": 4,
+      "orgTotal": 1,
+      "orgs": [
+        {
+          "name": "MakeWay Charitable Society",
+          "n": 4
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "696926",
+          "date": "2026-07-16",
+          "org": "MakeWay Charitable Society",
+          "dpoh": [
+            {
+              "name": "Jessica Strauss",
+              "title": "Deputy Director",
+              "institution": "Global Affairs Canada (GAC)"
+            },
+            {
+              "name": "Charles Thompson",
+              "title": "Senior Policy Analyst",
+              "institution": "Global Affairs Canada (GAC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "696925",
+          "date": "2026-07-16",
+          "org": "MakeWay Charitable Society",
+          "dpoh": [
+            {
+              "name": "Robert Oliphant",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Owen McAdams",
+              "title": "Senior Special Assistant",
+              "institution": "Global Affairs Canada (GAC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "696924",
+          "date": "2026-07-16",
+          "org": "MakeWay Charitable Society",
+          "dpoh": [
+            {
+              "name": "Robert Oliphant",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "684331",
+          "date": "2026-04-17",
+          "org": "MakeWay Charitable Society",
+          "dpoh": [
+            {
+              "name": "Michael D. Chong",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        }
+      ]
+    },
+    "C-263": {
+      "total": 4,
+      "orgTotal": 1,
+      "orgs": [
+        {
+          "name": "MakeWay Charitable Society",
+          "n": 4
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "696926",
+          "date": "2026-07-16",
+          "org": "MakeWay Charitable Society",
+          "dpoh": [
+            {
+              "name": "Jessica Strauss",
+              "title": "Deputy Director",
+              "institution": "Global Affairs Canada (GAC)"
+            },
+            {
+              "name": "Charles Thompson",
+              "title": "Senior Policy Analyst",
+              "institution": "Global Affairs Canada (GAC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "696925",
+          "date": "2026-07-16",
+          "org": "MakeWay Charitable Society",
+          "dpoh": [
+            {
+              "name": "Robert Oliphant",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Owen McAdams",
+              "title": "Senior Special Assistant",
+              "institution": "Global Affairs Canada (GAC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "696924",
+          "date": "2026-07-16",
+          "org": "MakeWay Charitable Society",
+          "dpoh": [
+            {
+              "name": "Robert Oliphant",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "684331",
+          "date": "2026-04-17",
+          "org": "MakeWay Charitable Society",
+          "dpoh": [
+            {
+              "name": "Michael D. Chong",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        }
+      ]
+    },
+    "S-211": {
+      "total": 36,
+      "orgTotal": 7,
+      "orgs": [
+        {
+          "name": "Canadian Gaming Association (CGA)",
+          "n": 16
+        },
+        {
+          "name": "Canadian Gaming Association",
+          "n": 11
+        },
+        {
+          "name": "Cardus",
+          "n": 3
+        },
+        {
+          "name": {
+            "en": "Canadian Society of Addiction Medicine",
+            "fr": "Société canadienne de médecine de l’addiction"
+          },
+          "n": 2
+        },
+        {
+          "name": "Canadian Lottery Coalition",
+          "n": 2
+        },
+        {
+          "name": "TSG Interactive Services Limited",
+          "n": 1
+        },
+        {
+          "name": "Fanduel Canada ULC",
+          "n": 1
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "696915",
+          "date": "2026-07-20",
+          "org": "Canadian Gaming Association",
+          "dpoh": [
+            {
+              "name": "Darren Choi",
+              "title": "Senior Policy Advisor",
+              "institution": "Canadian Heritage (PCH)"
+            },
+            {
+              "name": "Madison Taipalus",
+              "title": "Senior policy advisor",
+              "institution": "Canadian Heritage (PCH)"
+            }
+          ]
+        },
+        {
+          "comlogId": "691522",
+          "date": "2026-06-25",
+          "org": "TSG Interactive Services Limited",
+          "dpoh": [
+            {
+              "name": "Stephanie Kusie",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "681891",
+          "date": "2026-05-05",
+          "org": "Canadian Gaming Association (CGA)",
+          "dpoh": [
+            {
+              "name": "Thomas Law",
+              "title": "Senior Advisor, Policy and Regional Affairs (Ontario)",
+              "institution": "Justice Canada (JC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "677395",
+          "date": "2026-04-13",
+          "org": "Canadian Gaming Association (CGA)",
+          "dpoh": [
+            {
+              "name": "Ben Carr",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "679051",
+          "date": "2026-03-24",
+          "org": "Canadian Gaming Association",
+          "dpoh": [
+            {
+              "name": "Billy Morin",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Tony Baldinelli",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Ruby Sahota",
+              "title": "Member of Parliament, Secretary of State (Combatting Crime)",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "678244",
+          "date": "2026-03-24",
+          "org": "Canadian Gaming Association (CGA)",
+          "dpoh": [
+            {
+              "name": "Ruby Sahota",
+              "title": "Member of Parliament, Secretary of State (Combatting Crime)",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Rob Jamieson",
+              "title": "Chief of Staff",
+              "institution": "Public Safety Canada (PS)"
+            }
+          ]
+        },
+        {
+          "comlogId": "678243",
+          "date": "2026-03-24",
+          "org": "Canadian Gaming Association (CGA)",
+          "dpoh": [
+            {
+              "name": "Tony Baldinelli",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "675294",
+          "date": "2026-03-24",
+          "org": "Canadian Gaming Association (CGA)",
+          "dpoh": [
+            {
+              "name": "Ruby Sahota",
+              "title": "Member of Parliament, Secretary of State (Combatting Crime)",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Rob Jamieson",
+              "title": "Chief of Staff to Hon. Ruby Sahota, Secretary of State (Combatting Crime)",
+              "institution": "Public Safety Canada (PS)"
+            }
+          ]
+        },
+        {
+          "comlogId": "679049",
+          "date": "2026-03-23",
+          "org": "Canadian Gaming Association",
+          "dpoh": [
+            {
+              "name": "Branden Leslie",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Kevin Waugh",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Andrew Scheer",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "678240",
+          "date": "2026-03-23",
+          "org": "Canadian Gaming Association (CGA)",
+          "dpoh": [
+            {
+              "name": "Andrew Scheer",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Kenzie Potter",
+              "title": "Chief of Staff",
+              "institution": "House of Commons"
+            }
+          ]
+        }
+      ]
+    },
+    "S-5": {
+      "total": 22,
+      "orgTotal": 6,
+      "orgs": [
+        {
+          "name": {
+            "en": "The College of Family Physicians of Canada",
+            "fr": "Le Collège des médecins de famille du Canada"
+          },
+          "n": 11
+        },
+        {
+          "name": {
+            "en": "Canadian Life and Health Insurance Association Inc.",
+            "fr": "Association canadienne des compagnies d'assurances de personnes inc."
+          },
+          "n": 5
+        },
+        {
+          "name": "IMPERIAL TOBACCO CANADA LIMITED",
+          "n": 3
+        },
+        {
+          "name": "The Canadian Society of Respiratory Therapists",
+          "n": 1
+        },
+        {
+          "name": "Becton Dickinson Canada Inc",
+          "n": 1
+        },
+        {
+          "name": {
+            "en": "Chemistry Industry Association of Canada",
+            "fr": "Association canadienne de l’industrie de la chimie"
+          },
+          "n": 1
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "696874",
+          "date": "2026-07-23",
+          "org": {
+            "en": "Canadian Life and Health Insurance Association Inc.",
+            "fr": "Association canadienne des compagnies d'assurances de personnes inc."
+          },
+          "dpoh": [
+            {
+              "name": "Raquel Dancho",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "695539",
+          "date": "2026-07-23",
+          "org": {
+            "en": "The College of Family Physicians of Canada",
+            "fr": "Le Collège des médecins de famille du Canada"
+          },
+          "dpoh": [
+            {
+              "name": "Raquel Dancho",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "689284",
+          "date": "2026-06-11",
+          "org": {
+            "en": "College of Family Physicians of Canada",
+            "fr": "Le Collège des médecins de famille du Canada"
+          },
+          "dpoh": [
+            {
+              "name": "Dan Mazier",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "689281",
+          "date": "2026-06-11",
+          "org": {
+            "en": "The College of Family Physicians of Canada",
+            "fr": "Le Collège des médecins de famille du Canada"
+          },
+          "dpoh": [
+            {
+              "name": "Dan Mazier",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "689273",
+          "date": "2026-06-03",
+          "org": {
+            "en": "The College of Family Physicians of Canada",
+            "fr": "Le Collège des médecins de famille du Canada"
+          },
+          "dpoh": [
+            {
+              "name": "Flordeliz Osler",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "693621",
+          "date": "2026-06-02",
+          "org": "The Canadian Society of Respiratory Therapists",
+          "dpoh": [
+            {
+              "name": "Gord Johns",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "686426",
+          "date": "2026-06-02",
+          "org": {
+            "en": "The College of Family Physicians of Canada",
+            "fr": "Le Collège des médecins de famille du Canada"
+          },
+          "dpoh": [
+            {
+              "name": "Maggie Chi",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "686424",
+          "date": "2026-05-26",
+          "org": {
+            "en": "The College of Family Physicians of Canada",
+            "fr": "Le Collège des médecins de famille du Canada"
+          },
+          "dpoh": [
+            {
+              "name": "Sonia Sidhu",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "687864",
+          "date": "2026-05-07",
+          "org": {
+            "en": "Canadian Life and Health Insurance Association Inc.",
+            "fr": "Association canadienne des compagnies d'assurances de personnes inc."
+          },
+          "dpoh": [
+            {
+              "name": "Sarah Allan",
+              "title": "Parliamentary Affairs Advisor",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "687862",
+          "date": "2026-05-01",
+          "org": {
+            "en": "Canadian Life and Health Insurance Association Inc.",
+            "fr": "Association canadienne des compagnies d'assurances de personnes inc."
+          },
+          "dpoh": [
+            {
+              "name": "Shalene Curtis-Micallef",
+              "title": "Deputy Minister",
+              "institution": "Health Canada (HC)"
+            }
+          ]
+        }
+      ]
+    },
+    "S-228": {
+      "total": 12,
+      "orgTotal": 4,
+      "orgs": [
+        {
+          "name": {
+            "en": "Survivor's Circle for Reproductive Justice",
+            "fr": "Cercle des survivantes pour la justice reproductive"
+          },
+          "n": 6
+        },
+        {
+          "name": {
+            "en": "Ending Sexual Violence Association of Canada",
+            "fr": "L’Association canadienne contre la violence sexuelle"
+          },
+          "n": 2
+        },
+        {
+          "name": "NATIONAL ASSOCIATION OF WOMEN AND THE LAW",
+          "n": 2
+        },
+        {
+          "name": {
+            "en": "Society of Obstetricians and Gynaecologists of Canada (SOGC)",
+            "fr": "Société des obstétriciens et gynécologues du Canada (SOGC)"
+          },
+          "n": 2
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "696630",
+          "date": "2026-07-28",
+          "org": {
+            "en": "Ending Sexual Violence Association of Canada",
+            "fr": "L’Association canadienne contre la violence sexuelle"
+          },
+          "dpoh": [
+            {
+              "name": "Alana Powell",
+              "title": "Senior Policy Advisor",
+              "institution": "Employment and Social Development Canada (ESDC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "692712",
+          "date": "2026-06-10",
+          "org": {
+            "en": "Ending Sexual Violence Association of Canada",
+            "fr": "L’Association canadienne contre la violence sexuelle"
+          },
+          "dpoh": [
+            {
+              "name": "Alana Powell",
+              "title": "Senior Policy Advisor",
+              "institution": "Employment and Social Development Canada (ESDC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "682512",
+          "date": "2026-04-23",
+          "org": "NATIONAL ASSOCIATION OF WOMEN AND THE LAW",
+          "dpoh": [
+            {
+              "name": "Leah Gazan",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "682509",
+          "date": "2026-04-21",
+          "org": "NATIONAL ASSOCIATION OF WOMEN AND THE LAW",
+          "dpoh": [
+            {
+              "name": "Leah Gazan",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "675156",
+          "date": "2026-03-03",
+          "org": {
+            "en": "Society of Obstetricians and Gynaecologists of Canada (SOGC)",
+            "fr": "Société des obstétriciens et gynécologues du Canada (SOGC)"
+          },
+          "dpoh": [
+            {
+              "name": "Alicia Cooke",
+              "title": "Policy advisor",
+              "institution": "Justice Canada (JC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "674255",
+          "date": "2026-02-27",
+          "org": {
+            "en": "Survivor's Circle for Reproductive Justice",
+            "fr": "Cercle des survivantes pour la justice reproductive"
+          },
+          "dpoh": [
+            {
+              "name": "Marilène Gill",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "674251",
+          "date": "2026-02-25",
+          "org": {
+            "en": "Survivor's Circle for Reproductive Justice",
+            "fr": "Cercle des survivantes pour la justice reproductive"
+          },
+          "dpoh": [
+            {
+              "name": "Patricia Lattanzio",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Robert Tay-Burroughs",
+              "title": "Senior Policy Advisor",
+              "institution": "Justice Canada (JC)"
+            },
+            {
+              "name": "Alicia Cooke",
+              "title": "Policy Advisor",
+              "institution": "Justice Canada (JC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "670812",
+          "date": "2026-02-25",
+          "org": {
+            "en": "Survivor's Circle for Reproductive Justice",
+            "fr": "Cercle des survivantes pour la justice reproductive"
+          },
+          "dpoh": [
+            {
+              "name": "Ruby Sahota",
+              "title": "Member of Parliament, Secretary of State (Combatting Crime)",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "669285",
+          "date": "2026-01-30",
+          "org": {
+            "en": "Society of Obstetricians and Gynaecologists of Canada (SOGC)",
+            "fr": "Société des obstétriciens et gynécologues du Canada (SOGC)"
+          },
+          "dpoh": [
+            {
+              "name": "Alicia Cooke",
+              "title": "Policy advisor",
+              "institution": "Justice Canada (JC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "662987",
+          "date": "2025-12-12",
+          "org": {
+            "en": "Survivor's Circle for Reproductive Justice",
+            "fr": "Cercle des survivantes pour la justice reproductive"
+          },
+          "dpoh": [
+            {
+              "name": "Michael Kurliak",
+              "title": "Senior Policy Advisor",
+              "institution": "Justice Canada (JC)"
+            },
+            {
+              "name": "Alicia Cooke",
+              "title": "Policy Advisor",
+              "institution": "Justice Canada (JC)"
+            }
+          ]
+        }
+      ]
+    },
+    "S-232": {
+      "total": 2,
+      "orgTotal": 1,
+      "orgs": [
+        {
+          "name": {
+            "en": "Ending Sexual Violence Association of Canada",
+            "fr": "L’Association canadienne contre la violence sexuelle"
+          },
+          "n": 2
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "696630",
+          "date": "2026-07-28",
+          "org": {
+            "en": "Ending Sexual Violence Association of Canada",
+            "fr": "L’Association canadienne contre la violence sexuelle"
+          },
+          "dpoh": [
+            {
+              "name": "Alana Powell",
+              "title": "Senior Policy Advisor",
+              "institution": "Employment and Social Development Canada (ESDC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "692712",
+          "date": "2026-06-10",
+          "org": {
+            "en": "Ending Sexual Violence Association of Canada",
+            "fr": "L’Association canadienne contre la violence sexuelle"
+          },
+          "dpoh": [
+            {
+              "name": "Alana Powell",
+              "title": "Senior Policy Advisor",
+              "institution": "Employment and Social Development Canada (ESDC)"
+            }
+          ]
+        }
+      ]
+    },
+    "S-201": {
+      "total": 15,
+      "orgTotal": 3,
+      "orgs": [
+        {
+          "name": "Vertex Pharmaceuticals (Canada) Inc.",
+          "n": 12
+        },
+        {
+          "name": "Vertex Pharmaceuticals (Canada) Incorporated",
+          "n": 2
+        },
+        {
+          "name": "Novo Nordisk Canada Inc.",
+          "n": 1
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "696343",
+          "date": "2026-07-29",
+          "org": "Vertex Pharmaceuticals (Canada) Incorporated",
+          "dpoh": [
+            {
+              "name": "Kelly DeRidder",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "691958",
+          "date": "2026-06-04",
+          "org": "Vertex Pharmaceuticals (Canada) Inc.",
+          "dpoh": [
+            {
+              "name": "Juanita Nathan",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "687425",
+          "date": "2026-06-04",
+          "org": "Vertex Pharmaceuticals (Canada) Incorporated",
+          "dpoh": [
+            {
+              "name": "Juanita Nathan",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Braveenan Pradeep",
+              "title": "Legislative Assistant",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "676122",
+          "date": "2026-03-24",
+          "org": "Vertex Pharmaceuticals (Canada) Inc.",
+          "dpoh": [
+            {
+              "name": "Dan Mazier",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "675583",
+          "date": "2026-03-24",
+          "org": "Novo Nordisk Canada Inc.",
+          "dpoh": [
+            {
+              "name": "Michael Coteau",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "673305",
+          "date": "2026-03-10",
+          "org": "Vertex Pharmaceuticals (Canada) Inc.",
+          "dpoh": [
+            {
+              "name": "Tom Kmiec",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "673293",
+          "date": "2026-03-10",
+          "org": "Vertex Pharmaceuticals (Canada) Inc.",
+          "dpoh": [
+            {
+              "name": "Tony Ince",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "673289",
+          "date": "2026-03-10",
+          "org": "Vertex Pharmaceuticals (Canada) Inc.",
+          "dpoh": [
+            {
+              "name": "Salma Zahid",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "673286",
+          "date": "2026-03-09",
+          "org": "Vertex Pharmaceuticals (Canada) Inc.",
+          "dpoh": [
+            {
+              "name": "Judy Sgro",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "673280",
+          "date": "2026-03-09",
+          "org": "Vertex Pharmaceuticals (Canada) Inc.",
+          "dpoh": [
+            {
+              "name": "Justine Frame",
+              "title": "Policy Advisor",
+              "institution": "Health Canada (HC)"
+            }
+          ]
+        }
+      ]
+    },
+    "C-9": {
+      "total": 37,
+      "orgTotal": 9,
+      "orgs": [
+        {
+          "name": {
+            "en": "Canadian Civil Liberties Association",
+            "fr": "Association Canadienne Des Libertes Civiles"
+          },
+          "n": 13
+        },
+        {
+          "name": "Chiefs of Ontario",
+          "n": 9
+        },
+        {
+          "name": {
+            "en": "Canadian Muslim Public Affairs Council",
+            "fr": "Conseil des affaires publiques des musulman canadiens"
+          },
+          "n": 4
+        },
+        {
+          "name": "Black Opportunity Fund",
+          "n": 4
+        },
+        {
+          "name": {
+            "en": "International Civil Liberties Monitoring Group",
+            "fr": "Coalition pour la surveillance internationale des libertés civiles"
+          },
+          "n": 2
+        },
+        {
+          "name": "Independent Jewish Voices Canada",
+          "n": 2
+        },
+        {
+          "name": "BC Civil Liberties Association",
+          "n": 1
+        },
+        {
+          "name": {
+            "en": "CONCACAN INC. o/a Canadian Conference of Catholic Bishops (CCCB)",
+            "fr": "CONCACAN INC. o/a Conférence des évêques catholiques du Canada (CECC)"
+          },
+          "n": 1
+        },
+        {
+          "name": "Cardus",
+          "n": 1
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "696285",
+          "date": "2026-06-19",
+          "org": "BC Civil Liberties Association",
+          "dpoh": [
+            {
+              "name": "Mark Carney",
+              "title": "Prime Minister of Canada",
+              "institution": "Office of the Secretary to the Governor General (OSGG)"
+            }
+          ]
+        },
+        {
+          "comlogId": "688575",
+          "date": "2026-06-04",
+          "org": {
+            "en": "Canadian Muslim Public Affairs Council",
+            "fr": "Conseil des affaires publiques des musulman canadiens"
+          },
+          "dpoh": [
+            {
+              "name": "Sameer Zuberi",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "687944",
+          "date": "2026-05-27",
+          "org": {
+            "en": "Canadian Civil Liberties Association",
+            "fr": "Association Canadienne Des Libertes Civiles"
+          },
+          "dpoh": [
+            {
+              "name": "Hanife Massomifar",
+              "title": "Policy Advisor and Issues Manager",
+              "institution": "Justice Canada (JC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "688570",
+          "date": "2026-05-25",
+          "org": {
+            "en": "Canadian Muslim Public Affairs Council",
+            "fr": "Conseil des affaires publiques des musulman canadiens"
+          },
+          "dpoh": [
+            {
+              "name": "Salma Ataullahjan",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "687901",
+          "date": "2026-05-13",
+          "org": {
+            "en": "Canadian Civil Liberties Association",
+            "fr": "Association Canadienne Des Libertes Civiles"
+          },
+          "dpoh": [
+            {
+              "name": "Hanife Massomifar",
+              "title": "Policy Advisor and Issues Manager",
+              "institution": "Justice Canada (JC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "687895",
+          "date": "2026-05-13",
+          "org": {
+            "en": "Canadian Civil Liberties Association",
+            "fr": "Association Canadienne Des Libertes Civiles"
+          },
+          "dpoh": [
+            {
+              "name": "Kristopher Wells",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            },
+            {
+              "name": "Jordano Nudo",
+              "title": "Director of Parliamentary Affairs",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "686730",
+          "date": "2026-05-12",
+          "org": "Black Opportunity Fund",
+          "dpoh": [
+            {
+              "name": "Kristopher Wells",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            },
+            {
+              "name": "Jordano Nudo",
+              "title": "Director of Parliamentary Affairs",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "687886",
+          "date": "2026-05-11",
+          "org": {
+            "en": "Canadian Civil Liberties Association",
+            "fr": "Association Canadienne Des Libertes Civiles"
+          },
+          "dpoh": [
+            {
+              "name": "Dina Dong",
+              "title": "Parliamentary Affairs Advisor",
+              "institution": "Senate of Canada"
+            },
+            {
+              "name": "Shawn Abel",
+              "title": "Director of Parliamentary Affairs",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "682200",
+          "date": "2026-05-11",
+          "org": "Independent Jewish Voices Canada",
+          "dpoh": [
+            {
+              "name": "Dina Dong",
+              "title": "Parliamentary Affairs Advisor",
+              "institution": "Senate of Canada"
+            },
+            {
+              "name": "Shawn Abel",
+              "title": "Director of Parliamentary Affairs",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "682436",
+          "date": "2026-04-29",
+          "org": "Chiefs of Ontario",
+          "dpoh": [
+            {
+              "name": "Robert Tay-Burroughs",
+              "title": "Senior Analyst",
+              "institution": "Justice Canada (JC)"
+            }
+          ]
+        }
+      ]
+    },
+    "S-206": {
+      "total": 1,
+      "orgTotal": 1,
+      "orgs": [
+        {
+          "name": {
+            "en": "ACTRA Alliance of Canadian Cinema, Television and Radio Artists",
+            "fr": "ACTRA"
+          },
+          "n": 1
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "695697",
+          "date": "2026-07-30",
+          "org": {
+            "en": "ACTRA Alliance of Canadian Cinema, Television and Radio Artists",
+            "fr": "ACTRA"
+          },
+          "dpoh": [
+            {
+              "name": "Emily Grant",
+              "title": "Parliamentary Affairs Advisor and Assistant",
+              "institution": "Senate of Canada"
+            },
+            {
+              "name": "Kim Pate",
+              "title": "Canadian Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        }
+      ]
+    },
+    "S-233": {
+      "total": 3,
+      "orgTotal": 1,
+      "orgs": [
+        {
+          "name": "CANADIAN NURSES ASSOCIATION/ASSOCIATION DES INFIRMIERES ET INFIRMIERS DU CANADA(CNA)",
+          "n": 3
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "694971",
+          "date": "2026-07-14",
+          "org": "CANADIAN NURSES ASSOCIATION/ASSOCIATION DES INFIRMIERES ET INFIRMIERS DU CANADA(CNA)",
+          "dpoh": [
+            {
+              "name": "Raquel Dancho",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "662485",
+          "date": "2025-12-09",
+          "org": "CANADIAN NURSES ASSOCIATION/ASSOCIATION DES INFIRMIERES ET INFIRMIERS DU CANADA(CNA)",
+          "dpoh": [
+            {
+              "name": "Roy Karam",
+              "title": "Senior Policy Advisor",
+              "institution": "Health Canada (HC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "662483",
+          "date": "2025-12-09",
+          "org": "CANADIAN NURSES ASSOCIATION/ASSOCIATION DES INFIRMIERES ET INFIRMIERS DU CANADA(CNA)",
+          "dpoh": [
+            {
+              "name": "Todd Doherty",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Dan Mazier",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        }
+      ]
+    },
+    "C-30": {
+      "total": 5,
+      "orgTotal": 3,
+      "orgs": [
+        {
+          "name": "Ecojustice Canada",
+          "n": 2
+        },
+        {
+          "name": "The Perth Academy of Building Arts and Science",
+          "n": 2
+        },
+        {
+          "name": {
+            "en": "Canadian Association of Petroleum Producers",
+            "fr": "Association Canadienne des Producteurs Pétroliers"
+          },
+          "n": 1
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "686867",
+          "date": "2026-06-04",
+          "org": "The Perth Academy of Building Arts and Science",
+          "dpoh": [
+            {
+              "name": "Reem Al-Ameri",
+              "title": "Special Assistant",
+              "institution": "Employment and Social Development Canada (ESDC)"
+            },
+            {
+              "name": "Brett Szmul",
+              "title": "Policy Advisor",
+              "institution": "Employment and Social Development Canada (ESDC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "686866",
+          "date": "2026-06-04",
+          "org": "The Perth Academy of Building Arts and Science",
+          "dpoh": [
+            {
+              "name": "Reem Al-Ameri",
+              "title": "Special Assistant",
+              "institution": "Employment and Social Development Canada (ESDC)"
+            },
+            {
+              "name": "Brett Szmul",
+              "title": "Policy Advisor",
+              "institution": "Employment and Social Development Canada (ESDC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "694168",
+          "date": "2026-06-03",
+          "org": "Ecojustice Canada",
+          "dpoh": [
+            {
+              "name": "Cheryl Soullière",
+              "title": "Parliamentary Research Assistant",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Diego Montes Ferro",
+              "title": "Parliamentary Affairs Advisor",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Rosa Galvez",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "693824",
+          "date": "2026-06-02",
+          "org": {
+            "en": "Canadian Association of Petroleum Producers",
+            "fr": "Association Canadienne des Producteurs Pétroliers"
+          },
+          "dpoh": [
+            {
+              "name": "Mary Coyle",
+              "title": "Senator for Nova Scotia",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "689176",
+          "date": "2026-05-12",
+          "org": "Ecojustice Canada",
+          "dpoh": [
+            {
+              "name": "Jean-Francois Vachon",
+              "title": "Senior Communications Advisor",
+              "institution": "House of Commons"
+            }
+          ]
+        }
+      ]
+    },
+    "C-31": {
+      "total": 3,
+      "orgTotal": 2,
+      "orgs": [
+        {
+          "name": "Ecojustice Canada",
+          "n": 2
+        },
+        {
+          "name": {
+            "en": "Canadian Association of Petroleum Producers",
+            "fr": "Association Canadienne des Producteurs Pétroliers"
+          },
+          "n": 1
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "694168",
+          "date": "2026-06-03",
+          "org": "Ecojustice Canada",
+          "dpoh": [
+            {
+              "name": "Cheryl Soullière",
+              "title": "Parliamentary Research Assistant",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Diego Montes Ferro",
+              "title": "Parliamentary Affairs Advisor",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Rosa Galvez",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "689176",
+          "date": "2026-05-12",
+          "org": "Ecojustice Canada",
+          "dpoh": [
+            {
+              "name": "Jean-Francois Vachon",
+              "title": "Senior Communications Advisor",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "688818",
+          "date": "2026-05-06",
+          "org": {
+            "en": "Canadian Association of Petroleum Producers",
+            "fr": "Association Canadienne des Producteurs Pétroliers"
+          },
+          "dpoh": [
+            {
+              "name": "David Wells",
+              "title": "Senator for Newfoundland and Labrador",
+              "institution": "Senate of Canada"
+            }
+          ]
+        }
+      ]
+    },
+    "C-218": {
+      "total": 14,
+      "orgTotal": 1,
+      "orgs": [
+        {
+          "name": "Inclusion Canada",
+          "n": 14
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "693701",
+          "date": "2026-06-24",
+          "org": "Inclusion Canada",
+          "dpoh": [
+            {
+              "name": "Hanife Masoomifar",
+              "title": "Policy Advisor and Issues Manager",
+              "institution": "Justice Canada (JC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "682003",
+          "date": "2026-04-29",
+          "org": "Inclusion Canada",
+          "dpoh": [
+            {
+              "name": "Gurbux Saini",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "681998",
+          "date": "2026-04-27",
+          "org": "Inclusion Canada",
+          "dpoh": [
+            {
+              "name": "David Myles",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "681996",
+          "date": "2026-04-27",
+          "org": "Inclusion Canada",
+          "dpoh": [
+            {
+              "name": "Sima Acan",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "681993",
+          "date": "2026-04-27",
+          "org": "Inclusion Canada",
+          "dpoh": [
+            {
+              "name": "Mary Jane McCallum",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "678737",
+          "date": "2026-03-25",
+          "org": "Inclusion Canada",
+          "dpoh": [
+            {
+              "name": "Leslie Church",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "678009",
+          "date": "2026-03-25",
+          "org": "Inclusion Canada",
+          "dpoh": [
+            {
+              "name": "Doug Eyolfson",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "677941",
+          "date": "2026-03-25",
+          "org": "Inclusion Canada",
+          "dpoh": [
+            {
+              "name": "Thomas Law",
+              "title": "Senior Policy Advisor to Canada's Minister of Justice",
+              "institution": "Justice Canada (JC)"
+            },
+            {
+              "name": "Hanife Masoomi",
+              "title": "Policy Advisor and Issues Manager to the Minister of Justice",
+              "institution": "Justice Canada (JC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "678004",
+          "date": "2026-03-24",
+          "org": "Inclusion Canada",
+          "dpoh": [
+            {
+              "name": "James Maloney",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "678002",
+          "date": "2026-03-24",
+          "org": "Inclusion Canada",
+          "dpoh": [
+            {
+              "name": "Juanita Nathan",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        }
+      ]
+    },
+    "S-205": {
+      "total": 2,
+      "orgTotal": 1,
+      "orgs": [
+        {
+          "name": {
+            "en": "Women's Legal Education and Action Fund",
+            "fr": "Fonds d'action et d'éducation juridiques pour les femmes (FAEJ)"
+          },
+          "n": 2
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "693199",
+          "date": "2026-06-05",
+          "org": {
+            "en": "Women's Legal Education and Action Fund",
+            "fr": "Fonds d'action et d'éducation juridiques pour les femmes (FAEJ)"
+          },
+          "dpoh": [
+            {
+              "name": "Noah Kathen",
+              "title": "Parliamentary Assistant",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "693198",
+          "date": "2026-06-01",
+          "org": {
+            "en": "Women's Legal Education and Action Fund",
+            "fr": "Fonds d'action et d'éducation juridiques pour les femmes (FAEJ)"
+          },
+          "dpoh": [
+            {
+              "name": "Gary Anandasangaree",
+              "title": "Minister of Public Safety",
+              "institution": "House of Commons"
+            }
+          ]
+        }
+      ]
+    },
+    "C-12": {
+      "total": 51,
+      "orgTotal": 9,
+      "orgs": [
+        {
+          "name": "Buffalo and Fort Erie Public Bridge Authority",
+          "n": 12
+        },
+        {
+          "name": {
+            "en": "The Refugee Centre",
+            "fr": "Le Centre de réfugiés"
+          },
+          "n": 9
+        },
+        {
+          "name": {
+            "en": "Canadian Civil Liberties Association",
+            "fr": "Association Canadienne Des Libertes Civiles"
+          },
+          "n": 7
+        },
+        {
+          "name": "WoodGreen Community Services",
+          "n": 7
+        },
+        {
+          "name": {
+            "en": "Canadian Council for Refugees",
+            "fr": "Conseil canadien pour les réfugiés"
+          },
+          "n": 5
+        },
+        {
+          "name": "Canadian Gaming Association (CGA)",
+          "n": 4
+        },
+        {
+          "name": {
+            "en": "Canadian Centre for Child Protection Inc.",
+            "fr": "Centre canadien de protection de l’enfance inc."
+          },
+          "n": 4
+        },
+        {
+          "name": {
+            "en": "International Civil Liberties Monitoring Group",
+            "fr": "Coalition pour la surveillance internationale des libertés civiles"
+          },
+          "n": 2
+        },
+        {
+          "name": {
+            "en": "Women's Legal Education and Action Fund",
+            "fr": "Fonds d'action et d'éducation juridiques pour les femmes (FAEJ)"
+          },
+          "n": 1
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "692374",
+          "date": "2026-07-02",
+          "org": "Buffalo and Fort Erie Public Bridge Authority",
+          "dpoh": [
+            {
+              "name": "Galen Richardson",
+              "title": "Senior Advisor, Stakeholder Relations",
+              "institution": "Privy Council Office (PCO)"
+            },
+            {
+              "name": "Miro Froehlich",
+              "title": "Director of Policy",
+              "institution": "Privy Council Office (PCO)"
+            }
+          ]
+        },
+        {
+          "comlogId": "692753",
+          "date": "2026-06-25",
+          "org": "Buffalo and Fort Erie Public Bridge Authority",
+          "dpoh": [
+            {
+              "name": "Alyth Roos",
+              "title": "Special Assistant, Policy",
+              "institution": "Prime Minister's Office (PMO)"
+            }
+          ]
+        },
+        {
+          "comlogId": "692755",
+          "date": "2026-06-16",
+          "org": "Buffalo and Fort Erie Public Bridge Authority",
+          "dpoh": [
+            {
+              "name": "Marie-Eve Pelchat",
+              "title": "Executive Director",
+              "institution": "Canada Border Services Agency (CBSA)"
+            },
+            {
+              "name": "Charles Chenard",
+              "title": "Director General",
+              "institution": "Canada Border Services Agency (CBSA)"
+            },
+            {
+              "name": "Graeme Hamilton",
+              "title": "Director General",
+              "institution": "Canada Border Services Agency (CBSA)"
+            }
+          ]
+        },
+        {
+          "comlogId": "691507",
+          "date": "2026-06-10",
+          "org": {
+            "en": "Canadian Council for Refugees",
+            "fr": "Conseil canadien pour les réfugiés"
+          },
+          "dpoh": [
+            {
+              "name": "Gary Anandasangaree",
+              "title": "Minister of Public Safety",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Jacques Ramsay",
+              "title": "Parliamentary Secretary Public Safety",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "688964",
+          "date": "2026-05-15",
+          "org": {
+            "en": "Canadian Council for Refugees",
+            "fr": "Conseil canadien pour les réfugiés"
+          },
+          "dpoh": [
+            {
+              "name": "Catherine Scott",
+              "title": "Assistant Deputy Minister",
+              "institution": "Immigration, Refugees and Citizenship Canada (IRCC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "688961",
+          "date": "2026-05-06",
+          "org": {
+            "en": "Canadian Council for Refugees",
+            "fr": "Conseil canadien pour les réfugiés"
+          },
+          "dpoh": [
+            {
+              "name": "Arash Rahmani",
+              "title": "Policy Advisor",
+              "institution": "Immigration, Refugees and Citizenship Canada (IRCC)"
+            },
+            {
+              "name": "Clara Geddes",
+              "title": "Policy Advisor",
+              "institution": "Immigration, Refugees and Citizenship Canada (IRCC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "682205",
+          "date": "2026-04-17",
+          "org": {
+            "en": "The Refugee Centre",
+            "fr": "Le Centre de réfugiés"
+          },
+          "dpoh": [
+            {
+              "name": "Gary Anandasangaree",
+              "title": "Minister of Public Safety",
+              "institution": "Canada Border Services Agency (CBSA)"
+            }
+          ]
+        },
+        {
+          "comlogId": "678244",
+          "date": "2026-03-24",
+          "org": "Canadian Gaming Association (CGA)",
+          "dpoh": [
+            {
+              "name": "Ruby Sahota",
+              "title": "Member of Parliament, Secretary of State (Combatting Crime)",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Rob Jamieson",
+              "title": "Chief of Staff",
+              "institution": "Public Safety Canada (PS)"
+            }
+          ]
+        },
+        {
+          "comlogId": "675294",
+          "date": "2026-03-24",
+          "org": "Canadian Gaming Association (CGA)",
+          "dpoh": [
+            {
+              "name": "Ruby Sahota",
+              "title": "Member of Parliament, Secretary of State (Combatting Crime)",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Rob Jamieson",
+              "title": "Chief of Staff to Hon. Ruby Sahota, Secretary of State (Combatting Crime)",
+              "institution": "Public Safety Canada (PS)"
+            }
+          ]
+        },
+        {
+          "comlogId": "679398",
+          "date": "2026-03-20",
+          "org": "Buffalo and Fort Erie Public Bridge Authority",
+          "dpoh": [
+            {
+              "name": "Karina Gould",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        }
+      ]
+    },
+    "C-265": {
+      "total": 5,
+      "orgTotal": 1,
+      "orgs": [
+        {
+          "name": "Canadian Organization for Rare Disorders",
+          "n": 5
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "691953",
+          "date": "2026-06-04",
+          "org": "Canadian Organization for Rare Disorders",
+          "dpoh": [
+            {
+              "name": "Tom Kmiec",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "687270",
+          "date": "2026-05-27",
+          "org": "Canadian Organization for Rare Disorders",
+          "dpoh": [
+            {
+              "name": "Daniel MacDonald",
+              "title": "Director General, Office of Pharmaceutical Management Strategies",
+              "institution": "Health Canada (HC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "687271",
+          "date": "2026-05-26",
+          "org": "Canadian Organization for Rare Disorders",
+          "dpoh": [
+            {
+              "name": "Helena Jaczek",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "687269",
+          "date": "2026-05-26",
+          "org": "Canadian Organization for Rare Disorders",
+          "dpoh": [
+            {
+              "name": "Marcus Powlowski",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "687268",
+          "date": "2026-05-26",
+          "org": "Canadian Organization for Rare Disorders",
+          "dpoh": [
+            {
+              "name": "Sandenga Yeba",
+              "title": "Director of Policy & Deputy Chief of Staff",
+              "institution": "Health Canada (HC)"
+            },
+            {
+              "name": "Justine Frame",
+              "title": "Policy Advisor",
+              "institution": "Health Canada (HC)"
+            }
+          ]
+        }
+      ]
+    },
+    "C-10": {
+      "total": 18,
+      "orgTotal": 3,
+      "orgs": [
+        {
+          "name": "Maa-nulth Treaty Society",
+          "n": 10
+        },
+        {
+          "name": {
+            "en": "Land Claim Agreements Coalition",
+            "fr": "Coalition pour les ententes sur les revendications territoriales"
+          },
+          "n": 5
+        },
+        {
+          "name": "Nunatsiavut Government",
+          "n": 3
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "691487",
+          "date": "2026-06-18",
+          "org": "Nunatsiavut Government",
+          "dpoh": [
+            {
+              "name": "Kevin McHarg",
+              "title": "Director of Fisheries Management & Stakeholder Relations",
+              "institution": "Fisheries and Oceans Canada (DFO)"
+            },
+            {
+              "name": "Jackson Coles",
+              "title": "Policy Advisor",
+              "institution": "Fisheries and Oceans Canada (DFO)"
+            }
+          ]
+        },
+        {
+          "comlogId": "691486",
+          "date": "2026-06-18",
+          "org": "Nunatsiavut Government",
+          "dpoh": [
+            {
+              "name": "Mark Waddell",
+              "title": "Director General",
+              "institution": "Fisheries and Oceans Canada (DFO)"
+            },
+            {
+              "name": "Jennifer Buie",
+              "title": "Director General",
+              "institution": "Fisheries and Oceans Canada (DFO)"
+            }
+          ]
+        },
+        {
+          "comlogId": "691485",
+          "date": "2026-06-17",
+          "org": "Nunatsiavut Government",
+          "dpoh": [
+            {
+              "name": "Sarah Gingles",
+              "title": "Atlantic Regional Advisor",
+              "institution": "Environment and Climate Change Canada (ECCC)"
+            },
+            {
+              "name": "Isabelle Hurley",
+              "title": "Deputy Director of Policy",
+              "institution": "Environment and Climate Change Canada (ECCC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "682246",
+          "date": "2026-04-16",
+          "org": "Maa-nulth Treaty Society",
+          "dpoh": [
+            {
+              "name": "Pat Duncan",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "682244",
+          "date": "2026-04-15",
+          "org": "Maa-nulth Treaty Society",
+          "dpoh": [
+            {
+              "name": "Patti LaBoucane-Benson",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "682243",
+          "date": "2026-04-15",
+          "org": "Maa-nulth Treaty Society",
+          "dpoh": [
+            {
+              "name": "David Arnot",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "682242",
+          "date": "2026-04-14",
+          "org": "Maa-nulth Treaty Society",
+          "dpoh": [
+            {
+              "name": "Marilou McPhedran",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "667465",
+          "date": "2026-01-22",
+          "org": "Maa-nulth Treaty Society",
+          "dpoh": [
+            {
+              "name": "Jamie Schmale",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "667464",
+          "date": "2026-01-07",
+          "org": "Maa-nulth Treaty Society",
+          "dpoh": [
+            {
+              "name": "Billy Morin",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "662890",
+          "date": "2025-12-08",
+          "org": {
+            "en": "Land Claim Agreements Coalition",
+            "fr": "Coalition pour les ententes sur les revendications territoriales"
+          },
+          "dpoh": [
+            {
+              "name": "Sébastien Lemire",
+              "title": "Député",
+              "institution": "House of Commons"
+            }
+          ]
+        }
+      ]
+    },
+    "S-238": {
+      "total": 23,
+      "orgTotal": 3,
+      "orgs": [
+        {
+          "name": {
+            "en": "Citizens' Climate Lobby Canada",
+            "fr": "Le Lobby Climatique des Citoyens du Canada"
+          },
+          "n": 13
+        },
+        {
+          "name": "Saskatchewan Association of Rural Municipalities",
+          "n": 9
+        },
+        {
+          "name": {
+            "en": "Canadian Association of Petroleum Producers",
+            "fr": "Association Canadienne des Producteurs Pétroliers"
+          },
+          "n": 1
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "691368",
+          "date": "2026-06-03",
+          "org": {
+            "en": "Citizens' Climate Lobby Canada",
+            "fr": "Le Lobby Climatique des Citoyens du Canada"
+          },
+          "dpoh": [
+            {
+              "name": "David M. Wells",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "691367",
+          "date": "2026-06-03",
+          "org": {
+            "en": "Citizens' Climate Lobby Canada",
+            "fr": "Le Lobby Climatique des Citoyens du Canada"
+          },
+          "dpoh": [
+            {
+              "name": "Yuen Pau Woo",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "691359",
+          "date": "2026-06-02",
+          "org": {
+            "en": "Citizens' Climate Lobby Canada",
+            "fr": "Le Lobby Climatique des Citoyens du Canada"
+          },
+          "dpoh": [
+            {
+              "name": "Adam Van Koeverden",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Kristina Tesser Derksen",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "691357",
+          "date": "2026-06-02",
+          "org": {
+            "en": "Citizens' Climate Lobby Canada",
+            "fr": "Le Lobby Climatique des Citoyens du Canada"
+          },
+          "dpoh": [
+            {
+              "name": "Salma Zahid",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "680697",
+          "date": "2026-04-28",
+          "org": {
+            "en": "Citizens' Climate Lobby Canada",
+            "fr": "Le Lobby Climatique des Citoyens du Canada"
+          },
+          "dpoh": [
+            {
+              "name": "Clément Gignac",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            },
+            {
+              "name": "Toni Varone",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            },
+            {
+              "name": "Pierre Dalphond",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "681825",
+          "date": "2026-04-21",
+          "org": "Saskatchewan Association of Rural Municipalities",
+          "dpoh": [
+            {
+              "name": "John Barlow",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "681824",
+          "date": "2026-04-21",
+          "org": "Saskatchewan Association of Rural Municipalities",
+          "dpoh": [
+            {
+              "name": "John Barlow",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "681822",
+          "date": "2026-04-21",
+          "org": "Saskatchewan Association of Rural Municipalities",
+          "dpoh": [
+            {
+              "name": "John Barlow",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "681818",
+          "date": "2026-04-21",
+          "org": "Saskatchewan Association of Rural Municipalities",
+          "dpoh": [
+            {
+              "name": "John Barlow",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "681816",
+          "date": "2026-04-21",
+          "org": "Saskatchewan Association of Rural Municipalities",
+          "dpoh": [
+            {
+              "name": "John Barlow",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        }
+      ]
+    },
+    "S-4": {
+      "total": 14,
+      "orgTotal": 3,
+      "orgs": [
+        {
+          "name": "Association of Home Appliance Manufacturers",
+          "n": 7
+        },
+        {
+          "name": "Whirlpool Canada LP",
+          "n": 5
+        },
+        {
+          "name": "Electronics Product Stewardship Canada",
+          "n": 2
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "691362",
+          "date": "2026-06-25",
+          "org": "Association of Home Appliance Manufacturers",
+          "dpoh": [
+            {
+              "name": "Nicole Ellement",
+              "title": "Senior Regional Advisor - BC, AB, and SK",
+              "institution": "Environment and Climate Change Canada (ECCC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "688611",
+          "date": "2026-06-10",
+          "org": "Association of Home Appliance Manufacturers",
+          "dpoh": [
+            {
+              "name": "Jared Borgersen",
+              "title": "Policy Advisor",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Claudia Gallant",
+              "title": "Stakeholder Relations Advisor",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Andrew Evans",
+              "title": "Policy Advisor",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "688546",
+          "date": "2026-06-10",
+          "org": "Association of Home Appliance Manufacturers",
+          "dpoh": [
+            {
+              "name": "Sean Mitchell",
+              "title": "Senior Advisor",
+              "institution": "Natural Resources Canada (NRCan)"
+            }
+          ]
+        },
+        {
+          "comlogId": "688544",
+          "date": "2026-06-10",
+          "org": "Association of Home Appliance Manufacturers",
+          "dpoh": [
+            {
+              "name": "Richard Martel",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "679987",
+          "date": "2026-04-22",
+          "org": "Electronics Product Stewardship Canada",
+          "dpoh": [
+            {
+              "name": "Sean Mitchell",
+              "title": "Director of Parliamentary Affairs",
+              "institution": "Natural Resources Canada (NRCan)"
+            }
+          ]
+        },
+        {
+          "comlogId": "679667",
+          "date": "2026-04-16",
+          "org": "Whirlpool Canada LP",
+          "dpoh": [
+            {
+              "name": "David Wells",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "679597",
+          "date": "2026-04-16",
+          "org": "Whirlpool Canada LP",
+          "dpoh": [
+            {
+              "name": "David Wells",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "675461",
+          "date": "2026-03-26",
+          "org": "Whirlpool Canada LP",
+          "dpoh": [
+            {
+              "name": "Duncan Wilson",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            },
+            {
+              "name": "Sean Mitchell",
+              "title": "Senior Advisor",
+              "institution": "Environment and Climate Change Canada (ECCC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "675453",
+          "date": "2026-03-26",
+          "org": "Whirlpool Canada LP",
+          "dpoh": [
+            {
+              "name": "Sean Mitchell",
+              "title": "Director of Parliamentary Affairs and Issues Management",
+              "institution": "Natural Resources Canada (NRCan)"
+            }
+          ]
+        },
+        {
+          "comlogId": "675368",
+          "date": "2026-03-26",
+          "org": "Whirlpool Canada LP",
+          "dpoh": [
+            {
+              "name": "Duncan Wilson",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        }
+      ]
+    },
+    "C-27": {
+      "total": 4,
+      "orgTotal": 3,
+      "orgs": [
+        {
+          "name": "Instacart",
+          "n": 2
+        },
+        {
+          "name": {
+            "en": "Retail Council of Canada",
+            "fr": "Conseil canadien du commerce de detail"
+          },
+          "n": 1
+        },
+        {
+          "name": "Google Canada Corporation",
+          "n": 1
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "691282",
+          "date": "2026-06-24",
+          "org": "Instacart",
+          "dpoh": [
+            {
+              "name": "Samir Chhabra",
+              "title": "Director General, Marketplace Framework Policy",
+              "institution": "Innovation, Science and Economic Development Canada (ISED)"
+            },
+            {
+              "name": "Runa Angus",
+              "title": "Senior Director",
+              "institution": "Innovation, Science and Economic Development Canada (ISED)"
+            }
+          ]
+        },
+        {
+          "comlogId": "691058",
+          "date": "2026-06-03",
+          "org": "Instacart",
+          "dpoh": [
+            {
+              "name": "Simon Wood",
+              "title": "Senior Parliamentary Affairs Advisor",
+              "institution": "Innovation, Science and Economic Development Canada (ISED)"
+            }
+          ]
+        },
+        {
+          "comlogId": "687345",
+          "date": "2026-05-27",
+          "org": {
+            "en": "Retail Council of Canada",
+            "fr": "Conseil canadien du commerce de detail"
+          },
+          "dpoh": [
+            {
+              "name": "Luca Bonifacio-Proietto",
+              "title": "Policy Advisor",
+              "institution": "Innovation, Science and Economic Development Canada (ISED)"
+            }
+          ]
+        },
+        {
+          "comlogId": "683508",
+          "date": "2026-04-20",
+          "org": "Google Canada Corporation",
+          "dpoh": [
+            {
+              "name": "Michael Guglielmin",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        }
+      ]
+    },
+    "C-264": {
+      "total": 1,
+      "orgTotal": 1,
+      "orgs": [
+        {
+          "name": "Oil Sands Alliance Inc. (formerly Pathways Alliance Inc.)",
+          "n": 1
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "689340",
+          "date": "2026-05-07",
+          "org": "Oil Sands Alliance Inc. (formerly Pathways Alliance Inc.)",
+          "dpoh": [
+            {
+              "name": "David McKenzie",
+              "title": "Member of Parliament for Calgary Signal Hill",
+              "institution": "House of Commons"
+            }
+          ]
+        }
+      ]
+    },
+    "S-2": {
+      "total": 3,
+      "orgTotal": 1,
+      "orgs": [
+        {
+          "name": {
+            "en": "Women's Legal Education and Action Fund",
+            "fr": "Fonds d'action et d'éducation juridiques pour les femmes (FAEJ)"
+          },
+          "n": 3
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "688239",
+          "date": "2026-05-05",
+          "org": {
+            "en": "Women's Legal Education and Action Fund",
+            "fr": "Fonds d'action et d'éducation juridiques pour les femmes (FAEJ)"
+          },
+          "dpoh": [
+            {
+              "name": "Mandy Gull-Masty",
+              "title": "Minister of Indigenous Services",
+              "institution": "Indigenous Services Canada (ISC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "688238",
+          "date": "2026-05-05",
+          "org": {
+            "en": "Women's Legal Education and Action Fund",
+            "fr": "Fonds d'action et d'éducation juridiques pour les femmes (FAEJ)"
+          },
+          "dpoh": [
+            {
+              "name": "Jenny Kwan",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Margo Greenwood",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "688236",
+          "date": "2026-05-05",
+          "org": {
+            "en": "Women's Legal Education and Action Fund",
+            "fr": "Fonds d'action et d'éducation juridiques pour les femmes (FAEJ)"
+          },
+          "dpoh": [
+            {
+              "name": "Mark Carney",
+              "title": "Prime Minister",
+              "institution": "Prime Minister's Office (PMO)"
+            },
+            {
+              "name": "Tim Krupa",
+              "title": "Director of Policy",
+              "institution": "Prime Minister's Office (PMO)"
+            },
+            {
+              "name": "Lisa Jorgensen",
+              "title": "Director of Global Affairs",
+              "institution": "Prime Minister's Office (PMO)"
+            }
+          ]
+        }
+      ]
+    },
+    "C-14": {
+      "total": 19,
+      "orgTotal": 3,
+      "orgs": [
+        {
+          "name": {
+            "en": "Canadian Civil Liberties Association",
+            "fr": "Association Canadienne Des Libertes Civiles"
+          },
+          "n": 16
+        },
+        {
+          "name": {
+            "en": "Canadian Centre for Child Protection Inc.",
+            "fr": "Centre canadien de protection de l’enfance inc."
+          },
+          "n": 2
+        },
+        {
+          "name": {
+            "en": "National Police Federation",
+            "fr": "Federation de la Police Nationale"
+          },
+          "n": 1
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "687950",
+          "date": "2026-05-19",
+          "org": {
+            "en": "Canadian Civil Liberties Association",
+            "fr": "Association Canadienne Des Libertes Civiles"
+          },
+          "dpoh": [
+            {
+              "name": "Owen Ripley",
+              "title": "Senior Assistant Deputy Minister",
+              "institution": "Justice Canada (JC)"
+            },
+            {
+              "name": "Matthew Taylor",
+              "title": "Senior General Counsel and Director General, Criminal Law Policy Section",
+              "institution": "Justice Canada (JC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "687949",
+          "date": "2026-05-13",
+          "org": {
+            "en": "Canadian Civil Liberties Association",
+            "fr": "Association Canadienne Des Libertes Civiles"
+          },
+          "dpoh": [
+            {
+              "name": "Keith Torrie",
+              "title": "Senior Policy Advisor",
+              "institution": "Justice Canada (JC)"
+            },
+            {
+              "name": "Zoe Romeo",
+              "title": "Director of Parliamentary Affairs",
+              "institution": "Justice Canada (JC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "687946",
+          "date": "2026-05-06",
+          "org": {
+            "en": "Canadian Civil Liberties Association",
+            "fr": "Association Canadienne Des Libertes Civiles"
+          },
+          "dpoh": [
+            {
+              "name": "Bernadette Clement",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            },
+            {
+              "name": "Katie Verhoeven",
+              "title": "Senior Parliamentary Affairs Advisor",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "682269",
+          "date": "2026-04-27",
+          "org": {
+            "en": "Canadian Civil Liberties Association",
+            "fr": "Association Canadienne Des Libertes Civiles"
+          },
+          "dpoh": [
+            {
+              "name": "Noah Kathen",
+              "title": "Parliamentary Assistant",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "682267",
+          "date": "2026-04-27",
+          "org": {
+            "en": "Canadian Civil Liberties Association",
+            "fr": "Association Canadienne Des Libertes Civiles"
+          },
+          "dpoh": [
+            {
+              "name": "Kim Pate",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            },
+            {
+              "name": "Paul Prosper",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            },
+            {
+              "name": "Shawn Abel",
+              "title": "Parliamentary Affairs Advisor",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "682268",
+          "date": "2026-04-22",
+          "org": {
+            "en": "Canadian Civil Liberties Association",
+            "fr": "Association Canadienne Des Libertes Civiles"
+          },
+          "dpoh": [
+            {
+              "name": "Pierre Dalphond",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "676298",
+          "date": "2026-03-18",
+          "org": {
+            "en": "Canadian Civil Liberties Association",
+            "fr": "Association Canadienne Des Libertes Civiles"
+          },
+          "dpoh": [
+            {
+              "name": "Dada Muhobo",
+              "title": "Executive Assistant",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "676297",
+          "date": "2026-03-18",
+          "org": {
+            "en": "Canadian Civil Liberties Association",
+            "fr": "Association Canadienne Des Libertes Civiles"
+          },
+          "dpoh": [
+            {
+              "name": "Paula Simons",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            },
+            {
+              "name": "Shawn Abel",
+              "title": "Parliamentary Affairs Advisor",
+              "institution": "Senate of Canada"
+            },
+            {
+              "name": "Dina Dong",
+              "title": "Parliamentary Affairs Advisor",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "676723",
+          "date": "2026-03-17",
+          "org": {
+            "en": "Canadian Centre for Child Protection Inc.",
+            "fr": "Centre canadien de protection de l’enfance inc."
+          },
+          "dpoh": [
+            {
+              "name": "Larry Brock",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "676719",
+          "date": "2026-03-13",
+          "org": {
+            "en": "Canadian Centre for Child Protection Inc.",
+            "fr": "Centre canadien de protection de l’enfance inc."
+          },
+          "dpoh": [
+            {
+              "name": "Patricia Lattanzio",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        }
+      ]
+    },
+    "S-218": {
+      "total": 1,
+      "orgTotal": 1,
+      "orgs": [
+        {
+          "name": {
+            "en": "Canadian Civil Liberties Association",
+            "fr": "Association Canadienne Des Libertes Civiles"
+          },
+          "n": 1
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "687891",
+          "date": "2026-05-12",
+          "org": {
+            "en": "Canadian Civil Liberties Association",
+            "fr": "Association Canadienne Des Libertes Civiles"
+          },
+          "dpoh": [
+            {
+              "name": "Morgan MacDougall-Milne",
+              "title": "Director of Litigation",
+              "institution": "Justice Canada (JC)"
+            }
+          ]
+        }
+      ]
+    },
+    "C-202": {
+      "total": 10,
+      "orgTotal": 2,
+      "orgs": [
+        {
+          "name": "Turkey Farmers of Canada",
+          "n": 6
+        },
+        {
+          "name": "Canadian Canola Growers Association",
+          "n": 4
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "687580",
+          "date": "2026-05-27",
+          "org": "Turkey Farmers of Canada",
+          "dpoh": [
+            {
+              "name": "Mary Robinson",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            },
+            {
+              "name": "Mehek Noorani",
+              "title": "Director Of Parliamentary Affairs",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "687577",
+          "date": "2026-05-27",
+          "org": "Turkey Farmers of Canada",
+          "dpoh": [
+            {
+              "name": "Dave Epp",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Linnae Mielke",
+              "title": "Director of Parliamentary Affairs",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "687569",
+          "date": "2026-05-27",
+          "org": "Turkey Farmers of Canada",
+          "dpoh": [
+            {
+              "name": "Luce Farrell",
+              "title": "Executive Assistant",
+              "institution": "Senate of Canada"
+            },
+            {
+              "name": "Todd Lewis",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "687574",
+          "date": "2026-05-26",
+          "org": "Turkey Farmers of Canada",
+          "dpoh": [
+            {
+              "name": "Paul Connors",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Mark Choi",
+              "title": "Parliamentary Assistant",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "687482",
+          "date": "2026-05-26",
+          "org": "Turkey Farmers of Canada",
+          "dpoh": [
+            {
+              "name": "John Barlow",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Mark Choi",
+              "title": "Policy Advisor",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "637950",
+          "date": "2025-06-24",
+          "org": "Canadian Canola Growers Association",
+          "dpoh": [
+            {
+              "name": "Peter M. Boehm",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "636887",
+          "date": "2025-06-12",
+          "org": "Canadian Canola Growers Association",
+          "dpoh": [
+            {
+              "name": "Peter Harder",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "648545",
+          "date": "2025-06-11",
+          "org": "Canadian Canola Growers Association",
+          "dpoh": [
+            {
+              "name": "Kody Blois",
+              "title": "Parliamentary Secretary to the Prime Minister",
+              "institution": "Prime Minister's Office (PMO)"
+            },
+            {
+              "name": "Daniel Turner",
+              "title": "Strategic Operations Advisor",
+              "institution": "Prime Minister's Office (PMO)"
+            },
+            {
+              "name": "Matthew Hall",
+              "title": "Senior policy advisor",
+              "institution": "Prime Minister's Office (PMO)"
+            }
+          ]
+        },
+        {
+          "comlogId": "642076",
+          "date": "2025-06-05",
+          "org": "Turkey Farmers of Canada",
+          "dpoh": [
+            {
+              "name": "Robert Ianiro",
+              "title": "VP",
+              "institution": "Canadian Food Inspection Agency (CFIA)"
+            },
+            {
+              "name": "A Mewyers",
+              "title": "Sr. Policy Advisor",
+              "institution": "Agriculture and Agri-Food Canada (AAFC)"
+            },
+            {
+              "name": "J Eishami",
+              "title": "Special Assistant",
+              "institution": "Agriculture and Agri-Food Canada (AAFC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "636341",
+          "date": "2025-06-04",
+          "org": "Canadian Canola Growers Association",
+          "dpoh": [
+            {
+              "name": "Heath MacDonald",
+              "title": "Minister of Agriculture and Agri-Food",
+              "institution": "Agriculture and Agri-Food Canada (AAFC)"
+            },
+            {
+              "name": "Hilary Peirce",
+              "title": "Director of Policy, Office of the Minister of Agriculture and Agri-Food",
+              "institution": "Agriculture and Agri-Food Canada (AAFC)"
+            },
+            {
+              "name": "Lawrence Hanson",
+              "title": "Deputy Minister",
+              "institution": "Agriculture and Agri-Food Canada (AAFC)"
+            }
+          ]
+        }
+      ]
+    },
+    "C-267": {
+      "total": 1,
+      "orgTotal": 1,
+      "orgs": [
+        {
+          "name": "Electronics Product Stewardship Canada",
+          "n": 1
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "687353",
+          "date": "2026-06-08",
+          "org": "Electronics Product Stewardship Canada",
+          "dpoh": [
+            {
+              "name": "Nicole Ellement",
+              "title": "Senior Regional Advisor, West and North",
+              "institution": "Environment and Climate Change Canada (ECCC)"
+            }
+          ]
+        }
+      ]
+    },
+    "C-29": {
+      "total": 1,
+      "orgTotal": 1,
+      "orgs": [
+        {
+          "name": {
+            "en": "International Civil Liberties Monitoring Group",
+            "fr": "Coalition pour la surveillance internationale des libertés civiles"
+          },
+          "n": 1
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "686648",
+          "date": "2026-05-13",
+          "org": {
+            "en": "International Civil Liberties Monitoring Group",
+            "fr": "Coalition pour la surveillance internationale des libertés civiles"
+          },
+          "dpoh": [
+            {
+              "name": "Matthew O'Connell",
+              "title": "Deputy Director Financial Sector Policy",
+              "institution": "Finance Canada (FIN)"
+            }
+          ]
+        }
+      ]
+    },
+    "S-243": {
+      "total": 43,
+      "orgTotal": 7,
+      "orgs": [
+        {
+          "name": "National Council of Indigenous Midwives",
+          "n": 15
+        },
+        {
+          "name": "Alliance des femmes de la francophonie canadienne",
+          "n": 9
+        },
+        {
+          "name": "Women's Health Coalition of Canada",
+          "n": 6
+        },
+        {
+          "name": "Women's  Health Coalition of Canada",
+          "n": 5
+        },
+        {
+          "name": {
+            "en": "Ovarian Cancer Canada",
+            "fr": "Cancer d'ovaire canada"
+          },
+          "n": 5
+        },
+        {
+          "name": "Organon Canada Inc.",
+          "n": 2
+        },
+        {
+          "name": "Bayer Inc.",
+          "n": 1
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "686390",
+          "date": "2026-06-02",
+          "org": "National Council of Indigenous Midwives",
+          "dpoh": [
+            {
+              "name": "Juanita Nathan",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "686300",
+          "date": "2026-06-01",
+          "org": "National Council of Indigenous Midwives",
+          "dpoh": [
+            {
+              "name": "Michèle Audette",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "686396",
+          "date": "2026-05-27",
+          "org": "National Council of Indigenous Midwives",
+          "dpoh": [
+            {
+              "name": "Katherine Hay",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "685988",
+          "date": "2026-05-27",
+          "org": "National Council of Indigenous Midwives",
+          "dpoh": [
+            {
+              "name": "Katherine Hay",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "672687",
+          "date": "2026-02-27",
+          "org": "Women's Health Coalition of Canada",
+          "dpoh": [
+            {
+              "name": "Salma Zahid",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "670871",
+          "date": "2026-02-27",
+          "org": "Women's  Health Coalition of Canada",
+          "dpoh": [
+            {
+              "name": "Nancy Hamzawi",
+              "title": "President",
+              "institution": "Public Health Agency of Canada (PHAC)"
+            },
+            {
+              "name": "Ernie Klassen",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Michael Collins",
+              "title": "Vice-President",
+              "institution": "Public Health Agency of Canada (PHAC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "670722",
+          "date": "2026-02-27",
+          "org": "National Council of Indigenous Midwives",
+          "dpoh": [
+            {
+              "name": "Salma Zahid",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "670721",
+          "date": "2026-02-27",
+          "org": "National Council of Indigenous Midwives",
+          "dpoh": [
+            {
+              "name": "Nancy Hamzawi",
+              "title": "President",
+              "institution": "Public Health Agency of Canada (PHAC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "670719",
+          "date": "2026-02-27",
+          "org": "National Council of Indigenous Midwives",
+          "dpoh": [
+            {
+              "name": "Ernie Klassen",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "671562",
+          "date": "2026-02-26",
+          "org": "Alliance des femmes de la francophonie canadienne",
+          "dpoh": [
+            {
+              "name": "Joël Godin",
+              "title": "Député",
+              "institution": "House of Commons"
+            }
+          ]
+        }
+      ]
+    },
+    "C-15": {
+      "total": 56,
+      "orgTotal": 9,
+      "orgs": [
+        {
+          "name": {
+            "en": "Canadian Association of Petroleum Producers",
+            "fr": "Association Canadienne des Producteurs Pétroliers"
+          },
+          "n": 15
+        },
+        {
+          "name": "BC Libraries Cooperative",
+          "n": 10
+        },
+        {
+          "name": {
+            "en": "Centre for Equitable Library Access",
+            "fr": "Centre d’accès équitable aux bibliothèques"
+          },
+          "n": 10
+        },
+        {
+          "name": {
+            "en": "Quebec's Federation of Chambers of Commerce",
+            "fr": "Fédération des chambres de commerce du Québec"
+          },
+          "n": 6
+        },
+        {
+          "name": "CAD Digital Inc.",
+          "n": 5
+        },
+        {
+          "name": {
+            "en": "Canadian Urban Libraries Council",
+            "fr": "Conseil des Bibliothèques Urbaines du Canada"
+          },
+          "n": 4
+        },
+        {
+          "name": {
+            "en": "Pitney Bowes of Canada Ltd.",
+            "fr": "Pitney Bowes du Canada Ltée"
+          },
+          "n": 4
+        },
+        {
+          "name": {
+            "en": "National Police Federation",
+            "fr": "Federation de la Police Nationale"
+          },
+          "n": 1
+        },
+        {
+          "name": {
+            "en": "Canadian Civil Liberties Association",
+            "fr": "Association Canadienne Des Libertes Civiles"
+          },
+          "n": 1
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "686164",
+          "date": "2026-05-29",
+          "org": {
+            "en": "Quebec's Federation of Chambers of Commerce",
+            "fr": "Fédération des chambres de commerce du Québec"
+          },
+          "dpoh": [
+            {
+              "name": "Laura Colleony",
+              "title": "Conseillère régionale pour le Québec",
+              "institution": "Prime Minister's Office (PMO)"
+            },
+            {
+              "name": "Alyth Roos",
+              "title": "Adjoint(e) spécial(e) politiques",
+              "institution": "Prime Minister's Office (PMO)"
+            }
+          ]
+        },
+        {
+          "comlogId": "685991",
+          "date": "2026-05-27",
+          "org": {
+            "en": "Quebec's Federation of Chambers of Commerce",
+            "fr": "Fédération des chambres de commerce du Québec"
+          },
+          "dpoh": [
+            {
+              "name": "Steeve Lavoie",
+              "title": "Député",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "685989",
+          "date": "2026-05-26",
+          "org": {
+            "en": "Quebec's Federation of Chambers of Commerce",
+            "fr": "Fédération des chambres de commerce du Québec"
+          },
+          "dpoh": [
+            {
+              "name": "Djamel Boumenna",
+              "title": "Conseiller principal",
+              "institution": "Office of the Quebec Lieutenant"
+            },
+            {
+              "name": "Anaëlle Paradis",
+              "title": "Conseillère aux affaires régionales",
+              "institution": "Office of the Quebec Lieutenant"
+            }
+          ]
+        },
+        {
+          "comlogId": "680442",
+          "date": "2026-04-29",
+          "org": {
+            "en": "Quebec's Federation of Chambers of Commerce",
+            "fr": "Fédération des chambres de commerce du Québec"
+          },
+          "dpoh": [
+            {
+              "name": "Patrick Halley",
+              "title": "Sous-ministre adjoint",
+              "institution": "Finance Canada (FIN)"
+            },
+            {
+              "name": "Scott Winter",
+              "title": "Directeur général, Politique commerciale internationale",
+              "institution": "Finance Canada (FIN)"
+            },
+            {
+              "name": "Marie-Hélène Cantin",
+              "title": "Directrice, règles du commerce international",
+              "institution": "Finance Canada (FIN)"
+            }
+          ]
+        },
+        {
+          "comlogId": "685128",
+          "date": "2026-04-16",
+          "org": {
+            "en": "Canadian Association of Petroleum Producers",
+            "fr": "Association Canadienne des Producteurs Pétroliers"
+          },
+          "dpoh": [
+            {
+              "name": "Aaron Gunn",
+              "title": "Member of Parliament for North Island—Powell River",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "685116",
+          "date": "2026-04-15",
+          "org": {
+            "en": "Canadian Association of Petroleum Producers",
+            "fr": "Association Canadienne des Producteurs Pétroliers"
+          },
+          "dpoh": [
+            {
+              "name": "Aslam Rana",
+              "title": "Member of Parliament for Hamilton Centre",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "677869",
+          "date": "2026-04-14",
+          "org": {
+            "en": "Quebec's Federation of Chambers of Commerce",
+            "fr": "Fédération des chambres de commerce du Québec"
+          },
+          "dpoh": [
+            {
+              "name": "Anthony Laporte",
+              "title": "Conseiller stratégique, mise en oeuvre et exécution",
+              "institution": "Prime Minister's Office (PMO)"
+            }
+          ]
+        },
+        {
+          "comlogId": "678847",
+          "date": "2026-04-09",
+          "org": {
+            "en": "Quebec's Federation of Chambers of Commerce",
+            "fr": "Fédération des chambres de commerce du Québec"
+          },
+          "dpoh": [
+            {
+              "name": "Anthony Laporte",
+              "title": "Conseiller stratégique, mise en oeuvre et exécution",
+              "institution": "Prime Minister's Office (PMO)"
+            }
+          ]
+        },
+        {
+          "comlogId": "677175",
+          "date": "2026-03-24",
+          "org": "CAD Digital Inc.",
+          "dpoh": [
+            {
+              "name": "Nicolas Marion",
+              "title": "Senior Director, Payments Policy",
+              "institution": "Finance Canada (FIN)"
+            }
+          ]
+        },
+        {
+          "comlogId": "676282",
+          "date": "2026-03-05",
+          "org": {
+            "en": "Canadian Civil Liberties Association",
+            "fr": "Association Canadienne Des Libertes Civiles"
+          },
+          "dpoh": [
+            {
+              "name": "Cheryl Soullière",
+              "title": "Parliamentary Research Assistant",
+              "institution": "Senate of Canada"
+            },
+            {
+              "name": "Alexandra Toutant",
+              "title": "Parliamentary Research Assistant",
+              "institution": "Senate of Canada"
+            },
+            {
+              "name": "Diego Montes Ferro",
+              "title": "Parliamentary Affairs Advisor",
+              "institution": "Senate of Canada"
+            }
+          ]
+        }
+      ]
+    },
+    "C-224": {
+      "total": 7,
+      "orgTotal": 2,
+      "orgs": [
+        {
+          "name": {
+            "en": "Food, Health & Consumer Products of Canada",
+            "fr": "Produits alimentaires, de santé et de consommation du Canada"
+          },
+          "n": 6
+        },
+        {
+          "name": {
+            "en": "Speech-Language & Audiology Canada",
+            "fr": "Orthophonie & Audiologie Canada"
+          },
+          "n": 1
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "685990",
+          "date": "2026-05-27",
+          "org": {
+            "en": "Speech-Language & Audiology Canada",
+            "fr": "Orthophonie & Audiologie Canada"
+          },
+          "dpoh": [
+            {
+              "name": "Flordeliz Osler",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "677353",
+          "date": "2026-03-25",
+          "org": {
+            "en": "Food, Health & Consumer Products of Canada",
+            "fr": "Produits alimentaires, de santé et de consommation du Canada"
+          },
+          "dpoh": [
+            {
+              "name": "Dan Mazier",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "680005",
+          "date": "2026-03-20",
+          "org": {
+            "en": "Food, Health & Consumer Products of Canada",
+            "fr": "Produits alimentaires, de santé et de consommation du Canada"
+          },
+          "dpoh": [
+            {
+              "name": "Justine Frame",
+              "title": "Policy Advisor",
+              "institution": "Health Canada (HC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "677351",
+          "date": "2026-03-09",
+          "org": {
+            "en": "Food, Health & Consumer Products of Canada",
+            "fr": "Produits alimentaires, de santé et de consommation du Canada"
+          },
+          "dpoh": [
+            {
+              "name": "Helena Jaczek",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "673729",
+          "date": "2026-02-24",
+          "org": {
+            "en": "Food, Health & Consumer Products of Canada",
+            "fr": "Produits alimentaires, de santé et de consommation du Canada"
+          },
+          "dpoh": [
+            {
+              "name": "Burton Bailey",
+              "title": "Member of Parliament",
+              "institution": "Innovation, Science and Economic Development Canada (ISED)"
+            }
+          ]
+        },
+        {
+          "comlogId": "673728",
+          "date": "2026-02-18",
+          "org": {
+            "en": "Food, Health & Consumer Products of Canada",
+            "fr": "Produits alimentaires, de santé et de consommation du Canada"
+          },
+          "dpoh": [
+            {
+              "name": "Helena Konanz",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "673727",
+          "date": "2026-02-13",
+          "org": {
+            "en": "Food, Health & Consumer Products of Canada",
+            "fr": "Produits alimentaires, de santé et de consommation du Canada"
+          },
+          "dpoh": [
+            {
+              "name": "Claudia Gallant",
+              "title": "Stakeholder Relations Advisor",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Luhan Yao",
+              "title": "Policy Advisor",
+              "institution": "House of Commons"
+            }
+          ]
+        }
+      ]
+    },
+    "C-273": {
+      "total": 3,
+      "orgTotal": 1,
+      "orgs": [
+        {
+          "name": {
+            "en": "Canadian Federation of Agriculture",
+            "fr": "La Fédération canadienne de l'agriculture"
+          },
+          "n": 3
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "685232",
+          "date": "2026-04-21",
+          "org": {
+            "en": "Canadian Federation of Agriculture",
+            "fr": "La Fédération canadienne de l'agriculture"
+          },
+          "dpoh": [
+            {
+              "name": "Kody Blois",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "685231",
+          "date": "2026-04-21",
+          "org": {
+            "en": "Canadian Federation of Agriculture",
+            "fr": "La Fédération canadienne de l'agriculture"
+          },
+          "dpoh": [
+            {
+              "name": "Flordeliz Osler",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "684140",
+          "date": "2026-04-20",
+          "org": {
+            "en": "Canadian Federation of Agriculture",
+            "fr": "La Fédération canadienne de l'agriculture"
+          },
+          "dpoh": [
+            {
+              "name": "John Barlow",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        }
+      ]
+    },
+    "C-2": {
+      "total": 50,
+      "orgTotal": 9,
+      "orgs": [
+        {
+          "name": "WoodGreen Community Services",
+          "n": 17
+        },
+        {
+          "name": {
+            "en": "Canadian Civil Liberties Association",
+            "fr": "Association Canadienne Des Libertes Civiles"
+          },
+          "n": 9
+        },
+        {
+          "name": {
+            "en": "International Civil Liberties Monitoring Group",
+            "fr": "Coalition pour la surveillance internationale des libertés civiles"
+          },
+          "n": 8
+        },
+        {
+          "name": "Electronic Transactions Association",
+          "n": 6
+        },
+        {
+          "name": "Canadian Gaming Association (CGA)",
+          "n": 4
+        },
+        {
+          "name": "Ontario Child Sexual Exploitation Investigators Association (OCSEIA)",
+          "n": 2
+        },
+        {
+          "name": "Amazon Web Services Canada, Inc.",
+          "n": 2
+        },
+        {
+          "name": "Rogers Communications Inc.",
+          "n": 1
+        },
+        {
+          "name": "Canadian Gaming Association",
+          "n": 1
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "684919",
+          "date": "2026-04-13",
+          "org": "Ontario Child Sexual Exploitation Investigators Association (OCSEIA)",
+          "dpoh": [
+            {
+              "name": "Frank Caputo",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "684914",
+          "date": "2026-04-09",
+          "org": "Ontario Child Sexual Exploitation Investigators Association (OCSEIA)",
+          "dpoh": [
+            {
+              "name": "Larry Brock",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "678244",
+          "date": "2026-03-24",
+          "org": "Canadian Gaming Association (CGA)",
+          "dpoh": [
+            {
+              "name": "Ruby Sahota",
+              "title": "Member of Parliament, Secretary of State (Combatting Crime)",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Rob Jamieson",
+              "title": "Chief of Staff",
+              "institution": "Public Safety Canada (PS)"
+            }
+          ]
+        },
+        {
+          "comlogId": "675294",
+          "date": "2026-03-24",
+          "org": "Canadian Gaming Association (CGA)",
+          "dpoh": [
+            {
+              "name": "Ruby Sahota",
+              "title": "Member of Parliament, Secretary of State (Combatting Crime)",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Rob Jamieson",
+              "title": "Chief of Staff to Hon. Ruby Sahota, Secretary of State (Combatting Crime)",
+              "institution": "Public Safety Canada (PS)"
+            }
+          ]
+        },
+        {
+          "comlogId": "676663",
+          "date": "2026-03-05",
+          "org": {
+            "en": "Canadian Civil Liberties Association",
+            "fr": "Association Canadienne Des Libertes Civiles"
+          },
+          "dpoh": [
+            {
+              "name": "Emma Meldrum",
+              "title": "Parliamentary Affairs Advisor",
+              "institution": "Senate of Canada"
+            },
+            {
+              "name": "Yuen Pau Woo",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            },
+            {
+              "name": "Bernadette Clément",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "676303",
+          "date": "2026-03-03",
+          "org": {
+            "en": "Canadian Civil Liberties Association",
+            "fr": "Association Canadienne Des Libertes Civiles"
+          },
+          "dpoh": [
+            {
+              "name": "Dylan Odd",
+              "title": "Director, Parliamentary Affairs",
+              "institution": "Senate of Canada"
+            },
+            {
+              "name": "Katie Verhoeven",
+              "title": "Senior Parliamentary Advisor",
+              "institution": "Senate of Canada"
+            },
+            {
+              "name": "Emma Meldrum",
+              "title": "Parliamentary Affairs Advisor",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "671848",
+          "date": "2026-02-27",
+          "org": {
+            "en": "Canadian Civil Liberties Association",
+            "fr": "Association Canadienne Des Libertes Civiles"
+          },
+          "dpoh": [
+            {
+              "name": "Dylan Odd",
+              "title": "Director, Parliamentary Affairs",
+              "institution": "Senate of Canada"
+            },
+            {
+              "name": "Dina Dong",
+              "title": "Parliamentary Affairs Advisor",
+              "institution": "Senate of Canada"
+            },
+            {
+              "name": "Katie Verhoeven",
+              "title": "Senior Parliamentary Advisor",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "671781",
+          "date": "2026-02-13",
+          "org": {
+            "en": "Canadian Civil Liberties Association",
+            "fr": "Association Canadienne Des Libertes Civiles"
+          },
+          "dpoh": [
+            {
+              "name": "Emma Meldrum",
+              "title": "Parliamentary Affairs Advisor",
+              "institution": "Senate of Canada"
+            },
+            {
+              "name": "Katie Verhoeven",
+              "title": "Senior Parliamentary Advisor",
+              "institution": "Senate of Canada"
+            },
+            {
+              "name": "Bernadette Clément",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "668867",
+          "date": "2026-02-13",
+          "org": "WoodGreen Community Services",
+          "dpoh": [
+            {
+              "name": "Jordano Nudo",
+              "title": "Director of Parliamentary Affairs",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "667623",
+          "date": "2026-02-05",
+          "org": "WoodGreen Community Services",
+          "dpoh": [
+            {
+              "name": "Paulette Senior",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        }
+      ]
+    },
+    "C-8": {
+      "total": 29,
+      "orgTotal": 9,
+      "orgs": [
+        {
+          "name": "Qorsa Corp.",
+          "n": 6
+        },
+        {
+          "name": {
+            "en": "Canadian Union of Public Employees",
+            "fr": "Syndicat canadien de la fonction publique"
+          },
+          "n": 6
+        },
+        {
+          "name": "Kyndryl Canada Limited",
+          "n": 5
+        },
+        {
+          "name": "International Information System Security Certification Consortium, Inc. (“ISC2”)",
+          "n": 4
+        },
+        {
+          "name": {
+            "en": "ELECTRICITY CANADA",
+            "fr": "ÉLECTRICITÉ CANADA"
+          },
+          "n": 3
+        },
+        {
+          "name": "Cisco Systems Canada Co.",
+          "n": 2
+        },
+        {
+          "name": "Google Canada Corporation",
+          "n": 1
+        },
+        {
+          "name": "Amazon Web Services Canada, Inc.",
+          "n": 1
+        },
+        {
+          "name": {
+            "en": "Canadian Internet Registration Authority (CIRA)",
+            "fr": "L’Autorité canadienne pour les enregistrements (ACEI)"
+          },
+          "n": 1
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "683683",
+          "date": "2026-05-13",
+          "org": "International Information System Security Certification Consortium, Inc. (“ISC2”)",
+          "dpoh": [
+            {
+              "name": "Tim Logan",
+              "title": "Senior Policy Advisor",
+              "institution": "Innovation, Science and Economic Development Canada (ISED)"
+            }
+          ]
+        },
+        {
+          "comlogId": "683681",
+          "date": "2026-05-12",
+          "org": "International Information System Security Certification Consortium, Inc. (“ISC2”)",
+          "dpoh": [
+            {
+              "name": "Simon Wood",
+              "title": "Senior Parliamentary Affairs Advisor",
+              "institution": "Innovation, Science and Economic Development Canada (ISED)"
+            }
+          ]
+        },
+        {
+          "comlogId": "683678",
+          "date": "2026-05-12",
+          "org": "International Information System Security Certification Consortium, Inc. (“ISC2”)",
+          "dpoh": [
+            {
+              "name": "Zachary Torok",
+              "title": "Policy Advisor",
+              "institution": "Public Safety Canada (PS)"
+            }
+          ]
+        },
+        {
+          "comlogId": "683676",
+          "date": "2026-05-12",
+          "org": "International Information System Security Certification Consortium, Inc. (“ISC2”)",
+          "dpoh": [
+            {
+              "name": "Richard LaRose",
+              "title": "Cyber Principal",
+              "institution": "Communications Security Establishment Canada (CSEC)"
+            },
+            {
+              "name": "Daniel Couillard",
+              "title": "Director General",
+              "institution": "Communications Security Establishment Canada (CSEC)"
+            },
+            {
+              "name": "Jeff Rix",
+              "title": "Senior Policy Advisor",
+              "institution": "Public Safety Canada (PS)"
+            }
+          ]
+        },
+        {
+          "comlogId": "683747",
+          "date": "2026-04-08",
+          "org": "Qorsa Corp.",
+          "dpoh": [
+            {
+              "name": "Dr. Joel Martin",
+              "title": "Chief Digital Research Officer and Vice President",
+              "institution": "National Research Council (NRC)"
+            },
+            {
+              "name": "Dr. Sevgui Erman",
+              "title": "Director General",
+              "institution": "National Research Council (NRC)"
+            },
+            {
+              "name": "Dr. Koray Karabina",
+              "title": "Program Director",
+              "institution": "National Research Council (NRC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "683743",
+          "date": "2026-04-07",
+          "org": "Qorsa Corp.",
+          "dpoh": [
+            {
+              "name": "Salam Samara",
+              "title": "Ontario Regional Advisor",
+              "institution": "Federal Economic Development Agency for Southern Ontario (FedDev)"
+            },
+            {
+              "name": "Tanveerkaur Tur",
+              "title": "Senior Advisor, Operations and Stakeholder Engagement",
+              "institution": "Federal Economic Development Agency for Southern Ontario (FedDev)"
+            }
+          ]
+        },
+        {
+          "comlogId": "679090",
+          "date": "2026-03-03",
+          "org": "Qorsa Corp.",
+          "dpoh": [
+            {
+              "name": "Sami Khoury",
+              "title": "Senior Official, Communications Security Establishment",
+              "institution": "Communications Security Establishment Canada (CSEC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "680900",
+          "date": "2026-02-23",
+          "org": {
+            "en": "Canadian Union of Public Employees",
+            "fr": "Syndicat canadien de la fonction publique"
+          },
+          "dpoh": [
+            {
+              "name": "Nathalie Théberge",
+              "title": "Vice-President",
+              "institution": "Canadian Radio-television and Telecommunications Commission (CRTC)"
+            },
+            {
+              "name": "Stéphanie Paquette",
+              "title": "Commissioner",
+              "institution": "Canadian Radio-television and Telecommunications Commission (CRTC)"
+            },
+            {
+              "name": "Scott Shortliffe",
+              "title": "Vice President",
+              "institution": "Canadian Radio-television and Telecommunications Commission (CRTC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "680904",
+          "date": "2026-02-12",
+          "org": {
+            "en": "Canadian Union of Public Employees",
+            "fr": "Syndicat canadien de la fonction publique"
+          },
+          "dpoh": [
+            {
+              "name": "Claude DeBellefeuille",
+              "title": "MP",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Joel Raby Fernandes",
+              "title": "Parliamentary Assistant",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Bienvenu-Olivier Ntumba",
+              "title": "MP",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "680902",
+          "date": "2026-02-11",
+          "org": {
+            "en": "Canadian Union of Public Employees",
+            "fr": "Syndicat canadien de la fonction publique"
+          },
+          "dpoh": [
+            {
+              "name": "Roble Osoble",
+              "title": "Parliamentary Assistant",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Fares Al Soud",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Tim Logan",
+              "title": "Senior Policy Advisor",
+              "institution": "Innovation, Science and Economic Development Canada (ISED)"
+            }
+          ]
+        }
+      ]
+    },
+    "C-11": {
+      "total": 10,
+      "orgTotal": 2,
+      "orgs": [
+        {
+          "name": {
+            "en": "ACTRA Alliance of Canadian Cinema, Television and Radio Artists",
+            "fr": "ACTRA"
+          },
+          "n": 5
+        },
+        {
+          "name": "The Walt Disney Company (Canada) Ltd.",
+          "n": 5
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "682498",
+          "date": "2026-01-27",
+          "org": {
+            "en": "ACTRA Alliance of Canadian Cinema, Television and Radio Artists",
+            "fr": "ACTRA"
+          },
+          "dpoh": [
+            {
+              "name": "Elliott Lockington",
+              "title": "Chief of Staff",
+              "institution": "Treasury Board Of Canada Secretariat (TBS)"
+            },
+            {
+              "name": "Annahat Kochhar",
+              "title": "Policy Advisor",
+              "institution": "Treasury Board Of Canada Secretariat (TBS)"
+            },
+            {
+              "name": "Elizabeth Wong",
+              "title": "Policy Advisor",
+              "institution": "Treasury Board Of Canada Secretariat (TBS)"
+            }
+          ]
+        },
+        {
+          "comlogId": "682490",
+          "date": "2026-01-27",
+          "org": {
+            "en": "ACTRA Alliance of Canadian Cinema, Television and Radio Artists",
+            "fr": "ACTRA"
+          },
+          "dpoh": [
+            {
+              "name": "Brett Szmul",
+              "title": "Policy Advisor",
+              "institution": "Employment and Social Development Canada (ESDC)"
+            },
+            {
+              "name": "Liane Kotler",
+              "title": "Director of Communications",
+              "institution": "Employment and Social Development Canada (ESDC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "682487",
+          "date": "2026-01-27",
+          "org": {
+            "en": "ACTRA Alliance of Canadian Cinema, Television and Radio Artists",
+            "fr": "ACTRA"
+          },
+          "dpoh": [
+            {
+              "name": "Galen Richardson",
+              "title": "Senior Advisor, Stakeholder Relations",
+              "institution": "Privy Council Office (PCO)"
+            },
+            {
+              "name": "Miro Froehlich",
+              "title": "Director of Policy",
+              "institution": "Privy Council Office (PCO)"
+            },
+            {
+              "name": "Alex Axiotis-Perez",
+              "title": "Deputy Chief of Staff & Director of Operations",
+              "institution": "Privy Council Office (PCO)"
+            }
+          ]
+        },
+        {
+          "comlogId": "666303",
+          "date": "2025-11-25",
+          "org": "The Walt Disney Company (Canada) Ltd.",
+          "dpoh": [
+            {
+              "name": "Brandan Rowe",
+              "title": "Chief of Staff",
+              "institution": "Privy Council Office (PCO)"
+            },
+            {
+              "name": "Galen Richardson",
+              "title": "Senior Advisor, Stakeholder Relations",
+              "institution": "Privy Council Office (PCO)"
+            },
+            {
+              "name": "Dominic LeBlanc",
+              "title": "President of the King's Privy Council for Canada and Minister of International Trade and Intergovernmental Affairs",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "666301",
+          "date": "2025-11-25",
+          "org": "The Walt Disney Company (Canada) Ltd.",
+          "dpoh": [
+            {
+              "name": "Miled Hill",
+              "title": "Policy advisor",
+              "institution": "Prime Minister's Office (PMO)"
+            },
+            {
+              "name": "Matthew Hall",
+              "title": "Policy advisor",
+              "institution": "Prime Minister's Office (PMO)"
+            }
+          ]
+        },
+        {
+          "comlogId": "666297",
+          "date": "2025-11-25",
+          "org": "The Walt Disney Company (Canada) Ltd.",
+          "dpoh": [
+            {
+              "name": "Isabelle Mondou",
+              "title": "Deputy Minister",
+              "institution": "Canadian Heritage (PCH)"
+            }
+          ]
+        },
+        {
+          "comlogId": "666305",
+          "date": "2025-11-24",
+          "org": "The Walt Disney Company (Canada) Ltd.",
+          "dpoh": [
+            {
+              "name": "Hilary Leftick",
+              "title": "Chief of Staff",
+              "institution": "Canadian Heritage (PCH)"
+            }
+          ]
+        },
+        {
+          "comlogId": "666295",
+          "date": "2025-11-24",
+          "org": "The Walt Disney Company (Canada) Ltd.",
+          "dpoh": [
+            {
+              "name": "Mark Schaan",
+              "title": "Associate Deputy Minister",
+              "institution": "Innovation, Science and Economic Development Canada (ISED)"
+            }
+          ]
+        },
+        {
+          "comlogId": "682450",
+          "date": "2025-10-21",
+          "org": {
+            "en": "ACTRA Alliance of Canadian Cinema, Television and Radio Artists",
+            "fr": "ACTRA"
+          },
+          "dpoh": [
+            {
+              "name": "Miled Hill",
+              "title": "Senior Policy Advisor",
+              "institution": "Prime Minister's Office (PMO)"
+            }
+          ]
+        },
+        {
+          "comlogId": "682433",
+          "date": "2025-10-21",
+          "org": {
+            "en": "ACTRA Alliance of Canadian Cinema, Television and Radio Artists",
+            "fr": "ACTRA"
+          },
+          "dpoh": [
+            {
+              "name": "Dominic LeBlanc",
+              "title": "President of the King's Privy Council for Canada and Minister of International Trade and Intergovernmental Affairs",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Galen Richardson",
+              "title": "Senior Advisor, Stakeholder Relations",
+              "institution": "Privy Council Office (PCO)"
+            },
+            {
+              "name": "Brandan Rowe",
+              "title": "Chief of Staff",
+              "institution": "Privy Council Office (PCO)"
+            }
+          ]
+        }
+      ]
+    },
+    "C-233": {
+      "total": 19,
+      "orgTotal": 2,
+      "orgs": [
+        {
+          "name": {
+            "en": "Canadians for Justice and Peace in the Middle East",
+            "fr": "Canadiens pour la justice et la paix au Moyen-Orient"
+          },
+          "n": 15
+        },
+        {
+          "name": "Independent Jewish Voices Canada",
+          "n": 4
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "681215",
+          "date": "2026-04-01",
+          "org": "Independent Jewish Voices Canada",
+          "dpoh": [
+            {
+              "name": "Alexis Brunelle-Duceppe",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Simon-Pierre Savard-Tremblay",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "681210",
+          "date": "2026-03-17",
+          "org": "Independent Jewish Voices Canada",
+          "dpoh": [
+            {
+              "name": "Steven Guilbeault",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "675274",
+          "date": "2026-03-11",
+          "org": {
+            "en": "Canadians for Justice and Peace in the Middle East",
+            "fr": "Canadiens pour la justice et la paix au Moyen-Orient"
+          },
+          "dpoh": [
+            {
+              "name": "Sameer Zuberi",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "681194",
+          "date": "2026-03-10",
+          "org": "Independent Jewish Voices Canada",
+          "dpoh": [
+            {
+              "name": "Eric St-Pierre",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Jacques Ramsay",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "677859",
+          "date": "2026-03-10",
+          "org": {
+            "en": "Canadians for Justice and Peace in the Middle East",
+            "fr": "Canadiens pour la justice et la paix au Moyen-Orient"
+          },
+          "dpoh": [
+            {
+              "name": "Fares Al Soud",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "677853",
+          "date": "2026-03-10",
+          "org": {
+            "en": "Canadians for Justice and Peace in the Middle East",
+            "fr": "Canadiens pour la justice et la paix au Moyen-Orient"
+          },
+          "dpoh": [
+            {
+              "name": "Jenny Kwan",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "675273",
+          "date": "2026-03-10",
+          "org": {
+            "en": "Canadians for Justice and Peace in the Middle East",
+            "fr": "Canadiens pour la justice et la paix au Moyen-Orient"
+          },
+          "dpoh": [
+            {
+              "name": "Iqra Khalid",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Sameer Zuberi",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Ahmed Hussen",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "672517",
+          "date": "2026-03-10",
+          "org": {
+            "en": "Canadians for Justice and Peace in the Middle East",
+            "fr": "Canadiens pour la justice et la paix au Moyen-Orient"
+          },
+          "dpoh": [
+            {
+              "name": "Jenna Sudds",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            },
+            {
+              "name": "Abdelhaq Sari",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "681187",
+          "date": "2026-03-09",
+          "org": "Independent Jewish Voices Canada",
+          "dpoh": [
+            {
+              "name": "Maya Khelifi",
+              "title": "Political Assistant to MP Steven Guilbault",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "672514",
+          "date": "2026-03-03",
+          "org": {
+            "en": "Canadians for Justice and Peace in the Middle East",
+            "fr": "Canadiens pour la justice et la paix au Moyen-Orient"
+          },
+          "dpoh": [
+            {
+              "name": "Matthew Edginton",
+              "title": "Legislative Assistant",
+              "institution": "House of Commons"
+            }
+          ]
+        }
+      ]
+    },
+    "S-230": {
+      "total": 5,
+      "orgTotal": 2,
+      "orgs": [
+        {
+          "name": "Saskatchewan Association of Rural Municipalities",
+          "n": 3
+        },
+        {
+          "name": "Replenish Nutrients Inc.",
+          "n": 2
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "681002",
+          "date": "2026-04-21",
+          "org": "Replenish Nutrients Inc.",
+          "dpoh": [
+            {
+              "name": "Eleanor Olszewski",
+              "title": "Minister",
+              "institution": "Prairies Economic Development Canada (PrairiesCan)"
+            }
+          ]
+        },
+        {
+          "comlogId": "681000",
+          "date": "2026-04-21",
+          "org": "Replenish Nutrients Inc.",
+          "dpoh": [
+            {
+              "name": "Corey Hogan",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "655663",
+          "date": "2025-10-23",
+          "org": "Saskatchewan Association of Rural Municipalities",
+          "dpoh": [
+            {
+              "name": "Robert Black",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            },
+            {
+              "name": "Kimberly Roper",
+              "title": "Director of Parliamentary Affairs",
+              "institution": "Senate of Canada"
+            },
+            {
+              "name": "Sarah Daly",
+              "title": "Special Assistant",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "655155",
+          "date": "2025-10-23",
+          "org": "Saskatchewan Association of Rural Municipalities",
+          "dpoh": [
+            {
+              "name": "Robert Black",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            },
+            {
+              "name": "Sarah Daly",
+              "title": "Special Assistant",
+              "institution": "Senate of Canada"
+            },
+            {
+              "name": "Kimberly Roper",
+              "title": "Director of Parliamentary Affairs",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "654989",
+          "date": "2025-10-23",
+          "org": "Saskatchewan Association of Rural Municipalities",
+          "dpoh": [
+            {
+              "name": "Robert Black",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            },
+            {
+              "name": "Kimberly Roper",
+              "title": "Director of Parliamentary Affairs",
+              "institution": "Senate of Canada"
+            },
+            {
+              "name": "Sarah Daly",
+              "title": "Special Assistant",
+              "institution": "Senate of Canada"
+            }
+          ]
+        }
+      ]
+    },
+    "S-202": {
+      "total": 5,
+      "orgTotal": 3,
+      "orgs": [
+        {
+          "name": "Labatt Breweries",
+          "n": 2
+        },
+        {
+          "name": {
+            "en": "Canadian Craft Brewers Association",
+            "fr": "Association des microbrasseries canadiennes"
+          },
+          "n": 2
+        },
+        {
+          "name": {
+            "en": "Spirits Canada",
+            "fr": "Spiritueux Canada"
+          },
+          "n": 1
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "676252",
+          "date": "2026-03-09",
+          "org": "Labatt Breweries",
+          "dpoh": [
+            {
+              "name": "Jabril Hussein",
+              "title": "Special Advisor",
+              "institution": "Health Canada (HC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "670361",
+          "date": "2026-02-19",
+          "org": "Labatt Breweries",
+          "dpoh": [
+            {
+              "name": "Jibril Hussein",
+              "title": "Special Assistant",
+              "institution": "Health Canada (HC)"
+            }
+          ]
+        },
+        {
+          "comlogId": "658976",
+          "date": "2025-11-10",
+          "org": {
+            "en": "Spirits Canada",
+            "fr": "Spiritueux Canada"
+          },
+          "dpoh": [
+            {
+              "name": "Farah Mohamed",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "656368",
+          "date": "2025-10-28",
+          "org": {
+            "en": "Canadian Craft Brewers Association",
+            "fr": "Association des microbrasseries canadiennes"
+          },
+          "dpoh": [
+            {
+              "name": "Tracy Muggli",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "656415",
+          "date": "2025-10-27",
+          "org": {
+            "en": "Canadian Craft Brewers Association",
+            "fr": "Association des microbrasseries canadiennes"
+          },
+          "dpoh": [
+            {
+              "name": "Bryn Savage",
+              "title": "Policy Advisor to the Minister of Health",
+              "institution": "Health Canada (HC)"
+            }
+          ]
+        }
+      ]
+    },
+    "C-4": {
+      "total": 2,
+      "orgTotal": 1,
+      "orgs": [
+        {
+          "name": {
+            "en": "Centre for Digital Rights",
+            "fr": "Centre Pour Les Droits Numériques"
+          },
+          "n": 2
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "672834",
+          "date": "2026-02-12",
+          "org": {
+            "en": "Centre for Digital Rights",
+            "fr": "Centre Pour Les Droits Numériques"
+          },
+          "dpoh": [
+            {
+              "name": "Steven Parkinson",
+              "title": "Legislative Director",
+              "institution": "House of Commons"
+            }
+          ]
+        },
+        {
+          "comlogId": "664392",
+          "date": "2025-11-27",
+          "org": {
+            "en": "Centre for Digital Rights",
+            "fr": "Centre Pour Les Droits Numériques"
+          },
+          "dpoh": [
+            {
+              "name": "Pierre Dalphond",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        }
+      ]
+    },
+    "S-209": {
+      "total": 2,
+      "orgTotal": 2,
+      "orgs": [
+        {
+          "name": {
+            "en": "Canadian Centre for Child Protection Inc.",
+            "fr": "Centre canadien de protection de l’enfance inc."
+          },
+          "n": 1
+        },
+        {
+          "name": "Google Canada Corporation",
+          "n": 1
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "672776",
+          "date": "2026-02-23",
+          "org": {
+            "en": "Canadian Centre for Child Protection Inc.",
+            "fr": "Centre canadien de protection de l’enfance inc."
+          },
+          "dpoh": [
+            {
+              "name": "Julie Miville-Dechêne",
+              "title": "Senator",
+              "institution": "Senate of Canada"
+            }
+          ]
+        },
+        {
+          "comlogId": "656343",
+          "date": "2025-10-29",
+          "org": "Google Canada Corporation",
+          "dpoh": [
+            {
+              "name": "Julie Miville-Dechêne",
+              "title": "Senator for Québec",
+              "institution": "Senate of Canada"
+            }
+          ]
+        }
+      ]
+    },
+    "C-244": {
+      "total": 2,
+      "orgTotal": 1,
+      "orgs": [
+        {
+          "name": "Lenovo (Canada) Inc.",
+          "n": 2
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "660548",
+          "date": "2025-11-20",
+          "org": "Lenovo (Canada) Inc.",
+          "dpoh": [
+            {
+              "name": "Galen Richardson",
+              "title": "Senior Advisor, Stakeholder Relations",
+              "institution": "Privy Council Office (PCO)"
+            }
+          ]
+        },
+        {
+          "comlogId": "660540",
+          "date": "2025-11-20",
+          "org": "Lenovo (Canada) Inc.",
+          "dpoh": [
+            {
+              "name": "Jacques Ramsay",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        }
+      ]
+    },
+    "C-216": {
+      "total": 1,
+      "orgTotal": 1,
+      "orgs": [
+        {
+          "name": "Rumble Canada Inc.",
+          "n": 1
+        }
+      ],
+      "recent": [
+        {
+          "comlogId": "637909",
+          "date": "2025-06-24",
+          "org": "Rumble Canada Inc.",
+          "dpoh": [
+            {
+              "name": "Andrew Lawton",
+              "title": "Member of Parliament",
+              "institution": "House of Commons"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
