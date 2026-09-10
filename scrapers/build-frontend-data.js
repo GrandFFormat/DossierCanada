@@ -282,6 +282,16 @@ function main() {
     html = injectBlock(html, PET_START_MARKER, PET_END_MARKER, 'petitions', petitions, stamp);
   }
 
+  // Lobbying déclaré par projet de loi (scrapers/lobbying.js) — injecté s'il existe.
+  // Alimenté par une archive téléchargée à la main (voir l'en-tête du scraper) :
+  // le fichier survit aux rafraîchissements où l'archive n'a pas été mise à jour.
+  const LOBBYING_PATH = 'data/lobbying.json';
+  if (existsSync(LOBBYING_PATH)) {
+    const lobbying = read(LOBBYING_PATH);
+    html = injectBlock(html, '/* LOBBYING_DATA_START', '/* LOBBYING_DATA_END */', 'lobbying',
+      { updatedAt: lobbying.scrapedAt, bills: lobbying.bills }, stamp);
+  }
+
   // Calendrier des séances de la Chambre (scrapers/house-calendar.js) — injecté s'il existe.
   if (existsSync(CALENDAR_PATH)) {
     const sittingDays = read(CALENDAR_PATH).sittingDays;

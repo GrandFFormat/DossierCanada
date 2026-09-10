@@ -34,6 +34,10 @@ const SCRAPERS = [
   'scrape:senate-votes',
   'scrape:house-calendar',
   'scrape:officeholders',
+  // Lobbying : lit une archive téléchargée à la main (data/source/, non versionnée).
+  // En CI l'archive est absente → le scraper sort proprement sans rien réécrire, et
+  // data/lobbying.json (versionné) continue d'alimenter le site.
+  'scrape:lobbying',
 ];
 // Assemblage du site à partir des data/*.json — critique : un échec ici est fatal.
 const BUILDS = ['build:frontend', 'build:pages'];

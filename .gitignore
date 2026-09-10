@@ -6,6 +6,9 @@ node_modules/
 # Échantillons de reconnaissance (régénérables via `npm run explore`)
 data/samples/
 
+# Archives sources téléchargées à la main (lobbying : 24 Mo, re-téléchargeable)
+data/source/
+
 # Visuel provenant du projet Québec (hors de ce dépôt)
 dossierquebec-cover-c.png
 
