@@ -4152,7 +4152,10 @@ function jumpToApropos(){
 // Rendu riche de « Qui gravite » : groupes avec en-tête, chaque entrée = rôle,
 // nom réel (vérifié), description, et une petite étiquette. Les entrées sans nom
 // (comités, whips, Cour suprême…) sont des rôles collectifs/institutionnels.
-function renderPeopleGroups(isEn){
+// `q` : mot-clé déjà normalisé. La recherche du lexique ne filtrait que le jargon
+// et laissait les seize cartes « Qui gravite » affichées telles quelles — chercher
+// un terme laissait donc l'écran plein de résultats non pertinents.
+function renderPeopleGroups(isEn, q){
   const L = o => isEn ? (o.en || o.fr) : (o.fr || o.en);
   // Même présentation que les termes du lexique : grille 2 colonnes, cartes néo,
   // badge coloré = le groupe. On coupe la partie explicative après le tiret cadratin
@@ -4168,13 +4171,18 @@ function renderPeopleGroups(isEn){
       const title = name || L(e.role);
       const roleLine = name ? `<div class="ppl-role">${L(e.role)}</div>` : '';
       const tagHtml = e.tag ? `<div class="ppl-tag">${L(e.tag)}</div>` : '';
+      // On cherche dans tout ce que la carte montre : nom, fonction, groupe,
+      // description, mention. Chercher « vérificatrice » doit sortir Karen Hogan.
+      if(!matchesSearch([title, name, L(e.role), groupLabel, L(e.desc), e.tag ? L(e.tag) : ''].join(' '), q)) return;
       cards.push(`<div class="lexique-item">
           <div class="lex-head"><dt>${title}</dt><span class="lex-badge ppl-badge" style="background:${color}">${groupLabel}</span></div>
           <dd>${roleLine}${L(e.desc)}${tagHtml}</dd>
         </div>`);
     });
   });
-  return `<div class="lexique-grid">${cards.join('')}</div>`;
+  // Chaîne vide, pas une grille vide : l'appelant décide alors de retirer aussi
+  // le titre de section et son texte d'introduction.
+  return cards.length ? `<div class="lexique-grid">${cards.join('')}</div>` : '';
 }
 
 function renderLexique(){
@@ -4200,13 +4208,30 @@ function renderLexique(){
     </div>`;
   const peopleTitle = isEn ? 'Who’s involved around Parliament' : 'Qui gravite autour du Parlement';
   const termsTitle = isEn ? 'Parliamentary jargon' : 'Le jargon parlementaire';
-  el.innerHTML = `<div class="role-group-title" id="sec-lexique-people">${peopleTitle}</div>`
-    + `<div style="font-size:12.5px; line-height:1.6; color:var(--slate); margin:-4px 0 8px; max-width:680px;">${isEn ? "The real people around Parliament, beyond the elected members. These names live on a dozen scattered official sites, so — unlike the rest of this daily-refreshed site — they're hard to keep automatic: the two that change most often (House Speaker, Governor General) update on their own; the others are verified by hand and may lag briefly after a change." : "Les vraies personnes qui gravitent autour du Parlement, au-delà des élu·e·s. Ces noms sont éparpillés sur une dizaine de sites officiels différents : contrairement au reste du site (rafraîchi chaque jour), ils sont difficiles à garder automatiques. Les deux qui changent le plus souvent (présidence des Communes, gouverneure générale) se mettent à jour tout seuls ; les autres sont vérifiés à la main et peuvent accuser un court délai après un changement."}</div>`
-    + renderPeopleGroups(isEn)
-    + lobbyRegistryBlock(isEn)
-    + `<div class="role-group-title" id="sec-lexique-terms" style="margin-top:26px;">${termsTitle}</div>`
-    + lexChips
-    + '<div class="lexique-grid">' + (lexTerms.length ? lexTerms.map(item).join('') : '<div class="no-results">' + (isEn ? 'No term matches this search.' : 'Aucun terme ne correspond à cette recherche.') + '</div>') + '</div>';
+  const peopleIntro = `<div style="font-size:12.5px; line-height:1.6; color:var(--slate); margin:-4px 0 8px; max-width:680px;">${isEn ? "The real people around Parliament, beyond the elected members. These names live on a dozen scattered official sites, so — unlike the rest of this daily-refreshed site — they're hard to keep automatic: the two that change most often (House Speaker, Governor General) update on their own; the others are verified by hand and may lag briefly after a change." : "Les vraies personnes qui gravitent autour du Parlement, au-delà des élu·e·s. Ces noms sont éparpillés sur une dizaine de sites officiels différents : contrairement au reste du site (rafraîchi chaque jour), ils sont difficiles à garder automatiques. Les deux qui changent le plus souvent (présidence des Communes, gouverneure générale) se mettent à jour tout seuls ; les autres sont vérifiés à la main et peuvent accuser un court délai après un changement."}</div>`;
+
+  // Sous recherche, une section vide ne garde ni son titre ni son texte
+  // d'introduction : sinon chercher « vote » laissait un en-tête « Qui gravite »
+  // suivi de rien, et le paragraphe explicatif poussait les vrais résultats
+  // hors de l'écran.
+  const people = renderPeopleGroups(isEn, lexQ);
+  const lobby = lobbyRegistryBlock(isEn, lexQ);
+  const peopleSection = people
+    ? `<div class="role-group-title" id="sec-lexique-people">${peopleTitle}</div>` + (lexQ ? '' : peopleIntro) + people
+    : '';
+  // Le jargon garde son titre s'il a des résultats, ou s'il est seul à pouvoir
+  // porter le message « rien ne correspond ».
+  const termsSection = lexTerms.length
+    ? `<div class="role-group-title" id="sec-lexique-terms" style="margin-top:${peopleSection || lobby ? '26px' : '0'};">${termsTitle}</div>`
+      + (lexQ ? '' : lexChips)
+      + '<div class="lexique-grid">' + lexTerms.map(item).join('') + '</div>'
+    : (peopleSection || lobby)
+      ? '' // d'autres sections répondent déjà : pas la peine d'annoncer un vide
+      : `<div class="role-group-title" id="sec-lexique-terms">${termsTitle}</div>`
+        + (lexQ ? '' : lexChips)
+        + `<div class="no-results">${isEn ? 'Nothing in the glossary matches this search.' : 'Rien dans le lexique ne correspond à cette recherche.'}</div>`;
+
+  el.innerHTML = peopleSection + lobby + termsSection;
 }
 
 // Registre des lobbyistes — bloc de RÉFÉRENCE (pas de donnée ingérée). Les fichiers
@@ -4215,14 +4240,18 @@ function renderLexique(){
 // une réponse vide), et il n'existe pas d'API interrogeable — impossible de garantir
 // un flux fiable et à jour comme le reste du site. On oriente donc honnêtement vers
 // les outils publics officiels (qui, eux, s'ouvrent dans le navigateur du visiteur).
-function lobbyRegistryBlock(isEn){
+function lobbyRegistryBlock(isEn, q){
   const title = isEn ? 'The lobbyist registry' : 'Le registre des lobbyistes';
   const body = isEn
     ? `Anyone paid to communicate with federal <b>public office holders</b> about laws, policies, grants or contracts must register in a <b>public registry</b>, overseen by the independent <b>Commissioner of Lobbying</b>. Registered lobbyists must also file <b>monthly reports</b> of their arranged communications with designated office holders (ministers, senior officials, MPs, senators).`
     : `Toute personne payée pour communiquer avec des <b>titulaires de charge publique</b> fédéraux au sujet de lois, politiques, subventions ou contrats doit s'inscrire à un <b>registre public</b>, supervisé par le <b>Commissaire au lobbying</b> (indépendant). Les lobbyistes inscrits doivent aussi déposer des <b>rapports mensuels</b> de leurs communications organisées avec les titulaires désignés (ministres, hauts fonctionnaires, député·e·s, sénateur·rice·s).`;
+  // ⚠️ Cette note disait « on ne reproduit pas ce registre » — c'est devenu faux le
+  // 2026-09-10, quand chaque fiche de projet s'est mise à afficher le lobbying
+  // déclaré qui la nomme. Une page qui contredit le reste du site vaut moins que
+  // pas de page du tout.
   const note = isEn
-    ? `We don't reproduce this registry on DossierCanada: its open data is only distributed in bulk files that block automated access, with no queryable API — so rather than risk stale data, we link straight to the official public tools.`
-    : `On ne reproduit pas ce registre sur DossierCanada : ses données ouvertes ne sont distribuées qu'en fichiers de masse bloquant l'accès automatisé, sans API interrogeable — plutôt que de risquer une donnée périmée, on renvoie directement aux outils publics officiels.`;
+    ? `On each bill's page, DossierCanada shows the reported communications that <b>name that bill</b> — count, most active organizations, and recent meetings, each linked to its official record. Two limits we own: the Commissioner's files have no queryable API, so we refresh the archive by hand about once a month; and because bill numbers are reused from one Parliament to the next, we only count communications whose description names both the number and the bill's title. The figure shown is a floor. For everything else — a person, a company, a subject — the official tools below are the source.`
+    : `Sur chaque fiche de projet de loi, DossierCanada affiche les communications déclarées qui <b>nomment ce projet</b> : compteur, organisations les plus actives, rencontres récentes, chacune liée à sa fiche officielle. Deux limites assumées : les fichiers du Commissariat n'ont pas d'API interrogeable, donc l'archive est rafraîchie à la main environ une fois par mois ; et comme les numéros de projets sont recyclés d'une législature à l'autre, on ne compte que les communications dont la description nomme le numéro <i>et</i> le titre. Le chiffre affiché est un plancher. Pour tout le reste — une personne, une entreprise, un sujet — les outils officiels ci-dessous font foi.`;
   const lg = isEn ? '' : '?lang=fra';
   // « Données ouvertes » → le portail officiel open.canada.ca (bilingue, fiable,
   // hors du pare-feu de lobbycanada.gc.ca) : le jeu « Rapports de communication ».
@@ -4235,6 +4264,8 @@ function lobbyRegistryBlock(isEn){
     [isEn ? 'Open data ↗' : 'Données ouvertes ↗', odUrl],
   ];
   const linksHtml = links.map(([t, u]) => `<a href="${u}" target="_blank" rel="noopener" style="color:var(--gold); white-space:nowrap;">${t}</a>`).join('<span style="color:var(--line); margin:0 8px;">·</span>');
+  // Sous recherche, ce bloc n'a pas à rester planté là s'il ne répond pas.
+  if(!matchesSearch([title, body, note, links.map(l => l[0]).join(' ')].join(' ').replace(/<[^>]+>/g, ' '), q)) return '';
   return `
     <div id="sec-lobby" style="background:var(--card); border:3px solid var(--line); border-radius:var(--radius); padding:14px 16px; margin:14px 0 4px; scroll-margin-top:12px;">
       <div style="font-family:'IBM Plex Mono',monospace; font-size:15px; font-weight:600; margin-bottom:6px;">🏢 ${title}</div>
