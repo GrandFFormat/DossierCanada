@@ -366,6 +366,11 @@
   .bill-summary .src-note{font-size:10.5px; color:var(--slate); margin:2px 0 0; font-style:italic;}
   /* Lobbying déclaré — bloc replié par défaut : la fiche reste courte, le détail
      s'ouvre à la demande (même logique que « qui a voté quoi »). */
+  /* Pastille de filtre « Lobbying » + compteur sur la rangée : même cyan que le
+     compteur du bloc, pour qu'on relie les deux d'un coup d'œil. */
+  .step-chip.lob-chip b{background:var(--cyan); color:var(--ink); padding:0 4px; margin-left:5px; font-weight:700;}
+  .step-chip.lob-chip.active b{background:var(--paper); color:var(--ink);}
+  .ab-lob{flex:none; font-family:'IBM Plex Mono',monospace; font-size:10.5px; font-weight:700; color:var(--ink); background:var(--cyan); border:1px solid var(--ink); padding:1px 5px; cursor:help;}
   .lob{margin:12px 0 0; border:2px solid var(--ink); background:var(--paper-2); padding:9px 11px; cursor:pointer;}
   .lob-head{display:flex; align-items:baseline; gap:8px; flex-wrap:wrap;}
   .lob.open .lob-body{cursor:auto;}
@@ -753,7 +758,10 @@
     .ab-head .ab-num{ order:2; }
     .ab-head .depute-party{ order:3; }
     .ab-head .status-pill{ order:4; }
-    .ab-head .ab-caret{ order:5; margin-left:auto; }
+    /* Sans ordre explicite le compteur de lobbying restait seul au-dessus du
+       titre : sa place est sur la ligne des pastilles, avec le reste. */
+    .ab-head .ab-lob{ order:5; }
+    .ab-head .ab-caret{ order:6; margin-left:auto; }
   }
   @media (max-width:900px){ .challenge-track .challenge-card{ flex:0 0 calc((100% - 16px)/2); } }
   @media (max-width:640px){ .challenge-track .challenge-card{ flex:0 0 100%; } }
@@ -3503,6 +3511,10 @@ function toggleBillSummary(domId, evt){
 
 let billsStatusFilter = '';
 let billsStepFilter = null;
+// Ne garder que les projets sur lesquels du lobbying est déclaré (50 sur 185 au
+// 2026-09). Vit à côté du filtre de chambre : c'est une autre façon de trancher
+// la même liste.
+let billsLobbyFilter = false;
 let billsSortDir = 'desc';
 const billsStatusOrder = ['encours','rejete','loi'];
 
@@ -3544,7 +3556,12 @@ function renderStepFilters(){
   const opts = currentLang==='en'
     ? [['commons','House of Commons'],['senate','Senate']]
     : [['commons','Chambre des communes'],['senate','Sénat']];
-  el.innerHTML = opts.map(([val,label])=>`<span class="step-chip ${billsStepFilter===val?'active':''}" onclick="setBillsStepFilter('${val}')">${label}</span>`).join('');
+  const isEn = currentLang === 'en';
+  // Le compteur est calculé, jamais codé en dur : il suit les données du mois.
+  const n = (typeof lobbying !== 'undefined' && lobbying.bills)
+    ? bills.filter(b => lobbying.bills[b.num]).length : 0;
+  const lobChip = n ? `<span class="step-chip lob-chip ${billsLobbyFilter?'active':''}" onclick="setBillsLobbyFilter()" title="${isEn?'Bills with communications reported to the Commissioner of Lobbying':'Projets avec des communications déclarées au Commissariat au lobbying'}">${isEn?'Lobbying':'Lobbying'} <b>${n}</b></span>` : '';
+  el.innerHTML = opts.map(([val,label])=>`<span class="step-chip ${billsStepFilter===val?'active':''}" onclick="setBillsStepFilter('${val}')">${label}</span>`).join('') + lobChip;
 }
 
 function setBillsStepFilter(n){
@@ -3554,11 +3571,26 @@ function setBillsStepFilter(n){
   closeFilterPanelsOnMobile();
 }
 
+function setBillsLobbyFilter(){
+  billsLobbyFilter = !billsLobbyFilter;
+  renderStepFilters();
+  updateSortToggleLabel();
+  renderBills();
+  closeFilterPanelsOnMobile();
+}
+
 function updateSortToggleLabel(){
   const btn = document.getElementById('sortToggle');
   if(!btn) return;
-  const asc = currentLang==='en' ? '↑ Oldest activity first' : '↑ Activité la plus ancienne';
-  const desc = currentLang==='en' ? '↓ Most recent activity first' : '↓ Activité la plus récente';
+  const isEn = currentLang==='en';
+  // Le filtre lobbying change ce qu'on trie : le bouton doit le dire, sinon il
+  // annonce « activité la plus récente » alors que la liste classe des rencontres.
+  const asc = billsLobbyFilter
+    ? (isEn ? '↑ Least lobbied first' : '↑ Le moins de lobbying')
+    : (isEn ? '↑ Oldest activity first' : '↑ Activité la plus ancienne');
+  const desc = billsLobbyFilter
+    ? (isEn ? '↓ Most lobbied first' : '↓ Le plus de lobbying')
+    : (isEn ? '↓ Most recent activity first' : '↓ Activité la plus récente');
   btn.textContent = billsSortDir === 'desc' ? desc : asc;
 }
 function toggleBillsSort(){
@@ -3603,10 +3635,18 @@ function renderBills(keyword){
   const list = bills.filter(b => {
     const statusOk = !billsStatusFilter || b.state === billsStatusFilter;
     const chamberOk = billsStepFilter === null || b.chamber === billsStepFilter;
+    const lobbyOk = !billsLobbyFilter || !!(typeof lobbying !== 'undefined' && lobbying.bills && lobbying.bills[b.num]);
     const haystack = norm([b.title && b.title.fr, b.title && b.title.en, 'projet de loi ' + b.num, b.sponsor && (b.sponsor.fr||b.sponsor.en)].join(' '));
     const kwOk = !kw || haystack.includes(kw);
-    return statusOk && chamberOk && kwOk;
+    return statusOk && chamberOk && lobbyOk && kwOk;
   }).sort((a,b)=>{
+    // Filtre lobbying actif : on classe du plus lobbyé au moins lobbyé — c'est
+    // la question qu'on pose en cliquant. Le sens du tri reste celui du bouton.
+    if(billsLobbyFilter && typeof lobbying !== 'undefined' && lobbying.bills){
+      const na = (lobbying.bills[a.num]||{}).total || 0;
+      const nb = (lobbying.bills[b.num]||{}).total || 0;
+      if(na !== nb) return billsSortDir === 'desc' ? nb - na : na - nb;
+    }
     const da = a.lastActivity || '', db = b.lastActivity || '';
     if(!da && !db) return 0;
     if(!da) return 1;
@@ -3660,11 +3700,16 @@ function apercuBillRow(b, ctx){
     partyBadge = `<span class="depute-party" style="background:${c}; color:${textOn(c)}">${ab}</span>`;
   }
   const statusP = `<span class="status-pill ${statusClass(b.state)}">${statusLabel(b.state)}</span>`;
+  // Compteur de lobbying à même la rangée : sans lui, une liste filtrée « Lobbying »
+  // ne dit pas lesquels pèsent lourd. Absent quand rien n'est déclaré.
+  const lobN = (typeof lobbying !== 'undefined' && lobbying.bills && lobbying.bills[b.num]) ? lobbying.bills[b.num].total : 0;
+  const lobBadge = lobN ? `<span class="ab-lob" title="${lobN} ${isEn ? 'reported lobbying communications' : 'communications de lobbying déclarées'}">${lobN}</span>` : '';
   const full = billCard(b, ctx + b.id);
   return `<div class="ab-row" id="${rowId}">
     <div class="ab-head" onclick="toggleApercuBill('${rowId}')">
       <span class="ab-num">${b.num}</span>
       <span class="ab-title">${title}</span>
+      ${lobBadge}
       ${partyBadge}
       ${statusP}
       <span class="ab-caret">▾</span>
@@ -3731,10 +3776,11 @@ function openBillFromQuery(){
   // S'assurer qu'on est sur l'onglet Projets (ex. si le lien arrive en /?pl=NUM).
   if(typeof viewFromPath === 'function' && viewFromPath() !== 'projets'){ goToTab('projets', { fromHistory: true, noScroll: true }); }
   // Le projet doit passer le filtre courant : « tous » + recherche vide.
-  billsStatusFilter = ''; billsStepFilter = null;
+  billsStatusFilter = ''; billsStepFilter = null; billsLobbyFilter = false;
   const sb = document.getElementById('searchBills'); if(sb) sb.value = '';
   if(typeof renderStatusFilters === 'function') renderStatusFilters();
   if(typeof renderStepFilters === 'function') renderStepFilters();
+  if(typeof updateSortToggleLabel === 'function') updateSortToggleLabel();
   renderBills();
   const rowId = 'abrow-pr-' + b.id;
   const row = document.getElementById(rowId);
