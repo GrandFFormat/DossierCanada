@@ -3429,93 +3429,11 @@ function billCard(b, ctx){
     return `<span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; ${style}">${s.label}${date?`<b>${date}</b>`:''}</span>`;
   }).join('');
 
-  // Scrutins enregistrés sur ce projet (résumé). Le détail nominatif « qui a voté
-  // quoi » viendra à la tranche Votes ; ici on montre le résultat et les totaux.
-  const divs = (b.divisions || []);
-  const divTitle = isEn ? 'Recorded votes on this bill' : 'Votes enregistrés sur ce projet';
-  const yeaL = isEn ? 'Yea' : 'Pour', nayL = isEn ? 'Nay' : 'Contre', pairL = isEn ? 'paired' : 'pairés';
-  const divWrapId = `billvotes-${ctx}-${b.id}`;
-  // Vue compacte (par défaut) : une ligne par scrutin, propre et ordonnée.
-  const compactRows = divs.map(dv => {
-    const yea = dv.totals.yea || 0, nay = dv.totals.nay || 0;
-    const tot = (yea + nay) || 1;
-    const pctY = Math.round(yea / tot * 100);
-    const badgeBg = dv.passed ? 'var(--lime)' : 'var(--pink)';
-    return `<div style="padding:11px 0 5px; border-top:2px solid var(--ink);">
-      <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:7px;">
-        <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:600; color:var(--slate);">${dv.date}</span>
-        <span style="font-size:10.5px; font-weight:700; text-transform:uppercase; background:${badgeBg}; border:2px solid var(--ink); padding:1px 8px;">${L(dv.result)}</span>
-      </div>
-      <div style="display:flex; align-items:center; gap:11px;">
-        <div class="bar" style="flex:1; margin-top:0;"><div class="seg pour" style="width:${pctY}%"></div><div class="seg contre" style="width:${100 - pctY}%"></div></div>
-        <span style="font-size:12px; font-weight:700; white-space:nowrap; font-family:'IBM Plex Mono',monospace;"><b>${yea}</b> ${yeaL} · <b>${nay}</b> ${nayL}${dv.totals.paired ? ' · ' + dv.totals.paired + ' ' + pairL : ''}</span>
-      </div>
-    </div>`;
-  }).join('');
-  // Vue détaillée (dépliée par le + du haut) : chaque scrutin avec ses + pour voir qui a voté.
-  const detailedRows = divs.map(dv => {
-    const v = (typeof voteById !== 'undefined') ? voteById.get(dv.number) : null;
-    const domId = `billvote-${ctx}-${b.id}-${dv.number}`;
-    const pids = grp => v ? Object.keys(v.ballots).filter(p => v.ballots[p] === grp) : [];
-    return `<div class="vote-inline-block">
-        <div class="vote-inline-date">${dv.date} — <b style="color:${dv.passed ? 'var(--green)' : 'var(--red)'}">${L(dv.result)}</b></div>
-        <div class="tally">
-          <div class="tally-row"><span class="tally-plus" onclick="event.stopPropagation(); toggleNominalGroup('${domId}',${dv.number},'yea')" id="plus-${domId}-yea">+</span><span class="tally-label" style="color:var(--green)"><b>${dv.totals.yea}</b> ${yeaL}</span><span class="tally-breakdown">${partyBreakdownHtml(pids('yea'))}</span></div>
-          <div class="tally-row"><span class="tally-plus" onclick="event.stopPropagation(); toggleNominalGroup('${domId}',${dv.number},'nay')" id="plus-${domId}-nay">+</span><span class="tally-label" style="color:var(--red)"><b>${dv.totals.nay}</b> ${nayL}</span><span class="tally-breakdown">${partyBreakdownHtml(pids('nay'))}</span></div>
-          <div class="tally-row"><span class="tally-plus" onclick="event.stopPropagation(); toggleNominalGroup('${domId}',${dv.number},'paired')" id="plus-${domId}-paired">+</span><span class="tally-label" style="color:var(--slate)"><b>${dv.totals.paired}</b> ${pairL}</span><span class="tally-breakdown">${partyBreakdownHtml(pids('paired'))}</span></div>
-        </div>
-        <div class="nominal-detail" id="${domId}-yea"></div>
-        <div class="nominal-detail" id="${domId}-nay"></div>
-        <div class="nominal-detail" id="${domId}-paired"></div>
-      </div>`;
-  }).join('');
-  const divisionsHtml = divs.length ? `<div style="margin-top:10px;">
-    <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--slate); margin-bottom:4px;">${divTitle} <span class="tally-plus" id="plus-${divWrapId}" onclick="event.stopPropagation(); toggleBillVotes('${divWrapId}')">+</span> <span style="opacity:.7">${isEn ? 'who voted what' : 'qui a voté quoi'}</span></div>
-    <div id="${divWrapId}-compact">${compactRows}</div>
-    <div id="${divWrapId}-detailed" style="display:none">${detailedRows}</div>
-  </div>` : '';
-
-  // Votes du Sénat sur ce projet (même présentation ; le Sénat n'expose pas d'ID
-  // joignable, le détail nominatif est groupé par groupe parlementaire).
-  const senVotes = (typeof senateVotesByBillId !== 'undefined') ? (senateVotesByBillId.get(b.id) || []) : [];
-  const senWrapId = `senvotes-${ctx}-${b.id}`;
-  const absL = isEn ? 'abstentions' : 'abstentions';
-  const senCompact = senVotes.map(sv => {
-    const yea = sv.totals.yea || 0, nay = sv.totals.nay || 0;
-    const tot = (yea + nay) || 1;
-    const pctY = Math.round(yea / tot * 100);
-    const badgeBg = sv.passed ? 'var(--lime)' : 'var(--pink)';
-    return `<div style="padding:11px 0 5px; border-top:2px solid var(--ink);">
-      <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:7px;">
-        <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:600; color:var(--slate);">${sv.date}</span>
-        <span style="font-size:10.5px; font-weight:700; text-transform:uppercase; background:${badgeBg}; border:2px solid var(--ink); padding:1px 8px;">${L(sv.result)}</span>
-      </div>
-      <div style="display:flex; align-items:center; gap:11px;">
-        <div class="bar" style="flex:1; margin-top:0;"><div class="seg pour" style="width:${pctY}%"></div><div class="seg contre" style="width:${100 - pctY}%"></div></div>
-        <span style="font-size:12px; font-weight:700; white-space:nowrap; font-family:'IBM Plex Mono',monospace;"><b>${yea}</b> ${yeaL} · <b>${nay}</b> ${nayL}${sv.totals.abstention ? ' · ' + sv.totals.abstention + ' ' + absL : ''}</span>
-      </div>
-    </div>`;
-  }).join('');
-  const senDetailed = senVotes.map(sv => {
-    const sDomId = `senbillvote-${ctx}-${b.id}-${sv.id}`;
-    const bl = grp => sv.ballots.filter(x => x.vote === grp);
-    return `<div class="vote-inline-block">
-        <div class="vote-inline-date">${sv.date} — <b style="color:${sv.passed ? 'var(--green)' : 'var(--red)'}">${L(sv.result)}</b></div>
-        <div class="tally">
-          <div class="tally-row"><span class="tally-plus" onclick="event.stopPropagation(); toggleSenateNominal('${sDomId}',${sv.id},'yea')" id="plus-${sDomId}-yea">+</span><span class="tally-label" style="color:var(--green)"><b>${sv.totals.yea}</b> ${yeaL}</span><span class="tally-breakdown">${senateGroupBreakdown(bl('yea'))}</span></div>
-          <div class="tally-row"><span class="tally-plus" onclick="event.stopPropagation(); toggleSenateNominal('${sDomId}',${sv.id},'nay')" id="plus-${sDomId}-nay">+</span><span class="tally-label" style="color:var(--red)"><b>${sv.totals.nay}</b> ${nayL}</span><span class="tally-breakdown">${senateGroupBreakdown(bl('nay'))}</span></div>
-          <div class="tally-row"><span class="tally-plus" onclick="event.stopPropagation(); toggleSenateNominal('${sDomId}',${sv.id},'abstention')" id="plus-${sDomId}-abstention">+</span><span class="tally-label" style="color:var(--slate)"><b>${sv.totals.abstention}</b> ${absL}</span><span class="tally-breakdown">${senateGroupBreakdown(bl('abstention'))}</span></div>
-        </div>
-        <div class="nominal-detail" id="${sDomId}-yea"></div>
-        <div class="nominal-detail" id="${sDomId}-nay"></div>
-        <div class="nominal-detail" id="${sDomId}-abstention"></div>
-      </div>`;
-  }).join('');
-  const senateDivisionsHtml = senVotes.length ? `<div style="margin-top:10px;">
-    <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--slate); margin-bottom:4px;">${isEn ? 'Senate votes on this bill' : 'Votes du Sénat sur ce projet'} <span class="tally-plus" id="plus-${senWrapId}" onclick="event.stopPropagation(); toggleBillVotes('${senWrapId}')">+</span> <span style="opacity:.7">${isEn ? 'who voted what' : 'qui a voté quoi'}</span></div>
-    <div id="${senWrapId}-compact">${senCompact}</div>
-    <div id="${senWrapId}-detailed" style="display:none">${senDetailed}</div>
-  </div>` : '';
+  // NOTE : un bloc « votes sur ce projet » (Communes et Sénat, avec le détail
+  // nominatif) vivait ici. Il était calculé pour les 185 fiches à chaque rendu et
+  // JAMAIS inséré dans le HTML retourné — perdu lors de la conversion QC→fédéral,
+  // comme la feuille de route. Retiré le 2026-09-10. Les votes restent visibles
+  // dans la section Votes. À reconstruire ici si on veut les remettre sur la fiche.
 
   const reinstatedNote = b.reinstated ? ` · ${isEn ? 'reinstated from a previous session' : 'réinscrit d\'une session précédente'}` : '';
 
