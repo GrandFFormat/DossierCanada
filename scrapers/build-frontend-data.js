@@ -14,7 +14,7 @@
 // QC n'est pas encore adapté au modèle fédéral bicaméral). Le frontand, une fois
 // adapté, consommera ce fichier.
 
-import { readFileSync, writeFileSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, statSync } from 'node:fs';
 
 const BILLS_PATH = 'data/bills.json';
 const DEPUTES_PATH = 'data/deputes.json';
@@ -220,12 +220,10 @@ function main() {
     sponsorParty: sponsorPartyOf(b),
     state: b.state,
     reinstated: b.reinstated,
-    summary: b.summary ?? { en: null, fr: null },
-    summarySource: b.summarySource ?? null,
+    // Les TEXTES (sommaire officiel + résumé IA) partent dans un fichier à part,
+    // chargé à la demande — voir billTexts plus bas. Ils pesaient 1 035 Ko sur les
+    // 3 Mo de la page alors qu'un visiteur en lit un ou deux.
     fullSummaryAvailable: b.fullSummaryAvailable ?? false,
-    aiSummary: aiById[String(b.id)]
-      ? { en: aiById[String(b.id)].en ?? null, fr: aiById[String(b.id)].fr ?? null }
-      : { en: null, fr: null },
     milestones: b.milestones,
     lastActivity: b.lastActivity,
     latestActivity: { fr: b.latestActivity.fr, en: b.latestActivity.en },
@@ -233,6 +231,21 @@ function main() {
     divisions: b.divisions,
   }));
   const sponsorResolved = frontendBills.filter((b) => b.sponsorParty).length;
+
+  // TEXTES DES PROJETS — fichier séparé, chargé par le navigateur seulement quand
+  // quelqu'un ouvre une fiche. Clés courtes (s / src / ai) : répétées 185 fois,
+  // les noms longs coûtaient plus cher que leur lisibilité ne valait.
+  const BILL_TEXTS_PATH = 'data/bill-texts.json';
+  const billTexts = {};
+  for (const b of billsOut) {
+    const ai = aiById[String(b.id)];
+    const s = b.summary ?? {};
+    const entry = {};
+    if (s.en || s.fr) { entry.s = { en: s.en ?? null, fr: s.fr ?? null }; entry.src = b.summarySource ?? null; }
+    if (ai && (ai.en || ai.fr)) entry.ai = { en: ai.en ?? null, fr: ai.fr ?? null };
+    if (Object.keys(entry).length) billTexts[b.id] = entry;
+  }
+  writeFileSync(BILL_TEXTS_PATH, JSON.stringify(billTexts));
 
   // Courriels officiels (scrapers/depute-emails.js) — joints par PersonId.
   const EMAILS_PATH = 'data/depute-emails.json';
@@ -432,6 +445,7 @@ function main() {
   console.log(`  ${billsOut.length} projets · ${deputesOut.length} députés · ${resolvedVotes.length} scrutins`);
   console.log(`  scrutins reliés à un projet : ${out.meta.votesLinkedToBill}`);
   console.log(`  parti du parrain résolu : ${sponsorResolved}/${frontendBills.length} projets`);
+  console.log(`  textes des projets : ${Object.keys(billTexts).length} entrées dans ${BILL_TEXTS_PATH} (${(statSync(BILL_TEXTS_PATH).size / 1024).toFixed(0)} Ko, chargé à la demande)`);
   console.log(`  ancien·ne·s député·e·s présent·e·s dans les votes : ${formerVoterIds.size}`);
   if (unresolved.length) {
     console.log(`  ⚠ ${unresolved.length} vote(s) avec projet non résolu : ${unresolved.map((v) => `#${v.number}→${v.billNumber}`).join(', ')}`);
