@@ -341,6 +341,14 @@
   .bill-share-label{font-family:'IBM Plex Mono',monospace; font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.04em; color:var(--slate);}
   .bill-share-btn{font-family:'IBM Plex Mono',monospace; font-size:11.5px; font-weight:700; text-transform:uppercase; border:2px solid var(--ink); background:#fff; color:var(--ink); padding:6px 11px; border-radius:0; cursor:pointer; box-shadow:2px 2px 0 var(--ink);}
   .bill-share-btn:hover{background:var(--yellow);}
+  /* Confirmation du copier-coller, à même le bouton. Le lime dit « c'est fait »
+     sans rien interrompre ; la transition évite le clignotement brutal. */
+  /* Sélecteurs explicites plutôt qu'un `.copie` nu : la classe seule perdait la
+     cascade dans la fiche de projet, et une couleur de confirmation qui ne
+     s'affiche pas ne confirme rien. Couleur figée, pas de var() : une variable
+     non résolue dans ce sous-arbre laissait le bouton blanc. */
+  button.copie, a.copie, .bill-share-btn.copie, .cc-share .copie{background:#C6F24E !important; border-color:#131313 !important;}
+  button.copie-echec, a.copie-echec, .bill-share-btn.copie-echec, .cc-share .copie-echec{background:#FF90C8 !important; border-color:#131313 !important;}
   .bill-share-btn.ic{padding:6px 10px; min-width:34px;}
   .vp-note{font-size:10.5px; color:var(--slate); background:var(--paper-2); border-radius:20px; padding:4px 9px; font-family:'IBM Plex Mono',monospace;}
 
@@ -2439,10 +2447,64 @@ function shareChallenge(billId, count, platform, evt){
     window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url), '_blank', 'noopener,width=600,height=520');
   } else {
     const full = text + ' ' + url;
-    (navigator.clipboard ? navigator.clipboard.writeText(full) : Promise.reject())
-      .then(() => alert(isEn ? 'Copied — paste it anywhere!' : 'Copié — collez-le où vous voulez !'))
-      .catch(() => prompt(isEn ? 'Copy this:' : 'Copiez ceci :', full));
+    const bouton = boutonDeLEvenement(evt);
+    copierTexte(full)
+      .then(() => clignoteCopie(bouton, isEn, true))
+      .catch(() => clignoteCopie(bouton, isEn, false));
   }
+}
+
+// ACCUSÉ DE RÉCEPTION DU COPIER-COLLER
+// C'était une alert() du navigateur : une boîte modale qu'il faut fermer, pour
+// annoncer la réussite d'un geste d'une demi-seconde. Le bouton se charge
+// maintenant de le dire lui-même. On garde le glyphe à ✓ plutôt qu'un mot : la
+// rangée ne doit pas s'élargir sous le curseur juste après un clic.
+function boutonDeLEvenement(evt){
+  const cible = evt && (evt.currentTarget || evt.target);
+  return (cible && cible.closest) ? cible.closest('button, a') : null;
+}
+// L'API moderne refuse dans plusieurs cas ordinaires (permission, contexte non
+// sécurisé, navigateur ancien). Le repli d'origine était un prompt() — donc une
+// deuxième boîte modale, exactement ce qu'on voulait supprimer. execCommand est
+// obsolète mais fonctionne là où l'autre renonce, et sans rien interrompre.
+function copieDeSecours(texte){
+  return new Promise((ok, ko) => {
+    const ta = document.createElement('textarea');
+    ta.value = texte;
+    ta.setAttribute('readonly', '');
+    ta.style.cssText = 'position:fixed; top:-1000px; left:0; opacity:0;';
+    document.body.appendChild(ta);
+    ta.select();
+    let reussi = false;
+    try { reussi = document.execCommand('copy'); } catch(e) { reussi = false; }
+    ta.remove();
+    reussi ? ok() : ko(new Error('copie impossible'));
+  });
+}
+function copierTexte(texte){
+  if(navigator.clipboard && window.isSecureContext){
+    return navigator.clipboard.writeText(texte).catch(() => copieDeSecours(texte));
+  }
+  return copieDeSecours(texte);
+}
+function clignoteCopie(btn, isEn, reussi){
+  if(!btn || btn.dataset.retablir !== undefined) return; // déjà en train de clignoter
+  btn.dataset.retablir = btn.innerHTML;
+  btn.dataset.retablirNom = btn.getAttribute('aria-label') || '';
+  btn.classList.add(reussi ? 'copie' : 'copie-echec');
+  btn.innerHTML = reussi ? '✓' : '✗';
+  // Le changement de nom accessible fait annoncer « Lien copié » au lecteur
+  // d'écran : sans ça, le retour visuel ne serait perceptible que par la vue.
+  btn.setAttribute('aria-label', reussi
+    ? (isEn ? 'Link copied' : 'Lien copié')
+    : (isEn ? 'Copy failed — use your browser’s address bar' : 'Copie impossible — utilisez la barre d’adresse'));
+  setTimeout(() => {
+    btn.innerHTML = btn.dataset.retablir;
+    if(btn.dataset.retablirNom) btn.setAttribute('aria-label', btn.dataset.retablirNom);
+    else btn.removeAttribute('aria-label');
+    delete btn.dataset.retablir; delete btn.dataset.retablirNom;
+    btn.classList.remove('copie', 'copie-echec');
+  }, 1500);
 }
 let challengeOffset = 0;
 let challengeRotating = false;
@@ -3852,9 +3914,10 @@ function shareBill(billId, platform, evt){
     window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url), '_blank', 'noopener,width=600,height=520');
   } else { // copier (et repli si le partage natif échoue)
     const full = text + ' ' + url;
-    (navigator.clipboard ? navigator.clipboard.writeText(full) : Promise.reject())
-      .then(() => alert(isEn ? 'Copied — paste it anywhere!' : 'Copié — collez-le où vous voulez !'))
-      .catch(() => prompt(isEn ? 'Copy this:' : 'Copiez ceci :', full));
+    const bouton = boutonDeLEvenement(evt);
+    copierTexte(full)
+      .then(() => clignoteCopie(bouton, isEn, true))
+      .catch(() => clignoteCopie(bouton, isEn, false));
   }
 }
 
