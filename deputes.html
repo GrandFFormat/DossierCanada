@@ -3819,12 +3819,46 @@ function toggleApercuBill(rowId){
   // À l'ouverture on déplie aussi le résumé : sinon la description restait
   // cachée derrière un second clic, ce qui n'était pas devinable.
   if(opened){
+    // Un seul projet ouvert à la fois — une fiche dépliée fait plusieurs écrans
+    // de haut, et en empiler trois rendait la liste impraticable au défilement.
+    // On se limite à la MÊME liste : l'aperçu et la page Projets sont deux
+    // listes distinctes, fermer dans l'une en ouvrant dans l'autre serait
+    // incompréhensible.
+    const liste = r.parentElement;
+    let ferme = 0;
+    // Position du projet cliqué AVANT de refermer les autres : si l'une d'elles
+    // était au-dessus, la page se contracte et la fiche qu'on vient d'ouvrir
+    // saute sous le curseur. On rattrape le décalage plus bas.
+    const avant = r.getBoundingClientRect().top;
+    if(liste){
+      liste.querySelectorAll(':scope > .ab-row.open').forEach(autre => {
+        if(autre === r) return;
+        autre.classList.remove('open');
+        const s = autre.querySelector('.bill-summary');
+        if(s) s.classList.remove('open');
+        const h = autre.querySelector('.expand-hint');
+        if(h) h.textContent = t('btn.viewSummary');
+        ferme++;
+      });
+    }
     const sum = r.querySelector('.bill-summary');
     if(sum && !sum.classList.contains('open')){
       sum.classList.add('open');
       const hint = r.querySelector('.expand-hint');
       if(hint) hint.textContent = t('btn.hideSummary');
     }
+    if(ferme){
+      const delta = r.getBoundingClientRect().top - avant;
+      if(delta) window.scrollBy(0, delta);
+    }
+  } else {
+    // Fermeture symétrique de ce qu'on fait aux autres : sans ça, la rangée
+    // refermée gardait son résumé déplié en mémoire, dans un état différent de
+    // ses voisines pour un résultat visuel identique.
+    const sum = r.querySelector('.bill-summary');
+    if(sum) sum.classList.remove('open');
+    const hint = r.querySelector('.expand-hint');
+    if(hint) hint.textContent = t('btn.viewSummary');
   }
 }
 function renderApercuBills(){
