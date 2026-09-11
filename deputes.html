@@ -47,7 +47,7 @@
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='19' fill='%23C8102E'/%3E%3Cpath d='M9 12 L16 12 L19 16 L31 16 L31 30 L9 30 Z' stroke='%23FFFFFF' stroke-width='1.8' stroke-linejoin='round' stroke-linecap='round' fill='%23FFFFFF'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&family=Archivo+Black&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --ink:#131313;
@@ -375,10 +375,18 @@
     display:none; margin-top:14px; padding-top:14px; border-top:2px solid var(--ink);
   }
   .bill-summary.open{display:block;}
-  .bill-summary p{font-size:13px; line-height:1.65; color:var(--ink); margin:0 0 12px;}
+  .bill-summary p{font-family:'Archivo',system-ui,sans-serif; font-size:14.5px; line-height:1.6; color:var(--ink); margin:0 0 12px;}
   .bill-sum-head{font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.04em; color:var(--gold); margin:0 0 9px;}
   .bill-sum-list{margin:0 0 10px; padding-left:19px;}
-  .bill-sum-list li{font-size:13px; line-height:1.45; color:var(--ink); margin:0 0 4px; font-weight:500;}
+  /* TEXTE DE LECTURE EN ARCHIVO, PAS EN CHASSE FIXE.
+     Le mono fait l'identité du site — étiquettes, pastilles, ticker, métadonnées —
+     mais il est conçu pour aligner du code, pas pour lire de la prose : toutes les
+     lettres ayant la même largeur, la silhouette des mots disparaît, et c'est
+     justement ce que l'œil utilise pour lire vite. Archivo est déjà dans la
+     famille du site (Archivo Black sert aux titres) et c'est la police de lecture
+     de DossierQuébec. On en profite pour remonter la taille : 13 px de mono
+     n'équivalent pas à 16 px de proportionnelle. */
+  .bill-sum-list li{font-family:'Archivo',system-ui,sans-serif; font-size:15px; line-height:1.55; color:var(--ink); margin:0 0 7px; font-weight:400;}
   .bill-sum-list li::marker{color:var(--gold);}
   .bill-summary .src-note{font-size:10.5px; color:var(--slate); margin:2px 0 0; font-style:italic;}
   /* Lobbying déclaré — bloc replié par défaut : la fiche reste courte, le détail
@@ -765,7 +773,7 @@
   .ab-head{ display:flex; align-items:center; gap:10px; padding:11px 14px; cursor:pointer; }
   .ab-head:hover{ background:var(--amber-soft); }
   .ab-num{ flex:none; font-family:'IBM Plex Mono',monospace; font-weight:700; font-size:13px; background:var(--cyan); border:2px solid var(--ink); padding:1px 7px; white-space:nowrap; }
-  .ab-title{ flex:1; min-width:0; font-size:13.5px; font-weight:600; line-height:1.35; }
+  .ab-title{ flex:1; min-width:0; font-family:'Archivo',system-ui,sans-serif; font-size:15px; font-weight:500; line-height:1.4; }
   .ab-caret{ flex:none; font-size:11px; transition:transform .15s; }
   .ab-row.open .ab-caret{ transform:rotate(180deg); }
   .ab-detail{ display:none; }
@@ -777,7 +785,7 @@
      première ligne, et numéro / parti / statut se regroupent en dessous. */
   @media (max-width:640px){
     .ab-head{ flex-wrap:wrap; row-gap:9px; align-items:center; }
-    .ab-head .ab-title{ order:1; flex:1 1 100%; min-width:0; font-size:14px; }
+    .ab-head .ab-title{ order:1; flex:1 1 100%; min-width:0; font-size:15.5px; }
     .ab-head .ab-num{ order:2; }
     .ab-head .depute-party{ order:3; }
     .ab-head .status-pill{ order:4; }
