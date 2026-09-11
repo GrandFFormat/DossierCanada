@@ -2821,8 +2821,10 @@ function deputeCardFed(d, isEn, L){
   const profileTitle = isEn ? 'Official profile on ourcommons.ca' : 'Fiche officielle sur ourcommons.ca';
   // Avatar = icône courriel cliquable (adresse parlementaire officielle, lue sur la
   // fiche ourcommons, jamais devinée). Sans courriel : initiales → fiche officielle.
+  // aria-label obligatoire : le contenu du lien est une icône SVG, donc sans nom
+  // accessible un lecteur d'écran n'annonce que « lien ». Le title ne suffit pas.
   const avatar = d.email
-    ? `<a class="avatar" href="mailto:${d.email}" onclick="event.stopPropagation()" title="${d.email}">${mailIconSvg}</a>`
+    ? `<a class="avatar" href="mailto:${d.email}" onclick="event.stopPropagation()" title="${d.email}" aria-label="${isEn ? 'Email' : 'Écrire à'} ${d.name}">${mailIconSvg}</a>`
     : `<a class="avatar" href="${url}" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="${profileTitle}">${ini}</a>`;
   const profileLink = `<a class="vp-note" href="${url}" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="${profileTitle}">${isEn ? 'profile' : 'fiche'} ↗</a>`;
   return `
@@ -2875,7 +2877,7 @@ function personCard(p){
   return `
     <div class="m-card">
       <div class="top-row">
-        <a class="avatar" href="${mailHref}" ${email ? '' : 'target="_blank" rel="noopener"'} onclick="event.stopPropagation()" title="${mailTitle}">${mailIconSvg}</a>
+        <a class="avatar" href="${mailHref}" ${email ? '' : 'target="_blank" rel="noopener"'} onclick="event.stopPropagation()" title="${mailTitle}" aria-label="${email ? (isEn ? 'Email' : 'Écrire à') : (isEn ? 'Official profile of' : 'Fiche officielle de')} ${name}">${mailIconSvg}</a>
         <button class="follow-btn ${isFollowed?'on':''}" onclick="${followOnclick}">${isFollowed ? t('btn.following') : t('btn.follow')}</button>
       </div>
       <h3>${name}</h3>
