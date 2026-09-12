@@ -6,6 +6,10 @@ et [datan.fr](https://datan.fr).
 
 C'est la version fédérale de **DossierQuébec** (qui suit l'Assemblée nationale du Québec).
 
+Le dossier [`villedemontreal/`](villedemontreal/README.md) contient le **volet municipal Montréal**
+(prototype, hors des moteurs de recherche), construit sur le modèle du volet Ville de Québec de
+DossierQuébec ; il a son propre README, sa propre routine et son propre workflow.
+
 ## Principes
 
 - **Uniquement de vraies données publiques vérifiées** — jamais inventées. Quand une donnée

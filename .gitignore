@@ -16,3 +16,8 @@ dossierquebec-cover-c.png
 handoff-*.md
 Website design improvement needed/
 Website design improvement needed.zip
+
+# Volet Montréal : clé API locale, dépendances, et le cache de texte des PDF (régénérable)
+villedemontreal/api.env
+villedemontreal/node_modules/
+villedemontreal/data/textes/

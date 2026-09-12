@@ -1,0 +1,12 @@
+# Outillage du volet Montréal : dans le dépôt pour le rafraîchissement automatique
+# (GitHub Actions), inutile au site servi. Les pages, assets/ et data/ restent publiés.
+villedemontreal/lib
+villedemontreal/scrapers
+villedemontreal/scripts
+villedemontreal/test
+villedemontreal/README.md
+villedemontreal/courriel-greffe.md
+villedemontreal/package.json
+villedemontreal/package-lock.json
+villedemontreal/api.env.example
+villedemontreal/data/textes

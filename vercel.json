@@ -10,5 +10,23 @@
     "api/weekly-digest.js": {
       "includeFiles": "data/bills.json"
     }
-  }
+  },
+  "headers": [
+    {
+      "source": "/villedemontreal/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/villedemontreal",
+      "destination": "/villedemontreal/",
+      "permanent": true
+    }
+  ]
 }
