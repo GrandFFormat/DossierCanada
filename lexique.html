@@ -100,20 +100,19 @@ try{ var t = JSON.parse(localStorage.getItem('dossierquebec:theme') || 'null');
   /* THÈME SOMBRE — chaud plutôt que gris bleuté, pour rester dans la famille du
      papier crème. Les pastilles candy sont légèrement assourdies : à pleine
      saturation sur fond sombre, elles éblouissent. */
-  /* Par défaut on suit le système. Le `:not([data-theme="clair"])` laisse le
-     choix manuel gagner : quelqu'un dont l'OS est en sombre mais qui a cliqué
-     « clair » garde le clair. */
-  @media (prefers-color-scheme: dark){
-    :root:not([data-theme="clair"]){
-      --ink:#F3EFE0; --ink-2:#F3EFE0; --paper:#14140E; --paper-2:#1C1B13;
-      --card:#232118; --line:#D8D2BE; --slate:#A8A292;
-      --strong:#2B2921; --on-strong:#F6F2E4; --on-strong-dim:#A9A392; --on-candy:#131313;
-      --gold:#F3EFE0; --gold-soft:#E8C62B; --amber:#F3EFE0; --amber-soft:#3A3626;
-      --green:#6FCF7A; --green-soft:#AFD945; --red:#FF7A93; --red-soft:#E87BB4;
-      --yellow:#E8C62B; --pink:#E87BB4; --cyan:#62C6CC; --lime:#AFD945;
-      --vote-pour:#4CAF6A; --vote-contre:#E2573F; --vote-abst:#9A9382; --track:#3A3628;
-    }
-  }
+  /* ⚠️ THÈME DÉSACTIVÉ (2026-09-12, décision de Martin : « ça le fait pas »).
+     Le bloc ci-dessous est complet et vérifié, mais rien ne le déclenche : ni
+     bouton dans l'entête, ni @media (prefers-color-scheme: dark). Aucun visiteur
+     ne le voit, y compris ceux dont le système est en sombre — inutile de leur
+     servir un design qu'on n'a pas validé.
+     POUR LE RALLUMER, au choix :
+       • essai ponctuel : document.documentElement.setAttribute('data-theme','sombre')
+       • suivre le système : réenvelopper le bloc dans
+         @media (prefers-color-scheme: dark){ :root:not([data-theme="clair"]){ … } }
+       • choix manuel : remettre le bouton (voir l'historique git, commit « Mode sombre »).
+     La séparation des rôles de couleur (--strong / --on-strong / --on-candy) reste
+     en place : elle ne change rien au mode clair et c'est elle qui rend le thème
+     possible. La refaire coûterait cher. */
   :root[data-theme="sombre"]{
     --ink:#F3EFE0;
     --ink-2:#F3EFE0;
@@ -155,9 +154,6 @@ try{ var t = JSON.parse(localStorage.getItem('dossierquebec:theme') || 'null');
   header.top .font-size-ctrl{ border:none !important; padding:0; gap:6px; background:transparent; }
   header.top .font-size-ctrl button, header.top .lang-toggle{ border:2px solid var(--ink) !important; border-radius:0 !important; background:var(--paper) !important; color:var(--ink) !important; font-weight:700; height:30px; box-shadow:none; }
   header.top .lang-toggle{ background:var(--strong) !important; color:var(--on-strong) !important; }
-  /* Même gabarit que les autres commandes d'entête : bordure franche, pas d'arrondi. */
-  .theme-toggle{ font-family:'IBM Plex Mono',monospace; font-size:15px; line-height:1; border:2px solid var(--ink); background:var(--paper); color:var(--ink); height:30px; min-width:32px; border-radius:0; cursor:pointer; flex:none; }
-  .theme-toggle:hover{ background:var(--yellow); color:var(--on-candy); }
   @media (max-width:640px){
     .header-date{display:none;}
     /* minmax(0,1fr) : sans ça la colonne refuse de descendre sous le min-content
@@ -638,7 +634,6 @@ try{ var t = JSON.parse(localStorage.getItem('dossierquebec:theme') || 'null');
      contraste. On les mélange vers l'encre claire : la teinte reste reconnaissable,
      la lecture redevient possible. */
   :root[data-theme="sombre"] .party-chip:not(.active){ color:color-mix(in srgb, var(--pc) 45%, #F3EFE0) !important; border-color:color-mix(in srgb, var(--pc) 60%, #F3EFE0) !important; }
-  @media (prefers-color-scheme: dark){ :root:not([data-theme="clair"]) .party-chip:not(.active){ color:color-mix(in srgb, var(--pc) 45%, #F3EFE0) !important; border-color:color-mix(in srgb, var(--pc) 60%, #F3EFE0) !important; } }
 
   #legendBtn.active{ background:var(--yellow); color:var(--on-candy) !important; }
   #senateChip.active{ background:var(--cyan); color:var(--on-candy) !important; }
@@ -1091,7 +1086,6 @@ try{ var t = JSON.parse(localStorage.getItem('dossierquebec:theme') || 'null');
       <span id="fontPct">100%</span>
       <button id="fontPlus" aria-label="Agrandir le texte">A+</button>
     </div>
-    <button class="theme-toggle" id="themeToggle" aria-label="Basculer en mode sombre" title="Mode sombre">☾</button>
     <button class="lang-toggle" id="langToggle">EN</button>
     <button class="hamburger" id="hamburgerBtn" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
@@ -2419,31 +2413,16 @@ async function changeFontZoom(delta){
 document.getElementById('fontMinus').addEventListener('click', ()=> changeFontZoom(-10));
 document.getElementById('fontPlus').addEventListener('click', ()=> changeFontZoom(10));
 
-// THÈME SOMBRE
-// Trois états, pas deux : « suivre le système » est le défaut, et c'est le bon
-// défaut — quelqu'un qui a réglé son OS en sombre ne veut pas rallumer un phare.
-// Le clic force ensuite clair ou sombre, et ce choix survit au rechargement.
-// L'attribut est déjà posé avant le premier rendu (voir le script dans <head>),
-// sinon la page apparaîtrait en crème une fraction de seconde avant de basculer.
-let themeChoisi = null; // null = système
-function themeEffectif(){
-  if(themeChoisi) return themeChoisi;
-  return (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) ? 'sombre' : 'clair';
-}
+// THÈME SOMBRE — DÉSACTIVÉ
+// La palette existe (voir :root[data-theme="sombre"] dans le CSS) mais rien ne
+// la déclenche : pas de bouton, pas de suivi de la préférence système. On garde
+// seulement de quoi poser l'attribut, pour pouvoir l'essayer ou le rallumer plus
+// tard sans tout refaire. Tant qu'aucun choix n'est enregistré, le site est clair.
+let themeChoisi = null;
 function appliqueTheme(){
   const r = document.documentElement;
   if(themeChoisi) r.setAttribute('data-theme', themeChoisi);
   else r.removeAttribute('data-theme');
-  const btn = document.getElementById('themeToggle');
-  if(!btn) return;
-  const sombre = themeEffectif() === 'sombre';
-  const isEn = (typeof currentLang !== 'undefined') && currentLang === 'en';
-  btn.textContent = sombre ? '☀' : '☾';
-  const libelle = sombre
-    ? (isEn ? 'Switch to light mode' : 'Passer en mode clair')
-    : (isEn ? 'Switch to dark mode' : 'Passer en mode sombre');
-  btn.setAttribute('aria-label', libelle);
-  btn.setAttribute('title', libelle);
 }
 async function loadTheme(){
   try{
@@ -2452,18 +2431,6 @@ async function loadTheme(){
     themeChoisi = (v === 'clair' || v === 'sombre') ? v : null;
   }catch(e){ themeChoisi = null; }
   appliqueTheme();
-}
-async function basculeTheme(){
-  themeChoisi = themeEffectif() === 'sombre' ? 'clair' : 'sombre';
-  appliqueTheme();
-  try{ await window.storage.set('theme', JSON.stringify(themeChoisi)); }catch(e){}
-}
-document.getElementById('themeToggle').addEventListener('click', basculeTheme);
-// Si l'OS change d'avis et qu'aucun choix manuel n'a été fait, on suit.
-if(window.matchMedia){
-  const mq = matchMedia('(prefers-color-scheme: dark)');
-  const suivre = () => { if(!themeChoisi) appliqueTheme(); };
-  mq.addEventListener ? mq.addEventListener('change', suivre) : mq.addListener(suivre);
 }
 
 let snoozedSections = {};
