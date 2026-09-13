@@ -20,6 +20,12 @@ construit, ce qui reste à vérifier, et pourquoi.
 
 ## Démarrage
 
+**Sans rien taper (Windows)** : double-cliquer sur `LANCER-MONTREAL.cmd`. Il vérifie Node.js et
+Git, télécharge le dépôt s'il n'est pas sur le PC, prend la dernière version de la branche,
+installe les dépendances, lance la routine, envoie les données sur GitHub et ouvre le site
+en local. S'il s'arrête, la fenêtre dit pourquoi ; copier son texte et l'envoyer à Claude.
+
+
 ```bash
 npm install            # deux dépendances : le SDK Anthropic (résumés) et pdf.js (lecture des PDF)
 npm test               # les lecteurs, hors ligne, sur des textes synthétiques
