@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-09-12T12:11:10.318Z",
+  "scrapedAt": "2026-09-13T13:27:16.073Z",
   "count": 20,
   "petitions": [
     {
@@ -18,7 +18,7 @@
         "fr": "Ouverte pour signature jusqu'au 3 novembre 2026 à 12 h 33 (HAE)"
       },
       "sponsor": "Maxime Blanchette-Joncas",
-      "signatures": 5081,
+      "signatures": 5719,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7742",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7742"
@@ -39,7 +39,7 @@
         "fr": "Ouverte pour signature jusqu'au 31 décembre 2026 à 10 h 11 (HAE)"
       },
       "sponsor": "Karina Gould",
-      "signatures": 5049,
+      "signatures": 5163,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7712",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7712"
@@ -60,7 +60,7 @@
         "fr": "Ouverte pour signature jusqu'au 7 janvier 2027 à 14 h 56 (HAE)"
       },
       "sponsor": "Dominique O'Rourke",
-      "signatures": 347,
+      "signatures": 386,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7663",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7663"
@@ -81,31 +81,10 @@
         "fr": "Ouverte pour signature jusqu'au 8 janvier 2027 à 13 h 58 (HAE)"
       },
       "sponsor": "Jenny Kwan",
-      "signatures": 241,
+      "signatures": 320,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7709",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7709"
-      }
-    },
-    {
-      "code": "e-7460",
-      "topic": {
-        "en": "Information and privacy",
-        "fr": "Information et vie privée"
-      },
-      "keywords": {
-        "en": "Artificial intelligence Privacy and data protection",
-        "fr": "Droit à la vie privée et protection de l ... Intelligence artificielle"
-      },
-      "status": {
-        "en": "Open for signature until October 26, 2026, at 3:48 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 26 octobre 2026 à 15 h 48 (HAE)"
-      },
-      "sponsor": "Judy A. Sgro",
-      "signatures": 194,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7460",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7460"
       }
     },
     {
@@ -123,10 +102,31 @@
         "fr": "Ouverte pour signature jusqu'au 8 janvier 2027 à 16 h 00 (HAE)"
       },
       "sponsor": "Arielle Kayabaga",
-      "signatures": 160,
+      "signatures": 222,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7621",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7621"
+      }
+    },
+    {
+      "code": "e-7460",
+      "topic": {
+        "en": "Information and privacy",
+        "fr": "Information et vie privée"
+      },
+      "keywords": {
+        "en": "Artificial intelligence Privacy and data protection",
+        "fr": "Droit à la vie privée et protection de l ... Intelligence artificielle"
+      },
+      "status": {
+        "en": "Open for signature until October 26, 2026, at 3:48 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 26 octobre 2026 à 15 h 48 (HAE)"
+      },
+      "sponsor": "Judy A. Sgro",
+      "signatures": 199,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7460",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7460"
       }
     },
     {
@@ -144,7 +144,7 @@
         "fr": "Ouverte pour signature jusqu'au 4 octobre 2026 à 13 h 58 (HAE)"
       },
       "sponsor": "Ali Ehsassi",
-      "signatures": 155,
+      "signatures": 187,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7590",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7590"
@@ -165,7 +165,7 @@
         "fr": "Ouverte pour signature jusqu'au 25 décembre 2026 à 12 h 01 (HAE)"
       },
       "sponsor": "Patrick Bonin",
-      "signatures": 131,
+      "signatures": 135,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7638",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7638"
@@ -186,7 +186,7 @@
         "fr": "Ouverte pour signature jusqu'au 9 novembre 2026 à 13 h 59 (HAE)"
       },
       "sponsor": "Karina Gould",
-      "signatures": 113,
+      "signatures": 131,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7738",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7738"
@@ -207,7 +207,7 @@
         "fr": "Ouverte pour signature jusqu'au 1 décembre 2026 à 10 h 11 (HAE)"
       },
       "sponsor": "Connie Cody",
-      "signatures": 112,
+      "signatures": 116,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7741",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7741"
@@ -228,7 +228,7 @@
         "fr": "Ouverte pour signature jusqu'au 1 décembre 2026 à 10 h 05 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 81,
+      "signatures": 87,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7690",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7690"
@@ -249,31 +249,10 @@
         "fr": "Ouverte pour signature jusqu'au 3 décembre 2026 à 13 h 59 (HAE)"
       },
       "sponsor": "Salma Zahid",
-      "signatures": 72,
+      "signatures": 76,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7705",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7705"
-      }
-    },
-    {
-      "code": "e-7708",
-      "topic": {
-        "en": "Holidays and observances",
-        "fr": "Congés et commémorations"
-      },
-      "keywords": {
-        "en": "Cultural symbols Pastries",
-        "fr": "Pâtisseries Symboles culturels"
-      },
-      "status": {
-        "en": "Open for signature until December 31, 2026, at 10:10 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 31 décembre 2026 à 10 h 10 (HAE)"
-      },
-      "sponsor": "Jamie Schmale",
-      "signatures": 45,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7708",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7708"
       }
     },
     {
@@ -291,7 +270,7 @@
         "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 14 h 55 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 43,
+      "signatures": 56,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7719",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7719"
@@ -312,31 +291,31 @@
         "fr": "Ouverte pour signature jusqu'au 7 janvier 2027 à 16 h 36 (HAE)"
       },
       "sponsor": "Luc Berthold",
-      "signatures": 37,
+      "signatures": 53,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7755",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7755"
       }
     },
     {
-      "code": "e-7674",
+      "code": "e-7708",
       "topic": {
-        "en": "Justice",
-        "fr": "Justice"
+        "en": "Holidays and observances",
+        "fr": "Congés et commémorations"
       },
       "keywords": {
-        "en": "Families and children Family law Justice system",
-        "fr": "Administration de la justice Droit de la famille Familles et enfants"
+        "en": "Cultural symbols Pastries",
+        "fr": "Pâtisseries Symboles culturels"
       },
       "status": {
-        "en": "Open for signature until December 3, 2026, at 2:01 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 3 décembre 2026 à 14 h 01 (HAE)"
+        "en": "Open for signature until December 31, 2026, at 10:10 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 31 décembre 2026 à 10 h 10 (HAE)"
       },
-      "sponsor": "Lisa Hepfner",
-      "signatures": 35,
+      "sponsor": "Jamie Schmale",
+      "signatures": 51,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7674",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7674"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7708",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7708"
       }
     },
     {
@@ -354,10 +333,31 @@
         "fr": "Ouverte pour signature jusqu'au 9 décembre 2026 à 10 h 53 (HAE)"
       },
       "sponsor": "Patrick Weiler",
-      "signatures": 31,
+      "signatures": 38,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7694",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7694"
+      }
+    },
+    {
+      "code": "e-7674",
+      "topic": {
+        "en": "Justice",
+        "fr": "Justice"
+      },
+      "keywords": {
+        "en": "Families and children Family law Justice system",
+        "fr": "Administration de la justice Droit de la famille Familles et enfants"
+      },
+      "status": {
+        "en": "Open for signature until December 3, 2026, at 2:01 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 3 décembre 2026 à 14 h 01 (HAE)"
+      },
+      "sponsor": "Lisa Hepfner",
+      "signatures": 37,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7674",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7674"
       }
     },
     {
@@ -375,7 +375,7 @@
         "fr": "Ouverte pour signature jusqu'au 8 janvier 2027 à 14 h 01 (HAE)"
       },
       "sponsor": "Heather McPherson",
-      "signatures": 14,
+      "signatures": 19,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7762",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7762"
@@ -396,7 +396,7 @@
         "fr": "Ouverte pour signature jusqu'au 2 janvier 2027 à 12 h 36 (HAE)"
       },
       "sponsor": "Kelly McCauley",
-      "signatures": 14,
+      "signatures": 15,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7737",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7737"
@@ -417,7 +417,7 @@
         "fr": "Ouverte pour signature jusqu'au 8 janvier 2027 à 10 h 52 (HAE)"
       },
       "sponsor": "Will Greaves",
-      "signatures": 8,
+      "signatures": 9,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7629",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7629"
