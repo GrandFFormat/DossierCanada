@@ -3,7 +3,9 @@
   "sourceUrl": "https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=",
   "session": "45-1",
   "sessionStart": "2025-05-26",
-  "scrapedAt": "2026-09-10T11:43:55.278Z",
+  "scrapedAt": "2026-09-10T10:29:49.233Z",
+  "parsedAt": "2026-09-14T20:53:30.143Z",
+  "archiveLastModified": null,
   "billsWithLobbying": 43,
   "bills": {
     "C-5": {
