@@ -6,15 +6,16 @@
 //   https://open.canada.ca/data/fr/dataset  → « Rapports mensuels de communications »
 //   fichier : communications_ocl_cal.zip
 //
-// ⚠️ POURQUOI CE SCRAPER NE TÉLÉCHARGE PAS TOUT SEUL
+// ⚠️ ACCÈS AU FICHIER
 // L'hôte des fichiers (lobbycanada.gc.ca) est derrière un défi JavaScript
-// Cloudflare : `fetch`/curl reçoivent un 403, même avec un User-Agent de
-// navigateur. Un vrai navigateur passe sans problème. On ne cherche donc PAS à
-// contourner la protection : le ZIP est téléchargé À LA MAIN (un clic, une fois
-// par mois — c'est la cadence de publication du jeu de données) et déposé dans :
-//   data/source/communications_ocl_cal.zip
-// Sans ce fichier, le scraper sort proprement sans rien casser (comme les résumés
-// IA sans clé API) : le build quotidien continue avec les données précédentes.
+// Cloudflare : sans autorisation, `fetch`/curl reçoivent un 403. On n'a JAMAIS
+// cherché à contourner cette protection. En septembre 2026, le Commissariat a
+// accepté d'ajouter notre agent (DossierCanada/1.0) à sa liste blanche — voir
+// fetchArchive() plus bas. Le scraper tente donc le téléchargement lui-même,
+// au plus une fois par mois, et retombe sur une archive locale déposée à la main
+// dans data/source/communications_ocl_cal.zip si le serveur refuse encore.
+// Sans l'une ni l'autre, il sort proprement sans rien casser : le build quotidien
+// continue avec les données précédentes.
 //
 // CE QU'ON PRODUIT (data/lobbying.json) : pour chaque projet de loi de la session
 // courante, les communications de lobbying qui le mentionnent explicitement.
@@ -30,7 +31,7 @@
 //     pointer vers sa fiche officielle et rester vérifiable.
 //   • Une rencontre n'est pas une influence : on montre qui a parlé à qui, sur quoi.
 
-import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, mkdirSync, statSync } from 'node:fs';
 import { inflateRawSync } from 'node:zlib';
 
 const ZIP_PATH = process.env.LOBBY_ZIP || 'data/source/communications_ocl_cal.zip';
@@ -245,13 +246,92 @@ function firstReading(bill) {
   return d[0] || null;
 }
 
-function main() {
+// TÉLÉCHARGEMENT AUTOMATIQUE — possible depuis que le Commissariat a accepté
+// d'ajouter notre agent à sa liste blanche Cloudflare (courriel de Manon Dion,
+// Service des communications, septembre 2026). Tant que ce n'est pas actif, le
+// serveur répond 403 et on retombe proprement sur l'archive locale.
+//
+// ⚠️ ENGAGEMENT PRIS AUPRÈS DU COMMISSARIAT : « une requête par mois, au rythme
+// de votre publication ». Ils nous rendent service ; on tient parole.
+//   • Pas de requête du tout tant que nos données ont moins de ARCHIVE_MIN_AGE_DAYS.
+//   • Ensuite, requête CONDITIONNELLE (If-Modified-Since) : si l'archive n'a pas
+//     changé, le serveur répond 304 en quelques octets et on ne retélécharge pas
+//     24 Mo pour rien.
+const ARCHIVE_URL = 'https://lobbycanada.gc.ca/media/mqbbmaqk/communications_ocl_cal.zip';
+const USER_AGENT = 'DossierCanada/1.0 (+https://dossiercanada.ca; site citoyen; contact mart.archambault@gmail.com)';
+const ARCHIVE_MIN_AGE_DAYS = 25;
+
+function readPrevious() {
+  try { return JSON.parse(readFileSync(OUT_PATH, 'utf-8')); } catch { return null; }
+}
+
+// Renvoie 'downloaded' | 'unchanged' | 'too-recent' | 'blocked' | 'failed'.
+async function fetchArchive(previous) {
+  const ageDays = previous?.scrapedAt
+    ? Math.floor((Date.now() - new Date(previous.scrapedAt)) / 86400000)
+    : Infinity;
+  if (ageDays < ARCHIVE_MIN_AGE_DAYS) return { status: 'too-recent', ageDays };
+
+  const headers = { 'User-Agent': USER_AGENT, Accept: 'application/zip, application/octet-stream, */*' };
+  if (previous?.archiveLastModified) headers['If-Modified-Since'] = previous.archiveLastModified;
+
+  let res;
+  try {
+    res = await fetch(ARCHIVE_URL, { headers });
+  } catch (err) {
+    return { status: 'failed', detail: err.message };
+  }
+  if (res.status === 304) return { status: 'unchanged', ageDays };
+  if (res.status === 403 && res.headers.get('cf-mitigated')) return { status: 'blocked', detail: 'défi Cloudflare (agent pas encore autorisé)' };
+  if (!res.ok) return { status: 'failed', detail: `HTTP ${res.status}` };
+
+  const buf = Buffer.from(await res.arrayBuffer());
+  // Un 200 ne prouve rien : une page HTML de défi peut aussi répondre 200. On
+  // exige la signature d'une archive ZIP (« PK\x03\x04 ») avant d'y toucher.
+  if (buf.length < 1_000_000 || buf.readUInt32LE(0) !== 0x04034b50) {
+    return { status: 'failed', detail: `réponse qui n'est pas une archive ZIP (${buf.length} octets, type ${res.headers.get('content-type')})` };
+  }
+  mkdirSync('data/source', { recursive: true });
+  writeFileSync(ZIP_PATH, buf);
+  return { status: 'downloaded', bytes: buf.length, lastModified: res.headers.get('last-modified') };
+}
+
+async function main() {
+  const previous = readPrevious();
+  let archiveLastModified = previous?.archiveLastModified ?? null;
+  let archiveDate = null; // date de l'ARCHIVE, pas du calcul
+
+  if (!process.env.LOBBY_ZIP) {
+    const r = await fetchArchive(previous);
+    switch (r.status) {
+      case 'too-recent':
+        console.log(`  lobbying : données de ${r.ageDays} j, sous le seuil de ${ARCHIVE_MIN_AGE_DAYS} j — aucune requête au registre.`);
+        if (!existsSync(ZIP_PATH)) return; // données fraîches et pas d'archive locale : rien à faire
+        break;
+      case 'unchanged':
+        console.log('  lobbying : archive inchangée depuis la dernière lecture (304) — rien à retélécharger.');
+        return;
+      case 'downloaded':
+        console.log(`  lobbying : archive téléchargée automatiquement (${(r.bytes / 1e6).toFixed(1)} Mo).`);
+        archiveLastModified = r.lastModified ?? archiveLastModified;
+        if (r.lastModified) archiveDate = new Date(r.lastModified).toISOString();
+        break;
+      case 'blocked':
+      case 'failed':
+        console.warn(`  ⚠ téléchargement automatique impossible : ${r.detail}. Repli sur l'archive locale.`);
+        break;
+    }
+  }
+
   if (!existsSync(ZIP_PATH)) {
     console.warn(`⚠ ${ZIP_PATH} absent — lobbying sauté, données précédentes conservées.`);
     console.warn('  Télécharger « communications_ocl_cal.zip » depuis le registre (navigateur)');
     console.warn(`  puis le déposer dans ${ZIP_PATH}. Voir l'en-tête de ce fichier.`);
     return; // sortie propre : le build quotidien ne casse jamais
   }
+  // Archive déposée à la main (ou téléchargée sans en-tête Last-Modified) : la date
+  // du fichier est la meilleure approximation honnête de la date des données.
+  archiveDate ??= statSync(ZIP_PATH).mtime.toISOString();
   const { bills, session } = JSON.parse(readFileSync(BILLS_PATH, 'utf-8'));
   const known = new Map(bills.map((b) => [b.num.toUpperCase(), b]));
 
@@ -471,7 +551,12 @@ function main() {
     sourceUrl: 'https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=',
     session: session || null,
     sessionStart,
-    scrapedAt: new Date().toISOString(),
+    // La date des DONNÉES, pas celle du calcul : c'est elle qui s'affiche sur le site
+    // (« au 10 sept. »), qui arme l'alerte de péremption et le seuil mensuel. Reparser
+    // une vieille archive ne doit pas faire croire que les données sont fraîches.
+    scrapedAt: archiveDate,
+    parsedAt: new Date().toISOString(),
+    archiveLastModified, // pour la requête conditionnelle suivante (If-Modified-Since)
     billsWithLobbying: Object.keys(out).length,
     bills: out,
   }, null, 2));
@@ -490,9 +575,7 @@ function clean(s) {
   return t === '' || t.toLowerCase() === 'null' ? null : t;
 }
 
-try {
-  main();
-} catch (err) {
+main().catch((err) => {
   console.error('Échec de lobbying.js :', err.message);
   process.exitCode = 1;
-}
+});
