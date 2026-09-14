@@ -1,7 +1,7 @@
 {
   "source": "https://www.parl.ca/legisinfo/en/bills/json?parlsession=45-1",
   "session": "45-1",
-  "scrapedAt": "2026-09-13T13:15:15.726Z",
+  "scrapedAt": "2026-09-14T14:55:43.254Z",
   "count": 185,
   "bills": [
     {
@@ -12829,5 +12829,5 @@
       "summarySource": null
     }
   ],
-  "summariesScrapedAt": "2026-09-13T13:23:12.047Z"
+  "summariesScrapedAt": "2026-09-14T14:57:56.197Z"
 }
