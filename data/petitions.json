@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-09-14T15:00:42.648Z",
+  "scrapedAt": "2026-09-15T13:30:15.135Z",
   "count": 20,
   "petitions": [
     {
@@ -18,7 +18,7 @@
         "fr": "Ouverte pour signature jusqu'au 3 novembre 2026 à 12 h 33 (HAE)"
       },
       "sponsor": "Maxime Blanchette-Joncas",
-      "signatures": 6158,
+      "signatures": 6457,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7742",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7742"
@@ -39,31 +39,10 @@
         "fr": "Ouverte pour signature jusqu'au 31 décembre 2026 à 10 h 11 (HAE)"
       },
       "sponsor": "Karina Gould",
-      "signatures": 5346,
+      "signatures": 5430,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7712",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7712"
-      }
-    },
-    {
-      "code": "e-7663",
-      "topic": {
-        "en": "Citizenship and immigration",
-        "fr": "Citoyenneté et immigration"
-      },
-      "keywords": {
-        "en": "Deportation, extradition and removal of ... Offenders Safety",
-        "fr": "Criminels Expulsion, extradition et renvoi d'un ét ... Sécurité publique"
-      },
-      "status": {
-        "en": "Open for signature until January 7, 2027, at 2:56 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 7 janvier 2027 à 14 h 56 (HAE)"
-      },
-      "sponsor": "Dominique O'Rourke",
-      "signatures": 404,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7663",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7663"
       }
     },
     {
@@ -81,10 +60,31 @@
         "fr": "Ouverte pour signature jusqu'au 8 janvier 2027 à 13 h 58 (HAE)"
       },
       "sponsor": "Jenny Kwan",
-      "signatures": 377,
+      "signatures": 426,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7709",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7709"
+      }
+    },
+    {
+      "code": "e-7663",
+      "topic": {
+        "en": "Citizenship and immigration",
+        "fr": "Citoyenneté et immigration"
+      },
+      "keywords": {
+        "en": "Deportation, extradition and removal of ... Offenders Safety",
+        "fr": "Criminels Expulsion, extradition et renvoi d'un ét ... Sécurité publique"
+      },
+      "status": {
+        "en": "Open for signature until January 7, 2027, at 2:56 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 7 janvier 2027 à 14 h 56 (HAE)"
+      },
+      "sponsor": "Dominique O'Rourke",
+      "signatures": 420,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7663",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7663"
       }
     },
     {
@@ -102,31 +102,10 @@
         "fr": "Ouverte pour signature jusqu'au 8 janvier 2027 à 16 h 00 (HAE)"
       },
       "sponsor": "Arielle Kayabaga",
-      "signatures": 251,
+      "signatures": 288,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7621",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7621"
-      }
-    },
-    {
-      "code": "e-7590",
-      "topic": {
-        "en": "Foreign affairs",
-        "fr": "Affaires étrangères"
-      },
-      "keywords": {
-        "en": "North Korea Peace South Korea",
-        "fr": "Corée du Nord Corée du Sud Paix"
-      },
-      "status": {
-        "en": "Open for signature until October 4, 2026, at 1:58 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 4 octobre 2026 à 13 h 58 (HAE)"
-      },
-      "sponsor": "Ali Ehsassi",
-      "signatures": 196,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7590",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7590"
       }
     },
     {
@@ -144,10 +123,31 @@
         "fr": "Ouverte pour signature jusqu'au 9 novembre 2026 à 13 h 59 (HAE)"
       },
       "sponsor": "Karina Gould",
-      "signatures": 152,
+      "signatures": 268,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7738",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7738"
+      }
+    },
+    {
+      "code": "e-7590",
+      "topic": {
+        "en": "Foreign affairs",
+        "fr": "Affaires étrangères"
+      },
+      "keywords": {
+        "en": "North Korea Peace South Korea",
+        "fr": "Corée du Nord Corée du Sud Paix"
+      },
+      "status": {
+        "en": "Open for signature until October 4, 2026, at 1:58 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 4 octobre 2026 à 13 h 58 (HAE)"
+      },
+      "sponsor": "Ali Ehsassi",
+      "signatures": 222,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7590",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7590"
       }
     },
     {
@@ -165,7 +165,7 @@
         "fr": "Ouverte pour signature jusqu'au 1 décembre 2026 à 10 h 11 (HAE)"
       },
       "sponsor": "Connie Cody",
-      "signatures": 118,
+      "signatures": 120,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7741",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7741"
@@ -186,31 +186,10 @@
         "fr": "Ouverte pour signature jusqu'au 1 décembre 2026 à 10 h 05 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 89,
+      "signatures": 90,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7690",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7690"
-      }
-    },
-    {
-      "code": "e-7705",
-      "topic": {
-        "en": "Foreign affairs",
-        "fr": "Affaires étrangères"
-      },
-      "keywords": {
-        "en": "Peacekeeping and peacemaking United Nations",
-        "fr": "Maintien de la paix et rétablissement de ... Nations Unies"
-      },
-      "status": {
-        "en": "Open for signature until December 3, 2026, at 1:59 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 3 décembre 2026 à 13 h 59 (HAE)"
-      },
-      "sponsor": "Salma Zahid",
-      "signatures": 78,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7705",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7705"
       }
     },
     {
@@ -228,10 +207,31 @@
         "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 14 h 55 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 68,
+      "signatures": 81,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7719",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7719"
+      }
+    },
+    {
+      "code": "e-7705",
+      "topic": {
+        "en": "Foreign affairs",
+        "fr": "Affaires étrangères"
+      },
+      "keywords": {
+        "en": "Peacekeeping and peacemaking United Nations",
+        "fr": "Maintien de la paix et rétablissement de ... Nations Unies"
+      },
+      "status": {
+        "en": "Open for signature until December 3, 2026, at 1:59 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 3 décembre 2026 à 13 h 59 (HAE)"
+      },
+      "sponsor": "Salma Zahid",
+      "signatures": 81,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7705",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7705"
       }
     },
     {
@@ -249,7 +249,7 @@
         "fr": "Ouverte pour signature jusqu'au 7 janvier 2027 à 16 h 36 (HAE)"
       },
       "sponsor": "Luc Berthold",
-      "signatures": 61,
+      "signatures": 65,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7755",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7755"
@@ -270,7 +270,7 @@
         "fr": "Ouverte pour signature jusqu'au 31 décembre 2026 à 10 h 10 (HAE)"
       },
       "sponsor": "Jamie Schmale",
-      "signatures": 54,
+      "signatures": 61,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7708",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7708"
@@ -291,7 +291,7 @@
         "fr": "Ouverte pour signature jusqu'au 9 décembre 2026 à 10 h 53 (HAE)"
       },
       "sponsor": "Patrick Weiler",
-      "signatures": 48,
+      "signatures": 60,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7694",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7694"
@@ -319,6 +319,27 @@
       }
     },
     {
+      "code": "e-7612",
+      "topic": {
+        "en": "Justice",
+        "fr": "Justice"
+      },
+      "keywords": {
+        "en": "Bail Human trafficking Safety",
+        "fr": "Libération sous caution Sécurité publique Traite de personnes"
+      },
+      "status": {
+        "en": "Open for signature until October 14, 2026, at 9:39 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 14 octobre 2026 à 9 h 39 (HAE)"
+      },
+      "sponsor": "Rhonda Kirkland",
+      "signatures": 28,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7612",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7612"
+      }
+    },
+    {
       "code": "e-7762",
       "topic": {
         "en": "Employment and labour",
@@ -333,7 +354,7 @@
         "fr": "Ouverte pour signature jusqu'au 8 janvier 2027 à 14 h 01 (HAE)"
       },
       "sponsor": "Heather McPherson",
-      "signatures": 22,
+      "signatures": 25,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7762",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7762"
@@ -354,31 +375,10 @@
         "fr": "Ouverte pour signature jusqu'au 2 janvier 2027 à 12 h 36 (HAE)"
       },
       "sponsor": "Kelly McCauley",
-      "signatures": 15,
+      "signatures": 16,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7737",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7737"
-      }
-    },
-    {
-      "code": "e-7629",
-      "topic": {
-        "en": "Culture and heritage",
-        "fr": "Culture et patrimoine"
-      },
-      "keywords": {
-        "en": "Citizenship and identity Values of Canadians",
-        "fr": "Citoyenneté et identité Valeurs canadiennes"
-      },
-      "status": {
-        "en": "Open for signature until January 8, 2027, at 10:52 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 8 janvier 2027 à 10 h 52 (HAE)"
-      },
-      "sponsor": "Will Greaves",
-      "signatures": 11,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7629",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7629"
       }
     },
     {
@@ -396,31 +396,31 @@
         "fr": "Ouverte pour signature jusqu'au 12 janvier 2027 à 9 h 45 (HAE)"
       },
       "sponsor": "Yasir Naqvi",
-      "signatures": 7,
+      "signatures": 15,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7749",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7749"
       }
     },
     {
-      "code": "e-7612",
+      "code": "e-7629",
       "topic": {
-        "en": "Justice",
-        "fr": "Justice"
+        "en": "Culture and heritage",
+        "fr": "Culture et patrimoine"
       },
       "keywords": {
-        "en": "Bail Human trafficking Safety",
-        "fr": "Libération sous caution Sécurité publique Traite de personnes"
+        "en": "Citizenship and identity Values of Canadians",
+        "fr": "Citoyenneté et identité Valeurs canadiennes"
       },
       "status": {
-        "en": "Open for signature until October 14, 2026, at 9:39 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 14 octobre 2026 à 9 h 39 (HAE)"
+        "en": "Open for signature until January 8, 2027, at 10:52 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 8 janvier 2027 à 10 h 52 (HAE)"
       },
-      "sponsor": "Rhonda Kirkland",
-      "signatures": 7,
+      "sponsor": "Will Greaves",
+      "signatures": 12,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7612",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7612"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7629",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7629"
       }
     }
   ]
