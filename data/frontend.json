@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T13:30:21.420Z",
+  "generatedAt": "2026-09-16T13:28:00.698Z",
   "session": "45-1",
   "meta": {
     "counts": {
@@ -5396,7 +5396,7 @@
         "first": "Donna",
         "last": "Dasko"
       },
-      "fullSummaryAvailable": false,
+      "fullSummaryAvailable": true,
       "summary": {
         "en": "This enactment amends the Special Economic Measures Act to allow the Governor in Council to dispose of a foreign state’s assets seized under the Act if the seizure occurred without a judicial order.",
         "fr": "Le texte modifie la Loi sur les mesures économiques spéciales afin d’autoriser le gouverneur en conseil à disposer des biens d’un État étranger qui ont été saisis sous le régime de cette loi en l’absence d’ordonnance judiciaire."
@@ -15311,8 +15311,8 @@
         "fr": "Conservateur"
       },
       "constituency": {
-        "en": "York Centre",
-        "fr": "York-Centre"
+        "en": "North York",
+        "fr": "North York"
       },
       "province": {
         "en": "Ontario",
@@ -16025,8 +16025,8 @@
         "fr": "Bloc Québécois"
       },
       "constituency": {
-        "en": "Rimouski—La Matapédia",
-        "fr": "Rimouski—La Matapédia"
+        "en": "Rimouski-Neigette—Mitis—Matapédia—Les Basques",
+        "fr": "Rimouski-Neigette—Mitis—Matapédia—Les Basques"
       },
       "province": {
         "en": "Quebec",
@@ -16331,8 +16331,8 @@
         "fr": "Conservateur"
       },
       "constituency": {
-        "en": "Brantford—Brant South—Six Nations",
-        "fr": "Brantford—Brant-Sud—Six Nations"
+        "en": "Brantford—Brant South",
+        "fr": "Brantford—Brant-Sud"
       },
       "province": {
         "en": "Ontario",
@@ -17419,8 +17419,8 @@
         "fr": "Conservateur"
       },
       "constituency": {
-        "en": "New Tecumseth—Gwillimbury",
-        "fr": "New Tecumseth—Gwillimbury"
+        "en": "York—South Simcoe",
+        "fr": "York—Simcoe-Sud"
       },
       "province": {
         "en": "Ontario",
@@ -17555,8 +17555,8 @@
         "fr": "Bloc Québécois"
       },
       "constituency": {
-        "en": "Beauharnois—Salaberry—Soulanges—Huntingdon",
-        "fr": "Beauharnois—Salaberry—Soulanges—Huntingdon"
+        "en": "Vallée-du-Haut-Saint-Laurent",
+        "fr": "Vallée-du-Haut-Saint-Laurent"
       },
       "province": {
         "en": "Quebec",
@@ -17827,8 +17827,8 @@
         "fr": "Libéral"
       },
       "constituency": {
-        "en": "Halifax West",
-        "fr": "Halifax-Ouest"
+        "en": "Halifax West—Peggy's Cove",
+        "fr": "Halifax-Ouest—Peggy’s Cove"
       },
       "province": {
         "en": "Nova Scotia",
@@ -17895,8 +17895,8 @@
         "fr": "Conservateur"
       },
       "constituency": {
-        "en": "Cariboo—Prince George",
-        "fr": "Cariboo—Prince George"
+        "en": "Cariboo—Prince George—Omineca",
+        "fr": "Cariboo—Prince George—Omineca"
       },
       "province": {
         "en": "British Columbia",
@@ -19323,8 +19323,8 @@
         "fr": "Conservateur"
       },
       "constituency": {
-        "en": "Portneuf—Jacques-Cartier",
-        "fr": "Portneuf—Jacques-Cartier"
+        "en": "Saint-Augustin—Portneuf—Jacques-Cartier",
+        "fr": "Saint-Augustin—Portneuf—Jacques-Cartier"
       },
       "province": {
         "en": "Quebec",
@@ -21397,8 +21397,8 @@
         "fr": "Libéral"
       },
       "constituency": {
-        "en": "Argenteuil—La Petite-Nation",
-        "fr": "Argenteuil—La Petite-Nation"
+        "en": "Argenteuil—Papineau—Des Collines",
+        "fr": "Argenteuil—Papineau—Des Collines"
       },
       "province": {
         "en": "Quebec",
@@ -21601,8 +21601,8 @@
         "fr": "Conservateur"
       },
       "constituency": {
-        "en": "Richmond—Arthabaska",
-        "fr": "Richmond—Arthabaska"
+        "en": "Richmond—Arthabaska—des-Sources",
+        "fr": "Richmond—Arthabaska—des-Sources"
       },
       "province": {
         "en": "Quebec",
@@ -23573,8 +23573,8 @@
         "fr": "Libéral"
       },
       "constituency": {
-        "en": "Cape Spear",
-        "fr": "Cape Spear"
+        "en": "Cape Spear—Mount Pearl—Paradise",
+        "fr": "Cape Spear—Mount Pearl—Paradise"
       },
       "province": {
         "en": "Newfoundland and Labrador",
@@ -24219,8 +24219,8 @@
         "fr": "Libéral"
       },
       "constituency": {
-        "en": "Longueuil—Charles-LeMoyne",
-        "fr": "Longueuil—Charles-LeMoyne"
+        "en": "Longueuil—Charles-LeMoyne—Greenfield Park",
+        "fr": "Longueuil—Charles-LeMoyne—Greenfield Park"
       },
       "province": {
         "en": "Quebec",
@@ -24321,8 +24321,8 @@
         "fr": "Conservateur"
       },
       "constituency": {
-        "en": "Terra Nova—The Peninsulas",
-        "fr": "Terra Nova—Les Péninsules"
+        "en": "The Eastern Peninsulas",
+        "fr": "Les Péninsules-Est"
       },
       "province": {
         "en": "Newfoundland and Labrador",
@@ -24967,8 +24967,8 @@
         "fr": "Bloc Québécois"
       },
       "constituency": {
-        "en": "Jonquière",
-        "fr": "Jonquière"
+        "en": "Jonquière—Hébertville—Pays-des-Bleuets",
+        "fr": "Jonquière—Hébertville—Pays-des-Bleuets"
       },
       "province": {
         "en": "Quebec",
@@ -25001,8 +25001,8 @@
         "fr": "Conservateur"
       },
       "constituency": {
-        "en": "Central Newfoundland",
-        "fr": "Central Newfoundland"
+        "en": "Coast of Bays—Central—Notre Dame",
+        "fr": "Coast of Bays—Central—Notre Dame"
       },
       "province": {
         "en": "Newfoundland and Labrador",
@@ -25545,8 +25545,8 @@
         "fr": "Conservateur"
       },
       "constituency": {
-        "en": "Saskatoon—University",
-        "fr": "Saskatoon—University"
+        "en": "Saskatoon East",
+        "fr": "Saskatoon-Est"
       },
       "province": {
         "en": "Saskatchewan",
@@ -26089,8 +26089,8 @@
         "fr": "Conservateur"
       },
       "constituency": {
-        "en": "Saint John—St. Croix",
-        "fr": "Saint John—St. Croix"
+        "en": "New Brunswick Southwest",
+        "fr": "Nouveau-Brunswick-Sud-Ouest"
       },
       "province": {
         "en": "New Brunswick",

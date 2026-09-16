@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-09-15T13:30:15.135Z",
+  "scrapedAt": "2026-09-16T13:27:53.032Z",
   "count": 20,
   "petitions": [
     {
@@ -18,7 +18,7 @@
         "fr": "Ouverte pour signature jusqu'au 3 novembre 2026 à 12 h 33 (HAE)"
       },
       "sponsor": "Maxime Blanchette-Joncas",
-      "signatures": 6457,
+      "signatures": 6657,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7742",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7742"
@@ -39,10 +39,31 @@
         "fr": "Ouverte pour signature jusqu'au 31 décembre 2026 à 10 h 11 (HAE)"
       },
       "sponsor": "Karina Gould",
-      "signatures": 5430,
+      "signatures": 5458,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7712",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7712"
+      }
+    },
+    {
+      "code": "e-7694",
+      "topic": {
+        "en": "Foreign affairs",
+        "fr": "Affaires étrangères"
+      },
+      "keywords": {
+        "en": "Canada-Israel Free Trade Agreement Israel Trade agreements",
+        "fr": "Accord de libre-échange Canada-Israël Accords commerciaux Israël"
+      },
+      "status": {
+        "en": "Open for signature until December 9, 2026, at 10:53 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 9 décembre 2026 à 10 h 53 (HAE)"
+      },
+      "sponsor": "Patrick Weiler",
+      "signatures": 547,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7694",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7694"
       }
     },
     {
@@ -60,7 +81,7 @@
         "fr": "Ouverte pour signature jusqu'au 8 janvier 2027 à 13 h 58 (HAE)"
       },
       "sponsor": "Jenny Kwan",
-      "signatures": 426,
+      "signatures": 459,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7709",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7709"
@@ -81,7 +102,7 @@
         "fr": "Ouverte pour signature jusqu'au 7 janvier 2027 à 14 h 56 (HAE)"
       },
       "sponsor": "Dominique O'Rourke",
-      "signatures": 420,
+      "signatures": 431,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7663",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7663"
@@ -102,7 +123,7 @@
         "fr": "Ouverte pour signature jusqu'au 8 janvier 2027 à 16 h 00 (HAE)"
       },
       "sponsor": "Arielle Kayabaga",
-      "signatures": 288,
+      "signatures": 303,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7621",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7621"
@@ -123,7 +144,7 @@
         "fr": "Ouverte pour signature jusqu'au 9 novembre 2026 à 13 h 59 (HAE)"
       },
       "sponsor": "Karina Gould",
-      "signatures": 268,
+      "signatures": 294,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7738",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7738"
@@ -144,7 +165,7 @@
         "fr": "Ouverte pour signature jusqu'au 4 octobre 2026 à 13 h 58 (HAE)"
       },
       "sponsor": "Ali Ehsassi",
-      "signatures": 222,
+      "signatures": 243,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7590",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7590"
@@ -165,31 +186,10 @@
         "fr": "Ouverte pour signature jusqu'au 1 décembre 2026 à 10 h 11 (HAE)"
       },
       "sponsor": "Connie Cody",
-      "signatures": 120,
+      "signatures": 122,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7741",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7741"
-      }
-    },
-    {
-      "code": "e-7690",
-      "topic": {
-        "en": "Foreign affairs",
-        "fr": "Affaires étrangères"
-      },
-      "keywords": {
-        "en": "Canada-United States-Mexico Agreement Negotiations and negotiators Trade agreements",
-        "fr": "Accord Canada–États-Unis–Mexique Accords commerciaux Négociations et négociateurs"
-      },
-      "status": {
-        "en": "Open for signature until December 1, 2026, at 10:05 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 1 décembre 2026 à 10 h 05 (HAE)"
-      },
-      "sponsor": "Elizabeth May",
-      "signatures": 90,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7690",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7690"
       }
     },
     {
@@ -207,10 +207,31 @@
         "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 14 h 55 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 81,
+      "signatures": 98,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7719",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7719"
+      }
+    },
+    {
+      "code": "e-7690",
+      "topic": {
+        "en": "Foreign affairs",
+        "fr": "Affaires étrangères"
+      },
+      "keywords": {
+        "en": "Canada-United States-Mexico Agreement Negotiations and negotiators Trade agreements",
+        "fr": "Accord Canada–États-Unis–Mexique Accords commerciaux Négociations et négociateurs"
+      },
+      "status": {
+        "en": "Open for signature until December 1, 2026, at 10:05 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 1 décembre 2026 à 10 h 05 (HAE)"
+      },
+      "sponsor": "Elizabeth May",
+      "signatures": 94,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7690",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7690"
       }
     },
     {
@@ -228,7 +249,7 @@
         "fr": "Ouverte pour signature jusqu'au 3 décembre 2026 à 13 h 59 (HAE)"
       },
       "sponsor": "Salma Zahid",
-      "signatures": 81,
+      "signatures": 84,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7705",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7705"
@@ -249,7 +270,7 @@
         "fr": "Ouverte pour signature jusqu'au 7 janvier 2027 à 16 h 36 (HAE)"
       },
       "sponsor": "Luc Berthold",
-      "signatures": 65,
+      "signatures": 71,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7755",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7755"
@@ -270,52 +291,10 @@
         "fr": "Ouverte pour signature jusqu'au 31 décembre 2026 à 10 h 10 (HAE)"
       },
       "sponsor": "Jamie Schmale",
-      "signatures": 61,
+      "signatures": 62,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7708",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7708"
-      }
-    },
-    {
-      "code": "e-7694",
-      "topic": {
-        "en": "Foreign affairs",
-        "fr": "Affaires étrangères"
-      },
-      "keywords": {
-        "en": "Canada-Israel Free Trade Agreement Israel Trade agreements",
-        "fr": "Accord de libre-échange Canada-Israël Accords commerciaux Israël"
-      },
-      "status": {
-        "en": "Open for signature until December 9, 2026, at 10:53 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 9 décembre 2026 à 10 h 53 (HAE)"
-      },
-      "sponsor": "Patrick Weiler",
-      "signatures": 60,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7694",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7694"
-      }
-    },
-    {
-      "code": "e-7674",
-      "topic": {
-        "en": "Justice",
-        "fr": "Justice"
-      },
-      "keywords": {
-        "en": "Families and children Family law Justice system",
-        "fr": "Administration de la justice Droit de la famille Familles et enfants"
-      },
-      "status": {
-        "en": "Open for signature until December 3, 2026, at 2:01 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 3 décembre 2026 à 14 h 01 (HAE)"
-      },
-      "sponsor": "Lisa Hepfner",
-      "signatures": 37,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7674",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7674"
       }
     },
     {
@@ -333,10 +312,31 @@
         "fr": "Ouverte pour signature jusqu'au 14 octobre 2026 à 9 h 39 (HAE)"
       },
       "sponsor": "Rhonda Kirkland",
-      "signatures": 28,
+      "signatures": 49,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7612",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7612"
+      }
+    },
+    {
+      "code": "e-7674",
+      "topic": {
+        "en": "Justice",
+        "fr": "Justice"
+      },
+      "keywords": {
+        "en": "Families and children Family law Justice system",
+        "fr": "Administration de la justice Droit de la famille Familles et enfants"
+      },
+      "status": {
+        "en": "Open for signature until December 3, 2026, at 2:01 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 3 décembre 2026 à 14 h 01 (HAE)"
+      },
+      "sponsor": "Lisa Hepfner",
+      "signatures": 39,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7674",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7674"
       }
     },
     {
@@ -354,10 +354,31 @@
         "fr": "Ouverte pour signature jusqu'au 8 janvier 2027 à 14 h 01 (HAE)"
       },
       "sponsor": "Heather McPherson",
-      "signatures": 25,
+      "signatures": 34,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7762",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7762"
+      }
+    },
+    {
+      "code": "e-7749",
+      "topic": {
+        "en": "Citizenship and immigration",
+        "fr": "Citoyenneté et immigration"
+      },
+      "keywords": {
+        "en": "Afghanistan Asylum Pakistan Refugees",
+        "fr": "Afghanistan Droit d'asile Pakistan Réfugiés"
+      },
+      "status": {
+        "en": "Open for signature until January 12, 2027, at 9:45 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 12 janvier 2027 à 9 h 45 (HAE)"
+      },
+      "sponsor": "Yasir Naqvi",
+      "signatures": 24,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7749",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7749"
       }
     },
     {
@@ -379,27 +400,6 @@
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7737",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7737"
-      }
-    },
-    {
-      "code": "e-7749",
-      "topic": {
-        "en": "Citizenship and immigration",
-        "fr": "Citoyenneté et immigration"
-      },
-      "keywords": {
-        "en": "Afghanistan Asylum Pakistan Refugees",
-        "fr": "Afghanistan Droit d'asile Pakistan Réfugiés"
-      },
-      "status": {
-        "en": "Open for signature until January 12, 2027, at 9:45 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 12 janvier 2027 à 9 h 45 (HAE)"
-      },
-      "sponsor": "Yasir Naqvi",
-      "signatures": 15,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7749",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7749"
       }
     },
     {

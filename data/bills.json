@@ -1,7 +1,7 @@
 {
   "source": "https://www.parl.ca/legisinfo/en/bills/json?parlsession=45-1",
   "session": "45-1",
-  "scrapedAt": "2026-09-15T13:22:59.191Z",
+  "scrapedAt": "2026-09-16T13:21:48.026Z",
   "count": 185,
   "bills": [
     {
@@ -4595,7 +4595,7 @@
         "first": "Donna",
         "last": "Dasko"
       },
-      "fullSummaryAvailable": false,
+      "fullSummaryAvailable": true,
       "summary": {
         "en": "This enactment amends the Special Economic Measures Act to allow the Governor in Council to dispose of a foreign state’s assets seized under the Act if the seizure occurred without a judicial order.",
         "fr": "Le texte modifie la Loi sur les mesures économiques spéciales afin d’autoriser le gouverneur en conseil à disposer des biens d’un État étranger qui ont été saisis sous le régime de cette loi en l’absence d’ordonnance judiciaire."
@@ -12829,5 +12829,5 @@
       "summarySource": null
     }
   ],
-  "summariesScrapedAt": "2026-09-15T13:26:17.229Z"
+  "summariesScrapedAt": "2026-09-16T13:24:29.361Z"
 }
