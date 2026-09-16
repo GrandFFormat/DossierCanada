@@ -3,7 +3,7 @@
     "en": "https://www.ourcommons.ca/members/en/search/xml",
     "fr": "https://www.ourcommons.ca/members/fr/search/xml"
   },
-  "scrapedAt": "2026-09-15T13:28:13.340Z",
+  "scrapedAt": "2026-09-16T13:25:36.527Z",
   "count": 338,
   "deputes": [
     {
@@ -393,8 +393,8 @@
         "fr": "Conservateur"
       },
       "constituency": {
-        "en": "York Centre",
-        "fr": "York-Centre"
+        "en": "North York",
+        "fr": "North York"
       },
       "province": {
         "en": "Ontario",
@@ -918,8 +918,8 @@
         "fr": "Bloc Québécois"
       },
       "constituency": {
-        "en": "Rimouski—La Matapédia",
-        "fr": "Rimouski—La Matapédia"
+        "en": "Rimouski-Neigette—Mitis—Matapédia—Les Basques",
+        "fr": "Rimouski-Neigette—Mitis—Matapédia—Les Basques"
       },
       "province": {
         "en": "Quebec",
@@ -1143,8 +1143,8 @@
         "fr": "Conservateur"
       },
       "constituency": {
-        "en": "Brantford—Brant South—Six Nations",
-        "fr": "Brantford—Brant-Sud—Six Nations"
+        "en": "Brantford—Brant South",
+        "fr": "Brantford—Brant-Sud"
       },
       "province": {
         "en": "Ontario",
@@ -1943,8 +1943,8 @@
         "fr": "Conservateur"
       },
       "constituency": {
-        "en": "New Tecumseth—Gwillimbury",
-        "fr": "New Tecumseth—Gwillimbury"
+        "en": "York—South Simcoe",
+        "fr": "York—Simcoe-Sud"
       },
       "province": {
         "en": "Ontario",
@@ -2043,8 +2043,8 @@
         "fr": "Bloc Québécois"
       },
       "constituency": {
-        "en": "Beauharnois—Salaberry—Soulanges—Huntingdon",
-        "fr": "Beauharnois—Salaberry—Soulanges—Huntingdon"
+        "en": "Vallée-du-Haut-Saint-Laurent",
+        "fr": "Vallée-du-Haut-Saint-Laurent"
       },
       "province": {
         "en": "Quebec",
@@ -2243,8 +2243,8 @@
         "fr": "Libéral"
       },
       "constituency": {
-        "en": "Halifax West",
-        "fr": "Halifax-Ouest"
+        "en": "Halifax West—Peggy's Cove",
+        "fr": "Halifax-Ouest—Peggy’s Cove"
       },
       "province": {
         "en": "Nova Scotia",
@@ -2293,8 +2293,8 @@
         "fr": "Conservateur"
       },
       "constituency": {
-        "en": "Cariboo—Prince George",
-        "fr": "Cariboo—Prince George"
+        "en": "Cariboo—Prince George—Omineca",
+        "fr": "Cariboo—Prince George—Omineca"
       },
       "province": {
         "en": "British Columbia",
@@ -3343,8 +3343,8 @@
         "fr": "Conservateur"
       },
       "constituency": {
-        "en": "Portneuf—Jacques-Cartier",
-        "fr": "Portneuf—Jacques-Cartier"
+        "en": "Saint-Augustin—Portneuf—Jacques-Cartier",
+        "fr": "Saint-Augustin—Portneuf—Jacques-Cartier"
       },
       "province": {
         "en": "Quebec",
@@ -4868,8 +4868,8 @@
         "fr": "Libéral"
       },
       "constituency": {
-        "en": "Argenteuil—La Petite-Nation",
-        "fr": "Argenteuil—La Petite-Nation"
+        "en": "Argenteuil—Papineau—Des Collines",
+        "fr": "Argenteuil—Papineau—Des Collines"
       },
       "province": {
         "en": "Quebec",
@@ -5018,8 +5018,8 @@
         "fr": "Conservateur"
       },
       "constituency": {
-        "en": "Richmond—Arthabaska",
-        "fr": "Richmond—Arthabaska"
+        "en": "Richmond—Arthabaska—des-Sources",
+        "fr": "Richmond—Arthabaska—des-Sources"
       },
       "province": {
         "en": "Quebec",
@@ -6468,8 +6468,8 @@
         "fr": "Libéral"
       },
       "constituency": {
-        "en": "Cape Spear",
-        "fr": "Cape Spear"
+        "en": "Cape Spear—Mount Pearl—Paradise",
+        "fr": "Cape Spear—Mount Pearl—Paradise"
       },
       "province": {
         "en": "Newfoundland and Labrador",
@@ -6943,8 +6943,8 @@
         "fr": "Libéral"
       },
       "constituency": {
-        "en": "Longueuil—Charles-LeMoyne",
-        "fr": "Longueuil—Charles-LeMoyne"
+        "en": "Longueuil—Charles-LeMoyne—Greenfield Park",
+        "fr": "Longueuil—Charles-LeMoyne—Greenfield Park"
       },
       "province": {
         "en": "Quebec",
@@ -7018,8 +7018,8 @@
         "fr": "Conservateur"
       },
       "constituency": {
-        "en": "Terra Nova—The Peninsulas",
-        "fr": "Terra Nova—Les Péninsules"
+        "en": "The Eastern Peninsulas",
+        "fr": "Les Péninsules-Est"
       },
       "province": {
         "en": "Newfoundland and Labrador",
@@ -7493,8 +7493,8 @@
         "fr": "Bloc Québécois"
       },
       "constituency": {
-        "en": "Jonquière",
-        "fr": "Jonquière"
+        "en": "Jonquière—Hébertville—Pays-des-Bleuets",
+        "fr": "Jonquière—Hébertville—Pays-des-Bleuets"
       },
       "province": {
         "en": "Quebec",
@@ -7518,8 +7518,8 @@
         "fr": "Conservateur"
       },
       "constituency": {
-        "en": "Central Newfoundland",
-        "fr": "Central Newfoundland"
+        "en": "Coast of Bays—Central—Notre Dame",
+        "fr": "Coast of Bays—Central—Notre Dame"
       },
       "province": {
         "en": "Newfoundland and Labrador",
@@ -7918,8 +7918,8 @@
         "fr": "Conservateur"
       },
       "constituency": {
-        "en": "Saskatoon—University",
-        "fr": "Saskatoon—University"
+        "en": "Saskatoon East",
+        "fr": "Saskatoon-Est"
       },
       "province": {
         "en": "Saskatchewan",
@@ -8318,8 +8318,8 @@
         "fr": "Conservateur"
       },
       "constituency": {
-        "en": "Saint John—St. Croix",
-        "fr": "Saint John—St. Croix"
+        "en": "New Brunswick Southwest",
+        "fr": "Nouveau-Brunswick-Sud-Ouest"
       },
       "province": {
         "en": "New Brunswick",
