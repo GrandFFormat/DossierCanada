@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="canonical" href="https://dossiercanada.ca/lexique">
+<link rel="alternate" hreflang="fr" href="https://dossiercanada.ca/lexique">
+<link rel="alternate" hreflang="en" href="https://dossiercanada.ca/en/lexique">
+<link rel="alternate" hreflang="x-default" href="https://dossiercanada.ca/lexique">
 <meta name="robots" content="index, follow">
 <title>Lexique parlementaire — DossierCanada</title>
 <meta name="description" content="Le jargon du Parlement du Canada traduit en français de tous les jours, plus les personnes et institutions qui gravitent autour.">
@@ -1693,7 +1696,13 @@ const translations = {
     'intro.hide':"😴 Collapse",
   }
 };
-let currentLang = 'fr';
+function langFromPath(){
+  try {
+    const parts = location.pathname.replace(/\.html$/, '').split('/').filter(Boolean);
+    return parts[0] === 'en' ? 'en' : 'fr';
+  } catch (e) { return 'fr'; }
+}
+let currentLang = langFromPath();
 
 function t(key){ return (translations[currentLang] && translations[currentLang][key]) || key; }
 
@@ -1781,8 +1790,12 @@ function applyLanguage(){
 }
 
 document.getElementById('langToggle').addEventListener('click', ()=>{
+  const view = viewFromPath();
   currentLang = currentLang === 'fr' ? 'en' : 'fr';
   applyLanguage();
+  const url = pathForView(view, currentLang);
+  history.pushState({ view, lang: currentLang }, '', url);
+  syncTitle(view);
 });
 
 /* ---------------- DATA ---------------- */
@@ -4974,9 +4987,21 @@ const PAGE_META = {
   lexique:   { fr:"Lexique parlementaire — DossierCanada",                         en:"Parliamentary glossary — DossierCanada",
                dfr:"Le jargon du Parlement du Canada traduit en français de tous les jours, plus les personnes qui gravitent autour.", den:"Canada's parliamentary jargon translated into plain language, plus the people around Parliament." }
 };
+function pathParts(){
+  const parts = location.pathname.replace(/\.html$/, '').split('/').filter(Boolean);
+  let lang = 'fr';
+  if (parts[0] === 'en') { lang = 'en'; parts.shift(); }
+  else if (parts[0] === 'fr') { parts.shift(); }
+  return { lang, seg: parts[0] || '' };
+}
 function viewFromPath(){
-  const seg = location.pathname.replace(/^\/+|\/+$/g, '').replace(/\.html$/, '');
-  return SLUG_VIEWS[seg] || 'apercu';
+  return SLUG_VIEWS[pathParts().seg] || 'apercu';
+}
+function pathForView(viewName, lang){
+  const slug = VIEW_SLUGS[viewName] || '/';
+  const L = lang || currentLang;
+  if (L === 'en') return slug === '/' ? '/en' : '/en' + slug;
+  return slug;
 }
 function syncTitle(viewName){
   const m = PAGE_META[viewName]; if(!m) return;
@@ -4994,13 +5019,18 @@ function goToTab(viewName, opts){
   closeMobileMenu();
   if(!opts.noScroll) window.scrollTo({top:0, behavior: opts.fromHistory ? 'auto' : 'smooth'});
   if(!opts.fromHistory && VIEW_SLUGS[viewName]){
-    const url = VIEW_SLUGS[viewName];
-    const here = (location.pathname.replace(/\.html$/, '') || '/');
-    if(here !== url){ history.pushState({ view: viewName }, '', url); }
+    const url = pathForView(viewName, currentLang);
+    const here = (location.pathname.replace(/\.html$/, '').replace(/\/$/, '') || '/');
+    const norm = (url.replace(/\/$/, '') || '/');
+    if(here !== norm){ history.pushState({ view: viewName, lang: currentLang }, '', url); }
   }
   syncTitle(viewName);
 }
-window.addEventListener('popstate', ()=>{ goToTab(viewFromPath(), { fromHistory: true }); });
+window.addEventListener('popstate', ()=>{
+  const { lang } = pathParts();
+  if (lang !== currentLang) { currentLang = lang; applyLanguage(); }
+  goToTab(viewFromPath(), { fromHistory: true });
+});
 
 document.querySelectorAll('nav.tabs button').forEach(btn=>{
   btn.addEventListener('click', ()=> goToTab(btn.dataset.view));
