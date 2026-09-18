@@ -51,7 +51,7 @@
 <script>
 // Thème appliqué AVANT le premier rendu. Sans ça la page apparaît en crème une
 // fraction de seconde avant de basculer en sombre — le flash blanc classique.
-try{ var t = JSON.parse(localStorage.getItem('dossierquebec:theme') || 'null');
+try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
 <style>
@@ -1535,6 +1535,14 @@ const translations = {
     'footer.right':"Construit avec Claude",
     'footer.source':"Code source",
     'footer.coffee':"Offre-moi un café",
+    'aria.back':"Retour à l'aperçu",
+    'aria.fontMinus':"Réduire le texte",
+    'aria.fontPlus':"Agrandir le texte",
+    'aria.challengeMore':"Voir un autre projet challengé",
+    'aria.fb':"DossierCanada sur Facebook",
+    'aria.coffee':"Offre-moi un café — soutenir le projet",
+    'aria.menu':"Ouvrir le menu",
+    'aria.menuClose':"Fermer le menu",
   },
   en: {
     'nav.close':"Close",'nav.apercu':"Overview",'nav.ministres':"MPs",'nav.cabinet':"Ministers",'h.cabinet':"The federal Cabinet",'cabinet.sub':"Who decides what, since when, and how they vote.",'nav.projets':"Bills",
@@ -1604,6 +1612,14 @@ const translations = {
     'footer.right':"Built with Claude",
     'footer.source':"Source code",
     'footer.coffee':"Buy me a coffee",
+    'aria.back':"Back to overview",
+    'aria.fontMinus':"Decrease text size",
+    'aria.fontPlus':"Increase text size",
+    'aria.challengeMore':"See another challenged bill",
+    'aria.fb':"DossierCanada on Facebook",
+    'aria.coffee':"Buy me a coffee — support the project",
+    'aria.menu':"Open menu",
+    'aria.menuClose':"Close menu",
 
     // Ministers
     'min.sub1':"Fréchette Cabinet, sworn in April 21, 2026 — ",
@@ -1705,6 +1721,27 @@ function applyLanguage(){
   if(typeof syncTitle === 'function') syncTitle(viewFromPath()); else document.title = t('meta.title');
   document.getElementById('footerLeft').textContent = t('footer.left');
   document.getElementById('footerRight').textContent = t('footer.right');
+  // Aria-labels that live outside data-i18n (buttons with icon-only content).
+  const ariaMap = [
+    ['.brand', 'aria.back'],
+    ['#fontMinus', 'aria.fontMinus'],
+    ['#fontPlus', 'aria.fontPlus'],
+    ['#challengeMoreBtn', 'aria.challengeMore'],
+    ['a.footer-gh[href*="facebook"]', 'aria.fb'],
+    ['a.footer-coffee', 'aria.coffee'],
+  ];
+  ariaMap.forEach(([sel, key])=>{
+    document.querySelectorAll(sel).forEach(el=>{
+      el.setAttribute('aria-label', t(key));
+      if (el.hasAttribute('title') && key === 'aria.challengeMore') el.setAttribute('title', t(key));
+    });
+  });
+  const ham = document.getElementById('hamburgerBtn');
+  if (ham) {
+    const open = ham.getAttribute('aria-expanded') === 'true';
+    ham.setAttribute('aria-label', t(open ? 'aria.menuClose' : 'aria.menu'));
+  }
+
   // Re-render dynamic lists so their JS-generated buttons pick up the new language
   renderHemicycle();
   renderPartyFilters();
@@ -1847,11 +1884,18 @@ const senateVotes = [{"id":702799,"date":"2026-06-18","title":{"en":"Spring Econ
 // existants plus bas. Préfixe pour éviter les collisions avec d'autres clés.
 window.storage = {
   async get(key){
-    const value = localStorage.getItem('dossierquebec:' + key);
+    let value = localStorage.getItem('dossiercanada:' + key);
+    if (value === null) {
+      const legacy = localStorage.getItem('dossierquebec:' + key);
+      if (legacy !== null) {
+        localStorage.setItem('dossiercanada:' + key, legacy);
+        value = legacy;
+      }
+    }
     return value === null ? null : { value };
   },
   async set(key, value){
-    localStorage.setItem('dossierquebec:' + key, value);
+    localStorage.setItem('dossiercanada:' + key, value);
   }
 };
 
@@ -4937,11 +4981,15 @@ document.querySelector('.brand').addEventListener('keydown', (e)=>{
 
 function openMobileMenu(){
   document.querySelector('nav.tabs').classList.add('open');
-  document.getElementById('hamburgerBtn').setAttribute('aria-expanded','true');
+  const hb=document.getElementById('hamburgerBtn');
+  hb.setAttribute('aria-expanded','true');
+  if(typeof t==='function') hb.setAttribute('aria-label', t('aria.menuClose'));
 }
 function closeMobileMenu(){
   document.querySelector('nav.tabs').classList.remove('open');
-  document.getElementById('hamburgerBtn').setAttribute('aria-expanded','false');
+  const hb=document.getElementById('hamburgerBtn');
+  hb.setAttribute('aria-expanded','false');
+  if(typeof t==='function') hb.setAttribute('aria-label', t('aria.menu'));
 }
 document.getElementById('hamburgerBtn').addEventListener('click', ()=>{
   const isOpen = document.querySelector('nav.tabs').classList.contains('open');
