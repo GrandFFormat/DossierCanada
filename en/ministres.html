@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="canonical" href="https://dossiercanada.ca/projets-de-loi">
-<link rel="alternate" hreflang="fr" href="https://dossiercanada.ca/projets-de-loi">
-<link rel="alternate" hreflang="en" href="https://dossiercanada.ca/en/projets-de-loi">
-<link rel="alternate" hreflang="x-default" href="https://dossiercanada.ca/projets-de-loi">
+<link rel="canonical" href="https://dossiercanada.ca/en/ministres">
+<link rel="alternate" hreflang="fr" href="https://dossiercanada.ca/ministres">
+<link rel="alternate" hreflang="en" href="https://dossiercanada.ca/en/ministres">
+<link rel="alternate" hreflang="x-default" href="https://dossiercanada.ca/ministres">
 <meta name="robots" content="index, follow">
-<title>Projets de loi du Parlement du Canada — DossierCanada</title>
-<meta name="description" content="Tous les projets de loi au Parlement du Canada, résumés en langage clair : étape, statut, parrain et votes. Sans jugement.">
+<title>The federal Cabinet — DossierCanada</title>
+<meta name="description" content="Canada's Cabinet: who decides what, since when, and how they vote. Sourced from pm.gc.ca.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DossierCanada">
-<meta property="og:title" content="Projets de loi du Parlement du Canada — DossierCanada">
-<meta property="og:description" content="Tous les projets de loi au Parlement du Canada, résumés en langage clair : étape, statut, parrain et votes. Sans jugement.">
-<meta property="og:url" content="https://dossiercanada.ca/projets-de-loi">
+<meta property="og:title" content="The federal Cabinet — DossierCanada">
+<meta property="og:description" content="Canada's Cabinet: who decides what, since when, and how they vote. Sourced from pm.gc.ca.">
+<meta property="og:url" content="https://dossiercanada.ca/en/ministres">
 <!-- og:image et twitter:image pointent sur www, PAS sur l'apex : dossiercanada.ca
      renvoie un 308 vers www, et un robot qui ne suit pas les redirections pour les
      images recevait 15 octets de text/plain au lieu du PNG — d'ou une carte X sans
@@ -26,8 +26,8 @@
 <meta property="og:locale" content="fr_CA">
 <meta property="og:locale:alternate" content="en_CA">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Projets de loi du Parlement du Canada — DossierCanada">
-<meta name="twitter:description" content="Tous les projets de loi au Parlement du Canada, résumés en langage clair : étape, statut, parrain et votes. Sans jugement.">
+<meta name="twitter:title" content="The federal Cabinet — DossierCanada">
+<meta name="twitter:description" content="Canada's Cabinet: who decides what, since when, and how they vote. Sourced from pm.gc.ca.">
 <meta name="twitter:image" content="https://www.dossiercanada.ca/og-image.png">
 <script type="application/ld+json">
 {
@@ -1109,8 +1109,8 @@ try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStor
   </span>
   <button data-view="apercu" style="margin-left:28px;"><span class="n">01</span><span data-i18n="nav.apercu">Aperçu</span></button>
   <button data-view="ministres"><span class="n">02</span><span data-i18n="nav.ministres">Députés</span></button>
-  <button data-view="cabinet"><span class="n">03</span><span data-i18n="nav.cabinet">Ministres</span></button>
-  <button class="active" data-view="projets"><span class="n">04</span><span data-i18n="nav.projets">Projets de loi</span></button>
+  <button class="active" data-view="cabinet"><span class="n">03</span><span data-i18n="nav.cabinet">Ministres</span></button>
+  <button data-view="projets"><span class="n">04</span><span data-i18n="nav.projets">Projets de loi</span></button>
   <button data-view="votes"><span class="n">05</span><span data-i18n="nav.votes">Votes</span></button>
   <button data-view="lexique" style="margin-right:28px;"><span class="n">06</span><span data-i18n="nav.lexique">Lexique</span></button>
 </nav>
@@ -1208,7 +1208,7 @@ try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStor
   </section>
 
   <!-- MINISTRES (Conseil des ministres / Cabinet) -->
-  <section class="view" id="view-cabinet">
+  <section class="view active" id="view-cabinet">
     <div class="page-band">
       <div>
         <h1 id="cabinetTitle">Le Cabinet — 28 ministres</h1>
@@ -1220,7 +1220,7 @@ try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStor
   </section>
 
   <!-- PROJETS DE LOI -->
-  <section class="view active" id="view-projets">
+  <section class="view" id="view-projets">
     <div class="page-band">
       <div>
         <h1 id="projetsCountTitle">Projets de loi</h1>

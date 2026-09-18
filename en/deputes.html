@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="canonical" href="https://dossiercanada.ca/projets-de-loi">
-<link rel="alternate" hreflang="fr" href="https://dossiercanada.ca/projets-de-loi">
-<link rel="alternate" hreflang="en" href="https://dossiercanada.ca/en/projets-de-loi">
-<link rel="alternate" hreflang="x-default" href="https://dossiercanada.ca/projets-de-loi">
+<link rel="canonical" href="https://dossiercanada.ca/en/deputes">
+<link rel="alternate" hreflang="fr" href="https://dossiercanada.ca/deputes">
+<link rel="alternate" hreflang="en" href="https://dossiercanada.ca/en/deputes">
+<link rel="alternate" hreflang="x-default" href="https://dossiercanada.ca/deputes">
 <meta name="robots" content="index, follow">
-<title>Projets de loi du Parlement du Canada — DossierCanada</title>
-<meta name="description" content="Tous les projets de loi au Parlement du Canada, résumés en langage clair : étape, statut, parrain et votes. Sans jugement.">
+<title>Members of the House of Commons — DossierCanada</title>
+<meta name="description" content="All 343 seats in the House of Commons: name, riding, party and attendance rate for each MP. Official data, in plain language.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DossierCanada">
-<meta property="og:title" content="Projets de loi du Parlement du Canada — DossierCanada">
-<meta property="og:description" content="Tous les projets de loi au Parlement du Canada, résumés en langage clair : étape, statut, parrain et votes. Sans jugement.">
-<meta property="og:url" content="https://dossiercanada.ca/projets-de-loi">
+<meta property="og:title" content="Members of the House of Commons — DossierCanada">
+<meta property="og:description" content="All 343 seats in the House of Commons: name, riding, party and attendance rate for each MP. Official data, in plain language.">
+<meta property="og:url" content="https://dossiercanada.ca/en/deputes">
 <!-- og:image et twitter:image pointent sur www, PAS sur l'apex : dossiercanada.ca
      renvoie un 308 vers www, et un robot qui ne suit pas les redirections pour les
      images recevait 15 octets de text/plain au lieu du PNG — d'ou une carte X sans
@@ -26,8 +26,8 @@
 <meta property="og:locale" content="fr_CA">
 <meta property="og:locale:alternate" content="en_CA">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Projets de loi du Parlement du Canada — DossierCanada">
-<meta name="twitter:description" content="Tous les projets de loi au Parlement du Canada, résumés en langage clair : étape, statut, parrain et votes. Sans jugement.">
+<meta name="twitter:title" content="Members of the House of Commons — DossierCanada">
+<meta name="twitter:description" content="All 343 seats in the House of Commons: name, riding, party and attendance rate for each MP. Official data, in plain language.">
 <meta name="twitter:image" content="https://www.dossiercanada.ca/og-image.png">
 <script type="application/ld+json">
 {
@@ -1108,9 +1108,9 @@ try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStor
     DossierCanada
   </span>
   <button data-view="apercu" style="margin-left:28px;"><span class="n">01</span><span data-i18n="nav.apercu">Aperçu</span></button>
-  <button data-view="ministres"><span class="n">02</span><span data-i18n="nav.ministres">Députés</span></button>
+  <button class="active" data-view="ministres"><span class="n">02</span><span data-i18n="nav.ministres">Députés</span></button>
   <button data-view="cabinet"><span class="n">03</span><span data-i18n="nav.cabinet">Ministres</span></button>
-  <button class="active" data-view="projets"><span class="n">04</span><span data-i18n="nav.projets">Projets de loi</span></button>
+  <button data-view="projets"><span class="n">04</span><span data-i18n="nav.projets">Projets de loi</span></button>
   <button data-view="votes"><span class="n">05</span><span data-i18n="nav.votes">Votes</span></button>
   <button data-view="lexique" style="margin-right:28px;"><span class="n">06</span><span data-i18n="nav.lexique">Lexique</span></button>
 </nav>
@@ -1186,7 +1186,7 @@ try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStor
   </section>
 
   <!-- MINISTRES & DÉPUTÉS -->
-  <section class="view" id="view-ministres">
+  <section class="view active" id="view-ministres">
     <div class="page-band">
       <div>
         <h1 id="deputesCountTitle">338 députés</h1>
@@ -1220,7 +1220,7 @@ try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStor
   </section>
 
   <!-- PROJETS DE LOI -->
-  <section class="view active" id="view-projets">
+  <section class="view" id="view-projets">
     <div class="page-band">
       <div>
         <h1 id="projetsCountTitle">Projets de loi</h1>
