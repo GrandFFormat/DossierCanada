@@ -1186,7 +1186,7 @@ try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStor
   <section class="view active" id="view-ministres">
     <div class="page-band">
       <div>
-        <h1 id="deputesCountTitle">343 députés</h1>
+        <h1 id="deputesCountTitle">338 députés</h1>
         <div class="sub" data-i18n="deputes.bandsub">Qui vous représente, comment iel vote, à quelle fréquence iel siège.</div>
       </div>
       <input type="text" id="searchMinistres" class="band-search" data-i18n-placeholder="ph.searchMinistres" placeholder="Chercher un nom, une circonscription, un code postal…">
@@ -1208,7 +1208,7 @@ try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStor
   <section class="view" id="view-cabinet">
     <div class="page-band">
       <div>
-        <h1 id="cabinetTitle">Le Cabinet — 30 ministres</h1>
+        <h1 id="cabinetTitle">Le Cabinet — 28 ministres</h1>
         <div class="sub" data-i18n="cabinet.sub">Qui décide quoi, depuis quand, et comment iel vote.</div>
       </div>
     </div>
@@ -1660,7 +1660,7 @@ const translations = {
     'apropos.sources.p':"<b style=\"color:var(--ink)\">Bills</b> — LEGISinfo (parl.ca), the Parliament of Canada's official tool, bilingual, with the dates of each reading and of royal assent in both chambers.<br><b style=\"color:var(--ink)\">Members of Parliament</b> — House of Commons (ourcommons.ca), the official list of sitting members (name, riding, province, party), bilingual.<br><b style=\"color:var(--ink)\">Votes</b> — House of Commons (ourcommons.ca), the by-member breakdown of every recorded vote (Yea / Nay / paired), linked to each MP by their official identifier (PersonId).<br><b style=\"color:var(--ink)\">Attendance (%)</b> — computed from the votes above (see the Glossary); no external source.<br><b style=\"color:var(--ink)\">Licences</b> — Open Government Licence – Canada; OpenParliament terms for cross-checks.",
     'apropos.claude.p':"I can write this backend and help you deploy it when you're ready — this is exactly the kind of project where <b style=\"color:var(--ink)\">Claude Code</b> is especially useful, because it can work directly inside a repository, run sync scripts, and iterate on deployment with you.",
     // Overview page
-    'apercu.composition.sub':"343 seats — breakdown by parliamentary group (45th Parliament)",
+    'apercu.composition.sub':"343 seats — live breakdown from the official roster",
     'apercu.recent.sub':"↓ Click anywhere in the white square to see the summary ↓",
     'h.petitionsrecent':"Petitions open right now",
     'apercu.petitions.sub':"Click the \u201cPetitions\u201d tab for the full list",
@@ -1788,7 +1788,7 @@ document.getElementById('langToggle').addEventListener('click', ()=>{
 /* ---------------- DATA ---------------- */
 
 // Couleurs des partis fédéraux (teintes usuelles associées à chaque parti).
-const partyColors = { LPC:'#D71920', CPC:'#1A4782', BQ:'#33B2CC', NDP:'#F58220', GPC:'#3D9B35', IND:'#8a8f99' };
+const partyColors = { LPC:'#D71920', CPC:'#1A4782', BQ:'#33B2CC', NDP:'#F58220', GPC:'#3D9B35', IND:'#8a8f99', VAC:'#d4d0c8' };
 // Texte lisible sur une bulle colorée : noir si le fond est clair, blanc s'il est foncé.
 // Couleur de texte lisible sur un fond donné (couleurs de parti, de groupe…).
 // ⚠️ Renvoyait var(--ink) pour les fonds clairs. Ça marchait tant que --ink était
@@ -1805,17 +1805,47 @@ function textOn(hex){
   return yiq >= 150 ? 'var(--on-candy)' : '#fff';
 }
 
-// Répartition réelle des sièges à la Chambre des communes (45e législature) —
-// tirée du roster officiel ourcommons.ca (voir data/deputes.json). 341 sièges
-// occupés sur 343 (2 vacances). Les nombres ne sont jamais codés à la légère.
-const seats = [
-  {party:'LPC', label:'Parti libéral du Canada (gouvernement)', labelEn:'Liberal Party of Canada (government)', n:173},
-  {party:'CPC', label:'Parti conservateur du Canada (opposition officielle)', labelEn:'Conservative Party of Canada (official opposition)', n:140},
-  {party:'BQ', label:'Bloc Québécois', labelEn:'Bloc Québécois', n:21},
-  {party:'NDP', label:'Nouveau Parti démocratique', labelEn:'New Democratic Party', n:5},
-  {party:'GPC', label:'Parti vert du Canada', labelEn:'Green Party of Canada', n:1},
-  {party:'IND', label:'Indépendant·e·s', labelEn:'Independents', n:1},
-];
+// Hémicycle : les effectifs viennent du roster `deputes` (ourcommons.ca),
+// pas d'un tableau figé — sinon le graphique diverge dès qu'un siège change.
+// 343 = nombre de sièges de la Chambre (redécoupage 2023) ; les vacances
+// apparaissent comme « Vacant » quand occupied < 343.
+const HOUSE_SEATS = 343;
+const SEAT_PARTY_META = {
+  LPC: { label:'Parti libéral du Canada (gouvernement)', labelEn:'Liberal Party of Canada (government)' },
+  CPC: { label:'Parti conservateur du Canada (opposition officielle)', labelEn:'Conservative Party of Canada (official opposition)' },
+  BQ:  { label:'Bloc Québécois', labelEn:'Bloc Québécois' },
+  NDP: { label:'Nouveau Parti démocratique', labelEn:'New Democratic Party' },
+  GPC: { label:'Parti vert du Canada', labelEn:'Green Party of Canada' },
+  IND: { label:'Indépendant·e·s', labelEn:'Independents' },
+  VAC: { label:'Sièges vacants', labelEn:'Vacant seats' },
+};
+function buildSeatsFromDeputes(){
+  const counts = {};
+  (typeof deputes !== 'undefined' && deputes ? deputes : []).forEach(d=>{
+    const code = (d.party && d.party.code) || d.partyCode || 'IND';
+    counts[code] = (counts[code] || 0) + 1;
+  });
+  const order = ['LPC','CPC','BQ','NDP','GPC','IND'];
+  const seats = order.filter(p => counts[p]).map(p => ({
+    party: p,
+    label: (SEAT_PARTY_META[p] || {}).label || p,
+    labelEn: (SEAT_PARTY_META[p] || {}).labelEn || p,
+    n: counts[p],
+  }));
+  // Autres codes de parti imprévus
+  Object.keys(counts).forEach(p=>{
+    if (!order.includes(p)) seats.push({
+      party: p,
+      label: (SEAT_PARTY_META[p] || {}).label || p,
+      labelEn: (SEAT_PARTY_META[p] || {}).labelEn || p,
+      n: counts[p],
+    });
+  });
+  const occupied = seats.reduce((a,s)=>a+s.n, 0);
+  const vacant = Math.max(0, HOUSE_SEATS - occupied);
+  if (vacant) seats.push({ party:'VAC', label:SEAT_PARTY_META.VAC.label, labelEn:SEAT_PARTY_META.VAC.labelEn, n:vacant });
+  return seats;
+}
 
 /* MINISTERS_DATA_START — généré automatiquement par scrapers/build-frontend-data.js à partir des
    fichiers data/*.json (voir les scrapers). Ne pas éditer ce bloc à la main : relancer
@@ -3110,13 +3140,14 @@ function personCard(p){
 function renderHemicycle(){
   const svg = document.getElementById('hemicycleSvg');
   if(!svg) return;
+  const seats = buildSeatsFromDeputes();
   const total = seats.reduce((a,s)=>a+s.n,0);
   const cx=210, cy=210, rOuter=195, rInner=70, rows=10;
   // Liste ordonnée des sièges, parti par parti.
   let seatList = [];
   seats.forEach(s=>{ for(let i=0;i<s.n;i++) seatList.push(s.party); });
 
-  // Répartit TOUS les sièges réels (343) sur les rangées, proportionnellement au
+  // Répartit TOUS les sièges (occupés + vacants) sur les rangées, proportionnellement au
   // rayon (les rangées extérieures, plus longues, en portent davantage). L'arrondi
   // est corrigé pour que la somme égale exactement le nombre de sièges.
   const radii = [];
