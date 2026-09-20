@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-09-19T12:30:06.299Z",
+  "generatedAt": "2026-09-20T13:06:30.808Z",
   "session": "45-1",
   "meta": {
     "counts": {
       "bills": 185,
-      "deputes": 338,
+      "deputes": 337,
       "votes": 173
     },
     "votesLinkedToBill": 96,
-    "formerMembersInVotes": 11
+    "formerMembersInVotes": 12
   },
   "bills": [
     {
@@ -16314,40 +16314,6 @@
         "cast": 173,
         "yea": 92,
         "nay": 81,
-        "paired": 0,
-        "absent": 0,
-        "participationRate": 1
-      }
-    },
-    {
-      "id": 110354,
-      "honorific": null,
-      "firstName": "Larry",
-      "lastName": "Brock",
-      "name": "Larry Brock",
-      "party": {
-        "code": "CPC",
-        "en": "Conservative",
-        "fr": "Conservateur"
-      },
-      "constituency": {
-        "en": "Brantford—Brant South",
-        "fr": "Brantford—Brant-Sud"
-      },
-      "province": {
-        "en": "Ontario",
-        "fr": "Ontario"
-      },
-      "memberSince": "2025-04-28",
-      "url": {
-        "en": "https://www.ourcommons.ca/members/en/110354",
-        "fr": "https://www.ourcommons.ca/members/fr/110354"
-      },
-      "votingRecord": {
-        "eligible": 173,
-        "cast": 173,
-        "yea": 94,
-        "nay": 79,
         "paired": 0,
         "absent": 0,
         "participationRate": 1

@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-09-19T12:30:00.794Z",
+  "scrapedAt": "2026-09-20T13:06:23.248Z",
   "count": 20,
   "petitions": [
     {
@@ -18,7 +18,7 @@
         "fr": "Ouverte pour signature jusqu'au 3 novembre 2026 à 12 h 33 (HAE)"
       },
       "sponsor": "Maxime Blanchette-Joncas",
-      "signatures": 7047,
+      "signatures": 7103,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7742",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7742"
@@ -39,7 +39,7 @@
         "fr": "Ouverte pour signature jusqu'au 9 décembre 2026 à 10 h 53 (HAE)"
       },
       "sponsor": "Patrick Weiler",
-      "signatures": 4514,
+      "signatures": 5206,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7694",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7694"
@@ -60,7 +60,7 @@
         "fr": "Ouverte pour signature jusqu'au 8 janvier 2027 à 13 h 58 (HAE)"
       },
       "sponsor": "Jenny Kwan",
-      "signatures": 683,
+      "signatures": 716,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7709",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7709"
@@ -81,7 +81,7 @@
         "fr": "Ouverte pour signature jusqu'au 8 janvier 2027 à 16 h 00 (HAE)"
       },
       "sponsor": "Arielle Kayabaga",
-      "signatures": 531,
+      "signatures": 552,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7621",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7621"
@@ -102,7 +102,7 @@
         "fr": "Ouverte pour signature jusqu'au 7 janvier 2027 à 14 h 56 (HAE)"
       },
       "sponsor": "Dominique O'Rourke",
-      "signatures": 448,
+      "signatures": 451,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7663",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7663"
@@ -123,7 +123,7 @@
         "fr": "Ouverte pour signature jusqu'au 9 novembre 2026 à 13 h 59 (HAE)"
       },
       "sponsor": "Karina Gould",
-      "signatures": 410,
+      "signatures": 422,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7738",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7738"
@@ -144,7 +144,7 @@
         "fr": "Ouverte pour signature jusqu'au 4 octobre 2026 à 13 h 58 (HAE)"
       },
       "sponsor": "Ali Ehsassi",
-      "signatures": 327,
+      "signatures": 356,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7590",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7590"
@@ -165,31 +165,10 @@
         "fr": "Ouverte pour signature jusqu'au 14 octobre 2026 à 9 h 39 (HAE)"
       },
       "sponsor": "Rhonda Kirkland",
-      "signatures": 256,
+      "signatures": 300,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7612",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7612"
-      }
-    },
-    {
-      "code": "e-7755",
-      "topic": {
-        "en": "Citizenship and immigration",
-        "fr": "Citoyenneté et immigration"
-      },
-      "keywords": {
-        "en": "Domestic violence Temporary resident status Victims of violence",
-        "fr": "Statut de résident temporaire Victimes de violence Violence familiale"
-      },
-      "status": {
-        "en": "Open for signature until January 7, 2027, at 4:36 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 7 janvier 2027 à 16 h 36 (HAE)"
-      },
-      "sponsor": "Luc Berthold",
-      "signatures": 134,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7755",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7755"
       }
     },
     {
@@ -207,10 +186,31 @@
         "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 14 h 55 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 132,
+      "signatures": 148,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7719",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7719"
+      }
+    },
+    {
+      "code": "e-7755",
+      "topic": {
+        "en": "Citizenship and immigration",
+        "fr": "Citoyenneté et immigration"
+      },
+      "keywords": {
+        "en": "Domestic violence Temporary resident status Victims of violence",
+        "fr": "Statut de résident temporaire Victimes de violence Violence familiale"
+      },
+      "status": {
+        "en": "Open for signature until January 7, 2027, at 4:36 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 7 janvier 2027 à 16 h 36 (HAE)"
+      },
+      "sponsor": "Luc Berthold",
+      "signatures": 139,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7755",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7755"
       }
     },
     {
@@ -228,7 +228,7 @@
         "fr": "Ouverte pour signature jusqu'au 16 octobre 2026 à 16 h 48 (HAE)"
       },
       "sponsor": "Shelby Kramp-Neuman",
-      "signatures": 106,
+      "signatures": 138,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7766",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7766"
@@ -249,7 +249,7 @@
         "fr": "Ouverte pour signature jusqu'au 3 décembre 2026 à 13 h 59 (HAE)"
       },
       "sponsor": "Salma Zahid",
-      "signatures": 97,
+      "signatures": 100,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7705",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7705"
@@ -270,31 +270,10 @@
         "fr": "Ouverte pour signature jusqu'au 12 janvier 2027 à 9 h 45 (HAE)"
       },
       "sponsor": "Yasir Naqvi",
-      "signatures": 41,
+      "signatures": 45,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7749",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7749"
-      }
-    },
-    {
-      "code": "e-7674",
-      "topic": {
-        "en": "Justice",
-        "fr": "Justice"
-      },
-      "keywords": {
-        "en": "Families and children Family law Justice system",
-        "fr": "Administration de la justice Droit de la famille Familles et enfants"
-      },
-      "status": {
-        "en": "Open for signature until December 3, 2026, at 2:01 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 3 décembre 2026 à 14 h 01 (HAE)"
-      },
-      "sponsor": "Lisa Hepfner",
-      "signatures": 41,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7674",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7674"
       }
     },
     {
@@ -312,10 +291,31 @@
         "fr": "Ouverte pour signature jusqu'au 8 janvier 2027 à 14 h 01 (HAE)"
       },
       "sponsor": "Heather McPherson",
-      "signatures": 40,
+      "signatures": 44,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7762",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7762"
+      }
+    },
+    {
+      "code": "e-7674",
+      "topic": {
+        "en": "Justice",
+        "fr": "Justice"
+      },
+      "keywords": {
+        "en": "Families and children Family law Justice system",
+        "fr": "Administration de la justice Droit de la famille Familles et enfants"
+      },
+      "status": {
+        "en": "Open for signature until December 3, 2026, at 2:01 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 3 décembre 2026 à 14 h 01 (HAE)"
+      },
+      "sponsor": "Lisa Hepfner",
+      "signatures": 43,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7674",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7674"
       }
     },
     {
@@ -333,7 +333,7 @@
         "fr": "Ouverte pour signature jusqu'au 14 janvier 2027 à 16 h 46 (HAE)"
       },
       "sponsor": "John Barlow",
-      "signatures": 36,
+      "signatures": 41,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7751",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7751"
@@ -354,7 +354,7 @@
         "fr": "Ouverte pour signature jusqu'au 14 janvier 2027 à 16 h 46 (HAE)"
       },
       "sponsor": "Warren Steinley",
-      "signatures": 23,
+      "signatures": 27,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7698",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7698"
@@ -396,7 +396,7 @@
         "fr": "Ouverte pour signature jusqu'au 14 janvier 2027 à 16 h 47 (HAE)"
       },
       "sponsor": "Jeff Kibble",
-      "signatures": 14,
+      "signatures": 16,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7765",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7765"
