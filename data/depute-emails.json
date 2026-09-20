@@ -1,7 +1,7 @@
 {
   "source": "https://www.ourcommons.ca/members/en/{PersonId}",
-  "scrapedAt": "2026-09-19T12:28:45.840Z",
-  "count": 338,
+  "scrapedAt": "2026-09-20T13:04:16.645Z",
+  "count": 337,
   "emails": {
     "376": "mario.beaulieu@parl.gc.ca",
     "413": "louis.plamondon@parl.gc.ca",
@@ -212,7 +212,6 @@
     "110189": "jean-denis.garon@parl.gc.ca",
     "110225": "sophie.chatel@parl.gc.ca",
     "110339": "shafqat.ali@parl.gc.ca",
-    "110354": "larry.brock@parl.gc.ca",
     "110365": "connie.cody@parl.gc.ca",
     "110373": "michael.coteau@parl.gc.ca",
     "110415": "dan.muys@parl.gc.ca",
