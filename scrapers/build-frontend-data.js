@@ -10,9 +10,11 @@
 // Le rattachement se fait par des clés sûres (id de projet, PersonId de député,
 // couple session+numéro de scrutin) — jamais par le nom ni par un numéro seul.
 //
-// Ce build produit un JSON autonome (pas d'injection dans index.html : le gabarit
-// QC n'est pas encore adapté au modèle fédéral bicaméral). Le frontand, une fois
-// adapté, consommera ce fichier.
+// Il écrit data/frontend.json, puis injecte les données du site dans
+// data/site-data.js (blocs « const X = … » entre marqueurs) : un seul fichier
+// partagé et mis en cache par toutes les pages, au lieu d'1,7 Mo recopié dans
+// chaque page HTML. index.html le charge en <script> classique avant son script.
+// Le sitemap, lui, est écrit par scripts/build-section-pages.js (liste des pages).
 
 import { readFileSync, writeFileSync, existsSync, statSync } from 'node:fs';
 
@@ -20,7 +22,7 @@ const BILLS_PATH = 'data/bills.json';
 const DEPUTES_PATH = 'data/deputes.json';
 const VOTES_PATH = 'data/votes.json';
 const OUT_PATH = 'data/frontend.json';
-const HTML_PATH = 'index.html';
+const HTML_PATH = 'data/site-data.js';
 const START_MARKER = '/* BILLS_DATA_START';
 const END_MARKER = '/* BILLS_DATA_END */';
 const DEP_START_MARKER = '/* DEPUTES_DATA_START';
@@ -59,7 +61,7 @@ function read(path) {
 }
 
 // Remplace le contenu entre deux marqueurs par `const <varName> = <data>;`.
-// Garde le prototype autonome (données inline, pas de fetch).
+// Cible : data/site-data.js (script classique partagé, pas de fetch à la volée).
 function injectBlock(html, startMarker, endMarker, varName, data, stamp) {
   const startIdx = html.indexOf(startMarker);
   const endIdx = html.indexOf(endMarker);
@@ -206,7 +208,7 @@ function main() {
   const AI_SUMMARIES_PATH = 'data/bill-ai-summaries.json';
   const aiById = existsSync(AI_SUMMARIES_PATH) ? (read(AI_SUMMARIES_PATH).summaries ?? {}) : {};
 
-  // Injecte les projets de loi (prêts pour billCard) directement dans index.html
+  // Injecte les projets de loi (prêts pour billCard) dans data/site-data.js
   // entre les marqueurs BILLS_DATA — le prototype reste un fichier HTML autonome,
   // sans fetch. On ne garde que les champs consommés par le rendu.
   const frontendBills = billsOut.map((b) => ({
@@ -429,16 +431,9 @@ function main() {
 
   writeFileSync(HTML_PATH, html);
 
-  // sitemap.xml — régénéré à chaque build pour garder <lastmod> à jour (le site
-  // change tous les jours). Une seule URL : c'est une application à page unique.
-  const today = new Date().toISOString().slice(0, 10);
-  writeFileSync(
-    'sitemap.xml',
-    `<?xml version="1.0" encoding="UTF-8"?>\n` +
-      `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
-      `  <url>\n    <loc>https://dossiercanada.ca/</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>\n` +
-      `</urlset>\n`
-  );
+  // ⚠️ Plus de sitemap ici : ce bloc le réécrivait chaque nuit avec UNE seule
+  // URL (apex), effaçant les 12 pages FR/EN. C'est build-section-pages.js qui
+  // l'écrit désormais, depuis la même liste que les pages qu'il génère.
 
   console.log(`Fusion écrite dans ${OUT_PATH}`);
   console.log(`  ${frontendBills.length} projets · ${frontendDeputes.length} députés · ${frontendVotes.length} scrutins injectés dans ${HTML_PATH}`);

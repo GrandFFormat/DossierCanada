@@ -41,7 +41,7 @@ const PAST_PATH = 'data/past-bill-titles.json';
 const DEBUG_BILL = (process.env.LOBBY_DEBUG || '').toUpperCase() || null;
 
 // Combien on garde par projet (le reste est sur le registre officiel, qu'on lie).
-// Ces données partent en clair dans index.html : on reste frugal.
+// Ces données partent en clair dans data/site-data.js (chargé par chaque page) : on reste frugal.
 // MAX_ORGS est volontairement large : la recherche par mot-clé fouille les noms
 // d'organisations, et on refuse de trouver un projet sans pouvoir montrer POURQUOI
 // il correspond. Ce qui est indexé doit donc être affichable. Au 2026-09 le projet

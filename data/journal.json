@@ -1,0 +1,169 @@
+[
+  {
+    "date": "2026-09-21",
+    "volet": "site",
+    "fr": {
+      "titre": "« et moi » devient la page des mises à jour",
+      "texte": "Le lien « et moi » du bas de page mène à cette page : la personne derrière le site, puis ce qui y change, du plus récent au plus ancien. La bande dessinée cède la place à la seule case de la photo, lisible sur un téléphone."
+    },
+    "en": {
+      "titre": "“and me” becomes the site updates page",
+      "texte": "The “and me” link at the bottom of every page now leads here: the person behind the site, then what changes on it, newest first. The comic strip gives way to its photo panel alone, readable on a phone."
+    },
+    "commits": []
+  },
+  {
+    "date": "2026-09-21",
+    "volet": "site",
+    "fr": {
+      "titre": "Des pages que les moteurs de recherche comprennent",
+      "texte": "Chaque page a son titre, sa description et un seul grand titre qui dit son sujet. Le menu, le logo et la bascule FR/EN sont de vrais liens, et un fil d’Ariane (DossierCanada › Votes) montre où vous êtes. Le haut de chaque page (compte, filtres, premières fiches) se lit même sans JavaScript, et les pages anglaises sont en anglais dès le chargement."
+    },
+    "en": {
+      "titre": "Pages search engines can understand",
+      "texte": "Every page has its own title, description and a single main heading that states its subject. The menu, the logo and the FR/EN switch are real links, and a breadcrumb (DossierCanada › Votes) shows where you are. The top of each page (count, filters, first cards) can be read even without JavaScript, and English pages are in English from the first load."
+    },
+    "commits": []
+  },
+  {
+    "date": "2026-09-21",
+    "volet": "site",
+    "fr": {
+      "titre": "Des pages environ six fois plus légères",
+      "texte": "Les données du site (projets de loi, votes, député·e·s) ne sont plus recopiées dans chaque page : un seul fichier, que votre navigateur garde d’une page à l’autre. Chaque page passe d’environ 2,1 Mo à 0,35 Mo."
+    },
+    "en": {
+      "titre": "Pages about six times lighter",
+      "texte": "The site’s data (bills, votes, MPs) is no longer copied into every page: a single file, which your browser keeps from one page to the next. Each page goes from about 2.1 MB to 0.35 MB."
+    },
+    "commits": []
+  },
+  {
+    "date": "2026-09-21",
+    "volet": "site",
+    "fr": {
+      "titre": "Le site s’affiche même quand les comptes sont en panne",
+      "texte": "Si le service de connexion ne répond pas, le site s’affiche et fonctionne quand même ; seuls les comptes attendent. Avant, la page pouvait rester vide."
+    },
+    "en": {
+      "titre": "The site loads even when accounts are down",
+      "texte": "If the sign-in service doesn’t respond, the site still loads and works; only accounts have to wait. Before, the page could stay blank."
+    },
+    "commits": []
+  },
+  {
+    "date": "2026-09-21",
+    "volet": "site",
+    "fr": {
+      "titre": "Les sources officielles au bas de chaque page",
+      "texte": "Le bas de page renvoie maintenant directement à LEGISinfo, à la Chambre des communes, au Sénat et au Commissariat au lobbying, d’où viennent les données."
+    },
+    "en": {
+      "titre": "Official sources at the bottom of every page",
+      "texte": "The footer now links straight to LEGISinfo, the House of Commons, the Senate and the Commissioner of Lobbying, where the data comes from."
+    },
+    "commits": []
+  },
+  {
+    "date": "2026-09-18",
+    "volet": "site",
+    "fr": {
+      "titre": "L’anglais a ses propres adresses",
+      "texte": "Chaque page existe en anglais à sa propre adresse (/en, /en/votes, /en/projets-de-loi…). On peut la partager telle quelle, et la bascule FR/EN change aussi l’adresse."
+    },
+    "en": {
+      "titre": "English gets its own addresses",
+      "texte": "Every page exists in English at its own address (/en, /en/votes, /en/projets-de-loi…). You can share it as is, and the FR/EN switch changes the address too."
+    },
+    "commits": [
+      "65d727d",
+      "542c5b5"
+    ]
+  },
+  {
+    "date": "2026-09-10",
+    "volet": "projets",
+    "fr": {
+      "titre": "Le lobbying déclaré, sur les fiches de projets de loi",
+      "texte": "Chaque projet nommé dans le registre du lobbying montre les communications déclarées au Commissariat au lobbying : combien, quelles organisations, et les rencontres récentes, avec un lien vers chaque déclaration officielle et la date des données. Un filtre « Lobbying » les regroupe, et la recherche trouve aussi les organisations. On ne compte que les déclarations qui citent le numéro du projet ET des mots de son titre, car les numéros de projets sont réutilisés d’une législature à l’autre."
+    },
+    "en": {
+      "titre": "Declared lobbying, on bill cards",
+      "texte": "Each bill named in the lobbying registry shows the communications declared to the Commissioner of Lobbying: how many, which organizations, and recent meetings, with a link to each official record and the date of the data. A “Lobbying” filter groups them, and search also finds organizations. Only records that cite both the bill number and words from its title are counted, because bill numbers are reused from one Parliament to the next."
+    },
+    "commits": [
+      "bbde738",
+      "f6addd2",
+      "122bfac",
+      "0ec65b9",
+      "ab66fa9"
+    ]
+  },
+  {
+    "date": "2026-09-10",
+    "volet": "projets",
+    "fr": {
+      "titre": "Les projets pro forma s’expliquent",
+      "texte": "Le C-1 et le S-1 ne sont pas de vraies lois : chaque chambre en dépose un pour la forme au début de chaque session, avant d’étudier le discours du Trône. Ils ont maintenant leur propre état, « Pro forma », et une explication, au lieu d’une fiche sans résumé."
+    },
+    "en": {
+      "titre": "Pro forma bills are explained",
+      "texte": "C-1 and S-1 aren’t real legislation: each chamber introduces one as a formality at the start of each session, before taking up the Speech from the Throne. They now have their own status, “Pro forma”, and an explanation, instead of a bill with no summary."
+    },
+    "commits": [
+      "4a4ee97"
+    ]
+  },
+  {
+    "date": "2026-09-10",
+    "volet": "projets",
+    "fr": {
+      "titre": "Des fiches de projet plus agréables à lire",
+      "texte": "Un seul projet reste ouvert à la fois, le résumé se lit dans une police plus confortable, et « Copier le lien » confirme en changeant de couleur plutôt que par une fenêtre. La plupart des résumés ne se chargent qu’à l’ouverture d’une fiche, ce qui allège la page."
+    },
+    "en": {
+      "titre": "Bill cards that are easier to read",
+      "texte": "Only one bill stays open at a time, summaries use a more comfortable typeface, and “Copy link” confirms by changing colour instead of opening a pop-up. Most summaries only load when you open a bill, which makes the page lighter."
+    },
+    "commits": [
+      "2917ad7",
+      "b8cb1f1",
+      "09ed6b4",
+      "f58eb3f"
+    ]
+  },
+  {
+    "date": "2026-09-10",
+    "volet": "site",
+    "fr": {
+      "titre": "Une recherche plus tolérante",
+      "texte": "Le trait d’union n’est plus obligatoire : « c5 » trouve le C-5. Dans le lexique, la recherche filtre aussi la section « Qui gravite »."
+    },
+    "en": {
+      "titre": "More forgiving search",
+      "texte": "The hyphen is no longer required: “c5” finds C-5. In the glossary, search also filters the “Who’s involved” section."
+    },
+    "commits": [
+      "596f7b6",
+      "4c0f85e"
+    ]
+  },
+  {
+    "date": "2026-09-10",
+    "volet": "site",
+    "fr": {
+      "titre": "Une nouvelle image quand on partage le site",
+      "texte": "Partager DossierCanada sur X ou Facebook affiche une image au design actuel du site, et la carte X montre enfin son image. Sur ordinateur, les boutons X, Facebook et Copier remplacent le panneau de partage du système."
+    },
+    "en": {
+      "titre": "A new image when you share the site",
+      "texte": "Sharing DossierCanada on X or Facebook shows an image in the site’s current design, and the X card finally shows its picture. On desktop, the X, Facebook and Copy buttons replace the system share panel."
+    },
+    "commits": [
+      "1213b31",
+      "f84d484",
+      "17fda30",
+      "9a9c2fc"
+    ]
+  }
+]

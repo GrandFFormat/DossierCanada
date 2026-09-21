@@ -27,6 +27,7 @@
     "build:ministers": "node scrapers/build-ministers-data.js",
     "refresh": "node scripts/refresh.js",
     "build:pages": "node scripts/build-section-pages.js",
+    "build:prerender": "node scripts/prerender-pages.js",
     "scrape:past-bill-titles": "node scrapers/past-bill-titles.js"
   },
   "dependencies": {

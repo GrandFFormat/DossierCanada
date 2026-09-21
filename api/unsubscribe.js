@@ -21,6 +21,7 @@ function verifyToken(token) {
 function page(message) {
   return `<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
     <title>DossierCanada</title>
     <style>body{font-family:Arial,sans-serif;background:#EDEEE8;color:#16213E;display:flex;
       align-items:center;justify-content:center;min-height:100vh;margin:0;padding:24px;}
@@ -59,7 +60,7 @@ export default async function handler(req, res) {
       '<p>Vous ne recevrez plus le résumé hebdomadaire par courriel.<br>You will no longer receive the weekly email summary.</p>' +
       '<p style="font-size:13px;color:#5C6270;">Vos suivis et demandes d\'explications restent intacts sur le site — seuls les courriels s\'arrêtent.<br>' +
       'Your follows and explanation requests stay intact on the site — only the emails stop.</p>' +
-      '<p><a href="https://dossiercanada.ca">Retour à DossierCanada / Back to DossierCanada</a></p>'
+      '<p><a href="https://www.dossiercanada.ca/">Retour à DossierCanada / Back to DossierCanada</a></p>'
     ));
   } catch (err) {
     console.error('unsubscribe failed:', err);

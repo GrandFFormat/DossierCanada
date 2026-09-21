@@ -224,7 +224,7 @@ export default async function handler(req, res) {
     // 5. Désabonnées + courriels.
     const optedOut = new Set((await supaFetch('/rest/v1/email_optout?select=user_id')).map((r) => r.user_id));
     const emailById = await getAllUserEmails();
-    const siteUrl = process.env.PUBLIC_SITE_URL || 'https://dossiercanada.ca';
+    const siteUrl = process.env.PUBLIC_SITE_URL || 'https://www.dossiercanada.ca';
 
     let sent = 0;
     for (const [uid, billIds] of userBills) {

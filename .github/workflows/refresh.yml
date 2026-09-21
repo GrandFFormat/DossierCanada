@@ -32,6 +32,13 @@ jobs:
       - name: Installer les dépendances
         run: npm ci
 
+      # Chromium sans tête pour le pré-rendu SEO (scripts/prerender-pages.js).
+      # Tolérant : sans navigateur, le pré-rendu échoue, les pages gardent celui
+      # de la veille et l'alerte « scrapers en échec » le signale.
+      - name: Installer le navigateur du pré-rendu
+        continue-on-error: true
+        run: npx playwright install --with-deps --only-shell chromium
+
       - name: Rafraîchir les données (scrapers + build)
         id: refresh
         # Orchestrateur TOLÉRANT (scripts/refresh.js) : un scraper qui échoue
@@ -51,10 +58,10 @@ jobs:
           if git diff --cached --quiet; then
             echo "Aucun changement — rien à committer."
           else
-            # Jour de changement : dater le sitemap et committer les pages de section
-            # (régénérées par « npm run refresh » -> build:pages depuis index.html).
-            node scripts/update-sitemap-lastmod.js "$(date -u +%F)"
-            git add deputes.html ministres.html projets-de-loi.html votes.html lexique.html sitemap.xml
+            # Jour de changement : committer les 14 pages FR/EN et le sitemap, tous
+            # régénérés par « npm run refresh » (build:pages + build:prerender ; le
+            # sitemap y est daté du jour). Oublier en.html / en/ figeait l'anglais.
+            git add deputes.html ministres.html projets-de-loi.html votes.html lexique.html mises-a-jour.html en.html en/ sitemap.xml
             git commit -m "chore: rafraîchissement automatique des données fédérales"
             git push
           fi

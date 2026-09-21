@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /scrapers/
+Disallow: /scripts/
 
-Sitemap: https://dossiercanada.ca/sitemap.xml
+Sitemap: https://www.dossiercanada.ca/sitemap.xml
