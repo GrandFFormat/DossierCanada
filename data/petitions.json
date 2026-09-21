@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-09-20T13:06:23.248Z",
+  "scrapedAt": "2026-09-21T15:06:00.644Z",
   "count": 20,
   "petitions": [
     {
@@ -18,7 +18,7 @@
         "fr": "Ouverte pour signature jusqu'au 3 novembre 2026 à 12 h 33 (HAE)"
       },
       "sponsor": "Maxime Blanchette-Joncas",
-      "signatures": 7103,
+      "signatures": 7145,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7742",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7742"
@@ -39,7 +39,7 @@
         "fr": "Ouverte pour signature jusqu'au 9 décembre 2026 à 10 h 53 (HAE)"
       },
       "sponsor": "Patrick Weiler",
-      "signatures": 5206,
+      "signatures": 5957,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7694",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7694"
@@ -60,7 +60,7 @@
         "fr": "Ouverte pour signature jusqu'au 8 janvier 2027 à 13 h 58 (HAE)"
       },
       "sponsor": "Jenny Kwan",
-      "signatures": 716,
+      "signatures": 732,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7709",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7709"
@@ -81,7 +81,7 @@
         "fr": "Ouverte pour signature jusqu'au 8 janvier 2027 à 16 h 00 (HAE)"
       },
       "sponsor": "Arielle Kayabaga",
-      "signatures": 552,
+      "signatures": 564,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7621",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7621"
@@ -102,7 +102,7 @@
         "fr": "Ouverte pour signature jusqu'au 7 janvier 2027 à 14 h 56 (HAE)"
       },
       "sponsor": "Dominique O'Rourke",
-      "signatures": 451,
+      "signatures": 452,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7663",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7663"
@@ -123,7 +123,7 @@
         "fr": "Ouverte pour signature jusqu'au 9 novembre 2026 à 13 h 59 (HAE)"
       },
       "sponsor": "Karina Gould",
-      "signatures": 422,
+      "signatures": 435,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7738",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7738"
@@ -144,7 +144,7 @@
         "fr": "Ouverte pour signature jusqu'au 4 octobre 2026 à 13 h 58 (HAE)"
       },
       "sponsor": "Ali Ehsassi",
-      "signatures": 356,
+      "signatures": 431,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7590",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7590"
@@ -165,10 +165,31 @@
         "fr": "Ouverte pour signature jusqu'au 14 octobre 2026 à 9 h 39 (HAE)"
       },
       "sponsor": "Rhonda Kirkland",
-      "signatures": 300,
+      "signatures": 312,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7612",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7612"
+      }
+    },
+    {
+      "code": "e-7766",
+      "topic": {
+        "en": "Social affairs and equality",
+        "fr": "Affaires sociales et égalité"
+      },
+      "keywords": {
+        "en": "Hate crimes Hate propaganda South Asian Canadians",
+        "fr": "Canadiens sud-asiatiques Crimes haineux Propagande haineuse"
+      },
+      "status": {
+        "en": "Open for signature until October 16, 2026, at 4:48 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 16 octobre 2026 à 16 h 48 (HAE)"
+      },
+      "sponsor": "Shelby Kramp-Neuman",
+      "signatures": 191,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7766",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7766"
       }
     },
     {
@@ -186,7 +207,7 @@
         "fr": "Ouverte pour signature jusqu'au 8 décembre 2026 à 14 h 55 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 148,
+      "signatures": 158,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7719",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7719"
@@ -207,31 +228,10 @@
         "fr": "Ouverte pour signature jusqu'au 7 janvier 2027 à 16 h 36 (HAE)"
       },
       "sponsor": "Luc Berthold",
-      "signatures": 139,
+      "signatures": 142,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7755",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7755"
-      }
-    },
-    {
-      "code": "e-7766",
-      "topic": {
-        "en": "Social affairs and equality",
-        "fr": "Affaires sociales et égalité"
-      },
-      "keywords": {
-        "en": "Hate crimes Hate propaganda South Asian Canadians",
-        "fr": "Canadiens sud-asiatiques Crimes haineux Propagande haineuse"
-      },
-      "status": {
-        "en": "Open for signature until October 16, 2026, at 4:48 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 16 octobre 2026 à 16 h 48 (HAE)"
-      },
-      "sponsor": "Shelby Kramp-Neuman",
-      "signatures": 138,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7766",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7766"
       }
     },
     {
@@ -249,7 +249,7 @@
         "fr": "Ouverte pour signature jusqu'au 3 décembre 2026 à 13 h 59 (HAE)"
       },
       "sponsor": "Salma Zahid",
-      "signatures": 100,
+      "signatures": 101,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7705",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7705"
@@ -270,10 +270,31 @@
         "fr": "Ouverte pour signature jusqu'au 12 janvier 2027 à 9 h 45 (HAE)"
       },
       "sponsor": "Yasir Naqvi",
-      "signatures": 45,
+      "signatures": 49,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7749",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7749"
+      }
+    },
+    {
+      "code": "e-7751",
+      "topic": {
+        "en": "Social affairs and equality",
+        "fr": "Affaires sociales et égalité"
+      },
+      "keywords": {
+        "en": "Canada Pension Plan Inquiries and public inquiries Pensions and pensioners Statutory review",
+        "fr": "Enquêtes et enquêtes publiques Examen législatif Pensions et pensionnés Régime de pensions du Canada"
+      },
+      "status": {
+        "en": "Open for signature until January 14, 2027, at 4:46 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 14 janvier 2027 à 16 h 46 (HAE)"
+      },
+      "sponsor": "John Barlow",
+      "signatures": 47,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7751",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7751"
       }
     },
     {
@@ -291,7 +312,7 @@
         "fr": "Ouverte pour signature jusqu'au 8 janvier 2027 à 14 h 01 (HAE)"
       },
       "sponsor": "Heather McPherson",
-      "signatures": 44,
+      "signatures": 47,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7762",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7762"
@@ -312,31 +333,10 @@
         "fr": "Ouverte pour signature jusqu'au 3 décembre 2026 à 14 h 01 (HAE)"
       },
       "sponsor": "Lisa Hepfner",
-      "signatures": 43,
+      "signatures": 45,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7674",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7674"
-      }
-    },
-    {
-      "code": "e-7751",
-      "topic": {
-        "en": "Social affairs and equality",
-        "fr": "Affaires sociales et égalité"
-      },
-      "keywords": {
-        "en": "Canada Pension Plan Inquiries and public inquiries Pensions and pensioners Statutory review",
-        "fr": "Enquêtes et enquêtes publiques Examen législatif Pensions et pensionnés Régime de pensions du Canada"
-      },
-      "status": {
-        "en": "Open for signature until January 14, 2027, at 4:46 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 14 janvier 2027 à 16 h 46 (HAE)"
-      },
-      "sponsor": "John Barlow",
-      "signatures": 41,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7751",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7751"
       }
     },
     {
@@ -354,10 +354,31 @@
         "fr": "Ouverte pour signature jusqu'au 14 janvier 2027 à 16 h 46 (HAE)"
       },
       "sponsor": "Warren Steinley",
-      "signatures": 27,
+      "signatures": 30,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7698",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7698"
+      }
+    },
+    {
+      "code": "e-7765",
+      "topic": {
+        "en": "Health",
+        "fr": "Santé"
+      },
+      "keywords": {
+        "en": "Deaths and funerals Health care system Infants",
+        "fr": "Décès et funérailles Nourrissons Système de soins de santé"
+      },
+      "status": {
+        "en": "Open for signature until January 14, 2027, at 4:47 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 14 janvier 2027 à 16 h 47 (HAE)"
+      },
+      "sponsor": "Jeff Kibble",
+      "signatures": 20,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7765",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7765"
       }
     },
     {
@@ -379,27 +400,6 @@
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7737",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7737"
-      }
-    },
-    {
-      "code": "e-7765",
-      "topic": {
-        "en": "Health",
-        "fr": "Santé"
-      },
-      "keywords": {
-        "en": "Deaths and funerals Health care system Infants",
-        "fr": "Décès et funérailles Nourrissons Système de soins de santé"
-      },
-      "status": {
-        "en": "Open for signature until January 14, 2027, at 4:47 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 14 janvier 2027 à 16 h 47 (HAE)"
-      },
-      "sponsor": "Jeff Kibble",
-      "signatures": 16,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7765",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7765"
       }
     },
     {
