@@ -3,8 +3,8 @@
     "en": "https://sencanada.ca/umbraco/surface/SenatorsAjax/GetSenators?displayFor=senatorslist&culture=en-CA",
     "fr": "https://sencanada.ca/umbraco/surface/SenatorsAjax/GetSenators?displayFor=senatorslist&culture=fr-CA"
   },
-  "scrapedAt": "2026-09-20T13:06:24.097Z",
-  "count": 93,
+  "scrapedAt": "2026-09-21T15:06:01.420Z",
+  "count": 94,
   "senators": [
     {
       "slug": "adler-charles",
@@ -1772,6 +1772,32 @@
       "url": {
         "en": "https://sencanada.ca/en/senators/petten-iris/",
         "fr": "https://sencanada.ca/fr/senateurs/petten-iris/"
+      }
+    },
+    {
+      "slug": "pitfield-thomas",
+      "firstName": "Thomas",
+      "lastName": "Pitfield",
+      "name": "Thomas Pitfield",
+      "postNominal": null,
+      "group": {
+        "code": "Non-affiliated",
+        "en": "Non-affiliated",
+        "fr": "Non affilié(e)",
+        "enName": "Non-affiliated",
+        "frName": "Non affilié(e)"
+      },
+      "province": {
+        "code": "QC",
+        "en": "Quebec",
+        "fr": "Québec"
+      },
+      "appointedOn": "2026-09-18",
+      "retirementOn": "2050-08-07",
+      "appointedBy": "Carney, Mark (Lib.)",
+      "url": {
+        "en": "https://sencanada.ca/en/senators/pitfield-thomas/",
+        "fr": "https://sencanada.ca/fr/senateurs/pitfield-thomas/"
       }
     },
     {
