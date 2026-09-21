@@ -72,7 +72,9 @@ digest courriel hebdomadaire rebranché sur l'état LEGISinfo.
 
 ```bash
 npm install
-npm run refresh   # tous les scrapers + build, dans le bon ordre (~3 min)
+npx playwright install chromium   # navigateur du pré-rendu SEO (sinon build:prerender échoue,
+                                  # la chaîne continue et les pages gardent leur pré-rendu)
+npm run refresh   # tous les scrapers + build + pré-rendu, dans le bon ordre (~3 min)
 ```
 
 **Ou étape par étape :**
@@ -88,13 +90,17 @@ npm run scrape:ministers   # pm.gc.ca    -> data/ministers.json (nécessite data
 npm run scrape:petitions   # ourcommons  -> data/petitions.json (liste publique, pas l'export reCAPTCHA)
 
 npm run build:frontend     # fusionne le tout -> data/frontend.json ET injecte
-                           # projets/députés/votes/ministres/pétitions dans index.html
+                           # projets/députés/votes/… dans data/site-data.js (partagé)
+npm run build:pages        # 14 pages FR/EN (head SEO, H1, liens, EN traduit) + sitemap.xml
+npm run build:prerender    # Chromium sans tête : contenu visible sans JS dans chaque page
 ```
 
 Chaque scraper tape **une** source et n'invente rien. `build:frontend` résout les jointures,
 calcule les agrégats (bilan de votes des député·e·s, divisions par projet) et injecte les
-données directement dans `index.html` (le site reste un fichier autonome, sans fetch au chargement,
-sauf la recherche optionnelle par code postal).
+données dans `data/site-data.js`, un script partagé (mis en cache) que toutes les pages chargent avant
+le script de `index.html`. `build:pages` génère ensuite les 14 pages indexables depuis `index.html`
+(titres et descriptions : `PAGE_META` dans `index.html`, source unique), et `build:prerender`
+y recopie le haut de chaque page tel que le site le dessine, pour les robots sans JavaScript.
 
 ## Rafraîchissement automatique
 
@@ -116,23 +122,30 @@ node scripts/static-server.js   # http://localhost:8080
 ## Structure du dépôt
 
 ```
-index.html                     Application complète (i18n FR/EN + JS + données injectées)
+index.html                     Application (i18n FR/EN + JS) ET page d'accueil FR ; gabarit des 13 autres pages
+*.html, en.html, en/*.html     Pages générées (build:pages + build:prerender) — ne pas éditer à la main
+404.html                       Page introuvable (statique, noindex)
+data/site-data.js              Données du site (GÉNÉRÉ par build-frontend-data.js)
+data/journal.json              Journal public des mises à jour (/mises-a-jour), tenu À LA MAIN
 scrapers/
   bills.js                     LEGISinfo   -> data/bills.json
   deputes.js                   ourcommons  -> data/deputes.json
   votes.js                     ourcommons  -> data/votes.json
   ministers.js                 pm.gc.ca    -> data/ministers.json
-  build-frontend-data.js       Fusion + injection dans index.html
+  build-frontend-data.js       Fusion + injection dans data/site-data.js
   (bill-details.js, bill-summaries.js, … : patrons QC laissés en RÉFÉRENCE)
 scripts/
   explore-sources.js           Reconnaissance des sources fédérales (npm run explore)
-  static-server.js             Serveur statique local (dev / preview)
+  build-section-pages.js       14 pages FR/EN (head SEO, H1, liens, EN traduit) + sitemap.xml
+  seo-pages.js                 Liste des pages et zones pré-rendues (partagée)
+  prerender-pages.js           Pré-rendu Chromium : contenu lisible sans JavaScript
+  static-server.js             Serveur statique local (dev / preview, URL propres)
   supabase-schema*.sql         Schémas Supabase (suivis, demandes d'explication, état, optout)
 api/
   weekly-digest.js             Cron hebdo : détecte les changements d'étape, envoie le digest
   unsubscribe.js               Désabonnement CASL en un clic (jeton HMAC)
 data/                          Données générées (JSON). data/samples/ = reconnaissance (gitignore)
-vercel.json                    Config Vercel (cron)
+vercel.json                    Config Vercel (cron, URL propres, en-têtes noindex hors pages publiques)
 ```
 
 ## Différences vs DossierQuébec (modèle)

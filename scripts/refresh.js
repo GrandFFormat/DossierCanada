@@ -9,7 +9,9 @@
 //
 // Politique de sortie :
 //   - Un scraper qui échoue N'ARRÊTE PAS la chaîne (données partielles = publiables).
-//   - Un build qui échoue EST fatal : on ne publie pas un index.html cassé (exit 1).
+//   - Un build qui échoue EST fatal : on ne publie pas un site cassé (exit 1).
+//   - Le pré-rendu (SEO) est tolérant : en échec, les pages gardent celui de la
+//     veille ; il est signalé comme un scraper en échec (alerte, pas de blocage).
 //   - En CI, on écrit deux sorties dans $GITHUB_OUTPUT (builds_ok, failed) : le
 //     workflow committe les données fraîches si builds_ok, PUIS échoue le run si
 //     « failed » n'est pas vide, pour envoyer l'alerte courriel (voir refresh.yml).
@@ -41,6 +43,8 @@ const SCRAPERS = [
 ];
 // Assemblage du site à partir des data/*.json — critique : un échec ici est fatal.
 const BUILDS = ['build:frontend', 'build:pages'];
+// Pré-rendu du contenu visible sans JavaScript (Chromium sans tête). Tolérant.
+const PRERENDER = 'build:prerender';
 
 function run(script) {
   console.log(`\n=== ${script} ===`);
@@ -83,6 +87,15 @@ for (const b of BUILDS) {
     buildsOk = false;
     console.error(`✖ ${b} a échoué — build interrompu, rien ne sera publié.`);
     break; // si build:frontend casse, inutile de tenter build:pages
+  }
+}
+
+if (buildsOk) {
+  try {
+    run(PRERENDER);
+  } catch {
+    failedScrapers.push('prerender (pages publiées avec le pré-rendu précédent)');
+    console.error(`⚠ ${PRERENDER} a échoué — les pages gardent leur pré-rendu précédent.`);
   }
 }
 

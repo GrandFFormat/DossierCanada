@@ -6,18 +6,18 @@
 <!-- SEO:START — bloc GÉNÉRÉ par scripts/build-section-pages.js pour CHAQUE page
      (titre, description, canonical, hreflang, Open Graph, X, JSON-LD). Ne pas éditer
      à la main : les textes viennent de PAGE_META (plus bas dans ce fichier). -->
-<title>Députés fédéraux à la Chambre des communes — DossierCanada</title>
-<meta name="description" content="Chaque député·e en poste à la Chambre des communes du Canada (343 sièges) : circonscription, parti et présence aux votes, d'après les données officielles.">
+<title>Mises à jour du site et qui est derrière — DossierCanada</title>
+<meta name="description" content="Ce qui change sur DossierCanada, le site citoyen qui suit le Parlement du Canada en langage clair, du plus récent au plus ancien, et la personne qui l'a bâti.">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<link rel="canonical" href="https://www.dossiercanada.ca/deputes">
-<link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/deputes">
-<link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/deputes">
-<link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/deputes">
+<link rel="canonical" href="https://www.dossiercanada.ca/mises-a-jour">
+<link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/mises-a-jour">
+<link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/mises-a-jour">
+<link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/mises-a-jour">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DossierCanada">
-<meta property="og:title" content="Députés fédéraux à la Chambre des communes — DossierCanada">
-<meta property="og:description" content="Chaque député·e en poste à la Chambre des communes du Canada (343 sièges) : circonscription, parti et présence aux votes, d'après les données officielles.">
-<meta property="og:url" content="https://www.dossiercanada.ca/deputes">
+<meta property="og:title" content="Mises à jour du site et qui est derrière — DossierCanada">
+<meta property="og:description" content="Ce qui change sur DossierCanada, le site citoyen qui suit le Parlement du Canada en langage clair, du plus récent au plus ancien, et la personne qui l'a bâti.">
+<meta property="og:url" content="https://www.dossiercanada.ca/mises-a-jour">
 <meta property="og:image" content="https://www.dossiercanada.ca/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -25,8 +25,8 @@
 <meta property="og:locale" content="fr_CA">
 <meta property="og:locale:alternate" content="en_CA">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Députés fédéraux à la Chambre des communes — DossierCanada">
-<meta name="twitter:description" content="Chaque député·e en poste à la Chambre des communes du Canada (343 sièges) : circonscription, parti et présence aux votes, d'après les données officielles.">
+<meta name="twitter:title" content="Mises à jour du site et qui est derrière — DossierCanada">
+<meta name="twitter:description" content="Ce qui change sur DossierCanada, le site citoyen qui suit le Parlement du Canada en langage clair, du plus récent au plus ancien, et la personne qui l'a bâti.">
 <meta name="twitter:image" content="https://www.dossiercanada.ca/og-image.png">
 <script type="application/ld+json">
 {
@@ -42,8 +42,8 @@
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Députés",
-      "item": "https://www.dossiercanada.ca/deputes"
+      "name": "Mises à jour du site",
+      "item": "https://www.dossiercanada.ca/mises-a-jour"
     }
   ]
 }
@@ -1138,7 +1138,7 @@ try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStor
       <span id="fontPct">100%</span>
       <button id="fontPlus" aria-label="Agrandir le texte">A+</button>
     </div>
-    <a class="lang-toggle" id="langToggle" href="/en/deputes" hreflang="en" lang="en">EN</a>
+    <a class="lang-toggle" id="langToggle" href="/en/mises-a-jour" hreflang="en" lang="en">EN</a>
     <button class="hamburger" id="hamburgerBtn" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
   <span data-i18n="brand.tagline" style="display:none;">Qui siège, qui légifère, qui vote quoi</span>
@@ -1154,7 +1154,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
 <nav class="tabs">
   <div class="close-menu" id="closeMenuBtn"><span data-i18n="nav.close">Fermer</span> ✕</div>
   <a data-view="apercu" href="/"><span class="n">01</span><span data-i18n="nav.apercu">Aperçu</span></a>
-  <a class="active" data-view="ministres" href="/deputes" aria-current="page"><span class="n">02</span><span data-i18n="nav.ministres">Députés</span></a>
+  <a data-view="ministres" href="/deputes"><span class="n">02</span><span data-i18n="nav.ministres">Députés</span></a>
   <a data-view="cabinet" href="/ministres"><span class="n">03</span><span data-i18n="nav.cabinet">Ministres</span></a>
   <a data-view="projets" href="/projets-de-loi"><span class="n">04</span><span data-i18n="nav.projets">Projets de loi</span></a>
   <a data-view="votes" href="/votes"><span class="n">05</span><span data-i18n="nav.votes">Votes</span></a>
@@ -1245,188 +1245,24 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
   </section>
 
   <!-- MINISTRES & DÉPUTÉS -->
-  <section class="view active" id="view-ministres">
+  <section class="view" id="view-ministres">
     <div class="page-band">
       <div>
         <nav class="crumbs" aria-label="Fil d'Ariane"><a data-view="apercu" href="/">DossierCanada</a> <span aria-hidden="true">›</span> <span aria-current="page" data-i18n="nav.ministres">Députés</span></nav>
-        <h1 class="band-title" id="deputesCountTitle">337 députés fédéraux</h1>
+        <h2 class="band-title" id="deputesCountTitle">Députés fédéraux</h2>
         <div class="sub" data-i18n="deputes.bandsub">Qui vous représente, comment iel vote, à quelle fréquence iel siège.</div>
       </div>
       <input type="text" id="searchMinistres" class="band-search" data-i18n-placeholder="ph.searchMinistres" placeholder="Chercher un nom, une circonscription, un code postal…">
     </div>
     <div class="filters-row">
-      <div class="party-filters" id="partyFilters"><!--ssr--><span class="party-chip active" style="background:var(--strong); border-color:var(--strong);" onclick="setPartyFilter('')">Tous</span>
-    <span class="party-chip " style="--pc:#D71920; border-color:#D7192066; color:var(--pc);" onclick="setPartyFilter('LPC')">LPC</span>
-  
-    <span class="party-chip " style="--pc:#1A4782; border-color:#1A478266; color:var(--pc);" onclick="setPartyFilter('CPC')">CPC</span>
-  
-    <span class="party-chip " style="--pc:#33B2CC; border-color:#33B2CC66; color:var(--pc);" onclick="setPartyFilter('BQ')">BQ</span>
-  
-    <span class="party-chip " style="--pc:#F58220; border-color:#F5822066; color:var(--pc);" onclick="setPartyFilter('NDP')">NDP</span>
-  
-    <span class="party-chip " style="--pc:#3D9B35; border-color:#3D9B3566; color:var(--pc);" onclick="setPartyFilter('GPC')">GPC</span>
-  
-    <span class="party-chip " style="--pc:#8a8f99; border-color:#8a8f9966; color:var(--pc);" onclick="setPartyFilter('IND')">IND</span><!--/ssr--></div>
+      <div class="party-filters" id="partyFilters"><!--ssr--><!--/ssr--></div>
       <button class="party-chip" id="legendBtn" onclick="toggleLegend()" data-i18n="deputes.legend">Légende</button>
       <button class="party-chip" id="senateChip" onclick="toggleChamberChip()" data-i18n="deputes.senate">Sénat</button>
       <div id="deputesPager" class="deputes-pager"></div>
       <button class="sort-toggle" id="ministresSortToggle" onclick="toggleMinistresSort()" style="display:none"></button>
     </div>
     <div class="info-box" id="deputesInfoBox" data-i18n="trouve.info" style="display:none; margin-bottom:20px;">Cette liste reprend, telle quelle, la liste officielle et bilingue des député·e·s en poste à la Chambre des communes (noscommunes.ca). Une démission ou une élection partielle peut la changer entre deux rafraîchissements : elle montre la Chambre telle qu'elle était à la dernière mise à jour du site, faite chaque jour.</div>
-    <div class="grid" id="deputesList"><!--ssr--><div class="m-card">
-      <div class="top-row">
-        <a class="avatar" href="mailto:aaron.gunn@parl.gc.ca" onclick="event.stopPropagation()" title="aaron.gunn@parl.gc.ca" aria-label="Écrire à Aaron Gunn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg></a>
-        <button class="follow-btn " onclick="toggleFollowDepute('mp-123586')">+ Suivre</button>
-      </div>
-      <h3>Aaron Gunn</h3>
-      <div class="role">North Island—Powell River · Colombie-Britannique</div>
-      <div class="meta-row">
-        <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
-        <span class="vp-note" title="Part des votes nominaux auxquels ce·tte député·e a pris part (Pour/Contre/pairé) depuis son entrée en fonction — un indicateur de présence, la Chambre ne publiant pas l'assiduité directement.">présence : 98 % (169/173)</span>
-        <a class="vp-note" href="https://www.ourcommons.ca/members/fr/123586" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Fiche officielle sur ourcommons.ca">fiche ↗</a>
-      </div>
-    </div>
-  
-    <div class="m-card">
-      <div class="top-row">
-        <a class="avatar" href="mailto:abdelhaq.sari@parl.gc.ca" onclick="event.stopPropagation()" title="abdelhaq.sari@parl.gc.ca" aria-label="Écrire à Abdelhaq Sari"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg></a>
-        <button class="follow-btn " onclick="toggleFollowDepute('mp-122533')">+ Suivre</button>
-      </div>
-      <h3>Abdelhaq Sari</h3>
-      <div class="role">Bourassa · Québec</div>
-      <div class="meta-row">
-        <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-        <span class="vp-note" title="Part des votes nominaux auxquels ce·tte député·e a pris part (Pour/Contre/pairé) depuis son entrée en fonction — un indicateur de présence, la Chambre ne publiant pas l'assiduité directement.">présence : 99 % (171/173)</span>
-        <a class="vp-note" href="https://www.ourcommons.ca/members/fr/122533" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Fiche officielle sur ourcommons.ca">fiche ↗</a>
-      </div>
-    </div>
-  
-    <div class="m-card">
-      <div class="top-row">
-        <a class="avatar" href="mailto:adam.chambers@parl.gc.ca" onclick="event.stopPropagation()" title="adam.chambers@parl.gc.ca" aria-label="Écrire à Adam Chambers"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg></a>
-        <button class="follow-btn " onclick="toggleFollowDepute('mp-110649')">+ Suivre</button>
-      </div>
-      <h3>Adam Chambers</h3>
-      <div class="role">Simcoe-Nord · Ontario</div>
-      <div class="meta-row">
-        <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
-        <span class="vp-note" title="Part des votes nominaux auxquels ce·tte député·e a pris part (Pour/Contre/pairé) depuis son entrée en fonction — un indicateur de présence, la Chambre ne publiant pas l'assiduité directement.">présence : 99 % (171/173)</span>
-        <a class="vp-note" href="https://www.ourcommons.ca/members/fr/110649" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Fiche officielle sur ourcommons.ca">fiche ↗</a>
-      </div>
-    </div>
-  
-    <div class="m-card">
-      <div class="top-row">
-        <a class="avatar" href="mailto:adam.vankoeverden@parl.gc.ca" onclick="event.stopPropagation()" title="adam.vankoeverden@parl.gc.ca" aria-label="Écrire à Adam van Koeverden"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg></a>
-        <button class="follow-btn " onclick="toggleFollowDepute('mp-105242')">+ Suivre</button>
-      </div>
-      <h3>Hon. Adam van Koeverden</h3>
-      <div class="role">Burlington-Nord—Milton-Ouest · Ontario</div>
-      <div class="meta-row">
-        <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-        <span class="vp-note" title="Part des votes nominaux auxquels ce·tte député·e a pris part (Pour/Contre/pairé) depuis son entrée en fonction — un indicateur de présence, la Chambre ne publiant pas l'assiduité directement.">présence : 100 % (173/173)</span>
-        <a class="vp-note" href="https://www.ourcommons.ca/members/fr/105242" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Fiche officielle sur ourcommons.ca">fiche ↗</a>
-      </div>
-    </div>
-  
-    <div class="m-card">
-      <div class="top-row">
-        <a class="avatar" href="mailto:ahmed.hussen@parl.gc.ca" onclick="event.stopPropagation()" title="ahmed.hussen@parl.gc.ca" aria-label="Écrire à Ahmed Hussen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg></a>
-        <button class="follow-btn " onclick="toggleFollowDepute('mp-89020')">+ Suivre</button>
-      </div>
-      <h3>Hon. Ahmed Hussen</h3>
-      <div class="role">York-Sud—Weston—Etobicoke · Ontario</div>
-      <div class="meta-row">
-        <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-        <span class="vp-note" title="Part des votes nominaux auxquels ce·tte député·e a pris part (Pour/Contre/pairé) depuis son entrée en fonction — un indicateur de présence, la Chambre ne publiant pas l'assiduité directement.">présence : 99 % (172/173)</span>
-        <a class="vp-note" href="https://www.ourcommons.ca/members/fr/89020" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Fiche officielle sur ourcommons.ca">fiche ↗</a>
-      </div>
-    </div>
-  
-    <div class="m-card">
-      <div class="top-row">
-        <a class="avatar" href="mailto:alana.hirtle@parl.gc.ca" onclick="event.stopPropagation()" title="alana.hirtle@parl.gc.ca" aria-label="Écrire à Alana Hirtle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg></a>
-        <button class="follow-btn " onclick="toggleFollowDepute('mp-122419')">+ Suivre</button>
-      </div>
-      <h3>Alana Hirtle</h3>
-      <div class="role">Cumberland—Colchester · Nouvelle-Écosse</div>
-      <div class="meta-row">
-        <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-        <span class="vp-note" title="Part des votes nominaux auxquels ce·tte député·e a pris part (Pour/Contre/pairé) depuis son entrée en fonction — un indicateur de présence, la Chambre ne publiant pas l'assiduité directement.">présence : 100 % (173/173)</span>
-        <a class="vp-note" href="https://www.ourcommons.ca/members/fr/122419" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Fiche officielle sur ourcommons.ca">fiche ↗</a>
-      </div>
-    </div>
-  
-    <div class="m-card">
-      <div class="top-row">
-        <a class="avatar" href="mailto:alex.ruff@parl.gc.ca" onclick="event.stopPropagation()" title="alex.ruff@parl.gc.ca" aria-label="Écrire à Alex Ruff"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg></a>
-        <button class="follow-btn " onclick="toggleFollowDepute('mp-105070')">+ Suivre</button>
-      </div>
-      <h3>Alex Ruff</h3>
-      <div class="role">Bruce—Grey—Owen Sound · Ontario</div>
-      <div class="meta-row">
-        <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
-        <span class="vp-note" title="Part des votes nominaux auxquels ce·tte député·e a pris part (Pour/Contre/pairé) depuis son entrée en fonction — un indicateur de présence, la Chambre ne publiant pas l'assiduité directement.">présence : 100 % (173/173)</span>
-        <a class="vp-note" href="https://www.ourcommons.ca/members/fr/105070" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Fiche officielle sur ourcommons.ca">fiche ↗</a>
-      </div>
-    </div>
-  
-    <div class="m-card">
-      <div class="top-row">
-        <a class="avatar" href="mailto:alexandra.mendes@parl.gc.ca" onclick="event.stopPropagation()" title="alexandra.mendes@parl.gc.ca" aria-label="Écrire à Alexandra Mendès"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg></a>
-        <button class="follow-btn " onclick="toggleFollowDepute('mp-58621')">+ Suivre</button>
-      </div>
-      <h3>Alexandra Mendès</h3>
-      <div class="role">Brossard—Saint-Lambert · Québec</div>
-      <div class="meta-row">
-        <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-        <span class="vp-note" title="Part des votes nominaux auxquels ce·tte député·e a pris part (Pour/Contre/pairé) depuis son entrée en fonction — un indicateur de présence, la Chambre ne publiant pas l'assiduité directement.">présence : 99 % (172/173)</span>
-        <a class="vp-note" href="https://www.ourcommons.ca/members/fr/58621" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Fiche officielle sur ourcommons.ca">fiche ↗</a>
-      </div>
-    </div>
-  
-    <div class="m-card">
-      <div class="top-row">
-        <a class="avatar" href="mailto:alexis.brunelle-duceppe@parl.gc.ca" onclick="event.stopPropagation()" title="alexis.brunelle-duceppe@parl.gc.ca" aria-label="Écrire à Alexis Brunelle-Duceppe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg></a>
-        <button class="follow-btn " onclick="toggleFollowDepute('mp-104786')">+ Suivre</button>
-      </div>
-      <h3>Alexis Brunelle-Duceppe</h3>
-      <div class="role">Lac-Saint-Jean · Québec</div>
-      <div class="meta-row">
-        <span class="depute-party" style="background:#33B2CC; color:#fff">BQ</span>
-        <span class="vp-note" title="Part des votes nominaux auxquels ce·tte député·e a pris part (Pour/Contre/pairé) depuis son entrée en fonction — un indicateur de présence, la Chambre ne publiant pas l'assiduité directement.">présence : 100 % (173/173)</span>
-        <a class="vp-note" href="https://www.ourcommons.ca/members/fr/104786" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Fiche officielle sur ourcommons.ca">fiche ↗</a>
-      </div>
-    </div>
-  
-    <div class="m-card">
-      <div class="top-row">
-        <a class="avatar" href="mailto:alexis.deschenes@parl.gc.ca" onclick="event.stopPropagation()" title="alexis.deschenes@parl.gc.ca" aria-label="Écrire à Alexis Deschênes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg></a>
-        <button class="follow-btn " onclick="toggleFollowDepute('mp-122579')">+ Suivre</button>
-      </div>
-      <h3>Alexis Deschênes</h3>
-      <div class="role">Gaspésie—Les Îles-de-la-Madeleine—Listuguj · Québec</div>
-      <div class="meta-row">
-        <span class="depute-party" style="background:#33B2CC; color:#fff">BQ</span>
-        <span class="vp-note" title="Part des votes nominaux auxquels ce·tte député·e a pris part (Pour/Contre/pairé) depuis son entrée en fonction — un indicateur de présence, la Chambre ne publiant pas l'assiduité directement.">présence : 99 % (172/173)</span>
-        <a class="vp-note" href="https://www.ourcommons.ca/members/fr/122579" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Fiche officielle sur ourcommons.ca">fiche ↗</a>
-      </div>
-    </div>
-  
-    <div class="m-card">
-      <div class="top-row">
-        <a class="avatar" href="mailto:ali.ehsassi@parl.gc.ca" onclick="event.stopPropagation()" title="ali.ehsassi@parl.gc.ca" aria-label="Écrire à Ali Ehsassi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg></a>
-        <button class="follow-btn " onclick="toggleFollowDepute('mp-89010')">+ Suivre</button>
-      </div>
-      <h3>Hon. Ali Ehsassi</h3>
-      <div class="role">Willowdale · Ontario</div>
-      <div class="meta-row">
-        <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-        <span class="vp-note" title="Part des votes nominaux auxquels ce·tte député·e a pris part (Pour/Contre/pairé) depuis son entrée en fonction — un indicateur de présence, la Chambre ne publiant pas l'assiduité directement.">présence : 98 % (170/173)</span>
-        <a class="vp-note" href="https://www.ourcommons.ca/members/fr/89010" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Fiche officielle sur ourcommons.ca">fiche ↗</a>
-      </div>
-    </div>
-  <a class="min-more" onclick="showAllDeputes()"><span class="min-more-n">+326</span><span class="min-more-t">Voir les 337 députés →</span></a><!--/ssr--></div>
+    <div class="grid" id="deputesList"><!--ssr--><!--/ssr--></div>
 
 
   </section>
@@ -1536,11 +1372,11 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
        Comme sur DossierQuébec : la bande dessinée (Ti-Jo) cède la place à la seule case
        de la photo, refaite en HTML (dans le SVG, le texte tombait à 8 px sur un téléphone),
        puis le journal public des mises à jour, tenu À LA MAIN dans data/journal.json. -->
-  <section class="view" id="view-bd">
+  <section class="view active" id="view-bd">
     <div class="page-band">
       <div>
         <nav class="crumbs" aria-label="Fil d'Ariane"><a data-view="apercu" href="/">DossierCanada</a> <span aria-hidden="true">›</span> <span aria-current="page" data-i18n="maj.h">Mises à jour du site</span></nav>
-        <h2 class="band-title" id="majTitle" data-i18n="maj.h1">Mises à jour de DossierCanada</h2>
+        <h1 class="band-title" id="majTitle" data-i18n="maj.h1">Mises à jour de DossierCanada</h1>
         <div class="sub" data-i18n="maj.sub">Ce qui a changé sur le site, du plus récent au plus ancien</div>
       </div>
       <a class="bd-back" data-view="apercu" href="/" data-i18n="bd.back">← Retour à l'aperçu</a>
@@ -1554,7 +1390,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       </div>
     </div>
     <div class="maj" id="journal">
-      <ol class="maj-liste" id="journalListe"><!--ssr--><!--/ssr--></ol>
+      <ol class="maj-liste" id="journalListe"><!--ssr--><li class="maj-mois"><h2>Septembre 2026</h2><ol><li class="maj-entree"><time datetime="2026-09-21">21 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Tout le site</span><h3>« et moi » devient la page des mises à jour</h3><p>Le lien « et moi » du bas de page mène à cette page : la personne derrière le site, puis ce qui y change, du plus récent au plus ancien. La bande dessinée cède la place à la seule case de la photo, lisible sur un téléphone.</p></div></li><li class="maj-entree"><time datetime="2026-09-21">21 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Tout le site</span><h3>Des pages que les moteurs de recherche comprennent</h3><p>Chaque page a son titre, sa description et un seul grand titre qui dit son sujet. Le menu, le logo et la bascule FR/EN sont de vrais liens, et un fil d’Ariane (DossierCanada › Votes) montre où vous êtes. Le haut de chaque page (compte, filtres, premières fiches) se lit même sans JavaScript, et les pages anglaises sont en anglais dès le chargement.</p></div></li><li class="maj-entree"><time datetime="2026-09-21">21 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Tout le site</span><h3>Des pages environ six fois plus légères</h3><p>Les données du site (projets de loi, votes, député·e·s) ne sont plus recopiées dans chaque page : un seul fichier, que votre navigateur garde d’une page à l’autre. Chaque page passe d’environ 2,1 Mo à 0,35 Mo.</p></div></li><li class="maj-entree"><time datetime="2026-09-21">21 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Tout le site</span><h3>Le site s’affiche même quand les comptes sont en panne</h3><p>Si le service de connexion ne répond pas, le site s’affiche et fonctionne quand même ; seuls les comptes attendent. Avant, la page pouvait rester vide.</p></div></li><li class="maj-entree"><time datetime="2026-09-21">21 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Tout le site</span><h3>Les sources officielles au bas de chaque page</h3><p>Le bas de page renvoie maintenant directement à LEGISinfo, à la Chambre des communes, au Sénat et au Commissariat au lobbying, d’où viennent les données.</p></div></li><li class="maj-entree"><time datetime="2026-09-18">18 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Tout le site</span><h3>L’anglais a ses propres adresses</h3><p>Chaque page existe en anglais à sa propre adresse (/en, /en/votes, /en/projets-de-loi…). On peut la partager telle quelle, et la bascule FR/EN change aussi l’adresse.</p></div></li><li class="maj-entree"><time datetime="2026-09-10">10 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-projets">Projets de loi</span><h3>Le lobbying déclaré, sur les fiches de projets de loi</h3><p>Chaque projet nommé dans le registre du lobbying montre les communications déclarées au Commissariat au lobbying : combien, quelles organisations, et les rencontres récentes, avec un lien vers chaque déclaration officielle et la date des données. Un filtre « Lobbying » les regroupe, et la recherche trouve aussi les organisations. On ne compte que les déclarations qui citent le numéro du projet ET des mots de son titre, car les numéros de projets sont réutilisés d’une législature à l’autre.</p></div></li><li class="maj-entree"><time datetime="2026-09-10">10 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-projets">Projets de loi</span><h3>Les projets pro forma s’expliquent</h3><p>Le C-1 et le S-1 ne sont pas de vraies lois : chaque chambre en dépose un pour la forme au début de chaque session, avant d’étudier le discours du Trône. Ils ont maintenant leur propre état, « Pro forma », et une explication, au lieu d’une fiche sans résumé.</p></div></li><li class="maj-entree"><time datetime="2026-09-10">10 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-projets">Projets de loi</span><h3>Des fiches de projet plus agréables à lire</h3><p>Un seul projet reste ouvert à la fois, le résumé se lit dans une police plus confortable, et « Copier le lien » confirme en changeant de couleur plutôt que par une fenêtre. La plupart des résumés ne se chargent qu’à l’ouverture d’une fiche, ce qui allège la page.</p></div></li><li class="maj-entree"><time datetime="2026-09-10">10 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Tout le site</span><h3>Une recherche plus tolérante</h3><p>Le trait d’union n’est plus obligatoire : « c5 » trouve le C-5. Dans le lexique, la recherche filtre aussi la section « Qui gravite ».</p></div></li><li class="maj-entree"><time datetime="2026-09-10">10 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Tout le site</span><h3>Une nouvelle image quand on partage le site</h3><p>Partager DossierCanada sur X ou Facebook affiche une image au design actuel du site, et la carte X montre enfin son image. Sur ordinateur, les boutons X, Facebook et Copier remplacent le panneau de partage du système.</p></div></li></ol></li><!--/ssr--></ol>
       <button type="button" class="maj-plus" id="journalPlus" hidden></button>
     </div>
   </section>

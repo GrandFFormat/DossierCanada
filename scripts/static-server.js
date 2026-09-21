@@ -10,12 +10,20 @@ const MIME = {
   '.js': 'text/javascript; charset=utf-8',
   '.json': 'application/json; charset=utf-8',
   '.css': 'text/css; charset=utf-8',
+  '.png': 'image/png',
+  '.jpg': 'image/jpeg',
+  '.svg': 'image/svg+xml',
+  '.ico': 'image/x-icon',
+  '.xml': 'application/xml',
+  '.txt': 'text/plain; charset=utf-8',
 };
 
 createServer(async (req, res) => {
-  const path = req.url === '/' ? '/index.html' : req.url.split('?')[0];
+  const path = req.url === '/' ? '/index.html' : req.url.split('?')[0].replace(/(.)\/+$/, '$1');
   try {
-    const filePath = join(ROOT, decodeURIComponent(path));
+    let filePath = join(ROOT, decodeURIComponent(path));
+    // URL propres comme sur Vercel (cleanUrls) : /votes → votes.html, /en → en.html.
+    if (!extname(filePath)) filePath += '.html';
     const data = await readFile(filePath);
     res.writeHead(200, { 'Content-Type': MIME[extname(filePath)] || 'application/octet-stream' });
     res.end(data);
