@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-09-22",
+    "volet": "projets",
+    "fr": {
+      "titre": "La liste des projets de loi s’affiche par tranches",
+      "texte": "La page des projets de loi montre d’abord les 10 plus récemment actifs, puis 20 de plus à chaque clic sur « Voir 20 de plus ». La recherche et les filtres repartent à 10 résultats ; un lien partagé vers un projet l’ouvre même s’il est plus loin dans la liste."
+    },
+    "en": {
+      "titre": "The bill list now loads in batches",
+      "texte": "The bills page first shows the 10 most recently active, then 20 more with each click on “See 20 more”. Search and filters start again at 10 results; a shared link to a bill still opens it, even further down the list."
+    },
+    "commits": []
+  },
+  {
     "date": "2026-09-21",
     "volet": "site",
     "fr": {

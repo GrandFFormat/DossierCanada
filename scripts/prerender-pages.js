@@ -14,7 +14,6 @@ import { PAGES, SSR, regionsOf, writeRegion, writeTitle } from './seo-pages.js';
 
 const ORIGIN = 'http://prerender.local';
 const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.json': 'application/json; charset=utf-8', '.css': 'text/css', '.png': 'image/png', '.jpg': 'image/jpeg', '.svg': 'image/svg+xml', '.ico': 'image/x-icon' };
-const BILLS_KEPT = 20;   // projets de loi gardés (en-têtes + résumé), ~45 Ko
 const TIMEOUT = 45000;
 
 // Sert le dépôt depuis le disque avec les URL propres de Vercel (cleanUrls).
@@ -28,7 +27,7 @@ function fileForUrl(pathname) {
 }
 
 // Exécuté DANS la page : nettoie et renvoie le balisage des zones de la vue.
-async function capture({ view, regions, title, billsKept }) {
+async function capture({ view, regions, title }) {
   const out = { regions: {}, title: null };
   if (view === 'projets') {
     // Les résumés en langage clair sont chargés à la demande : on les charge ici
@@ -47,8 +46,7 @@ async function capture({ view, regions, title, billsKept }) {
     c.querySelectorAll('.open').forEach((x) => x.classList.remove('open'));
     if (id === 'apercuBills') c.querySelectorAll('.ab-detail').forEach((d) => { d.innerHTML = ''; });
     if (id === 'billsList') {
-      const rows = [...c.querySelectorAll(':scope > .ab-row')];
-      rows.slice(billsKept).forEach((r) => r.remove());
+      // La liste est paginée (10 projets + « Voir 20 de plus ») : on garde ce que le site affiche.
       c.querySelectorAll('.ab-detail').forEach((d) => {
         const keep = [...d.querySelectorAll('.bill-sum-slot')];
         d.innerHTML = '';
@@ -104,7 +102,7 @@ async function main() {
         await tab.goto(ORIGIN + path, { waitUntil: 'load', timeout: TIMEOUT });
         await tab.waitForFunction(() => window.__dcReady === true, null, { timeout: TIMEOUT });
         await tab.waitForTimeout(250);
-        const res = await tab.evaluate(capture, { view, regions: regionsOf(view), title: SSR[view].title, billsKept: BILLS_KEPT });
+        const res = await tab.evaluate(capture, { view, regions: regionsOf(view), title: SSR[view].title });
         if (errors.length) throw new Error('erreurs de rendu');
         let html = readFileSync(file, 'utf8');
         for (const [id, markup] of Object.entries(res.regions)) {
