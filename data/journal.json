@@ -3,6 +3,19 @@
     "date": "2026-09-22",
     "volet": "projets",
     "fr": {
+      "titre": "Des fiches de projet de loi en deux colonnes",
+      "texte": "Une fiche dépliée montre le résumé en langage clair à gauche, en lignes plus courtes, et à droite la dernière activité, un bouton vers le texte complet sur LEGISinfo et le partage. Le parrain, la chambre et le type de projet apparaissent en tête de fiche. Sur téléphone, tout reste en une colonne."
+    },
+    "en": {
+      "titre": "Two-column bill cards",
+      "texte": "An open bill shows the plain-language summary on the left, in shorter lines, and on the right the latest activity, a button to the full text on LEGISinfo and sharing. The sponsor, chamber and bill type appear at the top of the card. On a phone, everything stays in one column."
+    },
+    "commits": []
+  },
+  {
+    "date": "2026-09-22",
+    "volet": "projets",
+    "fr": {
       "titre": "La liste des projets de loi s’affiche par tranches",
       "texte": "La page des projets de loi montre d’abord les 10 plus récemment actifs, puis 20 de plus à chaque clic sur « Voir 20 de plus ». La recherche et les filtres repartent à 10 résultats ; un lien partagé vers un projet l’ouvre même s’il est plus loin dans la liste."
     },
