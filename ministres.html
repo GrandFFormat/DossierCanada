@@ -3950,9 +3950,17 @@ function togglePetitions(){
   updatePetitionsToggleLabel();
 }
 
+// Liste paginée : 10 projets d'abord, puis 20 de plus à chaque clic. Le compte revient
+// à 10 dès que la recherche, un filtre ou le tri change (mais pas pour un simple
+// re-rendu : changement de langue, connexion…), d'où la « signature » ci-dessous.
+const BILLS_FIRST = 10, BILLS_STEP = 20;
+let billsShown = BILLS_FIRST, billsSignature = '';
+function loadMoreBills(){ billsShown += BILLS_STEP; renderBills(); }
 function renderBills(keyword){
   keyword = keyword !== undefined ? keyword : (document.getElementById('searchBills')?.value || '');
   const kw = norm(keyword);
+  const signature = [kw, billsStatusFilter, billsStepFilter, billsLobbyFilter, billsSortDir].join('|');
+  if(signature !== billsSignature){ billsSignature = signature; billsShown = BILLS_FIRST; }
   // Mémorisé pour que le bloc de lobbying puisse mettre en avant l'organisation
   // cherchée : trouver un projet sans voir pourquoi serait pire que ne rien trouver.
   billsKeyword = kw;
@@ -3986,7 +3994,18 @@ function renderBills(keyword){
   // de langue…) referme la carte que l'utilisateur — ou un lien profond ?pl= —
   // venait d'ouvrir.
   const openIds = new Set([...el.querySelectorAll('.ab-row.open')].map(r => r.id));
-  el.innerHTML = list.length ? list.map(b=>apercuBillRow(b,'pr')).join('') : `<div class="no-results">${currentLang==='en' ? 'No bill matches this search.' : 'Aucun projet de loi ne correspond à cette recherche.'}</div>`;
+  const isEn = currentLang === 'en';
+  const shown = list.slice(0, billsShown);
+  let more = '';
+  if(list.length > shown.length){
+    const step = Math.min(BILLS_STEP, list.length - shown.length);
+    more = `<button class="votes-more" onclick="loadMoreBills()">${isEn
+      ? 'See ' + step + ' more — ' + shown.length + ' of ' + list.length + ' shown'
+      : 'Voir ' + step + ' de plus — ' + shown.length + ' sur ' + list.length + ' affichés'}</button>`;
+  } else if(list.length > BILLS_FIRST){
+    more = `<div class="votes-more-note">${isEn ? 'All ' + list.length + ' shown' : 'Les ' + list.length + ' affichés'}</div>`;
+  }
+  el.innerHTML = list.length ? shown.map(b=>apercuBillRow(b,'pr')).join('') + more : `<div class="no-results">${isEn ? 'No bill matches this search.' : 'Aucun projet de loi ne correspond à cette recherche.'}</div>`;
   openIds.forEach(id => { const r = document.getElementById(id); if(r && !r.classList.contains('open')) toggleApercuBill(id); });
   document.getElementById('statProjets').textContent = bills.length;
 }
@@ -4152,6 +4171,8 @@ function openBillFromQuery(){
   if(typeof updateSortToggleLabel === 'function') updateSortToggleLabel();
   renderBills();
   const rowId = 'abrow-pr-' + b.id;
+  // La liste est paginée : on l'allonge jusqu'à ce que le projet visé y soit.
+  while(!document.getElementById(rowId) && billsShown < bills.length){ billsShown += BILLS_STEP; renderBills(); }
   const row = document.getElementById(rowId);
   if(row){
     if(!row.classList.contains('open')) toggleApercuBill(rowId);
