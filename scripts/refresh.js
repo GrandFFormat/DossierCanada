@@ -79,6 +79,24 @@ try {
   console.warn('  lobbying : data/lobbying.json illisible ou absent — contrôle de fraîcheur sauté.');
 }
 
+// EN CI : les scrapers prennent ~10 min. Si quelqu'un pousse sur main pendant ce temps
+// (2026-09-22 : deux commits pendant le run), on construisait sur l'ancienne version
+// du site et le push final était refusé — la journée de données était perdue. On
+// récupère donc main AVANT de construire ; les données fraîches (non committées) sont
+// mises de côté puis réappliquées (--autostash). En cas d'échec, on construit quand
+// même sur la version du début : le push final réessaiera (voir refresh.yml).
+if (process.env.GITHUB_ACTIONS) {
+  const bot = 'github-actions[bot]', botMail = '41898282+github-actions[bot]@users.noreply.github.com';
+  try {
+    execSync('git pull --rebase --autostash origin main', {
+      stdio: 'inherit',
+      env: { ...process.env, GIT_AUTHOR_NAME: bot, GIT_AUTHOR_EMAIL: botMail, GIT_COMMITTER_NAME: bot, GIT_COMMITTER_EMAIL: botMail },
+    });
+  } catch {
+    console.error('⚠ git pull avant le build impossible — on construit sur la version du début du run.');
+  }
+}
+
 let buildsOk = true;
 for (const b of BUILDS) {
   try {

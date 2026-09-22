@@ -63,7 +63,8 @@ jobs:
             # sitemap y est daté du jour). Oublier en.html / en/ figeait l'anglais.
             git add deputes.html ministres.html projets-de-loi.html votes.html lexique.html mises-a-jour.html en.html en/ sitemap.xml
             git commit -m "chore: rafraîchissement automatique des données fédérales"
-            git push
+            # Si main a encore bougé pendant le build, on se rebase une fois et on repousse.
+            git push || { git pull --rebase origin main && git push; }
           fi
 
       # Les données des scrapers qui ont marché sont déjà committées ci-dessus ;
