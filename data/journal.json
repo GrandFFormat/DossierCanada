@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-09-23",
+    "volet": "projets",
+    "fr": {
+      "titre": "Un résumé en clair qui ne manque plus à l’appel",
+      "texte": "Quand la génération du résumé en langage clair échouait sur un projet volumineux, la fiche ne montrait que le sommaire officiel, brut. Un second essai est fait automatiquement. Le C-39 (Loi visant à bâtir un Canada fort) a maintenant son résumé."
+    },
+    "en": {
+      "titre": "Plain-language summaries no longer go missing",
+      "texte": "When the plain-language summary failed on a long bill, the card showed only the raw official summary. A second attempt is now made automatically. C-39 (Building Canada Strong Act) now has its summary."
+    },
+    "commits": []
+  },
+  {
     "date": "2026-09-22",
     "volet": "projets",
     "fr": {

@@ -135,7 +135,7 @@ function extractJson(text) {
   }
 }
 
-async function summarize(client, bill, grounding) {
+async function summarize(client, bill, grounding, maxTokens) {
   const off = bill.summary || {};
   const user = [
     `PROJET DE LOI : ${bill.num}`,
@@ -152,7 +152,7 @@ async function summarize(client, bill, grounding) {
 
   const res = await client.messages.create({
     model: MODEL,
-    max_tokens: 6000, // marge LARGE : opus-5 pense (adaptatif) ET écrit le JSON sous
+    max_tokens: maxTokens || 6000, // marge LARGE : opus-5 pense (adaptatif) ET écrit le JSON sous
     // le même plafond ; 3000 tronquait parfois le JSON (« réponse non exploitable »).
     thinking: { type: 'adaptive' },
     output_config: { effort: 'medium' },
@@ -207,7 +207,15 @@ async function main() {
         reused++;
         continue; // projet inchangé — aucune requête
       }
-      const out = await summarize(client, bill, grounding);
+      // Une réponse illisible arrive (JSON tronqué par le plafond de jetons, format
+      // inattendu) : on réessaie UNE fois avec plus de marge avant de laisser le projet
+      // sans résumé en clair — sinon la fiche ne montre que le sommaire officiel brut.
+      let out = await summarize(client, bill, grounding);
+      if (!out) {
+        console.warn(`  ↻ ${bill.num} : réponse inexploitable, 2e essai avec plus de marge`);
+        await sleep(REQUEST_DELAY_MS);
+        out = await summarize(client, bill, grounding, 12000);
+      }
       if (out) {
         cache.summaries[id] = { num: bill.num, hash, fr: out.fr, en: out.en, at: new Date().toISOString() };
         generated++;
