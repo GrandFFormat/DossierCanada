@@ -1241,7 +1241,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
 
     <div class="apercu-3col">
       <aside class="a3-left">
-        <p class="a3-intro" id="a3intro"><!--ssr-->Le Parlement du Canada sans jargon : <b>337</b> député·e·s, <b>187</b> projets de loi fédéraux et <b>173</b> votes nominaux aux Communes, tirés des sources officielles.<!--/ssr--></p>
+        <p class="a3-intro" id="a3intro"><!--ssr-->Le Parlement du Canada sans jargon : <b>337</b> député·e·s, <b>187</b> projets de loi fédéraux et <b>174</b> votes nominaux aux Communes, tirés des sources officielles.<!--/ssr--></p>
         <h2 class="a3-hiw-h" data-i18n="a3.hiw">Comment ça marche</h2>
         <div class="a3-steps">
           <div class="a3-step"><span class="a3-step-n" style="background:var(--yellow)">1</span><p data-i18n="a3.step1">Un projet de loi vous semble opaque ? Demandez une explication.</p></div>
@@ -1254,7 +1254,17 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
           <h2 data-i18n="h.billsrecent">Projets de loi récemment actifs</h2>
           <a class="a3-seeall" data-view="projets" href="/projets-de-loi" data-i18n="a3.seeall">Tout voir →</a>
         </div>
-        <div id="apercuBills"><!--ssr--><div class="ab-row" id="abrow-ap-13548190">
+        <div id="apercuBills"><!--ssr--><div class="ab-row" id="abrow-ap-13951690">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13951690')">
+      <span class="ab-num">C-266</span>
+      <span class="ab-title">Loi concernant l’élaboration d’un cadre national concernant les métiers spécialisés et la mobilité de la main-d’œuvre</span>
+      
+      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
+      <span class="status-pill status-encours">En cours</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"></div>
+  </div><div class="ab-row" id="abrow-ap-13548190">
     <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13548190')">
       <span class="ab-num">S-226</span>
       <span class="ab-title">Loi instituant la Semaine d’appréciation de la fonction de juré</span>
@@ -1284,16 +1294,6 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-caret">▾</span>
     </div>
     <div class="ab-detail"></div>
-  </div><div class="ab-row" id="abrow-ap-14223396">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-14223396')">
-      <span class="ab-num">C-39</span>
-      <span class="ab-title">Loi concernant certaines mesures visant à renforcer l'économie</span>
-      
-      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-      <span class="status-pill status-encours">En cours</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"></div>
   </div><!--/ssr--></div>
         <div class="a3-tiles">
           <a class="a3-tile" data-view="votes" href="/votes">
@@ -1310,12 +1310,12 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
         <h2 class="a3-hiw-h" data-i18n="h.quoideneuf">Quoi de neuf</h2>
         <div id="sittingBox"></div>
         <div id="newsList"><!--ssr--><div class="news-item">
-      <div class="news-date">2026-09-22</div>
-      <div class="news-body"><p><b>S-226</b> — À l'examen en comité à la Chambre des communes</p></div>
+      <div class="news-date">2026-09-23</div>
+      <div class="news-body"><p><b>C-266</b> — À l'examen en comité à la Chambre des communes</p></div>
     </div>
     <div class="news-item">
       <div class="news-date">2026-09-22</div>
-      <div class="news-body"><p><b>C-38</b> — À l'examen en comité à la Chambre des communes</p></div>
+      <div class="news-body"><p><b>S-226</b> — À l'examen en comité à la Chambre des communes</p></div>
     </div><button class="bill-more" style="margin-top:14px; border:none; cursor:pointer;" onclick="loadMoreNews()">+ Voir plus</button><!--/ssr--></div>
       </aside>
     </div>
