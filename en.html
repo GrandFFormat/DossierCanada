@@ -1241,7 +1241,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
 
     <div class="apercu-3col">
       <aside class="a3-left">
-        <p class="a3-intro" id="a3intro"><!--ssr-->Canada's Parliament without the jargon: <b>337</b> MPs, <b>187</b> federal bills and <b>173</b> recorded votes in the House of Commons, straight from official sources.<!--/ssr--></p>
+        <p class="a3-intro" id="a3intro"><!--ssr-->Canada's Parliament without the jargon: <b>337</b> MPs, <b>187</b> federal bills and <b>174</b> recorded votes in the House of Commons, straight from official sources.<!--/ssr--></p>
         <h2 class="a3-hiw-h" data-i18n="a3.hiw">How it works</h2>
         <div class="a3-steps">
           <div class="a3-step"><span class="a3-step-n" style="background:var(--yellow)">1</span><p data-i18n="a3.step1">A bill seems opaque? Ask for an explanation.</p></div>
@@ -1254,7 +1254,17 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
           <h2 data-i18n="h.billsrecent">Recently active bills</h2>
           <a class="a3-seeall" data-view="projets" href="/en/projets-de-loi" data-i18n="a3.seeall">See all →</a>
         </div>
-        <div id="apercuBills"><!--ssr--><div class="ab-row" id="abrow-ap-13548190">
+        <div id="apercuBills"><!--ssr--><div class="ab-row" id="abrow-ap-13951690">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13951690')">
+      <span class="ab-num">C-266</span>
+      <span class="ab-title">An Act to establish a national framework respecting skilled trades and labour mobility</span>
+      
+      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
+      <span class="status-pill status-encours">In progress</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"></div>
+  </div><div class="ab-row" id="abrow-ap-13548190">
     <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13548190')">
       <span class="ab-num">S-226</span>
       <span class="ab-title">An Act respecting Jury Duty Appreciation Week</span>
@@ -1284,16 +1294,6 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-caret">▾</span>
     </div>
     <div class="ab-detail"></div>
-  </div><div class="ab-row" id="abrow-ap-14223396">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-14223396')">
-      <span class="ab-num">C-39</span>
-      <span class="ab-title">An Act respecting certain measures to strengthen the economy</span>
-      
-      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-      <span class="status-pill status-encours">In progress</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"></div>
   </div><!--/ssr--></div>
         <div class="a3-tiles">
           <a class="a3-tile" data-view="votes" href="/en/votes">
@@ -1310,12 +1310,12 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
         <h2 class="a3-hiw-h" data-i18n="h.quoideneuf">What's new</h2>
         <div id="sittingBox"></div>
         <div id="newsList"><!--ssr--><div class="news-item">
-      <div class="news-date">2026-09-22</div>
-      <div class="news-body"><p><b>S-226</b> — At consideration in committee in the House of Commons</p></div>
+      <div class="news-date">2026-09-23</div>
+      <div class="news-body"><p><b>C-266</b> — At consideration in committee in the House of Commons</p></div>
     </div>
     <div class="news-item">
       <div class="news-date">2026-09-22</div>
-      <div class="news-body"><p><b>C-38</b> — At consideration in committee in the House of Commons</p></div>
+      <div class="news-body"><p><b>S-226</b> — At consideration in committee in the House of Commons</p></div>
     </div><button class="bill-more" style="margin-top:14px; border:none; cursor:pointer;" onclick="loadMoreNews()">+ Show more</button><!--/ssr--></div>
       </aside>
     </div>
