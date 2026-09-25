@@ -539,9 +539,9 @@ try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStor
   .bill-col-side .bill-share-row{ justify-content:flex-end; margin-top:20px; }
   @media (max-width:860px){ .bill-cols{ grid-template-columns:1fr; gap:18px; } .bill-col-side .bill-share-row{ justify-content:flex-start; } }
   .bill-summary.open{display:block;}
-  .bill-summary p{font-family:'Archivo',system-ui,sans-serif; font-size:14.5px; line-height:1.6; color:var(--ink); margin:0 0 12px;}
+  .bill-summary p{font-family:'Archivo',system-ui,sans-serif; font-size:15.5px; line-height:1.65; color:var(--ink); margin:0 0 12px; max-width:59ch;}
   .bill-sum-head{font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.04em; color:var(--gold); margin:0 0 9px;}
-  .bill-sum-list{margin:0 0 10px; padding-left:19px;}
+  .bill-sum-list{margin:0 0 12px; padding-left:21px;}
   /* TEXTE DE LECTURE EN ARCHIVO, PAS EN CHASSE FIXE.
      Le mono fait l'identité du site — étiquettes, pastilles, ticker, métadonnées —
      mais il est conçu pour aligner du code, pas pour lire de la prose : toutes les
@@ -550,7 +550,10 @@ try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStor
      famille du site (Archivo Black sert aux titres) et c'est la police de lecture
      de DossierQuébec. On en profite pour remonter la taille : 13 px de mono
      n'équivalent pas à 16 px de proportionnelle. */
-  .bill-sum-list li{font-family:'Archivo',system-ui,sans-serif; font-size:15px; line-height:1.55; color:var(--ink); margin:0 0 7px; font-weight:400;}
+  /* Longueur de ligne bornée : sur un grand écran, la colonne du résumé atteignait
+     110 caractères par ligne — au-delà d'environ 75, l'œil retrouve mal le début de
+     la ligne suivante. Avec la taille et l'interligne ci-dessous, on tombe à ~70. */
+  .bill-sum-list li{font-family:'Archivo',system-ui,sans-serif; font-size:16px; line-height:1.65; color:var(--ink); margin:0 0 10px; font-weight:400; max-width:59ch;}
   .bill-sum-list li::marker{color:var(--gold);}
   .bill-summary .src-note{font-size:10.5px; color:var(--slate); margin:2px 0 0; font-style:italic;}
   /* Lobbying déclaré — bloc replié par défaut : la fiche reste courte, le détail
