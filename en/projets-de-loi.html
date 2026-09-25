@@ -544,15 +544,19 @@ try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStor
      compteur du bloc, pour qu'on relie les deux d'un coup d'œil. */
   .step-chip.lob-chip b{background:var(--cyan); color:var(--on-candy); padding:0 4px; margin-left:5px; font-weight:700;}
   .step-chip.lob-chip.active b{background:var(--paper); color:var(--ink);}
-  .ab-omni{flex:none; font-family:'IBM Plex Mono',monospace; font-size:10.5px; font-weight:700; color:var(--on-candy); background:var(--lime); border:1px solid var(--ink); padding:2px 6px; cursor:pointer; text-transform:uppercase; letter-spacing:0.02em; line-height:normal;}
-  .ab-omni:hover{ background:var(--strong); color:var(--yellow); }
+  /* Omnibus, présenté comme sur DossierOntario : pastille pleine et sombre sur la
+     rangée, avis à filet latéral, et une tête par partie (leur « annexe »). */
+  .ab-omni{flex:none; font-family:'IBM Plex Mono',monospace; font-size:10.5px; font-weight:700; color:var(--on-strong); background:var(--strong); border:1px solid var(--ink); padding:2px 6px; cursor:pointer; text-transform:uppercase; letter-spacing:0.04em; line-height:normal;}
+  .ab-omni:hover{ background:var(--yellow); color:var(--on-candy); }
   .step-chip.om-chip b{background:var(--lime); color:var(--on-candy); padding:0 4px; margin-left:5px; font-weight:700;}
   .step-chip.om-chip.active b{background:var(--paper); color:var(--ink);}
   /* Avis omnibus sur la fiche ouverte : un projet qui touche plusieurs lois ne se
      lit pas comme un projet ordinaire, et son titre n'en nomme qu'une. */
-  .bill-omni-note{ font-family:'Archivo',system-ui,sans-serif; font-size:13.5px; line-height:1.45; color:var(--on-candy); background:var(--lime); border:3px solid var(--ink); padding:9px 12px; margin:0 0 12px; }
-  /* Titre de partie dans un résumé d'omnibus (« ## Partie 2 — … »). */
-  .bill-sum-part{ font-family:'IBM Plex Mono',monospace; font-size:11.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.03em; color:var(--ink); margin:14px 0 6px; padding-bottom:4px; border-bottom:2px solid var(--ink); }
+  .bill-omni-note{ font-family:'Archivo',system-ui,sans-serif; font-size:14px; line-height:1.5; color:var(--ink); background:var(--paper-2); border-left:5px solid var(--lime); padding:8px 12px; margin:0 0 14px; max-width:62ch; }
+  /* Tête de partie dans un résumé d'omnibus (« ## Partie 2 — Transport… ») : le numéro
+     en pastille, puis le sujet ou la loi touchée, en toutes lettres et en casse normale. */
+  .bill-sum-part{ font-family:'Archivo',system-ui,sans-serif; font-weight:600; font-size:15.5px; line-height:1.35; color:var(--ink); margin:20px 0 6px; max-width:62ch; }
+  .bill-sum-part span{ display:inline-block; font-family:'IBM Plex Mono',monospace; font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; background:var(--strong); color:var(--on-strong); padding:2px 7px; margin-right:7px; vertical-align:2px; }
   .bill-sum-part:first-child{ margin-top:0; }
   .ab-lob{flex:none; font-family:'IBM Plex Mono',monospace; font-size:10.5px; font-weight:700; color:var(--on-candy); background:var(--cyan); border:1px solid var(--ink); padding:1px 5px; cursor:help;}
   .lob{margin:12px 0 0; border:2px solid var(--ink); background:var(--paper-2); padding:9px 11px; cursor:pointer; color:var(--ink);}
@@ -1381,13 +1385,13 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14223396')">
       <span class="ab-num">C-39</span>
       <span class="ab-title">An Act respecting certain measures to strengthen the economy</span>
-      <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Omnibus bill — 3 parts, 8 divisions: it changes several different acts. Click to show only omnibus bills">Omnibus · 3</button>
+      <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Omnibus bill — 3 parts, 8 divisions: it changes several different acts. Click to show only omnibus bills">Omnibus · 3 parts</button>
       
       <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
       <span class="status-pill status-encours">In progress</span>
       <span class="ab-caret">▾</span>
     </div>
-    <div class="ab-detail"><div class="bill-sum-slot" data-bill="14223396"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Bundles together measures on major project reviews, supply chains and federal labour law in a single bill.</li><li>Amends roughly twenty existing laws and creates a new one on electronic trade documents.</li></ul><div class="bill-sum-part">Part 1 — Project assessments and the environment</div><ul class="bill-sum-list"><li>Sets a one-year deadline for decisions on projects assessed by the Impact Assessment Agency of Canada and by the Canadian Energy Regulator, counted from when the proponent's studies are filed.</li><li>Puts the Canadian Nuclear Safety Commission in charge of impact assessments for projects involving nuclear activities, and makes the Energy Regulator's Commission the sole assessor for pipelines, designated power lines and offshore renewable energy projects.</li><li>Lets the Governor in Council designate "regions of national interest" under the Building Canada Act, and lets the responsible minister add, change or remove conditions on authorizations already granted.</li><li>Broadens environmental compliance orders (including returning non-compliant imports out of Canada), opens fish habitat credits to third parties, and allows offset fees paid into the Environmental Damages Fund.</li></ul><div class="bill-sum-part">Part 2 — Transportation, ports and trade</div><ul class="bill-sum-list"><li>Allows the Minister of Transport to set up a transportation project office and designate trade corridors, and creates the National Trade Corridors Council to track disruptions and advise the Minister.</li><li>Establishes a four-year rail interswitching zone in Manitoba, Saskatchewan and Alberta where rates are set by the Canadian Transportation Agency, and lowers the notification threshold for deals involving transportation businesses located in a port.</li><li>Lets the Minister appoint certain port authority directors, order action against specific threats in ports and the St. Lawrence Seaway, and terminate a Seaway agreement in whole or in part.</li><li>Enacts the Enabling Digital Trade Act, recognizing electronic trade documents and ending paper filing of import and export information; also repeals the Shipping Conferences Exemption Act, 1987.</li></ul><div class="bill-sum-part">Part 3 — Labour and workers</div><ul class="bill-sum-list"><li>Adds new timelines and requirements for collective bargaining and for reaching a first collective agreement, and transfers certain rights when one contractor replaces another.</li><li>Allows the Canada Industrial Relations Board to certify a union for existing bargaining units at the request of two or more employers, and lets the Minister of Labour appoint a special mediator.</li><li>Gives the Head of Compliance and Enforcement power to order an employer or a corporate director to pay unpaid amounts owed under a settlement with an employee.</li><li>Sets aside the federal paid medical leave rules where a collective agreement provides at least equally favourable benefits, and clarifies the Wage Earner Protection Program, including defining "former employer".</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="14223396"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Bundles together measures on major project reviews, supply chains and federal labour law in a single bill.</li><li>Amends roughly twenty existing laws and creates a new one on electronic trade documents.</li></ul><h5 class="bill-sum-part"><span>Part 1</span>Project assessments and the environment</h5><ul class="bill-sum-list"><li>Sets a one-year deadline for decisions on projects assessed by the Impact Assessment Agency of Canada and by the Canadian Energy Regulator, counted from when the proponent's studies are filed.</li><li>Puts the Canadian Nuclear Safety Commission in charge of impact assessments for projects involving nuclear activities, and makes the Energy Regulator's Commission the sole assessor for pipelines, designated power lines and offshore renewable energy projects.</li><li>Lets the Governor in Council designate "regions of national interest" under the Building Canada Act, and lets the responsible minister add, change or remove conditions on authorizations already granted.</li><li>Broadens environmental compliance orders (including returning non-compliant imports out of Canada), opens fish habitat credits to third parties, and allows offset fees paid into the Environmental Damages Fund.</li></ul><h5 class="bill-sum-part"><span>Part 2</span>Transportation, ports and trade</h5><ul class="bill-sum-list"><li>Allows the Minister of Transport to set up a transportation project office and designate trade corridors, and creates the National Trade Corridors Council to track disruptions and advise the Minister.</li><li>Establishes a four-year rail interswitching zone in Manitoba, Saskatchewan and Alberta where rates are set by the Canadian Transportation Agency, and lowers the notification threshold for deals involving transportation businesses located in a port.</li><li>Lets the Minister appoint certain port authority directors, order action against specific threats in ports and the St. Lawrence Seaway, and terminate a Seaway agreement in whole or in part.</li><li>Enacts the Enabling Digital Trade Act, recognizing electronic trade documents and ending paper filing of import and export information; also repeals the Shipping Conferences Exemption Act, 1987.</li></ul><h5 class="bill-sum-part"><span>Part 3</span>Labour and workers</h5><ul class="bill-sum-list"><li>Adds new timelines and requirements for collective bargaining and for reaching a first collective agreement, and transfers certain rights when one contractor replaces another.</li><li>Allows the Canada Industrial Relations Board to certify a union for existing bargaining units at the request of two or more employers, and lets the Minister of Labour appoint a special mediator.</li><li>Gives the Head of Compliance and Enforcement power to order an employer or a corporate director to pay unpaid amounts owed under a settlement with an employee.</li><li>Sets aside the federal paid medical leave rules where a collective agreement provides at least equally favourable benefits, and clarifies the Wage Earner Protection Program, including defining "former employer".</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
   </div><div class="ab-row" id="abrow-pr-13548201">
     <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13548201')">
       <span class="ab-num">S-227</span>
@@ -3585,8 +3589,16 @@ function billSummaryHtml(b, isEn){
     const flush = () => { if(bullets.length){ html += '<ul class="bill-sum-list">' + bullets.map(x => `<li>${esc(x)}</li>`).join('') + '</ul>'; bullets = []; } };
     for(const line of lines){
       if(/^[-•]\s+/.test(line)) bullets.push(line.replace(/^[-•]\s+/, ''));
-      // « ## Partie 2 — Douanes » : titre d'une partie d'un projet omnibus.
-      else if(/^##\s+/.test(line)) { flush(); html += `<div class="bill-sum-part">${esc(line.replace(/^##\s+/, ''))}</div>`; }
+      // « ## Partie 2 — Douanes » : tête d'une partie d'un projet omnibus. Le numéro
+      // passe en pastille, le sujet reste en toutes lettres (comme les annexes d'Ontario).
+      else if(/^##\s+/.test(line)) {
+        flush();
+        const t = line.replace(/^##\s+/, '');
+        const m = t.match(/^((?:Partie|Part)\s+[\dIVX]+)\s*[—–-]\s*(.+)$/i);
+        html += m
+          ? `<h5 class="bill-sum-part"><span>${esc(m[1])}</span>${esc(m[2])}</h5>`
+          : `<h5 class="bill-sum-part">${esc(t)}</h5>`;
+      }
       else { flush(); html += `<p>${esc(line)}</p>`; }
     }
     flush();
@@ -4144,7 +4156,7 @@ function apercuBillRow(b, ctx){
   const om = b.omnibus;
   const omniBadge = om ? `<button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="${isEn
     ? `Omnibus bill — ${om.parts} parts${om.divisions ? `, ${om.divisions} divisions` : ''}: it changes several different acts. Click to show only omnibus bills`
-    : `Projet omnibus — ${om.parts} parties${om.divisions ? `, ${om.divisions} sections` : ''} : il modifie plusieurs lois différentes. Cliquer pour ne voir que les omnibus`}">Omnibus · ${om.parts}</button>` : '';
+    : `Projet omnibus — ${om.parts} parties${om.divisions ? `, ${om.divisions} sections` : ''} : il modifie plusieurs lois différentes. Cliquer pour ne voir que les omnibus`}">Omnibus · ${om.parts} ${isEn ? (om.parts > 1 ? 'parts' : 'part') : (om.parts > 1 ? 'parties' : 'partie')}</button>` : '';
   const full = billCard(b, ctx + b.id);
   return `<div class="ab-row" id="${rowId}">
     <div class="ab-head" onclick="toggleApercuBill('${rowId}')">
