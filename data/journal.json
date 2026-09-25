@@ -4,11 +4,11 @@
     "volet": "projets",
     "fr": {
       "titre": "Les projets omnibus résumés partie par partie",
-      "texte": "Un projet omnibus modifie plusieurs lois différentes, une par partie, et son titre n’en nomme qu’une. Treize projets de la session sont dans ce cas, du C-5 (2 parties) au C-2 (16 parties). Ils portent maintenant une pastille « Omnibus » dans la liste, un avis sur la fiche, et leur résumé suit les parties une à une au lieu de s’arrêter aux premières. Le C-39 passe ainsi de 6 puces à un aperçu plus trois parties détaillées."
+      "texte": "Un projet omnibus modifie plusieurs lois différentes, une par partie, et son titre n’en nomme qu’une. Treize projets de la session sont dans ce cas, du C-5 (2 parties) au C-2 (16 parties). Ils portent maintenant un bouton « Omnibus » dans la liste, qui filtre les projets omnibus (un filtre « Omnibus » est aussi dans la barre), un avis sur la fiche, et leur résumé suit les parties une à une au lieu de s’arrêter aux premières. Le C-39 passe ainsi de 6 puces à un aperçu plus trois parties détaillées."
     },
     "en": {
       "titre": "Omnibus bills summarized part by part",
-      "texte": "An omnibus bill changes several different acts, one per part, and its title names only some of them. Thirteen bills this session are omnibus, from C-5 (2 parts) to C-2 (16 parts). They now carry an “Omnibus” tag in the list, a notice on the card, and their summary follows each part instead of stopping at the first ones. C-39 goes from 6 bullets to an overview plus three detailed parts."
+      "texte": "An omnibus bill changes several different acts, one per part, and its title names only some of them. Thirteen bills this session are omnibus, from C-5 (2 parts) to C-2 (16 parts). They now carry an “Omnibus” button in the list, which filters to omnibus bills (an “Omnibus” filter also sits in the toolbar), a notice on the card, and their summary follows each part instead of stopping at the first ones. C-39 goes from 6 bullets to an overview plus three detailed parts."
     },
     "commits": []
   },

@@ -541,6 +541,16 @@ try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStor
      compteur du bloc, pour qu'on relie les deux d'un coup d'œil. */
   .step-chip.lob-chip b{background:var(--cyan); color:var(--on-candy); padding:0 4px; margin-left:5px; font-weight:700;}
   .step-chip.lob-chip.active b{background:var(--paper); color:var(--ink);}
+  .ab-omni{flex:none; font-family:'IBM Plex Mono',monospace; font-size:10.5px; font-weight:700; color:var(--on-candy); background:var(--lime); border:1px solid var(--ink); padding:2px 6px; cursor:pointer; text-transform:uppercase; letter-spacing:0.02em; line-height:normal;}
+  .ab-omni:hover{ background:var(--strong); color:var(--yellow); }
+  .step-chip.om-chip b{background:var(--lime); color:var(--on-candy); padding:0 4px; margin-left:5px; font-weight:700;}
+  .step-chip.om-chip.active b{background:var(--paper); color:var(--ink);}
+  /* Avis omnibus sur la fiche ouverte : un projet qui touche plusieurs lois ne se
+     lit pas comme un projet ordinaire, et son titre n'en nomme qu'une. */
+  .bill-omni-note{ font-family:'Archivo',system-ui,sans-serif; font-size:13.5px; line-height:1.45; color:var(--on-candy); background:var(--lime); border:3px solid var(--ink); padding:9px 12px; margin:0 0 12px; }
+  /* Titre de partie dans un résumé d'omnibus (« ## Partie 2 — … »). */
+  .bill-sum-part{ font-family:'IBM Plex Mono',monospace; font-size:11.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.03em; color:var(--ink); margin:14px 0 6px; padding-bottom:4px; border-bottom:2px solid var(--ink); }
+  .bill-sum-part:first-child{ margin-top:0; }
   .ab-lob{flex:none; font-family:'IBM Plex Mono',monospace; font-size:10.5px; font-weight:700; color:var(--on-candy); background:var(--cyan); border:1px solid var(--ink); padding:1px 5px; cursor:help;}
   .lob{margin:12px 0 0; border:2px solid var(--ink); background:var(--paper-2); padding:9px 11px; cursor:pointer; color:var(--ink);}
   .lob-head{display:flex; align-items:baseline; gap:8px; flex-wrap:wrap;}
@@ -944,6 +954,7 @@ try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStor
     /* Sans ordre explicite le compteur de lobbying restait seul au-dessus du
        titre : sa place est sur la ligne des pastilles, avec le reste. */
     .ab-head .ab-lob{ order:5; }
+    .ab-head .ab-omni{ order:4; }
     .ab-head .ab-caret{ order:6; margin-left:auto; }
   }
   @media (max-width:900px){ .challenge-track .challenge-card{ flex:0 0 calc((100% - 16px)/2); } }
@@ -1403,7 +1414,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       </div>
     </div>
     <div class="maj" id="journal">
-      <ol class="maj-liste" id="journalListe"><!--ssr--><li class="maj-mois"><h2>Septembre 2026</h2><ol><li class="maj-entree"><time datetime="2026-09-25">25 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-projets">Projets de loi</span><h3>Les projets omnibus résumés partie par partie</h3><p>Un projet omnibus modifie plusieurs lois différentes, une par partie, et son titre n’en nomme qu’une. Treize projets de la session sont dans ce cas, du C-5 (2 parties) au C-2 (16 parties). Ils portent maintenant une pastille « Omnibus » dans la liste, un avis sur la fiche, et leur résumé suit les parties une à une au lieu de s’arrêter aux premières. Le C-39 passe ainsi de 6 puces à un aperçu plus trois parties détaillées.</p></div></li><li class="maj-entree"><time datetime="2026-09-23">23 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-projets">Projets de loi</span><h3>Un résumé en clair qui ne manque plus à l’appel</h3><p>Quand la génération du résumé en langage clair échouait sur un projet volumineux, la fiche ne montrait que le sommaire officiel, brut. Un second essai est fait automatiquement. Le C-39 (Loi visant à bâtir un Canada fort) a maintenant son résumé.</p></div></li><li class="maj-entree"><time datetime="2026-09-22">22 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-projets">Projets de loi</span><h3>Des fiches de projet de loi en deux colonnes</h3><p>Une fiche dépliée montre le résumé en langage clair à gauche, en lignes plus courtes, et à droite la dernière activité, un bouton vers le texte complet sur LEGISinfo et le partage. Le parrain, la chambre et le type de projet apparaissent en tête de fiche. Sur téléphone, tout reste en une colonne.</p></div></li><li class="maj-entree"><time datetime="2026-09-22">22 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-projets">Projets de loi</span><h3>La liste des projets de loi s’affiche par tranches</h3><p>La page des projets de loi montre d’abord les 10 plus récemment actifs, puis 20 de plus à chaque clic sur « Voir 20 de plus ». La recherche et les filtres repartent à 10 résultats ; un lien partagé vers un projet l’ouvre même s’il est plus loin dans la liste.</p></div></li><li class="maj-entree"><time datetime="2026-09-21">21 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Tout le site</span><h3>« et moi » devient la page des mises à jour</h3><p>Le lien « et moi » du bas de page mène à cette page : la personne derrière le site, puis ce qui y change, du plus récent au plus ancien. La bande dessinée cède la place à la seule case de la photo, lisible sur un téléphone.</p></div></li><li class="maj-entree"><time datetime="2026-09-21">21 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Tout le site</span><h3>Des pages que les moteurs de recherche comprennent</h3><p>Chaque page a son titre, sa description et un seul grand titre qui dit son sujet. Le menu, le logo et la bascule FR/EN sont de vrais liens, et un fil d’Ariane (DossierCanada › Votes) montre où vous êtes. Le haut de chaque page (compte, filtres, premières fiches) se lit même sans JavaScript, et les pages anglaises sont en anglais dès le chargement.</p></div></li><li class="maj-entree"><time datetime="2026-09-21">21 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Tout le site</span><h3>Des pages environ six fois plus légères</h3><p>Les données du site (projets de loi, votes, député·e·s) ne sont plus recopiées dans chaque page : un seul fichier, que votre navigateur garde d’une page à l’autre. Chaque page passe d’environ 2,1 Mo à 0,35 Mo.</p></div></li><li class="maj-entree"><time datetime="2026-09-21">21 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Tout le site</span><h3>Le site s’affiche même quand les comptes sont en panne</h3><p>Si le service de connexion ne répond pas, le site s’affiche et fonctionne quand même ; seuls les comptes attendent. Avant, la page pouvait rester vide.</p></div></li><li class="maj-entree"><time datetime="2026-09-21">21 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Tout le site</span><h3>Les sources officielles au bas de chaque page</h3><p>Le bas de page renvoie maintenant directement à LEGISinfo, à la Chambre des communes, au Sénat et au Commissariat au lobbying, d’où viennent les données.</p></div></li><li class="maj-entree"><time datetime="2026-09-18">18 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Tout le site</span><h3>L’anglais a ses propres adresses</h3><p>Chaque page existe en anglais à sa propre adresse (/en, /en/votes, /en/projets-de-loi…). On peut la partager telle quelle, et la bascule FR/EN change aussi l’adresse.</p></div></li><li class="maj-entree"><time datetime="2026-09-10">10 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-projets">Projets de loi</span><h3>Le lobbying déclaré, sur les fiches de projets de loi</h3><p>Chaque projet nommé dans le registre du lobbying montre les communications déclarées au Commissariat au lobbying : combien, quelles organisations, et les rencontres récentes, avec un lien vers chaque déclaration officielle et la date des données. Un filtre « Lobbying » les regroupe, et la recherche trouve aussi les organisations. On ne compte que les déclarations qui citent le numéro du projet ET des mots de son titre, car les numéros de projets sont réutilisés d’une législature à l’autre.</p></div></li><li class="maj-entree"><time datetime="2026-09-10">10 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-projets">Projets de loi</span><h3>Les projets pro forma s’expliquent</h3><p>Le C-1 et le S-1 ne sont pas de vraies lois : chaque chambre en dépose un pour la forme au début de chaque session, avant d’étudier le discours du Trône. Ils ont maintenant leur propre état, « Pro forma », et une explication, au lieu d’une fiche sans résumé.</p></div></li><li class="maj-entree"><time datetime="2026-09-10">10 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-projets">Projets de loi</span><h3>Des fiches de projet plus agréables à lire</h3><p>Un seul projet reste ouvert à la fois, le résumé se lit dans une police plus confortable, et « Copier le lien » confirme en changeant de couleur plutôt que par une fenêtre. La plupart des résumés ne se chargent qu’à l’ouverture d’une fiche, ce qui allège la page.</p></div></li><li class="maj-entree"><time datetime="2026-09-10">10 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Tout le site</span><h3>Une recherche plus tolérante</h3><p>Le trait d’union n’est plus obligatoire : « c5 » trouve le C-5. Dans le lexique, la recherche filtre aussi la section « Qui gravite ».</p></div></li><li class="maj-entree"><time datetime="2026-09-10">10 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Tout le site</span><h3>Une nouvelle image quand on partage le site</h3><p>Partager DossierCanada sur X ou Facebook affiche une image au design actuel du site, et la carte X montre enfin son image. Sur ordinateur, les boutons X, Facebook et Copier remplacent le panneau de partage du système.</p></div></li></ol></li><!--/ssr--></ol>
+      <ol class="maj-liste" id="journalListe"><!--ssr--><li class="maj-mois"><h2>Septembre 2026</h2><ol><li class="maj-entree"><time datetime="2026-09-25">25 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-projets">Projets de loi</span><h3>Les projets omnibus résumés partie par partie</h3><p>Un projet omnibus modifie plusieurs lois différentes, une par partie, et son titre n’en nomme qu’une. Treize projets de la session sont dans ce cas, du C-5 (2 parties) au C-2 (16 parties). Ils portent maintenant un bouton « Omnibus » dans la liste, qui filtre les projets omnibus (un filtre « Omnibus » est aussi dans la barre), un avis sur la fiche, et leur résumé suit les parties une à une au lieu de s’arrêter aux premières. Le C-39 passe ainsi de 6 puces à un aperçu plus trois parties détaillées.</p></div></li><li class="maj-entree"><time datetime="2026-09-23">23 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-projets">Projets de loi</span><h3>Un résumé en clair qui ne manque plus à l’appel</h3><p>Quand la génération du résumé en langage clair échouait sur un projet volumineux, la fiche ne montrait que le sommaire officiel, brut. Un second essai est fait automatiquement. Le C-39 (Loi visant à bâtir un Canada fort) a maintenant son résumé.</p></div></li><li class="maj-entree"><time datetime="2026-09-22">22 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-projets">Projets de loi</span><h3>Des fiches de projet de loi en deux colonnes</h3><p>Une fiche dépliée montre le résumé en langage clair à gauche, en lignes plus courtes, et à droite la dernière activité, un bouton vers le texte complet sur LEGISinfo et le partage. Le parrain, la chambre et le type de projet apparaissent en tête de fiche. Sur téléphone, tout reste en une colonne.</p></div></li><li class="maj-entree"><time datetime="2026-09-22">22 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-projets">Projets de loi</span><h3>La liste des projets de loi s’affiche par tranches</h3><p>La page des projets de loi montre d’abord les 10 plus récemment actifs, puis 20 de plus à chaque clic sur « Voir 20 de plus ». La recherche et les filtres repartent à 10 résultats ; un lien partagé vers un projet l’ouvre même s’il est plus loin dans la liste.</p></div></li><li class="maj-entree"><time datetime="2026-09-21">21 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Tout le site</span><h3>« et moi » devient la page des mises à jour</h3><p>Le lien « et moi » du bas de page mène à cette page : la personne derrière le site, puis ce qui y change, du plus récent au plus ancien. La bande dessinée cède la place à la seule case de la photo, lisible sur un téléphone.</p></div></li><li class="maj-entree"><time datetime="2026-09-21">21 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Tout le site</span><h3>Des pages que les moteurs de recherche comprennent</h3><p>Chaque page a son titre, sa description et un seul grand titre qui dit son sujet. Le menu, le logo et la bascule FR/EN sont de vrais liens, et un fil d’Ariane (DossierCanada › Votes) montre où vous êtes. Le haut de chaque page (compte, filtres, premières fiches) se lit même sans JavaScript, et les pages anglaises sont en anglais dès le chargement.</p></div></li><li class="maj-entree"><time datetime="2026-09-21">21 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Tout le site</span><h3>Des pages environ six fois plus légères</h3><p>Les données du site (projets de loi, votes, député·e·s) ne sont plus recopiées dans chaque page : un seul fichier, que votre navigateur garde d’une page à l’autre. Chaque page passe d’environ 2,1 Mo à 0,35 Mo.</p></div></li><li class="maj-entree"><time datetime="2026-09-21">21 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Tout le site</span><h3>Le site s’affiche même quand les comptes sont en panne</h3><p>Si le service de connexion ne répond pas, le site s’affiche et fonctionne quand même ; seuls les comptes attendent. Avant, la page pouvait rester vide.</p></div></li><li class="maj-entree"><time datetime="2026-09-21">21 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Tout le site</span><h3>Les sources officielles au bas de chaque page</h3><p>Le bas de page renvoie maintenant directement à LEGISinfo, à la Chambre des communes, au Sénat et au Commissariat au lobbying, d’où viennent les données.</p></div></li><li class="maj-entree"><time datetime="2026-09-18">18 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Tout le site</span><h3>L’anglais a ses propres adresses</h3><p>Chaque page existe en anglais à sa propre adresse (/en, /en/votes, /en/projets-de-loi…). On peut la partager telle quelle, et la bascule FR/EN change aussi l’adresse.</p></div></li><li class="maj-entree"><time datetime="2026-09-10">10 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-projets">Projets de loi</span><h3>Le lobbying déclaré, sur les fiches de projets de loi</h3><p>Chaque projet nommé dans le registre du lobbying montre les communications déclarées au Commissariat au lobbying : combien, quelles organisations, et les rencontres récentes, avec un lien vers chaque déclaration officielle et la date des données. Un filtre « Lobbying » les regroupe, et la recherche trouve aussi les organisations. On ne compte que les déclarations qui citent le numéro du projet ET des mots de son titre, car les numéros de projets sont réutilisés d’une législature à l’autre.</p></div></li><li class="maj-entree"><time datetime="2026-09-10">10 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-projets">Projets de loi</span><h3>Les projets pro forma s’expliquent</h3><p>Le C-1 et le S-1 ne sont pas de vraies lois : chaque chambre en dépose un pour la forme au début de chaque session, avant d’étudier le discours du Trône. Ils ont maintenant leur propre état, « Pro forma », et une explication, au lieu d’une fiche sans résumé.</p></div></li><li class="maj-entree"><time datetime="2026-09-10">10 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-projets">Projets de loi</span><h3>Des fiches de projet plus agréables à lire</h3><p>Un seul projet reste ouvert à la fois, le résumé se lit dans une police plus confortable, et « Copier le lien » confirme en changeant de couleur plutôt que par une fenêtre. La plupart des résumés ne se chargent qu’à l’ouverture d’une fiche, ce qui allège la page.</p></div></li><li class="maj-entree"><time datetime="2026-09-10">10 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Tout le site</span><h3>Une recherche plus tolérante</h3><p>Le trait d’union n’est plus obligatoire : « c5 » trouve le C-5. Dans le lexique, la recherche filtre aussi la section « Qui gravite ».</p></div></li><li class="maj-entree"><time datetime="2026-09-10">10 septembre</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Tout le site</span><h3>Une nouvelle image quand on partage le site</h3><p>Partager DossierCanada sur X ou Facebook affiche une image au design actuel du site, et la carte X montre enfin son image. Sur ordinateur, les boutons X, Facebook et Copier remplacent le panneau de partage du système.</p></div></li></ol></li><!--/ssr--></ol>
       <button type="button" class="maj-plus" id="journalPlus" hidden></button>
     </div>
   </section>
@@ -3461,6 +3472,8 @@ function billSummaryHtml(b, isEn){
     const flush = () => { if(bullets.length){ html += '<ul class="bill-sum-list">' + bullets.map(x => `<li>${esc(x)}</li>`).join('') + '</ul>'; bullets = []; } };
     for(const line of lines){
       if(/^[-•]\s+/.test(line)) bullets.push(line.replace(/^[-•]\s+/, ''));
+      // « ## Partie 2 — Douanes » : titre d'une partie d'un projet omnibus.
+      else if(/^##\s+/.test(line)) { flush(); html += `<div class="bill-sum-part">${esc(line.replace(/^##\s+/, ''))}</div>`; }
       else { flush(); html += `<p>${esc(line)}</p>`; }
     }
     flush();
@@ -3711,6 +3724,9 @@ function billCard(b, ctx){
           <span class="status-pill ${statusClass(b.state)}">${statusLabel(b.state)}</span>
         </div>
       </div>
+      ${b.omnibus ? `<div class="bill-omni-note">${isEn
+        ? `<b>Omnibus bill.</b> It changes several different acts, one per part (${b.omnibus.parts} parts${b.omnibus.divisions ? `, ${b.omnibus.divisions} divisions` : ''}). The title names only some of them, so the summary below goes part by part.`
+        : `<b>Projet omnibus.</b> Il modifie plusieurs lois différentes, une par partie (${b.omnibus.parts} parties${b.omnibus.divisions ? `, ${b.omnibus.divisions} sections` : ''}). Le titre n'en nomme qu'une partie : le résumé ci-dessous va donc partie par partie.`}</div>` : ''}
       <div class="bill-meta-top">${sponsor ? `${sponsorLabel} : ${sponsor} · ` : ''}${chamberLabel} · ${typeTxt}${reinstatedNote}</div>
       <div class="bill-stages">${timeline}</div>
       ${followRow}
@@ -3769,6 +3785,7 @@ let billsStepFilter = null;
 // 2026-09). Vit à côté du filtre de chambre : c'est une autre façon de trancher
 // la même liste.
 let billsLobbyFilter = false;
+let billsOmnibusFilter = false;
 let billsKeyword = '';
 let billsSortDir = 'desc';
 
@@ -3824,11 +3841,23 @@ function renderStepFilters(){
   const n = (typeof lobbying !== 'undefined' && lobbying.bills)
     ? bills.filter(b => lobbying.bills[b.num]).length : 0;
   const lobChip = n ? `<span class="step-chip lob-chip ${billsLobbyFilter?'active':''}" onclick="setBillsLobbyFilter()" title="${isEn?'Bills with communications reported to the Commissioner of Lobbying':'Projets avec des communications déclarées au Commissariat au lobbying'}">${isEn?'Lobbying':'Lobbying'} <b>${n}</b></span>` : '';
-  el.innerHTML = opts.map(([val,label])=>`<span class="step-chip ${billsStepFilter===val?'active':''}" onclick="setBillsStepFilter('${val}')">${label}</span>`).join('') + lobChip;
+  // Omnibus : projets qui modifient plusieurs lois à la fois. Compte calculé.
+  const nOm = bills.filter(b => b.omnibus).length;
+  const omChip = nOm ? `<span class="step-chip om-chip ${billsOmnibusFilter?'active':''}" onclick="setBillsOmnibusFilter()" title="${isEn?'Bills that change several different acts at once, one per part':'Projets qui modifient plusieurs lois différentes à la fois, une par partie'}">Omnibus <b>${nOm}</b></span>` : '';
+  el.innerHTML = opts.map(([val,label])=>`<span class="step-chip ${billsStepFilter===val?'active':''}" onclick="setBillsStepFilter('${val}')">${label}</span>`).join('') + lobChip + omChip;
 }
 
 function setBillsStepFilter(n){
   billsStepFilter = (billsStepFilter===n) ? null : n;
+  renderStepFilters();
+  renderBills();
+  closeFilterPanelsOnMobile();
+}
+
+// Omnibus : le même filtre est atteignable par le chip de la barre et par la
+// pastille verte d'une rangée (« Omnibus · 3 »), qui répond à la même question.
+function setBillsOmnibusFilter(on){
+  billsOmnibusFilter = (on === undefined) ? !billsOmnibusFilter : !!on;
   renderStepFilters();
   renderBills();
   closeFilterPanelsOnMobile();
@@ -3901,7 +3930,7 @@ function loadMoreBills(){ billsShown += BILLS_STEP; renderBills(); }
 function renderBills(keyword){
   keyword = keyword !== undefined ? keyword : (document.getElementById('searchBills')?.value || '');
   const kw = norm(keyword);
-  const signature = [kw, billsStatusFilter, billsStepFilter, billsLobbyFilter, billsSortDir].join('|');
+  const signature = [kw, billsStatusFilter, billsStepFilter, billsLobbyFilter, billsOmnibusFilter, billsSortDir].join('|');
   if(signature !== billsSignature){ billsSignature = signature; billsShown = BILLS_FIRST; }
   // Mémorisé pour que le bloc de lobbying puisse mettre en avant l'organisation
   // cherchée : trouver un projet sans voir pourquoi serait pire que ne rien trouver.
@@ -3910,12 +3939,13 @@ function renderBills(keyword){
     const statusOk = !billsStatusFilter || b.state === billsStatusFilter;
     const chamberOk = billsStepFilter === null || b.chamber === billsStepFilter;
     const lobbyOk = !billsLobbyFilter || !!(typeof lobbying !== 'undefined' && lobbying.bills && lobbying.bills[b.num]);
+    const omnibusOk = !billsOmnibusFilter || !!b.omnibus;
     // Les noms d'organisations entrent dans l'index : chercher « Google » ou
     // « pétroliers » sort les projets sur lesquels ils ont déclaré du lobbying.
     const orgs = lobbyOrgNames(b.num).map(n => typeof n === 'string' ? n : [n.fr, n.en].join(' ')).join(' ');
     const haystack = [b.title && b.title.fr, b.title && b.title.en, 'projet de loi ' + b.num, 'bill ' + b.num, b.sponsor && (b.sponsor.fr||b.sponsor.en), orgs].join(' ');
     const kwOk = matchesSearch(haystack, kw);
-    return statusOk && chamberOk && lobbyOk && kwOk;
+    return statusOk && chamberOk && lobbyOk && omnibusOk && kwOk;
   }).sort((a,b)=>{
     // Filtre lobbying actif : on classe du plus lobbyé au moins lobbyé — c'est
     // la question qu'on pose en cliquant. Le sens du tri reste celui du bouton.
@@ -3997,11 +4027,17 @@ function apercuBillRow(b, ctx){
   // ne dit pas lesquels pèsent lourd. Absent quand rien n'est déclaré.
   const lobN = (typeof lobbying !== 'undefined' && lobbying.bills && lobbying.bills[b.num]) ? lobbying.bills[b.num].total : 0;
   const lobBadge = lobN ? `<span class="ab-lob" title="${lobN} ${isEn ? 'reported lobbying communications' : 'communications de lobbying déclarées'}">${lobN}</span>` : '';
+  // Omnibus : le titre ne nomme qu'une des lois touchées — la rangée le dit.
+  const om = b.omnibus;
+  const omniBadge = om ? `<button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="${isEn
+    ? `Omnibus bill — ${om.parts} parts${om.divisions ? `, ${om.divisions} divisions` : ''}: it changes several different acts. Click to show only omnibus bills`
+    : `Projet omnibus — ${om.parts} parties${om.divisions ? `, ${om.divisions} sections` : ''} : il modifie plusieurs lois différentes. Cliquer pour ne voir que les omnibus`}">Omnibus · ${om.parts}</button>` : '';
   const full = billCard(b, ctx + b.id);
   return `<div class="ab-row" id="${rowId}">
     <div class="ab-head" onclick="toggleApercuBill('${rowId}')">
       <span class="ab-num">${b.num}</span>
       <span class="ab-title">${title}</span>
+      ${omniBadge}
       ${lobBadge}
       ${partyBadge}
       ${statusP}
