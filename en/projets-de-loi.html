@@ -541,6 +541,16 @@ try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStor
      compteur du bloc, pour qu'on relie les deux d'un coup d'œil. */
   .step-chip.lob-chip b{background:var(--cyan); color:var(--on-candy); padding:0 4px; margin-left:5px; font-weight:700;}
   .step-chip.lob-chip.active b{background:var(--paper); color:var(--ink);}
+  .ab-omni{flex:none; font-family:'IBM Plex Mono',monospace; font-size:10.5px; font-weight:700; color:var(--on-candy); background:var(--lime); border:1px solid var(--ink); padding:2px 6px; cursor:pointer; text-transform:uppercase; letter-spacing:0.02em; line-height:normal;}
+  .ab-omni:hover{ background:var(--strong); color:var(--yellow); }
+  .step-chip.om-chip b{background:var(--lime); color:var(--on-candy); padding:0 4px; margin-left:5px; font-weight:700;}
+  .step-chip.om-chip.active b{background:var(--paper); color:var(--ink);}
+  /* Avis omnibus sur la fiche ouverte : un projet qui touche plusieurs lois ne se
+     lit pas comme un projet ordinaire, et son titre n'en nomme qu'une. */
+  .bill-omni-note{ font-family:'Archivo',system-ui,sans-serif; font-size:13.5px; line-height:1.45; color:var(--on-candy); background:var(--lime); border:3px solid var(--ink); padding:9px 12px; margin:0 0 12px; }
+  /* Titre de partie dans un résumé d'omnibus (« ## Partie 2 — … »). */
+  .bill-sum-part{ font-family:'IBM Plex Mono',monospace; font-size:11.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.03em; color:var(--ink); margin:14px 0 6px; padding-bottom:4px; border-bottom:2px solid var(--ink); }
+  .bill-sum-part:first-child{ margin-top:0; }
   .ab-lob{flex:none; font-family:'IBM Plex Mono',monospace; font-size:10.5px; font-weight:700; color:var(--on-candy); background:var(--cyan); border:1px solid var(--ink); padding:1px 5px; cursor:help;}
   .lob{margin:12px 0 0; border:2px solid var(--ink); background:var(--paper-2); padding:9px 11px; cursor:pointer; color:var(--ink);}
   .lob-head{display:flex; align-items:baseline; gap:8px; flex-wrap:wrap;}
@@ -944,6 +954,7 @@ try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStor
     /* Sans ordre explicite le compteur de lobbying restait seul au-dessus du
        titre : sa place est sur la ligne des pastilles, avec le reste. */
     .ab-head .ab-lob{ order:5; }
+    .ab-head .ab-omni{ order:4; }
     .ab-head .ab-caret{ order:6; margin-left:auto; }
   }
   @media (max-width:900px){ .challenge-track .challenge-card{ flex:0 0 calc((100% - 16px)/2); } }
@@ -1314,7 +1325,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       </div>
       <div class="filter-group">
         <button class="filter-hamburger" id="stepFilterBtn" onclick="toggleFilterPanel('step')" aria-expanded="false">☰ <span data-i18n="filter.etapes">Chamber</span></button>
-        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">House of Commons</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Senate</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Bills with communications reported to the Commissioner of Lobbying">Lobbying <b>43</b></span><!--/ssr--></div>
+        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">House of Commons</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Senate</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Bills with communications reported to the Commissioner of Lobbying">Lobbying <b>43</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Bills that change several different acts at once, one per part">Omnibus <b>13</b></span><!--/ssr--></div>
       </div>
     </div>
 
@@ -1323,6 +1334,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13951690')">
       <span class="ab-num">C-266</span>
       <span class="ab-title">An Act to establish a national framework respecting skilled trades and labour mobility</span>
+      
       
       <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
       <span class="status-pill status-encours">In progress</span>
@@ -1334,6 +1346,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-num">S-226</span>
       <span class="ab-title">An Act respecting Jury Duty Appreciation Week</span>
       
+      
       <span class="depute-party" style="background:#6D5BA6; color:#fff">ISG</span>
       <span class="status-pill status-encours">In progress</span>
       <span class="ab-caret">▾</span>
@@ -1344,6 +1357,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-num">C-38</span>
       <span class="ab-title">An Act to amend the Excise Tax Act (extension of the federal fuel excise tax relief)</span>
       
+      
       <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
       <span class="status-pill status-encours">In progress</span>
       <span class="ab-caret">▾</span>
@@ -1353,6 +1367,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13605049')">
       <span class="ab-num">C-10</span>
       <span class="ab-title">An Act respecting the Commissioner for Modern Treaty Implementation</span>
+      
       <span class="ab-lob" title="18 reported lobbying communications">18</span>
       <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
       <span class="status-pill status-encours">In progress</span>
@@ -1363,16 +1378,18 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14223396')">
       <span class="ab-num">C-39</span>
       <span class="ab-title">An Act respecting certain measures to strengthen the economy</span>
+      <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Omnibus bill — 3 parts, 8 divisions: it changes several different acts. Click to show only omnibus bills">Omnibus · 3</button>
       
       <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
       <span class="status-pill status-encours">In progress</span>
       <span class="ab-caret">▾</span>
     </div>
-    <div class="ab-detail"><div class="bill-sum-slot" data-bill="14223396"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Bundles together measures on major project reviews, supply chains and federal labour law in a single bill.</li><li>Amends roughly twenty existing laws and creates a new one on electronic trade documents.</li></ul><p>## Part 1 — Project assessments and the environment</p><ul class="bill-sum-list"><li>Sets a one-year deadline for decisions on projects assessed by the Impact Assessment Agency of Canada and by the Canadian Energy Regulator, counted from when the proponent's studies are filed.</li><li>Puts the Canadian Nuclear Safety Commission in charge of impact assessments for projects involving nuclear activities, and makes the Energy Regulator's Commission the sole assessor for pipelines, designated power lines and offshore renewable energy projects.</li><li>Lets the Governor in Council designate "regions of national interest" under the Building Canada Act, and lets the responsible minister add, change or remove conditions on authorizations already granted.</li><li>Broadens environmental compliance orders (including returning non-compliant imports out of Canada), opens fish habitat credits to third parties, and allows offset fees paid into the Environmental Damages Fund.</li></ul><p>## Part 2 — Transportation, ports and trade</p><ul class="bill-sum-list"><li>Allows the Minister of Transport to set up a transportation project office and designate trade corridors, and creates the National Trade Corridors Council to track disruptions and advise the Minister.</li><li>Establishes a four-year rail interswitching zone in Manitoba, Saskatchewan and Alberta where rates are set by the Canadian Transportation Agency, and lowers the notification threshold for deals involving transportation businesses located in a port.</li><li>Lets the Minister appoint certain port authority directors, order action against specific threats in ports and the St. Lawrence Seaway, and terminate a Seaway agreement in whole or in part.</li><li>Enacts the Enabling Digital Trade Act, recognizing electronic trade documents and ending paper filing of import and export information; also repeals the Shipping Conferences Exemption Act, 1987.</li></ul><p>## Part 3 — Labour and workers</p><ul class="bill-sum-list"><li>Adds new timelines and requirements for collective bargaining and for reaching a first collective agreement, and transfers certain rights when one contractor replaces another.</li><li>Allows the Canada Industrial Relations Board to certify a union for existing bargaining units at the request of two or more employers, and lets the Minister of Labour appoint a special mediator.</li><li>Gives the Head of Compliance and Enforcement power to order an employer or a corporate director to pay unpaid amounts owed under a settlement with an employee.</li><li>Sets aside the federal paid medical leave rules where a collective agreement provides at least equally favourable benefits, and clarifies the Wage Earner Protection Program, including defining "former employer".</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="14223396"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Bundles together measures on major project reviews, supply chains and federal labour law in a single bill.</li><li>Amends roughly twenty existing laws and creates a new one on electronic trade documents.</li></ul><div class="bill-sum-part">Part 1 — Project assessments and the environment</div><ul class="bill-sum-list"><li>Sets a one-year deadline for decisions on projects assessed by the Impact Assessment Agency of Canada and by the Canadian Energy Regulator, counted from when the proponent's studies are filed.</li><li>Puts the Canadian Nuclear Safety Commission in charge of impact assessments for projects involving nuclear activities, and makes the Energy Regulator's Commission the sole assessor for pipelines, designated power lines and offshore renewable energy projects.</li><li>Lets the Governor in Council designate "regions of national interest" under the Building Canada Act, and lets the responsible minister add, change or remove conditions on authorizations already granted.</li><li>Broadens environmental compliance orders (including returning non-compliant imports out of Canada), opens fish habitat credits to third parties, and allows offset fees paid into the Environmental Damages Fund.</li></ul><div class="bill-sum-part">Part 2 — Transportation, ports and trade</div><ul class="bill-sum-list"><li>Allows the Minister of Transport to set up a transportation project office and designate trade corridors, and creates the National Trade Corridors Council to track disruptions and advise the Minister.</li><li>Establishes a four-year rail interswitching zone in Manitoba, Saskatchewan and Alberta where rates are set by the Canadian Transportation Agency, and lowers the notification threshold for deals involving transportation businesses located in a port.</li><li>Lets the Minister appoint certain port authority directors, order action against specific threats in ports and the St. Lawrence Seaway, and terminate a Seaway agreement in whole or in part.</li><li>Enacts the Enabling Digital Trade Act, recognizing electronic trade documents and ending paper filing of import and export information; also repeals the Shipping Conferences Exemption Act, 1987.</li></ul><div class="bill-sum-part">Part 3 — Labour and workers</div><ul class="bill-sum-list"><li>Adds new timelines and requirements for collective bargaining and for reaching a first collective agreement, and transfers certain rights when one contractor replaces another.</li><li>Allows the Canada Industrial Relations Board to certify a union for existing bargaining units at the request of two or more employers, and lets the Minister of Labour appoint a special mediator.</li><li>Gives the Head of Compliance and Enforcement power to order an employer or a corporate director to pay unpaid amounts owed under a settlement with an employee.</li><li>Sets aside the federal paid medical leave rules where a collective agreement provides at least equally favourable benefits, and clarifies the Wage Earner Protection Program, including defining "former employer".</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
   </div><div class="ab-row" id="abrow-pr-13548201">
     <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13548201')">
       <span class="ab-num">S-227</span>
       <span class="ab-title">An Act respecting Arab Heritage Month</span>
+      
       
       
       <span class="status-pill status-sanctionne">Assented to</span>
@@ -1384,6 +1401,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-num">S-250</span>
       <span class="ab-title">An Act to amend the Department of Justice Act</span>
       
+      
       <span class="depute-party" style="background:#6D5BA6; color:#fff">ISG</span>
       <span class="status-pill status-encours">In progress</span>
       <span class="ab-caret">▾</span>
@@ -1393,6 +1411,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13590613')">
       <span class="ab-num">C-9</span>
       <span class="ab-title">An Act to amend the Criminal Code (hate propaganda, hate crime and access to religious or cultural places)</span>
+      
       <span class="ab-lob" title="37 reported lobbying communications">37</span>
       <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
       <span class="status-pill status-sanctionne">Assented to</span>
@@ -1404,6 +1423,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-num">C-11</span>
       <span class="ab-title">An Act to amend the National Defence Act and other Acts</span>
       
+      
       <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
       <span class="status-pill status-sanctionne">Assented to</span>
       <span class="ab-caret">▾</span>
@@ -1413,6 +1433,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13813664')">
       <span class="ab-num">C-16</span>
       <span class="ab-title">An Act to amend certain Acts in relation to criminal and correctional matters (child protection, gender-based violence, delays and other measures)</span>
+      
       <span class="ab-lob" title="39 reported lobbying communications">39</span>
       <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
       <span class="status-pill status-sanctionne">Assented to</span>
@@ -3561,6 +3582,8 @@ function billSummaryHtml(b, isEn){
     const flush = () => { if(bullets.length){ html += '<ul class="bill-sum-list">' + bullets.map(x => `<li>${esc(x)}</li>`).join('') + '</ul>'; bullets = []; } };
     for(const line of lines){
       if(/^[-•]\s+/.test(line)) bullets.push(line.replace(/^[-•]\s+/, ''));
+      // « ## Partie 2 — Douanes » : titre d'une partie d'un projet omnibus.
+      else if(/^##\s+/.test(line)) { flush(); html += `<div class="bill-sum-part">${esc(line.replace(/^##\s+/, ''))}</div>`; }
       else { flush(); html += `<p>${esc(line)}</p>`; }
     }
     flush();
@@ -3811,6 +3834,9 @@ function billCard(b, ctx){
           <span class="status-pill ${statusClass(b.state)}">${statusLabel(b.state)}</span>
         </div>
       </div>
+      ${b.omnibus ? `<div class="bill-omni-note">${isEn
+        ? `<b>Omnibus bill.</b> It changes several different acts, one per part (${b.omnibus.parts} parts${b.omnibus.divisions ? `, ${b.omnibus.divisions} divisions` : ''}). The title names only some of them, so the summary below goes part by part.`
+        : `<b>Projet omnibus.</b> Il modifie plusieurs lois différentes, une par partie (${b.omnibus.parts} parties${b.omnibus.divisions ? `, ${b.omnibus.divisions} sections` : ''}). Le titre n'en nomme qu'une partie : le résumé ci-dessous va donc partie par partie.`}</div>` : ''}
       <div class="bill-meta-top">${sponsor ? `${sponsorLabel} : ${sponsor} · ` : ''}${chamberLabel} · ${typeTxt}${reinstatedNote}</div>
       <div class="bill-stages">${timeline}</div>
       ${followRow}
@@ -3869,6 +3895,7 @@ let billsStepFilter = null;
 // 2026-09). Vit à côté du filtre de chambre : c'est une autre façon de trancher
 // la même liste.
 let billsLobbyFilter = false;
+let billsOmnibusFilter = false;
 let billsKeyword = '';
 let billsSortDir = 'desc';
 
@@ -3924,11 +3951,23 @@ function renderStepFilters(){
   const n = (typeof lobbying !== 'undefined' && lobbying.bills)
     ? bills.filter(b => lobbying.bills[b.num]).length : 0;
   const lobChip = n ? `<span class="step-chip lob-chip ${billsLobbyFilter?'active':''}" onclick="setBillsLobbyFilter()" title="${isEn?'Bills with communications reported to the Commissioner of Lobbying':'Projets avec des communications déclarées au Commissariat au lobbying'}">${isEn?'Lobbying':'Lobbying'} <b>${n}</b></span>` : '';
-  el.innerHTML = opts.map(([val,label])=>`<span class="step-chip ${billsStepFilter===val?'active':''}" onclick="setBillsStepFilter('${val}')">${label}</span>`).join('') + lobChip;
+  // Omnibus : projets qui modifient plusieurs lois à la fois. Compte calculé.
+  const nOm = bills.filter(b => b.omnibus).length;
+  const omChip = nOm ? `<span class="step-chip om-chip ${billsOmnibusFilter?'active':''}" onclick="setBillsOmnibusFilter()" title="${isEn?'Bills that change several different acts at once, one per part':'Projets qui modifient plusieurs lois différentes à la fois, une par partie'}">Omnibus <b>${nOm}</b></span>` : '';
+  el.innerHTML = opts.map(([val,label])=>`<span class="step-chip ${billsStepFilter===val?'active':''}" onclick="setBillsStepFilter('${val}')">${label}</span>`).join('') + lobChip + omChip;
 }
 
 function setBillsStepFilter(n){
   billsStepFilter = (billsStepFilter===n) ? null : n;
+  renderStepFilters();
+  renderBills();
+  closeFilterPanelsOnMobile();
+}
+
+// Omnibus : le même filtre est atteignable par le chip de la barre et par la
+// pastille verte d'une rangée (« Omnibus · 3 »), qui répond à la même question.
+function setBillsOmnibusFilter(on){
+  billsOmnibusFilter = (on === undefined) ? !billsOmnibusFilter : !!on;
   renderStepFilters();
   renderBills();
   closeFilterPanelsOnMobile();
@@ -4001,7 +4040,7 @@ function loadMoreBills(){ billsShown += BILLS_STEP; renderBills(); }
 function renderBills(keyword){
   keyword = keyword !== undefined ? keyword : (document.getElementById('searchBills')?.value || '');
   const kw = norm(keyword);
-  const signature = [kw, billsStatusFilter, billsStepFilter, billsLobbyFilter, billsSortDir].join('|');
+  const signature = [kw, billsStatusFilter, billsStepFilter, billsLobbyFilter, billsOmnibusFilter, billsSortDir].join('|');
   if(signature !== billsSignature){ billsSignature = signature; billsShown = BILLS_FIRST; }
   // Mémorisé pour que le bloc de lobbying puisse mettre en avant l'organisation
   // cherchée : trouver un projet sans voir pourquoi serait pire que ne rien trouver.
@@ -4010,12 +4049,13 @@ function renderBills(keyword){
     const statusOk = !billsStatusFilter || b.state === billsStatusFilter;
     const chamberOk = billsStepFilter === null || b.chamber === billsStepFilter;
     const lobbyOk = !billsLobbyFilter || !!(typeof lobbying !== 'undefined' && lobbying.bills && lobbying.bills[b.num]);
+    const omnibusOk = !billsOmnibusFilter || !!b.omnibus;
     // Les noms d'organisations entrent dans l'index : chercher « Google » ou
     // « pétroliers » sort les projets sur lesquels ils ont déclaré du lobbying.
     const orgs = lobbyOrgNames(b.num).map(n => typeof n === 'string' ? n : [n.fr, n.en].join(' ')).join(' ');
     const haystack = [b.title && b.title.fr, b.title && b.title.en, 'projet de loi ' + b.num, 'bill ' + b.num, b.sponsor && (b.sponsor.fr||b.sponsor.en), orgs].join(' ');
     const kwOk = matchesSearch(haystack, kw);
-    return statusOk && chamberOk && lobbyOk && kwOk;
+    return statusOk && chamberOk && lobbyOk && omnibusOk && kwOk;
   }).sort((a,b)=>{
     // Filtre lobbying actif : on classe du plus lobbyé au moins lobbyé — c'est
     // la question qu'on pose en cliquant. Le sens du tri reste celui du bouton.
@@ -4097,11 +4137,17 @@ function apercuBillRow(b, ctx){
   // ne dit pas lesquels pèsent lourd. Absent quand rien n'est déclaré.
   const lobN = (typeof lobbying !== 'undefined' && lobbying.bills && lobbying.bills[b.num]) ? lobbying.bills[b.num].total : 0;
   const lobBadge = lobN ? `<span class="ab-lob" title="${lobN} ${isEn ? 'reported lobbying communications' : 'communications de lobbying déclarées'}">${lobN}</span>` : '';
+  // Omnibus : le titre ne nomme qu'une des lois touchées — la rangée le dit.
+  const om = b.omnibus;
+  const omniBadge = om ? `<button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="${isEn
+    ? `Omnibus bill — ${om.parts} parts${om.divisions ? `, ${om.divisions} divisions` : ''}: it changes several different acts. Click to show only omnibus bills`
+    : `Projet omnibus — ${om.parts} parties${om.divisions ? `, ${om.divisions} sections` : ''} : il modifie plusieurs lois différentes. Cliquer pour ne voir que les omnibus`}">Omnibus · ${om.parts}</button>` : '';
   const full = billCard(b, ctx + b.id);
   return `<div class="ab-row" id="${rowId}">
     <div class="ab-head" onclick="toggleApercuBill('${rowId}')">
       <span class="ab-num">${b.num}</span>
       <span class="ab-title">${title}</span>
+      ${omniBadge}
       ${lobBadge}
       ${partyBadge}
       ${statusP}
