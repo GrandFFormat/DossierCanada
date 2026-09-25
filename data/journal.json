@@ -1,6 +1,19 @@
 [
   {
     "date": "2026-09-25",
+    "volet": "site",
+    "fr": {
+      "titre": "L’Ontario s’allume dans la rangée des provinces",
+      "texte": "La pastille ON de l’en-tête mène maintenant à DossierOntario, le site jumeau qui suit l’Assemblée législative de l’Ontario. Elle porte le rouge du drapeau ontarien et bascule comme celle du Québec."
+    },
+    "en": {
+      "titre": "Ontario lights up in the province row",
+      "texte": "The ON dot in the header now leads to DossierOntario, the sister site tracking Ontario’s Legislative Assembly. It carries the red of Ontario’s flag and flips like Quebec’s."
+    },
+    "commits": []
+  },
+  {
+    "date": "2026-09-25",
     "volet": "projets",
     "fr": {
       "titre": "Les résumés de projets de loi, plus faciles à lire",

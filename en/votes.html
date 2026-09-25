@@ -1159,7 +1159,7 @@ try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStor
 <header class="top">
   <div class="header-left">
     <span class="header-date" id="headerDate"></span>
-    <div class="province-network" id="provinceNetwork"><!--ssr--><span class="pn-dot pn-off" title="Colombie-Britannique — coming soon" aria-disabled="true">BC</span><span class="pn-dot pn-off" title="Alberta — coming soon" aria-disabled="true">AB</span><span class="pn-dot pn-off" title="Saskatchewan — coming soon" aria-disabled="true">SK</span><span class="pn-dot pn-off" title="Manitoba — coming soon" aria-disabled="true">MB</span><span class="pn-dot pn-off" title="Ontario — coming soon" aria-disabled="true">ON</span><a class="pn-dot pn-live pn-2" href="https://dossierquebec.ca/" target="_blank" rel="noopener" title="DossierQuébec" style="background:#0B3D91" onclick="event.stopPropagation()">QC</a><span class="pn-dot pn-off pn-2" title="Nouveau-Brunswick — coming soon" aria-disabled="true">NB</span><span class="pn-dot pn-off pn-2" title="Nouvelle-Écosse — coming soon" aria-disabled="true">NS</span><span class="pn-dot pn-off pn-2" title="Île-du-Prince-Édouard — coming soon" aria-disabled="true">PE</span><span class="pn-dot pn-off pn-2" title="Terre-Neuve-et-Labrador — coming soon" aria-disabled="true">NL</span><!--/ssr--></div>
+    <div class="province-network" id="provinceNetwork"><!--ssr--><span class="pn-dot pn-off" title="Colombie-Britannique — coming soon" aria-disabled="true">BC</span><span class="pn-dot pn-off" title="Alberta — coming soon" aria-disabled="true">AB</span><span class="pn-dot pn-off" title="Saskatchewan — coming soon" aria-disabled="true">SK</span><span class="pn-dot pn-off" title="Manitoba — coming soon" aria-disabled="true">MB</span><a class="pn-dot pn-live" href="https://www.dossierontario.ca/" target="_blank" rel="noopener" title="DossierOntario" style="background:#C8102E" onclick="event.stopPropagation()">ON</a><a class="pn-dot pn-live pn-2" href="https://dossierquebec.ca/" target="_blank" rel="noopener" title="DossierQuébec" style="background:#0B3D91" onclick="event.stopPropagation()">QC</a><span class="pn-dot pn-off pn-2" title="Nouveau-Brunswick — coming soon" aria-disabled="true">NB</span><span class="pn-dot pn-off pn-2" title="Nouvelle-Écosse — coming soon" aria-disabled="true">NS</span><span class="pn-dot pn-off pn-2" title="Île-du-Prince-Édouard — coming soon" aria-disabled="true">PE</span><span class="pn-dot pn-off pn-2" title="Terre-Neuve-et-Labrador — coming soon" aria-disabled="true">NL</span><!--/ssr--></div>
   </div>
   <a class="brand" data-view="apercu" href="/en">Dossier<wbr><span class="hl">Canada</span></a>
   <div class="header-right">
@@ -2951,7 +2951,7 @@ const provinceNetwork = [
   { code: 'AB', name: 'Alberta',              url: null, color: null },
   { code: 'SK', name: 'Saskatchewan',         url: null, color: null },
   { code: 'MB', name: 'Manitoba',             url: null, color: null },
-  { code: 'ON', name: 'Ontario',              url: null, color: null },
+  { code: 'ON', name: 'DossierOntario', url: 'https://www.dossierontario.ca/', color: '#C8102E' },
   { code: 'QC', name: 'DossierQuébec', url: 'https://dossierquebec.ca/', color: '#0B3D91' },
   { code: 'NB', name: 'Nouveau-Brunswick',        url: null, color: null },
   { code: 'NS', name: 'Nouvelle-Écosse',          url: null, color: null },
