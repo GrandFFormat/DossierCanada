@@ -17,6 +17,7 @@
 // Le sitemap, lui, est écrit par scripts/build-section-pages.js (liste des pages).
 
 import { readFileSync, writeFileSync, existsSync, statSync } from 'node:fs';
+import { detectOmnibus } from './omnibus.js';
 
 const BILLS_PATH = 'data/bills.json';
 const DEPUTES_PATH = 'data/deputes.json';
@@ -222,6 +223,12 @@ function main() {
     sponsorParty: sponsorPartyOf(b),
     state: b.state,
     reinstated: b.reinstated,
+    // Omnibus : nombre de parties (et de sections), lu dans le sommaire officiel.
+    // Le titre d'un omnibus ne nomme qu'une de ses lois : la fiche doit le dire.
+    omnibus: (() => {
+      const om = detectOmnibus(b.summary);
+      return om.isOmnibus ? { parts: om.parts.length, divisions: om.divisions.length } : null;
+    })(),
     // Les TEXTES (sommaire officiel + résumé IA) partent dans un fichier à part,
     // chargé à la demande — voir billTexts plus bas. Ils pesaient 1 035 Ko sur les
     // 3 Mo de la page alors qu'un visiteur en lit un ou deux.
