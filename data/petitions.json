@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-09-24T13:45:42.157Z",
+  "scrapedAt": "2026-09-25T13:38:13.991Z",
   "count": 20,
   "petitions": [
     {
@@ -18,7 +18,7 @@
         "fr": "Ouverte pour signature jusqu'au 9 décembre 2026 à 10 h 53 (HAE)"
       },
       "sponsor": "Patrick Weiler",
-      "signatures": 6732,
+      "signatures": 6843,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7694",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7694"
@@ -39,7 +39,7 @@
         "fr": "Ouverte pour signature jusqu'au 19 janvier 2027 à 15 h 06 (HAE)"
       },
       "sponsor": "Julie Dzerowicz",
-      "signatures": 1412,
+      "signatures": 1910,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7774",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7774"
@@ -60,7 +60,7 @@
         "fr": "Ouverte pour signature jusqu'au 8 janvier 2027 à 13 h 58 (HAE)"
       },
       "sponsor": "Jenny Kwan",
-      "signatures": 780,
+      "signatures": 836,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7709",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7709"
@@ -81,10 +81,31 @@
         "fr": "Ouverte pour signature jusqu'au 8 janvier 2027 à 16 h 00 (HAE)"
       },
       "sponsor": "Arielle Kayabaga",
-      "signatures": 615,
+      "signatures": 623,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7621",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7621"
+      }
+    },
+    {
+      "code": "e-7612",
+      "topic": {
+        "en": "Justice",
+        "fr": "Justice"
+      },
+      "keywords": {
+        "en": "Bail Human trafficking Safety",
+        "fr": "Libération sous caution Sécurité publique Traite de personnes"
+      },
+      "status": {
+        "en": "Open for signature until October 14, 2026, at 9:39 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 14 octobre 2026 à 9 h 39 (HAE)"
+      },
+      "sponsor": "Rhonda Kirkland",
+      "signatures": 475,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7612",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7612"
       }
     },
     {
@@ -102,7 +123,7 @@
         "fr": "Ouverte pour signature jusqu'au 7 janvier 2027 à 14 h 56 (HAE)"
       },
       "sponsor": "Dominique O'Rourke",
-      "signatures": 465,
+      "signatures": 469,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7663",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7663"
@@ -123,31 +144,10 @@
         "fr": "Ouverte pour signature jusqu'au 9 novembre 2026 à 13 h 59 (HAE)"
       },
       "sponsor": "Karina Gould",
-      "signatures": 464,
+      "signatures": 468,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7738",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7738"
-      }
-    },
-    {
-      "code": "e-7612",
-      "topic": {
-        "en": "Justice",
-        "fr": "Justice"
-      },
-      "keywords": {
-        "en": "Bail Human trafficking Safety",
-        "fr": "Libération sous caution Sécurité publique Traite de personnes"
-      },
-      "status": {
-        "en": "Open for signature until October 14, 2026, at 9:39 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 14 octobre 2026 à 9 h 39 (HAE)"
-      },
-      "sponsor": "Rhonda Kirkland",
-      "signatures": 397,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7612",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7612"
       }
     },
     {
@@ -165,7 +165,7 @@
         "fr": "Ouverte pour signature jusqu'au 16 octobre 2026 à 16 h 48 (HAE)"
       },
       "sponsor": "Shelby Kramp-Neuman",
-      "signatures": 276,
+      "signatures": 291,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7766",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7766"
@@ -186,7 +186,7 @@
         "fr": "Ouverte pour signature jusqu'au 7 janvier 2027 à 16 h 36 (HAE)"
       },
       "sponsor": "Luc Berthold",
-      "signatures": 216,
+      "signatures": 231,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7755",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7755"
@@ -207,7 +207,7 @@
         "fr": "Ouverte pour signature jusqu'au 14 janvier 2027 à 16 h 46 (HAE)"
       },
       "sponsor": "John Barlow",
-      "signatures": 65,
+      "signatures": 71,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7751",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7751"
@@ -228,7 +228,7 @@
         "fr": "Ouverte pour signature jusqu'au 12 janvier 2027 à 9 h 45 (HAE)"
       },
       "sponsor": "Yasir Naqvi",
-      "signatures": 57,
+      "signatures": 62,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7749",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7749"
@@ -249,7 +249,7 @@
         "fr": "Ouverte pour signature jusqu'au 8 janvier 2027 à 14 h 01 (HAE)"
       },
       "sponsor": "Heather McPherson",
-      "signatures": 54,
+      "signatures": 58,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7762",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7762"
@@ -270,7 +270,7 @@
         "fr": "Ouverte pour signature jusqu'au 21 décembre 2026 à 11 h 27 (HAE)"
       },
       "sponsor": "Claude DeBellefeuille",
-      "signatures": 42,
+      "signatures": 52,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7785",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7785"
@@ -291,7 +291,7 @@
         "fr": "Ouverte pour signature jusqu'au 14 janvier 2027 à 16 h 47 (HAE)"
       },
       "sponsor": "Jeff Kibble",
-      "signatures": 37,
+      "signatures": 41,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7765",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7765"
@@ -312,31 +312,10 @@
         "fr": "Ouverte pour signature jusqu'au 14 janvier 2027 à 16 h 46 (HAE)"
       },
       "sponsor": "Warren Steinley",
-      "signatures": 33,
+      "signatures": 38,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7698",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7698"
-      }
-    },
-    {
-      "code": "e-7739",
-      "topic": {
-        "en": "Public safety",
-        "fr": "Sécurité publique"
-      },
-      "keywords": {
-        "en": "Anti-Semitism Army of the Guardians of the Islamic Rev ... National security Religious buildings Terrorism and terrorists",
-        "fr": "Antisémitisme Établissements religieux Gardiens de la Révolution islamique Sécurité nationale Terrorisme et terroristes"
-      },
-      "status": {
-        "en": "Open for signature until December 20, 2026, at 2:56 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 20 décembre 2026 à 14 h 56 (HAE)"
-      },
-      "sponsor": "Melissa Lantsman",
-      "signatures": 26,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7739",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7739"
       }
     },
     {
@@ -354,10 +333,52 @@
         "fr": "Ouverte pour signature jusqu'au 19 janvier 2027 à 14 h 49 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 26,
+      "signatures": 35,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7723",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7723"
+      }
+    },
+    {
+      "code": "e-7739",
+      "topic": {
+        "en": "Public safety",
+        "fr": "Sécurité publique"
+      },
+      "keywords": {
+        "en": "Anti-Semitism Army of the Guardians of the Islamic Rev ... National security Religious buildings Terrorism and terrorists",
+        "fr": "Antisémitisme Établissements religieux Gardiens de la Révolution islamique Sécurité nationale Terrorisme et terroristes"
+      },
+      "status": {
+        "en": "Open for signature until December 20, 2026, at 2:56 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 20 décembre 2026 à 14 h 56 (HAE)"
+      },
+      "sponsor": "Melissa Lantsman",
+      "signatures": 31,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7739",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7739"
+      }
+    },
+    {
+      "code": "e-7802",
+      "topic": {
+        "en": "Fisheries",
+        "fr": "Pêches"
+      },
+      "keywords": {
+        "en": "Fisheries policy Fishing equipment Hunting and sport fishing Maritime Canada",
+        "fr": "Canada maritime Chasse et pêche de loisir Équipement de pêche Politique sur les pêches"
+      },
+      "status": {
+        "en": "Open for signature until December 22, 2026, at 3:01 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 22 décembre 2026 à 15 h 01 (HAE)"
+      },
+      "sponsor": "Jessica Fancy",
+      "signatures": 16,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7802",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7802"
       }
     },
     {
@@ -382,27 +403,6 @@
       }
     },
     {
-      "code": "e-7802",
-      "topic": {
-        "en": "Fisheries",
-        "fr": "Pêches"
-      },
-      "keywords": {
-        "en": "Fisheries policy Fishing equipment Hunting and sport fishing Maritime Canada",
-        "fr": "Canada maritime Chasse et pêche de loisir Équipement de pêche Politique sur les pêches"
-      },
-      "status": {
-        "en": "Open for signature until December 22, 2026, at 3:01 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 22 décembre 2026 à 15 h 01 (HAE)"
-      },
-      "sponsor": "Jessica Fancy",
-      "signatures": 12,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7802",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7802"
-      }
-    },
-    {
       "code": "e-7759",
       "topic": {
         "en": "Business and trade",
@@ -417,7 +417,7 @@
         "fr": "Ouverte pour signature jusqu'au 23 octobre 2026 à 14 h 56 (HAE)"
       },
       "sponsor": "Todd Doherty",
-      "signatures": 8,
+      "signatures": 11,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7759",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7759"
