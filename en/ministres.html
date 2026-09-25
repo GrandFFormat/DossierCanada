@@ -544,15 +544,19 @@ try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStor
      compteur du bloc, pour qu'on relie les deux d'un coup d'œil. */
   .step-chip.lob-chip b{background:var(--cyan); color:var(--on-candy); padding:0 4px; margin-left:5px; font-weight:700;}
   .step-chip.lob-chip.active b{background:var(--paper); color:var(--ink);}
-  .ab-omni{flex:none; font-family:'IBM Plex Mono',monospace; font-size:10.5px; font-weight:700; color:var(--on-candy); background:var(--lime); border:1px solid var(--ink); padding:2px 6px; cursor:pointer; text-transform:uppercase; letter-spacing:0.02em; line-height:normal;}
-  .ab-omni:hover{ background:var(--strong); color:var(--yellow); }
+  /* Omnibus, présenté comme sur DossierOntario : pastille pleine et sombre sur la
+     rangée, avis à filet latéral, et une tête par partie (leur « annexe »). */
+  .ab-omni{flex:none; font-family:'IBM Plex Mono',monospace; font-size:10.5px; font-weight:700; color:var(--on-strong); background:var(--strong); border:1px solid var(--ink); padding:2px 6px; cursor:pointer; text-transform:uppercase; letter-spacing:0.04em; line-height:normal;}
+  .ab-omni:hover{ background:var(--yellow); color:var(--on-candy); }
   .step-chip.om-chip b{background:var(--lime); color:var(--on-candy); padding:0 4px; margin-left:5px; font-weight:700;}
   .step-chip.om-chip.active b{background:var(--paper); color:var(--ink);}
   /* Avis omnibus sur la fiche ouverte : un projet qui touche plusieurs lois ne se
      lit pas comme un projet ordinaire, et son titre n'en nomme qu'une. */
-  .bill-omni-note{ font-family:'Archivo',system-ui,sans-serif; font-size:13.5px; line-height:1.45; color:var(--on-candy); background:var(--lime); border:3px solid var(--ink); padding:9px 12px; margin:0 0 12px; }
-  /* Titre de partie dans un résumé d'omnibus (« ## Partie 2 — … »). */
-  .bill-sum-part{ font-family:'IBM Plex Mono',monospace; font-size:11.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.03em; color:var(--ink); margin:14px 0 6px; padding-bottom:4px; border-bottom:2px solid var(--ink); }
+  .bill-omni-note{ font-family:'Archivo',system-ui,sans-serif; font-size:14px; line-height:1.5; color:var(--ink); background:var(--paper-2); border-left:5px solid var(--lime); padding:8px 12px; margin:0 0 14px; max-width:62ch; }
+  /* Tête de partie dans un résumé d'omnibus (« ## Partie 2 — Transport… ») : le numéro
+     en pastille, puis le sujet ou la loi touchée, en toutes lettres et en casse normale. */
+  .bill-sum-part{ font-family:'Archivo',system-ui,sans-serif; font-weight:600; font-size:15.5px; line-height:1.35; color:var(--ink); margin:20px 0 6px; max-width:62ch; }
+  .bill-sum-part span{ display:inline-block; font-family:'IBM Plex Mono',monospace; font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; background:var(--strong); color:var(--on-strong); padding:2px 7px; margin-right:7px; vertical-align:2px; }
   .bill-sum-part:first-child{ margin-top:0; }
   .ab-lob{flex:none; font-family:'IBM Plex Mono',monospace; font-size:10.5px; font-weight:700; color:var(--on-candy); background:var(--cyan); border:1px solid var(--ink); padding:1px 5px; cursor:help;}
   .lob{margin:12px 0 0; border:2px solid var(--ink); background:var(--paper-2); padding:9px 11px; cursor:pointer; color:var(--ink);}
@@ -3554,8 +3558,16 @@ function billSummaryHtml(b, isEn){
     const flush = () => { if(bullets.length){ html += '<ul class="bill-sum-list">' + bullets.map(x => `<li>${esc(x)}</li>`).join('') + '</ul>'; bullets = []; } };
     for(const line of lines){
       if(/^[-•]\s+/.test(line)) bullets.push(line.replace(/^[-•]\s+/, ''));
-      // « ## Partie 2 — Douanes » : titre d'une partie d'un projet omnibus.
-      else if(/^##\s+/.test(line)) { flush(); html += `<div class="bill-sum-part">${esc(line.replace(/^##\s+/, ''))}</div>`; }
+      // « ## Partie 2 — Douanes » : tête d'une partie d'un projet omnibus. Le numéro
+      // passe en pastille, le sujet reste en toutes lettres (comme les annexes d'Ontario).
+      else if(/^##\s+/.test(line)) {
+        flush();
+        const t = line.replace(/^##\s+/, '');
+        const m = t.match(/^((?:Partie|Part)\s+[\dIVX]+)\s*[—–-]\s*(.+)$/i);
+        html += m
+          ? `<h5 class="bill-sum-part"><span>${esc(m[1])}</span>${esc(m[2])}</h5>`
+          : `<h5 class="bill-sum-part">${esc(t)}</h5>`;
+      }
       else { flush(); html += `<p>${esc(line)}</p>`; }
     }
     flush();
@@ -4113,7 +4125,7 @@ function apercuBillRow(b, ctx){
   const om = b.omnibus;
   const omniBadge = om ? `<button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="${isEn
     ? `Omnibus bill — ${om.parts} parts${om.divisions ? `, ${om.divisions} divisions` : ''}: it changes several different acts. Click to show only omnibus bills`
-    : `Projet omnibus — ${om.parts} parties${om.divisions ? `, ${om.divisions} sections` : ''} : il modifie plusieurs lois différentes. Cliquer pour ne voir que les omnibus`}">Omnibus · ${om.parts}</button>` : '';
+    : `Projet omnibus — ${om.parts} parties${om.divisions ? `, ${om.divisions} sections` : ''} : il modifie plusieurs lois différentes. Cliquer pour ne voir que les omnibus`}">Omnibus · ${om.parts} ${isEn ? (om.parts > 1 ? 'parts' : 'part') : (om.parts > 1 ? 'parties' : 'partie')}</button>` : '';
   const full = billCard(b, ctx + b.id);
   return `<div class="ab-row" id="${rowId}">
     <div class="ab-head" onclick="toggleApercuBill('${rowId}')">
