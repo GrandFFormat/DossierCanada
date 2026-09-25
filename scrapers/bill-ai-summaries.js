@@ -40,7 +40,7 @@ const MAX_SOURCE_CHARS = 40000; // ~13k tokens : couvre l'immense majorité des 
 const MAX_OMNIBUS_CHARS = 90000;
 // Empreinte de cache des seuls omnibus : la bumper régénère ces résumés-là, sans
 // toucher aux 170 autres (PROMPT_VERSION, lui, régénère tout).
-const OMNIBUS_VERSION = 'omni-v1';
+const OMNIBUS_VERSION = 'omni-v2-lois';
 const REQUEST_DELAY_MS = 400;
 const USER_AGENT = 'DossierCanada/0.1 (veille citoyenne; mart.archambault@gmail.com)';
 
@@ -174,7 +174,8 @@ async function summarize(client, bill, grounding, maxTokens) {
         `⚠️ PROJET OMNIBUS : ce projet touche plusieurs lois différentes, une par PARTIE (${om.parts.length} parties : ${om.parts.join(', ')}${om.divisions.length ? `, dont ${om.divisions.length} sections` : ''}). Le titre n'en nomme qu'une partie.`,
         'FORMAT PARTICULIER, qui REMPLACE la consigne « 6 à 8 puces » :',
         "- D'abord 1 ou 2 puces d'aperçu : ce que le projet fait dans l'ensemble.",
-        `- Ensuite, POUR CHAQUE partie (les ${om.parts.length}, aucune omise, dans l'ordre) : une ligne de titre « ## Partie N — <la loi ou le sujet touché> » (en anglais « ## Part N — … »), puis 1 à 4 puces sous cette ligne.`,
+        `- Ensuite, POUR CHAQUE partie (les ${om.parts.length}, aucune omise, dans l'ordre) : une ligne de titre « ## Partie N — <les lois touchées> » (en anglais « ## Part N — … »), puis 1 à 4 puces sous cette ligne.`,
+        "- Dans la ligne de titre, NOMME LA OU LES LOIS que la partie touche, par leur nom officiel (« Loi sur l'évaluation d'impact », « Loi sur les douanes »). Une ou deux lois : les nommer toutes. Trois ou plus : nommer les deux principales, puis « et autres lois ». Une partie qui crée une loi : « nouvelle Loi sur … ». Aucune loi nommée dans le sommaire : donner le sujet de la partie à la place.",
         '- Une ligne de titre commence par « ## » et ne porte PAS de puce.',
         "- Les sections d'une partie se résument DANS les puces de cette partie ; on ne leur fait pas de titre.",
         `- Le résumé doit donc contenir exactement ${om.parts.length} lignes « ## », une par partie.`,
