@@ -24,6 +24,7 @@ import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import * as cheerio from 'cheerio';
 import Anthropic from '@anthropic-ai/sdk';
+import { detectOmnibus } from './omnibus.js';
 
 const BILLS_PATH = 'data/bills.json';
 const CACHE_PATH = 'data/bill-ai-summaries.json';
@@ -33,6 +34,13 @@ const MODEL = 'claude-opus-5';
 // change le STYLE du prompt sans changer le modèle).
 const PROMPT_VERSION = 'v3-puces7';
 const MAX_SOURCE_CHARS = 40000; // ~13k tokens : couvre l'immense majorité des textes
+// Un omnibus est résumé depuis son SOMMAIRE OFFICIEL entier (il couvre toutes les
+// parties) plutôt que depuis le texte de loi coupé : plafond plus large, jamais atteint
+// en pratique (le plus long sommaire de la session fait ~30 000 caractères).
+const MAX_OMNIBUS_CHARS = 90000;
+// Empreinte de cache des seuls omnibus : la bumper régénère ces résumés-là, sans
+// toucher aux 170 autres (PROMPT_VERSION, lui, régénère tout).
+const OMNIBUS_VERSION = 'omni-v1';
 const REQUEST_DELAY_MS = 400;
 const USER_AGENT = 'DossierCanada/0.1 (veille citoyenne; mart.archambault@gmail.com)';
 
@@ -80,6 +88,14 @@ async function fetchText(url) {
 // Meilleure source d'ancrage disponible : le TEXTE de première lecture (complet),
 // sinon le sommaire officiel déjà présent dans bills.json. Jamais rien d'inventé.
 async function groundingFor(bill) {
+  // OMNIBUS : le sommaire officiel énumère chaque partie ; le texte de loi complet,
+  // lui, dépasse le plafond et se ferait couper — le résumé ne parlerait alors que
+  // des deux premières parties, sans que le lecteur puisse le savoir.
+  const om = detectOmnibus(bill.summary);
+  if (om.isOmnibus) {
+    const both = normalize([(bill.summary || {}).fr, (bill.summary || {}).en].filter(Boolean).join('\n\n'));
+    if (both) return { source: both.slice(0, MAX_OMNIBUS_CHARS), kind: 'summary', omnibus: om };
+  }
   const enHtml = await fetchText(
     `https://www.parl.ca/DocumentViewer/en/${bill.session}/bill/${bill.num}/first-reading`,
   );
@@ -93,8 +109,9 @@ async function groundingFor(bill) {
   return null;
 }
 
-function hashOf(bill, source) {
-  return createHash('sha256').update(`${bill.num}\n${MODEL}\n${PROMPT_VERSION}\n${source}`).digest('hex');
+function hashOf(bill, source, omnibus) {
+  const marque = omnibus && omnibus.isOmnibus ? `\n${OMNIBUS_VERSION}:${omnibus.parts.length}` : '';
+  return createHash('sha256').update(`${bill.num}\n${MODEL}\n${PROMPT_VERSION}${marque}\n${source}`).digest('hex');
 }
 
 const SYSTEM = [
@@ -150,14 +167,27 @@ async function summarize(client, bill, grounding, maxTokens) {
     .filter(Boolean)
     .join('\n');
 
+  const om = grounding.omnibus;
+  const consigne = om
+    ? [
+        '',
+        `⚠️ PROJET OMNIBUS : ce projet touche plusieurs lois différentes, une par PARTIE (${om.parts.length} parties : ${om.parts.join(', ')}${om.divisions.length ? `, dont ${om.divisions.length} sections` : ''}). Le titre n'en nomme qu'une partie.`,
+        'FORMAT PARTICULIER, qui REMPLACE la consigne « 6 à 8 puces » :',
+        "- D'abord 1 ou 2 puces d'aperçu : ce que le projet fait dans l'ensemble.",
+        `- Ensuite, POUR CHAQUE partie (les ${om.parts.length}, aucune omise, dans l'ordre) : une ligne de titre « ## Partie N — <la loi ou le sujet touché> » (en anglais « ## Part N — … »), puis 1 à 4 puces sous cette ligne.`,
+        '- Une ligne de titre commence par « ## » et ne porte PAS de puce.',
+        "- Les sections d'une partie se résument DANS les puces de cette partie ; on ne leur fait pas de titre.",
+        `- Le résumé doit donc contenir exactement ${om.parts.length} lignes « ## », une par partie.`,
+      ].join('\n')
+    : '';
   const res = await client.messages.create({
     model: MODEL,
-    max_tokens: maxTokens || 6000, // marge LARGE : opus-5 pense (adaptatif) ET écrit le JSON sous
+    max_tokens: maxTokens || (om ? 16000 : 6000), // marge LARGE : opus-5 pense (adaptatif) ET écrit le JSON sous
     // le même plafond ; 3000 tronquait parfois le JSON (« réponse non exploitable »).
     thinking: { type: 'adaptive' },
     output_config: { effort: 'medium' },
     system: SYSTEM,
-    messages: [{ role: 'user', content: user }],
+    messages: [{ role: 'user', content: user + consigne }],
   });
   const text = (res.content || [])
     .filter((b) => b.type === 'text')
@@ -201,7 +231,7 @@ async function main() {
         skipped++;
         continue; // ni texte ni sommaire → on ne devine pas
       }
-      const hash = hashOf(bill, grounding.source);
+      const hash = hashOf(bill, grounding.source, grounding.omnibus);
       const cached = cache.summaries[id];
       if (cached && cached.hash === hash && cached.fr && cached.en) {
         reused++;
@@ -211,6 +241,17 @@ async function main() {
       // inattendu) : on réessaie UNE fois avec plus de marge avant de laisser le projet
       // sans résumé en clair — sinon la fiche ne montre que le sommaire officiel brut.
       let out = await summarize(client, bill, grounding);
+      const partsRendues = (s) => (String(s || '').match(/^##\s+/gm) || []).length;
+      if (out && grounding.omnibus) {
+        const attendu = grounding.omnibus.parts.length;
+        if (partsRendues(out.fr) !== attendu || partsRendues(out.en) !== attendu) {
+          console.warn(`  ↻ ${bill.num} : ${partsRendues(out.fr)}/${partsRendues(out.en)} parties rendues sur ${attendu} — deuxième essai`);
+          await sleep(REQUEST_DELAY_MS);
+          const retry = await summarize(client, bill, grounding, 20000);
+          if (retry && partsRendues(retry.fr) === attendu && partsRendues(retry.en) === attendu) out = retry;
+          else if (retry) { out = retry; console.warn(`  ⚠ ${bill.num} : toujours ${partsRendues(retry.fr)}/${attendu} parties — publié tel quel`); }
+        }
+      }
       if (!out) {
         console.warn(`  ↻ ${bill.num} : réponse inexploitable, 2e essai avec plus de marge`);
         await sleep(REQUEST_DELAY_MS);
