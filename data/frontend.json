@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T13:38:19.566Z",
+  "generatedAt": "2026-09-26T13:00:08.141Z",
   "session": "45-1",
   "meta": {
     "counts": {
@@ -8997,8 +8997,8 @@
         "fr": "Mel Arnold"
       },
       "status": {
-        "en": "At consideration in committee in the House of Commons",
-        "fr": "À l'examen en comité à la Chambre des communes"
+        "en": "At report stage in the House of Commons",
+        "fr": "À l'étape du rapport à la Chambre des communes"
       },
       "state": "encours",
       "milestones": [
@@ -9018,8 +9018,8 @@
       "royalAssent": null,
       "reinstated": false,
       "latestActivity": {
-        "en": "At consideration in committee in the House of Commons",
-        "fr": "À l'examen en comité à la Chambre des communes",
+        "en": "At report stage in the House of Commons",
+        "fr": "À l'étape du rapport à la Chambre des communes",
         "date": "2026-02-27"
       },
       "lastActivity": "2026-02-27",
