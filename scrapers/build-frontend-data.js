@@ -16,8 +16,33 @@
 // chaque page HTML. index.html le charge en <script> classique avant son script.
 // Le sitemap, lui, est écrit par scripts/build-section-pages.js (liste des pages).
 
-import { readFileSync, writeFileSync, existsSync, statSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, statSync, mkdirSync, readdirSync, rmSync } from 'node:fs';
 import { detectOmnibus } from './omnibus.js';
+
+// Listes nominatives (qui a voté quoi) : un fichier PAR VOTE, chargé au clic.
+// Recopiées dans site-data.js, elles pesaient 1 Mo téléchargé sur chaque page
+// pour un détail que presque personne n'ouvre. Ne restent partagés que les
+// décomptes par parti / par groupe, eux nécessaires à l'affichage de la carte.
+const BALLOTS_DIR = 'data/votes';
+const ballotFiles = new Set();
+const ballotPrefixes = new Set(); // « c- » (Communes), « s- » (Sénat)
+function writeBallots(key, names) {
+  ballotPrefixes.add(key.slice(0, 2));
+  mkdirSync(BALLOTS_DIR, { recursive: true });
+  const byName = (a, b) => a.n.localeCompare(b.n, 'fr');
+  for (const g of ['yea', 'nay', 'third']) names[g].sort(byName);
+  writeFileSync(`${BALLOTS_DIR}/${key}.json`, JSON.stringify(names), 'utf-8');
+  ballotFiles.add(key + '.json');
+}
+// Un vote retiré de la source ne doit pas laisser son fichier derrière. On ne
+// nettoie que les chambres effectivement régénérées (le Sénat peut manquer).
+function pruneBallots() {
+  if (!existsSync(BALLOTS_DIR)) return 0;
+  let n = 0;
+  for (const f of readdirSync(BALLOTS_DIR))
+    if (ballotPrefixes.has(f.slice(0, 2)) && !ballotFiles.has(f)) { rmSync(`${BALLOTS_DIR}/${f}`); n++; }
+  return n;
+}
 
 const BILLS_PATH = 'data/bills.json';
 const DEPUTES_PATH = 'data/deputes.json';
@@ -274,19 +299,34 @@ function main() {
     votingRecord: d.votingRecord,
   }));
 
-  // Scrutins prêts pour le rendu (résultat, totaux, ballots par PersonId, lien projet).
-  const frontendVotes = resolvedVotes.map((v) => ({
-    number: v.number,
-    date: v.date,
-    description: v.description,
-    result: v.result,
-    passed: v.passed,
-    totals: v.totals,
-    billNumber: v.billNumber,
-    billId: v.billId,
-    url: v.url,
-    ballots: v.ballots,
-  }));
+  // Scrutins prêts pour le rendu (résultat, totaux, décompte par parti, lien projet).
+  // Les noms partent dans data/votes/c-<numéro>.json (chargé au clic).
+  const partyOfPid = new Map(deputesOut.map((d) => [String(d.id), (d.party && d.party.code) || 'IND']));
+  const nameOfPid = new Map(deputesOut.map((d) => [String(d.id), d.name]));
+  const frontendVotes = resolvedVotes.map((v) => {
+    const per = {};
+    const names = { yea: [], nay: [], third: [] };
+    for (const pid in v.ballots) {
+      const raw = v.ballots[pid];
+      const g = raw === 'yea' ? 'yea' : raw === 'nay' ? 'nay' : 'third';
+      const code = partyOfPid.get(pid) || 'IND';
+      (per[code] = per[code] || { yea: 0, nay: 0, third: 0 })[g]++;
+      names[g].push({ n: nameOfPid.get(pid) || '#' + pid, c: code });
+    }
+    writeBallots('c-' + v.number, names);
+    return {
+      number: v.number,
+      date: v.date,
+      description: v.description,
+      result: v.result,
+      passed: v.passed,
+      totals: v.totals,
+      billNumber: v.billNumber,
+      billId: v.billId,
+      url: v.url,
+      per,
+    };
+  });
 
   const stamp = new Date().toISOString();
   let html = readFileSync(HTML_PATH, 'utf-8');
@@ -412,18 +452,32 @@ function main() {
       url: s.url,
       votingRecord: s.votingRecord,
     }));
-    const frontendSenateVotes = resolvedSenateVotes.map((v) => ({
-      id: v.id,
-      date: v.date,
-      title: v.title,
-      billNumber: v.billNumber,
-      billId: v.billId,
-      totals: v.totals,
-      result: v.result,
-      passed: v.passed,
-      url: v.url,
-      ballots: v.ballots.map((b) => ({ slug: b.slug, name: b.name, affiliation: b.affiliation, vote: b.vote })),
-    }));
+    // Comme aux Communes : décompte par groupe ici, noms dans data/votes/s-<id>.json.
+    const groupOfSlug = new Map(senatorsOut.map((s) => [s.slug, s.group && s.group.code]));
+    const nameOfSlug = new Map(senatorsOut.map((s) => [s.slug, s.name]));
+    const frontendSenateVotes = resolvedSenateVotes.map((v) => {
+      const per = {};
+      const names = { yea: [], nay: [], third: [] };
+      for (const b of v.ballots) {
+        const g = b.vote === 'yea' ? 'yea' : b.vote === 'nay' ? 'nay' : 'third';
+        const code = (b.slug && groupOfSlug.get(b.slug)) || b.affiliation || '—';
+        (per[code] = per[code] || { yea: 0, nay: 0, third: 0 })[g]++;
+        names[g].push({ n: (b.slug && nameOfSlug.get(b.slug)) || b.name, c: code });
+      }
+      writeBallots('s-' + v.id, names);
+      return {
+        id: v.id,
+        date: v.date,
+        title: v.title,
+        billNumber: v.billNumber,
+        billId: v.billId,
+        totals: v.totals,
+        result: v.result,
+        passed: v.passed,
+        url: v.url,
+        per,
+      };
+    });
 
     html = injectBlock(html, SEN_START_MARKER, SEN_END_MARKER, 'senators', frontendSenators, stamp);
     html = injectBlock(html, SENVOTES_START_MARKER, SENVOTES_END_MARKER, 'senateVotes', frontendSenateVotes, stamp);
@@ -437,6 +491,7 @@ function main() {
   }
 
   writeFileSync(HTML_PATH, html);
+  const ballotsRemoved = pruneBallots();
 
   // ⚠️ Plus de sitemap ici : ce bloc le réécrivait chaque nuit avec UNE seule
   // URL (apex), effaçant les 12 pages FR/EN. C'est build-section-pages.js qui
@@ -449,6 +504,7 @@ function main() {
   console.log(`  parti du parrain résolu : ${sponsorResolved}/${frontendBills.length} projets`);
   console.log(`  textes des projets : ${Object.keys(billTexts).length} entrées dans ${BILL_TEXTS_PATH} (${(statSync(BILL_TEXTS_PATH).size / 1024).toFixed(0)} Ko, chargé à la demande)`);
   console.log(`  ancien·ne·s député·e·s présent·e·s dans les votes : ${formerVoterIds.size}`);
+  console.log(`  listes nominatives : ${ballotFiles.size} fichiers dans ${BALLOTS_DIR}/ (chargés au clic)${ballotsRemoved ? ` · ${ballotsRemoved} supprimé(s)` : ''}`);
   if (unresolved.length) {
     console.log(`  ⚠ ${unresolved.length} vote(s) avec projet non résolu : ${unresolved.map((v) => `#${v.number}→${v.billNumber}`).join(', ')}`);
   }
