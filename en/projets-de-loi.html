@@ -555,7 +555,12 @@ try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStor
   .bill-omni-note{ font-family:'Archivo',system-ui,sans-serif; font-size:14px; line-height:1.5; color:var(--ink); background:var(--paper-2); border-left:5px solid var(--lime); padding:8px 12px; margin:0 0 14px; max-width:62ch; }
   /* Tête de partie dans un résumé d'omnibus (« ## Partie 2 — Transport… ») : le numéro
      en pastille, puis le sujet ou la loi touchée, en toutes lettres et en casse normale. */
-  .bill-sum-part{ font-family:'Archivo',system-ui,sans-serif; font-weight:600; font-size:15.5px; line-height:1.35; color:var(--ink); margin:20px 0 6px; max-width:62ch; }
+  /* Chaque partie d'un omnibus dans son bloc : un filet à gauche et de l'air autour,
+     pour qu'on voie d'un coup d'œil où finit une loi et où commence la suivante. */
+  .bill-part{ border-left:3px solid var(--ink); padding:0 0 2px 16px; margin:22px 0 0; }
+  .bill-part .bill-sum-list{ margin-bottom:0; }
+  .bill-part .bill-sum-list li:last-child{ margin-bottom:0; }
+  .bill-sum-part{ font-family:'Archivo',system-ui,sans-serif; font-weight:600; font-size:15.5px; line-height:1.35; color:var(--ink); margin:0 0 8px; max-width:62ch; }
   .bill-sum-part span{ display:inline-block; font-family:'IBM Plex Mono',monospace; font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; background:var(--strong); color:var(--on-strong); padding:2px 7px; margin-right:7px; vertical-align:2px; }
   .bill-sum-part:first-child{ margin-top:0; }
   .ab-lob{flex:none; font-family:'IBM Plex Mono',monospace; font-size:10.5px; font-weight:700; color:var(--on-candy); background:var(--cyan); border:1px solid var(--ink); padding:1px 5px; cursor:help;}
@@ -1391,7 +1396,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="status-pill status-encours">In progress</span>
       <span class="ab-caret">▾</span>
     </div>
-    <div class="ab-detail"><div class="bill-sum-slot" data-bill="14223396"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Bundles into one omnibus bill a wide set of changes to major project reviews, supply chains and federal labour law.</li><li>Introduced at first reading in the House of Commons on 21 September 2026 by the Minister of Transport and Leader of the Government in the House.</li></ul><h5 class="bill-sum-part"><span>Part 1</span>Impact Assessment Act, Canadian Energy Regulator Act and other Acts</h5><ul class="bill-sum-list"><li>Sets a one-year deadline to issue a decision on a designated project once the proponent has filed the required studies, and hands nuclear project assessments to the Canadian Nuclear Safety Commission.</li><li>Lets the Minister of the Environment grant certain federal authorizations at the same time as the decision statement, and coordinates review processes and consultations with Indigenous groups.</li><li>Extends the Building Canada Act to "regions of national interest" that Cabinet may list in a new schedule, and allows conditions on already-granted authorizations to be added, changed or removed.</li><li>Applies the same one-year decision deadline to pipelines, designated power lines and offshore renewable energy projects, and amends the navigable waters, environmental protection, species at risk and fisheries laws, including habitat credits usable by third parties.</li></ul><h5 class="bill-sum-part"><span>Part 2</span>Canada Transportation Act, Canada Marine Act and other Acts, plus the new Enabling Digital Trade Act</h5><ul class="bill-sum-list"><li>Creates a transportation project office and a National Trade Corridors Council to track goods movement and analyze disruptions in designated trade corridors.</li><li>Sets up, for four years, a zone in Manitoba, Saskatchewan and Alberta where rail interswitching is priced by the Canadian Transportation Agency, and lowers the notification threshold for deals involving transportation businesses located in a port.</li><li>Gives the Minister of Transport new powers over security clearances, appointment of certain port authority directors, termination of a St. Lawrence Seaway agreement, and orders to counter certain threats.</li><li>Allows foreign ships to operate without a licence during a declared emergency, repeals the Shipping Conferences Exemption Act, 1987, and recognizes electronic trade documents as equivalent to paper.</li></ul><h5 class="bill-sum-part"><span>Part 3</span>Canada Labour Code and Wage Earner Protection Program Act</h5><ul class="bill-sum-list"><li>Adds new timelines and requirements for collective bargaining and for reaching a first collective agreement, and transfers certain rights when one contractor replaces another.</li><li>Lets the Canada Industrial Relations Board certify a union for existing bargaining units on the application of two or more employers, and lets the Minister of Labour appoint a special mediator.</li><li>Allows the Head of Compliance and Enforcement to order payment of money still owed under a settlement with an employee.</li><li>Sets aside the federal paid medical leave rules where a collective agreement provides at least equally favourable rights, and clarifies Wage Earner Protection Program decisions.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="14223396"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Bundles into one omnibus bill a wide set of changes to major project reviews, supply chains and federal labour law.</li><li>Introduced at first reading in the House of Commons on 21 September 2026 by the Minister of Transport and Leader of the Government in the House.</li></ul><section class="bill-part"><h5 class="bill-sum-part"><span>Part 1</span>Impact Assessment Act, Canadian Energy Regulator Act and other Acts</h5><ul class="bill-sum-list"><li>Sets a one-year deadline to issue a decision on a designated project once the proponent has filed the required studies, and hands nuclear project assessments to the Canadian Nuclear Safety Commission.</li><li>Lets the Minister of the Environment grant certain federal authorizations at the same time as the decision statement, and coordinates review processes and consultations with Indigenous groups.</li><li>Extends the Building Canada Act to "regions of national interest" that Cabinet may list in a new schedule, and allows conditions on already-granted authorizations to be added, changed or removed.</li><li>Applies the same one-year decision deadline to pipelines, designated power lines and offshore renewable energy projects, and amends the navigable waters, environmental protection, species at risk and fisheries laws, including habitat credits usable by third parties.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Part 2</span>Canada Transportation Act, Canada Marine Act and other Acts, plus the new Enabling Digital Trade Act</h5><ul class="bill-sum-list"><li>Creates a transportation project office and a National Trade Corridors Council to track goods movement and analyze disruptions in designated trade corridors.</li><li>Sets up, for four years, a zone in Manitoba, Saskatchewan and Alberta where rail interswitching is priced by the Canadian Transportation Agency, and lowers the notification threshold for deals involving transportation businesses located in a port.</li><li>Gives the Minister of Transport new powers over security clearances, appointment of certain port authority directors, termination of a St. Lawrence Seaway agreement, and orders to counter certain threats.</li><li>Allows foreign ships to operate without a licence during a declared emergency, repeals the Shipping Conferences Exemption Act, 1987, and recognizes electronic trade documents as equivalent to paper.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Part 3</span>Canada Labour Code and Wage Earner Protection Program Act</h5><ul class="bill-sum-list"><li>Adds new timelines and requirements for collective bargaining and for reaching a first collective agreement, and transfers certain rights when one contractor replaces another.</li><li>Lets the Canada Industrial Relations Board certify a union for existing bargaining units on the application of two or more employers, and lets the Minister of Labour appoint a special mediator.</li><li>Allows the Head of Compliance and Enforcement to order payment of money still owed under a settlement with an employee.</li><li>Sets aside the federal paid medical leave rules where a collective agreement provides at least equally favourable rights, and clarifies Wage Earner Protection Program decisions.</li></ul></section><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
   </div><div class="ab-row" id="abrow-pr-13548201">
     <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13548201')">
       <span class="ab-num">S-227</span>
@@ -3585,23 +3590,27 @@ function billSummaryHtml(b, isEn){
   // (bien plus lisible qu'un pavé) ; les autres lignes restent des paragraphes.
   const toBulleted = txt => {
     const lines = txt.split(/\n+/).map(l => l.trim()).filter(Boolean);
-    let html = '', bullets = [];
+    let html = '', bullets = [], dansPartie = false;
     const flush = () => { if(bullets.length){ html += '<ul class="bill-sum-list">' + bullets.map(x => `<li>${esc(x)}</li>`).join('') + '</ul>'; bullets = []; } };
+    // Un projet omnibus se lit partie par partie : chaque partie forme son propre bloc,
+    // détaché du précédent, plutôt qu'une longue coulée de puces où l'œil se perd.
+    const fermerPartie = () => { flush(); if(dansPartie){ html += '</section>'; dansPartie = false; } };
     for(const line of lines){
       if(/^[-•]\s+/.test(line)) bullets.push(line.replace(/^[-•]\s+/, ''));
-      // « ## Partie 2 — Douanes » : tête d'une partie d'un projet omnibus. Le numéro
-      // passe en pastille, le sujet reste en toutes lettres (comme les annexes d'Ontario).
+      // « ## Partie 2 — Loi sur les douanes » : tête d'une partie. Le numéro passe en
+      // pastille, les lois touchées restent en toutes lettres (comme les annexes d'Ontario).
       else if(/^##\s+/.test(line)) {
-        flush();
+        fermerPartie();
         const t = line.replace(/^##\s+/, '');
         const m = t.match(/^((?:Partie|Part)\s+[\dIVX]+)\s*[—–-]\s*(.+)$/i);
-        html += m
+        html += '<section class="bill-part">' + (m
           ? `<h5 class="bill-sum-part"><span>${esc(m[1])}</span>${esc(m[2])}</h5>`
-          : `<h5 class="bill-sum-part">${esc(t)}</h5>`;
+          : `<h5 class="bill-sum-part">${esc(t)}</h5>`);
+        dansPartie = true;
       }
       else { flush(); html += `<p>${esc(line)}</p>`; }
     }
-    flush();
+    fermerPartie();
     return html;
   };
 
