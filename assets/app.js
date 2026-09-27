@@ -340,6 +340,18 @@ document.getElementById('langToggle').addEventListener('click', (e)=>{
 
 // Couleurs des partis fédéraux (teintes usuelles associées à chaque parti).
 const partyColors = { LPC:'#D71920', CPC:'#1A4782', BQ:'#33B2CC', NDP:'#F58220', GPC:'#3D9B35', IND:'#8a8f99', VAC:'#d4d0c8' };
+
+/* ADRESSES OFFICIELLES — LEGISinfo et la Chambre les forment à partir de
+   l'identifiant et de la session : on les déduit au lieu de recopier 76 Ko de
+   liens dans les données. Le build vérifie la déduction lien par lien et garde
+   l'adresse en donnée dès qu'elle s'en écarte : `url` passée = toujours elle. */
+const urlLang = () => (currentLang === 'en' ? 'en' : 'fr');
+const pickUrl = (o) => (o ? (currentLang === 'en' ? (o.en ?? o.fr) : (o.fr ?? o.en)) : null);
+const memberUrl = (id, url) => pickUrl(url) || `https://www.ourcommons.ca/members/${urlLang()}/${id}`;
+const billUrl = (b) => pickUrl(b.url)
+  || `https://www.parl.ca/legisinfo/${currentLang === 'en' ? 'en/bill' : 'fr/projet-de-loi'}/${SESSION}/${String(b.num).toLowerCase()}`;
+const voteUrl = (v) => pickUrl(v.url)
+  || `https://www.ourcommons.ca/members/${urlLang()}/votes/${String(SESSION).replace('-', '/')}/${v.number}`;
 // Texte lisible sur une bulle colorée : noir si le fond est clair, blanc s'il est foncé.
 // Couleur de texte lisible sur un fond donné (couleurs de parti, de groupe…).
 // ⚠️ Renvoyait var(--ink) pour les fonds clairs. Ça marchait tant que --ink était
@@ -1570,7 +1582,7 @@ function deputeCardFed(d, isEn, L){
     : "Part des votes nominaux auxquels ce·tte député·e a pris part (Pour/Contre/pairé) depuis son entrée en fonction — un indicateur de présence, la Chambre ne publiant pas l'assiduité directement.";
   const followKey = 'mp-' + d.id;
   const isFollowed = !!followedDeputes[followKey];
-  const url = L(d.url);
+  const url = memberUrl(d.id, d.url);
   const ini = d.name.split(/\s+/).map(w => w[0] || '').slice(0,2).join('').toUpperCase();
   const profileTitle = isEn ? 'Official profile on ourcommons.ca' : 'Fiche officielle sur ourcommons.ca';
   // Avatar = icône courriel cliquable (adresse parlementaire officielle, lue sur la
@@ -1737,7 +1749,7 @@ function sortByAttendance(list, dir){
 function ministerCardFed(m, isEn, L, idx){
   const color = partyColors[m.party] || '#8a8f99';
   const role = L(m.role);
-  const url = m.url ? L(m.url) : null;
+  const url = m.personId ? memberUrl(m.personId, m.url) : (m.url ? L(m.url) : null);
   const ini = m.name.split(/\s+/).map(w => w[0] || '').slice(0,2).join('').toUpperCase();
   const followKey = m.personId ? 'mp-' + m.personId : null;
   const isFollowed = followKey ? !!followedDeputes[followKey] : false;
@@ -1893,7 +1905,7 @@ function renderComparateurTable(){
     return `${list.length} — ${nums}${list.length > 4 ? '…' : ''}`;
   };
   const sinceCell = (d) => d.memberSince || (isEn ? 'Not available' : 'Non disponible');
-  const profileCell = (d) => `<a href="${L(d.url)}" target="_blank" rel="noopener">ourcommons.ca</a>`;
+  const profileCell = (d) => `<a href="${memberUrl(d.id, d.url)}" target="_blank" rel="noopener">ourcommons.ca</a>`;
   const emailCell = (d) => d.email ? `<a href="mailto:${d.email}">${d.email}</a>` : (isEn ? 'Not available' : 'Non disponible');
 
   const rows = [
@@ -2171,7 +2183,7 @@ function billCard(b, ctx){
   const domId = 'bill-details-' + ctx + '-' + b.id;
 
   const title = L(b.title);
-  const url = L(b.url);
+  const url = billUrl(b);
   const typeTxt = L(b.type);
   const sponsor = L(b.sponsor);
   const billLabel = isEn ? 'BILL' : 'PROJET DE LOI';
@@ -3353,7 +3365,7 @@ function commonsVotePanel(list, isEn, L){
           <span class="vote-row-line"><span class="vote-row-date">${v.date}</span> · <b style="color:${v.passed?'var(--green)':'var(--red)'}">${L(v.result)}</b> · <b style="color:var(--green)">${v.totals.yea}</b> ${yeaL} / <b style="color:var(--red)">${v.totals.nay}</b> ${nayL}${v.totals.paired?` · <b style="color:var(--slate)">${v.totals.paired}</b> ${pairL}`:''}</span>
           <span class="vote-row-toggle"><span class="tally-plus" id="plus-vrow-${v.number}" onclick="toggleVoteDetail('vrow-${v.number}')">+</span> <span class="vote-row-who">${whoLabel}</span></span>
         </div>
-        <div class="vote-row-sub">${L(v.description)} · <a href="${L(v.url)}" target="_blank" rel="noopener">${srcNote}</a></div>
+        <div class="vote-row-sub">${L(v.description)} · <a href="${voteUrl(v)}" target="_blank" rel="noopener">${srcNote}</a></div>
         <div id="vrow-${v.number}-detail" style="display:none">
           <div class="tally-row"><span class="tally-plus" onclick="toggleNominalGroup('${domId}',${v.number},'yea')" id="plus-${domId}-yea">+</span><span class="tally-label" style="color:var(--green)"><b>${v.totals.yea}</b> ${yeaL}</span><span class="tally-breakdown">${partyBreakdownHtml(v.per,'yea')}</span></div>
           <div class="tally-row"><span class="tally-plus" onclick="toggleNominalGroup('${domId}',${v.number},'nay')" id="plus-${domId}-nay">+</span><span class="tally-label" style="color:var(--red)"><b>${v.totals.nay}</b> ${nayL}</span><span class="tally-breakdown">${partyBreakdownHtml(v.per,'nay')}</span></div>
@@ -3429,7 +3441,7 @@ function voteCardHtml(v, senate){
   const p = n => (n / sum * 100).toFixed(2) + '%';
   const adopted = !!v.passed;
   const title = senate ? L(v.title) : L(v.description);
-  const url = v.url ? (typeof v.url === 'object' ? L(v.url) : v.url) : null;
+  const url = senate ? (v.url ? L(v.url) : null) : voteUrl(v);
   const colorOf = code => (senate ? (groupColors[code] || '#8a8f99') : (partyColors[code] || '#8a8f99'));
 
   // Comptes par parti (ou par groupe) : calculés au build, donc disponibles tout

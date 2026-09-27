@@ -34,6 +34,34 @@ function writeBallots(key, names) {
   writeFileSync(`${BALLOTS_DIR}/${key}.json`, JSON.stringify(names), 'utf-8');
   ballotFiles.add(key + '.json');
 }
+/* Adresses officielles : celles de LEGISinfo et de la Chambre se déduisent de
+   l'identifiant et de la session. Les recopier coûtait 76 Ko sur chaque page.
+   On ne les retire QUE si la déduction redonne EXACTEMENT l'adresse publiée ;
+   sinon l'adresse reste dans la donnée et c'est elle qui sert. */
+const sameUrl = (u, d) => u && d && u.fr === d.fr && u.en === d.en;
+const derivedBillUrl = (num, session) => ({
+  en: `https://www.parl.ca/legisinfo/en/bill/${session}/${String(num).toLowerCase()}`,
+  fr: `https://www.parl.ca/legisinfo/fr/projet-de-loi/${session}/${String(num).toLowerCase()}`,
+});
+const derivedMemberUrl = (id) => ({
+  en: `https://www.ourcommons.ca/members/en/${id}`,
+  fr: `https://www.ourcommons.ca/members/fr/${id}`,
+});
+const derivedVoteUrl = (number, session) => {
+  const [parl, sess] = String(session || '').split('-');
+  return {
+    en: `https://www.ourcommons.ca/members/en/votes/${parl}/${sess}/${number}`,
+    fr: `https://www.ourcommons.ca/members/fr/votes/${parl}/${sess}/${number}`,
+  };
+};
+let urlsKept = 0;
+// Renvoie l'adresse à garder en donnée : rien si elle se déduit, sinon l'adresse.
+function keepUrl(url, derived) {
+  if (sameUrl(url, derived)) return undefined;
+  urlsKept++;
+  return url;
+}
+
 // Un vote retiré de la source ne doit pas laisser son fichier derrière. On ne
 // nettoie que les chambres effectivement régénérées (le Sénat peut manquer).
 function pruneBallots() {
@@ -55,6 +83,8 @@ const DEP_START_MARKER = '/* DEPUTES_DATA_START';
 const DEP_END_MARKER = '/* DEPUTES_DATA_END */';
 const VOTES_START_MARKER = '/* VOTES_DATA_START';
 const VOTES_END_MARKER = '/* VOTES_DATA_END */';
+const SESSION_START_MARKER = '/* SESSION_DATA_START';
+const SESSION_END_MARKER = '/* SESSION_DATA_END */';
 const MIN_START_MARKER = '/* MINISTERS_DATA_START';
 const MIN_END_MARKER = '/* MINISTERS_DATA_END */';
 const MINISTERS_PATH = 'data/ministers.json';
@@ -88,6 +118,14 @@ function read(path) {
 
 // Remplace le contenu entre deux marqueurs par `const <varName> = <data>;`.
 // Cible : data/site-data.js (script classique partagé, pas de fetch à la volée).
+// La session (« 45-1 ») est une seule chaîne : bloc court, sans en-tête généré.
+function injectSession(html, session) {
+  const s = html.indexOf(SESSION_START_MARKER), e = html.indexOf(SESSION_END_MARKER);
+  if (s === -1 || e === -1) throw new Error('Marqueurs SESSION_DATA introuvables');
+  const nl = html.includes('\r\n') ? '\r\n' : '\n';
+  return html.slice(0, s) + `/* SESSION_DATA_START */${nl}const SESSION = ${JSON.stringify(session)};${nl}` + html.slice(e);
+}
+
 function injectBlock(html, startMarker, endMarker, varName, data, stamp) {
   const startIdx = html.indexOf(startMarker);
   const endIdx = html.indexOf(endMarker);
@@ -178,9 +216,12 @@ function main() {
   const formerVoterIds = new Set();
   for (const v of resolvedVotes) for (const pid in v.ballots) if (!currentIds.has(pid)) formerVoterIds.add(pid);
 
+  // Session en cours (« 45-1 ») : sert aussi à déduire les adresses officielles.
+  const session = billsData.session ?? votesData.session ?? null;
+
   const out = {
     generatedAt: new Date().toISOString(),
-    session: billsData.session ?? votesData.session ?? null,
+    session,
     meta: {
       counts: { bills: billsOut.length, deputes: deputesOut.length, votes: resolvedVotes.length },
       votesLinkedToBill: resolvedVotes.filter((v) => v.billId != null).length,
@@ -258,11 +299,13 @@ function main() {
     // chargé à la demande — voir billTexts plus bas. Ils pesaient 1 035 Ko sur les
     // 3 Mo de la page alors qu'un visiteur en lit un ou deux.
     fullSummaryAvailable: b.fullSummaryAvailable ?? false,
-    milestones: b.milestones,
+    // Étape + date : la chambre et le numéro de lecture se lisent dans `stage`,
+    // les recopier coûtait 25 Ko. Le détail complet reste dans data/frontend.json.
+    milestones: b.milestones.map((m) => ({ stage: m.stage, date: m.date })),
     lastActivity: b.lastActivity,
     latestActivity: { fr: b.latestActivity.fr, en: b.latestActivity.en },
-    url: b.url,
-    divisions: b.divisions,
+    url: keepUrl(b.url, derivedBillUrl(b.num, session)),
+    // `divisions` (44 Ko) n'était lu par aucune page : il reste dans data/frontend.json.
   }));
   const sponsorResolved = frontendBills.filter((b) => b.sponsorParty).length;
 
@@ -295,7 +338,7 @@ function main() {
     constituency: d.constituency,
     province: d.province,
     memberSince: d.memberSince,
-    url: d.url,
+    url: keepUrl(d.url, derivedMemberUrl(d.id)),
     votingRecord: d.votingRecord,
   }));
 
@@ -323,13 +366,14 @@ function main() {
       totals: v.totals,
       billNumber: v.billNumber,
       billId: v.billId,
-      url: v.url,
+      url: keepUrl(v.url, derivedVoteUrl(v.number, session)),
       per,
     };
   });
 
   const stamp = new Date().toISOString();
   let html = readFileSync(HTML_PATH, 'utf-8');
+  html = injectSession(html, session);
   html = injectBlock(html, START_MARKER, END_MARKER, 'bills', frontendBills, stamp);
   html = injectBlock(html, DEP_START_MARKER, DEP_END_MARKER, 'deputes', frontendDeputes, stamp);
   html = injectBlock(html, VOTES_START_MARKER, VOTES_END_MARKER, 'votes', frontendVotes, stamp);
@@ -504,6 +548,7 @@ function main() {
   console.log(`  parti du parrain résolu : ${sponsorResolved}/${frontendBills.length} projets`);
   console.log(`  textes des projets : ${Object.keys(billTexts).length} entrées dans ${BILL_TEXTS_PATH} (${(statSync(BILL_TEXTS_PATH).size / 1024).toFixed(0)} Ko, chargé à la demande)`);
   console.log(`  ancien·ne·s député·e·s présent·e·s dans les votes : ${formerVoterIds.size}`);
+  console.log(`  adresses officielles déduites de l'identifiant${urlsKept ? ` · ${urlsKept} gardée(s) en donnée (déduction ≠ source)` : ' (toutes)'}`);
   console.log(`  listes nominatives : ${ballotFiles.size} fichiers dans ${BALLOTS_DIR}/ (chargés au clic)${ballotsRemoved ? ` · ${ballotsRemoved} supprimé(s)` : ''}`);
   if (unresolved.length) {
     console.log(`  ⚠ ${unresolved.length} vote(s) avec projet non résolu : ${unresolved.map((v) => `#${v.number}→${v.billNumber}`).join(', ')}`);
