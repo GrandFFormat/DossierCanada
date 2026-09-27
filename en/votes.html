@@ -523,7 +523,7 @@ try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStor
   .bill-summary.open{display:block;}
   .bill-summary p{font-family:'Archivo',system-ui,sans-serif; font-size:15.5px; line-height:1.65; color:var(--ink); margin:0 0 12px; max-width:59ch;}
   .bill-sum-head{font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.04em; color:var(--gold); margin:0 0 9px;}
-  .bill-sum-list{margin:0 0 12px; padding-left:21px;}
+  .bill-sum-list{margin:0 0 12px; padding-left:22px;}
   /* TEXTE DE LECTURE EN ARCHIVO, PAS EN CHASSE FIXE.
      Le mono fait l'identité du site — étiquettes, pastilles, ticker, métadonnées —
      mais il est conçu pour aligner du code, pas pour lire de la prose : toutes les
@@ -555,12 +555,13 @@ try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStor
   .bill-omni-note{ font-family:'Archivo',system-ui,sans-serif; font-size:14px; line-height:1.5; color:var(--ink); background:var(--paper-2); border-left:5px solid var(--lime); padding:8px 12px; margin:0 0 14px; max-width:62ch; }
   /* Tête de partie dans un résumé d'omnibus (« ## Partie 2 — Transport… ») : le numéro
      en pastille, puis le sujet ou la loi touchée, en toutes lettres et en casse normale. */
-  /* Chaque partie d'un omnibus dans son bloc : un filet à gauche et de l'air autour,
-     pour qu'on voie d'un coup d'œil où finit une loi et où commence la suivante. */
-  .bill-part{ border-left:3px solid var(--ink); padding:0 0 2px 16px; margin:22px 0 0; }
+  /* Découpage d'un omnibus, aux mesures de DossierOntario (relevées sur son site) :
+     titre d'annexe en Archivo 15 px gras, marge de 16 px au-dessus, pas d'encadré —
+     c'est l'espace et la pastille du numéro qui séparent, pas un filet. */
+  .bill-part{ margin:16px 0 0; }
   .bill-part .bill-sum-list{ margin-bottom:0; }
   .bill-part .bill-sum-list li:last-child{ margin-bottom:0; }
-  .bill-sum-part{ font-family:'Archivo',system-ui,sans-serif; font-weight:600; font-size:15.5px; line-height:1.35; color:var(--ink); margin:0 0 8px; max-width:62ch; }
+  .bill-sum-part{ font-family:'Archivo',system-ui,sans-serif; font-weight:700; font-size:15px; line-height:1.35; color:var(--ink); margin:0 0 4px; max-width:62ch; }
   .bill-sum-part span{ display:inline-block; font-family:'IBM Plex Mono',monospace; font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; background:var(--strong); color:var(--on-strong); padding:2px 7px; margin-right:7px; vertical-align:2px; }
   .bill-sum-part:first-child{ margin-top:0; }
   .ab-lob{flex:none; font-family:'IBM Plex Mono',monospace; font-size:10.5px; font-weight:700; color:var(--on-candy); background:var(--cyan); border:1px solid var(--ink); padding:1px 5px; cursor:help;}
