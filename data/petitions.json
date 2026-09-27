@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-09-26T13:00:01.975Z",
+  "scrapedAt": "2026-09-27T13:54:18.973Z",
   "count": 20,
   "petitions": [
     {
@@ -18,7 +18,7 @@
         "fr": "Ouverte pour signature jusqu'au 19 janvier 2027 à 15 h 06 (HAE)"
       },
       "sponsor": "Julie Dzerowicz",
-      "signatures": 2119,
+      "signatures": 2198,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7774",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7774"
@@ -39,7 +39,7 @@
         "fr": "Ouverte pour signature jusqu'au 8 janvier 2027 à 13 h 58 (HAE)"
       },
       "sponsor": "Jenny Kwan",
-      "signatures": 852,
+      "signatures": 868,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7709",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7709"
@@ -60,7 +60,7 @@
         "fr": "Ouverte pour signature jusqu'au 8 janvier 2027 à 16 h 00 (HAE)"
       },
       "sponsor": "Arielle Kayabaga",
-      "signatures": 627,
+      "signatures": 634,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7621",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7621"
@@ -81,7 +81,7 @@
         "fr": "Ouverte pour signature jusqu'au 14 octobre 2026 à 9 h 39 (HAE)"
       },
       "sponsor": "Rhonda Kirkland",
-      "signatures": 500,
+      "signatures": 515,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7612",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7612"
@@ -102,31 +102,10 @@
         "fr": "Ouverte pour signature jusqu'au 9 novembre 2026 à 13 h 59 (HAE)"
       },
       "sponsor": "Karina Gould",
-      "signatures": 469,
+      "signatures": 472,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7738",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7738"
-      }
-    },
-    {
-      "code": "e-7766",
-      "topic": {
-        "en": "Social affairs and equality",
-        "fr": "Affaires sociales et égalité"
-      },
-      "keywords": {
-        "en": "Hate crimes Hate propaganda South Asian Canadians",
-        "fr": "Canadiens sud-asiatiques Crimes haineux Propagande haineuse"
-      },
-      "status": {
-        "en": "Open for signature until October 16, 2026, at 4:48 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 16 octobre 2026 à 16 h 48 (HAE)"
-      },
-      "sponsor": "Shelby Kramp-Neuman",
-      "signatures": 299,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7766",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7766"
       }
     },
     {
@@ -144,10 +123,31 @@
         "fr": "Ouverte pour signature jusqu'au 24 décembre 2026 à 15 h 24 (HAE)"
       },
       "sponsor": "David McKenzie",
-      "signatures": 237,
+      "signatures": 461,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7810",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7810"
+      }
+    },
+    {
+      "code": "e-7766",
+      "topic": {
+        "en": "Social affairs and equality",
+        "fr": "Affaires sociales et égalité"
+      },
+      "keywords": {
+        "en": "Hate crimes Hate propaganda South Asian Canadians",
+        "fr": "Canadiens sud-asiatiques Crimes haineux Propagande haineuse"
+      },
+      "status": {
+        "en": "Open for signature until October 16, 2026, at 4:48 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 16 octobre 2026 à 16 h 48 (HAE)"
+      },
+      "sponsor": "Shelby Kramp-Neuman",
+      "signatures": 310,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7766",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7766"
       }
     },
     {
@@ -165,10 +165,31 @@
         "fr": "Ouverte pour signature jusqu'au 21 décembre 2026 à 11 h 27 (HAE)"
       },
       "sponsor": "Claude DeBellefeuille",
-      "signatures": 168,
+      "signatures": 235,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7785",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7785"
+      }
+    },
+    {
+      "code": "e-7739",
+      "topic": {
+        "en": "Public safety",
+        "fr": "Sécurité publique"
+      },
+      "keywords": {
+        "en": "Anti-Semitism Army of the Guardians of the Islamic Rev ... National security Religious buildings Terrorism and terrorists",
+        "fr": "Antisémitisme Établissements religieux Gardiens de la Révolution islamique Sécurité nationale Terrorisme et terroristes"
+      },
+      "status": {
+        "en": "Open for signature until December 20, 2026, at 2:56 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 20 décembre 2026 à 14 h 56 (HAE)"
+      },
+      "sponsor": "Melissa Lantsman",
+      "signatures": 81,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7739",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7739"
       }
     },
     {
@@ -186,7 +207,7 @@
         "fr": "Ouverte pour signature jusqu'au 14 janvier 2027 à 16 h 46 (HAE)"
       },
       "sponsor": "John Barlow",
-      "signatures": 72,
+      "signatures": 80,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7751",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7751"
@@ -207,7 +228,7 @@
         "fr": "Ouverte pour signature jusqu'au 12 janvier 2027 à 9 h 45 (HAE)"
       },
       "sponsor": "Yasir Naqvi",
-      "signatures": 68,
+      "signatures": 69,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7749",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7749"
@@ -228,31 +249,31 @@
         "fr": "Ouverte pour signature jusqu'au 8 janvier 2027 à 14 h 01 (HAE)"
       },
       "sponsor": "Heather McPherson",
-      "signatures": 59,
+      "signatures": 61,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7762",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7762"
       }
     },
     {
-      "code": "e-7739",
+      "code": "e-7802",
       "topic": {
-        "en": "Public safety",
-        "fr": "Sécurité publique"
+        "en": "Fisheries",
+        "fr": "Pêches"
       },
       "keywords": {
-        "en": "Anti-Semitism Army of the Guardians of the Islamic Rev ... National security Religious buildings Terrorism and terrorists",
-        "fr": "Antisémitisme Établissements religieux Gardiens de la Révolution islamique Sécurité nationale Terrorisme et terroristes"
+        "en": "Fisheries policy Fishing equipment Hunting and sport fishing Maritime Canada",
+        "fr": "Canada maritime Chasse et pêche de loisir Équipement de pêche Politique sur les pêches"
       },
       "status": {
-        "en": "Open for signature until December 20, 2026, at 2:56 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 20 décembre 2026 à 14 h 56 (HAE)"
+        "en": "Open for signature until December 22, 2026, at 3:01 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 22 décembre 2026 à 15 h 01 (HAE)"
       },
-      "sponsor": "Melissa Lantsman",
-      "signatures": 49,
+      "sponsor": "Jessica Fancy",
+      "signatures": 55,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7739",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7739"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7802",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7802"
       }
     },
     {
@@ -270,7 +291,7 @@
         "fr": "Ouverte pour signature jusqu'au 14 janvier 2027 à 16 h 47 (HAE)"
       },
       "sponsor": "Jeff Kibble",
-      "signatures": 44,
+      "signatures": 52,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7765",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7765"
@@ -291,7 +312,7 @@
         "fr": "Ouverte pour signature jusqu'au 19 janvier 2027 à 14 h 49 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 40,
+      "signatures": 44,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7723",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7723"
@@ -319,24 +340,45 @@
       }
     },
     {
-      "code": "e-7802",
+      "code": "e-7696",
       "topic": {
-        "en": "Fisheries",
-        "fr": "Pêches"
+        "en": "Environment",
+        "fr": "Environnement"
       },
       "keywords": {
-        "en": "Fisheries policy Fishing equipment Hunting and sport fishing Maritime Canada",
-        "fr": "Canada maritime Chasse et pêche de loisir Équipement de pêche Politique sur les pêches"
+        "en": "Climate and weather Department of the Environment Meteorology Scientific research and scientists",
+        "fr": "Climat et conditions atmosphériques Météorologie Ministère de l'Environnement Recherche scientifique et travailleurs s ..."
       },
       "status": {
-        "en": "Open for signature until December 22, 2026, at 3:01 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 22 décembre 2026 à 15 h 01 (HAE)"
+        "en": "Open for signature until January 23, 2027, at 3:19 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 23 janvier 2027 à 15 h 19 (HAE)"
       },
-      "sponsor": "Jessica Fancy",
-      "signatures": 33,
+      "sponsor": "Warren Steinley",
+      "signatures": 20,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7802",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7802"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7696",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7696"
+      }
+    },
+    {
+      "code": "e-7803",
+      "topic": {
+        "en": "Environment",
+        "fr": "Environnement"
+      },
+      "keywords": {
+        "en": "C-30, An Act to implement certain provis ... Pest Control Products Act Pesticides",
+        "fr": "C-30, Loi portant exécution de certaines ... Loi sur les produits antiparasitaires Pesticides"
+      },
+      "status": {
+        "en": "Open for signature until January 23, 2027, at 2:28 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 23 janvier 2027 à 14 h 28 (HAE)"
+      },
+      "sponsor": "Gord Johns",
+      "signatures": 17,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7803",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7803"
       }
     },
     {
@@ -361,48 +403,6 @@
       }
     },
     {
-      "code": "e-7803",
-      "topic": {
-        "en": "Environment",
-        "fr": "Environnement"
-      },
-      "keywords": {
-        "en": "C-30, An Act to implement certain provis ... Pest Control Products Act Pesticides",
-        "fr": "C-30, Loi portant exécution de certaines ... Loi sur les produits antiparasitaires Pesticides"
-      },
-      "status": {
-        "en": "Open for signature until January 23, 2027, at 2:28 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 23 janvier 2027 à 14 h 28 (HAE)"
-      },
-      "sponsor": "Gord Johns",
-      "signatures": 12,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7803",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7803"
-      }
-    },
-    {
-      "code": "e-7696",
-      "topic": {
-        "en": "Environment",
-        "fr": "Environnement"
-      },
-      "keywords": {
-        "en": "Climate and weather Department of the Environment Meteorology Scientific research and scientists",
-        "fr": "Climat et conditions atmosphériques Météorologie Ministère de l'Environnement Recherche scientifique et travailleurs s ..."
-      },
-      "status": {
-        "en": "Open for signature until January 23, 2027, at 3:19 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 23 janvier 2027 à 15 h 19 (HAE)"
-      },
-      "sponsor": "Warren Steinley",
-      "signatures": 9,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7696",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7696"
-      }
-    },
-    {
       "code": "e-7746",
       "topic": {
         "en": "Taxation",
@@ -417,7 +417,7 @@
         "fr": "Ouverte pour signature jusqu'au 23 janvier 2027 à 14 h 54 (HAE)"
       },
       "sponsor": "Gabriel Hardy",
-      "signatures": 8,
+      "signatures": 9,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7746",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7746"
