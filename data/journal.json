@@ -3,6 +3,19 @@
     "date": "2026-09-27",
     "volet": "site",
     "fr": {
+      "titre": "Les listes de noms arrivent au clic",
+      "texte": "Qui a voté quoi sur chacun des 210 votes représentait 1 Mo téléchargé sur chaque page, même sur le lexique. Ces listes sont maintenant dans un fichier par vote, chargé au moment où on déplie la carte. Les décomptes par parti, eux, s’affichent toujours immédiatement."
+    },
+    "en": {
+      "titre": "Name lists now load on click",
+      "texte": "Who voted what on each of the 210 votes meant 1 MB downloaded on every page, even the glossary. Those lists now live in one file per vote, fetched when you open the card. The per-party counts still appear right away."
+    },
+    "commits": []
+  },
+  {
+    "date": "2026-09-27",
+    "volet": "site",
+    "fr": {
       "titre": "Des pages dix fois plus légères",
       "texte": "Le style et le code du site étaient recopiés dans chacune des quatorze pages : 370 Ko à télécharger à chaque visite. Ils sont maintenant dans deux fichiers partagés, gardés en mémoire par le navigateur. Une page pèse 30 à 55 Ko, et les données ne retardent plus l’affichage."
     },

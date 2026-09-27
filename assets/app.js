@@ -3202,10 +3202,52 @@ function setVoteChamber(c){
   renderPageBandCounts(); // le titre suit la chambre (Communes / Sénat)
 }
 
-// Décompte compact par groupe pour une catégorie de bulletins du Sénat.
-function senateGroupBreakdown(ballots){
+/* Listes nominatives (qui a voté quoi) : un fichier par vote, chargé au clic.
+   Recopiées dans site-data.js, elles ajoutaient 1 Mo à CHAQUE page pour un
+   détail qui ne s'ouvre qu'à la demande. Restent partagés les décomptes par
+   parti (v.per), eux nécessaires dès l'affichage de la carte. */
+const ballotCache = new Map();
+function loadBallots(key){
+  if(ballotCache.has(key)) return Promise.resolve(ballotCache.get(key));
+  return fetch('/data/votes/' + key + '.json')
+    .then(r => { if(!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    .then(j => { ballotCache.set(key, j); return j; });
+}
+function ballotsError(){
+  return `<p style="font-size:12px; color:var(--slate); margin:8px 0 0;">${currentLang === 'en'
+    ? 'The list of names could not be loaded. Try again.'
+    : 'La liste des noms n’a pas pu être chargée. Réessayez.'}</p>`;
+}
+// Noms d'une catégorie, groupés par parti ou par groupe parlementaire.
+function nominalGroupsHtml(rows, colors){
   const by = {};
-  for(const b of ballots){ const s = b.slug ? senatorBySlug.get(b.slug) : null; const g = (s ? s.group.code : b.affiliation) || '—'; by[g] = (by[g] || 0) + 1; }
+  for(const r of rows) (by[r.c] = by[r.c] || []).push(r.n);
+  const order = Object.keys(colors);
+  const keys = Object.keys(by).sort((a, z) => (order.indexOf(a) + 99) - (order.indexOf(z) + 99));
+  return keys.map(g => `
+        <div class="nominal-party-group">
+          <div class="nominal-party-header" style="color:${colors[g] || 'var(--slate)'}">${g} (${by[g].length})</div>
+          <div class="nominal-grid">${by[g].map(n => `<div class="nominal-row"><span>${n}</span></div>`).join('')}</div>
+        </div>`).join('');
+}
+// Remplit une zone nominale au premier dépliage : charge, puis dessine.
+function fillNominal(el, key, group, colors){
+  if(el.dataset.built) return;
+  el.dataset.built = '1';
+  el.innerHTML = `<p style="font-size:12px; color:var(--slate); margin:8px 0 0;">${currentLang === 'en' ? 'Loading names…' : 'Chargement des noms…'}</p>`;
+  loadBallots(key)
+    .then(names => {
+      const rows = names[group] || [];
+      el.innerHTML = rows.length ? nominalGroupsHtml(rows, colors)
+        : `<p style="font-size:12px; color:var(--slate); margin:8px 0 0;">${currentLang === 'en' ? 'No one in this category.' : 'Personne dans cette catégorie.'}</p>`;
+    })
+    .catch(() => { el.innerHTML = ballotsError(); delete el.dataset.built; });
+}
+
+// Décompte compact par groupe, à partir des totaux par groupe du vote (v.per).
+function senateGroupBreakdown(per, group){
+  const by = {};
+  for(const g in per) if(per[g][group]) by[g] = per[g][group];
   const order = Object.keys(groupColors);
   return Object.keys(by)
     .sort((a, z) => (order.indexOf(a) + 99) - (order.indexOf(z) + 99))
@@ -3228,9 +3270,9 @@ function senateVotePanel(list, isEn, L){
         </div>
         <div class="vote-row-sub">${L(v.title)} · <a href="${L(v.url)}" target="_blank" rel="noopener">${srcNote}</a></div>
         <div id="svrow-${v.id}-detail" style="display:none">
-          <div class="tally-row"><span class="tally-plus" onclick="toggleSenateNominal('${domId}',${v.id},'yea')" id="plus-${domId}-yea">+</span><span class="tally-label" style="color:var(--green)"><b>${v.totals.yea}</b> ${yeaL}</span><span class="tally-breakdown">${senateGroupBreakdown(v.ballots.filter(b => b.vote === 'yea'))}</span></div>
-          <div class="tally-row"><span class="tally-plus" onclick="toggleSenateNominal('${domId}',${v.id},'nay')" id="plus-${domId}-nay">+</span><span class="tally-label" style="color:var(--red)"><b>${v.totals.nay}</b> ${nayL}</span><span class="tally-breakdown">${senateGroupBreakdown(v.ballots.filter(b => b.vote === 'nay'))}</span></div>
-          <div class="tally-row"><span class="tally-plus" onclick="toggleSenateNominal('${domId}',${v.id},'abstention')" id="plus-${domId}-abstention">+</span><span class="tally-label" style="color:var(--slate)"><b>${v.totals.abstention}</b> ${absL}</span><span class="tally-breakdown">${senateGroupBreakdown(v.ballots.filter(b => b.vote === 'abstention'))}</span></div>
+          <div class="tally-row"><span class="tally-plus" onclick="toggleSenateNominal('${domId}',${v.id},'yea')" id="plus-${domId}-yea">+</span><span class="tally-label" style="color:var(--green)"><b>${v.totals.yea}</b> ${yeaL}</span><span class="tally-breakdown">${senateGroupBreakdown(v.per, 'yea')}</span></div>
+          <div class="tally-row"><span class="tally-plus" onclick="toggleSenateNominal('${domId}',${v.id},'nay')" id="plus-${domId}-nay">+</span><span class="tally-label" style="color:var(--red)"><b>${v.totals.nay}</b> ${nayL}</span><span class="tally-breakdown">${senateGroupBreakdown(v.per, 'nay')}</span></div>
+          <div class="tally-row"><span class="tally-plus" onclick="toggleSenateNominal('${domId}',${v.id},'abstention')" id="plus-${domId}-abstention">+</span><span class="tally-label" style="color:var(--slate)"><b>${v.totals.abstention}</b> ${absL}</span><span class="tally-breakdown">${senateGroupBreakdown(v.per, 'third')}</span></div>
           <div class="nominal-detail" id="${domId}-yea"></div>
           <div class="nominal-detail" id="${domId}-nay"></div>
           <div class="nominal-detail" id="${domId}-abstention"></div>
@@ -3246,22 +3288,7 @@ function toggleSenateNominal(domId, voteId, group){
   const el = document.getElementById(domId + '-' + group);
   const plus = document.getElementById('plus-' + domId + '-' + group);
   const isOpen = el.classList.toggle('open');
-  if(isOpen && !el.dataset.built){
-    const v = senateVoteById.get(Number(voteId));
-    const isEn = currentLang === 'en';
-    const ballots = v ? v.ballots.filter(b => b.vote === group) : [];
-    const byGroup = {};
-    for(const b of ballots){ const s = b.slug ? senatorBySlug.get(b.slug) : null; const g = (s ? s.group.code : b.affiliation) || '—'; (byGroup[g] = byGroup[g] || []).push(s ? s.name : b.name); }
-    const order = Object.keys(groupColors);
-    const keys = Object.keys(byGroup).sort((a, z) => (order.indexOf(a) + 99) - (order.indexOf(z) + 99));
-    const html = keys.map(g => `
-        <div class="nominal-party-group">
-          <div class="nominal-party-header" style="color:${groupColors[g] || '#8a8f99'}">${g} (${byGroup[g].length})</div>
-          <div class="nominal-grid">${byGroup[g].sort((a, b) => a.localeCompare(b, 'fr')).map(n => `<div class="nominal-row"><span>${n}</span></div>`).join('')}</div>
-        </div>`).join('');
-    el.innerHTML = ballots.length ? html : `<p style="font-size:12px; color:var(--slate); margin:8px 0 0;">${isEn ? 'No one in this category.' : 'Personne dans cette catégorie.'}</p>`;
-    el.dataset.built = '1';
-  }
+  if(isOpen) fillNominal(el, 's-' + voteId, group === 'abstention' ? 'third' : group, groupColors);
   plus.textContent = isOpen ? '−' : '+';
 }
 
@@ -3305,16 +3332,10 @@ function computeAttendance(name){
   return attendanceFromRecord(resolveDepute(name));
 }
 
-// Parti d'un·e votant·e à partir de son PersonId (via deputeById, clé PersonId).
-// Renvoie null pour un·e ancien·ne député·e absent·e du roster courant.
-function partyOfPerson(pid){
-  const d = deputeById.get(Number(pid));
-  return d && d.party ? d.party.code : null;
-}
-function partyBreakdownHtml(pids){
-  if(!pids.length) return '';
+// Décompte par parti d'une catégorie, à partir des totaux du vote (v.per).
+function partyBreakdownHtml(per, group){
   const counts = {};
-  for(const pid of pids){ const p = partyOfPerson(pid); if(p) counts[p] = (counts[p]||0)+1; }
+  for(const p in per) if(per[p][group]) counts[p] = per[p][group];
   return Object.keys(partyColors).filter(p => counts[p]).map(p => `<span style="color:${partyColors[p]}">${counts[p]} ${p}</span>`).join('');
 }
 
@@ -3326,9 +3347,6 @@ function commonsVotePanel(list, isEn, L){
   const whoLabel = isEn ? 'who voted what' : 'qui a voté quoi';
   const rows = list.map(v=>{
     const domId = 'nominal-' + v.number;
-    const yeaPids = Object.keys(v.ballots).filter(p=>v.ballots[p]==='yea');
-    const nayPids = Object.keys(v.ballots).filter(p=>v.ballots[p]==='nay');
-    const pairPids = Object.keys(v.ballots).filter(p=>v.ballots[p]==='paired');
     return `
       <div class="vote-row">
         <div class="vote-row-head">
@@ -3337,9 +3355,9 @@ function commonsVotePanel(list, isEn, L){
         </div>
         <div class="vote-row-sub">${L(v.description)} · <a href="${L(v.url)}" target="_blank" rel="noopener">${srcNote}</a></div>
         <div id="vrow-${v.number}-detail" style="display:none">
-          <div class="tally-row"><span class="tally-plus" onclick="toggleNominalGroup('${domId}',${v.number},'yea')" id="plus-${domId}-yea">+</span><span class="tally-label" style="color:var(--green)"><b>${v.totals.yea}</b> ${yeaL}</span><span class="tally-breakdown">${partyBreakdownHtml(yeaPids)}</span></div>
-          <div class="tally-row"><span class="tally-plus" onclick="toggleNominalGroup('${domId}',${v.number},'nay')" id="plus-${domId}-nay">+</span><span class="tally-label" style="color:var(--red)"><b>${v.totals.nay}</b> ${nayL}</span><span class="tally-breakdown">${partyBreakdownHtml(nayPids)}</span></div>
-          <div class="tally-row"><span class="tally-plus" onclick="toggleNominalGroup('${domId}',${v.number},'paired')" id="plus-${domId}-paired">+</span><span class="tally-label" style="color:var(--slate)"><b>${v.totals.paired}</b> ${pairL}</span><span class="tally-breakdown">${partyBreakdownHtml(pairPids)}</span></div>
+          <div class="tally-row"><span class="tally-plus" onclick="toggleNominalGroup('${domId}',${v.number},'yea')" id="plus-${domId}-yea">+</span><span class="tally-label" style="color:var(--green)"><b>${v.totals.yea}</b> ${yeaL}</span><span class="tally-breakdown">${partyBreakdownHtml(v.per,'yea')}</span></div>
+          <div class="tally-row"><span class="tally-plus" onclick="toggleNominalGroup('${domId}',${v.number},'nay')" id="plus-${domId}-nay">+</span><span class="tally-label" style="color:var(--red)"><b>${v.totals.nay}</b> ${nayL}</span><span class="tally-breakdown">${partyBreakdownHtml(v.per,'nay')}</span></div>
+          <div class="tally-row"><span class="tally-plus" onclick="toggleNominalGroup('${domId}',${v.number},'paired')" id="plus-${domId}-paired">+</span><span class="tally-label" style="color:var(--slate)"><b>${v.totals.paired}</b> ${pairL}</span><span class="tally-breakdown">${partyBreakdownHtml(v.per,'third')}</span></div>
           <div class="nominal-detail" id="${domId}-yea"></div>
           <div class="nominal-detail" id="${domId}-nay"></div>
           <div class="nominal-detail" id="${domId}-paired"></div>
@@ -3372,8 +3390,31 @@ function toggleVoteCard(id, evt){
     if(t) t.textContent = '+';
   });
   el.classList.toggle('open', willOpen);
+  if(willOpen) fillVoteNames(el);
   const tog = document.getElementById('vctog-' + id);
   if(tog) tog.textContent = willOpen ? '−' : '+';
+}
+
+// Trois colonnes de noms d'une carte de vote, au premier dépliage.
+function fillVoteNames(detail){
+  const wrap = detail.querySelector('.vc-ncols');
+  if(!wrap || wrap.dataset.built) return;
+  const key = wrap.dataset.ballots;
+  if(!key) return;
+  wrap.dataset.built = '1';
+  const senate = key[0] === 's';
+  const colorOf = code => (senate ? (groupColors[code] || '#8a8f99') : (partyColors[code] || '#8a8f99'));
+  const bodies = [...wrap.querySelectorAll('.vc-nbody')];
+  const vide = currentLang === 'en' ? 'Nobody' : 'Personne';
+  bodies.forEach(b => { b.innerHTML = `<div class="vc-empty">${currentLang === 'en' ? 'Loading…' : 'Chargement…'}</div>`; });
+  loadBallots(key)
+    .then(names => bodies.forEach(b => {
+      const rows = names[b.dataset.group] || [];
+      b.innerHTML = rows.length
+        ? rows.map(r => `<div class="vc-nrow"><span class="vc-chip" style="background:${colorOf(r.c)}"></span>${r.n}</div>`).join('')
+        : `<div class="vc-empty">${vide}</div>`;
+    }))
+    .catch(() => { bodies.forEach(b => { b.innerHTML = `<div class="vc-empty">${currentLang === 'en' ? 'Names unavailable' : 'Noms indisponibles'}</div>`; }); delete wrap.dataset.built; });
 }
 
 function voteCardHtml(v, senate){
@@ -3391,26 +3432,9 @@ function voteCardHtml(v, senate){
   const url = v.url ? (typeof v.url === 'object' ? L(v.url) : v.url) : null;
   const colorOf = code => (senate ? (groupColors[code] || '#8a8f99') : (partyColors[code] || '#8a8f99'));
 
-  // Détail nominatif -> comptes par parti + listes de noms
-  const per = {};
-  const names = { yea: [], nay: [], third: [] };
-  if(senate){
-    (v.ballots || []).forEach(b => {
-      const g = b.vote === 'yea' ? 'yea' : (b.vote === 'nay' ? 'nay' : 'third');
-      const code = b.affiliation || 'Non-affiliated';
-      (per[code] = per[code] || { yea:0, nay:0, third:0 })[g]++;
-      names[g].push({ name: b.name, code });
-    });
-  } else {
-    Object.keys(v.ballots || {}).forEach(pid => {
-      const raw = v.ballots[pid];
-      const g = raw === 'yea' ? 'yea' : (raw === 'nay' ? 'nay' : 'third');
-      const d = (typeof deputeById !== 'undefined') ? deputeById.get(Number(pid)) : null;
-      const code = (d && d.party && d.party.code) || 'IND';
-      (per[code] = per[code] || { yea:0, nay:0, third:0 })[g]++;
-      names[g].push({ name: d ? d.name : '#' + pid, code });
-    });
-  }
+  // Comptes par parti (ou par groupe) : calculés au build, donc disponibles tout
+  // de suite. Les NOMS, eux, arrivent au dépliage de la carte (fillVoteNames).
+  const per = v.per || {};
   const ref = senate ? groupColors : partyColors;
   const parties = Object.keys(ref).filter(c => per[c]).concat(Object.keys(per).filter(c => !(c in ref)));
   const pourL = isEn ? 'Yea' : 'Pour', contreL = isEn ? 'Nay' : 'Contre';
@@ -3428,14 +3452,11 @@ function voteCardHtml(v, senate){
       </div>`;
   }).join('');
 
-  const col = (g, label, cls) => {
-    const rows = names[g].slice().sort((a,b) => a.name.localeCompare(b.name, 'fr'))
-      .map(n => `<div class="vc-nrow"><span class="vc-chip" style="background:${colorOf(n.code)}"></span>${n.name}</div>`).join('');
-    return `<div class="vc-ncol">
-        <div class="vc-nhead ${cls}">${label} — ${names[g].length}</div>
-        <div class="vc-nbody">${rows || '<div class="vc-empty">' + (isEn ? 'Nobody' : 'Personne') + '</div>'}</div>
+  const total = g => Object.values(per).reduce((n, o) => n + (o[g] || 0), 0);
+  const col = (g, label, cls) => `<div class="vc-ncol">
+        <div class="vc-nhead ${cls}">${label} — ${total(g)}</div>
+        <div class="vc-nbody" data-group="${g}"></div>
       </div>`;
-  };
 
   const srcName = senate ? 'sencanada.ca' : 'ourcommons.ca';
   const foot = `<div class="vc-foot">
@@ -3466,7 +3487,7 @@ function voteCardHtml(v, senate){
     </div>
     <div class="vc-detail" id="${vid}">
       <div class="vc-pgrid">${pgrid}</div>
-      <div class="vc-ncols">${col('yea', pourL, 'pour')}${col('nay', contreL, 'contre')}${col('third', thirdFull, 'abst')}</div>
+      <div class="vc-ncols" data-ballots="${senate ? 's-' + v.id : 'c-' + v.number}">${col('yea', pourL, 'pour')}${col('nay', contreL, 'contre')}${col('third', thirdFull, 'abst')}</div>
       ${foot}
     </div>
   </div>`;
@@ -3505,31 +3526,7 @@ function toggleNominalGroup(domId, voteNum, group){
   const el = document.getElementById(domId + '-' + group);
   const plus = document.getElementById('plus-' + domId + '-' + group);
   const isOpen = el.classList.toggle('open');
-  if(isOpen && !el.dataset.built){
-    const v = voteById.get(Number(voteNum));
-    const isEn = currentLang === 'en';
-    const pids = v ? Object.keys(v.ballots).filter(p=>v.ballots[p]===group) : [];
-    const byParty = {};
-    const others = [];
-    for(const pid of pids){
-      const d = deputeById.get(Number(pid));
-      if(d && d.party) (byParty[d.party.code] = byParty[d.party.code] || []).push(d.name);
-      else others.push('#'+pid);
-    }
-    let html = Object.keys(partyColors).filter(p => byParty[p]).map(p => `
-        <div class="nominal-party-group">
-          <div class="nominal-party-header" style="color:${partyColors[p]}">${p} (${byParty[p].length})</div>
-          <div class="nominal-grid">${byParty[p].sort((a,b)=>a.localeCompare(b,'fr')).map(n=>`<div class="nominal-row"><span>${n}</span></div>`).join('')}</div>
-        </div>
-      `).join('');
-    if(others.length) html += `
-        <div class="nominal-party-group">
-          <div class="nominal-party-header" style="color:var(--slate)">${isEn?'Former members':'Ancien·ne·s député·e·s'} (${others.length})</div>
-          <div class="nominal-grid">${others.map(n=>`<div class="nominal-row"><span>${n}</span></div>`).join('')}</div>
-        </div>`;
-    el.innerHTML = pids.length ? html : `<p style="font-size:12px; color:var(--slate); margin:8px 0 0;">${isEn ? 'No one in this category.' : 'Personne dans cette catégorie.'}</p>`;
-    el.dataset.built = '1';
-  }
+  if(isOpen) fillNominal(el, 'c-' + voteNum, group === 'paired' ? 'third' : group, partyColors);
   plus.textContent = isOpen ? '−' : '+';
 }
 
