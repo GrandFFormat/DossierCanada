@@ -75,24 +75,47 @@ const VIEW_DATA_FILES = {
   votes: 'data/d-votes.js',
 };
 const viewData = { bills: {}, people: {}, votes: {} };
+// Ce que chaque fichier doit contenir. Si une source a échoué cette nuit, son jeu
+// n'est pas dans viewData : on le REPREND tel quel dans le fichier existant, sinon
+// une panne du Sénat effacerait les sénateur·rice·s du site.
+const VIEW_DATA_VARS = { bills: ['bills', 'lobbying'], people: ['deputes', 'senators'], votes: ['votes', 'senateVotes'] };
+function previousSets(path) {
+  if (!existsSync(path)) return {};
+  const out = {};
+  for (const line of readFileSync(path, 'utf-8').split('\n')) {
+    const push = /^(\w+)\.push\(\.\.\.(\[[\s\S]*\])\);$/.exec(line.trim());
+    const assign = /^Object\.assign\((\w+), (\{[\s\S]*\})\);$/.exec(line.trim());
+    const m = push || assign;
+    if (m) { try { out[m[1]] = JSON.parse(m[2]); } catch { /* ligne illisible : on ne la reprend pas */ } }
+  }
+  return out;
+}
 function writeViewData(stamp) {
   const out = [];
   for (const [name, path] of Object.entries(VIEW_DATA_FILES)) {
     const sets = viewData[name];
-    // Une chambre non régénérée ne doit pas effacer ce que le fichier contient :
-    // on ne réécrit le fichier que si on a bien de quoi le remplir.
     if (!Object.keys(sets).length) continue;
+    const kept = previousSets(path);
+    for (const varName of VIEW_DATA_VARS[name]) {
+      if (sets[varName] === undefined && kept[varName] !== undefined) {
+        sets[varName] = kept[varName];
+        console.log(`  ⚠ ${varName} repris du fichier précédent (source non régénérée)`);
+      }
+    }
     const body = Object.entries(sets).map(([varName, data]) => (Array.isArray(data)
       ? `${varName}.push(...${JSON.stringify(data)});`
       : `Object.assign(${varName}, ${JSON.stringify(data)});`)).join('\n');
-    writeFileSync(path, [
+    const entete = [
       `// DossierCanada — données de l'onglet « ${name} ». Fichier GÉNÉRÉ par`,
       '// scrapers/build-frontend-data.js ; ne pas éditer à la main.',
       '// Chargé par le site quand on ouvre l\'onglet, PAS sur les autres pages.',
-      `// Généré le ${stamp}`,
-      body,
-      '',
-    ].join('\n'), 'utf-8');
+    ];
+    // Rien de neuf ? On ne réécrit pas la date : sinon chaque nuit committerait
+    // 200 Ko pour une ligne d'en-tête, sans qu'une donnée ait bougé.
+    // (fins de ligne normalisées : le dépôt est en CRLF sur Windows, on écrit en LF)
+    const sansEntete = (t) => t.replace(/\r\n/g, '\n').split('\n').slice(4).join('\n');
+    const inchange = existsSync(path) && sansEntete(readFileSync(path, 'utf-8')) === body + '\n';
+    if (!inchange) writeFileSync(path, [...entete, `// Généré le ${stamp}`, body, ''].join('\n'), 'utf-8');
     out.push(`${path} ${(statSync(path).size / 1024).toFixed(0)} Ko`);
   }
   return out;
