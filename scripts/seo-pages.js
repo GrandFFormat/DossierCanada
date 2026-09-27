@@ -8,6 +8,10 @@ import { readFileSync } from 'node:fs';
 import vm from 'node:vm';
 
 export const SRC = 'index.html';
+// Feuille de style et script du site : des fichiers à part, partagés et mis en cache
+// par les 14 pages. PAGE_META, translations et SITE_ORIGIN vivent dans APP_JS.
+export const APP_CSS = 'assets/app.css';
+export const APP_JS = 'assets/app.js';
 
 // view = id de la section (#view-…) et data-view du menu ; slug = URL (cleanUrls).
 // ⚠️ data-view "ministres" = onglet DÉPUTÉS (/deputes) ; "cabinet" = MINISTRES (/ministres).
@@ -58,14 +62,14 @@ export const PAGES = LANGS.flatMap((lang) => VIEWS.map(({ view }) => ({ view, la
 // données pures : chaînes et objets, aucune référence au reste du script).
 function extractConst(src, name, endToken) {
   const start = src.indexOf('const ' + name + ' = ');
-  if (start < 0) throw new Error(`const ${name} introuvable dans ${SRC}`);
+  if (start < 0) throw new Error(`const ${name} introuvable dans ${APP_JS}`);
   const end = src.indexOf(endToken, start);
   if (end < 0) throw new Error(`fin de ${name} introuvable dans ${SRC}`);
   const code = src.slice(start, end + endToken.length).replace('const ' + name + ' =', name + ' =');
   return vm.runInNewContext(code + '\n;' + name, {});
 }
 
-export function readSiteConfig(src = readFileSync(SRC, 'utf8')) {
+export function readSiteConfig(src = readFileSync(APP_JS, 'utf8')) {
   const PAGE_META = extractConst(src, 'PAGE_META', '\n};');
   const translations = extractConst(src, 'translations', '\n};');
   const SITE_ORIGIN = extractConst(src, 'SITE_ORIGIN', ';');

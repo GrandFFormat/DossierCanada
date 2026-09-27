@@ -98,8 +98,10 @@ npm run build:prerender    # Chromium sans tête : contenu visible sans JS dans 
 Chaque scraper tape **une** source et n'invente rien. `build:frontend` résout les jointures,
 calcule les agrégats (bilan de votes des député·e·s, divisions par projet) et injecte les
 données dans `data/site-data.js`, un script partagé (mis en cache) que toutes les pages chargent avant
-le script de `index.html`. `build:pages` génère ensuite les 14 pages indexables depuis `index.html`
-(titres et descriptions : `PAGE_META` dans `index.html`, source unique), et `build:prerender`
+le script du site. Ce script (`assets/app.js`) et la feuille de style (`assets/app.css`) sont eux
+aussi des fichiers partagés et mis en cache : le HTML d'une page ne pèse plus que 30 à 55 Ko.
+`build:pages` génère ensuite les 14 pages indexables depuis `index.html`
+(titres et descriptions : `PAGE_META` dans `assets/app.js`, source unique), et `build:prerender`
 y recopie le haut de chaque page tel que le site le dessine, pour les robots sans JavaScript.
 
 ## Rafraîchissement automatique
@@ -122,7 +124,9 @@ node scripts/static-server.js   # http://localhost:8080
 ## Structure du dépôt
 
 ```
-index.html                     Application (i18n FR/EN + JS) ET page d'accueil FR ; gabarit des 13 autres pages
+index.html                     Balisage du site ET page d'accueil FR ; gabarit des 13 autres pages
+assets/app.css                 Feuille de style du site (partagée, mise en cache un an)
+assets/app.js                  Script du site : i18n FR/EN, rendu, PAGE_META (partagé, mis en cache)
 *.html, en.html, en/*.html     Pages générées (build:pages + build:prerender) — ne pas éditer à la main
 404.html                       Page introuvable (statique, noindex)
 data/site-data.js              Données du site (GÉNÉRÉ par build-frontend-data.js)
