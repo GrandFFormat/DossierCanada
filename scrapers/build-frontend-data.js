@@ -54,7 +54,28 @@ const derivedVoteUrl = (number, session) => {
     fr: `https://www.ourcommons.ca/members/fr/votes/${parl}/${sess}/${number}`,
   };
 };
+const derivedSenatorUrl = (slug) => ({
+  en: `https://sencanada.ca/en/senators/${slug}/`,
+  fr: `https://sencanada.ca/fr/senateurs/${slug}/`,
+});
 let urlsKept = 0;
+
+/* ÉTIQUETTES RÉPÉTÉES — « Projet de loi émanant d'un député », les partis, les
+   provinces : les mêmes objets bilingues recopiés 187 ou 337 fois. On les sort
+   dans un dictionnaire et la donnée ne garde qu'un rang. Le site les remet en
+   place au chargement (voir « rehydrate » dans assets/app.js), donc AUCUN code
+   d'affichage ne change : la différence n'existe que sur le fil. */
+const DICTS = {};
+function dictify(rows, field, name) {
+  const values = (DICTS[name] = DICTS[name] || []);
+  const index = new Map(values.map((v, i) => [JSON.stringify(v), i]));
+  for (const r of rows) {
+    if (r[field] == null) { r[field] = null; continue; }
+    const k = JSON.stringify(r[field]);
+    if (!index.has(k)) { index.set(k, values.length); values.push(r[field]); }
+    r[field] = index.get(k);
+  }
+}
 // Renvoie l'adresse à garder en donnée : rien si elle se déduit, sinon l'adresse.
 function keepUrl(url, derived) {
   if (sameUrl(url, derived)) return undefined;
@@ -83,6 +104,8 @@ const DEP_START_MARKER = '/* DEPUTES_DATA_START';
 const DEP_END_MARKER = '/* DEPUTES_DATA_END */';
 const VOTES_START_MARKER = '/* VOTES_DATA_START';
 const VOTES_END_MARKER = '/* VOTES_DATA_END */';
+const DICT_START_MARKER = '/* DICTS_DATA_START';
+const DICT_END_MARKER = '/* DICTS_DATA_END */';
 const SESSION_START_MARKER = '/* SESSION_DATA_START';
 const SESSION_END_MARKER = '/* SESSION_DATA_END */';
 const MIN_START_MARKER = '/* MINISTERS_DATA_START';
@@ -374,6 +397,12 @@ function main() {
   const stamp = new Date().toISOString();
   let html = readFileSync(HTML_PATH, 'utf-8');
   html = injectSession(html, session);
+  // Étiquettes répétées -> dictionnaire (voir dictify). À faire AVANT l'injection.
+  dictify(frontendBills, 'type', 'types');
+  dictify(frontendBills, 'latestActivity', 'activities');
+  dictify(frontendBills, 'sponsorParty', 'parties');
+  dictify(frontendDeputes, 'party', 'parties');
+  dictify(frontendDeputes, 'province', 'provinces');
   html = injectBlock(html, START_MARKER, END_MARKER, 'bills', frontendBills, stamp);
   html = injectBlock(html, DEP_START_MARKER, DEP_END_MARKER, 'deputes', frontendDeputes, stamp);
   html = injectBlock(html, VOTES_START_MARKER, VOTES_END_MARKER, 'votes', frontendVotes, stamp);
@@ -493,7 +522,7 @@ function main() {
       appointedOn: s.appointedOn,
       retirementOn: s.retirementOn,
       appointedBy: s.appointedBy,
-      url: s.url,
+      url: keepUrl(s.url, derivedSenatorUrl(s.slug)),
       votingRecord: s.votingRecord,
     }));
     // Comme aux Communes : décompte par groupe ici, noms dans data/votes/s-<id>.json.
@@ -523,6 +552,9 @@ function main() {
       };
     });
 
+    dictify(frontendSenators, 'group', 'groups');
+    dictify(frontendSenators, 'province', 'senateProvinces');
+    dictify(frontendSenators, 'appointedBy', 'appointers');
     html = injectBlock(html, SEN_START_MARKER, SEN_END_MARKER, 'senators', frontendSenators, stamp);
     html = injectBlock(html, SENVOTES_START_MARKER, SENVOTES_END_MARKER, 'senateVotes', frontendSenateVotes, stamp);
 
@@ -534,6 +566,17 @@ function main() {
     };
   }
 
+  // Le dictionnaire s'écrit en dernier : il s'est rempli au fil des blocs. Si une
+  // chambre n'a pas été régénérée (source en panne), ses données restent celles du
+  // tour précédent : on garde donc les entrées de dictionnaire qu'elles utilisent.
+  const previous = /const DICTS = (\{[\s\S]*?\});\r?\n\/\* DICTS_DATA_END/.exec(html);
+  if (previous) {
+    try {
+      const old = JSON.parse(previous[1]);
+      for (const k in old) if (!DICTS[k]) DICTS[k] = old[k];
+    } catch { /* premier passage : bloc vide */ }
+  }
+  html = injectBlock(html, DICT_START_MARKER, DICT_END_MARKER, 'DICTS', DICTS, stamp);
   writeFileSync(HTML_PATH, html);
   const ballotsRemoved = pruneBallots();
 
