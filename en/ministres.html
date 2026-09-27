@@ -368,7 +368,13 @@ try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStor
   /* ---------- MISES À JOUR DU SITE (/mises-a-jour) ----------
      La case du créateur reprend celle de l'ancienne bande dessinée (photo ronde, bulle,
      trait sous le nom), refaite en HTML et au style du site (traits noirs, ombres franches). */
-  .createur{ display:flex; align-items:center; gap:24px; max-width:680px; background:var(--card); border:3px solid var(--ink); box-shadow:var(--shadow); padding:22px 26px; margin:0 0 36px; }
+  .createur{ max-width:760px; background:var(--card); border:3px solid var(--ink); box-shadow:var(--shadow); padding:22px 26px; margin:0 0 36px; }
+  .createur-tete{ display:flex; align-items:center; gap:24px; }
+  /* Le mot du créateur : pourquoi le site existe. Texte de lecture, 62 caractères par ligne. */
+  .createur-mot{ margin:20px 0 0; }
+  .createur-mot p{ font-family:'Archivo',system-ui,sans-serif; font-size:15.5px; line-height:1.65; color:var(--ink); margin:0 0 11px; max-width:62ch; }
+  .createur-mot p:last-child{ margin-bottom:0; }
+  .createur-lead{ font-weight:700; border-left:5px solid var(--yellow); padding-left:12px; }
   /* Seule exception au « tout est carré » : la photo reste ronde, comme dans la case d'origine. */
   .createur-photo{ flex:none; width:120px; height:120px; border-radius:50% !important; object-fit:cover; border:3px solid var(--ink); background:var(--paper-2); }
   .createur-bulle{ position:relative; display:flex; flex-direction:column; gap:3px; min-width:0; background:var(--paper-2); border:3px solid var(--ink); padding:14px 20px 15px; font-family:'Archivo',sans-serif; font-size:15px; line-height:1.45; color:var(--ink); }
@@ -379,8 +385,10 @@ try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStor
   .createur-nom{ font-family:'Archivo Black',sans-serif; font-weight:400; font-size:21px; line-height:1.2; margin-top:2px; }
   .createur-nom::after{ content:''; display:block; width:120px; max-width:100%; height:4px; margin:7px 0 4px; background:var(--yellow); }
   @media (max-width:560px){
-    .createur{ gap:18px; padding:16px; }
+    .createur{ padding:16px; }
+    .createur-tete{ gap:18px; }
     .createur-photo{ width:84px; height:84px; }
+    .createur-mot p{ font-size:15px; }
     .createur-bulle{ padding:11px 14px 12px; font-size:14px; }
     .createur-nom{ font-size:18px; }
   }
@@ -1498,11 +1506,19 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <a class="bd-back" data-view="apercu" href="/en" data-i18n="bd.back">← Back to overview</a>
     </div>
     <div class="createur">
-      <img class="createur-photo" src="/martin.jpg" width="120" height="120" alt="Martin Archambault" loading="lazy" decoding="async">
-      <div class="createur-bulle">
-        <span data-i18n="bd.intro1">Hi! My name is</span>
-        <strong class="createur-nom">Martin Archambault</strong>
-        <span data-i18n="bd.intro3">I'm 45, and I'm the idea behind this site.</span>
+      <div class="createur-tete">
+        <img class="createur-photo" src="/martin.jpg" width="120" height="120" alt="Martin Archambault" loading="lazy" decoding="async">
+        <div class="createur-bulle">
+          <span data-i18n="bd.intro1">Hi! My name is</span>
+          <strong class="createur-nom">Martin Archambault</strong>
+          <span data-i18n="bd.intro3">I'm 45, and dossiercanada.ca is your first step into democracy!</span>
+        </div>
+      </div>
+      <div class="createur-mot">
+        <p class="createur-lead" data-i18n="bd.mot1">If we want people to understand politics, it has to be brought down to their level.</p>
+        <p data-i18n="bd.mot2">When I first tried to take an interest in it, on top of not knowing the jargon, bills came as two lines… and fifty PDFs. Most people would simply walk away.</p>
+        <p data-i18n="bd.mot3">So I had an idea: use artificial intelligence first to read through all of it, then to put it in plain words. That's how DossierCanada was born.</p>
+        <p data-i18n="bd.mot4">Alongside the AI recap, I've given people a lexicon that explains the basics of political jargon. Plain-language law exists — think of this as its equivalent for politics!</p>
       </div>
     </div>
     <div class="maj" id="journal">
@@ -1635,7 +1651,11 @@ const translations = {
     'votes.info.text':"— pour chaque vote par appel nominal, la Chambre des communes publie le choix de chaque député·e : Pour, Contre ou pairé. Le détail derrière le bouton « + » de chaque vote reprend cette liste officielle (noscommunes.ca) telle quelle, sans estimation. Le parti indiqué est celui de la liste actuelle des député·e·s ; les personnes qui ont quitté la Chambre depuis sont regroupées à part, sous « Ancien·ne·s député·e·s ».",
     'bd.back':"← Retour à l'aperçu",
     'bd.intro1':"Bonjour, moi c'est",
-    'bd.intro3':"j'ai 45 ans et c'est moi l'idée derrière le site.",
+    'bd.intro3':"j'ai 45 ans et dossiercanada.ca, c'est votre premier pas vers la démocratie !",
+    'bd.mot1':"Si on veut que les gens comprennent la politique, il faut la ramener à leur niveau.",
+    'bd.mot2':"Quand j'ai voulu m'y intéresser, en plus de ne pas connaître le jargon, les projets de loi tenaient en deux lignes… et cinquante PDF. Le commun des mortels passait son chemin.",
+    'bd.mot3':"J'ai eu l'idée de me servir de l'intelligence artificielle pour, d'abord, analyser tout ça, et ensuite le vulgariser. C'est comme ça que DossierCanada est né.",
+    'bd.mot4':"En plus du récapitulatif écrit par l'IA, j'ai mis à la disposition des gens un lexique qui explique les fondements du jargon politique. Je suis l'Éducaloi de la politique !",
     'footer.etmoi':"et moi",
   },
   en: {
@@ -1690,7 +1710,11 @@ const translations = {
     'findmp.btn':"Search",
     'bd.back':"← Back to overview",
     'bd.intro1':"Hi! My name is",
-    'bd.intro3':"I'm 45, and I'm the idea behind this site.",
+    'bd.intro3':"I'm 45, and dossiercanada.ca is your first step into democracy!",
+    'bd.mot1':"If we want people to understand politics, it has to be brought down to their level.",
+    'bd.mot2':"When I first tried to take an interest in it, on top of not knowing the jargon, bills came as two lines… and fifty PDFs. Most people would simply walk away.",
+    'bd.mot3':"So I had an idea: use artificial intelligence first to read through all of it, then to put it in plain words. That's how DossierCanada was born.",
+    'bd.mot4':"Alongside the AI recap, I've given people a lexicon that explains the basics of political jargon. Plain-language law exists — think of this as its equivalent for politics!",
     'footer.etmoi':"and me",
     'btn.follow':"+ Follow",'btn.following':"✓ Following",
     'btn.viewSummary':"+ View summary",'btn.hideSummary':"− Hide summary",
