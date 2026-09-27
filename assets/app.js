@@ -346,24 +346,58 @@ const partyColors = { LPC:'#D71920', CPC:'#1A4782', BQ:'#33B2CC', NDP:'#F58220',
    données. Le build ne garde qu'un rang par ligne et met les valeurs dans DICTS
    (scrapers/build-frontend-data.js, `dictify`). On les remet en place ICI, une
    fois, avant tout rendu : le reste du script voit les objets comme avant. */
-(function rehydrate(){
+function rehydrate(name){
   if(typeof DICTS === 'undefined') return;
   const put = (rows, field, table) => {
     if(!rows || !table) return;
     for(const r of rows) if(typeof r[field] === 'number') r[field] = table[r[field]];
   };
-  const b = typeof bills !== 'undefined' ? bills : null;
-  put(b, 'type', DICTS.types);
-  put(b, 'latestActivity', DICTS.activities);
-  put(b, 'sponsorParty', DICTS.parties);
-  const d = typeof deputes !== 'undefined' ? deputes : null;
-  put(d, 'party', DICTS.parties);
-  put(d, 'province', DICTS.provinces);
-  const s = typeof senators !== 'undefined' ? senators : null;
-  put(s, 'group', DICTS.groups);
-  put(s, 'province', DICTS.senateProvinces);
-  put(s, 'appointedBy', DICTS.appointers);
-})();
+  if(name === 'bills'){
+    put(bills, 'type', DICTS.types);
+    put(bills, 'latestActivity', DICTS.activities);
+    put(bills, 'sponsorParty', DICTS.parties);
+  }
+  if(name === 'people'){
+    put(deputes, 'party', DICTS.parties);
+    put(deputes, 'province', DICTS.provinces);
+    put(senators, 'group', DICTS.groups);
+    put(senators, 'province', DICTS.senateProvinces);
+    put(senators, 'appointedBy', DICTS.appointers);
+  }
+}
+
+/* DONNÉES PAR ONGLET — le noyau data/site-data.js (34 Ko) est chargé par toutes
+   les pages ; les jeux lourds attendent l'onglet qui les affiche. Un visiteur du
+   lexique ne télécharge plus les 187 projets ni les 174 votes.
+   Les fichiers REMPLISSENT les tableaux déclarés vides par le noyau : `bills`,
+   `deputes`… gardent leur identité, donc rien d'autre dans ce script ne change. */
+const DATA_FILES = { bills: '/data/d-bills.js', people: '/data/d-people.js', votes: '/data/d-votes.js' };
+const VIEW_DATA = {
+  apercu: ['bills'], projets: ['bills'], ministres: ['people'],
+  cabinet: ['people', 'bills'], votes: ['votes'], lexique: [], bd: [],
+};
+const dataLoaded = {}, dataLoading = {};
+const hasData = (name) => dataLoaded[name] === true;
+function ensureData(names){
+  return Promise.all((names || []).map(name => {
+    if(dataLoaded[name]) return Promise.resolve();
+    if(!dataLoading[name]) dataLoading[name] = new Promise((resolve, reject) => {
+      const el = document.createElement('script');
+      el.src = DATA_FILES[name];
+      el.onload = () => { dataLoaded[name] = true; rehydrate(name); buildIndexes(); resolve(); };
+      el.onerror = () => { dataLoading[name] = null; reject(new Error('données « ' + name + ' » indisponibles')); };
+      document.head.appendChild(el);
+    });
+    return dataLoading[name];
+  }));
+}
+// Charge ce qu'un onglet affiche, puis redessine. Sans effet s'il est déjà chargé.
+function ensureViewData(view){
+  const needs = VIEW_DATA[view] || [];
+  if(needs.every(hasData)) return Promise.resolve(false);
+  return ensureData(needs).then(() => { renderAll(); return true; })
+    .catch(e => { console.error('[données]', e); return false; });
+}
 
 /* ADRESSES OFFICIELLES — LEGISinfo et la Chambre les forment à partir de
    l'identifiant et de la session : on les déduit au lieu de recopier 76 Ko de
@@ -1913,6 +1947,9 @@ function renderComparateurTable(){
   const dA = deputeById.get(idA);
   const dB = deputeById.get(idB);
   if(!dA || !dB){ container.innerHTML = ''; return; }
+  // Le tableau nomme les projets parrainés : ils ne sont pas chargés sur cette
+  // page tant qu'on ne compare personne. On les demande ici, puis on redessine.
+  if(!hasData('bills')) ensureData(['bills']).then(renderComparateurTable).catch(e => console.error('[données]', e));
 
   const roleOf = (id) => {
     const m = ministers.find(x => x.personId === id);
@@ -1925,6 +1962,7 @@ function renderComparateurTable(){
     return `${Math.round(vr.participationRate*100)} % (${vr.cast}/${vr.eligible})`;
   };
   const billsCell = (id) => {
+    if(!hasData('bills')) return isEn ? 'Loading…' : 'Chargement…';
     const list = billsSponsoredBy(id);
     if(list.length === 0) return isEn ? 'None this session' : 'Aucun cette session';
     const nums = list.slice(0,4).map(b => `<b>${b.num}</b>`).join(', ');
@@ -2573,15 +2611,18 @@ function renderBills(keyword){
 function renderPageBandCounts(){
   const isEn = currentLang === 'en';
   const loc = isEn ? 'en-CA' : 'fr-CA';
-  const n = arr => (typeof arr !== 'undefined' ? arr.length : 0).toLocaleString(loc);
+  // COUNTS (noyau) et non la longueur des tableaux : sur une page dont l'onglet
+  // n'est pas chargé, ceux-ci sont vides et le titre afficherait « 0 ».
+  const n = arr => (typeof arr === 'number' ? arr : (arr ? arr.length : 0)).toLocaleString(loc);
+  const C = typeof COUNTS !== 'undefined' ? COUNTS : {};
   const set = (id, txt) => { const e = document.getElementById(id); if(e) e.textContent = txt; };
   // Titres de bande = le H1 de chaque page : toujours ancrés au fédéral (Communes,
   // Parlement…) pour ne pas se confondre avec DossierQuébec dans les résultats.
-  set('projetsCountTitle', isEn ? n(bills) + ' federal bills' : n(bills) + ' projets de loi fédéraux');
+  set('projetsCountTitle', isEn ? n(C.bills) + ' federal bills' : n(C.bills) + ' projets de loi fédéraux');
   const senate = typeof voteChamber !== 'undefined' && voteChamber === 'senate';
   set('votesCountTitle', senate
-    ? (isEn ? n(typeof senateVotes!=='undefined'?senateVotes:[]) + ' votes in the Senate' : n(typeof senateVotes!=='undefined'?senateVotes:[]) + ' votes au Sénat')
-    : (isEn ? n(votes) + ' votes in the Commons' : n(votes) + ' votes aux Communes'));
+    ? (isEn ? n(C.senateVotes) + ' votes in the Senate' : n(C.senateVotes) + ' votes au Sénat')
+    : (isEn ? n(C.votes) + ' votes in the Commons' : n(C.votes) + ' votes aux Communes'));
   set('lexiqueCountTitle', isEn ? 'Parliament glossary — ' + n(typeof lexiconTerms!=='undefined'?lexiconTerms:[]) + ' terms' : 'Lexique du Parlement — ' + n(typeof lexiconTerms!=='undefined'?lexiconTerms:[]) + ' termes');
 }
 function renderApercuStats(){
@@ -2591,10 +2632,11 @@ function renderApercuStats(){
   // les robots lisent ce que couvre le site sans exécuter le JavaScript).
   const intro = document.getElementById('a3intro');
   if(intro){
-    const n = (arr) => `<b>${(typeof arr !== 'undefined' && arr ? arr.length : 0).toLocaleString(loc)}</b>`;
+    const C = typeof COUNTS !== 'undefined' ? COUNTS : {};
+    const n = (x) => `<b>${(x || 0).toLocaleString(loc)}</b>`;
     intro.innerHTML = isEn
-      ? `Canada's Parliament without the jargon: ${n(deputes)} MPs, ${n(bills)} federal bills and ${n(votes)} recorded votes in the House of Commons, straight from official sources.`
-      : `Le Parlement du Canada sans jargon : ${n(deputes)} député·e·s, ${n(bills)} projets de loi fédéraux et ${n(votes)} votes nominaux aux Communes, tirés des sources officielles.`;
+      ? `Canada's Parliament without the jargon: ${n(C.deputes)} MPs, ${n(C.bills)} federal bills and ${n(C.votes)} recorded votes in the House of Commons, straight from official sources.`
+      : `Le Parlement du Canada sans jargon : ${n(C.deputes)} député·e·s, ${n(C.bills)} projets de loi fédéraux et ${n(C.votes)} votes nominaux aux Communes, tirés des sources officielles.`;
   }
 }
 function apercuBillRow(b, ctx){
@@ -2746,24 +2788,28 @@ function openBillFromQuery(){
   }
 }
 
-const deputeById = new Map(deputes.map(d=>[d.id, d]));
-const voteById = new Map(votes.map(v=>[v.number, v]));
-
-/* ---------------- SÉNAT (deuxième chambre) ---------------- */
-const senatorBySlug = new Map((typeof senators !== 'undefined' ? senators : []).map(s => [s.slug, s]));
-const senateVoteById = new Map((typeof senateVotes !== 'undefined' ? senateVotes : []).map(v => [v.id, v]));
+/* Index des données : vides au départ, refaits quand le fichier de l'onglet
+   arrive (buildIndexes, appelée par ensureData). */
+const deputeById = new Map();
+const voteById = new Map();
+const senatorBySlug = new Map();
+const senateVoteById = new Map();
 // Votes du Sénat regroupés par projet de loi (pour les afficher dans la carte du
 // projet, comme les votes des Communes). Triés du plus récent au plus ancien.
-const senateVotesByBillId = (() => {
-  const m = new Map();
-  for(const v of (typeof senateVotes !== 'undefined' ? senateVotes : [])){
+const senateVotesByBillId = new Map();
+function buildIndexes(){
+  deputeById.clear(); for(const d of deputes) deputeById.set(d.id, d);
+  voteById.clear(); for(const v of votes) voteById.set(v.number, v);
+  senatorBySlug.clear(); for(const s of senators) senatorBySlug.set(s.slug, s);
+  senateVoteById.clear(); for(const v of senateVotes) senateVoteById.set(v.id, v);
+  senateVotesByBillId.clear();
+  for(const v of senateVotes){
     if(v.billId == null) continue;
-    if(!m.has(v.billId)) m.set(v.billId, []);
-    m.get(v.billId).push(v);
+    if(!senateVotesByBillId.has(v.billId)) senateVotesByBillId.set(v.billId, []);
+    senateVotesByBillId.get(v.billId).push(v);
   }
-  for(const arr of m.values()) arr.sort((a, b) => (b.date || '').localeCompare(a.date || '') || b.id - a.id);
-  return m;
-})();
+  for(const arr of senateVotesByBillId.values()) arr.sort((a, b) => (b.date || '').localeCompare(a.date || '') || b.id - a.id);
+}
 // Couleurs des groupes parlementaires du Sénat (le C = caucus conservateur, même
 // bleu que les Communes ; les autres groupes sont non partisans).
 const groupColors = { ISG:'#6D5BA6', CSG:'#0E7C7B', PSG:'#B0568C', C:'#1A4782', GRO:'#5B6B7A', 'Non-affiliated':'#8a8f99' };
@@ -3763,6 +3809,7 @@ function goToTab(viewName, opts){
   document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));
   const target = document.getElementById('view-'+viewName);
   if(target) target.classList.add('active');
+  ensureViewData(viewName);
   if(viewName === 'bd') renderJournal();
   syncHeadingLevel(viewName);
   closeMobileMenu();
@@ -3817,6 +3864,22 @@ document.getElementById('searchLexique')?.addEventListener('input', ()=> renderL
 document.getElementById('searchVotes').addEventListener('input', ()=> { votesShown = 6; renderVotes(); });
 
 /* ---------------- INIT ---------------- */
+/* Redessine tout ce qui dépend des données. Appelée au démarrage et chaque fois
+   qu'un fichier d'onglet arrive : les vues sans données se redessinent à vide,
+   ce qui ne coûte rien et évite d'avoir à savoir qui dépend de quoi. */
+function renderAll(){
+  for (const f of [renderHemicycle, renderMinistres, renderStatusFilters, renderStepFilters,
+                   updateSortToggleLabel, updateMotionsToggleLabel, updatePetitionsToggleLabel,
+                   updateMinistresSortLabel, renderAccountBox, renderFlagBox, renderAdminFlagCounts,
+                   renderComparateurSelects, renderComparateurTable, renderBills, renderApercuBills,
+                   renderApercuStats, renderPageBandCounts, renderVotes, renderDeputes, renderNews,
+                   renderSittings, renderChallenged, renderProvinceNetwork, renderTicker]) {
+    // Sans await : renderChallenged interroge Supabase en tâche de fond, comme avant.
+    try { const r = f(); if (r && r.catch) r.catch(e => console.error('[init]', f.name, e)); }
+    catch (e) { console.error('[init]', f.name, e); }
+  }
+}
+
 (async function init(){
   // Chaque étape est isolée : une panne (réseau, extension de navigateur, donnée
   // inattendue) ne doit plus empêcher le reste de la page de s'afficher.
@@ -3831,16 +3894,10 @@ document.getElementById('searchVotes').addEventListener('input', ()=> { votesSho
   // (session enregistrée, réseau pendu), on dessine sans eux après 3 s ; initAuth
   // redessine ensuite la boîte de compte et les listes quand il finit par répondre.
   await Promise.race([safe(initAuth), new Promise(r => setTimeout(r, 3000))]);
-  for (const f of [renderHemicycle, renderMinistres, renderStatusFilters, renderStepFilters,
-                   updateSortToggleLabel, updateMotionsToggleLabel, updatePetitionsToggleLabel,
-                   updateMinistresSortLabel, renderAccountBox, renderFlagBox, renderAdminFlagCounts,
-                   renderComparateurSelects, renderComparateurTable, renderBills, renderApercuBills,
-                   renderApercuStats, renderPageBandCounts, renderVotes, renderDeputes, renderNews,
-                   renderSittings, renderChallenged, renderProvinceNetwork, renderTicker]) {
-    // Sans await : renderChallenged interroge Supabase en tâche de fond, comme avant.
-    try { const r = f(); if (r && r.catch) r.catch(e => console.error('[init]', f.name, e)); }
-    catch (e) { console.error('[init]', f.name, e); }
-  }
+  // Données de l'onglet d'arrivée : attendues ici pour que la page se dessine
+  // pleine du premier coup (et que le pré-rendu capture du vrai contenu).
+  await safe(() => ensureData(VIEW_DATA[viewFromPath()] || []));
+  renderAll();
   await safe(loadSnoozedSections);
   await safe(applyLanguage);
   // Ouvre l'onglet correspondant à l'adresse d'arrivée (/votes, /deputes…).

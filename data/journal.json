@@ -3,6 +3,19 @@
     "date": "2026-09-27",
     "volet": "site",
     "fr": {
+      "titre": "Chaque onglet charge ses propres données",
+      "texte": "Jusqu’ici, une visite au lexique téléchargeait les 187 projets de loi, les 337 député·e·s et les 174 votes — sans rien en afficher. Les données sont maintenant réparties par onglet et n’arrivent qu’à son ouverture : le lexique demande 34 Ko au lieu de 518, l’accueil 238 Ko. Le reste suit en un instant quand on change d’onglet."
+    },
+    "en": {
+      "titre": "Each tab loads its own data",
+      "texte": "Until now, a visit to the glossary downloaded all 187 bills, 337 MPs and 174 votes — and displayed none of them. Data is now split by tab and arrives only when that tab opens: the glossary asks for 34 KB instead of 518, the home page 238 KB. The rest follows in an instant when you switch tabs."
+    },
+    "commits": []
+  },
+  {
+    "date": "2026-09-27",
+    "volet": "site",
+    "fr": {
       "titre": "Les étiquettes répétées, dites une seule fois",
       "texte": "« Projet de loi émanant d’un député », les noms de partis, les provinces : les mêmes étiquettes, en français et en anglais, étaient recopiées dans chacune des 187 fiches de projet et des 337 fiches de député·e. Elles sont maintenant écrites une fois, et chaque fiche y renvoie. Encore 100 Ko de moins par visite."
     },
