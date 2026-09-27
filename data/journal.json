@@ -3,6 +3,19 @@
     "date": "2026-09-27",
     "volet": "site",
     "fr": {
+      "titre": "Encore 145 Ko de moins",
+      "texte": "Les adresses officielles (LEGISinfo, Chambre des communes) se déduisent du numéro du projet et de la session : les recopier coûtait 76 Ko à chaque visite. S’ajoutent la liste des scrutins par projet, qu’aucune page n’affichait, et des détails d’étapes qui se relisent dans le nom de l’étape. Chaque lien est vérifié au build : s’il ne se déduit pas exactement, l’adresse publiée est conservée."
+    },
+    "en": {
+      "titre": "Another 145 KB lighter",
+      "texte": "Official links (LEGISinfo, House of Commons) follow from the bill number and the session, so copying them cost 76 KB per visit. Add the per-bill division list no page displayed, and stage details already readable from the stage name. Every link is checked at build time: if it doesn’t derive exactly, the published address is kept."
+    },
+    "commits": []
+  },
+  {
+    "date": "2026-09-27",
+    "volet": "site",
+    "fr": {
       "titre": "Les listes de noms arrivent au clic",
       "texte": "Qui a voté quoi sur chacun des 210 votes représentait 1 Mo téléchargé sur chaque page, même sur le lexique. Ces listes sont maintenant dans un fichier par vote, chargé au moment où on déplie la carte. Les décomptes par parti, eux, s’affichent toujours immédiatement."
     },
