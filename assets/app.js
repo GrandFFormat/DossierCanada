@@ -341,6 +341,30 @@ document.getElementById('langToggle').addEventListener('click', (e)=>{
 // Couleurs des partis fédéraux (teintes usuelles associées à chaque parti).
 const partyColors = { LPC:'#D71920', CPC:'#1A4782', BQ:'#33B2CC', NDP:'#F58220', GPC:'#3D9B35', IND:'#8a8f99', VAC:'#d4d0c8' };
 
+/* ÉTIQUETTES RÉPÉTÉES — « Projet de loi émanant d'un député », les partis, les
+   provinces : les mêmes objets bilingues, recopiés 187 ou 337 fois dans les
+   données. Le build ne garde qu'un rang par ligne et met les valeurs dans DICTS
+   (scrapers/build-frontend-data.js, `dictify`). On les remet en place ICI, une
+   fois, avant tout rendu : le reste du script voit les objets comme avant. */
+(function rehydrate(){
+  if(typeof DICTS === 'undefined') return;
+  const put = (rows, field, table) => {
+    if(!rows || !table) return;
+    for(const r of rows) if(typeof r[field] === 'number') r[field] = table[r[field]];
+  };
+  const b = typeof bills !== 'undefined' ? bills : null;
+  put(b, 'type', DICTS.types);
+  put(b, 'latestActivity', DICTS.activities);
+  put(b, 'sponsorParty', DICTS.parties);
+  const d = typeof deputes !== 'undefined' ? deputes : null;
+  put(d, 'party', DICTS.parties);
+  put(d, 'province', DICTS.provinces);
+  const s = typeof senators !== 'undefined' ? senators : null;
+  put(s, 'group', DICTS.groups);
+  put(s, 'province', DICTS.senateProvinces);
+  put(s, 'appointedBy', DICTS.appointers);
+})();
+
 /* ADRESSES OFFICIELLES — LEGISinfo et la Chambre les forment à partir de
    l'identifiant et de la session : on les déduit au lieu de recopier 76 Ko de
    liens dans les données. Le build vérifie la déduction lien par lien et garde
@@ -350,6 +374,8 @@ const pickUrl = (o) => (o ? (currentLang === 'en' ? (o.en ?? o.fr) : (o.fr ?? o.
 const memberUrl = (id, url) => pickUrl(url) || `https://www.ourcommons.ca/members/${urlLang()}/${id}`;
 const billUrl = (b) => pickUrl(b.url)
   || `https://www.parl.ca/legisinfo/${currentLang === 'en' ? 'en/bill' : 'fr/projet-de-loi'}/${SESSION}/${String(b.num).toLowerCase()}`;
+const senatorUrl = (s) => pickUrl(s.url)
+  || `https://sencanada.ca/${currentLang === 'en' ? 'en/senators' : 'fr/senateurs'}/${s.slug}/`;
 const voteUrl = (v) => pickUrl(v.url)
   || `https://www.ourcommons.ca/members/${urlLang()}/votes/${String(SESSION).replace('-', '/')}/${v.number}`;
 // Texte lisible sur une bulle colorée : noir si le fond est clair, blanc s'il est foncé.
@@ -2770,7 +2796,7 @@ function senatorCardFed(s, isEn, L){
     : "Part des votes du Sénat auxquels ce·tte sénateur·rice a pris part (pour/contre/abstention) depuis sa nomination — un indicateur de présence, le Sénat ne publiant pas l'assiduité directement.";
   const yr = s.appointedOn ? s.appointedOn.slice(0, 4) : null;
   const apptTxt = yr ? (isEn ? `appointed ${yr}` : `nommé·e en ${yr}`) : '';
-  const url = L(s.url);
+  const url = senatorUrl(s);
   const ini = s.name.split(/\s+/).map(w => w[0] || '').slice(0, 2).join('').toUpperCase();
   const profileTitle = isEn ? 'Official profile on sencanada.ca' : 'Fiche officielle sur sencanada.ca';
   return `

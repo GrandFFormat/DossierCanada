@@ -3,6 +3,19 @@
     "date": "2026-09-27",
     "volet": "site",
     "fr": {
+      "titre": "Les étiquettes répétées, dites une seule fois",
+      "texte": "« Projet de loi émanant d’un député », les noms de partis, les provinces : les mêmes étiquettes, en français et en anglais, étaient recopiées dans chacune des 187 fiches de projet et des 337 fiches de député·e. Elles sont maintenant écrites une fois, et chaque fiche y renvoie. Encore 100 Ko de moins par visite."
+    },
+    "en": {
+      "titre": "Repeated labels, written once",
+      "texte": "“Private Member’s Bill”, party names, provinces: the same labels, in French and English, were copied into each of the 187 bill records and 337 MP records. They are now written once, and each record points to them. Another 100 KB off every visit."
+    },
+    "commits": []
+  },
+  {
+    "date": "2026-09-27",
+    "volet": "site",
+    "fr": {
       "titre": "Encore 145 Ko de moins",
       "texte": "Les adresses officielles (LEGISinfo, Chambre des communes) se déduisent du numéro du projet et de la session : les recopier coûtait 76 Ko à chaque visite. S’ajoutent la liste des scrutins par projet, qu’aucune page n’affichait, et des détails d’étapes qui se relisent dans le nom de l’étape. Chaque lien est vérifié au build : s’il ne se déduit pas exactement, l’adresse publiée est conservée."
     },
