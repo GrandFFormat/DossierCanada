@@ -129,7 +129,11 @@ assets/app.css                 Feuille de style du site (partagée, mise en cach
 assets/app.js                  Script du site : i18n FR/EN, rendu, PAGE_META (partagé, mis en cache)
 *.html, en.html, en/*.html     Pages générées (build:pages + build:prerender) — ne pas éditer à la main
 404.html                       Page introuvable (statique, noindex)
-data/site-data.js              Données du site (GÉNÉRÉ par build-frontend-data.js)
+data/site-data.js              Noyau des données, chargé par toutes les pages (GÉNÉRÉ)
+data/d-bills.js                Projets de loi + lobbying — chargé à l'ouverture de l'onglet (GÉNÉRÉ)
+data/d-people.js               Député·e·s + sénateur·rice·s — idem (GÉNÉRÉ)
+data/d-votes.js                Votes des Communes et du Sénat — idem (GÉNÉRÉ)
+data/votes/<chambre>-<id>.json Qui a voté quoi, un fichier par vote, chargé au clic (GÉNÉRÉ)
 data/journal.json              Journal public des mises à jour (/mises-a-jour), tenu À LA MAIN
 scrapers/
   bills.js                     LEGISinfo   -> data/bills.json

@@ -65,6 +65,39 @@ let urlsKept = 0;
    dans un dictionnaire et la donnée ne garde qu'un rang. Le site les remet en
    place au chargement (voir « rehydrate » dans assets/app.js), donc AUCUN code
    d'affichage ne change : la différence n'existe que sur le fil. */
+/* DONNÉES PAR ONGLET — le noyau (data/site-data.js) est chargé par toutes les
+   pages ; ces trois fichiers ne le sont qu'à l'ouverture de l'onglet qui les
+   affiche. Ils REMPLISSENT les contenants déclarés vides par le noyau (même
+   identité d'objet), donc le code d'affichage n'a rien à savoir de tout ça. */
+const VIEW_DATA_FILES = {
+  bills: 'data/d-bills.js',
+  people: 'data/d-people.js',
+  votes: 'data/d-votes.js',
+};
+const viewData = { bills: {}, people: {}, votes: {} };
+function writeViewData(stamp) {
+  const out = [];
+  for (const [name, path] of Object.entries(VIEW_DATA_FILES)) {
+    const sets = viewData[name];
+    // Une chambre non régénérée ne doit pas effacer ce que le fichier contient :
+    // on ne réécrit le fichier que si on a bien de quoi le remplir.
+    if (!Object.keys(sets).length) continue;
+    const body = Object.entries(sets).map(([varName, data]) => (Array.isArray(data)
+      ? `${varName}.push(...${JSON.stringify(data)});`
+      : `Object.assign(${varName}, ${JSON.stringify(data)});`)).join('\n');
+    writeFileSync(path, [
+      `// DossierCanada — données de l'onglet « ${name} ». Fichier GÉNÉRÉ par`,
+      '// scrapers/build-frontend-data.js ; ne pas éditer à la main.',
+      '// Chargé par le site quand on ouvre l\'onglet, PAS sur les autres pages.',
+      `// Généré le ${stamp}`,
+      body,
+      '',
+    ].join('\n'), 'utf-8');
+    out.push(`${path} ${(statSync(path).size / 1024).toFixed(0)} Ko`);
+  }
+  return out;
+}
+
 const DICTS = {};
 function dictify(rows, field, name) {
   const values = (DICTS[name] = DICTS[name] || []);
@@ -104,6 +137,8 @@ const DEP_START_MARKER = '/* DEPUTES_DATA_START';
 const DEP_END_MARKER = '/* DEPUTES_DATA_END */';
 const VOTES_START_MARKER = '/* VOTES_DATA_START';
 const VOTES_END_MARKER = '/* VOTES_DATA_END */';
+const COUNTS_START_MARKER = '/* COUNTS_DATA_START';
+const COUNTS_END_MARKER = '/* COUNTS_DATA_END */';
 const DICT_START_MARKER = '/* DICTS_DATA_START';
 const DICT_END_MARKER = '/* DICTS_DATA_END */';
 const SESSION_START_MARKER = '/* SESSION_DATA_START';
@@ -403,9 +438,11 @@ function main() {
   dictify(frontendBills, 'sponsorParty', 'parties');
   dictify(frontendDeputes, 'party', 'parties');
   dictify(frontendDeputes, 'province', 'provinces');
-  html = injectBlock(html, START_MARKER, END_MARKER, 'bills', frontendBills, stamp);
-  html = injectBlock(html, DEP_START_MARKER, DEP_END_MARKER, 'deputes', frontendDeputes, stamp);
-  html = injectBlock(html, VOTES_START_MARKER, VOTES_END_MARKER, 'votes', frontendVotes, stamp);
+  // Les gros jeux ne vont plus dans le noyau : chacun part dans le fichier de son
+  // onglet, chargé quand on l'ouvre (voir writeViewData plus bas).
+  viewData.bills.bills = frontendBills;
+  viewData.people.deputes = frontendDeputes;
+  viewData.votes.votes = frontendVotes;
   // Ministres : fichier séparé (scrapers/ministers.js) — injecté s'il existe.
   if (existsSync(MINISTERS_PATH)) {
     const ministers = read(MINISTERS_PATH).ministers;
@@ -423,8 +460,8 @@ function main() {
   const LOBBYING_PATH = 'data/lobbying.json';
   if (existsSync(LOBBYING_PATH)) {
     const lobbying = read(LOBBYING_PATH);
-    html = injectBlock(html, '/* LOBBYING_DATA_START', '/* LOBBYING_DATA_END */', 'lobbying',
-      { updatedAt: lobbying.scrapedAt, bills: lobbying.bills }, stamp);
+    // Il accompagne les projets : c'est la même page qui l'affiche.
+    viewData.bills.lobbying = { updatedAt: lobbying.scrapedAt, bills: lobbying.bills };
   }
 
   // Calendrier des séances de la Chambre (scrapers/house-calendar.js) — injecté s'il existe.
@@ -555,8 +592,8 @@ function main() {
     dictify(frontendSenators, 'group', 'groups');
     dictify(frontendSenators, 'province', 'senateProvinces');
     dictify(frontendSenators, 'appointedBy', 'appointers');
-    html = injectBlock(html, SEN_START_MARKER, SEN_END_MARKER, 'senators', frontendSenators, stamp);
-    html = injectBlock(html, SENVOTES_START_MARKER, SENVOTES_END_MARKER, 'senateVotes', frontendSenateVotes, stamp);
+    viewData.people.senators = frontendSenators;
+    viewData.votes.senateVotes = frontendSenateVotes;
 
     senateStats = {
       senators: frontendSenators.length,
@@ -577,6 +614,16 @@ function main() {
     } catch { /* premier passage : bloc vide */ }
   }
   html = injectBlock(html, DICT_START_MARKER, DICT_END_MARKER, 'DICTS', DICTS, stamp);
+  // Les comptes restent dans le noyau : les titres des pages les affichent même
+  // quand l'onglet correspondant n'est pas chargé (« 187 projets de loi »).
+  html = injectBlock(html, COUNTS_START_MARKER, COUNTS_END_MARKER, 'COUNTS', {
+    bills: (viewData.bills.bills || []).length,
+    deputes: (viewData.people.deputes || []).length,
+    senators: (viewData.people.senators || []).length,
+    votes: (viewData.votes.votes || []).length,
+    senateVotes: (viewData.votes.senateVotes || []).length,
+  }, stamp);
+  const viewFiles = writeViewData(stamp);
   writeFileSync(HTML_PATH, html);
   const ballotsRemoved = pruneBallots();
 
@@ -592,6 +639,7 @@ function main() {
   console.log(`  textes des projets : ${Object.keys(billTexts).length} entrées dans ${BILL_TEXTS_PATH} (${(statSync(BILL_TEXTS_PATH).size / 1024).toFixed(0)} Ko, chargé à la demande)`);
   console.log(`  ancien·ne·s député·e·s présent·e·s dans les votes : ${formerVoterIds.size}`);
   console.log(`  adresses officielles déduites de l'identifiant${urlsKept ? ` · ${urlsKept} gardée(s) en donnée (déduction ≠ source)` : ' (toutes)'}`);
+  console.log(`  données par onglet : ${viewFiles.join(' · ')}`);
   console.log(`  listes nominatives : ${ballotFiles.size} fichiers dans ${BALLOTS_DIR}/ (chargés au clic)${ballotsRemoved ? ` · ${ballotsRemoved} supprimé(s)` : ''}`);
   if (unresolved.length) {
     console.log(`  ⚠ ${unresolved.length} vote(s) avec projet non résolu : ${unresolved.map((v) => `#${v.number}→${v.billNumber}`).join(', ')}`);
