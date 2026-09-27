@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-09-27",
+    "volet": "site",
+    "fr": {
+      "titre": "Pourquoi ce site existe",
+      "texte": "La page « et moi » raconte maintenant d’où vient DossierCanada : un citoyen de 45 ans qui voulait s’intéresser à la politique et se heurtait à deux lignes de description et cinquante PDF."
+    },
+    "en": {
+      "titre": "Why this site exists",
+      "texte": "The “and me” page now tells where DossierCanada comes from: a 45-year-old citizen who wanted to follow politics and ran into two lines of description and fifty PDFs."
+    },
+    "commits": []
+  },
+  {
     "date": "2026-09-25",
     "volet": "site",
     "fr": {
