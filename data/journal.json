@@ -3,6 +3,19 @@
     "date": "2026-09-27",
     "volet": "site",
     "fr": {
+      "titre": "Des pages dix fois plus légères",
+      "texte": "Le style et le code du site étaient recopiés dans chacune des quatorze pages : 370 Ko à télécharger à chaque visite. Ils sont maintenant dans deux fichiers partagés, gardés en mémoire par le navigateur. Une page pèse 30 à 55 Ko, et les données ne retardent plus l’affichage."
+    },
+    "en": {
+      "titre": "Pages ten times lighter",
+      "texte": "The site’s style and code were copied into each of the fourteen pages — 370 KB to download on every visit. They now live in two shared files the browser keeps. A page weighs 30 to 55 KB, and the data no longer holds up the display."
+    },
+    "commits": []
+  },
+  {
+    "date": "2026-09-27",
+    "volet": "site",
+    "fr": {
       "titre": "Pourquoi ce site existe",
       "texte": "La page « et moi » raconte maintenant d’où vient DossierCanada : un citoyen de 45 ans qui voulait s’intéresser à la politique et se heurtait à deux lignes de description et cinquante PDF."
     },

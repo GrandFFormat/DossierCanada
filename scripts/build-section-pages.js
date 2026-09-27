@@ -13,11 +13,16 @@
 //   - zones pré-rendues <!--ssr--> : on garde celles de la vue affichée (remplies
 //     par scripts/prerender-pages.js) et on vide les autres.
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
-import { SRC, PAGES, SSR, ALL_REGIONS, regionsOf, pathFor, readSiteConfig, readRegion, writeRegion, readTitle, writeTitle } from './seo-pages.js';
+import { createHash } from 'node:crypto';
+import { SRC, APP_CSS, APP_JS, PAGES, SSR, ALL_REGIONS, regionsOf, pathFor, readSiteConfig, readRegion, writeRegion, readTitle, writeTitle } from './seo-pages.js';
 
 const raw = readFileSync(SRC, 'utf8');
 const NL = raw.includes('\r\n') ? '\r\n' : '\n';
-const { PAGE_META, translations, SITE_ORIGIN } = readSiteConfig(raw);
+const { PAGE_META, translations, SITE_ORIGIN } = readSiteConfig();
+// Empreinte des fichiers partagés : le navigateur peut les garder un an, et une
+// modification change l'adresse, donc il recharge sans qu'on ait à vider le cache.
+const stamp = (f) => createHash('sha1').update(readFileSync(f)).digest('hex').slice(0, 10);
+const ASSET_V = { '/assets/app.css': stamp(APP_CSS), '/assets/app.js': stamp(APP_JS) };
 const abs = (p) => SITE_ORIGIN + p;
 
 function must(cond, msg) { if (!cond) { console.error('build-section-pages : ' + msg); process.exit(1); } }
@@ -169,6 +174,11 @@ function buildPage(page, previous) {
 
   // 1) <head>
   h = h.replace(/<!-- SEO:START[\s\S]*?<!-- SEO:END -->/, () => headBlock(page));
+  for (const [file, v] of Object.entries(ASSET_V)) {
+    const re = new RegExp('(href|src)="' + file + '\\?v=[^"]*"', 'g');
+    must(re.test(h), `référence à ${file} absente du gabarit`);
+    h = h.replace(re, (_, a) => `${a}="${file}?v=${v}"`);
+  }
   if (en) h = h.replace('<html lang="fr"', '<html lang="en"');
 
   // 2) Vue et lien de menu actifs
@@ -198,7 +208,7 @@ function buildPage(page, previous) {
 
   // 4) Balisage du corps (hors scripts) : langue, liens internes, bascule FR/EN
   const bodyStart = h.indexOf('<body>');
-  const bodyEnd = h.indexOf('<script src="/data/site-data.js">');
+  const bodyEnd = h.indexOf('<script defer src="/data/site-data.js">');
   must(bodyStart > 0 && bodyEnd > bodyStart, 'balisage du corps introuvable');
   let body = h.slice(bodyStart, bodyEnd);
   if (en) {
