@@ -72,6 +72,7 @@ const translations = {
     'votes.info.b':"D'où vient le « qui a voté quoi »",
     'votes.info.text':"— pour chaque vote par appel nominal, la Chambre des communes publie le choix de chaque député·e : Pour, Contre ou pairé. Le détail derrière le bouton « + » de chaque vote reprend cette liste officielle (noscommunes.ca) telle quelle, sans estimation. Le parti indiqué est celui de la liste actuelle des député·e·s ; les personnes qui ont quitté la Chambre depuis sont regroupées à part, sous « Ancien·ne·s député·e·s ».",
     'bd.back':"← Retour à l'aperçu",
+    'temoins.titre':"Un mot sur les témoins",
     'temoins.texte':"Ce site dépose des témoins (« cookies ») de Google Analytics pour compter les visites. Rien d'autre : pas de publicité, pas de revente, pas de suivi ailleurs. Vous pouvez refuser : le site marche pareil.",
     'footer.temoins':"Témoins",
     'temoins.accepter':"Accepter",
@@ -135,6 +136,7 @@ const translations = {
     'findmp.ph':"e.g. K1A 0A6",
     'findmp.btn':"Search",
     'bd.back':"← Back to overview",
+    'temoins.titre':"A word about cookies",
     'temoins.texte':"This site sets Google Analytics cookies to count visits. Nothing else: no ads, nothing sold on, no tracking elsewhere. You can decline — the site works just the same.",
     'footer.temoins':"Cookies",
     'temoins.accepter':"Accept",
@@ -385,6 +387,12 @@ function reponseTemoins(){
 function afficherBandeTemoins(){
   const el = document.getElementById('temoinsBande');
   if(!el) return;
+  // Écouteurs posés ICI, en JavaScript : un attribut onclick dépend d'une
+  // fonction globale et se tait sans rien dire si quoi que ce soit l'empêche.
+  const oui = document.getElementById('temoinsOui');
+  const non = document.getElementById('temoinsNon');
+  if(oui && !oui.dataset.lie){ oui.dataset.lie = '1'; oui.addEventListener('click', () => repondreTemoins(true)); }
+  if(non && !non.dataset.lie){ non.dataset.lie = '1'; non.addEventListener('click', () => repondreTemoins(false)); }
   // Pas de réponse = on demande. Une réponse, quelle qu'elle soit = on se tait.
   el.hidden = !!reponseTemoins();
 }
