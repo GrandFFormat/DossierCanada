@@ -3,6 +3,19 @@
     "date": "2026-09-29",
     "volet": "site",
     "fr": {
+      "titre": "Les pages anglaises ont des adresses anglaises",
+      "texte": "La version anglaise vivait à des adresses françaises : /en/projets-de-loi, /en/deputes, /en/lexique. Elles deviennent /en/bills, /en/mps, /en/glossary, /en/ministers et /en/updates. Les anciennes redirigent vers les nouvelles, donc un lien déjà partagé continue de fonctionner."
+    },
+    "en": {
+      "titre": "English pages now have English addresses",
+      "texte": "The English version lived at French addresses: /en/projets-de-loi, /en/deputes, /en/lexique. They become /en/bills, /en/mps, /en/glossary, /en/ministers and /en/updates. The old ones redirect to the new, so a link already shared keeps working."
+    },
+    "commits": []
+  },
+  {
+    "date": "2026-09-29",
+    "volet": "site",
+    "fr": {
       "titre": "On vous demande avant de déposer un témoin",
       "texte": "Le site compte maintenant ses visites avec Google Analytics, qui dépose des témoins (« cookies »). Rien n’est chargé avant votre réponse : une fenêtre au centre de l’écran pose la question, refuser est aussi simple qu’accepter, et refuser efface les témoins déjà déposés. Le lien « Témoins » en pied de page permet de changer d’avis."
     },
@@ -238,11 +251,11 @@
     "volet": "site",
     "fr": {
       "titre": "L’anglais a ses propres adresses",
-      "texte": "Chaque page existe en anglais à sa propre adresse (/en, /en/votes, /en/projets-de-loi…). On peut la partager telle quelle, et la bascule FR/EN change aussi l’adresse."
+      "texte": "Chaque page existe en anglais à sa propre adresse (/en, /en/votes, /en/bills…). On peut la partager telle quelle, et la bascule FR/EN change aussi l’adresse."
     },
     "en": {
       "titre": "English gets its own addresses",
-      "texte": "Every page exists in English at its own address (/en, /en/votes, /en/projets-de-loi…). You can share it as is, and the FR/EN switch changes the address too."
+      "texte": "Every page exists in English at its own address (/en, /en/votes, /en/bills…). You can share it as is, and the FR/EN switch changes the address too."
     },
     "commits": [
       "65d727d",

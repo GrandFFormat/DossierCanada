@@ -6,18 +6,18 @@
 <!-- SEO:START — bloc GÉNÉRÉ par scripts/build-section-pages.js pour CHAQUE page
      (titre, description, canonical, hreflang, Open Graph, X, JSON-LD). Ne pas éditer
      à la main : les textes viennent de PAGE_META (plus bas dans ce fichier). -->
-<title>Glossary of Canada's Parliament, jargon-free — DossierCanada</title>
-<meta name="description" content="The vocabulary of Canada's Parliament in everyday words: the stages of a bill, recorded votes, royal assent, and who does what on Parliament Hill.">
+<title>DossierCanada updates, and who built the site — DossierCanada</title>
+<meta name="description" content="Why DossierCanada exists, told by the person who built it, plus the log of what changes on the site, newest first.">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<link rel="canonical" href="https://www.dossiercanada.ca/en/lexique">
-<link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/lexique">
-<link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/lexique">
-<link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/lexique">
+<link rel="canonical" href="https://www.dossiercanada.ca/en/updates">
+<link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/mises-a-jour">
+<link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/updates">
+<link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/mises-a-jour">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DossierCanada">
-<meta property="og:title" content="Glossary of Canada's Parliament, jargon-free — DossierCanada">
-<meta property="og:description" content="The vocabulary of Canada's Parliament in everyday words: the stages of a bill, recorded votes, royal assent, and who does what on Parliament Hill.">
-<meta property="og:url" content="https://www.dossiercanada.ca/en/lexique">
+<meta property="og:title" content="DossierCanada updates, and who built the site — DossierCanada">
+<meta property="og:description" content="Why DossierCanada exists, told by the person who built it, plus the log of what changes on the site, newest first.">
+<meta property="og:url" content="https://www.dossiercanada.ca/en/updates">
 <meta property="og:image" content="https://www.dossiercanada.ca/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -25,8 +25,8 @@
 <meta property="og:locale" content="en_CA">
 <meta property="og:locale:alternate" content="fr_CA">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Glossary of Canada's Parliament, jargon-free — DossierCanada">
-<meta name="twitter:description" content="The vocabulary of Canada's Parliament in everyday words: the stages of a bill, recorded votes, royal assent, and who does what on Parliament Hill.">
+<meta name="twitter:title" content="DossierCanada updates, and who built the site — DossierCanada">
+<meta name="twitter:description" content="Why DossierCanada exists, told by the person who built it, plus the log of what changes on the site, newest first.">
 <meta name="twitter:image" content="https://www.dossiercanada.ca/og-image.png">
 <script type="application/ld+json">
 {
@@ -42,8 +42,8 @@
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Glossary",
-      "item": "https://www.dossiercanada.ca/en/lexique"
+      "name": "Site updates",
+      "item": "https://www.dossiercanada.ca/en/updates"
     }
   ]
 }
@@ -101,7 +101,7 @@ try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStor
       <span id="fontPct">100%</span>
       <button id="fontPlus" aria-label="Increase text size">A+</button>
     </div>
-    <a class="lang-toggle" id="langToggle" href="/lexique" hreflang="fr" lang="fr">FR</a>
+    <a class="lang-toggle" id="langToggle" href="/mises-a-jour" hreflang="fr" lang="fr">FR</a>
     <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
   <span data-i18n="brand.tagline" style="display:none;">Who sits, who legislates, who votes how</span>
@@ -117,11 +117,11 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
 <nav class="tabs">
   <div class="close-menu" id="closeMenuBtn"><span data-i18n="nav.close">Close</span> ✕</div>
   <a data-view="apercu" href="/en"><span class="n">01</span><span data-i18n="nav.apercu">Overview</span></a>
-  <a data-view="ministres" href="/en/deputes"><span class="n">02</span><span data-i18n="nav.ministres">MPs</span></a>
-  <a data-view="cabinet" href="/en/ministres"><span class="n">03</span><span data-i18n="nav.cabinet">Ministers</span></a>
-  <a data-view="projets" href="/en/projets-de-loi"><span class="n">04</span><span data-i18n="nav.projets">Bills</span></a>
+  <a data-view="ministres" href="/en/mps"><span class="n">02</span><span data-i18n="nav.ministres">MPs</span></a>
+  <a data-view="cabinet" href="/en/ministers"><span class="n">03</span><span data-i18n="nav.cabinet">Ministers</span></a>
+  <a data-view="projets" href="/en/bills"><span class="n">04</span><span data-i18n="nav.projets">Bills</span></a>
   <a data-view="votes" href="/en/votes"><span class="n">05</span><span data-i18n="nav.votes">Votes</span></a>
-  <a class="active" data-view="lexique" href="/en/lexique" aria-current="page"><span class="n">06</span><span data-i18n="nav.lexique">Glossary</span></a>
+  <a data-view="lexique" href="/en/glossary"><span class="n">06</span><span data-i18n="nav.lexique">Glossary</span></a>
 </nav>
 </div>
 <script>
@@ -162,7 +162,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     <section id="sec-challenged" class="challenge-band">
       <div class="cb-head">
         <h2 id="challengedTitle" data-i18n="cb.title">Challenged bills</h2>
-        <a class="cb-cta" data-view="projets" href="/en/projets-de-loi">✋ <span id="cbCtaLabel" data-i18n="cb.cta">Challenge a bill</span></a>
+        <a class="cb-cta" data-view="projets" href="/en/bills">✋ <span id="cbCtaLabel" data-i18n="cb.cta">Challenge a bill</span></a>
       </div>
       <div class="cb-subrow">
         <div class="cb-sub" id="challengedSub"></div>
@@ -184,7 +184,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <main class="a3-main">
         <div class="a3-main-head">
           <h2 data-i18n="h.billsrecent">Recently active bills</h2>
-          <a class="a3-seeall" data-view="projets" href="/en/projets-de-loi" data-i18n="a3.seeall">See all →</a>
+          <a class="a3-seeall" data-view="projets" href="/en/bills" data-i18n="a3.seeall">See all →</a>
         </div>
         <div id="apercuBills"><!--ssr--><!--/ssr--></div>
         <div class="a3-tiles">
@@ -192,7 +192,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
             <span class="a3-tile-tag" style="background:var(--lime)" data-i18n="nav.votes">Votes</span>
             <p data-i18n="a3.tileVotes">Every recorded vote — who voted what, and by what margin.</p>
           </a>
-          <a class="a3-tile" data-view="lexique" href="/en/lexique">
+          <a class="a3-tile" data-view="lexique" href="/en/glossary">
             <span class="a3-tile-tag" style="background:var(--cyan)" data-i18n="nav.lexique">Glossary</span>
             <p data-i18n="a3.tileLex">Parliamentary jargon translated into plain language, no poli-sci degree needed.</p>
           </a>
@@ -335,11 +335,11 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
        Comme sur DossierQuébec : la bande dessinée (Ti-Jo) cède la place à la seule case
        de la photo, refaite en HTML (dans le SVG, le texte tombait à 8 px sur un téléphone),
        puis le journal public des mises à jour, tenu À LA MAIN dans data/journal.json. -->
-  <section class="view" id="view-bd">
+  <section class="view active" id="view-bd">
     <div class="page-band">
       <div>
         <nav class="crumbs" aria-label="Breadcrumb"><a data-view="apercu" href="/en">DossierCanada</a> <span aria-hidden="true">›</span> <span aria-current="page" data-i18n="maj.h">Site updates</span></nav>
-        <h2 class="band-title" id="majTitle" data-i18n="maj.h1">DossierCanada updates</h2>
+        <h1 class="band-title" id="majTitle" data-i18n="maj.h1">DossierCanada updates</h1>
         <div class="sub" data-i18n="maj.sub">What changed on the site, newest first</div>
       </div>
       <a class="bd-back" data-view="apercu" href="/en" data-i18n="bd.back">← Back to overview</a>
@@ -361,87 +361,26 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       </div>
     </div>
     <div class="maj" id="journal">
-      <ol class="maj-liste" id="journalListe"><!--ssr--><!--/ssr--></ol>
+      <ol class="maj-liste" id="journalListe"><!--ssr--><li class="maj-mois"><h2>September 2026</h2><ol><li class="maj-entree"><time datetime="2026-09-29">September 29</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Whole site</span><h3>English pages now have English addresses</h3><p>The English version lived at French addresses: /en/projets-de-loi, /en/deputes, /en/lexique. They become /en/bills, /en/mps, /en/glossary, /en/ministers and /en/updates. The old ones redirect to the new, so a link already shared keeps working.</p></div></li><li class="maj-entree"><time datetime="2026-09-29">September 29</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Whole site</span><h3>We ask before setting a cookie</h3><p>The site now counts its visits with Google Analytics, which sets cookies. Nothing loads before you answer: a panel in the middle of the screen asks, declining is as easy as accepting, and declining also clears cookies already set. The “Cookies” link in the footer lets you change your mind.</p></div></li><li class="maj-entree"><time datetime="2026-09-27">September 27</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Whole site</span><h3>Each tab loads its own data</h3><p>Until now, a visit to the glossary downloaded all 187 bills, 337 MPs and 174 votes — and displayed none of them. Data is now split by tab and arrives only when that tab opens: the glossary asks for 34 KB instead of 518, the home page 238 KB. The rest follows in an instant when you switch tabs.</p></div></li><li class="maj-entree"><time datetime="2026-09-27">September 27</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Whole site</span><h3>Repeated labels, written once</h3><p>“Private Member’s Bill”, party names, provinces: the same labels, in French and English, were copied into each of the 187 bill records and 337 MP records. They are now written once, and each record points to them. Another 100 KB off every visit.</p></div></li><li class="maj-entree"><time datetime="2026-09-27">September 27</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Whole site</span><h3>Another 145 KB lighter</h3><p>Official links (LEGISinfo, House of Commons) follow from the bill number and the session, so copying them cost 76 KB per visit. Add the per-bill division list no page displayed, and stage details already readable from the stage name. Every link is checked at build time: if it doesn’t derive exactly, the published address is kept.</p></div></li><li class="maj-entree"><time datetime="2026-09-27">September 27</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Whole site</span><h3>Name lists now load on click</h3><p>Who voted what on each of the 210 votes meant 1 MB downloaded on every page, even the glossary. Those lists now live in one file per vote, fetched when you open the card. The per-party counts still appear right away.</p></div></li><li class="maj-entree"><time datetime="2026-09-27">September 27</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Whole site</span><h3>Pages ten times lighter</h3><p>The site’s style and code were copied into each of the fourteen pages — 370 KB to download on every visit. They now live in two shared files the browser keeps. A page weighs 30 to 55 KB, and the data no longer holds up the display.</p></div></li><li class="maj-entree"><time datetime="2026-09-27">September 27</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Whole site</span><h3>Why this site exists</h3><p>The “and me” page now tells where DossierCanada comes from: a 45-year-old citizen who wanted to follow politics and ran into two lines of description and fifty PDFs.</p></div></li><li class="maj-entree"><time datetime="2026-09-25">September 25</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Whole site</span><h3>Ontario lights up in the province row</h3><p>The ON dot in the header now leads to DossierOntario, the sister site tracking Ontario’s Legislative Assembly. It carries the red of Ontario’s flag and flips like Quebec’s.</p></div></li><li class="maj-entree"><time datetime="2026-09-25">September 25</time><div class="maj-corps"><span class="maj-volet maj-volet-projets">Bills</span><h3>Bill summaries are easier to read</h3><p>On a wide screen, a summary line ran to 110 characters; past about 75, the eye struggles to find the start of the next line. The text is now larger (16px), more airy, and the reading width is capped at about 70 characters.</p></div></li><li class="maj-entree"><time datetime="2026-09-25">September 25</time><div class="maj-corps"><span class="maj-volet maj-volet-projets">Bills</span><h3>Omnibus bills summarized part by part</h3><p>An omnibus bill changes several different acts, one per part, and its title names only some of them. Thirteen bills this session are omnibus, from C-5 (2 parts) to C-2 (16 parts). They now carry an “Omnibus” button in the list, which filters to omnibus bills (an “Omnibus” filter also sits in the toolbar), a notice on the card, and their summary follows each part instead of stopping at the first ones. C-39 goes from 6 bullets to an overview plus three detailed parts.</p></div></li><li class="maj-entree"><time datetime="2026-09-23">September 23</time><div class="maj-corps"><span class="maj-volet maj-volet-projets">Bills</span><h3>Plain-language summaries no longer go missing</h3><p>When the plain-language summary failed on a long bill, the card showed only the raw official summary. A second attempt is now made automatically. C-39 (Building Canada Strong Act) now has its summary.</p></div></li><li class="maj-entree"><time datetime="2026-09-22">September 22</time><div class="maj-corps"><span class="maj-volet maj-volet-projets">Bills</span><h3>Two-column bill cards</h3><p>An open bill shows the plain-language summary on the left, in shorter lines, and on the right the latest activity, a button to the full text on LEGISinfo and sharing. The sponsor, chamber and bill type appear at the top of the card. On a phone, everything stays in one column.</p></div></li><li class="maj-entree"><time datetime="2026-09-22">September 22</time><div class="maj-corps"><span class="maj-volet maj-volet-projets">Bills</span><h3>The bill list now loads in batches</h3><p>The bills page first shows the 10 most recently active, then 20 more with each click on “See 20 more”. Search and filters start again at 10 results; a shared link to a bill still opens it, even further down the list.</p></div></li><li class="maj-entree"><time datetime="2026-09-21">September 21</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Whole site</span><h3>“and me” becomes the site updates page</h3><p>The “and me” link at the bottom of every page now leads here: the person behind the site, then what changes on it, newest first. The comic strip gives way to its photo panel alone, readable on a phone.</p></div></li><li class="maj-entree"><time datetime="2026-09-21">September 21</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Whole site</span><h3>Pages search engines can understand</h3><p>Every page has its own title, description and a single main heading that states its subject. The menu, the logo and the FR/EN switch are real links, and a breadcrumb (DossierCanada › Votes) shows where you are. The top of each page (count, filters, first cards) can be read even without JavaScript, and English pages are in English from the first load.</p></div></li><li class="maj-entree"><time datetime="2026-09-21">September 21</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Whole site</span><h3>Pages about six times lighter</h3><p>The site’s data (bills, votes, MPs) is no longer copied into every page: a single file, which your browser keeps from one page to the next. Each page goes from about 2.1 MB to 0.35 MB.</p></div></li><li class="maj-entree"><time datetime="2026-09-21">September 21</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Whole site</span><h3>The site loads even when accounts are down</h3><p>If the sign-in service doesn’t respond, the site still loads and works; only accounts have to wait. Before, the page could stay blank.</p></div></li><li class="maj-entree"><time datetime="2026-09-21">September 21</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Whole site</span><h3>Official sources at the bottom of every page</h3><p>The footer now links straight to LEGISinfo, the House of Commons, the Senate and the Commissioner of Lobbying, where the data comes from.</p></div></li><li class="maj-entree"><time datetime="2026-09-18">September 18</time><div class="maj-corps"><span class="maj-volet maj-volet-site">Whole site</span><h3>English gets its own addresses</h3><p>Every page exists in English at its own address (/en, /en/votes, /en/bills…). You can share it as is, and the FR/EN switch changes the address too.</p></div></li></ol></li><!--/ssr--></ol>
       <button type="button" class="maj-plus" id="journalPlus" hidden></button>
     </div>
   </section>
 
   <!-- LEXIQUE -->
-  <section class="view active" id="view-lexique">
+  <section class="view" id="view-lexique">
     <div class="page-band">
       <div>
         <nav class="crumbs" aria-label="Breadcrumb"><a data-view="apercu" href="/en">DossierCanada</a> <span aria-hidden="true">›</span> <span aria-current="page" data-i18n="nav.lexique">Glossary</span></nav>
-        <h1 class="band-title" id="lexiqueCountTitle">Parliament glossary — 14 terms</h1>
+        <h2 class="band-title" id="lexiqueCountTitle">Parliament glossary</h2>
         <div class="sub" data-i18n="lex.bandsub">Parliamentary jargon, translated into everyday language.</div>
       </div>
       <input type="text" id="searchLexique" class="band-search" data-i18n-placeholder="lex.ph" placeholder="Search a term…">
     </div>
     <div class="role-group-title" data-i18n="h.compte" style="margin-top:0;">Account and follows</div>
-    <div class="account-box" id="accountBox"><!--ssr--><div class="account-row">
-        <input type="email" id="accountEmailInput" placeholder="Your email">
-        <button class="account-btn" id="magicLinkBtn" onclick="handleMagicLinkClick()">Send magic link</button>
-      </div>
-      <div class="account-note" id="accountStatusNote">Sign in to sync the ministers and MPs you follow across devices.</div><!--/ssr--></div>
+    <div class="account-box" id="accountBox"><!--ssr--><!--/ssr--></div>
     <div id="adminFlagCounts"></div>
 
-    <dl id="lexiqueList"><!--ssr--><div class="role-group-title" id="sec-lexique-people">Who’s involved around Parliament</div><div style="font-size:12.5px; line-height:1.6; color:var(--slate); margin:-4px 0 8px; max-width:680px;">The real people around Parliament, beyond the elected members. These names live on a dozen scattered official sites, so — unlike the rest of this daily-refreshed site — they're hard to keep automatic: the two that change most often (House Speaker, Governor General) update on their own; the others are verified by hand and may lag briefly after a change.</div><div class="lexique-grid"><div class="lexique-item">
-          <div class="lex-head"><dt>Francis Scarpaleggia</dt><span class="lex-badge ppl-badge" style="background:var(--yellow)">Inside Parliament</span></div>
-          <dd><div class="ppl-role">Speaker of the House of Commons</div>Presides over Commons sittings and applies the rules. Elected by MPs on May 26, 2025; a Liberal MP for Lac-Saint-Louis, but the role demands neutrality — he only votes to break a tie, which is why his attendance figure on this site looks very low.<div class="ppl-tag">Elected by MPs · neutral</div></dd>
-        </div><div class="lexique-item">
-          <div class="lex-head"><dt>Raymonde Gagné</dt><span class="lex-badge ppl-badge" style="background:var(--yellow)">Inside Parliament</span></div>
-          <dd><div class="ppl-role">Speaker of the Senate</div>Presides over Senate sittings. A senator from Manitoba, Speaker since May 2023.<div class="ppl-tag">Appointed</div></dd>
-        </div><div class="lexique-item">
-          <div class="lex-head"><dt>Louise Arbour</dt><span class="lex-badge ppl-badge" style="background:var(--cyan)">The Crown's representative</span></div>
-          <dd><div class="ppl-role">Governor General of Canada</div>31st holder of the office, sworn in on June 8, 2026. A former justice of the Supreme Court of Canada and UN High Commissioner for Human Rights. She grants the royal assent cited on every bill card on this site.<div class="ppl-tag">Ceremonial + royal assent</div></dd>
-        </div><div class="lexique-item">
-          <div class="lex-head"><dt>Karen Hogan</dt><span class="lex-badge ppl-badge" style="background:var(--lime)">Officers of Parliament</span></div>
-          <dd><div class="ppl-role">Auditor General of Canada</div>Audits federal spending and management, and reports to Parliament.<div class="ppl-tag">Officer of Parliament</div></dd>
-        </div><div class="lexique-item">
-          <div class="lex-head"><dt>Stéphane Perrault</dt><span class="lex-badge ppl-badge" style="background:var(--lime)">Officers of Parliament</span></div>
-          <dd><div class="ppl-role">Chief Electoral Officer</div>Heads Elections Canada: oversees federal elections and electoral boundaries. In office since 2018.<div class="ppl-tag">Officer of Parliament</div></dd>
-        </div><div class="lexique-item">
-          <div class="lex-head"><dt>Konrad von Finckenstein</dt><span class="lex-badge ppl-badge" style="background:var(--lime)">Officers of Parliament</span></div>
-          <dd><div class="ppl-role">Conflict of Interest and Ethics Commissioner</div>Advises and investigates parliamentarians on conflict-of-interest and ethics matters.<div class="ppl-tag">Officer of Parliament</div></dd>
-        </div><div class="lexique-item">
-          <div class="lex-head"><dt>Nancy Bélanger</dt><span class="lex-badge ppl-badge" style="background:var(--lime)">Officers of Parliament</span></div>
-          <dd><div class="ppl-role">Commissioner of Lobbying</div>Administers the lobbyist registry and the Lobbyists' Code of Conduct — the direct link to the "Lobbyist registry" block below.<div class="ppl-tag">Officer of Parliament</div></dd>
-        </div><div class="lexique-item">
-          <div class="lex-head"><dt>Kelly Burke</dt><span class="lex-badge ppl-badge" style="background:var(--lime)">Officers of Parliament</span></div>
-          <dd><div class="ppl-role">Commissioner of Official Languages</div>Oversees compliance with the Official Languages Act. 8th commissioner, in office since March 30, 2026.<div class="ppl-tag">Officer of Parliament</div></dd>
-        </div><div class="lexique-item">
-          <div class="lex-head"><dt>Philippe Dufresne</dt><span class="lex-badge ppl-badge" style="background:var(--lime)">Officers of Parliament</span></div>
-          <dd><div class="ppl-role">Privacy Commissioner</div>Protects citizens' personal information from government and business. In office since 2022.<div class="ppl-tag">Officer of Parliament</div></dd>
-        </div><div class="lexique-item">
-          <div class="lex-head"><dt>Caroline Maynard</dt><span class="lex-badge ppl-badge" style="background:var(--lime)">Officers of Parliament</span></div>
-          <dd><div class="ppl-role">Information Commissioner</div>Resolves complaints about access to information held by the federal government.<div class="ppl-tag">Officer of Parliament</div></dd>
-        </div><div class="lexique-item">
-          <div class="lex-head"><dt>Annette Ryan</dt><span class="lex-badge ppl-badge" style="background:var(--lime)">Officers of Parliament</span></div>
-          <dd><div class="ppl-role">Parliamentary Budget Officer</div>Independently costs bills and government measures. Appointed April 22, 2026.<div class="ppl-tag">Officer of Parliament</div></dd>
-        </div><div class="lexique-item">
-          <div class="lex-head"><dt>Parliamentary committees</dt><span class="lex-badge ppl-badge" style="background:var(--pink)">Other roles and institutions</span></div>
-          <dd>Small groups of parliamentarians that study bills clause by clause between 2nd and 3rd reading, hear witnesses and propose amendments.<div class="ppl-tag">Bill study</div></dd>
-        </div><div class="lexique-item">
-          <div class="lex-head"><dt>House leaders and whips</dt><span class="lex-badge ppl-badge" style="background:var(--pink)">Other roles and institutions</span></div>
-          <dd>In each party, the House leader negotiates the flow of business and the whip ensures MPs vote the party line — which is why "who voted what" almost always follows party lines.<div class="ppl-tag">Vote discipline</div></dd>
-        </div><div class="lexique-item">
-          <div class="lex-head"><dt>The public service and departments</dt><span class="lex-badge ppl-badge" style="background:var(--pink)">Other roles and institutions</span></div>
-          <dd>The civil servants who implement laws, under the ministers' direction. The Privy Council Office directly supports the Prime Minister and Cabinet.<div class="ppl-tag">Implements laws</div></dd>
-        </div><div class="lexique-item">
-          <div class="lex-head"><dt>The Supreme Court of Canada</dt><span class="lex-badge ppl-badge" style="background:var(--pink)">Other roles and institutions</span></div>
-          <dd>The country's highest court: it can strike down a law that violates the Constitution (including the Charter), and the government can ask it for an opinion on a question (a "reference").<div class="ppl-tag">Judicial branch</div></dd>
-        </div><div class="lexique-item">
-          <div class="lex-head"><dt>The Usher of the Black Rod and the Sergeant-at-Arms</dt><span class="lex-badge ppl-badge" style="background:var(--pink)">Other roles and institutions</span></div>
-          <dd>Ceremonial figures: the Usher of the Black Rod (Senate) knocks on the Commons' door to summon MPs to royal assent; the Sergeant-at-Arms carries the mace, symbol of the House's authority.<div class="ppl-tag">Ceremonial</div></dd>
-        </div></div>
-    <div id="sec-lobby" style="background:var(--card); border:3px solid var(--line); border-radius:var(--radius); padding:14px 16px; margin:14px 0 4px; scroll-margin-top:12px;">
-      <div style="font-family:'IBM Plex Mono',monospace; font-size:15px; font-weight:600; margin-bottom:6px;">🏢 The lobbyist registry</div>
-      <p style="font-size:13px; line-height:1.65; color:var(--ink); margin:0 0 8px; max-width:680px;">Anyone paid to communicate with federal <b>public office holders</b> about laws, policies, grants or contracts must register in a <b>public registry</b>, overseen by the independent <b>Commissioner of Lobbying</b>. Registered lobbyists must also file <b>monthly reports</b> of their arranged communications with designated office holders (ministers, senior officials, MPs, senators).</p>
-      <p style="font-size:12px; line-height:1.6; color:var(--slate); margin:0 0 10px; max-width:680px;">On each bill's page, DossierCanada shows the reported communications that <b>name that bill</b> — count, most active organizations, and recent meetings, each linked to its official record. Two limits we own: the Commissioner's files have no queryable API, so we refresh the archive by hand about once a month; and because bill numbers are reused from one Parliament to the next, we only count communications whose description names both the number and the bill's title. The figure shown is a floor. For everything else — a person, a company, a subject — the official tools below are the source.</p>
-      <div style="font-size:12.5px; display:flex; flex-wrap:wrap; align-items:center; row-gap:6px;"><a href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/guest" target="_blank" rel="noopener" style="color:var(--gold); white-space:nowrap;">Search the registry ↗</a><span style="color:var(--line); margin:0 8px;">·</span><a href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/rcntCmLgs" target="_blank" rel="noopener" style="color:var(--gold); white-space:nowrap;">Recent communications ↗</a><span style="color:var(--line); margin:0 8px;">·</span><a href="https://open.canada.ca/data/en/dataset/a34eb330-7136-4f5e-9f5f-3ba41df58b06" target="_blank" rel="noopener" style="color:var(--gold); white-space:nowrap;">Open data ↗</a></div>
-    </div><div class="role-group-title" id="sec-lexique-terms" style="margin-top:26px;">Parliamentary jargon</div><div class="lex-cats">
-      <span class="lex-chip active" onclick="setLexCat(null)">All</span>
-      <span class="lex-chip" style="" onclick="setLexCat('proc')">Procedure (6)</span><span class="lex-chip" style="" onclick="setLexCat('votes')">Votes (2)</span><span class="lex-chip" style="" onclick="setLexCat('roles')">People &amp; roles (5)</span>
-    </div><div class="lexique-grid"><div class="lexique-item"><div class="lex-head"><dt>Bill (C- / S-)</dt><span class="lex-badge" style="background:var(--yellow)">Procedure</span></div><dd>A proposed text that must clear both chambers and then receive royal assent to become law. Bills numbered <b>C-</b> start in the House of Commons, <b>S-</b> in the Senate. Numbers below 200 are government bills; from C-200 / S-200 on, they are private members' or senators' bills.</dd></div><div class="lexique-item"><div class="lex-head"><dt>Pro forma bill</dt></div><dd>The very first bill introduced in each chamber when a session opens — <b>C-1</b> in the Commons, <b>S-1</b> in the Senate. It is a ritual, not legislation: before hearing the Speech from the Throne, the chamber introduces a token text to assert that it legislates of its own accord and not at the Crown's bidding. It is never printed, never debated, never voted on. Its title is traditional and unrelated to any content — there is none: railways in the Senate, oaths of office in the Commons.</dd></div><div class="lexique-item"><div class="lex-head"><dt>First, second, third reading</dt><span class="lex-badge" style="background:var(--yellow)">Procedure</span></div><dd>The three main stages of a bill in each chamber. <b>1st</b>: introduction (no debate). <b>2nd</b>: vote on the principle. <b>3rd</b>: the chamber's final vote. A bill runs this course <i>twice</i> — once per chamber.</dd></div><div class="lexique-item"><div class="lex-head"><dt>Committee / report stage</dt><span class="lex-badge" style="background:var(--yellow)">Procedure</span></div><dd>Between 2nd and 3rd reading, a committee studies the bill clause by clause and may propose amendments; report stage brings the result (and any amendments) back before the chamber.</dd></div><div class="lexique-item"><div class="lex-head"><dt>Royal assent</dt><span class="lex-badge" style="background:var(--yellow)">Procedure</span></div><dd>The final step: once passed in identical form by both chambers, the bill receives the Crown's formal agreement (the Governor General) and becomes law.</dd></div><div class="lexique-item"><div class="lex-head"><dt>Recorded (standing) vote</dt><span class="lex-badge" style="background:var(--cyan)">Votes</span></div><dd>A vote where each member's name and position are recorded. It is the source of the "who voted what" detail on this site — in the Commons (yea / nay / paired) and in the Senate (yea / nay / abstention).</dd></div><div class="lexique-item"><div class="lex-head"><dt>Paired (Commons)</dt><span class="lex-badge" style="background:var(--cyan)">Votes</span></div><dd>In the Commons, two MPs on opposite sides may agree to abstain together for a vote: their votes cancel out. "Paired" is therefore a recorded position, not an absence.</dd></div><div class="lexique-item"><div class="lex-head"><dt>Bill sponsor</dt><span class="lex-badge" style="background:var(--lime)">People &amp; roles</span></div><dd>The member (minister, MP or senator) who introduces the bill and carries it through the stages.</dd></div><div class="lexique-item"><div class="lex-head"><dt>Senator</dt><span class="lex-badge" style="background:var(--lime)">People &amp; roles</span></div><dd>A member of the Senate, the second chamber (105 seats). Senators are <b>not elected</b>: they are <b>appointed</b> by the Governor General on the Prime Minister's recommendation. Since 2016, an <b>independent advisory board</b> assesses applications on merit, in a non-partisan way, and recommends names to the Prime Minister. Requirements: be at least <b>30 years old</b>, reside in the province or territory represented and own property there. The term runs until age <b>75</b> (there is no election and no fixed length).</dd></div><div class="lexique-item"><div class="lex-head"><dt>Senate parliamentary groups</dt><span class="lex-badge" style="background:var(--lime)">People &amp; roles</span></div><dd>Since the 2016 reforms, the Senate is organized mostly into <b>non-partisan</b> groups rather than parties: <b>ISG</b> (Independent Senators Group), <b>CSG</b> (Canadian Senators Group), <b>PSG</b> (Progressive Senate Group). Alongside them sit the <b>C</b> (Conservative caucus, the only remaining party), the <b>GRO</b> (Government Representative Office, which steers the government's agenda) and <b>non-affiliated</b> senators.</dd></div><div class="lexique-item"><div class="lex-head"><dt>Caucus</dt><span class="lex-badge" style="background:var(--lime)">People &amp; roles</span></div><dd>All the members of a given party. In the Commons: LPC (Liberal), CPC (Conservative), BQ (Bloc), NDP, GPC (Green).</dd></div><div class="lexique-item"><div class="lex-head"><dt>Parliament and session</dt><span class="lex-badge" style="background:var(--yellow)">Procedure</span></div><dd>A <b>Parliament</b> spans the period between two general elections (the 45th began in 2025). It is divided into <b>sessions</b>; "45-1" means the 1st session of the 45th Parliament — the period this site covers.</dd></div><div class="lexique-item"><div class="lex-head"><dt>Prorogation / dissolution</dt><span class="lex-badge" style="background:var(--yellow)">Procedure</span></div><dd><b>Prorogation</b> ends a session (bills not yet passed die, unless reinstated); <b>dissolution</b> ends the Parliament and triggers an election.</dd></div><div class="lexique-item"><div class="lex-head"><dt>Cabinet</dt><span class="lex-badge" style="background:var(--lime)">People &amp; roles</span></div><dd>The team of ministers, led by the Prime Minister, that directs the government and proposes most bills. Ministers are almost always MPs.</dd></div></div><!--/ssr--></dl>
+    <dl id="lexiqueList"><!--ssr--><!--/ssr--></dl>
 
   </section>
 
@@ -463,7 +402,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span data-i18n="footer.source">Source code</span>
     </a>
     <button type="button" class="footer-temoins" onclick="rouvrirTemoins()" data-i18n="footer.temoins">Cookies</button>
-    <span id="footerRight" data-i18n="footer.right">Built with Claude</span><a class="footer-etmoi" data-view="bd" href="/en/mises-a-jour" data-i18n="footer.etmoi">and me</a>
+    <span id="footerRight" data-i18n="footer.right">Built with Claude</span><a class="footer-etmoi" data-view="bd" href="/en/updates" data-i18n="footer.etmoi">and me</a>
   </span>
 </footer>
 
@@ -490,7 +429,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=97c5b8130d"></script>
+<script defer src="/assets/app.js?v=d5a433763f"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

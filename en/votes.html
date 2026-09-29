@@ -117,11 +117,11 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
 <nav class="tabs">
   <div class="close-menu" id="closeMenuBtn"><span data-i18n="nav.close">Close</span> ✕</div>
   <a data-view="apercu" href="/en"><span class="n">01</span><span data-i18n="nav.apercu">Overview</span></a>
-  <a data-view="ministres" href="/en/deputes"><span class="n">02</span><span data-i18n="nav.ministres">MPs</span></a>
-  <a data-view="cabinet" href="/en/ministres"><span class="n">03</span><span data-i18n="nav.cabinet">Ministers</span></a>
-  <a data-view="projets" href="/en/projets-de-loi"><span class="n">04</span><span data-i18n="nav.projets">Bills</span></a>
+  <a data-view="ministres" href="/en/mps"><span class="n">02</span><span data-i18n="nav.ministres">MPs</span></a>
+  <a data-view="cabinet" href="/en/ministers"><span class="n">03</span><span data-i18n="nav.cabinet">Ministers</span></a>
+  <a data-view="projets" href="/en/bills"><span class="n">04</span><span data-i18n="nav.projets">Bills</span></a>
   <a class="active" data-view="votes" href="/en/votes" aria-current="page"><span class="n">05</span><span data-i18n="nav.votes">Votes</span></a>
-  <a data-view="lexique" href="/en/lexique"><span class="n">06</span><span data-i18n="nav.lexique">Glossary</span></a>
+  <a data-view="lexique" href="/en/glossary"><span class="n">06</span><span data-i18n="nav.lexique">Glossary</span></a>
 </nav>
 </div>
 <script>
@@ -162,7 +162,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     <section id="sec-challenged" class="challenge-band">
       <div class="cb-head">
         <h2 id="challengedTitle" data-i18n="cb.title">Challenged bills</h2>
-        <a class="cb-cta" data-view="projets" href="/en/projets-de-loi">✋ <span id="cbCtaLabel" data-i18n="cb.cta">Challenge a bill</span></a>
+        <a class="cb-cta" data-view="projets" href="/en/bills">✋ <span id="cbCtaLabel" data-i18n="cb.cta">Challenge a bill</span></a>
       </div>
       <div class="cb-subrow">
         <div class="cb-sub" id="challengedSub"></div>
@@ -184,7 +184,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <main class="a3-main">
         <div class="a3-main-head">
           <h2 data-i18n="h.billsrecent">Recently active bills</h2>
-          <a class="a3-seeall" data-view="projets" href="/en/projets-de-loi" data-i18n="a3.seeall">See all →</a>
+          <a class="a3-seeall" data-view="projets" href="/en/bills" data-i18n="a3.seeall">See all →</a>
         </div>
         <div id="apercuBills"><!--ssr--><!--/ssr--></div>
         <div class="a3-tiles">
@@ -192,7 +192,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
             <span class="a3-tile-tag" style="background:var(--lime)" data-i18n="nav.votes">Votes</span>
             <p data-i18n="a3.tileVotes">Every recorded vote — who voted what, and by what margin.</p>
           </a>
-          <a class="a3-tile" data-view="lexique" href="/en/lexique">
+          <a class="a3-tile" data-view="lexique" href="/en/glossary">
             <span class="a3-tile-tag" style="background:var(--cyan)" data-i18n="nav.lexique">Glossary</span>
             <p data-i18n="a3.tileLex">Parliamentary jargon translated into plain language, no poli-sci degree needed.</p>
           </a>
@@ -802,7 +802,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span data-i18n="footer.source">Source code</span>
     </a>
     <button type="button" class="footer-temoins" onclick="rouvrirTemoins()" data-i18n="footer.temoins">Cookies</button>
-    <span id="footerRight" data-i18n="footer.right">Built with Claude</span><a class="footer-etmoi" data-view="bd" href="/en/mises-a-jour" data-i18n="footer.etmoi">and me</a>
+    <span id="footerRight" data-i18n="footer.right">Built with Claude</span><a class="footer-etmoi" data-view="bd" href="/en/updates" data-i18n="footer.etmoi">and me</a>
   </span>
 </footer>
 
@@ -829,7 +829,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=97c5b8130d"></script>
+<script defer src="/assets/app.js?v=d5a433763f"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

@@ -128,6 +128,9 @@ index.html                     Balisage du site ET page d'accueil FR ; gabarit d
 assets/app.css                 Feuille de style du site (partagée, mise en cache un an)
 assets/app.js                  Script du site : i18n FR/EN, rendu, PAGE_META (partagé, mis en cache)
 *.html, en.html, en/*.html     Pages générées (build:pages + build:prerender) — ne pas éditer à la main
+                               FR : /deputes, /projets-de-loi, /lexique, /mises-a-jour…
+                               EN : /en/mps, /en/bills, /en/glossary, /en/updates (adresses propres
+                               à chaque langue ; les anciennes /en/<slug français> redirigent, voir vercel.json)
 404.html                       Page introuvable (statique, noindex)
 data/site-data.js              Noyau des données, chargé par toutes les pages (GÉNÉRÉ)
 data/d-bills.js                Projets de loi + lobbying — chargé à l'ouverture de l'onglet (GÉNÉRÉ)
