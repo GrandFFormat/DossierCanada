@@ -17,11 +17,11 @@
     "volet": "site",
     "fr": {
       "titre": "On vous demande avant de déposer un témoin",
-      "texte": "Le site compte maintenant ses visites avec Google Analytics, qui dépose des témoins (« cookies »). Rien n’est chargé avant votre réponse : une fenêtre au centre de l’écran pose la question, refuser est aussi simple qu’accepter, et refuser efface les témoins déjà déposés. Le lien « Témoins » en pied de page permet de changer d’avis."
+      "texte": "Le site compte maintenant ses visites avec Google Analytics, qui dépose des témoins (« cookies »). Rien n’est chargé avant votre réponse : une bande en bas de page pose la question, refuser est aussi simple qu’accepter, et refuser efface les témoins déjà déposés. Le lien « Témoins » en pied de page permet de changer d’avis."
     },
     "en": {
       "titre": "We ask before setting a cookie",
-      "texte": "The site now counts its visits with Google Analytics, which sets cookies. Nothing loads before you answer: a panel in the middle of the screen asks, declining is as easy as accepting, and declining also clears cookies already set. The “Cookies” link in the footer lets you change your mind."
+      "texte": "The site now counts its visits with Google Analytics, which sets cookies. Nothing loads before you answer: a bar at the bottom of the page asks, declining is as easy as accepting, and declining also clears cookies already set. The “Cookies” link in the footer lets you change your mind."
     },
     "commits": []
   },

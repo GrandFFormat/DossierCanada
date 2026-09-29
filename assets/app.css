@@ -958,34 +958,32 @@
   .footer-temoins:hover{ color:var(--ink); }
 
   /* ---------- DEMANDE DE CONSENTEMENT AUX TÉMOINS ----------
-     Au centre de l'écran, sur un voile : on répond avant de continuer, et la
-     question ne se noie pas en bas de page. Les deux boutons ont le même poids
-     visuel — refuser doit être aussi facile qu'accepter. */
+     En bas de page, pas au centre : la question se pose sans bloquer la lecture.
+     Même forme que sur DossierQuébec. Les deux boutons ont la même taille —
+     refuser doit être aussi facile qu'accepter. */
   .temoins{
-    position:fixed; inset:0; z-index:100;
-    display:flex; align-items:center; justify-content:center; padding:20px;
-    background:rgba(19,19,19,0.45);
+    position:fixed; left:16px; right:16px; bottom:16px; z-index:60;
+    display:flex; justify-content:center; pointer-events:none;
   }
   .temoins[hidden]{ display:none; }
   .temoins-carte{
-    width:100%; max-width:520px;
-    background:var(--paper); border:3px solid var(--ink); box-shadow:7px 7px 0 var(--ink);
-    padding:24px 26px 22px;
+    pointer-events:auto; width:100%; max-width:640px;
+    background:var(--paper); border:3px solid var(--ink); box-shadow:5px 5px 0 var(--ink);
+    padding:16px 18px 15px;
   }
   .temoins-titre{
     font-family:'Archivo Black',sans-serif; font-weight:400; text-transform:uppercase;
-    font-size:20px; line-height:1.15; color:var(--ink); margin:0 0 4px;
+    font-size:15px; line-height:1.2; color:var(--ink); margin:0 0 9px;
   }
-  .temoins-titre::after{ content:''; display:block; width:110px; height:5px; margin:9px 0 14px; background:var(--yellow); }
   .temoins-texte{
-    margin:0 0 20px; font-family:'Archivo',system-ui,sans-serif;
-    font-size:14.5px; line-height:1.6; color:var(--ink); max-width:56ch;
+    margin:0 0 14px; font-family:'Archivo',system-ui,sans-serif;
+    font-size:14px; line-height:1.55; color:var(--ink); max-width:66ch;
   }
-  .temoins-boutons{ display:flex; gap:12px; }
+  .temoins-boutons{ display:flex; gap:10px; }
   .temoins-boutons button{
-    flex:1; font-family:'IBM Plex Mono',monospace; font-size:12.5px; font-weight:700;
+    font-family:'IBM Plex Mono',monospace; font-size:12px; font-weight:700;
     text-transform:uppercase; letter-spacing:0.04em;
-    padding:11px 16px; border:2px solid var(--ink); cursor:pointer;
+    padding:9px 18px; border:2px solid var(--ink); cursor:pointer;
     box-shadow:3px 3px 0 var(--ink);
   }
   .temoins-oui{ background:var(--lime); color:var(--on-candy); }
@@ -993,10 +991,10 @@
   .temoins-boutons button:hover{ background:var(--yellow); color:var(--on-candy); }
   .temoins-boutons button:active{ transform:translate(2px,2px); box-shadow:1px 1px 0 var(--ink); }
   @media (max-width:560px){
-    .temoins-carte{ padding:18px 18px 16px; }
-    .temoins-titre{ font-size:18px; }
-    .temoins-texte{ font-size:14px; margin-bottom:16px; }
-    .temoins-boutons{ flex-direction:column; }
+    .temoins{ left:10px; right:10px; bottom:10px; }
+    .temoins-carte{ padding:13px 14px 12px; }
+    .temoins-texte{ font-size:13.5px; }
+    .temoins-boutons button{ flex:1; padding:9px 10px; }
   }
 
   .back-to-top{
