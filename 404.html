@@ -27,14 +27,22 @@
   li a:hover{ background:var(--pink); }
   .en{ margin-top:22px; padding-top:18px; border-top:2px dashed var(--ink); }
 </style>
-<!-- Google Analytics (gtag.js) — même mesure que sur les pages du site, pour
-     voir quelles adresses mènent ici. Dépose des cookies (voir README.md). -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2FEHLSPV23"></script>
+<!-- Google Analytics — comme sur le reste du site, UNIQUEMENT si la personne a
+     déjà accepté les témoins. Pas de bande de consentement ici : une page
+     d'erreur n'est pas l'endroit pour poser la question. -->
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-2FEHLSPV23');
+  try{
+    if(localStorage.getItem('dossiercanada:temoins') === 'oui'){
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function(){ dataLayer.push(arguments); };
+      gtag('js', new Date());
+      gtag('config', 'G-2FEHLSPV23');
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-2FEHLSPV23';
+      document.head.appendChild(s);
+    }
+  }catch(e){}
 </script>
 </head>
 <body>

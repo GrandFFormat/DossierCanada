@@ -184,10 +184,12 @@ les 14 pages générées) et de `404.html` :
   Google : la « mesure améliorée » doit rester active pour que les changements d'onglet
   (navigation par `history.pushState`, sans rechargement) comptent comme des pages vues.
 
-⚠️ **Consentement** : le site n'a aucune bannière de cookies, ce qui se justifiait tant
-que la mesure était sans cookie. La Loi 25 (Québec) et la LPRPDE encadrent les témoins
-non essentiels ; un site qui vise le grand public devrait soit demander le consentement,
-soit s'en tenir à une mesure sans cookie. Décision de Martin, à trancher.
+**Consentement (Loi 25)** : gtag ne se charge **qu'après un oui explicite**. Tant que
+personne n'a répondu — ou si on a refusé — aucun script Google n'est chargé et aucun
+témoin n'est déposé. La réponse est gardée sur l'appareil (`localStorage`,
+`dossiercanada:temoins`), la bande est en bas de page, et le lien « Témoins » du pied
+de page repose la question. Refuser efface aussi les témoins `_ga*` déjà déposés.
+La mesure Vercel, sans témoin, tourne dans tous les cas.
 
 ## Contraintes
 

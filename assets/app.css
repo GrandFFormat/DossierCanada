@@ -949,6 +949,45 @@
   .footer-gh{display:inline-flex; align-items:center; gap:5px; color:var(--slate); text-decoration:none;}
   .footer-gh:hover{color:var(--ink);}
   .footer-coffee{cursor:pointer;}
+  /* Retirer son accord aux témoins : même poids visuel que les autres liens du pied. */
+  .footer-temoins{
+    background:none; border:0; padding:0; cursor:pointer;
+    font-family:'IBM Plex Mono',monospace; font-size:inherit; color:var(--slate);
+    text-decoration:underline; text-underline-offset:3px;
+  }
+  .footer-temoins:hover{ color:var(--ink); }
+
+  /* ---------- BANDE DE CONSENTEMENT AUX TÉMOINS ----------
+     Posée en bas, au-dessus du bouton « remonter », et jamais par-dessus le
+     contenu qu'on est en train de lire. Deux boutons de même poids visuel :
+     refuser doit être aussi facile qu'accepter. */
+  .temoins{
+    position:fixed; left:0; right:0; bottom:0; z-index:60;
+    display:flex; align-items:center; gap:18px; flex-wrap:wrap;
+    padding:14px 20px; background:var(--paper-2); border-top:3px solid var(--ink);
+    box-shadow:0 -4px 0 rgba(0,0,0,0.08);
+  }
+  .temoins-texte{
+    flex:1 1 320px; margin:0; max-width:78ch;
+    font-family:'Archivo',system-ui,sans-serif; font-size:13.5px; line-height:1.5; color:var(--ink);
+  }
+  .temoins-boutons{ flex:none; display:flex; gap:10px; }
+  .temoins-boutons button{
+    font-family:'IBM Plex Mono',monospace; font-size:12px; font-weight:700;
+    text-transform:uppercase; letter-spacing:0.04em;
+    padding:9px 16px; border:2px solid var(--ink); cursor:pointer;
+    box-shadow:3px 3px 0 var(--ink);
+  }
+  .temoins-oui{ background:var(--lime); color:var(--on-candy); }
+  .temoins-non{ background:var(--paper); color:var(--ink); }
+  .temoins-boutons button:hover{ background:var(--yellow); color:var(--on-candy); }
+  .temoins-boutons button:active{ transform:translate(2px,2px); box-shadow:1px 1px 0 var(--ink); }
+  @media (max-width:560px){
+    .temoins{ padding:12px 14px; gap:12px; }
+    .temoins-texte{ font-size:13px; }
+    .temoins-boutons{ width:100%; }
+    .temoins-boutons button{ flex:1; }
+  }
 
   .back-to-top{
     position:fixed; right:24px; bottom:24px; z-index:50;
