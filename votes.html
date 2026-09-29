@@ -62,7 +62,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=f0a948f6e9">
+<link rel="stylesheet" href="/assets/app.css?v=d239152683">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -809,11 +809,14 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
 <!-- Bande de consentement aux témoins. Cachée tant qu'on ne sait pas s'il faut la
      poser (choix déjà fait ou non) : elle apparaît par JavaScript, sinon elle
      clignoterait à chaque page pour quelqu'un qui a déjà répondu. -->
-<div id="temoinsBande" class="temoins" role="dialog" aria-live="polite" aria-label="Témoins de navigation" hidden>
-  <p class="temoins-texte" data-i18n="temoins.texte">Ce site dépose des témoins (« cookies ») de Google Analytics pour compter les visites. Rien d'autre : pas de publicité, pas de revente, pas de suivi ailleurs. Vous pouvez refuser : le site marche pareil.</p>
-  <div class="temoins-boutons">
-    <button type="button" class="temoins-non" onclick="repondreTemoins(false)" data-i18n="temoins.refuser">Refuser</button>
-    <button type="button" class="temoins-oui" onclick="repondreTemoins(true)" data-i18n="temoins.accepter">Accepter</button>
+<div id="temoinsBande" class="temoins" role="dialog" aria-modal="true" aria-labelledby="temoinsTitre" hidden>
+  <div class="temoins-carte">
+    <h2 class="temoins-titre" id="temoinsTitre" data-i18n="temoins.titre">Un mot sur les témoins</h2>
+    <p class="temoins-texte" data-i18n="temoins.texte">Ce site dépose des témoins (« cookies ») de Google Analytics pour compter les visites. Rien d'autre : pas de publicité, pas de revente, pas de suivi ailleurs. Vous pouvez refuser : le site marche pareil.</p>
+    <div class="temoins-boutons">
+      <button type="button" class="temoins-non" id="temoinsNon" data-i18n="temoins.refuser">Refuser</button>
+      <button type="button" class="temoins-oui" id="temoinsOui" data-i18n="temoins.accepter">Accepter</button>
+    </div>
   </div>
 </div>
 
@@ -826,7 +829,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=83eabe45fa"></script>
+<script defer src="/assets/app.js?v=46ece91247"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->
