@@ -63,6 +63,17 @@ try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStor
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
 <link rel="stylesheet" href="/assets/app.css?v=df23d2b46e">
+<!-- Google Analytics (gtag.js) — chargé en async, donc jamais bloquant pour
+     l'affichage. Présent sur les 14 pages : elles sont toutes générées depuis
+     ce fichier. ⚠️ Contrairement aux statistiques Vercel, gtag DÉPOSE DES
+     COOKIES : voir la note sur le consentement dans README.md. -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W34WHBC1ES"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-W34WHBC1ES');
+</script>
 </head>
 <body class="lang-en">
 

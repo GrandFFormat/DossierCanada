@@ -174,6 +174,21 @@ vercel.json                    Config Vercel (cron, URL propres, en-têtes noind
 - **Resend** — envoi du digest courriel
 - **Cloudflare** — DNS du domaine
 
+### Mesure d'audience
+
+Deux mesures cohabitent, déclarées dans le `<head>` de `index.html` (donc reprises par
+les 14 pages générées) et de `404.html` :
+
+- **Vercel Web Analytics** — sans cookie, sans donnée personnelle.
+- **Google Analytics 4** (`G-W34WHBC1ES`) — **dépose des cookies**. À vérifier côté
+  Google : la « mesure améliorée » doit rester active pour que les changements d'onglet
+  (navigation par `history.pushState`, sans rechargement) comptent comme des pages vues.
+
+⚠️ **Consentement** : le site n'a aucune bannière de cookies, ce qui se justifiait tant
+que la mesure était sans cookie. La Loi 25 (Québec) et la LPRPDE encadrent les témoins
+non essentiels ; un site qui vise le grand public devrait soit demander le consentement,
+soit s'en tenir à une mesure sans cookie. Décision de Martin, à trancher.
+
 ## Contraintes
 
 - **Secrets** (clés Supabase service_role, Resend, `CRON_SECRET`) : **uniquement** dans les
