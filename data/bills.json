@@ -1,9 +1,173 @@
 {
   "source": "https://www.parl.ca/legisinfo/en/bills/json?parlsession=45-1",
   "session": "45-1",
-  "scrapedAt": "2026-09-28T16:40:44.178Z",
+  "scrapedAt": "2026-09-29T14:46:17.390Z",
   "count": 187,
   "bills": [
+    {
+      "id": 13605049,
+      "num": "C-10",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "commons",
+      "type": {
+        "en": "House Government Bill",
+        "fr": "Projet de loi émanant du gouvernement (Cdc)"
+      },
+      "isGovernment": true,
+      "title": {
+        "en": "An Act respecting the Commissioner for Modern Treaty Implementation",
+        "fr": "Loi concernant le commissaire à la mise en œuvre des traités modernes"
+      },
+      "shortTitle": {
+        "en": "Commissioner for Modern Treaty Implementation Act",
+        "fr": "Loi sur le commissaire à la mise en œuvre des traités modernes"
+      },
+      "sponsor": {
+        "en": "Hon. Rebecca Alty",
+        "fr": "L’hon. Rebecca Alty"
+      },
+      "status": {
+        "en": "At second reading in the Senate",
+        "fr": "À la deuxième lecture au Sénat"
+      },
+      "state": "encours",
+      "milestones": [
+        {
+          "stage": "commons_first_reading",
+          "chamber": "commons",
+          "reading": 1,
+          "date": "2025-09-25"
+        },
+        {
+          "stage": "commons_second_reading",
+          "chamber": "commons",
+          "reading": 2,
+          "date": "2026-02-09"
+        },
+        {
+          "stage": "commons_third_reading",
+          "chamber": "commons",
+          "reading": 3,
+          "date": "2026-09-21"
+        },
+        {
+          "stage": "senate_first_reading",
+          "chamber": "senate",
+          "reading": 1,
+          "date": "2026-09-28"
+        }
+      ],
+      "royalAssent": null,
+      "reinstated": false,
+      "latestActivity": {
+        "en": "At second reading in the Senate",
+        "fr": "À la deuxième lecture au Sénat",
+        "date": "2026-09-28"
+      },
+      "lastActivity": "2026-09-28",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-10",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-10"
+      },
+      "sponsorPersonId": 123675,
+      "sponsorName": {
+        "first": "Rebecca",
+        "last": "Alty"
+      },
+      "fullSummaryAvailable": true,
+      "summary": {
+        "en": "A legislative summary is currently being prepared for this bill by the Parliamentary Information, Education and Research Services of the Library of Parliament. Meanwhile, the following executive summary is available.\n\nOn 25 September 2025, the Minister of Crown-Indigenous Relations introduced Bill C-10, An Act respecting the Commissioner for Modern Treaty Implementation (Commissioner for Modern Treaty Implementation Act) and it was given first reading.\n\nBill C-10 provides for the appointment of a Commissioner for Modern Treaty Implementation to conduct reviews and performance audits of the activities of government institutions related to the implementation of modern treaties. It also establishes the Office of the Commissioner for Modern Treaty Implementation for the purpose of assisting the Commissioner in the fulfillment of their mandate and the exercise of their powers and the performance of their duties and functions. Finally, it makes consequential amendments to other Acts.A legislative summary is currently being prepared for this bill by the Parliamentary Information, Education and Research Services of the Library of Parliament. Meanwhile, the following executive summary is available.\n\nOn 25 September 2025, the Minister of Crown-Indigenous Relations introduced Bill C-10, An Act respecting the Commissioner for Modern Treaty Implementation (Commissioner for Modern Treaty Implementation Act) and it was given first reading.\n\nBill C-10 provides for the appointment of a Commissioner for Modern Treaty Implementation to conduct reviews and performance audits of the activities of government institutions related to the implementation of modern treaties. It also establishes the Office of the Commissioner for Modern Treaty Implementation for the purpose of assisting the Commissioner in the fulfillment of their mandate and the exercise of their powers and the performance of their duties and functions. Finally, it makes consequential amendments to other Acts.",
+        "fr": "Les Service d’information, d’éducation et de recherche parlementaires de la Bibliothèque du Parlement rédige actuellement le résumé législatif de ce projet de loi. Entre-temps, le Service met à votre disposition le sommaire suivant.\n\nLe 25 septembre 2025, le ministre des Relations Couronne-Autochtones a déposé le projet de loi C-10, Loi concernant le commissaire à la mise en œuvre des traités modernes (Loi sur le commissaire à la mise en œuvre des traités modernes) à la Chambre des communes en première lecture.\n\nLe projet de loi C-10 confie au commissaire à la mise en œuvre des traités modernes la charge d’effectuer des examens et des vérifications de performance à l’égard des activités des institutions fédérales liées à la mise en œuvre de ces traités. De plus, il constitue le Commissariat à la mise en œuvre des traités modernes afin de soutenir le commissaire dans l’accomplissement de sa mission et l’exercice de ses attributions. Enfin, il apporte des modifications corrélatives à d’autres lois.Les Service d’information, d’éducation et de recherche parlementaires de la Bibliothèque du Parlement rédige actuellement le résumé législatif de ce projet de loi. Entre-temps, le Service met à votre disposition le sommaire suivant.\n\nLe 25 septembre 2025, le ministre des Relations Couronne-Autochtones a déposé le projet de loi C-10, Loi concernant le commissaire à la mise en œuvre des traités modernes (Loi sur le commissaire à la mise en œuvre des traités modernes) à la Chambre des communes en première lecture.\n\nLe projet de loi C-10 confie au commissaire à la mise en œuvre des traités modernes la charge d’effectuer des examens et des vérifications de performance à l’égard des activités des institutions fédérales liées à la mise en œuvre de ces traités. De plus, il constitue le Commissariat à la mise en œuvre des traités modernes afin de soutenir le commissaire dans l’accomplissement de sa mission et l’exercice de ses attributions. Enfin, il apporte des modifications corrélatives à d’autres lois."
+      },
+      "summarySource": "library"
+    },
+    {
+      "id": 13932352,
+      "num": "C-27",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "commons",
+      "type": {
+        "en": "House Government Bill",
+        "fr": "Projet de loi émanant du gouvernement (Cdc)"
+      },
+      "isGovernment": true,
+      "title": {
+        "en": "An Act to give effect to the Final Self-Government Agreement for the Tlegohli Got’ine and to make consequential amendments to other Acts",
+        "fr": "Loi portant mise en vigueur de l’accord définitif sur l’autonomie gouvernementale des Tlegohli Got’ine et modifiant certaines lois en conséquence"
+      },
+      "shortTitle": {
+        "en": "Final Self-Government Agreement for the Tlegohli Got’ine Act",
+        "fr": "Loi sur l’accord définitif sur l’autonomie gouvernementale des Tlegohli Got’ine"
+      },
+      "sponsor": {
+        "en": "Hon. Rebecca Alty",
+        "fr": "L’hon. Rebecca Alty"
+      },
+      "status": {
+        "en": "At consideration in committee in the Senate",
+        "fr": "À l'examen en comité au Sénat"
+      },
+      "state": "encours",
+      "milestones": [
+        {
+          "stage": "commons_first_reading",
+          "chamber": "commons",
+          "reading": 1,
+          "date": "2026-03-26"
+        },
+        {
+          "stage": "commons_second_reading",
+          "chamber": "commons",
+          "reading": 2,
+          "date": "2026-06-12"
+        },
+        {
+          "stage": "commons_third_reading",
+          "chamber": "commons",
+          "reading": 3,
+          "date": "2026-06-18"
+        },
+        {
+          "stage": "senate_first_reading",
+          "chamber": "senate",
+          "reading": 1,
+          "date": "2026-06-18"
+        },
+        {
+          "stage": "senate_second_reading",
+          "chamber": "senate",
+          "reading": 2,
+          "date": "2026-09-28"
+        }
+      ],
+      "royalAssent": null,
+      "reinstated": false,
+      "latestActivity": {
+        "en": "At consideration in committee in the Senate",
+        "fr": "À l'examen en comité au Sénat",
+        "date": "2026-09-28"
+      },
+      "lastActivity": "2026-09-28",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-27",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-27"
+      },
+      "sponsorPersonId": 123675,
+      "sponsorName": {
+        "first": "Rebecca",
+        "last": "Alty"
+      },
+      "fullSummaryAvailable": false,
+      "summary": {
+        "en": "A legislative summary is currently being prepared for this bill by the Parliamentary Information, Education and Research Services of the Library of Parliament. Meanwhile, the following executive summary is available.\n\nOn 26 March 2026, the Minister of Crown-Indigenous Relations introduced Bill C-27, An Act to give effect to the Final Self-Government Agreement for the Tlegohli Got’ine and to make consequential amendments to other Acts (Final Self-Government Agreement for the Tlegohli Got’ine Act) in the House of Commons and it was given first reading.\n\nBill C-27 gives effect to the Final Self-Government Agreement for the Tlego´hli? Got’ine and makes consequential amendments to other Acts.A legislative summary is currently being prepared for this bill by the Parliamentary Information, Education and Research Services of the Library of Parliament. Meanwhile, the following executive summary is available.\n\nOn 26 March 2026, the Minister of Crown-Indigenous Relations introduced Bill C-27, An Act to give effect to the Final Self-Government Agreement for the Tlegohli Got’ine and to make consequential amendments to other Acts (Final Self-Government Agreement for the Tlegohli Got’ine Act) in the House of Commons and it was given first reading.\n\nBill C-27 gives effect to the Final Self-Government Agreement for the Tlego´hli? Got’ine and makes consequential amendments to other Acts.",
+        "fr": "Les Service d’information, d’éducation et de recherche parlementaires de la Bibliothèque du Parlement rédige actuellement le résumé législatif de ce projet de loi. Entre-temps, le Service met à votre disposition le sommaire suivant.\n\nLe 26 mars 2026, le ministre des Relations Couronne-Autochtones a déposé le projet de loi C-27, Loi portant mise en vigueur de l’accord définitif sur l’autonomie gouvernementale des Tlegohli Got’ine et modifiant certaines lois en conséquence (Loi sur l’accord définitif sur l’autonomie gouvernementale des Tlegohli Got’ine) à la Chambre des communes en première lecture.\n\nLe projet de loi C-27 met en vigueur l’accord définitif sur l’autonomie gouvernementale des Tlego´hli? Got’ine et modifie certaines lois en conséquence.Les Service d’information, d’éducation et de recherche parlementaires de la Bibliothèque du Parlement rédige actuellement le résumé législatif de ce projet de loi. Entre-temps, le Service met à votre disposition le sommaire suivant.\n\nLe 26 mars 2026, le ministre des Relations Couronne-Autochtones a déposé le projet de loi C-27, Loi portant mise en vigueur de l’accord définitif sur l’autonomie gouvernementale des Tlegohli Got’ine et modifiant certaines lois en conséquence (Loi sur l’accord définitif sur l’autonomie gouvernementale des Tlegohli Got’ine) à la Chambre des communes en première lecture.\n\nLe projet de loi C-27 met en vigueur l’accord définitif sur l’autonomie gouvernementale des Tlego´hli? Got’ine et modifie certaines lois en conséquence."
+      },
+      "summarySource": "library"
+    },
     {
       "id": 13951690,
       "num": "C-266",
@@ -220,79 +384,6 @@
       "summary": {
         "en": "The Library of Parliament does not prepare Legislative Summaries for self-explanatory measures. The following is a short summary:\n\nOn 21 September 2026, the Minister of Finance and National Revenue introduced Bill C-38, An Act to amend the Excise Tax Act (extension of the federal fuel excise tax relief) (Canadian Fuel Affordability Act) in the House of Commons and it was given first reading.\n\nBill C-38 amends the Excise Tax Act to extend the temporary suspension of the federal fuel excise tax until January 31, 2027 and to temporarily set the excise tax rates on fuels to 50% of the regular rates for the period beginning on February 1, 2027 and ending on March 31, 2027The Library of Parliament does not prepare Legislative Summaries for self-explanatory measures. The following is a short summary:\n\nOn 21 September 2026, the Minister of Finance and National Revenue introduced Bill C-38, An Act to amend the Excise Tax Act (extension of the federal fuel excise tax relief) (Canadian Fuel Affordability Act) in the House of Commons and it was given first reading.\n\nBill C-38 amends the Excise Tax Act to extend the temporary suspension of the federal fuel excise tax until January 31, 2027 and to temporarily set the excise tax rates on fuels to 50% of the regular rates for the period beginning on February 1, 2027 and ending on March 31, 2027",
         "fr": "La Bibliothèque du Parlement ne prépare pas de Résumés législatifs pour les mesures qui sont suffisamment explicites. Ce qui suit est un court résumé :\n\nLe 21 septembre 2026, le ministre des Finances et du Revenu national a déposé le projet de loi C-38, Loi modifiant la Loi sur la taxe d'accise (prolongation de l'allègement de la taxe d'accise fédérale sur les carburants) (Loi sur l'abordabilité des carburants au Canada) à la Chambre des communes en première lecture.\n\nLe projet de loi C-38 modifie la Loi sur la taxe d’accise afin de prolonger la suspension temporaire de la taxe d’accise fédérale sur les carburants jusqu’au 31 janvier 2027 et de fixer temporairement les taux de la taxe d’accise sur le carburant à 50?% des taux réguliers pour la période commençant le 1er février 2027 et se terminant le 31 mars 2027.La Bibliothèque du Parlement ne prépare pas de Résumés législatifs pour les mesures qui sont suffisamment explicites. Ce qui suit est un court résumé :\n\nLe 21 septembre 2026, le ministre des Finances et du Revenu national a déposé le projet de loi C-38, Loi modifiant la Loi sur la taxe d'accise (prolongation de l'allègement de la taxe d'accise fédérale sur les carburants) (Loi sur l'abordabilité des carburants au Canada) à la Chambre des communes en première lecture.\n\nLe projet de loi C-38 modifie la Loi sur la taxe d’accise afin de prolonger la suspension temporaire de la taxe d’accise fédérale sur les carburants jusqu’au 31 janvier 2027 et de fixer temporairement les taux de la taxe d’accise sur le carburant à 50?% des taux réguliers pour la période commençant le 1er février 2027 et se terminant le 31 mars 2027."
-      },
-      "summarySource": "library"
-    },
-    {
-      "id": 13605049,
-      "num": "C-10",
-      "session": "45-1",
-      "parliament": 45,
-      "sessionNumber": 1,
-      "chamber": "commons",
-      "type": {
-        "en": "House Government Bill",
-        "fr": "Projet de loi émanant du gouvernement (Cdc)"
-      },
-      "isGovernment": true,
-      "title": {
-        "en": "An Act respecting the Commissioner for Modern Treaty Implementation",
-        "fr": "Loi concernant le commissaire à la mise en œuvre des traités modernes"
-      },
-      "shortTitle": {
-        "en": "Commissioner for Modern Treaty Implementation Act",
-        "fr": "Loi sur le commissaire à la mise en œuvre des traités modernes"
-      },
-      "sponsor": {
-        "en": "Hon. Rebecca Alty",
-        "fr": "L’hon. Rebecca Alty"
-      },
-      "status": {
-        "en": "House of Commons bill awaiting first reading in the Senate",
-        "fr": "Projet de loi de la Chambre des communes en attente de la première lecture au Sénat"
-      },
-      "state": "encours",
-      "milestones": [
-        {
-          "stage": "commons_first_reading",
-          "chamber": "commons",
-          "reading": 1,
-          "date": "2025-09-25"
-        },
-        {
-          "stage": "commons_second_reading",
-          "chamber": "commons",
-          "reading": 2,
-          "date": "2026-02-09"
-        },
-        {
-          "stage": "commons_third_reading",
-          "chamber": "commons",
-          "reading": 3,
-          "date": "2026-09-21"
-        }
-      ],
-      "royalAssent": null,
-      "reinstated": false,
-      "latestActivity": {
-        "en": "House of Commons bill awaiting first reading in the Senate",
-        "fr": "Projet de loi de la Chambre des communes en attente de la première lecture au Sénat",
-        "date": "2026-09-21"
-      },
-      "lastActivity": "2026-09-21",
-      "url": {
-        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-10",
-        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-10"
-      },
-      "sponsorPersonId": 123675,
-      "sponsorName": {
-        "first": "Rebecca",
-        "last": "Alty"
-      },
-      "fullSummaryAvailable": true,
-      "summary": {
-        "en": "A legislative summary is currently being prepared for this bill by the Parliamentary Information, Education and Research Services of the Library of Parliament. Meanwhile, the following executive summary is available.\n\nOn 25 September 2025, the Minister of Crown-Indigenous Relations introduced Bill C-10, An Act respecting the Commissioner for Modern Treaty Implementation (Commissioner for Modern Treaty Implementation Act) and it was given first reading.\n\nBill C-10 provides for the appointment of a Commissioner for Modern Treaty Implementation to conduct reviews and performance audits of the activities of government institutions related to the implementation of modern treaties. It also establishes the Office of the Commissioner for Modern Treaty Implementation for the purpose of assisting the Commissioner in the fulfillment of their mandate and the exercise of their powers and the performance of their duties and functions. Finally, it makes consequential amendments to other Acts.A legislative summary is currently being prepared for this bill by the Parliamentary Information, Education and Research Services of the Library of Parliament. Meanwhile, the following executive summary is available.\n\nOn 25 September 2025, the Minister of Crown-Indigenous Relations introduced Bill C-10, An Act respecting the Commissioner for Modern Treaty Implementation (Commissioner for Modern Treaty Implementation Act) and it was given first reading.\n\nBill C-10 provides for the appointment of a Commissioner for Modern Treaty Implementation to conduct reviews and performance audits of the activities of government institutions related to the implementation of modern treaties. It also establishes the Office of the Commissioner for Modern Treaty Implementation for the purpose of assisting the Commissioner in the fulfillment of their mandate and the exercise of their powers and the performance of their duties and functions. Finally, it makes consequential amendments to other Acts.",
-        "fr": "Les Service d’information, d’éducation et de recherche parlementaires de la Bibliothèque du Parlement rédige actuellement le résumé législatif de ce projet de loi. Entre-temps, le Service met à votre disposition le sommaire suivant.\n\nLe 25 septembre 2025, le ministre des Relations Couronne-Autochtones a déposé le projet de loi C-10, Loi concernant le commissaire à la mise en œuvre des traités modernes (Loi sur le commissaire à la mise en œuvre des traités modernes) à la Chambre des communes en première lecture.\n\nLe projet de loi C-10 confie au commissaire à la mise en œuvre des traités modernes la charge d’effectuer des examens et des vérifications de performance à l’égard des activités des institutions fédérales liées à la mise en œuvre de ces traités. De plus, il constitue le Commissariat à la mise en œuvre des traités modernes afin de soutenir le commissaire dans l’accomplissement de sa mission et l’exercice de ses attributions. Enfin, il apporte des modifications corrélatives à d’autres lois.Les Service d’information, d’éducation et de recherche parlementaires de la Bibliothèque du Parlement rédige actuellement le résumé législatif de ce projet de loi. Entre-temps, le Service met à votre disposition le sommaire suivant.\n\nLe 25 septembre 2025, le ministre des Relations Couronne-Autochtones a déposé le projet de loi C-10, Loi concernant le commissaire à la mise en œuvre des traités modernes (Loi sur le commissaire à la mise en œuvre des traités modernes) à la Chambre des communes en première lecture.\n\nLe projet de loi C-10 confie au commissaire à la mise en œuvre des traités modernes la charge d’effectuer des examens et des vérifications de performance à l’égard des activités des institutions fédérales liées à la mise en œuvre de ces traités. De plus, il constitue le Commissariat à la mise en œuvre des traités modernes afin de soutenir le commissaire dans l’accomplissement de sa mission et l’exercice de ses attributions. Enfin, il apporte des modifications corrélatives à d’autres lois."
       },
       "summarySource": "library"
     },
@@ -928,8 +1019,8 @@
         "fr": "L’hon. Gary Anandasangaree"
       },
       "status": {
-        "en": "House of Commons bill awaiting first reading in the Senate",
-        "fr": "Projet de loi de la Chambre des communes en attente de la première lecture au Sénat"
+        "en": "At second reading in the Senate",
+        "fr": "À la deuxième lecture au Sénat"
       },
       "state": "encours",
       "milestones": [
@@ -961,8 +1052,8 @@
       "royalAssent": null,
       "reinstated": false,
       "latestActivity": {
-        "en": "House of Commons bill awaiting first reading in the Senate",
-        "fr": "Projet de loi de la Chambre des communes en attente de la première lecture au Sénat",
+        "en": "At second reading in the Senate",
+        "fr": "À la deuxième lecture au Sénat",
         "date": "2026-06-18"
       },
       "lastActivity": "2026-06-18",
@@ -1170,85 +1261,6 @@
       "summary": {
         "en": "A legislative summary is currently being prepared for this bill by the Parliamentary Information, Education and Research Services of the Library of Parliament. Meanwhile, the following executive summary is available.\n\nOn 26 March 2026, the Minister of Finance and National Revenue introduced Bill C-26, An Act to authorize certain payments to be made out of the Consolidated Revenue Fund for the purpose of improving housing supply in the House of Commons and it was given first reading.\n\nBill C-26 authorizes payments to be made out of the Consolidated Revenue Fund to the provinces and territories for the purpose of improving housing supply.A legislative summary is currently being prepared for this bill by the Parliamentary Information, Education and Research Services of the Library of Parliament. Meanwhile, the following executive summary is available.\n\nOn 26 March 2026, the Minister of Finance and National Revenue introduced Bill C-26, An Act to authorize certain payments to be made out of the Consolidated Revenue Fund for the purpose of improving housing supply in the House of Commons and it was given first reading.\n\nBill C-26 authorizes payments to be made out of the Consolidated Revenue Fund to the provinces and territories for the purpose of improving housing supply.",
         "fr": "Les Service d’information, d’éducation et de recherche parlementaires de la Bibliothèque du Parlement rédige actuellement le résumé législatif de ce projet de loi. Entre-temps, le Service met à votre disposition le sommaire suivant.\n\nLe 26 mars 2026, le ministre des Finances et du Revenu national a déposé le projet de loi C-26, Loi autorisant certains paiements sur le Trésor pour améliorer l'offre de logements à la Chambre des communes en première lecture.\n\nLe projet de loi C-26 autorise des paiements sur le Trésor aux provinces et aux territoires pour améliorer l’offre de logements.Les Service d’information, d’éducation et de recherche parlementaires de la Bibliothèque du Parlement rédige actuellement le résumé législatif de ce projet de loi. Entre-temps, le Service met à votre disposition le sommaire suivant.\n\nLe 26 mars 2026, le ministre des Finances et du Revenu national a déposé le projet de loi C-26, Loi autorisant certains paiements sur le Trésor pour améliorer l'offre de logements à la Chambre des communes en première lecture.\n\nLe projet de loi C-26 autorise des paiements sur le Trésor aux provinces et aux territoires pour améliorer l’offre de logements."
-      },
-      "summarySource": "library"
-    },
-    {
-      "id": 13932352,
-      "num": "C-27",
-      "session": "45-1",
-      "parliament": 45,
-      "sessionNumber": 1,
-      "chamber": "commons",
-      "type": {
-        "en": "House Government Bill",
-        "fr": "Projet de loi émanant du gouvernement (Cdc)"
-      },
-      "isGovernment": true,
-      "title": {
-        "en": "An Act to give effect to the Final Self-Government Agreement for the Tlegohli Got’ine and to make consequential amendments to other Acts",
-        "fr": "Loi portant mise en vigueur de l’accord définitif sur l’autonomie gouvernementale des Tlegohli Got’ine et modifiant certaines lois en conséquence"
-      },
-      "shortTitle": {
-        "en": "Final Self-Government Agreement for the Tlegohli Got’ine Act",
-        "fr": "Loi sur l’accord définitif sur l’autonomie gouvernementale des Tlegohli Got’ine"
-      },
-      "sponsor": {
-        "en": "Hon. Rebecca Alty",
-        "fr": "L’hon. Rebecca Alty"
-      },
-      "status": {
-        "en": "House of Commons bill awaiting first reading in the Senate",
-        "fr": "Projet de loi de la Chambre des communes en attente de la première lecture au Sénat"
-      },
-      "state": "encours",
-      "milestones": [
-        {
-          "stage": "commons_first_reading",
-          "chamber": "commons",
-          "reading": 1,
-          "date": "2026-03-26"
-        },
-        {
-          "stage": "commons_second_reading",
-          "chamber": "commons",
-          "reading": 2,
-          "date": "2026-06-12"
-        },
-        {
-          "stage": "commons_third_reading",
-          "chamber": "commons",
-          "reading": 3,
-          "date": "2026-06-18"
-        },
-        {
-          "stage": "senate_first_reading",
-          "chamber": "senate",
-          "reading": 1,
-          "date": "2026-06-18"
-        }
-      ],
-      "royalAssent": null,
-      "reinstated": false,
-      "latestActivity": {
-        "en": "House of Commons bill awaiting first reading in the Senate",
-        "fr": "Projet de loi de la Chambre des communes en attente de la première lecture au Sénat",
-        "date": "2026-06-18"
-      },
-      "lastActivity": "2026-06-18",
-      "url": {
-        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-27",
-        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-27"
-      },
-      "sponsorPersonId": 123675,
-      "sponsorName": {
-        "first": "Rebecca",
-        "last": "Alty"
-      },
-      "fullSummaryAvailable": false,
-      "summary": {
-        "en": "A legislative summary is currently being prepared for this bill by the Parliamentary Information, Education and Research Services of the Library of Parliament. Meanwhile, the following executive summary is available.\n\nOn 26 March 2026, the Minister of Crown-Indigenous Relations introduced Bill C-27, An Act to give effect to the Final Self-Government Agreement for the Tlegohli Got’ine and to make consequential amendments to other Acts (Final Self-Government Agreement for the Tlegohli Got’ine Act) in the House of Commons and it was given first reading.\n\nBill C-27 gives effect to the Final Self-Government Agreement for the Tlego´hli? Got’ine and makes consequential amendments to other Acts.A legislative summary is currently being prepared for this bill by the Parliamentary Information, Education and Research Services of the Library of Parliament. Meanwhile, the following executive summary is available.\n\nOn 26 March 2026, the Minister of Crown-Indigenous Relations introduced Bill C-27, An Act to give effect to the Final Self-Government Agreement for the Tlegohli Got’ine and to make consequential amendments to other Acts (Final Self-Government Agreement for the Tlegohli Got’ine Act) in the House of Commons and it was given first reading.\n\nBill C-27 gives effect to the Final Self-Government Agreement for the Tlego´hli? Got’ine and makes consequential amendments to other Acts.",
-        "fr": "Les Service d’information, d’éducation et de recherche parlementaires de la Bibliothèque du Parlement rédige actuellement le résumé législatif de ce projet de loi. Entre-temps, le Service met à votre disposition le sommaire suivant.\n\nLe 26 mars 2026, le ministre des Relations Couronne-Autochtones a déposé le projet de loi C-27, Loi portant mise en vigueur de l’accord définitif sur l’autonomie gouvernementale des Tlegohli Got’ine et modifiant certaines lois en conséquence (Loi sur l’accord définitif sur l’autonomie gouvernementale des Tlegohli Got’ine) à la Chambre des communes en première lecture.\n\nLe projet de loi C-27 met en vigueur l’accord définitif sur l’autonomie gouvernementale des Tlego´hli? Got’ine et modifie certaines lois en conséquence.Les Service d’information, d’éducation et de recherche parlementaires de la Bibliothèque du Parlement rédige actuellement le résumé législatif de ce projet de loi. Entre-temps, le Service met à votre disposition le sommaire suivant.\n\nLe 26 mars 2026, le ministre des Relations Couronne-Autochtones a déposé le projet de loi C-27, Loi portant mise en vigueur de l’accord définitif sur l’autonomie gouvernementale des Tlegohli Got’ine et modifiant certaines lois en conséquence (Loi sur l’accord définitif sur l’autonomie gouvernementale des Tlegohli Got’ine) à la Chambre des communes en première lecture.\n\nLe projet de loi C-27 met en vigueur l’accord définitif sur l’autonomie gouvernementale des Tlego´hli? Got’ine et modifie certaines lois en conséquence."
       },
       "summarySource": "library"
     },
@@ -12975,5 +12987,5 @@
       "summarySource": null
     }
   ],
-  "summariesScrapedAt": "2026-09-28T16:43:12.124Z"
+  "summariesScrapedAt": "2026-09-29T14:48:36.947Z"
 }
