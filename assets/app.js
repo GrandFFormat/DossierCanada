@@ -72,6 +72,10 @@ const translations = {
     'votes.info.b':"D'où vient le « qui a voté quoi »",
     'votes.info.text':"— pour chaque vote par appel nominal, la Chambre des communes publie le choix de chaque député·e : Pour, Contre ou pairé. Le détail derrière le bouton « + » de chaque vote reprend cette liste officielle (noscommunes.ca) telle quelle, sans estimation. Le parti indiqué est celui de la liste actuelle des député·e·s ; les personnes qui ont quitté la Chambre depuis sont regroupées à part, sous « Ancien·ne·s député·e·s ».",
     'bd.back':"← Retour à l'aperçu",
+    'temoins.texte':"Ce site dépose des témoins (« cookies ») de Google Analytics pour compter les visites. Rien d'autre : pas de publicité, pas de revente, pas de suivi ailleurs. Vous pouvez refuser : le site marche pareil.",
+    'footer.temoins':"Témoins",
+    'temoins.accepter':"Accepter",
+    'temoins.refuser':"Refuser",
     'bd.intro1':"Bonjour, moi c'est",
     'bd.intro3':"j'ai 45 ans et dossiercanada.ca, c'est votre premier pas vers la démocratie !",
     'bd.mot1':"Si on veut que les gens comprennent la politique, il faut la ramener à leur niveau.",
@@ -131,6 +135,10 @@ const translations = {
     'findmp.ph':"e.g. K1A 0A6",
     'findmp.btn':"Search",
     'bd.back':"← Back to overview",
+    'temoins.texte':"This site sets Google Analytics cookies to count visits. Nothing else: no ads, nothing sold on, no tracking elsewhere. You can decline — the site works just the same.",
+    'footer.temoins':"Cookies",
+    'temoins.accepter':"Accept",
+    'temoins.refuser':"Decline",
     'bd.intro1':"Hi! My name is",
     'bd.intro3':"I'm 45, and dossiercanada.ca is your first step into democracy!",
     'bd.mot1':"If we want people to understand politics, it has to be brought down to their level.",
@@ -364,6 +372,50 @@ function rehydrate(name){
     put(senators, 'province', DICTS.senateProvinces);
     put(senators, 'appointedBy', DICTS.appointers);
   }
+}
+
+/* TÉMOINS (« cookies ») — Google Analytics en dépose, donc il ne part qu'après un
+   oui explicite (Loi 25). Le chargeur est dans le <head> de la page ; ici on ne
+   fait que poser la question et retenir la réponse, sur l'appareil seulement.
+   Refuser n'enlève rien au site : la mesure de Vercel, elle, est sans témoin. */
+const TEMOINS_CLE = 'dossiercanada:temoins';
+function reponseTemoins(){
+  try{ return localStorage.getItem(TEMOINS_CLE); }catch(e){ return null; }
+}
+function afficherBandeTemoins(){
+  const el = document.getElementById('temoinsBande');
+  if(!el) return;
+  // Pas de réponse = on demande. Une réponse, quelle qu'elle soit = on se tait.
+  el.hidden = !!reponseTemoins();
+}
+// Refuser ne doit pas seulement empêcher la suite : les témoins déjà déposés
+// (visite précédente où on avait accepté) sont effacés, sur le domaine et sur
+// son parent — c'est là que Google Analytics les pose.
+function effacerTemoinsMesure(){
+  const hote = location.hostname;
+  const domaines = ['', hote, '.' + hote, '.' + hote.split('.').slice(-2).join('.')];
+  for(const c of document.cookie.split(';')){
+    const nom = c.split('=')[0].trim();
+    if(!/^_ga/.test(nom)) continue;
+    for(const d of domaines){
+      document.cookie = nom + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/' + (d ? '; domain=' + d : '');
+    }
+  }
+}
+function repondreTemoins(oui){
+  try{ localStorage.setItem(TEMOINS_CLE, oui ? 'oui' : 'non'); }catch(e){}
+  if(oui && typeof window.chargerMesure === 'function') window.chargerMesure();
+  else if(!oui) effacerTemoinsMesure();
+  const el = document.getElementById('temoinsBande');
+  if(el) el.hidden = true;
+}
+// Retirer son accord doit être aussi simple que de le donner : un lien en pied
+// de page repose la question. Un « oui » déjà chargé ne s'annule qu'au prochain
+// chargement de page — on le dit plutôt que de faire semblant.
+function rouvrirTemoins(){
+  try{ localStorage.removeItem(TEMOINS_CLE); }catch(e){}
+  const el = document.getElementById('temoinsBande');
+  if(el){ el.hidden = false; el.scrollIntoView({ block: 'nearest' }); }
 }
 
 /* DONNÉES PAR ONGLET — le noyau data/site-data.js (34 Ko) est chargé par toutes
@@ -3898,6 +3950,7 @@ function renderAll(){
   // pleine du premier coup (et que le pré-rendu capture du vrai contenu).
   await safe(() => ensureData(VIEW_DATA[viewFromPath()] || []));
   renderAll();
+  await safe(afficherBandeTemoins);
   await safe(loadSnoozedSections);
   await safe(applyLanguage);
   // Ouvre l'onglet correspondant à l'adresse d'arrivée (/votes, /deputes…).
