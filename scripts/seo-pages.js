@@ -15,16 +15,23 @@ export const APP_JS = 'assets/app.js';
 
 // view = id de la section (#view-…) et data-view du menu ; slug = URL (cleanUrls).
 // ⚠️ data-view "ministres" = onglet DÉPUTÉS (/deputes) ; "cabinet" = MINISTRES (/ministres).
+// Chaque langue a SES adresses : une page anglaise sous une adresse française se
+// lit mal et se réfère mal (Google associe les mots de l'URL à la langue).
 export const VIEWS = [
-  { view: 'apercu',    slug: '' },
-  { view: 'ministres', slug: 'deputes' },
-  { view: 'cabinet',   slug: 'ministres' },
-  { view: 'projets',   slug: 'projets-de-loi' },
-  { view: 'votes',     slug: 'votes' },
-  { view: 'lexique',   slug: 'lexique' },
+  { view: 'apercu',    slug: '',                en: '' },
+  { view: 'ministres', slug: 'deputes',         en: 'mps' },
+  { view: 'cabinet',   slug: 'ministres',       en: 'ministers' },
+  { view: 'projets',   slug: 'projets-de-loi',  en: 'bills' },
+  { view: 'votes',     slug: 'votes',           en: 'votes' },
+  { view: 'lexique',   slug: 'lexique',         en: 'glossary' },
   // « et moi » en bas de page : la personne derrière le site et le journal des mises à jour.
-  { view: 'bd',        slug: 'mises-a-jour' },
+  { view: 'bd',        slug: 'mises-a-jour',    en: 'updates' },
 ];
+// Adresse d'une vue dans une langue (sans le préfixe /en).
+export const slugOf = (view, lang) => {
+  const v = VIEWS.find((x) => x.view === view);
+  return lang === 'en' ? v.en : v.slug;
+};
 export const LANGS = ['fr', 'en'];
 
 // Zones pré-rendues de chaque vue : conteneurs balisés <!--ssr-->…<!--/ssr--> dans
@@ -46,13 +53,13 @@ export const regionsOf = (view) => [...GLOBAL_REGIONS, ...SSR[view].regions];
 export const ALL_REGIONS = [...GLOBAL_REGIONS, ...Object.values(SSR).flatMap((s) => s.regions)];
 
 export function pathFor(view, lang) {
-  const { slug } = VIEWS.find((v) => v.view === view);
+  const slug = slugOf(view, lang);
   if (lang === 'en') return slug ? '/en/' + slug : '/en';
   return '/' + slug;
 }
 // Fichier servi pour une URL (Vercel cleanUrls : /votes → votes.html, /en → en.html).
 export function fileFor(view, lang) {
-  const { slug } = VIEWS.find((v) => v.view === view);
+  const slug = slugOf(view, lang);
   if (lang === 'en') return slug ? 'en/' + slug + '.html' : 'en.html';
   return slug ? slug + '.html' : 'index.html';
 }

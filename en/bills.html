@@ -6,18 +6,18 @@
 <!-- SEO:START — bloc GÉNÉRÉ par scripts/build-section-pages.js pour CHAQUE page
      (titre, description, canonical, hreflang, Open Graph, X, JSON-LD). Ne pas éditer
      à la main : les textes viennent de PAGE_META (plus bas dans ce fichier). -->
-<title>Canada's MPs in the House of Commons — DossierCanada</title>
-<meta name="description" content="Every sitting MP in Canada's 343-seat House of Commons: riding, party and attendance at recorded votes, straight from official House of Commons records.">
+<title>Federal bills in Canada's Parliament — DossierCanada</title>
+<meta name="description" content="Every federal bill, from the Commons or the Senate, summarized in plain language: actual stage, sponsor, votes and declared lobbying. Official text linked.">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<link rel="canonical" href="https://www.dossiercanada.ca/en/deputes">
-<link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/deputes">
-<link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/deputes">
-<link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/deputes">
+<link rel="canonical" href="https://www.dossiercanada.ca/en/bills">
+<link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi">
+<link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills">
+<link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DossierCanada">
-<meta property="og:title" content="Canada's MPs in the House of Commons — DossierCanada">
-<meta property="og:description" content="Every sitting MP in Canada's 343-seat House of Commons: riding, party and attendance at recorded votes, straight from official House of Commons records.">
-<meta property="og:url" content="https://www.dossiercanada.ca/en/deputes">
+<meta property="og:title" content="Federal bills in Canada's Parliament — DossierCanada">
+<meta property="og:description" content="Every federal bill, from the Commons or the Senate, summarized in plain language: actual stage, sponsor, votes and declared lobbying. Official text linked.">
+<meta property="og:url" content="https://www.dossiercanada.ca/en/bills">
 <meta property="og:image" content="https://www.dossiercanada.ca/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -25,8 +25,8 @@
 <meta property="og:locale" content="en_CA">
 <meta property="og:locale:alternate" content="fr_CA">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Canada's MPs in the House of Commons — DossierCanada">
-<meta name="twitter:description" content="Every sitting MP in Canada's 343-seat House of Commons: riding, party and attendance at recorded votes, straight from official House of Commons records.">
+<meta name="twitter:title" content="Federal bills in Canada's Parliament — DossierCanada">
+<meta name="twitter:description" content="Every federal bill, from the Commons or the Senate, summarized in plain language: actual stage, sponsor, votes and declared lobbying. Official text linked.">
 <meta name="twitter:image" content="https://www.dossiercanada.ca/og-image.png">
 <script type="application/ld+json">
 {
@@ -42,8 +42,8 @@
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "MPs",
-      "item": "https://www.dossiercanada.ca/en/deputes"
+      "name": "Bills",
+      "item": "https://www.dossiercanada.ca/en/bills"
     }
   ]
 }
@@ -101,7 +101,7 @@ try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStor
       <span id="fontPct">100%</span>
       <button id="fontPlus" aria-label="Increase text size">A+</button>
     </div>
-    <a class="lang-toggle" id="langToggle" href="/deputes" hreflang="fr" lang="fr">FR</a>
+    <a class="lang-toggle" id="langToggle" href="/projets-de-loi" hreflang="fr" lang="fr">FR</a>
     <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
   <span data-i18n="brand.tagline" style="display:none;">Who sits, who legislates, who votes how</span>
@@ -117,11 +117,11 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
 <nav class="tabs">
   <div class="close-menu" id="closeMenuBtn"><span data-i18n="nav.close">Close</span> ✕</div>
   <a data-view="apercu" href="/en"><span class="n">01</span><span data-i18n="nav.apercu">Overview</span></a>
-  <a class="active" data-view="ministres" href="/en/deputes" aria-current="page"><span class="n">02</span><span data-i18n="nav.ministres">MPs</span></a>
-  <a data-view="cabinet" href="/en/ministres"><span class="n">03</span><span data-i18n="nav.cabinet">Ministers</span></a>
-  <a data-view="projets" href="/en/projets-de-loi"><span class="n">04</span><span data-i18n="nav.projets">Bills</span></a>
+  <a data-view="ministres" href="/en/mps"><span class="n">02</span><span data-i18n="nav.ministres">MPs</span></a>
+  <a data-view="cabinet" href="/en/ministers"><span class="n">03</span><span data-i18n="nav.cabinet">Ministers</span></a>
+  <a class="active" data-view="projets" href="/en/bills" aria-current="page"><span class="n">04</span><span data-i18n="nav.projets">Bills</span></a>
   <a data-view="votes" href="/en/votes"><span class="n">05</span><span data-i18n="nav.votes">Votes</span></a>
-  <a data-view="lexique" href="/en/lexique"><span class="n">06</span><span data-i18n="nav.lexique">Glossary</span></a>
+  <a data-view="lexique" href="/en/glossary"><span class="n">06</span><span data-i18n="nav.lexique">Glossary</span></a>
 </nav>
 </div>
 <script>
@@ -162,7 +162,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     <section id="sec-challenged" class="challenge-band">
       <div class="cb-head">
         <h2 id="challengedTitle" data-i18n="cb.title">Challenged bills</h2>
-        <a class="cb-cta" data-view="projets" href="/en/projets-de-loi">✋ <span id="cbCtaLabel" data-i18n="cb.cta">Challenge a bill</span></a>
+        <a class="cb-cta" data-view="projets" href="/en/bills">✋ <span id="cbCtaLabel" data-i18n="cb.cta">Challenge a bill</span></a>
       </div>
       <div class="cb-subrow">
         <div class="cb-sub" id="challengedSub"></div>
@@ -184,7 +184,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <main class="a3-main">
         <div class="a3-main-head">
           <h2 data-i18n="h.billsrecent">Recently active bills</h2>
-          <a class="a3-seeall" data-view="projets" href="/en/projets-de-loi" data-i18n="a3.seeall">See all →</a>
+          <a class="a3-seeall" data-view="projets" href="/en/bills" data-i18n="a3.seeall">See all →</a>
         </div>
         <div id="apercuBills"><!--ssr--><!--/ssr--></div>
         <div class="a3-tiles">
@@ -192,7 +192,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
             <span class="a3-tile-tag" style="background:var(--lime)" data-i18n="nav.votes">Votes</span>
             <p data-i18n="a3.tileVotes">Every recorded vote — who voted what, and by what margin.</p>
           </a>
-          <a class="a3-tile" data-view="lexique" href="/en/lexique">
+          <a class="a3-tile" data-view="lexique" href="/en/glossary">
             <span class="a3-tile-tag" style="background:var(--cyan)" data-i18n="nav.lexique">Glossary</span>
             <p data-i18n="a3.tileLex">Parliamentary jargon translated into plain language, no poli-sci degree needed.</p>
           </a>
@@ -208,188 +208,24 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
   </section>
 
   <!-- MINISTRES & DÉPUTÉS -->
-  <section class="view active" id="view-ministres">
+  <section class="view" id="view-ministres">
     <div class="page-band">
       <div>
         <nav class="crumbs" aria-label="Breadcrumb"><a data-view="apercu" href="/en">DossierCanada</a> <span aria-hidden="true">›</span> <span aria-current="page" data-i18n="nav.ministres">MPs</span></nav>
-        <h1 class="band-title" id="deputesCountTitle">337 federal MPs</h1>
+        <h2 class="band-title" id="deputesCountTitle">Federal MPs</h2>
         <div class="sub" data-i18n="deputes.bandsub">Who represents you, how they vote, how often they sit.</div>
       </div>
       <input type="text" id="searchMinistres" class="band-search" data-i18n-placeholder="ph.searchMinistres" placeholder="Search a name, a riding, a postal code…">
     </div>
     <div class="filters-row">
-      <div class="party-filters" id="partyFilters"><!--ssr--><span class="party-chip active" style="background:var(--strong); border-color:var(--strong);" onclick="setPartyFilter('')">All</span>
-    <span class="party-chip " style="--pc:#D71920; border-color:#D7192066; color:var(--pc);" onclick="setPartyFilter('LPC')">LPC</span>
-  
-    <span class="party-chip " style="--pc:#1A4782; border-color:#1A478266; color:var(--pc);" onclick="setPartyFilter('CPC')">CPC</span>
-  
-    <span class="party-chip " style="--pc:#33B2CC; border-color:#33B2CC66; color:var(--pc);" onclick="setPartyFilter('BQ')">BQ</span>
-  
-    <span class="party-chip " style="--pc:#F58220; border-color:#F5822066; color:var(--pc);" onclick="setPartyFilter('NDP')">NDP</span>
-  
-    <span class="party-chip " style="--pc:#3D9B35; border-color:#3D9B3566; color:var(--pc);" onclick="setPartyFilter('GPC')">GPC</span>
-  
-    <span class="party-chip " style="--pc:#8a8f99; border-color:#8a8f9966; color:var(--pc);" onclick="setPartyFilter('IND')">IND</span><!--/ssr--></div>
+      <div class="party-filters" id="partyFilters"><!--ssr--><!--/ssr--></div>
       <button class="party-chip" id="legendBtn" onclick="toggleLegend()" data-i18n="deputes.legend">Legend</button>
       <button class="party-chip" id="senateChip" onclick="toggleChamberChip()" data-i18n="deputes.senate">Senate</button>
       <div id="deputesPager" class="deputes-pager"></div>
       <button class="sort-toggle" id="ministresSortToggle" onclick="toggleMinistresSort()" style="display:none"></button>
     </div>
     <div class="info-box" id="deputesInfoBox" data-i18n="trouve.info" style="display:none; margin-bottom:20px;">These entries come directly from the House of Commons official list of sitting members (ourcommons.ca), bilingual. Some seats may change between updates (resignation, by-election) — this list is a snapshot taken at the last update, not an automatically updated feed.</div>
-    <div class="grid" id="deputesList"><!--ssr--><div class="m-card">
-      <div class="top-row">
-        <a class="avatar" href="mailto:aaron.gunn@parl.gc.ca" onclick="event.stopPropagation()" title="aaron.gunn@parl.gc.ca" aria-label="Email Aaron Gunn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg></a>
-        <button class="follow-btn " onclick="toggleFollowDepute('mp-123586')">+ Follow</button>
-      </div>
-      <h3>Aaron Gunn</h3>
-      <div class="role">North Island—Powell River · British Columbia</div>
-      <div class="meta-row">
-        <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
-        <span class="vp-note" title="Share of recorded votes this MP took part in (Yea/Nay/paired) since taking office — a proxy for attendance; the House does not publish attendance directly.">attendance: 98% (170/174)</span>
-        <a class="vp-note" href="https://www.ourcommons.ca/members/en/123586" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Official profile on ourcommons.ca">profile ↗</a>
-      </div>
-    </div>
-  
-    <div class="m-card">
-      <div class="top-row">
-        <a class="avatar" href="mailto:abdelhaq.sari@parl.gc.ca" onclick="event.stopPropagation()" title="abdelhaq.sari@parl.gc.ca" aria-label="Email Abdelhaq Sari"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg></a>
-        <button class="follow-btn " onclick="toggleFollowDepute('mp-122533')">+ Follow</button>
-      </div>
-      <h3>Abdelhaq Sari</h3>
-      <div class="role">Bourassa · Quebec</div>
-      <div class="meta-row">
-        <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-        <span class="vp-note" title="Share of recorded votes this MP took part in (Yea/Nay/paired) since taking office — a proxy for attendance; the House does not publish attendance directly.">attendance: 99% (172/174)</span>
-        <a class="vp-note" href="https://www.ourcommons.ca/members/en/122533" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Official profile on ourcommons.ca">profile ↗</a>
-      </div>
-    </div>
-  
-    <div class="m-card">
-      <div class="top-row">
-        <a class="avatar" href="mailto:adam.chambers@parl.gc.ca" onclick="event.stopPropagation()" title="adam.chambers@parl.gc.ca" aria-label="Email Adam Chambers"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg></a>
-        <button class="follow-btn " onclick="toggleFollowDepute('mp-110649')">+ Follow</button>
-      </div>
-      <h3>Adam Chambers</h3>
-      <div class="role">Simcoe North · Ontario</div>
-      <div class="meta-row">
-        <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
-        <span class="vp-note" title="Share of recorded votes this MP took part in (Yea/Nay/paired) since taking office — a proxy for attendance; the House does not publish attendance directly.">attendance: 99% (172/174)</span>
-        <a class="vp-note" href="https://www.ourcommons.ca/members/en/110649" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Official profile on ourcommons.ca">profile ↗</a>
-      </div>
-    </div>
-  
-    <div class="m-card">
-      <div class="top-row">
-        <a class="avatar" href="mailto:adam.vankoeverden@parl.gc.ca" onclick="event.stopPropagation()" title="adam.vankoeverden@parl.gc.ca" aria-label="Email Adam van Koeverden"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg></a>
-        <button class="follow-btn " onclick="toggleFollowDepute('mp-105242')">+ Follow</button>
-      </div>
-      <h3>Hon. Adam van Koeverden</h3>
-      <div class="role">Burlington North—Milton West · Ontario</div>
-      <div class="meta-row">
-        <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-        <span class="vp-note" title="Share of recorded votes this MP took part in (Yea/Nay/paired) since taking office — a proxy for attendance; the House does not publish attendance directly.">attendance: 100% (174/174)</span>
-        <a class="vp-note" href="https://www.ourcommons.ca/members/en/105242" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Official profile on ourcommons.ca">profile ↗</a>
-      </div>
-    </div>
-  
-    <div class="m-card">
-      <div class="top-row">
-        <a class="avatar" href="mailto:ahmed.hussen@parl.gc.ca" onclick="event.stopPropagation()" title="ahmed.hussen@parl.gc.ca" aria-label="Email Ahmed Hussen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg></a>
-        <button class="follow-btn " onclick="toggleFollowDepute('mp-89020')">+ Follow</button>
-      </div>
-      <h3>Hon. Ahmed Hussen</h3>
-      <div class="role">York South—Weston—Etobicoke · Ontario</div>
-      <div class="meta-row">
-        <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-        <span class="vp-note" title="Share of recorded votes this MP took part in (Yea/Nay/paired) since taking office — a proxy for attendance; the House does not publish attendance directly.">attendance: 99% (173/174)</span>
-        <a class="vp-note" href="https://www.ourcommons.ca/members/en/89020" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Official profile on ourcommons.ca">profile ↗</a>
-      </div>
-    </div>
-  
-    <div class="m-card">
-      <div class="top-row">
-        <a class="avatar" href="mailto:alana.hirtle@parl.gc.ca" onclick="event.stopPropagation()" title="alana.hirtle@parl.gc.ca" aria-label="Email Alana Hirtle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg></a>
-        <button class="follow-btn " onclick="toggleFollowDepute('mp-122419')">+ Follow</button>
-      </div>
-      <h3>Alana Hirtle</h3>
-      <div class="role">Cumberland—Colchester · Nova Scotia</div>
-      <div class="meta-row">
-        <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-        <span class="vp-note" title="Share of recorded votes this MP took part in (Yea/Nay/paired) since taking office — a proxy for attendance; the House does not publish attendance directly.">attendance: 100% (174/174)</span>
-        <a class="vp-note" href="https://www.ourcommons.ca/members/en/122419" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Official profile on ourcommons.ca">profile ↗</a>
-      </div>
-    </div>
-  
-    <div class="m-card">
-      <div class="top-row">
-        <a class="avatar" href="mailto:alex.ruff@parl.gc.ca" onclick="event.stopPropagation()" title="alex.ruff@parl.gc.ca" aria-label="Email Alex Ruff"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg></a>
-        <button class="follow-btn " onclick="toggleFollowDepute('mp-105070')">+ Follow</button>
-      </div>
-      <h3>Alex Ruff</h3>
-      <div class="role">Bruce—Grey—Owen Sound · Ontario</div>
-      <div class="meta-row">
-        <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
-        <span class="vp-note" title="Share of recorded votes this MP took part in (Yea/Nay/paired) since taking office — a proxy for attendance; the House does not publish attendance directly.">attendance: 100% (174/174)</span>
-        <a class="vp-note" href="https://www.ourcommons.ca/members/en/105070" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Official profile on ourcommons.ca">profile ↗</a>
-      </div>
-    </div>
-  
-    <div class="m-card">
-      <div class="top-row">
-        <a class="avatar" href="mailto:alexandra.mendes@parl.gc.ca" onclick="event.stopPropagation()" title="alexandra.mendes@parl.gc.ca" aria-label="Email Alexandra Mendès"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg></a>
-        <button class="follow-btn " onclick="toggleFollowDepute('mp-58621')">+ Follow</button>
-      </div>
-      <h3>Alexandra Mendès</h3>
-      <div class="role">Brossard—Saint-Lambert · Quebec</div>
-      <div class="meta-row">
-        <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-        <span class="vp-note" title="Share of recorded votes this MP took part in (Yea/Nay/paired) since taking office — a proxy for attendance; the House does not publish attendance directly.">attendance: 99% (173/174)</span>
-        <a class="vp-note" href="https://www.ourcommons.ca/members/en/58621" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Official profile on ourcommons.ca">profile ↗</a>
-      </div>
-    </div>
-  
-    <div class="m-card">
-      <div class="top-row">
-        <a class="avatar" href="mailto:alexis.brunelle-duceppe@parl.gc.ca" onclick="event.stopPropagation()" title="alexis.brunelle-duceppe@parl.gc.ca" aria-label="Email Alexis Brunelle-Duceppe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg></a>
-        <button class="follow-btn " onclick="toggleFollowDepute('mp-104786')">+ Follow</button>
-      </div>
-      <h3>Alexis Brunelle-Duceppe</h3>
-      <div class="role">Lac-Saint-Jean · Quebec</div>
-      <div class="meta-row">
-        <span class="depute-party" style="background:#33B2CC; color:#fff">BQ</span>
-        <span class="vp-note" title="Share of recorded votes this MP took part in (Yea/Nay/paired) since taking office — a proxy for attendance; the House does not publish attendance directly.">attendance: 100% (174/174)</span>
-        <a class="vp-note" href="https://www.ourcommons.ca/members/en/104786" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Official profile on ourcommons.ca">profile ↗</a>
-      </div>
-    </div>
-  
-    <div class="m-card">
-      <div class="top-row">
-        <a class="avatar" href="mailto:alexis.deschenes@parl.gc.ca" onclick="event.stopPropagation()" title="alexis.deschenes@parl.gc.ca" aria-label="Email Alexis Deschênes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg></a>
-        <button class="follow-btn " onclick="toggleFollowDepute('mp-122579')">+ Follow</button>
-      </div>
-      <h3>Alexis Deschênes</h3>
-      <div class="role">Gaspésie—Les Îles-de-la-Madeleine—Listuguj · Quebec</div>
-      <div class="meta-row">
-        <span class="depute-party" style="background:#33B2CC; color:#fff">BQ</span>
-        <span class="vp-note" title="Share of recorded votes this MP took part in (Yea/Nay/paired) since taking office — a proxy for attendance; the House does not publish attendance directly.">attendance: 99% (173/174)</span>
-        <a class="vp-note" href="https://www.ourcommons.ca/members/en/122579" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Official profile on ourcommons.ca">profile ↗</a>
-      </div>
-    </div>
-  
-    <div class="m-card">
-      <div class="top-row">
-        <a class="avatar" href="mailto:ali.ehsassi@parl.gc.ca" onclick="event.stopPropagation()" title="ali.ehsassi@parl.gc.ca" aria-label="Email Ali Ehsassi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg></a>
-        <button class="follow-btn " onclick="toggleFollowDepute('mp-89010')">+ Follow</button>
-      </div>
-      <h3>Hon. Ali Ehsassi</h3>
-      <div class="role">Willowdale · Ontario</div>
-      <div class="meta-row">
-        <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-        <span class="vp-note" title="Share of recorded votes this MP took part in (Yea/Nay/paired) since taking office — a proxy for attendance; the House does not publish attendance directly.">attendance: 98% (171/174)</span>
-        <a class="vp-note" href="https://www.ourcommons.ca/members/en/89010" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Official profile on ourcommons.ca">profile ↗</a>
-      </div>
-    </div>
-  <a class="min-more" onclick="showAllDeputes()"><span class="min-more-n">+326</span><span class="min-more-t">See all 337 MPs →</span></a><!--/ssr--></div>
+    <div class="grid" id="deputesList"><!--ssr--><!--/ssr--></div>
 
 
   </section>
@@ -408,11 +244,11 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
   </section>
 
   <!-- PROJETS DE LOI -->
-  <section class="view" id="view-projets">
+  <section class="view active" id="view-projets">
     <div class="page-band">
       <div>
         <nav class="crumbs" aria-label="Breadcrumb"><a data-view="apercu" href="/en">DossierCanada</a> <span aria-hidden="true">›</span> <span aria-current="page" data-i18n="nav.projets">Bills</span></nav>
-        <h2 class="band-title" id="projetsCountTitle">Federal bills</h2>
+        <h1 class="band-title" id="projetsCountTitle">187 federal bills</h1>
         <div class="sub" data-i18n="proj.bandsub">Every bill summarized in plain language. Not clear enough? Ask for an explanation.</div>
       </div>
       <button class="cb-cta" onclick="document.getElementById('billsList').scrollIntoView({behavior:'smooth',block:'start'})">✋ <span data-i18n="proj.challenge">Challenge a bill</span></button>
@@ -420,20 +256,130 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     <div class="page-toolbar">
       <div class="toolbar">
         <input type="text" id="searchBills" data-i18n-placeholder="ph.searchBills" placeholder="Keyword: housing, justice, a lobby group…">
-        <button class="sort-toggle" id="sortToggle" onclick="toggleBillsSort()"><!--ssr--><!--/ssr--></button>
+        <button class="sort-toggle" id="sortToggle" onclick="toggleBillsSort()"><!--ssr-->↓ Most recent activity first<!--/ssr--></button>
       </div>
       <div class="filter-group">
         <button class="filter-hamburger" id="statusFilterBtn" onclick="toggleFilterPanel('status')" aria-expanded="false">☰ <span data-i18n="filter.statuts">Statuses</span></button>
-        <div class="status-filters" id="statusFilters"><!--ssr--><!--/ssr--></div>
+        <div class="status-filters" id="statusFilters"><!--ssr--><span class="status-chip active" onclick="setBillsStatusFilter('')">All statuses</span><span class="status-chip " onclick="setBillsStatusFilter('encours')">In progress</span><span class="status-chip " onclick="setBillsStatusFilter('rejete')">Defeated</span><span class="status-chip " onclick="setBillsStatusFilter('loi')">Assented to</span><!--/ssr--></div>
       </div>
       <div class="filter-group">
         <button class="filter-hamburger" id="stepFilterBtn" onclick="toggleFilterPanel('step')" aria-expanded="false">☰ <span data-i18n="filter.etapes">Chamber</span></button>
-        <div class="step-filters" id="stepFilters"><!--ssr--><!--/ssr--></div>
+        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">House of Commons</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Senate</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Bills with communications reported to the Commissioner of Lobbying">Lobbying <b>43</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Bills that change several different acts at once, one per part">Omnibus <b>13</b></span><!--/ssr--></div>
       </div>
     </div>
 
 
-    <div id="billsList"><!--ssr--><!--/ssr--></div>
+    <div id="billsList"><!--ssr--><div class="ab-row" id="abrow-pr-13605049">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13605049')">
+      <span class="ab-num">C-10</span>
+      <span class="ab-title">An Act respecting the Commissioner for Modern Treaty Implementation</span>
+      
+      <span class="ab-lob" title="18 reported lobbying communications">18</span>
+      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
+      <span class="status-pill status-encours">In progress</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13605049"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Creates the position of Commissioner for Modern Treaty Implementation to assess whether federal departments and agencies are living up to modern treaties (treaties with Indigenous peoples in force after 1974).</li><li>Requires the Commissioner to be appointed by the Governor in Council after consultation with Indigenous modern treaty partners and party leaders, and only once both the Senate and House of Commons approve by resolution.</li><li>Sets the term at up to seven years, renewable once, with removal for cause possible on address of both Houses; knowledge of modern treaties must be considered in the appointment.</li><li>Allows the Commissioner to launch reviews and performance audits on their own initiative, or at the request of a minister or any of the 30 Indigenous partners listed in the schedule.</li><li>Obliges government institutions to give the Commissioner free access to information and to respond in writing to draft findings before the final report is completed.</li><li>Requires each final report to be tabled in Parliament within 15 sitting days, along with an annual report and any urgent special reports submitted through the Minister.</li><li>Establishes the Office of the Commissioner for Modern Treaty Implementation to support the Commissioner, with staff hired under the Public Service Employment Act and a head office chosen by the Governor in Council.</li><li>Requires an independent review of the Act within five years and every seven years after, plus a parliamentary review every ten years, both with consultation of Indigenous treaty partners.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
+  </div><div class="ab-row" id="abrow-pr-13932352">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13932352')">
+      <span class="ab-num">C-27</span>
+      <span class="ab-title">An Act to give effect to the Final Self-Government Agreement for the Tlegohli Got’ine and to make consequential amendments to other Acts</span>
+      
+      
+      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
+      <span class="status-pill status-encours">In progress</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13932352"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Brings into force the Final Self-Government Agreement for the Tłegǫ́hłı̨ Got'įnę, signed on September 18, 2025 by The Tlegohli Got'ine Government Incorporated, Canada and the Northwest Territories, and ratified by the Tłegǫ́hłı̨ Got'įnę on March 31, 2025.</li><li>Declares the Agreement a treaty under sections 25 and 35 of the Constitution Act, 1982, and gives it precedence over other federal laws in case of conflict, except against the Sahtu land claim agreement and its settlement Act.</li><li>Establishes the Tłegǫ́hłı̨ Got'įnę Government as a legal entity with the powers of a natural person, and gives its laws made under the Agreement the force of law.</li><li>Ends the application of the Indian Act to the Tłegǫ́hłı̨ Got'įnę Government and its citizens once section 4 takes effect, subject to one exception set out in the Agreement.</li><li>Gives the Supreme Court of the Northwest Territories exclusive jurisdiction to review decisions of the Tłegǫ́hłı̨ Got'įnę Government after internal appeals are exhausted, and requires at least 14 days' notice to the Attorneys General of Canada and the N.W.T. before a court rules on questions about the Agreement.</li><li>Approves a separate tax treatment agreement, which is not part of the treaty, and adds the Tłegǫ́hłı̨ Got'įnę to the First Nations Goods and Services Tax Act for lands within Tłegǫ́hłı̨ and Settlement Lands.</li><li>Amends the Mackenzie Valley Resource Management Act so the Tłegǫ́hłı̨ Got'įnę Government must be consulted before permits affecting its Settlement Lands are issued, and can give binding written policy directions to the Sahtu Land and Water Board.</li><li>Sets coming into force by order in council, makes certain parts of the Agreement retroactive to November 20, 2024, and adds the Tłegǫ́hłı̨ Got'įnę Government to the schedule of Bill C-10 if that bill becomes law.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
+  </div><div class="ab-row" id="abrow-pr-13951690">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13951690')">
+      <span class="ab-num">C-266</span>
+      <span class="ab-title">An Act to establish a national framework respecting skilled trades and labour mobility</span>
+      
+      
+      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
+      <span class="status-pill status-encours">In progress</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13951690"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Requires the Minister of Employment and Social Development to build a national framework making it easier for skilled trades workers to work in another province.</li><li>Covers any trade certified or regulated by a province, including trades under the Interprovincial Standards Red Seal Program and Blue Seal programs.</li><li>Calls for at least nine months of consultations with provincial governments, trades regulators, industry and employer groups, unions and apprenticeship organizations, Indigenous governing bodies and colleges.</li><li>Requires the framework to list every skilled trade in Canada and to compare provincial standards and credentials to map out equivalencies.</li><li>Includes measures to harmonize standards, cut duplicate red tape, update certification for new technologies and emerging trades, and raise public awareness of skilled trades.</li><li>Sets a one-year deadline after the Act takes effect for tabling the framework in Parliament, with publication on the Department's website within 30 days.</li><li>Requires yearly progress reports covering implementation, results of talks with provinces, and the Minister's conclusions and recommendations.</li><li>Provides for a full parliamentary committee review within five years, with a report and recommended changes due within a year of the review starting.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
+  </div><div class="ab-row" id="abrow-pr-13548190">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13548190')">
+      <span class="ab-num">S-226</span>
+      <span class="ab-title">An Act respecting Jury Duty Appreciation Week</span>
+      
+      
+      <span class="depute-party" style="background:#6D5BA6; color:#fff">ISG</span>
+      <span class="status-pill status-encours">In progress</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13548190"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Designates the second week of May each year as "Jury Duty Appreciation Week" across Canada.</li><li>Creates a purely symbolic week: the bill sets out no new obligations, no day off and no funding.</li><li>Notes in its preamble that thousands of Canadians are called to serve on juries every year.</li><li>Describes jury duty as a vital part of Canada's justice system and its democracy.</li><li>States that jurors' well-being and mental health are essential to the proper functioning of the justice system.</li><li>Aims to highlight the work jurors do and to educate citizens, organizations, the justice system and the federal and provincial governments about the realities of this civic duty.</li><li>Allows the law to be cited by the short title "Jury Duty Appreciation Week Act."</li><li>Senate public bill, given first reading on June 5, 2025, sponsored by Senator Moncion.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
+  </div><div class="ab-row" id="abrow-pr-14223235">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14223235')">
+      <span class="ab-num">C-38</span>
+      <span class="ab-title">An Act to amend the Excise Tax Act (extension of the federal fuel excise tax relief)</span>
+      
+      
+      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
+      <span class="status-pill status-encours">In progress</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="14223235"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Extends the temporary suspension of the federal fuel excise tax until January 31, 2027.</li><li>Covers unleaded gasoline, unleaded and leaded aviation gasoline, diesel fuel and aviation fuel.</li><li>Sets excise tax rates at half the usual level from February 1, 2027 to March 31, 2027.</li><li>Cuts the 10-cents-per-litre rate to 5 cents and the 11-cents rate to 5.5 cents during those two months.</li><li>Cuts the 4-cents-per-litre rate on aviation fuel to 2 cents over the same period.</li><li>Makes the extension retroactive, deemed in force as of September 8, 2026.</li><li>Brings the half-rate measure into force on February 1, 2027.</li><li>Gives the legislation the short title Canadian Fuel Affordability Act.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
+  </div><div class="ab-row" id="abrow-pr-14223396">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14223396')">
+      <span class="ab-num">C-39</span>
+      <span class="ab-title">An Act respecting certain measures to strengthen the economy</span>
+      <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Omnibus bill — 3 parts, 8 divisions: it changes several different acts. Click to show only omnibus bills">Omnibus · 3 parts</button>
+      
+      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
+      <span class="status-pill status-encours">In progress</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="14223396"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Bundles into one omnibus bill a wide set of changes to major project reviews, supply chains and federal labour law.</li><li>Introduced at first reading in the House of Commons on 21 September 2026 by the Minister of Transport and Leader of the Government in the House.</li></ul><section class="bill-part"><h5 class="bill-sum-part"><span>Part 1</span>Impact Assessment Act, Canadian Energy Regulator Act and other Acts</h5><ul class="bill-sum-list"><li>Sets a one-year deadline to issue a decision on a designated project once the proponent has filed the required studies, and hands nuclear project assessments to the Canadian Nuclear Safety Commission.</li><li>Lets the Minister of the Environment grant certain federal authorizations at the same time as the decision statement, and coordinates review processes and consultations with Indigenous groups.</li><li>Extends the Building Canada Act to "regions of national interest" that Cabinet may list in a new schedule, and allows conditions on already-granted authorizations to be added, changed or removed.</li><li>Applies the same one-year decision deadline to pipelines, designated power lines and offshore renewable energy projects, and amends the navigable waters, environmental protection, species at risk and fisheries laws, including habitat credits usable by third parties.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Part 2</span>Canada Transportation Act, Canada Marine Act and other Acts, plus the new Enabling Digital Trade Act</h5><ul class="bill-sum-list"><li>Creates a transportation project office and a National Trade Corridors Council to track goods movement and analyze disruptions in designated trade corridors.</li><li>Sets up, for four years, a zone in Manitoba, Saskatchewan and Alberta where rail interswitching is priced by the Canadian Transportation Agency, and lowers the notification threshold for deals involving transportation businesses located in a port.</li><li>Gives the Minister of Transport new powers over security clearances, appointment of certain port authority directors, termination of a St. Lawrence Seaway agreement, and orders to counter certain threats.</li><li>Allows foreign ships to operate without a licence during a declared emergency, repeals the Shipping Conferences Exemption Act, 1987, and recognizes electronic trade documents as equivalent to paper.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Part 3</span>Canada Labour Code and Wage Earner Protection Program Act</h5><ul class="bill-sum-list"><li>Adds new timelines and requirements for collective bargaining and for reaching a first collective agreement, and transfers certain rights when one contractor replaces another.</li><li>Lets the Canada Industrial Relations Board certify a union for existing bargaining units on the application of two or more employers, and lets the Minister of Labour appoint a special mediator.</li><li>Allows the Head of Compliance and Enforcement to order payment of money still owed under a settlement with an employee.</li><li>Sets aside the federal paid medical leave rules where a collective agreement provides at least equally favourable rights, and clarifies Wage Earner Protection Program decisions.</li></ul></section><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
+  </div><div class="ab-row" id="abrow-pr-13548201">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13548201')">
+      <span class="ab-num">S-227</span>
+      <span class="ab-title">An Act respecting Arab Heritage Month</span>
+      
+      
+      
+      <span class="status-pill status-sanctionne">Assented to</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13548201"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Designates April as "Arab Heritage Month" across Canada, every year.</li><li>Sets out a very short law, to be known by the short title Arab Heritage Month Act.</li><li>Notes that the first people of Arab origin arrived in Canada in 1882, in the early years after Confederation.</li><li>States that the Arab Canadian population has since grown to more than one million people.</li><li>Recognizes the contributions of Arab Canadians to the country's social, economic and political life.</li><li>Highlights their cultural contributions, including in literature, music, food and fashion.</li><li>Is purely symbolic: it creates no funding, no holiday and no new obligations.</li><li>Introduced in the Senate by Senator Al Zaibak, with first reading on June 5, 2025.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
+  </div><div class="ab-row" id="abrow-pr-14203313">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14203313')">
+      <span class="ab-num">S-250</span>
+      <span class="ab-title">An Act to amend the Department of Justice Act</span>
+      
+      
+      <span class="depute-party" style="background:#6D5BA6; color:#fff">ISG</span>
+      <span class="status-pill status-encours">In progress</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="14203313"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Requires the Minister of Justice to table, for every government bill, a statement on the bill's potential effects on Indigenous Peoples' rights recognized and affirmed by section 35 of the Constitution Act, 1982.</li><li>Adds this to the existing requirement that each government bill come with a statement on its potential effects on Canadian Charter rights and freedoms.</li><li>Requires the statement to also say whether the bill is consistent with the United Nations Declaration on the Rights of Indigenous Peoples.</li><li>Obliges the statement, when effects on Indigenous rights are identified, to include a detailed summary of consultations held with the affected Indigenous Peoples — or a note that none took place.</li><li>Defines "Indigenous peoples" using subsection 35(2) of the Constitution Act, 1982, covering First Nations, Inuit and Métis.</li><li>Specifies the statement must be tabled in the chamber where the bill is introduced, whether the Senate or the House of Commons.</li><li>States in the preamble that tabling such a statement does not release the government from its duty to consult Indigenous Peoples.</li><li>Sets the coming into force at one year after royal assent and gives the law the short title Indigenous Rights Statement Act.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
+  </div><div class="ab-row" id="abrow-pr-13590613">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13590613')">
+      <span class="ab-num">C-9</span>
+      <span class="ab-title">An Act to amend the Criminal Code (hate propaganda, hate crime and access to religious or cultural places)</span>
+      
+      <span class="ab-lob" title="37 reported lobbying communications">37</span>
+      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
+      <span class="status-pill status-sanctionne">Assented to</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13590613"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Creates an offence for publicly displaying symbols mainly linked to a listed terrorist entity, the Nazi swastika or the SS bolts, where the display wilfully promotes hatred against an identifiable group.</li><li>Sets the penalty for that offence at up to 2 years in prison on indictment, or prosecution by summary conviction.</li><li>Provides defences for displays with a legitimate journalistic, religious, educational or artistic purpose, or made in good faith to expose hatred so it can be removed.</li><li>Creates a stand-alone hate crime offence when any other federal offence is motivated by hatred based on factors such as race, religion, sex, age, disability, sexual orientation or gender identity, with maximum sentences from 5 years up to life depending on the underlying offence.</li><li>Defines hatred as detestation or vilification stronger than disdain or dislike, and clarifies that merely discrediting, humiliating, hurting or offending does not qualify.</li><li>Creates two offences protecting access to places of worship, cemeteries, schools, daycares, seniors' residences and community spaces: intimidating someone to block their access, or intentionally obstructing it, punishable by up to 10 years in prison.</li><li>Clarifies that simply approaching such a place only to obtain or share information is not an offence.</li><li>Removes the requirement for the Attorney General's consent to prosecute hate propaganda offences, with the Act taking effect 30 days after royal assent.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
+  </div><div class="ab-row" id="abrow-pr-13608745">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13608745')">
+      <span class="ab-num">C-11</span>
+      <span class="ab-title">An Act to amend the National Defence Act and other Acts</span>
+      
+      
+      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
+      <span class="status-pill status-sanctionne">Assented to</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13608745"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Removes courts martial and military investigators from handling Criminal Code sexual offences alleged to have happened in Canada, leaving them to civilian authorities.</li><li>Still allows military members to make arrests, secure evidence and prevent an offence, but requires them to hand the person and evidence over to civilian police as soon as possible.</li><li>Shifts appointment of the Provost Marshal (renamed Provost Marshal General, rank of at least brigadier-general) and the Director of Military Prosecutions to the Governor in Council to strengthen their independence.</li><li>Sets the Director of Military Prosecutions' term at up to seven years, non-renewable, and creates a formal inquiry by a superior court judge before any discipline, suspension without pay or removal.</li><li>States clearly that the Judge Advocate General must respect the independence of military justice authorities.</li><li>Opens military judge appointments to non-commissioned members with at least 10 years at the bar, and bars military judges from conducting or facing summary hearings.</li><li>Lets someone acting on a victim's behalf request a liaison officer, and requires victims and witnesses to be told about publication bans and their right to change or lift them.</li><li>Aligns sex offender registry and publication ban rules with the Criminal Code and gives superior courts the power to hear exemption and variation applications for registry orders made under the National Defence Act.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
+  </div><button class="votes-more" onclick="loadMoreBills()">See 20 more — 10 of 187 shown</button><!--/ssr--></div>
   </section>
 
   <!-- VOTES -->
@@ -566,7 +512,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span data-i18n="footer.source">Source code</span>
     </a>
     <button type="button" class="footer-temoins" onclick="rouvrirTemoins()" data-i18n="footer.temoins">Cookies</button>
-    <span id="footerRight" data-i18n="footer.right">Built with Claude</span><a class="footer-etmoi" data-view="bd" href="/en/mises-a-jour" data-i18n="footer.etmoi">and me</a>
+    <span id="footerRight" data-i18n="footer.right">Built with Claude</span><a class="footer-etmoi" data-view="bd" href="/en/updates" data-i18n="footer.etmoi">and me</a>
   </span>
 </footer>
 
@@ -593,7 +539,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=97c5b8130d"></script>
+<script defer src="/assets/app.js?v=d5a433763f"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

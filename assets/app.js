@@ -3755,8 +3755,16 @@ document.getElementById('journalPlus')?.addEventListener('click', () => { journa
 /* Routage par URL (SEO) — chaque onglet a sa propre adresse indexable.
    ⚠️ data-view "ministres" = onglet DÉPUTÉS (slug /deputes) ;
       data-view "cabinet"   = onglet MINISTRES (slug /ministres). */
+/* Chaque langue a SES adresses : /projets-de-loi en français, /en/bills en
+   anglais. Une page anglaise sous une adresse française se lit mal, et Google
+   associe les mots de l'adresse à la langue de la page. Doit rester identique
+   à VIEWS dans scripts/seo-pages.js, qui génère les fichiers et le sitemap. */
 const VIEW_SLUGS = { apercu:'/', ministres:'/deputes', cabinet:'/ministres', projets:'/projets-de-loi', votes:'/votes', lexique:'/lexique', bd:'/mises-a-jour' };
+const VIEW_SLUGS_EN = { apercu:'/', ministres:'/mps', cabinet:'/ministers', projets:'/bills', votes:'/votes', lexique:'/glossary', bd:'/updates' };
 const SLUG_VIEWS = { '':'apercu', 'deputes':'ministres', 'ministres':'cabinet', 'projets-de-loi':'projets', 'votes':'votes', 'lexique':'lexique', 'mises-a-jour':'bd' };
+// L'ancienne adresse anglaise (/en/deputes) reste comprise : Vercel la redirige,
+// mais un lien partagé avant le changement doit aussi s'ouvrir sans recharger.
+const SLUG_VIEWS_EN = { '':'apercu', 'mps':'ministres', 'ministers':'cabinet', 'bills':'projets', 'votes':'votes', 'glossary':'lexique', 'updates':'bd', ...SLUG_VIEWS };
 // Hôte canonique : l'apex dossiercanada.ca renvoie un 308 vers www, donc
 // canonical, hreflang, og:url et sitemap pointent sur www (jamais sur une redirection).
 const SITE_ORIGIN = 'https://www.dossiercanada.ca';
@@ -3803,11 +3811,13 @@ function pathParts(){
   return { lang, seg: parts[0] || '' };
 }
 function viewFromPath(){
-  return SLUG_VIEWS[pathParts().seg] || 'apercu';
+  const { lang, seg } = pathParts();
+  const table = lang === 'en' ? SLUG_VIEWS_EN : SLUG_VIEWS;
+  return table[seg] || 'apercu';
 }
 function pathForView(viewName, lang){
-  const slug = VIEW_SLUGS[viewName] || '/';
   const L = lang || currentLang;
+  const slug = (L === 'en' ? VIEW_SLUGS_EN : VIEW_SLUGS)[viewName] || '/';
   if (L === 'en') return slug === '/' ? '/en' : '/en' + slug;
   return slug;
 }
