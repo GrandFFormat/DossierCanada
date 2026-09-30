@@ -2319,14 +2319,19 @@ function billCard(b, ctx){
   const chamberLabel = b.chamber === 'senate' ? (isEn ? 'Senate' : 'Sénat') : (isEn ? 'House of Commons' : 'Chambre des communes');
 
   const isFlagged = !!myFlaggedBills[b.id];
-  // On ne demande une explication que sur un projet encore actif (rien à
-  // expliquer sur un projet déjà sanctionné ou rejeté). Demander = aussi être
-  // averti par courriel des moments qui comptent (vote, adoption, rejet, sanction).
+  // On peut demander une explication sur N'IMPORTE QUEL projet, y compris une loi
+  // déjà sanctionnée : c'est souvent celle qui s'applique déjà qu'on veut
+  // comprendre. Sur un projet actif, demander veut dire en plus être averti des
+  // moments qui comptent (vote, adoption, rejet, sanction) ; sur un dossier clos,
+  // il n'y a plus de moment à venir, alors on ne le promet pas.
   // Trois états : déconnecté (connexion requise, aucune demande anonyme possible —
   // c'est bloqué côté serveur par RLS), connecté (demander), déjà demandé.
-  const canFlag = b.state === 'encours';
+  const canFlag = true;
+  const enCours = b.state === 'encours';
   const flagBtnId = 'demand-' + ctx + '-' + b.id;
-  const flagMailHint = isEn ? 'Emailed on the moments that matter (a vote, passed, defeated, enacted)' : 'Un courriel aux moments qui comptent (vote, adoption, rejet, sanction)';
+  const flagMailHint = enCours
+    ? (isEn ? 'Emailed on the moments that matter (a vote, passed, defeated, enacted)' : 'Un courriel aux moments qui comptent (vote, adoption, rejet, sanction)')
+    : (isEn ? 'A public explanation once enough people ask' : 'Une explication publique quand assez de personnes la demandent');
   let flagHint, flagLabel, flagOnclick = '', flagDisabled = '';
   if(!currentUser){
     flagHint = isEn ? 'Sign-in required — one request per person, no anonymous requests' : 'Connexion requise — une demande par personne, aucune demande anonyme';
