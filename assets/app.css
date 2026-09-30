@@ -296,16 +296,18 @@
   /* Bande « c'est quoi, challenger ? » sous la liste des projets : même couleur
      que l'en-tête de la vue (--page), pleine largeur comme .page-band. */
   .band-explainer{ background:var(--page); border-top:5px solid var(--ink); border-bottom:5px solid var(--ink);
-    padding:54px var(--gutter) 58px; margin:26px calc(-1 * var(--gutter)); }
+    padding:32px var(--gutter) 34px; margin:26px calc(-1 * var(--gutter)); }
   .band-explainer h2{ font-family:'Archivo Black',sans-serif; font-weight:400; text-transform:uppercase;
-    font-size:40px; line-height:1.06; color:var(--on-candy); margin:0 0 22px; }
-  .band-explainer p{ font-family:'Archivo',system-ui,sans-serif; font-size:17px; line-height:1.65;
-    color:var(--on-candy); margin:0 0 18px; max-width:62ch; }
+    font-size:34px; line-height:1.06; color:var(--on-candy); margin:0 0 16px; }
+  /* Le texte prend TOUTE la largeur de la bande : moins de lignes, moins de
+     hauteur. C'est la largeur du site qui borne la ligne, pas une colonne. */
+  .band-explainer p{ font-family:'Archivo',system-ui,sans-serif; font-size:16px; line-height:1.6;
+    color:var(--on-candy); margin:0 0 12px; max-width:none; }
   .band-explainer p:last-child{ margin-bottom:0; }
   @media (max-width:640px){
-    .band-explainer{ padding:30px var(--gutter) 32px; }
-    .band-explainer h2{ font-size:25px; }
-    .band-explainer p{ font-size:15.5px; }
+    .band-explainer{ padding:22px var(--gutter) 24px; }
+    .band-explainer h2{ font-size:23px; }
+    .band-explainer p{ font-size:15px; }
   }
   .page-toolbar{ display:flex; gap:10px 16px; flex-wrap:wrap; align-items:center; margin-bottom:20px; }
   @media (max-width:640px){ .page-band .band-title{ font-size:30px; } }
