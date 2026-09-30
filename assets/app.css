@@ -296,16 +296,16 @@
   /* Bande « c'est quoi, challenger ? » sous la liste des projets : même couleur
      que l'en-tête de la vue (--page), pleine largeur comme .page-band. */
   .band-explainer{ background:var(--page); border-top:5px solid var(--ink); border-bottom:5px solid var(--ink);
-    padding:28px var(--gutter) 30px; margin:26px calc(-1 * var(--gutter)); }
+    padding:54px var(--gutter) 58px; margin:26px calc(-1 * var(--gutter)); }
   .band-explainer h2{ font-family:'Archivo Black',sans-serif; font-weight:400; text-transform:uppercase;
-    font-size:30px; line-height:1.08; color:var(--on-candy); margin:0 0 16px; }
-  .band-explainer p{ font-family:'Archivo',system-ui,sans-serif; font-size:15.5px; line-height:1.6;
-    color:var(--on-candy); margin:0 0 12px; max-width:72ch; }
+    font-size:40px; line-height:1.06; color:var(--on-candy); margin:0 0 22px; }
+  .band-explainer p{ font-family:'Archivo',system-ui,sans-serif; font-size:17px; line-height:1.65;
+    color:var(--on-candy); margin:0 0 18px; max-width:62ch; }
   .band-explainer p:last-child{ margin-bottom:0; }
   @media (max-width:640px){
-    .band-explainer{ padding:20px var(--gutter) 22px; }
-    .band-explainer h2{ font-size:22px; }
-    .band-explainer p{ font-size:14.5px; }
+    .band-explainer{ padding:30px var(--gutter) 32px; }
+    .band-explainer h2{ font-size:25px; }
+    .band-explainer p{ font-size:15.5px; }
   }
   .page-toolbar{ display:flex; gap:10px 16px; flex-wrap:wrap; align-items:center; margin-bottom:20px; }
   @media (max-width:640px){ .page-band .band-title{ font-size:30px; } }
