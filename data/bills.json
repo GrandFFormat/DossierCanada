@@ -1,7 +1,7 @@
 {
   "source": "https://www.parl.ca/legisinfo/en/bills/json?parlsession=45-1",
   "session": "45-1",
-  "scrapedAt": "2026-09-29T14:46:17.390Z",
+  "scrapedAt": "2026-09-30T14:51:21.224Z",
   "count": 187,
   "bills": [
     {
@@ -2446,7 +2446,7 @@
         "first": "Mandy",
         "last": "Gull-Masty"
       },
-      "fullSummaryAvailable": false,
+      "fullSummaryAvailable": true,
       "summary": {
         "en": "This enactment affirms that the inherent right to self-government, recognized and affirmed by section 35 of the Constitution Act, 1982, includes the jurisdiction of First Nations in relation to water, source water, drinking water, wastewater and related infrastructure on, in and under First Nation lands. It sets out principles, such as substantive equality, to guide the provision for First Nations of clean and safe drinking water and the effective treatment and disposal of wastewater on First Nation lands. It provides for minimum standards for water quality and quantity and wastewater effluent. It also provides pathways to facilitate source water protection.",
         "fr": "Le texte affirme le droit inhérent à l’autonomie gouvernementale reconnu et confirmé par l’article 35 de la Loi constitutionnelle de 1982 qui comprend notamment la compétence des Premières Nations en matière d’eau, de sources d’eau, d’eau potable, d’eaux usées et d’infrastructures connexes sur et sous les terres des Premières Nations. Il énonce également des principes, notamment le principe de l’égalité réelle, visant à guider l’approvisionnement des Premières Nations en eau potable sûre et propre et le traitement et l’évacuation efficaces des eaux usées sur les terres des Premières Nations. Il prévoit en outre des normes minimales pour la quantité d’eau, la qualité de l’eau et les effluents des eaux usées. Enfin, le texte ouvre la voie à une protection facilitée des sources d’eau."
@@ -12987,5 +12987,5 @@
       "summarySource": null
     }
   ],
-  "summariesScrapedAt": "2026-09-29T14:48:36.947Z"
+  "summariesScrapedAt": "2026-09-30T14:53:51.317Z"
 }
