@@ -1379,9 +1379,9 @@ async function renderChallenged(){
       const { data, error } = await supabaseClient.rpc('flag_counts');
       challengedCache = (!error && Array.isArray(data)) ? data : [];
     }catch(e){ challengedCache = []; }
-    // Le compte du filtre « Challengés » dépend de cet agrégat : il arrive après
-    // le premier rendu de la barre, alors on la redessine une fois.
-    try{ renderStepFilters(); }catch(e){}
+    // Le compte du filtre et les flammes des rangées dépendent de cet agrégat :
+    // il arrive après le premier rendu, alors on redessine une fois.
+    try{ renderStepFilters(); renderBills(); renderApercuBills(); }catch(e){}
   }
 
   // Projets à partir du 1er palier (500 demandes), triés par nombre décroissant.
@@ -2489,6 +2489,11 @@ function challengedIds(){
   for(const c of (challengedCache || [])) if(Number(c.cnt) >= CHALLENGE_THRESHOLD) ids.add(Number(c.bill_id));
   return ids;
 }
+// Nombre de demandes par projet — sert la flamme de la rangée.
+function challengeCount(billId){
+  for(const c of (challengedCache || [])) if(Number(c.bill_id) === Number(billId)) return Number(c.cnt);
+  return 0;
+}
 let billsKeyword = '';
 let billsSortDir = 'desc';
 
@@ -2750,11 +2755,18 @@ function apercuBillRow(b, ctx){
   const omniBadge = om ? `<button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="${isEn
     ? `Omnibus bill — ${om.parts} parts${om.divisions ? `, ${om.divisions} divisions` : ''}: it changes several different acts. Click to show only omnibus bills`
     : `Projet omnibus — ${om.parts} parties${om.divisions ? `, ${om.divisions} sections` : ''} : il modifie plusieurs lois différentes. Cliquer pour ne voir que les omnibus`}">Omnibus · ${om.parts} ${isEn ? (om.parts > 1 ? 'parts' : 'part') : (om.parts > 1 ? 'parties' : 'partie')}</button>` : '';
+  // Challengé : au moins une explication demandée. La flamme le dit sur la rangée,
+  // et mène au filtre — comme la pastille Omnibus.
+  const chN = challengeCount(b.id);
+  const chBadge = chN >= CHALLENGE_THRESHOLD ? `<button type="button" class="ab-flamme" onclick="event.stopPropagation(); setBillsChallengeFilter(true)" title="${isEn
+    ? `Challenged — ${chN} explanation ${chN > 1 ? 'requests' : 'request'}. Click to show only challenged bills`
+    : `Challengé — ${chN} demande${chN > 1 ? 's' : ''} d'explication. Cliquer pour ne voir que les projets challengés`}"><span aria-hidden="true">🔥</span><b>${chN}</b></button>` : '';
   const full = billCard(b, ctx + b.id);
   return `<div class="ab-row" id="${rowId}">
     <div class="ab-head" onclick="toggleApercuBill('${rowId}')">
       <span class="ab-num">${b.num}</span>
       <span class="ab-title">${title}</span>
+      ${chBadge}
       ${omniBadge}
       ${lobBadge}
       ${partyBadge}

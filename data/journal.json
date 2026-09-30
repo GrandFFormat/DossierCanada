@@ -1,6 +1,19 @@
 [
   {
     "date": "2026-09-29",
+    "volet": "projets",
+    "fr": {
+      "titre": "Les projets challengés se repèrent d'un coup d'œil",
+      "texte": "Une flamme sur la rangée indique les projets dont des citoyen·ne·s ont demandé l'explication, avec le nombre de demandes ; un filtre « 🔥 Challengés » les regroupe, à côté de Lobbying et Omnibus. Et on peut désormais demander une explication sur n'importe quel projet, y compris une loi déjà sanctionnée — c'est souvent celle-là qu'on veut comprendre."
+    },
+    "en": {
+      "titre": "Challenged bills are now easy to spot",
+      "texte": "A flame on the row marks bills citizens have asked to have explained, with the number of requests; a “🔥 Challenged” filter groups them, next to Lobbying and Omnibus. And an explanation can now be requested on any bill, including one already enacted — that is often the one people want to understand."
+    },
+    "commits": []
+  },
+  {
+    "date": "2026-09-29",
     "volet": "site",
     "fr": {
       "titre": "Les pages anglaises ont des adresses anglaises",

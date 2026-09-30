@@ -491,6 +491,14 @@
      rangée, avis à filet latéral, et une tête par partie (leur « annexe »). */
   .ab-omni{flex:none; font-family:'IBM Plex Mono',monospace; font-size:10.5px; font-weight:700; color:var(--on-strong); background:var(--strong); border:1px solid var(--ink); padding:2px 6px; cursor:pointer; text-transform:uppercase; letter-spacing:0.04em; line-height:normal;}
   .ab-omni:hover{ background:var(--yellow); color:var(--on-candy); }
+  /* Flamme des projets challengés : même gabarit que la pastille Omnibus, avec le
+     nombre de demandes. Fond sombre pour que l'emoji ressorte, comme dans la barre. */
+  .ab-flamme{flex:none; display:inline-flex; align-items:center; gap:4px;
+    font-family:'IBM Plex Mono',monospace; font-size:10.5px; font-weight:700;
+    color:var(--on-strong); background:var(--strong); border:1px solid var(--ink);
+    padding:2px 6px; cursor:pointer; line-height:normal;}
+  .ab-flamme b{ font-weight:700; }
+  .ab-flamme:hover{ background:var(--pink); color:var(--on-candy); }
   .step-chip.om-chip b{background:var(--lime); color:var(--on-candy); padding:0 4px; margin-left:5px; font-weight:700;}
   .step-chip.om-chip.active b{background:var(--paper); color:var(--ink);}
   /* Challengés : ceux dont des citoyen·ne·s ont demandé l'explication. */
