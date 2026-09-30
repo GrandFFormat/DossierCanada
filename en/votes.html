@@ -62,7 +62,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=8c779824b4">
+<link rel="stylesheet" href="/assets/app.css?v=10d9d31626">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -270,6 +270,16 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
 
 
     <div id="billsList"><!--ssr--><!--/ssr--></div>
+
+    <!-- Ce que « challenger » veut dire, en bas de la liste — comme sur
+         DossierQuébec. Le texte dit le VRAI mécanisme : compte requis, une
+         demande par personne, et ce qui arrive à 1 000 demandes. -->
+    <div class="band-explainer" id="challengeExplainer">
+      <h2 data-i18n="chexp.h">✋ What does “challenging” mean?</h2>
+      <p data-i18n="chexp.p1">Clicking “Ask for an explanation” is a citizen request for the bill's sponsor to explain it in plain language — and for us to keep an eye on it together.</p>
+      <p data-i18n="chexp.p2"><b>An account (email) is required</b> — one request per person, no anonymous requests. 🔥 At <b>1,000</b> requests on the same bill, a public post is made, in the hope an MP agrees to sponsor a petition to the House.</p>
+      <p data-i18n="chexp.p3">It works on any bill, including one that has already received royal assent — that is often the one people want to understand.</p>
+    </div>
   </section>
 
   <!-- VOTES -->
@@ -829,7 +839,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=aafe2fb263"></script>
+<script defer src="/assets/app.js?v=8738a96ee5"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->
