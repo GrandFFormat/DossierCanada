@@ -1379,6 +1379,9 @@ async function renderChallenged(){
       const { data, error } = await supabaseClient.rpc('flag_counts');
       challengedCache = (!error && Array.isArray(data)) ? data : [];
     }catch(e){ challengedCache = []; }
+    // Le compte du filtre « Challengés » dépend de cet agrégat : il arrive après
+    // le premier rendu de la barre, alors on la redessine une fois.
+    try{ renderStepFilters(); }catch(e){}
   }
 
   // Projets à partir du 1er palier (500 demandes), triés par nombre décroissant.
@@ -2477,6 +2480,15 @@ let billsStepFilter = null;
 // la même liste.
 let billsLobbyFilter = false;
 let billsOmnibusFilter = false;
+let billsChallengeFilter = false;
+// Projets challengés = ceux qui ont au moins une demande d'explication. La source
+// est l'agrégat Supabase flag_counts (challengedCache), chargé par renderChallenged :
+// tant qu'il n'est pas là, le filtre ne s'affiche pas plutôt que d'annoncer 0.
+function challengedIds(){
+  const ids = new Set();
+  for(const c of (challengedCache || [])) if(Number(c.cnt) >= CHALLENGE_THRESHOLD) ids.add(Number(c.bill_id));
+  return ids;
+}
 let billsKeyword = '';
 let billsSortDir = 'desc';
 
@@ -2535,7 +2547,10 @@ function renderStepFilters(){
   // Omnibus : projets qui modifient plusieurs lois à la fois. Compte calculé.
   const nOm = bills.filter(b => b.omnibus).length;
   const omChip = nOm ? `<span class="step-chip om-chip ${billsOmnibusFilter?'active':''}" onclick="setBillsOmnibusFilter()" title="${isEn?'Bills that change several different acts at once, one per part':'Projets qui modifient plusieurs lois différentes à la fois, une par partie'}">Omnibus <b>${nOm}</b></span>` : '';
-  el.innerHTML = opts.map(([val,label])=>`<span class="step-chip ${billsStepFilter===val?'active':''}" onclick="setBillsStepFilter('${val}')">${label}</span>`).join('') + lobChip + omChip;
+  // Challengés : projets pour lesquels au moins une explication a été demandée.
+  const nCh = challengedIds().size;
+  const chChip = nCh ? `<span class="step-chip ch-chip ${billsChallengeFilter?'active':''}" onclick="setBillsChallengeFilter()" title="${isEn?'Bills citizens have asked to have explained':'Projets dont des citoyen·ne·s ont demandé l’explication'}">🔥 ${isEn?'Challenged':'Challengés'} <b>${nCh}</b></span>` : '';
+  el.innerHTML = opts.map(([val,label])=>`<span class="step-chip ${billsStepFilter===val?'active':''}" onclick="setBillsStepFilter('${val}')">${label}</span>`).join('') + lobChip + omChip + chChip;
 }
 
 function setBillsStepFilter(n){
@@ -2547,6 +2562,13 @@ function setBillsStepFilter(n){
 
 // Omnibus : le même filtre est atteignable par le chip de la barre et par la
 // pastille verte d'une rangée (« Omnibus · 3 »), qui répond à la même question.
+function setBillsChallengeFilter(on){
+  billsChallengeFilter = (on === undefined) ? !billsChallengeFilter : !!on;
+  renderStepFilters();
+  renderBills();
+  closeFilterPanelsOnMobile();
+}
+
 function setBillsOmnibusFilter(on){
   billsOmnibusFilter = (on === undefined) ? !billsOmnibusFilter : !!on;
   renderStepFilters();
@@ -2621,7 +2643,7 @@ function loadMoreBills(){ billsShown += BILLS_STEP; renderBills(); }
 function renderBills(keyword){
   keyword = keyword !== undefined ? keyword : (document.getElementById('searchBills')?.value || '');
   const kw = norm(keyword);
-  const signature = [kw, billsStatusFilter, billsStepFilter, billsLobbyFilter, billsOmnibusFilter, billsSortDir].join('|');
+  const signature = [kw, billsStatusFilter, billsStepFilter, billsLobbyFilter, billsOmnibusFilter, billsChallengeFilter, billsSortDir].join('|');
   if(signature !== billsSignature){ billsSignature = signature; billsShown = BILLS_FIRST; }
   // Mémorisé pour que le bloc de lobbying puisse mettre en avant l'organisation
   // cherchée : trouver un projet sans voir pourquoi serait pire que ne rien trouver.
@@ -2631,12 +2653,13 @@ function renderBills(keyword){
     const chamberOk = billsStepFilter === null || b.chamber === billsStepFilter;
     const lobbyOk = !billsLobbyFilter || !!(typeof lobbying !== 'undefined' && lobbying.bills && lobbying.bills[b.num]);
     const omnibusOk = !billsOmnibusFilter || !!b.omnibus;
+    const challengeOk = !billsChallengeFilter || challengedIds().has(b.id);
     // Les noms d'organisations entrent dans l'index : chercher « Google » ou
     // « pétroliers » sort les projets sur lesquels ils ont déclaré du lobbying.
     const orgs = lobbyOrgNames(b.num).map(n => typeof n === 'string' ? n : [n.fr, n.en].join(' ')).join(' ');
     const haystack = [b.title && b.title.fr, b.title && b.title.en, 'projet de loi ' + b.num, 'bill ' + b.num, b.sponsor && (b.sponsor.fr||b.sponsor.en), orgs].join(' ');
     const kwOk = matchesSearch(haystack, kw);
-    return statusOk && chamberOk && lobbyOk && omnibusOk && kwOk;
+    return statusOk && chamberOk && lobbyOk && omnibusOk && challengeOk && kwOk;
   }).sort((a,b)=>{
     // Filtre lobbying actif : on classe du plus lobbyé au moins lobbyé — c'est
     // la question qu'on pose en cliquant. Le sens du tri reste celui du bouton.
