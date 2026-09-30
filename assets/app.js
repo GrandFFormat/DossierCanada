@@ -2704,9 +2704,25 @@ function renderBills(keyword){
   } else if(list.length > BILLS_FIRST){
     more = `<div class="votes-more-note">${isEn ? 'All ' + list.length + ' shown' : 'Les ' + list.length + ' affichés'}</div>`;
   }
+  // La bande « c'est quoi, challenger ? » vit hors de la liste : on la sort avant
+  // de réécrire celle-ci (sinon innerHTML la détruirait), puis on la replace.
+  const expl = document.getElementById('challengeExplainer');
+  if(expl && expl.parentNode === el) el.parentNode.appendChild(expl);
   el.innerHTML = list.length ? shown.map(b=>apercuBillRow(b,'pr')).join('') + more : `<div class="no-results">${isEn ? 'No bill matches this search.' : 'Aucun projet de loi ne correspond à cette recherche.'}</div>`;
+  placerExplainer(el);
   openIds.forEach(id => { const r = document.getElementById(id); if(r && !r.classList.contains('open')) toggleApercuBill(id); });
   document.getElementById('statProjets').textContent = bills.length;
+}
+
+// La bande explicative s'intercale APRÈS le 2e projet : on la croise en lisant,
+// au lieu d'avoir à descendre toute la liste. Liste plus courte que 3 : elle
+// reste en dessous.
+function placerExplainer(liste){
+  const expl = document.getElementById('challengeExplainer');
+  if(!expl || !liste) return;
+  const rangees = [...liste.children].filter(n => n.id !== 'challengeExplainer');
+  if(rangees.length >= 3) liste.insertBefore(expl, rangees[2]);
+  else liste.parentNode.appendChild(expl);
 }
 
 function renderPageBandCounts(){
