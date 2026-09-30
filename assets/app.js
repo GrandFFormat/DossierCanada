@@ -2714,14 +2714,14 @@ function renderBills(keyword){
   document.getElementById('statProjets').textContent = bills.length;
 }
 
-// La bande explicative s'intercale APRÈS le 4e projet : on la croise en lisant,
+// La bande explicative s'intercale APRÈS le 5e projet : on la croise en lisant,
 // au lieu d'avoir à descendre toute la liste. Liste plus courte : elle reste
 // en dessous.
 function placerExplainer(liste){
   const expl = document.getElementById('challengeExplainer');
   if(!expl || !liste) return;
   const rangees = [...liste.children].filter(n => n.id !== 'challengeExplainer');
-  if(rangees.length > 4) liste.insertBefore(expl, rangees[4]);
+  if(rangees.length > 5) liste.insertBefore(expl, rangees[5]);
   else liste.parentNode.appendChild(expl);
 }
 
