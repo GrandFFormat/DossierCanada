@@ -45,10 +45,6 @@ async function capture({ view, regions, title }) {
     // État d'interface qu'on ne veut pas figer (renderBills rouvre les .open qu'il trouve).
     c.querySelectorAll('.open').forEach((x) => x.classList.remove('open'));
     if (id === 'apercuBills') c.querySelectorAll('.ab-detail').forEach((d) => { d.innerHTML = ''; });
-    // La bande explicative est du balisage de la PAGE : le site la déplace dans la
-    // liste au rendu, mais elle ne doit pas être recopiée dans la zone pré-rendue
-    // (elle s'y retrouverait en double, avec le même id).
-    c.querySelectorAll('#challengeExplainer').forEach((x) => x.remove());
     if (id === 'billsList') {
       // La liste est paginée (10 projets + « Voir 20 de plus ») : on garde ce que le site affiche.
       c.querySelectorAll('.ab-detail').forEach((d) => {
