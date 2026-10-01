@@ -2160,6 +2160,22 @@ function ensureBillTexts(){
   }
   return billTextsPromise;
 }
+// Texte cherchable d'un projet : le sommaire officiel ET le résumé en langage
+// clair, dans les deux langues. Vide tant que data/bill-texts.json n'est pas là
+// (1,1 Mo) — il n'est chargé que si quelqu'un cherche vraiment.
+function billSearchText(billId){
+  const t = billTexts && billTexts[billId];
+  if(!t) return '';
+  const parts = [];
+  for(const champ of ['s', 'ai']){
+    const v = t[champ];
+    if(!v) continue;
+    if(typeof v === 'string') parts.push(v);
+    else { if(v.fr) parts.push(v.fr); if(v.en) parts.push(v.en); }
+  }
+  return parts.join(' ');
+}
+
 function fillPendingSummaries(){
   const isEn = currentLang === 'en';
   document.querySelectorAll('.bill-sum-slot[data-pending]').forEach(el => {
@@ -2700,7 +2716,7 @@ function renderBills(keyword){
     // Les noms d'organisations entrent dans l'index : chercher « Google » ou
     // « pétroliers » sort les projets sur lesquels ils ont déclaré du lobbying.
     const orgs = lobbyOrgNames(b.num).map(n => typeof n === 'string' ? n : [n.fr, n.en].join(' ')).join(' ');
-    const haystack = [b.title && b.title.fr, b.title && b.title.en, 'projet de loi ' + b.num, 'bill ' + b.num, b.sponsor && (b.sponsor.fr||b.sponsor.en), orgs].join(' ');
+    const haystack = [b.title && b.title.fr, b.title && b.title.en, 'projet de loi ' + b.num, 'bill ' + b.num, b.sponsor && (b.sponsor.fr||b.sponsor.en), orgs, billSearchText(b.id)].join(' ');
     const kwOk = matchesSearch(haystack, kw);
     return statusOk && chamberOk && lobbyOk && omnibusOk && challengeOk && kwOk;
   }).sort((a,b)=>{
@@ -2734,7 +2750,13 @@ function renderBills(keyword){
   } else if(list.length > BILLS_FIRST){
     more = `<div class="votes-more-note">${isEn ? 'All ' + list.length + ' shown' : 'Les ' + list.length + ' affichés'}</div>`;
   }
-  el.innerHTML = list.length ? shown.map(b=>apercuBillRow(b,'pr')).join('') + more : `<div class="no-results">${isEn ? 'No bill matches this search.' : 'Aucun projet de loi ne correspond à cette recherche.'}</div>`;
+  // Les résumés arrivent peut-être encore : dire « aucun résultat » maintenant
+  // serait faux, puisque la recherche va s'élargir dans un instant.
+  const enAttente = !list.length && kw && !billTexts;
+  const vide = enAttente
+    ? `<div class="no-results">${isEn ? 'Searching the summaries…' : 'Recherche dans les résumés…'}</div>`
+    : `<div class="no-results">${isEn ? 'No bill matches this search.' : 'Aucun projet de loi ne correspond à cette recherche.'}</div>`;
+  el.innerHTML = list.length ? shown.map(b=>apercuBillRow(b,'pr')).join('') + more : vide;
   openIds.forEach(id => { const r = document.getElementById(id); if(r && !r.classList.contains('open')) toggleApercuBill(id); });
   document.getElementById('statProjets').textContent = bills.length;
 }
@@ -4007,7 +4029,14 @@ window.addEventListener('scroll', ()=>{
 });
 
 document.getElementById('searchMinistres').addEventListener('input', e=> { renderMinistres(e.target.value); renderDeputes(e.target.value); });
-document.getElementById('searchBills').addEventListener('input', ()=> renderBills());
+// Chercher dans les RÉSUMÉS suppose data/bill-texts.json (1,1 Mo) : on ne le
+// charge qu'au moment où quelqu'un cherche pour de vrai, et une seule fois.
+// Jusque-là, la recherche porte sur le titre, le numéro, le parrain et le lobbying.
+document.getElementById('searchBills').addEventListener('input', () => {
+  const kw = document.getElementById('searchBills').value.trim();
+  if(kw.length >= 3 && !billTexts) ensureBillTexts().then(() => renderBills()).catch(() => {});
+  renderBills();
+});
 document.getElementById('searchLexique')?.addEventListener('input', ()=> renderLexique());
 document.getElementById('searchVotes').addEventListener('input', ()=> { votesShown = 6; renderVotes(); });
 

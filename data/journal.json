@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-10-01",
+    "volet": "projets",
+    "fr": {
+      "titre": "La recherche lit maintenant les résumés",
+      "texte": "Chercher « prison » ne sortait qu'un seul projet — celui dont le titre contient le mot. La recherche lit désormais le sommaire officiel ET le résumé en langage clair de chaque projet, dans les deux langues : le même mot en sort dix-huit. Les textes (1,1 Mo) ne sont chargés qu'au moment où l'on cherche, pour ne pas alourdir la page de ceux qui ne cherchent pas."
+    },
+    "en": {
+      "titre": "Search now reads the summaries",
+      "texte": "Searching “prison” returned a single bill — the one with the word in its title. Search now reads each bill's official summary AND its plain-language summary, in both languages: the same word returns eighteen. The texts (1.1 MB) load only when someone searches, so the page stays light for everyone else."
+    },
+    "commits": []
+  },
+  {
     "date": "2026-09-30",
     "volet": "site",
     "fr": {
