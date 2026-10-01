@@ -1220,7 +1220,7 @@ let newsShown = 2;
 const provinceNetwork = [
   { code: 'BC', name: 'Colombie-Britannique', url: null, color: null },
   { code: 'AB', name: 'Alberta',              url: null, color: null },
-  { code: 'SK', name: 'Saskatchewan',         url: null, color: null },
+  { code: 'SK', name: 'DossierSaskatchewan', url: 'https://dossiersaskatchewan.ca/', color: '#00843D' },
   { code: 'MB', name: 'Manitoba',             url: null, color: null },
   { code: 'ON', name: 'DossierOntario', url: 'https://www.dossierontario.ca/', color: '#C8102E' },
   { code: 'QC', name: 'DossierQuébec', url: 'https://dossierquebec.ca/', color: '#0B3D91' },
