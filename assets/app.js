@@ -2771,7 +2771,16 @@ function renderPageBandCounts(){
   const set = (id, txt) => { const e = document.getElementById(id); if(e) e.textContent = txt; };
   // Titres de bande = le H1 de chaque page : toujours ancrés au fédéral (Communes,
   // Parlement…) pour ne pas se confondre avec DossierQuébec dans les résultats.
-  set('projetsCountTitle', isEn ? n(C.bills) + ' federal bills' : n(C.bills) + ' projets de loi fédéraux');
+  // Sur la page d'un projet, le grand titre nomme le projet — c'est le sujet de
+  // la page. Ailleurs, il porte le compte.
+  const numPage = (typeof billNumFromPath === 'function') ? billNumFromPath() : null;
+  const bPage = numPage ? bills.find(x => x.num === numPage) : null;
+  if(bPage){
+    const t = bPage.title && (isEn ? (bPage.title.en || bPage.title.fr) : (bPage.title.fr || bPage.title.en));
+    set('projetsCountTitle', bPage.num + (t ? ' — ' + t : ''));
+  } else {
+    set('projetsCountTitle', isEn ? n(C.bills) + ' federal bills' : n(C.bills) + ' projets de loi fédéraux');
+  }
   const senate = typeof voteChamber !== 'undefined' && voteChamber === 'senate';
   set('votesCountTitle', senate
     ? (isEn ? n(C.senateVotes) + ' votes in the Senate' : n(C.senateVotes) + ' votes au Sénat')
@@ -2902,7 +2911,7 @@ function shareBill(billId, platform, evt){
   if(!b) return;
   const L = o => (o && typeof o === 'object') ? (isEn ? (o.en ?? o.fr ?? '') : (o.fr ?? o.en ?? '')) : (o ?? '');
   const title = L(b.title);
-  const url = `${SITE_ORIGIN}${pathForView('projets', currentLang)}?pl=${encodeURIComponent(b.num)}`;
+  const url = `${SITE_ORIGIN}${billPathFor(b.num, currentLang)}`;
   const text = isEn
     ? `Bill ${b.num} — ${title}. Plain-language summary on DossierCanada:`
     : `Projet de loi ${b.num} — ${title}. Résumé en clair sur DossierCanada :`;
@@ -2925,7 +2934,8 @@ function shareBill(billId, platform, evt){
 
 // Lien profond : /projets-de-loi?pl=NUM → ouvre directement ce projet à l'arrivée.
 function openBillFromQuery(){
-  const pl = new URLSearchParams(location.search).get('pl');
+  // /projets-de-loi/c-39 (page du projet) ou ?pl=C-39 (ancien lien partagé).
+  const pl = billNumFromPath() || new URLSearchParams(location.search).get('pl');
   if(!pl) return;
   const b = bills.find(x => String(x.num) === String(pl));
   if(!b) return;
@@ -3908,12 +3918,29 @@ function pathParts(){
   let lang = 'fr';
   if (parts[0] === 'en') { lang = 'en'; parts.shift(); }
   else if (parts[0] === 'fr') { parts.shift(); }
-  return { lang, seg: parts[0] || '' };
+  // sous = 2e segment : le numéro d'un projet (/projets-de-loi/c-39).
+  return { lang, seg: parts[0] || '', sous: parts[1] || '' };
+}
+// Projet visé par l'adresse, s'il y en a un. Renvoie son numéro tel qu'écrit dans
+// les données (« C-39 »), pas tel que tapé dans l'URL (« c-39 »).
+function billNumFromPath(){
+  const { lang, seg, sous } = pathParts();
+  if(!sous) return null;
+  const slugProjets = (lang === 'en' ? VIEW_SLUGS_EN : VIEW_SLUGS).projets.replace('/', '');
+  if(seg !== slugProjets) return null;
+  const cherche = decodeURIComponent(sous).toUpperCase();
+  const b = (typeof bills !== 'undefined' ? bills : []).find(x => String(x.num).toUpperCase() === cherche);
+  return b ? b.num : null;
 }
 function viewFromPath(){
   const { lang, seg } = pathParts();
   const table = lang === 'en' ? SLUG_VIEWS_EN : SLUG_VIEWS;
   return table[seg] || 'apercu';
+}
+// Adresse d'un projet : /projets-de-loi/c-39, /en/bills/c-39.
+function billPathFor(num, lang){
+  const L = lang || currentLang;
+  return pathForView('projets', L) + '/' + String(num).toLowerCase();
 }
 function pathForView(viewName, lang){
   const L = lang || currentLang;
@@ -3924,6 +3951,9 @@ function pathForView(viewName, lang){
 // Aligne le <head> sur l'onglet affiché quand on navigue sans recharger (le build
 // écrit déjà la bonne version dans chaque page ; ceci garde le DOM cohérent).
 function syncHead(viewName){
+  // Page d'un projet (/projets-de-loi/c-39) : son <head> parle DU PROJET — titre,
+  // description, canonical, hreflang. On ne le remplace pas par celui de la liste.
+  if(typeof billNumFromPath === 'function' && billNumFromPath()) return;
   const m = PAGE_META[viewName]; if(!m) return;
   const en = (typeof currentLang !== 'undefined' && currentLang === 'en');
   const title = en ? m.en : m.fr, desc = en ? m.den : m.dfr;

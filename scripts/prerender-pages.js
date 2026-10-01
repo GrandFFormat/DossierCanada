@@ -10,7 +10,7 @@
 // Prérequis : navigateur Playwright (npx playwright install chromium).
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { extname } from 'node:path';
-import { PAGES, SSR, regionsOf, writeRegion, writeTitle } from './seo-pages.js';
+import { PAGES, SSR, regionsOf, writeRegion, writeTitle, readBills, billPathFor, billFileFor } from './seo-pages.js';
 
 const ORIGIN = 'http://prerender.local';
 const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.json': 'application/json; charset=utf-8', '.css': 'text/css', '.png': 'image/png', '.jpg': 'image/jpeg', '.svg': 'image/svg+xml', '.ico': 'image/x-icon' };
@@ -27,7 +27,7 @@ function fileForUrl(pathname) {
 }
 
 // Exécuté DANS la page : nettoie et renvoie le balisage des zones de la vue.
-async function capture({ view, regions, title }) {
+async function capture({ view, regions, title, bill }) {
   const out = { regions: {}, title: null };
   if (view === 'projets') {
     // Les résumés en langage clair sont chargés à la demande : on les charge ici
@@ -42,6 +42,20 @@ async function capture({ view, regions, title }) {
     const el = document.getElementById(id);
     if (!el) throw new Error('conteneur #' + id + ' absent');
     const c = el.cloneNode(true);
+    // Page d'un projet : on ne garde que SA fiche, ouverte (le site redessine la
+    // liste complète au chargement, par-dessus).
+    if (bill && id === 'billsList') {
+      const b = bills.find((x) => String(x.num).toUpperCase() === String(bill).toUpperCase());
+      const garde = b ? c.querySelector('#abrow-pr-' + b.id) : null;
+      if (!garde) throw new Error('fiche du projet ' + bill + ' absente de la liste');
+      c.innerHTML = '';
+      garde.classList.add('open');
+      const d = garde.querySelector('.ab-detail');
+      if (d) d.classList.add('open');
+      c.appendChild(garde);
+      out.regions[id] = c.innerHTML.trim();
+      continue;
+    }
     // État d'interface qu'on ne veut pas figer (renderBills rouvre les .open qu'il trouve).
     c.querySelectorAll('.open').forEach((x) => x.classList.remove('open'));
     if (id === 'apercuBills') c.querySelectorAll('.ab-detail').forEach((d) => { d.innerHTML = ''; });
@@ -64,6 +78,15 @@ async function capture({ view, regions, title }) {
   return out;
 }
 
+/* Pages de projet : /projets-de-loi/c-39 et /en/bills/c-39. Même vue que la page
+   des projets, mais on ne capture QUE la fiche du projet — une page de projet qui
+   embarquerait les dix premiers de la liste changerait toutes les nuits pour rien,
+   et dirait la même chose que ses 373 voisines. */
+const BILL_PAGES = readBills().flatMap((b) => ['fr', 'en'].map((lang) => ({
+  view: 'projets', lang, bill: b.num,
+  path: billPathFor(b.num, lang), file: billFileFor(b.num, lang),
+})));
+
 async function main() {
   let chromium;
   try { ({ chromium } = await import('playwright')); }
@@ -71,8 +94,8 @@ async function main() {
   const browser = await chromium.launch();
   let failures = 0;
   try {
-    for (const page of PAGES) {
-      const { view, lang, path, file } = page;
+    for (const page of [...PAGES, ...BILL_PAGES]) {
+      const { view, lang, path, file, bill } = page;
       const ctx = await browser.newContext({
         viewport: { width: 1280, height: 900 },
         locale: lang === 'en' ? 'en-CA' : 'fr-CA',
@@ -102,7 +125,7 @@ async function main() {
         await tab.goto(ORIGIN + path, { waitUntil: 'load', timeout: TIMEOUT });
         await tab.waitForFunction(() => window.__dcReady === true, null, { timeout: TIMEOUT });
         await tab.waitForTimeout(250);
-        const res = await tab.evaluate(capture, { view, regions: regionsOf(view), title: SSR[view].title });
+        const res = await tab.evaluate(capture, { view, regions: regionsOf(view), title: SSR[view].title, bill: bill || null });
         if (errors.length) throw new Error('erreurs de rendu');
         let html = readFileSync(file, 'utf8');
         for (const [id, markup] of Object.entries(res.regions)) {

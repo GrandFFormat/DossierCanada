@@ -3,6 +3,19 @@
     "date": "2026-10-01",
     "volet": "projets",
     "fr": {
+      "titre": "Chaque projet de loi a maintenant sa page",
+      "texte": "C-39 vit désormais à dossiercanada.ca/projets-de-loi/c-39 (et /en/bills/c-39 en anglais), avec son propre titre, sa description tirée du résumé en clair, et la fiche déjà ouverte — lisible même sans JavaScript. Les 374 pages sont dans le sitemap : chercher « c-39 » dans Google peut enfin mener ici. Les anciens liens ?pl=C-39 continuent de fonctionner."
+    },
+    "en": {
+      "titre": "Every bill now has its own page",
+      "texte": "C-39 now lives at dossiercanada.ca/en/bills/c-39 (and /projets-de-loi/c-39 in French), with its own title, a description drawn from the plain-language summary, and the card already open — readable even without JavaScript. All 374 pages are in the sitemap, so searching “c-39” can finally lead here. Old ?pl=C-39 links keep working."
+    },
+    "commits": []
+  },
+  {
+    "date": "2026-10-01",
+    "volet": "projets",
+    "fr": {
       "titre": "La recherche lit maintenant les résumés",
       "texte": "Chercher « prison » ne sortait qu'un seul projet — celui dont le titre contient le mot. La recherche lit désormais le sommaire officiel ET le résumé en langage clair de chaque projet, dans les deux langues : le même mot en sort dix-huit. Les textes (1,1 Mo) ne sont chargés qu'au moment où l'on cherche, pour ne pas alourdir la page de ceux qui ne cherchent pas."
     },
