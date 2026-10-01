@@ -2954,8 +2954,18 @@ function openBillFromQuery(){
   const row = document.getElementById(rowId);
   if(row){
     if(!row.classList.contains('open')) toggleApercuBill(rowId);
-    setTimeout(() => row.scrollIntoView({ behavior: 'smooth', block: 'start' }), 90);
+    // scrollIntoView aligne le haut de la fiche sur le haut de la FENÊTRE : l'en-tête
+    // fixe passe par-dessus et on arrive au milieu du résumé, sans voir de quel projet
+    // il s'agit. On vise donc sous l'en-tête, avec un peu d'air.
+    setTimeout(() => montrerFiche(row), 90);
   }
+}
+// Amène une fiche juste sous l'en-tête fixe, titre visible.
+function montrerFiche(row, immediat){
+  const barre = document.getElementById('dq-topbar');
+  const haut = (barre ? barre.getBoundingClientRect().height : 0) + 12;
+  const y = row.getBoundingClientRect().top + window.scrollY - haut;
+  window.scrollTo({ top: Math.max(0, Math.round(y)), behavior: immediat ? 'auto' : 'smooth' });
 }
 
 /* Index des données : vides au départ, refaits quand le fichier de l'onglet
