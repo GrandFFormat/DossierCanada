@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-09-30",
+    "volet": "site",
+    "fr": {
+      "titre": "La Saskatchewan s'allume dans la rangée des provinces",
+      "texte": "La pastille SK de l'en-tête mène maintenant à DossierSaskatchewan, qui suit l'Assemblée législative de la province. Elle porte le vert du drapeau saskatchewanais, comme l'Ontario porte son rouge et le Québec son bleu."
+    },
+    "en": {
+      "titre": "Saskatchewan lights up in the province row",
+      "texte": "The SK dot in the header now leads to DossierSaskatchewan, which tracks the province's Legislative Assembly. It carries the green of Saskatchewan's flag, as Ontario carries its red and Quebec its blue."
+    },
+    "commits": []
+  },
+  {
     "date": "2026-09-29",
     "volet": "projets",
     "fr": {
