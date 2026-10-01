@@ -32,6 +32,20 @@ export const slugOf = (view, lang) => {
   const v = VIEWS.find((x) => x.view === view);
   return lang === 'en' ? v.en : v.slug;
 };
+
+/* UNE PAGE PAR PROJET DE LOI — /projets-de-loi/c-39 et /en/bills/c-39.
+   Sans elles, « c-39 c'est quoi » ne mène nulle part : le lien profond ?pl=C-39
+   n'est ni dans le sitemap, ni lisible sans JavaScript. */
+export const BILLS_DATA = 'data/d-bills.js';
+export const billSlug = (num) => String(num).toLowerCase();
+export const billPathFor = (num, lang) => `${pathFor('projets', lang)}/${billSlug(num)}`;
+export const billFileFor = (num, lang) => (lang === 'en' ? 'en/bills/' : 'projets-de-loi/') + billSlug(num) + '.html';
+// Liste des projets, lue dans le fichier généré que le site lui-même charge.
+export function readBills(src = readFileSync(BILLS_DATA, 'utf8')) {
+  const m = /\bbills\.push\(\.\.\.(\[[\s\S]*?\])\);/.exec(src);
+  if (!m) throw new Error(`liste des projets introuvable dans ${BILLS_DATA}`);
+  return JSON.parse(m[1]);
+}
 export const LANGS = ['fr', 'en'];
 
 // Zones pré-rendues de chaque vue : conteneurs balisés <!--ssr-->…<!--/ssr--> dans

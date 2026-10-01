@@ -99,4 +99,2624 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/mises-a-jour"/>
     <lastmod>2026-10-01</lastmod>
   </url>
+  <!-- PROJETS:START -->
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-10</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-10"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-10"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-10"/>
+    <lastmod>2026-09-28</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-10</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-10"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-10"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-10"/>
+    <lastmod>2026-09-28</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-27</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-27"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-27"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-27"/>
+    <lastmod>2026-09-28</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-27</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-27"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-27"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-27"/>
+    <lastmod>2026-09-28</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-266</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-266"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-266"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-266"/>
+    <lastmod>2026-09-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-266</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-266"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-266"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-266"/>
+    <lastmod>2026-09-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-226</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-226"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-226"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-226"/>
+    <lastmod>2026-09-22</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-226</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-226"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-226"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-226"/>
+    <lastmod>2026-09-22</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-38</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-38"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-38"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-38"/>
+    <lastmod>2026-09-22</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-38</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-38"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-38"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-38"/>
+    <lastmod>2026-09-22</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-39</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-39"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-39"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-39"/>
+    <lastmod>2026-09-21</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-39</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-39"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-39"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-39"/>
+    <lastmod>2026-09-21</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-227</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-227"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-227"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-227"/>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-227</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-227"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-227"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-227"/>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-250</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-250"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-250"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-250"/>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-250</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-250"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-250"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-250"/>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-9</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-9"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-9"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-9"/>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-9</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-9"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-9"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-9"/>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-11</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-11"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-11"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-11"/>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-11</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-11"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-11"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-11"/>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-16</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-16"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-16"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-16"/>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-16</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-16"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-16"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-16"/>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-20</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-20"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-20"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-20"/>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-20</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-20"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-20"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-20"/>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-22</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-22"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-22"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-22"/>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-22</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-22"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-22"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-22"/>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-25</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-25"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-25"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-25"/>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-25</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-25"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-25"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-25"/>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-26</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-26"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-26"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-26"/>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-26</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-26"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-26"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-26"/>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-29</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-29"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-29"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-29"/>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-29</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-29"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-29"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-29"/>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-30</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-30"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-30"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-30"/>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-30</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-30"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-30"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-30"/>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-6</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-6"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-6"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-6"/>
+    <lastmod>2026-06-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-6</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-6"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-6"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-6"/>
+    <lastmod>2026-06-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-215</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-215"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-215"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-215"/>
+    <lastmod>2026-06-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-215</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-215"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-215"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-215"/>
+    <lastmod>2026-06-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-32</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-32"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-32"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-32"/>
+    <lastmod>2026-06-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-32</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-32"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-32"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-32"/>
+    <lastmod>2026-06-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-33</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-33"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-33"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-33"/>
+    <lastmod>2026-06-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-33</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-33"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-33"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-33"/>
+    <lastmod>2026-06-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-225</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-225"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-225"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-225"/>
+    <lastmod>2026-06-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-225</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-225"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-225"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-225"/>
+    <lastmod>2026-06-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-267</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-267"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-267"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-267"/>
+    <lastmod>2026-06-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-267</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-267"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-267"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-267"/>
+    <lastmod>2026-06-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-268</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-268"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-268"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-268"/>
+    <lastmod>2026-06-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-268</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-268"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-268"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-268"/>
+    <lastmod>2026-06-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-287</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-287"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-287"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-287"/>
+    <lastmod>2026-06-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-287</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-287"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-287"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-287"/>
+    <lastmod>2026-06-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-288</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-288"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-288"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-288"/>
+    <lastmod>2026-06-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-288</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-288"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-288"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-288"/>
+    <lastmod>2026-06-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-289</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-289"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-289"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-289"/>
+    <lastmod>2026-06-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-289</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-289"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-289"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-289"/>
+    <lastmod>2026-06-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-290</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-290"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-290"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-290"/>
+    <lastmod>2026-06-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-290</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-290"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-290"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-290"/>
+    <lastmod>2026-06-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-291</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-291"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-291"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-291"/>
+    <lastmod>2026-06-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-291</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-291"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-291"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-291"/>
+    <lastmod>2026-06-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-201</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-201"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-201"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-201"/>
+    <lastmod>2026-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-201</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-201"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-201"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-201"/>
+    <lastmod>2026-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-37</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-37"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-37"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-37"/>
+    <lastmod>2026-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-37</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-37"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-37"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-37"/>
+    <lastmod>2026-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-230</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-230"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-230"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-230"/>
+    <lastmod>2026-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-230</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-230"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-230"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-230"/>
+    <lastmod>2026-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-286</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-286"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-286"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-286"/>
+    <lastmod>2026-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-286</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-286"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-286"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-286"/>
+    <lastmod>2026-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-228</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-228"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-228"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-228"/>
+    <lastmod>2026-06-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-228</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-228"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-228"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-228"/>
+    <lastmod>2026-06-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-8</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-8"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-8"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-8"/>
+    <lastmod>2026-06-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-8</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-8"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-8"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-8"/>
+    <lastmod>2026-06-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-14</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-14"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-14"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-14"/>
+    <lastmod>2026-06-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-14</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-14"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-14"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-14"/>
+    <lastmod>2026-06-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-36</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-36"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-36"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-36"/>
+    <lastmod>2026-06-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-36</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-36"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-36"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-36"/>
+    <lastmod>2026-06-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-35</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-35"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-35"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-35"/>
+    <lastmod>2026-06-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-35</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-35"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-35"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-35"/>
+    <lastmod>2026-06-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-285</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-285"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-285"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-285"/>
+    <lastmod>2026-06-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-285</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-285"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-285"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-285"/>
+    <lastmod>2026-06-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-219</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-219"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-219"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-219"/>
+    <lastmod>2026-06-11</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-219</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-219"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-219"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-219"/>
+    <lastmod>2026-06-11</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-221</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-221"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-221"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-221"/>
+    <lastmod>2026-06-11</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-221</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-221"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-221"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-221"/>
+    <lastmod>2026-06-11</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-223</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-223"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-223"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-223"/>
+    <lastmod>2026-06-11</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-223</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-223"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-223"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-223"/>
+    <lastmod>2026-06-11</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-224</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-224"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-224"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-224"/>
+    <lastmod>2026-06-11</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-224</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-224"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-224"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-224"/>
+    <lastmod>2026-06-11</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-34</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-34"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-34"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-34"/>
+    <lastmod>2026-06-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-34</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-34"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-34"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-34"/>
+    <lastmod>2026-06-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-265</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-265"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-265"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-265"/>
+    <lastmod>2026-06-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-265</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-265"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-265"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-265"/>
+    <lastmod>2026-06-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-239</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-239"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-239"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-239"/>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-239</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-239"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-239"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-239"/>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-248</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-248"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-248"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-248"/>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-248</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-248"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-248"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-248"/>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-249</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-249"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-249"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-249"/>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-249</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-249"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-249"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-249"/>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-246</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-246"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-246"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-246"/>
+    <lastmod>2026-06-08</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-246</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-246"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-246"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-246"/>
+    <lastmod>2026-06-08</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-283</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-283"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-283"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-283"/>
+    <lastmod>2026-06-08</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-283</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-283"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-283"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-283"/>
+    <lastmod>2026-06-08</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-284</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-284"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-284"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-284"/>
+    <lastmod>2026-06-08</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-284</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-284"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-284"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-284"/>
+    <lastmod>2026-06-08</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-4</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-4"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-4"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-4"/>
+    <lastmod>2026-06-05</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-4</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-4"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-4"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-4"/>
+    <lastmod>2026-06-05</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-263</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-263"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-263"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-263"/>
+    <lastmod>2026-06-05</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-263</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-263"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-263"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-263"/>
+    <lastmod>2026-06-05</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-31</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-31"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-31"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-31"/>
+    <lastmod>2026-06-03</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-31</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-31"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-31"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-31"/>
+    <lastmod>2026-06-03</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-280</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-280"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-280"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-280"/>
+    <lastmod>2026-06-03</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-280</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-280"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-280"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-280"/>
+    <lastmod>2026-06-03</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-281</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-281"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-281"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-281"/>
+    <lastmod>2026-06-03</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-281</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-281"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-281"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-281"/>
+    <lastmod>2026-06-03</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-282</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-282"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-282"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-282"/>
+    <lastmod>2026-06-03</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-282</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-282"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-282"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-282"/>
+    <lastmod>2026-06-03</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-244</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-244"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-244"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-244"/>
+    <lastmod>2026-06-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-244</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-244"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-244"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-244"/>
+    <lastmod>2026-06-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-234</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-234"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-234"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-234"/>
+    <lastmod>2026-06-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-234</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-234"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-234"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-234"/>
+    <lastmod>2026-06-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-278</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-278"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-278"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-278"/>
+    <lastmod>2026-06-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-278</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-278"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-278"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-278"/>
+    <lastmod>2026-06-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-279</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-279"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-279"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-279"/>
+    <lastmod>2026-06-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-279</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-279"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-279"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-279"/>
+    <lastmod>2026-06-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-240</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-240"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-240"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-240"/>
+    <lastmod>2026-06-01</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-240</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-240"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-240"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-240"/>
+    <lastmod>2026-06-01</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-5</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-5"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-5"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-5"/>
+    <lastmod>2026-05-28</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-5</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-5"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-5"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-5"/>
+    <lastmod>2026-05-28</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-205</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-205"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-205"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-205"/>
+    <lastmod>2026-05-28</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-205</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-205"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-205"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-205"/>
+    <lastmod>2026-05-28</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-233</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-233"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-233"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-233"/>
+    <lastmod>2026-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-233</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-233"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-233"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-233"/>
+    <lastmod>2026-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-242</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-242"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-242"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-242"/>
+    <lastmod>2026-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-242</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-242"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-242"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-242"/>
+    <lastmod>2026-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-214</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-214"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-214"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-214"/>
+    <lastmod>2026-05-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-214</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-214"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-214"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-214"/>
+    <lastmod>2026-05-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-235</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-235"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-235"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-235"/>
+    <lastmod>2026-05-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-235</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-235"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-235"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-235"/>
+    <lastmod>2026-05-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-13</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-13"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-13"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-13"/>
+    <lastmod>2026-05-06</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-13</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-13"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-13"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-13"/>
+    <lastmod>2026-05-06</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-18</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-18"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-18"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-18"/>
+    <lastmod>2026-05-06</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-18</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-18"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-18"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-18"/>
+    <lastmod>2026-05-06</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-277</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-277"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-277"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-277"/>
+    <lastmod>2026-05-06</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-277</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-277"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-277"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-277"/>
+    <lastmod>2026-05-06</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-247</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-247"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-247"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-247"/>
+    <lastmod>2026-05-05</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-247</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-247"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-247"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-247"/>
+    <lastmod>2026-05-05</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-276</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-276"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-276"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-276"/>
+    <lastmod>2026-05-04</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-276</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-276"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-276"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-276"/>
+    <lastmod>2026-05-04</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-209</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-209"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-209"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-209"/>
+    <lastmod>2026-04-30</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-209</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-209"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-209"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-209"/>
+    <lastmod>2026-04-30</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-275</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-275"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-275"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-275"/>
+    <lastmod>2026-04-28</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-275</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-275"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-275"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-275"/>
+    <lastmod>2026-04-28</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-211</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-211"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-211"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-211"/>
+    <lastmod>2026-04-22</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-211</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-211"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-211"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-211"/>
+    <lastmod>2026-04-22</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-230</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-230"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-230"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-230"/>
+    <lastmod>2026-04-22</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-230</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-230"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-230"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-230"/>
+    <lastmod>2026-04-22</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-226</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-226"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-226"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-226"/>
+    <lastmod>2026-04-22</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-226</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-226"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-226"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-226"/>
+    <lastmod>2026-04-22</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-238</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-238"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-238"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-238"/>
+    <lastmod>2026-04-22</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-238</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-238"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-238"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-238"/>
+    <lastmod>2026-04-22</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-225</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-225"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-225"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-225"/>
+    <lastmod>2026-04-21</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-225</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-225"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-225"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-225"/>
+    <lastmod>2026-04-21</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-28</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-28"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-28"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-28"/>
+    <lastmod>2026-04-21</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-28</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-28"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-28"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-28"/>
+    <lastmod>2026-04-21</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-274</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-274"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-274"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-274"/>
+    <lastmod>2026-04-20</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-274</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-274"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-274"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-274"/>
+    <lastmod>2026-04-20</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-229</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-229"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-229"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-229"/>
+    <lastmod>2026-04-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-229</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-229"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-229"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-229"/>
+    <lastmod>2026-04-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-231</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-231"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-231"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-231"/>
+    <lastmod>2026-04-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-231</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-231"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-231"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-231"/>
+    <lastmod>2026-04-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-273</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-273"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-273"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-273"/>
+    <lastmod>2026-04-14</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-273</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-273"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-273"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-273"/>
+    <lastmod>2026-04-14</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-217</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-217"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-217"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-217"/>
+    <lastmod>2026-03-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-217</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-217"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-217"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-217"/>
+    <lastmod>2026-03-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-243</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-243"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-243"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-243"/>
+    <lastmod>2026-03-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-243</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-243"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-243"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-243"/>
+    <lastmod>2026-03-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-12</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-12"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-12"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-12"/>
+    <lastmod>2026-03-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-12</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-12"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-12"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-12"/>
+    <lastmod>2026-03-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-15</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-15"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-15"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-15"/>
+    <lastmod>2026-03-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-15</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-15"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-15"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-15"/>
+    <lastmod>2026-03-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-23</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-23"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-23"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-23"/>
+    <lastmod>2026-03-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-23</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-23"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-23"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-23"/>
+    <lastmod>2026-03-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-24</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-24"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-24"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-24"/>
+    <lastmod>2026-03-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-24</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-24"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-24"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-24"/>
+    <lastmod>2026-03-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-236</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-236"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-236"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-236"/>
+    <lastmod>2026-03-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-236</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-236"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-236"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-236"/>
+    <lastmod>2026-03-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-272</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-272"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-272"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-272"/>
+    <lastmod>2026-03-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-272</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-272"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-272"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-272"/>
+    <lastmod>2026-03-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-235</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-235"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-235"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-235"/>
+    <lastmod>2026-03-24</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-235</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-235"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-235"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-235"/>
+    <lastmod>2026-03-24</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-245</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-245"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-245"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-245"/>
+    <lastmod>2026-03-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-245</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-245"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-245"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-245"/>
+    <lastmod>2026-03-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-271</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-271"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-271"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-271"/>
+    <lastmod>2026-03-13</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-271</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-271"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-271"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-271"/>
+    <lastmod>2026-03-13</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-3</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-3"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-3"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-3"/>
+    <lastmod>2026-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-3</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-3"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-3"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-3"/>
+    <lastmod>2026-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-212</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-212"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-212"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-212"/>
+    <lastmod>2026-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-212</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-212"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-212"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-212"/>
+    <lastmod>2026-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-241</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-241"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-241"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-241"/>
+    <lastmod>2026-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-241</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-241"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-241"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-241"/>
+    <lastmod>2026-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-4</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-4"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-4"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-4"/>
+    <lastmod>2026-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-4</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-4"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-4"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-4"/>
+    <lastmod>2026-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-269</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-269"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-269"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-269"/>
+    <lastmod>2026-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-269</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-269"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-269"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-269"/>
+    <lastmod>2026-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-270</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-270"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-270"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-270"/>
+    <lastmod>2026-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-270</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-270"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-270"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-270"/>
+    <lastmod>2026-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-264</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-264"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-264"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-264"/>
+    <lastmod>2026-03-11</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-264</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-264"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-264"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-264"/>
+    <lastmod>2026-03-11</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-224</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-224"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-224"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-224"/>
+    <lastmod>2026-03-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-224</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-224"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-224"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-224"/>
+    <lastmod>2026-03-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-262</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-262"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-262"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-262"/>
+    <lastmod>2026-03-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-262</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-262"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-262"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-262"/>
+    <lastmod>2026-03-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-2</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-2"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-2"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-2"/>
+    <lastmod>2026-02-27</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-2</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-2"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-2"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-2"/>
+    <lastmod>2026-02-27</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-221</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-221"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-221"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-221"/>
+    <lastmod>2026-02-27</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-221</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-221"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-221"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-221"/>
+    <lastmod>2026-02-27</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-244</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-244"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-244"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-244"/>
+    <lastmod>2026-02-25</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-244</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-244"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-244"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-244"/>
+    <lastmod>2026-02-25</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-219</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-219"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-219"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-219"/>
+    <lastmod>2026-02-24</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-219</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-219"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-219"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-219"/>
+    <lastmod>2026-02-24</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-210</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-210"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-210"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-210"/>
+    <lastmod>2026-02-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-210</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-210"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-210"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-210"/>
+    <lastmod>2026-02-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-237</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-237"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-237"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-237"/>
+    <lastmod>2026-02-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-237</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-237"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-237"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-237"/>
+    <lastmod>2026-02-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-19</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-19"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-19"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-19"/>
+    <lastmod>2026-02-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-19</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-19"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-19"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-19"/>
+    <lastmod>2026-02-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-21</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-21"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-21"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-21"/>
+    <lastmod>2026-02-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-21</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-21"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-21"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-21"/>
+    <lastmod>2026-02-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-227</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-227"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-227"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-227"/>
+    <lastmod>2026-02-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-227</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-227"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-227"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-227"/>
+    <lastmod>2026-02-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-216</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-216"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-216"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-216"/>
+    <lastmod>2026-02-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-216</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-216"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-216"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-216"/>
+    <lastmod>2026-02-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-261</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-261"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-261"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-261"/>
+    <lastmod>2026-02-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-261</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-261"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-261"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-261"/>
+    <lastmod>2026-02-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-260</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-260"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-260"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-260"/>
+    <lastmod>2026-02-05</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-260</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-260"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-260"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-260"/>
+    <lastmod>2026-02-05</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-222</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-222"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-222"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-222"/>
+    <lastmod>2026-02-04</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-222</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-222"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-222"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-222"/>
+    <lastmod>2026-02-04</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-223</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-223"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-223"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-223"/>
+    <lastmod>2026-02-04</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-223</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-223"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-223"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-223"/>
+    <lastmod>2026-02-04</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-259</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-259"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-259"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-259"/>
+    <lastmod>2026-01-27</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-259</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-259"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-259"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-259"/>
+    <lastmod>2026-01-27</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-17</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-17"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-17"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-17"/>
+    <lastmod>2025-12-11</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-17</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-17"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-17"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-17"/>
+    <lastmod>2025-12-11</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-204</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-204"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-204"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-204"/>
+    <lastmod>2025-12-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-204</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-204"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-204"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-204"/>
+    <lastmod>2025-12-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-241</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-241"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-241"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-241"/>
+    <lastmod>2025-12-03</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-241</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-241"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-241"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-241"/>
+    <lastmod>2025-12-03</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-258</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-258"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-258"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-258"/>
+    <lastmod>2025-12-03</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-258</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-258"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-258"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-258"/>
+    <lastmod>2025-12-03</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-220</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-220"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-220"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-220"/>
+    <lastmod>2025-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-220</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-220"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-220"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-220"/>
+    <lastmod>2025-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-234</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-234"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-234"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-234"/>
+    <lastmod>2025-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-234</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-234"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-234"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-234"/>
+    <lastmod>2025-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-1001</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-1001"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-1001"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-1001"/>
+    <lastmod>2025-11-20</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-1001</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-1001"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-1001"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-1001"/>
+    <lastmod>2025-11-20</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-3</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-3"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-3"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-3"/>
+    <lastmod>2025-11-20</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-3</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-3"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-3"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-3"/>
+    <lastmod>2025-11-20</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-257</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-257"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-257"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-257"/>
+    <lastmod>2025-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-257</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-257"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-257"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-257"/>
+    <lastmod>2025-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-256</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-256"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-256"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-256"/>
+    <lastmod>2025-11-07</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-256</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-256"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-256"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-256"/>
+    <lastmod>2025-11-07</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-206</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-206"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-206"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-206"/>
+    <lastmod>2025-11-06</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-206</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-206"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-206"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-206"/>
+    <lastmod>2025-11-06</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-255</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-255"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-255"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-255"/>
+    <lastmod>2025-11-06</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-255</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-255"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-255"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-255"/>
+    <lastmod>2025-11-06</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-240</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-240"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-240"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-240"/>
+    <lastmod>2025-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-240</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-240"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-240"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-240"/>
+    <lastmod>2025-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-254</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-254"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-254"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-254"/>
+    <lastmod>2025-10-31</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-254</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-254"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-254"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-254"/>
+    <lastmod>2025-10-31</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-253</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-253"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-253"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-253"/>
+    <lastmod>2025-10-29</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-253</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-253"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-253"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-253"/>
+    <lastmod>2025-10-29</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-238</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-238"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-238"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-238"/>
+    <lastmod>2025-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-238</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-238"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-238"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-238"/>
+    <lastmod>2025-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-252</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-252"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-252"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-252"/>
+    <lastmod>2025-10-22</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-252</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-252"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-252"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-252"/>
+    <lastmod>2025-10-22</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-249</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-249"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-249"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-249"/>
+    <lastmod>2025-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-249</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-249"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-249"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-249"/>
+    <lastmod>2025-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-250</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-250"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-250"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-250"/>
+    <lastmod>2025-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-250</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-250"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-250"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-250"/>
+    <lastmod>2025-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-251</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-251"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-251"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-251"/>
+    <lastmod>2025-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-251</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-251"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-251"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-251"/>
+    <lastmod>2025-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-247</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-247"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-247"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-247"/>
+    <lastmod>2025-10-06</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-247</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-247"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-247"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-247"/>
+    <lastmod>2025-10-06</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-248</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-248"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-248"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-248"/>
+    <lastmod>2025-10-06</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-248</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-248"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-248"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-248"/>
+    <lastmod>2025-10-06</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-236</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-236"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-236"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-236"/>
+    <lastmod>2025-09-30</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-236</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-236"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-236"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-236"/>
+    <lastmod>2025-09-30</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-245</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-245"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-245"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-245"/>
+    <lastmod>2025-09-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-245</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-245"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-245"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-245"/>
+    <lastmod>2025-09-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-246</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-246"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-246"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-246"/>
+    <lastmod>2025-09-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-246</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-246"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-246"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-246"/>
+    <lastmod>2025-09-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-237</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-237"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-237"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-237"/>
+    <lastmod>2025-09-22</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-237</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-237"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-237"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-237"/>
+    <lastmod>2025-09-22</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-239</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-239"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-239"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-239"/>
+    <lastmod>2025-09-22</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-239</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-239"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-239"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-239"/>
+    <lastmod>2025-09-22</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-242</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-242"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-242"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-242"/>
+    <lastmod>2025-09-22</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-242</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-242"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-242"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-242"/>
+    <lastmod>2025-09-22</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-243</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-243"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-243"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-243"/>
+    <lastmod>2025-09-22</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-243</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-243"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-243"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-243"/>
+    <lastmod>2025-09-22</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-232</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-232"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-232"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-232"/>
+    <lastmod>2025-09-19</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-232</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-232"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-232"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-232"/>
+    <lastmod>2025-09-19</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-233</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-233"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-233"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-233"/>
+    <lastmod>2025-09-19</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-233</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-233"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-233"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-233"/>
+    <lastmod>2025-09-19</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-228</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-228"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-228"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-228"/>
+    <lastmod>2025-09-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-228</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-228"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-228"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-228"/>
+    <lastmod>2025-09-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-229</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-229"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-229"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-229"/>
+    <lastmod>2025-09-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-229</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-229"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-229"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-229"/>
+    <lastmod>2025-09-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-220</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-220"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-220"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-220"/>
+    <lastmod>2025-09-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-220</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-220"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-220"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-220"/>
+    <lastmod>2025-09-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-5</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-5"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-5"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-5"/>
+    <lastmod>2025-06-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-5</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-5"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-5"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-5"/>
+    <lastmod>2025-06-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-6</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-6"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-6"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-6"/>
+    <lastmod>2025-06-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-6</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-6"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-6"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-6"/>
+    <lastmod>2025-06-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-7</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-7"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-7"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-7"/>
+    <lastmod>2025-06-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-7</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-7"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-7"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-7"/>
+    <lastmod>2025-06-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-202</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-202"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-202"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-202"/>
+    <lastmod>2025-06-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-202</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-202"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-202"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-202"/>
+    <lastmod>2025-06-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-218</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-218"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-218"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-218"/>
+    <lastmod>2025-06-20</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-218</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-218"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-218"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-218"/>
+    <lastmod>2025-06-20</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-216</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-216"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-216"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-216"/>
+    <lastmod>2025-06-19</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-216</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-216"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-216"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-216"/>
+    <lastmod>2025-06-19</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-217</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-217"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-217"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-217"/>
+    <lastmod>2025-06-19</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-217</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-217"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-217"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-217"/>
+    <lastmod>2025-06-19</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-212</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-212"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-212"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-212"/>
+    <lastmod>2025-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-212</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-212"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-212"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-212"/>
+    <lastmod>2025-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-213</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-213"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-213"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-213"/>
+    <lastmod>2025-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-213</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-213"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-213"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-213"/>
+    <lastmod>2025-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-214</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-214"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-214"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-214"/>
+    <lastmod>2025-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-214</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-214"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-214"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-214"/>
+    <lastmod>2025-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-215</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-215"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-215"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-215"/>
+    <lastmod>2025-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-215</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-215"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-215"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-215"/>
+    <lastmod>2025-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-211</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-211"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-211"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-211"/>
+    <lastmod>2025-06-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-211</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-211"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-211"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-211"/>
+    <lastmod>2025-06-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-210</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-210"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-210"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-210"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-210</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-210"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-210"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-210"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-202</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-202"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-202"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-202"/>
+    <lastmod>2025-06-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-202</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-202"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-202"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-202"/>
+    <lastmod>2025-06-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-231</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-231"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-231"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-231"/>
+    <lastmod>2025-06-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-231</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-231"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-231"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-231"/>
+    <lastmod>2025-06-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-232</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-232"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-232"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-232"/>
+    <lastmod>2025-06-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-232</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-232"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-232"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-232"/>
+    <lastmod>2025-06-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-209</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-209"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-209"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-209"/>
+    <lastmod>2025-06-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-209</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-209"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-209"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-209"/>
+    <lastmod>2025-06-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-208</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-208"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-208"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-208"/>
+    <lastmod>2025-06-11</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-208</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-208"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-208"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-208"/>
+    <lastmod>2025-06-11</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-205</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-205"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-205"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-205"/>
+    <lastmod>2025-06-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-205</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-205"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-205"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-205"/>
+    <lastmod>2025-06-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-206</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-206"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-206"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-206"/>
+    <lastmod>2025-06-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-206</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-206"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-206"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-206"/>
+    <lastmod>2025-06-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-207</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-207"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-207"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-207"/>
+    <lastmod>2025-06-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-207</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-207"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-207"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-207"/>
+    <lastmod>2025-06-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-203</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-203"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-203"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-203"/>
+    <lastmod>2025-06-04</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-203</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-203"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-203"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-203"/>
+    <lastmod>2025-06-04</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-204</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-204"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-204"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-204"/>
+    <lastmod>2025-06-04</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-204</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-204"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-204"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-204"/>
+    <lastmod>2025-06-04</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-2</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-2"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-2"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-2"/>
+    <lastmod>2025-06-03</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-2</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-2"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-2"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-2"/>
+    <lastmod>2025-06-03</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-201</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-201"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-201"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-201"/>
+    <lastmod>2025-05-29</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-201</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-201"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-201"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-201"/>
+    <lastmod>2025-05-29</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-222</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-222"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-222"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-222"/>
+    <lastmod>2025-05-28</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-222</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-222"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-222"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-222"/>
+    <lastmod>2025-05-28</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-203</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-203"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-203"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-203"/>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-203</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-203"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-203"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-203"/>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-207</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-207"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-207"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-207"/>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-207</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-207"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-207"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-207"/>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-208</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-208"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-208"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-208"/>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-208</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-208"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-208"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-208"/>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-213</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-213"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-213"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-213"/>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-213</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-213"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-213"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-213"/>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-218</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-218"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-218"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-218"/>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-218</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-218"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-218"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-218"/>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-1</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-1"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-1"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-1"/>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-1</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-1"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-1"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-1"/>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-1</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-1"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-1"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-1"/>
+    <lastmod>2025-05-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-1</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-1"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-1"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-1"/>
+    <lastmod>2025-05-26</lastmod>
+  </url>
+  <!-- PROJETS:END -->
 </urlset>

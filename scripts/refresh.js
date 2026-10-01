@@ -42,7 +42,7 @@ const SCRAPERS = [
   'scrape:lobbying',
 ];
 // Assemblage du site à partir des data/*.json — critique : un échec ici est fatal.
-const BUILDS = ['build:frontend', 'build:pages'];
+const BUILDS = ['build:frontend', 'build:pages', 'build:bills'];
 // Pré-rendu du contenu visible sans JavaScript (Chromium sans tête). Tolérant.
 const PRERENDER = 'build:prerender';
 
