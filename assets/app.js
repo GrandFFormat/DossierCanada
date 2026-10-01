@@ -1255,6 +1255,36 @@ function renderProvinceNetwork(){
   const half = Math.ceil(provinceNetwork.length / 2);
   elL.innerHTML = provinceNetwork.map((p, i) => dot(p, i >= half ? ' pn-2' : '')).join('');
   if(elR) elR.innerHTML = provinceNetwork.slice(half).map(p => dot(p, '')).join('');
+  animerPastilles();
+}
+
+/* Le retournement des pastilles vivantes : UNE À LA FOIS, dans un ordre mêlé et
+   retiré à chaque tour, pour que ça n'ait pas l'air d'un métronome. Chaque
+   pastille revient donc environ toutes les 10 secondes. Une province peut être
+   dans le DOM deux fois (rangée de gauche et de droite, le CSS en montre une
+   selon la largeur) : on retourne les deux copies ensemble. */
+let pnMinuterie = null;
+function animerPastilles(){
+  if(pnMinuterie){ clearInterval(pnMinuterie); pnMinuterie = null; }
+  // Quelqu'un qui a demandé moins d'animations n'en reçoit aucune.
+  if(typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const codes = provinceNetwork.filter(p => p.url).map(p => p.code);
+  if(!codes.length) return;
+  const melanger = (a) => { const t = a.slice(); for(let i = t.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [t[i], t[j]] = [t[j], t[i]]; } return t; };
+  let ordre = melanger(codes), i = 0;
+  const TOUR = 10000; // chaque pastille se retourne ~toutes les 10 s
+  pnMinuterie = setInterval(() => {
+    if(document.hidden) return; // onglet caché : rien à signaler
+    if(i >= ordre.length){ ordre = melanger(codes); i = 0; }
+    const code = ordre[i++];
+    document.querySelectorAll('.pn-dot.pn-live').forEach(d => {
+      if(d.textContent.trim() !== code) return;
+      d.classList.remove('pn-flip');
+      void d.offsetWidth; // force le navigateur à rejouer l'animation
+      d.classList.add('pn-flip');
+      d.addEventListener('animationend', () => d.classList.remove('pn-flip'), { once: true });
+    });
+  }, Math.max(1200, Math.round(TOUR / codes.length)));
 }
 
 // Paliers de challenge : compteur CONTINU (une demande par personne, à vie) — il
