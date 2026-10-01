@@ -2758,6 +2758,12 @@ function renderBills(keyword){
     : `<div class="no-results">${isEn ? 'No bill matches this search.' : 'Aucun projet de loi ne correspond à cette recherche.'}</div>`;
   el.innerHTML = list.length ? shown.map(b=>apercuBillRow(b,'pr')).join('') + more : vide;
   openIds.forEach(id => { const r = document.getElementById(id); if(r && !r.classList.contains('open')) toggleApercuBill(id); });
+  // La liste vient d'être refaite : si on est arrivé par le lien d'un projet, on
+  // remet sa fiche sous l'en-tête plutôt que de laisser la page remonter en haut.
+  if(ficheVisee){
+    const cible = document.getElementById(ficheVisee);
+    if(cible){ if(!cible.classList.contains('open')) toggleApercuBill(ficheVisee); montrerFiche(cible, true); }
+  }
   document.getElementById('statProjets').textContent = bills.length;
 }
 
@@ -2957,9 +2963,19 @@ function openBillFromQuery(){
     // scrollIntoView aligne le haut de la fiche sur le haut de la FENÊTRE : l'en-tête
     // fixe passe par-dessus et on arrive au milieu du résumé, sans voir de quel projet
     // il s'agit. On vise donc sous l'en-tête, avec un peu d'air.
+    ficheVisee = rowId;
     setTimeout(() => montrerFiche(row), 90);
   }
 }
+/* Un lien vers un projet doit arriver SUR le projet — et y rester. La liste est
+   redessinée après coup (les demandes d'explication arrivent de Supabase une
+   seconde plus tard), ce qui refaisait les rangées et ramenait la page en haut.
+   On retient donc la fiche visée et on la replace à chaque rendu, jusqu'à ce que
+   la personne fasse elle-même défiler la page. */
+let ficheVisee = null;
+['wheel','touchstart','keydown','mousedown'].forEach(ev =>
+  window.addEventListener(ev, () => { ficheVisee = null; }, { passive: true, once: true }));
+
 // Amène une fiche juste sous l'en-tête fixe, titre visible.
 function montrerFiche(row, immediat){
   const barre = document.getElementById('dq-topbar');
