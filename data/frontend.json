@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-01T15:26:17.213Z",
+  "generatedAt": "2026-10-02T14:49:55.679Z",
   "session": "45-1",
   "meta": {
     "counts": {
-      "bills": 187,
+      "bills": 188,
       "deputes": 337,
       "votes": 174
     },
@@ -11,6 +11,65 @@
     "formerMembersInVotes": 12
   },
   "bills": [
+    {
+      "id": 14240227,
+      "num": "S-251",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "senate",
+      "type": {
+        "en": "Senate Public Bill",
+        "fr": "Projet de loi d'intérêt public du Sénat"
+      },
+      "isGovernment": false,
+      "title": {
+        "en": "An Act to establish a national strategy to end energy poverty",
+        "fr": "Loi établissant une stratégie nationale d’élimination de la pauvreté énergétique"
+      },
+      "shortTitle": null,
+      "sponsor": {
+        "en": "Hon. Mary Coyle",
+        "fr": "L'hon. Mary Coyle"
+      },
+      "status": {
+        "en": "At second reading in the Senate",
+        "fr": "À la deuxième lecture au Sénat"
+      },
+      "state": "encours",
+      "milestones": [
+        {
+          "stage": "senate_first_reading",
+          "chamber": "senate",
+          "reading": 1,
+          "date": "2026-10-01"
+        }
+      ],
+      "royalAssent": null,
+      "reinstated": false,
+      "latestActivity": {
+        "en": "At second reading in the Senate",
+        "fr": "À la deuxième lecture au Sénat",
+        "date": "2026-10-01"
+      },
+      "lastActivity": "2026-10-01",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/s-251",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/s-251"
+      },
+      "sponsorPersonId": 98803,
+      "sponsorName": {
+        "first": "Mary",
+        "last": "Coyle"
+      },
+      "fullSummaryAvailable": false,
+      "summary": {
+        "en": "This enactment requires the Minister of the Environment to develop a national strategy to end energy poverty in Canada. It also provides for regular reporting to Parliament on the implementation of the strategy and for the creation of a council to advise the Minister on the development, implementation and evaluation of the strategy.",
+        "fr": "Le texte prévoit que le ministre de l’Environnement doit élaborer une stratégie nationale pour mettre fin à la pauvreté énergétique au Canada. Il prévoit également la présentation régulière au Parlement de rapports sur la mise en œuvre de la stratégie et la création d’un comité consultatif chargé de conseiller le ministre sur l’élaboration, la mise en œuvre et l’évaluation de la stratégie."
+      },
+      "summarySource": "bill",
+      "divisions": []
+    },
     {
       "id": 13605049,
       "num": "C-10",
@@ -3207,7 +3266,7 @@
         "first": "Adam",
         "last": "Chambers"
       },
-      "fullSummaryAvailable": false,
+      "fullSummaryAvailable": true,
       "summary": {
         "en": "This enactment amends the Financial Administration Act to require that the President of the Treasury Board establish and maintain a public registry of large debts and obligations owed by certain entities to His Majesty, as well as claims by His Majesty against such entities, that have been waived, written off or forgiven. It also makes consequential amendments to other Acts.",
         "fr": "Le texte modifie la Loi sur la gestion des finances publiques afin d’exiger que le président du Conseil du Trésor établisse et tienne un registre public des créances importantes que détient Sa Majesté sur certaines entités et qui ont été radiées ou visées par une renonciation. En outre, il apporte des modifications corrélatives à d’autres lois."
@@ -3697,7 +3756,7 @@
         "first": "Anita",
         "last": "Anand"
       },
-      "fullSummaryAvailable": false,
+      "fullSummaryAvailable": true,
       "summary": {
         "en": "This enactment, among other things,\n\n(a) provides that goods produced by forced labour are prohibited from importation;\n\n(b) authorizes the Minister of Foreign Affairs to establish a list of goods in respect of which there are reasonable grounds to suspect that they are produced by forced labour; and\n\n(c) provides that a person importing goods on the list must, at the request of a customs officer, provide the Canada Border Services Agency with the required information, failing which the goods are deemed to be prohibited from importation.\n\nIt also makes consequential amendments to the Customs Tariff.",
         "fr": "Le texte prévoit notamment :\n\na) que les marchandises produites par recours au travail forcé sont interdites d’importation;\n\nb) que le ministre des Affaires étrangères est autorisé à établir une liste de marchandises dont il existe des motifs raisonnables de soupçonner qu’elles sont ainsi produites;\n\nc) que toute personne qui importe des marchandises figurant sur cette liste doit, à la demande d’un agent des douanes, fournir à l’Agence des services frontaliers du Canada les renseignements exigés, faute de quoi les marchandises sont réputées interdites d’importation.\n\nIl apporte aussi des modifications corrélatives au Tarif des douanes."
