@@ -266,7 +266,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       </div>
       <div class="filter-group">
         <button class="filter-hamburger" id="stepFilterBtn" onclick="toggleFilterPanel('step')" aria-expanded="false">☰ <span data-i18n="filter.etapes">Chambre</span></button>
-        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">Chambre des communes</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Sénat</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Projets avec des communications déclarées au Commissariat au lobbying">Lobbying <b>43</b></span><!--/ssr--></div>
+        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">Chambre des communes</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Sénat</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Projets avec des communications déclarées au Commissariat au lobbying">Lobbying <b>43</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Projets qui modifient plusieurs lois différentes à la fois, une par partie">Omnibus <b>13</b></span><!--/ssr--></div>
       </div>
     </div>
 
@@ -276,7 +276,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-num">C-39</span>
       <span class="ab-title">Loi concernant certaines mesures visant à renforcer l'économie</span>
       
-      
+      <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Projet omnibus — 3 parties, 8 sections : il modifie plusieurs lois différentes. Cliquer pour ne voir que les omnibus">Omnibus · 3 parties</button>
       
       <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
       <span class="status-pill status-encours">En cours</span>
@@ -296,7 +296,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
           <span class="status-pill status-encours">En cours</span>
         </div>
       </div>
-      
+      <div class="bill-omni-note"><b>Projet omnibus.</b> Il modifie plusieurs lois différentes, une par partie (3 parties, 8 sections). Le titre n'en nomme qu'une partie : le résumé ci-dessous va donc partie par partie.</div>
       <div class="bill-meta-top">Parrain : L’hon. Steven MacKinnon · Chambre des communes · Projet de loi émanant du gouvernement (Cdc)</div>
       <div class="bill-stages"><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Communes · 1re<b>2026-09-21</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Communes · 2e</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Communes · 3e</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Sénat · 1re</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Sénat · 2e</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Sénat · 3e</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Sanction royale</span></div>
       <div class="bill-follow-row">
