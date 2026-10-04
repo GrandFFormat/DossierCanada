@@ -266,7 +266,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       </div>
       <div class="filter-group">
         <button class="filter-hamburger" id="stepFilterBtn" onclick="toggleFilterPanel('step')" aria-expanded="false">☰ <span data-i18n="filter.etapes">Chamber</span></button>
-        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">House of Commons</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Senate</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Bills with communications reported to the Commissioner of Lobbying">Lobbying <b>43</b></span><!--/ssr--></div>
+        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">House of Commons</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Senate</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Bills with communications reported to the Commissioner of Lobbying">Lobbying <b>43</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Bills that change several different acts at once, one per part">Omnibus <b>13</b></span><!--/ssr--></div>
       </div>
     </div>
 
