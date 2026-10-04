@@ -266,7 +266,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       </div>
       <div class="filter-group">
         <button class="filter-hamburger" id="stepFilterBtn" onclick="toggleFilterPanel('step')" aria-expanded="false">☰ <span data-i18n="filter.etapes">Chamber</span></button>
-        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">House of Commons</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Senate</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Bills with communications reported to the Commissioner of Lobbying">Lobbying <b>43</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Bills that change several different acts at once, one per part">Omnibus <b>13</b></span><!--/ssr--></div>
+        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">House of Commons</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Senate</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Bills with communications reported to the Commissioner of Lobbying">Lobbying <b>43</b></span><!--/ssr--></div>
       </div>
     </div>
 
@@ -276,7 +276,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-num">C-15</span>
       <span class="ab-title">An Act to implement certain provisions of the budget tabled in Parliament on November 4, 2025</span>
       
-      <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Omnibus bill — 5 parts, 45 divisions: it changes several different acts. Click to show only omnibus bills">Omnibus · 5 parts</button>
+      
       <span class="ab-lob" title="36 reported lobbying communications">36</span>
       <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
       <span class="status-pill status-sanctionne">Assented to</span>
@@ -296,7 +296,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
           <span class="status-pill status-sanctionne">Assented to</span>
         </div>
       </div>
-      <div class="bill-omni-note"><b>Omnibus bill.</b> It changes several different acts, one per part (5 parts, 45 divisions). The title names only some of them, so the summary below goes part by part.</div>
+      
       <div class="bill-meta-top">Sponsor : Hon. François-Philippe Champagne · House of Commons · House Government Bill</div>
       <div class="bill-stages"><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Commons · 1st<b>2025-11-18</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Commons · 2nd<b>2025-12-10</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Commons · 3rd<b>2026-02-26</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Senate · 1st<b>2026-02-26</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Senate · 2nd<b>2026-03-10</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Senate · 3rd<b>2026-03-26</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Royal assent<b>2026-03-26</b></span></div>
       <div class="bill-follow-row">
