@@ -112,6 +112,11 @@
       "source": "/en/mises-a-jour",
       "destination": "/en/updates",
       "permanent": true
+    },
+    {
+      "source": "/en/regles",
+      "destination": "/en/rules",
+      "permanent": true
     }
   ]
 }

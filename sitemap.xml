@@ -58,6 +58,13 @@
     <lastmod>2026-10-05</lastmod>
   </url>
   <url>
+    <loc>https://www.dossiercanada.ca/regles</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/regles"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/rules"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/regles"/>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
     <loc>https://www.dossiercanada.ca/en</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en"/>
@@ -111,6 +118,13 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/mises-a-jour"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/updates"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/mises-a-jour"/>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/rules</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/regles"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/rules"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/regles"/>
     <lastmod>2026-10-05</lastmod>
   </url>
   <!-- PROJETS:START -->

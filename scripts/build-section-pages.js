@@ -43,7 +43,7 @@ const TITLE_FALLBACK = {
   votesCountTitle: { fr: 'Votes aux Communes', en: 'Votes in the Commons' },
   lexiqueCountTitle: { fr: 'Lexique du Parlement', en: 'Parliament glossary' },
 };
-const NAV_KEY = { apercu: 'nav.apercu', ministres: 'nav.ministres', cabinet: 'nav.cabinet', projets: 'nav.projets', votes: 'nav.votes', lexique: 'nav.lexique', bd: 'maj.h' };
+const NAV_KEY = { apercu: 'nav.apercu', ministres: 'nav.ministres', cabinet: 'nav.cabinet', projets: 'nav.projets', votes: 'nav.votes', lexique: 'nav.lexique', promesses: 'nav.promesses', bd: 'maj.h', regles: 'regles.fil' };
 
 function headBlock({ view, lang, path }) {
   const m = PAGE_META[view];
@@ -188,9 +188,9 @@ function buildPage(page, previous) {
     must(h.includes(secFrom), 'section #view-' + view + ' absente');
     h = h.replace(secFrom, '<section class="view active" id="view-' + view + '">');
     h = h.replace('<a class="active" data-view="apercu" href="/" aria-current="page">', '<a data-view="apercu" href="/">');
-    // Les mises à jour (« et moi ») et les promesses n'ont pas d'onglet : on y
-    // arrive du pied de page ou du lexique. Aucun lien de menu à activer.
-    if (view !== 'bd' && view !== 'promesses') {
+    // Les mises à jour (« et moi »), les promesses et les règles n'ont pas d'onglet :
+    // on y arrive du pied de page ou du lexique. Aucun lien de menu à activer.
+    if (view !== 'bd' && view !== 'promesses' && view !== 'regles') {
       const navRe = new RegExp('<a data-view="' + view + '" href="([^"]*)">');
       must(navRe.test(h), 'lien de menu data-view="' + view + '" absent');
       h = h.replace(navRe, '<a class="active" data-view="' + view + '" href="$1" aria-current="page">');

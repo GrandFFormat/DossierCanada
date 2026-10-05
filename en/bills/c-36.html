@@ -65,7 +65,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=f5fc360446">
+<link rel="stylesheet" href="/assets/app.css?v=33659db64e">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -500,6 +500,56 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     </div>
   </section>
 
+  <!-- LES RÈGLES DE SOURCES DU SITE (/regles, /en/rules) — comme sur DossierQuébec, on y
+       arrive par le pied de page (lien à côté de Facebook). Chaque règle doit rester VRAIE
+       pour ce site : avant d'en changer une, vérifier le code (scrapers/, scripts/). -->
+  <section class="view" id="view-regles">
+    <div class="page-band">
+      <div>
+        <nav class="crumbs" aria-label="Breadcrumb"><a data-view="apercu" href="/en">DossierCanada</a> <span aria-hidden="true">›</span> <span aria-current="page" data-i18n="regles.fil">The rules</span></nav>
+        <h2 class="band-title" id="reglesTitle" data-i18n="regles.h1">The site's rules</h2>
+        <div class="sub" data-i18n="regles.sub">Where what DossierCanada publishes comes from, and what it will not do</div>
+      </div>
+      <a class="bd-back" data-view="apercu" href="/en" data-i18n="bd.back">← Back to overview</a>
+    </div>
+    <p class="regles-intro" data-i18n="regles.intro">DossierCanada relies only on what an institution or a party has itself published, with a link to the original. <b>And it says clearly what is missing.</b></p>
+    <ol class="regles-liste">
+      <li class="regle">
+        <h3 class="regle-titre"><span class="regle-no">1</span><span data-i18n="regles.1.h">No invented data</span></h3>
+        <p data-i18n="regles.1.p">This is rule number one. If a piece of information is missing, or cannot be matched with certainty, the site says so (“not available”) instead of guessing. We do not fill in anything.</p>
+      </li>
+      <li class="regle">
+        <h3 class="regle-titre"><span class="regle-no">2</span><span data-i18n="regles.2.h">Primary sources only</span></h3>
+        <p data-i18n="regles.2.p">We quote the institution or the party itself, never someone talking about it: <b>LEGISinfo</b> (Parliament of Canada) for bills; the <b>House of Commons</b> for MPs, votes, petitions and the sitting calendar; the <b>Senate</b> for senators and their votes; the <b>Prime Minister's website</b> for the Cabinet; the <b>Office of the Commissioner of Lobbying</b> for declared lobbying; the <b>platform published by the party</b> for promises. One exception, which is a service and not a fact: finding your MP by postal code goes through Represent (OpenNorth), which links a postal code to a riding.</p>
+      </li>
+      <li class="regle">
+        <h3 class="regle-titre"><span class="regle-no">3</span><span data-i18n="regles.3.h">No news media</span></h3>
+        <p data-i18n="regles.3.p">Nothing is taken from the press. Journalists' work is not ours to reuse, and information reported second-hand cannot be checked against a document. A promise made at a press conference but absent from the platform published by the party therefore does not appear on the site.</p>
+      </li>
+      <li class="regle">
+        <h3 class="regle-titre"><span class="regle-no">4</span><span data-i18n="regles.4.h">We never work around a protection</span></h3>
+        <p data-i18n="regles.4.p">We never work around a CAPTCHA or an anti-bot protection. The House of Commons protects the bulk download of its petitions with a reCAPTCHA: we do not use it, we only read the public list its website shows to everyone. The file from the Office of the Commissioner of Lobbying was closed to automated tools: we asked for permission, and the Office authorized our tool in September 2026.</p>
+      </li>
+      <li class="regle">
+        <h3 class="regle-titre"><span class="regle-no">5</span><span data-i18n="regles.5.h">Promises are quoted word for word</span></h3>
+        <p data-i18n="regles.5.p">Every promise is an exact quote from the platform published by the party, in its own language: never translated, summarized or reworded by us. A script checks each quote back against the source page, and a quote that cannot be found word for word is not published. The sentence linking a promise to a bill is also copied from that bill's official summary. We do not use artificial intelligence to “find” promises: it invents them. Every card carries a “See the source” link.</p>
+      </li>
+      <li class="regle">
+        <h3 class="regle-titre"><span class="regle-no">6</span><span data-i18n="regles.6.h">No verdict</span></h3>
+        <p data-i18n="regles.6.p">The site never says “promise kept” or “promise broken”, and it does not rate or judge anyone. It places the promise and the bills side by side, each with its source. The lobbying shown is what is declared in the official registry, without comment. You are the judge.</p>
+      </li>
+      <li class="regle">
+        <h3 class="regle-titre"><span class="regle-no">7</span><span data-i18n="regles.7.h">The official text always prevails</span></h3>
+        <p data-i18n="regles.7.p">Plain-language summaries are generated by artificial intelligence from the official text of the bill as introduced, and are labelled as such: they may not reflect amendments adopted since. The link to the full text stays on every bill. If anything differs, the original document is the one that counts. The site is independent and has no official status.</p>
+      </li>
+      <li class="regle">
+        <h3 class="regle-titre"><span class="regle-no">8</span><span data-i18n="regles.8.h">We explain what is missing</span></h3>
+        <p data-i18n="regles.8.p">When data is absent or incomplete, the page says so. A promise that leads to no bill is shown as such. Opposition parties are absent from the promises page, and the page says why: they do not control the legislative agenda. An absence on the site must never be read as silence from the institution or the party.</p>
+      </li>
+    </ol>
+    <p class="regles-suite" data-i18n="regles.suite">These rules apply everywhere on the site. See them at work on the <a data-view="promesses" href="/en/promises">promises</a> page, and follow what changes in the <a data-view="bd" href="/en/updates">site updates</a>.</p>
+  </section>
+
   <!-- LEXIQUE -->
   <section class="view" id="view-lexique">
     <div class="page-band">
@@ -532,6 +582,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
 <footer>
   <span id="footerLeft" data-i18n="footer.left">Unofficial site — public data from the Parliament of Canada: <a href="https://www.parl.ca/legisinfo/en" rel="noopener">LEGISinfo</a>, <a href="https://www.ourcommons.ca/en" rel="noopener">House of Commons</a>, <a href="https://sencanada.ca/en" rel="noopener">Senate</a>, <a href="https://lobbycanada.gc.ca/en/" rel="noopener">Commissioner of Lobbying</a>. Related site: <a href="https://dossierquebec.ca/" rel="noopener">DossierQuébec</a></span>
   <span class="footer-right-group">
+    <a class="footer-gh" data-view="regles" href="/en/rules" data-i18n="footer.regles">The rules</a>
     <a class="footer-gh" href="https://www.facebook.com/dossierocanada" target="_blank" rel="noopener" aria-label="DossierCanada on Facebook">
       <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07Z"/></svg>
       <span>Facebook</span>
@@ -573,7 +624,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=2ffa180199"></script>
+<script defer src="/assets/app.js?v=63c8941da9"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

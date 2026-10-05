@@ -88,6 +88,29 @@ const translations = {
     'bd.mot3':"J'ai eu l'idée de me servir de l'intelligence artificielle pour, d'abord, analyser tout ça, et ensuite le vulgariser. C'est comme ça que DossierCanada est né.",
     'bd.mot4':"En plus du récapitulatif écrit par l'IA, j'ai mis à la disposition des gens un lexique qui explique les fondements du jargon politique. Je suis l'Éducaloi de la politique !",
     'footer.etmoi':"et moi",
+    // Les règles de sources du site (/regles, /en/rules) — lien dans le pied de page.
+    'footer.regles':"Les règles",
+    'regles.fil':"Les règles",
+    'regles.h1':"Les règles du site",
+    'regles.sub':"D'où vient ce que DossierCanada publie, et ce qu'il s'interdit",
+    'regles.intro':"DossierCanada ne s'appuie que sur ce qu'une institution ou un parti a lui-même publié, avec un lien vers l'original. <b>Et il dit clairement ce qui manque.</b>",
+    'regles.1.h':"Jamais de donnée inventée",
+    'regles.1.p':"C'est la règle numéro un. Si une information manque, ou ne peut pas être rattachée de façon sûre, le site l'écrit (« non disponible ») au lieu de deviner. On ne complète rien.",
+    'regles.2.h':"Sources primaires seulement",
+    'regles.2.p':"On cite l'institution ou le parti lui-même, jamais quelqu'un qui en parle : <b>LEGISinfo</b> (Parlement du Canada) pour les projets de loi ; la <b>Chambre des communes</b> pour les député·e·s, les votes, les pétitions et le calendrier des séances ; le <b>Sénat</b> pour les sénateur·rice·s et leurs votes ; le <b>site du premier ministre</b> pour le Cabinet ; le <b>Commissariat au lobbying</b> pour le lobbying déclaré ; la <b>plateforme publiée par le parti</b> pour les promesses. Une seule exception, qui est un service et non un fait : la recherche de votre député·e par code postal passe par Represent (OpenNorth), qui relie un code postal à une circonscription.",
+    'regles.3.h':"Aucun média",
+    'regles.3.p':"Rien n'est tiré de la presse. Le travail des journalistes ne nous appartient pas, et une information rapportée de seconde main ne se vérifie pas contre un document. Une promesse faite en conférence de presse, mais absente de la plateforme publiée par le parti, n'apparaît donc pas sur le site.",
+    'regles.4.h':"On ne contourne aucune protection",
+    'regles.4.p':"On ne contourne jamais un CAPTCHA ni une protection contre les robots. La Chambre des communes protège par un reCAPTCHA le téléchargement en bloc de ses pétitions : on ne s'en sert pas, on lit seulement la liste publique que son site affiche à tout le monde. Le fichier du Commissariat au lobbying était fermé aux outils automatisés : on a demandé la permission, et le Commissariat a autorisé notre outil en septembre 2026.",
+    'regles.5.h':"Les promesses sont citées mot pour mot",
+    'regles.5.p':"Chaque promesse est une citation exacte de la plateforme publiée par le parti, dans sa langue : jamais traduite, résumée ou reformulée par nous. Un script relit chaque citation contre la page d'origine, et une citation introuvable mot pour mot n'est pas publiée. La phrase qui relie une promesse à un projet de loi est copiée, elle aussi, du sommaire officiel de ce projet. On n'utilise pas l'intelligence artificielle pour « trouver » des promesses : elle en invente. Chaque carte porte un lien « Voir la source ».",
+    'regles.6.h':"Aucun verdict",
+    'regles.6.p':"Le site ne dit jamais « promesse tenue » ou « promesse brisée », et il ne note ni ne juge personne. Il met côte à côte la promesse et les projets de loi, chacun avec sa source. Le lobbying affiché est celui qui est déclaré au registre officiel, sans commentaire. C'est vous qui jugez.",
+    'regles.7.h':"Le texte officiel fait toujours foi",
+    'regles.7.p':"Les résumés en langage clair sont générés par intelligence artificielle à partir du texte officiel du projet de loi tel que déposé, et sont étiquetés comme tels : ils peuvent ne pas refléter les amendements adoptés depuis. Le lien vers le texte complet reste sur chaque fiche. En cas d'écart, c'est le document d'origine qui compte. Le site est indépendant et n'a aucun caractère officiel.",
+    'regles.8.h':"On explique ce qui manque",
+    'regles.8.p':"Quand une donnée est absente ou incomplète, la page le dit. Une promesse qui ne mène à aucun projet de loi est affichée comme telle. Les partis d'opposition sont absents de la page des promesses, et la page dit pourquoi : ils ne décident pas du programme législatif. Une absence sur le site ne doit jamais être lue comme un silence de l'institution ou du parti.",
+    'regles.suite':"Ces règles valent partout sur le site. Voyez-les à l'œuvre sur la page des <a data-view=\"promesses\" href=\"/promesses\">promesses</a>, et suivez ce qui change dans les <a data-view=\"bd\" href=\"/mises-a-jour\">mises à jour du site</a>.",
   },
   en: {
     'nav.close':"Close",'nav.apercu':"Overview",'nav.ministres':"MPs",'nav.cabinet':"Ministers",'h.cabinet':"The federal Cabinet",'cabinet.sub':"Who decides what, since when, and how they vote.",'nav.projets':"Bills",
@@ -156,6 +179,28 @@ const translations = {
     'bd.mot3':"So I had an idea: use artificial intelligence first to read through all of it, then to put it in plain words. That's how DossierCanada was born.",
     'bd.mot4':"Alongside the AI recap, I've given people a lexicon that explains the basics of political jargon. Plain-language law exists — think of this as its equivalent for politics!",
     'footer.etmoi':"and me",
+    'footer.regles':"The rules",
+    'regles.fil':"The rules",
+    'regles.h1':"The site's rules",
+    'regles.sub':"Where what DossierCanada publishes comes from, and what it will not do",
+    'regles.intro':"DossierCanada relies only on what an institution or a party has itself published, with a link to the original. <b>And it says clearly what is missing.</b>",
+    'regles.1.h':"No invented data",
+    'regles.1.p':"This is rule number one. If a piece of information is missing, or cannot be matched with certainty, the site says so (“not available”) instead of guessing. We do not fill in anything.",
+    'regles.2.h':"Primary sources only",
+    'regles.2.p':"We quote the institution or the party itself, never someone talking about it: <b>LEGISinfo</b> (Parliament of Canada) for bills; the <b>House of Commons</b> for MPs, votes, petitions and the sitting calendar; the <b>Senate</b> for senators and their votes; the <b>Prime Minister's website</b> for the Cabinet; the <b>Office of the Commissioner of Lobbying</b> for declared lobbying; the <b>platform published by the party</b> for promises. One exception, which is a service and not a fact: finding your MP by postal code goes through Represent (OpenNorth), which links a postal code to a riding.",
+    'regles.3.h':"No news media",
+    'regles.3.p':"Nothing is taken from the press. Journalists' work is not ours to reuse, and information reported second-hand cannot be checked against a document. A promise made at a press conference but absent from the platform published by the party therefore does not appear on the site.",
+    'regles.4.h':"We never work around a protection",
+    'regles.4.p':"We never work around a CAPTCHA or an anti-bot protection. The House of Commons protects the bulk download of its petitions with a reCAPTCHA: we do not use it, we only read the public list its website shows to everyone. The file from the Office of the Commissioner of Lobbying was closed to automated tools: we asked for permission, and the Office authorized our tool in September 2026.",
+    'regles.5.h':"Promises are quoted word for word",
+    'regles.5.p':"Every promise is an exact quote from the platform published by the party, in its own language: never translated, summarized or reworded by us. A script checks each quote back against the source page, and a quote that cannot be found word for word is not published. The sentence linking a promise to a bill is also copied from that bill's official summary. We do not use artificial intelligence to “find” promises: it invents them. Every card carries a “See the source” link.",
+    'regles.6.h':"No verdict",
+    'regles.6.p':"The site never says “promise kept” or “promise broken”, and it does not rate or judge anyone. It places the promise and the bills side by side, each with its source. The lobbying shown is what is declared in the official registry, without comment. You are the judge.",
+    'regles.7.h':"The official text always prevails",
+    'regles.7.p':"Plain-language summaries are generated by artificial intelligence from the official text of the bill as introduced, and are labelled as such: they may not reflect amendments adopted since. The link to the full text stays on every bill. If anything differs, the original document is the one that counts. The site is independent and has no official status.",
+    'regles.8.h':"We explain what is missing",
+    'regles.8.p':"When data is absent or incomplete, the page says so. A promise that leads to no bill is shown as such. Opposition parties are absent from the promises page, and the page says why: they do not control the legislative agenda. An absence on the site must never be read as silence from the institution or the party.",
+    'regles.suite':"These rules apply everywhere on the site. See them at work on the <a data-view=\"promesses\" href=\"/promesses\">promises</a> page, and follow what changes in the <a data-view=\"bd\" href=\"/mises-a-jour\">site updates</a>.",
     'btn.follow':"+ Follow",'btn.following':"✓ Following",
     'btn.viewSummary':"+ View summary",'btn.hideSummary':"− Hide summary",
     'btn.viewFull':"View full text →",
@@ -442,7 +487,7 @@ function rouvrirTemoins(){
 const DATA_FILES = { bills: '/data/d-bills.js', people: '/data/d-people.js', votes: '/data/d-votes.js', promesses: '/data/d-promises.js' };
 const VIEW_DATA = {
   apercu: ['bills'], projets: ['bills'], ministres: ['people'],
-  cabinet: ['people', 'bills'], votes: ['votes'], lexique: [], bd: [],
+  cabinet: ['people', 'bills'], votes: ['votes'], lexique: [], bd: [], regles: [],
   // Promesses : le texte de l'engagement vient de d-promises.js, mais l'étape du
   // projet de loi qui le met en oeuvre vient du jeu « bills ». D'où les deux.
   promesses: ['promesses', 'bills'],
@@ -3906,12 +3951,12 @@ document.getElementById('journalPlus')?.addEventListener('click', () => { journa
    anglais. Une page anglaise sous une adresse française se lit mal, et Google
    associe les mots de l'adresse à la langue de la page. Doit rester identique
    à VIEWS dans scripts/seo-pages.js, qui génère les fichiers et le sitemap. */
-const VIEW_SLUGS = { apercu:'/', ministres:'/deputes', cabinet:'/ministres', projets:'/projets-de-loi', votes:'/votes', lexique:'/lexique', promesses:'/promesses', bd:'/mises-a-jour' };
-const VIEW_SLUGS_EN = { apercu:'/', ministres:'/mps', cabinet:'/ministers', projets:'/bills', votes:'/votes', lexique:'/glossary', promesses:'/promises', bd:'/updates' };
-const SLUG_VIEWS = { '':'apercu', 'deputes':'ministres', 'ministres':'cabinet', 'projets-de-loi':'projets', 'votes':'votes', 'lexique':'lexique', 'promesses':'promesses', 'mises-a-jour':'bd' };
+const VIEW_SLUGS = { apercu:'/', ministres:'/deputes', cabinet:'/ministres', projets:'/projets-de-loi', votes:'/votes', lexique:'/lexique', promesses:'/promesses', bd:'/mises-a-jour', regles:'/regles' };
+const VIEW_SLUGS_EN = { apercu:'/', ministres:'/mps', cabinet:'/ministers', projets:'/bills', votes:'/votes', lexique:'/glossary', promesses:'/promises', bd:'/updates', regles:'/rules' };
+const SLUG_VIEWS = { '':'apercu', 'deputes':'ministres', 'ministres':'cabinet', 'projets-de-loi':'projets', 'votes':'votes', 'lexique':'lexique', 'promesses':'promesses', 'mises-a-jour':'bd', 'regles':'regles' };
 // L'ancienne adresse anglaise (/en/deputes) reste comprise : Vercel la redirige,
 // mais un lien partagé avant le changement doit aussi s'ouvrir sans recharger.
-const SLUG_VIEWS_EN = { '':'apercu', 'mps':'ministres', 'ministers':'cabinet', 'bills':'projets', 'votes':'votes', 'glossary':'lexique', 'promises':'promesses', 'updates':'bd', ...SLUG_VIEWS };
+const SLUG_VIEWS_EN = { '':'apercu', 'mps':'ministres', 'ministers':'cabinet', 'bills':'projets', 'votes':'votes', 'glossary':'lexique', 'promises':'promesses', 'updates':'bd', 'rules':'regles', ...SLUG_VIEWS };
 // Hôte canonique : l'apex dossiercanada.ca renvoie un 308 vers www, donc
 // canonical, hreflang, og:url et sitemap pointent sur www (jamais sur une redirection).
 const SITE_ORIGIN = 'https://www.dossiercanada.ca';
@@ -3952,7 +3997,11 @@ const PAGE_META = {
   bd:        { fr:"Mises à jour de DossierCanada, et qui l'a bâti — DossierCanada",
                en:"DossierCanada updates, and who built the site — DossierCanada",
                dfr:"Pourquoi DossierCanada existe, raconté par celui qui l'a bâti, et le journal de ce qui change sur le site, du plus récent au plus ancien.",
-               den:"Why DossierCanada exists, told by the person who built it, plus the log of what changes on the site, newest first." }
+               den:"Why DossierCanada exists, told by the person who built it, plus the log of what changes on the site, newest first." },
+  regles:    { fr:"Les règles de sources du site — DossierCanada",
+               en:"The site's sourcing rules — DossierCanada",
+               dfr:"Les huit règles de DossierCanada sur ses sources : jamais de donnée inventée, sources primaires du Parlement du Canada, aucun média, citations mot pour mot, aucun verdict.",
+               den:"DossierCanada's eight sourcing rules: no invented data, primary sources from Canada's Parliament only, no news media, word-for-word quotes, no verdict." }
 };
 function pathParts(){
   const parts = location.pathname.replace(/\.html$/, '').split('/').filter(Boolean);
