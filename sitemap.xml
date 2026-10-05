@@ -44,6 +44,13 @@
     <lastmod>2026-10-05</lastmod>
   </url>
   <url>
+    <loc>https://www.dossiercanada.ca/promesses</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/promesses"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/promises"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/promesses"/>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
     <loc>https://www.dossiercanada.ca/mises-a-jour</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/mises-a-jour"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/updates"/>
@@ -90,6 +97,13 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/lexique"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/glossary"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/lexique"/>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/promises</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/promesses"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/promises"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/promesses"/>
     <lastmod>2026-10-05</lastmod>
   </url>
   <url>
