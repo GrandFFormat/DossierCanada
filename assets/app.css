@@ -914,6 +914,13 @@
   .a3-step{ border:2px solid var(--ink); padding:10px 12px; background:var(--paper);  color:var(--ink);}
   .a3-step-n{ font-size:12px; font-weight:700; border:2px solid var(--ink); display:inline-block; padding:0 7px; margin-bottom:6px; font-family:'IBM Plex Mono',monospace; }
   .a3-step p{ margin:0; font-size:12.5px; font-weight:600; line-height:1.45; color:var(--ink); }
+  /* Entrée vers /promesses depuis le lexique (la page n'a pas d'onglet). */
+  .prom-lex p{ margin:0 0 10px; font-size:14px; line-height:1.55; }
+  .prom-lex-cta{ display:inline-block; font-family:'IBM Plex Mono',monospace; font-size:12px; font-weight:700;
+    text-transform:uppercase; background:var(--yellow); color:var(--on-candy); border:2px solid var(--ink);
+    padding:7px 12px; text-decoration:none; box-shadow:3px 3px 0 var(--ink); }
+  .prom-lex-cta:hover{ transform:translate(-1px,-1px); box-shadow:4px 4px 0 var(--ink); }
+
   /* PROMESSES ÉLECTORALES — la promesse à gauche, ce que la législature en a fait
      à droite. Deux colonnes sur grand écran, empilées sur un téléphone : sur une
      largeur de 375 px, deux colonnes donnent deux rubans de six mots. */
