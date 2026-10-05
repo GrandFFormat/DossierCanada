@@ -22,8 +22,10 @@ const URL_EN = 'https://www.pm.gc.ca/en/cabinet';
 const URL_FR = 'https://www.pm.gc.ca/fr/cabinet';
 const DEPUTES_PATH = 'data/deputes.json';
 const OUT_PATH = 'data/ministers.json';
-const USER_AGENT =
-  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0 Safari/537.36';
+// Le robot se présente sous son nom, comme les autres scrapers du site (5 oct. 2026 : il se
+// faisait passer pour un navigateur, ce que la page /regles ne pouvait pas assumer). Si la source
+// le refuse un jour, on NE remet PAS un User-Agent de navigateur : on écrit à l'institution.
+const USER_AGENT = 'DossierCanada/1.0 (+https://dossiercanada.ca; site citoyen; contact mart.archambault@gmail.com)';
 
 // Enlève le préfixe honorifique pour ne garder que le nom (clé de rapprochement).
 function stripHonorific(raw) {
