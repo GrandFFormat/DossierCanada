@@ -2930,8 +2930,8 @@ function shareBill(billId, platform, evt){
   const title = L(b.title);
   const url = `${SITE_ORIGIN}${billPathFor(b.num, currentLang)}`;
   const text = isEn
-    ? `Bill ${b.num} — ${title}. Plain-language summary on DossierCanada:`
-    : `Projet de loi ${b.num} — ${title}. Résumé en clair sur DossierCanada :`;
+    ? `Bill ${b.num} — ${title}`
+    : `Projet de loi ${b.num} — ${title}`;
   if(platform === 'native' && navigator.share){
     navigator.share({ title: 'DossierCanada', text, url }).catch(() => {});
     return;
