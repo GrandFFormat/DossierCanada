@@ -266,7 +266,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       </div>
       <div class="filter-group">
         <button class="filter-hamburger" id="stepFilterBtn" onclick="toggleFilterPanel('step')" aria-expanded="false">☰ <span data-i18n="filter.etapes">Chamber</span></button>
-        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">House of Commons</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Senate</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Bills with communications reported to the Commissioner of Lobbying">Lobbying <b>43</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Bills that change several different acts at once, one per part">Omnibus <b>13</b></span><!--/ssr--></div>
+        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">House of Commons</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Senate</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Bills with communications reported to the Commissioner of Lobbying">Lobbying <b>46</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Bills that change several different acts at once, one per part">Omnibus <b>13</b></span><!--/ssr--></div>
       </div>
     </div>
 
@@ -277,7 +277,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-title">An Act respecting lawful access</span>
       
       <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Omnibus bill — 3 parts: it changes several different acts. Click to show only omnibus bills">Omnibus · 3 parts</button>
-      <span class="ab-lob" title="42 reported lobbying communications">42</span>
+      <span class="ab-lob" title="47 reported lobbying communications">47</span>
       <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
       <span class="status-pill status-encours">In progress</span>
       <span class="ab-caret">▾</span>
@@ -320,14 +320,34 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
         <div class="lob" id="lob-13957880" onclick="toggleLobbying(this, event)">
     <div class="lob-head">
       <span class="lob-title">Registered lobbying</span>
-      <span class="lob-count">42 communications · 8 organizations</span>
-      <span class="lob-asof">as of Sep 10, 2026</span>
+      <span class="lob-count">47 communications · 9 organizations</span>
+      <span class="lob-asof">as of Oct 5, 2026</span>
       <span class="lob-toggle">the 10 most recent +</span>
     </div>
-    <div class="lob-orgs"><span class="lob-org">Google Canada Corporation<b>17</b></span><span class="lob-org">Amazon Web Services Canada, Inc.<b>15</b></span><span class="lob-org">International Civil Liberties Monitoring Group<b>4</b></span><span class="lob-org">National Police Federation<b>2</b></span><span class="lob-org">The Canadian Centre to End Human Trafficking<b>1</b></span></div>
+    <div class="lob-orgs"><span class="lob-org">Google Canada Corporation<b>21</b></span><span class="lob-org">Amazon Web Services Canada, Inc.<b>15</b></span><span class="lob-org">International Civil Liberties Monitoring Group<b>4</b></span><span class="lob-org">National Police Federation<b>2</b></span><span class="lob-org">Canadian Civil Liberties Association<b>1</b></span></div>
     <div class="lob-body">
-      <div class="lob-orgs" style="margin:0 0 10px;"><span class="lob-org">Canadian Muslim Public Affairs Council<b>1</b></span><span class="lob-org">Internet Society<b>1</b></span><span class="lob-org">Québecor Média inc.<b>1</b></span></div>
-      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=697506" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-orgs" style="margin:0 0 10px;"><span class="lob-org">The Canadian Centre to End Human Trafficking<b>1</b></span><span class="lob-org">Canadian Muslim Public Affairs Council<b>1</b></span><span class="lob-org">Internet Society<b>1</b></span><span class="lob-org">Québecor Média inc.<b>1</b></span></div>
+      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=699740" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-08-28 · Senate of Canada</div>
+      <div class="lob-who">Canadian Civil Liberties Association</div>
+      <div class="lob-met">Met with : Paula Simons — Senator · Dina Dong — Parliamentary Affairs Advisor · Shawn Abel — Director of Parliamentary Affairs</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=701346" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-08-24 · Justice Canada (JC)</div>
+      <div class="lob-who">Google Canada Corporation</div>
+      <div class="lob-met">Met with : Thomas Law — Adivsor, Policy and Regional Affairs (Ontario)</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=701345" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-08-24 · Senate of Canada</div>
+      <div class="lob-who">Google Canada Corporation</div>
+      <div class="lob-met">Met with : Julie Miville-Dechêne — Senator</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=701343" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-08-21 · Prime Minister's Office (PMO)</div>
+      <div class="lob-who">Google Canada Corporation</div>
+      <div class="lob-met">Met with : Shaili Patel — Director of Policy</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=701339" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-08-20 · Senate of Canada</div>
+      <div class="lob-who">Google Canada Corporation</div>
+      <div class="lob-met">Met with : Baltej Dhillon — Senator</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=697506" target="_blank" rel="noopener" onclick="event.stopPropagation()">
       <div class="lob-when">2026-07-29 · Public Safety Canada (PS)</div>
       <div class="lob-who">Amazon Web Services Canada, Inc.</div>
       <div class="lob-met">Met with : Rob Jamieson — Chief of Staff</div>
@@ -342,33 +362,13 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=697946" target="_blank" rel="noopener" onclick="event.stopPropagation()">
       <div class="lob-when">2026-07-16 · Public Safety Canada (PS)</div>
       <div class="lob-who">Google Canada Corporation</div>
-      <div class="lob-met">Met with : Sarah Cozzi — Director of Policy, Minister’s Office</div>
+      <div class="lob-met">Met with : Sarah Cozzi — Director of Policy, Ministers Office</div>
     </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=694670" target="_blank" rel="noopener" onclick="event.stopPropagation()">
       <div class="lob-when">2026-06-12 · House of Commons</div>
       <div class="lob-who">Google Canada Corporation</div>
       <div class="lob-met">Met with : Jacob Mantle — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=693495" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-06-09 · House of Commons</div>
-      <div class="lob-who">National Police Federation</div>
-      <div class="lob-met">Met with : Ben Carr — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=693492" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-06-08 · House of Commons</div>
-      <div class="lob-who">National Police Federation</div>
-      <div class="lob-met">Met with : Roman Baber — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=693525" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-06-04 · Senate of Canada</div>
-      <div class="lob-who">Amazon Web Services Canada, Inc.</div>
-      <div class="lob-met">Met with : Baltej Singh Dhillon — Senator</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=693523" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-06-04 · House of Commons</div>
-      <div class="lob-who">Amazon Web Services Canada, Inc.</div>
-      <div class="lob-met">Met with : Ruby Sahota — Member of Parliament, Secretary of State (Combatting Crime)</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=693856" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-06-02 · Justice Canada (JC)</div>
-      <div class="lob-who">Google Canada Corporation</div>
-      <div class="lob-met">Met with : Thomas Law — Senior Policy Advisor, Minister’s Office</div>
     </a>
-      <p class="lob-note">Communications reported to the Office of the Commissioner of Lobbying that name this bill. Lobbying is a lawful, publicly registered activity — this count is a fact, not a verdict. Only communications whose description names both the bill number and its title are counted, so the real total may be higher. Registry archive read on September 10, 2026; the Commissioner republishes it about monthly, and we refresh it by hand.</p>
+      <p class="lob-note">Communications reported to the Office of the Commissioner of Lobbying that name this bill. Lobbying is a lawful, publicly registered activity — this count is a fact, not a verdict. Only communications whose description names both the bill number and its title are counted, so the real total may be higher. Registry archive read on October 5, 2026; the Commissioner republishes it about monthly, and we refresh it by hand.</p>
     </div>
   </div>
       </div>

@@ -266,7 +266,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       </div>
       <div class="filter-group">
         <button class="filter-hamburger" id="stepFilterBtn" onclick="toggleFilterPanel('step')" aria-expanded="false">☰ <span data-i18n="filter.etapes">Chambre</span></button>
-        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">Chambre des communes</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Sénat</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Projets avec des communications déclarées au Commissariat au lobbying">Lobbying <b>43</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Projets qui modifient plusieurs lois différentes à la fois, une par partie">Omnibus <b>13</b></span><!--/ssr--></div>
+        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">Chambre des communes</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Sénat</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Projets avec des communications déclarées au Commissariat au lobbying">Lobbying <b>46</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Projets qui modifient plusieurs lois différentes à la fois, une par partie">Omnibus <b>13</b></span><!--/ssr--></div>
       </div>
     </div>
 
@@ -277,7 +277,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-title">Loi édictant la Loi sur la sécurité numérique et la Loi sur la Commission canadienne de la sécurité numérique et apportant des modifications corrélatives à d'autres lois</span>
       
       <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Projet omnibus — 2 parties : il modifie plusieurs lois différentes. Cliquer pour ne voir que les omnibus">Omnibus · 2 parties</button>
-      <span class="ab-lob" title="8 communications de lobbying déclarées">8</span>
+      <span class="ab-lob" title="18 communications de lobbying déclarées">18</span>
       <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
       <span class="status-pill status-encours">En cours</span>
       <span class="ab-caret">▾</span>
@@ -320,47 +320,55 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
         <div class="lob" id="lob-14159600" onclick="toggleLobbying(this, event)">
     <div class="lob-head">
       <span class="lob-title">Lobbying déclaré</span>
-      <span class="lob-count">8 communications · 4 organisations</span>
-      <span class="lob-asof">au 10 sept. 2026</span>
-      <span class="lob-toggle">les 8 plus récentes +</span>
+      <span class="lob-count">18 communications · 7 organisations</span>
+      <span class="lob-asof">au 5 oct. 2026</span>
+      <span class="lob-toggle">les 10 plus récentes +</span>
     </div>
-    <div class="lob-orgs"><span class="lob-org">Google Canada Corporation<b>5</b></span><span class="lob-org">Actua<b>1</b></span><span class="lob-org">Organisation nationale de B'nai Brith Canada<b>1</b></span><span class="lob-org">Pediatric Chairs of Canada<b>1</b></span></div>
+    <div class="lob-orgs"><span class="lob-org">Google Canada Corporation<b>9</b></span><span class="lob-org">LinkedIn Technology Canada Inc.<b>4</b></span><span class="lob-org">Canadian Gaming Association<b>1</b></span><span class="lob-org">Canadian Gaming Association (CGA)<b>1</b></span><span class="lob-org">Actua<b>1</b></span></div>
     <div class="lob-body">
-      
-      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=697954" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-07-30 · Canadian Heritage (PCH)</div>
+      <div class="lob-orgs" style="margin:0 0 10px;"><span class="lob-org">Organisation nationale de B'nai Brith Canada<b>1</b></span><span class="lob-org">Pediatric Chairs of Canada<b>1</b></span></div>
+      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=702126" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-09-23 · Canadian Heritage (PCH)</div>
+      <div class="lob-who">LinkedIn Technology Canada Inc.</div>
+      <div class="lob-met">A rencontré : Blair McMurren — Associate Assistant Deputy Minister</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=702124" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-09-23 · Canadian Heritage (PCH)</div>
+      <div class="lob-who">LinkedIn Technology Canada Inc.</div>
+      <div class="lob-met">A rencontré : Brian MacKay — Deputy Chief of Staff and Director of Policy</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=702122" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-09-23 · Innovation, Science and Economic Development Canada (ISED)</div>
+      <div class="lob-who">LinkedIn Technology Canada Inc.</div>
+      <div class="lob-met">A rencontré : Anushka Kurian — Director of Policy · Simon Wood — Senior Parliamentary Affairs Advisor</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=702118" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-09-22 · Prime Minister's Office (PMO)</div>
+      <div class="lob-who">LinkedIn Technology Canada Inc.</div>
+      <div class="lob-met">A rencontré : Julie Harb — Policy Advisor</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=701351" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-08-27 · House of Commons</div>
       <div class="lob-who">Google Canada Corporation</div>
-      <div class="lob-met">A rencontré : Brian MacKay — Deputy Chief of Staff · Darren Choi — Senior Policy Advisor</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=697947" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-07-21 · Justice Canada (JC)</div>
+      <div class="lob-met">A rencontré : Fares Al Soud — Member of Parliament</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=701350" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-08-27 · Canadian Heritage (PCH)</div>
       <div class="lob-who">Google Canada Corporation</div>
+      <div class="lob-met">A rencontré : Brian MacKay — Deputy Chief of Staff</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=701323" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-08-17 · House of Commons</div>
+      <div class="lob-who">Google Canada Corporation</div>
+      <div class="lob-met">A rencontré : Kerry Diotte — Member of Parliament</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=701617" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-08-10 · Justice Canada (JC)</div>
+      <div class="lob-who">Canadian Gaming Association</div>
+      <div class="lob-met">A rencontré : Thomas Law — Adivsor, Policy and Regional Affairs (Ontario)</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=699128" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-08-10 · Justice Canada (JC)</div>
+      <div class="lob-who">Canadian Gaming Association (CGA)</div>
       <div class="lob-met">A rencontré : Thomas Law — Senior Policy Advisor</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=694926" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-06-30 · Canadian Heritage (PCH)</div>
-      <div class="lob-who">Actua</div>
-      <div class="lob-met">A rencontré : Darren Choi — Senior Policy Advisor</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=693870" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-06-29 · Canadian Heritage (PCH)</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=701315" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-08-06 · Innovation, Science and Economic Development Canada (ISED)</div>
       <div class="lob-who">Google Canada Corporation</div>
-      <div class="lob-met">A rencontré : Brian MacKay — Deputy Chief of Staff &amp; Director of Policy, Minister’s Office</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=694432" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-06-25 · Canadian Heritage (PCH)</div>
-      <div class="lob-who">Organisation nationale de B'nai Brith Canada</div>
-      <div class="lob-met">A rencontré : Hilary Leftick — Chief of Staff</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=691609" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-06-19 · Canadian Heritage (PCH)</div>
-      <div class="lob-who">Pediatric Chairs of Canada</div>
-      <div class="lob-met">A rencontré : Darren Choi — Senior Policy Advisor</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=693869" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-06-15 · Canadian Heritage (PCH)</div>
-      <div class="lob-who">Google Canada Corporation</div>
-      <div class="lob-met">A rencontré : Brian MacKay — Deputy Chief of Staff &amp; Director of Policy, Minister’s Office</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=694670" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-06-12 · House of Commons</div>
-      <div class="lob-who">Google Canada Corporation</div>
-      <div class="lob-met">A rencontré : Jacob Mantle — Member of Parliament</div>
+      <div class="lob-met">A rencontré : Anushka Kurian — Director of Policy · Simon Wood — Senior Parliamentary Affairs Advisor</div>
     </a>
-      <p class="lob-note">Communications déclarées au Commissariat au lobbying du Canada qui nomment ce projet de loi. Le lobbying est une activité légale et publiquement enregistrée — ce décompte est un fait, pas un verdict. On ne compte que les communications dont la description nomme le numéro <em>et</em> le titre du projet : le total réel peut être plus élevé. Archive du registre lue le 10 septembre 2026 ; le Commissariat la republie environ tous les mois, et on la rafraîchit à la main.</p>
+      <p class="lob-note">Communications déclarées au Commissariat au lobbying du Canada qui nomment ce projet de loi. Le lobbying est une activité légale et publiquement enregistrée — ce décompte est un fait, pas un verdict. On ne compte que les communications dont la description nomme le numéro <em>et</em> le titre du projet : le total réel peut être plus élevé. Archive du registre lue le 5 octobre 2026 ; le Commissariat la republie environ tous les mois, et on la rafraîchit à la main.</p>
     </div>
   </div>
       </div>
