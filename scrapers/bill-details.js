@@ -29,7 +29,7 @@ import * as cheerio from 'cheerio';
 
 const BILLS_PATH = 'data/bills.json';
 const REQUEST_DELAY_MS = 400; // pour rester poli envers un site gouvernemental
-const USER_AGENT = 'veille-assnat-scraper/0.1 (projet citoyen independant, usage non commercial)';
+const USER_AGENT = 'DossierCanada/1.0 (+https://dossiercanada.ca; site citoyen; contact mart.archambault@gmail.com)';
 
 const FRENCH_MONTHS = {
   janvier: '01', février: '02', mars: '03', avril: '04', mai: '05', juin: '06',
