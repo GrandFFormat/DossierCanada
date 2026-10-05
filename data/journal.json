@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-10-04",
+    "volet": "site",
+    "fr": {
+      "titre": "Cinq sources ont bloqué une nuit — les données sont à jour quand même",
+      "texte": "Le rafraîchissement automatique passe toutes les nuits. Cette fois, cinq sources du Parlement (projets de loi, député·e·s, votes, pétitions, calendrier des séances) ont refusé l'accès automatisé le temps d'un passage. Le site n'a rien inventé pour combler le trou : il a gardé les données de la veille, publié tout le reste, et signalé l'incident. Les cinq sources ont été relues depuis, et le site porte les données du jour — dont deux nouveaux projets de loi, qui portent le compte à 188."
+    },
+    "en": {
+      "titre": "Five sources blocked us for one night — the data is current anyway",
+      "texte": "The automatic refresh runs every night. This time five parliamentary sources (bills, MPs, votes, petitions, sitting calendar) turned away automated access for one pass. The site invented nothing to fill the gap: it kept the previous day’s data, published everything else, and flagged the incident. The five sources have since been read again, and the site carries the day’s data — including two new bills, bringing the count to 188."
+    },
+    "commits": []
+  },
+  {
     "date": "2026-10-01",
     "volet": "projets",
     "fr": {
