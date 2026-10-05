@@ -65,7 +65,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=8b0f5c75dc">
+<link rel="stylesheet" href="/assets/app.css?v=776dd1699a">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -125,6 +125,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
   <a class="active" data-view="projets" href="/en/bills" aria-current="page"><span class="n">04</span><span data-i18n="nav.projets">Bills</span></a>
   <a data-view="votes" href="/en/votes"><span class="n">05</span><span data-i18n="nav.votes">Votes</span></a>
   <a data-view="lexique" href="/en/glossary"><span class="n">06</span><span data-i18n="nav.lexique">Glossary</span></a>
+  <a data-view="promesses" href="/en/promises"><span class="n">07</span><span data-i18n="nav.promesses">Promises</span></a>
 </nav>
 </div>
 <script>
@@ -393,6 +394,37 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
   <!-- COMPTE & ABONNEMENT -->
 
 
+  <!-- PROMESSES ÉLECTORALES (/promesses, /en/promises) — comme sur DossierSaskatchewan.
+       La promesse citée mot pour mot dans la plateforme du parti au pouvoir, et à côté
+       les projets de loi qui la mettent en œuvre, avec la phrase du sommaire officiel
+       qui le prouve. JAMAIS de verdict « tenue / brisée » : on montre les deux côtés
+       sourcés et on laisse juger. Données : data/promises.json, vérifiées par
+       scripts/verifier-promesses.mjs (citation introuvable = rien n'est publié). -->
+  <section class="view" id="view-promesses">
+    <div class="page-band">
+      <div>
+        <nav class="crumbs" aria-label="Breadcrumb"><a data-view="apercu" href="/en">DossierCanada</a> <span aria-hidden="true">›</span> <span aria-current="page" data-i18n="nav.promesses">Promises</span></nav>
+        <h2 class="band-title" id="promessesCountTitle">Promesses électorales</h2>
+        <div class="sub" data-i18n="prom.bandsub">What was promised in 2025, and what Parliament did with it. No verdict.</div>
+      </div>
+    </div>
+    <div class="page-toolbar">
+      <div class="filter-group">
+        <button class="filter-hamburger" id="promThemeBtn" onclick="toggleFilterPanel('promTheme')" aria-expanded="false">☰ <span data-i18n="filter.sujets">Topics</span></button>
+        <div class="step-filters" id="promThemeFilters"><!--ssr--><!--/ssr--></div>
+      </div>
+    </div>
+
+    <div id="promisesList"><!--ssr--><!--/ssr--></div>
+
+    <div class="band-explainer" id="promExplainer">
+      <h2 data-i18n="prom.h">Why no verdict?</h2>
+      <p data-i18n="prom.p1">Because a measure written into an assented law is not necessarily applied, or funded as promised — and because calling it “kept” or “broken” on your behalf, using only what a monitoring site can read, would be dishonest.</p>
+      <p data-i18n="prom.p2">So you get both sides, each sourced: <b>on the left</b>, the promise quoted word for word from the party's own platform, with a link to the document. <b>On the right</b>, the bills that implement it, with the sentence from the official summary that proves it. The judgment is yours.</p>
+      <p class="prom-methode" id="promMethode"></p>
+    </div>
+  </section>
+
   <!-- MISES À JOUR DU SITE (/mises-a-jour) — on y arrive par « et moi » en bas de page.
        Comme sur DossierQuébec : la bande dessinée (Ti-Jo) cède la place à la seule case
        de la photo, refaite en HTML (dans le SVG, le texte tombait à 8 px sur un téléphone),
@@ -491,7 +523,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=b872ab2d62"></script>
+<script defer src="/assets/app.js?v=d5b7f7bf07"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

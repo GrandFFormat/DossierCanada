@@ -73,12 +73,16 @@ const VIEW_DATA_FILES = {
   bills: 'data/d-bills.js',
   people: 'data/d-people.js',
   votes: 'data/d-votes.js',
+  promesses: 'data/d-promises.js',
 };
-const viewData = { bills: {}, people: {}, votes: {} };
+const viewData = { bills: {}, people: {}, votes: {}, promesses: {} };
 // Ce que chaque fichier doit contenir. Si une source a échoué cette nuit, son jeu
 // n'est pas dans viewData : on le REPREND tel quel dans le fichier existant, sinon
 // une panne du Sénat effacerait les sénateur·rice·s du site.
-const VIEW_DATA_VARS = { bills: ['bills', 'lobbying'], people: ['deputes', 'senators'], votes: ['votes', 'senateVotes'] };
+const VIEW_DATA_VARS = {
+  bills: ['bills', 'lobbying'], people: ['deputes', 'senators'], votes: ['votes', 'senateVotes'],
+  promesses: ['promises', 'promisesInfo'],
+};
 function previousSets(path) {
   if (!existsSync(path)) return {};
   const out = {};
@@ -466,6 +470,24 @@ function main() {
   viewData.bills.bills = frontendBills;
   viewData.people.deputes = frontendDeputes;
   viewData.votes.votes = frontendVotes;
+
+  /* PROMESSES — data/promises.json, saisi à la main (choisir une promesse est un
+     acte éditorial) et vérifié par scripts/verifier-promesses.mjs : chaque
+     citation doit exister mot pour mot dans la plateforme du parti, chaque preuve
+     dans le sommaire officiel du projet de loi.
+     On ne porte ICI que la promesse et sa preuve. Le titre du projet, son étape,
+     sa date de sanction et son adresse officielle NE SONT PAS recopiés : la page
+     les lit dans `bills`, qui est rafraîchi chaque nuit. Un projet qui avance
+     change donc tout seul sur la page des promesses — et il n'existe aucune
+     version figée qui pourrait le contredire. */
+  const PROMISES_PATH = 'data/promises.json';
+  if (existsSync(PROMISES_PATH)) {
+    const prom = read(PROMISES_PATH);
+    viewData.promesses.promises = prom.promises || [];
+    const { promises: _, ...info } = prom;
+    viewData.promesses.promisesInfo = info;
+    console.log(`  promesses : ${(prom.promises || []).length} engagement(s) · ${(prom.promises || []).filter((p) => (p.actions || []).length).length} relié(s) à un projet de loi`);
+  }
   // Ministres : fichier séparé (scrapers/ministers.js) — injecté s'il existe.
   if (existsSync(MINISTERS_PATH)) {
     const ministers = read(MINISTERS_PATH).ministers;

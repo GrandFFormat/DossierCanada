@@ -24,6 +24,8 @@ export const VIEWS = [
   { view: 'projets',   slug: 'projets-de-loi',  en: 'bills' },
   { view: 'votes',     slug: 'votes',           en: 'votes' },
   { view: 'lexique',   slug: 'lexique',         en: 'glossary' },
+  // Promesses du parti au pouvoir, en regard des lois qui ont suivi.
+  { view: 'promesses', slug: 'promesses',       en: 'promises' },
   // « et moi » en bas de page : la personne derrière le site et le journal des mises à jour.
   { view: 'bd',        slug: 'mises-a-jour',    en: 'updates' },
 ];
@@ -58,6 +60,7 @@ export const SSR = {
   projets:   { regions: ['sortToggle', 'statusFilters', 'stepFilters', 'billsList'], h1: 'projetsCountTitle', title: 'projetsCountTitle' },
   votes:     { regions: ['petitionsToggle', 'votesList'], h1: 'votesCountTitle', title: 'votesCountTitle' },
   lexique:   { regions: ['accountBox', 'lexiqueList'], h1: 'lexiqueCountTitle', title: 'lexiqueCountTitle' },
+  promesses: { regions: ['promThemeFilters', 'promisesList'], h1: 'promessesCountTitle', title: 'promessesCountTitle' },
   bd:        { regions: ['journalListe'], h1: 'majTitle', title: null },
 };
 // Zones communes à toutes les pages (en-tête) : sans elles, le bandeau défilant et les
