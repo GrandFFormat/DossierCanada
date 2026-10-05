@@ -318,6 +318,19 @@
      maintenant rétrécir, le titre passe à la ligne et la recherche reste à droite. */
   #view-lexique .page-band > div:first-child, #view-projets .page-band > div:first-child{ flex:1 1 420px; min-width:0; }
   #view-bd{ --page:var(--cyan); }
+  /* ---------- LES RÈGLES DU SITE (/regles, /en/rules) ----------
+     Une carte par règle, numérotée : même trait noir et même ombre franche que la
+     case du créateur. Texte de lecture, borné à 75 caractères par ligne. */
+  #view-regles{ --page:var(--lime); }
+  .regles-intro{ font-family:'Archivo',system-ui,sans-serif; font-size:17px; line-height:1.55; color:var(--ink); margin:0 0 22px; max-width:75ch; }
+  .regles-liste{ list-style:none; margin:0; padding:0; display:grid; gap:16px; max-width:900px; }
+  .regle{ border:3px solid var(--ink); background:var(--card); box-shadow:var(--shadow); padding:20px 24px; }
+  .regle-titre{ display:flex; align-items:baseline; gap:14px; margin:0 0 10px; font-family:'Archivo Black',sans-serif; font-weight:400; font-size:20px; line-height:1.2; text-transform:uppercase; letter-spacing:-0.01em; color:var(--ink); }
+  .regle-no{ flex:none; min-width:34px; padding:2px 8px; background:var(--yellow); color:var(--on-candy); border:2px solid var(--ink); font-size:17px; text-align:center; }
+  .regle p{ font-family:'Archivo',system-ui,sans-serif; margin:0; font-size:15.5px; line-height:1.6; color:var(--ink); max-width:75ch; }
+  .regles-suite{ font-family:'Archivo',system-ui,sans-serif; margin:26px 0 0; font-size:15px; line-height:1.6; color:var(--ink); max-width:75ch; }
+  .regles-suite a{ color:var(--ink); font-weight:800; text-decoration:underline; text-underline-offset:3px; }
+  @media (max-width:640px){ .regle{ padding:16px 16px; } .regle-titre{ font-size:17px; gap:10px; } .regle p{ font-size:15px; } }
   /* ---------- MISES À JOUR DU SITE (/mises-a-jour) ----------
      La case du créateur reprend celle de l'ancienne bande dessinée (photo ronde, bulle,
      trait sous le nom), refaite en HTML et au style du site (traits noirs, ombres franches). */

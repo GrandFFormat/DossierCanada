@@ -3,6 +3,19 @@
     "date": "2026-10-05",
     "volet": "site",
     "fr": {
+      "titre": "Les règles du site, noir sur blanc",
+      "texte": "Une nouvelle page, accessible depuis le bas de chaque page, à côté de Facebook : les huit règles que DossierCanada suit pour ses sources. Jamais de donnée inventée, sources primaires seulement, aucun média, aucune protection contournée, promesses citées mot pour mot, aucun verdict, le texte officiel fait foi, et on explique ce qui manque."
+    },
+    "en": {
+      "titre": "The site’s rules, in black and white",
+      "texte": "A new page, reached from the bottom of every page, next to Facebook: the eight rules DossierCanada follows for its sources. No invented data, primary sources only, no news media, no protection worked around, promises quoted word for word, no verdict, the official text prevails, and we explain what is missing."
+    },
+    "commits": []
+  },
+  {
+    "date": "2026-10-05",
+    "volet": "site",
+    "fr": {
       "titre": "Les promesses de 2025, et les lois qui ont suivi",
       "texte": "Une nouvelle page, accessible depuis le lexique et le bas de page : les engagements du parti au pouvoir, cités mot pour mot dans sa plateforme de 2025, et à côté les projets de loi qui les mettent en œuvre, avec la phrase du sommaire officiel qui le prouve. Dix des douze promesses mènent à une loi sanctionnée ; deux ne mènent à aucun projet de loi, et c'est écrit tel quel — le vide est lui aussi une information. Aucun verdict « tenue » ou « brisée » : une mesure inscrite dans une loi n'est pas forcément appliquée ni financée comme promis, et trancher à votre place avec les seules données d'un site de veille serait malhonnête. Vous avez les deux côtés sourcés, le jugement vous revient."
     },

@@ -28,6 +28,8 @@ export const VIEWS = [
   { view: 'promesses', slug: 'promesses',       en: 'promises' },
   // « et moi » en bas de page : la personne derrière le site et le journal des mises à jour.
   { view: 'bd',        slug: 'mises-a-jour',    en: 'updates' },
+  // Les règles de sources du site : lien dans le pied de page, à côté de Facebook.
+  { view: 'regles',    slug: 'regles',          en: 'rules' },
 ];
 // Adresse d'une vue dans une langue (sans le préfixe /en).
 export const slugOf = (view, lang) => {
@@ -62,6 +64,7 @@ export const SSR = {
   lexique:   { regions: ['accountBox', 'lexiqueList'], h1: 'lexiqueCountTitle', title: 'lexiqueCountTitle' },
   promesses: { regions: ['promThemeFilters', 'promisesList'], h1: 'promessesCountTitle', title: 'promessesCountTitle' },
   bd:        { regions: ['journalListe'], h1: 'majTitle', title: null },
+  regles:    { regions: [], h1: 'reglesTitle', title: null },
 };
 // Zones communes à toutes les pages (en-tête) : sans elles, le bandeau défilant et les
 // pastilles des provinces se remplissaient après coup et faisaient sauter la page.
