@@ -266,7 +266,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       </div>
       <div class="filter-group">
         <button class="filter-hamburger" id="stepFilterBtn" onclick="toggleFilterPanel('step')" aria-expanded="false">☰ <span data-i18n="filter.etapes">Chamber</span></button>
-        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">House of Commons</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Senate</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Bills with communications reported to the Commissioner of Lobbying">Lobbying <b>43</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Bills that change several different acts at once, one per part">Omnibus <b>13</b></span><!--/ssr--></div>
+        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">House of Commons</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Senate</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Bills with communications reported to the Commissioner of Lobbying">Lobbying <b>46</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Bills that change several different acts at once, one per part">Omnibus <b>13</b></span><!--/ssr--></div>
       </div>
     </div>
 
@@ -277,7 +277,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-title">An Act respecting certain measures relating to the security of the border between Canada and the United States and respecting other related security measures</span>
       
       <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Omnibus bill — 16 parts: it changes several different acts. Click to show only omnibus bills">Omnibus · 16 parts</button>
-      <span class="ab-lob" title="50 reported lobbying communications">50</span>
+      <span class="ab-lob" title="51 reported lobbying communications">51</span>
       <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
       <span class="status-pill status-encours">In progress</span>
       <span class="ab-caret">▾</span>
@@ -320,14 +320,18 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
         <div class="lob" id="lob-13543613" onclick="toggleLobbying(this, event)">
     <div class="lob-head">
       <span class="lob-title">Registered lobbying</span>
-      <span class="lob-count">50 communications · 9 organizations</span>
-      <span class="lob-asof">as of Sep 10, 2026</span>
+      <span class="lob-count">51 communications · 9 organizations</span>
+      <span class="lob-asof">as of Oct 5, 2026</span>
       <span class="lob-toggle">the 10 most recent +</span>
     </div>
-    <div class="lob-orgs"><span class="lob-org">WoodGreen Community Services<b>17</b></span><span class="lob-org">Canadian Civil Liberties Association<b>9</b></span><span class="lob-org">International Civil Liberties Monitoring Group<b>8</b></span><span class="lob-org">Electronic Transactions Association<b>6</b></span><span class="lob-org">Canadian Gaming Association (CGA)<b>4</b></span></div>
+    <div class="lob-orgs"><span class="lob-org">WoodGreen Community Services<b>17</b></span><span class="lob-org">Canadian Civil Liberties Association<b>10</b></span><span class="lob-org">International Civil Liberties Monitoring Group<b>8</b></span><span class="lob-org">Electronic Transactions Association<b>6</b></span><span class="lob-org">Canadian Gaming Association (CGA)<b>4</b></span></div>
     <div class="lob-body">
       <div class="lob-orgs" style="margin:0 0 10px;"><span class="lob-org">Ontario Child Sexual Exploitation Investigators Association (OCSEIA)<b>2</b></span><span class="lob-org">Amazon Web Services Canada, Inc.<b>2</b></span><span class="lob-org">Rogers Communications Inc.<b>1</b></span><span class="lob-org">Canadian Gaming Association<b>1</b></span></div>
-      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=684919" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=699740" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-08-28 · Senate of Canada</div>
+      <div class="lob-who">Canadian Civil Liberties Association</div>
+      <div class="lob-met">Met with : Paula Simons — Senator · Dina Dong — Parliamentary Affairs Advisor · Shawn Abel — Director of Parliamentary Affairs</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=684919" target="_blank" rel="noopener" onclick="event.stopPropagation()">
       <div class="lob-when">2026-04-13 · House of Commons</div>
       <div class="lob-who">Ontario Child Sexual Exploitation Investigators Association (OCSEIA)</div>
       <div class="lob-met">Met with : Frank Caputo — Member of Parliament</div>
@@ -363,12 +367,8 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <div class="lob-when">2026-02-13 · Senate of Canada</div>
       <div class="lob-who">WoodGreen Community Services</div>
       <div class="lob-met">Met with : Jordano Nudo — Director of Parliamentary Affairs</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=667623" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-02-05 · Senate of Canada</div>
-      <div class="lob-who">WoodGreen Community Services</div>
-      <div class="lob-met">Met with : Paulette Senior — Senator</div>
     </a>
-      <p class="lob-note">Communications reported to the Office of the Commissioner of Lobbying that name this bill. Lobbying is a lawful, publicly registered activity — this count is a fact, not a verdict. Only communications whose description names both the bill number and its title are counted, so the real total may be higher. Registry archive read on September 10, 2026; the Commissioner republishes it about monthly, and we refresh it by hand.</p>
+      <p class="lob-note">Communications reported to the Office of the Commissioner of Lobbying that name this bill. Lobbying is a lawful, publicly registered activity — this count is a fact, not a verdict. Only communications whose description names both the bill number and its title are counted, so the real total may be higher. Registry archive read on October 5, 2026; the Commissioner republishes it about monthly, and we refresh it by hand.</p>
     </div>
   </div>
       </div>

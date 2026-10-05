@@ -266,7 +266,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       </div>
       <div class="filter-group">
         <button class="filter-hamburger" id="stepFilterBtn" onclick="toggleFilterPanel('step')" aria-expanded="false">☰ <span data-i18n="filter.etapes">Chambre</span></button>
-        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">Chambre des communes</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Sénat</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Projets avec des communications déclarées au Commissariat au lobbying">Lobbying <b>43</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Projets qui modifient plusieurs lois différentes à la fois, une par partie">Omnibus <b>13</b></span><!--/ssr--></div>
+        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">Chambre des communes</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Sénat</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Projets avec des communications déclarées au Commissariat au lobbying">Lobbying <b>46</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Projets qui modifient plusieurs lois différentes à la fois, une par partie">Omnibus <b>13</b></span><!--/ssr--></div>
       </div>
     </div>
 
@@ -277,7 +277,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-title">Loi concernant une stratégie nationale pour les enfants et les jeunes au Canada</span>
       
       
-      
+      <span class="ab-lob" title="1 communications de lobbying déclarées">1</span>
       <span class="depute-party" style="background:#6D5BA6; color:#fff">GSI</span>
       <span class="status-pill status-encours">En cours</span>
       <span class="ab-caret">▾</span>
@@ -317,7 +317,24 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
   </div>
           </aside>
         </div>
-        
+        <div class="lob" id="lob-13540330" onclick="toggleLobbying(this, event)">
+    <div class="lob-head">
+      <span class="lob-title">Lobbying déclaré</span>
+      <span class="lob-count">1 communication · 1 organisation</span>
+      <span class="lob-asof">au 5 oct. 2026</span>
+      <span class="lob-toggle">les 1 plus récentes +</span>
+    </div>
+    <div class="lob-orgs"><span class="lob-org">Services à la famille de Toronto<b>1</b></span></div>
+    <div class="lob-body">
+      
+      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=699614" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-08-18 · Senate of Canada</div>
+      <div class="lob-who">Services à la famille de Toronto</div>
+      <div class="lob-met">A rencontré : Rosemary Moodie — Senator · Hallie Stacey-Sullivan — Director of Parliamentary Affairs</div>
+    </a>
+      <p class="lob-note">Communications déclarées au Commissariat au lobbying du Canada qui nomment ce projet de loi. Le lobbying est une activité légale et publiquement enregistrée — ce décompte est un fait, pas un verdict. On ne compte que les communications dont la description nomme le numéro <em>et</em> le titre du projet : le total réel peut être plus élevé. Archive du registre lue le 5 octobre 2026 ; le Commissariat la republie environ tous les mois, et on la rafraîchit à la main.</p>
+    </div>
+  </div>
       </div>
     </div>
   </div>
