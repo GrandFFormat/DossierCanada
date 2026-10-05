@@ -188,8 +188,9 @@ function buildPage(page, previous) {
     must(h.includes(secFrom), 'section #view-' + view + ' absente');
     h = h.replace(secFrom, '<section class="view active" id="view-' + view + '">');
     h = h.replace('<a class="active" data-view="apercu" href="/" aria-current="page">', '<a data-view="apercu" href="/">');
-    // La page des mises à jour (« et moi ») n'a pas d'onglet : aucun lien de menu actif.
-    if (view !== 'bd') {
+    // Les mises à jour (« et moi ») et les promesses n'ont pas d'onglet : on y
+    // arrive du pied de page ou du lexique. Aucun lien de menu à activer.
+    if (view !== 'bd' && view !== 'promesses') {
       const navRe = new RegExp('<a data-view="' + view + '" href="([^"]*)">');
       must(navRe.test(h), 'lien de menu data-view="' + view + '" absent');
       h = h.replace(navRe, '<a class="active" data-view="' + view + '" href="$1" aria-current="page">');
