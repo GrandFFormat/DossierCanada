@@ -1,0 +1,258 @@
+{
+  "election": "2025-04-28",
+  "legislature": "45-1",
+  "note": "D'OÙ VIENT CETTE PAGE. Les promesses sont tirées d'UNE SEULE source : la plateforme « Un Canada fort », publiée par le parti lui-même le 19 avril 2025. Chaque citation est copiée mot pour mot du document du parti, dans sa langue — jamais traduite, jamais résumée, jamais reformulée par nous. Un script (scripts/verifier-promesses.mjs) relit chaque citation contre la page d'origine : une citation introuvable mot pour mot n'est pas publiée. En regard, les projets de loi viennent de LEGISinfo, et la phrase qui sert de preuve est copiée du sommaire officiel du projet.\n\nCE QU'ON NE FAIT PAS. On ne va pas chercher de citations dans les médias : le travail des journalistes ne nous appartient pas, et une promesse rapportée de seconde main ne se vérifie pas contre un document. On n'utilise pas non plus l'intelligence artificielle pour « trouver » des promesses : elle en invente. Et on ne publie aucun verdict « tenue » ou « brisée ».\n\nPOURQUOI SEULEMENT DOUZE. Parce qu'on ne garde que les engagements assez concrets pour être cités en une phrase qui tient debout seule, et assez précis pour qu'on puisse chercher honnêtement s'il existe une loi qui les met en œuvre. La plateforme en contient des centaines ; ceci n'est pas la liste complète, et ne prétend pas l'être. Les partis d'opposition sont absents : ils ne décident pas du programme législatif, et aligner leurs promesses sur des lois qu'ils ne peuvent pas déposer produirait une comparaison faussée.",
+  "noteEn": "WHERE THIS PAGE COMES FROM. The promises come from ONE source: the “Canada Strong” platform, published by the party itself on April 19, 2025. Every quotation is copied word for word from the party's own document, in its own language — never translated, summarized or reworded by us. A script (scripts/verifier-promesses.mjs) checks each quotation back against the source page: a quotation that cannot be found word for word is not published. Beside them, the bills come from LEGISinfo, and the sentence used as proof is copied from the bill's official summary.\n\nWHAT WE DO NOT DO. We do not pull quotations from news media: journalists' work is not ours to reuse, and a promise reported second-hand cannot be checked against a document. We also do not use AI to “find” promises — it invents them. And we publish no “kept” or “broken” verdict.\n\nWHY ONLY TWELVE. Because we keep only the commitments concrete enough to quote in a sentence that stands on its own, and specific enough that we can honestly look for a law that implements them. The platform contains hundreds; this is not the complete list and does not claim to be. Opposition parties are absent: they do not control the legislative agenda, and lining their promises up against bills they cannot table would produce a rigged comparison.",
+  "promises": [
+    {
+      "id": "lpc-impot-classe-moyenne",
+      "party": "LPC",
+      "theme": "Fiscalité",
+      "quote": "Baissera les impôts pour la classe moyenne et fera économiser jusqu'à 825 $ par an aux familles à deux revenus. Nous réduirons de 1 point de pourcentage le taux d'imposition marginal de la première tranche de revenu.",
+      "quoteEn": "Cut income taxes for the middle class and save dual-income families up to $825 a year. We will reduce the marginal tax rate on the lowest tax bracket by 1 percentage point.",
+      "sourceLabel": "Parti libéral du Canada — plateforme « Un Canada fort », chapitre « Bâtir une économie à la portée de tous »",
+      "sourceLabelEn": "Liberal Party of Canada — “Canada Strong” platform, chapter “Building an Economy Everyone can Afford”",
+      "sourceUrl": "https://liberal.ca/fr/plateforme/batir/",
+      "sourceUrlEn": "https://liberal.ca/platform/build/",
+      "sourceType": "primaire",
+      "capturedAt": "2026-10-05",
+      "etat": "loi",
+      "actions": [
+        {
+          "num": "C-4",
+          "preuve": "La partie 1 modifie la Loi de l'impôt sur le revenu pour réduire le taux d'imposition marginal de la première tranche de revenu des particuliers à 14,5 % pour l'année d'imposition 2025 et à 14 % pour l'année d'imposition 2026 et les années d'imposition subséquentes.",
+          "preuveEn": "Part 1 amends the Income Tax Act to reduce the marginal personal income tax rate on the lowest tax bracket to 14.5% for the 2025 taxation year and to 14% for the 2026 and subsequent taxation years."
+        }
+      ]
+    },
+    {
+      "id": "lpc-tps-premiere-maison",
+      "party": "LPC",
+      "theme": "Logement",
+      "quote": "Éliminera la TPS pour les acheteurs d'une première maison dont le prix est inférieur ou égal à 1 million de dollars. Ainsi, les Canadiens et Canadiennes économiseront jusqu'à 50 000 $, ce qui permettra à davantage de jeunes gens et de familles de réaliser leur rêve de devenir propriétaires.",
+      "quoteEn": "Cut the GST for first-time homebuyers on homes up to $1 million. Canadians will save up to $50,000, allowing more young people and families to achieve their dream of homeownership.",
+      "sourceLabel": "Parti libéral du Canada — plateforme « Un Canada fort », chapitre « Bâtir une économie à la portée de tous »",
+      "sourceLabelEn": "Liberal Party of Canada — “Canada Strong” platform, chapter “Building an Economy Everyone can Afford”",
+      "sourceUrl": "https://liberal.ca/fr/plateforme/batir/",
+      "sourceUrlEn": "https://liberal.ca/platform/build/",
+      "sourceType": "primaire",
+      "capturedAt": "2026-10-05",
+      "etat": "loi",
+      "actions": [
+        {
+          "num": "C-4",
+          "preuve": "La partie 2 modifie la Loi sur la taxe d'accise et des règlements connexes afin de mettre en œuvre un remboursement temporaire de la TPS pour habitations neuves pour acheteurs d'une première habitation.",
+          "preuveEn": "Part 2 amends the Excise Tax Act and other related Regulations to implement a temporary GST new housing rebate for first-time home buyers."
+        }
+      ],
+      "actionNote": "Le sommaire officiel parle d'un remboursement « temporaire » ; la plateforme ne mentionnait pas de date de fin.",
+      "actionNoteEn": "The official summary describes a “temporary” rebate; the platform mentioned no end date."
+    },
+    {
+      "id": "lpc-taxe-carbone-consommateurs",
+      "party": "LPC",
+      "theme": "Environnement",
+      "quote": "Modifier la Loi sur la tarification de la pollution par les gaz à effet de serre afin de légiférer sur l'annulation de la « taxe carbone » pour les consommateurs après que le gouvernement de Mark Carney l'a annulée dès le premier jour, en mars 2025.",
+      "quoteEn": "Amend the Greenhouse Gas Pollution Pricing Act to legislate the repeal of the consumer “carbon tax” after Mark Carney's government cancelled it on Day One, in March 2025.",
+      "sourceLabel": "Parti libéral du Canada — plateforme « Un Canada fort », chapitre « Bâtir une économie à la portée de tous »",
+      "sourceLabelEn": "Liberal Party of Canada — “Canada Strong” platform, chapter “Building an Economy Everyone can Afford”",
+      "sourceUrl": "https://liberal.ca/fr/plateforme/batir/",
+      "sourceUrlEn": "https://liberal.ca/platform/build/",
+      "sourceType": "primaire",
+      "capturedAt": "2026-10-05",
+      "etat": "loi",
+      "actions": [
+        {
+          "num": "C-4",
+          "preuve": "La partie 3 abroge la partie 1 de la Loi sur la tarification de la pollution causée par les gaz à effet de serre et le Règlement sur la redevance sur les combustibles.",
+          "preuveEn": "Part 3 repeals Part 1 of the Greenhouse Gas Pollution Pricing Act and the Fuel Charge Regulations."
+        }
+      ]
+    },
+    {
+      "id": "lpc-libre-echange-interieur",
+      "party": "LPC",
+      "theme": "Économie",
+      "quote": "Favorisera le libre-échange au Canada en déposant un projet de loi visant à éliminer toutes les barrières fédérales au commerce interprovincial et à la mobilité de la main-d'œuvre, et à supprimer toutes les dérogations fédérales prévues par l'Accord de libre-échange canadien.",
+      "quoteEn": "Unleash free trade in Canada by Canada Day by tabling legislation to eliminate all federal barriers to interprovincial trade and labour mobility and to remove all federal exceptions under the Canadian Free Trade Agreement.",
+      "sourceLabel": "Parti libéral du Canada — plateforme « Un Canada fort », chapitre « Une économie canadienne »",
+      "sourceLabelEn": "Liberal Party of Canada — “Canada Strong” platform, chapter “One Canadian Economy”",
+      "sourceUrl": "https://liberal.ca/fr/plateforme/unir/",
+      "sourceUrlEn": "https://liberal.ca/platform/unite/",
+      "sourceType": "primaire",
+      "capturedAt": "2026-10-05",
+      "etat": "loi",
+      "actions": [
+        {
+          "num": "C-5",
+          "preuve": "La partie 1 édicte la Loi sur le libre-échange et la mobilité de la main-d'œuvre au Canada, laquelle établit un cadre législatif pour éliminer des obstacles fédéraux au commerce interprovincial des biens et des services et pour améliorer la mobilité de la main-d'œuvre au Canada.",
+          "preuveEn": "Part 1 enacts the Free Trade and Labour Mobility in Canada Act, which establishes a statutory framework to remove federal barriers to the interprovincial trade of goods and services and to improve labour mobility within Canada."
+        }
+      ],
+      "actionNote": "La promesse disait « toutes » les barrières fédérales ; le sommaire officiel dit « des obstacles fédéraux ». Le projet a été sanctionné le 26 juin 2025, soit après la Fête du Canada visée par la plateforme.",
+      "actionNoteEn": "The promise said “all” federal barriers; the official summary says “federal barriers”. The bill received royal assent on June 26, 2025, after the Canada Day target set in the platform."
+    },
+    {
+      "id": "lpc-projets-interet-national",
+      "party": "LPC",
+      "theme": "Infrastructures",
+      "quote": "Protégera notre souveraineté économique en débloquant des projets qui feront croître notre économie. Nous travaillerons avec les provinces, territoires et les peuples autochtones et pour établir une liste de projets rassembleurs d'intérêt national qui dépassent les frontières provinciales et territoriales et offrent des avantages économiques et stratégiques majeurs aux Canadiens et Canadiennes.",
+      "quoteEn": "Protect our economic sovereignty by unlocking projects that grow our economy. We will work with provinces and territories and Indigenous Peoples to establish a list of nation-building projects that span provincial and territorial boundaries and deliver major economic and strategic benefits to Canadians.",
+      "sourceLabel": "Parti libéral du Canada — plateforme « Un Canada fort », chapitre « Une économie canadienne »",
+      "sourceLabelEn": "Liberal Party of Canada — “Canada Strong” platform, chapter “One Canadian Economy”",
+      "sourceUrl": "https://liberal.ca/fr/plateforme/unir/",
+      "sourceUrlEn": "https://liberal.ca/platform/unite/",
+      "sourceType": "primaire",
+      "capturedAt": "2026-10-05",
+      "etat": "loi",
+      "actions": [
+        {
+          "num": "C-5",
+          "preuve": "La partie 2 édicte la Loi visant à bâtir le Canada, laquelle, entre autres : a) accorde au gouverneur en conseil le pouvoir d’ajouter à une annexe de cette loi le nom d’un projet et une brève description de celui-ci s’il est d’avis, compte tenu de certains facteurs, que le projet est dans l’intérêt national;",
+          "preuveEn": "Part 2 enacts the Building Canada Act, which, among other things, (a) authorizes the Governor in Council to add the name of a project and a brief description of it to a schedule to that Act if the Governor in Council is of the opinion, having regard to certain factors, that the project is in the national interest;"
+        }
+      ]
+    },
+    {
+      "id": "lpc-maisons-canada",
+      "party": "LPC",
+      "theme": "Logement",
+      "quote": "Créera Maisons Canada pour ramener le gouvernement canadien dans le secteur de la construction de logements.",
+      "quoteEn": "Create Build Canada Homes (BCH) to get the federal government back into the business of building homes.",
+      "sourceLabel": "Parti libéral du Canada — plateforme « Un Canada fort », chapitre « Logement »",
+      "sourceLabelEn": "Liberal Party of Canada — “Canada Strong” platform, chapter “Housing”",
+      "sourceUrl": "https://liberal.ca/fr/plateforme/batir/",
+      "sourceUrlEn": "https://liberal.ca/platform/build/",
+      "sourceType": "primaire",
+      "capturedAt": "2026-10-05",
+      "etat": "loi",
+      "actions": [
+        {
+          "num": "C-20",
+          "preuve": "Le projet de loi C-20 constitue Maisons Canada en société d'État. Maisons Canada a pour mission de favoriser, de soutenir et de développer l'offre de logements abordables au Canada et de favoriser l'adoption de méthodes de construction innovatrices et efficaces dans le secteur de la construction résidentielle au Canada.",
+          "preuveEn": "Bill C-20 establishes Build Canada Homes as a Crown corporation. The purpose of Build Canada Homes is to promote, support and develop the supply of affordable housing in Canada and to promote innovative and efficient building techniques in the housing construction sector in Canada."
+        }
+      ]
+    },
+    {
+      "id": "lpc-caution-fardeau",
+      "party": "LPC",
+      "theme": "Justice",
+      "quote": "Fera en sorte qu'il soit plus difficile pour les personnes accusées d'un vol de voiture avec usage de la violence, d'un vol de voiture pour une organisation criminelle, d'un cambriolage, de certaines formes de traite de personnes et de contrebande d'être libérées sous caution, en renversant le fardeau de la preuve pour ces crimes.",
+      "quoteEn": "Make it harder to get bail for those charged with violent car theft, car theft for a criminal organization, home invasion, and certain human trafficking and smuggling offences by establishing a reverse onus for these crimes.",
+      "sourceLabel": "Parti libéral du Canada — plateforme « Un Canada fort », chapitre « Communautés sûres et sécuritaires »",
+      "sourceLabelEn": "Liberal Party of Canada — “Canada Strong” platform, chapter “Safe and Secure Communities”",
+      "sourceUrl": "https://liberal.ca/fr/plateforme/securiser/",
+      "sourceUrlEn": "https://liberal.ca/platform/secure/",
+      "sourceType": "primaire",
+      "capturedAt": "2026-10-05",
+      "etat": "loi",
+      "actions": [
+        {
+          "num": "C-14",
+          "preuve": "e) créer une disposition prévoyant l’inversion du fardeau de la preuve pour les prévenus accusés d’avoir commis l’infraction de vol d’un véhicule à moteur avec violence, de vol d’un véhicule à moteur pour une organisation criminelle, d’extorsion avec violence ou d’introduction par effraction dans une maison d’habitation, certaines infractions relatives à la traite des personnes ou à l’organisation de l’entrée illégale de personnes au Canada ou certaines infractions au cours desquelles ils auraient étouffé, suffoqué ou étranglé le plaignant;",
+          "preuveEn": "(e) create a reverse onus provision for any accused charged with the offence of motor vehicle theft involving violence, motor vehicle theft for a criminal organization, extortion involving violence, breaking and entering a dwelling-house, certain offences related to trafficking in persons or human smuggling or certain offences in which an accused is alleged to have choked, suffocated or strangled a complainant;"
+        }
+      ]
+    },
+    {
+      "id": "lpc-acces-lieux-de-culte",
+      "party": "LPC",
+      "theme": "Justice",
+      "quote": "Présentera un projet de loi visant à criminaliser l'obstruction intentionnelle et délibérée de l'accès à tout lieu de culte, établissement d'enseignement ou centre communautaire.",
+      "quoteEn": "Introduce legislation to make it a criminal offence to intentionally and willfully obstruct access to any place of worship, schools, and community centres.",
+      "sourceLabel": "Parti libéral du Canada — plateforme « Un Canada fort », chapitre « Communautés sûres et sécuritaires »",
+      "sourceLabelEn": "Liberal Party of Canada — “Canada Strong” platform, chapter “Safe and Secure Communities”",
+      "sourceUrl": "https://liberal.ca/fr/plateforme/securiser/",
+      "sourceUrlEn": "https://liberal.ca/platform/secure/",
+      "sourceType": "primaire",
+      "capturedAt": "2026-10-05",
+      "etat": "loi",
+      "actions": [
+        {
+          "num": "C-9",
+          "preuve": "d) ériger en infraction le fait d’intimider une personne en vue d’entraver son accès à certains lieux servant principalement au culte religieux ou utilisés principalement par un groupe identifiable à certaines fins; e) ériger en infraction le fait d’empêcher ou de gêner intentionnellement l’accès légitime par autrui à ces lieux.",
+          "preuveEn": "(d) create an offence of intimidating a person in order to impede them from accessing certain places that are primarily used for religious worship or by an identifiable group for certain purposes; and (e) create an offence of intentionally obstructing or interfering with a person’s lawful access to such places."
+        }
+      ]
+    },
+    {
+      "id": "lpc-inconduite-sexuelle-fac",
+      "party": "LPC",
+      "theme": "Défense",
+      "quote": "Donner suite aux recommandations externes visant à lutter contre l'inconduite sexuelle au sein des FAC. L'inconduite sexuelle n'a absolument pas sa place dans les FAC.",
+      "quoteEn": "Address the external recommendations to combat military sexual misconduct. Sexual misconduct has absolutely no place in the Canadian Armed Forces.",
+      "sourceLabel": "Parti libéral du Canada — plateforme « Un Canada fort », chapitre « Défendre notre souveraineté »",
+      "sourceLabelEn": "Liberal Party of Canada — “Canada Strong” platform, chapter “Defending Our Sovereignty”",
+      "sourceUrl": "https://liberal.ca/fr/plateforme/securiser/",
+      "sourceUrlEn": "https://liberal.ca/platform/secure/",
+      "sourceType": "primaire",
+      "capturedAt": "2026-10-05",
+      "etat": "loi",
+      "actions": [
+        {
+          "num": "C-11",
+          "preuve": "c) retirer à la cour martiale la compétence de juger les personnes relativement à une infraction prévue au Code criminel qui est présumée avoir été commise au Canada et qui est de nature sexuelle ou commise dans un but sexuel;",
+          "preuveEn": "(c) remove the court martial’s jurisdiction to try a person in relation to an offence under the Criminal Code that is alleged to have been committed in Canada and that is of a sexual nature or committed for a sexual purpose;"
+        }
+      ]
+    },
+    {
+      "id": "lpc-frontiere-fentanyl",
+      "party": "LPC",
+      "theme": "Sécurité publique",
+      "quote": "Luttera contre la drogue, y compris le fentanyl et ses précurseurs, les armes illégales, et empêchera les gangs de voleurs de voitures de les faire sortir clandestinement du pays. Pour cela, nous formerons 1 000 nouveaux agents de l'Agence des services frontaliers du Canada (ASFC).",
+      "quoteEn": "Crack down on drugs, including fentanyl and its precursors, illegal guns, and stop gangs from smuggling stolen cars out of the country. We will train 1000 new Canada Border Services Agency (CBSA) officers.",
+      "sourceLabel": "Parti libéral du Canada — plateforme « Un Canada fort », chapitre « Communautés sûres et sécuritaires »",
+      "sourceLabelEn": "Liberal Party of Canada — “Canada Strong” platform, chapter “Safe and Secure Communities”",
+      "sourceUrl": "https://liberal.ca/fr/plateforme/securiser/",
+      "sourceUrlEn": "https://liberal.ca/platform/secure/",
+      "sourceType": "primaire",
+      "capturedAt": "2026-10-05",
+      "etat": "partiel",
+      "actions": [
+        {
+          "num": "C-12",
+          "preuve": "La partie 2 modifie la Loi réglementant certaines drogues et autres substances afin de créer une nouvelle voie d'inscription accélérée temporaire qui permet au ministre de la Santé d'ajouter des précurseurs chimiques à l'annexe V de cette loi.",
+          "preuveEn": "Part 2 amends the Controlled Drugs and Substances Act to create a new temporary accelerated scheduling pathway that allows the Minister of Health to add precursor chemicals to Schedule V to that Act."
+        }
+      ],
+      "actionNote": "Le volet législatif est en vigueur ; l'embauche de 1 000 agents, elle, ne passe pas par une loi et ne se lit donc pas dans les projets de loi. Les mêmes mesures frontalières avaient d'abord été déposées dans C-2, resté en deuxième lecture, avant d'être reprises dans C-12.",
+      "actionNoteEn": "The legislative part is in force; hiring 1,000 officers does not go through legislation and therefore cannot be read in the bills. The same border measures were first tabled in C-2, which stalled at second reading, before being carried over into C-12."
+    },
+    {
+      "id": "lpc-immigration-plafond",
+      "party": "LPC",
+      "theme": "Immigration",
+      "quote": "Ramènera l'immigration à des niveaux soutenables en plafonnant le nombre total de travailleurs temporaires et d'étudiants étrangers à moins de 5 % de la population du Canada d'ici la fin de 2027, une réduction par rapport au plus haut niveau de 7.3 % afin de réduire la pression sur le logement, les infrastructures publiques et nos services sociaux.",
+      "quoteEn": "Return immigration to sustainable levels by capping the total number of temporary workers and international students to less than 5% of Canada's population by the end of 2027, from a past high of 7.3%, to ease the strain on housing, public infrastructure, and our social services.",
+      "sourceLabel": "Parti libéral du Canada — plateforme « Un Canada fort », chapitre « Immigration »",
+      "sourceLabelEn": "Liberal Party of Canada — “Canada Strong” platform, chapter “Immigration”",
+      "sourceUrl": "https://liberal.ca/fr/plateforme/batir/",
+      "sourceUrlEn": "https://liberal.ca/platform/build/",
+      "sourceType": "primaire",
+      "capturedAt": "2026-10-05",
+      "etat": "aucune",
+      "actions": [],
+      "actionNote": "Aucun projet de loi de la session 45-1 ne porte ce plafond : les niveaux d'immigration se fixent par le plan annuel des niveaux et par règlement, pas par une loi. Il n'y a donc rien à lire ici — et ce vide est lui aussi une information.",
+      "actionNoteEn": "No bill in the 45-1 session carries this cap: immigration levels are set through the annual levels plan and by regulation, not by legislation. There is nothing to read here — and that emptiness is information too."
+    },
+    {
+      "id": "lpc-declaration-automatique",
+      "party": "LPC",
+      "theme": "Fiscalité",
+      "quote": "Procurera aux Canadiens et Canadiennes les prestations qu'ils méritent par le biais de la production automatisée des déclarations de revenus, à commencer par les ménages à faibles revenus et les aînés.",
+      "quoteEn": "Get Canadians the benefits they deserve by delivering automatic tax filing starting with low-income households and seniors.",
+      "sourceLabel": "Parti libéral du Canada — plateforme « Un Canada fort », chapitre « Bâtir une économie à la portée de tous »",
+      "sourceLabelEn": "Liberal Party of Canada — “Canada Strong” platform, chapter “Building an Economy Everyone can Afford”",
+      "sourceUrl": "https://liberal.ca/fr/plateforme/batir/",
+      "sourceUrlEn": "https://liberal.ca/platform/build/",
+      "sourceType": "primaire",
+      "capturedAt": "2026-10-05",
+      "etat": "aucune",
+      "actions": [],
+      "actionNote": "Nous n'avons repéré aucun projet de loi de la session 45-1 qui institue la production automatisée des déclarations. La mesure pourrait passer par une loi budgétaire ou par l'administration de l'Agence du revenu ; d'ici là, nous n'affirmons rien de plus que ce que nous lisons.",
+      "actionNoteEn": "We have found no bill in the 45-1 session that establishes automatic tax filing. The measure could come through a budget act or through the Canada Revenue Agency's own administration; until then, we claim nothing beyond what we can read."
+    }
+  ]
+}

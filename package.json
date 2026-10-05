@@ -29,7 +29,8 @@
     "build:pages": "node scripts/build-section-pages.js",
     "build:prerender": "node scripts/prerender-pages.js",
     "scrape:past-bill-titles": "node scrapers/past-bill-titles.js",
-    "build:bills": "node scripts/build-bill-pages.js"
+    "build:bills": "node scripts/build-bill-pages.js",
+    "verifier:promesses": "node scripts/verifier-promesses.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.68.0",

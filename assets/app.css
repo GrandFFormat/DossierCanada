@@ -914,6 +914,48 @@
   .a3-step{ border:2px solid var(--ink); padding:10px 12px; background:var(--paper);  color:var(--ink);}
   .a3-step-n{ font-size:12px; font-weight:700; border:2px solid var(--ink); display:inline-block; padding:0 7px; margin-bottom:6px; font-family:'IBM Plex Mono',monospace; }
   .a3-step p{ margin:0; font-size:12.5px; font-weight:600; line-height:1.45; color:var(--ink); }
+  /* PROMESSES ÉLECTORALES — la promesse à gauche, ce que la législature en a fait
+     à droite. Deux colonnes sur grand écran, empilées sur un téléphone : sur une
+     largeur de 375 px, deux colonnes donnent deux rubans de six mots. */
+  .prom-card{ border:3px solid var(--ink); background:var(--card); box-shadow:4px 4px 0 var(--ink);
+    color:var(--ink); padding:14px; margin-bottom:14px; }
+  .prom-card:last-child{ margin-bottom:0; }
+  .prom-top{ display:flex; align-items:center; gap:7px; flex-wrap:wrap; margin-bottom:10px; }
+  .prom-theme-pill{ font-family:'IBM Plex Mono',monospace; font-size:10.5px; font-weight:700;
+    border:2px solid var(--ink); padding:2px 8px; cursor:pointer; }
+  /* L'étiquette dit un FAIT sur les textes de loi, pas un verdict : d'où le gris
+     pour « aucun projet de loi », jamais de rouge — l'absence n'est pas une faute. */
+  .prom-etiq{ font-family:'IBM Plex Mono',monospace; font-size:10px; font-weight:700;
+    text-transform:uppercase; border:2px solid var(--ink); padding:2px 7px; margin-left:auto; }
+  .prom-etiq-loi{ background:var(--lime); color:var(--on-candy); }
+  .prom-etiq-partiel{ background:var(--yellow); color:var(--on-candy); }
+  .prom-etiq-aucune{ background:var(--paper-2); color:var(--slate); }
+  .prom-quote{ font-family:'Archivo',system-ui,sans-serif; font-size:16.5px; line-height:1.5;
+    font-weight:500; margin:0 0 14px; }
+  .prom-grid{ display:grid; grid-template-columns:1fr 1fr; gap:14px; border-top:2px solid var(--ink); padding-top:12px; }
+  .prom-col .lbl{ display:inline-block; font-family:'IBM Plex Mono',monospace; font-size:10px;
+    font-weight:700; text-transform:uppercase; background:var(--cyan); color:var(--on-candy);
+    border:2px solid var(--ink); padding:1px 7px; margin-bottom:8px; }
+  .prom-col .lbl.att{ background:var(--amber-soft); }
+  .prom-col p{ margin:0 0 7px; font-size:13.5px; line-height:1.55; }
+  .prom-srctype{ font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--slate); }
+  .prom-col a{ font-size:12.5px; font-weight:700; }
+  .prom-loi{ border-left:4px solid var(--ink); padding-left:10px; margin-bottom:11px; }
+  .prom-loi:last-child{ margin-bottom:0; }
+  .prom-loi > a{ font-size:13.5px; line-height:1.4; }
+  .prom-etat{ display:inline-block; font-family:'IBM Plex Mono',monospace; font-size:10.5px;
+    font-weight:700; color:var(--slate); }
+  .prom-etat.ok{ background:var(--lime); color:var(--on-candy); border:2px solid var(--ink); padding:0 6px; }
+  .prom-loi p{ font-size:12.5px; color:var(--ink); margin:6px 0 5px; }
+  .prom-loi-src{ font-family:'IBM Plex Mono',monospace; font-size:10.5px; }
+  .prom-none{ font-size:13px; color:var(--slate); font-style:italic; margin:0; }
+  .prom-methode{ font-family:'IBM Plex Mono',monospace; font-size:12px; line-height:1.6; }
+  @media (max-width:760px){
+    .prom-grid{ grid-template-columns:1fr; gap:12px; }
+    .prom-quote{ font-size:15px; }
+    .prom-etiq{ margin-left:0; }
+  }
+
   /* Aperçu : lignes compactes de projets de loi (déplient le détail au clic) */
   .ab-row{ border:3px solid var(--ink); background:var(--card); margin-bottom:10px; box-shadow:4px 4px 0 var(--ink);  color:var(--ink);}
   .ab-row:last-child{ margin-bottom:0; }

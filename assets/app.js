@@ -3,7 +3,7 @@ const translations = {
   fr: {
     'nav.close':"Fermer",'nav.apercu':"Aperçu",'nav.ministres':"Députés",'nav.cabinet':"Ministres",'h.cabinet':"Le Cabinet fédéral",'cabinet.sub':"Qui décide quoi, depuis quand, et comment iel vote.",'nav.projets':"Projets de loi",
     'nav.votes':"Votes",'nav.quoideneuf':"Quoi de neuf",'nav.compte':"Compte & à propos",'nav.trouve':"Trouvez votre député",
-    'nav.lexique':"Lexique",'nav.personnes':"Qui gravite autour",'nav.lobby':"Registre des lobbyistes",'nav.petitions':"Pétitions",'nav.apropos':"D'où viennent ces données",
+    'nav.promesses':"Promesses",'filter.sujets':"Sujets",'prom.bandsub':"Ce qui a été promis en 2025, et ce que la législature en a fait. Sans verdict.",'prom.h':"Pourquoi aucun verdict ?",'prom.p1':"Parce qu'une mesure écrite dans une loi sanctionnée n'est pas forcément appliquée, ni financée comme promis — et parce que trancher « tenue » ou « brisée » à votre place, avec les seules données d'un site de veille, serait malhonnête.",'prom.p2':"Vous avez donc les deux côtés, chacun sourcé : <b>à gauche</b>, la promesse citée mot pour mot dans la plateforme du parti, avec le lien vers le document. <b>À droite</b>, les projets de loi qui la mettent en œuvre, avec la phrase du sommaire officiel qui le prouve. Le jugement vous revient.",'nav.lexique':"Lexique",'nav.personnes':"Qui gravite autour",'nav.lobby':"Registre des lobbyistes",'nav.petitions':"Pétitions",'nav.apropos':"D'où viennent ces données",
     'stat.ministres':"Députés",'stat.projets':"Projets de loi",'stat.votes':"Votes enregistrés",
     'h.composition':"Composition de la Chambre des communes",
     'h.billsrecent':"Projets de loi récemment actifs",
@@ -92,7 +92,7 @@ const translations = {
   en: {
     'nav.close':"Close",'nav.apercu':"Overview",'nav.ministres':"MPs",'nav.cabinet':"Ministers",'h.cabinet':"The federal Cabinet",'cabinet.sub':"Who decides what, since when, and how they vote.",'nav.projets':"Bills",
     'nav.votes':"Votes",'nav.quoideneuf':"What's new",'nav.compte':"Account & about",'nav.trouve':"Find your MP",
-    'nav.lexique':"Glossary",'nav.personnes':"Who's involved",'nav.lobby':"Lobbyist registry",'nav.petitions':"Petitions",'nav.apropos':"Where this data comes from",
+    'nav.promesses':"Promises",'filter.sujets':"Topics",'prom.bandsub':"What was promised in 2025, and what Parliament did with it. No verdict.",'prom.h':"Why no verdict?",'prom.p1':"Because a measure written into an assented law is not necessarily applied, or funded as promised — and because calling it “kept” or “broken” on your behalf, using only what a monitoring site can read, would be dishonest.",'prom.p2':"So you get both sides, each sourced: <b>on the left</b>, the promise quoted word for word from the party's own platform, with a link to the document. <b>On the right</b>, the bills that implement it, with the sentence from the official summary that proves it. The judgment is yours.",'nav.lexique':"Glossary",'nav.personnes':"Who's involved",'nav.lobby':"Lobbyist registry",'nav.petitions':"Petitions",'nav.apropos':"Where this data comes from",
     'stat.ministres':"MPs",'stat.projets':"Bills",'stat.votes':"Votes recorded",
     'h.composition':"Composition of the House of Commons",
     'h.billsrecent':"Recently active bills",
@@ -439,10 +439,13 @@ function rouvrirTemoins(){
    lexique ne télécharge plus les 187 projets ni les 174 votes.
    Les fichiers REMPLISSENT les tableaux déclarés vides par le noyau : `bills`,
    `deputes`… gardent leur identité, donc rien d'autre dans ce script ne change. */
-const DATA_FILES = { bills: '/data/d-bills.js', people: '/data/d-people.js', votes: '/data/d-votes.js' };
+const DATA_FILES = { bills: '/data/d-bills.js', people: '/data/d-people.js', votes: '/data/d-votes.js', promesses: '/data/d-promises.js' };
 const VIEW_DATA = {
   apercu: ['bills'], projets: ['bills'], ministres: ['people'],
   cabinet: ['people', 'bills'], votes: ['votes'], lexique: [], bd: [],
+  // Promesses : le texte de l'engagement vient de d-promises.js, mais l'étape du
+  // projet de loi qui le met en oeuvre vient du jeu « bills ». D'où les deux.
+  promesses: ['promesses', 'bills'],
 };
 const dataLoaded = {}, dataLoading = {};
 const hasData = (name) => dataLoaded[name] === true;
@@ -2567,11 +2570,19 @@ function renderStatusFilters(){
   el.innerHTML = `<span class="status-chip ${!billsStatusFilter?'active':''}" onclick="setBillsStatusFilter('')">${allLabel}</span>` +
     billsStatusOrder.map(s=>`<span class="status-chip ${billsStatusFilter===s?'active':''}" onclick="setBillsStatusFilter('${s}')">${statusLabel(s)}</span>`).join('');
 }
+// Panneaux de filtres repliés sur téléphone. Table plutôt que ternaire : il y en a
+// maintenant trois (statuts, chambre, sujets des promesses), et un quatrième ne
+// doit pas se retrouver silencieusement rattaché au panneau du troisième.
+const PANNEAUX_FILTRES = {
+  status:    ['statusFilters', 'statusFilterBtn'],
+  step:      ['stepFilters', 'stepFilterBtn'],
+  promTheme: ['promThemeFilters', 'promThemeBtn'],
+};
 function toggleFilterPanel(which){
-  const panelId = which === 'status' ? 'statusFilters' : 'stepFilters';
-  const btnId = which === 'status' ? 'statusFilterBtn' : 'stepFilterBtn';
+  const [panelId, btnId] = PANNEAUX_FILTRES[which] || PANNEAUX_FILTRES.step;
   const panel = document.getElementById(panelId);
   const btn = document.getElementById(btnId);
+  if(!panel || !btn) return;
   const isOpen = panel.classList.toggle('open');
   btn.setAttribute('aria-expanded', isOpen);
 }
@@ -3895,12 +3906,12 @@ document.getElementById('journalPlus')?.addEventListener('click', () => { journa
    anglais. Une page anglaise sous une adresse française se lit mal, et Google
    associe les mots de l'adresse à la langue de la page. Doit rester identique
    à VIEWS dans scripts/seo-pages.js, qui génère les fichiers et le sitemap. */
-const VIEW_SLUGS = { apercu:'/', ministres:'/deputes', cabinet:'/ministres', projets:'/projets-de-loi', votes:'/votes', lexique:'/lexique', bd:'/mises-a-jour' };
-const VIEW_SLUGS_EN = { apercu:'/', ministres:'/mps', cabinet:'/ministers', projets:'/bills', votes:'/votes', lexique:'/glossary', bd:'/updates' };
-const SLUG_VIEWS = { '':'apercu', 'deputes':'ministres', 'ministres':'cabinet', 'projets-de-loi':'projets', 'votes':'votes', 'lexique':'lexique', 'mises-a-jour':'bd' };
+const VIEW_SLUGS = { apercu:'/', ministres:'/deputes', cabinet:'/ministres', projets:'/projets-de-loi', votes:'/votes', lexique:'/lexique', promesses:'/promesses', bd:'/mises-a-jour' };
+const VIEW_SLUGS_EN = { apercu:'/', ministres:'/mps', cabinet:'/ministers', projets:'/bills', votes:'/votes', lexique:'/glossary', promesses:'/promises', bd:'/updates' };
+const SLUG_VIEWS = { '':'apercu', 'deputes':'ministres', 'ministres':'cabinet', 'projets-de-loi':'projets', 'votes':'votes', 'lexique':'lexique', 'promesses':'promesses', 'mises-a-jour':'bd' };
 // L'ancienne adresse anglaise (/en/deputes) reste comprise : Vercel la redirige,
 // mais un lien partagé avant le changement doit aussi s'ouvrir sans recharger.
-const SLUG_VIEWS_EN = { '':'apercu', 'mps':'ministres', 'ministers':'cabinet', 'bills':'projets', 'votes':'votes', 'glossary':'lexique', 'updates':'bd', ...SLUG_VIEWS };
+const SLUG_VIEWS_EN = { '':'apercu', 'mps':'ministres', 'ministers':'cabinet', 'bills':'projets', 'votes':'votes', 'glossary':'lexique', 'promises':'promesses', 'updates':'bd', ...SLUG_VIEWS };
 // Hôte canonique : l'apex dossiercanada.ca renvoie un 308 vers www, donc
 // canonical, hreflang, og:url et sitemap pointent sur www (jamais sur une redirection).
 const SITE_ORIGIN = 'https://www.dossiercanada.ca';
@@ -3934,6 +3945,10 @@ const PAGE_META = {
                en:"Glossary of Canada's Parliament, jargon-free — DossierCanada",
                dfr:"Le vocabulaire du Parlement du Canada traduit en mots de tous les jours : étapes d'un projet de loi, vote nominal, sanction royale, et qui fait quoi.",
                den:"The vocabulary of Canada's Parliament in everyday words: the stages of a bill, recorded votes, royal assent, and who does what on Parliament Hill." },
+  promesses: { fr:"Promesses électorales de 2025, et les lois qui ont suivi — DossierCanada",
+               en:"2025 election promises, and the laws that followed — DossierCanada",
+               dfr:"Les engagements du parti au pouvoir, cités mot pour mot dans sa plateforme de 2025, en regard des projets de loi fédéraux qui les mettent en œuvre. Sans verdict.",
+               den:"The governing party's 2025 platform commitments, quoted word for word, beside the federal bills that implement them. Sourced both sides, no verdict." },
   bd:        { fr:"Mises à jour de DossierCanada, et qui l'a bâti — DossierCanada",
                en:"DossierCanada updates, and who built the site — DossierCanada",
                dfr:"Pourquoi DossierCanada existe, raconté par celui qui l'a bâti, et le journal de ce qui change sur le site, du plus récent au plus ancien.",
@@ -4100,13 +4115,186 @@ document.getElementById('searchVotes').addEventListener('input', ()=> { votesSho
 /* Redessine tout ce qui dépend des données. Appelée au démarrage et chaque fois
    qu'un fichier d'onglet arrive : les vues sans données se redessinent à vide,
    ce qui ne coûte rien et évite d'avoir à savoir qui dépend de quoi. */
+/* ================= PROMESSES ÉLECTORALES =================
+   La promesse et l'action côte à côte, chacune sourcée, et JAMAIS de verdict
+   « tenue / brisée ». Ce n'est pas de la timidité : une mesure inscrite dans une
+   loi sanctionnée n'est pas forcément appliquée, ni financée comme promis, et
+   trancher à la place du lecteur avec les seules données d'un site de veille
+   serait malhonnête. On montre la citation, on montre la loi, on laisse juger.
+
+   Les données : data/promises.json (saisi à la main — choisir une promesse est un
+   acte éditorial) → data/d-promises.js. Le garde-fou vit à part, dans
+   scripts/verifier-promesses.mjs : chaque citation doit exister mot pour mot dans
+   la plateforme du parti, chaque preuve dans le sommaire officiel du projet.
+
+   Le titre d'un projet, son étape et sa date de sanction ne sont PAS dans les
+   données des promesses : on les lit dans `bills`, rafraîchi chaque nuit. Une
+   loi qui avance se met donc à jour ici toute seule. */
+
+// Échappement du texte inséré dans le HTML. Les autres rendus déclarent leur
+// propre `esc` en local ; celui-ci est au même niveau que les fonctions ci-dessous.
+const echapperTexte = (x) => String(x ?? '')
+  .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+
+// Couleur par sujet. Les sujets courants ont la leur ; tout nouveau sujet ajouté
+// dans promises.json reçoit une couleur stable dérivée de son nom, donc toujours
+// la même — rien à maintenir à la main quand la liste s'allonge.
+const themeColors = {
+  'Fiscalité':'#A16207', 'Logement':'#0E4FC1', 'Économie':'#7C5CD6',
+  'Environnement':'#12429B', 'Justice':'#6B7280', 'Défense':'#4D7C0F',
+  'Immigration':'#B45309', 'Infrastructures':'#475569', 'Sécurité publique':'#BE185D',
+  'Santé':'#E23A3A', 'Transport':'#1E9E5A', 'Éducation':'#FF7B33',
+};
+const themeFallback = ['#8B5CF6','#0891B2','#C2410C','#4D7C0F','#BE185D','#0F766E'];
+function themeColor(t){
+  if(themeColors[t]) return themeColors[t];
+  let h = 0; for(let i=0; i<String(t).length; i++) h = (h*31 + String(t).charCodeAt(i)) % 9973;
+  return themeFallback[h % themeFallback.length];
+}
+
+// Le sujet est stocké en français (clé unique, couleur unique) ; en anglais il
+// s'affiche en anglais. Un sujet ajouté sans traduction s'affiche tel quel — la
+// page ne casse pas, elle montre juste le mot français en attendant.
+const THEMES_EN = {
+  'Fiscalité':'Taxes', 'Logement':'Housing', 'Économie':'Economy',
+  'Environnement':'Environment', 'Justice':'Justice', 'Défense':'Defence',
+  'Immigration':'Immigration', 'Infrastructures':'Infrastructure',
+  'Sécurité publique':'Public safety', 'Santé':'Health',
+  'Transport':'Transport', 'Éducation':'Education',
+};
+const themeLabel = (t) => (currentLang === 'en' ? (THEMES_EN[t] || t) : t);
+
+let promTheme = 'tous';
+function setPromTheme(t){ promTheme = t; renderPromises(); }
+
+// Les filtres se construisent à partir des données : un sujet ajouté dans le JSON
+// apparaît tout seul.
+function renderPromFilters(liste){
+  const el = document.getElementById('promThemeFilters');
+  if(!el) return;
+  const isEn = currentLang === 'en';
+  const sujets = [...new Set(promises.map(p => p.theme))].sort((a,b) => themeLabel(a).localeCompare(themeLabel(b), isEn ? 'en' : 'fr'));
+  const nb = (f) => promises.filter(f).length;
+  const chip = (cle, libelle, n, couleur) => {
+    const actif = promTheme === cle;
+    const style = couleur && actif ? ' style="background:' + couleur + '; border-color:' + couleur + '; color:' + textOn(couleur) + ';"' : '';
+    return '<span class="step-chip' + (actif ? ' active' : '') + '"' + style
+      + ' onclick="setPromTheme(' + JSON.stringify(cle).replace(/"/g, '&quot;') + ')">'
+      + echapperTexte(libelle) + ' <b>' + n + '</b></span>';
+  };
+  el.innerHTML = chip('tous', isEn ? 'All' : 'Tous', promises.length, null)
+    + sujets.map(t => chip(t, themeLabel(t), nb(p => p.theme === t), themeColor(t))).join('');
+}
+
+// L'étiquette d'état : un FAIT sur les textes de loi, jamais un verdict.
+function etiquettePromesse(p, isEn){
+  const E = {
+    loi:     ['Dans une loi sanctionnée', 'In an assented law'],
+    partiel: ['En partie dans une loi', 'Partly in a law'],
+    aucune:  ['Aucun projet de loi', 'No bill'],
+  }[p.etat];
+  return E ? '<span class="prom-etiq prom-etiq-' + p.etat + '">' + E[isEn ? 1 : 0] + '</span>' : '';
+}
+
+// La colonne « L'action » : les projets de loi qui mettent l'engagement en œuvre.
+// Titre, étape et date viennent de `bills` ; la preuve vient du sommaire officiel.
+function actionPromesse(p, isEn){
+  const lois = (p.actions || []).map(a => {
+    const b = bills.find(x => String(x.num).toUpperCase() === String(a.num).toUpperCase());
+    // Projet introuvable dans les données (renuméroté, retiré de la source…) : on
+    // le DIT. Rendre une chaîne vide laisserait une carte étiquetée « dans une loi
+    // sanctionnée » avec une colonne « L'action » vide — l'affirmation reste à
+    // l'écran, la preuve disparaît sans bruit. C'est le pire des deux mondes.
+    if(!b) return '<div class="prom-loi"><p class="prom-none">'
+      + (isEn ? 'Bill ' : 'Projet de loi ') + echapperTexte(a.num)
+      + (isEn ? ' is no longer in the data we read from Parliament — nothing is shown here rather than something unverified.'
+              : " ne figure plus dans les données lues au Parlement — on n'affiche rien plutôt qu'une preuve invérifiable.")
+      + '</p></div>';
+    const titre = b.title ? (isEn ? (b.title.en || b.title.fr) : (b.title.fr || b.title.en)) : '';
+    const etape = b.latestActivity ? (isEn ? (b.latestActivity.en || b.latestActivity.fr) : (b.latestActivity.fr || b.latestActivity.en)) : '';
+    const sanctionne = b.state === 'loi';
+    const quand = b.royalAssent ? ' · ' + b.royalAssent : '';
+    return '<div class="prom-loi">'
+      // Lien ORDINAIRE vers la page du projet (pas data-view) : on veut atterrir
+      // sur /projets-de-loi/c-4, fiche ouverte, pas sur la liste entière.
+      + '<a href="' + billPathFor(b.num) + '"><b>' + (isEn ? 'Bill ' : 'PL ') + b.num + '</b> — ' + echapperTexte(titre) + '</a> '
+      + '<span class="prom-etat' + (sanctionne ? ' ok' : '') + '">' + echapperTexte(etape) + quand + '</span>'
+      + '<p>' + echapperTexte(isEn ? (a.preuveEn || a.preuve) : a.preuve) + '</p>'
+      + '<a class="prom-loi-src" href="' + billUrl(b) + '" target="_blank" rel="noopener">'
+      + (isEn ? 'Official summary (parl.ca)' : 'Sommaire officiel (parl.ca)') + '</a>'
+      + '</div>';
+  }).join('');
+  const note = isEn ? (p.actionNoteEn || p.actionNote) : p.actionNote;
+  return lois + (note ? '<p class="prom-none">' + echapperTexte(note) + '</p>' : '');
+}
+
+function renderPromises(){
+  const el = document.getElementById('promisesList');
+  if(!el) return;                       // vue absente de cette page
+  if(!hasData('promesses')) return;     // données pas encore là : le pré-rendu reste
+  const isEn = currentLang === 'en';
+  const liste = promises.filter(p => promTheme === 'tous' || p.theme === promTheme);
+  renderPromFilters(liste);
+
+  const titre = document.getElementById('promessesCountTitle');
+  if(titre) titre.textContent = isEn
+    ? promises.length + ' promises, and what followed'
+    : promises.length + ' promesses, et ce qui a suivi';
+  // La légende : d'où vient la donnée, ce qu'on ne fait pas, pourquoi douze.
+  // Elle vit dans les données (promisesInfo), pas dans le HTML : c'est le même
+  // fichier que les promesses, donc elle ne peut pas se désynchroniser d'elles.
+  // Chaque paragraphe commence par son intitulé en majuscules, qu'on met en gras.
+  const noteEl = document.getElementById('promMethode');
+  if(noteEl){
+    const texte = (promisesInfo && (isEn ? promisesInfo.noteEn : promisesInfo.note)) || '';
+    noteEl.innerHTML = texte.split(/\n\s*\n/).filter(Boolean).map(par => {
+      const t = echapperTexte(par.trim());
+      // « D'OÙ VIENT CETTE PAGE. » / « WHAT WE DO NOT DO. » — l'intitulé en tête.
+      return '<p>' + t.replace(/^([^.]{3,60}\.)/, '<b>$1</b>') + '</p>';
+    }).join('');
+  }
+
+  if(!liste.length){
+    el.innerHTML = '<div class="no-results">' + (isEn ? 'No promise matches this topic.' : 'Aucune promesse ne correspond à ce sujet.') + '</div>';
+    return;
+  }
+  el.innerHTML = liste.map(p => {
+    const couleur = partyColors[p.party] || '#8a8f99';
+    const tc = themeColor(p.theme);
+    const quote = isEn ? (p.quoteEn || p.quote) : p.quote;
+    const srcLabel = isEn ? (p.sourceLabelEn || p.sourceLabel) : p.sourceLabel;
+    const srcUrl = (isEn ? (p.sourceUrlEn || p.sourceUrl) : p.sourceUrl) || '#';
+    return '<div class="prom-card">'
+      + '<div class="prom-top">'
+      +   '<span class="depute-party" style="background:' + couleur + '; color:' + textOn(couleur) + '">' + p.party + '</span>'
+      +   '<button class="prom-theme-pill" style="background:' + tc + '; color:' + textOn(tc) + ';" onclick="setPromTheme(' + JSON.stringify(p.theme).replace(/"/g, '&quot;') + ')" title="' + (isEn ? 'Filter by this topic' : 'Filtrer par ce sujet') + '">' + echapperTexte(themeLabel(p.theme)) + '</button>'
+      +   etiquettePromesse(p, isEn)
+      + '</div>'
+      + '<p class="prom-quote">« ' + echapperTexte(quote) + ' »</p>'
+      + '<div class="prom-grid">'
+      +   '<div class="prom-col">'
+      +     '<span class="lbl">' + (isEn ? 'The promise' : 'La promesse') + '</span>'
+      +     '<p>' + echapperTexte(srcLabel) + '</p>'
+      +     '<p class="prom-srctype">' + (isEn ? 'Primary source (the party itself) · captured on ' : 'Source primaire (le parti lui-même) · captée le ') + p.capturedAt + '</p>'
+      +     '<a href="' + srcUrl + '" target="_blank" rel="noopener">' + (isEn ? 'See the source' : 'Voir la source') + '</a>'
+      +   '</div>'
+      +   '<div class="prom-col">'
+      +     '<span class="lbl att">' + (isEn ? 'The action' : "L'action") + '</span>'
+      +     actionPromesse(p, isEn)
+      +   '</div>'
+      + '</div>'
+      + '</div>';
+  }).join('');
+}
+
 function renderAll(){
   for (const f of [renderHemicycle, renderMinistres, renderStatusFilters, renderStepFilters,
                    updateSortToggleLabel, updateMotionsToggleLabel, updatePetitionsToggleLabel,
                    updateMinistresSortLabel, renderAccountBox, renderFlagBox, renderAdminFlagCounts,
                    renderComparateurSelects, renderComparateurTable, renderBills, renderApercuBills,
                    renderApercuStats, renderPageBandCounts, renderVotes, renderDeputes, renderNews,
-                   renderSittings, renderChallenged, renderProvinceNetwork, renderTicker]) {
+                   renderSittings, renderChallenged, renderProvinceNetwork, renderTicker,
+                   renderPromises]) {
     // Sans await : renderChallenged interroge Supabase en tâche de fond, comme avant.
     try { const r = f(); if (r && r.catch) r.catch(e => console.error('[init]', f.name, e)); }
     catch (e) { console.error('[init]', f.name, e); }
