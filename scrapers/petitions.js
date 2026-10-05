@@ -20,8 +20,10 @@ import * as cheerio from 'cheerio';
 
 const OUT_PATH = 'data/petitions.json';
 const REQUEST_DELAY_MS = 300;
-const USER_AGENT =
-  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0 Safari/537.36';
+// Le robot se présente sous son nom, comme les autres scrapers du site (5 oct. 2026 : il se
+// faisait passer pour un navigateur, ce que la page /regles ne pouvait pas assumer). Si la source
+// le refuse un jour, on NE remet PAS un User-Agent de navigateur : on écrit à l'institution.
+const USER_AGENT = 'DossierCanada/1.0 (+https://dossiercanada.ca; site citoyen; contact mart.archambault@gmail.com)';
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
