@@ -61,7 +61,7 @@ jobs:
             # Jour de changement : committer les 14 pages FR/EN et le sitemap, tous
             # régénérés par « npm run refresh » (build:pages + build:prerender ; le
             # sitemap y est daté du jour). Oublier en.html / en/ figeait l'anglais.
-            git add deputes.html ministres.html projets-de-loi.html votes.html lexique.html mises-a-jour.html en.html en/ projets-de-loi/ sitemap.xml
+            git add deputes.html ministres.html projets-de-loi.html votes.html lexique.html mises-a-jour.html en.html en/ projets-de-loi/ sitemap.xml llms.txt
             git commit -m "chore: rafraîchissement automatique des données fédérales"
             # Si main a encore bougé pendant le build, on se rebase une fois et on repousse.
             git push || { git pull --rebase origin main && git push; }
