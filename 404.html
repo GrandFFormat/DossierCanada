@@ -22,7 +22,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=ca096ca9be">
+<link rel="stylesheet" href="/assets/app.css?v=f1c4ebb332">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -446,13 +446,13 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
   <!-- PAGE 404 (6 oct. 2026) — vue « introuvable ». Ce fragment n'entre QUE dans 404.html
        (scripts/build-section-pages.js l'y insère) : Vercel sert ce fichier, avec le code 404,
        pour toute adresse inconnue, y compris sous /en/. Il ne doit JAMAIS entrer dans
-       index.html : le faux vote ci-dessous se retrouverait, caché, dans les pages indexées.
+       index.html : le faux rapport ci-dessous se retrouverait, caché, dans les pages indexées.
        Français ici ; l'anglais (clés p404.* de assets/app.js) est posé par applyLanguage()
        quand l'adresse demandée commence par /en.
-       « Morte au Feuilleton » : le sort d'un projet de loi fédéral qui n'est pas adopté
-       quand la session prend fin. Le vote est ÉTIQUETÉ comme une blague : ce site
-       n'invente jamais de donnée. Rien de partisan : aucun parti, aucun nom.
-       Aux Communes, la troisième case d'un vote est « Pairés », pas « Abstention ». -->
+       La blague : la page a été « renvoyée en comité » et n'en est jamais ressortie.
+       (Volontairement une AUTRE blague que celle de DossierQuébec : pas de faux vote.)
+       Le comité est ÉTIQUETÉ comme une blague : ce site n'invente jamais de donnée.
+       Rien de partisan : aucun parti, aucun nom, aucun vrai comité. -->
   <section class="view active" id="view-introuvable">
     <div class="page-band p404-bande">
       <div>
@@ -464,37 +464,37 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
 
     <div class="p404-hero">
       <h1 class="p404-titre" id="p404Titre">
-        <span data-i18n="p404.l1">Cette page est morte</span>
-        <span class="p404-creux" data-i18n="p404.l2">au Feuilleton.</span>
+        <span data-i18n="p404.l1">Cette page a été renvoyée</span>
+        <span class="p404-creux" data-i18n="p404.l2">en comité.</span>
       </h1>
-      <p class="p404-sub" data-i18n="p404.sub">Mourir au Feuilleton, c'est le sort d'un projet de loi qui n'est pas adopté quand la session prend fin. Cette page a connu le même : déposée avec de belles intentions, jamais adoptée. <b>Ou alors l'adresse a une faute de frappe, ça arrive même aux légistes.</b></p>
+      <p class="p404-sub" data-i18n="p404.sub">Et comme bien des choses renvoyées en comité, on ne l'a jamais revue. <b>Ou alors l'adresse a une faute de frappe : ça arrive même aux greffiers.</b></p>
     </div>
 
     <div class="p404-carte">
-      <div class="p404-surtitre" data-i18n="p404.vote.sur">Vote par appel nominal</div>
-      <p class="p404-motion" data-i18n="p404.vote.motion">« Que cette page existe. »</p>
+      <div class="p404-surtitre" data-i18n="p404.rap.sur">Comité permanent des pages introuvables</div>
+      <p class="p404-motion" data-i18n="p404.rap.h">Rapport du comité</p>
       <ul class="p404-decompte">
-        <li><b>0</b><span data-i18n="p404.pour">Pour</span></li>
-        <li class="p404-contre"><b>404</b><span data-i18n="p404.contre">Contre</span></li>
-        <li><b>0</b><span data-i18n="p404.paires">Pairés</span></li>
+        <li><b>0</b><span data-i18n="p404.reunions">Réunions tenues</span></li>
+        <li class="p404-contre"><b>404</b><span data-i18n="p404.jours">Jours d'attente</span></li>
+        <li><b>0</b><span data-i18n="p404.temoins">Témoins entendus</span></li>
       </ul>
-      <p class="p404-verdict" data-i18n="p404.verdict">Motion rejetée. Même pas proche.</p>
+      <p class="p404-verdict" data-i18n="p404.verdict">Rapport attendu sous peu. Depuis un bout.</p>
       <ul class="p404-etapes">
         <li class="fait" data-i18n="p404.e1">Première lecture ✓</li>
-        <li class="rate" data-i18n="p404.e2">Deuxième lecture</li>
-        <li class="rate" data-i18n="p404.e3">Comité</li>
+        <li class="fait" data-i18n="p404.e2">Deuxième lecture ✓</li>
+        <li class="encours" data-i18n="p404.e3">Comité…</li>
         <li class="rate" data-i18n="p404.e4">Troisième lecture</li>
         <li class="rate" data-i18n="p404.e5">Sénat</li>
         <li class="rate" data-i18n="p404.e6">Sanction royale</li>
       </ul>
-      <p class="p404-blague"><span data-i18n="p404.blague">Ce vote est une blague : il n'a jamais eu lieu, et il n'y a pas 404 député·e·s aux Communes. Sur ce site, c'est la seule donnée inventée.</span> <a data-view="votes" href="/votes" data-i18n="p404.blague.lien">Les vrais votes sont ici.</a></p>
+      <p class="p404-blague"><span data-i18n="p404.blague">Ce comité est une blague : il n'existe pas et n'a jamais siégé. Sur ce site, c'est la seule donnée inventée.</span> <a data-view="projets" href="/projets-de-loi" data-i18n="p404.blague.lien">Les vrais projets de loi sont ici.</a></p>
     </div>
 
     <ul class="p404-liens">
-      <li><a data-view="projets" href="/projets-de-loi"><span data-i18n="nav.projets">Projets de loi</span><small data-i18n="p404.lien1">Ceux qui existent pour vrai, résumés en clair.</small></a></li>
+      <li><a data-view="projets" href="/projets-de-loi"><span data-i18n="nav.projets">Projets de loi</span><small data-i18n="p404.lien1">Ceux qui sont sortis du comité, et les autres.</small></a></li>
       <li><a data-view="votes" href="/votes"><span data-i18n="nav.votes">Votes</span><small data-i18n="p404.lien2">Qui a voté quoi, député·e par député·e.</small></a></li>
       <li><a data-view="promesses" href="/promesses"><span data-i18n="nav.promesses">Promesses</span><small data-i18n="p404.lien3">Ce qui a été promis, mot pour mot, et les lois qui ont suivi.</small></a></li>
-      <li><a data-view="apercu" href="/"><span data-i18n="nav.apercu">Aperçu</span><small data-i18n="p404.lien4">On recommence du début, sans rancune.</small></a></li>
+      <li><a data-view="apercu" href="/"><span data-i18n="nav.apercu">Aperçu</span><small data-i18n="p404.lien4">On reprend à la première lecture.</small></a></li>
     </ul>
   </section>
 
@@ -545,7 +545,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=885590bd06"></script>
+<script defer src="/assets/app.js?v=4645d70628"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->
