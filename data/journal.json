@@ -3,6 +3,19 @@
     "date": "2026-10-06",
     "volet": "site",
     "fr": {
+      "titre": "Une page 404 qui a de l’allure",
+      "texte": "Une adresse qui n’existe pas menait à une page nue. Elle mène maintenant à une vraie page du site, avec le menu et le pied de page : « Cette page est morte au Feuilleton », un vote par appel nominal sur son existence (0 pour, 404 contre) et des liens vers les vrais projets de loi, les votes et les promesses. Ce vote est une blague, et la page le dit : c’est la seule donnée inventée du site. Sous /en, la page s’affiche en anglais."
+    },
+    "en": {
+      "titre": "A 404 page worth landing on",
+      "texte": "An address that does not exist used to lead to a bare page. It now leads to a real page of the site, with the menu and the footer: “This page died on the Order Paper”, a recorded division on its existence (0 yeas, 404 nays) and links to the real bills, votes and promises. That vote is a joke, and the page says so: it is the only invented data on the site. Under /en, the page shows in English."
+    },
+    "commits": []
+  },
+  {
+    "date": "2026-10-06",
+    "volet": "site",
+    "fr": {
       "titre": "Le site expliqué aux assistants IA",
       "texte": "Un nouveau fichier, /llms.txt, présente DossierCanada aux assistants comme ChatGPT, Claude ou Perplexity : ce que le site contient, l'adresse de chaque page dans les deux langues, et ses règles. Site non officiel, sources primaires seulement, résumés générés par intelligence artificielle à partir du texte officiel, promesses citées mot pour mot, aucun verdict. Et une consigne : citer la source officielle avec DossierCanada, pas DossierCanada seul."
     },

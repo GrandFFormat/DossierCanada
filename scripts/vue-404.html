@@ -1,0 +1,54 @@
+  <!-- PAGE 404 (6 oct. 2026) — vue « introuvable ». Ce fragment n'entre QUE dans 404.html
+       (scripts/build-section-pages.js l'y insère) : Vercel sert ce fichier, avec le code 404,
+       pour toute adresse inconnue, y compris sous /en/. Il ne doit JAMAIS entrer dans
+       index.html : le faux vote ci-dessous se retrouverait, caché, dans les pages indexées.
+       Français ici ; l'anglais (clés p404.* de assets/app.js) est posé par applyLanguage()
+       quand l'adresse demandée commence par /en.
+       « Morte au Feuilleton » : le sort d'un projet de loi fédéral qui n'est pas adopté
+       quand la session prend fin. Le vote est ÉTIQUETÉ comme une blague : ce site
+       n'invente jamais de donnée. Rien de partisan : aucun parti, aucun nom.
+       Aux Communes, la troisième case d'un vote est « Pairés », pas « Abstention ». -->
+  <section class="view active" id="view-introuvable">
+    <div class="page-band p404-bande">
+      <div>
+        <nav class="crumbs" aria-label="Fil d'Ariane"><a data-view="apercu" href="/">DossierCanada</a> <span aria-hidden="true">›</span> <span aria-current="page" data-i18n="p404.fil">Page introuvable</span></nav>
+        <h2 class="p404-bande-h" data-i18n="p404.bande.h">⚠️ Erreur 404 — cette adresse ne mène nulle part</h2>
+        <p class="p404-bande-p" data-i18n="p404.bande.p">La page demandée n'existe pas sur DossierCanada, ou elle a changé d'adresse. Rien de grave : <b>les vrais projets de loi, eux, sont à un clic.</b></p>
+      </div>
+    </div>
+
+    <div class="p404-hero">
+      <h2 class="p404-titre" id="p404Titre">
+        <span data-i18n="p404.l1">Cette page est morte</span>
+        <span class="p404-creux" data-i18n="p404.l2">au Feuilleton.</span>
+      </h2>
+      <p class="p404-sub" data-i18n="p404.sub">Mourir au Feuilleton, c'est le sort d'un projet de loi qui n'est pas adopté quand la session prend fin. Cette page a connu le même : déposée avec de belles intentions, jamais adoptée. <b>Ou alors l'adresse a une faute de frappe, ça arrive même aux légistes.</b></p>
+    </div>
+
+    <div class="p404-carte">
+      <div class="p404-surtitre" data-i18n="p404.vote.sur">Vote par appel nominal</div>
+      <p class="p404-motion" data-i18n="p404.vote.motion">« Que cette page existe. »</p>
+      <ul class="p404-decompte">
+        <li><b>0</b><span data-i18n="p404.pour">Pour</span></li>
+        <li class="p404-contre"><b>404</b><span data-i18n="p404.contre">Contre</span></li>
+        <li><b>0</b><span data-i18n="p404.paires">Pairés</span></li>
+      </ul>
+      <p class="p404-verdict" data-i18n="p404.verdict">Motion rejetée. Même pas proche.</p>
+      <ul class="p404-etapes">
+        <li class="fait" data-i18n="p404.e1">Première lecture ✓</li>
+        <li class="rate" data-i18n="p404.e2">Deuxième lecture</li>
+        <li class="rate" data-i18n="p404.e3">Comité</li>
+        <li class="rate" data-i18n="p404.e4">Troisième lecture</li>
+        <li class="rate" data-i18n="p404.e5">Sénat</li>
+        <li class="rate" data-i18n="p404.e6">Sanction royale</li>
+      </ul>
+      <p class="p404-blague"><span data-i18n="p404.blague">Ce vote est une blague : il n'a jamais eu lieu, et il n'y a pas 404 député·e·s aux Communes. Sur ce site, c'est la seule donnée inventée.</span> <a data-view="votes" href="/votes" data-i18n="p404.blague.lien">Les vrais votes sont ici.</a></p>
+    </div>
+
+    <ul class="p404-liens">
+      <li><a data-view="projets" href="/projets-de-loi"><span data-i18n="nav.projets">Projets de loi</span><small data-i18n="p404.lien1">Ceux qui existent pour vrai, résumés en clair.</small></a></li>
+      <li><a data-view="votes" href="/votes"><span data-i18n="nav.votes">Votes</span><small data-i18n="p404.lien2">Qui a voté quoi, député·e par député·e.</small></a></li>
+      <li><a data-view="promesses" href="/promesses"><span data-i18n="nav.promesses">Promesses</span><small data-i18n="p404.lien3">Ce qui a été promis, mot pour mot, et les lois qui ont suivi.</small></a></li>
+      <li><a data-view="apercu" href="/"><span data-i18n="nav.apercu">Aperçu</span><small data-i18n="p404.lien4">On recommence du début, sans rancune.</small></a></li>
+    </ul>
+  </section>
