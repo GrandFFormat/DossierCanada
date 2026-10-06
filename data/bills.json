@@ -1,9 +1,70 @@
 {
   "source": "https://www.parl.ca/legisinfo/en/bills/json?parlsession=45-1",
   "session": "45-1",
-  "scrapedAt": "2026-10-05T17:02:35.720Z",
-  "count": 188,
+  "scrapedAt": "2026-10-06T14:58:16.285Z",
+  "count": 189,
   "bills": [
+    {
+      "id": 14240249,
+      "num": "C-40",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "commons",
+      "type": {
+        "en": "House Government Bill",
+        "fr": "Projet de loi émanant du gouvernement (Cdc)"
+      },
+      "isGovernment": true,
+      "title": {
+        "en": "An Act respecting production, procurement and investment in relation to national defence and national security",
+        "fr": "Loi concernant la production, l'approvisionnement et l'investissement relativement à la défense et la sécurité nationales"
+      },
+      "shortTitle": {
+        "en": "Strengthening Canada's Defence Sector Act",
+        "fr": "Loi visant à renforcer le secteur de la défense du Canada"
+      },
+      "sponsor": {
+        "en": "Hon. Joël Lightbound",
+        "fr": "L’hon. Joël Lightbound"
+      },
+      "status": {
+        "en": "At second reading in the House of Commons",
+        "fr": "À la deuxième lecture à la Chambre des communes"
+      },
+      "state": "encours",
+      "milestones": [
+        {
+          "stage": "commons_first_reading",
+          "chamber": "commons",
+          "reading": 1,
+          "date": "2026-10-06"
+        }
+      ],
+      "royalAssent": null,
+      "reinstated": false,
+      "latestActivity": {
+        "en": "At second reading in the House of Commons",
+        "fr": "À la deuxième lecture à la Chambre des communes",
+        "date": "2026-10-06"
+      },
+      "lastActivity": "2026-10-06",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-40",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-40"
+      },
+      "sponsorPersonId": 88532,
+      "sponsorName": {
+        "first": "Joël",
+        "last": "Lightbound"
+      },
+      "fullSummaryAvailable": false,
+      "summary": {
+        "en": null,
+        "fr": null
+      },
+      "summarySource": null
+    },
     {
       "id": 14240227,
       "num": "S-251",
@@ -5856,8 +5917,8 @@
         "fr": "Viviane Lapointe"
       },
       "status": {
-        "en": "At consideration in committee in the House of Commons",
-        "fr": "À l'examen en comité à la Chambre des communes"
+        "en": "At report stage in the House of Commons",
+        "fr": "À l'étape du rapport à la Chambre des communes"
       },
       "state": "encours",
       "milestones": [
@@ -5877,8 +5938,8 @@
       "royalAssent": null,
       "reinstated": false,
       "latestActivity": {
-        "en": "At consideration in committee in the House of Commons",
-        "fr": "À l'examen en comité à la Chambre des communes",
+        "en": "At report stage in the House of Commons",
+        "fr": "À l'étape du rapport à la Chambre des communes",
         "date": "2026-04-22"
       },
       "lastActivity": "2026-04-22",
@@ -8363,8 +8424,8 @@
         "fr": "Braedon Clark"
       },
       "status": {
-        "en": "At consideration in committee in the House of Commons",
-        "fr": "À l'examen en comité à la Chambre des communes"
+        "en": "At report stage in the House of Commons",
+        "fr": "À l'étape du rapport à la Chambre des communes"
       },
       "state": "encours",
       "milestones": [
@@ -8384,8 +8445,8 @@
       "royalAssent": null,
       "reinstated": false,
       "latestActivity": {
-        "en": "At consideration in committee in the House of Commons",
-        "fr": "À l'examen en comité à la Chambre des communes",
+        "en": "At report stage in the House of Commons",
+        "fr": "À l'étape du rapport à la Chambre des communes",
         "date": "2026-02-12"
       },
       "lastActivity": "2026-02-12",
@@ -13045,5 +13106,5 @@
       "summarySource": null
     }
   ],
-  "summariesScrapedAt": "2026-10-05T17:05:51.172Z"
+  "summariesScrapedAt": "2026-10-06T15:01:05.640Z"
 }
