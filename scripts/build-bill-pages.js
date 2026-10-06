@@ -10,6 +10,7 @@
 // Lancé APRÈS scripts/build-section-pages.js (il lit les pages qu'il génère), et
 // AVANT scripts/prerender-pages.js, qui y mettra la fiche du projet, ouverte.
 import { readFileSync, writeFileSync, mkdirSync, existsSync, rmSync, readdirSync } from 'node:fs';
+import { construireLlms } from './build-llms.js';
 import { pathFor, readSiteConfig, writeTitle, writeRegion, readBills, billPathFor, billFileFor, billSlug } from './seo-pages.js';
 
 const { PAGE_META, translations, SITE_ORIGIN } = readSiteConfig();
@@ -138,3 +139,6 @@ sitemap = sitemap.replace('</urlset>', [DEBUT, ...bloc, FIN, '</urlset>'].join('
 writeFileSync('sitemap.xml', sitemap, 'utf8');
 
 console.log(`ok ${ecrites} pages de projets (${bills.length} × 2) · sitemap : +${bloc.length} URL`);
+
+// /llms.txt : le site expliqué aux assistants. En dernier, quand toutes les pages existent.
+construireLlms();

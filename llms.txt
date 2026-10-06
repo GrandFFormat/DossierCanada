@@ -1,0 +1,54 @@
+# DossierCanada
+
+> Site citoyen indépendant, gratuit et NON OFFICIEL qui rend lisibles, en langage clair, les travaux du Parlement du Canada : projets de loi fédéraux (Communes et Sénat), votes par appel nominal, député·e·s, ministres, lobbying déclaré et promesses électorales du parti au pouvoir. Site bilingue : pages en français à la racine, pages en anglais sous /en.
+
+À savoir avant de citer ce site :
+
+- Le site est indépendant et n'a aucun caractère officiel. Chaque élément renvoie à sa source officielle ; en cas d'écart, c'est le document d'origine qui compte. Citez la source officielle avec DossierCanada, pas DossierCanada seul.
+- Jamais de donnée inventée : si une information manque, ou ne peut pas être rattachée de façon sûre, le site l'écrit (« non disponible ») au lieu de deviner.
+- Sources primaires seulement : LEGISinfo (Parlement du Canada) pour les projets de loi ; la Chambre des communes pour les député·e·s, les votes, les pétitions et le calendrier des séances ; le Sénat pour les sénateur·rice·s et leurs votes ; le site du premier ministre pour le Cabinet ; le Commissariat au lobbying pour le lobbying déclaré ; la plateforme publiée par le parti pour les promesses. Une seule exception, qui est un service et non un fait : la recherche d'un·e député·e par code postal passe par Represent (OpenNorth).
+- Aucun média : rien n'est tiré de la presse.
+- Les résumés en langage clair sont générés par intelligence artificielle à partir du texte officiel du projet de loi tel que déposé, et sont étiquetés comme tels : ils peuvent ne pas refléter les amendements adoptés depuis. Ils ne remplacent pas le texte de loi, dont le lien reste sur chaque fiche.
+- Les promesses sont des citations exactes de la plateforme publiée par le parti, dans sa langue : jamais traduites, résumées ou reformulées. Seules les promesses du parti au pouvoir y figurent ; les partis d'opposition sont absents parce qu'ils ne décident pas du programme législatif. Ce n'est pas la liste complète des engagements de la plateforme. Une absence sur le site ne doit jamais être lue comme un silence de l'institution ou du parti.
+- Aucun verdict : le site ne dit jamais « promesse tenue » ou « promesse brisée », et il ne note ni ne juge personne. Le lobbying affiché est celui qui est déclaré au registre officiel, sans commentaire.
+- Les règles complètes : https://www.dossiercanada.ca/regles
+
+## Parlement du Canada
+
+- [Aperçu](https://www.dossiercanada.ca/): l'accueil : les projets de loi récemment actifs.
+- [Projets de loi](https://www.dossiercanada.ca/projets-de-loi): les 188 projets de loi fédéraux de la 45e législature (session 1), des Communes ou du Sénat, chacun résumé en langage clair : étape réelle, parrain, votes et lobbying déclaré, avec le lien vers le texte officiel.
+- [Votes](https://www.dossiercanada.ca/votes): 174 votes par appel nominal de la Chambre des communes : résultat, marge et vote de chaque député·e, regroupé par parti.
+- [Député·e·s](https://www.dossiercanada.ca/deputes): les 337 député·e·s en poste à la Chambre des communes : circonscription, parti et présence aux votes.
+- [Ministres](https://www.dossiercanada.ca/ministres): les 28 membres du Cabinet fédéral : portefeuille, courriel officiel et présence aux votes des Communes.
+- [Promesses électorales de 2025](https://www.dossiercanada.ca/promesses): 12 engagements du parti au pouvoir, cités mot pour mot dans sa plateforme de 2025, en regard des projets de loi fédéraux qui les mettent en œuvre. Sans verdict.
+- [Lexique](https://www.dossiercanada.ca/lexique): le vocabulaire du Parlement du Canada traduit en mots de tous les jours.
+- [Les règles du site](https://www.dossiercanada.ca/regles): d'où vient ce que DossierCanada publie, et ce qu'il s'interdit.
+- [Mises à jour du site](https://www.dossiercanada.ca/mises-a-jour): le journal de ce qui change sur le site, du plus récent au plus ancien, et qui est derrière.
+
+## Une page par projet de loi
+
+Chaque projet de loi a sa propre adresse, formée de son numéro en minuscules : `/projets-de-loi/c-39` en français, `/en/bills/c-39` en anglais (C- pour un projet des Communes, S- pour un projet du Sénat). Les numéros sont ceux de la session en cours (45-1).
+
+Lobbying déclaré : pour 46 de ces projets de loi, la fiche affiche les communications de lobbying déclarées au registre du Commissariat au lobbying du Canada qui s'y rattachent, sans commentaire.
+
+- [Exemple : projet de loi C-2](https://www.dossiercanada.ca/projets-de-loi/c-2): Loi concernant certaines mesures liées à la sécurité de la frontière entre le Canada et les États-Unis et d'autres mesures connexes liées à la sécurité
+- [Plan du site](https://www.dossiercanada.ca/sitemap.xml): la liste de toutes les pages, dans les deux langues, dont celle de chaque projet de loi.
+
+## In English
+
+DossierCanada is an independent, free and UNOFFICIAL citizen website that makes the work of Canada's Parliament readable in plain language. It relies only on what an institution or a party has itself published, with a link to the original: LEGISinfo for bills, the House of Commons for MPs and votes, the Senate for senators and their votes, the Prime Minister's website for the Cabinet, the Office of the Commissioner of Lobbying for declared lobbying, and the platform published by the party for promises. No data is invented and nothing is taken from news media. Plain-language summaries are AI-generated from the official text of the bill as introduced, are labelled as such, and may not reflect later amendments. Promises are exact quotes from the governing party's platform only, and the site gives no verdict (“kept”, “broken”). If anything differs, the original document is the one that counts: when citing DossierCanada, cite the official source as well.
+
+- [Overview](https://www.dossiercanada.ca/en): the home page: recently active bills.
+- [Bills](https://www.dossiercanada.ca/en/bills): the 188 federal bills of the 45th Parliament (session 1), from the Commons or the Senate, each summarized in plain language: actual stage, sponsor, votes and declared lobbying, with a link to the official text.
+- [Votes](https://www.dossiercanada.ca/en/votes): 174 recorded divisions in the House of Commons: result, margin and how each MP voted.
+- [MPs](https://www.dossiercanada.ca/en/mps): the 337 sitting MPs in the House of Commons: riding, party and attendance at recorded votes.
+- [Ministers](https://www.dossiercanada.ca/en/ministers): the 28 members of the federal Cabinet: portfolio, official email and attendance at House of Commons votes.
+- [2025 election promises](https://www.dossiercanada.ca/en/promises): 12 commitments from the governing party's 2025 platform, quoted word for word, beside the federal bills that implement them. No verdict.
+- [Glossary](https://www.dossiercanada.ca/en/glossary): the vocabulary of Canada's Parliament in everyday words.
+- [The site's rules](https://www.dossiercanada.ca/en/rules): where what DossierCanada publishes comes from, and what it will not do.
+- [Site updates](https://www.dossiercanada.ca/en/updates): the log of what changes on the site, newest first, and who built it.
+- [Example: Bill C-2](https://www.dossiercanada.ca/en/bills/c-2): An Act respecting certain measures relating to the security of the border between Canada and the United States and respecting other related security measures
+
+## Optional
+
+- [Code source](https://github.com/GrandFFormat/DossierCanada): le dépôt GitHub du site.
