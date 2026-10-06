@@ -16,7 +16,7 @@
 ## Parlement du Canada
 
 - [Aperçu](https://www.dossiercanada.ca/): l'accueil : les projets de loi récemment actifs.
-- [Projets de loi](https://www.dossiercanada.ca/projets-de-loi): les 188 projets de loi fédéraux de la 45e législature (session 1), des Communes ou du Sénat, chacun résumé en langage clair : étape réelle, parrain, votes et lobbying déclaré, avec le lien vers le texte officiel.
+- [Projets de loi](https://www.dossiercanada.ca/projets-de-loi): les 189 projets de loi fédéraux de la 45e législature (session 1), des Communes ou du Sénat, chacun résumé en langage clair : étape réelle, parrain, votes et lobbying déclaré, avec le lien vers le texte officiel.
 - [Votes](https://www.dossiercanada.ca/votes): 174 votes par appel nominal de la Chambre des communes : résultat, marge et vote de chaque député·e, regroupé par parti.
 - [Député·e·s](https://www.dossiercanada.ca/deputes): les 337 député·e·s en poste à la Chambre des communes : circonscription, parti et présence aux votes.
 - [Ministres](https://www.dossiercanada.ca/ministres): les 28 membres du Cabinet fédéral : portefeuille, courriel officiel et présence aux votes des Communes.
@@ -39,7 +39,7 @@ Lobbying déclaré : pour 46 de ces projets de loi, la fiche affiche les communi
 DossierCanada is an independent, free and UNOFFICIAL citizen website that makes the work of Canada's Parliament readable in plain language. It relies only on what an institution or a party has itself published, with a link to the original: LEGISinfo for bills, the House of Commons for MPs and votes, the Senate for senators and their votes, the Prime Minister's website for the Cabinet, the Office of the Commissioner of Lobbying for declared lobbying, and the platform published by the party for promises. No data is invented and nothing is taken from news media. Plain-language summaries are AI-generated from the official text of the bill as introduced, are labelled as such, and may not reflect later amendments. Promises are exact quotes from the governing party's platform only, and the site gives no verdict (“kept”, “broken”). If anything differs, the original document is the one that counts: when citing DossierCanada, cite the official source as well.
 
 - [Overview](https://www.dossiercanada.ca/en): the home page: recently active bills.
-- [Bills](https://www.dossiercanada.ca/en/bills): the 188 federal bills of the 45th Parliament (session 1), from the Commons or the Senate, each summarized in plain language: actual stage, sponsor, votes and declared lobbying, with a link to the official text.
+- [Bills](https://www.dossiercanada.ca/en/bills): the 189 federal bills of the 45th Parliament (session 1), from the Commons or the Senate, each summarized in plain language: actual stage, sponsor, votes and declared lobbying, with a link to the official text.
 - [Votes](https://www.dossiercanada.ca/en/votes): 174 recorded divisions in the House of Commons: result, margin and how each MP voted.
 - [MPs](https://www.dossiercanada.ca/en/mps): the 337 sitting MPs in the House of Commons: riding, party and attendance at recorded votes.
 - [Ministers](https://www.dossiercanada.ca/en/ministers): the 28 members of the federal Cabinet: portfolio, official email and attendance at House of Commons votes.
