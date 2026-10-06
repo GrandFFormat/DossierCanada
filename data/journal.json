@@ -4,13 +4,15 @@
     "volet": "site",
     "fr": {
       "titre": "Une page 404 qui a de l’allure",
-      "texte": "Une adresse qui n’existe pas menait à une page nue. Elle mène maintenant à une vraie page du site, avec le menu et le pied de page : « Cette page est morte au Feuilleton », un vote par appel nominal sur son existence (0 pour, 404 contre) et des liens vers les vrais projets de loi, les votes et les promesses. Ce vote est une blague, et la page le dit : c’est la seule donnée inventée du site. Sous /en, la page s’affiche en anglais."
+      "texte": "Une adresse qui n’existe pas menait à une page nue. Elle mène maintenant à une vraie page du site, avec le menu et le pied de page : « Cette page a été renvoyée en comité », le rapport du « Comité permanent des pages introuvables » (0 réunion tenue, 404 jours d’attente) et des liens vers les vrais projets de loi, les votes et les promesses. Ce comité est une blague, et la page le dit : c’est la seule donnée inventée du site. Sous /en, la page s’affiche en anglais."
     },
     "en": {
       "titre": "A 404 page worth landing on",
-      "texte": "An address that does not exist used to lead to a bare page. It now leads to a real page of the site, with the menu and the footer: “This page died on the Order Paper”, a recorded division on its existence (0 yeas, 404 nays) and links to the real bills, votes and promises. That vote is a joke, and the page says so: it is the only invented data on the site. Under /en, the page shows in English."
+      "texte": "An address that does not exist used to lead to a bare page. It now leads to a real page of the site, with the menu and the footer: “This page was referred to committee”, the report of the “Standing Committee on Missing Pages” (0 meetings held, 404 days waiting) and links to the real bills, votes and promises. That committee is a joke, and the page says so: it is the only invented data on the site. Under /en, the page shows in English."
     },
-    "commits": []
+    "commits": [
+      "953aa25"
+    ]
   },
   {
     "date": "2026-10-06",

@@ -1240,7 +1240,7 @@
 
   /* ---------- PAGE 404 (vue « introuvable », scripts/vue-404.html) ----------
      Bande jaune d'avertissement, titre en deux lignes (la seconde en lettres creuses),
-     faux vote et liens. Le gros 404 est NOIR SUR JAUNE : pas de blanc sur noir. */
+     faux rapport de comité et liens. Le gros 404 est NOIR SUR JAUNE : pas de blanc sur noir. */
   #view-introuvable{ --page:var(--yellow); }
   .p404-bande{ align-items:flex-start; }
   .p404-bande > div{ min-width:0; }
@@ -1266,6 +1266,8 @@
   .p404-etapes li{ border:2px solid var(--ink); padding:4px 9px; }
   .p404-etapes .fait{ background:var(--yellow); color:var(--on-candy); }
   .p404-etapes .rate{ opacity:0.55; text-decoration:line-through; }
+  /* L'étape où la page est restée prise : pointillé, ni cochée ni barrée. */
+  .p404-etapes .encours{ border-style:dashed; background:var(--paper-2); }
   .p404-blague{ font-family:'Archivo',system-ui,sans-serif; font-size:13.5px; line-height:1.5; margin:14px 0 0; }
   .p404-blague a{ color:var(--ink); font-weight:700; text-decoration:underline; text-underline-offset:3px; }
   .p404-liens{ display:grid; grid-template-columns:repeat(auto-fit, minmax(210px, 1fr)); gap:14px; margin:28px 0 12px; padding:0; list-style:none; }
