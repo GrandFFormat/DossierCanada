@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-10-05T17:09:35.957Z",
+  "scrapedAt": "2026-10-06T15:04:39.274Z",
   "count": 20,
   "petitions": [
     {
@@ -18,7 +18,7 @@
         "fr": "Ouverte pour signature jusqu'au 19 janvier 2027 à 15 h 06 (HAE)"
       },
       "sponsor": "Julie Dzerowicz",
-      "signatures": 2815,
+      "signatures": 2834,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7774",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7774"
@@ -39,7 +39,7 @@
         "fr": "Ouverte pour signature jusqu'au 23 janvier 2027 à 14 h 28 (HAE)"
       },
       "sponsor": "Gord Johns",
-      "signatures": 1731,
+      "signatures": 1788,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7803",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7803"
@@ -60,10 +60,31 @@
         "fr": "Ouverte pour signature jusqu'au 28 décembre 2026 à 9 h 35 (HAE)"
       },
       "sponsor": "Yvan Baker",
-      "signatures": 1110,
+      "signatures": 1139,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7787",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7787"
+      }
+    },
+    {
+      "code": "e-7794",
+      "topic": {
+        "en": "Taxation",
+        "fr": "Fiscalité"
+      },
+      "keywords": {
+        "en": "Canadian film or video production tax credit Corporate income tax Film industry",
+        "fr": "Crédit d'impôt pour production cinématog ... Impôt des sociétés Industrie cinématographique"
+      },
+      "status": {
+        "en": "Open for signature until November 4, 2026, at 1:40 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 4 novembre 2026 à 13 h 40 (HAE)"
+      },
+      "sponsor": "Wade Chang",
+      "signatures": 1099,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7794",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7794"
       }
     },
     {
@@ -81,52 +102,10 @@
         "fr": "Ouverte pour signature jusqu'au 24 décembre 2026 à 15 h 24 (HAE)"
       },
       "sponsor": "David McKenzie",
-      "signatures": 713,
+      "signatures": 718,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7810",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7810"
-      }
-    },
-    {
-      "code": "e-7621",
-      "topic": {
-        "en": "Justice",
-        "fr": "Justice"
-      },
-      "keywords": {
-        "en": "Visual recording Vulnerable persons",
-        "fr": "Enregistrement visuel Personnes vulnérables"
-      },
-      "status": {
-        "en": "Open for signature until January 8, 2027, at 4:00 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 8 janvier 2027 à 16 h 00 (HAE)"
-      },
-      "sponsor": "Arielle Kayabaga",
-      "signatures": 689,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7621",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7621"
-      }
-    },
-    {
-      "code": "e-7612",
-      "topic": {
-        "en": "Justice",
-        "fr": "Justice"
-      },
-      "keywords": {
-        "en": "Bail Human trafficking Safety",
-        "fr": "Libération sous caution Sécurité publique Traite de personnes"
-      },
-      "status": {
-        "en": "Open for signature until October 14, 2026, at 9:39 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 14 octobre 2026 à 9 h 39 (HAE)"
-      },
-      "sponsor": "Rhonda Kirkland",
-      "signatures": 587,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7612",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7612"
       }
     },
     {
@@ -144,31 +123,10 @@
         "fr": "Ouverte pour signature jusqu'au 21 décembre 2026 à 11 h 27 (HAE)"
       },
       "sponsor": "Claude DeBellefeuille",
-      "signatures": 517,
+      "signatures": 523,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7785",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7785"
-      }
-    },
-    {
-      "code": "e-7766",
-      "topic": {
-        "en": "Social affairs and equality",
-        "fr": "Affaires sociales et égalité"
-      },
-      "keywords": {
-        "en": "Hate crimes Hate propaganda South Asian Canadians",
-        "fr": "Canadiens sud-asiatiques Crimes haineux Propagande haineuse"
-      },
-      "status": {
-        "en": "Open for signature until October 16, 2026, at 4:48 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 16 octobre 2026 à 16 h 48 (HAE)"
-      },
-      "sponsor": "Shelby Kramp-Neuman",
-      "signatures": 455,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7766",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7766"
       }
     },
     {
@@ -186,10 +144,52 @@
         "fr": "Ouverte pour signature jusqu'au 23 janvier 2027 à 14 h 54 (HAE)"
       },
       "sponsor": "Gabriel Hardy",
-      "signatures": 441,
+      "signatures": 499,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7746",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7746"
+      }
+    },
+    {
+      "code": "e-7766",
+      "topic": {
+        "en": "Social affairs and equality",
+        "fr": "Affaires sociales et égalité"
+      },
+      "keywords": {
+        "en": "Hate crimes Hate propaganda South Asian Canadians",
+        "fr": "Canadiens sud-asiatiques Crimes haineux Propagande haineuse"
+      },
+      "status": {
+        "en": "Open for signature until October 16, 2026, at 4:48 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 16 octobre 2026 à 16 h 48 (HAE)"
+      },
+      "sponsor": "Shelby Kramp-Neuman",
+      "signatures": 465,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7766",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7766"
+      }
+    },
+    {
+      "code": "e-7823",
+      "topic": {
+        "en": "Foreign affairs",
+        "fr": "Affaires étrangères"
+      },
+      "keywords": {
+        "en": "Europe European Union International relations Sovereignty",
+        "fr": "Europe Relations internationales Souveraineté Union européenne"
+      },
+      "status": {
+        "en": "Open for signature until January 3, 2027, at 1:30 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 3 janvier 2027 à 13 h 30 (HAE)"
+      },
+      "sponsor": "Glen Motz",
+      "signatures": 307,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7823",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7823"
       }
     },
     {
@@ -228,7 +228,7 @@
         "fr": "Ouverte pour signature jusqu'au 20 décembre 2026 à 14 h 56 (HAE)"
       },
       "sponsor": "Melissa Lantsman",
-      "signatures": 122,
+      "signatures": 126,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7739",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7739"
@@ -249,52 +249,10 @@
         "fr": "Ouverte pour signature jusqu'au 22 décembre 2026 à 15 h 01 (HAE)"
       },
       "sponsor": "Jessica Fancy",
-      "signatures": 88,
+      "signatures": 91,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7802",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7802"
-      }
-    },
-    {
-      "code": "e-7749",
-      "topic": {
-        "en": "Citizenship and immigration",
-        "fr": "Citoyenneté et immigration"
-      },
-      "keywords": {
-        "en": "Afghanistan Asylum Pakistan Refugees",
-        "fr": "Afghanistan Droit d'asile Pakistan Réfugiés"
-      },
-      "status": {
-        "en": "Open for signature until January 12, 2027, at 9:45 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 12 janvier 2027 à 9 h 45 (HAE)"
-      },
-      "sponsor": "Yasir Naqvi",
-      "signatures": 82,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7749",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7749"
-      }
-    },
-    {
-      "code": "e-7762",
-      "topic": {
-        "en": "Employment and labour",
-        "fr": "Travail et emploi"
-      },
-      "keywords": {
-        "en": "Caregivers and health care professionals Employment insurance caregiving benefits Neurological disorders",
-        "fr": "Prestations de l'assurance-emploi pour p ... Soignants et professionnels de la santé Troubles neurologiques"
-      },
-      "status": {
-        "en": "Open for signature until January 8, 2027, at 2:01 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 8 janvier 2027 à 14 h 01 (HAE)"
-      },
-      "sponsor": "Heather McPherson",
-      "signatures": 69,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7762",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7762"
       }
     },
     {
@@ -312,7 +270,7 @@
         "fr": "Ouverte pour signature jusqu'au 14 janvier 2027 à 16 h 47 (HAE)"
       },
       "sponsor": "Jeff Kibble",
-      "signatures": 67,
+      "signatures": 68,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7765",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7765"
@@ -375,31 +333,31 @@
         "fr": "Ouverte pour signature jusqu'au 27 janvier 2027 à 9 h 31 (HAE)"
       },
       "sponsor": "Jenny Kwan",
-      "signatures": 53,
+      "signatures": 56,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7775",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7775"
       }
     },
     {
-      "code": "e-7698",
+      "code": "e-7752",
       "topic": {
-        "en": "Taxation",
-        "fr": "Fiscalité"
+        "en": "Health",
+        "fr": "Santé"
       },
       "keywords": {
-        "en": "Agricultural research Food and drink Taxation",
-        "fr": "Aliments et boissons Fiscalité Recherche agricole"
+        "en": "Child health Food composition Food labelling",
+        "fr": "Composition des aliments Étiquetage des aliments Santé de l'enfant"
       },
       "status": {
-        "en": "Open for signature until January 14, 2027, at 4:46 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 14 janvier 2027 à 16 h 46 (HAE)"
+        "en": "Open for signature until January 3, 2027, at 1:35 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 3 janvier 2027 à 13 h 35 (HAE)"
       },
-      "sponsor": "Warren Steinley",
-      "signatures": 47,
+      "sponsor": "Bardish Chagger",
+      "signatures": 33,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7698",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7698"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7752",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7752"
       }
     },
     {
@@ -421,6 +379,48 @@
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7759",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7759"
+      }
+    },
+    {
+      "code": "e-7745",
+      "topic": {
+        "en": "Consumer protection",
+        "fr": "Protection des consommateurs"
+      },
+      "keywords": {
+        "en": "Consumers and consumer protection Electronic commerce Electronic funds transfers Subscriptions",
+        "fr": "Abonnements Commerce électronique Consommateurs et protection des consommateurs Transferts électroniques de fonds"
+      },
+      "status": {
+        "en": "Open for signature until February 2, 2027, at 1:06 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 2 février 2027 à 13 h 06 (HAE)"
+      },
+      "sponsor": "Marc Dalton",
+      "signatures": 22,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7745",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7745"
+      }
+    },
+    {
+      "code": "e-7619",
+      "topic": {
+        "en": "Health",
+        "fr": "Santé"
+      },
+      "keywords": {
+        "en": "C-280, An Act to enact the Mental Health ... Canada Health Transfer Drugs and alcohol Health care system Mental health",
+        "fr": "C-280, Loi édictant la Loi sur les servi ... Drogue et alcool Santé mentale Système de soins de santé Transfert canadien en matière de santé"
+      },
+      "status": {
+        "en": "Open for signature until February 2, 2027, at 1:38 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 2 février 2027 à 13 h 38 (HAE)"
+      },
+      "sponsor": "Gord Johns",
+      "signatures": 17,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7619",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7619"
       }
     }
   ]
