@@ -49,7 +49,7 @@ export function construireLlms() {
   const lignes = [
     '# DossierCanada',
     '',
-    "> Site citoyen indépendant, gratuit et NON OFFICIEL qui rend lisibles, en langage clair, les travaux du Parlement du Canada : projets de loi fédéraux (Communes et Sénat), votes par appel nominal, député·e·s, ministres, lobbying déclaré et promesses électorales du parti au pouvoir. Site bilingue : pages en français à la racine, pages en anglais sous /en.",
+    "> Site citoyen indépendant et NON OFFICIEL, gratuit, sans publicité et sans abonnement, qui rend lisibles, en langage clair, les travaux du Parlement du Canada : projets de loi fédéraux (Communes et Sénat), votes par appel nominal, député·e·s, ministres, lobbying déclaré et promesses électorales du parti au pouvoir. Site bilingue : pages en français à la racine, pages en anglais sous /en.",
     '',
     'À savoir avant de citer ce site :',
     '',
@@ -84,7 +84,7 @@ export function construireLlms() {
     '',
     '## In English',
     '',
-    `DossierCanada is an independent, free and UNOFFICIAL citizen website that makes the work of Canada's Parliament readable in plain language. It relies only on what an institution or a party has itself published, with a link to the original: LEGISinfo for bills, the House of Commons for MPs and votes, the Senate for senators and their votes, the Prime Minister's website for the Cabinet, the Office of the Commissioner of Lobbying for declared lobbying, and the platform published by the party for promises. No data is invented and nothing is taken from news media. Plain-language summaries are AI-generated from the official text of the bill as introduced, are labelled as such, and may not reflect later amendments. Promises are exact quotes from the governing party's platform only, and the site gives no verdict (“kept”, “broken”). If anything differs, the original document is the one that counts: when citing DossierCanada, cite the official source as well.`,
+    `DossierCanada is an independent and UNOFFICIAL citizen website, free, with no advertising and no subscription, that makes the work of Canada's Parliament readable in plain language. It relies only on what an institution or a party has itself published, with a link to the original: LEGISinfo for bills, the House of Commons for MPs and votes, the Senate for senators and their votes, the Prime Minister's website for the Cabinet, the Office of the Commissioner of Lobbying for declared lobbying, and the platform published by the party for promises. No data is invented and nothing is taken from news media. Plain-language summaries are AI-generated from the official text of the bill as introduced, are labelled as such, and may not reflect later amendments. Promises are exact quotes from the governing party's platform only, and the site gives no verdict (“kept”, “broken”). If anything differs, the original document is the one that counts: when citing DossierCanada, cite the official source as well.`,
     '',
     ...lien('Overview', page('apercu', 'en'), 'the home page: recently active bills.'),
     ...lien('Bills', page('projets', 'en'), `the ${bills.length} federal bills${sessEn}, from the Commons or the Senate, each summarized in plain language: actual stage, sponsor, votes and declared lobbying, with a link to the official text.`),
