@@ -14,7 +14,7 @@
 //     par scripts/prerender-pages.js) et on vide les autres.
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { createHash } from 'node:crypto';
-import { SRC, APP_CSS, APP_JS, PAGES, SSR, ALL_REGIONS, regionsOf, pathFor, readSiteConfig, readRegion, writeRegion, readTitle, writeTitle } from './seo-pages.js';
+import { SRC, APP_CSS, APP_JS, PAGES, SSR, ALL_REGIONS, GLOBAL_REGIONS, regionsOf, pathFor, readSiteConfig, readRegion, writeRegion, readTitle, writeTitle } from './seo-pages.js';
 
 const raw = readFileSync(SRC, 'utf8');
 const NL = raw.includes('\r\n') ? '\r\n' : '\n';
@@ -246,6 +246,65 @@ for (const page of PAGES) {
   writeFileSync(page.file, html, 'utf8');
   count++;
   console.log(`ok ${page.file.padEnd(22)} ${(Buffer.byteLength(html) / 1024).toFixed(0).padStart(4)} Ko  ${page.path}`);
+}
+
+/* PAGE 404 — 404.html, à la racine. Vercel sert CE fichier, avec le code 404, pour toute
+   adresse inconnue, y compris sous /en/ : un seul fichier, donc écrit en français ;
+   assets/app.js le passe en anglais quand l'adresse demandée commence par /en.
+   Même gabarit que les autres pages (en-tête, menu, pied de page), plus la vue
+   « introuvable » de scripts/vue-404.html, qui n'entre dans AUCUNE autre page.
+   noindex, sans canonical ni hreflang, hors du sitemap et hors de PAGES (pas de pré-rendu).
+   Tous les chemins sont absolus : la page est servie à n'importe quelle profondeur. */
+function build404() {
+  const m = PAGE_META.introuvable;
+  must(m && m.fr && m.en && m.dfr && m.den, 'PAGE_META.introuvable incomplet');
+  must(!raw.includes('id="view-introuvable"'), 'la vue « introuvable » ne doit pas être dans le gabarit (elle vit dans ' + VUE_404 + ')');
+  let h = raw;
+
+  // 1) <head> : titre, description, noindex. Rien d'autre.
+  h = h.replace(/<!-- SEO:START[\s\S]*?<!-- SEO:END -->/, () => [
+    '<!-- SEO:START — bloc GÉNÉRÉ par scripts/build-section-pages.js (page 404 : noindex,',
+    '     ni canonical ni hreflang). Textes : PAGE_META.introuvable dans assets/app.js. -->',
+    `<title>${escText(m.fr)}</title>`,
+    `<meta name="description" content="${escAttr(m.dfr)}">`,
+    '<meta name="robots" content="noindex">',
+    '<!-- SEO:END -->',
+  ].join(NL));
+  for (const [file, v] of Object.entries(ASSET_V)) {
+    h = h.replace(new RegExp('(href|src)="' + file + '\\?v=[^"]*"', 'g'), (_, a) => `${a}="${file}?v=${v}"`);
+  }
+
+  // 2) Aucune vue du gabarit active, aucun onglet actif ; la vue 404 entre à la fin de .app.
+  h = h.replace('<section class="view active" id="view-apercu">', '<section class="view" id="view-apercu">');
+  h = h.replace('<a class="active" data-view="apercu" href="/" aria-current="page">', '<a data-view="apercu" href="/">');
+  const vue = readFileSync(VUE_404, 'utf8').replace(/\r?\n/g, NL).replace(/\s+$/, '');
+  must(vue.includes('<section class="view active" id="view-introuvable">'), VUE_404 + ' : section #view-introuvable active absente');
+  must(!/(?:href|src)="(?!\/|https:\/\/)/.test(vue), VUE_404 + ' : tous les chemins doivent être absolus');
+  const fin = NL + '</div>' + NL + NL + '<footer>';
+  must(h.split(fin).length === 2, 'fin de .app introuvable dans le gabarit (</div> puis <footer>)');
+  h = h.replace(fin, () => NL + vue + NL + fin);
+
+  // 3) Un seul H1 : le titre de la page 404.
+  h = h.replace(/<h1 class="sr-only" data-i18n="seo\.h1">([^<]*)<\/h1>/, '<h2 class="sr-only" data-i18n="seo.h1">$1</h2>');
+  const titre = /<h2 class="p404-titre" id="p404Titre">([\s\S]*?)<\/h2>/;
+  must(titre.test(h), 'titre #p404Titre absent de ' + VUE_404);
+  h = h.replace(titre, '<h1 class="p404-titre" id="p404Titre">$1</h1>');
+  must((h.match(/<h1\b/g) || []).length === 1, '404.html : doit contenir exactement un <h1>');
+
+  // 4) Zones pré-rendues : on garde l'en-tête (bandeau défilant, provinces) tel que
+  //    pré-rendu dans l'Aperçu ; le reste est vidé.
+  const garde = new Set(GLOBAL_REGIONS);
+  for (const id of ALL_REGIONS) if (!garde.has(id)) h = writeRegion(h, id, '');
+  for (const [id, fb] of Object.entries(TITLE_FALLBACK)) h = writeTitle(h, id, fb.fr);
+
+  must(/<meta name="robots" content="noindex">/.test(h) && !/rel="canonical"/.test(h), '404.html : noindex absent ou canonical présent');
+  return h;
+}
+const VUE_404 = 'scripts/vue-404.html';
+{
+  const html = build404();
+  writeFileSync('404.html', html, 'utf8');
+  console.log(`ok ${'404.html'.padEnd(22)} ${(Buffer.byteLength(html) / 1024).toFixed(0).padStart(4)} Ko  (toute adresse inconnue)`);
 }
 
 // sitemap.xml : toutes les URL publiques (FR + EN), chacune avec ses alternatives de langue.

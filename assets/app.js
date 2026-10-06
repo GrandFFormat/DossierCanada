@@ -287,6 +287,31 @@ const translations = {
     'intro.compact.text':"Independent citizen-run site · Our mission",
     'intro.show':"😴 Show",
     'intro.hide':"😴 Collapse",
+    // Page 404 (scripts/vue-404.html). Le français est dans le fragment.
+    'p404.fil':"Page not found",
+    'p404.bande.h':"⚠️ Error 404 — this address leads nowhere",
+    'p404.bande.p':"The page you asked for does not exist on DossierCanada, or its address has changed. No harm done: <b>the real bills are one click away.</b>",
+    'p404.l1':"This page died",
+    'p404.l2':"on the Order Paper.",
+    'p404.sub':"Dying on the Order Paper is what happens to a bill that has not passed when the session ends. This page met the same fate: introduced with the best intentions, never passed. <b>Or the address has a typo, which happens even to legislative drafters.</b>",
+    'p404.vote.sur':"Recorded division",
+    'p404.vote.motion':"“That this page exist.”",
+    'p404.pour':"Yeas",
+    'p404.contre':"Nays",
+    'p404.paires':"Paired",
+    'p404.verdict':"Motion defeated. Not even close.",
+    'p404.e1':"First reading ✓",
+    'p404.e2':"Second reading",
+    'p404.e3':"Committee",
+    'p404.e4':"Third reading",
+    'p404.e5':"Senate",
+    'p404.e6':"Royal assent",
+    'p404.blague':"This vote is a joke: it never took place, and there are not 404 MPs in the Commons. On this site, it is the only invented data.",
+    'p404.blague.lien':"The real votes are here.",
+    'p404.lien1':"The ones that actually exist, in plain language.",
+    'p404.lien2':"Who voted for what, MP by MP.",
+    'p404.lien3':"What was promised, word for word, and the laws that followed.",
+    'p404.lien4':"Let's start over, no hard feelings.",
   }
 };
 function langFromPath(){
@@ -4001,7 +4026,12 @@ const PAGE_META = {
   regles:    { fr:"Les règles de sources du site — DossierCanada",
                en:"The site's sourcing rules — DossierCanada",
                dfr:"Les huit règles de DossierCanada sur ses sources : jamais de donnée inventée, sources primaires du Parlement du Canada, aucun média, citations mot pour mot, aucun verdict.",
-               den:"DossierCanada's eight sourcing rules: no invented data, primary sources from Canada's Parliament only, no news media, word-for-word quotes, no verdict." }
+               den:"DossierCanada's eight sourcing rules: no invented data, primary sources from Canada's Parliament only, no news media, word-for-word quotes, no verdict." },
+  // Page 404 : hors de VIEWS (pas d'adresse à elle, noindex, hors sitemap). Voir scripts/vue-404.html.
+  introuvable:{ fr:"Page introuvable (404) — DossierCanada",
+               en:"Page not found (404) — DossierCanada",
+               dfr:"Cette page n'existe pas sur DossierCanada, ou son adresse a changé. Les projets de loi fédéraux, les votes aux Communes et les promesses sont à un clic d'ici.",
+               den:"This page does not exist on DossierCanada, or its address has changed. Federal bills, Commons votes and election promises are one click away." }
 };
 function pathParts(){
   const parts = location.pathname.replace(/\.html$/, '').split('/').filter(Boolean);
@@ -4022,7 +4052,13 @@ function billNumFromPath(){
   const b = (typeof bills !== 'undefined' ? bills : []).find(x => String(x.num).toUpperCase() === cherche);
   return b ? b.num : null;
 }
+/* PAGE 404 — Vercel sert 404.html à N'IMPORTE quelle adresse inconnue : c'est la présence
+   de la vue qui la désigne, pas le chemin (sinon l'adresse inconnue se prendrait pour
+   l'Aperçu). Seulement tant qu'on est à l'adresse d'arrivée : dès qu'on clique vers un
+   onglet (navigation sans rechargement), les adresses reprennent leur sens habituel. */
+const CHEMIN_404 = document.getElementById('view-introuvable') ? location.pathname : null;
 function viewFromPath(){
+  if(CHEMIN_404 !== null && location.pathname === CHEMIN_404) return 'introuvable';
   const { lang, seg } = pathParts();
   const table = lang === 'en' ? SLUG_VIEWS_EN : SLUG_VIEWS;
   return table[seg] || 'apercu';
@@ -4047,6 +4083,12 @@ function syncHead(viewName){
   const m = PAGE_META[viewName]; if(!m) return;
   const en = (typeof currentLang !== 'undefined' && currentLang === 'en');
   const title = en ? m.en : m.fr, desc = en ? m.den : m.dfr;
+  // La page 404 n'a ni adresse canonique ni équivalent dans l'autre langue : titre et description seulement.
+  if(viewName === 'introuvable'){
+    document.title = title;
+    const d = document.querySelector('meta[name="description"]'); if(d) d.setAttribute('content', desc);
+    return;
+  }
   const url = SITE_ORIGIN + pathForView(viewName, currentLang);
   document.title = title;
   const set = (sel, attr, val) => { const el = document.querySelector(sel); if(el) el.setAttribute(attr, val); };
@@ -4354,6 +4396,9 @@ function renderAll(){
   // Chaque étape est isolée : une panne (réseau, extension de navigateur, donnée
   // inattendue) ne doit plus empêcher le reste de la page de s'afficher.
   const safe = async (f) => { try { await f(); } catch (e) { console.error('[init]', f.name || f, e); } };
+  // Page 404 demandée sous /en : l'anglais tout de suite, sans attendre les comptes ni
+  // les données (le fichier 404.html est unique, donc écrit en français).
+  if(CHEMIN_404 !== null && currentLang === 'en') await safe(applyLanguage);
   await safe(loadFollowed);
   await safe(loadIntroState);
   await safe(loadTheme);

@@ -28,7 +28,14 @@ createServer(async (req, res) => {
     res.writeHead(200, { 'Content-Type': MIME[extname(filePath)] || 'application/octet-stream' });
     res.end(data);
   } catch {
-    res.writeHead(404);
-    res.end('Not found');
+    // Comme Vercel : toute adresse inconnue reçoit 404.html, avec le code 404.
+    try {
+      const page = await readFile(join(ROOT, '404.html'));
+      res.writeHead(404, { 'Content-Type': MIME['.html'] });
+      res.end(page);
+    } catch {
+      res.writeHead(404);
+      res.end('Not found');
+    }
   }
 }).listen(PORT, () => console.log(`Serving ${ROOT} on http://localhost:${PORT}`));
