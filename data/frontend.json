@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T15:04:48.306Z",
+  "generatedAt": "2026-10-07T15:32:17.639Z",
   "session": "45-1",
   "meta": {
     "counts": {
@@ -11,6 +11,92 @@
     "formerMembersInVotes": 12
   },
   "bills": [
+    {
+      "id": 13605049,
+      "num": "C-10",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "commons",
+      "type": {
+        "en": "House Government Bill",
+        "fr": "Projet de loi émanant du gouvernement (Cdc)"
+      },
+      "isGovernment": true,
+      "title": {
+        "en": "An Act respecting the Commissioner for Modern Treaty Implementation",
+        "fr": "Loi concernant le commissaire à la mise en œuvre des traités modernes"
+      },
+      "shortTitle": {
+        "en": "Commissioner for Modern Treaty Implementation Act",
+        "fr": "Loi sur le commissaire à la mise en œuvre des traités modernes"
+      },
+      "sponsor": {
+        "en": "Hon. Rebecca Alty",
+        "fr": "L’hon. Rebecca Alty"
+      },
+      "status": {
+        "en": "At consideration in committee in the Senate",
+        "fr": "À l'examen en comité au Sénat"
+      },
+      "state": "encours",
+      "milestones": [
+        {
+          "stage": "commons_first_reading",
+          "chamber": "commons",
+          "reading": 1,
+          "date": "2025-09-25"
+        },
+        {
+          "stage": "commons_second_reading",
+          "chamber": "commons",
+          "reading": 2,
+          "date": "2026-02-09"
+        },
+        {
+          "stage": "commons_third_reading",
+          "chamber": "commons",
+          "reading": 3,
+          "date": "2026-09-21"
+        },
+        {
+          "stage": "senate_first_reading",
+          "chamber": "senate",
+          "reading": 1,
+          "date": "2026-09-28"
+        },
+        {
+          "stage": "senate_second_reading",
+          "chamber": "senate",
+          "reading": 2,
+          "date": "2026-10-06"
+        }
+      ],
+      "royalAssent": null,
+      "reinstated": false,
+      "latestActivity": {
+        "en": "At consideration in committee in the Senate",
+        "fr": "À l'examen en comité au Sénat",
+        "date": "2026-10-06"
+      },
+      "lastActivity": "2026-10-06",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-10",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-10"
+      },
+      "sponsorPersonId": 123675,
+      "sponsorName": {
+        "first": "Rebecca",
+        "last": "Alty"
+      },
+      "fullSummaryAvailable": true,
+      "summary": {
+        "en": "A legislative summary is currently being prepared for this bill by the Parliamentary Information, Education and Research Services of the Library of Parliament. Meanwhile, the following executive summary is available.\n\nOn 25 September 2025, the Minister of Crown-Indigenous Relations introduced Bill C-10, An Act respecting the Commissioner for Modern Treaty Implementation (Commissioner for Modern Treaty Implementation Act) and it was given first reading.\n\nBill C-10 provides for the appointment of a Commissioner for Modern Treaty Implementation to conduct reviews and performance audits of the activities of government institutions related to the implementation of modern treaties. It also establishes the Office of the Commissioner for Modern Treaty Implementation for the purpose of assisting the Commissioner in the fulfillment of their mandate and the exercise of their powers and the performance of their duties and functions. Finally, it makes consequential amendments to other Acts.A legislative summary is currently being prepared for this bill by the Parliamentary Information, Education and Research Services of the Library of Parliament. Meanwhile, the following executive summary is available.\n\nOn 25 September 2025, the Minister of Crown-Indigenous Relations introduced Bill C-10, An Act respecting the Commissioner for Modern Treaty Implementation (Commissioner for Modern Treaty Implementation Act) and it was given first reading.\n\nBill C-10 provides for the appointment of a Commissioner for Modern Treaty Implementation to conduct reviews and performance audits of the activities of government institutions related to the implementation of modern treaties. It also establishes the Office of the Commissioner for Modern Treaty Implementation for the purpose of assisting the Commissioner in the fulfillment of their mandate and the exercise of their powers and the performance of their duties and functions. Finally, it makes consequential amendments to other Acts.",
+        "fr": "Les Service d’information, d’éducation et de recherche parlementaires de la Bibliothèque du Parlement rédige actuellement le résumé législatif de ce projet de loi. Entre-temps, le Service met à votre disposition le sommaire suivant.\n\nLe 25 septembre 2025, le ministre des Relations Couronne-Autochtones a déposé le projet de loi C-10, Loi concernant le commissaire à la mise en œuvre des traités modernes (Loi sur le commissaire à la mise en œuvre des traités modernes) à la Chambre des communes en première lecture.\n\nLe projet de loi C-10 confie au commissaire à la mise en œuvre des traités modernes la charge d’effectuer des examens et des vérifications de performance à l’égard des activités des institutions fédérales liées à la mise en œuvre de ces traités. De plus, il constitue le Commissariat à la mise en œuvre des traités modernes afin de soutenir le commissaire dans l’accomplissement de sa mission et l’exercice de ses attributions. Enfin, il apporte des modifications corrélatives à d’autres lois.Les Service d’information, d’éducation et de recherche parlementaires de la Bibliothèque du Parlement rédige actuellement le résumé législatif de ce projet de loi. Entre-temps, le Service met à votre disposition le sommaire suivant.\n\nLe 25 septembre 2025, le ministre des Relations Couronne-Autochtones a déposé le projet de loi C-10, Loi concernant le commissaire à la mise en œuvre des traités modernes (Loi sur le commissaire à la mise en œuvre des traités modernes) à la Chambre des communes en première lecture.\n\nLe projet de loi C-10 confie au commissaire à la mise en œuvre des traités modernes la charge d’effectuer des examens et des vérifications de performance à l’égard des activités des institutions fédérales liées à la mise en œuvre de ces traités. De plus, il constitue le Commissariat à la mise en œuvre des traités modernes afin de soutenir le commissaire dans l’accomplissement de sa mission et l’exercice de ses attributions. Enfin, il apporte des modifications corrélatives à d’autres lois."
+      },
+      "summarySource": "library",
+      "divisions": []
+    },
     {
       "id": 14240249,
       "num": "C-40",
@@ -67,10 +153,10 @@
       },
       "fullSummaryAvailable": false,
       "summary": {
-        "en": null,
-        "fr": null
+        "en": "This enactment contains measures relating to production, procurement and investment in respect of national defence and national security.\n\nPart 1 enacts the Canadian Corporation for Defence Investment Act. That Act establishes the Canadian Corporation for Defence Investment, a corporation whose mandate is to, among other things, carry out activities related to production, procurement and investment in respect of national defence for the benefit of the Canadian Forces or the Department of National Defence or for associated governments. Part 1 also makes related and consequential amendments to other Acts.\n\nPart 2 amends the Defence Production Act to, among other things,\n\n(a) extend the application of that Act to supplies and projects related to national security and to services related to national defence and national security;\n\n(b) provide that the Minister of Public Works and Government Services has the authority to acquire supplies and services related to national defence and national security that are required for the purposes of a department, board or agency of the Government of Canada, subject to certain exceptions;\n\n(c) extend the purposes for which that Minister may engage in stockpiling to include national defence and national security, including economic security, and the defence and security of an associated government or other state;\n\n(d) provide that Minister with new financial authorities, including the authority to enter into financial transactions for the purpose of investment in national defence and national security sectors; and\n\n(e) establish procurement rules in relation to national defence and national security.\n\nPart 2 also makes consequential amendments to the Access to Information Act and terminology changes to certain legislative texts.\n\nPart 3 provides for a review of the operation of the Canadian Corporation for Defence Investment Act and the amendments to the Defence Production Act.",
+        "fr": "Le texte comprend des mesures concernant la production, l’approvisionnement et l’investissement relativement à la défense et à la sécurité nationales.\n\nLa partie 1 édicte la Loi sur la Société canadienne d’investissement pour la défense. Cette loi constitue la Société canadienne d’investissement pour la défense, une société dont la mission est, notamment, d’exercer des activités liées à la production, à l’approvisionnement et à l’investissement relativement à la défense nationale pour le compte des Forces canadiennes ou du ministère de la Défense nationale ou pour des gouvernements associés. Elle apporte également des modifications connexes et corrélatives à d’autres lois.\n\nLa partie 2 modifie la Loi sur la production de défense afin, notamment :\n\na) d’étendre l’application de cette loi au matériel et aux ouvrages en lien avec la sécurité nationale ainsi qu’aux services relatifs à la défense et à la sécurité nationales;\n\nb) de prévoir que le ministre des Travaux publics et des Services gouvernementaux a le pouvoir de faire l’acquisition de matériel et de services relatifs à la défense et à la sécurité nationales pour les besoins des ministères et organismes fédéraux, sous réserve de certaines exceptions;\n\nc) d’élargir la portée des fins pour lesquelles ce ministre peut accumuler des stocks pour y inclure la défense nationale, la sécurité nationale, y compris la sécurité économique, et la défense ainsi que la sécurité d’un gouvernement associé ou d’un autre État;\n\nd) d’accorder à ce ministre de nouveaux pouvoirs en matière financière, y compris celui de conclure des transactions financières à des fins d’investissement dans les secteurs de la défense et de la sécurité nationales;\n\ne) d’établir des règles en matière d’approvisionnement relativement à la défense et à la sécurité nationales.\n\nElle apporte également des modifications corrélatives à une autre loi et des modifications terminologiques à certains textes législatifs.\n\nLa partie 3 prévoit un examen de l’application de la Loi sur la Société canadienne d’investissement pour la défense et des modifications à la Loi sur la production de défense."
       },
-      "summarySource": null,
+      "summarySource": "bill",
       "divisions": []
     },
     {
@@ -130,86 +216,6 @@
         "fr": "Le texte prévoit que le ministre de l’Environnement doit élaborer une stratégie nationale pour mettre fin à la pauvreté énergétique au Canada. Il prévoit également la présentation régulière au Parlement de rapports sur la mise en œuvre de la stratégie et la création d’un comité consultatif chargé de conseiller le ministre sur l’élaboration, la mise en œuvre et l’évaluation de la stratégie."
       },
       "summarySource": "bill",
-      "divisions": []
-    },
-    {
-      "id": 13605049,
-      "num": "C-10",
-      "session": "45-1",
-      "parliament": 45,
-      "sessionNumber": 1,
-      "chamber": "commons",
-      "type": {
-        "en": "House Government Bill",
-        "fr": "Projet de loi émanant du gouvernement (Cdc)"
-      },
-      "isGovernment": true,
-      "title": {
-        "en": "An Act respecting the Commissioner for Modern Treaty Implementation",
-        "fr": "Loi concernant le commissaire à la mise en œuvre des traités modernes"
-      },
-      "shortTitle": {
-        "en": "Commissioner for Modern Treaty Implementation Act",
-        "fr": "Loi sur le commissaire à la mise en œuvre des traités modernes"
-      },
-      "sponsor": {
-        "en": "Hon. Rebecca Alty",
-        "fr": "L’hon. Rebecca Alty"
-      },
-      "status": {
-        "en": "At second reading in the Senate",
-        "fr": "À la deuxième lecture au Sénat"
-      },
-      "state": "encours",
-      "milestones": [
-        {
-          "stage": "commons_first_reading",
-          "chamber": "commons",
-          "reading": 1,
-          "date": "2025-09-25"
-        },
-        {
-          "stage": "commons_second_reading",
-          "chamber": "commons",
-          "reading": 2,
-          "date": "2026-02-09"
-        },
-        {
-          "stage": "commons_third_reading",
-          "chamber": "commons",
-          "reading": 3,
-          "date": "2026-09-21"
-        },
-        {
-          "stage": "senate_first_reading",
-          "chamber": "senate",
-          "reading": 1,
-          "date": "2026-09-28"
-        }
-      ],
-      "royalAssent": null,
-      "reinstated": false,
-      "latestActivity": {
-        "en": "At second reading in the Senate",
-        "fr": "À la deuxième lecture au Sénat",
-        "date": "2026-09-28"
-      },
-      "lastActivity": "2026-09-28",
-      "url": {
-        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-10",
-        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-10"
-      },
-      "sponsorPersonId": 123675,
-      "sponsorName": {
-        "first": "Rebecca",
-        "last": "Alty"
-      },
-      "fullSummaryAvailable": true,
-      "summary": {
-        "en": "A legislative summary is currently being prepared for this bill by the Parliamentary Information, Education and Research Services of the Library of Parliament. Meanwhile, the following executive summary is available.\n\nOn 25 September 2025, the Minister of Crown-Indigenous Relations introduced Bill C-10, An Act respecting the Commissioner for Modern Treaty Implementation (Commissioner for Modern Treaty Implementation Act) and it was given first reading.\n\nBill C-10 provides for the appointment of a Commissioner for Modern Treaty Implementation to conduct reviews and performance audits of the activities of government institutions related to the implementation of modern treaties. It also establishes the Office of the Commissioner for Modern Treaty Implementation for the purpose of assisting the Commissioner in the fulfillment of their mandate and the exercise of their powers and the performance of their duties and functions. Finally, it makes consequential amendments to other Acts.A legislative summary is currently being prepared for this bill by the Parliamentary Information, Education and Research Services of the Library of Parliament. Meanwhile, the following executive summary is available.\n\nOn 25 September 2025, the Minister of Crown-Indigenous Relations introduced Bill C-10, An Act respecting the Commissioner for Modern Treaty Implementation (Commissioner for Modern Treaty Implementation Act) and it was given first reading.\n\nBill C-10 provides for the appointment of a Commissioner for Modern Treaty Implementation to conduct reviews and performance audits of the activities of government institutions related to the implementation of modern treaties. It also establishes the Office of the Commissioner for Modern Treaty Implementation for the purpose of assisting the Commissioner in the fulfillment of their mandate and the exercise of their powers and the performance of their duties and functions. Finally, it makes consequential amendments to other Acts.",
-        "fr": "Les Service d’information, d’éducation et de recherche parlementaires de la Bibliothèque du Parlement rédige actuellement le résumé législatif de ce projet de loi. Entre-temps, le Service met à votre disposition le sommaire suivant.\n\nLe 25 septembre 2025, le ministre des Relations Couronne-Autochtones a déposé le projet de loi C-10, Loi concernant le commissaire à la mise en œuvre des traités modernes (Loi sur le commissaire à la mise en œuvre des traités modernes) à la Chambre des communes en première lecture.\n\nLe projet de loi C-10 confie au commissaire à la mise en œuvre des traités modernes la charge d’effectuer des examens et des vérifications de performance à l’égard des activités des institutions fédérales liées à la mise en œuvre de ces traités. De plus, il constitue le Commissariat à la mise en œuvre des traités modernes afin de soutenir le commissaire dans l’accomplissement de sa mission et l’exercice de ses attributions. Enfin, il apporte des modifications corrélatives à d’autres lois.Les Service d’information, d’éducation et de recherche parlementaires de la Bibliothèque du Parlement rédige actuellement le résumé législatif de ce projet de loi. Entre-temps, le Service met à votre disposition le sommaire suivant.\n\nLe 25 septembre 2025, le ministre des Relations Couronne-Autochtones a déposé le projet de loi C-10, Loi concernant le commissaire à la mise en œuvre des traités modernes (Loi sur le commissaire à la mise en œuvre des traités modernes) à la Chambre des communes en première lecture.\n\nLe projet de loi C-10 confie au commissaire à la mise en œuvre des traités modernes la charge d’effectuer des examens et des vérifications de performance à l’égard des activités des institutions fédérales liées à la mise en œuvre de ces traités. De plus, il constitue le Commissariat à la mise en œuvre des traités modernes afin de soutenir le commissaire dans l’accomplissement de sa mission et l’exercice de ses attributions. Enfin, il apporte des modifications corrélatives à d’autres lois."
-      },
-      "summarySource": "library",
       "divisions": []
     },
     {
@@ -496,8 +502,8 @@
         "fr": "L’hon. François-Philippe Champagne"
       },
       "status": {
-        "en": "At consideration in committee in the House of Commons",
-        "fr": "À l'examen en comité à la Chambre des communes"
+        "en": "At report stage in the House of Commons",
+        "fr": "À l'étape du rapport à la Chambre des communes"
       },
       "state": "encours",
       "milestones": [
@@ -517,8 +523,8 @@
       "royalAssent": null,
       "reinstated": false,
       "latestActivity": {
-        "en": "At consideration in committee in the House of Commons",
-        "fr": "À l'examen en comité à la Chambre des communes",
+        "en": "At report stage in the House of Commons",
+        "fr": "À l'étape du rapport à la Chambre des communes",
         "date": "2026-09-22"
       },
       "lastActivity": "2026-09-22",
@@ -7160,8 +7166,8 @@
         "fr": "Luc Berthold"
       },
       "status": {
-        "en": "At report stage in the House of Commons",
-        "fr": "À l'étape du rapport à la Chambre des communes"
+        "en": "At third reading in the House of Commons",
+        "fr": "À l'étape de la troisième lecture à la Chambre des communes"
       },
       "state": "encours",
       "milestones": [
@@ -7181,8 +7187,8 @@
       "royalAssent": null,
       "reinstated": false,
       "latestActivity": {
-        "en": "At report stage in the House of Commons",
-        "fr": "À l'étape du rapport à la Chambre des communes",
+        "en": "At third reading in the House of Commons",
+        "fr": "À l'étape de la troisième lecture à la Chambre des communes",
         "date": "2026-04-15"
       },
       "lastActivity": "2026-04-15",
