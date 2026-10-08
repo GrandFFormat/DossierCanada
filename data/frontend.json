@@ -1,16 +1,137 @@
 {
-  "generatedAt": "2026-10-07T15:32:17.639Z",
+  "generatedAt": "2026-10-08T15:36:06.830Z",
   "session": "45-1",
   "meta": {
     "counts": {
-      "bills": 189,
+      "bills": 191,
       "deputes": 337,
-      "votes": 174
+      "votes": 177
     },
-    "votesLinkedToBill": 97,
+    "votesLinkedToBill": 98,
     "formerMembersInVotes": 12
   },
   "bills": [
+    {
+      "id": 14246258,
+      "num": "C-292",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "commons",
+      "type": {
+        "en": "Private Member’s Bill",
+        "fr": "Projet de loi émanant d'un député"
+      },
+      "isGovernment": false,
+      "title": {
+        "en": "An Act to amend the Criminal Code (victim protection)",
+        "fr": "Loi modifiant le Code criminel (protection des victimes)"
+      },
+      "shortTitle": null,
+      "sponsor": {
+        "en": "Anna Roberts",
+        "fr": "Anna Roberts"
+      },
+      "status": {
+        "en": "Outside the Order of Precedence",
+        "fr": "Ne fait pas partie de l'Ordre de priorité"
+      },
+      "state": "encours",
+      "milestones": [
+        {
+          "stage": "commons_first_reading",
+          "chamber": "commons",
+          "reading": 1,
+          "date": "2026-10-08"
+        }
+      ],
+      "royalAssent": null,
+      "reinstated": false,
+      "latestActivity": {
+        "en": "Outside the Order of Precedence",
+        "fr": "Ne fait pas partie de l'Ordre de priorité",
+        "date": "2026-10-08"
+      },
+      "lastActivity": "2026-10-08",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-292",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-292"
+      },
+      "sponsorPersonId": 105191,
+      "sponsorName": {
+        "first": "Anna",
+        "last": "Roberts"
+      },
+      "fullSummaryAvailable": false,
+      "summary": {
+        "en": "This enactment amends the Criminal Code to increase the protection of victims, notably by\n\n(a) providing that a person who is convicted of an offence in relation to trafficking in persons is liable, in addition to any other punishment that may be imposed under the Act, to a fine of not more than $100,000;\n\n(b) removing the requirement for a victim of trafficking to demonstrate a reasonable apprehension of fear for the purpose of establishing whether a person has committed the offence of trafficking in persons;\n\n(c) providing for consecutive sentences for offences related to trafficking in persons;\n\n(d) clarifying that an order made that a witness testify outside the court room may specify that the witness is to testify in a location other than the building in which the court room is located;\n\n(e) expanding the list of offences in respect of which a preliminary inquiry is not available; and\n\n(f) expanding the circumstances in which a video recording made within a reasonable time after an alleged offence, in which the victim describes the acts complained of, is admissible in evidence.",
+        "fr": "Le texte modifie le Code criminel afin de renforcer la protection des victimes, notamment :\n\na) en prévoyant que les personnes déclarées coupables d’une infraction relative à la traite des personnes sont passibles, en plus de toute autre peine prévue par cette loi, d’une amende maximale de 100 000 $;\n\nb) en éliminant, lorsqu’il s’agit d’établir si une personne a commis une infraction relative à la traite des personnes, l’exigence que la victime démontre une crainte raisonnable;\n\nc) en prévoyant des peines consécutives pour les infractions relatives à la traite des personnes;\n\nd) en précisant qu’une ordonnance rendue afin qu’un témoin témoigne à l’extérieur de la salle d’audience peut préciser que le témoignage sera rendu dans un lieu autre que le bâtiment où se trouve la salle d’audience;\n\ne) en élargissant la liste des infractions à l’égard desquelles il ne peut être tenu d’enquête préliminaire;\n\nf) en élargissant les circonstances dans lesquelles un enregistrement vidéo réalisé dans un délai raisonnable après la perpétration d’une infraction reprochée et montrant la victime en train de décrire les faits à l’origine de l’accusation est admissible en preuve."
+      },
+      "summarySource": "bill",
+      "divisions": []
+    },
+    {
+      "id": 14250015,
+      "num": "S-7",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "senate",
+      "type": {
+        "en": "Senate Government Bill",
+        "fr": "Projet de loi émanant du gouvernement (Sénat)"
+      },
+      "isGovernment": true,
+      "title": {
+        "en": "An Act to modernize certain regulatory and administrative processes",
+        "fr": "Loi visant à moderniser certains processus réglementaires et administratifs"
+      },
+      "shortTitle": {
+        "en": "Cutting Red Tape for All Canadians Act",
+        "fr": "Loi sur la réduction du fardeau administratif pour tous les Canadiens"
+      },
+      "sponsor": {
+        "en": "Hon. Pierre Moreau",
+        "fr": "L'hon. Pierre Moreau"
+      },
+      "status": {
+        "en": "At second reading in the Senate",
+        "fr": "À la deuxième lecture au Sénat"
+      },
+      "state": "encours",
+      "milestones": [
+        {
+          "stage": "senate_first_reading",
+          "chamber": "senate",
+          "reading": 1,
+          "date": "2026-10-06"
+        }
+      ],
+      "royalAssent": null,
+      "reinstated": false,
+      "latestActivity": {
+        "en": "At second reading in the Senate",
+        "fr": "À la deuxième lecture au Sénat",
+        "date": "2026-10-06"
+      },
+      "lastActivity": "2026-10-06",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/s-7",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/s-7"
+      },
+      "sponsorPersonId": 120079,
+      "sponsorName": {
+        "first": "Pierre",
+        "last": "Moreau"
+      },
+      "fullSummaryAvailable": false,
+      "summary": {
+        "en": "Division 1 of Part 1 amends the Agricultural Products Marketing Act to, among other things,\n\n(a) provide that powers are delegated to a marketing board in relation to the marketing of an agricultural product in interprovincial or export trade by virtue of being named in the schedule to that Act, rather than by Order in Council;\n\n(b) provide that the Minister of Agriculture and Agri-Food is responsible for the delegation of those powers;\n\n(c) delegate powers in relation to the marketing of agricultural products to administrative bodies;\n\n(d) provide for limitations and exceptions that were previously set out in orders and regulations made under that Act with respect to the exercise of the delegated powers; and\n\n(e) require marketing boards and administrative bodies to make accessible to the persons with respect to which they exercise their delegated powers the requirements or other measures they establish in the exercise of those powers.\n\nIt also repeals certain orders and regulations.\n\nDivision 2 of Part 1 amends the Canadian Dairy Commission Act to remove the age limit respecting the retirement of members of the Canadian Dairy Commission. It also amends the Farm Products Agencies Act to remove the age limit respecting the appointment and holding of office of members of the National Farm Products Council or of an agency.\n\nDivision 3 of Part 1 amends the Feeds Act, the Fertilizers Act, the Seeds Act and the Health of Animals Act to authorize the Governor in Council to make regulations respecting the recognition of foreign systems relating to feeds, fertilizers, supplements, seeds or veterinary biologics.\n\nDivision 4 of Part 1 amends the Seeds Act to\n\n(a) transfer the power to specify the kinds of plants whose seeds are to be considered weed seeds from the Minister of Agriculture and Agri-Food to the Governor in Council; and\n\n(b) authorize the Governor in Council to make regulations respecting weed seeds.\n\nDivision 5 of Part 1 amends the Health of Animals Act to\n\n(a) authorize the Minister of Agriculture and Agri-Food to approve programs developed by entities other than the Canadian Food Inspection Agency for certain specified purposes and authorize the Governor in Council to make regulations respecting such programs; and\n\n(b) clarify the scope of the Governor in Council’s power to make regulations relating to the management of garbage that is imported into Canada.\n\nDivision 6 of Part 1 amends the Canadian Food Inspection Agency Act to, among other things,\n\n(a) authorize the use of electronic means to administer and enforce that Act and any Act or provision that the Canadian Food Inspection Agency is responsible for administering or enforcing; and\n\n(b) simplify that Agency’s reporting requirements.\n\nDivision 7 of Part 1 amends the Agricultural Marketing Programs Act to, among other things,\n\n(a) remove the requirement for the Minister of Finance to approve changes to advance limits under the Advance Payments Program;\n\n(b) reduce the administrative burden associated with obtaining first-ranking security for advances issued under that program and with the proof of sale requirement for payments made under that program; and\n\n(c) repeal the provisions respecting the administrator’s percentage under that program.\n\nIt also makes a consequential amendment to the Agricultural Marketing Programs Regulations.\n\nDivision 1 of Part 2 amends the Department of the Environment Act to authorize the use of electronic means to administer and enforce any Act of Parliament that is administered or enforced by the Minister of the Environment or by an agency for which the Minister is responsible.\n\nDivision 2 of Part 2 amends the Explosives Act to provide for an administrative monetary penalties scheme.\n\nDivision 3 of Part 2 amends the Fisheries Act to permit the relocation of fish when carrying on any maintenance, repair or modification of a fishway, obstruction or leap.\n\nDivision 4 of Part 2 repeals subsection 21(6) of the Northern Pipeline Act.\n\nDivision 5 of Part 2 amends the Canada–Newfoundland and Labrador Atlantic Accord Implementation and Offshore Renewable Energy Management Act and the Canada–Nova Scotia Offshore Petroleum Resources Accord Implementation and Offshore Renewable Energy Management Act to, among other things, update the terminology in respect of hazardous products in the workplace to ensure alignment and consistency with the Hazardous Products Act.\n\nDivision 6 of Part 2 amends the Wild Animal and Plant Protection and Regulation of International and Interprovincial Trade Act to, among other things,\n\n(a) clarify that the prohibitions in subsection 6(1) and section 7 of that Act are subject to the regulations; and\n\n(b) remove the requirement for the Governor in Council to make and update regulations specifying the animals and plants that are listed as “fauna” and “flora”, respectively, in an appendix to the Convention on international trade in endangered species of wild fauna and flora.\n\nDivision 7 of Part 2 amends the Canada Lands Surveyors Act to, among other things,\n\n(a) enhance the protection of the public by modernizing the complaints and discipline processes that govern Canada Lands Surveyors;\n\n(b) reduce the regulatory burden of the Minister of Natural Resources by enabling the Council of the Association of Canada Lands Surveyors to make by-laws respecting a broader range of matters;\n\n(c) harmonize the French and English versions of that Act for consistency and clarity by, among other things, ensuring uniformity between both language versions in relation to the definitions of “licence” and “permit” and by addressing certain recommendations of the Standing Joint Committee for the Scrutiny of Regulations; and\n\n(d) harmonize the text of that Act with the private law of the provinces and territories, being the civil law regime of the Province of Quebec and the common law regime in the rest of Canada.\n\nDivision 8 of Part 2 amends the Environmental Violations Administrative Monetary Penalties Act to, among other things, provide that penalties may be imposed for certain violations of the Fisheries Act, increase the maximum penalty amount for a violation and extend certain limitation periods.\n\nDivision 1 of Part 3 amends the Fisheries Act to authorize the use of electronic means to administer and enforce that Act.\n\nDivision 2 of Part 3 amends the Radiocommunication Act to, among other things,\n\n(a) replace the Minister of Industry’s power to issue technical acceptance certificates for any radio apparatus, interference-causing equipment or radio-sensitive equipment with the power to register such apparatus or equipment;\n\n(b) specify that the Minister may administer electronic systems, including databases, related to the use of the spectrum or radio apparatus and may designate persons to administer such systems;\n\n(c) authorize the Minister and other persons with powers, duties and functions under that Act to use electronic means in exercising those powers and performing those duties and functions; and\n\n(d) specify that that Act applies on board any part of a spacecraft that is under the direction or control of Canadians.\n\nDivision 3 of Part 3 amends the Statutory Instruments Act to, among other things,\n\n(a) modernize that Act respecting the transmission of certain documents;\n\n(b) clarify procedures respecting the preparation and examination of proposed regulations; and\n\n(c) repeal the requirement to publish quarterly consolidated indexes.\n\nIt also makes related and consequential amendments to the Legislation Revision and Consolidation Act and certain Regulations.\n\nFinally, it repeals the Designation of Place of Inspection and Sale.\n\nDivision 1 of Part 4 amends the Canada Border Services Agency Act to authorize the Minister of Public Safety and Emergency Preparedness to exempt a person or class of persons from the application of a provision of program legislation if that Minister is of the opinion that certain conditions are met.\n\nDivision 2 of Part 4 amends the Canadian Navigable Waters Act to exclude a closed-loop pumped artificial storage reservoir from the definition “navigable water” in that Act.\n\nDivision 3 of Part 4 amends the Railway Safety Act to, among other things, authorize the Minister of Transport to renew, cancel or amend an exemption granted under section 22 or 22.‍1 of that Act.\n\nDivision 4 of Part 4 amends the Marine Transportation Security Act to, among other things,\n\n(a) set out that Act’s purpose and allow the Minister of Transport to enter into agreements with organizations in respect of the administration and enforcement of that Act;\n\n(b) set out regulation-making powers that include powers respecting threats and risks to the health of persons involved in the marine transportation system, the sharing of information and the establishment of vessel exclusion zones;\n\n(c) authorize the Minister to make interim orders and give emergency directions and modify the Minister’s power to give directions to vessels; and\n\n(d) create new offences, increase certain penalties and extend the application of certain offence provisions and the administrative monetary penalty regime to vessels.\n\nPart 5 amends the Food and Drugs Act to align section 37 of that Act with export requirements under the Safe Food for Canadians Act by removing trade barriers and duplicative certification requirements.\n\nDivision 1 of Part 6 amends the Aeronautics Act to, among other things, remove certain publication requirements in respect of notices and provide the Minister of Transport with the authority to prevent or restrict the use or development of lands adjacent to or in the vicinity of an airport or airport site.\n\nDivision 2 of Part 6 amends the Canada Transportation Act to provide that information that is required to be provided to the Minister of Transport under certain Acts is confidential when it is received but may be disclosed in certain circumstances. It also makes a consequential amendment to the Railway Safety Act.\n\nDivision 3 of Part 6 amends the Boards of Trade Act to, among other things,\n\n(a) modernize and simplify certain requirements relating to the formation of a board of trade, the composition of its council, the holding of general meetings, government approvals and the filing of documents;\n\n(b) establish financial review requirements based on annual revenues;\n\n(c) provide for the amalgamation, administrative dissolution and revival of boards of trade; and\n\n(d) repeal or replace obsolete terminology, requirements and provisions.\n\nDivision 4 of Part 6 amends the Bankruptcy and Insolvency Act to, among other things,\n\n(a) establish a summary bankruptcy procedure for small businesses;\n\n(b) establish a streamlined proposal procedure for small businesses;\n\n(c) replace the requirement to publish a notice of bankruptcy in a local newspaper with a requirement to do so in the manner specified in directives of the Superintendent of Bankruptcy; and\n\n(d) provide that, if every opposition based solely on grounds referred to in paragraph 173(1)‍(m) or (n) of that Act is withdrawn, a bankrupt who was eligible for an automatic discharge before the opposition was filed will be issued a certificate of discharge.\n\nDivision 5 of Part 6 amends the Canadian Agricultural Loans Act to, among other things, grant the Minister of Agriculture and Agri-Food the power to reconsider claims for loss and recover overpayments. It also makes related amendments to the Canadian Agricultural Loans Regulations to, among other things, clarify the maximum annual rate of interest payable by a borrower to a designated lender.",
+        "fr": "La section 1 de la partie 1 modifie la Loi sur la commercialisation des produits agricoles pour, notamment :\n\na) prévoir que les pouvoirs d’un office de commercialisation — relativement à la commercialisation d’un produit agricole sur les marchés interprovincial ou international — lui sont délégués par inscription de son nom à l’annexe de cette loi, plutôt que par décret;\n\nb) prévoir que le ministre de l’Agriculture et de l’Agroalimentaire soit responsable de la délégation de ces pouvoirs;\n\nc) déléguer des pouvoirs à des organismes administratifs relativement à la commercialisation de produits agricoles;\n\nd) prévoir certaines limites et exceptions, lesquelles étaient autrefois prévues par décrets, ordonnances et règlements pris sous le régime de la même loi, relatives à l’exercice des pouvoirs qui sont délégués;\n\ne) exiger que les offices de commercialisation et organismes administratifs rendent accessible aux personnes visées par l’exercice des pouvoirs qui leur sont délégués toute exigence ou autre mesure établie dans l’exercice de ces pouvoirs.\n\nElle abroge également certains décrets, ordonnances et règlements.\n\nLa section 2 de la partie 1 modifie la Loi sur la Commission canadienne du lait pour retirer la limite d’âge concernant la retraite des commissaires de la Commission canadienne du lait. Elle modifie également la Loi sur les offices des produits agricoles pour retirer la limite d’âge concernant la nomination ou le maintien au Conseil national des produits agricoles ou à un office.\n\nLa section 3 de la partie 1 modifie la Loi relative aux aliments du bétail, la Loi sur les engrais, la Loi sur les semences et la Loi sur la santé des animaux pour autoriser le gouverneur en conseil à prendre des règlements régissant la reconnaissance de systèmes étrangers relatifs aux aliments du bétail, aux engrais, aux suppléments, aux semences ou aux produits biologiques vétérinaires.\n\nLa section 4 de la partie 1 modifie la Loi sur les semences pour :\n\na) transférer du ministre de l’Agriculture et de l’Agroalimentaire au gouverneur en conseil le pouvoir de préciser les sortes de végétaux dont les graines sont des semences de mauvaises herbes;\n\nb) autoriser le gouverneur en conseil à prendre des règlements régissant de telles semences.\n\nLa section 5 de la partie 1 modifie la Loi sur la santé des animaux pour :\n\na) autoriser le ministre de l’Agriculture et de l’Agroalimentaire à approuver des programmes élaborés par une entité autre que l’Agence canadienne d’inspection des aliments dans certains buts précisés et autoriser le gouverneur en conseil à prendre des règlements régissant de tels programmes;\n\nb) clarifier la portée du pouvoir réglementaire du gouverneur en conseil relatif à la gestion des déchets introduits au Canada.\n\nLa section 6 de la partie 1 modifie la Loi sur l’Agence canadienne d’inspection des aliments pour, notamment :\n\na) autoriser l’application et le contrôle d’application par voie électronique de cette loi et des lois ou dispositions dont l’Agence canadienne d’inspection des aliments est chargée d’assurer ou de contrôler l’application;\n\nb) simplifier les exigences en matière de rapports applicables à l’Agence.\n\nLa section 7 de la partie 1 modifie la Loi sur les programmes de commercialisation agricole pour, notamment :\n\na) supprimer l’obligation pour le ministre des Finances d’approuver les modifications aux plafonds des avances dans le cadre du Programme de paiements anticipés;\n\nb) réduire le fardeau administratif associé à l’obtention d’une sûreté de premier rang pour les avances consenties et celui associé à l’exigence de preuve de vente pour les paiements effectués dans le cadre de ce programme;\n\nc) abroger les dispositions relatives au pourcentage prévu à l’égard de l’agent d’exécution dans le cadre de ce programme.\n\nElle apporte aussi une modification corrélative au Règlement sur les programmes de commercialisation agricole.\n\nLa section 1 de la partie 2 modifie la Loi sur le ministère de l’Environnement pour autoriser l’exécution et le contrôle d’application par voie électronique des lois fédérales dont l’exécution ou le contrôle d’application est assuré par le ministre de l’Environnement ou par un organisme placé sous sa responsabilité.\n\nLa section 2 de la partie 2 modifie la Loi sur les explosifs afin d’établir un régime de sanctions administratives pécuniaires.\n\nLa section 3 de la partie 2 modifie la Loi sur les pêches afin de permettre la relocalisation du poisson dans le cadre de l’entretien, de la réparation ou de la modification de toute passe migratoire ou de tout obstacle ou espace à sauter.\n\nLa section 4 de la partie 2 abroge le paragraphe 21(6) de la Loi sur le pipe-line du Nord.\n\nLa section 5 de la partie 2 modifie la Loi de mise en œuvre de l’Accord atlantique Canada — Terre-Neuve-et-Labrador et sur la gestion de l’énergie renouvelable extracôtière et la Loi de mise en œuvre de l’Accord Canada — Nouvelle-Écosse sur les hydrocarbures extracôtiers et sur la gestion de l’énergie renouvelable extracôtière pour, notamment, en actualiser la terminologie en ce qui a trait aux produits dangereux dans les lieux de travail afin de l’harmoniser et de l’uniformiser avec celle de la Loi sur les produits dangereux.\n\nLa section 6 de la partie 2 modifie la Loi sur la protection d’espèces animales ou végétales sauvages et la réglementation de leur commerce international et interprovincial afin, notamment :\n\na) de préciser que les interdictions prévues au paragraphe 6(1) et à l’article 7 de cette loi sont assujetties aux règlements;\n\nb) de supprimer l’obligation pour le gouverneur en conseil de prendre et de mettre à jour des règlements énumérant les animaux et végétaux mentionnés respectivement sous les rubriques « fauna » et « flora » des annexes de la Convention sur le commerce international des espèces de faune et de flore sauvages menacées d’extinction.\n\nLa section 7 de la partie 2 modifie la Loi sur les arpenteurs des terres du Canada pour, notamment :\n\na) améliorer la protection du public en modernisant le processus de traitement des plaintes et la procédure disciplinaire qui régissent les arpenteurs des terres du Canada;\n\nb) réduire le fardeau réglementaire du ministre des Ressources naturelles en habilitant le conseil de l’Association des arpenteurs des terres du Canada à prendre des règlements administratifs concernant un plus large éventail de questions;\n\nc) harmoniser, par souci de cohérence et de clarté, les versions française et anglaise de cette loi, y compris en uniformisant ces deux versions en ce qui concerne les définitions de « licence » et de « permis » et en donnant suite à certaines recommandations du Comité mixte permanent d’examen de la réglementation;\n\nd) harmoniser le texte de cette loi avec le droit privé des provinces et territoires, c’est-à-dire avec le droit civil de la province de Québec et la common law dans le reste du Canada.\n\nLa section 8 de la partie 2 modifie la Loi sur les pénalités administratives en matière d’environnement afin, notamment, de prévoir que des pénalités peuvent être imposées relativement à certaines violations à la Loi sur les pêches, d’augmenter le montant de la pénalité maximale applicable à une violation et de prolonger certains délais de prescription.\n\nLa section 1 de la partie 3 modifie la Loi sur les pêches pour autoriser l’exécution et le contrôle d’application de cette loi par voie électronique.\n\nLa section 2 de la partie 3 modifie la Loi sur la radiocommunication pour, notamment :\n\na) remplacer le pouvoir du ministre de l’Industrie de délivrer des certificats d’approbation technique à l’égard de tout appareil radio, matériel brouilleur ou matériel radiosensible par celui de l’enregistrer;\n\nb) préciser que le ministre peut gérer des systèmes électroniques, y compris des banques de données, se rapportant à l’utilisation du spectre ou d’appareils radio et qu’il peut désigner toute personne pour la gestion de tels systèmes;\n\nc) autoriser le ministre ainsi que d’autres personnes à qui des pouvoirs et des fonctions sont conférés sous le régime de cette loi à utiliser la voie électronique dans l’exercice de ces pouvoirs et fonctions;\n\nd) préciser que cette loi s’applique à bord de toute partie d’un véhicule spatial placé sous la responsabilité de Canadiens.\n\nLa section 3 de la partie 3 modifie la Loi sur les textes réglementaires afin, notamment :\n\na) de moderniser cette loi en ce qui concerne la transmission de certains documents;\n\nb) de clarifier la procédure en ce qui concerne la préparation et l’examen des projets de règlement;\n\nc) d’abroger l’exigence de publication de répertoires trimestriels.\n\nElle apporte également des modifications connexes et corrélatives à la Loi sur la révision et la codification des textes législatifs et à certains règlements.\n\nFinalement, elle abroge la Désignation d’un lieu d’examen et de vente.\n\nLa section 1 de la partie 4 modifie la Loi sur l’Agence des services frontaliers du Canada pour autoriser le ministre de la Sécurité publique et de la Protection civile à exempter certaines personnes ou catégories de personnes de l’application d’une disposition de la législation frontalière s’il estime que certaines conditions sont réunies.\n\nLa section 2 de la partie 4 modifie la Loi sur les eaux navigables canadiennes afin d’exclure de la définition de « eaux navigables » applicable à cette loi les réservoirs artificiels alimentés par une station de pompage en circuit fermé.\n\nLa section 3 de la partie 4 modifie la Loi sur la sécurité ferroviaire afin, notamment, de permettre au ministre des Transports d’octroyer, de refuser, de suspendre ou d’annuler une habilitation de sécurité en matière de transport.\n\nLa section 4 de la partie 4 modifie la Loi sur la sûreté du transport maritime afin, notamment :\n\na) d’énoncer l’objet de cette loi et de permettre au ministre des Transports de conclure des accords avec des organisations pour l’exécution et le contrôle d’application de celle-ci;\n\nb) de prévoir des pouvoirs réglementaires, notamment concernant les menaces et les risques pour la santé des personnes liées au réseau de transport maritime, la communication de renseignements et l’établissement de zones d’exclusion pour les bâtiments;\n\nc) d’autoriser le ministre à prendre des arrêtés et injonctions d’urgence et de modifier le pouvoir du ministre de donner des directives aux bâtiments;\n\nd) de prévoir de nouvelles infractions, d’augmenter certaines peines et d’étendre l’application de dispositions prévoyant certaines infractions et du régime de sanctions administratives pécuniaires aux bâtiments.\n\nLa partie 5 modifie la Loi sur les aliments et drogues afin d’harmoniser l’article 37 de cette loi avec les exigences applicables aux exportations prévues sous le régime de la Loi sur la salubrité des aliments au Canada en supprimant les obstacles commerciaux et les exigences de certification redondantes.\n\nLa section 1 de la partie 6 modifie la Loi sur l’aéronautique afin, entre autres, que certaines exigences de publication relatives aux avis soient supprimées et que soit accordé au ministre des Transports le pouvoir d’empêcher l’usage ou l’aménagement de biens-fonds situés aux abords ou dans le voisinage d’un aéroport ou d’une zone aéroportuaire.\n\nLa section 2 de la partie 6 modifie la Loi sur les transports au Canada afin de prévoir que les renseignements qui doivent être fournis au ministre des Transports au titre de certaines lois deviennent confidentiels dès leur réception et de permettre leur communication dans certaines circonstances. Elle apporte aussi une modification corrélative à la Loi sur la sécurité ferroviaire.\n\nLa section 3 de la partie 6 modifie la Loi sur les chambres de commerce afin, notamment :\n\na) de moderniser et de simplifier certaines exigences relatives à la formation d’une chambre de commerce, à la composition de son conseil, à la tenue d’assemblées générales, aux approbations gouvernementales et au dépôt de documents;\n\nb) d’établir des exigences en matière d’examen financier en fonction des revenus annuels;\n\nc) de prévoir la fusion, la dissolution administrative et la reconstitution des chambres de commerce;\n\nd) d’abroger ou de remplacer des termes, des exigences et des dispositions désuets.\n\nLa section 4 de la partie 6 modifie la Loi sur la faillite et l’insolvabilité pour, notamment :\n\na) établir une procédure d’administration sommaire dans les situations de faillite de petites entreprises;\n\nb) établir une procédure de proposition simplifiée pour les petites entreprises;\n\nc) remplacer l’exigence de publier les avis de faillite dans un journal local par l’exigence de les publier de la manière prévue par les instructions du surintendant des faillites;\n\nd) prévoir que le failli admissible à la libération d’office avant le dépôt d’oppositions reçoive, en cas de retrait de toute opposition reposant uniquement sur les motifs mentionnés aux alinéas 173(1)m) ou n) de cette loi, un certificat de libération.\n\nLa section 5 de la partie 6 modifie la Loi canadienne sur les prêts agricoles afin, notamment, de conférer au ministre de l’Agriculture et de l’Agroalimentaire le pouvoir de réexaminer les demandes d’indemnité et de recouvrer les trop-perçus. Elle apporte également des modifications connexes au Règlement canadien sur les prêts agricoles afin, notamment, de préciser le taux d’intérêt annuel maximal payable par un emprunteur à un organisme agréé."
+      },
+      "summarySource": "bill",
+      "divisions": []
+    },
     {
       "id": 13605049,
       "num": "C-10",
@@ -243,8 +364,8 @@
         "fr": "L’hon. Rebecca Alty"
       },
       "status": {
-        "en": "At consideration in committee in the Senate",
-        "fr": "À l'examen en comité au Sénat"
+        "en": "At third reading in the Senate",
+        "fr": "À la troisième lecture au Sénat"
       },
       "state": "encours",
       "milestones": [
@@ -282,8 +403,8 @@
       "royalAssent": null,
       "reinstated": false,
       "latestActivity": {
-        "en": "At consideration in committee in the Senate",
-        "fr": "À l'examen en comité au Sénat",
+        "en": "At third reading in the Senate",
+        "fr": "À la troisième lecture au Sénat",
         "date": "2026-09-28"
       },
       "lastActivity": "2026-09-28",
@@ -2758,8 +2879,8 @@
         "fr": "Marianne Dandurand"
       },
       "status": {
-        "en": "At consideration in committee in the House of Commons",
-        "fr": "À l'examen en comité à la Chambre des communes"
+        "en": "At report stage in the House of Commons",
+        "fr": "À l'étape du rapport à la Chambre des communes"
       },
       "state": "encours",
       "milestones": [
@@ -2779,8 +2900,8 @@
       "royalAssent": null,
       "reinstated": false,
       "latestActivity": {
-        "en": "At consideration in committee in the House of Commons",
-        "fr": "À l'examen en comité à la Chambre des communes",
+        "en": "At report stage in the House of Commons",
+        "fr": "À l'étape du rapport à la Chambre des communes",
         "date": "2026-06-17"
       },
       "lastActivity": "2026-06-17",
@@ -13362,10 +13483,10 @@
         "fr": "Tamara Jansen"
       },
       "status": {
-        "en": "At second reading in the House of Commons",
-        "fr": "À la deuxième lecture à la Chambre des communes"
+        "en": "Bill defeated",
+        "fr": "Projet de loi rejeté"
       },
-      "state": "encours",
+      "state": "rejete",
       "milestones": [
         {
           "stage": "commons_first_reading",
@@ -13377,8 +13498,8 @@
       "royalAssent": null,
       "reinstated": false,
       "latestActivity": {
-        "en": "At second reading in the House of Commons",
-        "fr": "À la deuxième lecture à la Chambre des communes",
+        "en": "Bill defeated",
+        "fr": "Projet de loi rejeté",
         "date": "2025-06-20"
       },
       "lastActivity": "2025-06-20",
@@ -13397,7 +13518,26 @@
         "fr": "Le texte modifie le Code criminel afin de prévoir qu’un trouble mental n’est pas un problème de santé grave et irrémédiable à l’égard duquel une personne pourrait recevoir l’aide médicale à mourir."
       },
       "summarySource": "bill",
-      "divisions": []
+      "divisions": [
+        {
+          "number": 177,
+          "date": "2026-10-07",
+          "description": {
+            "en": "2nd reading of Bill C-218, An Act to amend the Criminal Code (medical assistance in dying)",
+            "fr": "2e lecture du projet de loi C-218, Loi modifiant le Code criminel (aide médicale à mourir)"
+          },
+          "result": {
+            "en": "Negatived",
+            "fr": "Rejetée"
+          },
+          "passed": false,
+          "totals": {
+            "yea": 141,
+            "nay": 187,
+            "paired": 6
+          }
+        }
+      ]
     },
     {
       "id": 13565288,
@@ -15120,10 +15260,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/89156"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 93,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 95,
+        "nay": 81,
         "paired": 0,
         "absent": 1,
         "participationRate": 0.994
@@ -15154,10 +15294,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123092"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 92,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 93,
+        "nay": 81,
         "paired": 2,
         "absent": 1,
         "participationRate": 0.994
@@ -15188,10 +15328,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/105340"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 172,
-        "yea": 92,
-        "nay": 76,
+        "eligible": 177,
+        "cast": 175,
+        "yea": 94,
+        "nay": 77,
         "paired": 4,
         "absent": 2,
         "participationRate": 0.989
@@ -15222,10 +15362,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123033"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 94,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 95,
+        "nay": 82,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -15256,10 +15396,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/72029"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 95,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 97,
+        "nay": 80,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -15290,10 +15430,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/110339"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 92,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 93,
+        "nay": 83,
         "paired": 0,
         "absent": 1,
         "participationRate": 0.994
@@ -15324,10 +15464,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/25446"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 93,
-        "nay": 78,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 95,
+        "nay": 79,
         "paired": 2,
         "absent": 1,
         "participationRate": 0.994
@@ -15358,10 +15498,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123675"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 92,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 93,
+        "nay": 83,
         "paired": 0,
         "absent": 1,
         "participationRate": 0.994
@@ -15392,10 +15532,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/96081"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 73,
-        "nay": 63,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 74,
+        "nay": 65,
         "paired": 38,
         "absent": 0,
         "participationRate": 1
@@ -15426,10 +15566,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/89449"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 84,
-        "nay": 75,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 85,
+        "nay": 77,
         "paired": 14,
         "absent": 1,
         "participationRate": 0.994
@@ -15460,10 +15600,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/89259"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 167,
-        "yea": 84,
-        "nay": 71,
+        "eligible": 177,
+        "cast": 170,
+        "yea": 86,
+        "nay": 72,
         "paired": 12,
         "absent": 7,
         "participationRate": 0.96
@@ -15494,13 +15634,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/109872"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 169,
-        "yea": 93,
-        "nay": 76,
+        "eligible": 177,
+        "cast": 172,
+        "yea": 95,
+        "nay": 77,
         "paired": 0,
         "absent": 5,
-        "participationRate": 0.971
+        "participationRate": 0.972
       }
     },
     {
@@ -15528,10 +15668,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/89294"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 93,
-        "nay": 74,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 95,
+        "nay": 75,
         "paired": 6,
         "absent": 1,
         "participationRate": 0.994
@@ -15562,10 +15702,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123608"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 94,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 96,
+        "nay": 80,
         "paired": 0,
         "absent": 1,
         "participationRate": 0.994
@@ -15596,13 +15736,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/122753"
       },
       "votingRecord": {
-        "eligible": 80,
-        "cast": 71,
-        "yea": 44,
-        "nay": 27,
+        "eligible": 83,
+        "cast": 74,
+        "yea": 45,
+        "nay": 29,
         "paired": 0,
         "absent": 9,
-        "participationRate": 0.887
+        "participationRate": 0.892
       }
     },
     {
@@ -15630,10 +15770,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123276"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 94,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 96,
+        "nay": 80,
         "paired": 0,
         "absent": 1,
         "participationRate": 0.994
@@ -15664,10 +15804,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123500"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 95,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 97,
+        "nay": 80,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -15698,10 +15838,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/111067"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -15732,10 +15872,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/105121"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -15766,10 +15906,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/30330"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 95,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 97,
+        "nay": 80,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -15800,10 +15940,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123214"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 93,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 94,
+        "nay": 82,
         "paired": 0,
         "absent": 1,
         "participationRate": 0.994
@@ -15834,10 +15974,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/86261"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 92,
-        "nay": 77,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 94,
+        "nay": 78,
         "paired": 4,
         "absent": 1,
         "participationRate": 0.994
@@ -15868,10 +16008,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/102275"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 95,
-        "nay": 78,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 97,
+        "nay": 79,
         "paired": 0,
         "absent": 1,
         "participationRate": 0.994
@@ -15902,10 +16042,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88422"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 84,
-        "nay": 89,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 85,
+        "nay": 91,
         "paired": 0,
         "absent": 1,
         "participationRate": 0.994
@@ -15936,10 +16076,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/104571"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 88,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 89,
+        "nay": 82,
         "paired": 6,
         "absent": 0,
         "participationRate": 1
@@ -15970,10 +16110,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/376"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 84,
-        "nay": 90,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 85,
+        "nay": 92,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -16004,10 +16144,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/89236"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -16038,13 +16178,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/141713"
       },
       "votingRecord": {
-        "eligible": 80,
-        "cast": 71,
-        "yea": 45,
-        "nay": 26,
+        "eligible": 83,
+        "cast": 74,
+        "yea": 46,
+        "nay": 28,
         "paired": 0,
         "absent": 9,
-        "participationRate": 0.887
+        "participationRate": 0.892
       }
     },
     {
@@ -16072,10 +16212,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/110791"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 93,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 94,
+        "nay": 82,
         "paired": 0,
         "absent": 1,
         "participationRate": 0.994
@@ -16106,13 +16246,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/123208"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 158,
-        "yea": 85,
-        "nay": 73,
+        "eligible": 177,
+        "cast": 161,
+        "yea": 87,
+        "nay": 74,
         "paired": 0,
         "absent": 16,
-        "participationRate": 0.908
+        "participationRate": 0.91
       }
     },
     {
@@ -16140,10 +16280,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88567"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 91,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 92,
+        "nay": 83,
         "paired": 2,
         "absent": 0,
         "participationRate": 1
@@ -16174,10 +16314,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88541"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 172,
-        "yea": 94,
-        "nay": 78,
+        "eligible": 177,
+        "cast": 175,
+        "yea": 96,
+        "nay": 79,
         "paired": 0,
         "absent": 2,
         "participationRate": 0.989
@@ -16208,10 +16348,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123372"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 95,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 97,
+        "nay": 80,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -16242,13 +16382,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/25475"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 160,
-        "yea": 86,
-        "nay": 67,
+        "eligible": 177,
+        "cast": 163,
+        "yea": 88,
+        "nay": 68,
         "paired": 7,
         "absent": 14,
-        "participationRate": 0.92
+        "participationRate": 0.921
       }
     },
     {
@@ -16276,10 +16416,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88934"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 94,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 95,
+        "nay": 82,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -16310,13 +16450,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/104669"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 144,
-        "yea": 74,
-        "nay": 70,
+        "eligible": 177,
+        "cast": 147,
+        "yea": 75,
+        "nay": 72,
         "paired": 0,
         "absent": 30,
-        "participationRate": 0.828
+        "participationRate": 0.831
       }
     },
     {
@@ -16344,10 +16484,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/104705"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 170,
-        "yea": 83,
-        "nay": 87,
+        "eligible": 177,
+        "cast": 173,
+        "yea": 84,
+        "nay": 89,
         "paired": 0,
         "absent": 4,
         "participationRate": 0.977
@@ -16378,10 +16518,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/59156"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 88,
-        "nay": 77,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 90,
+        "nay": 78,
         "paired": 9,
         "absent": 0,
         "participationRate": 1
@@ -16412,10 +16552,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/104555"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 172,
-        "yea": 84,
-        "nay": 74,
+        "eligible": 177,
+        "cast": 175,
+        "yea": 85,
+        "nay": 76,
         "paired": 14,
         "absent": 2,
         "participationRate": 0.989
@@ -16446,10 +16586,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122709"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 172,
-        "yea": 82,
-        "nay": 90,
+        "eligible": 177,
+        "cast": 175,
+        "yea": 83,
+        "nay": 92,
         "paired": 0,
         "absent": 2,
         "participationRate": 0.989
@@ -16480,10 +16620,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123361"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 86,
-        "nay": 77,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 88,
+        "nay": 78,
         "paired": 10,
         "absent": 1,
         "participationRate": 0.994
@@ -16514,10 +16654,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/110706"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 95,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 97,
+        "nay": 80,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -16548,10 +16688,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88369"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 170,
-        "yea": 92,
-        "nay": 78,
+        "eligible": 177,
+        "cast": 173,
+        "yea": 94,
+        "nay": 79,
         "paired": 0,
         "absent": 4,
         "participationRate": 0.977
@@ -16582,10 +16722,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88674"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 95,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 97,
+        "nay": 80,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -16616,10 +16756,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/104977"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -16650,10 +16790,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/104786"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 80,
-        "nay": 83,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 81,
+        "nay": 85,
         "paired": 11,
         "absent": 0,
         "participationRate": 1
@@ -16684,10 +16824,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/142764"
       },
       "votingRecord": {
-        "eligible": 1,
-        "cast": 1,
-        "yea": 1,
-        "nay": 0,
+        "eligible": 4,
+        "cast": 4,
+        "yea": 2,
+        "nay": 2,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -16718,10 +16858,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/35897"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 95,
-        "nay": 78,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 97,
+        "nay": 79,
         "paired": 0,
         "absent": 1,
         "participationRate": 0.994
@@ -16752,13 +16892,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/111007"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 161,
-        "yea": 90,
-        "nay": 71,
+        "eligible": 177,
+        "cast": 164,
+        "yea": 92,
+        "nay": 72,
         "paired": 0,
         "absent": 13,
-        "participationRate": 0.925
+        "participationRate": 0.927
       }
     },
     {
@@ -16786,13 +16926,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/28286"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 150,
-        "yea": 68,
-        "nay": 68,
+        "eligible": 177,
+        "cast": 153,
+        "yea": 69,
+        "nay": 70,
         "paired": 14,
         "absent": 24,
-        "participationRate": 0.862
+        "participationRate": 0.864
       }
     },
     {
@@ -16820,10 +16960,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/115744"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -16854,10 +16994,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/71270"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 94,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 95,
+        "nay": 81,
         "paired": 1,
         "absent": 0,
         "participationRate": 1
@@ -16888,10 +17028,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/89000"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 172,
-        "yea": 93,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 175,
+        "yea": 94,
+        "nay": 81,
         "paired": 0,
         "absent": 2,
         "participationRate": 0.989
@@ -16922,10 +17062,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/110649"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 172,
-        "yea": 91,
-        "nay": 78,
+        "eligible": 177,
+        "cast": 175,
+        "yea": 93,
+        "nay": 79,
         "paired": 3,
         "absent": 2,
         "participationRate": 0.989
@@ -16956,10 +17096,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88633"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 90,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 91,
+        "nay": 82,
         "paired": 4,
         "absent": 0,
         "participationRate": 1
@@ -16990,10 +17130,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/104741"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 84,
-        "nay": 90,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 85,
+        "nay": 92,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -17024,10 +17164,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123520"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 91,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 92,
+        "nay": 82,
         "paired": 3,
         "absent": 0,
         "participationRate": 1
@@ -17058,10 +17198,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/89464"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -17092,10 +17232,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/110225"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 172,
-        "yea": 93,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 175,
+        "yea": 94,
+        "nay": 81,
         "paired": 0,
         "absent": 2,
         "participationRate": 0.989
@@ -17126,10 +17266,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122756"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -17160,10 +17300,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122899"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -17194,13 +17334,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/25488"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 151,
-        "yea": 77,
-        "nay": 71,
+        "eligible": 177,
+        "cast": 154,
+        "yea": 79,
+        "nay": 72,
         "paired": 3,
         "absent": 23,
-        "participationRate": 0.868
+        "participationRate": 0.87
       }
     },
     {
@@ -17228,10 +17368,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/119705"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 82,
-        "nay": 75,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 83,
+        "nay": 77,
         "paired": 17,
         "absent": 0,
         "participationRate": 1
@@ -17262,10 +17402,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122437"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -17296,10 +17436,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123060"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 172,
-        "yea": 93,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 175,
+        "yea": 95,
+        "nay": 80,
         "paired": 0,
         "absent": 2,
         "participationRate": 0.989
@@ -17330,13 +17470,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/110365"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 159,
-        "yea": 87,
-        "nay": 72,
+        "eligible": 177,
+        "cast": 162,
+        "yea": 89,
+        "nay": 73,
         "paired": 0,
         "absent": 15,
-        "participationRate": 0.914
+        "participationRate": 0.915
       }
     },
     {
@@ -17364,10 +17504,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122369"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -17398,13 +17538,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/89219"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 152,
-        "yea": 84,
-        "nay": 68,
+        "eligible": 177,
+        "cast": 155,
+        "yea": 86,
+        "nay": 69,
         "paired": 0,
         "absent": 22,
-        "participationRate": 0.874
+        "participationRate": 0.876
       }
     },
     {
@@ -17432,10 +17572,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88350"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 92,
-        "nay": 76,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 93,
+        "nay": 78,
         "paired": 6,
         "absent": 0,
         "participationRate": 1
@@ -17466,11 +17606,11 @@
         "fr": "https://www.ourcommons.ca/members/fr/110373"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
+        "eligible": 177,
+        "cast": 177,
         "yea": 94,
         "nay": 80,
-        "paired": 0,
+        "paired": 3,
         "absent": 0,
         "participationRate": 1
       }
@@ -17500,10 +17640,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/49344"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 96,
-        "nay": 77,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 97,
+        "nay": 79,
         "paired": 1,
         "absent": 0,
         "participationRate": 1
@@ -17534,10 +17674,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88994"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 75,
-        "nay": 72,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 76,
+        "nay": 74,
         "paired": 27,
         "absent": 0,
         "participationRate": 1
@@ -17568,10 +17708,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/35909"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 88,
-        "nay": 78,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 90,
+        "nay": 79,
         "paired": 8,
         "absent": 0,
         "participationRate": 1
@@ -17602,10 +17742,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/105521"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 76,
-        "nay": 56,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 78,
+        "nay": 57,
         "paired": 41,
         "absent": 1,
         "participationRate": 0.994
@@ -17636,10 +17776,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122559"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -17670,10 +17810,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122959"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -17704,10 +17844,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/102653"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 172,
-        "yea": 94,
-        "nay": 78,
+        "eligible": 177,
+        "cast": 175,
+        "yea": 96,
+        "nay": 79,
         "paired": 0,
         "absent": 2,
         "participationRate": 0.989
@@ -17738,13 +17878,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/59325"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 150,
-        "yea": 77,
-        "nay": 73,
+        "eligible": 177,
+        "cast": 153,
+        "yea": 79,
+        "nay": 74,
         "paired": 0,
         "absent": 24,
-        "participationRate": 0.862
+        "participationRate": 0.864
       }
     },
     {
@@ -17772,10 +17912,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123073"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 95,
-        "nay": 78,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 97,
+        "nay": 79,
         "paired": 0,
         "absent": 1,
         "participationRate": 0.994
@@ -17806,13 +17946,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/122476"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 160,
-        "yea": 88,
-        "nay": 72,
+        "eligible": 177,
+        "cast": 163,
+        "yea": 90,
+        "nay": 73,
         "paired": 0,
         "absent": 14,
-        "participationRate": 0.92
+        "participationRate": 0.921
       }
     },
     {
@@ -17840,10 +17980,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/35315"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 84,
-        "nay": 89,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 85,
+        "nay": 91,
         "paired": 0,
         "absent": 1,
         "participationRate": 0.994
@@ -17874,10 +18014,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88535"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 171,
-        "yea": 93,
-        "nay": 78,
+        "eligible": 177,
+        "cast": 174,
+        "yea": 95,
+        "nay": 79,
         "paired": 0,
         "absent": 3,
         "participationRate": 0.983
@@ -17908,10 +18048,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122988"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 172,
-        "yea": 94,
-        "nay": 75,
+        "eligible": 177,
+        "cast": 175,
+        "yea": 96,
+        "nay": 76,
         "paired": 3,
         "absent": 2,
         "participationRate": 0.989
@@ -17942,10 +18082,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122579"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 83,
-        "nay": 90,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 84,
+        "nay": 92,
         "paired": 0,
         "absent": 1,
         "participationRate": 0.994
@@ -17976,10 +18116,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122473"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -18010,10 +18150,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/110124"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -18044,10 +18184,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/31098"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -18078,10 +18218,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88453"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -18112,10 +18252,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/109915"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 91,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 92,
+        "nay": 83,
         "paired": 2,
         "absent": 0,
         "participationRate": 1
@@ -18146,10 +18286,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/89150"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 95,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 97,
+        "nay": 80,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -18180,10 +18320,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/89249"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 172,
-        "yea": 95,
-        "nay": 77,
+        "eligible": 177,
+        "cast": 175,
+        "yea": 97,
+        "nay": 78,
         "paired": 0,
         "absent": 2,
         "participationRate": 0.989
@@ -18214,10 +18354,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/105410"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 85,
-        "nay": 68,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 87,
+        "nay": 69,
         "paired": 21,
         "absent": 0,
         "participationRate": 1
@@ -18248,10 +18388,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/89408"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -18282,10 +18422,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/31119"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 92,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 93,
+        "nay": 83,
         "paired": 1,
         "absent": 0,
         "participationRate": 1
@@ -18316,10 +18456,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/105422"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 94,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 96,
+        "nay": 80,
         "paired": 0,
         "absent": 1,
         "participationRate": 0.994
@@ -18350,10 +18490,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88721"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 90,
-        "nay": 76,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 91,
+        "nay": 78,
         "paired": 7,
         "absent": 1,
         "participationRate": 0.994
@@ -18384,10 +18524,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122380"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -18418,10 +18558,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/89010"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 171,
-        "yea": 91,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 174,
+        "yea": 92,
+        "nay": 82,
         "paired": 0,
         "absent": 3,
         "participationRate": 0.983
@@ -18452,10 +18592,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88515"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -18486,10 +18626,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/105082"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 84,
-        "nay": 71,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 86,
+        "nay": 72,
         "paired": 19,
         "absent": 0,
         "participationRate": 1
@@ -18520,10 +18660,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/89027"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 92,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 93,
+        "nay": 82,
         "paired": 2,
         "absent": 0,
         "participationRate": 1
@@ -18554,10 +18694,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/98749"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 95,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 97,
+        "nay": 80,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -18588,10 +18728,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/84672"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 171,
-        "yea": 92,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 174,
+        "yea": 94,
+        "nay": 80,
         "paired": 0,
         "absent": 3,
         "participationRate": 0.983
@@ -18622,10 +18762,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122443"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 92,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 93,
+        "nay": 83,
         "paired": 0,
         "absent": 1,
         "participationRate": 0.994
@@ -18656,10 +18796,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122850"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -18690,10 +18830,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88478"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 94,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 95,
+        "nay": 82,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -18724,10 +18864,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88323"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -18758,10 +18898,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/71692"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -18792,10 +18932,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/96356"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 88,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 89,
+        "nay": 82,
         "paired": 6,
         "absent": 0,
         "participationRate": 1
@@ -18826,10 +18966,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88605"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 84,
-        "nay": 90,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 85,
+        "nay": 92,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -18860,10 +19000,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88827"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -18894,10 +19034,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88316"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -18928,11 +19068,11 @@
         "fr": "https://www.ourcommons.ca/members/fr/1589"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 170,
+        "eligible": 177,
+        "cast": 173,
         "yea": 91,
         "nay": 79,
-        "paired": 0,
+        "paired": 3,
         "absent": 4,
         "participationRate": 0.977
       }
@@ -18962,10 +19102,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/89279"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 64,
-        "nay": 65,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 65,
+        "nay": 67,
         "paired": 45,
         "absent": 0,
         "participationRate": 1
@@ -18996,10 +19136,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/110534"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 90,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 91,
+        "nay": 81,
         "paired": 5,
         "absent": 0,
         "participationRate": 1
@@ -19030,10 +19170,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/115736"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -19064,10 +19204,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/1809"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 88,
-        "nay": 70,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 90,
+        "nay": 71,
         "paired": 16,
         "absent": 0,
         "participationRate": 1
@@ -19098,10 +19238,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/110189"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 84,
-        "nay": 89,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 85,
+        "nay": 91,
         "paired": 0,
         "absent": 1,
         "participationRate": 0.994
@@ -19132,10 +19272,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122911"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -19166,10 +19306,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/104806"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 84,
-        "nay": 90,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 85,
+        "nay": 92,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -19200,10 +19340,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/87121"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 171,
-        "yea": 85,
-        "nay": 86,
+        "eligible": 177,
+        "cast": 174,
+        "yea": 87,
+        "nay": 87,
         "paired": 0,
         "absent": 3,
         "participationRate": 0.983
@@ -19234,13 +19374,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/63908"
       },
       "votingRecord": {
-        "eligible": 174,
+        "eligible": 177,
         "cast": 150,
         "yea": 82,
         "nay": 61,
         "paired": 7,
-        "absent": 24,
-        "participationRate": 0.862
+        "absent": 27,
+        "participationRate": 0.847
       }
     },
     {
@@ -19268,10 +19408,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/89226"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 171,
-        "yea": 92,
-        "nay": 78,
+        "eligible": 177,
+        "cast": 174,
+        "yea": 94,
+        "nay": 79,
         "paired": 1,
         "absent": 3,
         "participationRate": 0.983
@@ -19302,10 +19442,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88802"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -19336,13 +19476,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/123418"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 159,
-        "yea": 87,
+        "eligible": 177,
+        "cast": 161,
+        "yea": 89,
         "nay": 72,
         "paired": 0,
-        "absent": 15,
-        "participationRate": 0.914
+        "absent": 16,
+        "participationRate": 0.91
       }
     },
     {
@@ -19370,13 +19510,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/122825"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 160,
-        "yea": 85,
-        "nay": 72,
+        "eligible": 177,
+        "cast": 163,
+        "yea": 87,
+        "nay": 73,
         "paired": 3,
         "absent": 14,
-        "participationRate": 0.92
+        "participationRate": 0.921
       }
     },
     {
@@ -19404,10 +19544,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123401"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 78,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 95,
+        "nay": 79,
         "paired": 3,
         "absent": 0,
         "participationRate": 1
@@ -19438,10 +19578,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123272"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 95,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 97,
+        "nay": 80,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -19472,10 +19612,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88538"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 83,
-        "nay": 85,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 84,
+        "nay": 87,
         "paired": 6,
         "absent": 0,
         "participationRate": 1
@@ -19506,10 +19646,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123517"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 170,
-        "yea": 91,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 173,
+        "yea": 93,
+        "nay": 80,
         "paired": 0,
         "absent": 4,
         "participationRate": 0.977
@@ -19540,10 +19680,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88938"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 110,
-        "nay": 64,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 112,
+        "nay": 65,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -19574,10 +19714,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/107294"
       },
       "votingRecord": {
-        "eligible": 1,
-        "cast": 1,
-        "yea": 1,
-        "nay": 0,
+        "eligible": 4,
+        "cast": 4,
+        "yea": 2,
+        "nay": 2,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -19608,10 +19748,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/89407"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 168,
-        "yea": 82,
-        "nay": 70,
+        "eligible": 177,
+        "cast": 171,
+        "yea": 84,
+        "nay": 71,
         "paired": 16,
         "absent": 6,
         "participationRate": 0.966
@@ -19642,10 +19782,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/110918"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 167,
-        "yea": 93,
-        "nay": 74,
+        "eligible": 177,
+        "cast": 170,
+        "yea": 95,
+        "nay": 75,
         "paired": 0,
         "absent": 7,
         "participationRate": 0.96
@@ -19676,10 +19816,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88715"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 172,
-        "yea": 92,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 175,
+        "yea": 93,
+        "nay": 82,
         "paired": 0,
         "absent": 2,
         "participationRate": 0.989
@@ -19710,10 +19850,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/35397"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 171,
-        "yea": 92,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 174,
+        "yea": 94,
+        "nay": 80,
         "paired": 0,
         "absent": 3,
         "participationRate": 0.983
@@ -19744,10 +19884,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123653"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 91,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 92,
+        "nay": 82,
         "paired": 3,
         "absent": 0,
         "participationRate": 1
@@ -19778,10 +19918,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123665"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 93,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 94,
+        "nay": 81,
         "paired": 1,
         "absent": 1,
         "participationRate": 0.994
@@ -19812,10 +19952,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122507"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 171,
-        "yea": 93,
-        "nay": 78,
+        "eligible": 177,
+        "cast": 174,
+        "yea": 95,
+        "nay": 79,
         "paired": 0,
         "absent": 3,
         "participationRate": 0.983
@@ -19846,10 +19986,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122615"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -19880,10 +20020,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123248"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 172,
-        "yea": 91,
-        "nay": 74,
+        "eligible": 177,
+        "cast": 175,
+        "yea": 93,
+        "nay": 75,
         "paired": 7,
         "absent": 2,
         "participationRate": 0.989
@@ -19914,10 +20054,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122492"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 87,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 88,
+        "nay": 82,
         "paired": 6,
         "absent": 1,
         "participationRate": 0.994
@@ -19948,10 +20088,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123586"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 170,
-        "yea": 94,
-        "nay": 76,
+        "eligible": 177,
+        "cast": 173,
+        "yea": 96,
+        "nay": 77,
         "paired": 0,
         "absent": 4,
         "participationRate": 0.977
@@ -19982,10 +20122,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88984"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 84,
-        "nay": 72,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 85,
+        "nay": 74,
         "paired": 18,
         "absent": 0,
         "participationRate": 1
@@ -20016,10 +20156,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/105630"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 171,
-        "yea": 93,
-        "nay": 78,
+        "eligible": 177,
+        "cast": 174,
+        "yea": 95,
+        "nay": 79,
         "paired": 0,
         "absent": 3,
         "participationRate": 0.983
@@ -20050,10 +20190,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/111109"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 91,
-        "nay": 78,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 92,
+        "nay": 80,
         "paired": 5,
         "absent": 0,
         "participationRate": 1
@@ -20084,10 +20224,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122678"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 170,
-        "yea": 93,
-        "nay": 77,
+        "eligible": 177,
+        "cast": 173,
+        "yea": 95,
+        "nay": 78,
         "paired": 0,
         "absent": 4,
         "participationRate": 0.977
@@ -20118,10 +20258,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123133"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -20152,10 +20292,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/110446"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 82,
         "paired": 1,
         "absent": 0,
         "participationRate": 1
@@ -20186,10 +20326,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122419"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -20220,10 +20360,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123153"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 94,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 96,
+        "nay": 80,
         "paired": 0,
         "absent": 1,
         "participationRate": 0.994
@@ -20254,10 +20394,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/59148"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 170,
-        "yea": 91,
-        "nay": 76,
+        "eligible": 177,
+        "cast": 173,
+        "yea": 93,
+        "nay": 77,
         "paired": 3,
         "absent": 4,
         "participationRate": 0.977
@@ -20288,10 +20428,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123019"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 90,
-        "nay": 73,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 91,
+        "nay": 75,
         "paired": 11,
         "absent": 0,
         "participationRate": 1
@@ -20322,10 +20462,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123382"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 88,
-        "nay": 76,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 89,
+        "nay": 78,
         "paired": 10,
         "absent": 0,
         "participationRate": 1
@@ -20356,10 +20496,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123006"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 95,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 97,
+        "nay": 80,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -20390,10 +20530,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88558"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -20424,10 +20564,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/89020"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 93,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 94,
+        "nay": 82,
         "paired": 0,
         "absent": 1,
         "participationRate": 0.994
@@ -20458,10 +20598,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/71337"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 82,
         "paired": 1,
         "absent": 0,
         "participationRate": 1
@@ -20492,13 +20632,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/111116"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 169,
-        "yea": 105,
-        "nay": 64,
+        "eligible": 177,
+        "cast": 172,
+        "yea": 106,
+        "nay": 66,
         "paired": 0,
         "absent": 5,
-        "participationRate": 0.971
+        "participationRate": 0.972
       }
     },
     {
@@ -20526,10 +20666,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123287"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 172,
-        "yea": 93,
-        "nay": 76,
+        "eligible": 177,
+        "cast": 175,
+        "yea": 95,
+        "nay": 77,
         "paired": 3,
         "absent": 2,
         "participationRate": 0.989
@@ -20560,10 +20700,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/105229"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -20594,10 +20734,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/105774"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 92,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 81,
         "paired": 2,
         "absent": 0,
         "participationRate": 1
@@ -20628,13 +20768,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/89167"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 152,
-        "yea": 82,
-        "nay": 64,
+        "eligible": 177,
+        "cast": 155,
+        "yea": 83,
+        "nay": 66,
         "paired": 6,
         "absent": 22,
-        "participationRate": 0.874
+        "participationRate": 0.876
       }
     },
     {
@@ -20662,13 +20802,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/118689"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 159,
-        "yea": 87,
-        "nay": 72,
+        "eligible": 177,
+        "cast": 162,
+        "yea": 89,
+        "nay": 73,
         "paired": 0,
         "absent": 15,
-        "participationRate": 0.914
+        "participationRate": 0.915
       }
     },
     {
@@ -20696,10 +20836,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/89263"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 168,
-        "yea": 85,
-        "nay": 83,
+        "eligible": 177,
+        "cast": 171,
+        "yea": 87,
+        "nay": 84,
         "paired": 0,
         "absent": 6,
         "participationRate": 0.966
@@ -20730,10 +20870,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88384"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 64,
-        "nay": 69,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 65,
+        "nay": 71,
         "paired": 41,
         "absent": 0,
         "participationRate": 1
@@ -20764,10 +20904,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122646"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -20798,10 +20938,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/110502"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -20832,10 +20972,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/104531"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -20866,10 +21006,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/89130"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 87,
-        "nay": 68,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 89,
+        "nay": 69,
         "paired": 19,
         "absent": 0,
         "participationRate": 1
@@ -20900,13 +21040,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/88849"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 169,
-        "yea": 86,
-        "nay": 75,
+        "eligible": 177,
+        "cast": 172,
+        "yea": 87,
+        "nay": 77,
         "paired": 8,
         "absent": 5,
-        "participationRate": 0.971
+        "participationRate": 0.972
       }
     },
     {
@@ -20934,10 +21074,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/105052"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 95,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 97,
+        "nay": 80,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -20968,10 +21108,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123552"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 94,
-        "nay": 77,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 96,
+        "nay": 78,
         "paired": 3,
         "absent": 0,
         "participationRate": 1
@@ -21002,10 +21142,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123104"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 95,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 97,
+        "nay": 80,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -21036,10 +21176,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123625"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -21070,13 +21210,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/89136"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 153,
-        "yea": 80,
-        "nay": 73,
+        "eligible": 177,
+        "cast": 156,
+        "yea": 82,
+        "nay": 74,
         "paired": 0,
         "absent": 21,
-        "participationRate": 0.879
+        "participationRate": 0.881
       }
     },
     {
@@ -21104,10 +21244,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/105863"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 95,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 97,
+        "nay": 80,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -21138,10 +21278,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/105009"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 88,
-        "nay": 75,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 89,
+        "nay": 77,
         "paired": 11,
         "absent": 0,
         "participationRate": 1
@@ -21172,10 +21312,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/89080"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 95,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 97,
+        "nay": 80,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -21206,10 +21346,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/110454"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 91,
-        "nay": 78,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 93,
+        "nay": 79,
         "paired": 4,
         "absent": 1,
         "participationRate": 0.994
@@ -21240,10 +21380,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/111025"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 96,
-        "nay": 77,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 98,
+        "nay": 78,
         "paired": 1,
         "absent": 0,
         "participationRate": 1
@@ -21274,13 +21414,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/110441"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 164,
-        "yea": 86,
-        "nay": 67,
+        "eligible": 177,
+        "cast": 167,
+        "yea": 88,
+        "nay": 68,
         "paired": 11,
         "absent": 10,
-        "participationRate": 0.943
+        "participationRate": 0.944
       }
     },
     {
@@ -21308,13 +21448,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/96367"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 169,
+        "eligible": 177,
+        "cast": 172,
         "yea": 87,
         "nay": 71,
-        "paired": 11,
+        "paired": 14,
         "absent": 5,
-        "participationRate": 0.971
+        "participationRate": 0.972
       }
     },
     {
@@ -21342,10 +21482,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/89346"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 168,
-        "yea": 84,
-        "nay": 84,
+        "eligible": 177,
+        "cast": 171,
+        "yea": 86,
+        "nay": 85,
         "paired": 0,
         "absent": 6,
         "participationRate": 0.966
@@ -21376,10 +21516,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/35857"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 90,
-        "nay": 78,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 92,
+        "nay": 79,
         "paired": 5,
         "absent": 1,
         "participationRate": 0.994
@@ -21410,10 +21550,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/92209"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 83,
-        "nay": 74,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 84,
+        "nay": 76,
         "paired": 17,
         "absent": 0,
         "participationRate": 1
@@ -21444,13 +21584,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/96350"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 171,
-        "yea": 91,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 173,
+        "yea": 92,
+        "nay": 80,
         "paired": 1,
-        "absent": 3,
-        "participationRate": 0.983
+        "absent": 4,
+        "participationRate": 0.977
       }
     },
     {
@@ -21478,10 +21618,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/30552"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -21512,13 +21652,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/110665"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 169,
-        "yea": 91,
-        "nay": 78,
+        "eligible": 177,
+        "cast": 172,
+        "yea": 93,
+        "nay": 79,
         "paired": 0,
         "absent": 5,
-        "participationRate": 0.971
+        "participationRate": 0.972
       }
     },
     {
@@ -21546,10 +21686,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88601"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -21580,10 +21720,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/110663"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -21614,10 +21754,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/104973"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 84,
-        "nay": 89,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 85,
+        "nay": 91,
         "paired": 0,
         "absent": 1,
         "participationRate": 0.994
@@ -21648,10 +21788,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/104957"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 82,
         "paired": 1,
         "absent": 0,
         "participationRate": 1
@@ -21682,10 +21822,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88394"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 92,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 93,
+        "nay": 83,
         "paired": 0,
         "absent": 1,
         "participationRate": 0.994
@@ -21716,10 +21856,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123305"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -21750,10 +21890,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122518"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -21784,10 +21924,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/105291"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 95,
+        "nay": 80,
         "paired": 2,
         "absent": 0,
         "participationRate": 1
@@ -21818,10 +21958,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122913"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 95,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 97,
+        "nay": 80,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -21852,10 +21992,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/1813"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 79,
-        "nay": 75,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 80,
+        "nay": 77,
         "paired": 19,
         "absent": 1,
         "participationRate": 0.994
@@ -21886,13 +22026,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/58757"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 165,
-        "yea": 88,
-        "nay": 71,
+        "eligible": 177,
+        "cast": 168,
+        "yea": 90,
+        "nay": 72,
         "paired": 6,
         "absent": 9,
-        "participationRate": 0.948
+        "participationRate": 0.949
       }
     },
     {
@@ -21920,10 +22060,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122656"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -21954,10 +22094,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/104630"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 84,
-        "nay": 90,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 85,
+        "nay": 92,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -21988,10 +22128,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/108395"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 91,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 93,
+        "nay": 80,
         "paired": 4,
         "absent": 0,
         "participationRate": 1
@@ -22022,10 +22162,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/105120"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 172,
-        "yea": 93,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 175,
+        "yea": 95,
+        "nay": 80,
         "paired": 0,
         "absent": 2,
         "participationRate": 0.989
@@ -22056,10 +22196,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88958"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 172,
-        "yea": 92,
-        "nay": 78,
+        "eligible": 177,
+        "cast": 175,
+        "yea": 94,
+        "nay": 79,
         "paired": 2,
         "absent": 2,
         "participationRate": 0.989
@@ -22090,10 +22230,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88532"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -22124,10 +22264,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/98079"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 94,
-        "nay": 78,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 96,
+        "nay": 79,
         "paired": 2,
         "absent": 0,
         "participationRate": 1
@@ -22158,13 +22298,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/35600"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 169,
-        "yea": 92,
-        "nay": 77,
+        "eligible": 177,
+        "cast": 172,
+        "yea": 94,
+        "nay": 78,
         "paired": 0,
         "absent": 5,
-        "participationRate": 0.971
+        "participationRate": 0.972
       }
     },
     {
@@ -22192,10 +22332,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88368"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -22226,10 +22366,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88810"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 93,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 94,
+        "nay": 82,
         "paired": 0,
         "absent": 1,
         "participationRate": 0.994
@@ -22260,10 +22400,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/105088"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 100,
-        "nay": 74,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 101,
+        "nay": 76,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -22294,10 +22434,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/109891"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 91,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 92,
+        "nay": 81,
         "paired": 4,
         "absent": 0,
         "participationRate": 1
@@ -22328,10 +22468,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122394"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 95,
+        "nay": 82,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -22362,10 +22502,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88468"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -22396,10 +22536,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123455"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 95,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 97,
+        "nay": 80,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -22430,10 +22570,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/116022"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 170,
-        "yea": 90,
-        "nay": 76,
+        "eligible": 177,
+        "cast": 173,
+        "yea": 92,
+        "nay": 77,
         "paired": 4,
         "absent": 4,
         "participationRate": 0.977
@@ -22464,10 +22604,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122788"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -22498,10 +22638,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122975"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 94,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 96,
+        "nay": 80,
         "paired": 0,
         "absent": 1,
         "participationRate": 0.994
@@ -22532,10 +22672,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88748"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 88,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 89,
+        "nay": 82,
         "paired": 6,
         "absent": 0,
         "participationRate": 1
@@ -22566,10 +22706,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123282"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 170,
-        "yea": 94,
-        "nay": 76,
+        "eligible": 177,
+        "cast": 173,
+        "yea": 96,
+        "nay": 77,
         "paired": 0,
         "absent": 4,
         "participationRate": 0.977
@@ -22600,13 +22740,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/90964"
       },
       "votingRecord": {
-        "eligible": 80,
-        "cast": 71,
-        "yea": 44,
-        "nay": 27,
+        "eligible": 83,
+        "cast": 74,
+        "yea": 45,
+        "nay": 29,
         "paired": 0,
         "absent": 9,
-        "participationRate": 0.887
+        "participationRate": 0.892
       }
     },
     {
@@ -22634,10 +22774,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/2897"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 171,
-        "yea": 83,
-        "nay": 88,
+        "eligible": 177,
+        "cast": 174,
+        "yea": 85,
+        "nay": 89,
         "paired": 0,
         "absent": 3,
         "participationRate": 0.983
@@ -22668,10 +22808,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/3306"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 95,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 97,
+        "nay": 80,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -22702,10 +22842,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/89179"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 95,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 97,
+        "nay": 80,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -22736,10 +22876,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/9486"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 80,
-        "nay": 72,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 81,
+        "nay": 74,
         "paired": 22,
         "absent": 0,
         "participationRate": 1
@@ -22770,10 +22910,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122773"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -22804,10 +22944,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123415"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 171,
-        "yea": 84,
-        "nay": 69,
+        "eligible": 177,
+        "cast": 174,
+        "yea": 86,
+        "nay": 70,
         "paired": 18,
         "absent": 3,
         "participationRate": 0.983
@@ -22838,10 +22978,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/59293"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 92,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 93,
+        "nay": 83,
         "paired": 0,
         "absent": 1,
         "participationRate": 0.994
@@ -22872,10 +23012,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123556"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -22906,13 +23046,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/105623"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 169,
+        "eligible": 177,
+        "cast": 172,
         "yea": 93,
         "nay": 76,
-        "paired": 0,
+        "paired": 3,
         "absent": 5,
-        "participationRate": 0.971
+        "participationRate": 0.972
       }
     },
     {
@@ -22940,10 +23080,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123563"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -22974,10 +23114,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/105689"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 167,
-        "yea": 85,
-        "nay": 82,
+        "eligible": 177,
+        "cast": 170,
+        "yea": 87,
+        "nay": 83,
         "paired": 0,
         "absent": 7,
         "participationRate": 0.96
@@ -23008,10 +23148,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/105186"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 94,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 96,
+        "nay": 80,
         "paired": 0,
         "absent": 1,
         "participationRate": 0.994
@@ -23042,10 +23182,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122587"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -23076,10 +23216,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/58621"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 92,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 93,
+        "nay": 81,
         "paired": 2,
         "absent": 1,
         "participationRate": 0.994
@@ -23110,10 +23250,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/71762"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 95,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 97,
+        "nay": 80,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -23144,10 +23284,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122684"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -23178,10 +23318,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122428"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -23212,10 +23352,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88660"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 89,
-        "nay": 77,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 90,
+        "nay": 79,
         "paired": 8,
         "absent": 0,
         "participationRate": 1
@@ -23246,10 +23386,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123144"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -23280,10 +23420,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/17210"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 95,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 97,
+        "nay": 80,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -23314,13 +23454,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/123447"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 162,
-        "yea": 88,
-        "nay": 68,
+        "eligible": 177,
+        "cast": 165,
+        "yea": 90,
+        "nay": 69,
         "paired": 6,
         "absent": 12,
-        "participationRate": 0.931
+        "participationRate": 0.932
       }
     },
     {
@@ -23348,10 +23488,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/105807"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 172,
-        "yea": 92,
-        "nay": 77,
+        "eligible": 177,
+        "cast": 175,
+        "yea": 94,
+        "nay": 78,
         "paired": 3,
         "absent": 2,
         "participationRate": 0.989
@@ -23382,10 +23522,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88308"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -23416,10 +23556,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/94305"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 92,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 94,
+        "nay": 80,
         "paired": 2,
         "absent": 1,
         "participationRate": 0.994
@@ -23450,10 +23590,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/110415"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 78,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 95,
+        "nay": 79,
         "paired": 3,
         "absent": 0,
         "participationRate": 1
@@ -23484,10 +23624,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122462"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -23518,10 +23658,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/110572"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 92,
-        "nay": 78,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 93,
+        "nay": 80,
         "paired": 4,
         "absent": 0,
         "participationRate": 1
@@ -23552,13 +23692,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/88917"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 169,
-        "yea": 92,
-        "nay": 77,
+        "eligible": 177,
+        "cast": 172,
+        "yea": 94,
+        "nay": 78,
         "paired": 0,
         "absent": 5,
-        "participationRate": 0.971
+        "participationRate": 0.972
       }
     },
     {
@@ -23586,10 +23726,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123141"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -23620,10 +23760,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123192"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 89,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 90,
+        "nay": 81,
         "paired": 6,
         "absent": 0,
         "participationRate": 1
@@ -23654,10 +23794,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/72023"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 93,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 94,
+        "nay": 82,
         "paired": 0,
         "absent": 1,
         "participationRate": 0.994
@@ -23688,10 +23828,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/104947"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 84,
-        "nay": 89,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 85,
+        "nay": 91,
         "paired": 0,
         "absent": 1,
         "participationRate": 0.994
@@ -23722,10 +23862,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122668"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 92,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 93,
+        "nay": 83,
         "paired": 1,
         "absent": 0,
         "participationRate": 1
@@ -23756,10 +23896,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122933"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -23790,11 +23930,11 @@
         "fr": "https://www.ourcommons.ca/members/fr/58858"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
+        "eligible": 177,
+        "cast": 177,
         "yea": 87,
         "nay": 79,
-        "paired": 8,
+        "paired": 11,
         "absent": 0,
         "participationRate": 1
       }
@@ -23824,10 +23964,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/89171"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -23858,10 +23998,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122375"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 93,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 94,
+        "nay": 82,
         "paired": 0,
         "absent": 1,
         "participationRate": 0.994
@@ -23892,10 +24032,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/105559"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 95,
-        "nay": 78,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 97,
+        "nay": 79,
         "paired": 0,
         "absent": 1,
         "participationRate": 0.994
@@ -23926,10 +24066,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/71454"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 170,
-        "yea": 90,
-        "nay": 77,
+        "eligible": 177,
+        "cast": 173,
+        "yea": 92,
+        "nay": 78,
         "paired": 3,
         "absent": 4,
         "participationRate": 0.977
@@ -23960,10 +24100,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88418"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 84,
-        "nay": 90,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 85,
+        "nay": 92,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -23994,10 +24134,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88364"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -24028,10 +24168,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/413"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 172,
-        "yea": 52,
-        "nay": 51,
+        "eligible": 177,
+        "cast": 175,
+        "yea": 53,
+        "nay": 53,
         "paired": 69,
         "absent": 2,
         "participationRate": 0.989
@@ -24062,13 +24202,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/25524"
       },
       "votingRecord": {
-        "eligible": 140,
-        "cast": 133,
-        "yea": 71,
-        "nay": 62,
+        "eligible": 143,
+        "cast": 136,
+        "yea": 73,
+        "nay": 63,
         "paired": 0,
         "absent": 7,
-        "participationRate": 0.95
+        "participationRate": 0.951
       }
     },
     {
@@ -24096,10 +24236,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/105437"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 172,
-        "yea": 93,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 175,
+        "yea": 94,
+        "nay": 81,
         "paired": 0,
         "absent": 2,
         "participationRate": 0.989
@@ -24130,10 +24270,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122552"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 172,
-        "yea": 89,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 175,
+        "yea": 90,
+        "nay": 81,
         "paired": 4,
         "absent": 2,
         "participationRate": 0.989
@@ -24164,10 +24304,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122606"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -24198,10 +24338,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122946"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 94,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 95,
+        "nay": 82,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -24232,10 +24372,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/105598"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 170,
-        "yea": 91,
-        "nay": 77,
+        "eligible": 177,
+        "cast": 173,
+        "yea": 93,
+        "nay": 78,
         "paired": 2,
         "absent": 4,
         "participationRate": 0.977
@@ -24266,13 +24406,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/1827"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 169,
-        "yea": 92,
-        "nay": 77,
+        "eligible": 177,
+        "cast": 172,
+        "yea": 94,
+        "nay": 78,
         "paired": 0,
         "absent": 5,
-        "participationRate": 0.971
+        "participationRate": 0.972
       }
     },
     {
@@ -24300,11 +24440,11 @@
         "fr": "https://www.ourcommons.ca/members/fr/71902"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
+        "eligible": 177,
+        "cast": 176,
         "yea": 89,
         "nay": 74,
-        "paired": 10,
+        "paired": 13,
         "absent": 1,
         "participationRate": 0.994
       }
@@ -24334,10 +24474,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/119991"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 84,
-        "nay": 71,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 86,
+        "nay": 72,
         "paired": 18,
         "absent": 1,
         "participationRate": 0.994
@@ -24368,10 +24508,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/59235"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 172,
-        "yea": 93,
-        "nay": 78,
+        "eligible": 177,
+        "cast": 175,
+        "yea": 95,
+        "nay": 79,
         "paired": 1,
         "absent": 2,
         "participationRate": 0.989
@@ -24402,10 +24542,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/105191"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 92,
-        "nay": 77,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 94,
+        "nay": 78,
         "paired": 4,
         "absent": 1,
         "participationRate": 0.994
@@ -24436,10 +24576,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123644"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 172,
-        "yea": 89,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 175,
+        "yea": 90,
+        "nay": 82,
         "paired": 3,
         "absent": 2,
         "participationRate": 0.989
@@ -24470,10 +24610,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123081"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 82,
         "paired": 1,
         "absent": 0,
         "participationRate": 1
@@ -24504,10 +24644,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88521"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -24538,10 +24678,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/105210"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 87,
-        "nay": 78,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 89,
+        "nay": 79,
         "paired": 8,
         "absent": 1,
         "participationRate": 0.994
@@ -24572,10 +24712,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123622"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 170,
-        "yea": 92,
-        "nay": 78,
+        "eligible": 177,
+        "cast": 173,
+        "yea": 94,
+        "nay": 79,
         "paired": 0,
         "absent": 4,
         "participationRate": 0.977
@@ -24606,10 +24746,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122389"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 95,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 97,
+        "nay": 80,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -24640,10 +24780,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/59294"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -24674,10 +24814,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/105070"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 92,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 80,
         "paired": 3,
         "absent": 0,
         "participationRate": 1
@@ -24708,10 +24848,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88698"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -24742,10 +24882,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/1422"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 171,
-        "yea": 92,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 174,
+        "yea": 93,
+        "nay": 81,
         "paired": 0,
         "absent": 3,
         "participationRate": 0.983
@@ -24776,10 +24916,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/89339"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 88,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 89,
+        "nay": 81,
         "paired": 7,
         "absent": 0,
         "participationRate": 1
@@ -24810,10 +24950,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122533"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 172,
-        "yea": 93,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 175,
+        "yea": 94,
+        "nay": 81,
         "paired": 0,
         "absent": 2,
         "participationRate": 0.989
@@ -24844,10 +24984,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123583"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -24878,12 +25018,12 @@
         "fr": "https://www.ourcommons.ca/members/fr/25453"
       },
       "votingRecord": {
-        "eligible": 174,
+        "eligible": 177,
         "cast": 0,
         "yea": 0,
         "nay": 0,
         "paired": 0,
-        "absent": 174,
+        "absent": 177,
         "participationRate": 0
       }
     },
@@ -24912,10 +25052,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/25454"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 170,
-        "yea": 92,
-        "nay": 78,
+        "eligible": 177,
+        "cast": 173,
+        "yea": 94,
+        "nay": 79,
         "paired": 0,
         "absent": 4,
         "participationRate": 0.977
@@ -24946,10 +25086,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88649"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -24980,10 +25120,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88770"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 92,
-        "nay": 75,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 76,
         "paired": 7,
         "absent": 0,
         "participationRate": 1
@@ -25014,10 +25154,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/58841"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 171,
-        "yea": 93,
-        "nay": 78,
+        "eligible": 177,
+        "cast": 174,
+        "yea": 95,
+        "nay": 79,
         "paired": 0,
         "absent": 3,
         "participationRate": 0.983
@@ -25048,10 +25188,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/1787"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 93,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 94,
+        "nay": 82,
         "paired": 0,
         "absent": 1,
         "participationRate": 0.994
@@ -25082,10 +25222,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/142763"
       },
       "votingRecord": {
-        "eligible": 1,
-        "cast": 1,
-        "yea": 1,
-        "nay": 0,
+        "eligible": 4,
+        "cast": 4,
+        "yea": 2,
+        "nay": 2,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -25116,10 +25256,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88944"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 87,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 88,
+        "nay": 81,
         "paired": 8,
         "absent": 0,
         "participationRate": 1
@@ -25150,10 +25290,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/105031"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 81,
-        "nay": 60,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 83,
+        "nay": 61,
         "paired": 33,
         "absent": 0,
         "participationRate": 1
@@ -25184,10 +25324,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/105045"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 172,
-        "yea": 71,
-        "nay": 61,
+        "eligible": 177,
+        "cast": 175,
+        "yea": 72,
+        "nay": 63,
         "paired": 40,
         "absent": 2,
         "participationRate": 0.989
@@ -25218,10 +25358,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88703"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -25252,10 +25392,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/104773"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 84,
-        "nay": 90,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 85,
+        "nay": 92,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -25286,10 +25426,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/109867"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 168,
-        "yea": 92,
-        "nay": 76,
+        "eligible": 177,
+        "cast": 171,
+        "yea": 94,
+        "nay": 77,
         "paired": 0,
         "absent": 6,
         "participationRate": 0.966
@@ -25320,10 +25460,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122801"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 93,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 94,
+        "nay": 82,
         "paired": 0,
         "absent": 1,
         "participationRate": 0.994
@@ -25354,10 +25494,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123229"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 92,
-        "nay": 78,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 93,
+        "nay": 80,
         "paired": 4,
         "absent": 0,
         "participationRate": 1
@@ -25388,10 +25528,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/114349"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -25422,10 +25562,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122589"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 93,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 94,
+        "nay": 82,
         "paired": 0,
         "absent": 1,
         "participationRate": 0.994
@@ -25456,10 +25596,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88485"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 84,
-        "nay": 90,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 85,
+        "nay": 92,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -25490,10 +25630,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/105581"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 94,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 96,
+        "nay": 80,
         "paired": 0,
         "absent": 1,
         "participationRate": 0.994
@@ -25524,10 +25664,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123513"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 172,
-        "yea": 94,
-        "nay": 78,
+        "eligible": 177,
+        "cast": 175,
+        "yea": 96,
+        "nay": 79,
         "paired": 0,
         "absent": 2,
         "participationRate": 0.989
@@ -25558,10 +25698,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/71986"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 172,
-        "yea": 94,
-        "nay": 78,
+        "eligible": 177,
+        "cast": 175,
+        "yea": 96,
+        "nay": 79,
         "paired": 0,
         "absent": 2,
         "participationRate": 0.989
@@ -25592,13 +25732,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/122994"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 155,
-        "yea": 87,
-        "nay": 68,
+        "eligible": 177,
+        "cast": 158,
+        "yea": 89,
+        "nay": 69,
         "paired": 0,
         "absent": 19,
-        "participationRate": 0.891
+        "participationRate": 0.893
       }
     },
     {
@@ -25626,13 +25766,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/89198"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 155,
-        "yea": 70,
-        "nay": 66,
+        "eligible": 177,
+        "cast": 158,
+        "yea": 72,
+        "nay": 67,
         "paired": 19,
         "absent": 19,
-        "participationRate": 0.891
+        "participationRate": 0.893
       }
     },
     {
@@ -25660,10 +25800,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/110459"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 91,
-        "nay": 74,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 92,
+        "nay": 76,
         "paired": 9,
         "absent": 0,
         "participationRate": 1
@@ -25694,10 +25834,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/123027"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 94,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 95,
+        "nay": 82,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -25728,10 +25868,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88552"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 167,
-        "yea": 70,
-        "nay": 60,
+        "eligible": 177,
+        "cast": 170,
+        "yea": 71,
+        "nay": 62,
         "paired": 37,
         "absent": 7,
         "participationRate": 0.96
@@ -25762,13 +25902,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/89200"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 163,
-        "yea": 88,
-        "nay": 73,
+        "eligible": 177,
+        "cast": 166,
+        "yea": 90,
+        "nay": 74,
         "paired": 2,
         "absent": 11,
-        "participationRate": 0.937
+        "participationRate": 0.938
       }
     },
     {
@@ -25796,10 +25936,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/109877"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 88,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 89,
+        "nay": 82,
         "paired": 6,
         "absent": 0,
         "participationRate": 1
@@ -25830,10 +25970,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/84882"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 171,
-        "yea": 95,
-        "nay": 76,
+        "eligible": 177,
+        "cast": 174,
+        "yea": 97,
+        "nay": 77,
         "paired": 0,
         "absent": 3,
         "participationRate": 0.983
@@ -25864,10 +26004,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/110800"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 172,
-        "yea": 91,
-        "nay": 78,
+        "eligible": 177,
+        "cast": 175,
+        "yea": 93,
+        "nay": 79,
         "paired": 3,
         "absent": 2,
         "participationRate": 0.989
@@ -25898,10 +26038,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/105480"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 91,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 92,
+        "nay": 81,
         "paired": 4,
         "absent": 0,
         "participationRate": 1
@@ -25932,13 +26072,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/30645"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 156,
-        "yea": 85,
-        "nay": 71,
+        "eligible": 177,
+        "cast": 159,
+        "yea": 87,
+        "nay": 72,
         "paired": 0,
         "absent": 18,
-        "participationRate": 0.897
+        "participationRate": 0.898
       }
     },
     {
@@ -25966,10 +26106,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/110538"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 90,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 91,
+        "nay": 82,
         "paired": 4,
         "absent": 0,
         "participationRate": 1
@@ -26000,10 +26140,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/105242"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 88,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 89,
+        "nay": 82,
         "paired": 6,
         "absent": 0,
         "participationRate": 1
@@ -26034,10 +26174,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/105811"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 95,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 97,
+        "nay": 80,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -26068,10 +26208,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/71738"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 92,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 93,
+        "nay": 83,
         "paired": 0,
         "absent": 1,
         "participationRate": 0.994
@@ -26102,10 +26242,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/110009"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 170,
-        "yea": 91,
-        "nay": 73,
+        "eligible": 177,
+        "cast": 173,
+        "yea": 93,
+        "nay": 74,
         "paired": 6,
         "absent": 4,
         "participationRate": 0.977
@@ -26136,10 +26276,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/89211"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 170,
-        "yea": 92,
-        "nay": 78,
+        "eligible": 177,
+        "cast": 173,
+        "yea": 94,
+        "nay": 79,
         "paired": 0,
         "absent": 4,
         "participationRate": 0.977
@@ -26170,10 +26310,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122539"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -26204,10 +26344,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/89289"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 172,
-        "yea": 87,
-        "nay": 73,
+        "eligible": 177,
+        "cast": 175,
+        "yea": 89,
+        "nay": 74,
         "paired": 12,
         "absent": 2,
         "participationRate": 0.989
@@ -26238,10 +26378,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/35886"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 95,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 97,
+        "nay": 80,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -26272,10 +26412,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122637"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -26306,10 +26446,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/89084"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 95,
-        "nay": 79,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 97,
+        "nay": 80,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -26340,10 +26480,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/105918"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 94,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 95,
+        "nay": 82,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -26374,13 +26514,13 @@
         "fr": "https://www.ourcommons.ca/members/fr/71323"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 162,
-        "yea": 87,
-        "nay": 75,
+        "eligible": 177,
+        "cast": 165,
+        "yea": 89,
+        "nay": 76,
         "paired": 0,
         "absent": 12,
-        "participationRate": 0.931
+        "participationRate": 0.932
       }
     },
     {
@@ -26408,10 +26548,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/98747"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 93,
-        "nay": 81,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 94,
+        "nay": 83,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -26442,10 +26582,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/88950"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 94,
-        "nay": 80,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 95,
+        "nay": 82,
         "paired": 0,
         "absent": 0,
         "participationRate": 1
@@ -26476,10 +26616,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/122925"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 80,
-        "nay": 73,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 81,
+        "nay": 75,
         "paired": 21,
         "absent": 0,
         "participationRate": 1
@@ -26510,10 +26650,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/72035"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 173,
-        "yea": 91,
-        "nay": 77,
+        "eligible": 177,
+        "cast": 176,
+        "yea": 93,
+        "nay": 78,
         "paired": 5,
         "absent": 1,
         "participationRate": 0.994
@@ -26544,10 +26684,10 @@
         "fr": "https://www.ourcommons.ca/members/fr/54157"
       },
       "votingRecord": {
-        "eligible": 174,
-        "cast": 174,
-        "yea": 86,
-        "nay": 77,
+        "eligible": 177,
+        "cast": 177,
+        "yea": 87,
+        "nay": 79,
         "paired": 11,
         "absent": 0,
         "participationRate": 1
@@ -26555,6 +26695,1108 @@
     }
   ],
   "votes": [
+    {
+      "number": 177,
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "date": "2026-10-07",
+      "description": {
+        "en": "2nd reading of Bill C-218, An Act to amend the Criminal Code (medical assistance in dying)",
+        "fr": "2e lecture du projet de loi C-218, Loi modifiant le Code criminel (aide médicale à mourir)"
+      },
+      "result": {
+        "en": "Negatived",
+        "fr": "Rejetée"
+      },
+      "passed": false,
+      "totals": {
+        "yea": 141,
+        "nay": 187,
+        "paired": 6
+      },
+      "documentType": {
+        "en": "Legislative Process",
+        "fr": "Processus législatif"
+      },
+      "billNumber": "C-218",
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/votes/45/1/177",
+        "fr": "https://www.ourcommons.ca/members/fr/votes/45/1/177"
+      },
+      "ballots": {
+        "376": "nay",
+        "413": "nay",
+        "1422": "nay",
+        "1589": "paired",
+        "1787": "nay",
+        "1809": "yea",
+        "1813": "nay",
+        "1827": "yea",
+        "2897": "yea",
+        "3306": "yea",
+        "9486": "nay",
+        "17210": "yea",
+        "25446": "yea",
+        "25454": "yea",
+        "25475": "yea",
+        "25488": "yea",
+        "25524": "yea",
+        "28286": "nay",
+        "30330": "yea",
+        "30552": "nay",
+        "30645": "yea",
+        "31098": "nay",
+        "31119": "nay",
+        "35315": "nay",
+        "35397": "yea",
+        "35600": "yea",
+        "35857": "yea",
+        "35886": "yea",
+        "35897": "yea",
+        "35909": "yea",
+        "49344": "nay",
+        "54157": "nay",
+        "58621": "nay",
+        "58757": "yea",
+        "58841": "yea",
+        "58858": "paired",
+        "59148": "yea",
+        "59156": "yea",
+        "59235": "yea",
+        "59293": "nay",
+        "59294": "nay",
+        "59325": "yea",
+        "71270": "nay",
+        "71323": "yea",
+        "71337": "nay",
+        "71454": "yea",
+        "71692": "nay",
+        "71738": "nay",
+        "71762": "yea",
+        "71902": "paired",
+        "71986": "yea",
+        "72023": "nay",
+        "72029": "yea",
+        "72035": "yea",
+        "84672": "yea",
+        "84882": "yea",
+        "86261": "yea",
+        "87121": "yea",
+        "88308": "nay",
+        "88316": "nay",
+        "88323": "nay",
+        "88350": "nay",
+        "88364": "nay",
+        "88368": "nay",
+        "88369": "yea",
+        "88384": "nay",
+        "88394": "nay",
+        "88418": "nay",
+        "88422": "nay",
+        "88453": "nay",
+        "88468": "nay",
+        "88478": "nay",
+        "88485": "nay",
+        "88515": "nay",
+        "88521": "nay",
+        "88532": "nay",
+        "88535": "yea",
+        "88538": "nay",
+        "88541": "yea",
+        "88552": "nay",
+        "88558": "nay",
+        "88567": "nay",
+        "88601": "nay",
+        "88605": "nay",
+        "88633": "nay",
+        "88649": "nay",
+        "88660": "nay",
+        "88674": "yea",
+        "88698": "nay",
+        "88703": "nay",
+        "88715": "nay",
+        "88721": "nay",
+        "88748": "nay",
+        "88770": "yea",
+        "88802": "nay",
+        "88810": "nay",
+        "88827": "nay",
+        "88849": "nay",
+        "88917": "yea",
+        "88934": "nay",
+        "88938": "yea",
+        "88944": "nay",
+        "88950": "nay",
+        "88958": "yea",
+        "88984": "nay",
+        "88994": "nay",
+        "89000": "nay",
+        "89010": "nay",
+        "89020": "nay",
+        "89027": "nay",
+        "89080": "yea",
+        "89084": "yea",
+        "89130": "yea",
+        "89136": "yea",
+        "89150": "yea",
+        "89156": "yea",
+        "89167": "nay",
+        "89171": "nay",
+        "89179": "yea",
+        "89198": "yea",
+        "89200": "yea",
+        "89211": "yea",
+        "89219": "yea",
+        "89226": "yea",
+        "89236": "nay",
+        "89249": "yea",
+        "89259": "yea",
+        "89263": "yea",
+        "89279": "nay",
+        "89289": "yea",
+        "89294": "yea",
+        "89339": "nay",
+        "89346": "yea",
+        "89407": "yea",
+        "89408": "nay",
+        "89449": "nay",
+        "89464": "nay",
+        "90964": "nay",
+        "92209": "nay",
+        "94305": "yea",
+        "96081": "nay",
+        "96356": "nay",
+        "96367": "paired",
+        "98079": "yea",
+        "98747": "nay",
+        "98749": "yea",
+        "102275": "yea",
+        "102653": "yea",
+        "104531": "nay",
+        "104555": "nay",
+        "104571": "nay",
+        "104630": "nay",
+        "104669": "nay",
+        "104705": "nay",
+        "104741": "nay",
+        "104773": "nay",
+        "104786": "nay",
+        "104806": "nay",
+        "104947": "nay",
+        "104957": "nay",
+        "104973": "nay",
+        "104977": "nay",
+        "105009": "nay",
+        "105031": "yea",
+        "105045": "nay",
+        "105052": "yea",
+        "105070": "yea",
+        "105082": "yea",
+        "105088": "nay",
+        "105120": "yea",
+        "105121": "nay",
+        "105186": "yea",
+        "105191": "yea",
+        "105210": "yea",
+        "105229": "nay",
+        "105242": "nay",
+        "105291": "yea",
+        "105340": "yea",
+        "105410": "yea",
+        "105422": "yea",
+        "105437": "nay",
+        "105480": "nay",
+        "105521": "yea",
+        "105559": "yea",
+        "105581": "yea",
+        "105598": "yea",
+        "105623": "paired",
+        "105630": "yea",
+        "105689": "yea",
+        "105774": "yea",
+        "105807": "yea",
+        "105811": "yea",
+        "105863": "yea",
+        "105918": "nay",
+        "107294": "nay",
+        "108395": "yea",
+        "109867": "yea",
+        "109872": "yea",
+        "109877": "nay",
+        "109891": "nay",
+        "109915": "nay",
+        "110009": "yea",
+        "110124": "nay",
+        "110189": "nay",
+        "110225": "nay",
+        "110339": "nay",
+        "110365": "yea",
+        "110373": "paired",
+        "110415": "yea",
+        "110441": "yea",
+        "110446": "nay",
+        "110454": "yea",
+        "110459": "nay",
+        "110502": "nay",
+        "110534": "nay",
+        "110538": "nay",
+        "110572": "nay",
+        "110649": "yea",
+        "110663": "nay",
+        "110665": "yea",
+        "110706": "yea",
+        "110791": "nay",
+        "110800": "yea",
+        "110918": "yea",
+        "111007": "yea",
+        "111025": "yea",
+        "111067": "nay",
+        "111109": "nay",
+        "111116": "nay",
+        "114349": "nay",
+        "115736": "nay",
+        "115744": "nay",
+        "116022": "yea",
+        "118689": "yea",
+        "119705": "nay",
+        "119991": "yea",
+        "122369": "nay",
+        "122375": "nay",
+        "122380": "nay",
+        "122389": "yea",
+        "122394": "yea",
+        "122419": "nay",
+        "122428": "nay",
+        "122437": "nay",
+        "122443": "nay",
+        "122462": "nay",
+        "122473": "nay",
+        "122476": "yea",
+        "122492": "nay",
+        "122507": "yea",
+        "122518": "nay",
+        "122533": "nay",
+        "122539": "nay",
+        "122552": "nay",
+        "122559": "nay",
+        "122579": "nay",
+        "122587": "nay",
+        "122589": "nay",
+        "122606": "nay",
+        "122615": "nay",
+        "122637": "nay",
+        "122646": "nay",
+        "122656": "nay",
+        "122668": "nay",
+        "122678": "yea",
+        "122684": "nay",
+        "122709": "nay",
+        "122753": "nay",
+        "122756": "nay",
+        "122773": "nay",
+        "122788": "nay",
+        "122801": "nay",
+        "122825": "yea",
+        "122850": "nay",
+        "122899": "nay",
+        "122911": "nay",
+        "122913": "yea",
+        "122925": "nay",
+        "122933": "nay",
+        "122946": "nay",
+        "122959": "nay",
+        "122975": "yea",
+        "122988": "yea",
+        "122994": "yea",
+        "123006": "yea",
+        "123019": "nay",
+        "123027": "nay",
+        "123033": "nay",
+        "123060": "yea",
+        "123073": "yea",
+        "123081": "nay",
+        "123092": "nay",
+        "123104": "yea",
+        "123133": "nay",
+        "123141": "nay",
+        "123144": "nay",
+        "123153": "yea",
+        "123192": "nay",
+        "123208": "yea",
+        "123214": "nay",
+        "123229": "nay",
+        "123248": "yea",
+        "123272": "yea",
+        "123276": "yea",
+        "123282": "yea",
+        "123287": "yea",
+        "123305": "nay",
+        "123361": "yea",
+        "123372": "yea",
+        "123382": "nay",
+        "123401": "yea",
+        "123415": "yea",
+        "123418": "yea",
+        "123447": "yea",
+        "123455": "yea",
+        "123500": "yea",
+        "123513": "yea",
+        "123517": "yea",
+        "123520": "nay",
+        "123552": "yea",
+        "123556": "nay",
+        "123563": "nay",
+        "123583": "nay",
+        "123586": "yea",
+        "123608": "yea",
+        "123622": "yea",
+        "123625": "nay",
+        "123644": "nay",
+        "123653": "nay",
+        "123665": "nay",
+        "123675": "nay",
+        "141713": "nay",
+        "142763": "nay",
+        "142764": "nay"
+      },
+      "billId": 13568723
+    },
+    {
+      "number": 176,
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "date": "2026-10-07",
+      "description": {
+        "en": "Opposition Motion (Diesel prices)",
+        "fr": "Motion de l’opposition (Prix du diesel)"
+      },
+      "result": {
+        "en": "Negatived",
+        "fr": "Rejetée"
+      },
+      "passed": false,
+      "totals": {
+        "yea": 133,
+        "nay": 196,
+        "paired": 6
+      },
+      "documentType": {
+        "en": "Supply",
+        "fr": "Subsides"
+      },
+      "billNumber": null,
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/votes/45/1/176",
+        "fr": "https://www.ourcommons.ca/members/fr/votes/45/1/176"
+      },
+      "ballots": {
+        "376": "nay",
+        "413": "nay",
+        "1422": "nay",
+        "1589": "paired",
+        "1787": "nay",
+        "1809": "yea",
+        "1813": "nay",
+        "1827": "yea",
+        "2897": "nay",
+        "3306": "yea",
+        "9486": "nay",
+        "17210": "yea",
+        "25446": "yea",
+        "25454": "yea",
+        "25475": "yea",
+        "25488": "yea",
+        "25524": "yea",
+        "28286": "nay",
+        "30330": "yea",
+        "30552": "nay",
+        "30645": "yea",
+        "31098": "nay",
+        "31119": "nay",
+        "35315": "nay",
+        "35397": "yea",
+        "35600": "yea",
+        "35857": "yea",
+        "35886": "yea",
+        "35897": "yea",
+        "35909": "yea",
+        "49344": "nay",
+        "54157": "nay",
+        "58621": "nay",
+        "58757": "yea",
+        "58841": "yea",
+        "58858": "paired",
+        "59148": "yea",
+        "59156": "yea",
+        "59235": "yea",
+        "59293": "nay",
+        "59294": "nay",
+        "59325": "nay",
+        "71270": "nay",
+        "71323": "yea",
+        "71337": "nay",
+        "71454": "yea",
+        "71692": "nay",
+        "71738": "nay",
+        "71762": "yea",
+        "71902": "paired",
+        "71986": "yea",
+        "72023": "nay",
+        "72029": "yea",
+        "72035": "yea",
+        "84672": "yea",
+        "84882": "yea",
+        "86261": "yea",
+        "87121": "nay",
+        "88308": "nay",
+        "88316": "nay",
+        "88323": "nay",
+        "88350": "nay",
+        "88364": "nay",
+        "88368": "nay",
+        "88369": "yea",
+        "88384": "nay",
+        "88394": "nay",
+        "88418": "nay",
+        "88422": "nay",
+        "88453": "nay",
+        "88468": "nay",
+        "88478": "nay",
+        "88485": "nay",
+        "88515": "nay",
+        "88521": "nay",
+        "88532": "nay",
+        "88535": "yea",
+        "88538": "nay",
+        "88541": "yea",
+        "88552": "nay",
+        "88558": "nay",
+        "88567": "nay",
+        "88601": "nay",
+        "88605": "nay",
+        "88633": "nay",
+        "88649": "nay",
+        "88660": "nay",
+        "88674": "yea",
+        "88698": "nay",
+        "88703": "nay",
+        "88715": "nay",
+        "88721": "nay",
+        "88748": "nay",
+        "88770": "yea",
+        "88802": "nay",
+        "88810": "nay",
+        "88827": "nay",
+        "88849": "nay",
+        "88917": "yea",
+        "88934": "nay",
+        "88938": "nay",
+        "88944": "nay",
+        "88950": "nay",
+        "88958": "yea",
+        "88984": "nay",
+        "88994": "nay",
+        "89000": "nay",
+        "89010": "nay",
+        "89020": "nay",
+        "89027": "nay",
+        "89080": "yea",
+        "89084": "yea",
+        "89130": "yea",
+        "89136": "yea",
+        "89150": "yea",
+        "89156": "yea",
+        "89167": "nay",
+        "89171": "nay",
+        "89179": "yea",
+        "89198": "yea",
+        "89200": "yea",
+        "89211": "yea",
+        "89219": "yea",
+        "89226": "yea",
+        "89236": "nay",
+        "89249": "yea",
+        "89259": "yea",
+        "89263": "nay",
+        "89279": "nay",
+        "89289": "yea",
+        "89294": "yea",
+        "89339": "nay",
+        "89346": "nay",
+        "89407": "yea",
+        "89408": "nay",
+        "89449": "nay",
+        "89464": "nay",
+        "90964": "nay",
+        "92209": "nay",
+        "94305": "yea",
+        "96081": "nay",
+        "96350": "nay",
+        "96356": "nay",
+        "96367": "paired",
+        "98079": "yea",
+        "98747": "nay",
+        "98749": "yea",
+        "102275": "yea",
+        "102653": "yea",
+        "104531": "nay",
+        "104555": "nay",
+        "104571": "nay",
+        "104630": "nay",
+        "104669": "nay",
+        "104705": "nay",
+        "104741": "nay",
+        "104773": "nay",
+        "104786": "nay",
+        "104806": "nay",
+        "104947": "nay",
+        "104957": "nay",
+        "104973": "nay",
+        "104977": "nay",
+        "105009": "nay",
+        "105031": "yea",
+        "105045": "nay",
+        "105052": "yea",
+        "105070": "yea",
+        "105082": "yea",
+        "105088": "nay",
+        "105120": "yea",
+        "105121": "nay",
+        "105186": "yea",
+        "105191": "yea",
+        "105210": "yea",
+        "105229": "nay",
+        "105242": "nay",
+        "105291": "yea",
+        "105340": "yea",
+        "105410": "yea",
+        "105422": "yea",
+        "105437": "nay",
+        "105480": "nay",
+        "105521": "yea",
+        "105559": "yea",
+        "105581": "yea",
+        "105598": "yea",
+        "105623": "paired",
+        "105630": "yea",
+        "105689": "nay",
+        "105774": "yea",
+        "105807": "yea",
+        "105811": "yea",
+        "105863": "yea",
+        "105918": "nay",
+        "107294": "nay",
+        "108395": "yea",
+        "109867": "yea",
+        "109872": "yea",
+        "109877": "nay",
+        "109891": "nay",
+        "109915": "nay",
+        "110009": "yea",
+        "110124": "nay",
+        "110189": "nay",
+        "110225": "nay",
+        "110339": "nay",
+        "110365": "yea",
+        "110373": "paired",
+        "110415": "yea",
+        "110441": "yea",
+        "110446": "nay",
+        "110454": "yea",
+        "110459": "nay",
+        "110502": "nay",
+        "110534": "nay",
+        "110538": "nay",
+        "110572": "nay",
+        "110649": "yea",
+        "110663": "nay",
+        "110665": "yea",
+        "110706": "yea",
+        "110791": "nay",
+        "110800": "yea",
+        "110918": "yea",
+        "111007": "yea",
+        "111025": "yea",
+        "111067": "nay",
+        "111109": "nay",
+        "111116": "nay",
+        "114349": "nay",
+        "115736": "nay",
+        "115744": "nay",
+        "116022": "yea",
+        "118689": "yea",
+        "119705": "nay",
+        "119991": "yea",
+        "122369": "nay",
+        "122375": "nay",
+        "122380": "nay",
+        "122389": "yea",
+        "122394": "nay",
+        "122419": "nay",
+        "122428": "nay",
+        "122437": "nay",
+        "122443": "nay",
+        "122462": "nay",
+        "122473": "nay",
+        "122476": "yea",
+        "122492": "nay",
+        "122507": "yea",
+        "122518": "nay",
+        "122533": "nay",
+        "122539": "nay",
+        "122552": "nay",
+        "122559": "nay",
+        "122579": "nay",
+        "122587": "nay",
+        "122589": "nay",
+        "122606": "nay",
+        "122615": "nay",
+        "122637": "nay",
+        "122646": "nay",
+        "122656": "nay",
+        "122668": "nay",
+        "122678": "yea",
+        "122684": "nay",
+        "122709": "nay",
+        "122753": "nay",
+        "122756": "nay",
+        "122773": "nay",
+        "122788": "nay",
+        "122801": "nay",
+        "122825": "yea",
+        "122850": "nay",
+        "122899": "nay",
+        "122911": "nay",
+        "122913": "yea",
+        "122925": "nay",
+        "122933": "nay",
+        "122946": "nay",
+        "122959": "nay",
+        "122975": "yea",
+        "122988": "yea",
+        "122994": "yea",
+        "123006": "yea",
+        "123019": "nay",
+        "123027": "nay",
+        "123033": "nay",
+        "123060": "yea",
+        "123073": "yea",
+        "123081": "nay",
+        "123092": "nay",
+        "123104": "yea",
+        "123133": "nay",
+        "123141": "nay",
+        "123144": "nay",
+        "123153": "yea",
+        "123192": "nay",
+        "123208": "yea",
+        "123214": "nay",
+        "123229": "nay",
+        "123248": "yea",
+        "123272": "yea",
+        "123276": "yea",
+        "123282": "yea",
+        "123287": "yea",
+        "123305": "nay",
+        "123361": "yea",
+        "123372": "yea",
+        "123382": "nay",
+        "123401": "yea",
+        "123415": "yea",
+        "123418": "yea",
+        "123447": "yea",
+        "123455": "yea",
+        "123500": "yea",
+        "123513": "yea",
+        "123517": "yea",
+        "123520": "nay",
+        "123552": "yea",
+        "123556": "nay",
+        "123563": "nay",
+        "123583": "nay",
+        "123586": "yea",
+        "123608": "yea",
+        "123622": "yea",
+        "123625": "nay",
+        "123644": "nay",
+        "123653": "nay",
+        "123665": "nay",
+        "123675": "nay",
+        "141713": "nay",
+        "142763": "nay",
+        "142764": "nay"
+      },
+      "billId": null
+    },
+    {
+      "number": 175,
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "date": "2026-10-07",
+      "description": {
+        "en": "Fifth report of the Standing Committee on Health",
+        "fr": "Cinquième rapport du Comité permanent de la santé"
+      },
+      "result": {
+        "en": "Agreed To",
+        "fr": "Adoptée"
+      },
+      "passed": true,
+      "totals": {
+        "yea": 196,
+        "nay": 132,
+        "paired": 6
+      },
+      "documentType": {
+        "en": "Routine Proceedings",
+        "fr": "Affaires courantes"
+      },
+      "billNumber": null,
+      "url": {
+        "en": "https://www.ourcommons.ca/members/en/votes/45/1/175",
+        "fr": "https://www.ourcommons.ca/members/fr/votes/45/1/175"
+      },
+      "ballots": {
+        "376": "yea",
+        "413": "yea",
+        "1422": "yea",
+        "1589": "paired",
+        "1787": "yea",
+        "1809": "nay",
+        "1813": "yea",
+        "1827": "nay",
+        "2897": "yea",
+        "3306": "nay",
+        "9486": "yea",
+        "17210": "nay",
+        "25446": "nay",
+        "25454": "nay",
+        "25475": "nay",
+        "25488": "nay",
+        "25524": "nay",
+        "28286": "yea",
+        "30330": "nay",
+        "30552": "yea",
+        "30645": "nay",
+        "31098": "yea",
+        "31119": "yea",
+        "35315": "yea",
+        "35397": "nay",
+        "35600": "nay",
+        "35857": "nay",
+        "35886": "nay",
+        "35897": "nay",
+        "35909": "nay",
+        "49344": "yea",
+        "54157": "yea",
+        "58621": "yea",
+        "58757": "nay",
+        "58841": "nay",
+        "58858": "paired",
+        "59148": "nay",
+        "59156": "nay",
+        "59235": "nay",
+        "59293": "yea",
+        "59294": "yea",
+        "59325": "yea",
+        "71270": "yea",
+        "71323": "nay",
+        "71337": "yea",
+        "71454": "nay",
+        "71692": "yea",
+        "71738": "yea",
+        "71762": "nay",
+        "71902": "paired",
+        "71986": "nay",
+        "72023": "yea",
+        "72029": "nay",
+        "72035": "nay",
+        "84672": "nay",
+        "84882": "nay",
+        "86261": "nay",
+        "87121": "yea",
+        "88308": "yea",
+        "88316": "yea",
+        "88323": "yea",
+        "88350": "yea",
+        "88364": "yea",
+        "88368": "yea",
+        "88369": "nay",
+        "88384": "yea",
+        "88394": "yea",
+        "88418": "yea",
+        "88422": "yea",
+        "88453": "yea",
+        "88468": "yea",
+        "88478": "yea",
+        "88485": "yea",
+        "88515": "yea",
+        "88521": "yea",
+        "88532": "yea",
+        "88535": "nay",
+        "88538": "yea",
+        "88541": "nay",
+        "88552": "yea",
+        "88558": "yea",
+        "88567": "yea",
+        "88601": "yea",
+        "88605": "yea",
+        "88633": "yea",
+        "88649": "yea",
+        "88660": "yea",
+        "88674": "nay",
+        "88698": "yea",
+        "88703": "yea",
+        "88715": "yea",
+        "88721": "yea",
+        "88748": "yea",
+        "88770": "nay",
+        "88802": "yea",
+        "88810": "yea",
+        "88827": "yea",
+        "88849": "yea",
+        "88917": "nay",
+        "88934": "yea",
+        "88938": "yea",
+        "88944": "yea",
+        "88950": "yea",
+        "88958": "nay",
+        "88984": "yea",
+        "88994": "yea",
+        "89000": "yea",
+        "89010": "yea",
+        "89020": "yea",
+        "89027": "yea",
+        "89080": "nay",
+        "89084": "nay",
+        "89130": "nay",
+        "89136": "nay",
+        "89150": "nay",
+        "89156": "nay",
+        "89167": "yea",
+        "89171": "yea",
+        "89179": "nay",
+        "89198": "nay",
+        "89200": "nay",
+        "89211": "nay",
+        "89219": "nay",
+        "89226": "nay",
+        "89236": "yea",
+        "89249": "nay",
+        "89259": "nay",
+        "89263": "yea",
+        "89279": "yea",
+        "89289": "nay",
+        "89294": "nay",
+        "89339": "yea",
+        "89346": "yea",
+        "89407": "nay",
+        "89408": "yea",
+        "89449": "yea",
+        "89464": "yea",
+        "90964": "yea",
+        "92209": "yea",
+        "94305": "nay",
+        "96081": "yea",
+        "96350": "yea",
+        "96356": "yea",
+        "96367": "paired",
+        "98079": "nay",
+        "98747": "yea",
+        "98749": "nay",
+        "102275": "nay",
+        "102653": "nay",
+        "104531": "yea",
+        "104555": "yea",
+        "104571": "yea",
+        "104630": "yea",
+        "104669": "yea",
+        "104705": "yea",
+        "104741": "yea",
+        "104773": "yea",
+        "104786": "yea",
+        "104806": "yea",
+        "104947": "yea",
+        "104957": "yea",
+        "104973": "yea",
+        "104977": "yea",
+        "105009": "yea",
+        "105031": "nay",
+        "105045": "yea",
+        "105052": "nay",
+        "105070": "nay",
+        "105082": "nay",
+        "105088": "yea",
+        "105120": "nay",
+        "105121": "yea",
+        "105186": "nay",
+        "105191": "nay",
+        "105210": "nay",
+        "105229": "yea",
+        "105242": "yea",
+        "105291": "nay",
+        "105340": "nay",
+        "105410": "nay",
+        "105422": "nay",
+        "105437": "yea",
+        "105480": "yea",
+        "105521": "nay",
+        "105559": "nay",
+        "105581": "nay",
+        "105598": "nay",
+        "105623": "paired",
+        "105630": "nay",
+        "105689": "yea",
+        "105774": "nay",
+        "105807": "nay",
+        "105811": "nay",
+        "105863": "nay",
+        "105918": "yea",
+        "107294": "yea",
+        "108395": "nay",
+        "109867": "nay",
+        "109872": "nay",
+        "109877": "yea",
+        "109891": "yea",
+        "109915": "yea",
+        "110009": "nay",
+        "110124": "yea",
+        "110189": "yea",
+        "110225": "yea",
+        "110339": "yea",
+        "110365": "nay",
+        "110373": "paired",
+        "110415": "nay",
+        "110441": "nay",
+        "110446": "yea",
+        "110454": "nay",
+        "110459": "yea",
+        "110502": "yea",
+        "110534": "yea",
+        "110538": "yea",
+        "110572": "yea",
+        "110649": "nay",
+        "110663": "yea",
+        "110665": "nay",
+        "110706": "nay",
+        "110791": "yea",
+        "110800": "nay",
+        "110918": "nay",
+        "111007": "nay",
+        "111025": "nay",
+        "111067": "yea",
+        "111109": "yea",
+        "111116": "yea",
+        "114349": "yea",
+        "115736": "yea",
+        "115744": "yea",
+        "116022": "nay",
+        "118689": "nay",
+        "119705": "yea",
+        "119991": "nay",
+        "122369": "yea",
+        "122375": "yea",
+        "122380": "yea",
+        "122389": "nay",
+        "122394": "yea",
+        "122419": "yea",
+        "122428": "yea",
+        "122437": "yea",
+        "122443": "yea",
+        "122462": "yea",
+        "122473": "yea",
+        "122476": "nay",
+        "122492": "yea",
+        "122507": "nay",
+        "122518": "yea",
+        "122533": "yea",
+        "122539": "yea",
+        "122552": "yea",
+        "122559": "yea",
+        "122579": "yea",
+        "122587": "yea",
+        "122589": "yea",
+        "122606": "yea",
+        "122615": "yea",
+        "122637": "yea",
+        "122646": "yea",
+        "122656": "yea",
+        "122668": "yea",
+        "122678": "nay",
+        "122684": "yea",
+        "122709": "yea",
+        "122753": "yea",
+        "122756": "yea",
+        "122773": "yea",
+        "122788": "yea",
+        "122801": "yea",
+        "122825": "nay",
+        "122850": "yea",
+        "122899": "yea",
+        "122911": "yea",
+        "122913": "nay",
+        "122925": "yea",
+        "122933": "yea",
+        "122946": "yea",
+        "122959": "yea",
+        "122975": "nay",
+        "122988": "nay",
+        "122994": "nay",
+        "123006": "nay",
+        "123019": "yea",
+        "123027": "yea",
+        "123033": "yea",
+        "123060": "nay",
+        "123073": "nay",
+        "123081": "yea",
+        "123092": "yea",
+        "123104": "nay",
+        "123133": "yea",
+        "123141": "yea",
+        "123144": "yea",
+        "123153": "nay",
+        "123192": "yea",
+        "123208": "nay",
+        "123214": "yea",
+        "123229": "yea",
+        "123248": "nay",
+        "123272": "nay",
+        "123276": "nay",
+        "123282": "nay",
+        "123287": "nay",
+        "123305": "yea",
+        "123361": "nay",
+        "123372": "nay",
+        "123382": "yea",
+        "123401": "nay",
+        "123415": "nay",
+        "123447": "nay",
+        "123455": "nay",
+        "123500": "nay",
+        "123513": "nay",
+        "123517": "nay",
+        "123520": "yea",
+        "123552": "nay",
+        "123556": "yea",
+        "123563": "yea",
+        "123583": "yea",
+        "123586": "nay",
+        "123608": "nay",
+        "123622": "nay",
+        "123625": "yea",
+        "123644": "yea",
+        "123653": "yea",
+        "123665": "yea",
+        "123675": "yea",
+        "141713": "yea",
+        "142763": "yea",
+        "142764": "yea"
+      },
+      "billId": null
+    },
     {
       "number": 174,
       "session": "45-1",

@@ -191,7 +191,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
 
     <div class="apercu-3col">
       <aside class="a3-left">
-        <p class="a3-intro" id="a3intro"><!--ssr-->Canada's Parliament without the jargon: <b>337</b> MPs, <b>189</b> federal bills and <b>174</b> recorded votes in the House of Commons, straight from official sources.<!--/ssr--></p>
+        <p class="a3-intro" id="a3intro"><!--ssr-->Canada's Parliament without the jargon: <b>337</b> MPs, <b>191</b> federal bills and <b>177</b> recorded votes in the House of Commons, straight from official sources.<!--/ssr--></p>
         <h2 class="a3-hiw-h" data-i18n="a3.hiw">How it works</h2>
         <div class="a3-steps">
           <div class="a3-step"><span class="a3-step-n" style="background:var(--yellow)">1</span><p data-i18n="a3.step1">A bill seems opaque? Ask for an explanation.</p></div>
@@ -204,7 +204,31 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
           <h2 data-i18n="h.billsrecent">Recently active bills</h2>
           <a class="a3-seeall" data-view="projets" href="/en/bills" data-i18n="a3.seeall">See all →</a>
         </div>
-        <div id="apercuBills"><!--ssr--><div class="ab-row" id="abrow-ap-13605049">
+        <div id="apercuBills"><!--ssr--><div class="ab-row" id="abrow-ap-14246258">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-14246258')">
+      <span class="ab-num">C-292</span>
+      <span class="ab-title">An Act to amend the Criminal Code (victim protection)</span>
+      
+      
+      
+      <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
+      <span class="status-pill status-encours">In progress</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"></div>
+  </div><div class="ab-row" id="abrow-ap-14250015">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-14250015')">
+      <span class="ab-num">S-7</span>
+      <span class="ab-title">An Act to modernize certain regulatory and administrative processes</span>
+      
+      <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Omnibus bill — 6 parts, 8 divisions: it changes several different acts. Click to show only omnibus bills">Omnibus · 6 parts</button>
+      
+      <span class="depute-party" style="background:#5B6B7A; color:#fff">GRO</span>
+      <span class="status-pill status-encours">In progress</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"></div>
+  </div><div class="ab-row" id="abrow-ap-13605049">
     <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13605049')">
       <span class="ab-num">C-10</span>
       <span class="ab-title">An Act respecting the Commissioner for Modern Treaty Implementation</span>
@@ -228,30 +252,6 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-caret">▾</span>
     </div>
     <div class="ab-detail"></div>
-  </div><div class="ab-row" id="abrow-ap-14240227">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-14240227')">
-      <span class="ab-num">S-251</span>
-      <span class="ab-title">An Act to establish a national strategy to end energy poverty</span>
-      
-      
-      
-      <span class="depute-party" style="background:#6D5BA6; color:#fff">ISG</span>
-      <span class="status-pill status-encours">In progress</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"></div>
-  </div><div class="ab-row" id="abrow-ap-13932352">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13932352')">
-      <span class="ab-num">C-27</span>
-      <span class="ab-title">An Act to give effect to the Final Self-Government Agreement for the Tlegohli Got’ine and to make consequential amendments to other Acts</span>
-      
-      
-      
-      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-      <span class="status-pill status-encours">In progress</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"></div>
   </div><!--/ssr--></div>
         <div class="a3-tiles">
           <a class="a3-tile" data-view="votes" href="/en/votes">
@@ -268,12 +268,12 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
         <h2 class="a3-hiw-h" data-i18n="h.quoideneuf">What's new</h2>
         <div id="sittingBox"></div>
         <div id="newsList"><!--ssr--><div class="news-item">
-      <div class="news-date">2026-10-06</div>
-      <div class="news-body"><p><b>C-10</b> — At consideration in committee in the Senate</p></div>
+      <div class="news-date">2026-10-08</div>
+      <div class="news-body"><p><b>C-292</b> — Outside the Order of Precedence</p></div>
     </div>
     <div class="news-item">
       <div class="news-date">2026-10-06</div>
-      <div class="news-body"><p><b>C-40</b> — At second reading in the House of Commons</p></div>
+      <div class="news-body"><p><b>S-7</b> — At second reading in the Senate</p></div>
     </div><button class="bill-more" style="margin-top:14px; border:none; cursor:pointer;" onclick="loadMoreNews()">+ Show more</button><!--/ssr--></div>
       </aside>
     </div>

@@ -1,29 +1,8 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-10-07T15:32:09.167Z",
+  "scrapedAt": "2026-10-08T15:35:58.757Z",
   "count": 20,
   "petitions": [
-    {
-      "code": "e-7774",
-      "topic": {
-        "en": "Information and privacy",
-        "fr": "Information et vie privée"
-      },
-      "keywords": {
-        "en": "Artificial intelligence Consumers and consumer protection Copyright and copyright law",
-        "fr": "Consommateurs et protection des consommateurs Droit d'auteur et loi sur le droit d'auteur Intelligence artificielle"
-      },
-      "status": {
-        "en": "Open for signature until January 19, 2027, at 3:06 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 19 janvier 2027 à 15 h 06 (HAE)"
-      },
-      "sponsor": "Julie Dzerowicz",
-      "signatures": 2857,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7774",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7774"
-      }
-    },
     {
       "code": "e-7794",
       "topic": {
@@ -39,31 +18,10 @@
         "fr": "Ouverte pour signature jusqu'au 4 novembre 2026 à 13 h 40 (HAE)"
       },
       "sponsor": "Wade Chang",
-      "signatures": 2242,
+      "signatures": 3328,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7794",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7794"
-      }
-    },
-    {
-      "code": "e-7803",
-      "topic": {
-        "en": "Environment",
-        "fr": "Environnement"
-      },
-      "keywords": {
-        "en": "C-30, An Act to implement certain provis ... Pest Control Products Act Pesticides",
-        "fr": "C-30, Loi portant exécution de certaines ... Loi sur les produits antiparasitaires Pesticides"
-      },
-      "status": {
-        "en": "Open for signature until January 23, 2027, at 2:28 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 23 janvier 2027 à 14 h 28 (HAE)"
-      },
-      "sponsor": "Gord Johns",
-      "signatures": 1857,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7803",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7803"
       }
     },
     {
@@ -81,7 +39,7 @@
         "fr": "Ouverte pour signature jusqu'au 28 décembre 2026 à 9 h 35 (HAE)"
       },
       "sponsor": "Yvan Baker",
-      "signatures": 1155,
+      "signatures": 1355,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7787",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7787"
@@ -102,7 +60,7 @@
         "fr": "Ouverte pour signature jusqu'au 3 janvier 2027 à 13 h 30 (HAE)"
       },
       "sponsor": "Glen Motz",
-      "signatures": 840,
+      "signatures": 1249,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7823",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7823"
@@ -123,7 +81,7 @@
         "fr": "Ouverte pour signature jusqu'au 24 décembre 2026 à 15 h 24 (HAE)"
       },
       "sponsor": "David McKenzie",
-      "signatures": 723,
+      "signatures": 726,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7810",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7810"
@@ -144,73 +102,52 @@
         "fr": "Ouverte pour signature jusqu'au 23 janvier 2027 à 14 h 54 (HAE)"
       },
       "sponsor": "Gabriel Hardy",
-      "signatures": 586,
+      "signatures": 631,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7746",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7746"
       }
     },
     {
-      "code": "e-7785",
+      "code": "e-7791",
       "topic": {
-        "en": "Correctional system",
-        "fr": "Système correctionnel"
+        "en": "Health",
+        "fr": "Santé"
       },
       "keywords": {
-        "en": "Correctional officers Federally regulated employers and employees Mental health Workplace health and safety",
-        "fr": "Agents correctionnels Employeurs et employés sous réglementati ... Santé et sécurité au travail Santé mentale"
+        "en": "Education and training Medical research Neurological disorders",
+        "fr": "Éducation et formation Recherche médicale Troubles neurologiques"
       },
       "status": {
-        "en": "Open for signature until December 21, 2026, at 11:27 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 21 décembre 2026 à 11 h 27 (HAE)"
+        "en": "Open for signature until February 4, 2027, at 2:44 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 4 février 2027 à 14 h 44 (HAE)"
       },
-      "sponsor": "Claude DeBellefeuille",
-      "signatures": 526,
+      "sponsor": "Kent MacDonald",
+      "signatures": 109,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7785",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7785"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7791",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7791"
       }
     },
     {
-      "code": "e-7739",
+      "code": "e-7809",
       "topic": {
-        "en": "Public safety",
-        "fr": "Sécurité publique"
+        "en": "Environment",
+        "fr": "Environnement"
       },
       "keywords": {
-        "en": "Anti-Semitism Army of the Guardians of the Islamic Rev ... National security Religious buildings Terrorism and terrorists",
-        "fr": "Antisémitisme Établissements religieux Gardiens de la Révolution islamique Sécurité nationale Terrorisme et terroristes"
+        "en": "Electric vehicles Electrical grids Greenhouse gases Renewable energy and fuel",
+        "fr": "Énergie et combustibles renouvelables Gaz à effet de serre Réseaux électriques Véhicules électriques"
       },
       "status": {
-        "en": "Open for signature until December 20, 2026, at 2:56 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 20 décembre 2026 à 14 h 56 (HAE)"
+        "en": "Open for signature until January 5, 2027, at 2:37 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 5 janvier 2027 à 14 h 37 (HAE)"
       },
-      "sponsor": "Melissa Lantsman",
-      "signatures": 126,
+      "sponsor": "Elizabeth May",
+      "signatures": 64,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7739",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7739"
-      }
-    },
-    {
-      "code": "e-7802",
-      "topic": {
-        "en": "Fisheries",
-        "fr": "Pêches"
-      },
-      "keywords": {
-        "en": "Fisheries policy Fishing equipment Hunting and sport fishing Maritime Canada",
-        "fr": "Canada maritime Chasse et pêche de loisir Équipement de pêche Politique sur les pêches"
-      },
-      "status": {
-        "en": "Open for signature until December 22, 2026, at 3:01 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 22 décembre 2026 à 15 h 01 (HAE)"
-      },
-      "sponsor": "Jessica Fancy",
-      "signatures": 93,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7802",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7802"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7809",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7809"
       }
     },
     {
@@ -228,7 +165,7 @@
         "fr": "Ouverte pour signature jusqu'au 27 janvier 2027 à 9 h 31 (HAE)"
       },
       "sponsor": "Jenny Kwan",
-      "signatures": 59,
+      "signatures": 60,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7775",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7775"
@@ -249,7 +186,7 @@
         "fr": "Ouverte pour signature jusqu'au 23 janvier 2027 à 15 h 19 (HAE)"
       },
       "sponsor": "Warren Steinley",
-      "signatures": 57,
+      "signatures": 60,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7696",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7696"
@@ -270,7 +207,7 @@
         "fr": "Ouverte pour signature jusqu'au 3 janvier 2027 à 13 h 35 (HAE)"
       },
       "sponsor": "Bardish Chagger",
-      "signatures": 55,
+      "signatures": 56,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7752",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7752"
@@ -291,52 +228,10 @@
         "fr": "Ouverte pour signature jusqu'au 2 février 2027 à 13 h 06 (HAE)"
       },
       "sponsor": "Marc Dalton",
-      "signatures": 35,
+      "signatures": 46,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7745",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7745"
-      }
-    },
-    {
-      "code": "e-7759",
-      "topic": {
-        "en": "Business and trade",
-        "fr": "Affaires et commerce"
-      },
-      "keywords": {
-        "en": "Canada-United States relations Customs tariff and customs duties International trade",
-        "fr": "Commerce international Relations Canada-États-Unis Tarif des douanes et droits de douane"
-      },
-      "status": {
-        "en": "Open for signature until October 23, 2026, at 2:56 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 23 octobre 2026 à 14 h 56 (HAE)"
-      },
-      "sponsor": "Todd Doherty",
-      "signatures": 35,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7759",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7759"
-      }
-    },
-    {
-      "code": "e-7619",
-      "topic": {
-        "en": "Health",
-        "fr": "Santé"
-      },
-      "keywords": {
-        "en": "C-280, An Act to enact the Mental Health ... Canada Health Transfer Drugs and alcohol Health care system Mental health",
-        "fr": "C-280, Loi édictant la Loi sur les servi ... Drogue et alcool Santé mentale Système de soins de santé Transfert canadien en matière de santé"
-      },
-      "status": {
-        "en": "Open for signature until February 2, 2027, at 1:38 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 2 février 2027 à 13 h 38 (HAE)"
-      },
-      "sponsor": "Gord Johns",
-      "signatures": 20,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7619",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7619"
       }
     },
     {
@@ -354,52 +249,10 @@
         "fr": "Ouverte pour signature jusqu'au 5 novembre 2026 à 16 h 03 (HAE)"
       },
       "sponsor": "Bardish Chagger",
-      "signatures": 19,
+      "signatures": 31,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7798",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7798"
-      }
-    },
-    {
-      "code": "e-7033",
-      "topic": {
-        "en": "Social affairs and equality",
-        "fr": "Affaires sociales et égalité"
-      },
-      "keywords": {
-        "en": "Income and wages Support of children",
-        "fr": "Pension alimentaire pour enfants Revenus et salaires"
-      },
-      "status": {
-        "en": "Open for signature until February 4, 2027, at 10:51 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 4 février 2027 à 10 h 51 (HAE)"
-      },
-      "sponsor": "Salma Zahid",
-      "signatures": 6,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7033",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7033"
-      }
-    },
-    {
-      "code": "e-7793",
-      "topic": {
-        "en": "Business and trade",
-        "fr": "Affaires et commerce"
-      },
-      "keywords": {
-        "en": "Ecuador Free Trade Agreement between Canada and ... Investor-state dispute settlement Trade agreements",
-        "fr": "Accord de libre-échange entre le Canada ... Accords commerciaux Équateur Règlement des différends investisseurs-État"
-      },
-      "status": {
-        "en": "Open for signature until February 4, 2027, at 10:48 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 4 février 2027 à 10 h 48 (HAE)"
-      },
-      "sponsor": "Heather McPherson",
-      "signatures": 6,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7793",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7793"
       }
     },
     {
@@ -417,10 +270,157 @@
         "fr": "Ouverte pour signature jusqu'au 6 novembre 2026 à 10 h 43 (HAE)"
       },
       "sponsor": "Heather McPherson",
-      "signatures": 6,
+      "signatures": 25,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7817",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7817"
+      }
+    },
+    {
+      "code": "e-7619",
+      "topic": {
+        "en": "Health",
+        "fr": "Santé"
+      },
+      "keywords": {
+        "en": "C-280, An Act to enact the Mental Health ... Canada Health Transfer Drugs and alcohol Health care system Mental health",
+        "fr": "C-280, Loi édictant la Loi sur les servi ... Drogue et alcool Santé mentale Système de soins de santé Transfert canadien en matière de santé"
+      },
+      "status": {
+        "en": "Open for signature until February 2, 2027, at 1:38 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 2 février 2027 à 13 h 38 (HAE)"
+      },
+      "sponsor": "Gord Johns",
+      "signatures": 24,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7619",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7619"
+      }
+    },
+    {
+      "code": "e-7033",
+      "topic": {
+        "en": "Social affairs and equality",
+        "fr": "Affaires sociales et égalité"
+      },
+      "keywords": {
+        "en": "Income and wages Support of children",
+        "fr": "Pension alimentaire pour enfants Revenus et salaires"
+      },
+      "status": {
+        "en": "Open for signature until February 4, 2027, at 10:51 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 4 février 2027 à 10 h 51 (HAE)"
+      },
+      "sponsor": "Salma Zahid",
+      "signatures": 23,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7033",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7033"
+      }
+    },
+    {
+      "code": "e-7846",
+      "topic": {
+        "en": "Veterans' affairs",
+        "fr": "Anciens combattants"
+      },
+      "keywords": {
+        "en": "Education and training Veterans Veterans’ Education and Training Benefit",
+        "fr": "Allocation pour les études et la formati ... Anciens combattants Éducation et formation"
+      },
+      "status": {
+        "en": "Open for signature until February 4, 2027, at 2:54 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 4 février 2027 à 14 h 54 (HAE)"
+      },
+      "sponsor": "Scott Reid",
+      "signatures": 21,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7846",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7846"
+      }
+    },
+    {
+      "code": "e-7776",
+      "topic": {
+        "en": "Business and trade",
+        "fr": "Affaires et commerce"
+      },
+      "keywords": {
+        "en": "International trade Metric system Packaging and labelling",
+        "fr": "Commerce international Emballage et étiquetage Système métrique"
+      },
+      "status": {
+        "en": "Open for signature until February 4, 2027, at 2:57 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 4 février 2027 à 14 h 57 (HAE)"
+      },
+      "sponsor": "Will Greaves",
+      "signatures": 10,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7776",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7776"
+      }
+    },
+    {
+      "code": "e-7793",
+      "topic": {
+        "en": "Business and trade",
+        "fr": "Affaires et commerce"
+      },
+      "keywords": {
+        "en": "Ecuador Free Trade Agreement between Canada and ... Investor-state dispute settlement Trade agreements",
+        "fr": "Accord de libre-échange entre le Canada ... Accords commerciaux Équateur Règlement des différends investisseurs-État"
+      },
+      "status": {
+        "en": "Open for signature until February 4, 2027, at 10:48 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 4 février 2027 à 10 h 48 (HAE)"
+      },
+      "sponsor": "Heather McPherson",
+      "signatures": 10,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7793",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7793"
+      }
+    },
+    {
+      "code": "e-7831",
+      "topic": {
+        "en": "Foreign affairs",
+        "fr": "Affaires étrangères"
+      },
+      "keywords": {
+        "en": "Audits and auditors International development and aid Military weapons Ukraine",
+        "fr": "Aide au développement international Armes militaires Ukraine Vérifications et vérificateurs"
+      },
+      "status": {
+        "en": "Open for signature until December 7, 2026, at 10:57 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 7 décembre 2026 à 10 h 57 (HAE)"
+      },
+      "sponsor": "Bardish Chagger",
+      "signatures": 6,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7831",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7831"
+      }
+    },
+    {
+      "code": "e-7769",
+      "topic": {
+        "en": "Agriculture",
+        "fr": "Agriculture"
+      },
+      "keywords": {
+        "en": "Farming and farmers Mi'kmaq Prince Edward Island",
+        "fr": "Agriculture et agriculteurs Île-du-Prince-Édouard Mi'kmaq"
+      },
+      "status": {
+        "en": "Open for signature until December 7, 2026, at 10:55 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 7 décembre 2026 à 10 h 55 (HAE)"
+      },
+      "sponsor": "Sean Casey",
+      "signatures": 6,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7769",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7769"
       }
     }
   ]
