@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-10-08T15:35:58.757Z",
+  "scrapedAt": "2026-10-09T15:18:25.820Z",
   "count": 20,
   "petitions": [
     {
@@ -18,7 +18,7 @@
         "fr": "Ouverte pour signature jusqu'au 4 novembre 2026 à 13 h 40 (HAE)"
       },
       "sponsor": "Wade Chang",
-      "signatures": 3328,
+      "signatures": 3820,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7794",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7794"
@@ -39,7 +39,7 @@
         "fr": "Ouverte pour signature jusqu'au 28 décembre 2026 à 9 h 35 (HAE)"
       },
       "sponsor": "Yvan Baker",
-      "signatures": 1355,
+      "signatures": 2101,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7787",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7787"
@@ -60,31 +60,10 @@
         "fr": "Ouverte pour signature jusqu'au 3 janvier 2027 à 13 h 30 (HAE)"
       },
       "sponsor": "Glen Motz",
-      "signatures": 1249,
+      "signatures": 1866,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7823",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7823"
-      }
-    },
-    {
-      "code": "e-7810",
-      "topic": {
-        "en": "Social affairs and equality",
-        "fr": "Affaires sociales et égalité"
-      },
-      "keywords": {
-        "en": "Guaranteed Income Supplement Old Age Security Senior citizens",
-        "fr": "Personnes âgées Sécurité de la vieillesse Supplément de revenu garanti"
-      },
-      "status": {
-        "en": "Open for signature until December 24, 2026, at 3:24 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 24 décembre 2026 à 15 h 24 (HAE)"
-      },
-      "sponsor": "David McKenzie",
-      "signatures": 726,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7810",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7810"
       }
     },
     {
@@ -102,10 +81,52 @@
         "fr": "Ouverte pour signature jusqu'au 23 janvier 2027 à 14 h 54 (HAE)"
       },
       "sponsor": "Gabriel Hardy",
-      "signatures": 631,
+      "signatures": 750,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7746",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7746"
+      }
+    },
+    {
+      "code": "e-7810",
+      "topic": {
+        "en": "Social affairs and equality",
+        "fr": "Affaires sociales et égalité"
+      },
+      "keywords": {
+        "en": "Guaranteed Income Supplement Old Age Security Senior citizens",
+        "fr": "Personnes âgées Sécurité de la vieillesse Supplément de revenu garanti"
+      },
+      "status": {
+        "en": "Open for signature until December 24, 2026, at 3:24 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 24 décembre 2026 à 15 h 24 (HAE)"
+      },
+      "sponsor": "David McKenzie",
+      "signatures": 731,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7810",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7810"
+      }
+    },
+    {
+      "code": "e-7798",
+      "topic": {
+        "en": "Foreign affairs",
+        "fr": "Affaires étrangères"
+      },
+      "keywords": {
+        "en": "Economic sanctions Ovechkin, Alexander Russia",
+        "fr": "Ovetchkine, Aleksandr Russie Sanctions économiques"
+      },
+      "status": {
+        "en": "Open for signature until November 5, 2026, at 4:03 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 5 novembre 2026 à 16 h 03 (HAE)"
+      },
+      "sponsor": "Bardish Chagger",
+      "signatures": 325,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7798",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7798"
       }
     },
     {
@@ -123,7 +144,7 @@
         "fr": "Ouverte pour signature jusqu'au 4 février 2027 à 14 h 44 (HAE)"
       },
       "sponsor": "Kent MacDonald",
-      "signatures": 109,
+      "signatures": 228,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7791",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7791"
@@ -144,31 +165,10 @@
         "fr": "Ouverte pour signature jusqu'au 5 janvier 2027 à 14 h 37 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 64,
+      "signatures": 116,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7809",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7809"
-      }
-    },
-    {
-      "code": "e-7775",
-      "topic": {
-        "en": "Social affairs and equality",
-        "fr": "Affaires sociales et égalité"
-      },
-      "keywords": {
-        "en": "British Columbia Homelessness and homeless Housing",
-        "fr": "Colombie-Britannique Itinérance et sans-abri Logement"
-      },
-      "status": {
-        "en": "Open for signature until January 27, 2027, at 9:31 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 27 janvier 2027 à 9 h 31 (HAE)"
-      },
-      "sponsor": "Jenny Kwan",
-      "signatures": 60,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7775",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7775"
       }
     },
     {
@@ -186,10 +186,31 @@
         "fr": "Ouverte pour signature jusqu'au 23 janvier 2027 à 15 h 19 (HAE)"
       },
       "sponsor": "Warren Steinley",
-      "signatures": 60,
+      "signatures": 63,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7696",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7696"
+      }
+    },
+    {
+      "code": "e-7775",
+      "topic": {
+        "en": "Social affairs and equality",
+        "fr": "Affaires sociales et égalité"
+      },
+      "keywords": {
+        "en": "British Columbia Homelessness and homeless Housing",
+        "fr": "Colombie-Britannique Itinérance et sans-abri Logement"
+      },
+      "status": {
+        "en": "Open for signature until January 27, 2027, at 9:31 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 27 janvier 2027 à 9 h 31 (HAE)"
+      },
+      "sponsor": "Jenny Kwan",
+      "signatures": 61,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7775",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7775"
       }
     },
     {
@@ -207,136 +228,10 @@
         "fr": "Ouverte pour signature jusqu'au 3 janvier 2027 à 13 h 35 (HAE)"
       },
       "sponsor": "Bardish Chagger",
-      "signatures": 56,
+      "signatures": 59,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7752",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7752"
-      }
-    },
-    {
-      "code": "e-7745",
-      "topic": {
-        "en": "Consumer protection",
-        "fr": "Protection des consommateurs"
-      },
-      "keywords": {
-        "en": "Consumers and consumer protection Electronic commerce Electronic funds transfers Subscriptions",
-        "fr": "Abonnements Commerce électronique Consommateurs et protection des consommateurs Transferts électroniques de fonds"
-      },
-      "status": {
-        "en": "Open for signature until February 2, 2027, at 1:06 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 2 février 2027 à 13 h 06 (HAE)"
-      },
-      "sponsor": "Marc Dalton",
-      "signatures": 46,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7745",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7745"
-      }
-    },
-    {
-      "code": "e-7798",
-      "topic": {
-        "en": "Foreign affairs",
-        "fr": "Affaires étrangères"
-      },
-      "keywords": {
-        "en": "Economic sanctions Ovechkin, Alexander Russia",
-        "fr": "Ovetchkine, Aleksandr Russie Sanctions économiques"
-      },
-      "status": {
-        "en": "Open for signature until November 5, 2026, at 4:03 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 5 novembre 2026 à 16 h 03 (HAE)"
-      },
-      "sponsor": "Bardish Chagger",
-      "signatures": 31,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7798",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7798"
-      }
-    },
-    {
-      "code": "e-7817",
-      "topic": {
-        "en": "Science and technology",
-        "fr": "Sciences et technologie"
-      },
-      "keywords": {
-        "en": "Artificial intelligence Data centres Information dissemination Packaging and labelling",
-        "fr": "Centres de traitement de données Diffusion de l'information Emballage et étiquetage Intelligence artificielle"
-      },
-      "status": {
-        "en": "Open for signature until November 6, 2026, at 10:43 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 6 novembre 2026 à 10 h 43 (HAE)"
-      },
-      "sponsor": "Heather McPherson",
-      "signatures": 25,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7817",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7817"
-      }
-    },
-    {
-      "code": "e-7619",
-      "topic": {
-        "en": "Health",
-        "fr": "Santé"
-      },
-      "keywords": {
-        "en": "C-280, An Act to enact the Mental Health ... Canada Health Transfer Drugs and alcohol Health care system Mental health",
-        "fr": "C-280, Loi édictant la Loi sur les servi ... Drogue et alcool Santé mentale Système de soins de santé Transfert canadien en matière de santé"
-      },
-      "status": {
-        "en": "Open for signature until February 2, 2027, at 1:38 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 2 février 2027 à 13 h 38 (HAE)"
-      },
-      "sponsor": "Gord Johns",
-      "signatures": 24,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7619",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7619"
-      }
-    },
-    {
-      "code": "e-7033",
-      "topic": {
-        "en": "Social affairs and equality",
-        "fr": "Affaires sociales et égalité"
-      },
-      "keywords": {
-        "en": "Income and wages Support of children",
-        "fr": "Pension alimentaire pour enfants Revenus et salaires"
-      },
-      "status": {
-        "en": "Open for signature until February 4, 2027, at 10:51 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 4 février 2027 à 10 h 51 (HAE)"
-      },
-      "sponsor": "Salma Zahid",
-      "signatures": 23,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7033",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7033"
-      }
-    },
-    {
-      "code": "e-7846",
-      "topic": {
-        "en": "Veterans' affairs",
-        "fr": "Anciens combattants"
-      },
-      "keywords": {
-        "en": "Education and training Veterans Veterans’ Education and Training Benefit",
-        "fr": "Allocation pour les études et la formati ... Anciens combattants Éducation et formation"
-      },
-      "status": {
-        "en": "Open for signature until February 4, 2027, at 2:54 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 4 février 2027 à 14 h 54 (HAE)"
-      },
-      "sponsor": "Scott Reid",
-      "signatures": 21,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7846",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7846"
       }
     },
     {
@@ -354,10 +249,94 @@
         "fr": "Ouverte pour signature jusqu'au 4 février 2027 à 14 h 57 (HAE)"
       },
       "sponsor": "Will Greaves",
-      "signatures": 10,
+      "signatures": 57,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7776",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7776"
+      }
+    },
+    {
+      "code": "e-7846",
+      "topic": {
+        "en": "Veterans' affairs",
+        "fr": "Anciens combattants"
+      },
+      "keywords": {
+        "en": "Education and training Veterans Veterans’ Education and Training Benefit",
+        "fr": "Allocation pour les études et la formati ... Anciens combattants Éducation et formation"
+      },
+      "status": {
+        "en": "Open for signature until February 4, 2027, at 2:54 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 4 février 2027 à 14 h 54 (HAE)"
+      },
+      "sponsor": "Scott Reid",
+      "signatures": 56,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7846",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7846"
+      }
+    },
+    {
+      "code": "e-7745",
+      "topic": {
+        "en": "Consumer protection",
+        "fr": "Protection des consommateurs"
+      },
+      "keywords": {
+        "en": "Consumers and consumer protection Electronic commerce Electronic funds transfers Subscriptions",
+        "fr": "Abonnements Commerce électronique Consommateurs et protection des consommateurs Transferts électroniques de fonds"
+      },
+      "status": {
+        "en": "Open for signature until February 2, 2027, at 1:06 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 2 février 2027 à 13 h 06 (HAE)"
+      },
+      "sponsor": "Marc Dalton",
+      "signatures": 56,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7745",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7745"
+      }
+    },
+    {
+      "code": "e-7033",
+      "topic": {
+        "en": "Social affairs and equality",
+        "fr": "Affaires sociales et égalité"
+      },
+      "keywords": {
+        "en": "Income and wages Support of children",
+        "fr": "Pension alimentaire pour enfants Revenus et salaires"
+      },
+      "status": {
+        "en": "Open for signature until February 4, 2027, at 10:51 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 4 février 2027 à 10 h 51 (HAE)"
+      },
+      "sponsor": "Salma Zahid",
+      "signatures": 39,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7033",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7033"
+      }
+    },
+    {
+      "code": "e-7817",
+      "topic": {
+        "en": "Science and technology",
+        "fr": "Sciences et technologie"
+      },
+      "keywords": {
+        "en": "Artificial intelligence Data centres Information dissemination Packaging and labelling",
+        "fr": "Centres de traitement de données Diffusion de l'information Emballage et étiquetage Intelligence artificielle"
+      },
+      "status": {
+        "en": "Open for signature until November 6, 2026, at 10:43 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 6 novembre 2026 à 10 h 43 (HAE)"
+      },
+      "sponsor": "Heather McPherson",
+      "signatures": 34,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7817",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7817"
       }
     },
     {
@@ -375,31 +354,31 @@
         "fr": "Ouverte pour signature jusqu'au 4 février 2027 à 10 h 48 (HAE)"
       },
       "sponsor": "Heather McPherson",
-      "signatures": 10,
+      "signatures": 28,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7793",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7793"
       }
     },
     {
-      "code": "e-7831",
+      "code": "e-7619",
       "topic": {
-        "en": "Foreign affairs",
-        "fr": "Affaires étrangères"
+        "en": "Health",
+        "fr": "Santé"
       },
       "keywords": {
-        "en": "Audits and auditors International development and aid Military weapons Ukraine",
-        "fr": "Aide au développement international Armes militaires Ukraine Vérifications et vérificateurs"
+        "en": "C-280, An Act to enact the Mental Health ... Canada Health Transfer Drugs and alcohol Health care system Mental health",
+        "fr": "C-280, Loi édictant la Loi sur les servi ... Drogue et alcool Santé mentale Système de soins de santé Transfert canadien en matière de santé"
       },
       "status": {
-        "en": "Open for signature until December 7, 2026, at 10:57 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 7 décembre 2026 à 10 h 57 (HAE)"
+        "en": "Open for signature until February 2, 2027, at 1:38 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 2 février 2027 à 13 h 38 (HAE)"
       },
-      "sponsor": "Bardish Chagger",
-      "signatures": 6,
+      "sponsor": "Gord Johns",
+      "signatures": 26,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7831",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7831"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7619",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7619"
       }
     },
     {
@@ -417,10 +396,31 @@
         "fr": "Ouverte pour signature jusqu'au 7 décembre 2026 à 10 h 55 (HAE)"
       },
       "sponsor": "Sean Casey",
-      "signatures": 6,
+      "signatures": 23,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7769",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7769"
+      }
+    },
+    {
+      "code": "e-7831",
+      "topic": {
+        "en": "Foreign affairs",
+        "fr": "Affaires étrangères"
+      },
+      "keywords": {
+        "en": "Audits and auditors International development and aid Military weapons Ukraine",
+        "fr": "Aide au développement international Armes militaires Ukraine Vérifications et vérificateurs"
+      },
+      "status": {
+        "en": "Open for signature until December 7, 2026, at 10:57 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 7 décembre 2026 à 10 h 57 (HAE)"
+      },
+      "sponsor": "Bardish Chagger",
+      "signatures": 22,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7831",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7831"
       }
     }
   ]

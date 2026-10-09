@@ -17,7 +17,7 @@
 
 - [Aperçu](https://www.dossiercanada.ca/): l'accueil : les projets de loi récemment actifs.
 - [Projets de loi](https://www.dossiercanada.ca/projets-de-loi): les 191 projets de loi fédéraux de la 45e législature (session 1), des Communes ou du Sénat, chacun résumé en langage clair : étape réelle, parrain, votes et lobbying déclaré, avec le lien vers le texte officiel.
-- [Votes](https://www.dossiercanada.ca/votes): 177 votes par appel nominal de la Chambre des communes : résultat, marge et vote de chaque député·e, regroupé par parti.
+- [Votes](https://www.dossiercanada.ca/votes): 178 votes par appel nominal de la Chambre des communes : résultat, marge et vote de chaque député·e, regroupé par parti.
 - [Député·e·s](https://www.dossiercanada.ca/deputes): les 337 député·e·s en poste à la Chambre des communes : circonscription, parti et présence aux votes.
 - [Ministres](https://www.dossiercanada.ca/ministres): les 28 membres du Cabinet fédéral : portefeuille, courriel officiel et présence aux votes des Communes.
 - [Promesses électorales de 2025](https://www.dossiercanada.ca/promesses): 12 engagements du parti au pouvoir, cités mot pour mot dans sa plateforme de 2025, en regard des projets de loi fédéraux qui les mettent en œuvre. Sans verdict.
@@ -40,7 +40,7 @@ DossierCanada is an independent and UNOFFICIAL citizen website, free, with no ad
 
 - [Overview](https://www.dossiercanada.ca/en): the home page: recently active bills.
 - [Bills](https://www.dossiercanada.ca/en/bills): the 191 federal bills of the 45th Parliament (session 1), from the Commons or the Senate, each summarized in plain language: actual stage, sponsor, votes and declared lobbying, with a link to the official text.
-- [Votes](https://www.dossiercanada.ca/en/votes): 177 recorded divisions in the House of Commons: result, margin and how each MP voted.
+- [Votes](https://www.dossiercanada.ca/en/votes): 178 recorded divisions in the House of Commons: result, margin and how each MP voted.
 - [MPs](https://www.dossiercanada.ca/en/mps): the 337 sitting MPs in the House of Commons: riding, party and attendance at recorded votes.
 - [Ministers](https://www.dossiercanada.ca/en/ministers): the 28 members of the federal Cabinet: portfolio, official email and attendance at House of Commons votes.
 - [2025 election promises](https://www.dossiercanada.ca/en/promises): 12 commitments from the governing party's 2025 platform, quoted word for word, beside the federal bills that implement them. No verdict.
