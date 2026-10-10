@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T15:18:31.552Z",
+  "generatedAt": "2026-10-10T14:34:38.350Z",
   "session": "45-1",
   "meta": {
     "counts": {
@@ -11,6 +11,74 @@
     "formerMembersInVotes": 12
   },
   "bills": [
+    {
+      "id": 14182606,
+      "num": "C-37",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "commons",
+      "type": {
+        "en": "House Government Bill",
+        "fr": "Projet de loi émanant du gouvernement (Cdc)"
+      },
+      "isGovernment": true,
+      "title": {
+        "en": "An Act respecting water, source water, drinking water, wastewater and related infrastructure on First Nation lands",
+        "fr": "Loi concernant l'eau, les sources d'eau, l'eau potable, les eaux usées et les infrastructures connexes sur les terres des Premières Nations"
+      },
+      "shortTitle": {
+        "en": "First Nations Clean Water Act",
+        "fr": "Loi sur l'eau propre des Premières Nations"
+      },
+      "sponsor": {
+        "en": "Hon. Mandy Gull-Masty",
+        "fr": "L’hon. Mandy Gull-Masty"
+      },
+      "status": {
+        "en": "At consideration in committee in the House of Commons",
+        "fr": "À l'examen en comité à la Chambre des communes"
+      },
+      "state": "encours",
+      "milestones": [
+        {
+          "stage": "commons_first_reading",
+          "chamber": "commons",
+          "reading": 1,
+          "date": "2026-06-16"
+        },
+        {
+          "stage": "commons_second_reading",
+          "chamber": "commons",
+          "reading": 2,
+          "date": "2026-10-09"
+        }
+      ],
+      "royalAssent": null,
+      "reinstated": false,
+      "latestActivity": {
+        "en": "At consideration in committee in the House of Commons",
+        "fr": "À l'examen en comité à la Chambre des communes",
+        "date": "2026-10-09"
+      },
+      "lastActivity": "2026-10-09",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-37",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-37"
+      },
+      "sponsorPersonId": 122492,
+      "sponsorName": {
+        "first": "Mandy",
+        "last": "Gull-Masty"
+      },
+      "fullSummaryAvailable": true,
+      "summary": {
+        "en": "This enactment affirms that the inherent right to self-government, recognized and affirmed by section 35 of the Constitution Act, 1982, includes the jurisdiction of First Nations in relation to water, source water, drinking water, wastewater and related infrastructure on, in and under First Nation lands. It sets out principles, such as substantive equality, to guide the provision for First Nations of clean and safe drinking water and the effective treatment and disposal of wastewater on First Nation lands. It provides for minimum standards for water quality and quantity and wastewater effluent. It also provides pathways to facilitate source water protection.",
+        "fr": "Le texte affirme le droit inhérent à l’autonomie gouvernementale reconnu et confirmé par l’article 35 de la Loi constitutionnelle de 1982 qui comprend notamment la compétence des Premières Nations en matière d’eau, de sources d’eau, d’eau potable, d’eaux usées et d’infrastructures connexes sur et sous les terres des Premières Nations. Il énonce également des principes, notamment le principe de l’égalité réelle, visant à guider l’approvisionnement des Premières Nations en eau potable sûre et propre et le traitement et l’évacuation efficaces des eaux usées sur les terres des Premières Nations. Il prévoit en outre des normes minimales pour la quantité d’eau, la qualité de l’eau et les effluents des eaux usées. Enfin, le texte ouvre la voie à une protection facilitée des sources d’eau."
+      },
+      "summarySource": "bill",
+      "divisions": []
+    },
     {
       "id": 13932352,
       "num": "C-27",
@@ -3425,68 +3493,6 @@
       "summary": {
         "en": "This enactment provides for the development of a national framework to support Canadians with sickle cell disease (also known as sickle cell anemia or drepanocytosis), their families and their caregivers.",
         "fr": "Le texte prévoit l’élaboration d’un cadre national qui vise à soutenir les Canadiens atteints de la maladie falciforme (aussi appelée anémie falciforme ou drépanocytose), ainsi que leur famille et leurs aidants naturels."
-      },
-      "summarySource": "bill",
-      "divisions": []
-    },
-    {
-      "id": 14182606,
-      "num": "C-37",
-      "session": "45-1",
-      "parliament": 45,
-      "sessionNumber": 1,
-      "chamber": "commons",
-      "type": {
-        "en": "House Government Bill",
-        "fr": "Projet de loi émanant du gouvernement (Cdc)"
-      },
-      "isGovernment": true,
-      "title": {
-        "en": "An Act respecting water, source water, drinking water, wastewater and related infrastructure on First Nation lands",
-        "fr": "Loi concernant l'eau, les sources d'eau, l'eau potable, les eaux usées et les infrastructures connexes sur les terres des Premières Nations"
-      },
-      "shortTitle": {
-        "en": "First Nations Clean Water Act",
-        "fr": "Loi sur l'eau propre des Premières Nations"
-      },
-      "sponsor": {
-        "en": "Hon. Mandy Gull-Masty",
-        "fr": "L’hon. Mandy Gull-Masty"
-      },
-      "status": {
-        "en": "At second reading in the House of Commons",
-        "fr": "À la deuxième lecture à la Chambre des communes"
-      },
-      "state": "encours",
-      "milestones": [
-        {
-          "stage": "commons_first_reading",
-          "chamber": "commons",
-          "reading": 1,
-          "date": "2026-06-16"
-        }
-      ],
-      "royalAssent": null,
-      "reinstated": false,
-      "latestActivity": {
-        "en": "At second reading in the House of Commons",
-        "fr": "À la deuxième lecture à la Chambre des communes",
-        "date": "2026-06-16"
-      },
-      "lastActivity": "2026-06-16",
-      "url": {
-        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-37",
-        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-37"
-      },
-      "sponsorPersonId": 122492,
-      "sponsorName": {
-        "first": "Mandy",
-        "last": "Gull-Masty"
-      },
-      "fullSummaryAvailable": true,
-      "summary": {
-        "en": "This enactment affirms that the inherent right to self-government, recognized and affirmed by section 35 of the Constitution Act, 1982, includes the jurisdiction of First Nations in relation to water, source water, drinking water, wastewater and related infrastructure on, in and under First Nation lands. It sets out principles, such as substantive equality, to guide the provision for First Nations of clean and safe drinking water and the effective treatment and disposal of wastewater on First Nation lands. It provides for minimum standards for water quality and quantity and wastewater effluent. It also provides pathways to facilitate source water protection.",
-        "fr": "Le texte affirme le droit inhérent à l’autonomie gouvernementale reconnu et confirmé par l’article 35 de la Loi constitutionnelle de 1982 qui comprend notamment la compétence des Premières Nations en matière d’eau, de sources d’eau, d’eau potable, d’eaux usées et d’infrastructures connexes sur et sous les terres des Premières Nations. Il énonce également des principes, notamment le principe de l’égalité réelle, visant à guider l’approvisionnement des Premières Nations en eau potable sûre et propre et le traitement et l’évacuation efficaces des eaux usées sur les terres des Premières Nations. Il prévoit en outre des normes minimales pour la quantité d’eau, la qualité de l’eau et les effluents des eaux usées. Enfin, le texte ouvre la voie à une protection facilitée des sources d’eau."
       },
       "summarySource": "bill",
       "divisions": []
@@ -10515,8 +10521,8 @@
         "fr": "Tatiana Auguste"
       },
       "status": {
-        "en": "At report stage in the House of Commons",
-        "fr": "À l'étape du rapport à la Chambre des communes"
+        "en": "At third reading in the House of Commons",
+        "fr": "À l'étape de la troisième lecture à la Chambre des communes"
       },
       "state": "encours",
       "milestones": [
@@ -10536,8 +10542,8 @@
       "royalAssent": null,
       "reinstated": false,
       "latestActivity": {
-        "en": "At report stage in the House of Commons",
-        "fr": "À l'étape du rapport à la Chambre des communes",
+        "en": "At third reading in the House of Commons",
+        "fr": "À l'étape de la troisième lecture à la Chambre des communes",
         "date": "2025-12-03"
       },
       "lastActivity": "2025-12-03",
@@ -13844,7 +13850,7 @@
         "fr": "Loi concernant l’élaboration d’une stratégie nationale sur l’énergie renouvelable"
       },
       "shortTitle": {
-        "en": "National Renewable Energy Stategy Act",
+        "en": "National Renewable Energy Strategy Act",
         "fr": "Loi sur la stratégie nationale sur l’énergie renouvelable"
       },
       "sponsor": {
