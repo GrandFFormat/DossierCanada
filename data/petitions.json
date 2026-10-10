@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-10-09T15:18:25.820Z",
+  "scrapedAt": "2026-10-10T14:34:33.361Z",
   "count": 20,
   "petitions": [
     {
@@ -18,7 +18,7 @@
         "fr": "Ouverte pour signature jusqu'au 4 novembre 2026 à 13 h 40 (HAE)"
       },
       "sponsor": "Wade Chang",
-      "signatures": 3820,
+      "signatures": 3981,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7794",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7794"
@@ -39,7 +39,7 @@
         "fr": "Ouverte pour signature jusqu'au 28 décembre 2026 à 9 h 35 (HAE)"
       },
       "sponsor": "Yvan Baker",
-      "signatures": 2101,
+      "signatures": 2362,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7787",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7787"
@@ -60,31 +60,10 @@
         "fr": "Ouverte pour signature jusqu'au 3 janvier 2027 à 13 h 30 (HAE)"
       },
       "sponsor": "Glen Motz",
-      "signatures": 1866,
+      "signatures": 2095,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7823",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7823"
-      }
-    },
-    {
-      "code": "e-7746",
-      "topic": {
-        "en": "Taxation",
-        "fr": "Fiscalité"
-      },
-      "keywords": {
-        "en": "Golf Small and medium-sized enterprises Tax deductions",
-        "fr": "Déductions fiscales Golf Petites et moyennes entreprises"
-      },
-      "status": {
-        "en": "Open for signature until January 23, 2027, at 2:54 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 23 janvier 2027 à 14 h 54 (HAE)"
-      },
-      "sponsor": "Gabriel Hardy",
-      "signatures": 750,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7746",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7746"
       }
     },
     {
@@ -102,7 +81,7 @@
         "fr": "Ouverte pour signature jusqu'au 24 décembre 2026 à 15 h 24 (HAE)"
       },
       "sponsor": "David McKenzie",
-      "signatures": 731,
+      "signatures": 733,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7810",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7810"
@@ -123,7 +102,7 @@
         "fr": "Ouverte pour signature jusqu'au 5 novembre 2026 à 16 h 03 (HAE)"
       },
       "sponsor": "Bardish Chagger",
-      "signatures": 325,
+      "signatures": 432,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7798",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7798"
@@ -144,7 +123,7 @@
         "fr": "Ouverte pour signature jusqu'au 4 février 2027 à 14 h 44 (HAE)"
       },
       "sponsor": "Kent MacDonald",
-      "signatures": 228,
+      "signatures": 369,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7791",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7791"
@@ -165,73 +144,10 @@
         "fr": "Ouverte pour signature jusqu'au 5 janvier 2027 à 14 h 37 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 116,
+      "signatures": 136,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7809",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7809"
-      }
-    },
-    {
-      "code": "e-7696",
-      "topic": {
-        "en": "Environment",
-        "fr": "Environnement"
-      },
-      "keywords": {
-        "en": "Climate and weather Department of the Environment Meteorology Scientific research and scientists",
-        "fr": "Climat et conditions atmosphériques Météorologie Ministère de l'Environnement Recherche scientifique et travailleurs s ..."
-      },
-      "status": {
-        "en": "Open for signature until January 23, 2027, at 3:19 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 23 janvier 2027 à 15 h 19 (HAE)"
-      },
-      "sponsor": "Warren Steinley",
-      "signatures": 63,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7696",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7696"
-      }
-    },
-    {
-      "code": "e-7775",
-      "topic": {
-        "en": "Social affairs and equality",
-        "fr": "Affaires sociales et égalité"
-      },
-      "keywords": {
-        "en": "British Columbia Homelessness and homeless Housing",
-        "fr": "Colombie-Britannique Itinérance et sans-abri Logement"
-      },
-      "status": {
-        "en": "Open for signature until January 27, 2027, at 9:31 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 27 janvier 2027 à 9 h 31 (HAE)"
-      },
-      "sponsor": "Jenny Kwan",
-      "signatures": 61,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7775",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7775"
-      }
-    },
-    {
-      "code": "e-7752",
-      "topic": {
-        "en": "Health",
-        "fr": "Santé"
-      },
-      "keywords": {
-        "en": "Child health Food labelling Regulation",
-        "fr": "Étiquetage des aliments Réglementation Santé de l'enfant"
-      },
-      "status": {
-        "en": "Open for signature until January 3, 2027, at 1:35 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 3 janvier 2027 à 13 h 35 (HAE)"
-      },
-      "sponsor": "Bardish Chagger",
-      "signatures": 59,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7752",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7752"
       }
     },
     {
@@ -249,7 +165,7 @@
         "fr": "Ouverte pour signature jusqu'au 4 février 2027 à 14 h 57 (HAE)"
       },
       "sponsor": "Will Greaves",
-      "signatures": 57,
+      "signatures": 70,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7776",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7776"
@@ -270,10 +186,31 @@
         "fr": "Ouverte pour signature jusqu'au 4 février 2027 à 14 h 54 (HAE)"
       },
       "sponsor": "Scott Reid",
-      "signatures": 56,
+      "signatures": 68,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7846",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7846"
+      }
+    },
+    {
+      "code": "e-7752",
+      "topic": {
+        "en": "Health",
+        "fr": "Santé"
+      },
+      "keywords": {
+        "en": "Child health Food labelling Regulation",
+        "fr": "Étiquetage des aliments Réglementation Santé de l'enfant"
+      },
+      "status": {
+        "en": "Open for signature until January 3, 2027, at 1:35 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 3 janvier 2027 à 13 h 35 (HAE)"
+      },
+      "sponsor": "Bardish Chagger",
+      "signatures": 62,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7752",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7752"
       }
     },
     {
@@ -291,10 +228,31 @@
         "fr": "Ouverte pour signature jusqu'au 2 février 2027 à 13 h 06 (HAE)"
       },
       "sponsor": "Marc Dalton",
-      "signatures": 56,
+      "signatures": 62,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7745",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7745"
+      }
+    },
+    {
+      "code": "e-7775",
+      "topic": {
+        "en": "Social affairs and equality",
+        "fr": "Affaires sociales et égalité"
+      },
+      "keywords": {
+        "en": "British Columbia Homelessness and homeless Housing",
+        "fr": "Colombie-Britannique Itinérance et sans-abri Logement"
+      },
+      "status": {
+        "en": "Open for signature until January 27, 2027, at 9:31 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 27 janvier 2027 à 9 h 31 (HAE)"
+      },
+      "sponsor": "Jenny Kwan",
+      "signatures": 62,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7775",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7775"
       }
     },
     {
@@ -312,7 +270,7 @@
         "fr": "Ouverte pour signature jusqu'au 4 février 2027 à 10 h 51 (HAE)"
       },
       "sponsor": "Salma Zahid",
-      "signatures": 39,
+      "signatures": 40,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7033",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7033"
@@ -333,7 +291,7 @@
         "fr": "Ouverte pour signature jusqu'au 6 novembre 2026 à 10 h 43 (HAE)"
       },
       "sponsor": "Heather McPherson",
-      "signatures": 34,
+      "signatures": 38,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7817",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7817"
@@ -354,7 +312,7 @@
         "fr": "Ouverte pour signature jusqu'au 4 février 2027 à 10 h 48 (HAE)"
       },
       "sponsor": "Heather McPherson",
-      "signatures": 28,
+      "signatures": 32,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7793",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7793"
@@ -375,31 +333,10 @@
         "fr": "Ouverte pour signature jusqu'au 2 février 2027 à 13 h 38 (HAE)"
       },
       "sponsor": "Gord Johns",
-      "signatures": 26,
+      "signatures": 32,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7619",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7619"
-      }
-    },
-    {
-      "code": "e-7769",
-      "topic": {
-        "en": "Agriculture",
-        "fr": "Agriculture"
-      },
-      "keywords": {
-        "en": "Farming and farmers Mi'kmaq Prince Edward Island",
-        "fr": "Agriculture et agriculteurs Île-du-Prince-Édouard Mi'kmaq"
-      },
-      "status": {
-        "en": "Open for signature until December 7, 2026, at 10:55 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 7 décembre 2026 à 10 h 55 (HAE)"
-      },
-      "sponsor": "Sean Casey",
-      "signatures": 23,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7769",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7769"
       }
     },
     {
@@ -417,10 +354,73 @@
         "fr": "Ouverte pour signature jusqu'au 7 décembre 2026 à 10 h 57 (HAE)"
       },
       "sponsor": "Bardish Chagger",
-      "signatures": 22,
+      "signatures": 31,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7831",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7831"
+      }
+    },
+    {
+      "code": "e-7769",
+      "topic": {
+        "en": "Agriculture",
+        "fr": "Agriculture"
+      },
+      "keywords": {
+        "en": "Farming and farmers Mi'kmaq Prince Edward Island",
+        "fr": "Agriculture et agriculteurs Île-du-Prince-Édouard Mi'kmaq"
+      },
+      "status": {
+        "en": "Open for signature until December 7, 2026, at 10:55 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 7 décembre 2026 à 10 h 55 (HAE)"
+      },
+      "sponsor": "Sean Casey",
+      "signatures": 25,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7769",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7769"
+      }
+    },
+    {
+      "code": "e-7842",
+      "topic": {
+        "en": "Justice",
+        "fr": "Justice"
+      },
+      "keywords": {
+        "en": "Crime and criminality Income and wages",
+        "fr": "Crime et criminalité Revenus et salaires"
+      },
+      "status": {
+        "en": "Open for signature until February 6, 2027, at 1:37 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 6 février 2027 à 13 h 37 (HAE)"
+      },
+      "sponsor": "Don Davies",
+      "signatures": 20,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7842",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7842"
+      }
+    },
+    {
+      "code": "e-7845",
+      "topic": {
+        "en": "Environment",
+        "fr": "Environnement"
+      },
+      "keywords": {
+        "en": "Automotive parts industry Environmentally friendly products Plastics Textile and apparel goods industry",
+        "fr": "Industrie des pièces automobiles Industrie des produits textiles et de la ... Plastiques Produits écologiques"
+      },
+      "status": {
+        "en": "Open for signature until February 6, 2027, at 1:24 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 6 février 2027 à 13 h 24 (HAE)"
+      },
+      "sponsor": "Don Davies",
+      "signatures": 18,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7845",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7845"
       }
     }
   ]
