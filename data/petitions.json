@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-10-12T17:47:33.133Z",
+  "scrapedAt": "2026-10-13T15:55:04.261Z",
   "count": 20,
   "petitions": [
     {
@@ -18,7 +18,7 @@
         "fr": "Ouverte pour signature jusqu'au 4 novembre 2026 à 13 h 40 (HAE)"
       },
       "sponsor": "Wade Chang",
-      "signatures": 4203,
+      "signatures": 4261,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7794",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7794"
@@ -39,7 +39,7 @@
         "fr": "Ouverte pour signature jusqu'au 28 décembre 2026 à 9 h 35 (HAE)"
       },
       "sponsor": "Yvan Baker",
-      "signatures": 2569,
+      "signatures": 2609,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7787",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7787"
@@ -60,7 +60,7 @@
         "fr": "Ouverte pour signature jusqu'au 3 janvier 2027 à 13 h 30 (HAE)"
       },
       "sponsor": "Glen Motz",
-      "signatures": 2301,
+      "signatures": 2502,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7823",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7823"
@@ -102,7 +102,7 @@
         "fr": "Ouverte pour signature jusqu'au 4 février 2027 à 14 h 44 (HAE)"
       },
       "sponsor": "Kent MacDonald",
-      "signatures": 519,
+      "signatures": 559,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7791",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7791"
@@ -123,7 +123,7 @@
         "fr": "Ouverte pour signature jusqu'au 5 novembre 2026 à 16 h 03 (HAE)"
       },
       "sponsor": "Bardish Chagger",
-      "signatures": 503,
+      "signatures": 516,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7798",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7798"
@@ -144,31 +144,10 @@
         "fr": "Ouverte pour signature jusqu'au 6 février 2027 à 13 h 37 (HAE)"
       },
       "sponsor": "Don Davies",
-      "signatures": 284,
+      "signatures": 482,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7842",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7842"
-      }
-    },
-    {
-      "code": "e-7809",
-      "topic": {
-        "en": "Environment",
-        "fr": "Environnement"
-      },
-      "keywords": {
-        "en": "Electric vehicles Electrical grids Greenhouse gases Renewable energy and fuel",
-        "fr": "Énergie et combustibles renouvelables Gaz à effet de serre Réseaux électriques Véhicules électriques"
-      },
-      "status": {
-        "en": "Open for signature until January 5, 2027, at 2:37 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 5 janvier 2027 à 14 h 37 (HAE)"
-      },
-      "sponsor": "Elizabeth May",
-      "signatures": 185,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7809",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7809"
       }
     },
     {
@@ -186,10 +165,31 @@
         "fr": "Ouverte pour signature jusqu'au 7 décembre 2026 à 10 h 55 (HAE)"
       },
       "sponsor": "Sean Casey",
-      "signatures": 136,
+      "signatures": 376,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7769",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7769"
+      }
+    },
+    {
+      "code": "e-7809",
+      "topic": {
+        "en": "Environment",
+        "fr": "Environnement"
+      },
+      "keywords": {
+        "en": "Electric vehicles Electrical grids Greenhouse gases Renewable energy and fuel",
+        "fr": "Énergie et combustibles renouvelables Gaz à effet de serre Réseaux électriques Véhicules électriques"
+      },
+      "status": {
+        "en": "Open for signature until January 5, 2027, at 2:37 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 5 janvier 2027 à 14 h 37 (HAE)"
+      },
+      "sponsor": "Elizabeth May",
+      "signatures": 223,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7809",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7809"
       }
     },
     {
@@ -207,7 +207,7 @@
         "fr": "Ouverte pour signature jusqu'au 4 février 2027 à 14 h 57 (HAE)"
       },
       "sponsor": "Will Greaves",
-      "signatures": 88,
+      "signatures": 95,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7776",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7776"
@@ -228,7 +228,7 @@
         "fr": "Ouverte pour signature jusqu'au 4 février 2027 à 14 h 54 (HAE)"
       },
       "sponsor": "Scott Reid",
-      "signatures": 84,
+      "signatures": 88,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7846",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7846"
@@ -249,7 +249,7 @@
         "fr": "Ouverte pour signature jusqu'au 2 février 2027 à 13 h 06 (HAE)"
       },
       "sponsor": "Marc Dalton",
-      "signatures": 76,
+      "signatures": 79,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7745",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7745"
@@ -270,7 +270,7 @@
         "fr": "Ouverte pour signature jusqu'au 27 janvier 2027 à 9 h 31 (HAE)"
       },
       "sponsor": "Jenny Kwan",
-      "signatures": 74,
+      "signatures": 76,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7775",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7775"
@@ -312,7 +312,7 @@
         "fr": "Ouverte pour signature jusqu'au 6 novembre 2026 à 10 h 43 (HAE)"
       },
       "sponsor": "Heather McPherson",
-      "signatures": 48,
+      "signatures": 50,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7817",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7817"
@@ -333,7 +333,7 @@
         "fr": "Ouverte pour signature jusqu'au 7 décembre 2026 à 10 h 57 (HAE)"
       },
       "sponsor": "Bardish Chagger",
-      "signatures": 44,
+      "signatures": 48,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7831",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7831"
@@ -361,27 +361,6 @@
       }
     },
     {
-      "code": "e-7793",
-      "topic": {
-        "en": "Business and trade",
-        "fr": "Affaires et commerce"
-      },
-      "keywords": {
-        "en": "Ecuador Free Trade Agreement between Canada and ... Investor-state dispute settlement Trade agreements",
-        "fr": "Accord de libre-échange entre le Canada ... Accords commerciaux Équateur Règlement des différends investisseurs-État"
-      },
-      "status": {
-        "en": "Open for signature until February 4, 2027, at 10:48 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 4 février 2027 à 10 h 48 (HAE)"
-      },
-      "sponsor": "Heather McPherson",
-      "signatures": 39,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7793",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7793"
-      }
-    },
-    {
       "code": "e-7619",
       "topic": {
         "en": "Health",
@@ -396,10 +375,31 @@
         "fr": "Ouverte pour signature jusqu'au 2 février 2027 à 13 h 38 (HAE)"
       },
       "sponsor": "Gord Johns",
-      "signatures": 38,
+      "signatures": 43,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7619",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7619"
+      }
+    },
+    {
+      "code": "e-7793",
+      "topic": {
+        "en": "Business and trade",
+        "fr": "Affaires et commerce"
+      },
+      "keywords": {
+        "en": "Ecuador Free Trade Agreement between Canada and ... Investor-state dispute settlement Trade agreements",
+        "fr": "Accord de libre-échange entre le Canada ... Accords commerciaux Équateur Règlement des différends investisseurs-État"
+      },
+      "status": {
+        "en": "Open for signature until February 4, 2027, at 10:48 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 4 février 2027 à 10 h 48 (HAE)"
+      },
+      "sponsor": "Heather McPherson",
+      "signatures": 41,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7793",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7793"
       }
     },
     {
@@ -417,7 +417,7 @@
         "fr": "Ouverte pour signature jusqu'au 6 février 2027 à 13 h 24 (HAE)"
       },
       "sponsor": "Don Davies",
-      "signatures": 29,
+      "signatures": 32,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7845",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7845"
