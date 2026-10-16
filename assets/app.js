@@ -1695,6 +1695,109 @@ function matchesSearch(haystack, kw){
   return h.includes(kw) || h.replace(/ /g, '').includes(kw.replace(/ /g, ''));
 }
 
+/* SURLIGNAGE DE LA RECHERCHE — trouver un projet sans voir POURQUOI il sort est
+   presque pire que ne rien trouver (« build canada home » sortait deux projets,
+   dont un sans le mot dans son titre). On surligne le mot dans le titre ; s'il
+   n'y est pas, on montre sous la rangée l'extrait du résumé où il se trouve.
+
+   La comparaison se fait sur le texte NORMALISÉ (accents, casse, traits d'union :
+   voir norm), mais on surligne le texte D'ORIGINE. D'où cette table qui relie
+   chaque caractère normalisé à sa position dans le texte affiché. */
+function positionsRecherche(texte, kw){
+  if(!kw) return [];
+  let n = '';
+  const origine = [];             // origine[i] = index dans `texte` du i-ème caractère normalisé
+  for(let i = 0; i < texte.length; i++){
+    const m = texte[i].normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[-–—'’]/g, ' ');
+    for(const c of m){
+      if(/\s/.test(c)){ if(!n.length || n[n.length - 1] === ' ') continue; n += ' '; }
+      else n += c;
+      origine.push(i);
+    }
+  }
+  const trouves = [];
+  let p = n.indexOf(kw);
+  while(p !== -1){
+    trouves.push([origine[p], origine[p + kw.length - 1] + 1]);
+    p = n.indexOf(kw, p + kw.length);
+  }
+  return trouves;
+}
+// Texte échappé, avec les correspondances entourées de <mark>.
+function htmlSurligne(texte, kw){
+  const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  let out = '', dernier = 0;
+  for(const [a, b] of positionsRecherche(texte, kw)){
+    out += esc(texte.slice(dernier, a)) + '<mark class="hl-kw">' + esc(texte.slice(a, b)) + '</mark>';
+    dernier = b;
+  }
+  return out + esc(texte.slice(dernier));
+}
+// Surligne dans un élément déjà dessiné, nœud texte par nœud texte (on ne touche
+// ni aux liens ni aux boutons qu'il contient).
+function surlignerDans(el, kw){
+  if(!el || !kw) return;
+  const marcheur = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, {
+    acceptNode: (t) => t.parentElement && !t.parentElement.closest('mark.hl-kw, script, style, button')
+      ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT,
+  });
+  const noeuds = [];
+  while(marcheur.nextNode()) noeuds.push(marcheur.currentNode);
+  for(const t of noeuds){
+    if(!positionsRecherche(t.nodeValue, kw).length) continue;
+    const span = document.createElement('span');
+    span.innerHTML = htmlSurligne(t.nodeValue, kw);
+    t.replaceWith(...span.childNodes);
+  }
+}
+// Où le mot a-t-il été trouvé, si ce n'est pas dans le titre ? On cherche dans
+// l'ordre où le lecteur s'y attend : résumé en clair, sommaire officiel (langue de
+// la page d'abord), puis parrain et lobbying. Renvoie l'extrait à afficher.
+function extraitRecherche(b, kw, isEn){
+  const t = (billTexts && billTexts[b.id]) || {};
+  const L = (v, en) => (v && typeof v === 'object') ? (en ? v.en : v.fr) : (typeof v === 'string' ? v : '');
+  const sources = [
+    [L(t.ai, isEn),  isEn ? 'in the plain-language summary' : 'dans le résumé en clair'],
+    [L(t.s, isEn),   isEn ? 'in the official summary' : 'dans le sommaire officiel'],
+    [L(t.ai, !isEn), isEn ? 'in the French summary' : 'dans le résumé anglais'],
+    [L(t.s, !isEn),  isEn ? 'in the French official summary' : 'dans le sommaire officiel anglais'],
+    [b.sponsor ? (b.sponsor.fr || b.sponsor.en || '') : '', isEn ? "in the sponsor's name" : 'dans le nom du parrain'],
+    [lobbyOrgNames(b.num).map(n => typeof n === 'string' ? n : (isEn ? (n.en || n.fr) : (n.fr || n.en))).join(' · '),
+      isEn ? 'in declared lobbying' : 'dans le lobbying déclaré'],
+  ];
+  for(const [brut, ou] of sources){
+    // Les résumés sont en puces Markdown (« - … », « ## Partie … ») : on aplatit.
+    const texte = String(brut || '').replace(/^#+\s*/gm, '').replace(/^[-•]\s*/gm, '').replace(/\s+/g, ' ').trim();
+    const pos = positionsRecherche(texte, kw);
+    if(!pos.length) continue;
+    const [a, z] = pos[0];
+    // ~70 caractères de contexte de chaque côté, coupés sur un mot.
+    let debut = Math.max(0, a - 70), fin = Math.min(texte.length, z + 70);
+    if(debut > 0){ const e = texte.indexOf(' ', debut); if(e !== -1 && e < a) debut = e + 1; }
+    if(fin < texte.length){ const e = texte.lastIndexOf(' ', fin); if(e > z) fin = e; }
+    const extrait = (debut > 0 ? '… ' : '') + texte.slice(debut, fin) + (fin < texte.length ? ' …' : '');
+    return { ou, html: htmlSurligne(extrait, kw) };
+  }
+  return null;
+}
+function surlignerResultats(el, kw, liste){
+  if(!el || !kw) return;
+  const isEn = currentLang === 'en';
+  for(const b of liste){
+    const row = document.getElementById('abrow-pr-' + b.id);
+    if(!row) continue;
+    const titre = row.querySelector('.ab-title');
+    surlignerDans(titre, kw);
+    if(titre && titre.querySelector('mark.hl-kw')) continue;   // le titre suffit à expliquer
+    const ex = extraitRecherche(b, kw, isEn);
+    if(!ex) continue;
+    const head = row.querySelector('.ab-head');
+    if(!head || row.querySelector('.ab-trouve')) continue;
+    head.insertAdjacentHTML('afterend',
+      '<div class="ab-trouve"><span class="ab-trouve-ou">' + (isEn ? 'Found ' : 'Trouvé ') + ex.ou + ' :</span> ' + ex.html + '</div>');
+  }
+}
+
 // « Trouver mon député » — code postal → circonscription (API Represent d'OpenNorth,
 // CORS ouvert) → correspondance avec notre roster par nom de circonscription
 // normalisé. Fonctionnalité optionnelle : si le réseau échoue, le reste du site
@@ -2256,6 +2359,8 @@ function fillPendingSummaries(){
     if(!b) return;
     el.innerHTML = billSummaryHtml(b, isEn);
     el.removeAttribute('data-pending');
+    // Fiche ouverte depuis une recherche : le mot cherché est surligné dans le résumé aussi.
+    if(typeof billsKeyword === 'string' && billsKeyword && el.closest('#billsList')) surlignerDans(el, billsKeyword);
   });
 }
 // Enveloppe posée par billCard : garde une cible stable à remplir plus tard.
@@ -2838,6 +2943,7 @@ function renderBills(keyword){
     ? `<div class="no-results">${isEn ? 'Searching the summaries…' : 'Recherche dans les résumés…'}</div>`
     : `<div class="no-results">${isEn ? 'No bill matches this search.' : 'Aucun projet de loi ne correspond à cette recherche.'}</div>`;
   el.innerHTML = list.length ? shown.map(b=>apercuBillRow(b,'pr')).join('') + more : vide;
+  surlignerResultats(el, kw, shown);
   openIds.forEach(id => { const r = document.getElementById(id); if(r && !r.classList.contains('open')) toggleApercuBill(id); });
   // La liste vient d'être refaite : si on est arrivé par le lien d'un projet, on
   // remet sa fiche sous l'en-tête plutôt que de laisser la page remonter en haut.
