@@ -126,7 +126,21 @@ const SYSTEM = [
   "- Une seule idée concrète par puce : ce que le projet change · qui est touché · les chiffres clés (montants, seuils, dates) · organismes ou comités créés · échéances · entrée en vigueur.",
   "- Factuel et précis. Pas de remplissage, pas de puce vague ou générique.",
   "",
-  "Langue : le français et l'anglais disent la même chose, mais chacun sonne NATUREL (pas une traduction mot à mot). Zéro jargon juridique inutile ; si un terme technique est indispensable, explique-le en quelques mots.",
+  "Langue : le français et l'anglais disent la même chose, mais chacun sonne NATUREL (pas une traduction mot à mot).",
+  "",
+  "LISIBILITÉ (impératif — le site existe pour ça) :",
+  "- Écris pour quelqu'un qui lit au niveau de la fin du primaire / début du secondaire. Phrases de 20 mots au plus. Mots de tous les jours.",
+  "- Dis d'abord QUI est touché et CE QUI CHANGE pour cette personne ou cette organisation, puis les chiffres.",
+  "- AUCUNE puce de procédure : ne dis pas qui a déposé le projet, quand, ni à quelle étape il est. Ces informations sont déjà affichées sur la page ; les répéter gaspille une puce.",
+  "- Remplace le jargon par des mots courants. Exemples à appliquer (FR → mots courants) :",
+  "  « gouverneur en conseil » → « le gouvernement (le Cabinet) » ; « promoteur » → « l'entreprise ou l'organisme qui porte le projet » ;",
+  "  « projet désigné » → « grand projet qui doit passer une évaluation fédérale » ; « annexe » → « liste officielle » ;",
+  "  « édicte la Loi sur X » → « crée une nouvelle loi, la Loi sur X » ; « abroge » → « supprime » ; « disposition » → « règle » ;",
+  "  « par règlement » → « par une règle du gouvernement, sans nouveau vote au Parlement » ; « entrée en vigueur » → « s'applique à partir de ».",
+  "  EN : « Governor in Council » → « the federal Cabinet » ; « proponent » → « the company or organization behind the project » ;",
+  "  « designated project » → « major project that needs a federal review » ; « schedule » → « official list » ; « enacts » → « creates » ; « repeals » → « removes » ; « provision » → « rule ».",
+  "- Un nom de loi ou d'organisme peut rester tel quel, mais la PREMIÈRE fois, dis en quelques mots à quoi il sert (« la Commission canadienne de sûreté nucléaire, qui surveille le nucléaire au Canada »).",
+  "- Une seule idée par puce. Si une phrase contient « et » deux fois, coupe-la en deux puces.",
   "",
   "Honnêteté (impératif) :",
   "- N'invente RIEN. Si une information n'est pas dans le texte fourni, ne la mentionne pas.",
@@ -223,9 +237,15 @@ async function main() {
   // seront faits au(x) lancement(s) suivant(s) — le cache saute ceux déjà générés.
   // Sans la variable (ex. le cron quotidien), tout est généré d'un coup, comme avant.
   const BATCH_LIMIT = Number(process.env.AI_BATCH) > 0 ? Number(process.env.AI_BATCH) : Infinity;
+  // Régénération CIBLÉE : `AI_ONLY=C-39,C-5 node scrapers/bill-ai-summaries.js` ne
+  // traite que ces projets, et les régénère MÊME si le cache est à jour. Sert à
+  // essayer une consigne de rédaction sur un projet avant de la payer sur 188.
+  // Le résumé est rangé sous l'empreinte courante : la nuit le garde tel quel.
+  const ONLY = new Set(String(process.env.AI_ONLY || '').split(',').map((s) => s.trim().toUpperCase()).filter(Boolean));
 
   for (const [i, bill] of bills.entries()) {
     const id = String(bill.id);
+    if (ONLY.size && !ONLY.has(String(bill.num).toUpperCase())) continue;
     try {
       const grounding = await groundingFor(bill);
       if (!grounding) {
@@ -234,7 +254,7 @@ async function main() {
       }
       const hash = hashOf(bill, grounding.source, grounding.omnibus);
       const cached = cache.summaries[id];
-      if (cached && cached.hash === hash && cached.fr && cached.en) {
+      if (!ONLY.size && cached && cached.hash === hash && cached.fr && cached.en) {
         reused++;
         continue; // projet inchangé — aucune requête
       }
