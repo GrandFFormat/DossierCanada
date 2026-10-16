@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-10-16",
+    "volet": "site",
+    "fr": {
+      "titre": "La boîte des député·e·s ne promet plus la recherche par code postal",
+      "texte": "La boîte de recherche des député·e·s annonçait « un code postal », mais un code postal ne donnait aucun résultat. Elle cherche par nom et par circonscription, et le dit."
+    },
+    "en": {
+      "titre": "The MPs search box no longer promises a postal code search",
+      "texte": "The MPs search box mentioned “a postal code”, but a postal code gave no result. It searches by name and by riding, and now says so."
+    }
+  },
+  {
     "date": "2026-10-06",
     "volet": "site",
     "fr": {
