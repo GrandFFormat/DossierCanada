@@ -180,7 +180,14 @@ async function summarize(client, bill, grounding, maxTokens) {
     off.fr ? `SOMMAIRE OFFICIEL (FR, repère) :\n${off.fr}` : '',
     '',
     grounding.kind === 'text' ? 'TEXTE OFFICIEL DU PROJET (première lecture) :' : 'SOMMAIRE OFFICIEL :',
+    // Le texte entre balises, puis la consigne RÉPÉTÉE après lui. Sans ça, un long
+    // texte de loi qui finit au milieu d'une énumération (« (a) … ; (b) … ») était
+    // simplement CONTINUÉ par le modèle au lieu d'être résumé (C-37, 2026-10-16).
+    '<texte_officiel>',
     grounding.source,
+    '</texte_officiel>',
+    '',
+    'Fin du texte officiel. Rédige maintenant le résumé selon les consignes, et réponds UNIQUEMENT avec l\'objet JSON {"fr": "...", "en": "..."}.',
   ]
     .filter(Boolean)
     .join('\n');
@@ -218,7 +225,11 @@ async function summarize(client, bill, grounding, maxTokens) {
     .filter((b) => b.type === 'text')
     .map((b) => b.text)
     .join('');
-  return extractJson(text);
+  const out = extractJson(text);
+  // Réponse illisible : on dit POURQUOI (plafond de jetons atteint, refus, JSON
+  // mal formé…). Sans ça, « non exploitable » ne laisse rien à corriger.
+  if (!out) console.warn(`    ↳ ${bill.num} : stop_reason=${res.stop_reason} · ${text.length} car. de texte · début : ${JSON.stringify(text.slice(0, 160))}`);
+  return out;
 }
 
 async function main() {
