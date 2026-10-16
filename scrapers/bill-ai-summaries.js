@@ -45,6 +45,8 @@ const REQUEST_DELAY_MS = 400;
 const USER_AGENT = 'DossierCanada/0.1 (veille citoyenne; mart.archambault@gmail.com)';
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+// Jetons consommés pendant l'exécution (la réflexion compte dans les jetons de sortie).
+const USAGE = { input: 0, output: 0, calls: 0 };
 
 // ---- Petit chargeur d'env local (api.env, git-ignoré). Vercel/GitHub injectent
 // déjà les variables ; ceci ne sert qu'au lancement manuel sur la machine. ----
@@ -204,6 +206,12 @@ async function summarize(client, bill, grounding, maxTokens) {
     system: SYSTEM,
     messages: [{ role: 'user', content: user + consigne }],
   });
+  // Compteur de jetons : c'est ce qui se facture. Affiché en fin d'exécution.
+  if (res.usage) {
+    USAGE.input += res.usage.input_tokens || 0;
+    USAGE.output += res.usage.output_tokens || 0;
+    USAGE.calls++;
+  }
   const text = (res.content || [])
     .filter((b) => b.type === 'text')
     .map((b) => b.text)
@@ -308,6 +316,7 @@ async function main() {
   console.log(`Résumés IA écrits dans ${CACHE_PATH}`);
   console.log(`  générés : ${generated} · réutilisés (cache) : ${reused} · sans source : ${skipped} · erreurs : ${errors}`);
   console.log(`  couverture : ${Object.keys(cache.summaries).length} / ${bills.length}`);
+  console.log(`  jetons : ${USAGE.calls} appel(s) · entrée ${USAGE.input} · sortie ${USAGE.output} (réflexion comprise)`);
 }
 
 main().catch((err) => {
