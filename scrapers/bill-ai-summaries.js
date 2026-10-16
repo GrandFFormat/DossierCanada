@@ -139,6 +139,8 @@ const SYSTEM = [
   "  « projet désigné » → « grand projet qui doit passer une évaluation fédérale » ; « annexe » → « liste officielle » ;",
   "  « édicte la Loi sur X » → « crée une nouvelle loi, la Loi sur X » ; « abroge » → « supprime » ; « disposition » → « règle » ;",
   "  « par règlement » → « par une règle du gouvernement, sans nouveau vote au Parlement » ; « entrée en vigueur » → « s'applique à partir de ».",
+  "  « de compétence fédérale » → « encadré par Ottawa (banques, transport aérien, télécoms, etc.) » quand il s'agit de milieux de travail ; « désigné(e) » (ligne, projet, activité) → dis CE QUI le rend désigné, ou omets le mot.",
+  "  EN : « federally regulated » → « regulated by Ottawa (banks, airlines, telecoms, etc.) » ; « designated » → say what makes it designated, or drop the word.",
   "  EN : « Governor in Council » → « the federal Cabinet » ; « proponent » → « the company or organization behind the project » ;",
   "  « designated project » → « major project that needs a federal review » ; « schedule » → « official list » ; « enacts » → « creates » ; « repeals » → « removes » ; « provision » → « rule ».",
   "- Un nom de loi ou d'organisme peut rester tel quel, mais la PREMIÈRE fois, dis en quelques mots à quoi il sert (« la Commission canadienne de sûreté nucléaire, qui surveille le nucléaire au Canada »).",
