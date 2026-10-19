@@ -2675,7 +2675,7 @@ function billCard(b, ctx){
   const shareRow = `<div class="bill-share-row">
     <span class="bill-share-label">${isEn ? 'Share:' : 'Partager :'}</span>
     ${shareCtrls}
-  </div>`;
+  </div>${boutonCafe(isEn)}`;
 
   // Timeline bicamérale : toutes les étapes canoniques, celles franchies portent
   // leur date réelle (issue de b.milestones), les autres restent en attente.
@@ -2957,7 +2957,41 @@ function togglePetitions(){
 const BILLS_FIRST = 10, BILLS_STEP = 20;
 let billsShown = BILLS_FIRST, billsSignature = '';
 function loadMoreBills(){ billsShown += BILLS_STEP; renderBills(); }
+
+// LE BOUTON CAFÉ sous « Partager » (Martin, 18 oct. 2026), comme sur DossierQuébec : bleu poudre,
+// vers le lien de don Stripe de DossierCanada, sur chaque projet de loi. Les libellés sont ceux de
+// Martin, mélangés une fois par chargement de page, et défilent sans répétition d'un projet à l'autre.
+const LIEN_CAFE = 'https://donate.stripe.com/fZu6oH4pt5OY3sY5Fy9fW01';
+const LIBELLES_CAFE = [
+  ['Soutenez-nous', 'Support us'],
+  ['Aidez DC à rester gratuit', 'Help keep DC free'],
+  ['Gardez DC vivant', 'Keep DC alive'],
+  ['Vive DC libre', 'Long live a free DC'],
+  ['Contribuez au site', 'Contribute to the site'],
+  ['Vive l’information publique', 'Long live public information'],
+  ['Donnez un coup de pouce', 'Give us a hand'],
+  ['Soutenez la cause', 'Support the cause'],
+  ['Un café pour l’équipe ?', 'A coffee for the team?'],
+  ['Cappuccino ou espresso ?', 'Cappuccino or espresso?'],
+  ['Appuyez-nous', 'Back us'],
+  ['La démocratie, lisible', 'Democracy, readable'],
+  ['Un petit geste', 'A small gesture'],
+  ['Appuyez la cause', 'Back the cause'],
+  ['Croyez au projet', 'Believe in the project'],
+  ['Allongé ou serré ?', 'Long or short?'],
+  ['Latté ou espresso ?', 'Latte or espresso?'],
+  ['Un double, peut-être ?', 'A double, maybe?'],
+];
+const ORDRE_CAFE = LIBELLES_CAFE.map((_, i) => i);
+for(let i = ORDRE_CAFE.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [ORDRE_CAFE[i], ORDRE_CAFE[j]] = [ORDRE_CAFE[j], ORDRE_CAFE[i]]; }
+var _rangCafe = 0;
+function boutonCafe(isEn){
+  const [fr, en] = LIBELLES_CAFE[ORDRE_CAFE[_rangCafe++ % ORDRE_CAFE.length]];
+  return `<div class="bill-cafe-row"><a class="bill-cafe-btn" href="${LIEN_CAFE}" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="${isEn ? 'Buy us a coffee (opens in a new tab)' : 'Offrez-nous un café (s’ouvre dans un nouvel onglet)'}">☕ ${isEn ? en : fr}</a></div>`;
+}
+
 function renderBills(keyword){
+  _rangCafe = 0;   // les libellés du bouton café repartent du premier (boutonCafe)
   keyword = keyword !== undefined ? keyword : (document.getElementById('searchBills')?.value || '');
   const kw = norm(keyword);
   const signature = [kw, billsStatusFilter, billsStepFilter, billsLobbyFilter, billsOmnibusFilter, billsChallengeFilter, billsSortDir].join('|');

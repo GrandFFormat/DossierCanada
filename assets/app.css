@@ -1320,3 +1320,8 @@
 /* Le ⧉ qui copie l'adresse, à côté du ✉ (case des votes). */
 .bill-votes-copie{background:none; border:0; padding:0 2px; margin:0; font:inherit; font-weight:700; cursor:pointer; color:inherit;}
 .bill-votes-copie:hover{color:var(--gold, #b8860b);}
+
+/* Le bouton café sous « Partager » (boutonCafe, assets/app.js). Bleu poudre, comme sur DossierQuébec. */
+.bill-cafe-row{display:flex; justify-content:flex-end; margin-top:8px;}
+.bill-cafe-btn{display:inline-block; padding:6px 14px; background:#B0D4E8; color:#131313; border:2px solid #131313; box-shadow:3px 3px 0 #131313; font-size:13px; font-weight:700; text-decoration:none;}
+.bill-cafe-btn:hover{background:#FFD24D;}
