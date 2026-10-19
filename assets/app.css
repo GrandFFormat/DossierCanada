@@ -1316,3 +1316,7 @@
     .p404-carte{ padding:16px; }
     .p404-motion{ font-size:19px; }
   }
+
+/* Le ⧉ qui copie l'adresse, à côté du ✉ (case des votes). */
+.bill-votes-copie{background:none; border:0; padding:0 2px; margin:0; font:inherit; font-weight:700; cursor:pointer; color:inherit;}
+.bill-votes-copie:hover{color:var(--gold, #b8860b);}
