@@ -2362,6 +2362,78 @@ function fillPendingSummaries(){
     // Fiche ouverte depuis une recherche : le mot cherché est surligné dans le résumé aussi.
     if(typeof billsKeyword === 'string' && billsKeyword && el.closest('#billsList')) surlignerDans(el, billsKeyword);
   });
+  document.querySelectorAll('.bill-vote-slot[data-pending]').forEach(el => {
+    const b = bills.find(x => String(x.id) === el.dataset.bill);
+    if(!b) return;
+    el.innerHTML = billVotesHtml(b, isEn);
+    el.removeAttribute('data-pending');
+  });
+}
+// QUI A VOTÉ POUR OU CONTRE — lois sanctionnées seulement. Données fabriquées au
+// build (build-frontend-data.js → bill-texts.json, champ v) : l'appel nominal de
+// 3e lecture aux Communes, ou { none: 1 } s'il n'y en a pas eu.
+function billVotesSlot(b, isEn){
+  if(!(b.milestones || []).some(m => m.stage === 'royal_assent')) return '';
+  return `<div class="bill-vote-slot" data-bill="${b.id}"${billTexts === null ? ' data-pending="1"' : ''}>${billVotesHtml(b, isEn)}</div>`;
+}
+function billVotesHtml(b, isEn){
+  if(billTexts === null) return '';
+  const v = (billTexts[b.id] || {}).v;
+  if(!v) return '';
+  const esc = s => String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  const L = o => (o && typeof o === 'object') ? (isEn ? (o.en ?? o.fr ?? '') : (o.fr ?? o.en ?? '')) : (o ?? '');
+  const title = isEn ? 'Who voted for or against' : 'Qui a voté pour ou contre';
+  const legis = `<a href="${billUrl(b)}" target="_blank" rel="noopener">${isEn ? 'The bill on LEGISinfo (official page) →' : 'La fiche officielle du projet de loi sur LEGISinfo →'}</a>`;
+  let body;
+  if(v.none){
+    const so = isEn ? 'https://www.ourcommons.ca/procedure/standing-orders/Chap6-e.html' : 'https://www.ourcommons.ca/procedure/standing-orders/Chap6-f.html';
+    body = isEn
+      ? `<p><b>There is no list of names for this bill.</b> No recorded division was held at its third reading in the House of Commons. The motion was therefore adopted without anyone being counted. Most often this happens by voice: the Speaker asks the House whether it agrees to the motion, and members answer from their seats. If no one objects, it passes by unanimous consent. If members ask that it be "carried on division", it passes by majority, without anyone being counted. A special order adopted earlier by the House can also provide that the bill is deemed read a third time.</p>
+         <p>A name-by-name list exists only when a recorded division is requested. Under the Standing Orders of the House of Commons (<a href="${so}" target="_blank" rel="noopener">Standing Order 45(1)</a>), any member of a recognized party present in the House can ask for one. Each member then votes yea or nay, and their name is entered in the Journals.</p>
+         <p>${legis}</p>`
+      : `<p><b>Il n'existe pas de liste de noms pour ce projet de loi.</b> Aucun vote par appel nominal n'a eu lieu à sa troisième lecture à la Chambre des communes. La motion a donc été adoptée sans que personne soit compté. Le plus souvent, c'est de vive voix : le président demande à la Chambre si elle adopte la motion, et les député·e·s répondent de leur place. Si personne ne s'oppose, elle passe avec le consentement unanime. Si des député·e·s demandent qu'elle soit adoptée « avec dissidence », elle passe à la majorité, sans que personne soit compté. Un ordre spécial adopté plus tôt par la Chambre peut aussi prévoir que le projet de loi est réputé lu une troisième fois.</p>
+         <p>Une liste nom par nom existe seulement quand un vote par appel nominal est demandé. Selon le Règlement de la Chambre des communes (<a href="${so}" target="_blank" rel="noopener">article 45(1)</a>), tout·e député·e d'un parti reconnu présent·e en Chambre peut le demander. Chaque député·e vote alors pour ou contre, et son nom est inscrit aux Journaux.</p>
+         <p>${legis}</p>`;
+  } else {
+    const subject = encodeURIComponent(`${isEn ? 'Bill' : 'Projet de loi'} ${b.num}, ${L(b.title)}`);
+    const ABBR = isEn ? { LPC:'LPC', CPC:'CPC', BQ:'BQ', NDP:'NDP', GPC:'GPC', IND:'Ind.' } : { LPC:'PLC', CPC:'PCC', BQ:'BQ', NDP:'NPD', GPC:'PV', IND:'Ind.' };
+    const row = r => {
+      const [name, code, mail, former] = r;
+      const p = `<span class="p">${esc(ABBR[code] || code)}</span>`;
+      if(former) return `<li class="former"><span>${esc(name)}</span>${p}</li>`;
+      const m = mail ? ` <a href="mailto:${esc(mail)}?subject=${subject}" title="${isEn ? 'Write to' : 'Écrire à'} ${esc(name)}" aria-label="${isEn ? 'Write to' : 'Écrire à'} ${esc(name)}">✉</a>` : '';
+      return `<li><span>${esc(name)}</span>${p}${m}</li>`;
+    };
+    const col = (label, rows) => `<div class="bvote-col"><h5>${label} (${rows.length})</h5><ul>${rows.map(row).join('')}</ul></div>`;
+    let anyFormer = false, anyPaired = false;
+    const fmt = d => { try { return new Date(d + 'T12:00:00').toLocaleDateString(isEn ? 'en-CA' : 'fr-CA', { day:'numeric', month:'long', year:'numeric' }); } catch(e){ return d; } };
+    const blocks = v.votes.map(x => {
+      const all = [...x.yea, ...x.nay, ...(x.paired || [])];
+      if(all.some(r => r[3])) anyFormer = true;
+      if(x.paired && x.paired.length) anyPaired = true;
+      const url = L(x.url);
+      const note = isEn
+        ? `Recorded division no. ${x.n} at third reading, ${fmt(x.d)}. The ✉ opens a blank email with the name of the bill as its subject.${url ? ` <a href="${url}" target="_blank" rel="noopener">This vote on ourcommons.ca →</a>` : ''}`
+        : `Vote par appel nominal no ${x.n} à la troisième lecture, le ${fmt(x.d)}. Le ✉ ouvre un courriel vide avec le nom du projet de loi en objet.${url ? ` <a href="${url}" target="_blank" rel="noopener">Ce vote sur noscommunes.ca →</a>` : ''}`;
+      return `${x.part ? `<div class="bvote-part">${esc(L(x.part))}</div>` : ''}
+        <p class="bvote-note">${note}</p>
+        <div class="bvote-cols">
+          ${col(isEn ? 'Yea' : 'Pour', x.yea)}
+          ${col(isEn ? 'Nay' : 'Contre', x.nay)}
+          ${x.paired && x.paired.length ? col(isEn ? 'Paired' : 'Pairés', x.paired) : ''}
+        </div>`;
+    }).join('');
+    const notes = [];
+    if(anyPaired) notes.push(isEn
+      ? 'Paired: a member who, by agreement with a member of the opposing side, did not vote. Both names are entered as paired, and their votes cancel out.'
+      : 'Pairé·e : député·e qui, par entente avec un·e député·e du camp opposé, n\'a pas voté. Les deux noms sont inscrits comme pairés, et leurs votes s\'annulent.');
+    if(anyFormer) notes.push(isEn
+      ? 'A name in grey, without ✉: this person no longer sits in the House.'
+      : 'Un nom en gris, sans ✉ : cette personne ne siège plus à la Chambre.');
+    body = blocks + notes.map(n => `<p class="bvote-note" style="margin-top:10px;">${n}</p>`).join('');
+  }
+  // Un clic dans la case (titre, nom, lien) ne doit pas refermer la fiche du projet.
+  return `<details class="bvote" onclick="event.stopPropagation()"><summary><span class="bvote-title">${title}</span></summary><div class="bvote-body">${body}</div></details>`;
 }
 // Enveloppe posée par billCard : garde une cible stable à remplir plus tard.
 function billSummarySlot(b, isEn){
@@ -2659,7 +2731,7 @@ function billCard(b, ctx){
       <div class="expand-hint" id="hint-${domId}">${isEn ? 'View summary & details' : 'Voir le sommaire et les détails'}</div>
       <div class="bill-summary" id="${domId}">
         <div class="bill-cols">
-          <div class="bill-col-main">${billSummarySlot(b, isEn)}</div>
+          <div class="bill-col-main">${billSummarySlot(b, isEn)}${billVotesSlot(b, isEn)}</div>
           <aside class="bill-col-side">
             <div class="bill-side-label">${lastActivityLabel}</div>
             <div class="bill-side-box">${lastActivityFull}</div>
