@@ -91,6 +91,8 @@ function parseVoteList($) {
 
 // Récupère le détail nominatif d'un scrutin → { ballots, extracted }.
 // ballots : PersonId (chaîne) → 'yea' | 'nay' | 'paired'.
+// PersonId → { name, caucus } (voir fetchBallots), écrit dans data/votes.json → people.
+const people = {};
 async function fetchBallots(number) {
   const url = `https://www.ourcommons.ca/members/en/votes/${PARLIAMENT}/${SESSION_NUMBER}/${number}/xml`;
   const $ = await fetchXml(url);
@@ -107,6 +109,11 @@ async function fetchBallots(number) {
     if (!value) return; // pas de drapeau reconnu → on ne devine pas
     ballots[personId] = value;
     extracted[value]++;
+    // Nom et caucus tels qu'écrits dans le détail officiel : servent à nommer les
+    // député·e·s qui ont quitté la Chambre depuis (absent·e·s de data/deputes.json).
+    // Scrutins traités en ordre croissant : le dernier caucus connu l'emporte.
+    const name = [$p.find('PersonOfficialFirstName').text().trim(), $p.find('PersonOfficialLastName').text().trim()].filter(Boolean).join(' ');
+    if (name) people[personId] = { name, caucus: $p.find('CaucusShortName').text().trim() || null };
   });
   return { ballots, extracted };
 }
@@ -173,6 +180,7 @@ async function main() {
         scrapedAt: new Date().toISOString(),
         count: votes.length,
         votes,
+        people,
       },
       null,
       2

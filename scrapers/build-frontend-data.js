@@ -407,6 +407,49 @@ function main() {
     if (ai && (ai.en || ai.fr)) entry.ai = { en: ai.en ?? null, fr: ai.fr ?? null };
     if (Object.keys(entry).length) billTexts[b.id] = entry;
   }
+
+  // QUI A VOTÉ POUR OU CONTRE — case sous chaque loi SANCTIONNÉE, rangée avec les
+  // textes (chargée à l'ouverture d'une fiche). Vote retenu : l'appel nominal de
+  // TROISIÈME LECTURE aux Communes (« 3rd reading and adoption of Bill C-x, … »),
+  // rattaché par session + numéro (billId). Les amendements et sous-amendements à
+  // la motion de 3e lecture sont exclus. Aucun appel nominal → v = { none: 1 }, la
+  // page explique pourquoi il n'y a pas de liste. Rien n'est deviné.
+  // Rangée d'un nom : [nom, code du parti, courriel ou 0, 1 si ne siège plus].
+  const voteEmails = existsSync('data/depute-emails.json') ? read('data/depute-emails.json').emails : {};
+  const people = votesData.people ?? {};
+  const CAUCUS_CODE = { Liberal: 'LPC', Conservative: 'CPC', 'Bloc Québécois': 'BQ', NDP: 'NDP', 'Green Party': 'GPC', Independent: 'IND' };
+  const rosterById = new Map(deputes.map((d) => [String(d.id), d]));
+  let withList = 0, withoutList = 0, unnamed = 0;
+  for (const b of billsOut) {
+    if (!(b.milestones ?? []).some((m) => m.stage === 'royal_assent')) continue;
+    const third = resolvedVotes.filter((v) => v.billId === b.id
+      && new RegExp(`^3rd reading and adoption of Bill ${b.num},`).test(v.description?.en ?? '')
+      && !/\((sub)?amendment\)\)?\s*$/i.test(v.description.en))
+      .sort((a, z) => a.number - z.number);
+    const entry = billTexts[b.id] ?? (billTexts[b.id] = {});
+    if (!third.length) { entry.v = { none: 1 }; withoutList++; continue; }
+    withList++;
+    entry.v = { votes: third.map((v) => {
+      const rows = { yea: [], nay: [], paired: [] };
+      for (const pid in v.ballots) {
+        const cur = rosterById.get(pid);
+        let row;
+        if (cur) row = [cur.name, (cur.party && cur.party.code) || 'IND', voteEmails[pid] || 0, 0];
+        else if (people[pid]) row = [people[pid].name, CAUCUS_CODE[people[pid].caucus] || 'IND', 0, 1];
+        else { unnamed++; continue; } // nom introuvable : on ne l'invente pas
+        rows[v.ballots[pid]].push(row);
+      }
+      for (const k in rows) rows[k].sort((a, z) => a[0].localeCompare(z[0], 'fr'));
+      // Projet scindé (C-5 : « (Part 1) », « (Part 2) ») : chaque vote porte sa partie.
+      const part = (s) => { const m = (s || '').match(/\(((?:Part|Partie)\s+\d+)\)\s*$/); return m ? m[1] : null; };
+      const out = { n: v.number, d: v.date, url: v.url, yea: rows.yea, nay: rows.nay };
+      if (rows.paired.length) out.paired = rows.paired;
+      const pe = part(v.description.en), pf = part(v.description.fr);
+      if (pe || pf) out.part = { en: pe, fr: pf };
+      return out;
+    }) };
+  }
+  console.log(`  votes de 3e lecture des lois sanctionnées : ${withList} avec liste, ${withoutList} sans appel nominal${unnamed ? ` (⚠ ${unnamed} votant·e·s sans nom, omis)` : ''}`);
   writeFileSync(BILL_TEXTS_PATH, JSON.stringify(billTexts));
 
   // Courriels officiels (scrapers/depute-emails.js) — joints par PersonId.
@@ -437,9 +480,9 @@ function main() {
     for (const pid in v.ballots) {
       const raw = v.ballots[pid];
       const g = raw === 'yea' ? 'yea' : raw === 'nay' ? 'nay' : 'third';
-      const code = partyOfPid.get(pid) || 'IND';
+      const code = partyOfPid.get(pid) || CAUCUS_CODE[votesData.people?.[pid]?.caucus] || 'IND';
       (per[code] = per[code] || { yea: 0, nay: 0, third: 0 })[g]++;
-      names[g].push({ n: nameOfPid.get(pid) || '#' + pid, c: code });
+      names[g].push({ n: nameOfPid.get(pid) || (votesData.people?.[pid]?.name) || '#' + pid, c: code });
     }
     writeBallots('c-' + v.number, names);
     return {

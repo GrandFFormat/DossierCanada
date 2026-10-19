@@ -1,7 +1,7 @@
 {
   "source": "https://www.ourcommons.ca/members/en/votes/xml",
   "session": "45-1",
-  "scrapedAt": "2026-10-18T12:38:21.018Z",
+  "scrapedAt": "2026-10-18T23:57:09.230Z",
   "count": 178,
   "votes": [
     {
@@ -65631,5 +65631,1399 @@
         "123675": "yea"
       }
     }
-  ]
+  ],
+  "people": {
+    "376": {
+      "name": "Mario Beaulieu",
+      "caucus": "Bloc Québécois"
+    },
+    "413": {
+      "name": "Louis Plamondon",
+      "caucus": "Bloc Québécois"
+    },
+    "1422": {
+      "name": "Gurbux Saini",
+      "caucus": "Liberal"
+    },
+    "1589": {
+      "name": "Hedy Fry",
+      "caucus": "Liberal"
+    },
+    "1787": {
+      "name": "Judy A. Sgro",
+      "caucus": "Liberal"
+    },
+    "1809": {
+      "name": "Cheryl Gallant",
+      "caucus": "Conservative"
+    },
+    "1813": {
+      "name": "Dominic LeBlanc",
+      "caucus": "Liberal"
+    },
+    "1827": {
+      "name": "Scott Reid",
+      "caucus": "Conservative"
+    },
+    "2897": {
+      "name": "Elizabeth May",
+      "caucus": "Green Party"
+    },
+    "3306": {
+      "name": "Dan Mazier",
+      "caucus": "Conservative"
+    },
+    "9486": {
+      "name": "David McGuinty",
+      "caucus": "Liberal"
+    },
+    "14171": {
+      "name": "Steven Guilbeault",
+      "caucus": "Liberal"
+    },
+    "17210": {
+      "name": "Rob Moore",
+      "caucus": "Conservative"
+    },
+    "25446": {
+      "name": "Dean Allison",
+      "caucus": "Conservative"
+    },
+    "25454": {
+      "name": "Andrew Scheer",
+      "caucus": "Conservative"
+    },
+    "25475": {
+      "name": "James Bezan",
+      "caucus": "Conservative"
+    },
+    "25488": {
+      "name": "Michael Chong",
+      "caucus": "Conservative"
+    },
+    "25524": {
+      "name": "Pierre Poilievre",
+      "caucus": "Conservative"
+    },
+    "28286": {
+      "name": "Mark Carney",
+      "caucus": "Liberal"
+    },
+    "30330": {
+      "name": "Tony Baldinelli",
+      "caucus": "Conservative"
+    },
+    "30552": {
+      "name": "Kevin Lamoureux",
+      "caucus": "Liberal"
+    },
+    "30645": {
+      "name": "Tim Uppal",
+      "caucus": "Conservative"
+    },
+    "31098": {
+      "name": "Sukh Dhaliwal",
+      "caucus": "Liberal"
+    },
+    "31119": {
+      "name": "Terry Duguid",
+      "caucus": "Liberal"
+    },
+    "35315": {
+      "name": "Claude DeBellefeuille",
+      "caucus": "Bloc Québécois"
+    },
+    "35397": {
+      "name": "Jacques Gourde",
+      "caucus": "Conservative"
+    },
+    "35600": {
+      "name": "Ben Lobb",
+      "caucus": "Conservative"
+    },
+    "35857": {
+      "name": "Mike Lake",
+      "caucus": "Conservative"
+    },
+    "35886": {
+      "name": "Chris Warkentin",
+      "caucus": "Conservative"
+    },
+    "35897": {
+      "name": "Blaine Calkins",
+      "caucus": "Conservative"
+    },
+    "35909": {
+      "name": "Marc Dalton",
+      "caucus": "Conservative"
+    },
+    "49344": {
+      "name": "Chris d'Entremont",
+      "caucus": "Liberal"
+    },
+    "54157": {
+      "name": "Sameer Zuberi",
+      "caucus": "Liberal"
+    },
+    "58621": {
+      "name": "Alexandra Mendès",
+      "caucus": "Liberal"
+    },
+    "58757": {
+      "name": "Eric Lefebvre",
+      "caucus": "Conservative"
+    },
+    "58775": {
+      "name": "Alexandre Boulerice",
+      "caucus": "Independent"
+    },
+    "58841": {
+      "name": "Kyle Seeback",
+      "caucus": "Conservative"
+    },
+    "58858": {
+      "name": "Robert Oliphant",
+      "caucus": "Liberal"
+    },
+    "59148": {
+      "name": "Randy Hoback",
+      "caucus": "Conservative"
+    },
+    "59156": {
+      "name": "Kelly Block",
+      "caucus": "Conservative"
+    },
+    "59235": {
+      "name": "Blake Richards",
+      "caucus": "Conservative"
+    },
+    "59293": {
+      "name": "Ron McKinnon",
+      "caucus": "Liberal"
+    },
+    "59294": {
+      "name": "Zoe Royer",
+      "caucus": "Liberal"
+    },
+    "59325": {
+      "name": "Don Davies",
+      "caucus": "NDP"
+    },
+    "63908": {
+      "name": "Bernard Généreux",
+      "caucus": "Conservative"
+    },
+    "71270": {
+      "name": "Sean Casey",
+      "caucus": "Liberal"
+    },
+    "71323": {
+      "name": "John Williamson",
+      "caucus": "Conservative"
+    },
+    "71337": {
+      "name": "Angelo Iacono",
+      "caucus": "Liberal"
+    },
+    "71454": {
+      "name": "Pierre Paul-Hus",
+      "caucus": "Conservative"
+    },
+    "71692": {
+      "name": "Peter Fonseca",
+      "caucus": "Liberal"
+    },
+    "71738": {
+      "name": "Anita Vandenbeld",
+      "caucus": "Liberal"
+    },
+    "71762": {
+      "name": "Costas Menegakis",
+      "caucus": "Conservative"
+    },
+    "71902": {
+      "name": "Michelle Rempel Garner",
+      "caucus": "Conservative"
+    },
+    "71986": {
+      "name": "Mark Strahl",
+      "caucus": "Conservative"
+    },
+    "72023": {
+      "name": "Taleeb Noormohamed",
+      "caucus": "Liberal"
+    },
+    "72029": {
+      "name": "Dan Albas",
+      "caucus": "Conservative"
+    },
+    "72035": {
+      "name": "Bob Zimmer",
+      "caucus": "Conservative"
+    },
+    "84665": {
+      "name": "Chrystia Freeland",
+      "caucus": "Liberal"
+    },
+    "84672": {
+      "name": "Ted Falk",
+      "caucus": "Conservative"
+    },
+    "84882": {
+      "name": "Corey Tochor",
+      "caucus": "Conservative"
+    },
+    "86261": {
+      "name": "John Barlow",
+      "caucus": "Conservative"
+    },
+    "87121": {
+      "name": "Leah Gazan",
+      "caucus": "NDP"
+    },
+    "88308": {
+      "name": "Robert Morrissey",
+      "caucus": "Liberal"
+    },
+    "88316": {
+      "name": "Sean Fraser",
+      "caucus": "Liberal"
+    },
+    "88323": {
+      "name": "Darren Fisher",
+      "caucus": "Liberal"
+    },
+    "88350": {
+      "name": "Serge Cormier",
+      "caucus": "Liberal"
+    },
+    "88364": {
+      "name": "Ginette Petitpas Taylor",
+      "caucus": "Liberal"
+    },
+    "88368": {
+      "name": "Wayne Long",
+      "caucus": "Liberal"
+    },
+    "88369": {
+      "name": "Richard Bragdon",
+      "caucus": "Conservative"
+    },
+    "88384": {
+      "name": "Mélanie Joly",
+      "caucus": "Liberal"
+    },
+    "88394": {
+      "name": "Stéphane Lauzon",
+      "caucus": "Liberal"
+    },
+    "88418": {
+      "name": "Yves Perron",
+      "caucus": "Bloc Québécois"
+    },
+    "88422": {
+      "name": "Xavier Barsalou-Duval",
+      "caucus": "Bloc Québécois"
+    },
+    "88453": {
+      "name": "Anju Dhillon",
+      "caucus": "Liberal"
+    },
+    "88468": {
+      "name": "Steven MacKinnon",
+      "caucus": "Liberal"
+    },
+    "88478": {
+      "name": "Greg Fergus",
+      "caucus": "Liberal"
+    },
+    "88485": {
+      "name": "Gabriel Ste-Marie",
+      "caucus": "Bloc Québécois"
+    },
+    "88515": {
+      "name": "Fayçal El-Khoury",
+      "caucus": "Liberal"
+    },
+    "88521": {
+      "name": "Sherry Romanado",
+      "caucus": "Liberal"
+    },
+    "88532": {
+      "name": "Joël Lightbound",
+      "caucus": "Liberal"
+    },
+    "88535": {
+      "name": "Gérard Deltell",
+      "caucus": "Conservative"
+    },
+    "88538": {
+      "name": "Marilène Gill",
+      "caucus": "Bloc Québécois"
+    },
+    "88541": {
+      "name": "Luc Berthold",
+      "caucus": "Conservative"
+    },
+    "88552": {
+      "name": "Luc Thériault",
+      "caucus": "Bloc Québécois"
+    },
+    "88558": {
+      "name": "Anthony Housefather",
+      "caucus": "Liberal"
+    },
+    "88567": {
+      "name": "Rachel Bendayan",
+      "caucus": "Liberal"
+    },
+    "88601": {
+      "name": "Linda Lapointe",
+      "caucus": "Liberal"
+    },
+    "88605": {
+      "name": "Rhéal Éloi Fortin",
+      "caucus": "Bloc Québécois"
+    },
+    "88633": {
+      "name": "François-Philippe Champagne",
+      "caucus": "Liberal"
+    },
+    "88649": {
+      "name": "Peter Schiefke",
+      "caucus": "Liberal"
+    },
+    "88660": {
+      "name": "Marc Miller",
+      "caucus": "Liberal"
+    },
+    "88674": {
+      "name": "John Brassard",
+      "caucus": "Conservative"
+    },
+    "88687": {
+      "name": "Nathaniel Erskine-Smith",
+      "caucus": "Liberal"
+    },
+    "88698": {
+      "name": "Ruby Sahota",
+      "caucus": "Liberal"
+    },
+    "88703": {
+      "name": "Sonia Sidhu",
+      "caucus": "Liberal"
+    },
+    "88715": {
+      "name": "Karina Gould",
+      "caucus": "Liberal"
+    },
+    "88721": {
+      "name": "Julie Dzerowicz",
+      "caucus": "Liberal"
+    },
+    "88748": {
+      "name": "James Maloney",
+      "caucus": "Liberal"
+    },
+    "88770": {
+      "name": "Jamie Schmale",
+      "caucus": "Conservative"
+    },
+    "88802": {
+      "name": "Mark Gerretsen",
+      "caucus": "Liberal"
+    },
+    "88810": {
+      "name": "Tim Louis",
+      "caucus": "Liberal"
+    },
+    "88827": {
+      "name": "Peter Fragiskatos",
+      "caucus": "Liberal"
+    },
+    "88849": {
+      "name": "Iqra Khalid",
+      "caucus": "Liberal"
+    },
+    "88917": {
+      "name": "John Nater",
+      "caucus": "Conservative"
+    },
+    "88934": {
+      "name": "Chris Bittle",
+      "caucus": "Liberal"
+    },
+    "88938": {
+      "name": "Marilyn Gladu",
+      "caucus": "Liberal"
+    },
+    "88944": {
+      "name": "Terry Sheehan",
+      "caucus": "Liberal"
+    },
+    "88950": {
+      "name": "Salma Zahid",
+      "caucus": "Liberal"
+    },
+    "88953": {
+      "name": "Shaun Chen",
+      "caucus": "Liberal"
+    },
+    "88958": {
+      "name": "Leslyn Lewis",
+      "caucus": "Conservative"
+    },
+    "88961": {
+      "name": "Bill Blair",
+      "caucus": "Liberal"
+    },
+    "88984": {
+      "name": "Patty Hajdu",
+      "caucus": "Liberal"
+    },
+    "88994": {
+      "name": "Julie Dabrusin",
+      "caucus": "Liberal"
+    },
+    "89000": {
+      "name": "Bardish Chagger",
+      "caucus": "Liberal"
+    },
+    "89010": {
+      "name": "Ali Ehsassi",
+      "caucus": "Liberal"
+    },
+    "89020": {
+      "name": "Ahmed Hussen",
+      "caucus": "Liberal"
+    },
+    "89027": {
+      "name": "Doug Eyolfson",
+      "caucus": "Liberal"
+    },
+    "89080": {
+      "name": "Michael Kram",
+      "caucus": "Conservative"
+    },
+    "89084": {
+      "name": "Kevin Waugh",
+      "caucus": "Conservative"
+    },
+    "89098": {
+      "name": "Cathay Wagantall",
+      "caucus": "Conservative"
+    },
+    "89130": {
+      "name": "Pat Kelly",
+      "caucus": "Conservative"
+    },
+    "89136": {
+      "name": "Tom Kmiec",
+      "caucus": "Conservative"
+    },
+    "89150": {
+      "name": "Kerry Diotte",
+      "caucus": "Conservative"
+    },
+    "89156": {
+      "name": "Ziad Aboultaif",
+      "caucus": "Conservative"
+    },
+    "89167": {
+      "name": "Matt Jeneroux",
+      "caucus": "Liberal"
+    },
+    "89171": {
+      "name": "Eleanor Olszewski",
+      "caucus": "Liberal"
+    },
+    "89179": {
+      "name": "Kelly McCauley",
+      "caucus": "Conservative"
+    },
+    "89198": {
+      "name": "Shannon Stubbs",
+      "caucus": "Conservative"
+    },
+    "89200": {
+      "name": "Rachael Thomas",
+      "caucus": "Conservative"
+    },
+    "89211": {
+      "name": "Arnold Viersen",
+      "caucus": "Conservative"
+    },
+    "89219": {
+      "name": "Michael Cooper",
+      "caucus": "Conservative"
+    },
+    "89226": {
+      "name": "Garnett Genuis",
+      "caucus": "Conservative"
+    },
+    "89236": {
+      "name": "Terry Beech",
+      "caucus": "Liberal"
+    },
+    "89249": {
+      "name": "Todd Doherty",
+      "caucus": "Conservative"
+    },
+    "89259": {
+      "name": "Scott Anderson",
+      "caucus": "Conservative"
+    },
+    "89263": {
+      "name": "Gord Johns",
+      "caucus": "NDP"
+    },
+    "89279": {
+      "name": "Stephen Fuhr",
+      "caucus": "Liberal"
+    },
+    "89289": {
+      "name": "Brad Vis",
+      "caucus": "Conservative"
+    },
+    "89294": {
+      "name": "Mel Arnold",
+      "caucus": "Conservative"
+    },
+    "89300": {
+      "name": "Jonathan Wilkinson",
+      "caucus": "Liberal"
+    },
+    "89339": {
+      "name": "Randeep Sarai",
+      "caucus": "Liberal"
+    },
+    "89346": {
+      "name": "Jenny Kwan",
+      "caucus": "NDP"
+    },
+    "89407": {
+      "name": "Joël Godin",
+      "caucus": "Conservative"
+    },
+    "89408": {
+      "name": "Jean-Yves Duclos",
+      "caucus": "Liberal"
+    },
+    "89449": {
+      "name": "Gary Anandasangaree",
+      "caucus": "Liberal"
+    },
+    "89464": {
+      "name": "Rebecca Chartrand",
+      "caucus": "Liberal"
+    },
+    "90964": {
+      "name": "Danielle Martin",
+      "caucus": "Liberal"
+    },
+    "92209": {
+      "name": "Marie-France Lalonde",
+      "caucus": "Liberal"
+    },
+    "94305": {
+      "name": "Glen Motz",
+      "caucus": "Conservative"
+    },
+    "96081": {
+      "name": "Anita Anand",
+      "caucus": "Liberal"
+    },
+    "96350": {
+      "name": "Emmanuella Lambropoulos",
+      "caucus": "Liberal"
+    },
+    "96356": {
+      "name": "Mona Fortier",
+      "caucus": "Liberal"
+    },
+    "96367": {
+      "name": "Stephanie Kusie",
+      "caucus": "Conservative"
+    },
+    "98079": {
+      "name": "Dane Lloyd",
+      "caucus": "Conservative"
+    },
+    "98747": {
+      "name": "Jean Yip",
+      "caucus": "Liberal"
+    },
+    "98749": {
+      "name": "Rosemarie Falk",
+      "caucus": "Conservative"
+    },
+    "100521": {
+      "name": "Richard Martel",
+      "caucus": "Conservative"
+    },
+    "102275": {
+      "name": "Michael Barrett",
+      "caucus": "Conservative"
+    },
+    "102653": {
+      "name": "Scot Davidson",
+      "caucus": "Conservative"
+    },
+    "104531": {
+      "name": "Mike Kelloway",
+      "caucus": "Liberal"
+    },
+    "104555": {
+      "name": "Kody Blois",
+      "caucus": "Liberal"
+    },
+    "104571": {
+      "name": "Jaime Battiste",
+      "caucus": "Liberal"
+    },
+    "104630": {
+      "name": "Sébastien Lemire",
+      "caucus": "Bloc Québécois"
+    },
+    "104669": {
+      "name": "Yves-François Blanchet",
+      "caucus": "Bloc Québécois"
+    },
+    "104705": {
+      "name": "Maxime Blanchette-Joncas",
+      "caucus": "Bloc Québécois"
+    },
+    "104741": {
+      "name": "Martin Champoux",
+      "caucus": "Bloc Québécois"
+    },
+    "104773": {
+      "name": "Mario Simard",
+      "caucus": "Bloc Québécois"
+    },
+    "104786": {
+      "name": "Alexis Brunelle-Duceppe",
+      "caucus": "Bloc Québécois"
+    },
+    "104806": {
+      "name": "Marie-Hélène Gaudreau",
+      "caucus": "Bloc Québécois"
+    },
+    "104944": {
+      "name": "Simon-Pierre Savard-Tremblay",
+      "caucus": "Independent"
+    },
+    "104947": {
+      "name": "Christine Normandin",
+      "caucus": "Bloc Québécois"
+    },
+    "104957": {
+      "name": "Patricia Lattanzio",
+      "caucus": "Liberal"
+    },
+    "104973": {
+      "name": "Andréanne Larouche",
+      "caucus": "Bloc Québécois"
+    },
+    "104977": {
+      "name": "Élisabeth Brière",
+      "caucus": "Liberal"
+    },
+    "105009": {
+      "name": "Annie Koutrakis",
+      "caucus": "Liberal"
+    },
+    "105031": {
+      "name": "Doug Shipley",
+      "caucus": "Conservative"
+    },
+    "105045": {
+      "name": "Maninder Sidhu",
+      "caucus": "Liberal"
+    },
+    "105052": {
+      "name": "Arpan Khanna",
+      "caucus": "Conservative"
+    },
+    "105070": {
+      "name": "Alex Ruff",
+      "caucus": "Conservative"
+    },
+    "105082": {
+      "name": "Dave Epp",
+      "caucus": "Conservative"
+    },
+    "105088": {
+      "name": "Michael Ma",
+      "caucus": "Liberal"
+    },
+    "105120": {
+      "name": "Chris Lewis",
+      "caucus": "Conservative"
+    },
+    "105121": {
+      "name": "Yvan Baker",
+      "caucus": "Liberal"
+    },
+    "105186": {
+      "name": "Eric Melillo",
+      "caucus": "Conservative"
+    },
+    "105191": {
+      "name": "Anna Roberts",
+      "caucus": "Conservative"
+    },
+    "105210": {
+      "name": "Lianne Rood",
+      "caucus": "Conservative"
+    },
+    "105229": {
+      "name": "Helena Jaczek",
+      "caucus": "Liberal"
+    },
+    "105242": {
+      "name": "Adam van Koeverden",
+      "caucus": "Liberal"
+    },
+    "105291": {
+      "name": "Philip Lawrence",
+      "caucus": "Conservative"
+    },
+    "105340": {
+      "name": "Scott Aitchison",
+      "caucus": "Conservative"
+    },
+    "105410": {
+      "name": "Terry Dowdall",
+      "caucus": "Conservative"
+    },
+    "105422": {
+      "name": "Eric Duncan",
+      "caucus": "Conservative"
+    },
+    "105437": {
+      "name": "Marcus Powlowski",
+      "caucus": "Liberal"
+    },
+    "105480": {
+      "name": "Ryan Turnbull",
+      "caucus": "Liberal"
+    },
+    "105521": {
+      "name": "Raquel Dancho",
+      "caucus": "Conservative"
+    },
+    "105559": {
+      "name": "Jeremy Patzer",
+      "caucus": "Conservative"
+    },
+    "105581": {
+      "name": "Warren Steinley",
+      "caucus": "Conservative"
+    },
+    "105598": {
+      "name": "Brad Redekopp",
+      "caucus": "Conservative"
+    },
+    "105614": {
+      "name": "Damien Kurek",
+      "caucus": "Conservative"
+    },
+    "105623": {
+      "name": "Greg McLean",
+      "caucus": "Conservative"
+    },
+    "105630": {
+      "name": "Jasraj Hallan",
+      "caucus": "Conservative"
+    },
+    "105689": {
+      "name": "Heather McPherson",
+      "caucus": "NDP"
+    },
+    "105774": {
+      "name": "Tamara Jansen",
+      "caucus": "Conservative"
+    },
+    "105807": {
+      "name": "Rob Morrison",
+      "caucus": "Conservative"
+    },
+    "105811": {
+      "name": "Tako Van Popta",
+      "caucus": "Conservative"
+    },
+    "105863": {
+      "name": "Helena Konanz",
+      "caucus": "Conservative"
+    },
+    "105918": {
+      "name": "Patrick Weiler",
+      "caucus": "Liberal"
+    },
+    "107294": {
+      "name": "Daniel Gobeil",
+      "caucus": "Liberal"
+    },
+    "108395": {
+      "name": "Branden Leslie",
+      "caucus": "Conservative"
+    },
+    "109867": {
+      "name": "Clifford Small",
+      "caucus": "Conservative"
+    },
+    "109872": {
+      "name": "Carol Anstey",
+      "caucus": "Conservative"
+    },
+    "109877": {
+      "name": "Joanne Thompson",
+      "caucus": "Liberal"
+    },
+    "109891": {
+      "name": "Heath MacDonald",
+      "caucus": "Liberal"
+    },
+    "109915": {
+      "name": "Lena Metlege Diab",
+      "caucus": "Liberal"
+    },
+    "110009": {
+      "name": "Dominique Vien",
+      "caucus": "Conservative"
+    },
+    "110124": {
+      "name": "Caroline Desrochers",
+      "caucus": "Liberal"
+    },
+    "110189": {
+      "name": "Jean-Denis Garon",
+      "caucus": "Bloc Québécois"
+    },
+    "110225": {
+      "name": "Sophie Chatel",
+      "caucus": "Liberal"
+    },
+    "110339": {
+      "name": "Shafqat Ali",
+      "caucus": "Liberal"
+    },
+    "110354": {
+      "name": "Larry Brock",
+      "caucus": "Conservative"
+    },
+    "110365": {
+      "name": "Connie Cody",
+      "caucus": "Conservative"
+    },
+    "110373": {
+      "name": "Michael Coteau",
+      "caucus": "Liberal"
+    },
+    "110415": {
+      "name": "Dan Muys",
+      "caucus": "Conservative"
+    },
+    "110441": {
+      "name": "Ned Kuruc",
+      "caucus": "Conservative"
+    },
+    "110446": {
+      "name": "Lisa Hepfner",
+      "caucus": "Liberal"
+    },
+    "110454": {
+      "name": "Shelby Kramp-Neuman",
+      "caucus": "Conservative"
+    },
+    "110459": {
+      "name": "Jenna Sudds",
+      "caucus": "Liberal"
+    },
+    "110502": {
+      "name": "Arielle Kayabaga",
+      "caucus": "Liberal"
+    },
+    "110534": {
+      "name": "Iqwinder Gaheer",
+      "caucus": "Liberal"
+    },
+    "110538": {
+      "name": "Rechie Valdez",
+      "caucus": "Liberal"
+    },
+    "110572": {
+      "name": "Yasir Naqvi",
+      "caucus": "Liberal"
+    },
+    "110649": {
+      "name": "Adam Chambers",
+      "caucus": "Conservative"
+    },
+    "110663": {
+      "name": "Viviane Lapointe",
+      "caucus": "Liberal"
+    },
+    "110665": {
+      "name": "Melissa Lantsman",
+      "caucus": "Conservative"
+    },
+    "110706": {
+      "name": "Kathy Borrelli",
+      "caucus": "Conservative"
+    },
+    "110791": {
+      "name": "Buckley Belanger",
+      "caucus": "Liberal"
+    },
+    "110800": {
+      "name": "Fraser Tolmie",
+      "caucus": "Conservative"
+    },
+    "110918": {
+      "name": "Laila Goodridge",
+      "caucus": "Conservative"
+    },
+    "111007": {
+      "name": "Frank Caputo",
+      "caucus": "Conservative"
+    },
+    "111025": {
+      "name": "Tamara Kronis",
+      "caucus": "Conservative"
+    },
+    "111067": {
+      "name": "Parm Bains",
+      "caucus": "Liberal"
+    },
+    "111109": {
+      "name": "Brendan Hanley",
+      "caucus": "Liberal"
+    },
+    "111116": {
+      "name": "Lori Idlout",
+      "caucus": "Liberal"
+    },
+    "114349": {
+      "name": "Charles Sousa",
+      "caucus": "Liberal"
+    },
+    "115736": {
+      "name": "Anna Gainey",
+      "caucus": "Liberal"
+    },
+    "115744": {
+      "name": "Ben Carr",
+      "caucus": "Liberal"
+    },
+    "116022": {
+      "name": "Shuvaloy Majumdar",
+      "caucus": "Conservative"
+    },
+    "118689": {
+      "name": "Jamil Jivani",
+      "caucus": "Conservative"
+    },
+    "119705": {
+      "name": "Leslie Church",
+      "caucus": "Liberal"
+    },
+    "119991": {
+      "name": "Colin Reynolds",
+      "caucus": "Conservative"
+    },
+    "122369": {
+      "name": "Paul Connors",
+      "caucus": "Liberal"
+    },
+    "122375": {
+      "name": "Tom Osborne",
+      "caucus": "Liberal"
+    },
+    "122380": {
+      "name": "Philip Earle",
+      "caucus": "Liberal"
+    },
+    "122389": {
+      "name": "Jonathan Rowe",
+      "caucus": "Conservative"
+    },
+    "122394": {
+      "name": "Kent MacDonald",
+      "caucus": "Liberal"
+    },
+    "122419": {
+      "name": "Alana Hirtle",
+      "caucus": "Liberal"
+    },
+    "122428": {
+      "name": "Shannon Miedema",
+      "caucus": "Liberal"
+    },
+    "122437": {
+      "name": "Braedon Clark",
+      "caucus": "Liberal"
+    },
+    "122443": {
+      "name": "Jessica Fancy",
+      "caucus": "Liberal"
+    },
+    "122462": {
+      "name": "David Myles",
+      "caucus": "Liberal"
+    },
+    "122473": {
+      "name": "Guillaume Deschênes-Thériault",
+      "caucus": "Liberal"
+    },
+    "122476": {
+      "name": "Mike Dawson",
+      "caucus": "Conservative"
+    },
+    "122492": {
+      "name": "Mandy Gull-Masty",
+      "caucus": "Liberal"
+    },
+    "122507": {
+      "name": "Jason Groleau",
+      "caucus": "Conservative"
+    },
+    "122518": {
+      "name": "Steeve Lavoie",
+      "caucus": "Liberal"
+    },
+    "122533": {
+      "name": "Abdelhaq Sari",
+      "caucus": "Liberal"
+    },
+    "122539": {
+      "name": "Louis Villeneuve",
+      "caucus": "Liberal"
+    },
+    "122552": {
+      "name": "Nathalie Provost",
+      "caucus": "Liberal"
+    },
+    "122559": {
+      "name": "Marianne Dandurand",
+      "caucus": "Liberal"
+    },
+    "122579": {
+      "name": "Alexis Deschênes",
+      "caucus": "Bloc Québécois"
+    },
+    "122587": {
+      "name": "Marie-Gabrielle Ménard",
+      "caucus": "Liberal"
+    },
+    "122589": {
+      "name": "Eric St-Pierre",
+      "caucus": "Liberal"
+    },
+    "122606": {
+      "name": "Jacques Ramsay",
+      "caucus": "Liberal"
+    },
+    "122615": {
+      "name": "Claude Guay",
+      "caucus": "Liberal"
+    },
+    "122637": {
+      "name": "Tim Watchorn",
+      "caucus": "Liberal"
+    },
+    "122646": {
+      "name": "Natilien Joseph",
+      "caucus": "Liberal"
+    },
+    "122656": {
+      "name": "Carlos Leitão",
+      "caucus": "Liberal"
+    },
+    "122668": {
+      "name": "Bienvenu-Olivier Ntumba",
+      "caucus": "Liberal"
+    },
+    "122678": {
+      "name": "Gabriel Hardy",
+      "caucus": "Conservative"
+    },
+    "122684": {
+      "name": "Marjorie Michel",
+      "caucus": "Liberal"
+    },
+    "122709": {
+      "name": "Patrick Bonin",
+      "caucus": "Bloc Québécois"
+    },
+    "122753": {
+      "name": "Tatiana Auguste",
+      "caucus": "Liberal"
+    },
+    "122756": {
+      "name": "Madeleine Chenette",
+      "caucus": "Liberal"
+    },
+    "122773": {
+      "name": "Jennifer McKelvie",
+      "caucus": "Liberal"
+    },
+    "122788": {
+      "name": "Chris Malette",
+      "caucus": "Liberal"
+    },
+    "122801": {
+      "name": "Amandeep Sodhi",
+      "caucus": "Liberal"
+    },
+    "122825": {
+      "name": "Amarjeet Gill",
+      "caucus": "Conservative"
+    },
+    "122850": {
+      "name": "Bruce Fanjoy",
+      "caucus": "Liberal"
+    },
+    "122899": {
+      "name": "Maggie Chi",
+      "caucus": "Liberal"
+    },
+    "122911": {
+      "name": "Vince Gasparro",
+      "caucus": "Liberal"
+    },
+    "122913": {
+      "name": "Andrew Lawton",
+      "caucus": "Conservative"
+    },
+    "122925": {
+      "name": "John Zerucelli",
+      "caucus": "Liberal"
+    },
+    "122933": {
+      "name": "Dominique O'Rourke",
+      "caucus": "Liberal"
+    },
+    "122946": {
+      "name": "Aslam Rana",
+      "caucus": "Liberal"
+    },
+    "122959": {
+      "name": "John-Paul Danko",
+      "caucus": "Liberal"
+    },
+    "122975": {
+      "name": "Gaétan Malette",
+      "caucus": "Conservative"
+    },
+    "122988": {
+      "name": "Kelly DeRidder",
+      "caucus": "Conservative"
+    },
+    "122994": {
+      "name": "Matt Strauss",
+      "caucus": "Conservative"
+    },
+    "123006": {
+      "name": "Kurt Holman",
+      "caucus": "Conservative"
+    },
+    "123019": {
+      "name": "Tim Hodgson",
+      "caucus": "Liberal"
+    },
+    "123027": {
+      "name": "Kristina Tesser Derksen",
+      "caucus": "Liberal"
+    },
+    "123033": {
+      "name": "Fares Al Soud",
+      "caucus": "Liberal"
+    },
+    "123060": {
+      "name": "Sandra Cobena",
+      "caucus": "Conservative"
+    },
+    "123073": {
+      "name": "Fred Davies",
+      "caucus": "Conservative"
+    },
+    "123081": {
+      "name": "Pauline Rochefort",
+      "caucus": "Liberal"
+    },
+    "123092": {
+      "name": "Sima Acan",
+      "caucus": "Liberal"
+    },
+    "123104": {
+      "name": "Rhonda Kirkland",
+      "caucus": "Conservative"
+    },
+    "123133": {
+      "name": "Emma Harrison",
+      "caucus": "Liberal"
+    },
+    "123141": {
+      "name": "Juanita Nathan",
+      "caucus": "Liberal"
+    },
+    "123144": {
+      "name": "Giovanna Mingarelli",
+      "caucus": "Liberal"
+    },
+    "123153": {
+      "name": "Vincent Ho",
+      "caucus": "Conservative"
+    },
+    "123192": {
+      "name": "Chi Nguyen",
+      "caucus": "Liberal"
+    },
+    "123208": {
+      "name": "Jim Bélanger",
+      "caucus": "Conservative"
+    },
+    "123214": {
+      "name": "Karim Bardeesy",
+      "caucus": "Liberal"
+    },
+    "123229": {
+      "name": "Evan Solomon",
+      "caucus": "Liberal"
+    },
+    "123248": {
+      "name": "Michael Guglielmin",
+      "caucus": "Conservative"
+    },
+    "123272": {
+      "name": "Harb Gill",
+      "caucus": "Conservative"
+    },
+    "123276": {
+      "name": "Roman Baber",
+      "caucus": "Conservative"
+    },
+    "123282": {
+      "name": "Jacob Mantle",
+      "caucus": "Conservative"
+    },
+    "123287": {
+      "name": "Grant Jackson",
+      "caucus": "Conservative"
+    },
+    "123305": {
+      "name": "Ginette Lavack",
+      "caucus": "Liberal"
+    },
+    "123361": {
+      "name": "Steven Bonk",
+      "caucus": "Conservative"
+    },
+    "123372": {
+      "name": "David Bexte",
+      "caucus": "Conservative"
+    },
+    "123382": {
+      "name": "Corey Hogan",
+      "caucus": "Liberal"
+    },
+    "123401": {
+      "name": "Dalwinder Gill",
+      "caucus": "Conservative"
+    },
+    "123415": {
+      "name": "David McKenzie",
+      "caucus": "Conservative"
+    },
+    "123418": {
+      "name": "Amanpreet Gill",
+      "caucus": "Conservative"
+    },
+    "123447": {
+      "name": "Billy Morin",
+      "caucus": "Conservative"
+    },
+    "123455": {
+      "name": "Jagsharan Singh Mahal",
+      "caucus": "Conservative"
+    },
+    "123500": {
+      "name": "Burton Bailey",
+      "caucus": "Conservative"
+    },
+    "123513": {
+      "name": "William Stevenson",
+      "caucus": "Conservative"
+    },
+    "123517": {
+      "name": "Sukhman Gill",
+      "caucus": "Conservative"
+    },
+    "123520": {
+      "name": "Wade Chang",
+      "caucus": "Liberal"
+    },
+    "123552": {
+      "name": "Jeff Kibble",
+      "caucus": "Conservative"
+    },
+    "123556": {
+      "name": "Jill McKnight",
+      "caucus": "Liberal"
+    },
+    "123563": {
+      "name": "Stephanie McLean",
+      "caucus": "Liberal"
+    },
+    "123583": {
+      "name": "Jake Sawatzky",
+      "caucus": "Liberal"
+    },
+    "123586": {
+      "name": "Aaron Gunn",
+      "caucus": "Conservative"
+    },
+    "123608": {
+      "name": "Chak Au",
+      "caucus": "Conservative"
+    },
+    "123622": {
+      "name": "Ellis Ross",
+      "caucus": "Conservative"
+    },
+    "123625": {
+      "name": "Ernie Klassen",
+      "caucus": "Liberal"
+    },
+    "123644": {
+      "name": "Gregor Robertson",
+      "caucus": "Liberal"
+    },
+    "123653": {
+      "name": "Wade Grant",
+      "caucus": "Liberal"
+    },
+    "123665": {
+      "name": "Will Greaves",
+      "caucus": "Liberal"
+    },
+    "123675": {
+      "name": "Rebecca Alty",
+      "caucus": "Liberal"
+    },
+    "141713": {
+      "name": "Doly Begum",
+      "caucus": "Liberal"
+    },
+    "142763": {
+      "name": "Tanveer Shahnawaz",
+      "caucus": "Liberal"
+    },
+    "142764": {
+      "name": "Braeden Caley",
+      "caucus": "Liberal"
+    }
+  }
 }
