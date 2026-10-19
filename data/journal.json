@@ -3,6 +3,18 @@
     "date": "2026-10-18",
     "volet": "site",
     "fr": {
+      "titre": "Un bouton café sous chaque projet de loi",
+      "texte": "Sous les boutons de partage de chaque projet de loi, un bouton bleu poudre permet d’offrir un café à l’équipe, par un don sur Stripe. Le site reste gratuit, sans publicité."
+    },
+    "en": {
+      "titre": "A coffee button under each bill",
+      "texte": "Under the share buttons of each bill, a powder-blue button lets you buy the team a coffee, with a donation through Stripe. The site stays free, with no ads."
+    }
+  },
+  {
+    "date": "2026-10-18",
+    "volet": "site",
+    "fr": {
       "titre": "Copier l’adresse d’un·e élu·e",
       "texte": "Dans la case des votes sous une loi, un bouton ⧉ à côté du ✉ copie l’adresse courriel de l’élu·e, à coller dans Gmail ou dans n’importe quel courriel. Le ✉ ouvre toujours le logiciel de courriel de l’appareil."
     },
