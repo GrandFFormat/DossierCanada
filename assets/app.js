@@ -2401,7 +2401,7 @@ function billVotesHtml(b, isEn){
       const [name, code, mail, former] = r;
       const p = `<span class="p">${esc(ABBR[code] || code)}</span>`;
       if(former) return `<li class="former"><span>${esc(name)}</span>${p}</li>`;
-      const m = mail ? ` <a href="mailto:${esc(mail)}?subject=${subject}" title="${isEn ? 'Write to' : 'Écrire à'} ${esc(name)}" aria-label="${isEn ? 'Write to' : 'Écrire à'} ${esc(name)}">✉</a>` : '';
+      const m = mail ? ` <a href="mailto:${esc(mail)}?subject=${subject}" title="${isEn ? 'Write to' : 'Écrire à'} ${esc(name)}" aria-label="${isEn ? 'Write to' : 'Écrire à'} ${esc(name)}">✉</a><button type="button" class="bill-votes-copie" onclick="event.stopPropagation(); copierCourriel(this, '${esc(mail)}')" title="${isEn ? 'Copy the address' : 'Copier l’adresse'}" aria-label="${isEn ? 'Copy the address of' : 'Copier l’adresse de'} ${esc(name)}">⧉</button>` : '';
       return `<li><span>${esc(name)}</span>${p}${m}</li>`;
     };
     const col = (label, rows) => `<div class="bvote-col"><h5>${label} (${rows.length})</h5><ul>${rows.map(row).join('')}</ul></div>`;
@@ -2413,8 +2413,8 @@ function billVotesHtml(b, isEn){
       if(x.paired && x.paired.length) anyPaired = true;
       const url = L(x.url);
       const note = isEn
-        ? `Recorded division no. ${x.n} at third reading, ${fmt(x.d)}. The ✉ opens a blank email with the name of the bill as its subject.${url ? ` <a href="${url}" target="_blank" rel="noopener">This vote on ourcommons.ca →</a>` : ''}`
-        : `Vote par appel nominal no ${x.n} à la troisième lecture, le ${fmt(x.d)}. Le ✉ ouvre un courriel vide avec le nom du projet de loi en objet.${url ? ` <a href="${url}" target="_blank" rel="noopener">Ce vote sur noscommunes.ca →</a>` : ''}`;
+        ? `Recorded division no. ${x.n} at third reading, ${fmt(x.d)}. The ✉ opens your email app with the name of the bill as its subject; ⧉ copies the address, to paste in Gmail or elsewhere.${url ? ` <a href="${url}" target="_blank" rel="noopener">This vote on ourcommons.ca →</a>` : ''}`
+        : `Vote par appel nominal no ${x.n} à la troisième lecture, le ${fmt(x.d)}. Le ✉ ouvre votre logiciel de courriel avec le nom du projet de loi en objet ; ⧉ copie l’adresse, à coller dans Gmail ou ailleurs.${url ? ` <a href="${url}" target="_blank" rel="noopener">Ce vote sur noscommunes.ca →</a>` : ''}`;
       return `${x.part ? `<div class="bvote-part">${esc(L(x.part))}</div>` : ''}
         <p class="bvote-note">${note}</p>
         <div class="bvote-cols">
@@ -4604,3 +4604,13 @@ function renderAll(){
   // Signal pour scripts/prerender-pages.js (pré-rendu au build) : la page est rendue.
   window.__dcReady = true;
 })();
+
+// Le bouton ⧉ à côté du ✉ dans la case des votes (Martin, 18 oct. 2026 : « si j'ai un Gmail, j'ai
+// pas le goût d'utiliser Outlook ») : il copie l'adresse de l'élu·e, à coller dans n'importe quel
+// courriel. Le ✉, lui, ouvre le logiciel de courriel de l'appareil.
+function copierCourriel(bouton, adresse){
+  const fait = () => { const avant = bouton.textContent; bouton.textContent = '✓'; setTimeout(() => { bouton.textContent = avant; }, 1500); };
+  if(navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(adresse).then(fait).catch(() => window.prompt('', adresse));
+  else window.prompt('', adresse);
+}
+window.copierCourriel = copierCourriel;

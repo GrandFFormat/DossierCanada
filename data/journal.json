@@ -3,6 +3,18 @@
     "date": "2026-10-18",
     "volet": "site",
     "fr": {
+      "titre": "Copier l’adresse d’un·e élu·e",
+      "texte": "Dans la case des votes sous une loi, un bouton ⧉ à côté du ✉ copie l’adresse courriel de l’élu·e, à coller dans Gmail ou dans n’importe quel courriel. Le ✉ ouvre toujours le logiciel de courriel de l’appareil."
+    },
+    "en": {
+      "titre": "Copy a member’s address",
+      "texte": "In the votes box under a law, a ⧉ button next to the ✉ copies the member’s email address, to paste in Gmail or any email. The ✉ still opens the device’s email app."
+    }
+  },
+  {
+    "date": "2026-10-18",
+    "volet": "site",
+    "fr": {
       "titre": "Qui a voté pour ou contre, sous chaque loi sanctionnée",
       "texte": "Sous le résumé d’une loi qui a reçu la sanction royale, une case donne la liste nom par nom du vote par appel nominal à la troisième lecture aux Communes : Pour, Contre et, s’il y en a, Pairés, avec le parti de chaque député·e. Le ✉ à côté d’un nom ouvre un courriel vide avec le nom du projet de loi en objet. Les personnes qui ne siègent plus sont en gris. Quand aucun appel nominal n’a eu lieu, la case explique comment la Chambre adopte un projet de loi sans compter les voix."
     },
