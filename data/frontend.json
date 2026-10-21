@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-20T13:35:17.240Z",
+  "generatedAt": "2026-10-21T14:11:34.856Z",
   "session": "45-1",
   "meta": {
     "counts": {
-      "bills": 191,
+      "bills": 193,
       "deputes": 337,
       "votes": 178
     },
@@ -11,6 +11,364 @@
     "formerMembersInVotes": 12
   },
   "bills": [
+    {
+      "id": 13541945,
+      "num": "S-217",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "senate",
+      "type": {
+        "en": "Senate Public Bill",
+        "fr": "Projet de loi d'intérêt public du Sénat"
+      },
+      "isGovernment": false,
+      "title": {
+        "en": "An Act to amend the Canada Revenue Agency Act (reporting on unpaid income tax)",
+        "fr": "Loi modifiant la Loi sur l’Agence du revenu du Canada (rapports concernant l’impôt sur le revenu impayé)"
+      },
+      "shortTitle": {
+        "en": "Fairness for All Canadian Taxpayers Act (measuring the tax gap to fight international tax evasion)",
+        "fr": "Loi sur l’équité pour les contribuables canadiens (calcul du manque à gagner fiscal pour lutter contre l’évasion fiscale à l’étranger)"
+      },
+      "sponsor": {
+        "en": "Hon. Percy E. Downe",
+        "fr": "L'hon. Percy E. Downe"
+      },
+      "status": {
+        "en": "At consideration in committee in the House of Commons",
+        "fr": "À l'examen en comité à la Chambre des communes"
+      },
+      "state": "encours",
+      "milestones": [
+        {
+          "stage": "senate_first_reading",
+          "chamber": "senate",
+          "reading": 1,
+          "date": "2025-05-27"
+        },
+        {
+          "stage": "senate_second_reading",
+          "chamber": "senate",
+          "reading": 2,
+          "date": "2026-03-10"
+        },
+        {
+          "stage": "senate_third_reading",
+          "chamber": "senate",
+          "reading": 3,
+          "date": "2026-03-12"
+        },
+        {
+          "stage": "commons_first_reading",
+          "chamber": "commons",
+          "reading": 1,
+          "date": "2026-03-26"
+        },
+        {
+          "stage": "commons_second_reading",
+          "chamber": "commons",
+          "reading": 2,
+          "date": "2026-10-20"
+        }
+      ],
+      "royalAssent": null,
+      "reinstated": false,
+      "latestActivity": {
+        "en": "At consideration in committee in the House of Commons",
+        "fr": "À l'examen en comité à la Chambre des communes",
+        "date": "2026-10-20"
+      },
+      "lastActivity": "2026-10-20",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/s-217",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/s-217"
+      },
+      "sponsorPersonId": 35191,
+      "sponsorName": {
+        "first": "Percy E.",
+        "last": "Downe"
+      },
+      "fullSummaryAvailable": true,
+      "summary": {
+        "en": "This enactment amends the Canada Revenue Agency Act to require the Canada Revenue Agency to list all convictions for tax evasion — including international tax evasion — in the annual report it submits to the Minister of National Revenue. It also requires the Agency, once every three years, to include statistics on the tax gap in the annual report. In addition, this enactment specifies that the Minister is to provide the Parliamentary Budget Officer with data on the tax gap.",
+        "fr": "Le texte modifie la Loi sur l’Agence du revenu du Canada afin d’exiger que l’Agence du revenu du Canada énumère toutes les condamnations pour évasion fiscale — y compris celles pour évasion fiscale internationale — dans le rapport qu’elle soumet chaque année au ministre du Revenu national. Il prévoit également que, tous les trois ans, l’Agence doit inclure dans son rapport les statistiques sur le manque à gagner fiscal. En outre, le texte précise que le ministre est tenu de fournir au directeur parlementaire du budget des données sur le manque à gagner fiscal."
+      },
+      "summarySource": "bill",
+      "divisions": []
+    },
+    {
+      "id": 14223235,
+      "num": "C-38",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "commons",
+      "type": {
+        "en": "House Government Bill",
+        "fr": "Projet de loi émanant du gouvernement (Cdc)"
+      },
+      "isGovernment": true,
+      "title": {
+        "en": "An Act to amend the Excise Tax Act (extension of the federal fuel excise tax relief)",
+        "fr": "Loi modifiant la Loi sur la taxe d'accise (prolongation de l'allègement de la taxe d'accise fédérale sur les carburants)"
+      },
+      "shortTitle": {
+        "en": "Canadian Fuel Affordability Act",
+        "fr": "Loi sur l'abordabilité des carburants au Canada"
+      },
+      "sponsor": {
+        "en": "Hon. François-Philippe Champagne",
+        "fr": "L’hon. François-Philippe Champagne"
+      },
+      "status": {
+        "en": "House of Commons bill awaiting first reading in the Senate",
+        "fr": "Projet de loi de la Chambre des communes en attente de la première lecture au Sénat"
+      },
+      "state": "encours",
+      "milestones": [
+        {
+          "stage": "commons_first_reading",
+          "chamber": "commons",
+          "reading": 1,
+          "date": "2026-09-21"
+        },
+        {
+          "stage": "commons_second_reading",
+          "chamber": "commons",
+          "reading": 2,
+          "date": "2026-09-22"
+        },
+        {
+          "stage": "commons_third_reading",
+          "chamber": "commons",
+          "reading": 3,
+          "date": "2026-10-20"
+        }
+      ],
+      "royalAssent": null,
+      "reinstated": false,
+      "latestActivity": {
+        "en": "House of Commons bill awaiting first reading in the Senate",
+        "fr": "Projet de loi de la Chambre des communes en attente de la première lecture au Sénat",
+        "date": "2026-10-20"
+      },
+      "lastActivity": "2026-10-20",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-38",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-38"
+      },
+      "sponsorPersonId": 88633,
+      "sponsorName": {
+        "first": "François-Philippe",
+        "last": "Champagne"
+      },
+      "fullSummaryAvailable": false,
+      "summary": {
+        "en": "The Library of Parliament does not prepare Legislative Summaries for self-explanatory measures. The following is a short summary:\n\nOn 21 September 2026, the Minister of Finance and National Revenue introduced Bill C-38, An Act to amend the Excise Tax Act (extension of the federal fuel excise tax relief) (Canadian Fuel Affordability Act) in the House of Commons and it was given first reading.\n\nBill C-38 amends the Excise Tax Act to extend the temporary suspension of the federal fuel excise tax until January 31, 2027 and to temporarily set the excise tax rates on fuels to 50% of the regular rates for the period beginning on February 1, 2027 and ending on March 31, 2027The Library of Parliament does not prepare Legislative Summaries for self-explanatory measures. The following is a short summary:\n\nOn 21 September 2026, the Minister of Finance and National Revenue introduced Bill C-38, An Act to amend the Excise Tax Act (extension of the federal fuel excise tax relief) (Canadian Fuel Affordability Act) in the House of Commons and it was given first reading.\n\nBill C-38 amends the Excise Tax Act to extend the temporary suspension of the federal fuel excise tax until January 31, 2027 and to temporarily set the excise tax rates on fuels to 50% of the regular rates for the period beginning on February 1, 2027 and ending on March 31, 2027",
+        "fr": "La Bibliothèque du Parlement ne prépare pas de Résumés législatifs pour les mesures qui sont suffisamment explicites. Ce qui suit est un court résumé :\n\nLe 21 septembre 2026, le ministre des Finances et du Revenu national a déposé le projet de loi C-38, Loi modifiant la Loi sur la taxe d'accise (prolongation de l'allègement de la taxe d'accise fédérale sur les carburants) (Loi sur l'abordabilité des carburants au Canada) à la Chambre des communes en première lecture.\n\nLe projet de loi C-38 modifie la Loi sur la taxe d’accise afin de prolonger la suspension temporaire de la taxe d’accise fédérale sur les carburants jusqu’au 31 janvier 2027 et de fixer temporairement les taux de la taxe d’accise sur le carburant à 50?% des taux réguliers pour la période commençant le 1er février 2027 et se terminant le 31 mars 2027.La Bibliothèque du Parlement ne prépare pas de Résumés législatifs pour les mesures qui sont suffisamment explicites. Ce qui suit est un court résumé :\n\nLe 21 septembre 2026, le ministre des Finances et du Revenu national a déposé le projet de loi C-38, Loi modifiant la Loi sur la taxe d'accise (prolongation de l'allègement de la taxe d'accise fédérale sur les carburants) (Loi sur l'abordabilité des carburants au Canada) à la Chambre des communes en première lecture.\n\nLe projet de loi C-38 modifie la Loi sur la taxe d’accise afin de prolonger la suspension temporaire de la taxe d’accise fédérale sur les carburants jusqu’au 31 janvier 2027 et de fixer temporairement les taux de la taxe d’accise sur le carburant à 50?% des taux réguliers pour la période commençant le 1er février 2027 et se terminant le 31 mars 2027."
+      },
+      "summarySource": "library",
+      "divisions": []
+    },
+    {
+      "id": 13583642,
+      "num": "C-219",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "commons",
+      "type": {
+        "en": "Private Member’s Bill",
+        "fr": "Projet de loi émanant d'un député"
+      },
+      "isGovernment": false,
+      "title": {
+        "en": "An Act to amend the Department of Foreign Affairs, Trade and Development Act, the Justice for Victims of Corrupt Foreign Officials Act (Sergei Magnitsky Law) and the Special Economic Measures Act",
+        "fr": "Loi modifiant la Loi sur le ministère des Affaires étrangères, du Commerce et du Développement, la Loi sur la justice pour les victimes de dirigeants étrangers corrompus (loi de Sergueï Magnitski) et la Loi sur les mesures économiques spéciales"
+      },
+      "shortTitle": {
+        "en": "International Anti-Corruption and Human Rights Act (Sergei Magnitsky Law No. 3)",
+        "fr": "Loi sur la lutte contre la corruption et la défense des droits de la personne à l’échelle internationale (loi no 3 de Sergueï Magnitski)"
+      },
+      "sponsor": {
+        "en": "James Bezan",
+        "fr": "James Bezan"
+      },
+      "status": {
+        "en": "At second reading in the Senate",
+        "fr": "À la deuxième lecture au Sénat"
+      },
+      "state": "encours",
+      "milestones": [
+        {
+          "stage": "commons_first_reading",
+          "chamber": "commons",
+          "reading": 1,
+          "date": "2025-09-16"
+        },
+        {
+          "stage": "commons_second_reading",
+          "chamber": "commons",
+          "reading": 2,
+          "date": "2026-02-24"
+        },
+        {
+          "stage": "commons_third_reading",
+          "chamber": "commons",
+          "reading": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "stage": "senate_first_reading",
+          "chamber": "senate",
+          "reading": 1,
+          "date": "2026-10-20"
+        }
+      ],
+      "royalAssent": null,
+      "reinstated": false,
+      "latestActivity": {
+        "en": "At second reading in the Senate",
+        "fr": "À la deuxième lecture au Sénat",
+        "date": "2026-10-20"
+      },
+      "lastActivity": "2026-10-20",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-219",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-219"
+      },
+      "sponsorPersonId": 25475,
+      "sponsorName": {
+        "first": "James",
+        "last": "Bezan"
+      },
+      "fullSummaryAvailable": false,
+      "summary": {
+        "en": "This enactment amends the Department of Foreign Affairs, Trade and Development Act to impose certain requirements on the Minister of Foreign Affairs in relation to international human rights.\n\nIt also amends the Justice for Victims of Corrupt Foreign Officials Act (Sergei Magnitsky Law) to provide that\n\n(a) transnational repression be sanctioned;\n\n(b) visas or other documents must not be issued to immediate family members of a foreign national who is the subject of an order or regulation made under section 4 of the Act;\n\n(c) a copy of each order or regulation made under paragraph 4(1)‍(b) of the Act must be tabled in each House of Parliament;\n\n(d) the Minister must respond to a report submitted by a parliamentary committee that recommends that sanctions be imposed under the Act against a foreign national; and\n\n(e) the Commissioner of the Royal Canadian Mounted Police and the Financial Transactions and Reports Analysis Centre of Canada must provide the Minister with information that is relevant to the making, administering or enforcing of the order or regulation against a foreign national.\n\nIt also amends the Special Economic Measures Act to change that Act’s long title to “An Act to provide for the imposition of economic measures against a person, entity or foreign state for grave breaches of international peace and security, gross and systematic human rights violations or acts of significant corruption” and its short title to the “Sergei Magnitsky Global Sanctions Act”. It further amends that Act to provide that\n\n(a) transnational repression be sanctioned;\n\n(b) visas or other documents must not be issued to immediate family members of a foreign national who is the subject of an order or regulation made under section 4 of the Act;\n\n(c) the Commissioner of the Royal Canadian Mounted Police and the Financial Transactions and Reports Analysis Centre of Canada must provide the Minister with information that is relevant to the making, administering or enforcing of the order or regulation against a foreign state or person;\n\n(d) every order or regulation made under paragraph 4(1)‍(b) of the Act must be tabled in each House of Parliament; and\n\n(e) the punishment under paragraph 8(a) of the Act be increased.\n\nFinally, it amends the Broadcasting Act to prohibit the issue or renewal of a licence in relation to a broadcasting undertaking, or to revoke the licence of a broadcasting undertaking, that is vulnerable to being significantly influenced by a foreign national or entity that has committed acts or omissions that the Senate or the House of Commons has recognized as genocide or that is the subject of sanctions under the Justice for Victims of Corrupt Foreign Officials Act (Sergei Magnitsky Law) or under the Special Economic Measures Act.‍‍",
+        "fr": "Le texte modifie la Loi sur le ministère des Affaires étrangères, du Commerce et du Développement afin d’imposer certaines exigences au ministre des Affaires étrangères relativement aux droits de la personne à l’échelle internationale.\n\nIl modifie également la Loi sur la justice pour les victimes de dirigeants étrangers corrompus (loi de Sergueï Magnitski) afin de prévoir :\n\na) que les actes de répression transnationale soient sanctionnés;\n\nb) qu’il ne peut être délivré de visa ou autre document aux membres de la famille immédiate d’un étranger visé par un décret ou règlement pris en vertu de l’article 4 de la loi;\n\nc) qu’une copie de tout décret ou règlement pris en vertu de l’alinéa 4(1)b) de la loi doit être déposée devant chaque chambre du Parlement;\n\nd) que le ministre est tenu de répondre à tout rapport soumis par un comité parlementaire qui recommande l’imposition de sanctions contre un étranger au titre de la loi;\n\ne) que le commissaire de la Gendarmerie royale du Canada et le Centre d’analyse des opérations et déclarations financières du Canada sont tenus de fournir au ministre tout renseignement utile à la prise, à l’exécution ou au contrôle d’application d’un décret ou règlement à l’encontre d’un étranger.\n\nLe texte modifie par ailleurs la Loi sur les mesures économiques spéciales afin d’en changer le titre intégral pour la « Loi autorisant la prise de mesures économiques contre des personnes, des entités et des États étrangers en cas de rupture sérieuse de la paix et de la sécurité internationales, de violations graves et systématiques des droits de la personne ou d’actes de corruption à grande échelle » et le titre abrégé pour la « Loi sur les sanctions internationales de type Sergueï Magnitski ». Il modifie aussi cette loi afin de prévoir :\n\na) que les actes de répression transnationale soient sanctionnés;\n\nb) qu’il ne peut être délivré de visa ou autre document aux membres de la famille immédiate d’un étranger visé par un décret ou règlement pris en vertu de l’article 4 de la loi;\n\nc) que le commissaire de la Gendarmerie royale du Canada et le Centre d’analyse des opérations et déclarations financières du Canada sont tenus de fournir au ministre tout renseignement utile à la prise, à l’exécution ou au contrôle d’application d’un décret ou règlement à l’encontre d’un État étranger ou d’une personne;\n\nd) que les décrets et règlements pris en vertu de l’alinéa 4(1)b) de la loi doivent être déposés devant chaque chambre du Parlement;\n\ne) que la peine prévue à l’alinéa 8a) de la loi est alourdie.\n\nEnfin, le texte modifie la Loi sur la radiodiffusion afin d’interdire l’attribution ou le renouvellement d’une licence — ou de prévoir la révocation d’une telle licence — à l’égard de toute entreprise de radiodiffusion qui est susceptible d’être considérablement influencée par un étranger ou une entité étrangère qui a commis des faits — actes ou omissions — reconnus par le Sénat ou la Chambre des communes comme constituant un génocide ou qui est visé par des sanctions sous le régime de la Loi sur la justice pour les victimes de dirigeants étrangers corrompus (loi de Sergueï Magnitski) ou de la Loi sur les mesures économiques spéciales.‍‍"
+      },
+      "summarySource": "bill",
+      "divisions": []
+    },
+    {
+      "id": 14247466,
+      "num": "C-293",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "commons",
+      "type": {
+        "en": "Private Member’s Bill",
+        "fr": "Projet de loi émanant d'un député"
+      },
+      "isGovernment": false,
+      "title": {
+        "en": "An Act to amend the Criminal Code (violent home invasion)",
+        "fr": "Loi modifiant le Code criminel (violation de domicile avec agression)"
+      },
+      "shortTitle": null,
+      "sponsor": {
+        "en": "Michael Guglielmin",
+        "fr": "Michael Guglielmin"
+      },
+      "status": {
+        "en": "Outside the Order of Precedence",
+        "fr": "Ne fait pas partie de l'Ordre de priorité"
+      },
+      "state": "encours",
+      "milestones": [
+        {
+          "stage": "commons_first_reading",
+          "chamber": "commons",
+          "reading": 1,
+          "date": "2026-10-20"
+        }
+      ],
+      "royalAssent": null,
+      "reinstated": false,
+      "latestActivity": {
+        "en": "Outside the Order of Precedence",
+        "fr": "Ne fait pas partie de l'Ordre de priorité",
+        "date": "2026-10-20"
+      },
+      "lastActivity": "2026-10-20",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-293",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-293"
+      },
+      "sponsorPersonId": 123248,
+      "sponsorName": {
+        "first": "Michael",
+        "last": "Guglielmin"
+      },
+      "fullSummaryAvailable": false,
+      "summary": {
+        "en": "This enactment amends the Criminal Code to create a separate offence of violent home invasion.",
+        "fr": "Le texte modifie le Code criminel afin d’ériger en infraction distincte la violation de domicile avec agression."
+      },
+      "summarySource": "bill",
+      "divisions": []
+    },
+    {
+      "id": 14268770,
+      "num": "S-252",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "senate",
+      "type": {
+        "en": "Senate Public Bill",
+        "fr": "Projet de loi d'intérêt public du Sénat"
+      },
+      "isGovernment": false,
+      "title": {
+        "en": "An Act to amend the Criminal Code (consent to pornographic material)",
+        "fr": "Loi modifiant le Code criminel (consentement relatif au matériel pornographique)"
+      },
+      "shortTitle": null,
+      "sponsor": {
+        "en": "Hon. Yonah Martin",
+        "fr": "L'hon. Yonah Martin"
+      },
+      "status": {
+        "en": "At second reading in the Senate",
+        "fr": "À la deuxième lecture au Sénat"
+      },
+      "state": "encours",
+      "milestones": [
+        {
+          "stage": "senate_first_reading",
+          "chamber": "senate",
+          "reading": 1,
+          "date": "2026-10-19"
+        }
+      ],
+      "royalAssent": null,
+      "reinstated": false,
+      "latestActivity": {
+        "en": "At second reading in the Senate",
+        "fr": "À la deuxième lecture au Sénat",
+        "date": "2026-10-19"
+      },
+      "lastActivity": "2026-10-19",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/s-252",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/s-252"
+      },
+      "sponsorPersonId": 59283,
+      "sponsorName": {
+        "first": "Yonah",
+        "last": "Martin"
+      },
+      "fullSummaryAvailable": false,
+      "summary": {
+        "en": "This enactment amends the Criminal Code to prohibit a person from making, distributing or advertising pornographic material for commercial purposes without having first ascertained that, at the time the material was made, each person whose image is depicted in the material was 18 years of age or older and gave their express consent to their image being depicted. It also makes it an offence for the operator of a website to fail to remove pornographic material if the maker of the material or a person whose image is depicted in the material requests that the material be removed.",
+        "fr": "Le texte modifie le Code criminel afin d’interdire à toute personne de produire ou de distribuer du matériel pornographique à des fins commerciales, ou d’en faire la publicité, sans s’être au préalable assurée qu’au moment de la production du matériel, chaque personne dont l’image y est représentée était âgée de dix-huit ans ou plus et avait donné son consentement exprès à ce que son image y soit représentée. Il érige également en infraction le fait pour l’exploitant d’un site Web d’omettre de retirer du matériel pornographique lorsque le producteur du matériel ou toute personne dont l’image est représentée dans ce matériel en fait la demande."
+      },
+      "summarySource": "bill",
+      "divisions": []
+    },
     {
       "id": 14182606,
       "num": "C-37",
@@ -263,80 +621,6 @@
           }
         }
       ]
-    },
-    {
-      "id": 13583642,
-      "num": "C-219",
-      "session": "45-1",
-      "parliament": 45,
-      "sessionNumber": 1,
-      "chamber": "commons",
-      "type": {
-        "en": "Private Member’s Bill",
-        "fr": "Projet de loi émanant d'un député"
-      },
-      "isGovernment": false,
-      "title": {
-        "en": "An Act to amend the Department of Foreign Affairs, Trade and Development Act, the Justice for Victims of Corrupt Foreign Officials Act (Sergei Magnitsky Law), the Special Economic Measures Act and the Broadcasting Act",
-        "fr": "Loi modifiant la Loi sur le ministère des Affaires étrangères, du Commerce et du Développement, la Loi sur la justice pour les victimes de dirigeants étrangers corrompus (loi de Sergueï Magnitski), la Loi sur les mesures économiques spéciales et la Loi sur la radiodiffusion"
-      },
-      "shortTitle": {
-        "en": "Sergei Magnitsky International Anti-Corruption and Human Rights Act",
-        "fr": "Loi de Sergueï Magnitski sur la lutte contre la corruption et la défense des droits de la personne à l’échelle internationale"
-      },
-      "sponsor": {
-        "en": "James Bezan",
-        "fr": "James Bezan"
-      },
-      "status": {
-        "en": "House of Commons bill awaiting first reading in the Senate",
-        "fr": "Projet de loi de la Chambre des communes en attente de la première lecture au Sénat"
-      },
-      "state": "encours",
-      "milestones": [
-        {
-          "stage": "commons_first_reading",
-          "chamber": "commons",
-          "reading": 1,
-          "date": "2025-09-16"
-        },
-        {
-          "stage": "commons_second_reading",
-          "chamber": "commons",
-          "reading": 2,
-          "date": "2026-02-24"
-        },
-        {
-          "stage": "commons_third_reading",
-          "chamber": "commons",
-          "reading": 3,
-          "date": "2026-10-08"
-        }
-      ],
-      "royalAssent": null,
-      "reinstated": false,
-      "latestActivity": {
-        "en": "House of Commons bill awaiting first reading in the Senate",
-        "fr": "Projet de loi de la Chambre des communes en attente de la première lecture au Sénat",
-        "date": "2026-10-08"
-      },
-      "lastActivity": "2026-10-08",
-      "url": {
-        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-219",
-        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-219"
-      },
-      "sponsorPersonId": 25475,
-      "sponsorName": {
-        "first": "James",
-        "last": "Bezan"
-      },
-      "fullSummaryAvailable": false,
-      "summary": {
-        "en": "This enactment amends the Department of Foreign Affairs, Trade and Development Act to impose certain requirements on the Minister of Foreign Affairs in relation to international human rights.\n\nIt also amends the Justice for Victims of Corrupt Foreign Officials Act (Sergei Magnitsky Law) to provide that\n\n(a) transnational repression be sanctioned;\n\n(b) visas or other documents must not be issued to immediate family members of a foreign national who is the subject of an order or regulation made under section 4 of the Act;\n\n(c) a copy of each order or regulation made under paragraph 4(1)‍(b) of the Act must be tabled in each House of Parliament;\n\n(d) the Minister must respond to a report submitted by a parliamentary committee that recommends that sanctions be imposed under the Act against a foreign national; and\n\n(e) the Commissioner of the Royal Canadian Mounted Police and the Financial Transactions and Reports Analysis Centre of Canada must provide the Minister with information that is relevant to the making, administering or enforcing of the order or regulation against a foreign national.\n\nIt also amends the Special Economic Measures Act to change that Act’s long title to “An Act to provide for the imposition of economic measures against a person, entity or foreign state for grave breaches of international peace and security, gross and systematic human rights violations or acts of significant corruption” and its short title to the “Sergei Magnitsky Global Sanctions Act”. It further amends that Act to provide that\n\n(a) transnational repression be sanctioned;\n\n(b) visas or other documents must not be issued to immediate family members of a foreign national who is the subject of an order or regulation made under section 4 of the Act;\n\n(c) the Commissioner of the Royal Canadian Mounted Police and the Financial Transactions and Reports Analysis Centre of Canada must provide the Minister with information that is relevant to the making, administering or enforcing of the order or regulation against a foreign state or person;\n\n(d) every order or regulation made under paragraph 4(1)‍(b) of the Act must be tabled in each House of Parliament; and\n\n(e) the punishment under paragraph 8(a) of the Act be increased.\n\nFinally, it amends the Broadcasting Act to prohibit the issue or renewal of a licence in relation to a broadcasting undertaking, or to revoke the licence of a broadcasting undertaking, that is vulnerable to being significantly influenced by a foreign national or entity that has committed acts or omissions that the Senate or the House of Commons has recognized as genocide or that is the subject of sanctions under the Justice for Victims of Corrupt Foreign Officials Act (Sergei Magnitsky Law) or under the Special Economic Measures Act.‍‍",
-        "fr": "Le texte modifie la Loi sur le ministère des Affaires étrangères, du Commerce et du Développement afin d’imposer certaines exigences au ministre des Affaires étrangères relativement aux droits de la personne à l’échelle internationale.\n\nIl modifie également la Loi sur la justice pour les victimes de dirigeants étrangers corrompus (loi de Sergueï Magnitski) afin de prévoir :\n\na) que les actes de répression transnationale soient sanctionnés;\n\nb) qu’il ne peut être délivré de visa ou autre document aux membres de la famille immédiate d’un étranger visé par un décret ou règlement pris en vertu de l’article 4 de la loi;\n\nc) qu’une copie de tout décret ou règlement pris en vertu de l’alinéa 4(1)b) de la loi doit être déposée devant chaque chambre du Parlement;\n\nd) que le ministre est tenu de répondre à tout rapport soumis par un comité parlementaire qui recommande l’imposition de sanctions contre un étranger au titre de la loi;\n\ne) que le commissaire de la Gendarmerie royale du Canada et le Centre d’analyse des opérations et déclarations financières du Canada sont tenus de fournir au ministre tout renseignement utile à la prise, à l’exécution ou au contrôle d’application d’un décret ou règlement à l’encontre d’un étranger.\n\nLe texte modifie par ailleurs la Loi sur les mesures économiques spéciales afin d’en changer le titre intégral pour la « Loi autorisant la prise de mesures économiques contre des personnes, des entités et des États étrangers en cas de rupture sérieuse de la paix et de la sécurité internationales, de violations graves et systématiques des droits de la personne ou d’actes de corruption à grande échelle » et le titre abrégé pour la « Loi sur les sanctions internationales de type Sergueï Magnitski ». Il modifie aussi cette loi afin de prévoir :\n\na) que les actes de répression transnationale soient sanctionnés;\n\nb) qu’il ne peut être délivré de visa ou autre document aux membres de la famille immédiate d’un étranger visé par un décret ou règlement pris en vertu de l’article 4 de la loi;\n\nc) que le commissaire de la Gendarmerie royale du Canada et le Centre d’analyse des opérations et déclarations financières du Canada sont tenus de fournir au ministre tout renseignement utile à la prise, à l’exécution ou au contrôle d’application d’un décret ou règlement à l’encontre d’un État étranger ou d’une personne;\n\nd) que les décrets et règlements pris en vertu de l’alinéa 4(1)b) de la loi doivent être déposés devant chaque chambre du Parlement;\n\ne) que la peine prévue à l’alinéa 8a) de la loi est alourdie.\n\nEnfin, le texte modifie la Loi sur la radiodiffusion afin d’interdire l’attribution ou le renouvellement d’une licence — ou de prévoir la révocation d’une telle licence — à l’égard de toute entreprise de radiodiffusion qui est susceptible d’être considérablement influencée par un étranger ou une entité étrangère qui a commis des faits — actes ou omissions — reconnus par le Sénat ou la Chambre des communes comme constituant un génocide ou qui est visé par des sanctions sous le régime de la Loi sur la justice pour les victimes de dirigeants étrangers corrompus (loi de Sergueï Magnitski) ou de la Loi sur les mesures économiques spéciales.‍‍"
-      },
-      "summarySource": "bill",
-      "divisions": []
     },
     {
       "id": 14246258,
@@ -837,74 +1121,6 @@
         "fr": "Le texte désigne la deuxième semaine de mai comme « Semaine d’appréciation de la fonction de juré »."
       },
       "summarySource": "bill",
-      "divisions": []
-    },
-    {
-      "id": 14223235,
-      "num": "C-38",
-      "session": "45-1",
-      "parliament": 45,
-      "sessionNumber": 1,
-      "chamber": "commons",
-      "type": {
-        "en": "House Government Bill",
-        "fr": "Projet de loi émanant du gouvernement (Cdc)"
-      },
-      "isGovernment": true,
-      "title": {
-        "en": "An Act to amend the Excise Tax Act (extension of the federal fuel excise tax relief)",
-        "fr": "Loi modifiant la Loi sur la taxe d'accise (prolongation de l'allègement de la taxe d'accise fédérale sur les carburants)"
-      },
-      "shortTitle": {
-        "en": "Canadian Fuel Affordability Act",
-        "fr": "Loi sur l'abordabilité des carburants au Canada"
-      },
-      "sponsor": {
-        "en": "Hon. François-Philippe Champagne",
-        "fr": "L’hon. François-Philippe Champagne"
-      },
-      "status": {
-        "en": "At report stage in the House of Commons",
-        "fr": "À l'étape du rapport à la Chambre des communes"
-      },
-      "state": "encours",
-      "milestones": [
-        {
-          "stage": "commons_first_reading",
-          "chamber": "commons",
-          "reading": 1,
-          "date": "2026-09-21"
-        },
-        {
-          "stage": "commons_second_reading",
-          "chamber": "commons",
-          "reading": 2,
-          "date": "2026-09-22"
-        }
-      ],
-      "royalAssent": null,
-      "reinstated": false,
-      "latestActivity": {
-        "en": "At report stage in the House of Commons",
-        "fr": "À l'étape du rapport à la Chambre des communes",
-        "date": "2026-09-22"
-      },
-      "lastActivity": "2026-09-22",
-      "url": {
-        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-38",
-        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-38"
-      },
-      "sponsorPersonId": 88633,
-      "sponsorName": {
-        "first": "François-Philippe",
-        "last": "Champagne"
-      },
-      "fullSummaryAvailable": false,
-      "summary": {
-        "en": "The Library of Parliament does not prepare Legislative Summaries for self-explanatory measures. The following is a short summary:\n\nOn 21 September 2026, the Minister of Finance and National Revenue introduced Bill C-38, An Act to amend the Excise Tax Act (extension of the federal fuel excise tax relief) (Canadian Fuel Affordability Act) in the House of Commons and it was given first reading.\n\nBill C-38 amends the Excise Tax Act to extend the temporary suspension of the federal fuel excise tax until January 31, 2027 and to temporarily set the excise tax rates on fuels to 50% of the regular rates for the period beginning on February 1, 2027 and ending on March 31, 2027The Library of Parliament does not prepare Legislative Summaries for self-explanatory measures. The following is a short summary:\n\nOn 21 September 2026, the Minister of Finance and National Revenue introduced Bill C-38, An Act to amend the Excise Tax Act (extension of the federal fuel excise tax relief) (Canadian Fuel Affordability Act) in the House of Commons and it was given first reading.\n\nBill C-38 amends the Excise Tax Act to extend the temporary suspension of the federal fuel excise tax until January 31, 2027 and to temporarily set the excise tax rates on fuels to 50% of the regular rates for the period beginning on February 1, 2027 and ending on March 31, 2027",
-        "fr": "La Bibliothèque du Parlement ne prépare pas de Résumés législatifs pour les mesures qui sont suffisamment explicites. Ce qui suit est un court résumé :\n\nLe 21 septembre 2026, le ministre des Finances et du Revenu national a déposé le projet de loi C-38, Loi modifiant la Loi sur la taxe d'accise (prolongation de l'allègement de la taxe d'accise fédérale sur les carburants) (Loi sur l'abordabilité des carburants au Canada) à la Chambre des communes en première lecture.\n\nLe projet de loi C-38 modifie la Loi sur la taxe d’accise afin de prolonger la suspension temporaire de la taxe d’accise fédérale sur les carburants jusqu’au 31 janvier 2027 et de fixer temporairement les taux de la taxe d’accise sur le carburant à 50?% des taux réguliers pour la période commençant le 1er février 2027 et se terminant le 31 mars 2027.La Bibliothèque du Parlement ne prépare pas de Résumés législatifs pour les mesures qui sont suffisamment explicites. Ce qui suit est un court résumé :\n\nLe 21 septembre 2026, le ministre des Finances et du Revenu national a déposé le projet de loi C-38, Loi modifiant la Loi sur la taxe d'accise (prolongation de l'allègement de la taxe d'accise fédérale sur les carburants) (Loi sur l'abordabilité des carburants au Canada) à la Chambre des communes en première lecture.\n\nLe projet de loi C-38 modifie la Loi sur la taxe d’accise afin de prolonger la suspension temporaire de la taxe d’accise fédérale sur les carburants jusqu’au 31 janvier 2027 et de fixer temporairement les taux de la taxe d’accise sur le carburant à 50?% des taux réguliers pour la période commençant le 1er février 2027 et se terminant le 31 mars 2027."
-      },
-      "summarySource": "library",
       "divisions": []
     },
     {
@@ -7524,86 +7740,6 @@
       "summary": {
         "en": "This enactment amends the Feeds Act, the Fertilizers Act, the Seeds Act and the Pest Control Products Act to provide for provisional registration or approval of feeds, fertilizers, seeds and pest control products that are already approved by two or more trusted jurisdictions.\n\nIt also amends the Food and Drugs Act to provide that the Minister may, by order, deem that specified requirements of that Act or the regulations are met in respect of a veterinary drug on the basis of a decision of, or any information or document produced by, a foreign regulatory authority.",
         "fr": "Le texte modifie la Loi relative aux aliments du bétail, la Loi sur les engrais, la Loi sur les semences et la Loi sur les produits antiparasitaires afin de prévoir l’enregistrement, l’homologation et l’approbation provisoires des aliments du bétail, des engrais, des semences et des produits antiparasitaires déjà approuvés par au moins deux États de confiance.\n\nIl modifie également la Loi sur les aliments et drogues afin de prévoir que le ministre peut, par arrêté, déclarer que certaines exigences de cette loi ou des règlements relativement à une drogue pour usage vétérinaire sont réputées être respectées sur le fondement d’une décision d’une autorité réglementaire étrangère ou de renseignements ou documents émanant de celle-ci."
-      },
-      "summarySource": "bill",
-      "divisions": []
-    },
-    {
-      "id": 13541945,
-      "num": "S-217",
-      "session": "45-1",
-      "parliament": 45,
-      "sessionNumber": 1,
-      "chamber": "senate",
-      "type": {
-        "en": "Senate Public Bill",
-        "fr": "Projet de loi d'intérêt public du Sénat"
-      },
-      "isGovernment": false,
-      "title": {
-        "en": "An Act to amend the Canada Revenue Agency Act (reporting on unpaid income tax)",
-        "fr": "Loi modifiant la Loi sur l’Agence du revenu du Canada (rapports concernant l’impôt sur le revenu impayé)"
-      },
-      "shortTitle": {
-        "en": "Fairness for All Canadian Taxpayers Act (measuring the tax gap to fight international tax evasion)",
-        "fr": "Loi sur l’équité pour les contribuables canadiens (calcul du manque à gagner fiscal pour lutter contre l’évasion fiscale à l’étranger)"
-      },
-      "sponsor": {
-        "en": "Hon. Percy E. Downe",
-        "fr": "L'hon. Percy E. Downe"
-      },
-      "status": {
-        "en": "At second reading in the House of Commons",
-        "fr": "À la deuxième lecture à la Chambre des communes"
-      },
-      "state": "encours",
-      "milestones": [
-        {
-          "stage": "senate_first_reading",
-          "chamber": "senate",
-          "reading": 1,
-          "date": "2025-05-27"
-        },
-        {
-          "stage": "senate_second_reading",
-          "chamber": "senate",
-          "reading": 2,
-          "date": "2026-03-10"
-        },
-        {
-          "stage": "senate_third_reading",
-          "chamber": "senate",
-          "reading": 3,
-          "date": "2026-03-12"
-        },
-        {
-          "stage": "commons_first_reading",
-          "chamber": "commons",
-          "reading": 1,
-          "date": "2026-03-26"
-        }
-      ],
-      "royalAssent": null,
-      "reinstated": false,
-      "latestActivity": {
-        "en": "At second reading in the House of Commons",
-        "fr": "À la deuxième lecture à la Chambre des communes",
-        "date": "2026-03-26"
-      },
-      "lastActivity": "2026-03-26",
-      "url": {
-        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/s-217",
-        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/s-217"
-      },
-      "sponsorPersonId": 35191,
-      "sponsorName": {
-        "first": "Percy E.",
-        "last": "Downe"
-      },
-      "fullSummaryAvailable": true,
-      "summary": {
-        "en": "This enactment amends the Canada Revenue Agency Act to require the Canada Revenue Agency to list all convictions for tax evasion — including international tax evasion — in the annual report it submits to the Minister of National Revenue. It also requires the Agency, once every three years, to include statistics on the tax gap in the annual report. In addition, this enactment specifies that the Minister is to provide the Parliamentary Budget Officer with data on the tax gap.",
-        "fr": "Le texte modifie la Loi sur l’Agence du revenu du Canada afin d’exiger que l’Agence du revenu du Canada énumère toutes les condamnations pour évasion fiscale — y compris celles pour évasion fiscale internationale — dans le rapport qu’elle soumet chaque année au ministre du Revenu national. Il prévoit également que, tous les trois ans, l’Agence doit inclure dans son rapport les statistiques sur le manque à gagner fiscal. En outre, le texte précise que le ministre est tenu de fournir au directeur parlementaire du budget des données sur le manque à gagner fiscal."
       },
       "summarySource": "bill",
       "divisions": []

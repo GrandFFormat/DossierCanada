@@ -80,7 +80,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=d117184872">
+<link rel="stylesheet" href="/assets/app.css?v=988cc2c1d7">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -191,7 +191,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
 
     <div class="apercu-3col">
       <aside class="a3-left">
-        <p class="a3-intro" id="a3intro"><!--ssr-->Le Parlement du Canada sans jargon : <b>337</b> député·e·s, <b>191</b> projets de loi fédéraux et <b>178</b> votes nominaux aux Communes, tirés des sources officielles.<!--/ssr--></p>
+        <p class="a3-intro" id="a3intro"><!--ssr-->Le Parlement du Canada sans jargon : <b>337</b> député·e·s, <b>193</b> projets de loi fédéraux et <b>178</b> votes nominaux aux Communes, tirés des sources officielles.<!--/ssr--></p>
         <h2 class="a3-hiw-h" data-i18n="a3.hiw">Comment ça marche</h2>
         <div class="a3-steps">
           <div class="a3-step"><span class="a3-step-n" style="background:var(--yellow)">1</span><p data-i18n="a3.step1">Un projet de loi vous semble opaque ? Demandez une explication.</p></div>
@@ -204,36 +204,24 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
           <h2 data-i18n="h.billsrecent">Projets de loi récemment actifs</h2>
           <a class="a3-seeall" data-view="projets" href="/projets-de-loi" data-i18n="a3.seeall">Tout voir →</a>
         </div>
-        <div id="apercuBills"><!--ssr--><div class="ab-row" id="abrow-ap-14182606">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-14182606')">
-      <span class="ab-num">C-37</span>
-      <span class="ab-title">Loi concernant l'eau, les sources d'eau, l'eau potable, les eaux usées et les infrastructures connexes sur les terres des Premières Nations</span>
+        <div id="apercuBills"><!--ssr--><div class="ab-row" id="abrow-ap-13541945">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13541945')">
+      <span class="ab-num">S-217</span>
+      <span class="ab-title">Loi modifiant la Loi sur l’Agence du revenu du Canada (rapports concernant l’impôt sur le revenu impayé)</span>
       
       
       
-      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
+      <span class="depute-party" style="background:#0E7C7B; color:#fff">GSC</span>
       <span class="status-pill status-encours">En cours</span>
       <span class="ab-caret">▾</span>
     </div>
     <div class="ab-detail"></div>
-  </div><div class="ab-row" id="abrow-ap-13932352">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13932352')">
-      <span class="ab-num">C-27</span>
-      <span class="ab-title">Loi portant mise en vigueur de l’accord définitif sur l’autonomie gouvernementale des Tlegohli Got’ine et modifiant certaines lois en conséquence</span>
+  </div><div class="ab-row" id="abrow-ap-14223235">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-14223235')">
+      <span class="ab-num">C-38</span>
+      <span class="ab-title">Loi modifiant la Loi sur la taxe d'accise (prolongation de l'allègement de la taxe d'accise fédérale sur les carburants)</span>
       
       
-      
-      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-      <span class="status-pill status-sanctionne">Sanctionnée</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"></div>
-  </div><div class="ab-row" id="abrow-ap-14223396">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-14223396')">
-      <span class="ab-num">C-39</span>
-      <span class="ab-title">Loi concernant certaines mesures visant à renforcer l'économie</span>
-      
-      <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Projet omnibus — 3 parties, 8 sections : il modifie plusieurs lois différentes. Cliquer pour ne voir que les omnibus">Omnibus · 3 parties</button>
       
       <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
       <span class="status-pill status-encours">En cours</span>
@@ -243,7 +231,19 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
   </div><div class="ab-row" id="abrow-ap-13583642">
     <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13583642')">
       <span class="ab-num">C-219</span>
-      <span class="ab-title">Loi modifiant la Loi sur le ministère des Affaires étrangères, du Commerce et du Développement, la Loi sur la justice pour les victimes de dirigeants étrangers corrompus (loi de Sergueï Magnitski), la Loi sur les mesures économiques spéciales et la Loi sur la radiodiffusion</span>
+      <span class="ab-title">Loi modifiant la Loi sur le ministère des Affaires étrangères, du Commerce et du Développement, la Loi sur la justice pour les victimes de dirigeants étrangers corrompus (loi de Sergueï Magnitski) et la Loi sur les mesures économiques spéciales</span>
+      
+      
+      
+      <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
+      <span class="status-pill status-encours">En cours</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"></div>
+  </div><div class="ab-row" id="abrow-ap-14247466">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-14247466')">
+      <span class="ab-num">C-293</span>
+      <span class="ab-title">Loi modifiant le Code criminel (violation de domicile avec agression)</span>
       
       
       
@@ -268,12 +268,12 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
         <h2 class="a3-hiw-h" data-i18n="h.quoideneuf">Quoi de neuf</h2>
         <div id="sittingBox"></div>
         <div id="newsList"><!--ssr--><div class="news-item">
-      <div class="news-date">2026-10-09</div>
-      <div class="news-body"><p><b>C-37</b> — À l'examen en comité à la Chambre des communes</p></div>
+      <div class="news-date">2026-10-20</div>
+      <div class="news-body"><p><b>S-217</b> — À l'examen en comité à la Chambre des communes</p></div>
     </div>
     <div class="news-item">
-      <div class="news-date">2026-10-08</div>
-      <div class="news-body"><p><b>C-27</b> — Sanction royale reçue</p></div>
+      <div class="news-date">2026-10-20</div>
+      <div class="news-body"><p><b>C-38</b> — Projet de loi de la Chambre des communes en attente de la première lecture au Sénat</p></div>
     </div><button class="bill-more" style="margin-top:14px; border:none; cursor:pointer;" onclick="loadMoreNews()">+ Voir plus</button><!--/ssr--></div>
       </aside>
     </div>
@@ -622,7 +622,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=be20a1d25d"></script>
+<script defer src="/assets/app.js?v=182067e9ac"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->
