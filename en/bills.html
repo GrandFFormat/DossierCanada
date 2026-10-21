@@ -62,7 +62,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=d117184872">
+<link rel="stylesheet" href="/assets/app.css?v=988cc2c1d7">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -248,7 +248,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     <div class="page-band">
       <div>
         <nav class="crumbs" aria-label="Breadcrumb"><a data-view="apercu" href="/en">DossierCanada</a> <span aria-hidden="true">›</span> <span aria-current="page" data-i18n="nav.projets">Bills</span></nav>
-        <h1 class="band-title" id="projetsCountTitle">191 federal bills</h1>
+        <h1 class="band-title" id="projetsCountTitle">193 federal bills</h1>
         <div class="sub" data-i18n="proj.bandsub">Every bill summarized in plain language. Not clear enough? Ask for an explanation.</div>
       </div>
     </div>
@@ -268,7 +268,67 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     </div>
 
 
-    <div id="billsList"><!--ssr--><div class="ab-row" id="abrow-pr-14182606">
+    <div id="billsList"><!--ssr--><div class="ab-row" id="abrow-pr-13541945">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13541945')">
+      <span class="ab-num">S-217</span>
+      <span class="ab-title">An Act to amend the Canada Revenue Agency Act (reporting on unpaid income tax)</span>
+      
+      
+      
+      <span class="depute-party" style="background:#0E7C7B; color:#fff">CSG</span>
+      <span class="status-pill status-encours">In progress</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13541945"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Requires the Canada Revenue Agency, which collects taxes, to publish a detailed list of every tax evasion conviction each year.</li><li>Adds a separate list for cases of international tax evasion.</li><li>Puts these lists in the annual report the Agency gives to the Minister of National Revenue.</li><li>Requires the Agency to publish statistics on the "tax gap" once every three years — the difference between taxes that should be paid and taxes actually collected.</li><li>Spells out how to measure that gap: undeclared income, audit results, money that could still be collected, and unreported foreign property.</li><li>Requires the numbers to be broken down by type of taxpayer: individuals, trusts, and corporations sorted by size.</li><li>Requires the Minister to share this data with the Parliamentary Budget Officer, plus any extra data the officer needs for deeper analysis.</li><li>Gives the law a short name: the Fairness for All Canadian Taxpayers Act.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
+  </div><div class="ab-row" id="abrow-pr-14223235">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14223235')">
+      <span class="ab-num">C-38</span>
+      <span class="ab-title">An Act to amend the Excise Tax Act (extension of the federal fuel excise tax relief)</span>
+      
+      
+      
+      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
+      <span class="status-pill status-encours">In progress</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="14223235"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Extends the pause on the federal fuel excise tax until January 31, 2027.</li><li>Covers unleaded gasoline, diesel, aviation fuel, and both leaded and unleaded aviation gasoline.</li><li>Cuts the tax to half the normal rate from February 1 to March 31, 2027, instead of bringing it fully back.</li><li>Drops the gasoline rate from 10 cents to 5 cents a litre during those two months.</li><li>Drops another rate from 11 cents to 5.5 cents a litre over the same period.</li><li>Drops the rate that applies to aviation fuel from 4 cents to 2 cents a litre.</li><li>Makes the extension retroactive to September 8, 2026, while the half rates start on February 1, 2027.</li><li>Gives the law the short title Canadian Fuel Affordability Act.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
+  </div><div class="ab-row" id="abrow-pr-13583642">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13583642')">
+      <span class="ab-num">C-219</span>
+      <span class="ab-title">An Act to amend the Department of Foreign Affairs, Trade and Development Act, the Justice for Victims of Corrupt Foreign Officials Act (Sergei Magnitsky Law) and the Special Economic Measures Act</span>
+      
+      
+      
+      <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
+      <span class="status-pill status-encours">In progress</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13583642"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Requires the Minister of Foreign Affairs to publish a yearly report on Canada's work for human rights abroad.</li><li>Requires that report to name the "prisoners of conscience" Canada is trying to free, and the countries holding them.</li><li>Allows sanctions for "transnational repression", when a foreign state threatens, spies on or harasses people living outside its borders.</li><li>Bars visas for the close family of a sanctioned person, unless the Minister believes they got no money or benefit from that person.</li><li>Requires the RCMP and FINTRAC, the agency that tracks suspicious financial activity, to give the Minister information useful for sanctions.</li><li>Gives the Minister 30 days after getting that information to recommend to the federal Cabinet whether to impose the sanction.</li><li>Renames the Special Economic Measures Act as the "Sergei Magnitsky Global Sanctions Act".</li><li>Raises the maximum penalty under that law to a $100,000 fine and three years in prison.</li><li>Blocks broadcast licences for any station strongly influenced by a foreign person or group under sanctions, or found by Parliament to have committed genocide.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
+  </div><div class="ab-row" id="abrow-pr-14247466">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14247466')">
+      <span class="ab-num">C-293</span>
+      <span class="ab-title">An Act to amend the Criminal Code (violent home invasion)</span>
+      
+      
+      
+      <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
+      <span class="status-pill status-encours">In progress</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="14247466"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Creates a new crime in the Criminal Code called "violent home invasion".</li><li>Targets anyone who enters or stays in a home without a lawful excuse, knowing or suspecting someone is inside.</li><li>Requires a violent act too: threats, intimidation, injury, property damage, holding someone against their will, or using a weapon (even a fake one).</li><li>Sets the maximum penalty at life in prison and the minimum at five years behind bars.</li><li>Makes this crime a reason to increase sentences for other offences committed in a home, such as robbery or break-and-enter.</li><li>Adds the crime to the list that allows police to take a DNA sample from a convicted person.</li><li>Puts the burden on the accused to show why they should be released while awaiting trial.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
+  </div><div class="ab-row" id="abrow-pr-14268770">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14268770')">
+      <span class="ab-num">S-252</span>
+      <span class="ab-title">An Act to amend the Criminal Code (consent to pornographic material)</span>
+      
+      
+      
+      <span class="depute-party" style="background:#1A4782; color:#fff">C</span>
+      <span class="status-pill status-encours">In progress</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="14268770"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Creates a new Criminal Code offence: making pornographic material for commercial purposes without first checking that every person shown is 18 or older and clearly agreed to appear.</li><li>Requires anyone who distributes or advertises such material for money to first get written confirmation from the maker about age, consent, and that consent was not later withdrawn.</li><li>Makes it an offence for a website operator to knowingly fail to take material down after a written removal request from the maker or from someone shown in it.</li><li>Covers material already online before the law starts: operators must remove it if they know, or should know, the written confirmation was never obtained.</li><li>Sets penalties of up to a $500,000 fine and 10 years in prison for the most serious cases, or up to a $100,000 fine for cases handled more simply.</li><li>Assumes a company is acting for commercial purposes, and blocks the "I thought they were 18" defence unless the accused checked photo ID and kept a written record of it.</li><li>Lets a judge ban the convicted person from using the Internet, order the material taken down, and order repayment of a victim's costs to get images removed.</li><li>Allows the federal Cabinet to set details by rules, without a new vote in Parliament, on accepted ID, records to keep, and how removal requests work.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
+  </div><div class="ab-row" id="abrow-pr-14182606">
     <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14182606')">
       <span class="ab-num">C-37</span>
       <span class="ab-title">An Act respecting water, source water, drinking water, wastewater and related infrastructure on First Nation lands</span>
@@ -304,18 +364,6 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-caret">▾</span>
     </div>
     <div class="ab-detail"><div class="bill-sum-slot" data-bill="14223396"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Bundles into one bill changes to the review of major projects, to the movement of goods, and to federal labour law.</li><li>Aims mainly to speed up federal decisions and to set clear deadlines for the bodies that review projects.</li></ul><section class="bill-part"><h5 class="bill-sum-part"><span>Part 1</span>Impact Assessment Act, Canadian Energy Regulator Act and other laws</h5><ul class="bill-sum-list"><li>Requires a decision on a major project that needs a federal review within one year after the required studies are handed in.</li><li>Gives the Canadian Nuclear Safety Commission, which oversees nuclear activity in Canada, the job of reviewing projects involving nuclear activities.</li><li>Makes the Canada Energy Regulator the only body that reviews applications for pipelines, designated power lines and offshore renewable energy projects.</li><li>Lets the federal Cabinet add a "region of national interest" to a new official list, opening a faster process for projects located there.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Part 2</span>Canada Transportation Act, Canada Marine Act and other laws, including the new Enabling Digital Trade Act</h5><ul class="bill-sum-list"><li>Creates the National Trade Corridors Council to track the movement of goods and advise the Minister of Transport.</li><li>Sets up, for four years, a zone in Manitoba, Saskatchewan and Alberta where the rate for moving rail cars between companies is set by the Canadian Transportation Agency.</li><li>Lets the Minister of Transport appoint some port authority directors and order action against certain threats in ports and on the Seaway.</li><li>Allows electronic trade documents to replace paper ones for importing and exporting goods.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Part 3</span>Canada Labour Code and Wage Earner Protection Program Act</h5><ul class="bill-sum-list"><li>Sets new deadlines and requirements for bargaining collective agreements in federally regulated workplaces.</li><li>Lets the Minister of Labour appoint a special mediator to help parties settle a dispute.</li><li>Allows an order telling an employer or a company director to pay money still owed to an employee under a settlement.</li><li>Sets aside the federal paid medical leave rules where a collective agreement gives rights at least as good.</li></ul></section><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
-  </div><div class="ab-row" id="abrow-pr-13583642">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13583642')">
-      <span class="ab-num">C-219</span>
-      <span class="ab-title">An Act to amend the Department of Foreign Affairs, Trade and Development Act, the Justice for Victims of Corrupt Foreign Officials Act (Sergei Magnitsky Law), the Special Economic Measures Act and the Broadcasting Act</span>
-      
-      
-      
-      <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
-      <span class="status-pill status-encours">In progress</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13583642"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Requires the Minister of Foreign Affairs to publish a yearly report on Canada's work for human rights abroad.</li><li>Requires that report to name the "prisoners of conscience" Canada is trying to free, and the countries holding them.</li><li>Allows sanctions for "transnational repression", when a foreign state threatens, spies on or harasses people living outside its borders.</li><li>Bars visas for the close family of a sanctioned person, unless the Minister believes they got no money or benefit from that person.</li><li>Requires the RCMP and FINTRAC, the agency that tracks suspicious financial activity, to give the Minister information useful for sanctions.</li><li>Gives the Minister 30 days after getting that information to recommend to the federal Cabinet whether to impose the sanction.</li><li>Renames the Special Economic Measures Act as the "Sergei Magnitsky Global Sanctions Act".</li><li>Raises the maximum penalty under that law to a $100,000 fine and three years in prison.</li><li>Blocks broadcast licences for any station strongly influenced by a foreign person or group under sanctions, or found by Parliament to have committed genocide.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
   </div><div class="ab-row" id="abrow-pr-14246258">
     <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14246258')">
       <span class="ab-num">C-292</span>
@@ -340,55 +388,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-caret">▾</span>
     </div>
     <div class="ab-detail"><div class="bill-sum-slot" data-bill="14250015"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Amends dozens of federal laws to simplify administrative rules in farming, the environment, transport, telecom and business.</li><li>Allows electronic means to be used, across many laws, to administer and enforce the rules.</li></ul><section class="bill-part"><h5 class="bill-sum-part"><span>Part 1</span>Agricultural Products Marketing Act, Seeds Act and other laws</h5><ul class="bill-sum-list"><li>Changes how farm marketing boards get their powers: their name goes on an official list instead of needing a Cabinet order.</li><li>Requires these boards to publish the requirements they set for the people affected.</li><li>Removes the age limit for serving on the Canadian Dairy Commission and the National Farm Products Council.</li><li>Simplifies the Advance Payments Program for farmers, including dropping the need for the Finance Minister to approve advance limits.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Part 2</span>Explosives Act, Environmental Violations Administrative Monetary Penalties Act and other laws</h5><ul class="bill-sum-list"><li>Creates a system of administrative fines for breaking the Explosives Act.</li><li>Raises the maximum environmental penalty and extends penalties to certain Fisheries Act violations.</li><li>Allows fish to be moved during the upkeep or repair of a fishway or obstruction.</li><li>Modernizes the complaints and discipline process for Canada Lands Surveyors.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Part 3</span>Radiocommunication Act, Statutory Instruments Act and Fisheries Act</h5><ul class="bill-sum-list"><li>Replaces technical acceptance certificates for radio equipment with simple registration by the Industry Minister.</li><li>Confirms radio rules apply on board spacecraft directed or controlled by Canadians.</li><li>Removes the requirement to publish quarterly consolidated indexes of regulations.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Part 4</span>Canada Border Services Agency Act, Marine Transportation Security Act and other laws</h5><ul class="bill-sum-list"><li>Lets the Public Safety Minister exempt certain people from a border rule if set conditions are met.</li><li>Takes closed-loop pumped storage reservoirs out of the definition of "navigable water".</li><li>Gives the Transport Minister new emergency powers for marine security, including no-go zones for vessels.</li><li>Creates new marine offences and raises some penalties.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Part 5</span>Food and Drugs Act</h5><ul class="bill-sum-list"><li>Removes duplicate export certification requirements so the law matches the Safe Food for Canadians Act.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Part 6</span>Bankruptcy and Insolvency Act, Boards of Trade Act and other laws</h5><ul class="bill-sum-list"><li>Creates a simplified bankruptcy process and a streamlined proposal process for small businesses.</li><li>Replaces newspaper notices of bankruptcy with publication as directed by the Superintendent of Bankruptcy.</li><li>Simplifies how boards of trade are formed and run, with financial review based on yearly revenue.</li><li>Gives the Transport Minister power to limit development on land near airports.</li></ul></section><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
-  </div><div class="ab-row" id="abrow-pr-13605049">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13605049')">
-      <span class="ab-num">C-10</span>
-      <span class="ab-title">An Act respecting the Commissioner for Modern Treaty Implementation</span>
-      
-      
-      <span class="ab-lob" title="18 reported lobbying communications">18</span>
-      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-      <span class="status-pill status-encours">In progress</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13605049"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Creates a Commissioner for Modern Treaty Implementation to check whether federal departments are living up to modern treaties signed with Indigenous peoples since 1974.</li><li>Lets the Commissioner launch reviews and performance audits on their own, or when asked by a minister or an Indigenous modern treaty partner.</li><li>Requires the federal Cabinet to appoint the Commissioner after consulting Indigenous treaty partners and party leaders, and after both chambers of Parliament approve by vote.</li><li>Sets the Commissioner's term at up to seven years, renewable once, with removal possible for cause.</li><li>Gives the Commissioner free access to information held by federal institutions, and requires those institutions to reply in writing to draft findings.</li><li>Requires every final report to be tabled in Parliament within 15 sitting days, then shared with the Indigenous treaty partners involved.</li><li>Sets up the Office of the Commissioner for Modern Treaty Implementation, staffed under regular public service hiring rules.</li><li>Calls for an independent review of the law after five years, then every seven years, plus a parliamentary committee review every ten years.</li><li>Lists 30 Indigenous modern treaty partners in an official list that the Cabinet can change after consulting the group concerned.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
-  </div><div class="ab-row" id="abrow-pr-14240249">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14240249')">
-      <span class="ab-num">C-40</span>
-      <span class="ab-title">An Act respecting production, procurement and investment in relation to national defence and national security</span>
-      
-      <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Omnibus bill — 3 parts: it changes several different acts. Click to show only omnibus bills">Omnibus · 3 parts</button>
-      
-      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-      <span class="status-pill status-encours">In progress</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"><div class="bill-sum-slot" data-bill="14240249"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Sets up new federal tools to buy, produce and fund defence and security goods.</li><li>Creates a new Crown corporation and widens the powers of the minister in charge of government purchasing.</li></ul><section class="bill-part"><h5 class="bill-sum-part"><span>Part 1</span>new Canadian Corporation for Defence Investment Act</h5><ul class="bill-sum-list"><li>Creates the Canadian Corporation for Defence Investment, a corporation handling defence production, purchasing and investment.</li><li>Lets the corporation work for the Canadian Forces, the Department of National Defence or allied governments.</li><li>Updates other laws to reflect the new corporation.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Part 2</span>Defence Production Act and Access to Information Act</h5><ul class="bill-sum-list"><li>Expands the Defence Production Act, which covers military supplies, to cover national security and services.</li><li>Gives the Minister of Public Works and Government Services power to buy these goods and services for federal departments and agencies, with some exceptions.</li><li>Allows the minister to stockpile supplies for national defence, national security, economic security and the defence of allied states.</li><li>Allows the minister to make financial deals to invest in defence and national security sectors.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Part 3</span>review of the new law and the changes</h5><ul class="bill-sum-list"><li>Requires a review of how the new corporation's law and the Defence Production Act changes are working.</li></ul></section><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
-  </div><div class="ab-row" id="abrow-pr-14240227">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14240227')">
-      <span class="ab-num">S-251</span>
-      <span class="ab-title">An Act to establish a national strategy to end energy poverty</span>
-      
-      
-      
-      <span class="depute-party" style="background:#6D5BA6; color:#fff">ISG</span>
-      <span class="status-pill status-encours">In progress</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"><div class="bill-sum-slot" data-bill="14240227"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Requires the Minister of the Environment to build a national strategy to end energy poverty in Canada.</li><li>Defines energy poverty as a household unable to get the energy it needs for health, comfort, safety and taking part in society.</li><li>Requires the strategy to set a national target, with interim targets, to cut and eventually eliminate energy poverty.</li><li>Calls for concrete measures: energy efficiency upgrades, affordability help, consumer protections and better housing conditions.</li><li>Focuses on specific groups: renters, low-income households, seniors, and Indigenous, northern and remote communities.</li><li>Requires the Minister to consult provinces, territories, municipalities, Indigenous governing bodies and people living with energy poverty.</li><li>Sets a two-year deadline after royal assent to table the strategy in Parliament, with a follow-up report two years later and every five years after.</li><li>Creates an advisory council of up to 15 unpaid members, appointed for terms of up to three years, with a yearly public summary of its advice.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
-  </div><div class="ab-row" id="abrow-pr-13951690">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13951690')">
-      <span class="ab-num">C-266</span>
-      <span class="ab-title">An Act to establish a national framework respecting skilled trades and labour mobility</span>
-      
-      
-      
-      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-      <span class="status-pill status-encours">In progress</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13951690"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Requires the Minister of Employment and Social Development to build a national plan for skilled trades and worker mobility.</li><li>Aims to remove barriers that stop electricians, plumbers and other tradespeople from working in another province.</li><li>Requires at least nine months of consultations with provinces, unions, employers, Indigenous organizations and colleges.</li><li>Calls for a full list of skilled trades across Canada and a comparison of each province's standards and credentials.</li><li>Includes steps to match credentials between provinces, cut duplicate paperwork and update certification for new technologies.</li><li>Sets a one-year deadline after the law takes effect to table the plan in Parliament, and 30 days after that to post it online.</li><li>Requires the Minister to table a progress report every year, including how well the plan is working.</li><li>Calls for a full review of the plan by a parliamentary committee within five years, with a report and recommendations.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
-  </div><button class="votes-more" onclick="loadMoreBills()">See 20 more — 10 of 191 shown</button><!--/ssr--></div>
+  </div><button class="votes-more" onclick="loadMoreBills()">See 20 more — 10 of 193 shown</button><!--/ssr--></div>
 
     <!-- Ce que « challenger » veut dire, en bas de la liste — comme sur
          DossierQuébec. Le texte dit le VRAI mécanisme : compte requis, une
@@ -642,7 +642,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     <button type="button" class="footer-temoins" onclick="rouvrirTemoins()" data-i18n="footer.temoins">Cookies</button>
     <a class="footer-etmoi" data-view="promesses" href="/en/promises" data-i18n="footer.promesses">Promises</a>
     <a class="footer-etmoi" href="/lexique#sec-droits" data-i18n="footer.droits">Your rights</a>
-    <span id="footerRight" data-i18n="footer.right">Powered by</span> <a class="footer-etmoi" id="footerDafr" href="https://dafrsolution.com/en" target="_blank" rel="noopener">DAFRSolution.com</a>
+    <span id="footerRight" data-i18n="footer.right">Powered by</span> <a class="footer-etmoi" id="footerDafr" href="https://dafrsolution.com" target="_blank" rel="noopener">DAFRSolution.com</a>
   </span>
 </footer>
 
@@ -669,7 +669,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=be20a1d25d"></script>
+<script defer src="/assets/app.js?v=182067e9ac"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->
