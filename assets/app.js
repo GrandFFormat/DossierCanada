@@ -50,7 +50,7 @@ const translations = {
     'btn.viewSummary':"+ Voir le résumé",'btn.hideSummary':"− Masquer le résumé",
     'btn.viewFull':"Voir le texte complet →",
     'footer.left':"Site non officiel — données publiques du Parlement du Canada : <a href=\"https://www.parl.ca/legisinfo/fr\" rel=\"noopener\">LEGISinfo</a>, <a href=\"https://www.noscommunes.ca/fr\" rel=\"noopener\">Chambre des communes</a>, <a href=\"https://sencanada.ca/fr\" rel=\"noopener\">Sénat</a>, <a href=\"https://lobbycanada.gc.ca/fr/\" rel=\"noopener\">Commissariat au lobbying</a>. Site lié : <a href=\"https://dossierquebec.ca/\" rel=\"noopener\">DossierQuébec</a>",
-    'footer.right':"Construit avec Claude",
+    'footer.right':"Site propulsé par",
     'footer.source':"Code source",
     'footer.coffee':"Offre-moi un café",
     'aria.back':"Retour à l'aperçu",
@@ -205,7 +205,7 @@ const translations = {
     'btn.viewSummary':"+ View summary",'btn.hideSummary':"− Hide summary",
     'btn.viewFull':"View full text →",
     'footer.left':"Unofficial site — public data from the Parliament of Canada: <a href=\"https://www.parl.ca/legisinfo/en\" rel=\"noopener\">LEGISinfo</a>, <a href=\"https://www.ourcommons.ca/en\" rel=\"noopener\">House of Commons</a>, <a href=\"https://sencanada.ca/en\" rel=\"noopener\">Senate</a>, <a href=\"https://lobbycanada.gc.ca/en/\" rel=\"noopener\">Commissioner of Lobbying</a>. Related site: <a href=\"https://dossierquebec.ca/\" rel=\"noopener\">DossierQuébec</a>",
-    'footer.right':"Built with Claude",
+    'footer.right':"Powered by",
     'footer.source':"Source code",
     'footer.coffee':"Buy me a coffee",
     'aria.back':"Back to overview",
@@ -345,6 +345,7 @@ function applyLanguage(){
   if(typeof appliqueTheme === 'function') appliqueTheme(); // l'infobulle du thème est bilingue
   document.body.classList.toggle('lang-en', currentLang === 'en');
   document.documentElement.lang = currentLang === 'en' ? 'en' : 'fr';
+  { const _e = document.getElementById('footerDafr'); if(_e) _e.href = currentLang === 'en' ? 'https://dafrsolution.com/en' : 'https://dafrsolution.com'; }
   if(typeof renderHeaderDate === 'function') renderHeaderDate(currentLang);
   if(typeof syncHead === 'function') syncHead(viewFromPath()); else document.title = t('meta.title');
   // Aria-labels that live outside data-i18n (buttons with icon-only content).

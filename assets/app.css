@@ -1325,3 +1325,7 @@
 .bill-cafe-row{display:flex; justify-content:flex-end; margin-top:8px;}
 .bill-cafe-btn{display:inline-block; padding:6px 14px; background:#B0D4E8; color:#131313; border:2px solid #131313; box-shadow:3px 3px 0 #131313; font-size:13px; font-weight:700; text-decoration:none;}
 .bill-cafe-btn:hover{background:#FFD24D;}
+
+  /* « Site propulsé par DAFRSolution.com » : lien surligné jaune (21 oct. 2026). */
+  #footerDafr{ background:var(--yellow); color:#131313; font-weight:700; padding:1px 5px; margin-left:4px; text-decoration:none; }
+  #footerDafr:hover{ text-decoration:underline; }
