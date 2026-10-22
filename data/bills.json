@@ -1,9 +1,240 @@
 {
   "source": "https://www.parl.ca/legisinfo/en/bills/json?parlsession=45-1",
   "session": "45-1",
-  "scrapedAt": "2026-10-21T13:39:17.279Z",
-  "count": 193,
+  "scrapedAt": "2026-10-22T13:40:46.762Z",
+  "count": 194,
   "bills": [
+    {
+      "id": 13541964,
+      "num": "S-210",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "senate",
+      "type": {
+        "en": "Senate Public Bill",
+        "fr": "Projet de loi d'intérêt public du Sénat"
+      },
+      "isGovernment": false,
+      "title": {
+        "en": "An Act respecting Ukrainian Heritage Month",
+        "fr": "Loi instituant le Mois du patrimoine ukrainien"
+      },
+      "shortTitle": {
+        "en": "Ukrainian Heritage Month Act",
+        "fr": "Loi sur le Mois du patrimoine ukrainien"
+      },
+      "sponsor": {
+        "en": "Hon. Stanley Kutcher",
+        "fr": "L'hon. Stanley Kutcher"
+      },
+      "status": {
+        "en": "Awaiting royal assent",
+        "fr": "En attente de la sanction royale"
+      },
+      "state": "encours",
+      "milestones": [
+        {
+          "stage": "senate_first_reading",
+          "chamber": "senate",
+          "reading": 1,
+          "date": "2025-05-27"
+        },
+        {
+          "stage": "senate_second_reading",
+          "chamber": "senate",
+          "reading": 2,
+          "date": "2025-09-25"
+        },
+        {
+          "stage": "senate_third_reading",
+          "chamber": "senate",
+          "reading": 3,
+          "date": "2025-10-01"
+        },
+        {
+          "stage": "commons_first_reading",
+          "chamber": "commons",
+          "reading": 1,
+          "date": "2025-10-08"
+        },
+        {
+          "stage": "commons_second_reading",
+          "chamber": "commons",
+          "reading": 2,
+          "date": "2026-02-12"
+        },
+        {
+          "stage": "commons_third_reading",
+          "chamber": "commons",
+          "reading": 3,
+          "date": "2026-10-21"
+        }
+      ],
+      "royalAssent": null,
+      "reinstated": false,
+      "latestActivity": {
+        "en": "Awaiting royal assent",
+        "fr": "En attente de la sanction royale",
+        "date": "2026-10-21"
+      },
+      "lastActivity": "2026-10-21",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/s-210",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/s-210"
+      },
+      "sponsorPersonId": 102489,
+      "sponsorName": {
+        "first": "Stanley",
+        "last": "Kutcher"
+      },
+      "fullSummaryAvailable": false,
+      "summary": {
+        "en": "This enactment designates the month of September as \"Ukrainian Heritage Month\".",
+        "fr": "Le texte désigne le mois de septembre comme « Mois du patrimoine ukrainien »."
+      },
+      "summarySource": "bill"
+    },
+    {
+      "id": 14223235,
+      "num": "C-38",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "commons",
+      "type": {
+        "en": "House Government Bill",
+        "fr": "Projet de loi émanant du gouvernement (Cdc)"
+      },
+      "isGovernment": true,
+      "title": {
+        "en": "An Act to amend the Excise Tax Act (extension of the federal fuel excise tax relief)",
+        "fr": "Loi modifiant la Loi sur la taxe d'accise (prolongation de l'allègement de la taxe d'accise fédérale sur les carburants)"
+      },
+      "shortTitle": {
+        "en": "Canadian Fuel Affordability Act",
+        "fr": "Loi sur l'abordabilité des carburants au Canada"
+      },
+      "sponsor": {
+        "en": "Hon. François-Philippe Champagne",
+        "fr": "L’hon. François-Philippe Champagne"
+      },
+      "status": {
+        "en": "At second reading in the Senate",
+        "fr": "À la deuxième lecture au Sénat"
+      },
+      "state": "encours",
+      "milestones": [
+        {
+          "stage": "commons_first_reading",
+          "chamber": "commons",
+          "reading": 1,
+          "date": "2026-09-21"
+        },
+        {
+          "stage": "commons_second_reading",
+          "chamber": "commons",
+          "reading": 2,
+          "date": "2026-09-22"
+        },
+        {
+          "stage": "commons_third_reading",
+          "chamber": "commons",
+          "reading": 3,
+          "date": "2026-10-20"
+        },
+        {
+          "stage": "senate_first_reading",
+          "chamber": "senate",
+          "reading": 1,
+          "date": "2026-10-21"
+        }
+      ],
+      "royalAssent": null,
+      "reinstated": false,
+      "latestActivity": {
+        "en": "At second reading in the Senate",
+        "fr": "À la deuxième lecture au Sénat",
+        "date": "2026-10-21"
+      },
+      "lastActivity": "2026-10-21",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-38",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-38"
+      },
+      "sponsorPersonId": 88633,
+      "sponsorName": {
+        "first": "François-Philippe",
+        "last": "Champagne"
+      },
+      "fullSummaryAvailable": false,
+      "summary": {
+        "en": "The Library of Parliament does not prepare Legislative Summaries for self-explanatory measures. The following is a short summary:\n\nOn 21 September 2026, the Minister of Finance and National Revenue introduced Bill C-38, An Act to amend the Excise Tax Act (extension of the federal fuel excise tax relief) (Canadian Fuel Affordability Act) in the House of Commons and it was given first reading.\n\nBill C-38 amends the Excise Tax Act to extend the temporary suspension of the federal fuel excise tax until January 31, 2027 and to temporarily set the excise tax rates on fuels to 50% of the regular rates for the period beginning on February 1, 2027 and ending on March 31, 2027The Library of Parliament does not prepare Legislative Summaries for self-explanatory measures. The following is a short summary:\n\nOn 21 September 2026, the Minister of Finance and National Revenue introduced Bill C-38, An Act to amend the Excise Tax Act (extension of the federal fuel excise tax relief) (Canadian Fuel Affordability Act) in the House of Commons and it was given first reading.\n\nBill C-38 amends the Excise Tax Act to extend the temporary suspension of the federal fuel excise tax until January 31, 2027 and to temporarily set the excise tax rates on fuels to 50% of the regular rates for the period beginning on February 1, 2027 and ending on March 31, 2027",
+        "fr": "La Bibliothèque du Parlement ne prépare pas de Résumés législatifs pour les mesures qui sont suffisamment explicites. Ce qui suit est un court résumé :\n\nLe 21 septembre 2026, le ministre des Finances et du Revenu national a déposé le projet de loi C-38, Loi modifiant la Loi sur la taxe d'accise (prolongation de l'allègement de la taxe d'accise fédérale sur les carburants) (Loi sur l'abordabilité des carburants au Canada) à la Chambre des communes en première lecture.\n\nLe projet de loi C-38 modifie la Loi sur la taxe d’accise afin de prolonger la suspension temporaire de la taxe d’accise fédérale sur les carburants jusqu’au 31 janvier 2027 et de fixer temporairement les taux de la taxe d’accise sur le carburant à 50?% des taux réguliers pour la période commençant le 1er février 2027 et se terminant le 31 mars 2027.La Bibliothèque du Parlement ne prépare pas de Résumés législatifs pour les mesures qui sont suffisamment explicites. Ce qui suit est un court résumé :\n\nLe 21 septembre 2026, le ministre des Finances et du Revenu national a déposé le projet de loi C-38, Loi modifiant la Loi sur la taxe d'accise (prolongation de l'allègement de la taxe d'accise fédérale sur les carburants) (Loi sur l'abordabilité des carburants au Canada) à la Chambre des communes en première lecture.\n\nLe projet de loi C-38 modifie la Loi sur la taxe d’accise afin de prolonger la suspension temporaire de la taxe d’accise fédérale sur les carburants jusqu’au 31 janvier 2027 et de fixer temporairement les taux de la taxe d’accise sur le carburant à 50?% des taux réguliers pour la période commençant le 1er février 2027 et se terminant le 31 mars 2027."
+      },
+      "summarySource": "library"
+    },
+    {
+      "id": 14252999,
+      "num": "C-294",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "commons",
+      "type": {
+        "en": "Private Member’s Bill",
+        "fr": "Projet de loi émanant d'un député"
+      },
+      "isGovernment": false,
+      "title": {
+        "en": "An Act to designate the month of October as Hungarian Heritage Month",
+        "fr": "Loi désignant le mois d’octobre comme Mois du patrimoine hongrois"
+      },
+      "shortTitle": {
+        "en": "Hungarian Heritage Month Act",
+        "fr": "Loi sur le Mois du patrimoine hongrois"
+      },
+      "sponsor": {
+        "en": "Don Davies",
+        "fr": "Don Davies"
+      },
+      "status": {
+        "en": "Outside the Order of Precedence",
+        "fr": "Ne fait pas partie de l'Ordre de priorité"
+      },
+      "state": "encours",
+      "milestones": [
+        {
+          "stage": "commons_first_reading",
+          "chamber": "commons",
+          "reading": 1,
+          "date": "2026-10-21"
+        }
+      ],
+      "royalAssent": null,
+      "reinstated": false,
+      "latestActivity": {
+        "en": "Outside the Order of Precedence",
+        "fr": "Ne fait pas partie de l'Ordre de priorité",
+        "date": "2026-10-21"
+      },
+      "lastActivity": "2026-10-21",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-294",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-294"
+      },
+      "sponsorPersonId": 59325,
+      "sponsorName": {
+        "first": "Don",
+        "last": "Davies"
+      },
+      "fullSummaryAvailable": false,
+      "summary": {
+        "en": "This enactment designates the month of October as “Hungarian Heritage Month”.",
+        "fr": "Le texte désigne le mois d’octobre comme « Mois du patrimoine hongrois »."
+      },
+      "summarySource": "bill"
+    },
     {
       "id": 13541945,
       "num": "S-217",
@@ -88,79 +319,6 @@
         "fr": "Le texte modifie la Loi sur l’Agence du revenu du Canada afin d’exiger que l’Agence du revenu du Canada énumère toutes les condamnations pour évasion fiscale — y compris celles pour évasion fiscale internationale — dans le rapport qu’elle soumet chaque année au ministre du Revenu national. Il prévoit également que, tous les trois ans, l’Agence doit inclure dans son rapport les statistiques sur le manque à gagner fiscal. En outre, le texte précise que le ministre est tenu de fournir au directeur parlementaire du budget des données sur le manque à gagner fiscal."
       },
       "summarySource": "bill"
-    },
-    {
-      "id": 14223235,
-      "num": "C-38",
-      "session": "45-1",
-      "parliament": 45,
-      "sessionNumber": 1,
-      "chamber": "commons",
-      "type": {
-        "en": "House Government Bill",
-        "fr": "Projet de loi émanant du gouvernement (Cdc)"
-      },
-      "isGovernment": true,
-      "title": {
-        "en": "An Act to amend the Excise Tax Act (extension of the federal fuel excise tax relief)",
-        "fr": "Loi modifiant la Loi sur la taxe d'accise (prolongation de l'allègement de la taxe d'accise fédérale sur les carburants)"
-      },
-      "shortTitle": {
-        "en": "Canadian Fuel Affordability Act",
-        "fr": "Loi sur l'abordabilité des carburants au Canada"
-      },
-      "sponsor": {
-        "en": "Hon. François-Philippe Champagne",
-        "fr": "L’hon. François-Philippe Champagne"
-      },
-      "status": {
-        "en": "House of Commons bill awaiting first reading in the Senate",
-        "fr": "Projet de loi de la Chambre des communes en attente de la première lecture au Sénat"
-      },
-      "state": "encours",
-      "milestones": [
-        {
-          "stage": "commons_first_reading",
-          "chamber": "commons",
-          "reading": 1,
-          "date": "2026-09-21"
-        },
-        {
-          "stage": "commons_second_reading",
-          "chamber": "commons",
-          "reading": 2,
-          "date": "2026-09-22"
-        },
-        {
-          "stage": "commons_third_reading",
-          "chamber": "commons",
-          "reading": 3,
-          "date": "2026-10-20"
-        }
-      ],
-      "royalAssent": null,
-      "reinstated": false,
-      "latestActivity": {
-        "en": "House of Commons bill awaiting first reading in the Senate",
-        "fr": "Projet de loi de la Chambre des communes en attente de la première lecture au Sénat",
-        "date": "2026-10-20"
-      },
-      "lastActivity": "2026-10-20",
-      "url": {
-        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-38",
-        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-38"
-      },
-      "sponsorPersonId": 88633,
-      "sponsorName": {
-        "first": "François-Philippe",
-        "last": "Champagne"
-      },
-      "fullSummaryAvailable": false,
-      "summary": {
-        "en": "The Library of Parliament does not prepare Legislative Summaries for self-explanatory measures. The following is a short summary:\n\nOn 21 September 2026, the Minister of Finance and National Revenue introduced Bill C-38, An Act to amend the Excise Tax Act (extension of the federal fuel excise tax relief) (Canadian Fuel Affordability Act) in the House of Commons and it was given first reading.\n\nBill C-38 amends the Excise Tax Act to extend the temporary suspension of the federal fuel excise tax until January 31, 2027 and to temporarily set the excise tax rates on fuels to 50% of the regular rates for the period beginning on February 1, 2027 and ending on March 31, 2027The Library of Parliament does not prepare Legislative Summaries for self-explanatory measures. The following is a short summary:\n\nOn 21 September 2026, the Minister of Finance and National Revenue introduced Bill C-38, An Act to amend the Excise Tax Act (extension of the federal fuel excise tax relief) (Canadian Fuel Affordability Act) in the House of Commons and it was given first reading.\n\nBill C-38 amends the Excise Tax Act to extend the temporary suspension of the federal fuel excise tax until January 31, 2027 and to temporarily set the excise tax rates on fuels to 50% of the regular rates for the period beginning on February 1, 2027 and ending on March 31, 2027",
-        "fr": "La Bibliothèque du Parlement ne prépare pas de Résumés législatifs pour les mesures qui sont suffisamment explicites. Ce qui suit est un court résumé :\n\nLe 21 septembre 2026, le ministre des Finances et du Revenu national a déposé le projet de loi C-38, Loi modifiant la Loi sur la taxe d'accise (prolongation de l'allègement de la taxe d'accise fédérale sur les carburants) (Loi sur l'abordabilité des carburants au Canada) à la Chambre des communes en première lecture.\n\nLe projet de loi C-38 modifie la Loi sur la taxe d’accise afin de prolonger la suspension temporaire de la taxe d’accise fédérale sur les carburants jusqu’au 31 janvier 2027 et de fixer temporairement les taux de la taxe d’accise sur le carburant à 50?% des taux réguliers pour la période commençant le 1er février 2027 et se terminant le 31 mars 2027.La Bibliothèque du Parlement ne prépare pas de Résumés législatifs pour les mesures qui sont suffisamment explicites. Ce qui suit est un court résumé :\n\nLe 21 septembre 2026, le ministre des Finances et du Revenu national a déposé le projet de loi C-38, Loi modifiant la Loi sur la taxe d'accise (prolongation de l'allègement de la taxe d'accise fédérale sur les carburants) (Loi sur l'abordabilité des carburants au Canada) à la Chambre des communes en première lecture.\n\nLe projet de loi C-38 modifie la Loi sur la taxe d’accise afin de prolonger la suspension temporaire de la taxe d’accise fédérale sur les carburants jusqu’au 31 janvier 2027 et de fixer temporairement les taux de la taxe d’accise sur le carburant à 50?% des taux réguliers pour la période commençant le 1er février 2027 et se terminant le 31 mars 2027."
-      },
-      "summarySource": "library"
     },
     {
       "id": 13583642,
@@ -4889,8 +5047,8 @@
         "fr": "Ziad Aboultaif"
       },
       "status": {
-        "en": "At consideration in committee in the Senate",
-        "fr": "À l'examen en comité au Sénat"
+        "en": "At third reading in the Senate",
+        "fr": "À la troisième lecture au Sénat"
       },
       "state": "encours",
       "milestones": [
@@ -4928,8 +5086,8 @@
       "royalAssent": null,
       "reinstated": false,
       "latestActivity": {
-        "en": "At consideration in committee in the Senate",
-        "fr": "À l'examen en comité au Sénat",
+        "en": "At third reading in the Senate",
+        "fr": "À la troisième lecture au Sénat",
         "date": "2026-06-02"
       },
       "lastActivity": "2026-06-02",
@@ -8062,8 +8220,8 @@
         "fr": "Blaine Calkins"
       },
       "status": {
-        "en": "At consideration in committee in the House of Commons",
-        "fr": "À l'examen en comité à la Chambre des communes"
+        "en": "At report stage in the House of Commons",
+        "fr": "À l'étape du rapport à la Chambre des communes"
       },
       "state": "encours",
       "milestones": [
@@ -8083,8 +8241,8 @@
       "royalAssent": null,
       "reinstated": false,
       "latestActivity": {
-        "en": "At consideration in committee in the House of Commons",
-        "fr": "À l'examen en comité à la Chambre des communes",
+        "en": "At report stage in the House of Commons",
+        "fr": "À l'étape du rapport à la Chambre des communes",
         "date": "2026-03-10"
       },
       "lastActivity": "2026-03-10",
@@ -8375,91 +8533,6 @@
       "summary": {
         "en": "This enactment amends the Canadian Environmental Protection Act,1999 and the Wrecked, Abandoned or Hazardous Vessels Act to enhance the protection of marine areas by providing for increased liability for damage to marine areas.",
         "fr": "Le texte modifie la Loi canadienne sur la protection de l’environnement (1999) et la Loi sur les épaves et les bâtiments abandonnés ou dangereux afin de mieux protéger les zones marines en élargissant la responsabilité en cas de dommage à celles-ci."
-      },
-      "summarySource": "bill"
-    },
-    {
-      "id": 13541964,
-      "num": "S-210",
-      "session": "45-1",
-      "parliament": 45,
-      "sessionNumber": 1,
-      "chamber": "senate",
-      "type": {
-        "en": "Senate Public Bill",
-        "fr": "Projet de loi d'intérêt public du Sénat"
-      },
-      "isGovernment": false,
-      "title": {
-        "en": "An Act respecting Ukrainian Heritage Month",
-        "fr": "Loi instituant le Mois du patrimoine ukrainien"
-      },
-      "shortTitle": {
-        "en": "Ukrainian Heritage Month Act",
-        "fr": "Loi sur le Mois du patrimoine ukrainien"
-      },
-      "sponsor": {
-        "en": "Hon. Stanley Kutcher",
-        "fr": "L'hon. Stanley Kutcher"
-      },
-      "status": {
-        "en": "At third reading in the House of Commons",
-        "fr": "À l'étape de la troisième lecture à la Chambre des communes"
-      },
-      "state": "encours",
-      "milestones": [
-        {
-          "stage": "senate_first_reading",
-          "chamber": "senate",
-          "reading": 1,
-          "date": "2025-05-27"
-        },
-        {
-          "stage": "senate_second_reading",
-          "chamber": "senate",
-          "reading": 2,
-          "date": "2025-09-25"
-        },
-        {
-          "stage": "senate_third_reading",
-          "chamber": "senate",
-          "reading": 3,
-          "date": "2025-10-01"
-        },
-        {
-          "stage": "commons_first_reading",
-          "chamber": "commons",
-          "reading": 1,
-          "date": "2025-10-08"
-        },
-        {
-          "stage": "commons_second_reading",
-          "chamber": "commons",
-          "reading": 2,
-          "date": "2026-02-12"
-        }
-      ],
-      "royalAssent": null,
-      "reinstated": false,
-      "latestActivity": {
-        "en": "At third reading in the House of Commons",
-        "fr": "À l'étape de la troisième lecture à la Chambre des communes",
-        "date": "2026-02-12"
-      },
-      "lastActivity": "2026-02-12",
-      "url": {
-        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/s-210",
-        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/s-210"
-      },
-      "sponsorPersonId": 102489,
-      "sponsorName": {
-        "first": "Stanley",
-        "last": "Kutcher"
-      },
-      "fullSummaryAvailable": false,
-      "summary": {
-        "en": "This enactment designates the month of September as \"Ukrainian Heritage Month\".",
-        "fr": "Le texte désigne le mois de septembre comme « Mois du patrimoine ukrainien »."
       },
       "summarySource": "bill"
     },
@@ -13395,5 +13468,5 @@
       "summarySource": null
     }
   ],
-  "summariesScrapedAt": "2026-10-21T13:57:01.384Z"
+  "summariesScrapedAt": "2026-10-22T13:52:18.877Z"
 }
