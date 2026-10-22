@@ -62,7 +62,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=2bfce6bc83">
+<link rel="stylesheet" href="/assets/app.css?v=988cc2c1d7">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -244,8 +244,8 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <h3>Mark Carney</h3>
       <div class="mc-role-wrap"><span class="mc-role" style="background:var(--ink); color:var(--yellow)">Premier ministre du Canada</span></div>
       <div class="meta-row">
-        <span class="depute-email" style="opacity:.55">courriel non publié</span>
-        <span class="vp-note" title="Part des votes nominaux auxquels ce·tte ministre a pris part comme député·e depuis son entrée en fonction — indicateur de présence ; les ministres se font souvent pairer ou sont en fonction gouvernementale.">présence : 87 % (155/179)</span>
+        <a class="depute-email" href="mailto:mark.carney@parl.gc.ca" onclick="event.stopPropagation()" title="mark.carney@parl.gc.ca">mark.carney@parl.gc.ca</a>
+        <span class="vp-note" title="Part des votes nominaux auxquels ce·tte ministre a pris part comme député·e depuis son entrée en fonction — indicateur de présence ; les ministres se font souvent pairer ou sont en fonction gouvernementale.">présence : 87 % (156/180)</span>
       </div>
     </div>
   
@@ -254,8 +254,8 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <h3>Dominic LeBlanc</h3>
       <div class="mc-role-wrap"><span class="mc-role" style="background:var(--lime); color:var(--ink)">Président du Conseil privé du Roi pour le Canada et ministre responsable du Commerce Canada–États-Unis, des Affaires intergouvernementales, du Commerce intérieur et de l’Unité de l’économie canadienne</span></div>
       <div class="meta-row">
-        <span class="depute-email" style="opacity:.55">courriel non publié</span>
-        <span class="vp-note" title="Part des votes nominaux auxquels ce·tte ministre a pris part comme député·e depuis son entrée en fonction — indicateur de présence ; les ministres se font souvent pairer ou sont en fonction gouvernementale.">présence : 99 % (178/179)</span>
+        <a class="depute-email" href="mailto:dominic.leblanc@parl.gc.ca" onclick="event.stopPropagation()" title="dominic.leblanc@parl.gc.ca">dominic.leblanc@parl.gc.ca</a>
+        <span class="vp-note" title="Part des votes nominaux auxquels ce·tte ministre a pris part comme député·e depuis son entrée en fonction — indicateur de présence ; les ministres se font souvent pairer ou sont en fonction gouvernementale.">présence : 99 % (179/180)</span>
       </div>
     </div>
   
@@ -264,8 +264,8 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <h3>Mélanie Joly</h3>
       <div class="mc-role-wrap"><span class="mc-role" style="background:var(--pink); color:var(--ink)">Ministre de l’Industrie et ministre responsable de Développement économique Canada pour les régions du Québec</span></div>
       <div class="meta-row">
-        <span class="depute-email" style="opacity:.55">courriel non publié</span>
-        <span class="vp-note" title="Part des votes nominaux auxquels ce·tte ministre a pris part comme député·e depuis son entrée en fonction — indicateur de présence ; les ministres se font souvent pairer ou sont en fonction gouvernementale.">présence : 100 % (179/179)</span>
+        <a class="depute-email" href="mailto:melanie.joly@parl.gc.ca" onclick="event.stopPropagation()" title="melanie.joly@parl.gc.ca">melanie.joly@parl.gc.ca</a>
+        <span class="vp-note" title="Part des votes nominaux auxquels ce·tte ministre a pris part comme député·e depuis son entrée en fonction — indicateur de présence ; les ministres se font souvent pairer ou sont en fonction gouvernementale.">présence : 100 % (180/180)</span>
       </div>
     </div>
   
@@ -274,8 +274,8 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <h3>François-Philippe Champagne</h3>
       <div class="mc-role-wrap"><span class="mc-role" style="background:var(--yellow); color:var(--ink)">Ministre des Finances et du Revenu national</span></div>
       <div class="meta-row">
-        <span class="depute-email" style="opacity:.55">courriel non publié</span>
-        <span class="vp-note" title="Part des votes nominaux auxquels ce·tte ministre a pris part comme député·e depuis son entrée en fonction — indicateur de présence ; les ministres se font souvent pairer ou sont en fonction gouvernementale.">présence : 100 % (179/179)</span>
+        <a class="depute-email" href="mailto:francois-philippe.champagne@parl.gc.ca" onclick="event.stopPropagation()" title="francois-philippe.champagne@parl.gc.ca">francois-philippe.champagne@parl.gc.ca</a>
+        <span class="vp-note" title="Part des votes nominaux auxquels ce·tte ministre a pris part comme député·e depuis son entrée en fonction — indicateur de présence ; les ministres se font souvent pairer ou sont en fonction gouvernementale.">présence : 100 % (180/180)</span>
       </div>
     </div>
   
@@ -285,7 +285,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <div class="mc-role-wrap"><span class="mc-role" style="background:var(--cyan); color:var(--ink)">Ministre des Affaires étrangères</span></div>
       <div class="meta-row">
         <a class="depute-email" href="mailto:anita.anand@parl.gc.ca" onclick="event.stopPropagation()" title="anita.anand@parl.gc.ca">anita.anand@parl.gc.ca</a>
-        <span class="vp-note" title="Part des votes nominaux auxquels ce·tte ministre a pris part comme député·e depuis son entrée en fonction — indicateur de présence ; les ministres se font souvent pairer ou sont en fonction gouvernementale.">présence : 100 % (179/179)</span>
+        <span class="vp-note" title="Part des votes nominaux auxquels ce·tte ministre a pris part comme député·e depuis son entrée en fonction — indicateur de présence ; les ministres se font souvent pairer ou sont en fonction gouvernementale.">présence : 100 % (180/180)</span>
       </div>
     </div>
   
@@ -294,8 +294,8 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <h3>Patty Hajdu</h3>
       <div class="mc-role-wrap"><span class="mc-role" style="background:var(--lime); color:var(--ink)">Ministre de l’Emploi et des Familles et ministre responsable de l’Agence fédérale de développement économique pour le Nord de l’Ontario</span></div>
       <div class="meta-row">
-        <span class="depute-email" style="opacity:.55">courriel non publié</span>
-        <span class="vp-note" title="Part des votes nominaux auxquels ce·tte ministre a pris part comme député·e depuis son entrée en fonction — indicateur de présence ; les ministres se font souvent pairer ou sont en fonction gouvernementale.">présence : 100 % (179/179)</span>
+        <a class="depute-email" href="mailto:patty.hajdu@parl.gc.ca" onclick="event.stopPropagation()" title="patty.hajdu@parl.gc.ca">patty.hajdu@parl.gc.ca</a>
+        <span class="vp-note" title="Part des votes nominaux auxquels ce·tte ministre a pris part comme député·e depuis son entrée en fonction — indicateur de présence ; les ministres se font souvent pairer ou sont en fonction gouvernementale.">présence : 99 % (179/180)</span>
       </div>
     </div>
   
@@ -304,8 +304,8 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <h3>Marc Miller</h3>
       <div class="mc-role-wrap"><span class="mc-role" style="background:var(--pink); color:var(--ink)">Ministre de l’Identité et de la Culture canadiennes et ministre responsable des Langues officielles</span></div>
       <div class="meta-row">
-        <span class="depute-email" style="opacity:.55">courriel non publié</span>
-        <span class="vp-note" title="Part des votes nominaux auxquels ce·tte ministre a pris part comme député·e depuis son entrée en fonction — indicateur de présence ; les ministres se font souvent pairer ou sont en fonction gouvernementale.">présence : 100 % (179/179)</span>
+        <a class="depute-email" href="mailto:marc.miller@parl.gc.ca" onclick="event.stopPropagation()" title="marc.miller@parl.gc.ca">marc.miller@parl.gc.ca</a>
+        <span class="vp-note" title="Part des votes nominaux auxquels ce·tte ministre a pris part comme député·e depuis son entrée en fonction — indicateur de présence ; les ministres se font souvent pairer ou sont en fonction gouvernementale.">présence : 100 % (180/180)</span>
       </div>
     </div>
   
@@ -314,8 +314,8 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <h3>Sean Fraser</h3>
       <div class="mc-role-wrap"><span class="mc-role" style="background:var(--yellow); color:var(--ink)">Ministre de la Justice et procureur général du Canada et ministre responsable de l’Agence de promotion économique du Canada atlantique</span></div>
       <div class="meta-row">
-        <span class="depute-email" style="opacity:.55">courriel non publié</span>
-        <span class="vp-note" title="Part des votes nominaux auxquels ce·tte ministre a pris part comme député·e depuis son entrée en fonction — indicateur de présence ; les ministres se font souvent pairer ou sont en fonction gouvernementale.">présence : 100 % (179/179)</span>
+        <a class="depute-email" href="mailto:sean.fraser@parl.gc.ca" onclick="event.stopPropagation()" title="sean.fraser@parl.gc.ca">sean.fraser@parl.gc.ca</a>
+        <span class="vp-note" title="Part des votes nominaux auxquels ce·tte ministre a pris part comme député·e depuis son entrée en fonction — indicateur de présence ; les ministres se font souvent pairer ou sont en fonction gouvernementale.">présence : 100 % (180/180)</span>
       </div>
     </div>
   <a class="min-more" onclick="showAllMinistres()"><span class="min-more-n">+20</span><span class="min-more-t">Voir les 28 ministres →</span></a><!--/ssr--></div>
@@ -628,7 +628,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=cdf5c56097"></script>
+<script defer src="/assets/app.js?v=182067e9ac"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->
