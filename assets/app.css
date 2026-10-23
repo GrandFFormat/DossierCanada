@@ -1322,8 +1322,10 @@
 .bill-votes-copie:hover{color:var(--gold, #b8860b);}
 
 /* Le bouton café sous « Partager » (boutonCafe, assets/app.js). Bleu poudre, comme sur DossierQuébec. */
-.bill-cafe-row{display:flex; justify-content:flex-end; margin-top:8px;}
-.bill-cafe-btn{display:inline-block; padding:6px 14px; background:#B0D4E8; color:#131313; border:2px solid #131313; box-shadow:3px 3px 0 #131313; font-size:13px; font-weight:700; text-decoration:none;}
+/* Même gabarit que le bouton jaune « Lire le texte complet » (.bill-cta) : pleine
+   largeur, même rembourrage, même bordure, même ombre — seule la couleur change. */
+.bill-cafe-row{display:block; margin-top:14px;}
+.bill-cafe-btn{display:block; padding:14px 16px; text-align:center; background:#B0D4E8; color:#131313; border:3px solid #131313; box-shadow:5px 5px 0 #131313; font-family:'IBM Plex Mono',monospace; font-size:12.5px; font-weight:700; letter-spacing:0.02em; text-decoration:none;}
 .bill-cafe-btn:hover{background:#FFD24D;}
 
   /* « Site propulsé par DAFRSolution.com » : lien surligné jaune (21 oct. 2026). */
