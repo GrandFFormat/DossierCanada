@@ -42,7 +42,7 @@
 //    * @property {Object.<string,'yea'|'nay'|'paired'>} ballots  PersonId → vote nominal
 //    */
 
-import { writeFileSync, mkdirSync } from 'node:fs';
+import { writeFileSync, mkdirSync, readFileSync, existsSync } from 'node:fs';
 import * as cheerio from 'cheerio';
 
 // Session ciblée. Par défaut 45e législature, 1re session. Surchargable : `node scrapers/votes.js 44-1`.
@@ -50,7 +50,9 @@ const SESSION = process.argv[2] || '45-1';
 const [PARLIAMENT, SESSION_NUMBER] = SESSION.split('-').map(Number);
 const OUT_PATH = 'data/votes.json';
 const USER_AGENT = 'DossierCanada/0.1 (veille citoyenne; mart.archambault@gmail.com)';
-const REQUEST_DELAY_MS = 250; // politesse entre les fetch de détail
+// Politesse entre deux fetch de détail. Une seconde : depuis que seuls les NOUVEAUX
+// scrutins sont téléchargés (voir plus bas), il n'y en a que quelques-uns par nuit.
+const REQUEST_DELAY_MS = 1000;
 // Plafond de test : `VOTE_LIMIT=5 node scrapers/votes.js` ne traite que 5 scrutins.
 const VOTE_LIMIT = process.env.VOTE_LIMIT ? Number(process.env.VOTE_LIMIT) : Infinity;
 
@@ -130,12 +132,41 @@ async function main() {
   let numbers = [...listEn.keys()].sort((a, b) => a - b);
   if (VOTE_LIMIT !== Infinity) numbers = numbers.slice(-VOTE_LIMIT); // les plus récents
 
+  /* SEULS LES NOUVEAUX SCRUTINS SONT TÉLÉCHARGÉS (2026-10-23).
+     Avant, le script retéléchargeait chaque nuit le détail nominatif des ~180
+     scrutins de la session, un par un. Or un vote enregistré ne change plus
+     jamais. Ces requêtes inutiles, ajoutées aux autres, faisaient ressembler le
+     site à un robot agressif, et ourcommons.ca a commencé à le bloquer (4, 21 et
+     23 octobre). On a écrit à la Chambre en s'engageant à ne prendre que le neuf.
+
+     On réutilise donc le détail déjà enregistré dans data/votes.json, À UNE
+     CONDITION : ses décomptes doivent encore correspondre aux décomptes officiels
+     de la liste du jour. Au moindre écart (correction officielle, donnée abîmée),
+     le scrutin est retéléchargé — on ne garde jamais un détail qui contredit la
+     source. */
+  const avant = existsSync(OUT_PATH) ? JSON.parse(readFileSync(OUT_PATH, 'utf-8')) : {};
+  const connus = new Map((avant.votes || []).filter((v) => v.ballots).map((v) => [v.number, v]));
+  Object.assign(people, avant.people || {});
+  const memesTotaux = (v, liste) => v.totals
+    && v.totals.yea === liste.yea && v.totals.nay === liste.nay && v.totals.paired === liste.paired;
+
   const votes = [];
-  let mismatches = 0;
+  let mismatches = 0, telecharges = 0, reutilises = 0;
   for (const number of numbers) {
     const en = listEn.get(number);
     const fr = listFr.get(number) ?? {};
-    const { ballots, extracted } = await fetchBallots(number);
+    const ancien = connus.get(number);
+    let ballots, extracted;
+    if (ancien && memesTotaux(ancien, en)) {
+      ballots = ancien.ballots;
+      extracted = { yea: 0, nay: 0, paired: 0 };
+      for (const v of Object.values(ballots)) extracted[v]++;
+      reutilises++;
+    } else {
+      ({ ballots, extracted } = await fetchBallots(number));
+      telecharges++;
+      await sleep(REQUEST_DELAY_MS);
+    }
 
     // Garde-fou : le détail nominatif doit reproduire les décomptes officiels de la liste.
     for (const key of ['yea', 'nay', 'paired']) {
@@ -165,8 +196,8 @@ async function main() {
     });
 
     if (votes.length % 25 === 0) console.log(`  … ${votes.length}/${numbers.length} scrutins traités`);
-    await sleep(REQUEST_DELAY_MS);
   }
+  console.log(`  requêtes de détail : ${telecharges} scrutin(s) téléchargé(s), ${reutilises} déjà connu(s) et inchangé(s)`);
 
   votes.sort((a, b) => b.number - a.number); // plus récent d'abord
 
