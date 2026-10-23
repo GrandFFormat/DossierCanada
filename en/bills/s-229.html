@@ -266,7 +266,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       </div>
       <div class="filter-group">
         <button class="filter-hamburger" id="stepFilterBtn" onclick="toggleFilterPanel('step')" aria-expanded="false">☰ <span data-i18n="filter.etapes">Chamber</span></button>
-        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">House of Commons</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Senate</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Bills with communications reported to the Commissioner of Lobbying">Lobbying <b>46</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Bills that change several different acts at once, one per part">Omnibus <b>15</b></span><!--/ssr--></div>
+        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">House of Commons</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Senate</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Bills with communications reported to the Commissioner of Lobbying">Lobbying <b>46</b></span><!--/ssr--></div>
       </div>
     </div>
 
@@ -278,7 +278,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       
       
       
-      <span class="depute-party" style="background:#6D5BA6; color:#fff">ISG</span>
+      
       <span class="status-pill status-encours">In progress</span>
       <span class="ab-caret">▾</span>
     </div>
@@ -289,15 +289,15 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
           <div class="num">BILL S-229</div>
           <h3>An Act to amend the National Capital Act (Gatineau Park)</h3>
           <div class="last-activity">Last activity : <b>At consideration in committee in the Senate</b></div>
-          <div class="meta">Senate Public Bill · Sponsor : Rosa Galvez</div>
+          <div class="meta">Senate Public Bill</div>
         </div>
         <div style="display:flex; align-items:center; gap:6px; flex:none; flex-wrap:wrap; justify-content:flex-end;">
-          <span class="depute-party" style="background:#6D5BA6; color:#fff" title="Independent Senators Group — Rosa Galvez">ISG</span>
+          
           <span class="status-pill status-encours">In progress</span>
         </div>
       </div>
       
-      <div class="bill-meta-top">Sponsor : Rosa Galvez · Senate · Senate Public Bill</div>
+      <div class="bill-meta-top">Senate · Senate Public Bill</div>
       <div class="bill-stages"><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Senate · 1st<b>2025-06-10</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Senate · 2nd<b>2026-04-15</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Senate · 3rd</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Commons · 1st</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Commons · 2nd</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Commons · 3rd</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Royal assent</span></div>
       <div class="bill-follow-row">
     <span class="follow-hint">Sign-in required — one request per person, no anonymous requests</span>
@@ -314,7 +314,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
             <div class="bill-share-row">
     <span class="bill-share-label">Share:</span>
     <button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13554320, 'x', event)" aria-label="Share on X">𝕏</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13554320, 'fb', event)" aria-label="Share on Facebook">FB</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13554320, 'copy', event)" aria-label="Copy the link">⧉</button>
-  </div><div class="bill-cafe-row"><a class="bill-cafe-btn" href="https://donate.stripe.com/fZu6oH4pt5OY3sY5Fy9fW01" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="Buy us a coffee (opens in a new tab)">☕ Help keep DC free</a></div>
+  </div><div class="bill-cafe-row"><a class="bill-cafe-btn" href="https://donate.stripe.com/fZu6oH4pt5OY3sY5Fy9fW01" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="Buy us a coffee (opens in a new tab)">☕ Contribute to the site</a></div>
           </aside>
         </div>
         
@@ -602,7 +602,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=6477927a57"></script>
+<script defer src="/assets/app.js?v=d698911f33"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->
