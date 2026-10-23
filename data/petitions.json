@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-10-22T13:58:18.646Z",
+  "scrapedAt": "2026-10-23T18:41:47.390Z",
   "count": 20,
   "petitions": [
     {
@@ -18,52 +18,10 @@
         "fr": "Ouverte pour signature jusqu'au 4 novembre 2026 à 13 h 40 (HAE)"
       },
       "sponsor": "Wade Chang",
-      "signatures": 5220,
+      "signatures": 5285,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7794",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7794"
-      }
-    },
-    {
-      "code": "e-7823",
-      "topic": {
-        "en": "Foreign affairs",
-        "fr": "Affaires étrangères"
-      },
-      "keywords": {
-        "en": "Europe European Union International relations Sovereignty",
-        "fr": "Europe Relations internationales Souveraineté Union européenne"
-      },
-      "status": {
-        "en": "Open for signature until January 3, 2027, at 1:30 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 3 janvier 2027 à 13 h 30 (HAE)"
-      },
-      "sponsor": "Glen Motz",
-      "signatures": 3706,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7823",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7823"
-      }
-    },
-    {
-      "code": "e-7787",
-      "topic": {
-        "en": "Foreign affairs",
-        "fr": "Affaires étrangères"
-      },
-      "keywords": {
-        "en": "Economic sanctions Ovechkin, Alexander Russia",
-        "fr": "Ovetchkine, Aleksandr Russie Sanctions économiques"
-      },
-      "status": {
-        "en": "Open for signature until December 28, 2026, at 9:35 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 28 décembre 2026 à 9 h 35 (HAE)"
-      },
-      "sponsor": "Yvan Baker",
-      "signatures": 2721,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7787",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7787"
       }
     },
     {
@@ -81,7 +39,7 @@
         "fr": "Ouverte pour signature jusqu'au 4 février 2027 à 14 h 44 (HAE)"
       },
       "sponsor": "Kent MacDonald",
-      "signatures": 657,
+      "signatures": 661,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7791",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7791"
@@ -102,7 +60,7 @@
         "fr": "Ouverte pour signature jusqu'au 6 février 2027 à 13 h 37 (HAE)"
       },
       "sponsor": "Don Davies",
-      "signatures": 621,
+      "signatures": 631,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7842",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7842"
@@ -123,7 +81,7 @@
         "fr": "Ouverte pour signature jusqu'au 5 novembre 2026 à 16 h 03 (HAE)"
       },
       "sponsor": "Bardish Chagger",
-      "signatures": 594,
+      "signatures": 601,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7798",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7798"
@@ -144,7 +102,7 @@
         "fr": "Ouverte pour signature jusqu'au 5 janvier 2027 à 14 h 37 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 477,
+      "signatures": 490,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7809",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7809"
@@ -165,7 +123,7 @@
         "fr": "Ouverte pour signature jusqu'au 10 février 2027 à 15 h 36 (HAE)"
       },
       "sponsor": "Sukh Dhaliwal",
-      "signatures": 358,
+      "signatures": 384,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7859",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7859"
@@ -186,7 +144,7 @@
         "fr": "Ouverte pour signature jusqu'au 11 février 2027 à 12 h 50 (HAE)"
       },
       "sponsor": "Yvan Baker",
-      "signatures": 243,
+      "signatures": 267,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7819",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7819"
@@ -207,7 +165,7 @@
         "fr": "Ouverte pour signature jusqu'au 4 février 2027 à 14 h 57 (HAE)"
       },
       "sponsor": "Will Greaves",
-      "signatures": 203,
+      "signatures": 210,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7776",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7776"
@@ -228,31 +186,10 @@
         "fr": "Ouverte pour signature jusqu'au 6 novembre 2026 à 10 h 43 (HAE)"
       },
       "sponsor": "Heather McPherson",
-      "signatures": 122,
+      "signatures": 133,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7817",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7817"
-      }
-    },
-    {
-      "code": "e-7745",
-      "topic": {
-        "en": "Consumer protection",
-        "fr": "Protection des consommateurs"
-      },
-      "keywords": {
-        "en": "Consumers and consumer protection Electronic commerce Electronic funds transfers Subscriptions",
-        "fr": "Abonnements Commerce électronique Consommateurs et protection des consommateurs Transferts électroniques de fonds"
-      },
-      "status": {
-        "en": "Open for signature until February 2, 2027, at 1:06 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 2 février 2027 à 13 h 06 (HAE)"
-      },
-      "sponsor": "Marc Dalton",
-      "signatures": 112,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7745",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7745"
       }
     },
     {
@@ -270,7 +207,7 @@
         "fr": "Ouverte pour signature jusqu'au 6 février 2027 à 13 h 24 (HAE)"
       },
       "sponsor": "Don Davies",
-      "signatures": 111,
+      "signatures": 126,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7845",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7845"
@@ -291,52 +228,10 @@
         "fr": "Ouverte pour signature jusqu'au 4 février 2027 à 14 h 54 (HAE)"
       },
       "sponsor": "Scott Reid",
-      "signatures": 98,
+      "signatures": 99,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7846",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7846"
-      }
-    },
-    {
-      "code": "e-7033",
-      "topic": {
-        "en": "Social affairs and equality",
-        "fr": "Affaires sociales et égalité"
-      },
-      "keywords": {
-        "en": "Income and wages Support of children",
-        "fr": "Pension alimentaire pour enfants Revenus et salaires"
-      },
-      "status": {
-        "en": "Open for signature until February 4, 2027, at 10:51 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 4 février 2027 à 10 h 51 (HAE)"
-      },
-      "sponsor": "Salma Zahid",
-      "signatures": 82,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7033",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7033"
-      }
-    },
-    {
-      "code": "e-7752",
-      "topic": {
-        "en": "Health",
-        "fr": "Santé"
-      },
-      "keywords": {
-        "en": "Child health Food labelling Regulation",
-        "fr": "Étiquetage des aliments Réglementation Santé de l'enfant"
-      },
-      "status": {
-        "en": "Open for signature until January 3, 2027, at 1:35 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 3 janvier 2027 à 13 h 35 (HAE)"
-      },
-      "sponsor": "Bardish Chagger",
-      "signatures": 77,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7752",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7752"
       }
     },
     {
@@ -354,31 +249,31 @@
         "fr": "Ouverte pour signature jusqu'au 2 février 2027 à 13 h 38 (HAE)"
       },
       "sponsor": "Gord Johns",
-      "signatures": 75,
+      "signatures": 86,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7619",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7619"
       }
     },
     {
-      "code": "e-7831",
+      "code": "e-7033",
       "topic": {
-        "en": "Foreign affairs",
-        "fr": "Affaires étrangères"
+        "en": "Social affairs and equality",
+        "fr": "Affaires sociales et égalité"
       },
       "keywords": {
-        "en": "Audits and auditors International development and aid Military weapons Ukraine",
-        "fr": "Aide au développement international Armes militaires Ukraine Vérifications et vérificateurs"
+        "en": "Income and wages Support of children",
+        "fr": "Pension alimentaire pour enfants Revenus et salaires"
       },
       "status": {
-        "en": "Open for signature until December 7, 2026, at 10:57 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 7 décembre 2026 à 10 h 57 (HAE)"
+        "en": "Open for signature until February 4, 2027, at 10:51 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 4 février 2027 à 10 h 51 (HAE)"
       },
-      "sponsor": "Bardish Chagger",
-      "signatures": 71,
+      "sponsor": "Salma Zahid",
+      "signatures": 83,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7831",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7831"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7033",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7033"
       }
     },
     {
@@ -396,10 +291,31 @@
         "fr": "Ouverte pour signature jusqu'au 12 décembre 2026 à 15 h 28 (HAE)"
       },
       "sponsor": "Leah Gazan",
-      "signatures": 65,
+      "signatures": 74,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7849",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7849"
+      }
+    },
+    {
+      "code": "e-7831",
+      "topic": {
+        "en": "Foreign affairs",
+        "fr": "Affaires étrangères"
+      },
+      "keywords": {
+        "en": "Audits and auditors International development and aid Military weapons Ukraine",
+        "fr": "Aide au développement international Armes militaires Ukraine Vérifications et vérificateurs"
+      },
+      "status": {
+        "en": "Open for signature until December 7, 2026, at 10:57 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 7 décembre 2026 à 10 h 57 (HAE)"
+      },
+      "sponsor": "Bardish Chagger",
+      "signatures": 73,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7831",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7831"
       }
     },
     {
@@ -417,10 +333,94 @@
         "fr": "Ouverte pour signature jusqu'au 4 février 2027 à 10 h 48 (HAE)"
       },
       "sponsor": "Heather McPherson",
-      "signatures": 59,
+      "signatures": 62,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7793",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7793"
+      }
+    },
+    {
+      "code": "e-7576",
+      "topic": {
+        "en": "Natural resources and energy",
+        "fr": "Ressources naturelles et énergie"
+      },
+      "keywords": {
+        "en": "Canadian companies Critical minerals National security",
+        "fr": "Entreprises canadiennes Minéraux critiques Sécurité nationale"
+      },
+      "status": {
+        "en": "Open for signature until February 19, 2027, at 4:20 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 19 février 2027 à 16 h 20 (HAE)"
+      },
+      "sponsor": "Elizabeth May",
+      "signatures": 31,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7576",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7576"
+      }
+    },
+    {
+      "code": "e-7839",
+      "topic": {
+        "en": "Justice",
+        "fr": "Justice"
+      },
+      "keywords": {
+        "en": "Domestic violence Financial hardship Human trafficking Sexual abuse and exploitation Victims",
+        "fr": "Difficulté financière Traite de personnes Victimes Violence et exploitation sexuelle Violence familiale"
+      },
+      "status": {
+        "en": "Open for signature until February 19, 2027, at 4:22 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 19 février 2027 à 16 h 22 (HAE)"
+      },
+      "sponsor": "Danielle Martin",
+      "signatures": 27,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7839",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7839"
+      }
+    },
+    {
+      "code": "e-7875",
+      "topic": {
+        "en": "Foreign affairs",
+        "fr": "Affaires étrangères"
+      },
+      "keywords": {
+        "en": "Army of the Guardians of the Islamic Rev ... Economic sanctions Foreign companies Iran",
+        "fr": "Gardiens de la Révolution islamique Iran Sanctions économiques Sociétés étrangères"
+      },
+      "status": {
+        "en": "Open for signature until February 19, 2027, at 4:24 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 19 février 2027 à 16 h 24 (HAE)"
+      },
+      "sponsor": "Anthony Housefather",
+      "signatures": 12,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7875",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7875"
+      }
+    },
+    {
+      "code": "e-7867",
+      "topic": {
+        "en": "Business and trade",
+        "fr": "Affaires et commerce"
+      },
+      "keywords": {
+        "en": "Canada-United States relations Customs tariff and customs duties International trade",
+        "fr": "Commerce international Relations Canada-États-Unis Tarif des douanes et droits de douane"
+      },
+      "status": {
+        "en": "Open for signature until February 19, 2027, at 4:22 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 19 février 2027 à 16 h 22 (HAE)"
+      },
+      "sponsor": "Stephanie Kusie",
+      "signatures": 9,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7867",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7867"
       }
     }
   ]
