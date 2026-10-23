@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-22T13:58:24.371Z",
+  "scrapedAt": "2026-10-23T13:37:46.335Z",
   "sources": [
     {
       "key": "house_speaker",
@@ -10,8 +10,5 @@
       "url": "https://www.gg.ca/en/governor-general"
     }
   ],
-  "officeholders": {
-    "house_speaker": "Francis Scarpaleggia",
-    "governor_general": "Louise Arbour"
-  }
+  "officeholders": {}
 }

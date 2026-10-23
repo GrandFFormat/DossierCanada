@@ -263,12 +263,24 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       </div>
       <div class="filter-group">
         <button class="filter-hamburger" id="stepFilterBtn" onclick="toggleFilterPanel('step')" aria-expanded="false">☰ <span data-i18n="filter.etapes">Chamber</span></button>
-        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">House of Commons</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Senate</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Bills with communications reported to the Commissioner of Lobbying">Lobbying <b>46</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Bills that change several different acts at once, one per part">Omnibus <b>15</b></span><!--/ssr--></div>
+        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">House of Commons</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Senate</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Bills with communications reported to the Commissioner of Lobbying">Lobbying <b>46</b></span><!--/ssr--></div>
       </div>
     </div>
 
 
-    <div id="billsList"><!--ssr--><div class="ab-row" id="abrow-pr-13541964">
+    <div id="billsList"><!--ssr--><div class="ab-row" id="abrow-pr-13957880">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13957880')">
+      <span class="ab-num">C-22</span>
+      <span class="ab-title">An Act respecting lawful access</span>
+      
+      
+      <span class="ab-lob" title="47 reported lobbying communications">47</span>
+      
+      <span class="status-pill status-encours">In progress</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13957880"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Expands and clarifies police and intelligence powers to get data held by telecom companies and online services.</li><li>Also creates a new law requiring electronic service providers to make that access possible, with a later review by Parliament.</li></ul><section class="bill-part"><h5 class="bill-sum-part"><span>Part 1</span>Criminal Code, Canadian Security Intelligence Service Act and other Acts</h5><ul class="bill-sum-list"><li>Lets police require a telecom company to confirm whether it provides service to someone, and lets a judge order the company to hand over basic subscriber details such as name and account contact information.</li><li>Shortens the time allowed to challenge a production order, so companies answer requests faster.</li><li>Spells out when officers can gather evidence in an emergency, and when they can use information given to them voluntarily or already available to the public.</li><li>Lets a judge allow tracking or transmission data for similar devices not yet known when the warrant is issued, allow requests to foreign companies, and lets the Minister of Justice help enforce foreign data orders in Canada.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Part 2</span>new Supporting Authorized Access to Information Act</h5><ul class="bill-sum-list"><li>Creates a new law requiring electronic service providers to make it possible to access information when the Criminal Code or the CSIS Act allows it.</li><li>Applies only to people already legally authorized to get that information, not to open access.</li><li>Changes the Intelligence Commissioner Act, which sets up an independent watchdog over certain intelligence activities.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Part 3</span>parliamentary review</h5><ul class="bill-sum-list"><li>Requires Parliament to review later how Parts 1 and 2 are working.</li></ul></section><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
+  </div><div class="ab-row" id="abrow-pr-13541964">
     <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13541964')">
       <span class="ab-num">S-210</span>
       <span class="ab-title">An Act respecting Ukrainian Heritage Month</span>
@@ -287,7 +299,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       
       
       
-      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
+      
       <span class="status-pill status-encours">In progress</span>
       <span class="ab-caret">▾</span>
     </div>
@@ -299,7 +311,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       
       
       
-      <span class="depute-party" style="background:#F58220; color:var(--on-candy)">NDP</span>
+      
       <span class="status-pill status-encours">In progress</span>
       <span class="ab-caret">▾</span>
     </div>
@@ -311,7 +323,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       
       
       
-      <span class="depute-party" style="background:#0E7C7B; color:#fff">CSG</span>
+      
       <span class="status-pill status-encours">In progress</span>
       <span class="ab-caret">▾</span>
     </div>
@@ -323,7 +335,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       
       
       
-      <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
+      
       <span class="status-pill status-encours">In progress</span>
       <span class="ab-caret">▾</span>
     </div>
@@ -335,7 +347,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       
       
       
-      <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
+      
       <span class="status-pill status-encours">In progress</span>
       <span class="ab-caret">▾</span>
     </div>
@@ -347,7 +359,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       
       
       
-      <span class="depute-party" style="background:#1A4782; color:#fff">C</span>
+      
       <span class="status-pill status-encours">In progress</span>
       <span class="ab-caret">▾</span>
     </div>
@@ -359,7 +371,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       
       
       
-      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
+      
       <span class="status-pill status-encours">In progress</span>
       <span class="ab-caret">▾</span>
     </div>
@@ -371,23 +383,11 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       
       
       
-      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
+      
       <span class="status-pill status-sanctionne">Assented to</span>
       <span class="ab-caret">▾</span>
     </div>
     <div class="ab-detail"><div class="bill-sum-slot" data-bill="13932352"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Gives the force of law to the Final Self-Government Agreement for the Tłegǫ́hłı̨ Got'įnę, signed on September 18, 2025 with Canada and the Northwest Territories.</li><li>Recognizes the agreement as a treaty protected by the Constitution, which wins out over other federal laws if they clash.</li><li>Creates the Tłegǫ́hłı̨ Got'įnę Government as a legal entity with the same rights as a person, and gives its laws the force of law.</li><li>Stops the Indian Act from applying to that government and its citizens, except where the agreement says otherwise.</li><li>Requires the Sahtu Land and Water Board to consult the Tłegǫ́hłı̨ Got'įnę Government before issuing permits affecting its settlement lands.</li><li>Lets that government give binding policy directions to the board, as long as the board stays within its approved budget.</li><li>Approves the tax treatment agreement and adds the Tłegǫ́hłı̨ Got'įnę to the official list of First Nations that can collect a goods and services tax.</li><li>Takes effect on a date set by the federal Cabinet, though two chapters of the agreement count back to November 20, 2024.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
-  </div><div class="ab-row" id="abrow-pr-14223396">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14223396')">
-      <span class="ab-num">C-39</span>
-      <span class="ab-title">An Act respecting certain measures to strengthen the economy</span>
-      
-      <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Omnibus bill — 3 parts, 8 divisions: it changes several different acts. Click to show only omnibus bills">Omnibus · 3 parts</button>
-      
-      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-      <span class="status-pill status-encours">In progress</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"><div class="bill-sum-slot" data-bill="14223396"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Bundles into one bill changes to the review of major projects, to the movement of goods, and to federal labour law.</li><li>Aims mainly to speed up federal decisions and to set clear deadlines for the bodies that review projects.</li></ul><section class="bill-part"><h5 class="bill-sum-part"><span>Part 1</span>Impact Assessment Act, Canadian Energy Regulator Act and other laws</h5><ul class="bill-sum-list"><li>Requires a decision on a major project that needs a federal review within one year after the required studies are handed in.</li><li>Gives the Canadian Nuclear Safety Commission, which oversees nuclear activity in Canada, the job of reviewing projects involving nuclear activities.</li><li>Makes the Canada Energy Regulator the only body that reviews applications for pipelines, designated power lines and offshore renewable energy projects.</li><li>Lets the federal Cabinet add a "region of national interest" to a new official list, opening a faster process for projects located there.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Part 2</span>Canada Transportation Act, Canada Marine Act and other laws, including the new Enabling Digital Trade Act</h5><ul class="bill-sum-list"><li>Creates the National Trade Corridors Council to track the movement of goods and advise the Minister of Transport.</li><li>Sets up, for four years, a zone in Manitoba, Saskatchewan and Alberta where the rate for moving rail cars between companies is set by the Canadian Transportation Agency.</li><li>Lets the Minister of Transport appoint some port authority directors and order action against certain threats in ports and on the Seaway.</li><li>Allows electronic trade documents to replace paper ones for importing and exporting goods.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Part 3</span>Canada Labour Code and Wage Earner Protection Program Act</h5><ul class="bill-sum-list"><li>Sets new deadlines and requirements for bargaining collective agreements in federally regulated workplaces.</li><li>Lets the Minister of Labour appoint a special mediator to help parties settle a dispute.</li><li>Allows an order telling an employer or a company director to pay money still owed to an employee under a settlement.</li><li>Sets aside the federal paid medical leave rules where a collective agreement gives rights at least as good.</li></ul></section><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
   </div><button class="votes-more" onclick="loadMoreBills()">See 20 more — 10 of 194 shown</button><!--/ssr--></div>
 
     <!-- Ce que « challenger » veut dire, en bas de la liste — comme sur
