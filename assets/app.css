@@ -1329,3 +1329,8 @@
   /* « Site propulsé par DAFRSolution.com » : lien surligné jaune (21 oct. 2026). */
   #footerDafr{ background:var(--yellow); color:#131313; font-weight:700; padding:1px 5px; margin-left:4px; text-decoration:none; }
   #footerDafr:hover{ text-decoration:underline; }
+
+/* Partager la fiche d'un·e député·e (23 oct. 2026), à gauche de Suivre. */
+.mp-actions{display:inline-flex; gap:6px; align-items:center;}
+.part-btn{width:34px; height:34px; padding:0; border:2px solid var(--ink); background:var(--card, #fff); color:var(--ink); cursor:pointer; display:inline-flex; align-items:center; justify-content:center;}
+.part-btn:hover, .part-btn:focus-visible{background:var(--ink); color:var(--card, #fff);}
