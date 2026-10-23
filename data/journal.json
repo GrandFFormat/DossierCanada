@@ -3,6 +3,18 @@
     "date": "2026-10-23",
     "volet": "site",
     "fr": {
+      "titre": "Le mandat dans le partage d’une fiche",
+      "texte": "Le résumé copié depuis la fiche d’un·e député·e dit maintenant son mandat : 1er, 2e, 3e… Le compte vient des listes de député·e·s de chaque législature publiées par la Chambre des communes."
+    },
+    "en": {
+      "titre": "The term in a shared profile",
+      "texte": "The summary copied from an MP’s profile now gives their term: 1st, 2nd, 3rd… The count comes from the House of Commons lists of MPs for each Parliament."
+    }
+  },
+  {
+    "date": "2026-10-23",
+    "volet": "site",
+    "fr": {
       "titre": "Partager la fiche d’un·e député·e",
       "texte": "Une icône à côté de Suivre copie d’un clic un court résumé de la fiche : parti, circonscription, présence aux votes, projets de loi parrainés et ancienneté, avec le lien."
     },

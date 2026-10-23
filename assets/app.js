@@ -1923,11 +1923,15 @@ function resumeDepute(d, isEn){
   const anciennete = ans === null ? ''
     : ans < 1 ? (isEn ? 'MP for less than a year' : 'Député·e depuis moins d’un an')
     : (isEn ? `MP for at least ${ans} year${ans > 1 ? 's' : ''}` : `Député·e depuis au moins ${ans} an${ans > 1 ? 's' : ''}`);
+  // Le mandat (Martin, 23 oct. 2026) : « 3e mandat » ; sans ce chiffre, l'ancienneté.
+  const n = d.mandats;
+  const ordinal = (k) => isEn ? k + ({ 1: 'st', 2: 'nd', 3: 'rd' }[k % 100 > 10 && k % 100 < 14 ? 0 : k % 10] || 'th') : (k === 1 ? '1er' : k + 'e');
+  const mandat = n > 1 ? (isEn ? `${ordinal(n)} term` : `${ordinal(n)} mandat`) : n === 1 ? (isEn ? '1st term' : '1er mandat') : anciennete;
   const tete = `${d.name} (${parti}), ${isEn ? 'MP for' : 'député·e de'} ${L(d.constituency)}${L(d.province) ? ' (' + L(d.province) + ')' : ''}`;
   const faits = [
     pct != null ? (isEn ? `Recorded-vote attendance: ${pct}%` : `Présence aux votes : ${pct} %`) : '',
     isEn ? `Bills sponsored: ${parraines.length}${lois ? `, ${lois} became law` : ''}` : `Projets de loi parrainés : ${parraines.length}${lois ? `, dont ${lois} devenus lois` : ''}`,
-    anciennete,
+    mandat,
   ].filter(Boolean).join(' · ');
   return `${tete}. ${faits}.`;
 }

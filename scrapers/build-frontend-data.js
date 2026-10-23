@@ -455,6 +455,9 @@ function main() {
   // Courriels officiels (scrapers/depute-emails.js) — joints par PersonId.
   const EMAILS_PATH = 'data/depute-emails.json';
   const emailById = existsSync(EMAILS_PATH) ? read(EMAILS_PATH).emails : {};
+  // Nombre de mandats (scrapers/mandats.js, relancé à la main après une élection) — joint par PersonId.
+  const MANDATS_PATH = 'data/mandats.json';
+  const mandatsById = existsSync(MANDATS_PATH) ? read(MANDATS_PATH).mandats : {};
 
   // Députés prêts pour le rendu (roster fédéral + bilan de votes précalculé).
   const frontendDeputes = deputesOut.map((d) => ({
@@ -466,6 +469,7 @@ function main() {
     constituency: d.constituency,
     province: d.province,
     memberSince: d.memberSince,
+    mandats: mandatsById[d.id]?.n ?? null,
     url: keepUrl(d.url, derivedMemberUrl(d.id)),
     votingRecord: d.votingRecord,
   }));
