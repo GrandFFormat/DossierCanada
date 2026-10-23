@@ -458,6 +458,9 @@ function main() {
   // Nombre de mandats (scrapers/mandats.js, relancé à la main après une élection) — joint par PersonId.
   const MANDATS_PATH = 'data/mandats.json';
   const mandatsById = existsSync(MANDATS_PATH) ? read(MANDATS_PATH).mandats : {};
+  // Pages Wikipédia (scrapers/wikipedia.js) — joint par PersonId : { fr, en }.
+  const WIKI_PATH = 'data/wikipedia.json';
+  const wikiById = existsSync(WIKI_PATH) ? read(WIKI_PATH).liens : {};
 
   // Députés prêts pour le rendu (roster fédéral + bilan de votes précalculé).
   const frontendDeputes = deputesOut.map((d) => ({
@@ -470,6 +473,7 @@ function main() {
     province: d.province,
     memberSince: d.memberSince,
     mandats: mandatsById[d.id]?.n ?? null,
+    wiki: wikiById[d.id] ?? null,
     url: keepUrl(d.url, derivedMemberUrl(d.id)),
     votingRecord: d.votingRecord,
   }));

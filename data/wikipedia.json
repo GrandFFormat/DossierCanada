@@ -1,0 +1,1302 @@
+{
+  "source": "fr.wikipedia.org (API publique)",
+  "lu": "2026-10-23",
+  "liens": {
+    "376": {
+      "fr": "https://fr.wikipedia.org/wiki/Mario_Beaulieu_(homme_politique,_1930)",
+      "en": "https://en.wikipedia.org/wiki/Mario_Beaulieu_(senator)"
+    },
+    "413": {
+      "fr": "https://fr.wikipedia.org/wiki/Louis_Plamondon",
+      "en": "https://en.wikipedia.org/wiki/Louis_Plamondon"
+    },
+    "1422": {
+      "fr": "https://fr.wikipedia.org/wiki/Gurbux_Saini",
+      "en": "https://en.wikipedia.org/wiki/Gurbux_Saini"
+    },
+    "1589": {
+      "fr": "https://fr.wikipedia.org/wiki/Hedy_Fry",
+      "en": "https://en.wikipedia.org/wiki/Hedy_Fry"
+    },
+    "1809": {
+      "fr": "https://fr.wikipedia.org/wiki/Cheryl_Gallant",
+      "en": "https://en.wikipedia.org/wiki/Cheryl_Gallant"
+    },
+    "1813": {
+      "fr": "https://fr.wikipedia.org/wiki/Dominic_LeBlanc",
+      "en": "https://en.wikipedia.org/wiki/Dominic_LeBlanc"
+    },
+    "2897": {
+      "fr": "https://fr.wikipedia.org/wiki/Elizabeth_May_(femme_politique)",
+      "en": "https://en.wikipedia.org/wiki/Elizabeth_May"
+    },
+    "3306": {
+      "fr": "https://fr.wikipedia.org/wiki/Dan_Mazier",
+      "en": "https://en.wikipedia.org/wiki/Dan_Mazier"
+    },
+    "9486": {
+      "fr": "https://fr.wikipedia.org/wiki/David_McGuinty",
+      "en": "https://en.wikipedia.org/wiki/David_McGuinty"
+    },
+    "17210": {
+      "fr": "https://fr.wikipedia.org/wiki/Rob_Moore_(homme_politique)",
+      "en": "https://en.wikipedia.org/wiki/Rob_Moore_(politician)"
+    },
+    "25446": {
+      "fr": "https://fr.wikipedia.org/wiki/Dean_Allison",
+      "en": "https://en.wikipedia.org/wiki/Dean_Allison"
+    },
+    "25453": {
+      "fr": "https://fr.wikipedia.org/wiki/Francis_Scarpaleggia",
+      "en": "https://en.wikipedia.org/wiki/Francis_Scarpaleggia"
+    },
+    "25454": {
+      "fr": "https://fr.wikipedia.org/wiki/Andrew_Scheer",
+      "en": "https://en.wikipedia.org/wiki/Andrew_Scheer"
+    },
+    "25475": {
+      "fr": "https://fr.wikipedia.org/wiki/James_Bezan",
+      "en": "https://en.wikipedia.org/wiki/James_Bezan"
+    },
+    "25488": {
+      "fr": "https://fr.wikipedia.org/wiki/Michael_Chong",
+      "en": "https://en.wikipedia.org/wiki/Michael_Chong"
+    },
+    "25524": {
+      "fr": "https://fr.wikipedia.org/wiki/Pierre_Poilievre",
+      "en": "https://en.wikipedia.org/wiki/Pierre_Poilievre"
+    },
+    "28286": {
+      "fr": "https://fr.wikipedia.org/wiki/Mark_Carney",
+      "en": "https://en.wikipedia.org/wiki/Mark_Carney"
+    },
+    "30330": {
+      "fr": "https://fr.wikipedia.org/wiki/Tony_Baldinelli",
+      "en": "https://en.wikipedia.org/wiki/Tony_Baldinelli"
+    },
+    "30552": {
+      "fr": "https://fr.wikipedia.org/wiki/Kevin_Lamoureux",
+      "en": "https://en.wikipedia.org/wiki/Kevin_Lamoureux"
+    },
+    "30645": {
+      "fr": "https://fr.wikipedia.org/wiki/Tim_Uppal",
+      "en": "https://en.wikipedia.org/wiki/Tim_Uppal"
+    },
+    "31098": {
+      "fr": "https://fr.wikipedia.org/wiki/Sukh_Dhaliwal",
+      "en": "https://en.wikipedia.org/wiki/Sukh_Dhaliwal"
+    },
+    "31119": {
+      "fr": "https://fr.wikipedia.org/wiki/Terry_Duguid",
+      "en": "https://en.wikipedia.org/wiki/Terry_Duguid"
+    },
+    "35315": {
+      "fr": "https://fr.wikipedia.org/wiki/Claude_DeBellefeuille",
+      "en": "https://en.wikipedia.org/wiki/Claude_DeBellefeuille"
+    },
+    "35397": {
+      "fr": "https://fr.wikipedia.org/wiki/Jacques_Gourde",
+      "en": "https://en.wikipedia.org/wiki/Jacques_Gourde"
+    },
+    "35600": {
+      "fr": "https://fr.wikipedia.org/wiki/Ben_Lobb",
+      "en": "https://en.wikipedia.org/wiki/Ben_Lobb"
+    },
+    "35857": {
+      "fr": "https://fr.wikipedia.org/wiki/Mike_Lake_(homme_politique)",
+      "en": "https://en.wikipedia.org/wiki/Mike_Lake_(politician)"
+    },
+    "35886": {
+      "fr": "https://fr.wikipedia.org/wiki/Chris_Warkentin",
+      "en": "https://en.wikipedia.org/wiki/Chris_Warkentin"
+    },
+    "35897": {
+      "fr": "https://fr.wikipedia.org/wiki/Blaine_Calkins",
+      "en": "https://en.wikipedia.org/wiki/Blaine_Calkins"
+    },
+    "35909": {
+      "fr": "https://fr.wikipedia.org/wiki/Marc_Dalton",
+      "en": "https://en.wikipedia.org/wiki/Marc_Dalton"
+    },
+    "49344": {
+      "fr": "https://fr.wikipedia.org/wiki/Chris_d%27Entremont",
+      "en": "https://en.wikipedia.org/wiki/Chris_d'Entremont"
+    },
+    "54157": {
+      "fr": "https://fr.wikipedia.org/wiki/Sameer_Zuberi",
+      "en": "https://en.wikipedia.org/wiki/Sameer_Zuberi"
+    },
+    "58621": {
+      "fr": "https://fr.wikipedia.org/wiki/Alexandra_Mend%C3%A8s",
+      "en": "https://en.wikipedia.org/wiki/Alexandra_Mend%C3%A8s"
+    },
+    "58757": {
+      "fr": "https://fr.wikipedia.org/wiki/Eric_Lefebvre",
+      "en": "https://en.wikipedia.org/wiki/Eric_Lefebvre"
+    },
+    "58841": {
+      "fr": "https://fr.wikipedia.org/wiki/Kyle_Seeback",
+      "en": "https://en.wikipedia.org/wiki/Kyle_Seeback"
+    },
+    "59148": {
+      "fr": "https://fr.wikipedia.org/wiki/Randy_Hoback",
+      "en": "https://en.wikipedia.org/wiki/Randy_Hoback"
+    },
+    "59156": {
+      "fr": "https://fr.wikipedia.org/wiki/Kelly_Block",
+      "en": "https://en.wikipedia.org/wiki/Kelly_Block"
+    },
+    "59235": {
+      "fr": "https://fr.wikipedia.org/wiki/Blake_Richards",
+      "en": "https://en.wikipedia.org/wiki/Blake_Richards"
+    },
+    "59293": {
+      "fr": "https://fr.wikipedia.org/wiki/Ron_McKinnon",
+      "en": "https://en.wikipedia.org/wiki/Ron_McKinnon"
+    },
+    "59294": {
+      "fr": "https://fr.wikipedia.org/wiki/Zoe_Royer",
+      "en": "https://en.wikipedia.org/wiki/Zoe_Royer"
+    },
+    "59325": {
+      "fr": "https://fr.wikipedia.org/wiki/Don_Davies",
+      "en": "https://en.wikipedia.org/wiki/Don_Davies"
+    },
+    "63908": {
+      "fr": "https://fr.wikipedia.org/wiki/Bernard_G%C3%A9n%C3%A9reux",
+      "en": "https://en.wikipedia.org/wiki/Bernard_G%C3%A9n%C3%A9reux"
+    },
+    "71270": {
+      "fr": "https://fr.wikipedia.org/wiki/Sean_Casey_(homme_politique_canadien)",
+      "en": "https://en.wikipedia.org/wiki/Sean_Casey_(Canadian_politician)"
+    },
+    "71323": {
+      "fr": "https://fr.wikipedia.org/wiki/John_Williamson_(homme_politique)",
+      "en": "https://en.wikipedia.org/wiki/John_Williamson_(Canadian_politician)"
+    },
+    "71337": {
+      "fr": "https://fr.wikipedia.org/wiki/Angelo_Iacono",
+      "en": "https://en.wikipedia.org/wiki/Angelo_Iacono"
+    },
+    "71454": {
+      "fr": "https://fr.wikipedia.org/wiki/Pierre_Paul-Hus",
+      "en": "https://en.wikipedia.org/wiki/Pierre_Paul-Hus"
+    },
+    "71692": {
+      "fr": "https://fr.wikipedia.org/wiki/Peter_Fonseca",
+      "en": "https://en.wikipedia.org/wiki/Peter_Fonseca"
+    },
+    "71738": {
+      "fr": "https://fr.wikipedia.org/wiki/Anita_Vandenbeld",
+      "en": "https://en.wikipedia.org/wiki/Anita_Vandenbeld"
+    },
+    "71762": {
+      "fr": "https://fr.wikipedia.org/wiki/Costas_Menegakis",
+      "en": "https://en.wikipedia.org/wiki/Costas_Menegakis"
+    },
+    "71902": {
+      "fr": "https://fr.wikipedia.org/wiki/Michelle_Rempel_Garner",
+      "en": "https://en.wikipedia.org/wiki/Michelle_Rempel_Garner"
+    },
+    "71986": {
+      "fr": "https://fr.wikipedia.org/wiki/Mark_Strahl",
+      "en": "https://en.wikipedia.org/wiki/Mark_Strahl"
+    },
+    "72023": {
+      "fr": "https://fr.wikipedia.org/wiki/Taleeb_Noormohamed",
+      "en": "https://en.wikipedia.org/wiki/Taleeb_Noormohamed"
+    },
+    "72029": {
+      "fr": "https://fr.wikipedia.org/wiki/Dan_Albas",
+      "en": "https://en.wikipedia.org/wiki/Dan_Albas"
+    },
+    "72035": {
+      "fr": "https://fr.wikipedia.org/wiki/Bob_Zimmer",
+      "en": "https://en.wikipedia.org/wiki/Bob_Zimmer"
+    },
+    "84672": {
+      "fr": "https://fr.wikipedia.org/wiki/Ted_Falk",
+      "en": "https://en.wikipedia.org/wiki/Ted_Falk"
+    },
+    "84882": {
+      "fr": "https://fr.wikipedia.org/wiki/Corey_Tochor",
+      "en": "https://en.wikipedia.org/wiki/Corey_Tochor"
+    },
+    "86261": {
+      "fr": "https://fr.wikipedia.org/wiki/John_Barlow_(homme_politique_canadien)",
+      "en": "https://en.wikipedia.org/wiki/John_Barlow_(Canadian_politician)"
+    },
+    "87121": {
+      "fr": "https://fr.wikipedia.org/wiki/Leah_Gazan",
+      "en": "https://en.wikipedia.org/wiki/Leah_Gazan"
+    },
+    "88316": {
+      "fr": "https://fr.wikipedia.org/wiki/Sean_Fraser_(homme_politique)",
+      "en": "https://en.wikipedia.org/wiki/Sean_Fraser_(politician)"
+    },
+    "88323": {
+      "fr": "https://fr.wikipedia.org/wiki/Darren_Fisher",
+      "en": "https://en.wikipedia.org/wiki/Darren_Fisher"
+    },
+    "88350": {
+      "fr": "https://fr.wikipedia.org/wiki/Serge_Cormier",
+      "en": "https://en.wikipedia.org/wiki/Serge_Cormier"
+    },
+    "88364": {
+      "fr": "https://fr.wikipedia.org/wiki/Ginette_Petitpas_Taylor",
+      "en": "https://en.wikipedia.org/wiki/Ginette_Petitpas_Taylor"
+    },
+    "88368": {
+      "fr": "https://fr.wikipedia.org/wiki/Wayne_Long",
+      "en": "https://en.wikipedia.org/wiki/Wayne_Long"
+    },
+    "88369": {
+      "fr": "https://fr.wikipedia.org/wiki/Richard_Bragdon",
+      "en": "https://en.wikipedia.org/wiki/Richard_Bragdon"
+    },
+    "88384": {
+      "fr": "https://fr.wikipedia.org/wiki/M%C3%A9lanie_Joly",
+      "en": "https://en.wikipedia.org/wiki/M%C3%A9lanie_Joly"
+    },
+    "88394": {
+      "fr": "https://fr.wikipedia.org/wiki/St%C3%A9phane_Lauzon",
+      "en": "https://en.wikipedia.org/wiki/St%C3%A9phane_Lauzon"
+    },
+    "88418": {
+      "fr": "https://fr.wikipedia.org/wiki/Yves_Perron",
+      "en": "https://en.wikipedia.org/wiki/Yves_Perron"
+    },
+    "88422": {
+      "fr": "https://fr.wikipedia.org/wiki/Xavier_Barsalou-Duval",
+      "en": "https://en.wikipedia.org/wiki/Xavier_Barsalou-Duval"
+    },
+    "88453": {
+      "fr": "https://fr.wikipedia.org/wiki/Anju_Dhillon",
+      "en": "https://en.wikipedia.org/wiki/Anju_Dhillon"
+    },
+    "88468": {
+      "fr": "https://fr.wikipedia.org/wiki/Steven_MacKinnon",
+      "en": "https://en.wikipedia.org/wiki/Steven_MacKinnon"
+    },
+    "88478": {
+      "fr": "https://fr.wikipedia.org/wiki/Greg_Fergus",
+      "en": "https://en.wikipedia.org/wiki/Greg_Fergus"
+    },
+    "88485": {
+      "fr": "https://fr.wikipedia.org/wiki/Gabriel_Ste-Marie",
+      "en": "https://en.wikipedia.org/wiki/Gabriel_Ste-Marie"
+    },
+    "88515": {
+      "fr": "https://fr.wikipedia.org/wiki/Fay%C3%A7al_El-Khoury",
+      "en": "https://en.wikipedia.org/wiki/Fay%C3%A7al_El-Khoury"
+    },
+    "88521": {
+      "fr": "https://fr.wikipedia.org/wiki/Sherry_Romanado",
+      "en": "https://en.wikipedia.org/wiki/Sherry_Romanado"
+    },
+    "88532": {
+      "fr": "https://fr.wikipedia.org/wiki/Jo%C3%ABl_Lightbound",
+      "en": "https://en.wikipedia.org/wiki/Jo%C3%ABl_Lightbound"
+    },
+    "88535": {
+      "fr": "https://fr.wikipedia.org/wiki/G%C3%A9rard_Deltell",
+      "en": "https://en.wikipedia.org/wiki/G%C3%A9rard_Deltell"
+    },
+    "88538": {
+      "fr": "https://fr.wikipedia.org/wiki/Maril%C3%A8ne_Gill",
+      "en": "https://en.wikipedia.org/wiki/Maril%C3%A8ne_Gill"
+    },
+    "88541": {
+      "fr": "https://fr.wikipedia.org/wiki/Luc_Berthold",
+      "en": "https://en.wikipedia.org/wiki/Luc_Berthold"
+    },
+    "88552": {
+      "fr": "https://fr.wikipedia.org/wiki/Luc_Th%C3%A9riault",
+      "en": "https://en.wikipedia.org/wiki/Luc_Th%C3%A9riault"
+    },
+    "88558": {
+      "fr": "https://fr.wikipedia.org/wiki/Anthony_Housefather",
+      "en": "https://en.wikipedia.org/wiki/Anthony_Housefather"
+    },
+    "88567": {
+      "fr": "https://fr.wikipedia.org/wiki/Rachel_Bendayan",
+      "en": "https://en.wikipedia.org/wiki/Rachel_Bendayan"
+    },
+    "88601": {
+      "fr": "https://fr.wikipedia.org/wiki/Linda_Lapointe",
+      "en": "https://en.wikipedia.org/wiki/Linda_Lapointe"
+    },
+    "88633": {
+      "fr": "https://fr.wikipedia.org/wiki/Fran%C3%A7ois-Philippe_Champagne",
+      "en": "https://en.wikipedia.org/wiki/Fran%C3%A7ois-Philippe_Champagne"
+    },
+    "88649": {
+      "fr": "https://fr.wikipedia.org/wiki/Peter_Schiefke",
+      "en": "https://en.wikipedia.org/wiki/Peter_Schiefke"
+    },
+    "88660": {
+      "fr": "https://fr.wikipedia.org/wiki/Marc_Miller_(homme_politique)",
+      "en": "https://en.wikipedia.org/wiki/Marc_Miller_(politician)"
+    },
+    "88674": {
+      "fr": "https://fr.wikipedia.org/wiki/John_Brassard",
+      "en": "https://en.wikipedia.org/wiki/John_Brassard"
+    },
+    "88698": {
+      "fr": "https://fr.wikipedia.org/wiki/Ruby_Sahota",
+      "en": "https://en.wikipedia.org/wiki/Ruby_Sahota"
+    },
+    "88703": {
+      "fr": "https://fr.wikipedia.org/wiki/Sonia_Sidhu",
+      "en": "https://en.wikipedia.org/wiki/Sonia_Sidhu"
+    },
+    "88715": {
+      "fr": "https://fr.wikipedia.org/wiki/Karina_Gould",
+      "en": "https://en.wikipedia.org/wiki/Karina_Gould"
+    },
+    "88721": {
+      "fr": "https://fr.wikipedia.org/wiki/Julie_Dzerowicz",
+      "en": "https://en.wikipedia.org/wiki/Julie_Dzerowicz"
+    },
+    "88748": {
+      "fr": "https://fr.wikipedia.org/wiki/James_Maloney_(homme_politique)",
+      "en": "https://en.wikipedia.org/wiki/James_Maloney_(Canadian_politician)"
+    },
+    "88770": {
+      "fr": "https://fr.wikipedia.org/wiki/Jamie_Schmale",
+      "en": "https://en.wikipedia.org/wiki/Jamie_Schmale"
+    },
+    "88802": {
+      "fr": "https://fr.wikipedia.org/wiki/Mark_Gerretsen",
+      "en": "https://en.wikipedia.org/wiki/Mark_Gerretsen"
+    },
+    "88810": {
+      "fr": "https://fr.wikipedia.org/wiki/Tim_Louis",
+      "en": "https://en.wikipedia.org/wiki/Tim_Louis"
+    },
+    "88827": {
+      "fr": "https://fr.wikipedia.org/wiki/Peter_Fragiskatos",
+      "en": "https://en.wikipedia.org/wiki/Peter_Fragiskatos"
+    },
+    "88849": {
+      "fr": "https://fr.wikipedia.org/wiki/Iqra_Khalid",
+      "en": "https://en.wikipedia.org/wiki/Iqra_Khalid"
+    },
+    "88917": {
+      "fr": "https://fr.wikipedia.org/wiki/John_Nater",
+      "en": "https://en.wikipedia.org/wiki/John_Nater"
+    },
+    "88934": {
+      "fr": "https://fr.wikipedia.org/wiki/Chris_Bittle",
+      "en": "https://en.wikipedia.org/wiki/Chris_Bittle"
+    },
+    "88938": {
+      "fr": "https://fr.wikipedia.org/wiki/Marilyn_Gladu",
+      "en": "https://en.wikipedia.org/wiki/Marilyn_Gladu"
+    },
+    "88944": {
+      "fr": "https://fr.wikipedia.org/wiki/Terry_Sheehan",
+      "en": "https://en.wikipedia.org/wiki/Terry_Sheehan"
+    },
+    "88950": {
+      "fr": "https://fr.wikipedia.org/wiki/Salma_Zahid",
+      "en": "https://en.wikipedia.org/wiki/Salma_Zahid"
+    },
+    "88958": {
+      "fr": "https://fr.wikipedia.org/wiki/Leslyn_Lewis",
+      "en": "https://en.wikipedia.org/wiki/Leslyn_Lewis"
+    },
+    "88984": {
+      "fr": "https://fr.wikipedia.org/wiki/Patricia_Hajdu",
+      "en": "https://en.wikipedia.org/wiki/Patty_Hajdu"
+    },
+    "88994": {
+      "fr": "https://fr.wikipedia.org/wiki/Julie_Dabrusin",
+      "en": "https://en.wikipedia.org/wiki/Julie_Dabrusin"
+    },
+    "89000": {
+      "fr": "https://fr.wikipedia.org/wiki/Bardish_Chagger",
+      "en": "https://en.wikipedia.org/wiki/Bardish_Chagger"
+    },
+    "89010": {
+      "fr": "https://fr.wikipedia.org/wiki/Ali_Ehsassi",
+      "en": "https://en.wikipedia.org/wiki/Ali_Ehsassi"
+    },
+    "89020": {
+      "fr": "https://fr.wikipedia.org/wiki/Ahmed_Hussen",
+      "en": "https://en.wikipedia.org/wiki/Ahmed_Hussen"
+    },
+    "89027": {
+      "fr": "https://fr.wikipedia.org/wiki/Doug_Eyolfson",
+      "en": "https://en.wikipedia.org/wiki/Doug_Eyolfson"
+    },
+    "89080": {
+      "fr": "https://fr.wikipedia.org/wiki/Michael_Kram",
+      "en": "https://en.wikipedia.org/wiki/Michael_Kram"
+    },
+    "89084": {
+      "fr": "https://fr.wikipedia.org/wiki/Kevin_Waugh",
+      "en": "https://en.wikipedia.org/wiki/Kevin_Waugh"
+    },
+    "89130": {
+      "fr": "https://fr.wikipedia.org/wiki/Pat_Kelly_(homme_politique)",
+      "en": "https://en.wikipedia.org/wiki/Pat_Kelly_(politician)"
+    },
+    "89136": {
+      "fr": "https://fr.wikipedia.org/wiki/Tom_Kmiec",
+      "en": "https://en.wikipedia.org/wiki/Tom_Kmiec"
+    },
+    "89150": {
+      "fr": "https://fr.wikipedia.org/wiki/Kerry_Diotte",
+      "en": "https://en.wikipedia.org/wiki/Kerry_Diotte"
+    },
+    "89156": {
+      "fr": "https://fr.wikipedia.org/wiki/Ziad_Aboultaif",
+      "en": "https://en.wikipedia.org/wiki/Ziad_Aboultaif"
+    },
+    "89167": {
+      "fr": "https://fr.wikipedia.org/wiki/Matt_Jeneroux",
+      "en": "https://en.wikipedia.org/wiki/Matt_Jeneroux"
+    },
+    "89171": {
+      "fr": "https://fr.wikipedia.org/wiki/Eleanor_Olszewski",
+      "en": "https://en.wikipedia.org/wiki/Eleanor_Olszewski"
+    },
+    "89179": {
+      "fr": "https://fr.wikipedia.org/wiki/Kelly_McCauley",
+      "en": "https://en.wikipedia.org/wiki/Kelly_McCauley"
+    },
+    "89198": {
+      "fr": "https://fr.wikipedia.org/wiki/Shannon_Stubbs",
+      "en": "https://en.wikipedia.org/wiki/Shannon_Stubbs"
+    },
+    "89200": {
+      "fr": "https://fr.wikipedia.org/wiki/Rachael_Thomas",
+      "en": "https://en.wikipedia.org/wiki/Rachael_Thomas"
+    },
+    "89211": {
+      "fr": "https://fr.wikipedia.org/wiki/Arnold_Viersen",
+      "en": "https://en.wikipedia.org/wiki/Arnold_Viersen"
+    },
+    "89219": {
+      "fr": "https://fr.wikipedia.org/wiki/Michael_Cooper_(homme_politique)",
+      "en": "https://en.wikipedia.org/wiki/Michael_Cooper_(politician)"
+    },
+    "89226": {
+      "fr": "https://fr.wikipedia.org/wiki/Garnett_Genuis",
+      "en": "https://en.wikipedia.org/wiki/Garnett_Genuis"
+    },
+    "89236": {
+      "fr": "https://fr.wikipedia.org/wiki/Terry_Beech",
+      "en": "https://en.wikipedia.org/wiki/Terry_Beech"
+    },
+    "89249": {
+      "fr": "https://fr.wikipedia.org/wiki/Todd_Doherty",
+      "en": "https://en.wikipedia.org/wiki/Todd_Doherty"
+    },
+    "89259": {
+      "fr": "https://fr.wikipedia.org/wiki/Scott_Anderson_(homme_politique_canadien)",
+      "en": "https://en.wikipedia.org/wiki/Scott_Anderson_(Canadian_politician)"
+    },
+    "89263": {
+      "fr": "https://fr.wikipedia.org/wiki/Gord_Johns",
+      "en": "https://en.wikipedia.org/wiki/Gord_Johns"
+    },
+    "89279": {
+      "fr": "https://fr.wikipedia.org/wiki/Stephen_Fuhr",
+      "en": "https://en.wikipedia.org/wiki/Stephen_Fuhr"
+    },
+    "89289": {
+      "fr": "https://fr.wikipedia.org/wiki/Brad_Vis",
+      "en": "https://en.wikipedia.org/wiki/Brad_Vis"
+    },
+    "89294": {
+      "fr": "https://fr.wikipedia.org/wiki/Mel_Arnold",
+      "en": "https://en.wikipedia.org/wiki/Mel_Arnold"
+    },
+    "89339": {
+      "fr": "https://fr.wikipedia.org/wiki/Randeep_Sarai",
+      "en": "https://en.wikipedia.org/wiki/Randeep_Sarai"
+    },
+    "89346": {
+      "fr": "https://fr.wikipedia.org/wiki/Jenny_Kwan",
+      "en": "https://en.wikipedia.org/wiki/Jenny_Kwan"
+    },
+    "89407": {
+      "fr": "https://fr.wikipedia.org/wiki/Jo%C3%ABl_Godin",
+      "en": "https://en.wikipedia.org/wiki/Jo%C3%ABl_Godin"
+    },
+    "89408": {
+      "fr": "https://fr.wikipedia.org/wiki/Jean-Yves_Duclos",
+      "en": "https://en.wikipedia.org/wiki/Jean-Yves_Duclos"
+    },
+    "89449": {
+      "fr": "https://fr.wikipedia.org/wiki/Gary_Anandasangaree",
+      "en": "https://en.wikipedia.org/wiki/Gary_Anandasangaree"
+    },
+    "89464": {
+      "fr": "https://fr.wikipedia.org/wiki/Rebecca_Chartrand",
+      "en": "https://en.wikipedia.org/wiki/Rebecca_Chartrand"
+    },
+    "90964": {
+      "fr": "https://fr.wikipedia.org/wiki/Danielle_Martin",
+      "en": "https://en.wikipedia.org/wiki/Danielle_Martin"
+    },
+    "92209": {
+      "fr": "https://fr.wikipedia.org/wiki/Marie-France_Lalonde",
+      "en": "https://en.wikipedia.org/wiki/Marie-France_Lalonde"
+    },
+    "94305": {
+      "fr": "https://fr.wikipedia.org/wiki/Glen_Motz",
+      "en": "https://en.wikipedia.org/wiki/Glen_Motz"
+    },
+    "96081": {
+      "fr": "https://fr.wikipedia.org/wiki/Anita_Anand_(femme_politique)",
+      "en": "https://en.wikipedia.org/wiki/Anita_Anand"
+    },
+    "96350": {
+      "fr": "https://fr.wikipedia.org/wiki/Emmanuella_Lambropoulos",
+      "en": "https://en.wikipedia.org/wiki/Emmanuella_Lambropoulos"
+    },
+    "96356": {
+      "fr": "https://fr.wikipedia.org/wiki/Mona_Fortier",
+      "en": "https://en.wikipedia.org/wiki/Mona_Fortier"
+    },
+    "96367": {
+      "fr": "https://fr.wikipedia.org/wiki/Stephanie_Kusie",
+      "en": "https://en.wikipedia.org/wiki/Stephanie_Kusie"
+    },
+    "98079": {
+      "fr": "https://fr.wikipedia.org/wiki/Dane_Lloyd",
+      "en": "https://en.wikipedia.org/wiki/Dane_Lloyd"
+    },
+    "98747": {
+      "fr": "https://fr.wikipedia.org/wiki/Jean_Yip",
+      "en": "https://en.wikipedia.org/wiki/Jean_Yip"
+    },
+    "98749": {
+      "fr": "https://fr.wikipedia.org/wiki/Rosemarie_Falk",
+      "en": "https://en.wikipedia.org/wiki/Rosemarie_Falk"
+    },
+    "102275": {
+      "fr": "https://fr.wikipedia.org/wiki/Michael_Barrett_(homme_politique_canadien)",
+      "en": "https://en.wikipedia.org/wiki/Michael_Barrett_(Canadian_politician)"
+    },
+    "102653": {
+      "fr": "https://fr.wikipedia.org/wiki/Scot_Davidson",
+      "en": "https://en.wikipedia.org/wiki/Scot_Davidson"
+    },
+    "104531": {
+      "fr": "https://fr.wikipedia.org/wiki/Mike_Kelloway",
+      "en": "https://en.wikipedia.org/wiki/Mike_Kelloway"
+    },
+    "104555": {
+      "fr": "https://fr.wikipedia.org/wiki/Kody_Blois",
+      "en": "https://en.wikipedia.org/wiki/Kody_Blois"
+    },
+    "104571": {
+      "fr": "https://fr.wikipedia.org/wiki/Jaime_Battiste",
+      "en": "https://en.wikipedia.org/wiki/Jaime_Battiste"
+    },
+    "104630": {
+      "fr": "https://fr.wikipedia.org/wiki/S%C3%A9bastien_Lemire",
+      "en": "https://en.wikipedia.org/wiki/S%C3%A9bastien_Lemire"
+    },
+    "104669": {
+      "fr": "https://fr.wikipedia.org/wiki/Yves-Fran%C3%A7ois_Blanchet",
+      "en": "https://en.wikipedia.org/wiki/Yves-Fran%C3%A7ois_Blanchet"
+    },
+    "104705": {
+      "fr": "https://fr.wikipedia.org/wiki/Maxime_Blanchette-Joncas",
+      "en": "https://en.wikipedia.org/wiki/Maxime_Blanchette-Joncas"
+    },
+    "104741": {
+      "fr": "https://fr.wikipedia.org/wiki/Martin_Champoux",
+      "en": "https://en.wikipedia.org/wiki/Martin_Champoux"
+    },
+    "104773": {
+      "fr": "https://fr.wikipedia.org/wiki/Mario_Simard",
+      "en": "https://en.wikipedia.org/wiki/Mario_Simard"
+    },
+    "104786": {
+      "fr": "https://fr.wikipedia.org/wiki/Alexis_Brunelle-Duceppe",
+      "en": "https://en.wikipedia.org/wiki/Alexis_Brunelle-Duceppe"
+    },
+    "104806": {
+      "fr": "https://fr.wikipedia.org/wiki/Marie-H%C3%A9l%C3%A8ne_Gaudreau",
+      "en": "https://en.wikipedia.org/wiki/Marie-H%C3%A9l%C3%A8ne_Gaudreau"
+    },
+    "104947": {
+      "fr": "https://fr.wikipedia.org/wiki/Christine_Normandin",
+      "en": "https://en.wikipedia.org/wiki/Christine_Normandin"
+    },
+    "104957": {
+      "fr": "https://fr.wikipedia.org/wiki/Patricia_Lattanzio",
+      "en": "https://en.wikipedia.org/wiki/Patricia_Lattanzio"
+    },
+    "104973": {
+      "fr": "https://fr.wikipedia.org/wiki/Andr%C3%A9anne_Larouche",
+      "en": "https://en.wikipedia.org/wiki/Andr%C3%A9anne_Larouche"
+    },
+    "104977": {
+      "fr": "https://fr.wikipedia.org/wiki/%C3%89lisabeth_Bri%C3%A8re",
+      "en": "https://en.wikipedia.org/wiki/%C3%89lisabeth_Bri%C3%A8re"
+    },
+    "105009": {
+      "fr": "https://fr.wikipedia.org/wiki/Annie_Koutrakis",
+      "en": "https://en.wikipedia.org/wiki/Annie_Koutrakis"
+    },
+    "105031": {
+      "fr": "https://fr.wikipedia.org/wiki/Doug_Shipley",
+      "en": "https://en.wikipedia.org/wiki/Doug_Shipley"
+    },
+    "105045": {
+      "fr": "https://fr.wikipedia.org/wiki/Maninder_Sidhu",
+      "en": "https://en.wikipedia.org/wiki/Maninder_Sidhu"
+    },
+    "105052": {
+      "fr": "https://fr.wikipedia.org/wiki/Arpan_Khanna",
+      "en": "https://en.wikipedia.org/wiki/Arpan_Khanna"
+    },
+    "105070": {
+      "fr": "https://fr.wikipedia.org/wiki/Alex_Ruff",
+      "en": "https://en.wikipedia.org/wiki/Alex_Ruff"
+    },
+    "105082": {
+      "fr": "https://fr.wikipedia.org/wiki/Dave_Epp",
+      "en": "https://en.wikipedia.org/wiki/Dave_Epp"
+    },
+    "105088": {
+      "fr": "https://fr.wikipedia.org/wiki/Michael_Ma",
+      "en": "https://en.wikipedia.org/wiki/Michael_Ma"
+    },
+    "105120": {
+      "fr": "https://fr.wikipedia.org/wiki/Chris_Lewis_(homme_politique)",
+      "en": "https://en.wikipedia.org/wiki/Chris_Lewis_(Canadian_politician)"
+    },
+    "105121": {
+      "fr": "https://fr.wikipedia.org/wiki/Yvan_Baker",
+      "en": "https://en.wikipedia.org/wiki/Yvan_Baker"
+    },
+    "105186": {
+      "fr": "https://fr.wikipedia.org/wiki/Eric_Melillo",
+      "en": "https://en.wikipedia.org/wiki/Eric_Melillo"
+    },
+    "105191": {
+      "fr": "https://fr.wikipedia.org/wiki/Anna_Roberts",
+      "en": "https://en.wikipedia.org/wiki/Anna_Roberts"
+    },
+    "105210": {
+      "fr": "https://fr.wikipedia.org/wiki/Lianne_Rood",
+      "en": "https://en.wikipedia.org/wiki/Lianne_Rood"
+    },
+    "105229": {
+      "fr": "https://fr.wikipedia.org/wiki/Helena_Jaczek",
+      "en": "https://en.wikipedia.org/wiki/Helena_Jaczek"
+    },
+    "105242": {
+      "fr": "https://fr.wikipedia.org/wiki/Adam_van_Koeverden",
+      "en": "https://en.wikipedia.org/wiki/Adam_van_Koeverden"
+    },
+    "105291": {
+      "fr": "https://fr.wikipedia.org/wiki/Philip_Lawrence_(homme_politique)",
+      "en": "https://en.wikipedia.org/wiki/Philip_Lawrence_(politician)"
+    },
+    "105340": {
+      "fr": "https://fr.wikipedia.org/wiki/Scott_Aitchison",
+      "en": "https://en.wikipedia.org/wiki/Scott_Aitchison"
+    },
+    "105410": {
+      "fr": "https://fr.wikipedia.org/wiki/Terry_Dowdall",
+      "en": "https://en.wikipedia.org/wiki/Terry_Dowdall"
+    },
+    "105422": {
+      "fr": "https://fr.wikipedia.org/wiki/Eric_Duncan_(homme_politique)",
+      "en": "https://en.wikipedia.org/wiki/Eric_Duncan_(politician)"
+    },
+    "105437": {
+      "fr": "https://fr.wikipedia.org/wiki/Marcus_Powlowski",
+      "en": "https://en.wikipedia.org/wiki/Marcus_Powlowski"
+    },
+    "105480": {
+      "fr": "https://fr.wikipedia.org/wiki/Ryan_Turnbull",
+      "en": "https://en.wikipedia.org/wiki/Ryan_Turnbull_(politician)"
+    },
+    "105521": {
+      "fr": "https://fr.wikipedia.org/wiki/Raquel_Dancho",
+      "en": "https://en.wikipedia.org/wiki/Raquel_Dancho"
+    },
+    "105559": {
+      "fr": "https://fr.wikipedia.org/wiki/Jeremy_Patzer",
+      "en": "https://en.wikipedia.org/wiki/Jeremy_Patzer"
+    },
+    "105581": {
+      "fr": "https://fr.wikipedia.org/wiki/Warren_Steinley",
+      "en": "https://en.wikipedia.org/wiki/Warren_Steinley"
+    },
+    "105598": {
+      "fr": "https://fr.wikipedia.org/wiki/Brad_Redekopp",
+      "en": "https://en.wikipedia.org/wiki/Brad_Redekopp"
+    },
+    "105623": {
+      "fr": "https://fr.wikipedia.org/wiki/Greg_McLean_(homme_politique)",
+      "en": "https://en.wikipedia.org/wiki/Greg_McLean_(politician)"
+    },
+    "105630": {
+      "fr": "https://fr.wikipedia.org/wiki/Jasraj_Hallan",
+      "en": "https://en.wikipedia.org/wiki/Jasraj_Singh_Hallan"
+    },
+    "105689": {
+      "fr": "https://fr.wikipedia.org/wiki/Heather_McPherson_(femme_politique)",
+      "en": "https://en.wikipedia.org/wiki/Heather_McPherson_(politician)"
+    },
+    "105774": {
+      "fr": "https://fr.wikipedia.org/wiki/Tamara_Jansen",
+      "en": "https://en.wikipedia.org/wiki/Tamara_Jansen"
+    },
+    "105807": {
+      "fr": "https://fr.wikipedia.org/wiki/Rob_Morrison",
+      "en": "https://en.wikipedia.org/wiki/Rob_Morrison_(politician)"
+    },
+    "105811": {
+      "fr": "https://fr.wikipedia.org/wiki/Tako_van_Popta",
+      "en": "https://en.wikipedia.org/wiki/Tako_van_Popta"
+    },
+    "105863": {
+      "fr": "https://fr.wikipedia.org/wiki/Helena_Konanz",
+      "en": "https://en.wikipedia.org/wiki/Helena_Konanz"
+    },
+    "105918": {
+      "fr": "https://fr.wikipedia.org/wiki/Patrick_Weiler",
+      "en": "https://en.wikipedia.org/wiki/Patrick_Weiler"
+    },
+    "108395": {
+      "fr": "https://fr.wikipedia.org/wiki/Branden_Leslie",
+      "en": "https://en.wikipedia.org/wiki/Branden_Leslie"
+    },
+    "109867": {
+      "fr": "https://fr.wikipedia.org/wiki/Clifford_Small",
+      "en": "https://en.wikipedia.org/wiki/Clifford_Small"
+    },
+    "109872": {
+      "fr": "https://fr.wikipedia.org/wiki/Carol_Anstey",
+      "en": "https://en.wikipedia.org/wiki/Carol_Anstey"
+    },
+    "109877": {
+      "fr": "https://fr.wikipedia.org/wiki/Joanne_Thompson_(femme_politique)",
+      "en": "https://en.wikipedia.org/wiki/Joanne_Thompson_(politician)"
+    },
+    "109891": {
+      "fr": "https://fr.wikipedia.org/wiki/Heath_MacDonald",
+      "en": "https://en.wikipedia.org/wiki/Heath_MacDonald"
+    },
+    "109915": {
+      "fr": "https://fr.wikipedia.org/wiki/Lena_Diab",
+      "en": "https://en.wikipedia.org/wiki/Lena_Diab"
+    },
+    "110009": {
+      "fr": "https://fr.wikipedia.org/wiki/Dominique_Vien",
+      "en": "https://en.wikipedia.org/wiki/Dominique_Vien"
+    },
+    "110124": {
+      "fr": "https://fr.wikipedia.org/wiki/Caroline_Desrochers",
+      "en": "https://en.wikipedia.org/wiki/Caroline_Desrochers"
+    },
+    "110189": {
+      "fr": "https://fr.wikipedia.org/wiki/Jean-Denis_Garon",
+      "en": "https://en.wikipedia.org/wiki/Jean-Denis_Garon"
+    },
+    "110225": {
+      "fr": "https://fr.wikipedia.org/wiki/Sophie_Chatel",
+      "en": "https://en.wikipedia.org/wiki/Sophie_Chatel"
+    },
+    "110339": {
+      "fr": "https://fr.wikipedia.org/wiki/Shafqat_Ali",
+      "en": "https://en.wikipedia.org/wiki/Shafqat_Ali"
+    },
+    "110365": {
+      "fr": "https://fr.wikipedia.org/wiki/Connie_Cody",
+      "en": "https://en.wikipedia.org/wiki/Connie_Cody"
+    },
+    "110373": {
+      "fr": "https://fr.wikipedia.org/wiki/Michael_Coteau",
+      "en": "https://en.wikipedia.org/wiki/Michael_Coteau"
+    },
+    "110415": {
+      "fr": "https://fr.wikipedia.org/wiki/Dan_Muys",
+      "en": "https://en.wikipedia.org/wiki/Dan_Muys"
+    },
+    "110441": {
+      "fr": "https://fr.wikipedia.org/wiki/Ned_Kuruc",
+      "en": "https://en.wikipedia.org/wiki/Ned_Kuruc"
+    },
+    "110446": {
+      "fr": "https://fr.wikipedia.org/wiki/Lisa_Hepfner",
+      "en": "https://en.wikipedia.org/wiki/Lisa_Hepfner"
+    },
+    "110454": {
+      "fr": "https://fr.wikipedia.org/wiki/Shelby_Kramp-Neuman",
+      "en": "https://en.wikipedia.org/wiki/Shelby_Kramp-Neuman"
+    },
+    "110459": {
+      "fr": "https://fr.wikipedia.org/wiki/Jenna_Sudds",
+      "en": "https://en.wikipedia.org/wiki/Jenna_Sudds"
+    },
+    "110502": {
+      "fr": "https://fr.wikipedia.org/wiki/Arielle_Kayabaga",
+      "en": "https://en.wikipedia.org/wiki/Arielle_Kayabaga"
+    },
+    "110534": {
+      "fr": "https://fr.wikipedia.org/wiki/Iqwinder_Gaheer",
+      "en": "https://en.wikipedia.org/wiki/Iqwinder_Gaheer"
+    },
+    "110538": {
+      "fr": "https://fr.wikipedia.org/wiki/Rechie_Valdez",
+      "en": "https://en.wikipedia.org/wiki/Rechie_Valdez"
+    },
+    "110572": {
+      "fr": "https://fr.wikipedia.org/wiki/Yasir_Naqvi",
+      "en": "https://en.wikipedia.org/wiki/Yasir_Naqvi"
+    },
+    "110649": {
+      "fr": "https://fr.wikipedia.org/wiki/Adam_Chambers_(homme_politique)",
+      "en": "https://en.wikipedia.org/wiki/Adam_Chambers_(politician)"
+    },
+    "110663": {
+      "fr": "https://fr.wikipedia.org/wiki/Viviane_Lapointe",
+      "en": "https://en.wikipedia.org/wiki/Viviane_Lapointe"
+    },
+    "110665": {
+      "fr": "https://fr.wikipedia.org/wiki/Melissa_Lantsman",
+      "en": "https://en.wikipedia.org/wiki/Melissa_Lantsman"
+    },
+    "110706": {
+      "fr": "https://fr.wikipedia.org/wiki/Kathy_Borrelli",
+      "en": "https://en.wikipedia.org/wiki/Kathy_Borrelli"
+    },
+    "110791": {
+      "fr": "https://fr.wikipedia.org/wiki/Buckley_Belanger",
+      "en": "https://en.wikipedia.org/wiki/Buckley_Belanger"
+    },
+    "110800": {
+      "fr": "https://fr.wikipedia.org/wiki/Fraser_Tolmie",
+      "en": "https://en.wikipedia.org/wiki/Fraser_Tolmie"
+    },
+    "110918": {
+      "fr": "https://fr.wikipedia.org/wiki/Laila_Goodridge",
+      "en": "https://en.wikipedia.org/wiki/Laila_Goodridge"
+    },
+    "111007": {
+      "fr": "https://fr.wikipedia.org/wiki/Frank_Caputo",
+      "en": "https://en.wikipedia.org/wiki/Frank_Caputo"
+    },
+    "111025": {
+      "fr": "https://fr.wikipedia.org/wiki/Tamara_Kronis",
+      "en": "https://en.wikipedia.org/wiki/Tamara_Kronis"
+    },
+    "111067": {
+      "fr": "https://fr.wikipedia.org/wiki/Parm_Bains",
+      "en": "https://en.wikipedia.org/wiki/Parm_Bains"
+    },
+    "111109": {
+      "fr": "https://fr.wikipedia.org/wiki/Brendan_Hanley",
+      "en": "https://en.wikipedia.org/wiki/Brendan_Hanley"
+    },
+    "111116": {
+      "fr": "https://fr.wikipedia.org/wiki/Lori_Idlout",
+      "en": "https://en.wikipedia.org/wiki/Lori_Idlout"
+    },
+    "114349": {
+      "fr": "https://fr.wikipedia.org/wiki/Charles_Sousa",
+      "en": "https://en.wikipedia.org/wiki/Charles_Sousa"
+    },
+    "115736": {
+      "fr": "https://fr.wikipedia.org/wiki/Anna_Gainey",
+      "en": "https://en.wikipedia.org/wiki/Anna_Gainey"
+    },
+    "115744": {
+      "fr": "https://fr.wikipedia.org/wiki/Ben_Carr",
+      "en": "https://en.wikipedia.org/wiki/Ben_Carr_(politician)"
+    },
+    "116022": {
+      "fr": "https://fr.wikipedia.org/wiki/Shuvaloy_Majumdar",
+      "en": "https://en.wikipedia.org/wiki/Shuvaloy_Majumdar"
+    },
+    "118689": {
+      "fr": "https://fr.wikipedia.org/wiki/Jamil_Jivani",
+      "en": "https://en.wikipedia.org/wiki/Jamil_Jivani"
+    },
+    "119705": {
+      "fr": "https://fr.wikipedia.org/wiki/Leslie_Church",
+      "en": "https://en.wikipedia.org/wiki/Leslie_Church"
+    },
+    "119991": {
+      "fr": "https://fr.wikipedia.org/wiki/Colin_Reynolds",
+      "en": "https://en.wikipedia.org/wiki/Colin_Reynolds"
+    },
+    "122369": {
+      "fr": "https://fr.wikipedia.org/wiki/Paul_Connors",
+      "en": "https://en.wikipedia.org/wiki/Paul_Connors"
+    },
+    "122375": {
+      "fr": "https://fr.wikipedia.org/wiki/Tom_Osborne_(homme_politique)",
+      "en": "https://en.wikipedia.org/wiki/Tom_Osborne_(Canadian_politician)"
+    },
+    "122380": {
+      "fr": "https://fr.wikipedia.org/wiki/Philip_Earle",
+      "en": "https://en.wikipedia.org/wiki/Philip_Earle"
+    },
+    "122389": {
+      "fr": "https://fr.wikipedia.org/wiki/Jonathan_Rowe_(homme_politique)",
+      "en": "https://en.wikipedia.org/wiki/Jonathan_Rowe_(politician)"
+    },
+    "122394": {
+      "fr": "https://fr.wikipedia.org/wiki/Kent_MacDonald",
+      "en": "https://en.wikipedia.org/wiki/Kent_MacDonald"
+    },
+    "122419": {
+      "fr": "https://fr.wikipedia.org/wiki/Alana_Hirtle",
+      "en": "https://en.wikipedia.org/wiki/Alana_Hirtle"
+    },
+    "122428": {
+      "fr": "https://fr.wikipedia.org/wiki/Shannon_Miedema",
+      "en": "https://en.wikipedia.org/wiki/Shannon_Miedema"
+    },
+    "122437": {
+      "fr": "https://fr.wikipedia.org/wiki/Braedon_Clark",
+      "en": "https://en.wikipedia.org/wiki/Braedon_Clark"
+    },
+    "122473": {
+      "fr": "https://fr.wikipedia.org/wiki/Guillaume_Desch%C3%AAnes-Th%C3%A9riault",
+      "en": "https://en.wikipedia.org/wiki/Guillaume_Desch%C3%AAnes-Th%C3%A9riault"
+    },
+    "122476": {
+      "fr": "https://fr.wikipedia.org/wiki/Mike_Dawson_(homme_politique)",
+      "en": "https://en.wikipedia.org/wiki/Mike_Dawson_(politician)"
+    },
+    "122507": {
+      "fr": "https://fr.wikipedia.org/wiki/Jason_Groleau",
+      "en": "https://en.wikipedia.org/wiki/Jason_Groleau"
+    },
+    "122518": {
+      "fr": "https://fr.wikipedia.org/wiki/Steeve_Lavoie",
+      "en": "https://en.wikipedia.org/wiki/Steeve_Lavoie"
+    },
+    "122533": {
+      "fr": "https://fr.wikipedia.org/wiki/Abdelhaq_Sari",
+      "en": "https://en.wikipedia.org/wiki/Abdelhaq_Sari"
+    },
+    "122539": {
+      "fr": "https://fr.wikipedia.org/wiki/Louis_Villeneuve",
+      "en": "https://en.wikipedia.org/wiki/Louis_Villeneuve"
+    },
+    "122552": {
+      "fr": "https://fr.wikipedia.org/wiki/Nathalie_Provost",
+      "en": "https://en.wikipedia.org/wiki/Nathalie_Provost"
+    },
+    "122559": {
+      "fr": "https://fr.wikipedia.org/wiki/Marianne_Dandurand",
+      "en": "https://en.wikipedia.org/wiki/Marianne_Dandurand"
+    },
+    "122579": {
+      "fr": "https://fr.wikipedia.org/wiki/Alexis_Desch%C3%AAnes",
+      "en": "https://en.wikipedia.org/wiki/Alexis_Desch%C3%AAnes"
+    },
+    "122587": {
+      "fr": "https://fr.wikipedia.org/wiki/Marie-Gabrielle_M%C3%A9nard",
+      "en": "https://en.wikipedia.org/wiki/Marie-Gabrielle_M%C3%A9nard"
+    },
+    "122589": {
+      "fr": "https://fr.wikipedia.org/wiki/Eric_St-Pierre",
+      "en": "https://en.wikipedia.org/wiki/%C3%89ric_St-Pierre"
+    },
+    "122606": {
+      "fr": "https://fr.wikipedia.org/wiki/Jacques_Ramsay",
+      "en": "https://en.wikipedia.org/wiki/Jacques_Ramsay"
+    },
+    "122615": {
+      "fr": "https://fr.wikipedia.org/wiki/Claude_Guay",
+      "en": "https://en.wikipedia.org/wiki/Claude_Guay"
+    },
+    "122637": {
+      "fr": "https://fr.wikipedia.org/wiki/Tim_Watchorn",
+      "en": "https://en.wikipedia.org/wiki/Tim_Watchorn"
+    },
+    "122646": {
+      "fr": "https://fr.wikipedia.org/wiki/Natilien_Joseph",
+      "en": "https://en.wikipedia.org/wiki/Natilien_Joseph"
+    },
+    "122656": {
+      "fr": "https://fr.wikipedia.org/wiki/Carlos_J._Leit%C3%A3o",
+      "en": "https://en.wikipedia.org/wiki/Carlos_Leit%C3%A3o"
+    },
+    "122668": {
+      "fr": "https://fr.wikipedia.org/wiki/Bienvenu-Olivier_Ntumba",
+      "en": "https://en.wikipedia.org/wiki/Bienvenu-Olivier_Ntumba"
+    },
+    "122678": {
+      "fr": "https://fr.wikipedia.org/wiki/Gabriel_Hardy",
+      "en": "https://en.wikipedia.org/wiki/Gabriel_Hardy"
+    },
+    "122684": {
+      "fr": "https://fr.wikipedia.org/wiki/Marjorie_Michel",
+      "en": "https://en.wikipedia.org/wiki/Marjorie_Michel"
+    },
+    "122709": {
+      "fr": "https://fr.wikipedia.org/wiki/Patrick_Bonin",
+      "en": "https://en.wikipedia.org/wiki/Patrick_Bonin"
+    },
+    "122753": {
+      "fr": "https://fr.wikipedia.org/wiki/Tatiana_Auguste",
+      "en": "https://en.wikipedia.org/wiki/Tatiana_Auguste"
+    },
+    "122756": {
+      "fr": "https://fr.wikipedia.org/wiki/Madeleine_Chenette",
+      "en": "https://en.wikipedia.org/wiki/Madeleine_Chenette"
+    },
+    "122773": {
+      "fr": "https://fr.wikipedia.org/wiki/Jennifer_McKelvie",
+      "en": "https://en.wikipedia.org/wiki/Jennifer_McKelvie"
+    },
+    "122788": {
+      "fr": "https://fr.wikipedia.org/wiki/Chris_Malette",
+      "en": "https://en.wikipedia.org/wiki/Chris_Malette"
+    },
+    "122801": {
+      "fr": "https://fr.wikipedia.org/wiki/Amandeep_Sodhi",
+      "en": "https://en.wikipedia.org/wiki/Amandeep_Sodhi"
+    },
+    "122825": {
+      "fr": "https://fr.wikipedia.org/wiki/Amarjeet_Gill",
+      "en": "https://en.wikipedia.org/wiki/Amarjeet_Gill"
+    },
+    "122850": {
+      "fr": "https://fr.wikipedia.org/wiki/Bruce_Fanjoy",
+      "en": "https://en.wikipedia.org/wiki/Bruce_Fanjoy"
+    },
+    "122899": {
+      "fr": "https://fr.wikipedia.org/wiki/Maggie_Chi",
+      "en": "https://en.wikipedia.org/wiki/Maggie_Chi"
+    },
+    "122911": {
+      "fr": "https://fr.wikipedia.org/wiki/Vince_Gasparro",
+      "en": "https://en.wikipedia.org/wiki/Vince_Gasparro"
+    },
+    "122913": {
+      "fr": "https://fr.wikipedia.org/wiki/Andrew_Lawton",
+      "en": "https://en.wikipedia.org/wiki/Andrew_Lawton_(politician)"
+    },
+    "122925": {
+      "fr": "https://fr.wikipedia.org/wiki/John_Zerucelli",
+      "en": "https://en.wikipedia.org/wiki/John_Zerucelli"
+    },
+    "122933": {
+      "fr": "https://fr.wikipedia.org/wiki/Dominique_O%27Rourke",
+      "en": "https://en.wikipedia.org/wiki/Dominique_O'Rourke"
+    },
+    "122946": {
+      "fr": "https://fr.wikipedia.org/wiki/Aslam_Rana",
+      "en": "https://en.wikipedia.org/wiki/Aslam_Rana"
+    },
+    "122959": {
+      "fr": "https://fr.wikipedia.org/wiki/John-Paul_Danko",
+      "en": "https://en.wikipedia.org/wiki/John-Paul_Danko"
+    },
+    "122975": {
+      "fr": "https://fr.wikipedia.org/wiki/Ga%C3%A9tan_Malette",
+      "en": "https://en.wikipedia.org/wiki/Ga%C3%A9tan_Malette"
+    },
+    "122988": {
+      "fr": "https://fr.wikipedia.org/wiki/Kelly_DeRidder",
+      "en": "https://en.wikipedia.org/wiki/Kelly_DeRidder"
+    },
+    "122994": {
+      "fr": "https://fr.wikipedia.org/wiki/Matt_Strauss",
+      "en": "https://en.wikipedia.org/wiki/Matt_Strauss"
+    },
+    "123006": {
+      "fr": "https://fr.wikipedia.org/wiki/Kurt_Holman",
+      "en": "https://en.wikipedia.org/wiki/Kurt_Holman"
+    },
+    "123019": {
+      "fr": "https://fr.wikipedia.org/wiki/Tim_Hodgson_(homme_politique)",
+      "en": "https://en.wikipedia.org/wiki/Tim_Hodgson"
+    },
+    "123027": {
+      "fr": "https://fr.wikipedia.org/wiki/Kristina_Tesser_Derksen",
+      "en": "https://en.wikipedia.org/wiki/Kristina_Tesser_Derksen"
+    },
+    "123033": {
+      "fr": "https://fr.wikipedia.org/wiki/Fares_Al_Soud",
+      "en": "https://en.wikipedia.org/wiki/Fares_Al_Soud"
+    },
+    "123060": {
+      "fr": "https://fr.wikipedia.org/wiki/Sandra_Cobena",
+      "en": "https://en.wikipedia.org/wiki/Sandra_Cobena"
+    },
+    "123073": {
+      "fr": "https://fr.wikipedia.org/wiki/Fred_Davies",
+      "en": "https://en.wikipedia.org/wiki/Fred_Davies_(politician)"
+    },
+    "123081": {
+      "fr": "https://fr.wikipedia.org/wiki/Pauline_Rochefort",
+      "en": "https://en.wikipedia.org/wiki/Pauline_Rochefort"
+    },
+    "123092": {
+      "fr": "https://fr.wikipedia.org/wiki/Sima_Acan",
+      "en": "https://en.wikipedia.org/wiki/Sima_Acan"
+    },
+    "123104": {
+      "fr": "https://fr.wikipedia.org/wiki/Rhonda_Kirkland",
+      "en": "https://en.wikipedia.org/wiki/Rhonda_Kirkland"
+    },
+    "123133": {
+      "fr": "https://fr.wikipedia.org/wiki/Emma_Harrison_(femme_politique)",
+      "en": "https://en.wikipedia.org/wiki/Emma_Harrison_(politician)"
+    },
+    "123141": {
+      "fr": "https://fr.wikipedia.org/wiki/Juanita_Nathan",
+      "en": "https://en.wikipedia.org/wiki/Juanita_Nathan"
+    },
+    "123144": {
+      "fr": "https://fr.wikipedia.org/wiki/Giovanna_Mingarelli",
+      "en": "https://en.wikipedia.org/wiki/Giovanna_Mingarelli"
+    },
+    "123153": {
+      "fr": "https://fr.wikipedia.org/wiki/Vincent_Ho",
+      "en": "https://en.wikipedia.org/wiki/Vincent_Ho_(politician)"
+    },
+    "123192": {
+      "fr": "https://fr.wikipedia.org/wiki/Chi_Nguyen",
+      "en": "https://en.wikipedia.org/wiki/Chi_Nguyen"
+    },
+    "123214": {
+      "fr": "https://fr.wikipedia.org/wiki/Karim_Bardeesy",
+      "en": "https://en.wikipedia.org/wiki/Karim_Bardeesy"
+    },
+    "123229": {
+      "fr": "https://fr.wikipedia.org/wiki/Evan_Solomon",
+      "en": "https://en.wikipedia.org/wiki/Evan_Solomon"
+    },
+    "123248": {
+      "fr": "https://fr.wikipedia.org/wiki/Michael_Guglielmin",
+      "en": "https://en.wikipedia.org/wiki/Michael_Guglielmin"
+    },
+    "123272": {
+      "fr": "https://fr.wikipedia.org/wiki/Harb_Gill",
+      "en": "https://en.wikipedia.org/wiki/Harb_Gill"
+    },
+    "123276": {
+      "fr": "https://fr.wikipedia.org/wiki/Roman_Baber",
+      "en": "https://en.wikipedia.org/wiki/Roman_Baber"
+    },
+    "123282": {
+      "fr": "https://fr.wikipedia.org/wiki/Jacob_Mantle",
+      "en": "https://en.wikipedia.org/wiki/Jacob_Mantle"
+    },
+    "123287": {
+      "fr": "https://fr.wikipedia.org/wiki/Grant_Jackson_(homme_politique)",
+      "en": "https://en.wikipedia.org/wiki/Grant_Jackson_(politician)"
+    },
+    "123305": {
+      "fr": "https://fr.wikipedia.org/wiki/Ginette_Lavack",
+      "en": "https://en.wikipedia.org/wiki/Ginette_Lavack"
+    },
+    "123361": {
+      "fr": "https://fr.wikipedia.org/wiki/Steven_Bonk",
+      "en": "https://en.wikipedia.org/wiki/Steven_Bonk"
+    },
+    "123372": {
+      "fr": "https://fr.wikipedia.org/wiki/David_Bexte",
+      "en": "https://en.wikipedia.org/wiki/David_Bexte"
+    },
+    "123382": {
+      "fr": "https://fr.wikipedia.org/wiki/Corey_Hogan",
+      "en": "https://en.wikipedia.org/wiki/Corey_Hogan"
+    },
+    "123401": {
+      "fr": "https://fr.wikipedia.org/wiki/Dalwinder_Gill",
+      "en": "https://en.wikipedia.org/wiki/Dalwinder_Gill"
+    },
+    "123415": {
+      "fr": "https://fr.wikipedia.org/wiki/David_McKenzie_(homme_politique_canadien)",
+      "en": "https://en.wikipedia.org/wiki/David_McKenzie_(Canadian_politician)"
+    },
+    "123418": {
+      "fr": "https://fr.wikipedia.org/wiki/Amanpreet_Gill",
+      "en": "https://en.wikipedia.org/wiki/Amanpreet_Gill"
+    },
+    "123447": {
+      "fr": "https://fr.wikipedia.org/wiki/Billy_Morin",
+      "en": "https://en.wikipedia.org/wiki/Billy_Morin"
+    },
+    "123455": {
+      "fr": "https://fr.wikipedia.org/wiki/Jagsharan_Singh_Mahal",
+      "en": "https://en.wikipedia.org/wiki/Jagsharan_Singh_Mahal"
+    },
+    "123500": {
+      "fr": "https://fr.wikipedia.org/wiki/Burton_Bailey",
+      "en": "https://en.wikipedia.org/wiki/Burton_Bailey"
+    },
+    "123513": {
+      "fr": "https://fr.wikipedia.org/wiki/William_Stevenson_(homme_politique_canadien)",
+      "en": "https://en.wikipedia.org/wiki/William_Stevenson_(Canadian_politician)"
+    },
+    "123517": {
+      "fr": "https://fr.wikipedia.org/wiki/Sukhman_Gill",
+      "en": "https://en.wikipedia.org/wiki/Sukhman_Gill"
+    },
+    "123520": {
+      "fr": "https://fr.wikipedia.org/wiki/Wade_Chang",
+      "en": "https://en.wikipedia.org/wiki/Wade_Chang"
+    },
+    "123552": {
+      "fr": "https://fr.wikipedia.org/wiki/Jeff_Kibble",
+      "en": "https://en.wikipedia.org/wiki/Jeff_Kibble"
+    },
+    "123556": {
+      "fr": "https://fr.wikipedia.org/wiki/Jill_McKnight",
+      "en": "https://en.wikipedia.org/wiki/Jill_McKnight"
+    },
+    "123563": {
+      "fr": "https://fr.wikipedia.org/wiki/Stephanie_McLean_(femme_politique)",
+      "en": "https://en.wikipedia.org/wiki/Stephanie_McLean_(politician)"
+    },
+    "123583": {
+      "fr": "https://fr.wikipedia.org/wiki/Jake_Sawatzky",
+      "en": "https://en.wikipedia.org/wiki/Jake_Sawatzky"
+    },
+    "123586": {
+      "fr": "https://fr.wikipedia.org/wiki/Aaron_Gunn",
+      "en": "https://en.wikipedia.org/wiki/Aaron_Gunn"
+    },
+    "123608": {
+      "fr": "https://fr.wikipedia.org/wiki/Chak_Au",
+      "en": "https://en.wikipedia.org/wiki/Chak_Au"
+    },
+    "123622": {
+      "fr": "https://fr.wikipedia.org/wiki/Ellis_Ross",
+      "en": "https://en.wikipedia.org/wiki/Ellis_Ross"
+    },
+    "123625": {
+      "fr": "https://fr.wikipedia.org/wiki/Ernie_Klassen",
+      "en": "https://en.wikipedia.org/wiki/Ernie_Klassen"
+    },
+    "123644": {
+      "fr": "https://fr.wikipedia.org/wiki/Gregor_Robertson_(homme_politique)",
+      "en": "https://en.wikipedia.org/wiki/Gregor_Robertson_(politician)"
+    },
+    "123653": {
+      "fr": "https://fr.wikipedia.org/wiki/Wade_Grant",
+      "en": "https://en.wikipedia.org/wiki/Wade_Grant"
+    },
+    "123665": {
+      "fr": "https://fr.wikipedia.org/wiki/Will_Greaves",
+      "en": "https://en.wikipedia.org/wiki/Will_Greaves"
+    },
+    "141713": {
+      "fr": "https://fr.wikipedia.org/wiki/Doly_Begum",
+      "en": "https://en.wikipedia.org/wiki/Doly_Begum"
+    }
+  }
+}
