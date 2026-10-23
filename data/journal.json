@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-10-23",
+    "volet": "site",
+    "fr": {
+      "titre": "Partager la fiche d’un·e député·e",
+      "texte": "Une icône à côté de Suivre copie d’un clic un court résumé de la fiche : parti, circonscription, présence aux votes, projets de loi parrainés et ancienneté, avec le lien."
+    },
+    "en": {
+      "titre": "Share an MP’s profile",
+      "texte": "An icon next to Follow copies, in one click, a short summary of the profile: party, riding, vote attendance, bills sponsored and tenure, with the link."
+    }
+  },
+  {
     "date": "2026-10-18",
     "volet": "site",
     "fr": {

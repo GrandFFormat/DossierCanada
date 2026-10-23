@@ -1906,6 +1906,58 @@ function renderDeputes(filter){
 // par build-frontend-data.js). Bilingue ; le taux de présence est la part des
 // scrutins auxquels la personne a pris part depuis son entrée en fonction (proxy
 // d'assiduité — la Chambre ne publie pas l'assiduité directement).
+// Partager la fiche d'un·e député·e (23 oct. 2026, comme sur DossierQuébec) : un clic copie un court
+// résumé (parti, circonscription, présence aux votes, projets de loi parrainés et devenus lois,
+// ancienneté) et le lien, qui rouvre la page avec ce nom dans la recherche. ✓ le confirme.
+const ICONE_PARTAGE = '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="currentColor"><circle cx="18" cy="5" r="3.2"/><circle cx="6" cy="12" r="3.2"/><circle cx="18" cy="19" r="3.2"/><path d="M8.6 10.7l6.8-3.9 1 1.7-6.8 3.9zM8.6 13.3l1-1.7 6.8 3.9-1 1.7z"/></svg>';
+function resumeDepute(d, isEn){
+  const L = (o) => (o && typeof o === 'object') ? (isEn ? (o.en ?? o.fr ?? '') : (o.fr ?? o.en ?? '')) : (o ?? '');
+  const parti = isEn ? (d.party?.en || d.party?.code) : (d.party?.fr || d.party?.code);
+  const vr = d.votingRecord;
+  const pct = (vr && vr.participationRate != null) ? Math.round(vr.participationRate * 100) : null;
+  const parraines = billsSponsoredBy(d.id);
+  const lois = parraines.filter((x) => x.status === 'loi').length;
+  // Ancienneté depuis memberSince (début du mandat en cours sur ourcommons.ca, d'où « au moins »).
+  const depuis = d.memberSince ? new Date(d.memberSince + 'T12:00:00') : null;
+  const ans = depuis ? Math.floor((Date.now() - depuis) / (365.25 * 864e5)) : null;
+  const anciennete = ans === null ? ''
+    : ans < 1 ? (isEn ? 'MP for less than a year' : 'Député·e depuis moins d’un an')
+    : (isEn ? `MP for at least ${ans} year${ans > 1 ? 's' : ''}` : `Député·e depuis au moins ${ans} an${ans > 1 ? 's' : ''}`);
+  const tete = `${d.name} (${parti}), ${isEn ? 'MP for' : 'député·e de'} ${L(d.constituency)}${L(d.province) ? ' (' + L(d.province) + ')' : ''}`;
+  const faits = [
+    pct != null ? (isEn ? `Recorded-vote attendance: ${pct}%` : `Présence aux votes : ${pct} %`) : '',
+    isEn ? `Bills sponsored: ${parraines.length}${lois ? `, ${lois} became law` : ''}` : `Projets de loi parrainés : ${parraines.length}${lois ? `, dont ${lois} devenus lois` : ''}`,
+    anciennete,
+  ].filter(Boolean).join(' · ');
+  return `${tete}. ${faits}.`;
+}
+function partageDepute(bouton, id){
+  const isEn = currentLang === 'en';
+  const d = (typeof deputeById !== 'undefined' && deputeById.get(id)) || null;
+  if(!d) return;
+  const lien = `https://www.dossiercanada.ca/${isEn ? 'en/mps' : 'deputes'}?mp=${encodeURIComponent(d.name)}`;
+  const texte = `${resumeDepute(d, isEn)} ${lien}`;
+  const fait = () => {
+    const avant = bouton.innerHTML;
+    bouton.textContent = '✓';
+    setTimeout(() => { bouton.innerHTML = avant; }, 1500);
+  };
+  (navigator.clipboard ? navigator.clipboard.writeText(texte) : Promise.reject()).then(fait).catch(() => window.prompt(isEn ? 'Copy:' : 'Copiez :', texte));
+}
+window.partageDepute = partageDepute;
+// Le lien partagé : ?mp=Nom remplit la recherche une fois les données arrivées.
+document.addEventListener('DOMContentLoaded', () => {
+  const nom = new URLSearchParams(location.search).get('mp');
+  if(!nom) return;
+  let essais = 0;
+  const remplir = () => {
+    const champ = document.getElementById('searchMinistres');
+    if(champ && typeof deputeById !== 'undefined' && deputeById.size){ champ.value = nom; champ.dispatchEvent(new Event('input', { bubbles: true })); champ.scrollIntoView({ block: 'center' }); return; }
+    if(++essais < 40) setTimeout(remplir, 250);
+  };
+  remplir();
+});
+
 function deputeCardFed(d, isEn, L){
   const color = partyColors[d.party.code] || '#8a8f99';
   const riding = L(d.constituency);
@@ -1935,7 +1987,8 @@ function deputeCardFed(d, isEn, L){
     <div class="m-card">
       <div class="top-row">
         ${avatar}
-        <button class="follow-btn ${isFollowed?'on':''}" onclick="toggleFollowDepute('${followKey}')">${isFollowed ? t('btn.following') : t('btn.follow')}</button>
+        <span class="mp-actions"><button class="part-btn" type="button" title="${isEn ? 'Share' : 'Partager'}" aria-label="${isEn ? 'Share the profile of' : 'Partager la fiche de'} ${d.name.replace(/"/g, '&quot;')}" onclick="event.stopPropagation(); partageDepute(this, ${d.id})">${ICONE_PARTAGE}</button>
+        <button class="follow-btn ${isFollowed?'on':''}" onclick="toggleFollowDepute('${followKey}')">${isFollowed ? t('btn.following') : t('btn.follow')}</button></span>
       </div>
       <h3>${d.honorific ? d.honorific + ' ' : ''}${d.name}</h3>
       <div class="role">${riding}${prov ? ' · ' + prov : ''}</div>
