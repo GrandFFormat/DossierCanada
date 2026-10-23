@@ -1336,3 +1336,7 @@
 .mp-actions{display:inline-flex; gap:6px; align-items:center;}
 .part-btn{width:34px; height:34px; padding:0; border:2px solid var(--ink); background:var(--card, #fff); color:var(--ink); cursor:pointer; display:inline-flex; align-items:center; justify-content:center;}
 .part-btn:hover, .part-btn:focus-visible{background:var(--ink); color:var(--card, #fff);}
+/* Le « W » vers la page Wikipédia, à côté du partage (23 oct. 2026). */
+.wiki-btn{width:34px; height:34px; display:inline-flex; align-items:center; justify-content:center; border:2px solid var(--ink); background:var(--card, #fff); color:var(--ink); font-family:Georgia,'Times New Roman',serif; font-size:18px; font-weight:700; line-height:1; text-decoration:none;}
+.wiki-btn:hover, .wiki-btn:focus-visible{background:var(--ink); color:var(--card, #fff);}
+.mp-actions .follow-btn{white-space:nowrap;}

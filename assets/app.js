@@ -1991,7 +1991,7 @@ function deputeCardFed(d, isEn, L){
     <div class="m-card">
       <div class="top-row">
         ${avatar}
-        <span class="mp-actions"><button class="part-btn" type="button" title="${isEn ? 'Share' : 'Partager'}" aria-label="${isEn ? 'Share the profile of' : 'Partager la fiche de'} ${d.name.replace(/"/g, '&quot;')}" onclick="event.stopPropagation(); partageDepute(this, ${d.id})">${ICONE_PARTAGE}</button>
+        <span class="mp-actions"><button class="part-btn" type="button" title="${isEn ? 'Share' : 'Partager'}" aria-label="${isEn ? 'Share the profile of' : 'Partager la fiche de'} ${d.name.replace(/"/g, '&quot;')}" onclick="event.stopPropagation(); partageDepute(this, ${d.id})">${ICONE_PARTAGE}</button>${(() => { const w = d.wiki && (isEn ? (d.wiki.en || d.wiki.fr) : (d.wiki.fr || d.wiki.en)); return w ? `<a class="wiki-btn" href="${w}" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Wikipédia" aria-label="${isEn ? 'Wikipedia page of' : 'Page Wikipédia de'} ${d.name.replace(/"/g, '&quot;')}">W</a>` : ''; })()}
         <button class="follow-btn ${isFollowed?'on':''}" onclick="toggleFollowDepute('${followKey}')">${isFollowed ? t('btn.following') : t('btn.follow')}</button></span>
       </div>
       <h3>${d.honorific ? d.honorific + ' ' : ''}${d.name}</h3>
