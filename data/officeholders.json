@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-23T13:37:46.335Z",
+  "scrapedAt": "2026-10-24T12:51:13.070Z",
   "sources": [
     {
       "key": "house_speaker",
@@ -10,5 +10,7 @@
       "url": "https://www.gg.ca/en/governor-general"
     }
   ],
-  "officeholders": {}
+  "officeholders": {
+    "governor_general": "Louise Arbour"
+  }
 }
