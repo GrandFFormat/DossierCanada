@@ -65,7 +65,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=ff0e6c63b5">
+<link rel="stylesheet" href="/assets/app.css?v=86d0df9865">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -314,7 +314,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
             <div class="bill-share-row">
     <span class="bill-share-label">Share:</span>
     <button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(14175644, 'x', event)" aria-label="Share on X">𝕏</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(14175644, 'fb', event)" aria-label="Share on Facebook">FB</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(14175644, 'copy', event)" aria-label="Copy the link">⧉</button>
-  </div><div class="bill-cafe-row"><a class="bill-cafe-btn" href="https://donate.stripe.com/fZu6oH4pt5OY3sY5Fy9fW01" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="Buy us a coffee (opens in a new tab)">☕ Back us</a></div>
+  </div><div class="bill-cafe-row"><a class="bill-cafe-btn" href="https://donate.stripe.com/fZu6oH4pt5OY3sY5Fy9fW01" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="Buy us a coffee (opens in a new tab)">☕ Long or short?</a></div>
           </aside>
         </div>
         
@@ -602,7 +602,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=2caf9896c9"></script>
+<script defer src="/assets/app.js?v=740d477d1e"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->
