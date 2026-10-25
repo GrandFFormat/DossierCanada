@@ -3057,6 +3057,9 @@ function renderBills(keyword){
   // Mémorisé pour que le bloc de lobbying puisse mettre en avant l'organisation
   // cherchée : trouver un projet sans voir pourquoi serait pire que ne rien trouver.
   billsKeyword = kw;
+  // « c-2 » → « C-2 » si la recherche a la forme d'un numéro de projet de loi.
+  const mNum = kw.replace(/ /g, '').match(/^([cs])(\d+)$/);
+  const numeroCherche = mNum ? (mNum[1].toUpperCase() + '-' + mNum[2]) : null;
   const list = bills.filter(b => {
     const statusOk = !billsStatusFilter || b.state === billsStatusFilter;
     const chamberOk = billsStepFilter === null || b.chamber === billsStepFilter;
@@ -3070,6 +3073,14 @@ function renderBills(keyword){
     const kwOk = matchesSearch(haystack, kw);
     return statusOk && chamberOk && lobbyOk && omnibusOk && challengeOk && kwOk;
   }).sort((a,b)=>{
+    // Recherche d'un NUMÉRO (« c-2 », « c2 », « C 2 ») : le projet qui porte
+    // exactement ce numéro passe en tête. Sans ça, « c-2 » trouvait aussi C-22,
+    // C-219, C-294… (ils commencent tous par « C-2 »), et le tri par activité
+    // récente enterrait le vrai C-2, immobile depuis 2025, au bas de la liste.
+    if(numeroCherche){
+      const ea = String(a.num).toUpperCase() === numeroCherche, eb = String(b.num).toUpperCase() === numeroCherche;
+      if(ea !== eb) return ea ? -1 : 1;
+    }
     // Filtre lobbying actif : on classe du plus lobbyé au moins lobbyé — c'est
     // la question qu'on pose en cliquant. Le sens du tri reste celui du bouton.
     if(billsLobbyFilter && typeof lobbying !== 'undefined' && lobbying.bills){
