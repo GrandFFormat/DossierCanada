@@ -1935,11 +1935,13 @@ function resumeDepute(d, isEn){
   ].filter(Boolean).join(' · ');
   return `${tete}. ${faits}.`;
 }
+// Un lien lisible à partager (Martin, 26 oct. 2026) : « Ziad Aboultaif » → « ziad-aboultaif ».
+const slugMp = (n) => String(n || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 function partageDepute(bouton, id){
   const isEn = currentLang === 'en';
   const d = (typeof deputeById !== 'undefined' && deputeById.get(id)) || null;
   if(!d) return;
-  const lien = `https://www.dossiercanada.ca/${isEn ? 'en/mps' : 'deputes'}?mp=${encodeURIComponent(d.name)}`;
+  const lien = `https://www.dossiercanada.ca/${isEn ? 'en/mps' : 'deputes'}?mp=${slugMp(d.name)}`;
   const texte = `${resumeDepute(d, isEn)} ${lien}`;
   const fait = () => {
     const avant = bouton.innerHTML;
@@ -1951,12 +1953,17 @@ function partageDepute(bouton, id){
 window.partageDepute = partageDepute;
 // Le lien partagé : ?mp=Nom remplit la recherche une fois les données arrivées.
 document.addEventListener('DOMContentLoaded', () => {
-  const nom = new URLSearchParams(location.search).get('mp');
-  if(!nom) return;
+  const demande = new URLSearchParams(location.search).get('mp');
+  let nom = demande;
+  if(!demande) return;
   let essais = 0;
   const remplir = () => {
     const champ = document.getElementById('searchMinistres');
-    if(champ && typeof deputeById !== 'undefined' && deputeById.size){ champ.value = nom; champ.dispatchEvent(new Event('input', { bubbles: true })); champ.scrollIntoView({ block: 'center' }); return; }
+    if(champ && typeof deputeById !== 'undefined' && deputeById.size){
+      // Lien lisible (?mp=ziad-aboultaif) : retrouver le vrai nom ; un ancien lien avec le nom complet marche encore.
+      const vrai = [...deputeById.values()].find((x) => slugMp(x.name) === slugMp(demande));
+      if(vrai) nom = vrai.name;
+      champ.value = nom; champ.dispatchEvent(new Event('input', { bubbles: true })); champ.scrollIntoView({ block: 'center' }); return; }
     if(++essais < 40) setTimeout(remplir, 250);
   };
   remplir();
