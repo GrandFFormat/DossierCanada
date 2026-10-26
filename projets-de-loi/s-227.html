@@ -65,7 +65,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=ff0e6c63b5">
+<link rel="stylesheet" href="/assets/app.css?v=86d0df9865">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -266,7 +266,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       </div>
       <div class="filter-group">
         <button class="filter-hamburger" id="stepFilterBtn" onclick="toggleFilterPanel('step')" aria-expanded="false">☰ <span data-i18n="filter.etapes">Chambre</span></button>
-        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">Chambre des communes</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Sénat</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Projets avec des communications déclarées au Commissariat au lobbying">Lobbying <b>46</b></span><!--/ssr--></div>
+        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">Chambre des communes</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Sénat</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Projets avec des communications déclarées au Commissariat au lobbying">Lobbying <b>46</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Projets qui modifient plusieurs lois différentes à la fois, une par partie">Omnibus <b>15</b></span><!--/ssr--></div>
       </div>
     </div>
 
@@ -289,7 +289,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
           <div class="num">PROJET DE LOI S-227</div>
           <h3>Loi instituant le Mois du patrimoine arabe</h3>
           <div class="last-activity">Dernière activité : <b>Sanction royale reçue</b></div>
-          <div class="meta">Projet de loi d'intérêt public du Sénat</div>
+          <div class="meta">Projet de loi d'intérêt public du Sénat · Parrain : L’hon. Mohammad Khair Al Zaibak</div>
         </div>
         <div style="display:flex; align-items:center; gap:6px; flex:none; flex-wrap:wrap; justify-content:flex-end;">
           
@@ -297,7 +297,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
         </div>
       </div>
       
-      <div class="bill-meta-top">Sénat · Projet de loi d'intérêt public du Sénat</div>
+      <div class="bill-meta-top">Parrain : L’hon. Mohammad Khair Al Zaibak · Sénat · Projet de loi d'intérêt public du Sénat</div>
       <div class="bill-stages"><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Sénat · 1re<b>2025-06-04</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Sénat · 2e<b>2025-10-02</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Sénat · 3e<b>2025-10-08</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Communes · 1re<b>2025-10-10</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Communes · 2e<b>2026-02-10</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Communes · 3e<b>2026-06-18</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Sanction royale<b>2026-06-18</b></span></div>
       <div class="bill-follow-row">
     <span class="follow-hint">Connexion requise — une demande par personne, aucune demande anonyme</span>
