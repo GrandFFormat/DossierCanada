@@ -62,7 +62,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=ff0e6c63b5">
+<link rel="stylesheet" href="/assets/app.css?v=86d0df9865">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -263,7 +263,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       </div>
       <div class="filter-group">
         <button class="filter-hamburger" id="stepFilterBtn" onclick="toggleFilterPanel('step')" aria-expanded="false">☰ <span data-i18n="filter.etapes">Chamber</span></button>
-        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">House of Commons</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Senate</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Bills with communications reported to the Commissioner of Lobbying">Lobbying <b>46</b></span><!--/ssr--></div>
+        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">House of Commons</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Senate</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Bills with communications reported to the Commissioner of Lobbying">Lobbying <b>46</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Bills that change several different acts at once, one per part">Omnibus <b>15</b></span><!--/ssr--></div>
       </div>
     </div>
 
@@ -273,9 +273,9 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-num">C-22</span>
       <span class="ab-title">An Act respecting lawful access</span>
       
-      
+      <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Omnibus bill — 3 parts: it changes several different acts. Click to show only omnibus bills">Omnibus · 3 parts</button>
       <span class="ab-lob" title="47 reported lobbying communications">47</span>
-      
+      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
       <span class="status-pill status-encours">In progress</span>
       <span class="ab-caret">▾</span>
     </div>
@@ -299,7 +299,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       
       
       
-      
+      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
       <span class="status-pill status-encours">In progress</span>
       <span class="ab-caret">▾</span>
     </div>
@@ -311,7 +311,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       
       
       
-      
+      <span class="depute-party" style="background:#F58220; color:var(--on-candy)">NDP</span>
       <span class="status-pill status-encours">In progress</span>
       <span class="ab-caret">▾</span>
     </div>
@@ -323,7 +323,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       
       
       
-      
+      <span class="depute-party" style="background:#0E7C7B; color:#fff">CSG</span>
       <span class="status-pill status-encours">In progress</span>
       <span class="ab-caret">▾</span>
     </div>
@@ -335,7 +335,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       
       
       
-      
+      <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
       <span class="status-pill status-encours">In progress</span>
       <span class="ab-caret">▾</span>
     </div>
@@ -347,7 +347,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       
       
       
-      
+      <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
       <span class="status-pill status-encours">In progress</span>
       <span class="ab-caret">▾</span>
     </div>
@@ -359,7 +359,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       
       
       
-      
+      <span class="depute-party" style="background:#1A4782; color:#fff">C</span>
       <span class="status-pill status-encours">In progress</span>
       <span class="ab-caret">▾</span>
     </div>
@@ -371,7 +371,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       
       
       
-      
+      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
       <span class="status-pill status-encours">In progress</span>
       <span class="ab-caret">▾</span>
     </div>
@@ -383,7 +383,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       
       
       
-      
+      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
       <span class="status-pill status-sanctionne">Assented to</span>
       <span class="ab-caret">▾</span>
     </div>
