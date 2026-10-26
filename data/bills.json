@@ -1,7 +1,7 @@
 {
   "source": "https://www.parl.ca/legisinfo/en/bills/json?parlsession=45-1",
   "session": "45-1",
-  "scrapedAt": "2026-10-23T13:20:57.001Z",
+  "scrapedAt": "2026-10-26T15:07:09.496Z",
   "count": 194,
   "bills": [
     {
@@ -7662,7 +7662,10 @@
         "fr": "Loi modifiant la Loi sur les Indiens (nouveaux droits à l’inscription)"
       },
       "shortTitle": null,
-      "sponsor": null,
+      "sponsor": {
+        "en": "Marc Gold",
+        "fr": "Marc Gold"
+      },
       "status": {
         "en": "At consideration in committee in the House of Commons",
         "fr": "À l'examen en comité à la Chambre des communes"
@@ -7712,8 +7715,11 @@
         "en": "https://www.parl.ca/legisinfo/en/bill/45-1/s-2",
         "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/s-2"
       },
-      "sponsorPersonId": null,
-      "sponsorName": null,
+      "sponsorPersonId": 95498,
+      "sponsorName": {
+        "first": "Marc",
+        "last": "Gold"
+      },
       "summary": {
         "en": null,
         "fr": null
@@ -12310,5 +12316,5 @@
       "fullSummaryAvailable": false
     }
   ],
-  "summariesScrapedAt": "2026-10-25T13:16:14.068Z"
+  "summariesScrapedAt": "2026-10-26T15:11:00.756Z"
 }
