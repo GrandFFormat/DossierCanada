@@ -129,6 +129,34 @@
   </url>
   <!-- PROJETS:START -->
   <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-41</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-41"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-41"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-41"/>
+    <lastmod>2026-10-27</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-41</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-41"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-41"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-41"/>
+    <lastmod>2026-10-27</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/c-40</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-40"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-40"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-40"/>
+    <lastmod>2026-10-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/c-40</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-40"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-40"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-40"/>
+    <lastmod>2026-10-26</lastmod>
+  </url>
+  <url>
     <loc>https://www.dossiercanada.ca/projets-de-loi/c-22</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-22"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-22"/>
@@ -322,20 +350,6 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-10"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-10"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-10"/>
-    <lastmod>2026-10-06</lastmod>
-  </url>
-  <url>
-    <loc>https://www.dossiercanada.ca/projets-de-loi/c-40</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-40"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-40"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-40"/>
-    <lastmod>2026-10-06</lastmod>
-  </url>
-  <url>
-    <loc>https://www.dossiercanada.ca/en/bills/c-40</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/c-40"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/c-40"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/c-40"/>
     <lastmod>2026-10-06</lastmod>
   </url>
   <url>
