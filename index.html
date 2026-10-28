@@ -80,7 +80,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=86d0df9865">
+<link rel="stylesheet" href="/assets/app.css?v=ff0e6c63b5">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -204,7 +204,19 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
           <h2 data-i18n="h.billsrecent">Projets de loi récemment actifs</h2>
           <a class="a3-seeall" data-view="projets" href="/projets-de-loi" data-i18n="a3.seeall">Tout voir →</a>
         </div>
-        <div id="apercuBills"><!--ssr--><div class="ab-row" id="abrow-ap-14279940">
+        <div id="apercuBills"><!--ssr--><div class="ab-row" id="abrow-ap-14223235">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-14223235')">
+      <span class="ab-num">C-38</span>
+      <span class="ab-title">Loi modifiant la Loi sur la taxe d'accise (prolongation de l'allègement de la taxe d'accise fédérale sur les carburants)</span>
+      
+      
+      
+      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
+      <span class="status-pill status-encours">En cours</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"></div>
+  </div><div class="ab-row" id="abrow-ap-14279940">
     <div class="ab-head" onclick="toggleApercuBill('abrow-ap-14279940')">
       <span class="ab-num">C-41</span>
       <span class="ab-title">Loi modifiant le Code criminel et la Loi modifiant le Code criminel (aide médicale à mourir) et apportant des modifications connexes à d'autres lois</span>
@@ -240,18 +252,6 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-caret">▾</span>
     </div>
     <div class="ab-detail"></div>
-  </div><div class="ab-row" id="abrow-ap-13541964">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13541964')">
-      <span class="ab-num">S-210</span>
-      <span class="ab-title">Loi instituant le Mois du patrimoine ukrainien</span>
-      
-      
-      
-      
-      <span class="status-pill status-encours">En cours</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"></div>
   </div><!--/ssr--></div>
         <div class="a3-tiles">
           <a class="a3-tile" data-view="votes" href="/votes">
@@ -269,11 +269,11 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
         <div id="sittingBox"></div>
         <div id="newsList"><!--ssr--><div class="news-item">
       <div class="news-date">2026-10-27</div>
-      <div class="news-body"><p><b>C-41</b> — À la deuxième lecture à la Chambre des communes</p></div>
+      <div class="news-body"><p><b>C-38</b> — À la troisième lecture au Sénat</p></div>
     </div>
     <div class="news-item">
-      <div class="news-date">2026-10-26</div>
-      <div class="news-body"><p><b>C-40</b> — À l'examen en comité à la Chambre des communes</p></div>
+      <div class="news-date">2026-10-27</div>
+      <div class="news-body"><p><b>C-41</b> — À la deuxième lecture à la Chambre des communes</p></div>
     </div><button class="bill-more" style="margin-top:14px; border:none; cursor:pointer;" onclick="loadMoreNews()">+ Voir plus</button><!--/ssr--></div>
       </aside>
     </div>
