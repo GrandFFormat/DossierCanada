@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T14:54:01.636Z",
+  "generatedAt": "2026-10-28T15:20:08.346Z",
   "session": "45-1",
   "meta": {
     "counts": {
@@ -11,6 +11,92 @@
     "formerMembersInVotes": 12
   },
   "bills": [
+    {
+      "id": 14223235,
+      "num": "C-38",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "commons",
+      "type": {
+        "en": "House Government Bill",
+        "fr": "Projet de loi émanant du gouvernement (Cdc)"
+      },
+      "isGovernment": true,
+      "title": {
+        "en": "An Act to amend the Excise Tax Act (extension of the federal fuel excise tax relief)",
+        "fr": "Loi modifiant la Loi sur la taxe d'accise (prolongation de l'allègement de la taxe d'accise fédérale sur les carburants)"
+      },
+      "shortTitle": {
+        "en": "Canadian Fuel Affordability Act",
+        "fr": "Loi sur l'abordabilité des carburants au Canada"
+      },
+      "sponsor": {
+        "en": "Hon. François-Philippe Champagne",
+        "fr": "L’hon. François-Philippe Champagne"
+      },
+      "status": {
+        "en": "At third reading in the Senate",
+        "fr": "À la troisième lecture au Sénat"
+      },
+      "state": "encours",
+      "milestones": [
+        {
+          "stage": "commons_first_reading",
+          "chamber": "commons",
+          "reading": 1,
+          "date": "2026-09-21"
+        },
+        {
+          "stage": "commons_second_reading",
+          "chamber": "commons",
+          "reading": 2,
+          "date": "2026-09-22"
+        },
+        {
+          "stage": "commons_third_reading",
+          "chamber": "commons",
+          "reading": 3,
+          "date": "2026-10-20"
+        },
+        {
+          "stage": "senate_first_reading",
+          "chamber": "senate",
+          "reading": 1,
+          "date": "2026-10-21"
+        },
+        {
+          "stage": "senate_second_reading",
+          "chamber": "senate",
+          "reading": 2,
+          "date": "2026-10-27"
+        }
+      ],
+      "royalAssent": null,
+      "reinstated": false,
+      "latestActivity": {
+        "en": "At third reading in the Senate",
+        "fr": "À la troisième lecture au Sénat",
+        "date": "2026-10-27"
+      },
+      "lastActivity": "2026-10-27",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-38",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-38"
+      },
+      "sponsorPersonId": 88633,
+      "sponsorName": {
+        "first": "François-Philippe",
+        "last": "Champagne"
+      },
+      "fullSummaryAvailable": false,
+      "summary": {
+        "en": "The Library of Parliament does not prepare Legislative Summaries for self-explanatory measures. The following is a short summary:\n\nOn 21 September 2026, the Minister of Finance and National Revenue introduced Bill C-38, An Act to amend the Excise Tax Act (extension of the federal fuel excise tax relief) (Canadian Fuel Affordability Act) in the House of Commons and it was given first reading.\n\nBill C-38 amends the Excise Tax Act to extend the temporary suspension of the federal fuel excise tax until January 31, 2027 and to temporarily set the excise tax rates on fuels to 50% of the regular rates for the period beginning on February 1, 2027 and ending on March 31, 2027The Library of Parliament does not prepare Legislative Summaries for self-explanatory measures. The following is a short summary:\n\nOn 21 September 2026, the Minister of Finance and National Revenue introduced Bill C-38, An Act to amend the Excise Tax Act (extension of the federal fuel excise tax relief) (Canadian Fuel Affordability Act) in the House of Commons and it was given first reading.\n\nBill C-38 amends the Excise Tax Act to extend the temporary suspension of the federal fuel excise tax until January 31, 2027 and to temporarily set the excise tax rates on fuels to 50% of the regular rates for the period beginning on February 1, 2027 and ending on March 31, 2027",
+        "fr": "La Bibliothèque du Parlement ne prépare pas de Résumés législatifs pour les mesures qui sont suffisamment explicites. Ce qui suit est un court résumé :\n\nLe 21 septembre 2026, le ministre des Finances et du Revenu national a déposé le projet de loi C-38, Loi modifiant la Loi sur la taxe d'accise (prolongation de l'allègement de la taxe d'accise fédérale sur les carburants) (Loi sur l'abordabilité des carburants au Canada) à la Chambre des communes en première lecture.\n\nLe projet de loi C-38 modifie la Loi sur la taxe d’accise afin de prolonger la suspension temporaire de la taxe d’accise fédérale sur les carburants jusqu’au 31 janvier 2027 et de fixer temporairement les taux de la taxe d’accise sur le carburant à 50?% des taux réguliers pour la période commençant le 1er février 2027 et se terminant le 31 mars 2027.La Bibliothèque du Parlement ne prépare pas de Résumés législatifs pour les mesures qui sont suffisamment explicites. Ce qui suit est un court résumé :\n\nLe 21 septembre 2026, le ministre des Finances et du Revenu national a déposé le projet de loi C-38, Loi modifiant la Loi sur la taxe d'accise (prolongation de l'allègement de la taxe d'accise fédérale sur les carburants) (Loi sur l'abordabilité des carburants au Canada) à la Chambre des communes en première lecture.\n\nLe projet de loi C-38 modifie la Loi sur la taxe d’accise afin de prolonger la suspension temporaire de la taxe d’accise fédérale sur les carburants jusqu’au 31 janvier 2027 et de fixer temporairement les taux de la taxe d’accise sur le carburant à 50?% des taux réguliers pour la période commençant le 1er février 2027 et se terminant le 31 mars 2027."
+      },
+      "summarySource": "library",
+      "divisions": []
+    },
     {
       "id": 14279940,
       "num": "C-41",
@@ -355,86 +441,6 @@
           }
         }
       ]
-    },
-    {
-      "id": 14223235,
-      "num": "C-38",
-      "session": "45-1",
-      "parliament": 45,
-      "sessionNumber": 1,
-      "chamber": "commons",
-      "type": {
-        "en": "House Government Bill",
-        "fr": "Projet de loi émanant du gouvernement (Cdc)"
-      },
-      "isGovernment": true,
-      "title": {
-        "en": "An Act to amend the Excise Tax Act (extension of the federal fuel excise tax relief)",
-        "fr": "Loi modifiant la Loi sur la taxe d'accise (prolongation de l'allègement de la taxe d'accise fédérale sur les carburants)"
-      },
-      "shortTitle": {
-        "en": "Canadian Fuel Affordability Act",
-        "fr": "Loi sur l'abordabilité des carburants au Canada"
-      },
-      "sponsor": {
-        "en": "Hon. François-Philippe Champagne",
-        "fr": "L’hon. François-Philippe Champagne"
-      },
-      "status": {
-        "en": "At second reading in the Senate",
-        "fr": "À la deuxième lecture au Sénat"
-      },
-      "state": "encours",
-      "milestones": [
-        {
-          "stage": "commons_first_reading",
-          "chamber": "commons",
-          "reading": 1,
-          "date": "2026-09-21"
-        },
-        {
-          "stage": "commons_second_reading",
-          "chamber": "commons",
-          "reading": 2,
-          "date": "2026-09-22"
-        },
-        {
-          "stage": "commons_third_reading",
-          "chamber": "commons",
-          "reading": 3,
-          "date": "2026-10-20"
-        },
-        {
-          "stage": "senate_first_reading",
-          "chamber": "senate",
-          "reading": 1,
-          "date": "2026-10-21"
-        }
-      ],
-      "royalAssent": null,
-      "reinstated": false,
-      "latestActivity": {
-        "en": "At second reading in the Senate",
-        "fr": "À la deuxième lecture au Sénat",
-        "date": "2026-10-21"
-      },
-      "lastActivity": "2026-10-21",
-      "url": {
-        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-38",
-        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-38"
-      },
-      "sponsorPersonId": 88633,
-      "sponsorName": {
-        "first": "François-Philippe",
-        "last": "Champagne"
-      },
-      "fullSummaryAvailable": false,
-      "summary": {
-        "en": "The Library of Parliament does not prepare Legislative Summaries for self-explanatory measures. The following is a short summary:\n\nOn 21 September 2026, the Minister of Finance and National Revenue introduced Bill C-38, An Act to amend the Excise Tax Act (extension of the federal fuel excise tax relief) (Canadian Fuel Affordability Act) in the House of Commons and it was given first reading.\n\nBill C-38 amends the Excise Tax Act to extend the temporary suspension of the federal fuel excise tax until January 31, 2027 and to temporarily set the excise tax rates on fuels to 50% of the regular rates for the period beginning on February 1, 2027 and ending on March 31, 2027The Library of Parliament does not prepare Legislative Summaries for self-explanatory measures. The following is a short summary:\n\nOn 21 September 2026, the Minister of Finance and National Revenue introduced Bill C-38, An Act to amend the Excise Tax Act (extension of the federal fuel excise tax relief) (Canadian Fuel Affordability Act) in the House of Commons and it was given first reading.\n\nBill C-38 amends the Excise Tax Act to extend the temporary suspension of the federal fuel excise tax until January 31, 2027 and to temporarily set the excise tax rates on fuels to 50% of the regular rates for the period beginning on February 1, 2027 and ending on March 31, 2027",
-        "fr": "La Bibliothèque du Parlement ne prépare pas de Résumés législatifs pour les mesures qui sont suffisamment explicites. Ce qui suit est un court résumé :\n\nLe 21 septembre 2026, le ministre des Finances et du Revenu national a déposé le projet de loi C-38, Loi modifiant la Loi sur la taxe d'accise (prolongation de l'allègement de la taxe d'accise fédérale sur les carburants) (Loi sur l'abordabilité des carburants au Canada) à la Chambre des communes en première lecture.\n\nLe projet de loi C-38 modifie la Loi sur la taxe d’accise afin de prolonger la suspension temporaire de la taxe d’accise fédérale sur les carburants jusqu’au 31 janvier 2027 et de fixer temporairement les taux de la taxe d’accise sur le carburant à 50?% des taux réguliers pour la période commençant le 1er février 2027 et se terminant le 31 mars 2027.La Bibliothèque du Parlement ne prépare pas de Résumés législatifs pour les mesures qui sont suffisamment explicites. Ce qui suit est un court résumé :\n\nLe 21 septembre 2026, le ministre des Finances et du Revenu national a déposé le projet de loi C-38, Loi modifiant la Loi sur la taxe d'accise (prolongation de l'allègement de la taxe d'accise fédérale sur les carburants) (Loi sur l'abordabilité des carburants au Canada) à la Chambre des communes en première lecture.\n\nLe projet de loi C-38 modifie la Loi sur la taxe d’accise afin de prolonger la suspension temporaire de la taxe d’accise fédérale sur les carburants jusqu’au 31 janvier 2027 et de fixer temporairement les taux de la taxe d’accise sur le carburant à 50?% des taux réguliers pour la période commençant le 1er février 2027 et se terminant le 31 mars 2027."
-      },
-      "summarySource": "library",
-      "divisions": []
     },
     {
       "id": 14252999,
@@ -5049,8 +5055,8 @@
         "fr": "Martin Klyne"
       },
       "status": {
-        "en": "At consideration in committee in the Senate",
-        "fr": "À l'examen en comité au Sénat"
+        "en": "At report stage in the Senate",
+        "fr": "À l'étape du rapport au Sénat"
       },
       "state": "encours",
       "milestones": [
@@ -5070,8 +5076,8 @@
       "royalAssent": null,
       "reinstated": false,
       "latestActivity": {
-        "en": "At consideration in committee in the Senate",
-        "fr": "À l'examen en comité au Sénat",
+        "en": "At report stage in the Senate",
+        "fr": "À l'étape du rapport au Sénat",
         "date": "2026-06-09"
       },
       "lastActivity": "2026-06-09",
@@ -10440,8 +10446,8 @@
         "fr": "L’hon. Terry Beech"
       },
       "status": {
-        "en": "At report stage in the House of Commons",
-        "fr": "À l'étape du rapport à la Chambre des communes"
+        "en": "At third reading in the House of Commons",
+        "fr": "À l'étape de la troisième lecture à la Chambre des communes"
       },
       "state": "encours",
       "milestones": [
@@ -10461,8 +10467,8 @@
       "royalAssent": null,
       "reinstated": false,
       "latestActivity": {
-        "en": "At report stage in the House of Commons",
-        "fr": "À l'étape du rapport à la Chambre des communes",
+        "en": "At third reading in the House of Commons",
+        "fr": "À l'étape de la troisième lecture à la Chambre des communes",
         "date": "2026-02-04"
       },
       "lastActivity": "2026-02-04",
