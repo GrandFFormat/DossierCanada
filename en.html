@@ -191,7 +191,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
 
     <div class="apercu-3col">
       <aside class="a3-left">
-        <p class="a3-intro" id="a3intro"><!--ssr-->Canada's Parliament without the jargon: <b>337</b> MPs, <b>195</b> federal bills and <b>181</b> recorded votes in the House of Commons, straight from official sources.<!--/ssr--></p>
+        <p class="a3-intro" id="a3intro"><!--ssr-->Canada's Parliament without the jargon: <b>337</b> MPs, <b>195</b> federal bills and <b>187</b> recorded votes in the House of Commons, straight from official sources.<!--/ssr--></p>
         <h2 class="a3-hiw-h" data-i18n="a3.hiw">How it works</h2>
         <div class="a3-steps">
           <div class="a3-step"><span class="a3-step-n" style="background:var(--yellow)">1</span><p data-i18n="a3.step1">A bill seems opaque? Ask for an explanation.</p></div>
@@ -204,7 +204,19 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
           <h2 data-i18n="h.billsrecent">Recently active bills</h2>
           <a class="a3-seeall" data-view="projets" href="/en/bills" data-i18n="a3.seeall">See all →</a>
         </div>
-        <div id="apercuBills"><!--ssr--><div class="ab-row" id="abrow-ap-14223235">
+        <div id="apercuBills"><!--ssr--><div class="ab-row" id="abrow-ap-13541954">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13541954')">
+      <span class="ab-num">S-209</span>
+      <span class="ab-title">An Act to restrict young persons’ online access to pornographic material</span>
+      
+      
+      <span class="ab-lob" title="2 reported lobbying communications">2</span>
+      <span class="depute-party" style="background:#B0568C; color:#fff">PSG</span>
+      <span class="status-pill status-encours">In progress</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"></div>
+  </div><div class="ab-row" id="abrow-ap-14223235">
     <div class="ab-head" onclick="toggleApercuBill('abrow-ap-14223235')">
       <span class="ab-num">C-38</span>
       <span class="ab-title">An Act to amend the Excise Tax Act (extension of the federal fuel excise tax relief)</span>
@@ -216,10 +228,10 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-caret">▾</span>
     </div>
     <div class="ab-detail"></div>
-  </div><div class="ab-row" id="abrow-ap-14279940">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-14279940')">
-      <span class="ab-num">C-41</span>
-      <span class="ab-title">An Act to amend the Criminal Code and An Act to amend the Criminal Code (medical assistance in dying) and to make related amendments to other Acts</span>
+  </div><div class="ab-row" id="abrow-ap-13586188">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13586188')">
+      <span class="ab-num">C-222</span>
+      <span class="ab-title">An Act to amend the Employment Insurance Act and the Canada Labour Code (death of a child)</span>
       
       
       
@@ -228,25 +240,13 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-caret">▾</span>
     </div>
     <div class="ab-detail"></div>
-  </div><div class="ab-row" id="abrow-ap-14240249">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-14240249')">
-      <span class="ab-num">C-40</span>
-      <span class="ab-title">An Act respecting production, procurement and investment in relation to national defence and national security</span>
+  </div><div class="ab-row" id="abrow-ap-13592619">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13592619')">
+      <span class="ab-num">C-241</span>
+      <span class="ab-title">An Act to establish a national strategy respecting flood and drought forecasting</span>
       
-      <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Omnibus bill — 3 parts: it changes several different acts. Click to show only omnibus bills">Omnibus · 3 parts</button>
       
-      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-      <span class="status-pill status-encours">In progress</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"></div>
-  </div><div class="ab-row" id="abrow-ap-13957880">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13957880')">
-      <span class="ab-num">C-22</span>
-      <span class="ab-title">An Act respecting lawful access</span>
       
-      <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Omnibus bill — 3 parts: it changes several different acts. Click to show only omnibus bills">Omnibus · 3 parts</button>
-      <span class="ab-lob" title="47 reported lobbying communications">47</span>
       <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
       <span class="status-pill status-encours">In progress</span>
       <span class="ab-caret">▾</span>
@@ -268,12 +268,12 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
         <h2 class="a3-hiw-h" data-i18n="h.quoideneuf">What's new</h2>
         <div id="sittingBox"></div>
         <div id="newsList"><!--ssr--><div class="news-item">
-      <div class="news-date">2026-10-27</div>
-      <div class="news-body"><p><b>C-38</b> — At third reading in the Senate</p></div>
+      <div class="news-date">2026-10-28</div>
+      <div class="news-body"><p><b>S-209</b> — At consideration in committee in the House of Commons</p></div>
     </div>
     <div class="news-item">
-      <div class="news-date">2026-10-27</div>
-      <div class="news-body"><p><b>C-41</b> — At second reading in the House of Commons</p></div>
+      <div class="news-date">2026-10-28</div>
+      <div class="news-body"><p><b>C-38</b> — Awaiting royal assent</p></div>
     </div><button class="bill-more" style="margin-top:14px; border:none; cursor:pointer;" onclick="loadMoreNews()">+ Show more</button><!--/ssr--></div>
       </aside>
     </div>
