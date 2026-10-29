@@ -1,9 +1,94 @@
 {
   "source": "https://www.parl.ca/legisinfo/en/bills/json?parlsession=45-1",
   "session": "45-1",
-  "scrapedAt": "2026-10-28T14:59:58.672Z",
+  "scrapedAt": "2026-10-29T15:07:27.860Z",
   "count": 195,
   "bills": [
+    {
+      "id": 13541954,
+      "num": "S-209",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "senate",
+      "type": {
+        "en": "Senate Public Bill",
+        "fr": "Projet de loi d'intérêt public du Sénat"
+      },
+      "isGovernment": false,
+      "title": {
+        "en": "An Act to restrict young persons’ online access to pornographic material",
+        "fr": "Loi limitant l’accès en ligne des jeunes au matériel pornographique"
+      },
+      "shortTitle": {
+        "en": "Protecting Young Persons from Exposure to Pornography Act",
+        "fr": "Loi sur la protection des jeunes contre l’exposition à la pornographie"
+      },
+      "sponsor": {
+        "en": "Hon. Julie Miville-Dechêne",
+        "fr": "L’hon. Julie Miville-Dechêne"
+      },
+      "status": {
+        "en": "At consideration in committee in the House of Commons",
+        "fr": "À l'examen en comité à la Chambre des communes"
+      },
+      "state": "encours",
+      "milestones": [
+        {
+          "stage": "senate_first_reading",
+          "chamber": "senate",
+          "reading": 1,
+          "date": "2025-05-27"
+        },
+        {
+          "stage": "senate_second_reading",
+          "chamber": "senate",
+          "reading": 2,
+          "date": "2025-06-12"
+        },
+        {
+          "stage": "senate_third_reading",
+          "chamber": "senate",
+          "reading": 3,
+          "date": "2026-04-15"
+        },
+        {
+          "stage": "commons_first_reading",
+          "chamber": "commons",
+          "reading": 1,
+          "date": "2026-04-30"
+        },
+        {
+          "stage": "commons_second_reading",
+          "chamber": "commons",
+          "reading": 2,
+          "date": "2026-10-28"
+        }
+      ],
+      "royalAssent": null,
+      "reinstated": false,
+      "latestActivity": {
+        "en": "At consideration in committee in the House of Commons",
+        "fr": "À l'examen en comité à la Chambre des communes",
+        "date": "2026-10-28"
+      },
+      "lastActivity": "2026-10-28",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/s-209",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/s-209"
+      },
+      "sponsorPersonId": 83520,
+      "sponsorName": {
+        "first": "Julie",
+        "last": "Miville-Dechêne"
+      },
+      "fullSummaryAvailable": true,
+      "summary": {
+        "en": "This enactment makes it an offence for organizations to make pornographic material available to young persons on the Internet. It also enables a designated enforcement authority to take steps to prevent pornographic material from being made available to young persons on the Internet in Canada.",
+        "fr": "Le texte érige en infraction le fait pour des organisations de rendre accessible aux jeunes du matériel pornographique sur Internet. Le texte permet aussi à un agent de l’autorité désigné d’agir afin d’empêcher que du matériel pornographique soit rendu accessible aux jeunes sur Internet au Canada."
+      },
+      "summarySource": "bill"
+    },
     {
       "id": 14223235,
       "num": "C-38",
@@ -29,8 +114,8 @@
         "fr": "L’hon. François-Philippe Champagne"
       },
       "status": {
-        "en": "At third reading in the Senate",
-        "fr": "À la troisième lecture au Sénat"
+        "en": "Awaiting royal assent",
+        "fr": "En attente de la sanction royale"
       },
       "state": "encours",
       "milestones": [
@@ -63,16 +148,22 @@
           "chamber": "senate",
           "reading": 2,
           "date": "2026-10-27"
+        },
+        {
+          "stage": "senate_third_reading",
+          "chamber": "senate",
+          "reading": 3,
+          "date": "2026-10-28"
         }
       ],
       "royalAssent": null,
       "reinstated": false,
       "latestActivity": {
-        "en": "At third reading in the Senate",
-        "fr": "À la troisième lecture au Sénat",
-        "date": "2026-10-27"
+        "en": "Awaiting royal assent",
+        "fr": "En attente de la sanction royale",
+        "date": "2026-10-28"
       },
-      "lastActivity": "2026-10-27",
+      "lastActivity": "2026-10-28",
       "url": {
         "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-38",
         "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-38"
@@ -88,6 +179,152 @@
         "fr": "La Bibliothèque du Parlement ne prépare pas de Résumés législatifs pour les mesures qui sont suffisamment explicites. Ce qui suit est un court résumé :\n\nLe 21 septembre 2026, le ministre des Finances et du Revenu national a déposé le projet de loi C-38, Loi modifiant la Loi sur la taxe d'accise (prolongation de l'allègement de la taxe d'accise fédérale sur les carburants) (Loi sur l'abordabilité des carburants au Canada) à la Chambre des communes en première lecture.\n\nLe projet de loi C-38 modifie la Loi sur la taxe d’accise afin de prolonger la suspension temporaire de la taxe d’accise fédérale sur les carburants jusqu’au 31 janvier 2027 et de fixer temporairement les taux de la taxe d’accise sur le carburant à 50?% des taux réguliers pour la période commençant le 1er février 2027 et se terminant le 31 mars 2027.La Bibliothèque du Parlement ne prépare pas de Résumés législatifs pour les mesures qui sont suffisamment explicites. Ce qui suit est un court résumé :\n\nLe 21 septembre 2026, le ministre des Finances et du Revenu national a déposé le projet de loi C-38, Loi modifiant la Loi sur la taxe d'accise (prolongation de l'allègement de la taxe d'accise fédérale sur les carburants) (Loi sur l'abordabilité des carburants au Canada) à la Chambre des communes en première lecture.\n\nLe projet de loi C-38 modifie la Loi sur la taxe d’accise afin de prolonger la suspension temporaire de la taxe d’accise fédérale sur les carburants jusqu’au 31 janvier 2027 et de fixer temporairement les taux de la taxe d’accise sur le carburant à 50?% des taux réguliers pour la période commençant le 1er février 2027 et se terminant le 31 mars 2027."
       },
       "summarySource": "library"
+    },
+    {
+      "id": 13586188,
+      "num": "C-222",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "commons",
+      "type": {
+        "en": "Private Member’s Bill",
+        "fr": "Projet de loi émanant d'un député"
+      },
+      "isGovernment": false,
+      "title": {
+        "en": "An Act to amend the Employment Insurance Act and the Canada Labour Code (death of a child)",
+        "fr": "Loi modifiant la Loi sur l’assurance-emploi et le Code canadien du travail (décès d’un enfant)"
+      },
+      "shortTitle": {
+        "en": "Relieving Grieving Parents of an Administrative Burden Act (Evan's Law)",
+        "fr": "Loi visant à alléger le fardeau bureaucratique des parents endeuillés (loi d'Evan)"
+      },
+      "sponsor": {
+        "en": "Hon. Terry Beech",
+        "fr": "L’hon. Terry Beech"
+      },
+      "status": {
+        "en": "House of Commons bill awaiting first reading in the Senate",
+        "fr": "Projet de loi de la Chambre des communes en attente de la première lecture au Sénat"
+      },
+      "state": "encours",
+      "milestones": [
+        {
+          "stage": "commons_first_reading",
+          "chamber": "commons",
+          "reading": 1,
+          "date": "2025-09-18"
+        },
+        {
+          "stage": "commons_second_reading",
+          "chamber": "commons",
+          "reading": 2,
+          "date": "2026-02-04"
+        },
+        {
+          "stage": "commons_third_reading",
+          "chamber": "commons",
+          "reading": 3,
+          "date": "2026-10-28"
+        }
+      ],
+      "royalAssent": null,
+      "reinstated": false,
+      "latestActivity": {
+        "en": "House of Commons bill awaiting first reading in the Senate",
+        "fr": "Projet de loi de la Chambre des communes en attente de la première lecture au Sénat",
+        "date": "2026-10-28"
+      },
+      "lastActivity": "2026-10-28",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-222",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-222"
+      },
+      "sponsorPersonId": 89236,
+      "sponsorName": {
+        "first": "Terry",
+        "last": "Beech"
+      },
+      "fullSummaryAvailable": false,
+      "summary": {
+        "en": "This enactment amends the Employment Insurance Act to provide that a person to whom employment insurance benefits are payable to care for a newborn child or a child placed with them for the purpose of adoption remains eligible to receive those benefits even if the child dies during the benefit period. It also amends the Canada Labour Code to provide that an employee who is entitled to maternity leave or to parental leave to care for a newborn child or a child who is in their care for the purpose of adoption remains entitled to the maternity leave or the parental leave even if the child dies during the period for which leave has been granted.",
+        "fr": "Le texte modifie la Loi sur l’assurance-emploi afin de prévoir que toute personne recevant des prestations d’assurance-emploi pour prendre soin de son nouveau-né ou d’un enfant placé chez elle en vue de son adoption continue d’être admissible à ces prestations même en cas de décès de l’enfant au cours de la période de prestations. Il modifie également le Code canadien du travail afin de prévoir que l’admissibilité au congé de maternité ou au congé parental est maintenue même en cas de décès, au cours du congé, du nouveau-né de l’employé ou de l’enfant confié à l’employé en vue de son adoption."
+      },
+      "summarySource": "bill"
+    },
+    {
+      "id": 13592619,
+      "num": "C-241",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "commons",
+      "type": {
+        "en": "Private Member’s Bill",
+        "fr": "Projet de loi émanant d'un député"
+      },
+      "isGovernment": false,
+      "title": {
+        "en": "An Act to establish a national strategy respecting flood and drought forecasting",
+        "fr": "Loi prévoyant l’élaboration d’une stratégie nationale sur la prévision des inondations et des sécheresses"
+      },
+      "shortTitle": {
+        "en": "National Strategy on Flood and Drought Forecasting Act",
+        "fr": "Loi relative à la stratégie nationale sur la prévision des inondations et des sécheresses"
+      },
+      "sponsor": {
+        "en": "Tatiana Auguste",
+        "fr": "Tatiana Auguste"
+      },
+      "status": {
+        "en": "House of Commons bill awaiting first reading in the Senate",
+        "fr": "Projet de loi de la Chambre des communes en attente de la première lecture au Sénat"
+      },
+      "state": "encours",
+      "milestones": [
+        {
+          "stage": "commons_first_reading",
+          "chamber": "commons",
+          "reading": 1,
+          "date": "2025-09-22"
+        },
+        {
+          "stage": "commons_second_reading",
+          "chamber": "commons",
+          "reading": 2,
+          "date": "2025-12-03"
+        },
+        {
+          "stage": "commons_third_reading",
+          "chamber": "commons",
+          "reading": 3,
+          "date": "2026-10-28"
+        }
+      ],
+      "royalAssent": null,
+      "reinstated": false,
+      "latestActivity": {
+        "en": "House of Commons bill awaiting first reading in the Senate",
+        "fr": "Projet de loi de la Chambre des communes en attente de la première lecture au Sénat",
+        "date": "2026-10-28"
+      },
+      "lastActivity": "2026-10-28",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-241",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-241"
+      },
+      "sponsorPersonId": 122753,
+      "sponsorName": {
+        "first": "Tatiana",
+        "last": "Auguste"
+      },
+      "fullSummaryAvailable": false,
+      "summary": {
+        "en": "This enactment provides for the development of a national strategy to provide key stakeholders with the information they need to forecast floods and droughts.",
+        "fr": "Le texte prévoit l’élaboration d’une stratégie nationale visant à fournir aux intervenants clés les renseignements dont ils ont besoin pour prévoir les inondations et les sécheresses."
+      },
+      "summarySource": "bill"
     },
     {
       "id": 14279940,
@@ -6200,85 +6437,6 @@
       "summarySource": "bill"
     },
     {
-      "id": 13541954,
-      "num": "S-209",
-      "session": "45-1",
-      "parliament": 45,
-      "sessionNumber": 1,
-      "chamber": "senate",
-      "type": {
-        "en": "Senate Public Bill",
-        "fr": "Projet de loi d'intérêt public du Sénat"
-      },
-      "isGovernment": false,
-      "title": {
-        "en": "An Act to restrict young persons’ online access to pornographic material",
-        "fr": "Loi limitant l’accès en ligne des jeunes au matériel pornographique"
-      },
-      "shortTitle": {
-        "en": "Protecting Young Persons from Exposure to Pornography Act",
-        "fr": "Loi sur la protection des jeunes contre l’exposition à la pornographie"
-      },
-      "sponsor": {
-        "en": "Hon. Julie Miville-Dechêne",
-        "fr": "L’hon. Julie Miville-Dechêne"
-      },
-      "status": {
-        "en": "At second reading in the House of Commons",
-        "fr": "À la deuxième lecture à la Chambre des communes"
-      },
-      "state": "encours",
-      "milestones": [
-        {
-          "stage": "senate_first_reading",
-          "chamber": "senate",
-          "reading": 1,
-          "date": "2025-05-27"
-        },
-        {
-          "stage": "senate_second_reading",
-          "chamber": "senate",
-          "reading": 2,
-          "date": "2025-06-12"
-        },
-        {
-          "stage": "senate_third_reading",
-          "chamber": "senate",
-          "reading": 3,
-          "date": "2026-04-15"
-        },
-        {
-          "stage": "commons_first_reading",
-          "chamber": "commons",
-          "reading": 1,
-          "date": "2026-04-30"
-        }
-      ],
-      "royalAssent": null,
-      "reinstated": false,
-      "latestActivity": {
-        "en": "At second reading in the House of Commons",
-        "fr": "À la deuxième lecture à la Chambre des communes",
-        "date": "2026-04-30"
-      },
-      "lastActivity": "2026-04-30",
-      "url": {
-        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/s-209",
-        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/s-209"
-      },
-      "sponsorPersonId": 83520,
-      "sponsorName": {
-        "first": "Julie",
-        "last": "Miville-Dechêne"
-      },
-      "fullSummaryAvailable": true,
-      "summary": {
-        "en": "This enactment makes it an offence for organizations to make pornographic material available to young persons on the Internet. It also enables a designated enforcement authority to take steps to prevent pornographic material from being made available to young persons on the Internet in Canada.",
-        "fr": "Le texte érige en infraction le fait pour des organisations de rendre accessible aux jeunes du matériel pornographique sur Internet. Le texte permet aussi à un agent de l’autorité désigné d’agir afin d’empêcher que du matériel pornographique soit rendu accessible aux jeunes sur Internet au Canada."
-      },
-      "summarySource": "bill"
-    },
-    {
       "id": 14034077,
       "num": "C-275",
       "session": "45-1",
@@ -8241,10 +8399,10 @@
         "fr": "David McKenzie"
       },
       "status": {
-        "en": "At second reading in the House of Commons",
-        "fr": "À la deuxième lecture à la Chambre des communes"
+        "en": "Bill defeated",
+        "fr": "Projet de loi rejeté"
       },
-      "state": "encours",
+      "state": "rejete",
       "milestones": [
         {
           "stage": "commons_first_reading",
@@ -8256,8 +8414,8 @@
       "royalAssent": null,
       "reinstated": false,
       "latestActivity": {
-        "en": "At second reading in the House of Commons",
-        "fr": "À la deuxième lecture à la Chambre des communes",
+        "en": "Bill defeated",
+        "fr": "Projet de loi rejeté",
         "date": "2026-03-11"
       },
       "lastActivity": "2026-03-11",
@@ -9094,73 +9252,6 @@
       "summarySource": "bill"
     },
     {
-      "id": 13586188,
-      "num": "C-222",
-      "session": "45-1",
-      "parliament": 45,
-      "sessionNumber": 1,
-      "chamber": "commons",
-      "type": {
-        "en": "Private Member’s Bill",
-        "fr": "Projet de loi émanant d'un député"
-      },
-      "isGovernment": false,
-      "title": {
-        "en": "An Act to amend the Employment Insurance Act and the Canada Labour Code (death of a child)",
-        "fr": "Loi modifiant la Loi sur l’assurance-emploi et le Code canadien du travail (décès d’un enfant)"
-      },
-      "shortTitle": {
-        "en": "Relieving Grieving Parents of an Administrative Burden Act (Evan's Law)",
-        "fr": "Loi visant à alléger le fardeau bureaucratique des parents endeuillés (loi d'Evan)"
-      },
-      "sponsor": {
-        "en": "Hon. Terry Beech",
-        "fr": "L’hon. Terry Beech"
-      },
-      "status": {
-        "en": "At third reading in the House of Commons",
-        "fr": "À l'étape de la troisième lecture à la Chambre des communes"
-      },
-      "state": "encours",
-      "milestones": [
-        {
-          "stage": "commons_first_reading",
-          "chamber": "commons",
-          "reading": 1,
-          "date": "2025-09-18"
-        },
-        {
-          "stage": "commons_second_reading",
-          "chamber": "commons",
-          "reading": 2,
-          "date": "2026-02-04"
-        }
-      ],
-      "royalAssent": null,
-      "reinstated": false,
-      "latestActivity": {
-        "en": "At third reading in the House of Commons",
-        "fr": "À l'étape de la troisième lecture à la Chambre des communes",
-        "date": "2026-02-04"
-      },
-      "lastActivity": "2026-02-04",
-      "url": {
-        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-222",
-        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-222"
-      },
-      "sponsorPersonId": 89236,
-      "sponsorName": {
-        "first": "Terry",
-        "last": "Beech"
-      },
-      "fullSummaryAvailable": false,
-      "summary": {
-        "en": "This enactment amends the Employment Insurance Act to provide that a person to whom employment insurance benefits are payable to care for a newborn child or a child placed with them for the purpose of adoption remains eligible to receive those benefits even if the child dies during the benefit period. It also amends the Canada Labour Code to provide that an employee who is entitled to maternity leave or to parental leave to care for a newborn child or a child who is in their care for the purpose of adoption remains entitled to the maternity leave or the parental leave even if the child dies during the period for which leave has been granted.",
-        "fr": "Le texte modifie la Loi sur l’assurance-emploi afin de prévoir que toute personne recevant des prestations d’assurance-emploi pour prendre soin de son nouveau-né ou d’un enfant placé chez elle en vue de son adoption continue d’être admissible à ces prestations même en cas de décès de l’enfant au cours de la période de prestations. Il modifie également le Code canadien du travail afin de prévoir que l’admissibilité au congé de maternité ou au congé parental est maintenue même en cas de décès, au cours du congé, du nouveau-né de l’employé ou de l’enfant confié à l’employé en vue de son adoption."
-      },
-      "summarySource": "bill"
-    },
-    {
       "id": 13586181,
       "num": "C-223",
       "session": "45-1",
@@ -9449,73 +9540,6 @@
       "summary": {
         "en": "This enactment provides for the development of a national framework to support improved access for Canadians to prevention, diagnosis and treatment of heart failure.",
         "fr": "Le texte prévoit l’élaboration d’un cadre national visant à accroître l’accès des Canadiens à la prévention, au diagnostic et au traitement de l’insuffisance cardiaque."
-      },
-      "summarySource": "bill"
-    },
-    {
-      "id": 13592619,
-      "num": "C-241",
-      "session": "45-1",
-      "parliament": 45,
-      "sessionNumber": 1,
-      "chamber": "commons",
-      "type": {
-        "en": "Private Member’s Bill",
-        "fr": "Projet de loi émanant d'un député"
-      },
-      "isGovernment": false,
-      "title": {
-        "en": "An Act to establish a national strategy respecting flood and drought forecasting",
-        "fr": "Loi prévoyant l’élaboration d’une stratégie nationale sur la prévision des inondations et des sécheresses"
-      },
-      "shortTitle": {
-        "en": "National Strategy on Flood and Drought Forecasting Act",
-        "fr": "Loi relative à la stratégie nationale sur la prévision des inondations et des sécheresses"
-      },
-      "sponsor": {
-        "en": "Tatiana Auguste",
-        "fr": "Tatiana Auguste"
-      },
-      "status": {
-        "en": "At third reading in the House of Commons",
-        "fr": "À l'étape de la troisième lecture à la Chambre des communes"
-      },
-      "state": "encours",
-      "milestones": [
-        {
-          "stage": "commons_first_reading",
-          "chamber": "commons",
-          "reading": 1,
-          "date": "2025-09-22"
-        },
-        {
-          "stage": "commons_second_reading",
-          "chamber": "commons",
-          "reading": 2,
-          "date": "2025-12-03"
-        }
-      ],
-      "royalAssent": null,
-      "reinstated": false,
-      "latestActivity": {
-        "en": "At third reading in the House of Commons",
-        "fr": "À l'étape de la troisième lecture à la Chambre des communes",
-        "date": "2025-12-03"
-      },
-      "lastActivity": "2025-12-03",
-      "url": {
-        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-241",
-        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-241"
-      },
-      "sponsorPersonId": 122753,
-      "sponsorName": {
-        "first": "Tatiana",
-        "last": "Auguste"
-      },
-      "fullSummaryAvailable": false,
-      "summary": {
-        "en": "This enactment provides for the development of a national strategy to provide key stakeholders with the information they need to forecast floods and droughts.",
-        "fr": "Le texte prévoit l’élaboration d’une stratégie nationale visant à fournir aux intervenants clés les renseignements dont ils ont besoin pour prévoir les inondations et les sécheresses."
       },
       "summarySource": "bill"
     },
@@ -10638,10 +10662,10 @@
         "fr": "Leah Gazan"
       },
       "status": {
-        "en": "At second reading in the House of Commons",
-        "fr": "À la deuxième lecture à la Chambre des communes"
+        "en": "Bill defeated",
+        "fr": "Projet de loi rejeté"
       },
-      "state": "encours",
+      "state": "rejete",
       "milestones": [
         {
           "stage": "commons_first_reading",
@@ -10653,8 +10677,8 @@
       "royalAssent": null,
       "reinstated": false,
       "latestActivity": {
-        "en": "At second reading in the House of Commons",
-        "fr": "À la deuxième lecture à la Chambre des communes",
+        "en": "Bill defeated",
+        "fr": "Projet de loi rejeté",
         "date": "2025-10-06"
       },
       "lastActivity": "2025-10-06",
@@ -13547,5 +13571,5 @@
       "summarySource": null
     }
   ],
-  "summariesScrapedAt": "2026-10-28T15:11:02.229Z"
+  "summariesScrapedAt": "2026-10-29T15:18:21.993Z"
 }
