@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-10-29T15:26:30.431Z",
+  "scrapedAt": "2026-10-30T15:03:55.963Z",
   "count": 20,
   "petitions": [
     {
@@ -18,7 +18,7 @@
         "fr": "Ouverte pour signature jusqu'au 24 février 2027 à 13 h 02 (HAE)"
       },
       "sponsor": "Scot Davidson",
-      "signatures": 1403,
+      "signatures": 1674,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7880",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7880"
@@ -39,7 +39,7 @@
         "fr": "Ouverte pour signature jusqu'au 6 février 2027 à 13 h 37 (HAE)"
       },
       "sponsor": "Don Davies",
-      "signatures": 665,
+      "signatures": 668,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7842",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7842"
@@ -60,7 +60,7 @@
         "fr": "Ouverte pour signature jusqu'au 10 février 2027 à 15 h 36 (HAE)"
       },
       "sponsor": "Sukh Dhaliwal",
-      "signatures": 458,
+      "signatures": 477,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7859",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7859"
@@ -81,7 +81,7 @@
         "fr": "Ouverte pour signature jusqu'au 11 février 2027 à 12 h 50 (HAE)"
       },
       "sponsor": "Yvan Baker",
-      "signatures": 299,
+      "signatures": 303,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7819",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7819"
@@ -102,7 +102,7 @@
         "fr": "Ouverte pour signature jusqu'au 24 février 2027 à 13 h 02 (HAE)"
       },
       "sponsor": "Patrick Weiler",
-      "signatures": 237,
+      "signatures": 269,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7879",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7879"
@@ -123,31 +123,10 @@
         "fr": "Ouverte pour signature jusqu'au 25 janvier 2027 à 13 h 02 (HAE)"
       },
       "sponsor": "Marilène Gill",
-      "signatures": 155,
+      "signatures": 200,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7868",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7868"
-      }
-    },
-    {
-      "code": "e-7845",
-      "topic": {
-        "en": "Environment",
-        "fr": "Environnement"
-      },
-      "keywords": {
-        "en": "Automotive parts industry Environmentally friendly products Plastics Textile and apparel goods industry",
-        "fr": "Industrie des pièces automobiles Industrie des produits textiles et de la ... Plastiques Produits écologiques"
-      },
-      "status": {
-        "en": "Open for signature until February 6, 2027, at 1:24 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 6 février 2027 à 13 h 24 (HAE)"
-      },
-      "sponsor": "Don Davies",
-      "signatures": 150,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7845",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7845"
       }
     },
     {
@@ -165,10 +144,31 @@
         "fr": "Ouverte pour signature jusqu'au 26 novembre 2026 à 13 h 03 (HAE)"
       },
       "sponsor": "Kathy Borrelli",
-      "signatures": 144,
+      "signatures": 191,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7863",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7863"
+      }
+    },
+    {
+      "code": "e-7845",
+      "topic": {
+        "en": "Environment",
+        "fr": "Environnement"
+      },
+      "keywords": {
+        "en": "Automotive parts industry Environmentally friendly products Plastics Textile and apparel goods industry",
+        "fr": "Industrie des pièces automobiles Industrie des produits textiles et de la ... Plastiques Produits écologiques"
+      },
+      "status": {
+        "en": "Open for signature until February 6, 2027, at 1:24 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 6 février 2027 à 13 h 24 (HAE)"
+      },
+      "sponsor": "Don Davies",
+      "signatures": 151,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7845",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7845"
       }
     },
     {
@@ -186,7 +186,7 @@
         "fr": "Ouverte pour signature jusqu'au 19 février 2027 à 16 h 20 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 138,
+      "signatures": 142,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7576",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7576"
@@ -207,7 +207,7 @@
         "fr": "Ouverte pour signature jusqu'au 26 décembre 2026 à 13 h 03 (HAE)"
       },
       "sponsor": "Jaime Battiste",
-      "signatures": 113,
+      "signatures": 128,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7850",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7850"
@@ -228,7 +228,7 @@
         "fr": "Ouverte pour signature jusqu'au 19 février 2027 à 16 h 22 (HAE)"
       },
       "sponsor": "Danielle Martin",
-      "signatures": 96,
+      "signatures": 99,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7839",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7839"
@@ -249,10 +249,31 @@
         "fr": "Ouverte pour signature jusqu'au 7 décembre 2026 à 10 h 57 (HAE)"
       },
       "sponsor": "Bardish Chagger",
-      "signatures": 96,
+      "signatures": 99,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7831",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7831"
+      }
+    },
+    {
+      "code": "e-7870",
+      "topic": {
+        "en": "Veterans' affairs",
+        "fr": "Anciens combattants"
+      },
+      "keywords": {
+        "en": "National War Memorial Persian Gulf War Veterans",
+        "fr": "Anciens combattants Guerre du golfe Persique Monument commémoratif de guerre du Canada"
+      },
+      "status": {
+        "en": "Open for signature until December 28, 2026, at 10:49 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 28 décembre 2026 à 10 h 49 (HAE)"
+      },
+      "sponsor": "Richard Bragdon",
+      "signatures": 97,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7870",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7870"
       }
     },
     {
@@ -270,7 +291,7 @@
         "fr": "Ouverte pour signature jusqu'au 12 décembre 2026 à 15 h 28 (HAE)"
       },
       "sponsor": "Leah Gazan",
-      "signatures": 92,
+      "signatures": 94,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7849",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7849"
@@ -291,7 +312,7 @@
         "fr": "Ouverte pour signature jusqu'au 19 février 2027 à 16 h 24 (HAE)"
       },
       "sponsor": "Anthony Housefather",
-      "signatures": 49,
+      "signatures": 56,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7875",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7875"
@@ -312,10 +333,31 @@
         "fr": "Ouverte pour signature jusqu'au 24 février 2027 à 13 h 02 (HAE)"
       },
       "sponsor": "Tamara Kronis",
-      "signatures": 46,
+      "signatures": 54,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7869",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7869"
+      }
+    },
+    {
+      "code": "e-7885",
+      "topic": {
+        "en": "Culture and heritage",
+        "fr": "Culture et patrimoine"
+      },
+      "keywords": {
+        "en": "Heritage sites and buildings Historic O'Keefe Ranch",
+        "fr": "Ranch historique O'Keefe Sites et édifices patrimoniaux"
+      },
+      "status": {
+        "en": "Open for signature until January 27, 2027, at 10:50 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 27 janvier 2027 à 10 h 50 (HAE)"
+      },
+      "sponsor": "Scott Anderson",
+      "signatures": 32,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7885",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7885"
       }
     },
     {
@@ -333,10 +375,31 @@
         "fr": "Ouverte pour signature jusqu'au 19 février 2027 à 16 h 22 (HAE)"
       },
       "sponsor": "Stephanie Kusie",
-      "signatures": 17,
+      "signatures": 20,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7867",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7867"
+      }
+    },
+    {
+      "code": "e-7827",
+      "topic": {
+        "en": "National defence and military operations",
+        "fr": "Défense nationale et opérations militaires"
+      },
+      "keywords": {
+        "en": "Government contracts Military equipment and facilities Product of Canada Remotely piloted aircraft",
+        "fr": "Aéronefs téléguidés Équipement et installations militaires Marchés publics Produit du Canada"
+      },
+      "status": {
+        "en": "Open for signature until February 26, 2027, at 10:49 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 26 février 2027 à 10 h 49 (HAE)"
+      },
+      "sponsor": "Patrick Weiler",
+      "signatures": 19,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7827",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7827"
       }
     },
     {
@@ -358,69 +421,6 @@
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7866",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7866"
-      }
-    },
-    {
-      "code": "e-7885",
-      "topic": {
-        "en": "Culture and heritage",
-        "fr": "Culture et patrimoine"
-      },
-      "keywords": {
-        "en": "Heritage sites and buildings Historic O'Keefe Ranch",
-        "fr": "Ranch historique O'Keefe Sites et édifices patrimoniaux"
-      },
-      "status": {
-        "en": "Open for signature until January 27, 2027, at 10:50 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 27 janvier 2027 à 10 h 50 (HAE)"
-      },
-      "sponsor": "Scott Anderson",
-      "signatures": 6,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7885",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7885"
-      }
-    },
-    {
-      "code": "e-7870",
-      "topic": {
-        "en": "Veterans' affairs",
-        "fr": "Anciens combattants"
-      },
-      "keywords": {
-        "en": "National War Memorial Persian Gulf War Veterans",
-        "fr": "Anciens combattants Guerre du golfe Persique Monument commémoratif de guerre du Canada"
-      },
-      "status": {
-        "en": "Open for signature until December 28, 2026, at 10:49 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 28 décembre 2026 à 10 h 49 (HAE)"
-      },
-      "sponsor": "Richard Bragdon",
-      "signatures": 6,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7870",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7870"
-      }
-    },
-    {
-      "code": "e-7827",
-      "topic": {
-        "en": "National defence and military operations",
-        "fr": "Défense nationale et opérations militaires"
-      },
-      "keywords": {
-        "en": "Government contracts Military equipment and facilities Product of Canada Remotely piloted aircraft",
-        "fr": "Aéronefs téléguidés Équipement et installations militaires Marchés publics Produit du Canada"
-      },
-      "status": {
-        "en": "Open for signature until February 26, 2027, at 10:49 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 26 février 2027 à 10 h 49 (HAE)"
-      },
-      "sponsor": "Patrick Weiler",
-      "signatures": 6,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7827",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7827"
       }
     }
   ]

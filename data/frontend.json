@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-29T15:26:39.670Z",
+  "generatedAt": "2026-10-30T15:04:09.633Z",
   "session": "45-1",
   "meta": {
     "counts": {
-      "bills": 195,
+      "bills": 196,
       "deputes": 337,
       "votes": 187
     },
@@ -11,6 +11,671 @@
     "formerMembersInVotes": 12
   },
   "bills": [
+    {
+      "id": 13541964,
+      "num": "S-210",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "senate",
+      "type": {
+        "en": "Senate Public Bill",
+        "fr": "Projet de loi d'intérêt public du Sénat"
+      },
+      "isGovernment": false,
+      "title": {
+        "en": "An Act respecting Ukrainian Heritage Month",
+        "fr": "Loi instituant le Mois du patrimoine ukrainien"
+      },
+      "shortTitle": {
+        "en": "Ukrainian Heritage Month Act",
+        "fr": "Loi sur le Mois du patrimoine ukrainien"
+      },
+      "sponsor": {
+        "en": "Hon. Stanley Kutcher",
+        "fr": "L'hon. Stanley Kutcher"
+      },
+      "status": {
+        "en": "Royal assent received",
+        "fr": "Sanction royale reçue"
+      },
+      "state": "loi",
+      "milestones": [
+        {
+          "stage": "senate_first_reading",
+          "chamber": "senate",
+          "reading": 1,
+          "date": "2025-05-27"
+        },
+        {
+          "stage": "senate_second_reading",
+          "chamber": "senate",
+          "reading": 2,
+          "date": "2025-09-25"
+        },
+        {
+          "stage": "senate_third_reading",
+          "chamber": "senate",
+          "reading": 3,
+          "date": "2025-10-01"
+        },
+        {
+          "stage": "commons_first_reading",
+          "chamber": "commons",
+          "reading": 1,
+          "date": "2025-10-08"
+        },
+        {
+          "stage": "commons_second_reading",
+          "chamber": "commons",
+          "reading": 2,
+          "date": "2026-02-12"
+        },
+        {
+          "stage": "commons_third_reading",
+          "chamber": "commons",
+          "reading": 3,
+          "date": "2026-10-21"
+        },
+        {
+          "stage": "royal_assent",
+          "chamber": null,
+          "reading": null,
+          "date": "2026-10-29"
+        }
+      ],
+      "royalAssent": "2026-10-29",
+      "reinstated": false,
+      "latestActivity": {
+        "en": "Royal assent received",
+        "fr": "Sanction royale reçue",
+        "date": "2026-10-29"
+      },
+      "lastActivity": "2026-10-29",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/s-210",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/s-210"
+      },
+      "sponsorPersonId": 102489,
+      "sponsorName": {
+        "first": "Stanley",
+        "last": "Kutcher"
+      },
+      "fullSummaryAvailable": false,
+      "summary": {
+        "en": "This enactment designates the month of September as \"Ukrainian Heritage Month\".",
+        "fr": "Le texte désigne le mois de septembre comme « Mois du patrimoine ukrainien »."
+      },
+      "summarySource": "bill",
+      "divisions": [
+        {
+          "number": 180,
+          "date": "2026-10-21",
+          "description": {
+            "en": "3rd reading and adoption of Bill S-210, An Act respecting Ukrainian Heritage Month",
+            "fr": "3e lecture et adoption du projet de loi S-210, Loi instituant le Mois du patrimoine ukrainien"
+          },
+          "result": {
+            "en": "Agreed To",
+            "fr": "Adoptée"
+          },
+          "passed": true,
+          "totals": {
+            "yea": 313,
+            "nay": 0,
+            "paired": 12
+          }
+        },
+        {
+          "number": 69,
+          "date": "2026-02-12",
+          "description": {
+            "en": "2nd reading of Bill S-210, An Act respecting Ukrainian Heritage Month",
+            "fr": "2e lecture du projet de loi S-210, Loi instituant le Mois du patrimoine ukrainien"
+          },
+          "result": {
+            "en": "Agreed To",
+            "fr": "Adoptée"
+          },
+          "passed": true,
+          "totals": {
+            "yea": 318,
+            "nay": 0,
+            "paired": 14
+          }
+        }
+      ]
+    },
+    {
+      "id": 13623903,
+      "num": "S-237",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "senate",
+      "type": {
+        "en": "Senate Public Bill",
+        "fr": "Projet de loi d'intérêt public du Sénat"
+      },
+      "isGovernment": false,
+      "title": {
+        "en": "An Act respecting a Cities and Municipalities Day",
+        "fr": "Loi instituant la Journée des villes et des municipalités"
+      },
+      "shortTitle": {
+        "en": "Cities and Municipalities Day Act",
+        "fr": "Loi sur la Journée des villes et des municipalités"
+      },
+      "sponsor": {
+        "en": "Éric Forest",
+        "fr": "Éric Forest"
+      },
+      "status": {
+        "en": "Senate bill awaiting first reading in the House of Commons",
+        "fr": "Projet de loi du Sénat en attente de la première lecture à la Chambre des communes"
+      },
+      "state": "encours",
+      "milestones": [
+        {
+          "stage": "senate_first_reading",
+          "chamber": "senate",
+          "reading": 1,
+          "date": "2025-10-01"
+        },
+        {
+          "stage": "senate_second_reading",
+          "chamber": "senate",
+          "reading": 2,
+          "date": "2026-02-12"
+        },
+        {
+          "stage": "senate_third_reading",
+          "chamber": "senate",
+          "reading": 3,
+          "date": "2026-10-29"
+        }
+      ],
+      "royalAssent": null,
+      "reinstated": false,
+      "latestActivity": {
+        "en": "Senate bill awaiting first reading in the House of Commons",
+        "fr": "Projet de loi du Sénat en attente de la première lecture à la Chambre des communes",
+        "date": "2026-10-29"
+      },
+      "lastActivity": "2026-10-29",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/s-237",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/s-237"
+      },
+      "sponsorPersonId": 89794,
+      "sponsorName": {
+        "first": "Éric",
+        "last": "Forest"
+      },
+      "fullSummaryAvailable": false,
+      "summary": {
+        "en": "This enactment designates the 31st day of October as “Cities and Municipalities Day”.",
+        "fr": "Le texte désigne le 31 octobre comme « Journée des villes et des municipalités »."
+      },
+      "summarySource": "bill",
+      "divisions": []
+    },
+    {
+      "id": 14297192,
+      "num": "S-253",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "senate",
+      "type": {
+        "en": "Senate Public Bill",
+        "fr": "Projet de loi d'intérêt public du Sénat"
+      },
+      "isGovernment": false,
+      "title": {
+        "en": "An Act to amend the Income Tax Act (child care expense deduction indexation)",
+        "fr": "Loi modifiant la Loi de l’impôt sur le revenu (indexation de la déduction pour frais de garde d’enfants)"
+      },
+      "shortTitle": {
+        "en": "Making Child Care More Affordable for Canadian Families Act",
+        "fr": "Loi sur des services de garde d’enfants plus abordables pour les familles canadiennes"
+      },
+      "sponsor": null,
+      "status": {
+        "en": "At second reading in the Senate",
+        "fr": "À la deuxième lecture au Sénat"
+      },
+      "state": "encours",
+      "milestones": [
+        {
+          "stage": "senate_first_reading",
+          "chamber": "senate",
+          "reading": 1,
+          "date": "2026-10-29"
+        }
+      ],
+      "royalAssent": null,
+      "reinstated": false,
+      "latestActivity": {
+        "en": "At second reading in the Senate",
+        "fr": "À la deuxième lecture au Sénat",
+        "date": "2026-10-29"
+      },
+      "lastActivity": "2026-10-29",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/s-253",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/s-253"
+      },
+      "sponsorPersonId": null,
+      "sponsorName": null,
+      "fullSummaryAvailable": false,
+      "summary": {
+        "en": "This enactment amends the Income Tax Act to adjust the child care expense deduction amounts for the 2027 taxation year and, for all subsequent taxation years, to index the amounts to the Consumer Price Index, using the amounts for the 2027 taxation year as a baseline.",
+        "fr": "Le texte modifie la Loi de l’impôt sur le revenu afin de rajuster les montants de la déduction pour frais de garde d’enfants pour l’année d’imposition 2027 et, pour les années d’imposition subséquentes, d’indexer ces montants à l’indice des prix à la consommation en utilisant les montants de l’année d’imposition 2027 comme valeurs de référence."
+      },
+      "summarySource": "bill",
+      "divisions": []
+    },
+    {
+      "id": 14159600,
+      "num": "C-34",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "commons",
+      "type": {
+        "en": "House Government Bill",
+        "fr": "Projet de loi émanant du gouvernement (Cdc)"
+      },
+      "isGovernment": true,
+      "title": {
+        "en": "An Act to enact the Digital Safety Act and the Digital Safety Commission of Canada Act and to make consequential amendments to other Acts",
+        "fr": "Loi édictant la Loi sur la sécurité numérique et la Loi sur la Commission canadienne de la sécurité numérique et apportant des modifications corrélatives à d'autres lois"
+      },
+      "shortTitle": {
+        "en": "Safe Social Media Act",
+        "fr": "Loi sur les médias sociaux sécuritaires"
+      },
+      "sponsor": {
+        "en": "Hon. Marc Miller",
+        "fr": "L’hon. Marc Miller"
+      },
+      "status": {
+        "en": "At second reading in the House of Commons",
+        "fr": "À la deuxième lecture à la Chambre des communes"
+      },
+      "state": "encours",
+      "milestones": [
+        {
+          "stage": "commons_first_reading",
+          "chamber": "commons",
+          "reading": 1,
+          "date": "2026-06-10"
+        },
+        {
+          "stage": "commons_second_reading",
+          "chamber": "commons",
+          "reading": 2,
+          "date": "2026-10-29"
+        }
+      ],
+      "royalAssent": null,
+      "reinstated": false,
+      "latestActivity": {
+        "en": "At second reading in the House of Commons",
+        "fr": "À la deuxième lecture à la Chambre des communes",
+        "date": "2026-10-29"
+      },
+      "lastActivity": "2026-10-29",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-34",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-34"
+      },
+      "sponsorPersonId": 88660,
+      "sponsorName": {
+        "first": "Marc",
+        "last": "Miller"
+      },
+      "fullSummaryAvailable": true,
+      "summary": {
+        "en": "Part 1 enacts the Digital Safety Act, whose purpose is, among other things, to promote the safety of persons in Canada, particularly children, reduce harms caused to them as a result of harmful content online and ensure that the operators of regulated social media services, regulated chatbot services and other regulated online services are transparent and accountable with respect to their duties under that Act.\n\nThat Act, among other things,\n\n(a) imposes on the operators of regulated services\n\n(i) a duty to act responsibly in respect of the regulated social media services that they operate, including by implementing measures that are adequate to mitigate the risk that users will be exposed to harmful content on the services, by providing tools to users to enable them to block other users and flag harmful content and by labelling synthetic content,\n\n(ii) a duty to act responsibly in respect of the regulated chatbot services that they operate, including by implementing measures that are adequate to mitigate the risk that the chatbot will communicate harmful content to a user, measures to ensure intervention in crisis situations and measures that are adequate to mitigate the risk that the chatbot will engage in certain harmful behaviours,\n\n(iii) a duty to protect children in respect of all of the regulated services that they operate by integrating into those services design features that are set out in the regulations, by implementing minimum-age restrictions for accessing pornographic content on regulated services, and, if provided for by regulations, by implementing minimum-age restrictions for being able to have an account with, or being otherwise registered with, regulated social media services,\n\n(iv) a duty, in respect of the regulated social media services that they operate, to make inaccessible to persons in Canada, in certain circumstances, content on that service that sexually victimizes a child or revictimizes a survivor and intimate content communicated without consent, and\n\n(v) a duty to be transparent in respect of all of the regulated services that they operate, including by submitting a digital safety plan to the Digital Safety Commission of Canada to assist it in determining whether an operator is complying with its duties under that Act;\n\n(b) authorizes the Governor in Council to make regulations to make the operators of other online services subject to the duty to protect children and the duty to be transparent;\n\n(c) provides that persons in Canada may make a complaint to the Digital Safety Commission of Canada that content on a regulated social media service is content that sexually victimizes a child or revictimizes a survivor or intimate content communicated without consent and authorizes the Commission to make an order requiring the operator of the service to make that content inaccessible to persons in Canada if the person making the complaint has used their best efforts to seek recourse from the operator of the service under that Act; and\n\n(d) provides that persons in Canada may make submissions to the Digital Safety Commission of Canada respecting the measures taken by the operator of a regulated service to comply with its duties under that Act.\n\nPart 2 enacts the Digital Safety Commission of Canada Act, which establishes the Digital Safety Commission of Canada, which has powers, duties and functions under the Digital Safety Act. The Part also makes consequential amendments to other Acts.",
+        "fr": "La partie 1 édicte la Loi sur la sécurité numérique, qui a notamment pour objet de promouvoir la sécurité des personnes au Canada, particulièrement les enfants, de réduire les préjudices qui leur sont causés par le contenu préjudiciable en ligne et de veiller à ce que les exploitants de services de médias sociaux réglementés, de services d’agents conversationnels réglementés et d’autres services en ligne réglementés soient transparents et tenus de rendre des comptes à l’égard des obligations qui leur incombent au titre de cette loi.\n\nCette loi, notamment :\n\na) prévoit l’obligation pour les exploitants de services réglementés :\n\n(i) d’agir de manière responsable à l’égard des services de médias sociaux réglementés qu’ils exploitent, notamment en mettant en œuvre des mesures adéquates pour atténuer le risque que des utilisateurs soient exposés à du contenu préjudiciable sur les services en cause, en fournissant des outils qui permettent aux utilisateurs de bloquer d’autres utilisateurs et de signaler des contenus préjudiciables, ainsi qu’en étiquetant le contenu synthétique,\n\n(ii) d’agir de manière responsable à l’égard des services d’agents conversationnels réglementés qu’ils exploitent, notamment en mettant en œuvre des mesures adéquates pour atténuer le risque que l’agent conversationnel communique du contenu préjudiciable à un utilisateur, des mesures pour veiller à ce qu’il y ait une intervention en situation de crise et des mesures adéquates pour atténuer le risque que l’agent conversationnel adopte certains comportements préjudiciables,\n\n(iii) de protéger les enfants à l’égard de tous les services réglementés qu’ils exploitent en intégrant à ces services les caractéristiques de conception prévues par règlement et en mettant en œuvre des exigences en matière d’âge minimum requis pour accéder à du contenu pornographique sur tout service réglementé et des exigences en matière d’âge minimum requis pour avoir un compte ou pour accéder aux services de médias sociaux réglementés prévus par règlement,\n\n(iv) de rendre inaccessible aux personnes au Canada, dans certaines circonstances, tout contenu représentant de la victimisation sexuelle d’enfants ou perpétuant la victimisation de survivants et tout contenu intime communiqué de façon non consensuelle se trouvant sur un service de média social réglementé,\n\n(v) d’être transparents à l’égard de tous les services réglementés qu’ils exploitent, notamment en présentant des plans de sécurité numérique à la Commission canadienne de la sécurité numérique pour l’aider à déterminer si les exploitants se conforment aux obligations qui leur incombent au titre de cette loi;\n\nb) permet au gouverneur en conseil d’assujettir, par règlement, les exploitants d’autres services en ligne à l’obligation de protéger les enfants et à celle d’être transparent;\n\nc) prévoit que toute personne au Canada peut déposer une plainte auprès de la Commission canadienne de la sécurité numérique relativement au fait que figure sur un service de média social réglementé du contenu représentant de la victimisation sexuelle d’enfants ou perpétuant la victimisation de survivants ou du contenu intime communiqué de façon non consensuelle et autorise celle-ci à rendre des ordonnances pour obliger l’exploitant du service à rendre ce contenu inaccessible aux personnes au Canada, si la personne ayant déposé la plainte a fait de son mieux pour exercer, auprès de l’exploitant du service en cause, les recours s’offrant à elle au titre de cette loi;\n\nd) prévoit que toute personne au Canada peut fournir à la Commission canadienne de la sécurité numérique des observations relativement aux mesures prises par l’exploitant d’un service réglementé pour s’acquitter des obligations qui lui incombent au titre de cette loi.\n\nLa partie 2 édicte la Loi sur la Commission canadienne de la sécurité numérique, qui constitue la Commission canadienne de la sécurité numérique à laquelle la Loi sur la sécurité numérique confère des attributions. Elle apporte aussi des modifications corrélatives à d’autres lois."
+      },
+      "summarySource": "bill",
+      "divisions": []
+    },
+    {
+      "id": 14223235,
+      "num": "C-38",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "commons",
+      "type": {
+        "en": "House Government Bill",
+        "fr": "Projet de loi émanant du gouvernement (Cdc)"
+      },
+      "isGovernment": true,
+      "title": {
+        "en": "An Act to amend the Excise Tax Act (extension of the federal fuel excise tax relief)",
+        "fr": "Loi modifiant la Loi sur la taxe d'accise (prolongation de l'allègement de la taxe d'accise fédérale sur les carburants)"
+      },
+      "shortTitle": {
+        "en": "Canadian Fuel Affordability Act",
+        "fr": "Loi sur l'abordabilité des carburants au Canada"
+      },
+      "sponsor": {
+        "en": "Hon. François-Philippe Champagne",
+        "fr": "L’hon. François-Philippe Champagne"
+      },
+      "status": {
+        "en": "Royal assent received",
+        "fr": "Sanction royale reçue"
+      },
+      "state": "loi",
+      "milestones": [
+        {
+          "stage": "commons_first_reading",
+          "chamber": "commons",
+          "reading": 1,
+          "date": "2026-09-21"
+        },
+        {
+          "stage": "commons_second_reading",
+          "chamber": "commons",
+          "reading": 2,
+          "date": "2026-09-22"
+        },
+        {
+          "stage": "commons_third_reading",
+          "chamber": "commons",
+          "reading": 3,
+          "date": "2026-10-20"
+        },
+        {
+          "stage": "senate_first_reading",
+          "chamber": "senate",
+          "reading": 1,
+          "date": "2026-10-21"
+        },
+        {
+          "stage": "senate_second_reading",
+          "chamber": "senate",
+          "reading": 2,
+          "date": "2026-10-27"
+        },
+        {
+          "stage": "senate_third_reading",
+          "chamber": "senate",
+          "reading": 3,
+          "date": "2026-10-28"
+        },
+        {
+          "stage": "royal_assent",
+          "chamber": null,
+          "reading": null,
+          "date": "2026-10-29"
+        }
+      ],
+      "royalAssent": "2026-10-29",
+      "reinstated": false,
+      "latestActivity": {
+        "en": "Royal assent received",
+        "fr": "Sanction royale reçue",
+        "date": "2026-10-29"
+      },
+      "lastActivity": "2026-10-29",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-38",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-38"
+      },
+      "sponsorPersonId": 88633,
+      "sponsorName": {
+        "first": "François-Philippe",
+        "last": "Champagne"
+      },
+      "fullSummaryAvailable": false,
+      "summary": {
+        "en": "The Library of Parliament does not prepare Legislative Summaries for self-explanatory measures. The following is a short summary:\n\nOn 21 September 2026, the Minister of Finance and National Revenue introduced Bill C-38, An Act to amend the Excise Tax Act (extension of the federal fuel excise tax relief) (Canadian Fuel Affordability Act) in the House of Commons and it was given first reading.\n\nBill C-38 amends the Excise Tax Act to extend the temporary suspension of the federal fuel excise tax until January 31, 2027 and to temporarily set the excise tax rates on fuels to 50% of the regular rates for the period beginning on February 1, 2027 and ending on March 31, 2027The Library of Parliament does not prepare Legislative Summaries for self-explanatory measures. The following is a short summary:\n\nOn 21 September 2026, the Minister of Finance and National Revenue introduced Bill C-38, An Act to amend the Excise Tax Act (extension of the federal fuel excise tax relief) (Canadian Fuel Affordability Act) in the House of Commons and it was given first reading.\n\nBill C-38 amends the Excise Tax Act to extend the temporary suspension of the federal fuel excise tax until January 31, 2027 and to temporarily set the excise tax rates on fuels to 50% of the regular rates for the period beginning on February 1, 2027 and ending on March 31, 2027",
+        "fr": "La Bibliothèque du Parlement ne prépare pas de Résumés législatifs pour les mesures qui sont suffisamment explicites. Ce qui suit est un court résumé :\n\nLe 21 septembre 2026, le ministre des Finances et du Revenu national a déposé le projet de loi C-38, Loi modifiant la Loi sur la taxe d'accise (prolongation de l'allègement de la taxe d'accise fédérale sur les carburants) (Loi sur l'abordabilité des carburants au Canada) à la Chambre des communes en première lecture.\n\nLe projet de loi C-38 modifie la Loi sur la taxe d’accise afin de prolonger la suspension temporaire de la taxe d’accise fédérale sur les carburants jusqu’au 31 janvier 2027 et de fixer temporairement les taux de la taxe d’accise sur le carburant à 50?% des taux réguliers pour la période commençant le 1er février 2027 et se terminant le 31 mars 2027.La Bibliothèque du Parlement ne prépare pas de Résumés législatifs pour les mesures qui sont suffisamment explicites. Ce qui suit est un court résumé :\n\nLe 21 septembre 2026, le ministre des Finances et du Revenu national a déposé le projet de loi C-38, Loi modifiant la Loi sur la taxe d'accise (prolongation de l'allègement de la taxe d'accise fédérale sur les carburants) (Loi sur l'abordabilité des carburants au Canada) à la Chambre des communes en première lecture.\n\nLe projet de loi C-38 modifie la Loi sur la taxe d’accise afin de prolonger la suspension temporaire de la taxe d’accise fédérale sur les carburants jusqu’au 31 janvier 2027 et de fixer temporairement les taux de la taxe d’accise sur le carburant à 50?% des taux réguliers pour la période commençant le 1er février 2027 et se terminant le 31 mars 2027."
+      },
+      "summarySource": "library",
+      "divisions": []
+    },
+    {
+      "id": 13586188,
+      "num": "C-222",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "commons",
+      "type": {
+        "en": "Private Member’s Bill",
+        "fr": "Projet de loi émanant d'un député"
+      },
+      "isGovernment": false,
+      "title": {
+        "en": "An Act to amend the Employment Insurance Act and the Canada Labour Code (death of a child)",
+        "fr": "Loi modifiant la Loi sur l’assurance-emploi et le Code canadien du travail (décès d’un enfant)"
+      },
+      "shortTitle": {
+        "en": "Relieving Grieving Parents of an Administrative Burden Act (Evan's Law)",
+        "fr": "Loi visant à alléger le fardeau bureaucratique des parents endeuillés (loi d'Evan)"
+      },
+      "sponsor": {
+        "en": "Hon. Terry Beech",
+        "fr": "L’hon. Terry Beech"
+      },
+      "status": {
+        "en": "At second reading in the Senate",
+        "fr": "À la deuxième lecture au Sénat"
+      },
+      "state": "encours",
+      "milestones": [
+        {
+          "stage": "commons_first_reading",
+          "chamber": "commons",
+          "reading": 1,
+          "date": "2025-09-18"
+        },
+        {
+          "stage": "commons_second_reading",
+          "chamber": "commons",
+          "reading": 2,
+          "date": "2026-02-04"
+        },
+        {
+          "stage": "commons_third_reading",
+          "chamber": "commons",
+          "reading": 3,
+          "date": "2026-10-28"
+        },
+        {
+          "stage": "senate_first_reading",
+          "chamber": "senate",
+          "reading": 1,
+          "date": "2026-10-29"
+        }
+      ],
+      "royalAssent": null,
+      "reinstated": false,
+      "latestActivity": {
+        "en": "At second reading in the Senate",
+        "fr": "À la deuxième lecture au Sénat",
+        "date": "2026-10-29"
+      },
+      "lastActivity": "2026-10-29",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-222",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-222"
+      },
+      "sponsorPersonId": 89236,
+      "sponsorName": {
+        "first": "Terry",
+        "last": "Beech"
+      },
+      "fullSummaryAvailable": false,
+      "summary": {
+        "en": "This enactment amends the Employment Insurance Act to provide that a person to whom employment insurance benefits are payable to care for a newborn child or a child placed with them for the purpose of adoption remains eligible to receive those benefits even if the child dies during the benefit period. It also amends the Canada Labour Code to provide that an employee who is entitled to maternity leave or to parental leave to care for a newborn child or a child who is in their care for the purpose of adoption remains entitled to the maternity leave or the parental leave even if the child dies during the period for which leave has been granted.",
+        "fr": "Le texte modifie la Loi sur l’assurance-emploi afin de prévoir que toute personne recevant des prestations d’assurance-emploi pour prendre soin de son nouveau-né ou d’un enfant placé chez elle en vue de son adoption continue d’être admissible à ces prestations même en cas de décès de l’enfant au cours de la période de prestations. Il modifie également le Code canadien du travail afin de prévoir que l’admissibilité au congé de maternité ou au congé parental est maintenue même en cas de décès, au cours du congé, du nouveau-né de l’employé ou de l’enfant confié à l’employé en vue de son adoption."
+      },
+      "summarySource": "bill",
+      "divisions": [
+        {
+          "number": 187,
+          "date": "2026-10-28",
+          "description": {
+            "en": "3rd reading and adoption of Bill C-222, An Act to amend the Employment Insurance Act and the Canada Labour Code (death of a child)",
+            "fr": "3e lecture et adoption du projet de loi C-222, Loi modifiant la Loi sur l’assurance-emploi et le Code canadien du travail (décès d’un enfant)"
+          },
+          "result": {
+            "en": "Agreed To",
+            "fr": "Adoptée"
+          },
+          "passed": true,
+          "totals": {
+            "yea": 325,
+            "nay": 0,
+            "paired": 8
+          }
+        },
+        {
+          "number": 64,
+          "date": "2026-02-04",
+          "description": {
+            "en": "2nd reading of Bill C-222, An Act to amend the Employment Insurance Act and the Canada Labour Code (death of a child)",
+            "fr": "2e lecture du projet de loi C-222, Loi modifiant la Loi sur l’assurance-emploi et le Code canadien du travail (décès d’un enfant)"
+          },
+          "result": {
+            "en": "Agreed To",
+            "fr": "Adoptée"
+          },
+          "passed": true,
+          "totals": {
+            "yea": 331,
+            "nay": 0,
+            "paired": 4
+          }
+        }
+      ]
+    },
+    {
+      "id": 13592619,
+      "num": "C-241",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "commons",
+      "type": {
+        "en": "Private Member’s Bill",
+        "fr": "Projet de loi émanant d'un député"
+      },
+      "isGovernment": false,
+      "title": {
+        "en": "An Act to establish a national strategy respecting flood and drought forecasting",
+        "fr": "Loi prévoyant l’élaboration d’une stratégie nationale sur la prévision des inondations et des sécheresses"
+      },
+      "shortTitle": {
+        "en": "National Strategy on Flood and Drought Forecasting Act",
+        "fr": "Loi relative à la stratégie nationale sur la prévision des inondations et des sécheresses"
+      },
+      "sponsor": {
+        "en": "Tatiana Auguste",
+        "fr": "Tatiana Auguste"
+      },
+      "status": {
+        "en": "At second reading in the Senate",
+        "fr": "À la deuxième lecture au Sénat"
+      },
+      "state": "encours",
+      "milestones": [
+        {
+          "stage": "commons_first_reading",
+          "chamber": "commons",
+          "reading": 1,
+          "date": "2025-09-22"
+        },
+        {
+          "stage": "commons_second_reading",
+          "chamber": "commons",
+          "reading": 2,
+          "date": "2025-12-03"
+        },
+        {
+          "stage": "commons_third_reading",
+          "chamber": "commons",
+          "reading": 3,
+          "date": "2026-10-28"
+        },
+        {
+          "stage": "senate_first_reading",
+          "chamber": "senate",
+          "reading": 1,
+          "date": "2026-10-29"
+        }
+      ],
+      "royalAssent": null,
+      "reinstated": false,
+      "latestActivity": {
+        "en": "At second reading in the Senate",
+        "fr": "À la deuxième lecture au Sénat",
+        "date": "2026-10-29"
+      },
+      "lastActivity": "2026-10-29",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-241",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-241"
+      },
+      "sponsorPersonId": 122753,
+      "sponsorName": {
+        "first": "Tatiana",
+        "last": "Auguste"
+      },
+      "fullSummaryAvailable": false,
+      "summary": {
+        "en": "This enactment provides for the development of a national strategy to provide key stakeholders with the information they need to forecast floods and droughts.",
+        "fr": "Le texte prévoit l’élaboration d’une stratégie nationale visant à fournir aux intervenants clés les renseignements dont ils ont besoin pour prévoir les inondations et les sécheresses."
+      },
+      "summarySource": "bill",
+      "divisions": [
+        {
+          "number": 185,
+          "date": "2026-10-28",
+          "description": {
+            "en": "3rd reading and adoption of Bill C-241, An Act to establish a national strategy respecting flood and drought forecasting",
+            "fr": "3e lecture et adoption du projet de loi C-241, Loi prévoyant l’élaboration d’une stratégie nationale sur la prévision des inondations et des sécheresses"
+          },
+          "result": {
+            "en": "Agreed To",
+            "fr": "Adoptée"
+          },
+          "passed": true,
+          "totals": {
+            "yea": 303,
+            "nay": 19,
+            "paired": 8
+          }
+        },
+        {
+          "number": 52,
+          "date": "2025-12-03",
+          "description": {
+            "en": "2nd reading of Bill C-241, An Act to establish a national strategy respecting flood and drought forecasting",
+            "fr": "2e lecture du projet de loi C-241, Loi prévoyant l’élaboration d’une stratégie nationale sur la prévision des inondations et des sécheresses"
+          },
+          "result": {
+            "en": "Agreed To",
+            "fr": "Adoptée"
+          },
+          "passed": true,
+          "totals": {
+            "yea": 303,
+            "nay": 22,
+            "paired": 8
+          }
+        }
+      ]
+    },
     {
       "id": 13541954,
       "num": "S-209",
@@ -96,320 +761,6 @@
       },
       "summarySource": "bill",
       "divisions": []
-    },
-    {
-      "id": 14223235,
-      "num": "C-38",
-      "session": "45-1",
-      "parliament": 45,
-      "sessionNumber": 1,
-      "chamber": "commons",
-      "type": {
-        "en": "House Government Bill",
-        "fr": "Projet de loi émanant du gouvernement (Cdc)"
-      },
-      "isGovernment": true,
-      "title": {
-        "en": "An Act to amend the Excise Tax Act (extension of the federal fuel excise tax relief)",
-        "fr": "Loi modifiant la Loi sur la taxe d'accise (prolongation de l'allègement de la taxe d'accise fédérale sur les carburants)"
-      },
-      "shortTitle": {
-        "en": "Canadian Fuel Affordability Act",
-        "fr": "Loi sur l'abordabilité des carburants au Canada"
-      },
-      "sponsor": {
-        "en": "Hon. François-Philippe Champagne",
-        "fr": "L’hon. François-Philippe Champagne"
-      },
-      "status": {
-        "en": "Awaiting royal assent",
-        "fr": "En attente de la sanction royale"
-      },
-      "state": "encours",
-      "milestones": [
-        {
-          "stage": "commons_first_reading",
-          "chamber": "commons",
-          "reading": 1,
-          "date": "2026-09-21"
-        },
-        {
-          "stage": "commons_second_reading",
-          "chamber": "commons",
-          "reading": 2,
-          "date": "2026-09-22"
-        },
-        {
-          "stage": "commons_third_reading",
-          "chamber": "commons",
-          "reading": 3,
-          "date": "2026-10-20"
-        },
-        {
-          "stage": "senate_first_reading",
-          "chamber": "senate",
-          "reading": 1,
-          "date": "2026-10-21"
-        },
-        {
-          "stage": "senate_second_reading",
-          "chamber": "senate",
-          "reading": 2,
-          "date": "2026-10-27"
-        },
-        {
-          "stage": "senate_third_reading",
-          "chamber": "senate",
-          "reading": 3,
-          "date": "2026-10-28"
-        }
-      ],
-      "royalAssent": null,
-      "reinstated": false,
-      "latestActivity": {
-        "en": "Awaiting royal assent",
-        "fr": "En attente de la sanction royale",
-        "date": "2026-10-28"
-      },
-      "lastActivity": "2026-10-28",
-      "url": {
-        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-38",
-        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-38"
-      },
-      "sponsorPersonId": 88633,
-      "sponsorName": {
-        "first": "François-Philippe",
-        "last": "Champagne"
-      },
-      "fullSummaryAvailable": false,
-      "summary": {
-        "en": "The Library of Parliament does not prepare Legislative Summaries for self-explanatory measures. The following is a short summary:\n\nOn 21 September 2026, the Minister of Finance and National Revenue introduced Bill C-38, An Act to amend the Excise Tax Act (extension of the federal fuel excise tax relief) (Canadian Fuel Affordability Act) in the House of Commons and it was given first reading.\n\nBill C-38 amends the Excise Tax Act to extend the temporary suspension of the federal fuel excise tax until January 31, 2027 and to temporarily set the excise tax rates on fuels to 50% of the regular rates for the period beginning on February 1, 2027 and ending on March 31, 2027The Library of Parliament does not prepare Legislative Summaries for self-explanatory measures. The following is a short summary:\n\nOn 21 September 2026, the Minister of Finance and National Revenue introduced Bill C-38, An Act to amend the Excise Tax Act (extension of the federal fuel excise tax relief) (Canadian Fuel Affordability Act) in the House of Commons and it was given first reading.\n\nBill C-38 amends the Excise Tax Act to extend the temporary suspension of the federal fuel excise tax until January 31, 2027 and to temporarily set the excise tax rates on fuels to 50% of the regular rates for the period beginning on February 1, 2027 and ending on March 31, 2027",
-        "fr": "La Bibliothèque du Parlement ne prépare pas de Résumés législatifs pour les mesures qui sont suffisamment explicites. Ce qui suit est un court résumé :\n\nLe 21 septembre 2026, le ministre des Finances et du Revenu national a déposé le projet de loi C-38, Loi modifiant la Loi sur la taxe d'accise (prolongation de l'allègement de la taxe d'accise fédérale sur les carburants) (Loi sur l'abordabilité des carburants au Canada) à la Chambre des communes en première lecture.\n\nLe projet de loi C-38 modifie la Loi sur la taxe d’accise afin de prolonger la suspension temporaire de la taxe d’accise fédérale sur les carburants jusqu’au 31 janvier 2027 et de fixer temporairement les taux de la taxe d’accise sur le carburant à 50?% des taux réguliers pour la période commençant le 1er février 2027 et se terminant le 31 mars 2027.La Bibliothèque du Parlement ne prépare pas de Résumés législatifs pour les mesures qui sont suffisamment explicites. Ce qui suit est un court résumé :\n\nLe 21 septembre 2026, le ministre des Finances et du Revenu national a déposé le projet de loi C-38, Loi modifiant la Loi sur la taxe d'accise (prolongation de l'allègement de la taxe d'accise fédérale sur les carburants) (Loi sur l'abordabilité des carburants au Canada) à la Chambre des communes en première lecture.\n\nLe projet de loi C-38 modifie la Loi sur la taxe d’accise afin de prolonger la suspension temporaire de la taxe d’accise fédérale sur les carburants jusqu’au 31 janvier 2027 et de fixer temporairement les taux de la taxe d’accise sur le carburant à 50?% des taux réguliers pour la période commençant le 1er février 2027 et se terminant le 31 mars 2027."
-      },
-      "summarySource": "library",
-      "divisions": []
-    },
-    {
-      "id": 13586188,
-      "num": "C-222",
-      "session": "45-1",
-      "parliament": 45,
-      "sessionNumber": 1,
-      "chamber": "commons",
-      "type": {
-        "en": "Private Member’s Bill",
-        "fr": "Projet de loi émanant d'un député"
-      },
-      "isGovernment": false,
-      "title": {
-        "en": "An Act to amend the Employment Insurance Act and the Canada Labour Code (death of a child)",
-        "fr": "Loi modifiant la Loi sur l’assurance-emploi et le Code canadien du travail (décès d’un enfant)"
-      },
-      "shortTitle": {
-        "en": "Relieving Grieving Parents of an Administrative Burden Act (Evan's Law)",
-        "fr": "Loi visant à alléger le fardeau bureaucratique des parents endeuillés (loi d'Evan)"
-      },
-      "sponsor": {
-        "en": "Hon. Terry Beech",
-        "fr": "L’hon. Terry Beech"
-      },
-      "status": {
-        "en": "House of Commons bill awaiting first reading in the Senate",
-        "fr": "Projet de loi de la Chambre des communes en attente de la première lecture au Sénat"
-      },
-      "state": "encours",
-      "milestones": [
-        {
-          "stage": "commons_first_reading",
-          "chamber": "commons",
-          "reading": 1,
-          "date": "2025-09-18"
-        },
-        {
-          "stage": "commons_second_reading",
-          "chamber": "commons",
-          "reading": 2,
-          "date": "2026-02-04"
-        },
-        {
-          "stage": "commons_third_reading",
-          "chamber": "commons",
-          "reading": 3,
-          "date": "2026-10-28"
-        }
-      ],
-      "royalAssent": null,
-      "reinstated": false,
-      "latestActivity": {
-        "en": "House of Commons bill awaiting first reading in the Senate",
-        "fr": "Projet de loi de la Chambre des communes en attente de la première lecture au Sénat",
-        "date": "2026-10-28"
-      },
-      "lastActivity": "2026-10-28",
-      "url": {
-        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-222",
-        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-222"
-      },
-      "sponsorPersonId": 89236,
-      "sponsorName": {
-        "first": "Terry",
-        "last": "Beech"
-      },
-      "fullSummaryAvailable": false,
-      "summary": {
-        "en": "This enactment amends the Employment Insurance Act to provide that a person to whom employment insurance benefits are payable to care for a newborn child or a child placed with them for the purpose of adoption remains eligible to receive those benefits even if the child dies during the benefit period. It also amends the Canada Labour Code to provide that an employee who is entitled to maternity leave or to parental leave to care for a newborn child or a child who is in their care for the purpose of adoption remains entitled to the maternity leave or the parental leave even if the child dies during the period for which leave has been granted.",
-        "fr": "Le texte modifie la Loi sur l’assurance-emploi afin de prévoir que toute personne recevant des prestations d’assurance-emploi pour prendre soin de son nouveau-né ou d’un enfant placé chez elle en vue de son adoption continue d’être admissible à ces prestations même en cas de décès de l’enfant au cours de la période de prestations. Il modifie également le Code canadien du travail afin de prévoir que l’admissibilité au congé de maternité ou au congé parental est maintenue même en cas de décès, au cours du congé, du nouveau-né de l’employé ou de l’enfant confié à l’employé en vue de son adoption."
-      },
-      "summarySource": "bill",
-      "divisions": [
-        {
-          "number": 187,
-          "date": "2026-10-28",
-          "description": {
-            "en": "3rd reading and adoption of Bill C-222, An Act to amend the Employment Insurance Act and the Canada Labour Code (death of a child)",
-            "fr": "3e lecture et adoption du projet de loi C-222, Loi modifiant la Loi sur l’assurance-emploi et le Code canadien du travail (décès d’un enfant)"
-          },
-          "result": {
-            "en": "Agreed To",
-            "fr": "Adoptée"
-          },
-          "passed": true,
-          "totals": {
-            "yea": 325,
-            "nay": 0,
-            "paired": 8
-          }
-        },
-        {
-          "number": 64,
-          "date": "2026-02-04",
-          "description": {
-            "en": "2nd reading of Bill C-222, An Act to amend the Employment Insurance Act and the Canada Labour Code (death of a child)",
-            "fr": "2e lecture du projet de loi C-222, Loi modifiant la Loi sur l’assurance-emploi et le Code canadien du travail (décès d’un enfant)"
-          },
-          "result": {
-            "en": "Agreed To",
-            "fr": "Adoptée"
-          },
-          "passed": true,
-          "totals": {
-            "yea": 331,
-            "nay": 0,
-            "paired": 4
-          }
-        }
-      ]
-    },
-    {
-      "id": 13592619,
-      "num": "C-241",
-      "session": "45-1",
-      "parliament": 45,
-      "sessionNumber": 1,
-      "chamber": "commons",
-      "type": {
-        "en": "Private Member’s Bill",
-        "fr": "Projet de loi émanant d'un député"
-      },
-      "isGovernment": false,
-      "title": {
-        "en": "An Act to establish a national strategy respecting flood and drought forecasting",
-        "fr": "Loi prévoyant l’élaboration d’une stratégie nationale sur la prévision des inondations et des sécheresses"
-      },
-      "shortTitle": {
-        "en": "National Strategy on Flood and Drought Forecasting Act",
-        "fr": "Loi relative à la stratégie nationale sur la prévision des inondations et des sécheresses"
-      },
-      "sponsor": {
-        "en": "Tatiana Auguste",
-        "fr": "Tatiana Auguste"
-      },
-      "status": {
-        "en": "House of Commons bill awaiting first reading in the Senate",
-        "fr": "Projet de loi de la Chambre des communes en attente de la première lecture au Sénat"
-      },
-      "state": "encours",
-      "milestones": [
-        {
-          "stage": "commons_first_reading",
-          "chamber": "commons",
-          "reading": 1,
-          "date": "2025-09-22"
-        },
-        {
-          "stage": "commons_second_reading",
-          "chamber": "commons",
-          "reading": 2,
-          "date": "2025-12-03"
-        },
-        {
-          "stage": "commons_third_reading",
-          "chamber": "commons",
-          "reading": 3,
-          "date": "2026-10-28"
-        }
-      ],
-      "royalAssent": null,
-      "reinstated": false,
-      "latestActivity": {
-        "en": "House of Commons bill awaiting first reading in the Senate",
-        "fr": "Projet de loi de la Chambre des communes en attente de la première lecture au Sénat",
-        "date": "2026-10-28"
-      },
-      "lastActivity": "2026-10-28",
-      "url": {
-        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-241",
-        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-241"
-      },
-      "sponsorPersonId": 122753,
-      "sponsorName": {
-        "first": "Tatiana",
-        "last": "Auguste"
-      },
-      "fullSummaryAvailable": false,
-      "summary": {
-        "en": "This enactment provides for the development of a national strategy to provide key stakeholders with the information they need to forecast floods and droughts.",
-        "fr": "Le texte prévoit l’élaboration d’une stratégie nationale visant à fournir aux intervenants clés les renseignements dont ils ont besoin pour prévoir les inondations et les sécheresses."
-      },
-      "summarySource": "bill",
-      "divisions": [
-        {
-          "number": 185,
-          "date": "2026-10-28",
-          "description": {
-            "en": "3rd reading and adoption of Bill C-241, An Act to establish a national strategy respecting flood and drought forecasting",
-            "fr": "3e lecture et adoption du projet de loi C-241, Loi prévoyant l’élaboration d’une stratégie nationale sur la prévision des inondations et des sécheresses"
-          },
-          "result": {
-            "en": "Agreed To",
-            "fr": "Adoptée"
-          },
-          "passed": true,
-          "totals": {
-            "yea": 303,
-            "nay": 19,
-            "paired": 8
-          }
-        },
-        {
-          "number": 52,
-          "date": "2025-12-03",
-          "description": {
-            "en": "2nd reading of Bill C-241, An Act to establish a national strategy respecting flood and drought forecasting",
-            "fr": "2e lecture du projet de loi C-241, Loi prévoyant l’élaboration d’une stratégie nationale sur la prévision des inondations et des sécheresses"
-          },
-          "result": {
-            "en": "Agreed To",
-            "fr": "Adoptée"
-          },
-          "passed": true,
-          "totals": {
-            "yea": 303,
-            "nay": 22,
-            "paired": 8
-          }
-        }
-      ]
     },
     {
       "id": 14279940,
@@ -626,135 +977,6 @@
       },
       "summarySource": "library",
       "divisions": []
-    },
-    {
-      "id": 13541964,
-      "num": "S-210",
-      "session": "45-1",
-      "parliament": 45,
-      "sessionNumber": 1,
-      "chamber": "senate",
-      "type": {
-        "en": "Senate Public Bill",
-        "fr": "Projet de loi d'intérêt public du Sénat"
-      },
-      "isGovernment": false,
-      "title": {
-        "en": "An Act respecting Ukrainian Heritage Month",
-        "fr": "Loi instituant le Mois du patrimoine ukrainien"
-      },
-      "shortTitle": {
-        "en": "Ukrainian Heritage Month Act",
-        "fr": "Loi sur le Mois du patrimoine ukrainien"
-      },
-      "sponsor": {
-        "en": "Hon. Stanley Kutcher",
-        "fr": "L'hon. Stanley Kutcher"
-      },
-      "status": {
-        "en": "Awaiting royal assent",
-        "fr": "En attente de la sanction royale"
-      },
-      "state": "encours",
-      "milestones": [
-        {
-          "stage": "senate_first_reading",
-          "chamber": "senate",
-          "reading": 1,
-          "date": "2025-05-27"
-        },
-        {
-          "stage": "senate_second_reading",
-          "chamber": "senate",
-          "reading": 2,
-          "date": "2025-09-25"
-        },
-        {
-          "stage": "senate_third_reading",
-          "chamber": "senate",
-          "reading": 3,
-          "date": "2025-10-01"
-        },
-        {
-          "stage": "commons_first_reading",
-          "chamber": "commons",
-          "reading": 1,
-          "date": "2025-10-08"
-        },
-        {
-          "stage": "commons_second_reading",
-          "chamber": "commons",
-          "reading": 2,
-          "date": "2026-02-12"
-        },
-        {
-          "stage": "commons_third_reading",
-          "chamber": "commons",
-          "reading": 3,
-          "date": "2026-10-21"
-        }
-      ],
-      "royalAssent": null,
-      "reinstated": false,
-      "latestActivity": {
-        "en": "Awaiting royal assent",
-        "fr": "En attente de la sanction royale",
-        "date": "2026-10-21"
-      },
-      "lastActivity": "2026-10-21",
-      "url": {
-        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/s-210",
-        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/s-210"
-      },
-      "sponsorPersonId": 102489,
-      "sponsorName": {
-        "first": "Stanley",
-        "last": "Kutcher"
-      },
-      "fullSummaryAvailable": false,
-      "summary": {
-        "en": "This enactment designates the month of September as \"Ukrainian Heritage Month\".",
-        "fr": "Le texte désigne le mois de septembre comme « Mois du patrimoine ukrainien »."
-      },
-      "summarySource": "bill",
-      "divisions": [
-        {
-          "number": 180,
-          "date": "2026-10-21",
-          "description": {
-            "en": "3rd reading and adoption of Bill S-210, An Act respecting Ukrainian Heritage Month",
-            "fr": "3e lecture et adoption du projet de loi S-210, Loi instituant le Mois du patrimoine ukrainien"
-          },
-          "result": {
-            "en": "Agreed To",
-            "fr": "Adoptée"
-          },
-          "passed": true,
-          "totals": {
-            "yea": 313,
-            "nay": 0,
-            "paired": 12
-          }
-        },
-        {
-          "number": 69,
-          "date": "2026-02-12",
-          "description": {
-            "en": "2nd reading of Bill S-210, An Act respecting Ukrainian Heritage Month",
-            "fr": "2e lecture du projet de loi S-210, Loi instituant le Mois du patrimoine ukrainien"
-          },
-          "result": {
-            "en": "Agreed To",
-            "fr": "Adoptée"
-          },
-          "passed": true,
-          "totals": {
-            "yea": 318,
-            "nay": 0,
-            "paired": 14
-          }
-        }
-      ]
     },
     {
       "id": 14252999,
@@ -1059,7 +1281,10 @@
         "en": "An Act to amend the Criminal Code (consent to pornographic material)",
         "fr": "Loi modifiant le Code criminel (consentement relatif au matériel pornographique)"
       },
-      "shortTitle": null,
+      "shortTitle": {
+        "en": "Stopping Internet Sexual Exploitation Act (the Protect Act)",
+        "fr": "Loi visant à mettre fin à l’exploitation sexuelle sur Internet (Loi de protection)"
+      },
       "sponsor": {
         "en": "Hon. Yonah Martin",
         "fr": "L'hon. Yonah Martin"
@@ -5218,68 +5443,6 @@
       "divisions": []
     },
     {
-      "id": 14159600,
-      "num": "C-34",
-      "session": "45-1",
-      "parliament": 45,
-      "sessionNumber": 1,
-      "chamber": "commons",
-      "type": {
-        "en": "House Government Bill",
-        "fr": "Projet de loi émanant du gouvernement (Cdc)"
-      },
-      "isGovernment": true,
-      "title": {
-        "en": "An Act to enact the Digital Safety Act and the Digital Safety Commission of Canada Act and to make consequential amendments to other Acts",
-        "fr": "Loi édictant la Loi sur la sécurité numérique et la Loi sur la Commission canadienne de la sécurité numérique et apportant des modifications corrélatives à d'autres lois"
-      },
-      "shortTitle": {
-        "en": "Safe Social Media Act",
-        "fr": "Loi sur les médias sociaux sécuritaires"
-      },
-      "sponsor": {
-        "en": "Hon. Marc Miller",
-        "fr": "L’hon. Marc Miller"
-      },
-      "status": {
-        "en": "At second reading in the House of Commons",
-        "fr": "À la deuxième lecture à la Chambre des communes"
-      },
-      "state": "encours",
-      "milestones": [
-        {
-          "stage": "commons_first_reading",
-          "chamber": "commons",
-          "reading": 1,
-          "date": "2026-06-10"
-        }
-      ],
-      "royalAssent": null,
-      "reinstated": false,
-      "latestActivity": {
-        "en": "At second reading in the House of Commons",
-        "fr": "À la deuxième lecture à la Chambre des communes",
-        "date": "2026-06-10"
-      },
-      "lastActivity": "2026-06-10",
-      "url": {
-        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-34",
-        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-34"
-      },
-      "sponsorPersonId": 88660,
-      "sponsorName": {
-        "first": "Marc",
-        "last": "Miller"
-      },
-      "fullSummaryAvailable": true,
-      "summary": {
-        "en": "Part 1 enacts the Digital Safety Act, whose purpose is, among other things, to promote the safety of persons in Canada, particularly children, reduce harms caused to them as a result of harmful content online and ensure that the operators of regulated social media services, regulated chatbot services and other regulated online services are transparent and accountable with respect to their duties under that Act.\n\nThat Act, among other things,\n\n(a) imposes on the operators of regulated services\n\n(i) a duty to act responsibly in respect of the regulated social media services that they operate, including by implementing measures that are adequate to mitigate the risk that users will be exposed to harmful content on the services, by providing tools to users to enable them to block other users and flag harmful content and by labelling synthetic content,\n\n(ii) a duty to act responsibly in respect of the regulated chatbot services that they operate, including by implementing measures that are adequate to mitigate the risk that the chatbot will communicate harmful content to a user, measures to ensure intervention in crisis situations and measures that are adequate to mitigate the risk that the chatbot will engage in certain harmful behaviours,\n\n(iii) a duty to protect children in respect of all of the regulated services that they operate by integrating into those services design features that are set out in the regulations, by implementing minimum-age restrictions for accessing pornographic content on regulated services, and, if provided for by regulations, by implementing minimum-age restrictions for being able to have an account with, or being otherwise registered with, regulated social media services,\n\n(iv) a duty, in respect of the regulated social media services that they operate, to make inaccessible to persons in Canada, in certain circumstances, content on that service that sexually victimizes a child or revictimizes a survivor and intimate content communicated without consent, and\n\n(v) a duty to be transparent in respect of all of the regulated services that they operate, including by submitting a digital safety plan to the Digital Safety Commission of Canada to assist it in determining whether an operator is complying with its duties under that Act;\n\n(b) authorizes the Governor in Council to make regulations to make the operators of other online services subject to the duty to protect children and the duty to be transparent;\n\n(c) provides that persons in Canada may make a complaint to the Digital Safety Commission of Canada that content on a regulated social media service is content that sexually victimizes a child or revictimizes a survivor or intimate content communicated without consent and authorizes the Commission to make an order requiring the operator of the service to make that content inaccessible to persons in Canada if the person making the complaint has used their best efforts to seek recourse from the operator of the service under that Act; and\n\n(d) provides that persons in Canada may make submissions to the Digital Safety Commission of Canada respecting the measures taken by the operator of a regulated service to comply with its duties under that Act.\n\nPart 2 enacts the Digital Safety Commission of Canada Act, which establishes the Digital Safety Commission of Canada, which has powers, duties and functions under the Digital Safety Act. The Part also makes consequential amendments to other Acts.",
-        "fr": "La partie 1 édicte la Loi sur la sécurité numérique, qui a notamment pour objet de promouvoir la sécurité des personnes au Canada, particulièrement les enfants, de réduire les préjudices qui leur sont causés par le contenu préjudiciable en ligne et de veiller à ce que les exploitants de services de médias sociaux réglementés, de services d’agents conversationnels réglementés et d’autres services en ligne réglementés soient transparents et tenus de rendre des comptes à l’égard des obligations qui leur incombent au titre de cette loi.\n\nCette loi, notamment :\n\na) prévoit l’obligation pour les exploitants de services réglementés :\n\n(i) d’agir de manière responsable à l’égard des services de médias sociaux réglementés qu’ils exploitent, notamment en mettant en œuvre des mesures adéquates pour atténuer le risque que des utilisateurs soient exposés à du contenu préjudiciable sur les services en cause, en fournissant des outils qui permettent aux utilisateurs de bloquer d’autres utilisateurs et de signaler des contenus préjudiciables, ainsi qu’en étiquetant le contenu synthétique,\n\n(ii) d’agir de manière responsable à l’égard des services d’agents conversationnels réglementés qu’ils exploitent, notamment en mettant en œuvre des mesures adéquates pour atténuer le risque que l’agent conversationnel communique du contenu préjudiciable à un utilisateur, des mesures pour veiller à ce qu’il y ait une intervention en situation de crise et des mesures adéquates pour atténuer le risque que l’agent conversationnel adopte certains comportements préjudiciables,\n\n(iii) de protéger les enfants à l’égard de tous les services réglementés qu’ils exploitent en intégrant à ces services les caractéristiques de conception prévues par règlement et en mettant en œuvre des exigences en matière d’âge minimum requis pour accéder à du contenu pornographique sur tout service réglementé et des exigences en matière d’âge minimum requis pour avoir un compte ou pour accéder aux services de médias sociaux réglementés prévus par règlement,\n\n(iv) de rendre inaccessible aux personnes au Canada, dans certaines circonstances, tout contenu représentant de la victimisation sexuelle d’enfants ou perpétuant la victimisation de survivants et tout contenu intime communiqué de façon non consensuelle se trouvant sur un service de média social réglementé,\n\n(v) d’être transparents à l’égard de tous les services réglementés qu’ils exploitent, notamment en présentant des plans de sécurité numérique à la Commission canadienne de la sécurité numérique pour l’aider à déterminer si les exploitants se conforment aux obligations qui leur incombent au titre de cette loi;\n\nb) permet au gouverneur en conseil d’assujettir, par règlement, les exploitants d’autres services en ligne à l’obligation de protéger les enfants et à celle d’être transparent;\n\nc) prévoit que toute personne au Canada peut déposer une plainte auprès de la Commission canadienne de la sécurité numérique relativement au fait que figure sur un service de média social réglementé du contenu représentant de la victimisation sexuelle d’enfants ou perpétuant la victimisation de survivants ou du contenu intime communiqué de façon non consensuelle et autorise celle-ci à rendre des ordonnances pour obliger l’exploitant du service à rendre ce contenu inaccessible aux personnes au Canada, si la personne ayant déposé la plainte a fait de son mieux pour exercer, auprès de l’exploitant du service en cause, les recours s’offrant à elle au titre de cette loi;\n\nd) prévoit que toute personne au Canada peut fournir à la Commission canadienne de la sécurité numérique des observations relativement aux mesures prises par l’exploitant d’un service réglementé pour s’acquitter des obligations qui lui incombent au titre de cette loi.\n\nLa partie 2 édicte la Loi sur la Commission canadienne de la sécurité numérique, qui constitue la Commission canadienne de la sécurité numérique à laquelle la Loi sur la sécurité numérique confère des attributions. Elle apporte aussi des modifications corrélatives à d’autres lois."
-      },
-      "summarySource": "bill",
-      "divisions": []
-    },
-    {
       "id": 13953578,
       "num": "C-265",
       "session": "45-1",
@@ -5369,8 +5532,8 @@
         "fr": "Martin Klyne"
       },
       "status": {
-        "en": "At report stage in the Senate",
-        "fr": "À l'étape du rapport au Sénat"
+        "en": "At third reading in the Senate",
+        "fr": "À la troisième lecture au Sénat"
       },
       "state": "encours",
       "milestones": [
@@ -5390,8 +5553,8 @@
       "royalAssent": null,
       "reinstated": false,
       "latestActivity": {
-        "en": "At report stage in the Senate",
-        "fr": "À l'étape du rapport au Sénat",
+        "en": "At third reading in the Senate",
+        "fr": "À la troisième lecture au Sénat",
         "date": "2026-06-09"
       },
       "lastActivity": "2026-06-09",
@@ -10171,74 +10334,6 @@
       ]
     },
     {
-      "id": 13623903,
-      "num": "S-237",
-      "session": "45-1",
-      "parliament": 45,
-      "sessionNumber": 1,
-      "chamber": "senate",
-      "type": {
-        "en": "Senate Public Bill",
-        "fr": "Projet de loi d'intérêt public du Sénat"
-      },
-      "isGovernment": false,
-      "title": {
-        "en": "An Act respecting a Cities and Municipalities Day",
-        "fr": "Loi instituant la Journée des villes et des municipalités"
-      },
-      "shortTitle": {
-        "en": "Cities and Municipalities Day Act",
-        "fr": "Loi sur la Journée des villes et des municipalités"
-      },
-      "sponsor": {
-        "en": "Éric Forest",
-        "fr": "Éric Forest"
-      },
-      "status": {
-        "en": "At third reading in the Senate",
-        "fr": "À la troisième lecture au Sénat"
-      },
-      "state": "encours",
-      "milestones": [
-        {
-          "stage": "senate_first_reading",
-          "chamber": "senate",
-          "reading": 1,
-          "date": "2025-10-01"
-        },
-        {
-          "stage": "senate_second_reading",
-          "chamber": "senate",
-          "reading": 2,
-          "date": "2026-02-12"
-        }
-      ],
-      "royalAssent": null,
-      "reinstated": false,
-      "latestActivity": {
-        "en": "At third reading in the Senate",
-        "fr": "À la troisième lecture au Sénat",
-        "date": "2026-02-12"
-      },
-      "lastActivity": "2026-02-12",
-      "url": {
-        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/s-237",
-        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/s-237"
-      },
-      "sponsorPersonId": 89794,
-      "sponsorName": {
-        "first": "Éric",
-        "last": "Forest"
-      },
-      "fullSummaryAvailable": false,
-      "summary": {
-        "en": "This enactment designates the 31st day of October as “Cities and Municipalities Day”.",
-        "fr": "Le texte désigne le 31 octobre comme « Journée des villes et des municipalités »."
-      },
-      "summarySource": "bill",
-      "divisions": []
-    },
-    {
       "id": 13859405,
       "num": "C-19",
       "session": "45-1",
@@ -11054,8 +11149,8 @@
         "fr": "L’hon. Tony Loffreda"
       },
       "status": {
-        "en": "At consideration in committee in the Senate",
-        "fr": "À l'examen en comité au Sénat"
+        "en": "At third reading in the Senate",
+        "fr": "À la troisième lecture au Sénat"
       },
       "state": "encours",
       "milestones": [
@@ -11075,8 +11170,8 @@
       "royalAssent": null,
       "reinstated": false,
       "latestActivity": {
-        "en": "At consideration in committee in the Senate",
-        "fr": "À l'examen en comité au Sénat",
+        "en": "At third reading in the Senate",
+        "fr": "À la troisième lecture au Sénat",
         "date": "2025-11-26"
       },
       "lastActivity": "2025-11-26",

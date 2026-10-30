@@ -266,7 +266,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       </div>
       <div class="filter-group">
         <button class="filter-hamburger" id="stepFilterBtn" onclick="toggleFilterPanel('step')" aria-expanded="false">☰ <span data-i18n="filter.etapes">Chamber</span></button>
-        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">House of Commons</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Senate</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Bills with communications reported to the Commissioner of Lobbying">Lobbying <b>46</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Bills that change several different acts at once, one per part">Omnibus <b>15</b></span><!--/ssr--></div>
+        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">House of Commons</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Senate</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Bills with communications reported to the Commissioner of Lobbying">Lobbying <b>50</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Bills that change several different acts at once, one per part">Omnibus <b>15</b></span><!--/ssr--></div>
       </div>
     </div>
 
@@ -277,7 +277,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-title">An Act respecting certain measures relating to the security of the border between Canada and the United States and respecting other related security measures</span>
       
       <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Omnibus bill — 16 parts: it changes several different acts. Click to show only omnibus bills">Omnibus · 16 parts</button>
-      <span class="ab-lob" title="51 reported lobbying communications">51</span>
+      <span class="ab-lob" title="54 reported lobbying communications">54</span>
       <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
       <span class="status-pill status-encours">In progress</span>
       <span class="ab-caret">▾</span>
@@ -314,20 +314,32 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
             <div class="bill-share-row">
     <span class="bill-share-label">Share:</span>
     <button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13543613, 'x', event)" aria-label="Share on X">𝕏</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13543613, 'fb', event)" aria-label="Share on Facebook">FB</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13543613, 'copy', event)" aria-label="Copy the link">⧉</button>
-  </div><div class="bill-cafe-row"><a class="bill-cafe-btn" href="https://donate.stripe.com/fZu6oH4pt5OY3sY5Fy9fW01" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="Buy us a coffee (opens in a new tab)">☕ Believe in the project</a></div>
+  </div><div class="bill-cafe-row"><a class="bill-cafe-btn" href="https://donate.stripe.com/fZu6oH4pt5OY3sY5Fy9fW01" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="Buy us a coffee (opens in a new tab)">☕ Give us a hand</a></div>
           </aside>
         </div>
         <div class="lob" id="lob-13543613" onclick="toggleLobbying(this, event)">
     <div class="lob-head">
       <span class="lob-title">Registered lobbying</span>
-      <span class="lob-count">51 communications · 9 organizations</span>
-      <span class="lob-asof">as of Oct 5, 2026</span>
+      <span class="lob-count">54 communications · 9 organizations</span>
+      <span class="lob-asof">as of Oct 26, 2026</span>
       <span class="lob-toggle">the 10 most recent +</span>
     </div>
-    <div class="lob-orgs"><span class="lob-org">WoodGreen Community Services<b>17</b></span><span class="lob-org">Canadian Civil Liberties Association<b>10</b></span><span class="lob-org">International Civil Liberties Monitoring Group<b>8</b></span><span class="lob-org">Electronic Transactions Association<b>6</b></span><span class="lob-org">Canadian Gaming Association (CGA)<b>4</b></span></div>
+    <div class="lob-orgs"><span class="lob-org">WoodGreen Community Services<b>17</b></span><span class="lob-org">Canadian Civil Liberties Association<b>12</b></span><span class="lob-org">International Civil Liberties Monitoring Group<b>8</b></span><span class="lob-org">Electronic Transactions Association<b>6</b></span><span class="lob-org">Canadian Gaming Association (CGA)<b>4</b></span></div>
     <div class="lob-body">
-      <div class="lob-orgs" style="margin:0 0 10px;"><span class="lob-org">Ontario Child Sexual Exploitation Investigators Association (OCSEIA)<b>2</b></span><span class="lob-org">Amazon Web Services Canada, Inc.<b>2</b></span><span class="lob-org">Rogers Communications Inc.<b>1</b></span><span class="lob-org">Canadian Gaming Association<b>1</b></span></div>
-      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=699740" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-orgs" style="margin:0 0 10px;"><span class="lob-org">Amazon Web Services Canada, Inc.<b>3</b></span><span class="lob-org">Ontario Child Sexual Exploitation Investigators Association (OCSEIA)<b>2</b></span><span class="lob-org">Rogers Communications Inc.<b>1</b></span><span class="lob-org">Canadian Gaming Association<b>1</b></span></div>
+      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=704437" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-09-29 · Innovation, Science and Economic Development Canada (ISED)</div>
+      <div class="lob-who">Amazon Web Services Canada, Inc.</div>
+      <div class="lob-met">Met with : Mark Schaan — Associate Deputy Minister</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=703715" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-09-24 · Senate of Canada</div>
+      <div class="lob-who">Canadian Civil Liberties Association</div>
+      <div class="lob-met">Met with : Claudine Santos — Director of Parliamentary Affairs</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=703912" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-09-23 · Senate of Canada</div>
+      <div class="lob-who">Canadian Civil Liberties Association</div>
+      <div class="lob-met">Met with : Dina Dong — Parliamentary Affairs Advisor</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=699740" target="_blank" rel="noopener" onclick="event.stopPropagation()">
       <div class="lob-when">2026-08-28 · Senate of Canada</div>
       <div class="lob-who">Canadian Civil Liberties Association</div>
       <div class="lob-met">Met with : Paula Simons — Senator · Dina Dong — Parliamentary Affairs Advisor · Shawn Abel — Director of Parliamentary Affairs</div>
@@ -355,20 +367,8 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <div class="lob-when">2026-03-03 · Senate of Canada</div>
       <div class="lob-who">Canadian Civil Liberties Association</div>
       <div class="lob-met">Met with : Dylan Odd — Director, Parliamentary Affairs · Katie Verhoeven — Senior Parliamentary Advisor · Emma Meldrum — Parliamentary Affairs Advisor</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=671848" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-02-27 · Senate of Canada</div>
-      <div class="lob-who">Canadian Civil Liberties Association</div>
-      <div class="lob-met">Met with : Dylan Odd — Director, Parliamentary Affairs · Dina Dong — Parliamentary Affairs Advisor · Katie Verhoeven — Senior Parliamentary Advisor</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=671781" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-02-13 · Senate of Canada</div>
-      <div class="lob-who">Canadian Civil Liberties Association</div>
-      <div class="lob-met">Met with : Emma Meldrum — Parliamentary Affairs Advisor · Katie Verhoeven — Senior Parliamentary Advisor · Bernadette Clément — Senator</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=668867" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-02-13 · Senate of Canada</div>
-      <div class="lob-who">WoodGreen Community Services</div>
-      <div class="lob-met">Met with : Jordano Nudo — Director of Parliamentary Affairs</div>
     </a>
-      <p class="lob-note">Communications reported to the Office of the Commissioner of Lobbying that name this bill. Lobbying is a lawful, publicly registered activity — this count is a fact, not a verdict. Only communications whose description names both the bill number and its title are counted, so the real total may be higher. Registry archive read on October 5, 2026; the Commissioner republishes it about monthly, and we refresh it by hand.</p>
+      <p class="lob-note">Communications reported to the Office of the Commissioner of Lobbying that name this bill. Lobbying is a lawful, publicly registered activity — this count is a fact, not a verdict. Only communications whose description names both the bill number and its title are counted, so the real total may be higher. Registry archive read on October 26, 2026; the Commissioner republishes it about monthly, and we refresh it by hand.</p>
     </div>
   </div>
       </div>
@@ -655,7 +655,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=561b4b4c74"></script>
+<script defer src="/assets/app.js?v=681a757423"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

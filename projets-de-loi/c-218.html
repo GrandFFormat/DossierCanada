@@ -266,7 +266,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       </div>
       <div class="filter-group">
         <button class="filter-hamburger" id="stepFilterBtn" onclick="toggleFilterPanel('step')" aria-expanded="false">☰ <span data-i18n="filter.etapes">Chambre</span></button>
-        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">Chambre des communes</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Sénat</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Projets avec des communications déclarées au Commissariat au lobbying">Lobbying <b>46</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Projets qui modifient plusieurs lois différentes à la fois, une par partie">Omnibus <b>15</b></span><!--/ssr--></div>
+        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">Chambre des communes</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Sénat</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Projets avec des communications déclarées au Commissariat au lobbying">Lobbying <b>50</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Projets qui modifient plusieurs lois différentes à la fois, une par partie">Omnibus <b>15</b></span><!--/ssr--></div>
       </div>
     </div>
 
@@ -277,7 +277,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-title">Loi modifiant le Code criminel (aide médicale à mourir)</span>
       
       
-      <span class="ab-lob" title="14 communications de lobbying déclarées">14</span>
+      <span class="ab-lob" title="21 communications de lobbying déclarées">21</span>
       <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
       <span class="status-pill status-glace">Rejetée</span>
       <span class="ab-caret">▾</span>
@@ -314,20 +314,48 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
             <div class="bill-share-row">
     <span class="bill-share-label">Partager :</span>
     <button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13568723, 'x', event)" aria-label="Partager sur X">𝕏</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13568723, 'fb', event)" aria-label="Partager sur Facebook">FB</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13568723, 'copy', event)" aria-label="Copier le lien">⧉</button>
-  </div><div class="bill-cafe-row"><a class="bill-cafe-btn" href="https://donate.stripe.com/fZu6oH4pt5OY3sY5Fy9fW01" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="Offrez-nous un café (s’ouvre dans un nouvel onglet)">☕ Un petit geste</a></div>
+  </div><div class="bill-cafe-row"><a class="bill-cafe-btn" href="https://donate.stripe.com/fZu6oH4pt5OY3sY5Fy9fW01" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="Offrez-nous un café (s’ouvre dans un nouvel onglet)">☕ Soutenez-nous</a></div>
           </aside>
         </div>
         <div class="lob" id="lob-13568723" onclick="toggleLobbying(this, event)">
     <div class="lob-head">
       <span class="lob-title">Lobbying déclaré</span>
-      <span class="lob-count">14 communications · 1 organisation</span>
-      <span class="lob-asof">au 5 oct. 2026</span>
+      <span class="lob-count">21 communications · 2 organisations</span>
+      <span class="lob-asof">au 26 oct. 2026</span>
       <span class="lob-toggle">les 10 plus récentes +</span>
     </div>
-    <div class="lob-orgs"><span class="lob-org">Inclusion Canada<b>14</b></span></div>
+    <div class="lob-orgs"><span class="lob-org">Inclusion Canada<b>19</b></span><span class="lob-org">EVANGELICAL FELLOWSHIP OF CANADA<b>2</b></span></div>
     <div class="lob-body">
       
-      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=693701" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=704386" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-09-29 · Employment and Social Development Canada (ESDC)</div>
+      <div class="lob-who">Inclusion Canada</div>
+      <div class="lob-met">A rencontré : Cheri Reddin — Director General</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=704384" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-09-23 · House of Commons</div>
+      <div class="lob-who">Inclusion Canada</div>
+      <div class="lob-met">A rencontré : Jake Sawatzky — Member of Parliament · Bandhul Khanna — Parliamentary Assistant</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=702880" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-09-23 · Justice Canada (JC)</div>
+      <div class="lob-who">EVANGELICAL FELLOWSHIP OF CANADA</div>
+      <div class="lob-met">A rencontré : Hanife Masoomifar — Policy Advisor and Issues Manager</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=704382" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-09-22 · Employment and Social Development Canada (ESDC)</div>
+      <div class="lob-who">Inclusion Canada</div>
+      <div class="lob-met">A rencontré : Alana Powell — Senior Policy Advisor</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=704378" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-09-22 · Prime Minister's Office (PMO)</div>
+      <div class="lob-who">Inclusion Canada</div>
+      <div class="lob-met">A rencontré : Alyth Roos — Special Assistant Policy</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=704374" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-09-22 · House of Commons</div>
+      <div class="lob-who">Inclusion Canada</div>
+      <div class="lob-met">A rencontré : Wayne Long — Secretary of State · Joshua Mbandi — Policy Director</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=702878" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-09-01 · Justice Canada (JC)</div>
+      <div class="lob-who">EVANGELICAL FELLOWSHIP OF CANADA</div>
+      <div class="lob-met">A rencontré : Hanife Masoomifar — Policy Advisor and Issues Manager</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=693701" target="_blank" rel="noopener" onclick="event.stopPropagation()">
       <div class="lob-when">2026-06-24 · Justice Canada (JC)</div>
       <div class="lob-who">Inclusion Canada</div>
       <div class="lob-met">A rencontré : Hanife Masoomifar — Policy Advisor and Issues Manager</div>
@@ -339,36 +367,8 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <div class="lob-when">2026-04-27 · House of Commons</div>
       <div class="lob-who">Inclusion Canada</div>
       <div class="lob-met">A rencontré : David Myles — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=681996" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-04-27 · House of Commons</div>
-      <div class="lob-who">Inclusion Canada</div>
-      <div class="lob-met">A rencontré : Sima Acan — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=681993" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-04-27 · Senate of Canada</div>
-      <div class="lob-who">Inclusion Canada</div>
-      <div class="lob-met">A rencontré : Mary Jane McCallum — Senator</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=678737" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-03-25 · House of Commons</div>
-      <div class="lob-who">Inclusion Canada</div>
-      <div class="lob-met">A rencontré : Leslie Church — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=678009" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-03-25 · House of Commons</div>
-      <div class="lob-who">Inclusion Canada</div>
-      <div class="lob-met">A rencontré : Doug Eyolfson — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=677941" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-03-25 · Justice Canada (JC)</div>
-      <div class="lob-who">Inclusion Canada</div>
-      <div class="lob-met">A rencontré : Thomas Law — Senior Policy Advisor to Canada's Minister of Justice · Hanife Masoomi — Policy Advisor and Issues Manager to the Minister of Justice</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=678004" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-03-24 · House of Commons</div>
-      <div class="lob-who">Inclusion Canada</div>
-      <div class="lob-met">A rencontré : James Maloney — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=678002" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-03-24 · House of Commons</div>
-      <div class="lob-who">Inclusion Canada</div>
-      <div class="lob-met">A rencontré : Juanita Nathan — Member of Parliament</div>
     </a>
-      <p class="lob-note">Communications déclarées au Commissariat au lobbying du Canada qui nomment ce projet de loi. Le lobbying est une activité légale et publiquement enregistrée — ce décompte est un fait, pas un verdict. On ne compte que les communications dont la description nomme le numéro <em>et</em> le titre du projet : le total réel peut être plus élevé. Archive du registre lue le 5 octobre 2026 ; le Commissariat la republie environ tous les mois, et on la rafraîchit à la main.</p>
+      <p class="lob-note">Communications déclarées au Commissariat au lobbying du Canada qui nomment ce projet de loi. Le lobbying est une activité légale et publiquement enregistrée — ce décompte est un fait, pas un verdict. On ne compte que les communications dont la description nomme le numéro <em>et</em> le titre du projet : le total réel peut être plus élevé. Archive du registre lue le 26 octobre 2026 ; le Commissariat la republie environ tous les mois, et on la rafraîchit à la main.</p>
     </div>
   </div>
       </div>
@@ -655,7 +655,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=561b4b4c74"></script>
+<script defer src="/assets/app.js?v=681a757423"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->
