@@ -266,7 +266,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       </div>
       <div class="filter-group">
         <button class="filter-hamburger" id="stepFilterBtn" onclick="toggleFilterPanel('step')" aria-expanded="false">☰ <span data-i18n="filter.etapes">Chambre</span></button>
-        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">Chambre des communes</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Sénat</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Projets avec des communications déclarées au Commissariat au lobbying">Lobbying <b>46</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Projets qui modifient plusieurs lois différentes à la fois, une par partie">Omnibus <b>15</b></span><!--/ssr--></div>
+        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">Chambre des communes</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Sénat</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Projets avec des communications déclarées au Commissariat au lobbying">Lobbying <b>50</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Projets qui modifient plusieurs lois différentes à la fois, une par partie">Omnibus <b>15</b></span><!--/ssr--></div>
       </div>
     </div>
 
@@ -277,7 +277,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-title">Loi édictant la Loi sur la protection contre la fraude en ligne et modifiant le Code criminel</span>
       
       
-      <span class="ab-lob" title="1 communications de lobbying déclarées">1</span>
+      <span class="ab-lob" title="2 communications de lobbying déclarées">2</span>
       <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
       <span class="status-pill status-encours">En cours</span>
       <span class="ab-caret">▾</span>
@@ -320,19 +320,23 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
         <div class="lob" id="lob-14173470" onclick="toggleLobbying(this, event)">
     <div class="lob-head">
       <span class="lob-title">Lobbying déclaré</span>
-      <span class="lob-count">1 communication · 1 organisation</span>
-      <span class="lob-asof">au 5 oct. 2026</span>
-      <span class="lob-toggle">les 1 plus récentes +</span>
+      <span class="lob-count">2 communications · 1 organisation</span>
+      <span class="lob-asof">au 26 oct. 2026</span>
+      <span class="lob-toggle">les 2 plus récentes +</span>
     </div>
-    <div class="lob-orgs"><span class="lob-org">FADOQ<b>1</b></span></div>
+    <div class="lob-orgs"><span class="lob-org">FADOQ<b>2</b></span></div>
     <div class="lob-body">
       
-      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=697822" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=706285" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-16 · House of Commons</div>
+      <div class="lob-who">FADOQ</div>
+      <div class="lob-met">A rencontré : Ilayda Hall — Special Assistant, Office of Melissa Lantsman Member of Parliament for Thornhill, Deputy Leader of the Opposition</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=697822" target="_blank" rel="noopener" onclick="event.stopPropagation()">
       <div class="lob-when">2026-07-15 · House of Commons</div>
       <div class="lob-who">FADOQ</div>
       <div class="lob-met">A rencontré : Melissa Lantsman — Member of Parliament for Thornhill  Deputy Leader of the Opposition</div>
     </a>
-      <p class="lob-note">Communications déclarées au Commissariat au lobbying du Canada qui nomment ce projet de loi. Le lobbying est une activité légale et publiquement enregistrée — ce décompte est un fait, pas un verdict. On ne compte que les communications dont la description nomme le numéro <em>et</em> le titre du projet : le total réel peut être plus élevé. Archive du registre lue le 5 octobre 2026 ; le Commissariat la republie environ tous les mois, et on la rafraîchit à la main.</p>
+      <p class="lob-note">Communications déclarées au Commissariat au lobbying du Canada qui nomment ce projet de loi. Le lobbying est une activité légale et publiquement enregistrée — ce décompte est un fait, pas un verdict. On ne compte que les communications dont la description nomme le numéro <em>et</em> le titre du projet : le total réel peut être plus élevé. Archive du registre lue le 26 octobre 2026 ; le Commissariat la republie environ tous les mois, et on la rafraîchit à la main.</p>
     </div>
   </div>
       </div>
@@ -619,7 +623,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=561b4b4c74"></script>
+<script defer src="/assets/app.js?v=681a757423"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

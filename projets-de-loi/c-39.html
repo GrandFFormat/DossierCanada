@@ -266,7 +266,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       </div>
       <div class="filter-group">
         <button class="filter-hamburger" id="stepFilterBtn" onclick="toggleFilterPanel('step')" aria-expanded="false">☰ <span data-i18n="filter.etapes">Chambre</span></button>
-        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">Chambre des communes</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Sénat</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Projets avec des communications déclarées au Commissariat au lobbying">Lobbying <b>46</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Projets qui modifient plusieurs lois différentes à la fois, une par partie">Omnibus <b>15</b></span><!--/ssr--></div>
+        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">Chambre des communes</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Sénat</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Projets avec des communications déclarées au Commissariat au lobbying">Lobbying <b>50</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Projets qui modifient plusieurs lois différentes à la fois, une par partie">Omnibus <b>15</b></span><!--/ssr--></div>
       </div>
     </div>
 
@@ -277,7 +277,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-title">Loi concernant certaines mesures visant à renforcer l'économie</span>
       
       <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Projet omnibus — 3 parties, 8 sections : il modifie plusieurs lois différentes. Cliquer pour ne voir que les omnibus">Omnibus · 3 parties</button>
-      
+      <span class="ab-lob" title="7 communications de lobbying déclarées">7</span>
       <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
       <span class="status-pill status-encours">En cours</span>
       <span class="ab-caret">▾</span>
@@ -314,10 +314,51 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
             <div class="bill-share-row">
     <span class="bill-share-label">Partager :</span>
     <button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(14223396, 'x', event)" aria-label="Partager sur X">𝕏</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(14223396, 'fb', event)" aria-label="Partager sur Facebook">FB</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(14223396, 'copy', event)" aria-label="Copier le lien">⧉</button>
-  </div><div class="bill-cafe-row"><a class="bill-cafe-btn" href="https://donate.stripe.com/fZu6oH4pt5OY3sY5Fy9fW01" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="Offrez-nous un café (s’ouvre dans un nouvel onglet)">☕ Appuyez la cause</a></div>
+  </div><div class="bill-cafe-row"><a class="bill-cafe-btn" href="https://donate.stripe.com/fZu6oH4pt5OY3sY5Fy9fW01" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="Offrez-nous un café (s’ouvre dans un nouvel onglet)">☕ Un double, peut-être ?</a></div>
           </aside>
         </div>
-        
+        <div class="lob" id="lob-14223396" onclick="toggleLobbying(this, event)">
+    <div class="lob-head">
+      <span class="lob-title">Lobbying déclaré</span>
+      <span class="lob-count">7 communications · 5 organisations</span>
+      <span class="lob-asof">au 26 oct. 2026</span>
+      <span class="lob-toggle">les 7 plus récentes +</span>
+    </div>
+    <div class="lob-orgs"><span class="lob-org">Association Canadienne des Producteurs Pétroliers<b>2</b></span><span class="lob-org">ÉLECTRICITÉ CANADA<b>2</b></span><span class="lob-org">Société pour la nature et les parcs du Canada<b>1</b></span><span class="lob-org">British Columbia Maritime Employers Association<b>1</b></span><span class="lob-org">Canadian Pacific Railway Company<b>1</b></span></div>
+    <div class="lob-body">
+      
+      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=706294" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-09-23 · House of Commons</div>
+      <div class="lob-who">Société pour la nature et les parcs du Canada</div>
+      <div class="lob-met">A rencontré : Patrick Weiler — Member of Parliament</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=705166" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-09-23 · Privy Council Office (PCO)</div>
+      <div class="lob-who">ÉLECTRICITÉ CANADA</div>
+      <div class="lob-met">A rencontré : Michelle Chislett — Executive Vice President, Electricity and Infrastructure</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=703931" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-09-23 · House of Commons</div>
+      <div class="lob-who">British Columbia Maritime Employers Association</div>
+      <div class="lob-met">A rencontré : Patty Hajdu — Minister of Jobs and Families</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=703296" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-09-23 · Federal Economic Development Agency for Northern Ontario</div>
+      <div class="lob-who">Canadian Pacific Railway Company</div>
+      <div class="lob-met">A rencontré : Patty Hajdu — Minister · Keiran Gibbs — Chief of Staff · Amen Ben Ahmouda — Policy Advisor</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=705695" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-09-22 · Transport Canada (TC)</div>
+      <div class="lob-who">Association Canadienne des Producteurs Pétroliers</div>
+      <div class="lob-met">A rencontré : Serge Bijimine — Assistant Deputy Minister, Policy · Peter Feldberg — Vice President, Regulatory Affairs, Major Projects Office</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=705165" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-09-22 · Impact Assessment Agency of Canada (IAAC)</div>
+      <div class="lob-who">ÉLECTRICITÉ CANADA</div>
+      <div class="lob-met">A rencontré : Terrence Hubbard — President</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=705688" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-09-21 · Natural Resources Canada (NRCan)</div>
+      <div class="lob-who">Association Canadienne des Producteurs Pétroliers</div>
+      <div class="lob-met">A rencontré : Martin Kolacz — Senior Policy Advisor, Energy &amp; Electricity</div>
+    </a>
+      <p class="lob-note">Communications déclarées au Commissariat au lobbying du Canada qui nomment ce projet de loi. Le lobbying est une activité légale et publiquement enregistrée — ce décompte est un fait, pas un verdict. On ne compte que les communications dont la description nomme le numéro <em>et</em> le titre du projet : le total réel peut être plus élevé. Archive du registre lue le 26 octobre 2026 ; le Commissariat la republie environ tous les mois, et on la rafraîchit à la main.</p>
+    </div>
+  </div>
       </div>
     </div>
   </div>
@@ -602,7 +643,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=561b4b4c74"></script>
+<script defer src="/assets/app.js?v=681a757423"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->
