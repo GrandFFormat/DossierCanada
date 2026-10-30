@@ -2175,7 +2175,7 @@ function ministerCardFed(m, isEn, L, idx){
   const attTitle = isEn ? 'Share of recorded votes this minister took part in as an MP since taking office — a proxy for attendance; ministers often pair or are away on government business.' : "Part des votes nominaux auxquels ce·tte ministre a pris part comme député·e depuis son entrée en fonction — indicateur de présence ; les ministres se font souvent pairer ou sont en fonction gouvernementale.";
   return `
     <div class="m-card">
-      <div class="top-row">${avatar}${followBtn}</div>
+      <div class="top-row">${avatar}<span class="mp-actions">${minDep ? `<button class="part-btn" type="button" title="${isEn ? 'Share' : 'Partager'}" aria-label="${isEn ? 'Share the profile of' : 'Partager la fiche de'} ${m.name.replace(/"/g, '&quot;')}" onclick="event.stopPropagation(); partageDepute(this, ${minDep.id})">${ICONE_PARTAGE}</button>${(() => { const w = minDep.wiki && (isEn ? (minDep.wiki.en || minDep.wiki.fr) : (minDep.wiki.fr || minDep.wiki.en)); return w ? `<a class="wiki-btn" href="${w}" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Wikipédia" aria-label="${isEn ? 'Wikipedia page of' : 'Page Wikipédia de'} ${m.name.replace(/"/g, '&quot;')}">W</a>` : ''; })()}` : ''}${followBtn}</span></div>
       <h3>${m.name}</h3>
       <div class="mc-role-wrap"><span class="mc-role" style="background:${m.isPM ? 'var(--ink)' : candy}; color:${m.isPM ? 'var(--yellow)' : 'var(--ink)'}">${role}</span></div>
       <div class="meta-row">
