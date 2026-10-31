@@ -2227,7 +2227,7 @@ function pastillesLegislatures(d, isEn, presidingShort){
 // Sur une ligne pour les cartes de député·e·s : « 45e · 92 % · 2 PL | 44e · 87 % · 5 PL ».
 function ligneLegislatures(d, isEn){
   const blocs = blocsLegFed(d);
-  const morceaux = blocs.map((b, i) => `<span class="leg-seg ${b.passe ? 'leg-ligne-passe' : 'leg-ligne-cour'}${i === 0 ? ' leg-premier' : ''}${i > 1 ? ' leg-cache' : ''}">${i ? '<span class="leg-ligne-sep"> | </span>' : ''}${ordinalLeg(b.leg, isEn)} · ${pctLeg(b, isEn, false)} · ${lienParrain(d, b, `${b.pl} ${isEn ? 'bills' : 'PL'}`, isEn)}</span>`);
+  const morceaux = blocs.map((b, i) => `<span class="leg-seg ${b.passe ? 'leg-ligne-passe' : 'leg-ligne-cour'}${i === 0 ? ' leg-premier' : ''}${i > 1 ? ' leg-cache' : ''}">${i ? '<span class="leg-ligne-sep"> | </span>' : ''}${ordinalLeg(b.leg, isEn)} · ${pctLeg(b, isEn, false)} · ${lienParrain(d, b, `${b.pl} ${isEn ? (b.pl === 1 ? 'bill' : 'bills') : 'PL'}`, isEn)}</span>`);
   const fleche = morceaux.length > 2 ? ` <button class="leg-fleche leg-fleche-ligne" type="button" aria-label="${isEn ? 'Other Parliaments' : 'Autres législatures'}" onclick="event.stopPropagation(); defilerLeg(this, 1, true)">›</button>` : '';
   return `<span class="leg-ruban leg-ruban-ligne" data-debut="0">${morceaux.join('')}${fleche}</span>`;
 }
