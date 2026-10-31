@@ -65,7 +65,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=d1cf959c76">
+<link rel="stylesheet" href="/assets/app.css?v=fe5ce0a446">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -272,7 +272,78 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     </div>
 
 
-    <div id="billsList"><!--ssr--><!--/ssr--></div>
+    <div id="billsList"><!--ssr--><div class="ab-row open" id="abrow-pr-14173470">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14173470')">
+      <span class="ab-num">C-288</span>
+      <span class="ab-title">Loi édictant la Loi sur la protection contre la fraude en ligne et modifiant le Code criminel</span>
+      
+      
+      <span class="ab-lob" title="2 communications de lobbying déclarées">2</span>
+      <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
+      <span class="status-pill status-encours">En cours</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail open">
+    <div class="bill" onclick="toggleBillSummary('bill-details-pr14173470-14173470', event)">
+      <div class="head">
+        <div>
+          <div class="num">PROJET DE LOI C-288</div>
+          <h3>Loi édictant la Loi sur la protection contre la fraude en ligne et modifiant le Code criminel</h3>
+          <div class="last-activity">Dernière activité : <b>Ne fait pas partie de l'Ordre de priorité</b></div>
+          <div class="meta">Projet de loi émanant d'un député · Parrain : Melissa Lantsman</div>
+        </div>
+        <div style="display:flex; align-items:center; gap:6px; flex:none; flex-wrap:wrap; justify-content:flex-end;">
+          <span class="depute-party" style="background:#1A4782; color:#fff" title="Conservateur — Melissa Lantsman">CPC</span>
+          <span class="status-pill status-encours">En cours</span>
+        </div>
+      </div>
+      
+      <div class="bill-meta-top">Parrain : Melissa Lantsman · Chambre des communes · Projet de loi émanant d'un député</div>
+      <div class="bill-stages"><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Communes · 1re<b>2026-06-17</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Communes · 2e</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Communes · 3e</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Sénat · 1re</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Sénat · 2e</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Sénat · 3e</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Sanction royale</span></div>
+      <div class="bill-follow-row">
+    <span class="follow-hint">Connexion requise — une demande par personne, aucune demande anonyme</span>
+    <button class="follow-btn " id="demand-pr14173470-14173470" onclick="event.stopPropagation(); goToTab('lexique')">🔒 Se connecter pour demander</button>
+  </div>
+      <div class="expand-hint" id="hint-bill-details-pr14173470-14173470">− Masquer le résumé</div>
+      <div class="bill-summary open" id="bill-details-pr14173470-14173470">
+        <div class="bill-cols">
+          <div class="bill-col-main"><div class="bill-sum-slot" data-bill="14173470"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Crée une nouvelle loi, la Loi sur la protection contre la fraude en ligne, qui vise les plateformes en ligne.</li><li>Touche les propriétaires et exploitants de sites, d'applications, de réseaux sociaux et de jeux vidéo en ligne.</li><li>Oblige ces entreprises à concevoir et à gérer leurs services de façon à empêcher la diffusion de contenus frauduleux.</li><li>Exige le retrait des contenus repérés comme frauduleux.</li><li>Oblige les plateformes à prévenir les utilisateurs qui ont interagi avec un contenu frauduleux et à s'assurer que l'avis a été lu.</li><li>Impose de conserver un registre des contenus retirés et des avis envoyés, et de publier un rapport selon des règles fixées par le gouvernement.</li><li>Prévoit une amende pouvant aller jusqu'à 1 million de dollars pour une plateforme qui ne respecte pas ces obligations, sauf si elle prouve qu'elle a fait preuve de diligence.</li><li>Modifie le Code criminel pour que le juge tienne compte, comme facteur aggravant, du fait que la victime d'un vol ou d'une fraude d'identité était vulnérable à cause de son âge, de sa santé ou de sa situation financière.</li></ul><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div></div>
+          <aside class="bill-col-side">
+            <div class="bill-side-label">Dernière activité</div>
+            <div class="bill-side-box">2026-06-17 — Ne fait pas partie de l'Ordre de priorité</div>
+            <a class="bill-cta" href="https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-288" target="_blank" rel="noopener" onclick="event.stopPropagation()">Voir le texte complet sur LEGISinfo →</a>
+            <div class="bill-share-row">
+    <span class="bill-share-label">Partager :</span>
+    <button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(14173470, 'x', event)" aria-label="Partager sur X">𝕏</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(14173470, 'fb', event)" aria-label="Partager sur Facebook">FB</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(14173470, 'copy', event)" aria-label="Copier le lien">⧉</button>
+  </div><div class="bill-cafe-row"><a class="bill-cafe-btn" href="https://donate.stripe.com/fZu6oH4pt5OY3sY5Fy9fW01" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="Offrez-nous un café (s’ouvre dans un nouvel onglet)">☕ Soutenez-nous</a></div>
+          </aside>
+        </div>
+        <div class="lob" id="lob-14173470" onclick="toggleLobbying(this, event)">
+    <div class="lob-head">
+      <span class="lob-title">Lobbying déclaré</span>
+      <span class="lob-count">2 communications · 1 organisation</span>
+      <span class="lob-asof">au 26 oct. 2026</span>
+      <span class="lob-toggle">les 2 plus récentes +</span>
+    </div>
+    <div class="lob-orgs"><span class="lob-org">FADOQ<b>2</b></span></div>
+    <div class="lob-body">
+      
+      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=706285" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-16 · House of Commons</div>
+      <div class="lob-who">FADOQ</div>
+      <div class="lob-met">A rencontré : Ilayda Hall — Special Assistant, Office of Melissa Lantsman Member of Parliament for Thornhill, Deputy Leader of the Opposition</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=697822" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-07-15 · House of Commons</div>
+      <div class="lob-who">FADOQ</div>
+      <div class="lob-met">A rencontré : Melissa Lantsman — Member of Parliament for Thornhill  Deputy Leader of the Opposition</div>
+    </a>
+      <p class="lob-note">Communications déclarées au Commissariat au lobbying du Canada qui nomment ce projet de loi. Le lobbying est une activité légale et publiquement enregistrée — ce décompte est un fait, pas un verdict. On ne compte que les communications dont la description nomme le numéro <em>et</em> le titre du projet : le total réel peut être plus élevé. Archive du registre lue le 26 octobre 2026 ; le Commissariat la republie environ tous les mois, et on la rafraîchit à la main.</p>
+    </div>
+  </div>
+      </div>
+    </div>
+  </div>
+  </div><!--/ssr--></div>
 
     <!-- Ce que « challenger » veut dire, en bas de la liste — comme sur
          DossierQuébec. Le texte dit le VRAI mécanisme : compte requis, une
@@ -566,7 +637,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=c762005df2"></script>
+<script defer src="/assets/app.js?v=a961150e67"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

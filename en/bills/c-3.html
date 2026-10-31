@@ -65,7 +65,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=d1cf959c76">
+<link rel="stylesheet" href="/assets/app.css?v=fe5ce0a446">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -272,7 +272,57 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     </div>
 
 
-    <div id="billsList"><!--ssr--><!--/ssr--></div>
+    <div id="billsList"><!--ssr--><div class="ab-row open" id="abrow-pr-13546143">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13546143')">
+      <span class="ab-num">C-3</span>
+      <span class="ab-title">An Act to amend the Citizenship Act (2025)</span>
+      
+      
+      
+      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
+      <span class="status-pill status-sanctionne">Assented to</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail open">
+    <div class="bill" onclick="toggleBillSummary('bill-details-pr13546143-13546143', event)">
+      <div class="head">
+        <div>
+          <div class="num">BILL C-3</div>
+          <h3>An Act to amend the Citizenship Act (2025)</h3>
+          <div class="last-activity">Last activity : <b>Royal assent received</b></div>
+          <div class="meta">House Government Bill · Sponsor : Hon. Lena Metlege Diab</div>
+        </div>
+        <div style="display:flex; align-items:center; gap:6px; flex:none; flex-wrap:wrap; justify-content:flex-end;">
+          <span class="depute-party" style="background:#D71920; color:#fff" title="Liberal — Hon. Lena Metlege Diab">LPC</span>
+          <span class="status-pill status-sanctionne">Assented to</span>
+        </div>
+      </div>
+      
+      <div class="bill-meta-top">Sponsor : Hon. Lena Metlege Diab · House of Commons · House Government Bill</div>
+      <div class="bill-stages"><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Commons · 1st<b>2025-06-05</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Commons · 2nd<b>2025-09-22</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Commons · 3rd<b>2025-11-05</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Senate · 1st<b>2025-11-06</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Senate · 2nd<b>2025-11-06</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Senate · 3rd<b>2025-11-19</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Royal assent<b>2025-11-20</b></span></div>
+      <div class="bill-follow-row">
+    <span class="follow-hint">Sign-in required — one request per person, no anonymous requests</span>
+    <button class="follow-btn " id="demand-pr13546143-13546143" onclick="event.stopPropagation(); goToTab('lexique')">🔒 Sign in to ask</button>
+  </div>
+      <div class="expand-hint" id="hint-bill-details-pr13546143-13546143">− Hide summary</div>
+      <div class="bill-summary open" id="bill-details-pr13546143-13546143">
+        <div class="bill-cols">
+          <div class="bill-col-main"><div class="bill-sum-slot" data-bill="13546143"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Grants Canadian citizenship to anyone born abroad before the law takes effect to a Canadian parent, even beyond the first generation.</li><li>Allows citizenship to pass beyond the first generation for children born abroad after the law takes effect, if the Canadian parent has a real link to Canada.</li><li>Sets that real link at a minimum of 1,095 days (about 3 years) of physical presence in Canada by the parent before the child's birth.</li><li>Opens citizenship to children born abroad and adopted by a Canadian parent before the law takes effect.</li><li>Applies the same 1,095-day presence rule to adoptive parents for adoptions made after the law takes effect.</li><li>Restores citizenship to people who lost it because they did not apply to keep it, or because that application was turned down.</li><li>Makes sure a child is not shut out just because their parent, or grandparent, died before the law took effect.</li><li>Lets people who gain citizenship through this law give it up through a simplified process, and starts on a date chosen by the federal Cabinet.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div><details class="bvote bill-divs" data-bill="13546143" onclick="event.stopPropagation()" ontoggle="if(this.open) remplirVotesProjet(this)"><summary><span class="bvote-title">Who voted for, against or abstained: 18 / 56 / 1<span class="bdiv-tally"> (Senate · 3rd reading (amendment) · 5 recorded divisions)</span></span></summary><div class="bvote-body"></div></details></div>
+          <aside class="bill-col-side">
+            <div class="bill-side-label">Last activity</div>
+            <div class="bill-side-box">2025-11-20 — Royal assent received</div>
+            <a class="bill-cta" href="https://www.parl.ca/legisinfo/en/bill/45-1/c-3" target="_blank" rel="noopener" onclick="event.stopPropagation()">Read the full text on LEGISinfo →</a>
+            <div class="bill-share-row">
+    <span class="bill-share-label">Share:</span>
+    <button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13546143, 'x', event)" aria-label="Share on X">𝕏</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13546143, 'fb', event)" aria-label="Share on Facebook">FB</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13546143, 'copy', event)" aria-label="Copy the link">⧉</button>
+  </div><div class="bill-cafe-row"><a class="bill-cafe-btn" href="https://donate.stripe.com/fZu6oH4pt5OY3sY5Fy9fW01" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="Buy us a coffee (opens in a new tab)">☕ Give us a hand</a></div>
+          </aside>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  </div><!--/ssr--></div>
 
     <!-- Ce que « challenger » veut dire, en bas de la liste — comme sur
          DossierQuébec. Le texte dit le VRAI mécanisme : compte requis, une
@@ -566,7 +616,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=c762005df2"></script>
+<script defer src="/assets/app.js?v=a961150e67"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

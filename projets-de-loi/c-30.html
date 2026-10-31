@@ -65,7 +65,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=d1cf959c76">
+<link rel="stylesheet" href="/assets/app.css?v=fe5ce0a446">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -272,7 +272,94 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     </div>
 
 
-    <div id="billsList"><!--ssr--><!--/ssr--></div>
+    <div id="billsList"><!--ssr--><div class="ab-row open" id="abrow-pr-14049789">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14049789')">
+      <span class="ab-num">C-30</span>
+      <span class="ab-title">Loi portant exécution de certaines dispositions de la mise à jour économique du printemps déposée au Parlement le 28 avril 2026</span>
+      
+      <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Projet omnibus — 3 parties, 8 sections : il modifie plusieurs lois différentes. Cliquer pour ne voir que les omnibus">Omnibus · 3 parties</button>
+      <span class="ab-lob" title="6 communications de lobbying déclarées">6</span>
+      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
+      <span class="status-pill status-sanctionne">Sanctionnée</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail open">
+    <div class="bill" onclick="toggleBillSummary('bill-details-pr14049789-14049789', event)">
+      <div class="head">
+        <div>
+          <div class="num">PROJET DE LOI C-30</div>
+          <h3>Loi portant exécution de certaines dispositions de la mise à jour économique du printemps déposée au Parlement le 28 avril 2026</h3>
+          <div class="last-activity">Dernière activité : <b>Sanction royale reçue</b></div>
+          <div class="meta">Projet de loi émanant du gouvernement (Cdc) · Parrain : L’hon. François-Philippe Champagne</div>
+        </div>
+        <div style="display:flex; align-items:center; gap:6px; flex:none; flex-wrap:wrap; justify-content:flex-end;">
+          <span class="depute-party" style="background:#D71920; color:#fff" title="Libéral — L’hon. François-Philippe Champagne">LPC</span>
+          <span class="status-pill status-sanctionne">Sanctionnée</span>
+        </div>
+      </div>
+      <div class="bill-omni-note"><b>Projet omnibus.</b> Il modifie plusieurs lois différentes, une par partie (3 parties, 8 sections). Le titre n'en nomme qu'une partie : le résumé ci-dessous va donc partie par partie.</div>
+      <div class="bill-meta-top">Parrain : L’hon. François-Philippe Champagne · Chambre des communes · Projet de loi émanant du gouvernement (Cdc)</div>
+      <div class="bill-stages"><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Communes · 1re<b>2026-04-29</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Communes · 2e<b>2026-05-26</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Communes · 3e<b>2026-06-18</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Sénat · 1re<b>2026-06-18</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Sénat · 2e<b>2026-06-18</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Sénat · 3e<b>2026-06-18</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Sanction royale<b>2026-06-18</b></span></div>
+      <div class="bill-follow-row">
+    <span class="follow-hint">Connexion requise — une demande par personne, aucune demande anonyme</span>
+    <button class="follow-btn " id="demand-pr14049789-14049789" onclick="event.stopPropagation(); goToTab('lexique')">🔒 Se connecter pour demander</button>
+  </div>
+      <div class="expand-hint" id="hint-bill-details-pr14049789-14049789">− Masquer le résumé</div>
+      <div class="bill-summary open" id="bill-details-pr14049789-14049789">
+        <div class="bill-cols">
+          <div class="bill-col-main"><div class="bill-sum-slot" data-bill="14049789"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Met en œuvre les mesures fiscales et économiques annoncées dans la mise à jour économique du printemps 2026.</li><li>Touche l'impôt des particuliers et des entreprises, les taxes sur le carburant et l'alcool, l'assurance-emploi, le Régime de pensions du Canada, les banques, les transports, l'inspection des aliments et les pesticides.</li></ul><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 1</span>Loi de l'impôt sur le revenu et Règlement de l'impôt sur le revenu</h5><ul class="bill-sum-list"><li>Bonifie la déduction pour la mobilité des gens de métier : plafond annuel de dépenses plus élevé et distance minimale réduite pour y avoir droit.</li><li>Rend permanente l'exonération d'impôt sur le gain réalisé en vendant son entreprise à une fiducie collective des employés ou à une coopérative de travailleurs.</li><li>Allonge le délai de grâce avant de commencer à rembourser un retrait fait dans le cadre du régime d'accession à la propriété (RAP).</li><li>Permet aux producteurs de déduire d'un coup le coût des serres admissibles, pour une période limitée, et ajuste les règles fiscales liées au Programme pour des véhicules électriques abordables.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 2</span>Loi sur la taxe d'accise, Loi sur l'accise et Loi de 2001 sur l'accise</h5><ul class="bill-sum-list"><li>Ramène à 0,00 $ la taxe d'accise fédérale sur l'essence, le diesel et les carburants d'aviation, du 20 avril 2026 au 7 septembre 2026.</li><li>Prolonge de deux ans le plafond de 2 % sur la hausse annuelle de la taxe sur l'alcool, à partir du 1er avril 2026.</li><li>Prolonge de deux ans la réduction de 50 % de la taxe sur les 15 000 premiers hectolitres de bière brassée au Canada.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 3</span>Loi sur les banques, Loi sur l'assurance-emploi et autres lois</h5><ul class="bill-sum-list"><li>Soustrait certaines transactions de banques étrangères déjà approuvées sous les lois bancaires ou d'assurance à l'examen prévu par la Loi sur Investissement Canada.</li><li>Regroupe dans la Loi sur la Banque du Canada les pouvoirs de la banque centrale pour récupérer ses coûts d'application de certaines lois.</li><li>Protège l'Association canadienne des paiements, qui gère les systèmes de paiement entre banques, contre les poursuites civiles pour des gestes faits de bonne foi, sauf en matière de contrats.</li><li>Prolonge jusqu'au 7 octobre 2028 les semaines supplémentaires de prestations d'assurance-emploi pour certains travailleurs saisonniers, les régions visées étant désormais fixées par une règle du gouvernement.</li><li>Réduit le taux de cotisation au Régime de pensions du Canada pour les employés, les employeurs et les travailleurs autonomes à partir de 2027.</li><li>Oblige certaines personnes et entreprises à fournir au ministre des Transports les renseignements qu'il juge nécessaires pour ses décisions et ses politiques.</li><li>Permet au gouvernement (le Cabinet) de dispenser des personnes, des produits ou des activités de certaines règles appliquées par l'Agence canadienne d'inspection des aliments.</li><li>Oblige le ministre de la Santé à tenir compte de la sécurité économique et alimentaire pour les pesticides, et permet au Cabinet d'autoriser ou de rétablir un pesticide malgré des risques environnementaux jugés non acceptables.</li></ul></section><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div><details class="bvote bill-divs" data-bill="14049789" onclick="event.stopPropagation()" ontoggle="if(this.open) remplirVotesProjet(this)"><summary><span class="bvote-title">Qui a voté pour, contre ou s’est abstenu : 58 / 9 / 1<span class="bdiv-tally"> (Sénat · 3e lecture · 5 votes nominaux)</span></span></summary><div class="bvote-body"></div></details></div>
+          <aside class="bill-col-side">
+            <div class="bill-side-label">Dernière activité</div>
+            <div class="bill-side-box">2026-06-18 — Sanction royale reçue</div>
+            <a class="bill-cta" href="https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-30" target="_blank" rel="noopener" onclick="event.stopPropagation()">Voir le texte complet sur LEGISinfo →</a>
+            <div class="bill-share-row">
+    <span class="bill-share-label">Partager :</span>
+    <button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(14049789, 'x', event)" aria-label="Partager sur X">𝕏</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(14049789, 'fb', event)" aria-label="Partager sur Facebook">FB</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(14049789, 'copy', event)" aria-label="Copier le lien">⧉</button>
+  </div><div class="bill-cafe-row"><a class="bill-cafe-btn" href="https://donate.stripe.com/fZu6oH4pt5OY3sY5Fy9fW01" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="Offrez-nous un café (s’ouvre dans un nouvel onglet)">☕ Contribuez au site</a></div>
+          </aside>
+        </div>
+        <div class="lob" id="lob-14049789" onclick="toggleLobbying(this, event)">
+    <div class="lob-head">
+      <span class="lob-title">Lobbying déclaré</span>
+      <span class="lob-count">6 communications · 3 organisations</span>
+      <span class="lob-asof">au 26 oct. 2026</span>
+      <span class="lob-toggle">les 6 plus récentes +</span>
+    </div>
+    <div class="lob-orgs"><span class="lob-org">Ecojustice Canada<b>3</b></span><span class="lob-org">The Perth Academy of Building Arts and Science<b>2</b></span><span class="lob-org">Association Canadienne des Producteurs Pétroliers<b>1</b></span></div>
+    <div class="lob-body">
+      
+      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=705810" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-09-28 · Senate of Canada</div>
+      <div class="lob-who">Ecojustice Canada</div>
+      <div class="lob-met">A rencontré : Rosa Galvez — Senator · Cheryl Soulliere — Parliamentary Research Assistant · Diego Montes Ferro — Parliamentary Affairs Advisor</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=686867" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-06-04 · Employment and Social Development Canada (ESDC)</div>
+      <div class="lob-who">The Perth Academy of Building Arts and Science</div>
+      <div class="lob-met">A rencontré : Reem Al-Ameri — Special Assistant · Brett Szmul — Policy Advisor</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=686866" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-06-04 · Employment and Social Development Canada (ESDC)</div>
+      <div class="lob-who">The Perth Academy of Building Arts and Science</div>
+      <div class="lob-met">A rencontré : Reem Al-Ameri — Special Assistant · Brett Szmul — Policy Advisor</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=694168" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-06-03 · House of Commons</div>
+      <div class="lob-who">Ecojustice Canada</div>
+      <div class="lob-met">A rencontré : Cheryl Soullière — Parliamentary Research Assistant · Diego Montes Ferro — Parliamentary Affairs Advisor · Rosa Galvez — Senator</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=693824" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-06-02 · Senate of Canada</div>
+      <div class="lob-who">Association Canadienne des Producteurs Pétroliers</div>
+      <div class="lob-met">A rencontré : Mary Coyle — Senator for Nova Scotia</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=689176" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-05-12 · House of Commons</div>
+      <div class="lob-who">Ecojustice Canada</div>
+      <div class="lob-met">A rencontré : Jean-Francois Vachon — Senior Communications Advisor</div>
+    </a>
+      <p class="lob-note">Communications déclarées au Commissariat au lobbying du Canada qui nomment ce projet de loi. Le lobbying est une activité légale et publiquement enregistrée — ce décompte est un fait, pas un verdict. On ne compte que les communications dont la description nomme le numéro <em>et</em> le titre du projet : le total réel peut être plus élevé. Archive du registre lue le 26 octobre 2026 ; le Commissariat la republie environ tous les mois, et on la rafraîchit à la main.</p>
+    </div>
+  </div>
+      </div>
+    </div>
+  </div>
+  </div><!--/ssr--></div>
 
     <!-- Ce que « challenger » veut dire, en bas de la liste — comme sur
          DossierQuébec. Le texte dit le VRAI mécanisme : compte requis, une
@@ -566,7 +653,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=c762005df2"></script>
+<script defer src="/assets/app.js?v=a961150e67"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

@@ -65,7 +65,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=d1cf959c76">
+<link rel="stylesheet" href="/assets/app.css?v=fe5ce0a446">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -272,7 +272,57 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     </div>
 
 
-    <div id="billsList"><!--ssr--><!--/ssr--></div>
+    <div id="billsList"><!--ssr--><div class="ab-row open" id="abrow-pr-14034077">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14034077')">
+      <span class="ab-num">C-275</span>
+      <span class="ab-title">Loi modifiant le Code criminel (matériel d'agression sexuelle)</span>
+      
+      
+      
+      <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
+      <span class="status-pill status-encours">En cours</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail open">
+    <div class="bill" onclick="toggleBillSummary('bill-details-pr14034077-14034077', event)">
+      <div class="head">
+        <div>
+          <div class="num">PROJET DE LOI C-275</div>
+          <h3>Loi modifiant le Code criminel (matériel d'agression sexuelle)</h3>
+          <div class="last-activity">Dernière activité : <b>Ne fait pas partie de l'Ordre de priorité</b></div>
+          <div class="meta">Projet de loi émanant d'un député · Parrain : Burton Bailey</div>
+        </div>
+        <div style="display:flex; align-items:center; gap:6px; flex:none; flex-wrap:wrap; justify-content:flex-end;">
+          <span class="depute-party" style="background:#1A4782; color:#fff" title="Conservateur — Burton Bailey">CPC</span>
+          <span class="status-pill status-encours">En cours</span>
+        </div>
+      </div>
+      
+      <div class="bill-meta-top">Parrain : Burton Bailey · Chambre des communes · Projet de loi émanant d'un député</div>
+      <div class="bill-stages"><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Communes · 1re<b>2026-04-28</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Communes · 2e</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Communes · 3e</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Sénat · 1re</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Sénat · 2e</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Sénat · 3e</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Sanction royale</span></div>
+      <div class="bill-follow-row">
+    <span class="follow-hint">Connexion requise — une demande par personne, aucune demande anonyme</span>
+    <button class="follow-btn " id="demand-pr14034077-14034077" onclick="event.stopPropagation(); goToTab('lexique')">🔒 Se connecter pour demander</button>
+  </div>
+      <div class="expand-hint" id="hint-bill-details-pr14034077-14034077">− Masquer le résumé</div>
+      <div class="bill-summary open" id="bill-details-pr14034077-14034077">
+        <div class="bill-cols">
+          <div class="bill-col-main"><div class="bill-sum-slot" data-bill="14034077"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Crée une nouvelle infraction dans le Code criminel visant le « matériel d'agression sexuelle ».</li><li>Définit ce matériel comme un enregistrement visuel (photo, film, vidéo) montrant de façon explicite et réaliste une activité sexuelle sans consentement.</li><li>Punit de 14 ans de prison et de 100 000 $ d'amende au plus le fait de produire, imprimer, publier ou garder ce matériel pour le publier.</li><li>Punit aussi de 14 ans de prison et de 100 000 $ au plus le fait de partager, vendre, annoncer, importer ou exporter ce matériel.</li><li>Fixe pour la simple possession jusqu'à 5 ans de prison et 50 000 $ d'amende, ou 2 ans moins un jour et 20 000 $ selon la gravité.</li><li>Punit le fait de regarder ou de se faire envoyer sciemment ce matériel : jusqu'à 10 ans de prison et 50 000 $ d'amende.</li><li>Oblige le juge à tenir compte, comme facteur aggravant, du fait que la personne agissait pour faire de l'argent.</li><li>Écarte la défense de croire que l'activité était consentie, sauf si la personne a pris toutes les mesures raisonnables pour le vérifier.</li><li>Prévoit qu'il n'y a pas d'infraction si le geste a un but légitime lié à la justice, à la science, à la médecine, à l'éducation ou à l'art.</li></ul><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div></div>
+          <aside class="bill-col-side">
+            <div class="bill-side-label">Dernière activité</div>
+            <div class="bill-side-box">2026-04-28 — Ne fait pas partie de l'Ordre de priorité</div>
+            <a class="bill-cta" href="https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-275" target="_blank" rel="noopener" onclick="event.stopPropagation()">Voir le texte complet sur LEGISinfo →</a>
+            <div class="bill-share-row">
+    <span class="bill-share-label">Partager :</span>
+    <button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(14034077, 'x', event)" aria-label="Partager sur X">𝕏</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(14034077, 'fb', event)" aria-label="Partager sur Facebook">FB</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(14034077, 'copy', event)" aria-label="Copier le lien">⧉</button>
+  </div><div class="bill-cafe-row"><a class="bill-cafe-btn" href="https://donate.stripe.com/fZu6oH4pt5OY3sY5Fy9fW01" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="Offrez-nous un café (s’ouvre dans un nouvel onglet)">☕ Contribuez au site</a></div>
+          </aside>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  </div><!--/ssr--></div>
 
     <!-- Ce que « challenger » veut dire, en bas de la liste — comme sur
          DossierQuébec. Le texte dit le VRAI mécanisme : compte requis, une
@@ -566,7 +616,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=c762005df2"></script>
+<script defer src="/assets/app.js?v=a961150e67"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

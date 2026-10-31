@@ -65,7 +65,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=d1cf959c76">
+<link rel="stylesheet" href="/assets/app.css?v=fe5ce0a446">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -272,7 +272,112 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     </div>
 
 
-    <div id="billsList"><!--ssr--><!--/ssr--></div>
+    <div id="billsList"><!--ssr--><div class="ab-row open" id="abrow-pr-13563649">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13563649')">
+      <span class="ab-num">C-8</span>
+      <span class="ab-title">Loi concernant la cybersécurité, modifiant la Loi sur les télécommunications et apportant des modifications corrélatives à d'autres lois</span>
+      
+      <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Projet omnibus — 2 parties : il modifie plusieurs lois différentes. Cliquer pour ne voir que les omnibus">Omnibus · 2 parties</button>
+      <span class="ab-lob" title="31 communications de lobbying déclarées">31</span>
+      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
+      <span class="status-pill status-sanctionne">Sanctionnée</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail open">
+    <div class="bill" onclick="toggleBillSummary('bill-details-pr13563649-13563649', event)">
+      <div class="head">
+        <div>
+          <div class="num">PROJET DE LOI C-8</div>
+          <h3>Loi concernant la cybersécurité, modifiant la Loi sur les télécommunications et apportant des modifications corrélatives à d'autres lois</h3>
+          <div class="last-activity">Dernière activité : <b>Sanction royale reçue</b></div>
+          <div class="meta">Projet de loi émanant du gouvernement (Cdc) · Parrain : L’hon. Gary Anandasangaree</div>
+        </div>
+        <div style="display:flex; align-items:center; gap:6px; flex:none; flex-wrap:wrap; justify-content:flex-end;">
+          <span class="depute-party" style="background:#D71920; color:#fff" title="Libéral — L’hon. Gary Anandasangaree">LPC</span>
+          <span class="status-pill status-sanctionne">Sanctionnée</span>
+        </div>
+      </div>
+      <div class="bill-omni-note"><b>Projet omnibus.</b> Il modifie plusieurs lois différentes, une par partie (2 parties). Le titre n'en nomme qu'une partie : le résumé ci-dessous va donc partie par partie.</div>
+      <div class="bill-meta-top">Parrain : L’hon. Gary Anandasangaree · Chambre des communes · Projet de loi émanant du gouvernement (Cdc)</div>
+      <div class="bill-stages"><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Communes · 1re<b>2025-06-18</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Communes · 2e<b>2025-10-03</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Communes · 3e<b>2026-03-26</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Sénat · 1re<b>2026-03-26</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Sénat · 2e<b>2026-04-23</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Sénat · 3e<b>2026-06-04</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Sanction royale<b>2026-06-15</b></span></div>
+      <div class="bill-follow-row">
+    <span class="follow-hint">Connexion requise — une demande par personne, aucune demande anonyme</span>
+    <button class="follow-btn " id="demand-pr13563649-13563649" onclick="event.stopPropagation(); goToTab('lexique')">🔒 Se connecter pour demander</button>
+  </div>
+      <div class="expand-hint" id="hint-bill-details-pr13563649-13563649">− Masquer le résumé</div>
+      <div class="bill-summary open" id="bill-details-pr13563649-13563649">
+        <div class="bill-cols">
+          <div class="bill-col-main"><div class="bill-sum-slot" data-bill="13563649"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Donne à Ottawa de nouveaux pouvoirs pour protéger les réseaux de télécommunications et les systèmes informatiques jugés essentiels au pays.</li><li>Impose de nouvelles obligations de cybersécurité aux entreprises visées, avec des amendes en cas de manquement.</li></ul><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 1</span>Loi sur les télécommunications</h5><ul class="bill-sum-list"><li>Ajoute la sécurité du réseau canadien de télécommunications aux grands objectifs de la politique canadienne en la matière.</li><li>Permet au gouvernement (le Cabinet) et au ministre de l'Industrie d'ordonner aux fournisseurs de services de téléphonie et d'Internet de faire ou de cesser de faire une chose, pour sécuriser le réseau.</li><li>Crée des amendes administratives pour les fournisseurs qui ne respectent pas ces ordres ou les règles adoptées.</li><li>Fixe des règles pour contester ces ordres devant les tribunaux.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 2</span>nouvelle Loi sur la protection des cybersystèmes essentiels</h5><ul class="bill-sum-list"><li>Crée une nouvelle loi qui protège les systèmes informatiques des services jugés vitaux pour la sécurité nationale ou publique, dans les secteurs encadrés par Ottawa.</li><li>Permet au gouvernement (le Cabinet) de dresser la liste des services et systèmes vitaux et de classer les entreprises qui les exploitent.</li><li>Oblige ces entreprises à se doter d'un programme de cybersécurité et à réduire les risques venant de leurs fournisseurs et sous-traitants.</li><li>Exige qu'elles signalent les incidents de cybersécurité, suivent les directives reçues, et prévoit des sanctions en cas de non-respect.</li></ul></section><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div><div class="bill-vote-slot" data-bill="13563649"><details class="bvote" onclick="event.stopPropagation()"><summary><span class="bvote-title">Qui a voté pour ou contre</span></summary><div class="bvote-body"><p><b>Il n'existe pas de liste de noms pour ce projet de loi.</b> Aucun vote par appel nominal n'a eu lieu à sa troisième lecture à la Chambre des communes. La motion a donc été adoptée sans que personne soit compté. Le plus souvent, c'est de vive voix : le président demande à la Chambre si elle adopte la motion, et les député·e·s répondent de leur place. Si personne ne s'oppose, elle passe avec le consentement unanime. Si des député·e·s demandent qu'elle soit adoptée « avec dissidence », elle passe à la majorité, sans que personne soit compté. Un ordre spécial adopté plus tôt par la Chambre peut aussi prévoir que le projet de loi est réputé lu une troisième fois.</p>
+         <p>Une liste nom par nom existe seulement quand un vote par appel nominal est demandé. Selon le Règlement de la Chambre des communes (<a href="https://www.ourcommons.ca/procedure/standing-orders/Chap6-f.html" target="_blank" rel="noopener">article 45(1)</a>), tout·e député·e d'un parti reconnu présent·e en Chambre peut le demander. Chaque député·e vote alors pour ou contre, et son nom est inscrit aux Journaux.</p>
+         <p><a href="https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-8" target="_blank" rel="noopener">La fiche officielle du projet de loi sur LEGISinfo →</a></p></div></details></div></div>
+          <aside class="bill-col-side">
+            <div class="bill-side-label">Dernière activité</div>
+            <div class="bill-side-box">2026-06-15 — Sanction royale reçue</div>
+            <a class="bill-cta" href="https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-8" target="_blank" rel="noopener" onclick="event.stopPropagation()">Voir le texte complet sur LEGISinfo →</a>
+            <div class="bill-share-row">
+    <span class="bill-share-label">Partager :</span>
+    <button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13563649, 'x', event)" aria-label="Partager sur X">𝕏</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13563649, 'fb', event)" aria-label="Partager sur Facebook">FB</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13563649, 'copy', event)" aria-label="Copier le lien">⧉</button>
+  </div><div class="bill-cafe-row"><a class="bill-cafe-btn" href="https://donate.stripe.com/fZu6oH4pt5OY3sY5Fy9fW01" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="Offrez-nous un café (s’ouvre dans un nouvel onglet)">☕ Soutenez-nous</a></div>
+          </aside>
+        </div>
+        <div class="lob" id="lob-13563649" onclick="toggleLobbying(this, event)">
+    <div class="lob-head">
+      <span class="lob-title">Lobbying déclaré</span>
+      <span class="lob-count">31 communications · 9 organisations</span>
+      <span class="lob-asof">au 26 oct. 2026</span>
+      <span class="lob-toggle">les 10 plus récentes +</span>
+    </div>
+    <div class="lob-orgs"><span class="lob-org">Qorsa Corp.<b>6</b></span><span class="lob-org">Syndicat canadien de la fonction publique<b>6</b></span><span class="lob-org">Kyndryl Canada Limited<b>5</b></span><span class="lob-org">ÉLECTRICITÉ CANADA<b>4</b></span><span class="lob-org">International Information System Security Certification Consortium, Inc. (ISC2)<b>4</b></span></div>
+    <div class="lob-body">
+      <div class="lob-orgs" style="margin:0 0 10px;"><span class="lob-org">Amazon Web Services Canada, Inc.<b>2</b></span><span class="lob-org">Cisco Systems Canada Co.<b>2</b></span><span class="lob-org">Google Canada Corporation<b>1</b></span><span class="lob-org">LAutorité canadienne pour les enregistrements (ACEI)<b>1</b></span></div>
+      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=704437" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-09-29 · Innovation, Science and Economic Development Canada (ISED)</div>
+      <div class="lob-who">Amazon Web Services Canada, Inc.</div>
+      <div class="lob-met">A rencontré : Mark Schaan — Associate Deputy Minister</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=705154" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-09-16 · Communications Security Establishment Canada (CSEC)</div>
+      <div class="lob-who">ÉLECTRICITÉ CANADA</div>
+      <div class="lob-met">A rencontré : Bridget Walshe — Associate Head of the Canadian Centre for Cyber Security</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=683683" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-05-13 · Innovation, Science and Economic Development Canada (ISED)</div>
+      <div class="lob-who">International Information System Security Certification Consortium, Inc. (ISC2)</div>
+      <div class="lob-met">A rencontré : Tim Logan — Senior Policy Advisor</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=683681" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-05-12 · Innovation, Science and Economic Development Canada (ISED)</div>
+      <div class="lob-who">International Information System Security Certification Consortium, Inc. (ISC2)</div>
+      <div class="lob-met">A rencontré : Simon Wood — Senior Parliamentary Affairs Advisor</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=683678" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-05-12 · Public Safety Canada (PS)</div>
+      <div class="lob-who">International Information System Security Certification Consortium, Inc. (ISC2)</div>
+      <div class="lob-met">A rencontré : Zachary Torok — Policy Advisor</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=683676" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-05-12 · Communications Security Establishment Canada (CSEC)</div>
+      <div class="lob-who">International Information System Security Certification Consortium, Inc. (ISC2)</div>
+      <div class="lob-met">A rencontré : Richard LaRose — Cyber Principal · Daniel Couillard — Director General · Jeff Rix — Senior Policy Advisor</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=683747" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-04-08 · National Research Council (NRC)</div>
+      <div class="lob-who">Qorsa Corp.</div>
+      <div class="lob-met">A rencontré : Dr. Joel Martin — Chief Digital Research Officer and Vice President · Dr. Sevgui Erman — Director General · Dr. Koray Karabina — Program Director</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=683743" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-04-07 · Federal Economic Development Agency for Southern Ontario (FedDev)</div>
+      <div class="lob-who">Qorsa Corp.</div>
+      <div class="lob-met">A rencontré : Salam Samara — Ontario Regional Advisor · Tanveerkaur Tur — Senior Advisor, Operations and Stakeholder Engagement</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=679090" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-03-03 · Communications Security Establishment Canada (CSEC)</div>
+      <div class="lob-who">Qorsa Corp.</div>
+      <div class="lob-met">A rencontré : Sami Khoury — Senior Official, Communications Security Establishment</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=680900" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-02-23 · Canadian Radio-television and Telecommunications Commission (CRTC)</div>
+      <div class="lob-who">Syndicat canadien de la fonction publique</div>
+      <div class="lob-met">A rencontré : Nathalie Théberge — Vice-President · Stéphanie Paquette — Commissioner · Scott Shortliffe — Vice President</div>
+    </a>
+      <p class="lob-note">Communications déclarées au Commissariat au lobbying du Canada qui nomment ce projet de loi. Le lobbying est une activité légale et publiquement enregistrée — ce décompte est un fait, pas un verdict. On ne compte que les communications dont la description nomme le numéro <em>et</em> le titre du projet : le total réel peut être plus élevé. Archive du registre lue le 26 octobre 2026 ; le Commissariat la republie environ tous les mois, et on la rafraîchit à la main.</p>
+    </div>
+  </div>
+      </div>
+    </div>
+  </div>
+  </div><!--/ssr--></div>
 
     <!-- Ce que « challenger » veut dire, en bas de la liste — comme sur
          DossierQuébec. Le texte dit le VRAI mécanisme : compte requis, une
@@ -566,7 +671,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=c762005df2"></script>
+<script defer src="/assets/app.js?v=a961150e67"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

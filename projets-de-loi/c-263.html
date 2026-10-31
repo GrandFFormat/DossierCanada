@@ -65,7 +65,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=d1cf959c76">
+<link rel="stylesheet" href="/assets/app.css?v=fe5ce0a446">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -272,7 +272,57 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     </div>
 
 
-    <div id="billsList"><!--ssr--><!--/ssr--></div>
+    <div id="billsList"><!--ssr--><div class="ab-row open" id="abrow-pr-13948667">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13948667')">
+      <span class="ab-num">C-263</span>
+      <span class="ab-title">Loi concernant l’élaboration d’un cadre national sur les alertes SILVER</span>
+      
+      
+      
+      <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
+      <span class="status-pill status-encours">En cours</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail open">
+    <div class="bill" onclick="toggleBillSummary('bill-details-pr13948667-13948667', event)">
+      <div class="head">
+        <div>
+          <div class="num">PROJET DE LOI C-263</div>
+          <h3>Loi concernant l’élaboration d’un cadre national sur les alertes SILVER</h3>
+          <div class="last-activity">Dernière activité : <b>À l'examen en comité à la Chambre des communes</b></div>
+          <div class="meta">Projet de loi émanant d'un député · Parrain : Raquel Dancho</div>
+        </div>
+        <div style="display:flex; align-items:center; gap:6px; flex:none; flex-wrap:wrap; justify-content:flex-end;">
+          <span class="depute-party" style="background:#1A4782; color:#fff" title="Conservateur — Raquel Dancho">CPC</span>
+          <span class="status-pill status-encours">En cours</span>
+        </div>
+      </div>
+      
+      <div class="bill-meta-top">Parrain : Raquel Dancho · Chambre des communes · Projet de loi émanant d'un député</div>
+      <div class="bill-stages"><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Communes · 1re<b>2026-03-10</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Communes · 2e<b>2026-06-05</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Communes · 3e</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Sénat · 1re</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Sénat · 2e</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Sénat · 3e</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Sanction royale</span></div>
+      <div class="bill-follow-row">
+    <span class="follow-hint">Connexion requise — une demande par personne, aucune demande anonyme</span>
+    <button class="follow-btn " id="demand-pr13948667-13948667" onclick="event.stopPropagation(); goToTab('lexique')">🔒 Se connecter pour demander</button>
+  </div>
+      <div class="expand-hint" id="hint-bill-details-pr13948667-13948667">− Masquer le résumé</div>
+      <div class="bill-summary open" id="bill-details-pr13948667-13948667">
+        <div class="bill-cols">
+          <div class="bill-col-main"><div class="bill-sum-slot" data-bill="13948667"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Crée une nouvelle loi qui oblige le ministre de la Sécurité publique à bâtir un plan national d'alertes SILVER.</li><li>Définit l'alerte SILVER comme un avis d'urgence lancé au public quand une personne âgée vulnérable, dont une personne atteinte de démence, disparaît.</li><li>Exige que le ministre consulte les provinces et territoires, les corps policiers, les organismes qui lancent les alertes et les proches aidants.</li><li>Demande d'utiliser partout au Canada le système d'alerte déjà en place, y compris les alertes envoyées aux téléphones cellulaires.</li><li>Oblige à fixer les mêmes critères partout avant de lancer une alerte, par exemple un risque réel pour la santé ou la sécurité de la personne.</li><li>Prévoit des règles de protection de la vie privée sur les renseignements diffusés et sur la durée de l'alerte.</li><li>Permet des alertes ciblées sur une région précise ou lancées d'une province à l'autre.</li><li>Fixe un délai d'un an pour déposer le plan au Parlement, puis un examen de son efficacité dans les deux ans suivants.</li></ul><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div></div>
+          <aside class="bill-col-side">
+            <div class="bill-side-label">Dernière activité</div>
+            <div class="bill-side-box">2026-06-05 — À l'examen en comité à la Chambre des communes</div>
+            <a class="bill-cta" href="https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-263" target="_blank" rel="noopener" onclick="event.stopPropagation()">Voir le texte complet sur LEGISinfo →</a>
+            <div class="bill-share-row">
+    <span class="bill-share-label">Partager :</span>
+    <button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13948667, 'x', event)" aria-label="Partager sur X">𝕏</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13948667, 'fb', event)" aria-label="Partager sur Facebook">FB</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13948667, 'copy', event)" aria-label="Copier le lien">⧉</button>
+  </div><div class="bill-cafe-row"><a class="bill-cafe-btn" href="https://donate.stripe.com/fZu6oH4pt5OY3sY5Fy9fW01" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="Offrez-nous un café (s’ouvre dans un nouvel onglet)">☕ Cappuccino ou espresso ?</a></div>
+          </aside>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  </div><!--/ssr--></div>
 
     <!-- Ce que « challenger » veut dire, en bas de la liste — comme sur
          DossierQuébec. Le texte dit le VRAI mécanisme : compte requis, une
@@ -566,7 +616,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=c762005df2"></script>
+<script defer src="/assets/app.js?v=a961150e67"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

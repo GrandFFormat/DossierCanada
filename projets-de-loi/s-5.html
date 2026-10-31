@@ -65,7 +65,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=d1cf959c76">
+<link rel="stylesheet" href="/assets/app.css?v=fe5ce0a446">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -272,7 +272,110 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     </div>
 
 
-    <div id="billsList"><!--ssr--><!--/ssr--></div>
+    <div id="billsList"><!--ssr--><div class="ab-row open" id="abrow-pr-13881240">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13881240')">
+      <span class="ab-num">S-5</span>
+      <span class="ab-title">Loi concernant l’interopérabilité des technologies de l’information sur la santé et visant à interdire le blocage de données par les fournisseurs de technologies de l’information sur la santé</span>
+      
+      
+      <span class="ab-lob" title="44 communications de lobbying déclarées">44</span>
+      <span class="depute-party" style="background:#5B6B7A; color:#fff">BRG</span>
+      <span class="status-pill status-encours">En cours</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail open">
+    <div class="bill" onclick="toggleBillSummary('bill-details-pr13881240-13881240', event)">
+      <div class="head">
+        <div>
+          <div class="num">PROJET DE LOI S-5</div>
+          <h3>Loi concernant l’interopérabilité des technologies de l’information sur la santé et visant à interdire le blocage de données par les fournisseurs de technologies de l’information sur la santé</h3>
+          <div class="last-activity">Dernière activité : <b>À la deuxième lecture à la Chambre des communes</b></div>
+          <div class="meta">Projet de loi émanant du gouvernement (Sénat) · Parrain : L'hon. Pierre Moreau</div>
+        </div>
+        <div style="display:flex; align-items:center; gap:6px; flex:none; flex-wrap:wrap; justify-content:flex-end;">
+          <span class="depute-party" style="background:#5B6B7A; color:#fff" title="Bureau du représentant du gouvernement — L'hon. Pierre Moreau">BRG</span>
+          <span class="status-pill status-encours">En cours</span>
+        </div>
+      </div>
+      
+      <div class="bill-meta-top">Parrain : L'hon. Pierre Moreau · Sénat · Projet de loi émanant du gouvernement (Sénat)</div>
+      <div class="bill-stages"><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Sénat · 1re<b>2026-02-03</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Sénat · 2e<b>2026-03-26</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Sénat · 3e<b>2026-05-26</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Communes · 1re<b>2026-05-28</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Communes · 2e</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Communes · 3e</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Sanction royale</span></div>
+      <div class="bill-follow-row">
+    <span class="follow-hint">Connexion requise — une demande par personne, aucune demande anonyme</span>
+    <button class="follow-btn " id="demand-pr13881240-13881240" onclick="event.stopPropagation(); goToTab('lexique')">🔒 Se connecter pour demander</button>
+  </div>
+      <div class="expand-hint" id="hint-bill-details-pr13881240-13881240">− Masquer le résumé</div>
+      <div class="bill-summary open" id="bill-details-pr13881240-13881240">
+        <div class="bill-cols">
+          <div class="bill-col-main"><div class="bill-sum-slot" data-bill="13881240"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Crée une nouvelle loi, la Loi sur les soins connectés pour les Canadiens, qui vise le partage des données de santé.</li><li>Oblige les entreprises qui vendent ou louent des logiciels et outils de santé à les rendre « interopérables ».</li><li>Définit « interopérable » comme permettant à l'utilisateur d'accéder facilement et de façon sécuritaire à toute l'information de santé, et de l'échanger avec d'autres systèmes.</li><li>Interdit le « blocage de données », soit toute pratique qui empêche, décourage ou nuit à l'accès aux renseignements électroniques de santé.</li><li>Ne s'applique dans une province ou un territoire que si le gouvernement (le Cabinet) le décide, après avoir conclu que les règles locales ne sont pas aussi strictes.</li><li>Permet au gouvernement de fixer par règles, sans nouveau vote au Parlement, les normes techniques et même de modifier les définitions de la loi.</li><li>Prévoit que des règles pourront autoriser le ministre de la Santé à vérifier les entreprises, recevoir des plaintes et imposer des amendes administratives.</li><li>S'applique à partir d'une date choisie plus tard par le gouvernement (le Cabinet).</li></ul><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div></div>
+          <aside class="bill-col-side">
+            <div class="bill-side-label">Dernière activité</div>
+            <div class="bill-side-box">2026-05-28 — À la deuxième lecture à la Chambre des communes</div>
+            <a class="bill-cta" href="https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/s-5" target="_blank" rel="noopener" onclick="event.stopPropagation()">Voir le texte complet sur LEGISinfo →</a>
+            <div class="bill-share-row">
+    <span class="bill-share-label">Partager :</span>
+    <button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13881240, 'x', event)" aria-label="Partager sur X">𝕏</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13881240, 'fb', event)" aria-label="Partager sur Facebook">FB</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13881240, 'copy', event)" aria-label="Copier le lien">⧉</button>
+  </div><div class="bill-cafe-row"><a class="bill-cafe-btn" href="https://donate.stripe.com/fZu6oH4pt5OY3sY5Fy9fW01" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="Offrez-nous un café (s’ouvre dans un nouvel onglet)">☕ Allongé ou serré ?</a></div>
+          </aside>
+        </div>
+        <div class="lob" id="lob-13881240" onclick="toggleLobbying(this, event)">
+    <div class="lob-head">
+      <span class="lob-title">Lobbying déclaré</span>
+      <span class="lob-count">44 communications · 4 organisations</span>
+      <span class="lob-asof">au 26 oct. 2026</span>
+      <span class="lob-toggle">les 10 plus récentes +</span>
+    </div>
+    <div class="lob-orgs"><span class="lob-org">Le Collège des médecins de famille du Canada<b>37</b></span><span class="lob-org">Association canadienne des compagnies d'assurances de personnes inc.<b>5</b></span><span class="lob-org">The Canadian Society of Respiratory Therapists<b>1</b></span><span class="lob-org">Becton Dickinson Canada Inc<b>1</b></span></div>
+    <div class="lob-body">
+      
+      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=706753" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-06 · Health Canada (HC)</div>
+      <div class="lob-who">Le Collège des médecins de famille du Canada</div>
+      <div class="lob-met">A rencontré : Marjorie Michel — Minister of Health · Maggie Chi — Member of Parliament</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=706752" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-06 · Finance Canada (FIN)</div>
+      <div class="lob-who">Le Collège des médecins de famille du Canada</div>
+      <div class="lob-met">A rencontré : Mackenzy Metcalfe — Policy Advisor</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=706751" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-06 · Senate of Canada</div>
+      <div class="lob-who">Le Collège des médecins de famille du Canada</div>
+      <div class="lob-met">A rencontré : Rosemary Moodie — Senator</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=706749" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-06 · House of Commons</div>
+      <div class="lob-who">Le Collège des médecins de famille du Canada</div>
+      <div class="lob-met">A rencontré : Helena Jaczek — Member of Parliament · Marcus Powlowski — Member of Parliament · Brendan Hanley — Member of Parliament</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=706748" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-06 · House of Commons</div>
+      <div class="lob-who">Le Collège des médecins de famille du Canada</div>
+      <div class="lob-met">A rencontré : Gord Johns — Member of Parliament</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=706747" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-06 · Senate of Canada</div>
+      <div class="lob-who">Le Collège des médecins de famille du Canada</div>
+      <div class="lob-met">A rencontré : Rodney Ouellette — Senator</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=706746" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-06 · Senate of Canada</div>
+      <div class="lob-who">Le Collège des médecins de famille du Canada</div>
+      <div class="lob-met">A rencontré : Tracy Muggli — Senator</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=706745" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-06 · House of Commons</div>
+      <div class="lob-who">Le Collège des médecins de famille du Canada</div>
+      <div class="lob-met">A rencontré : Charles Sousa — Member of Parliament</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=706744" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-06 · Senate of Canada</div>
+      <div class="lob-who">Le Collège des médecins de famille du Canada</div>
+      <div class="lob-met">A rencontré : Joan Kingston — Senator</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=704918" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-06 · Prime Minister's Office (PMO)</div>
+      <div class="lob-who">Le Collège des médecins de famille du Canada</div>
+      <div class="lob-met">A rencontré : Julie Harb — Health Policy Advisor</div>
+    </a>
+      <p class="lob-note">Communications déclarées au Commissariat au lobbying du Canada qui nomment ce projet de loi. Le lobbying est une activité légale et publiquement enregistrée — ce décompte est un fait, pas un verdict. On ne compte que les communications dont la description nomme le numéro <em>et</em> le titre du projet : le total réel peut être plus élevé. Archive du registre lue le 26 octobre 2026 ; le Commissariat la republie environ tous les mois, et on la rafraîchit à la main.</p>
+    </div>
+  </div>
+      </div>
+    </div>
+  </div>
+  </div><!--/ssr--></div>
 
     <!-- Ce que « challenger » veut dire, en bas de la liste — comme sur
          DossierQuébec. Le texte dit le VRAI mécanisme : compte requis, une
@@ -566,7 +669,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=c762005df2"></script>
+<script defer src="/assets/app.js?v=a961150e67"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

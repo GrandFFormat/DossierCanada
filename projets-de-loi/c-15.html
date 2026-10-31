@@ -65,7 +65,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=d1cf959c76">
+<link rel="stylesheet" href="/assets/app.css?v=fe5ce0a446">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -272,7 +272,110 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     </div>
 
 
-    <div id="billsList"><!--ssr--><!--/ssr--></div>
+    <div id="billsList"><!--ssr--><div class="ab-row open" id="abrow-pr-13740928">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13740928')">
+      <span class="ab-num">C-15</span>
+      <span class="ab-title">Loi portant exécution de certaines dispositions du budget déposé au Parlement le 4 novembre 2025</span>
+      
+      <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Projet omnibus — 5 parties, 45 sections : il modifie plusieurs lois différentes. Cliquer pour ne voir que les omnibus">Omnibus · 5 parties</button>
+      <span class="ab-lob" title="31 communications de lobbying déclarées">31</span>
+      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
+      <span class="status-pill status-sanctionne">Sanctionnée</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail open">
+    <div class="bill" onclick="toggleBillSummary('bill-details-pr13740928-13740928', event)">
+      <div class="head">
+        <div>
+          <div class="num">PROJET DE LOI C-15</div>
+          <h3>Loi portant exécution de certaines dispositions du budget déposé au Parlement le 4 novembre 2025</h3>
+          <div class="last-activity">Dernière activité : <b>Sanction royale reçue</b></div>
+          <div class="meta">Projet de loi émanant du gouvernement (Cdc) · Parrain : L’hon. François-Philippe Champagne</div>
+        </div>
+        <div style="display:flex; align-items:center; gap:6px; flex:none; flex-wrap:wrap; justify-content:flex-end;">
+          <span class="depute-party" style="background:#D71920; color:#fff" title="Libéral — L’hon. François-Philippe Champagne">LPC</span>
+          <span class="status-pill status-sanctionne">Sanctionnée</span>
+        </div>
+      </div>
+      <div class="bill-omni-note"><b>Projet omnibus.</b> Il modifie plusieurs lois différentes, une par partie (5 parties, 45 sections). Le titre n'en nomme qu'une partie : le résumé ci-dessous va donc partie par partie.</div>
+      <div class="bill-meta-top">Parrain : L’hon. François-Philippe Champagne · Chambre des communes · Projet de loi émanant du gouvernement (Cdc)</div>
+      <div class="bill-stages"><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Communes · 1re<b>2025-11-18</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Communes · 2e<b>2025-12-10</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Communes · 3e<b>2026-02-26</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Sénat · 1re<b>2026-02-26</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Sénat · 2e<b>2026-03-10</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Sénat · 3e<b>2026-03-26</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Sanction royale<b>2026-03-26</b></span></div>
+      <div class="bill-follow-row">
+    <span class="follow-hint">Connexion requise — une demande par personne, aucune demande anonyme</span>
+    <button class="follow-btn " id="demand-pr13740928-13740928" onclick="event.stopPropagation(); goToTab('lexique')">🔒 Se connecter pour demander</button>
+  </div>
+      <div class="expand-hint" id="hint-bill-details-pr13740928-13740928">− Masquer le résumé</div>
+      <div class="bill-summary open" id="bill-details-pr13740928-13740928">
+        <div class="bill-cols">
+          <div class="bill-col-main"><div class="bill-sum-slot" data-bill="13740928"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Met en œuvre une grande partie du budget déposé le 4 novembre 2025, avec des changements d'impôts, de taxes et de nombreuses lois.</li><li>Touche autant les particuliers (crédits d'impôt, banques, aide aux étudiants) que les entreprises, les vétérans et de grands projets comme le train à grande vitesse.</li></ul><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 1</span>Loi de l'impôt sur le revenu et Règlement de l'impôt sur le revenu</h5><ul class="bill-sum-list"><li>Rend la Prestation canadienne pour les personnes handicapées non imposable et élargit la déduction pour produits et services de soutien.</li><li>Crée un crédit d'impôt pour les préposés aux services de soutien à la personne.</li><li>Fait passer l'exonération à vie des gains en capital à 1,25 million de dollars pour les ventes faites depuis le 25 juin 2024.</li><li>Exempte d'impôt les premiers 10 millions de dollars de gain quand une entreprise est vendue à une coopérative de travailleurs.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 2</span>Loi sur la taxe sur les services numériques</h5><ul class="bill-sum-list"><li>Supprime la taxe sur les services numériques et son règlement.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 3</span>Loi sur la taxe d'accise, Loi sur la taxe sur les logements sous-utilisés et autres lois</h5><ul class="bill-sum-list"><li>Rend taxables (TPS/TVH) les services d'ostéopathie donnés par des personnes qui ne sont pas médecins ostéopathes.</li><li>Étend le remboursement de TPS de 100 % aux coopératives d'habitation et aux résidences étudiantes des universités et collèges publics.</li><li>Met fin à la taxe sur les logements sous-utilisés à partir de l'année 2025, puis supprime cette loi.</li><li>Met fin à la taxe de luxe sur les avions et les bateaux visés.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 4</span>Loi sur la taxe sur les produits et services des premières nations</h5><ul class="bill-sum-list"><li>Permet aux gouvernements autochtones qui le souhaitent de percevoir leur propre taxe de vente sur le carburant, l'alcool, le cannabis, le tabac et le vapotage dans leurs réserves.</li><li>Simplifie l'administration de ces taxes.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 5</span>nouvelle Loi sur le réseau ferroviaire à grande vitesse, Loi sur les banques et autres lois</h5><ul class="bill-sum-list"><li>Crée un cadre légal pour un train rapide de passagers entre le Québec et l'Ontario, avec évaluation d'impact et règles d'expropriation particulières.</li><li>Autorise jusqu'à 11,5 milliards de dollars pour Maisons Canada, 1,515 milliard pour la Société immobilière du Canada et 45 milliards pour la Banque de l'infrastructure.</li><li>Oblige les banques à obtenir votre accord avant d'activer certaines fonctions d'un compte et à combattre la fraude visant les clients.</li><li>Crée une nouvelle Loi sur les services bancaires axés sur les consommateurs, une Loi sur les cryptomonnaies stables et une Loi sur le Programme national d'alimentation scolaire.</li><li>Refuse l'aide financière aux étudiants qui fréquentent des écoles privées à but lucratif situées hors du Canada.</li><li>Permet à Postes Canada de fixer elle-même ses tarifs postaux, sans passer par un règlement du gouvernement.</li><li>Crée le Tribunal de la protection de l'environnement du Canada et fixe à 50 ans la durée maximale des permis d'exportation de gaz naturel liquéfié.</li></ul></section><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div><details class="bvote bill-divs" data-bill="13740928" onclick="event.stopPropagation()" ontoggle="if(this.open) remplirVotesProjet(this)"><summary><span class="bvote-title">Qui a voté pour, contre ou s’est abstenu : 60 / 10 / 0<span class="bdiv-tally"> (Sénat · 3e lecture · 10 votes nominaux)</span></span></summary><div class="bvote-body"></div></details></div>
+          <aside class="bill-col-side">
+            <div class="bill-side-label">Dernière activité</div>
+            <div class="bill-side-box">2026-03-26 — Sanction royale reçue</div>
+            <a class="bill-cta" href="https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-15" target="_blank" rel="noopener" onclick="event.stopPropagation()">Voir le texte complet sur LEGISinfo →</a>
+            <div class="bill-share-row">
+    <span class="bill-share-label">Partager :</span>
+    <button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13740928, 'x', event)" aria-label="Partager sur X">𝕏</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13740928, 'fb', event)" aria-label="Partager sur Facebook">FB</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13740928, 'copy', event)" aria-label="Copier le lien">⧉</button>
+  </div><div class="bill-cafe-row"><a class="bill-cafe-btn" href="https://donate.stripe.com/fZu6oH4pt5OY3sY5Fy9fW01" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="Offrez-nous un café (s’ouvre dans un nouvel onglet)">☕ Un café pour l’équipe ?</a></div>
+          </aside>
+        </div>
+        <div class="lob" id="lob-13740928" onclick="toggleLobbying(this, event)">
+    <div class="lob-head">
+      <span class="lob-title">Lobbying déclaré</span>
+      <span class="lob-count">31 communications · 7 organisations</span>
+      <span class="lob-asof">au 26 oct. 2026</span>
+      <span class="lob-toggle">les 10 plus récentes +</span>
+    </div>
+    <div class="lob-orgs"><span class="lob-org">Association Canadienne des Producteurs Pétroliers<b>15</b></span><span class="lob-org">CAD Digital Inc.<b>5</b></span><span class="lob-org">Centre daccès équitable aux bibliothèques<b>4</b></span><span class="lob-org">Pitney Bowes du Canada Ltée<b>4</b></span><span class="lob-org">Covista inc<b>1</b></span></div>
+    <div class="lob-body">
+      <div class="lob-orgs" style="margin:0 0 10px;"><span class="lob-org">Federation de la Police Nationale<b>1</b></span><span class="lob-org">Association Canadienne Des Libertes Civiles<b>1</b></span></div>
+      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=700542" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-09-11 · Health Canada (HC)</div>
+      <div class="lob-who">Covista inc</div>
+      <div class="lob-met">A rencontré : Roy Karam — Advisor, Economic and Health System Policy</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=685128" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-04-16 · House of Commons</div>
+      <div class="lob-who">Association Canadienne des Producteurs Pétroliers</div>
+      <div class="lob-met">A rencontré : Aaron Gunn — Member of Parliament for North IslandPowell River</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=685116" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-04-15 · House of Commons</div>
+      <div class="lob-who">Association Canadienne des Producteurs Pétroliers</div>
+      <div class="lob-met">A rencontré : Aslam Rana — Member of Parliament for Hamilton Centre</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=677175" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-03-24 · Finance Canada (FIN)</div>
+      <div class="lob-who">CAD Digital Inc.</div>
+      <div class="lob-met">A rencontré : Nicolas Marion — Senior Director, Payments Policy</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=676282" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-03-05 · Senate of Canada</div>
+      <div class="lob-who">Association Canadienne Des Libertes Civiles</div>
+      <div class="lob-met">A rencontré : Cheryl Soullière — Parliamentary Research Assistant · Alexandra Toutant — Parliamentary Research Assistant · Diego Montes Ferro — Parliamentary Affairs Advisor</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=674025" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-02-24 · House of Commons</div>
+      <div class="lob-who">Association Canadienne des Producteurs Pétroliers</div>
+      <div class="lob-met">A rencontré : Eric St. Pierre — Member of Parliament for Honoré-Mercier</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=672883" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-02-18 · Finance Canada (FIN)</div>
+      <div class="lob-who">CAD Digital Inc.</div>
+      <div class="lob-met">A rencontré : Nicolas Marion — Senior Director, Payments Policy</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=674001" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-02-10 · House of Commons</div>
+      <div class="lob-who">Association Canadienne des Producteurs Pétroliers</div>
+      <div class="lob-met">A rencontré : Ellis Ross — Member of Parliament for SkeenaBulkley Valley</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=672871" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-02-10 · Bank of Canada</div>
+      <div class="lob-who">CAD Digital Inc.</div>
+      <div class="lob-met">A rencontré : Ron Morrow — Executive Director, Payments, Supervision and Oversight · Anne Butler — Managing Director of Supervision · Wade McMahon — Director</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=672868" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-02-10 · Finance Canada (FIN)</div>
+      <div class="lob-who">CAD Digital Inc.</div>
+      <div class="lob-met">A rencontré : Greg Reade — Associate Assistant Deputy Minister · Judith Hamel — Director General · Gloria Wong — Director, Digital Assets</div>
+    </a>
+      <p class="lob-note">Communications déclarées au Commissariat au lobbying du Canada qui nomment ce projet de loi. Le lobbying est une activité légale et publiquement enregistrée — ce décompte est un fait, pas un verdict. On ne compte que les communications dont la description nomme le numéro <em>et</em> le titre du projet : le total réel peut être plus élevé. Archive du registre lue le 26 octobre 2026 ; le Commissariat la republie environ tous les mois, et on la rafraîchit à la main.</p>
+    </div>
+  </div>
+      </div>
+    </div>
+  </div>
+  </div><!--/ssr--></div>
 
     <!-- Ce que « challenger » veut dire, en bas de la liste — comme sur
          DossierQuébec. Le texte dit le VRAI mécanisme : compte requis, une
@@ -566,7 +669,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=c762005df2"></script>
+<script defer src="/assets/app.js?v=a961150e67"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

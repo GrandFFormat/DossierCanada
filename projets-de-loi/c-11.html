@@ -65,7 +65,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=d1cf959c76">
+<link rel="stylesheet" href="/assets/app.css?v=fe5ce0a446">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -272,7 +272,57 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     </div>
 
 
-    <div id="billsList"><!--ssr--><!--/ssr--></div>
+    <div id="billsList"><!--ssr--><div class="ab-row open" id="abrow-pr-13608745">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13608745')">
+      <span class="ab-num">C-11</span>
+      <span class="ab-title">Loi modifiant la Loi sur la défense nationale et d'autres lois</span>
+      
+      
+      
+      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
+      <span class="status-pill status-sanctionne">Sanctionnée</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail open">
+    <div class="bill" onclick="toggleBillSummary('bill-details-pr13608745-13608745', event)">
+      <div class="head">
+        <div>
+          <div class="num">PROJET DE LOI C-11</div>
+          <h3>Loi modifiant la Loi sur la défense nationale et d'autres lois</h3>
+          <div class="last-activity">Dernière activité : <b>Sanction royale reçue</b></div>
+          <div class="meta">Projet de loi émanant du gouvernement (Cdc) · Parrain : L’hon. David J. McGuinty</div>
+        </div>
+        <div style="display:flex; align-items:center; gap:6px; flex:none; flex-wrap:wrap; justify-content:flex-end;">
+          <span class="depute-party" style="background:#D71920; color:#fff" title="Libéral — L’hon. David J. McGuinty">LPC</span>
+          <span class="status-pill status-sanctionne">Sanctionnée</span>
+        </div>
+      </div>
+      
+      <div class="bill-meta-top">Parrain : L’hon. David J. McGuinty · Chambre des communes · Projet de loi émanant du gouvernement (Cdc)</div>
+      <div class="bill-stages"><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Communes · 1re<b>2025-09-26</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Communes · 2e<b>2025-10-09</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Communes · 3e<b>2026-05-25</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Sénat · 1re<b>2026-05-26</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Sénat · 2e<b>2026-05-28</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Sénat · 3e<b>2026-06-11</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Sanction royale<b>2026-06-18</b></span></div>
+      <div class="bill-follow-row">
+    <span class="follow-hint">Connexion requise — une demande par personne, aucune demande anonyme</span>
+    <button class="follow-btn " id="demand-pr13608745-13608745" onclick="event.stopPropagation(); goToTab('lexique')">🔒 Se connecter pour demander</button>
+  </div>
+      <div class="expand-hint" id="hint-bill-details-pr13608745-13608745">− Masquer le résumé</div>
+      <div class="bill-summary open" id="bill-details-pr13608745-13608745">
+        <div class="bill-cols">
+          <div class="bill-col-main"><div class="bill-sum-slot" data-bill="13608745"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Retire aux cours martiales le pouvoir de juger les crimes sexuels prévus au Code criminel commis au Canada, qui iront devant les tribunaux civils.</li><li>Interdit aux militaires d'enquêter sur ces crimes sexuels commis au Canada, mais leur permet d'arrêter l'auteur présumé et de protéger les preuves avant l'arrivée de la police civile.</li><li>Oblige les militaires à remettre rapidement la personne arrêtée et les preuves à la police civile compétente.</li><li>Change le mode de nomination du chef de la police militaire, du directeur des poursuites militaires et du directeur du service d'avocats de la défense, pour renforcer leur indépendance.</li><li>Fixe le mandat du directeur des poursuites militaires à sept ans maximum, sans renouvellement, et crée une enquête menée par un juge pour toute sanction ou destitution.</li><li>Rebaptise le grand prévôt des Forces canadiennes « grand prévôt général », qui doit détenir au moins le grade de brigadier-général et avoir 10 ans de police militaire.</li><li>Élargit l'accès au poste de juge militaire aux militaires du rang avocats depuis 10 ans, et interdit aux juges militaires de présider des audiences sommaires ou d'être accusés d'un manquement militaire.</li><li>Permet à une personne qui agit au nom d'une victime de demander un agent de liaison pour l'aider à comprendre le processus militaire.</li></ul><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div><details class="bvote bill-divs" data-bill="13608745" onclick="event.stopPropagation()" ontoggle="if(this.open) remplirVotesProjet(this)"><summary><span class="bvote-title">Qui a voté pour, contre ou s’est abstenu : 198 / 140 / 2<span class="bdiv-tally"> (3e lecture · 11 votes nominaux)</span></span></summary><div class="bvote-body"></div></details></div>
+          <aside class="bill-col-side">
+            <div class="bill-side-label">Dernière activité</div>
+            <div class="bill-side-box">2026-06-18 — Sanction royale reçue</div>
+            <a class="bill-cta" href="https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-11" target="_blank" rel="noopener" onclick="event.stopPropagation()">Voir le texte complet sur LEGISinfo →</a>
+            <div class="bill-share-row">
+    <span class="bill-share-label">Partager :</span>
+    <button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13608745, 'x', event)" aria-label="Partager sur X">𝕏</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13608745, 'fb', event)" aria-label="Partager sur Facebook">FB</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13608745, 'copy', event)" aria-label="Copier le lien">⧉</button>
+  </div><div class="bill-cafe-row"><a class="bill-cafe-btn" href="https://donate.stripe.com/fZu6oH4pt5OY3sY5Fy9fW01" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="Offrez-nous un café (s’ouvre dans un nouvel onglet)">☕ Cappuccino ou espresso ?</a></div>
+          </aside>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  </div><!--/ssr--></div>
 
     <!-- Ce que « challenger » veut dire, en bas de la liste — comme sur
          DossierQuébec. Le texte dit le VRAI mécanisme : compte requis, une
@@ -566,7 +616,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=c762005df2"></script>
+<script defer src="/assets/app.js?v=a961150e67"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

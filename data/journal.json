@@ -1,6 +1,18 @@
 [
   {
     "date": "2026-10-30",
+    "volet": "projets",
+    "fr": {
+      "titre": "Les votes dans la carte de chaque projet de loi",
+      "texte": "La carte d'un projet de loi porte maintenant la case « Qui a voté pour, contre ou s’est abstenu ». Son titre donne le décompte du dernier vote. Dedans, chaque vote nominal du projet, du plus ancien au plus récent : ceux de la Chambre des communes, puis ceux du Sénat. Les noms s'affichent à l'ouverture d'un vote."
+    },
+    "en": {
+      "titre": "Votes inside each bill's card",
+      "texte": "A bill's card now has a \"Who voted for, against or abstained\" box. Its title gives the tally of the last vote. Inside, every recorded division on the bill, oldest first: House of Commons votes, then Senate votes. Names appear when a vote is opened."
+    }
+  },
+  {
+    "date": "2026-10-30",
     "volet": "site",
     "fr": {
       "titre": "Onglet Archives",
