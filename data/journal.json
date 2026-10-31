@@ -1,6 +1,18 @@
 [
   {
     "date": "2026-10-30",
+    "volet": "votes",
+    "fr": {
+      "titre": "Votes quitte la barre du haut",
+      "texte": "Les votes vivent maintenant dans la carte de leur projet de loi. La page Votes reste en ligne : un lien en bas de chaque page et un autre sur la page des projets de loi y mènent."
+    },
+    "en": {
+      "titre": "Votes leaves the top bar",
+      "texte": "Votes now live in their bill's card. The Votes page stays online: a link at the bottom of every page and another on the bills page lead to it."
+    }
+  },
+  {
+    "date": "2026-10-30",
     "volet": "projets",
     "fr": {
       "titre": "Les votes dans la carte de chaque projet de loi",
