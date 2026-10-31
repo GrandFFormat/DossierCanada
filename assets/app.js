@@ -2573,6 +2573,45 @@ function billVotesHtml(b, isEn){
   // Un clic dans la case (titre, nom, lien) ne doit pas refermer la fiche du projet.
   return `<details class="bvote" onclick="event.stopPropagation()"><summary><span class="bvote-title">${title}</span></summary><div class="bvote-body">${body}</div></details>`;
 }
+// QUI A VOTÉ POUR, CONTRE OU S'EST ABSTENU (30 oct. 2026, portée de DossierQuébec) : tous les
+// votes nominaux du projet, du plus ancien au plus récent, dessinés comme les cartes de /votes.
+// La tête (b.dv, build-frontend-data.js) donne le décompte du dernier vote dans le titre. Les
+// cartes demandent d-votes.js, chargé à l'ouverture de la case ; les noms, à l'ouverture d'une carte.
+function billDivisionsBox(b, isEn){
+  const dv = b.dv;
+  const n = (dv.c || []).length + (dv.s || []).length;
+  const tally = `${dv.y} / ${dv.n} / ${dv.t}`;
+  const stage = dv.st ? (isEn ? dv.st.en : dv.st.fr) : '';
+  const senat = dv.ls ? (isEn ? 'Senate' : 'Sénat') : '';
+  const count = isEn ? `${n} recorded division${n > 1 ? 's' : ''}` : `${n} vote${n > 1 ? 's' : ''} nomina${n > 1 ? 'ux' : 'l'}`;
+  const paren = n > 1 ? ` (${[senat, stage, count].filter(Boolean).join(' · ')})` : (senat ? ` (${senat})` : '');
+  const title = isEn ? 'Who voted for, against or abstained' : 'Qui a voté pour, contre ou s’est abstenu';
+  return `<details class="bvote bill-divs" data-bill="${b.id}" onclick="event.stopPropagation()" ontoggle="if(this.open) remplirVotesProjet(this)"><summary><span class="bvote-title">${title}${isEn ? ':' : ' :'} ${tally}<span class="bdiv-tally">${paren}</span></span></summary><div class="bvote-body"></div></details>`;
+}
+function remplirVotesProjet(box){
+  const corps = box.querySelector('.bvote-body');
+  if(!corps || corps.dataset.built) return;
+  const b = bills.find(x => String(x.id) === box.dataset.bill);
+  if(!b || !b.dv) return;
+  const isEn = currentLang === 'en';
+  corps.innerHTML = `<p class="bvote-note">${isEn ? 'Loading…' : 'Chargement…'}</p>`;
+  ensureData(['votes']).then(() => {
+    corps.dataset.built = '1';
+    const com = (b.dv.c || []).map(num => voteById.get(num)).filter(Boolean);
+    const sen = (b.dv.s || []).map(id => senateVoteById.get(id)).filter(Boolean);
+    const intro = isEn
+      ? `<p class="bvote-note">Every recorded division on this bill, oldest first. Open a vote to see the names.</p>`
+      : `<p class="bvote-note">Chaque vote nominal sur ce projet de loi, du plus ancien au plus récent. Ouvrez un vote pour voir les noms.</p>`;
+    const tete = (txt) => `<div class="bvote-part">${txt}</div>`;
+    corps.innerHTML = intro
+      + (com.length && sen.length ? tete(isEn ? 'House of Commons' : 'Chambre des communes') : '')
+      + com.map(v => voteCardHtml(v, false)).join('')
+      + (sen.length ? tete(isEn ? 'Senate' : 'Sénat') : '')
+      + sen.map(v => voteCardHtml(v, true)).join('');
+  }).catch(() => {
+    corps.innerHTML = `<p class="bvote-note">${isEn ? 'The votes could not be loaded. Try again.' : 'Les votes n’ont pas pu être chargés. Réessayez.'}</p>`;
+  });
+}
 // Enveloppe posée par billCard : garde une cible stable à remplir plus tard.
 function billSummarySlot(b, isEn){
   const attenteUtile = billTexts === null && b.state !== 'proforma';
@@ -2869,7 +2908,7 @@ function billCard(b, ctx){
       <div class="expand-hint" id="hint-${domId}">${isEn ? 'View summary & details' : 'Voir le sommaire et les détails'}</div>
       <div class="bill-summary" id="${domId}">
         <div class="bill-cols">
-          <div class="bill-col-main">${billSummarySlot(b, isEn)}${billVotesSlot(b, isEn)}</div>
+          <div class="bill-col-main">${billSummarySlot(b, isEn)}${b.dv ? billDivisionsBox(b, isEn) : billVotesSlot(b, isEn)}</div>
           <aside class="bill-col-side">
             <div class="bill-side-label">${lastActivityLabel}</div>
             <div class="bill-side-box">${lastActivityFull}</div>

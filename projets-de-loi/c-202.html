@@ -65,7 +65,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=d1cf959c76">
+<link rel="stylesheet" href="/assets/app.css?v=fe5ce0a446">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -272,7 +272,59 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     </div>
 
 
-    <div id="billsList"><!--ssr--><!--/ssr--></div>
+    <div id="billsList"><!--ssr--><div class="ab-row open" id="abrow-pr-13539592">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13539592')">
+      <span class="ab-num">C-202</span>
+      <span class="ab-title">Loi modifiant la Loi sur le ministère des Affaires étrangères, du Commerce et du Développement (gestion de l’offre)</span>
+      
+      
+      
+      <span class="depute-party" style="background:#33B2CC; color:#fff">BQ</span>
+      <span class="status-pill status-sanctionne">Sanctionnée</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail open">
+    <div class="bill" onclick="toggleBillSummary('bill-details-pr13539592-13539592', event)">
+      <div class="head">
+        <div>
+          <div class="num">PROJET DE LOI C-202</div>
+          <h3>Loi modifiant la Loi sur le ministère des Affaires étrangères, du Commerce et du Développement (gestion de l’offre)</h3>
+          <div class="last-activity">Dernière activité : <b>Sanction royale reçue</b></div>
+          <div class="meta">Projet de loi émanant d'un député · Parrain : Yves-François Blanchet</div>
+        </div>
+        <div style="display:flex; align-items:center; gap:6px; flex:none; flex-wrap:wrap; justify-content:flex-end;">
+          <span class="depute-party" style="background:#33B2CC; color:#fff" title="Bloc Québécois — Yves-François Blanchet">BQ</span>
+          <span class="status-pill status-sanctionne">Sanctionnée</span>
+        </div>
+      </div>
+      
+      <div class="bill-meta-top">Parrain : Yves-François Blanchet · Chambre des communes · Projet de loi émanant d'un député</div>
+      <div class="bill-stages"><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Communes · 1re<b>2025-05-29</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Communes · 2e<b>2025-06-05</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Communes · 3e<b>2025-06-05</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Sénat · 1re<b>2025-06-10</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Sénat · 2e<b>2025-06-12</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Sénat · 3e<b>2025-06-17</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Sanction royale<b>2025-06-26</b></span></div>
+      <div class="bill-follow-row">
+    <span class="follow-hint">Connexion requise — une demande par personne, aucune demande anonyme</span>
+    <button class="follow-btn " id="demand-pr13539592-13539592" onclick="event.stopPropagation(); goToTab('lexique')">🔒 Se connecter pour demander</button>
+  </div>
+      <div class="expand-hint" id="hint-bill-details-pr13539592-13539592">− Masquer le résumé</div>
+      <div class="bill-summary open" id="bill-details-pr13539592-13539592">
+        <div class="bill-cols">
+          <div class="bill-col-main"><div class="bill-sum-slot" data-bill="13539592"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Interdit au ministre des Affaires étrangères de prendre certains engagements commerciaux qui toucheraient le lait, la volaille et les œufs.</li><li>Protège le système de gestion de l'offre, qui contrôle la production et les prix de ces produits au Canada.</li><li>Empêche d'augmenter, dans un traité commercial, la quantité de produits laitiers, de volaille ou d'œufs pouvant entrer au pays à droits de douane réduits.</li><li>Empêche aussi d'abaisser les droits de douane imposés à ces produits quand ils dépassent la quantité permise.</li><li>Vise les négociations de traités et d'accords de commerce international conclus au nom du gouvernement du Canada.</li><li>Touche directement les producteurs de lait, d'œufs et de volaille, protégés contre une ouverture accrue du marché.</li><li>Modifie la Loi sur le ministère des Affaires étrangères, du Commerce et du Développement, qui encadre le travail du ministre.</li></ul><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div><div class="bill-vote-slot" data-bill="13539592"><details class="bvote" onclick="event.stopPropagation()"><summary><span class="bvote-title">Qui a voté pour ou contre</span></summary><div class="bvote-body"><p><b>Il n'existe pas de liste de noms pour ce projet de loi.</b> Aucun vote par appel nominal n'a eu lieu à sa troisième lecture à la Chambre des communes. La motion a donc été adoptée sans que personne soit compté. Le plus souvent, c'est de vive voix : le président demande à la Chambre si elle adopte la motion, et les député·e·s répondent de leur place. Si personne ne s'oppose, elle passe avec le consentement unanime. Si des député·e·s demandent qu'elle soit adoptée « avec dissidence », elle passe à la majorité, sans que personne soit compté. Un ordre spécial adopté plus tôt par la Chambre peut aussi prévoir que le projet de loi est réputé lu une troisième fois.</p>
+         <p>Une liste nom par nom existe seulement quand un vote par appel nominal est demandé. Selon le Règlement de la Chambre des communes (<a href="https://www.ourcommons.ca/procedure/standing-orders/Chap6-f.html" target="_blank" rel="noopener">article 45(1)</a>), tout·e député·e d'un parti reconnu présent·e en Chambre peut le demander. Chaque député·e vote alors pour ou contre, et son nom est inscrit aux Journaux.</p>
+         <p><a href="https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-202" target="_blank" rel="noopener">La fiche officielle du projet de loi sur LEGISinfo →</a></p></div></details></div></div>
+          <aside class="bill-col-side">
+            <div class="bill-side-label">Dernière activité</div>
+            <div class="bill-side-box">2025-06-26 — Sanction royale reçue</div>
+            <a class="bill-cta" href="https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-202" target="_blank" rel="noopener" onclick="event.stopPropagation()">Voir le texte complet sur LEGISinfo →</a>
+            <div class="bill-share-row">
+    <span class="bill-share-label">Partager :</span>
+    <button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13539592, 'x', event)" aria-label="Partager sur X">𝕏</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13539592, 'fb', event)" aria-label="Partager sur Facebook">FB</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13539592, 'copy', event)" aria-label="Copier le lien">⧉</button>
+  </div><div class="bill-cafe-row"><a class="bill-cafe-btn" href="https://donate.stripe.com/fZu6oH4pt5OY3sY5Fy9fW01" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="Offrez-nous un café (s’ouvre dans un nouvel onglet)">☕ Gardez DC vivant</a></div>
+          </aside>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  </div><!--/ssr--></div>
 
     <!-- Ce que « challenger » veut dire, en bas de la liste — comme sur
          DossierQuébec. Le texte dit le VRAI mécanisme : compte requis, une
@@ -566,7 +618,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=c762005df2"></script>
+<script defer src="/assets/app.js?v=a961150e67"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

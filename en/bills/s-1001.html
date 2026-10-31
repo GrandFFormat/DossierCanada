@@ -65,7 +65,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=d1cf959c76">
+<link rel="stylesheet" href="/assets/app.css?v=fe5ce0a446">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -272,7 +272,59 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     </div>
 
 
-    <div id="billsList"><!--ssr--><!--/ssr--></div>
+    <div id="billsList"><!--ssr--><div class="ab-row open" id="abrow-pr-13545922">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13545922')">
+      <span class="ab-num">S-1001</span>
+      <span class="ab-title">An Act to authorize Gore Mutual Insurance Company to apply to be continued as a body corporate under the laws of the Province of Quebec</span>
+      
+      
+      
+      <span class="depute-party" style="background:#6D5BA6; color:#fff">ISG</span>
+      <span class="status-pill status-sanctionne">Assented to</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail open">
+    <div class="bill" onclick="toggleBillSummary('bill-details-pr13545922-13545922', event)">
+      <div class="head">
+        <div>
+          <div class="num">BILL S-1001</div>
+          <h3>An Act to authorize Gore Mutual Insurance Company to apply to be continued as a body corporate under the laws of the Province of Quebec</h3>
+          <div class="last-activity">Last activity : <b>Royal assent received</b></div>
+          <div class="meta">Senate Private Bill · Sponsor : Hon. Tony Loffreda</div>
+        </div>
+        <div style="display:flex; align-items:center; gap:6px; flex:none; flex-wrap:wrap; justify-content:flex-end;">
+          <span class="depute-party" style="background:#6D5BA6; color:#fff" title="Independent Senators Group — Hon. Tony Loffreda">ISG</span>
+          <span class="status-pill status-sanctionne">Assented to</span>
+        </div>
+      </div>
+      
+      <div class="bill-meta-top">Sponsor : Hon. Tony Loffreda · Senate · Senate Private Bill</div>
+      <div class="bill-stages"><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Senate · 1st<b>2025-06-02</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Senate · 2nd<b>2025-06-11</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Senate · 3rd<b>2025-10-02</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Commons · 1st<b>2025-10-02</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Commons · 2nd<b>2025-10-22</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Commons · 3rd<b>2025-10-22</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Royal assent<b>2025-11-20</b></span></div>
+      <div class="bill-follow-row">
+    <span class="follow-hint">Sign-in required — one request per person, no anonymous requests</span>
+    <button class="follow-btn " id="demand-pr13545922-13545922" onclick="event.stopPropagation(); goToTab('lexique')">🔒 Sign in to ask</button>
+  </div>
+      <div class="expand-hint" id="hint-bill-details-pr13545922-13545922">− Hide summary</div>
+      <div class="bill-summary open" id="bill-details-pr13545922-13545922">
+        <div class="bill-cols">
+          <div class="bill-col-main"><div class="bill-sum-slot" data-bill="13545922"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Lets the insurer Gore Mutual Insurance Company, based in Cambridge, Ontario, apply to become a corporation under Quebec law.</li><li>Applies to this one company only, with no effect on other insurers.</li><li>Sets aside a rule in the Insurance Companies Act that normally blocks a federal insurer from moving to provincial law.</li><li>States that the day the move to Quebec takes effect, the company stops being covered by the federal insurance law.</li><li>Removes, on that same day, the three old special Acts of Parliament from 1937, 1944-45 and 1959 that created and renamed the company.</li><li>Notes that policyholders with voting rights approved the move by a two-thirds vote at a company meeting.</li><li>Notes the company dates back to 1839 and has carried its current name since 1959.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div><div class="bill-vote-slot" data-bill="13545922"><details class="bvote" onclick="event.stopPropagation()"><summary><span class="bvote-title">Who voted for or against</span></summary><div class="bvote-body"><p><b>There is no list of names for this bill.</b> No recorded division was held at its third reading in the House of Commons. The motion was therefore adopted without anyone being counted. Most often this happens by voice: the Speaker asks the House whether it agrees to the motion, and members answer from their seats. If no one objects, it passes by unanimous consent. If members ask that it be "carried on division", it passes by majority, without anyone being counted. A special order adopted earlier by the House can also provide that the bill is deemed read a third time.</p>
+         <p>A name-by-name list exists only when a recorded division is requested. Under the Standing Orders of the House of Commons (<a href="https://www.ourcommons.ca/procedure/standing-orders/Chap6-e.html" target="_blank" rel="noopener">Standing Order 45(1)</a>), any member of a recognized party present in the House can ask for one. Each member then votes yea or nay, and their name is entered in the Journals.</p>
+         <p><a href="https://www.parl.ca/legisinfo/en/bill/45-1/s-1001" target="_blank" rel="noopener">The bill on LEGISinfo (official page) →</a></p></div></details></div></div>
+          <aside class="bill-col-side">
+            <div class="bill-side-label">Last activity</div>
+            <div class="bill-side-box">2025-11-20 — Royal assent received</div>
+            <a class="bill-cta" href="https://www.parl.ca/legisinfo/en/bill/45-1/s-1001" target="_blank" rel="noopener" onclick="event.stopPropagation()">Read the full text on LEGISinfo →</a>
+            <div class="bill-share-row">
+    <span class="bill-share-label">Share:</span>
+    <button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13545922, 'x', event)" aria-label="Share on X">𝕏</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13545922, 'fb', event)" aria-label="Share on Facebook">FB</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13545922, 'copy', event)" aria-label="Copy the link">⧉</button>
+  </div><div class="bill-cafe-row"><a class="bill-cafe-btn" href="https://donate.stripe.com/fZu6oH4pt5OY3sY5Fy9fW01" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="Buy us a coffee (opens in a new tab)">☕ Long live public information</a></div>
+          </aside>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  </div><!--/ssr--></div>
 
     <!-- Ce que « challenger » veut dire, en bas de la liste — comme sur
          DossierQuébec. Le texte dit le VRAI mécanisme : compte requis, une
@@ -566,7 +618,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=c762005df2"></script>
+<script defer src="/assets/app.js?v=a961150e67"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

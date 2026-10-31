@@ -393,6 +393,51 @@ function main() {
     url: keepUrl(b.url, derivedBillUrl(b.num, session)),
     // `divisions` (44 Ko) n'était lu par aucune page : il reste dans data/frontend.json.
   }));
+  // VOTES NOMINAUX D'UN PROJET (case « Qui a voté pour, contre ou s'est abstenu », 30 oct. 2026,
+  // portée de DossierQuébec). Ici seulement la tête de la case : les numéros des scrutins, du plus
+  // ancien au plus récent, et le décompte du dernier. Les cartes se dessinent à l'ouverture avec
+  // d-votes.js (chargé à ce moment-là) ; les noms, à l'ouverture de chaque carte.
+  // Sénat : seulement les votes dont le titre porte « – <numéro> – » (rattachement net).
+  const dvStage = (txt, isEn) => {
+    const s = txt || '';
+    let st = null;
+    if (/^time allocation|^attribution de temps/i.test(s)) st = isEn ? 'Time allocation' : 'Attribution de temps';
+    else if (/senate amendments|amendements du sénat/i.test(s)) st = isEn ? 'Senate amendments' : 'Amendements du Sénat';
+    else if (/3rd reading|third reading|3e lecture|troisième lecture/i.test(s)) st = isEn ? '3rd reading' : '3e lecture';
+    else if (/2nd reading|second reading|2e lecture|deuxième lecture/i.test(s)) st = isEn ? '2nd reading' : '2e lecture';
+    else if (/report stage|étape du rapport|rapport de comité|committee report|recommittal/i.test(s)) st = isEn ? 'Report stage' : 'Étape du rapport';
+    if (st && /amendment|amendement/i.test(s.replace(/senate amendments|amendements du sénat/i, ''))) st += isEn ? ' (amendment)' : ' (amendement)';
+    return st;
+  };
+  const dvSenate = new Map();
+  if (existsSync(SENATE_VOTES_PATH)) {
+    const sd = read(SENATE_VOTES_PATH);
+    for (const v of sd.votes) {
+      if (!v.billNumber || !(` ${v.title?.en ?? ''} `).includes(` – ${v.billNumber} – `) || !(` ${v.title?.fr ?? ''} `).includes(` – ${v.billNumber} – `)) continue;
+      const id = billIdByKey.get(`${sd.session}/${v.billNumber}`);
+      if (id == null) continue;
+      if (!dvSenate.has(id)) dvSenate.set(id, []);
+      dvSenate.get(id).push(v);
+    }
+  }
+  let dvBills = 0;
+  for (const fb of frontendBills) {
+    const com = resolvedVotes.filter((v) => v.billId === fb.id).sort((a, z) => a.number - z.number);
+    const sen = (dvSenate.get(fb.id) ?? []).sort((a, z) => (a.date || '').localeCompare(z.date || '') || a.id - z.id);
+    if (!com.length && !sen.length) continue;
+    const all = [...com.map((v) => ({ v, s: 0 })), ...sen.map((v) => ({ v, s: 1 }))]
+      .sort((a, z) => (a.v.date || '').localeCompare(z.v.date || '') || a.s - z.s || (a.v.number || a.v.id) - (z.v.number || z.v.id));
+    const last = all[all.length - 1];
+    const t = last.v.totals || {};
+    const txt = (l) => last.s ? last.v.title?.[l] : last.v.description?.[l];
+    fb.dv = { c: com.map((v) => v.number), y: t.yea || 0, n: t.nay || 0, t: (last.s ? t.abstention : t.paired) || 0 };
+    if (sen.length) fb.dv.s = sen.map((v) => v.id);
+    if (last.s) fb.dv.ls = 1;
+    const fr = dvStage(txt('fr'), false), en = dvStage(txt('en'), true);
+    if (fr && en) fb.dv.st = { fr, en };
+    dvBills++;
+  }
+  console.log(`  case des votes nominaux : ${dvBills} projets`);
   const sponsorResolved = frontendBills.filter((b) => b.sponsorParty).length;
 
   // TEXTES DES PROJETS — fichier séparé, chargé par le navigateur seulement quand

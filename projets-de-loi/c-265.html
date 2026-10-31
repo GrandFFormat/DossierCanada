@@ -65,7 +65,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=d1cf959c76">
+<link rel="stylesheet" href="/assets/app.css?v=fe5ce0a446">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -272,7 +272,90 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     </div>
 
 
-    <div id="billsList"><!--ssr--><!--/ssr--></div>
+    <div id="billsList"><!--ssr--><div class="ab-row open" id="abrow-pr-13953578">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13953578')">
+      <span class="ab-num">C-265</span>
+      <span class="ab-title">Loi modifiant la Loi sur les aliments et drogues (Liste des produits thérapeutiques préapprouvés aux fins d’accès spécial)</span>
+      
+      
+      <span class="ab-lob" title="5 communications de lobbying déclarées">5</span>
+      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
+      <span class="status-pill status-encours">En cours</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail open">
+    <div class="bill" onclick="toggleBillSummary('bill-details-pr13953578-13953578', event)">
+      <div class="head">
+        <div>
+          <div class="num">PROJET DE LOI C-265</div>
+          <h3>Loi modifiant la Loi sur les aliments et drogues (Liste des produits thérapeutiques préapprouvés aux fins d’accès spécial)</h3>
+          <div class="last-activity">Dernière activité : <b>À l'examen en comité à la Chambre des communes</b></div>
+          <div class="meta">Projet de loi émanant d'un député · Parrain : Marcus Powlowski</div>
+        </div>
+        <div style="display:flex; align-items:center; gap:6px; flex:none; flex-wrap:wrap; justify-content:flex-end;">
+          <span class="depute-party" style="background:#D71920; color:#fff" title="Libéral — Marcus Powlowski">LPC</span>
+          <span class="status-pill status-encours">En cours</span>
+        </div>
+      </div>
+      
+      <div class="bill-meta-top">Parrain : Marcus Powlowski · Chambre des communes · Projet de loi émanant d'un député</div>
+      <div class="bill-stages"><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Communes · 1re<b>2026-03-11</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Communes · 2e<b>2026-06-10</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Communes · 3e</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Sénat · 1re</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Sénat · 2e</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Sénat · 3e</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Sanction royale</span></div>
+      <div class="bill-follow-row">
+    <span class="follow-hint">Connexion requise — une demande par personne, aucune demande anonyme</span>
+    <button class="follow-btn " id="demand-pr13953578-13953578" onclick="event.stopPropagation(); goToTab('lexique')">🔒 Se connecter pour demander</button>
+  </div>
+      <div class="expand-hint" id="hint-bill-details-pr13953578-13953578">− Masquer le résumé</div>
+      <div class="bill-summary open" id="bill-details-pr13953578-13953578">
+        <div class="bill-cols">
+          <div class="bill-col-main"><div class="bill-sum-slot" data-bill="13953578"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Crée une liste officielle de médicaments et d'appareils médicaux non vendus au Canada, préapprouvés pour un accès spécial.</li><li>Vise les patients atteints d'une maladie grave ou mortelle, y compris les maladies rares, quand aucun traitement comparable n'est offert ici.</li><li>Permet à un médecin de commander directement un produit de la liste auprès du fabricant, sans demander une autorisation cas par cas.</li><li>Oblige le ministre de la Santé à répondre en 120 jours à une demande d'ajout faite par un médecin, un pharmacien, un hôpital ou un organisme sans but lucratif.</li><li>Exige que le ministre consulte un comité d'experts non partisans et bénévoles avant de créer ou de modifier la liste.</li><li>Protège le médecin qui, en situation d'urgence, donne un médicament non approuvé s'il juge que c'est le meilleur traitement possible.</li><li>Interdit au ministre de refuser une autorisation d'urgence pour le seul motif qu'un essai clinique est en cours ou que d'autres traitements existent au Canada.</li><li>S'applique un an après l'adoption de la loi.</li></ul><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div></div>
+          <aside class="bill-col-side">
+            <div class="bill-side-label">Dernière activité</div>
+            <div class="bill-side-box">2026-06-10 — À l'examen en comité à la Chambre des communes</div>
+            <a class="bill-cta" href="https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-265" target="_blank" rel="noopener" onclick="event.stopPropagation()">Voir le texte complet sur LEGISinfo →</a>
+            <div class="bill-share-row">
+    <span class="bill-share-label">Partager :</span>
+    <button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13953578, 'x', event)" aria-label="Partager sur X">𝕏</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13953578, 'fb', event)" aria-label="Partager sur Facebook">FB</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13953578, 'copy', event)" aria-label="Copier le lien">⧉</button>
+  </div><div class="bill-cafe-row"><a class="bill-cafe-btn" href="https://donate.stripe.com/fZu6oH4pt5OY3sY5Fy9fW01" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="Offrez-nous un café (s’ouvre dans un nouvel onglet)">☕ Aidez DC à rester gratuit</a></div>
+          </aside>
+        </div>
+        <div class="lob" id="lob-13953578" onclick="toggleLobbying(this, event)">
+    <div class="lob-head">
+      <span class="lob-title">Lobbying déclaré</span>
+      <span class="lob-count">5 communications · 1 organisation</span>
+      <span class="lob-asof">au 26 oct. 2026</span>
+      <span class="lob-toggle">les 5 plus récentes +</span>
+    </div>
+    <div class="lob-orgs"><span class="lob-org">Canadian Organization for Rare Disorders<b>5</b></span></div>
+    <div class="lob-body">
+      
+      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=691953" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-06-04 · House of Commons</div>
+      <div class="lob-who">Canadian Organization for Rare Disorders</div>
+      <div class="lob-met">A rencontré : Tom Kmiec — Member of Parliament</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=687270" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-05-27 · Health Canada (HC)</div>
+      <div class="lob-who">Canadian Organization for Rare Disorders</div>
+      <div class="lob-met">A rencontré : Daniel MacDonald — Director General, Office of Pharmaceutical Management Strategies</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=687271" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-05-26 · House of Commons</div>
+      <div class="lob-who">Canadian Organization for Rare Disorders</div>
+      <div class="lob-met">A rencontré : Helena Jaczek — Member of Parliament</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=687269" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-05-26 · House of Commons</div>
+      <div class="lob-who">Canadian Organization for Rare Disorders</div>
+      <div class="lob-met">A rencontré : Marcus Powlowski — Member of Parliament</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=687268" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-05-26 · Health Canada (HC)</div>
+      <div class="lob-who">Canadian Organization for Rare Disorders</div>
+      <div class="lob-met">A rencontré : Sandenga Yeba — Director of Policy &amp; Deputy Chief of Staff · Justine Frame — Policy Advisor</div>
+    </a>
+      <p class="lob-note">Communications déclarées au Commissariat au lobbying du Canada qui nomment ce projet de loi. Le lobbying est une activité légale et publiquement enregistrée — ce décompte est un fait, pas un verdict. On ne compte que les communications dont la description nomme le numéro <em>et</em> le titre du projet : le total réel peut être plus élevé. Archive du registre lue le 26 octobre 2026 ; le Commissariat la republie environ tous les mois, et on la rafraîchit à la main.</p>
+    </div>
+  </div>
+      </div>
+    </div>
+  </div>
+  </div><!--/ssr--></div>
 
     <!-- Ce que « challenger » veut dire, en bas de la liste — comme sur
          DossierQuébec. Le texte dit le VRAI mécanisme : compte requis, une
@@ -566,7 +649,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=c762005df2"></script>
+<script defer src="/assets/app.js?v=a961150e67"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

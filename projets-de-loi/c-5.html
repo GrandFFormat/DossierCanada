@@ -65,7 +65,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=d1cf959c76">
+<link rel="stylesheet" href="/assets/app.css?v=fe5ce0a446">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -272,7 +272,110 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     </div>
 
 
-    <div id="billsList"><!--ssr--><!--/ssr--></div>
+    <div id="billsList"><!--ssr--><div class="ab-row open" id="abrow-pr-13547622">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13547622')">
+      <span class="ab-num">C-5</span>
+      <span class="ab-title">Loi édictant la Loi sur le libre-échange et la mobilité de la main-d'œuvre au Canada et la Loi visant à bâtir le Canada</span>
+      
+      <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Projet omnibus — 2 parties : il modifie plusieurs lois différentes. Cliquer pour ne voir que les omnibus">Omnibus · 2 parties</button>
+      <span class="ab-lob" title="158 communications de lobbying déclarées">158</span>
+      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
+      <span class="status-pill status-sanctionne">Sanctionnée</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail open">
+    <div class="bill" onclick="toggleBillSummary('bill-details-pr13547622-13547622', event)">
+      <div class="head">
+        <div>
+          <div class="num">PROJET DE LOI C-5</div>
+          <h3>Loi édictant la Loi sur le libre-échange et la mobilité de la main-d'œuvre au Canada et la Loi visant à bâtir le Canada</h3>
+          <div class="last-activity">Dernière activité : <b>Sanction royale reçue</b></div>
+          <div class="meta">Projet de loi émanant du gouvernement (Cdc) · Parrain : L’hon. Dominic LeBlanc</div>
+        </div>
+        <div style="display:flex; align-items:center; gap:6px; flex:none; flex-wrap:wrap; justify-content:flex-end;">
+          <span class="depute-party" style="background:#D71920; color:#fff" title="Libéral — L’hon. Dominic LeBlanc">LPC</span>
+          <span class="status-pill status-sanctionne">Sanctionnée</span>
+        </div>
+      </div>
+      <div class="bill-omni-note"><b>Projet omnibus.</b> Il modifie plusieurs lois différentes, une par partie (2 parties). Le titre n'en nomme qu'une partie : le résumé ci-dessous va donc partie par partie.</div>
+      <div class="bill-meta-top">Parrain : L’hon. Dominic LeBlanc · Chambre des communes · Projet de loi émanant du gouvernement (Cdc)</div>
+      <div class="bill-stages"><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Communes · 1re<b>2025-06-06</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Communes · 2e<b>2025-06-16</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Communes · 3e<b>2025-06-20</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Sénat · 1re<b>2025-06-25</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Sénat · 2e<b>2025-06-25</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Sénat · 3e<b>2025-06-26</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Sanction royale<b>2025-06-26</b></span></div>
+      <div class="bill-follow-row">
+    <span class="follow-hint">Connexion requise — une demande par personne, aucune demande anonyme</span>
+    <button class="follow-btn " id="demand-pr13547622-13547622" onclick="event.stopPropagation(); goToTab('lexique')">🔒 Se connecter pour demander</button>
+  </div>
+      <div class="expand-hint" id="hint-bill-details-pr13547622-13547622">− Masquer le résumé</div>
+      <div class="bill-summary open" id="bill-details-pr13547622-13547622">
+        <div class="bill-cols">
+          <div class="bill-col-main"><div class="bill-sum-slot" data-bill="13547622"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Crée deux nouvelles lois : une pour faciliter le commerce entre les provinces et le travail d'une province à l'autre, et une pour accélérer de grands projets jugés d'intérêt national.</li><li>Donne au gouvernement (le Cabinet) de larges pouvoirs pour choisir les projets visés et pour écarter certaines exigences fédérales par des règles adoptées sans nouveau vote au Parlement.</li></ul><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 1</span>nouvelle Loi sur le libre-échange et la mobilité de la main-d'œuvre au Canada</h5><ul class="bill-sum-list"><li>Prévoit qu'un bien ou un service conforme aux règles d'une province ou d'un territoire est considéré comme conforme aux règles fédérales comparables quand il circule entre les provinces.</li><li>Oblige Ottawa à reconnaître les permis provinciaux et territoriaux d'exercer un métier ou une profession.</li><li>Exige qu'un permis fédéral comparable soit remis au travailleur qui détient déjà un permis provincial ou territorial.</li><li>Permet au gouvernement (le Cabinet) d'adopter des règles pour lever d'autres obstacles fédéraux au commerce et au travail entre provinces.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 2</span>nouvelle Loi visant à bâtir le Canada</h5><ul class="bill-sum-list"><li>Permet au gouvernement (le Cabinet) d'inscrire un projet sur une liste officielle s'il le juge d'intérêt national, selon certains critères.</li><li>Prévoit que, pour un projet inscrit sur cette liste, les décisions et avis exigés par plusieurs lois fédérales sont réputés favorables au projet.</li><li>Oblige le ministre responsable à remettre à l'entreprise ou à l'organisme qui porte le projet un document unique, assorti de conditions, qui tient lieu des autorisations fédérales visées.</li><li>Exige chaque année un examen indépendant de l'avancement de chaque projet d'intérêt national.</li></ul></section><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div><details class="bvote bill-divs" data-bill="13547622" onclick="event.stopPropagation()" ontoggle="if(this.open) remplirVotesProjet(this)"><summary><span class="bvote-title">Qui a voté pour, contre ou s’est abstenu : 28 / 48 / 8<span class="bdiv-tally"> (Sénat · 3e lecture (amendement) · 15 votes nominaux)</span></span></summary><div class="bvote-body"></div></details></div>
+          <aside class="bill-col-side">
+            <div class="bill-side-label">Dernière activité</div>
+            <div class="bill-side-box">2025-06-26 — Sanction royale reçue</div>
+            <a class="bill-cta" href="https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-5" target="_blank" rel="noopener" onclick="event.stopPropagation()">Voir le texte complet sur LEGISinfo →</a>
+            <div class="bill-share-row">
+    <span class="bill-share-label">Partager :</span>
+    <button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13547622, 'x', event)" aria-label="Partager sur X">𝕏</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13547622, 'fb', event)" aria-label="Partager sur Facebook">FB</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13547622, 'copy', event)" aria-label="Copier le lien">⧉</button>
+  </div><div class="bill-cafe-row"><a class="bill-cafe-btn" href="https://donate.stripe.com/fZu6oH4pt5OY3sY5Fy9fW01" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="Offrez-nous un café (s’ouvre dans un nouvel onglet)">☕ Vive l’information publique</a></div>
+          </aside>
+        </div>
+        <div class="lob" id="lob-13547622" onclick="toggleLobbying(this, event)">
+    <div class="lob-head">
+      <span class="lob-title">Lobbying déclaré</span>
+      <span class="lob-count">158 communications · 24 organisations</span>
+      <span class="lob-asof">au 26 oct. 2026</span>
+      <span class="lob-toggle">les 10 plus récentes +</span>
+    </div>
+    <div class="lob-orgs"><span class="lob-org">Association Canadienne des Producteurs Pétroliers<b>35</b></span><span class="lob-org">Aliment et boissons Canada<b>22</b></span><span class="lob-org">Association canadienne de la distribution de fruits et légumes<b>18</b></span><span class="lob-org">Société pour la nature et les parcs du Canada<b>15</b></span><span class="lob-org">Canada's Building Trade Unions<b>7</b></span></div>
+    <div class="lob-body">
+      <div class="lob-orgs" style="margin:0 0 10px;"><span class="lob-org">Treaty 8 First Nations of Alberta<b>7</b></span><span class="lob-org">Environmental Defence Canada<b>7</b></span><span class="lob-org">Confederacy of Treaty Six First Nations<b>6</b></span><span class="lob-org">Oil Sands Alliance Inc. (formerly Pathways Alliance Inc.)<b>5</b></span><span class="lob-org">Kee Tas Kee Now Tribal Council<b>5</b></span><span class="lob-org">Centre québécois du droit de l'environnement<b>4</b></span><span class="lob-org">Mushkegowuk Council<b>4</b></span><span class="lob-org">Canadian Association of Energy Contractors<b>4</b></span><span class="lob-org">Chambre de commerce des Femmes Canadiennes<b>3</b></span><span class="lob-org">Chiefs of Ontario<b>3</b></span><span class="lob-org">Ecojustice Canada<b>2</b></span><span class="lob-org">GREENPEACE CANADA<b>2</b></span><span class="lob-org">Sturgeon Lake Cree Nation<b>2</b></span><span class="lob-org">Epekwitk Assembly of Councils Inc. (L'nuey)<b>2</b></span><span class="lob-org">Produits alimentaires, de santé et de consommation du Canada<b>1</b></span><span class="lob-org">Institut canadien des économistes en construction<b>1</b></span><span class="lob-org">Ashini Consultants<b>1</b></span><span class="lob-org">Fondation David Suzuki<b>1</b></span><span class="lob-org">Association of Home Appliance Manufacturers<b>1</b></span></div>
+      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=706292" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-09-15 · Prime Minister's Office (PMO)</div>
+      <div class="lob-who">Société pour la nature et les parcs du Canada</div>
+      <div class="lob-met">A rencontré : Julia Lisztwan — Senior Policy Advisor</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=697937" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-08-12 · Employment and Social Development Canada (ESDC)</div>
+      <div class="lob-who">Canada's Building Trade Unions</div>
+      <div class="lob-met">A rencontré : Keiran Gibbs — Chief of Staff to the Minister · Miles Wu — Senior Policy Advisor to the Minister of Jobs and Families · Sebastian Clarke — Director</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=697935" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-08-12 · Innovation, Science and Economic Development Canada (ISED)</div>
+      <div class="lob-who">Canada's Building Trade Unions</div>
+      <div class="lob-met">A rencontré : Paul Moen — Chief of Staff</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=699077" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-08-07 · House of Commons</div>
+      <div class="lob-who">Centre québécois du droit de l'environnement</div>
+      <div class="lob-met">A rencontré : Patrick Bonin — Député</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=698538" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-07-28 · Employment and Social Development Canada (ESDC)</div>
+      <div class="lob-who">Chambre de commerce des Femmes Canadiennes</div>
+      <div class="lob-met">A rencontré : Alana Powell — Senior Policy Advisor</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=698076" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-07-22 · Privy Council Office (PCO)</div>
+      <div class="lob-who">Oil Sands Alliance Inc. (formerly Pathways Alliance Inc.)</div>
+      <div class="lob-met">A rencontré : Nasser Haidar — Senior Policy Advisor · Galen Richardson — Director of Stakeholder Relations</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=698535" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-07-08 · Employment and Social Development Canada (ESDC)</div>
+      <div class="lob-who">Chambre de commerce des Femmes Canadiennes</div>
+      <div class="lob-met">A rencontré : Alana Powell — Senior Policy Advisor</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=695634" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-07-08 · Employment and Social Development Canada (ESDC)</div>
+      <div class="lob-who">Canada's Building Trade Unions</div>
+      <div class="lob-met">A rencontré : Paul Thompson — Deputy Minister · Michael MacPhee — Assistant Deputy Minister</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=692165" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-07-06 · Privy Council Office (PCO)</div>
+      <div class="lob-who">Produits alimentaires, de santé et de consommation du Canada</div>
+      <div class="lob-met">A rencontré : Gelen Richardson — Director of Stakeholder Relations · Elysee Atangana — Policy Advisor</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=698534" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-06-30 · House of Commons</div>
+      <div class="lob-who">Chambre de commerce des Femmes Canadiennes</div>
+      <div class="lob-met">A rencontré : Yasir Naqvi — Member of Parliament</div>
+    </a>
+      <p class="lob-note">Communications déclarées au Commissariat au lobbying du Canada qui nomment ce projet de loi. Le lobbying est une activité légale et publiquement enregistrée — ce décompte est un fait, pas un verdict. On ne compte que les communications dont la description nomme le numéro <em>et</em> le titre du projet : le total réel peut être plus élevé. Archive du registre lue le 26 octobre 2026 ; le Commissariat la republie environ tous les mois, et on la rafraîchit à la main.</p>
+    </div>
+  </div>
+      </div>
+    </div>
+  </div>
+  </div><!--/ssr--></div>
 
     <!-- Ce que « challenger » veut dire, en bas de la liste — comme sur
          DossierQuébec. Le texte dit le VRAI mécanisme : compte requis, une
@@ -566,7 +669,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=c762005df2"></script>
+<script defer src="/assets/app.js?v=a961150e67"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

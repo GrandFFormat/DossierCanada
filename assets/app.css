@@ -582,7 +582,10 @@
   .bvote-body p{margin:0 0 8px;}
   .bvote-note{font-size:11px; color:var(--slate);}
   .bvote-part{font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:700; margin:12px 0 6px;}
-  .bvote-cols{display:grid; grid-template-columns:repeat(auto-fit, minmax(190px, 1fr)); gap:12px;}
+  /* Case des votes nominaux d'un projet (billDivisionsBox, 30 oct. 2026) : décompte du dernier vote au titre, cartes de /votes dedans. */
+.bdiv-tally{font-weight:400; text-transform:none; letter-spacing:0; color:var(--slate);}
+.bill-divs .vote-card{margin:10px 0 0; box-shadow:none;}
+.bvote-cols{display:grid; grid-template-columns:repeat(auto-fit, minmax(190px, 1fr)); gap:12px;}
   .bvote-col h5{margin:0 0 5px; font-family:'IBM Plex Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:0.04em;}
   .bvote-col ul{list-style:none; margin:0; padding:0;}
   .bvote-col li{font-size:12px; line-height:1.55; display:flex; gap:5px; align-items:baseline;}
