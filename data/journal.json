@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-10-30",
+    "volet": "site",
+    "fr": {
+      "titre": "Présence et projets de loi, par législature",
+      "texte": "Chaque carte de député·e et de ministre montre la 45e législature : présence aux votes nominaux et nombre de projets de loi parrainés. Ce nombre mène à la liste de ces projets. À la prochaine législature, la 45e restera affichée à côté, en gris."
+    },
+    "en": {
+      "titre": "Attendance and bills, by Parliament",
+      "texte": "Every MP and minister card shows the 45th Parliament: recorded-vote attendance and the number of bills sponsored. That number leads to the list of those bills. Once the next Parliament begins, the 45th will stay alongside, in grey."
+    }
+  },
+  {
     "date": "2026-10-23",
     "volet": "site",
     "fr": {

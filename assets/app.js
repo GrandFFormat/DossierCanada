@@ -1975,12 +1975,7 @@ function deputeCardFed(d, isEn, L){
   const prov = L(d.province);
   const vr = d.votingRecord;
   const pct = (vr && vr.participationRate != null) ? Math.round(vr.participationRate * 100) : null;
-  const attTxt = pct != null
-    ? (isEn ? `attendance: ${pct}% (${vr.cast}/${vr.eligible})` : `présence : ${pct} % (${vr.cast}/${vr.eligible})`)
-    : (isEn ? 'attendance: not available' : 'présence : non disponible');
-  const attTitle = isEn
-    ? 'Share of recorded votes this MP took part in (Yea/Nay/paired) since taking office — a proxy for attendance; the House does not publish attendance directly.'
-    : "Part des votes nominaux auxquels ce·tte député·e a pris part (Pour/Contre/pairé) depuis son entrée en fonction — un indicateur de présence, la Chambre ne publiant pas l'assiduité directement.";
+  const attTitle = isEn ? 'Recorded-vote attendance and bills sponsored, by Parliament' : 'Présence aux votes nominaux et projets de loi parrainés, par législature';
   const followKey = 'mp-' + d.id;
   const isFollowed = !!followedDeputes[followKey];
   const url = memberUrl(d.id, d.url);
@@ -2005,9 +2000,9 @@ function deputeCardFed(d, isEn, L){
       <div class="role">${riding}${prov ? ' · ' + prov : ''}</div>
       <div class="meta-row">
         <span class="depute-party" style="background:${color}; color:${textOn(color)}">${d.party.code || '—'}</span>
-        <span class="vp-note" title="${attTitle}">${attTxt}</span>
         ${profileLink}
       </div>
+      <div class="vp-note leg-ligne" title="${attTitle}">${ligneLegislatures(d, isEn)}</div>
     </div>
   `;
 }
@@ -2172,7 +2167,7 @@ function ministerCardFed(m, isEn, L, idx){
   const attVr = attDep && attDep.votingRecord ? attDep.votingRecord : null;
   const attPct = (attVr && attVr.participationRate != null) ? Math.round(attVr.participationRate * 100) : null;
   const attTxt = attPct != null ? (isEn ? `attendance: ${attPct}% (${attVr.cast}/${attVr.eligible})` : `présence : ${attPct} % (${attVr.cast}/${attVr.eligible})`) : (isEn ? 'attendance: not available' : 'présence : non disponible');
-  const attTitle = isEn ? 'Share of recorded votes this minister took part in as an MP since taking office — a proxy for attendance; ministers often pair or are away on government business.' : "Part des votes nominaux auxquels ce·tte ministre a pris part comme député·e depuis son entrée en fonction — indicateur de présence ; les ministres se font souvent pairer ou sont en fonction gouvernementale.";
+  const attTitle = isEn ? 'Recorded-vote attendance and bills sponsored, by Parliament' : 'Présence aux votes nominaux et projets de loi parrainés, par législature';
   return `
     <div class="m-card">
       <div class="top-row">${avatar}<span class="mp-actions">${minDep ? `<button class="part-btn" type="button" title="${isEn ? 'Share' : 'Partager'}" aria-label="${isEn ? 'Share the profile of' : 'Partager la fiche de'} ${m.name.replace(/"/g, '&quot;')}" onclick="event.stopPropagation(); partageDepute(this, ${minDep.id})">${ICONE_PARTAGE}</button>${(() => { const w = minDep.wiki && (isEn ? (minDep.wiki.en || minDep.wiki.fr) : (minDep.wiki.fr || minDep.wiki.en)); return w ? `<a class="wiki-btn" href="${w}" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Wikipédia" aria-label="${isEn ? 'Wikipedia page of' : 'Page Wikipédia de'} ${m.name.replace(/"/g, '&quot;')}">W</a>` : ''; })()}` : ''}${followBtn}</span></div>
@@ -2180,11 +2175,72 @@ function ministerCardFed(m, isEn, L, idx){
       <div class="mc-role-wrap"><span class="mc-role" style="background:${m.isPM ? 'var(--ink)' : candy}; color:${m.isPM ? 'var(--yellow)' : 'var(--ink)'}">${role}</span></div>
       <div class="meta-row">
         ${emailHtml}
-        <span class="vp-note" title="${attTitle}">${attTxt}</span>
       </div>
+      <div class="leg-wrap" title="${attTitle}">${attDep ? pastillesLegislatures(attDep, isEn) : `<span class="vp-note">${attTxt}</span>`}</div>
     </div>
   `;
 }
+
+// Une législature par segment (même design que DossierQuébec, 30 oct. 2026) :
+// présence aux votes et projets de loi parrainés. d.legs = [[législature, votes,
+// admissibles, PL], ...], tiré de data/presences-par-legislature.json (la
+// législature en cours réécrite à chaque build, les précédentes figées).
+let _legCouranteFed = 0;
+function legCouranteFed(){
+  if(!_legCouranteFed){
+    const n = (typeof deputes !== 'undefined' ? deputes : []).map(d => (d.legs && d.legs[0] && d.legs[0][0]) || 0);
+    _legCouranteFed = n.length ? Math.max(...n) : 0;
+  }
+  return _legCouranteFed || 45;
+}
+const ordinalLeg = (n, isEn) => isEn ? n + ({ 1: 'st', 2: 'nd', 3: 'rd' }[n % 100 > 10 && n % 100 < 14 ? 0 : n % 10] || 'th') : n + 'e';
+function blocsLegFed(d){
+  const cour = legCouranteFed();
+  const legs = (d && d.legs) || [];
+  const vr = d && d.votingRecord;
+  const plCour = d ? bills.filter(b => b.sponsorPersonId === d.id).length : 0;
+  const blocs = [{ leg: cour, cast: vr ? vr.cast : null, eligible: vr ? vr.eligible : null, pl: plCour }];
+  for(const [leg, cast, eligible, pl] of legs){
+    if(leg === cour) continue;
+    blocs.push({ leg, cast, eligible, pl, passe: true });
+  }
+  return blocs;
+}
+function pctLeg(b, isEn, detail){
+  if(!b.eligible) return isEn ? 'n/a' : 'n/d';
+  const p = Math.round(b.cast / b.eligible * 100);
+  return (isEn ? `${p}%` : `${p} %`) + (detail ? ` (${b.cast}/${b.eligible})` : '');
+}
+// « 3 PL » mène aux projets de ce·tte parrain·e (?parrain=Nom). Pas d'archive des
+// législatures passées sur DossierCanada : le lien ne vaut que pour la législature en cours.
+function lienParrain(d, b, texte, isEn){
+  if(!b.pl || b.passe || !d) return texte;
+  const q = new URLSearchParams({ parrain: d.name });
+  return `<a class="leg-lien" href="${isEn ? '/en/bills' : '/projets-de-loi'}?${q}" onclick="event.stopPropagation()">${texte}</a>`;
+}
+function pastillesLegislatures(d, isEn, presidingShort){
+  const blocs = blocsLegFed(d);
+  const fleches = blocs.length > 2;
+  const plTxt = (b) => lienParrain(d, b, `${b.pl} ${isEn ? (b.pl === 1 ? 'bill sponsored' : 'bills sponsored') : (b.pl > 1 ? 'PL parrainés' : 'PL parrainé')}`, isEn);
+  return `<div class="leg-ruban" data-debut="0">${fleches ? `<button class="leg-fleche" type="button" aria-label="${isEn ? 'More recent' : 'Plus récente'}" onclick="event.stopPropagation(); defilerLeg(this, -1)">‹</button>` : ''}${blocs.map((b, i) => `<div class="leg-bloc${b.passe ? ' leg-passe' : ''}${i > 1 ? ' leg-cache' : ''}"><div class="leg-num">${ordinalLeg(b.leg, isEn)} ${isEn ? 'Parliament' : 'législature'}</div><div class="leg-pres">${isEn ? 'attendance' : 'présence'} ${(!b.passe && presidingShort) || pctLeg(b, isEn, true)}</div><div>${plTxt(b)}</div></div>`).join('')}${fleches ? `<button class="leg-fleche" type="button" aria-label="${isEn ? 'Earlier' : 'Plus ancienne'}" onclick="event.stopPropagation(); defilerLeg(this, 1)">›</button>` : ''}</div>`;
+}
+// Sur une ligne pour les cartes de député·e·s : « 45e · 92 % · 2 PL | 44e · 87 % · 5 PL ».
+function ligneLegislatures(d, isEn){
+  const blocs = blocsLegFed(d);
+  const morceaux = blocs.map((b, i) => `<span class="leg-seg ${b.passe ? 'leg-ligne-passe' : 'leg-ligne-cour'}${i === 0 ? ' leg-premier' : ''}${i > 1 ? ' leg-cache' : ''}">${i ? '<span class="leg-ligne-sep"> | </span>' : ''}${ordinalLeg(b.leg, isEn)} · ${pctLeg(b, isEn, false)} · ${lienParrain(d, b, `${b.pl} ${isEn ? 'bills' : 'PL'}`, isEn)}</span>`);
+  const fleche = morceaux.length > 2 ? ` <button class="leg-fleche leg-fleche-ligne" type="button" aria-label="${isEn ? 'Other Parliaments' : 'Autres législatures'}" onclick="event.stopPropagation(); defilerLeg(this, 1, true)">›</button>` : '';
+  return `<span class="leg-ruban leg-ruban-ligne" data-debut="0">${morceaux.join('')}${fleche}</span>`;
+}
+function defilerLeg(bouton, sens, enBoucle){
+  const ruban = bouton.closest('.leg-ruban');
+  const blocs = [...ruban.querySelectorAll('.leg-bloc, .leg-seg')];
+  let debut = Number(ruban.dataset.debut) + sens;
+  if(enBoucle && debut > blocs.length - 2) debut = 0;
+  debut = Math.max(0, Math.min(blocs.length - 2, debut));
+  ruban.dataset.debut = debut;
+  blocs.forEach((b, i) => { b.classList.toggle('leg-cache', i < debut || i > debut + 1); b.classList.toggle('leg-premier', i === debut); });
+}
+window.defilerLeg = defilerLeg;
 
 let ministresShowAll = false;
 function showAllMinistres(){
@@ -3055,6 +3111,18 @@ function boutonCafe(isEn){
   return `<div class="bill-cafe-row"><a class="bill-cafe-btn" href="${LIEN_CAFE}" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="${isEn ? 'Buy us a coffee (opens in a new tab)' : 'Offrez-nous un café (s’ouvre dans un nouvel onglet)'}">☕ ${isEn ? en : fr}</a></div>`;
 }
 
+var billsParrain = new URLSearchParams(location.search).get('parrain') || '';
+document.addEventListener('DOMContentLoaded', () => {
+  if(!billsParrain) return;
+  let essais = 0;
+  const remplir = () => {
+    const champ = document.getElementById('searchBills');
+    if(champ && typeof bills !== 'undefined' && bills.length){
+      champ.value = billsParrain; champ.dispatchEvent(new Event('input', { bubbles: true })); return; }
+    if(++essais < 40) setTimeout(remplir, 250);
+  };
+  remplir();
+});
 function renderBills(keyword){
   _rangCafe = 0;   // les libellés du bouton café repartent du premier (boutonCafe)
   keyword = keyword !== undefined ? keyword : (document.getElementById('searchBills')?.value || '');
@@ -3067,6 +3135,8 @@ function renderBills(keyword){
   // « c-2 » → « C-2 » si la recherche a la forme d'un numéro de projet de loi.
   const mNum = kw.replace(/ /g, '').match(/^([cs])(\d+)$/);
   const numeroCherche = mNum ? (mNum[1].toUpperCase() + '-' + mNum[2]) : null;
+  const parrainD = billsParrain ? deputes.find(d => norm(d.name) === norm(billsParrain)) : null;
+  const parrainId = parrainD ? parrainD.id : null;
   const list = bills.filter(b => {
     const statusOk = !billsStatusFilter || b.state === billsStatusFilter;
     const chamberOk = billsStepFilter === null || b.chamber === billsStepFilter;
@@ -3077,7 +3147,11 @@ function renderBills(keyword){
     // « pétroliers » sort les projets sur lesquels ils ont déclaré du lobbying.
     const orgs = lobbyOrgNames(b.num).map(n => typeof n === 'string' ? n : [n.fr, n.en].join(' ')).join(' ');
     const haystack = [b.title && b.title.fr, b.title && b.title.en, 'projet de loi ' + b.num, 'bill ' + b.num, b.sponsor && (b.sponsor.fr||b.sponsor.en), orgs, billSearchText(b.id)].join(' ');
-    const kwOk = matchesSearch(haystack, kw);
+    // ?parrain=Nom (lien « N PL » des cartes) : filtre exact sur le parrain tant que
+    // la recherche affiche ce nom ; la modifier revient à la recherche normale.
+    const parrainOk = !billsParrain || norm(keyword) !== norm(billsParrain)
+      || (parrainId != null ? b.sponsorPersonId === parrainId : norm((b.sponsor && (b.sponsor.fr || b.sponsor.en)) || '').includes(norm(billsParrain)));
+    const kwOk = (billsParrain && norm(keyword) === norm(billsParrain)) ? parrainOk : matchesSearch(haystack, kw);
     return statusOk && chamberOk && lobbyOk && omnibusOk && challengeOk && kwOk;
   }).sort((a,b)=>{
     // Recherche d'un NUMÉRO (« c-2 », « c2 », « C 2 ») : le projet qui porte
