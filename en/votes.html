@@ -62,7 +62,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=70ca41b33d">
+<link rel="stylesheet" href="/assets/app.css?v=d1cf959c76">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -121,7 +121,8 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
   <a data-view="cabinet" href="/en/ministers"><span class="n">03</span><span data-i18n="nav.cabinet">Ministers</span></a>
   <a data-view="projets" href="/en/bills"><span class="n">04</span><span data-i18n="nav.projets">Bills</span></a>
   <a class="active" data-view="votes" href="/en/votes" aria-current="page"><span class="n">05</span><span data-i18n="nav.votes">Votes</span></a>
-  <a data-view="lexique" href="/en/glossary"><span class="n">06</span><span data-i18n="nav.lexique">Glossary</span></a>
+  <a data-view="archives" href="/en/archives"><span class="n">06</span><span data-i18n="nav.archives">Archives</span></a>
+  <a data-view="lexique" href="/en/glossary"><span class="n">07</span><span data-i18n="nav.lexique">Glossary</span></a>
 </nav>
 </div>
 <script>
@@ -778,6 +779,19 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     </div>
   </section>
 
+  <!-- ARCHIVES (/archives, /en/archives) — une carte par législature terminée (projets de loi et
+       votes figés, lus dans data/archives/<n>/). Contenu écrit par renderArchives() dans assets/app.js. -->
+  <section class="view" id="view-archives">
+    <div class="page-band">
+      <div>
+        <nav class="crumbs" aria-label="Breadcrumb"><a data-view="apercu" href="/en">DossierCanada</a> <span aria-hidden="true">›</span> <span aria-current="page" data-i18n="nav.archives">Archives</span></nav>
+        <h2 class="band-title" id="archivesTitle" data-i18n="arch.h1">Parliament archives</h2>
+        <div class="sub" data-i18n="arch.sub">Bills and votes from Parliaments that have ended</div>
+      </div>
+    </div>
+    <ul class="archives-liste" id="archivesListe"></ul>
+  </section>
+
   <!-- LES RÈGLES DE SOURCES DU SITE (/regles, /en/rules) — comme sur DossierQuébec, on y
        arrive par le pied de page (lien à côté de Facebook). Chaque règle doit rester VRAIE
        pour ce site : avant d'en changer une, vérifier le code (scrapers/, scripts/). -->
@@ -921,7 +935,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=073c97d806"></script>
+<script defer src="/assets/app.js?v=c762005df2"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

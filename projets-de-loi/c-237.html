@@ -65,7 +65,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=ff0e6c63b5">
+<link rel="stylesheet" href="/assets/app.css?v=d1cf959c76">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -124,7 +124,8 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
   <a data-view="cabinet" href="/ministres"><span class="n">03</span><span data-i18n="nav.cabinet">Ministres</span></a>
   <a class="active" data-view="projets" href="/projets-de-loi" aria-current="page"><span class="n">04</span><span data-i18n="nav.projets">Projets de loi</span></a>
   <a data-view="votes" href="/votes"><span class="n">05</span><span data-i18n="nav.votes">Votes</span></a>
-  <a data-view="lexique" href="/lexique"><span class="n">06</span><span data-i18n="nav.lexique">Lexique</span></a>
+  <a data-view="archives" href="/archives"><span class="n">06</span><span data-i18n="nav.archives">Archives</span></a>
+  <a data-view="lexique" href="/lexique"><span class="n">07</span><span data-i18n="nav.lexique">Lexique</span></a>
 </nav>
 </div>
 <script>
@@ -271,57 +272,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     </div>
 
 
-    <div id="billsList"><!--ssr--><div class="ab-row open" id="abrow-pr-13591570">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13591570')">
-      <span class="ab-num">C-237</span>
-      <span class="ab-title">Loi modifiant la Loi sur les pêches (pêche du poisson de fond en Atlantique)</span>
-      
-      
-      
-      <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
-      <span class="status-pill status-glace">Rejetée</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail open">
-    <div class="bill" onclick="toggleBillSummary('bill-details-pr13591570-13591570', event)">
-      <div class="head">
-        <div>
-          <div class="num">PROJET DE LOI C-237</div>
-          <h3>Loi modifiant la Loi sur les pêches (pêche du poisson de fond en Atlantique)</h3>
-          <div class="last-activity">Dernière activité : <b>Projet de loi rejeté</b></div>
-          <div class="meta">Projet de loi émanant d'un député · Parrain : Jonathan Rowe</div>
-        </div>
-        <div style="display:flex; align-items:center; gap:6px; flex:none; flex-wrap:wrap; justify-content:flex-end;">
-          <span class="depute-party" style="background:#1A4782; color:#fff" title="Conservateur — Jonathan Rowe">CPC</span>
-          <span class="status-pill status-glace">Rejetée</span>
-        </div>
-      </div>
-      
-      <div class="bill-meta-top">Parrain : Jonathan Rowe · Chambre des communes · Projet de loi émanant d'un député</div>
-      <div class="bill-stages"><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Communes · 1re<b>2025-09-22</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Communes · 2e</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Communes · 3e</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Sénat · 1re</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Sénat · 2e</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Sénat · 3e</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Sanction royale</span></div>
-      <div class="bill-follow-row">
-    <span class="follow-hint">Connexion requise — une demande par personne, aucune demande anonyme</span>
-    <button class="follow-btn " id="demand-pr13591570-13591570" onclick="event.stopPropagation(); goToTab('lexique')">🔒 Se connecter pour demander</button>
-  </div>
-      <div class="expand-hint" id="hint-bill-details-pr13591570-13591570">− Masquer le résumé</div>
-      <div class="bill-summary open" id="bill-details-pr13591570-13591570">
-        <div class="bill-cols">
-          <div class="bill-col-main"><div class="bill-sum-slot" data-bill="13591570"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Oblige Ottawa à harmoniser, entre les provinces de l'Atlantique, les périodes où la pêche récréative du poisson de fond est fermée.</li><li>Exige que ces fermetures soient fixées uniquement en fonction de la période de reproduction de chaque espèce.</li><li>Oblige le ministère des Pêches et des Océans à publier sur son site Web toute fermeture ou tout quota au moins deux mois avant son entrée en vigueur.</li><li>Ajoute la stabilité et la prévisibilité pour les pêcheurs récréatifs de poisson de fond parmi les éléments à considérer dans les décisions.</li><li>Permet d'exiger des pêcheurs qu'ils déclarent le nombre de poissons pris chaque jour et le total pour la saison.</li><li>Demande au ministre des Pêches et des Océans de créer, dans l'année suivant l'entrée en vigueur, un système de suivi des prises par espèce, lieu et moment.</li><li>Exige que le ministre consulte les principaux intéressés, s'inspire des modèles existants, étudie le financement du système par les droits et amendes, et prévoie des incitatifs, comme des droits réduits, pour les pêcheurs qui déclarent à temps.</li><li>Oblige le ministre à déposer au Parlement, dès que possible après chaque exercice, un rapport sur l'application de la Loi sur les pêches.</li></ul><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div></div>
-          <aside class="bill-col-side">
-            <div class="bill-side-label">Dernière activité</div>
-            <div class="bill-side-box">2025-09-22 — Projet de loi rejeté</div>
-            <a class="bill-cta" href="https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-237" target="_blank" rel="noopener" onclick="event.stopPropagation()">Voir le texte complet sur LEGISinfo →</a>
-            <div class="bill-share-row">
-    <span class="bill-share-label">Partager :</span>
-    <button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13591570, 'x', event)" aria-label="Partager sur X">𝕏</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13591570, 'fb', event)" aria-label="Partager sur Facebook">FB</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13591570, 'copy', event)" aria-label="Copier le lien">⧉</button>
-  </div><div class="bill-cafe-row"><a class="bill-cafe-btn" href="https://donate.stripe.com/fZu6oH4pt5OY3sY5Fy9fW01" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="Offrez-nous un café (s’ouvre dans un nouvel onglet)">☕ Croyez au projet</a></div>
-          </aside>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-  </div><!--/ssr--></div>
+    <div id="billsList"><!--ssr--><!--/ssr--></div>
 
     <!-- Ce que « challenger » veut dire, en bas de la liste — comme sur
          DossierQuébec. Le texte dit le VRAI mécanisme : compte requis, une
@@ -457,6 +408,19 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <ol class="maj-liste" id="journalListe"><!--ssr--><!--/ssr--></ol>
       <button type="button" class="maj-plus" id="journalPlus" hidden></button>
     </div>
+  </section>
+
+  <!-- ARCHIVES (/archives, /en/archives) — une carte par législature terminée (projets de loi et
+       votes figés, lus dans data/archives/<n>/). Contenu écrit par renderArchives() dans assets/app.js. -->
+  <section class="view" id="view-archives">
+    <div class="page-band">
+      <div>
+        <nav class="crumbs" aria-label="Fil d'Ariane"><a data-view="apercu" href="/">DossierCanada</a> <span aria-hidden="true">›</span> <span aria-current="page" data-i18n="nav.archives">Archives</span></nav>
+        <h2 class="band-title" id="archivesTitle" data-i18n="arch.h1">Archives du Parlement</h2>
+        <div class="sub" data-i18n="arch.sub">Les projets de loi et les votes des législatures terminées</div>
+      </div>
+    </div>
+    <ul class="archives-liste" id="archivesListe"></ul>
   </section>
 
   <!-- LES RÈGLES DE SOURCES DU SITE (/regles, /en/rules) — comme sur DossierQuébec, on y
@@ -602,7 +566,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=681a757423"></script>
+<script defer src="/assets/app.js?v=c762005df2"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

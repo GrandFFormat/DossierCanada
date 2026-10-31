@@ -65,7 +65,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=ff0e6c63b5">
+<link rel="stylesheet" href="/assets/app.css?v=d1cf959c76">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -124,7 +124,8 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
   <a data-view="cabinet" href="/ministres"><span class="n">03</span><span data-i18n="nav.cabinet">Ministres</span></a>
   <a class="active" data-view="projets" href="/projets-de-loi" aria-current="page"><span class="n">04</span><span data-i18n="nav.projets">Projets de loi</span></a>
   <a data-view="votes" href="/votes"><span class="n">05</span><span data-i18n="nav.votes">Votes</span></a>
-  <a data-view="lexique" href="/lexique"><span class="n">06</span><span data-i18n="nav.lexique">Lexique</span></a>
+  <a data-view="archives" href="/archives"><span class="n">06</span><span data-i18n="nav.archives">Archives</span></a>
+  <a data-view="lexique" href="/lexique"><span class="n">07</span><span data-i18n="nav.lexique">Lexique</span></a>
 </nav>
 </div>
 <script>
@@ -271,110 +272,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     </div>
 
 
-    <div id="billsList"><!--ssr--><div class="ab-row open" id="abrow-pr-13543613">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13543613')">
-      <span class="ab-num">C-2</span>
-      <span class="ab-title">Loi concernant certaines mesures liées à la sécurité de la frontière entre le Canada et les États-Unis et d'autres mesures connexes liées à la sécurité</span>
-      
-      <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Projet omnibus — 16 parties : il modifie plusieurs lois différentes. Cliquer pour ne voir que les omnibus">Omnibus · 16 parties</button>
-      <span class="ab-lob" title="54 communications de lobbying déclarées">54</span>
-      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-      <span class="status-pill status-encours">En cours</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail open">
-    <div class="bill" onclick="toggleBillSummary('bill-details-pr13543613-13543613', event)">
-      <div class="head">
-        <div>
-          <div class="num">PROJET DE LOI C-2</div>
-          <h3>Loi concernant certaines mesures liées à la sécurité de la frontière entre le Canada et les États-Unis et d'autres mesures connexes liées à la sécurité</h3>
-          <div class="last-activity">Dernière activité : <b>À la deuxième lecture à la Chambre des communes</b></div>
-          <div class="meta">Projet de loi émanant du gouvernement (Cdc) · Parrain : L’hon. Gary Anandasangaree</div>
-        </div>
-        <div style="display:flex; align-items:center; gap:6px; flex:none; flex-wrap:wrap; justify-content:flex-end;">
-          <span class="depute-party" style="background:#D71920; color:#fff" title="Libéral — L’hon. Gary Anandasangaree">LPC</span>
-          <span class="status-pill status-encours">En cours</span>
-        </div>
-      </div>
-      <div class="bill-omni-note"><b>Projet omnibus.</b> Il modifie plusieurs lois différentes, une par partie (16 parties). Le titre n'en nomme qu'une partie : le résumé ci-dessous va donc partie par partie.</div>
-      <div class="bill-meta-top">Parrain : L’hon. Gary Anandasangaree · Chambre des communes · Projet de loi émanant du gouvernement (Cdc)</div>
-      <div class="bill-stages"><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Communes · 1re<b>2025-06-03</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Communes · 2e</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Communes · 3e</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Sénat · 1re</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Sénat · 2e</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Sénat · 3e</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Sanction royale</span></div>
-      <div class="bill-follow-row">
-    <span class="follow-hint">Connexion requise — une demande par personne, aucune demande anonyme</span>
-    <button class="follow-btn " id="demand-pr13543613-13543613" onclick="event.stopPropagation(); goToTab('lexique')">🔒 Se connecter pour demander</button>
-  </div>
-      <div class="expand-hint" id="hint-bill-details-pr13543613-13543613">− Masquer le résumé</div>
-      <div class="bill-summary open" id="bill-details-pr13543613-13543613">
-        <div class="bill-cols">
-          <div class="bill-col-main"><div class="bill-sum-slot" data-bill="13543613"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Regroupe 16 blocs de mesures touchant la frontière, les drogues, le courrier, l'immigration, l'argent sale et l'accès des policiers aux données.</li><li>Donne plus de pouvoirs aux agences fédérales pour obtenir et partager des renseignements.</li></ul><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 1</span>Loi sur les douanes</h5><ul class="bill-sum-list"><li>Oblige à fournir gratuitement des locaux à l'Agence des services frontaliers du Canada pour son travail.</li><li>Permet aux agents des douanes d'accéder, à certains endroits, aux marchandises qui s'en vont à l'étranger.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 2</span>Loi réglementant certaines drogues et autres substances</h5><ul class="bill-sum-list"><li>Crée une voie rapide et temporaire pour que le ministre de la Santé ajoute des produits chimiques servant à fabriquer des drogues à une liste officielle.</li><li>Modifie aussi deux règlements liés, dont celui sur les précurseurs chimiques.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 3</span>Loi réglementant certaines drogues et autres substances et Loi sur le cannabis</h5><ul class="bill-sum-list"><li>Confirme que le gouvernement (le Cabinet) peut, par une règle, mettre les policiers à l'abri de certaines infractions liées à la drogue.</li><li>Cette protection vise seulement les enquêtes menées légalement.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 4</span>Loi sur la Société canadienne des postes</h5><ul class="bill-sum-list"><li>Permet de saisir ou de retenir un envoi postal seulement si une loi fédérale l'autorise.</li><li>Élargit le pouvoir de Postes Canada pour qu'elle puisse aussi ouvrir des lettres dans certains cas.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 5</span>Loi sur les océans</h5><ul class="bill-sum-list"><li>Ajoute officiellement des activités de sécurité aux tâches de la Garde côtière canadienne.</li><li>Autorise le ministre responsable à recueillir, analyser et transmettre des renseignements.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 6</span>Loi sur le ministère de la Citoyenneté et de l'Immigration et Loi sur l'immigration et la protection des réfugiés</h5><ul class="bill-sum-list"><li>Permet au ministre de l'Immigration de partager des renseignements personnels avec d'autres parties de son ministère.</li><li>Permet aussi de les partager avec certains organismes fédéraux et provinciaux, à des fins précises.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 7</span>Loi sur l'immigration et la protection des réfugiés</h5><ul class="bill-sum-list"><li>Supprime le système qui classait certains pays comme « sûrs » pour les demandes d'asile.</li><li>Permet au ministre d'exiger des documents et renseignements précis à l'appui d'une demande d'asile.</li><li>Permet de fermer une demande d'asile comme abandonnée ou retirée avant même qu'elle soit envoyée au tribunal des réfugiés.</li><li>Oblige à mettre le dossier en pause si la personne qui demande l'asile n'est pas au Canada.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 8</span>Loi sur l'immigration et la protection des réfugiés</h5><ul class="bill-sum-list"><li>Permet au gouvernement (le Cabinet) de refuser, suspendre ou arrêter le traitement de certaines demandes d'immigration s'il juge que c'est dans l'intérêt public.</li><li>Permet aussi d'annuler, de suspendre ou de modifier des documents déjà délivrés, comme des visas ou permis.</li><li>Oblige la personne visée à se présenter à une entrevue, à répondre honnêtement et à fournir les documents demandés.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 9</span>Loi sur l'immigration et la protection des réfugiés</h5><ul class="bill-sum-list"><li>Ajoute deux nouvelles raisons pour lesquelles une demande d'asile ne peut pas être étudiée.</li><li>Permet au gouvernement de prévoir des exceptions par une règle, sans nouveau vote au Parlement.</li><li>Prévoit que ces nouvelles raisons peuvent s'appliquer à des demandes déjà faites.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 10</span>Loi sur le recyclage des produits de la criminalité et le financement des activités terroristes</h5><ul class="bill-sum-list"><li>Fait augmenter les amendes et les peines maximales prévues contre le blanchiment d'argent.</li><li>Oblige une entreprise sanctionnée à signer une entente de conformité avec CANAFE, l'organisme qui surveille les opérations financières douteuses.</li><li>Permet au directeur de CANAFE d'imposer un ordre de conformité si l'entreprise refuse ou ne respecte pas l'entente.</li><li>Oblige les entreprises visées par la loi à s'inscrire auprès de CANAFE.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 11</span>Loi sur le recyclage des produits de la criminalité et le financement des activités terroristes</h5><ul class="bill-sum-list"><li>Interdit à certaines entreprises d'accepter un dépôt en argent comptant fait par une tierce personne.</li><li>Interdit d'accepter un paiement, un don ou un dépôt en argent comptant de 10 000 $ ou plus.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 12</span>Loi sur le Bureau du surintendant des institutions financières</h5><ul class="bill-sum-list"><li>Ajoute le directeur de CANAFE au comité fédéral qui réunit les responsables de la surveillance financière.</li><li>Permet à ce directeur d'échanger des renseignements avec les autres membres du comité.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 13</span>Loi sur l'enregistrement de renseignements sur les délinquants sexuels et Loi sur les douanes</h5><ul class="bill-sum-list"><li>Change les règles obligeant les délinquants sexuels à se présenter et à fournir des renseignements.</li><li>Permet de noter des signes physiques qui aident à les identifier lors de leur passage au bureau d'inscription.</li><li>Autorise l'Agence des services frontaliers à dire à la police quand un délinquant sexuel entre au Canada ou en sort.</li><li>Permet de partager les renseignements du registre pour prévenir ou enquêter sur des crimes de nature sexuelle.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 14</span>Code criminel, Loi sur le Service canadien du renseignement de sécurité et autres lois</h5><ul class="bill-sum-list"><li>Crée un nouvel ordre qui force les entreprises offrant des services au public à fournir des renseignements de base aux enquêteurs.</li><li>Précise les délais de réponse aux ordonnances qui exigent la remise de données.</li><li>Permet à un juge d'autoriser la police à demander des données à une entreprise de télécommunications située à l'étranger.</li><li>Précise quand la police peut obtenir des preuves, dont des données d'abonné, dans une situation d'urgence.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 15</span>nouvelle Loi sur le soutien en matière d'accès autorisé à de l'information</h5><ul class="bill-sum-list"><li>Crée une nouvelle loi qui encadre les fournisseurs de services électroniques.</li><li>Vise à ce que ces fournisseurs facilitent l'accès à l'information par les personnes autorisées par le Code criminel ou la loi sur le SCRS.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 16</span>Loi sur le recyclage des produits de la criminalité et le financement des activités terroristes et Loi sur la protection des renseignements personnels et les documents électroniques</h5><ul class="bill-sum-list"><li>Permet aux banques et autres entreprises visées d'utiliser vos renseignements personnels sans votre accord, dans un cas précis.</li><li>Cela s'applique si l'information vient d'un ministère ou d'un corps policier et sert à détecter le blanchiment d'argent, le financement du terrorisme ou le contournement de sanctions.</li></ul></section><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div></div>
-          <aside class="bill-col-side">
-            <div class="bill-side-label">Dernière activité</div>
-            <div class="bill-side-box">2025-06-03 — À la deuxième lecture à la Chambre des communes</div>
-            <a class="bill-cta" href="https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-2" target="_blank" rel="noopener" onclick="event.stopPropagation()">Voir le texte complet sur LEGISinfo →</a>
-            <div class="bill-share-row">
-    <span class="bill-share-label">Partager :</span>
-    <button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13543613, 'x', event)" aria-label="Partager sur X">𝕏</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13543613, 'fb', event)" aria-label="Partager sur Facebook">FB</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13543613, 'copy', event)" aria-label="Copier le lien">⧉</button>
-  </div><div class="bill-cafe-row"><a class="bill-cafe-btn" href="https://donate.stripe.com/fZu6oH4pt5OY3sY5Fy9fW01" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="Offrez-nous un café (s’ouvre dans un nouvel onglet)">☕ Aidez DC à rester gratuit</a></div>
-          </aside>
-        </div>
-        <div class="lob" id="lob-13543613" onclick="toggleLobbying(this, event)">
-    <div class="lob-head">
-      <span class="lob-title">Lobbying déclaré</span>
-      <span class="lob-count">54 communications · 9 organisations</span>
-      <span class="lob-asof">au 26 oct. 2026</span>
-      <span class="lob-toggle">les 10 plus récentes +</span>
-    </div>
-    <div class="lob-orgs"><span class="lob-org">WoodGreen Community Services<b>17</b></span><span class="lob-org">Association Canadienne Des Libertes Civiles<b>12</b></span><span class="lob-org">Coalition pour la surveillance internationale des libertés civiles<b>8</b></span><span class="lob-org">Electronic Transactions Association<b>6</b></span><span class="lob-org">Canadian Gaming Association (CGA)<b>4</b></span></div>
-    <div class="lob-body">
-      <div class="lob-orgs" style="margin:0 0 10px;"><span class="lob-org">Amazon Web Services Canada, Inc.<b>3</b></span><span class="lob-org">Ontario Child Sexual Exploitation Investigators Association (OCSEIA)<b>2</b></span><span class="lob-org">Rogers Communications Inc.<b>1</b></span><span class="lob-org">Canadian Gaming Association<b>1</b></span></div>
-      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=704437" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-09-29 · Innovation, Science and Economic Development Canada (ISED)</div>
-      <div class="lob-who">Amazon Web Services Canada, Inc.</div>
-      <div class="lob-met">A rencontré : Mark Schaan — Associate Deputy Minister</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=703715" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-09-24 · Senate of Canada</div>
-      <div class="lob-who">Association Canadienne Des Libertes Civiles</div>
-      <div class="lob-met">A rencontré : Claudine Santos — Director of Parliamentary Affairs</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=703912" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-09-23 · Senate of Canada</div>
-      <div class="lob-who">Association Canadienne Des Libertes Civiles</div>
-      <div class="lob-met">A rencontré : Dina Dong — Parliamentary Affairs Advisor</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=699740" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-08-28 · Senate of Canada</div>
-      <div class="lob-who">Association Canadienne Des Libertes Civiles</div>
-      <div class="lob-met">A rencontré : Paula Simons — Senator · Dina Dong — Parliamentary Affairs Advisor · Shawn Abel — Director of Parliamentary Affairs</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=684919" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-04-13 · House of Commons</div>
-      <div class="lob-who">Ontario Child Sexual Exploitation Investigators Association (OCSEIA)</div>
-      <div class="lob-met">A rencontré : Frank Caputo — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=684914" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-04-09 · House of Commons</div>
-      <div class="lob-who">Ontario Child Sexual Exploitation Investigators Association (OCSEIA)</div>
-      <div class="lob-met">A rencontré : Larry Brock — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=678244" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-03-24 · House of Commons</div>
-      <div class="lob-who">Canadian Gaming Association (CGA)</div>
-      <div class="lob-met">A rencontré : Ruby Sahota — Member of Parliament, Secretary of State (Combatting Crime) · Rob Jamieson — Chief of Staff</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=675294" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-03-24 · House of Commons</div>
-      <div class="lob-who">Canadian Gaming Association (CGA)</div>
-      <div class="lob-met">A rencontré : Ruby Sahota — Member of Parliament, Secretary of State (Combatting Crime) · Rob Jamieson — Chief of Staff to Hon. Ruby Sahota, Secretary of State (Combatting Crime)</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=676663" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-03-05 · Senate of Canada</div>
-      <div class="lob-who">Association Canadienne Des Libertes Civiles</div>
-      <div class="lob-met">A rencontré : Emma Meldrum — Parliamentary Affairs Advisor · Yuen Pau Woo — Senator · Bernadette Clément — Senator</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=676303" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-03-03 · Senate of Canada</div>
-      <div class="lob-who">Association Canadienne Des Libertes Civiles</div>
-      <div class="lob-met">A rencontré : Dylan Odd — Director, Parliamentary Affairs · Katie Verhoeven — Senior Parliamentary Advisor · Emma Meldrum — Parliamentary Affairs Advisor</div>
-    </a>
-      <p class="lob-note">Communications déclarées au Commissariat au lobbying du Canada qui nomment ce projet de loi. Le lobbying est une activité légale et publiquement enregistrée — ce décompte est un fait, pas un verdict. On ne compte que les communications dont la description nomme le numéro <em>et</em> le titre du projet : le total réel peut être plus élevé. Archive du registre lue le 26 octobre 2026 ; le Commissariat la republie environ tous les mois, et on la rafraîchit à la main.</p>
-    </div>
-  </div>
-      </div>
-    </div>
-  </div>
-  </div><!--/ssr--></div>
+    <div id="billsList"><!--ssr--><!--/ssr--></div>
 
     <!-- Ce que « challenger » veut dire, en bas de la liste — comme sur
          DossierQuébec. Le texte dit le VRAI mécanisme : compte requis, une
@@ -510,6 +408,19 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <ol class="maj-liste" id="journalListe"><!--ssr--><!--/ssr--></ol>
       <button type="button" class="maj-plus" id="journalPlus" hidden></button>
     </div>
+  </section>
+
+  <!-- ARCHIVES (/archives, /en/archives) — une carte par législature terminée (projets de loi et
+       votes figés, lus dans data/archives/<n>/). Contenu écrit par renderArchives() dans assets/app.js. -->
+  <section class="view" id="view-archives">
+    <div class="page-band">
+      <div>
+        <nav class="crumbs" aria-label="Fil d'Ariane"><a data-view="apercu" href="/">DossierCanada</a> <span aria-hidden="true">›</span> <span aria-current="page" data-i18n="nav.archives">Archives</span></nav>
+        <h2 class="band-title" id="archivesTitle" data-i18n="arch.h1">Archives du Parlement</h2>
+        <div class="sub" data-i18n="arch.sub">Les projets de loi et les votes des législatures terminées</div>
+      </div>
+    </div>
+    <ul class="archives-liste" id="archivesListe"></ul>
   </section>
 
   <!-- LES RÈGLES DE SOURCES DU SITE (/regles, /en/rules) — comme sur DossierQuébec, on y
@@ -655,7 +566,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=681a757423"></script>
+<script defer src="/assets/app.js?v=c762005df2"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

@@ -3,6 +3,18 @@
     "date": "2026-10-30",
     "volet": "site",
     "fr": {
+      "titre": "Onglet Archives",
+      "texte": "Nouvel onglet Archives. À l'ouverture de la 46e législature, les projets de loi et les votes de la 45e y resteront consultables tels qu'ils étaient à la fin de la législature, avec le détail de qui a voté quoi. Sur les cartes des député·e·s, le nombre de projets parrainés d'une législature terminée mènera à son archive."
+    },
+    "en": {
+      "titre": "Archives tab",
+      "texte": "New Archives tab. When the 46th Parliament opens, the bills and votes of the 45th will remain available there as they stood at the end of the Parliament, with who voted how. On MP cards, the number of bills sponsored in an ended Parliament will lead to its archive."
+    }
+  },
+  {
+    "date": "2026-10-30",
+    "volet": "site",
+    "fr": {
       "titre": "Présence et projets de loi, par législature",
       "texte": "Chaque carte de député·e et de ministre montre la 45e législature : présence aux votes nominaux et nombre de projets de loi parrainés. Ce nombre mène à la liste de ces projets. À la prochaine législature, la 45e restera affichée à côté, en gris."
     },

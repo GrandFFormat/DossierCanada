@@ -65,7 +65,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=ff0e6c63b5">
+<link rel="stylesheet" href="/assets/app.css?v=d1cf959c76">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -124,7 +124,8 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
   <a data-view="cabinet" href="/en/ministers"><span class="n">03</span><span data-i18n="nav.cabinet">Ministers</span></a>
   <a class="active" data-view="projets" href="/en/bills" aria-current="page"><span class="n">04</span><span data-i18n="nav.projets">Bills</span></a>
   <a data-view="votes" href="/en/votes"><span class="n">05</span><span data-i18n="nav.votes">Votes</span></a>
-  <a data-view="lexique" href="/en/glossary"><span class="n">06</span><span data-i18n="nav.lexique">Glossary</span></a>
+  <a data-view="archives" href="/en/archives"><span class="n">06</span><span data-i18n="nav.archives">Archives</span></a>
+  <a data-view="lexique" href="/en/glossary"><span class="n">07</span><span data-i18n="nav.lexique">Glossary</span></a>
 </nav>
 </div>
 <script>
@@ -271,110 +272,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     </div>
 
 
-    <div id="billsList"><!--ssr--><div class="ab-row open" id="abrow-pr-13586181">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13586181')">
-      <span class="ab-num">C-223</span>
-      <span class="ab-title">An Act to amend the Divorce Act</span>
-      
-      
-      <span class="ab-lob" title="20 reported lobbying communications">20</span>
-      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-      <span class="status-pill status-encours">In progress</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail open">
-    <div class="bill" onclick="toggleBillSummary('bill-details-pr13586181-13586181', event)">
-      <div class="head">
-        <div>
-          <div class="num">BILL C-223</div>
-          <h3>An Act to amend the Divorce Act</h3>
-          <div class="last-activity">Last activity : <b>At consideration in committee in the House of Commons</b></div>
-          <div class="meta">Private Member’s Bill · Sponsor : Lisa Hepfner</div>
-        </div>
-        <div style="display:flex; align-items:center; gap:6px; flex:none; flex-wrap:wrap; justify-content:flex-end;">
-          <span class="depute-party" style="background:#D71920; color:#fff" title="Liberal — Lisa Hepfner">LPC</span>
-          <span class="status-pill status-encours">In progress</span>
-        </div>
-      </div>
-      
-      <div class="bill-meta-top">Sponsor : Lisa Hepfner · House of Commons · Private Member’s Bill</div>
-      <div class="bill-stages"><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Commons · 1st<b>2025-09-18</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Commons · 2nd<b>2026-02-04</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Commons · 3rd</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Senate · 1st</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Senate · 2nd</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Senate · 3rd</span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--paper-2); color:var(--slate); opacity:.7;">Royal assent</span></div>
-      <div class="bill-follow-row">
-    <span class="follow-hint">Sign-in required — one request per person, no anonymous requests</span>
-    <button class="follow-btn " id="demand-pr13586181-13586181" onclick="event.stopPropagation(); goToTab('lexique')">🔒 Sign in to ask</button>
-  </div>
-      <div class="expand-hint" id="hint-bill-details-pr13586181-13586181">− Hide summary</div>
-      <div class="bill-summary open" id="bill-details-pr13586181-13586181">
-        <div class="bill-cols">
-          <div class="bill-col-main"><div class="bill-sum-slot" data-bill="13586181"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Requires a lawyer acting for a spouse in a divorce to check whether there is a risk of family violence against the client or a family member.</li><li>Requires the lawyer, if such a risk exists, to put a plan in place, make sure the family has a safety plan and share known support services.</li><li>Bars courts from considering claims that one parent deliberately turned a child against the other parent.</li><li>Still lets a judge look at repeated attempts to damage a parent-child bond when that parent has committed family violence.</li><li>Stops judges from assuming violence has ended or that complaints are exaggerated just because the couple separated, no charges were laid, or there are no visible injuries.</li><li>Lets the court hear the child's views in writing or in a private interview, if both parents agree and the child's safety and privacy are protected.</li><li>Bars courts from ordering a child into reunification therapy or cutting a close parent's time to improve the bond with the other parent.</li><li>Puts the burden on the parent who opposes a move when the child already lives mostly with the parent who wants to relocate.</li><li>Applies to divorce cases already started but not yet finished, and past rulings based on manipulation claims count as a change in circumstances.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
-          <aside class="bill-col-side">
-            <div class="bill-side-label">Last activity</div>
-            <div class="bill-side-box">2026-02-04 — At consideration in committee in the House of Commons</div>
-            <a class="bill-cta" href="https://www.parl.ca/legisinfo/en/bill/45-1/c-223" target="_blank" rel="noopener" onclick="event.stopPropagation()">Read the full text on LEGISinfo →</a>
-            <div class="bill-share-row">
-    <span class="bill-share-label">Share:</span>
-    <button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13586181, 'x', event)" aria-label="Share on X">𝕏</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13586181, 'fb', event)" aria-label="Share on Facebook">FB</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13586181, 'copy', event)" aria-label="Copy the link">⧉</button>
-  </div><div class="bill-cafe-row"><a class="bill-cafe-btn" href="https://donate.stripe.com/fZu6oH4pt5OY3sY5Fy9fW01" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="Buy us a coffee (opens in a new tab)">☕ A double, maybe?</a></div>
-          </aside>
-        </div>
-        <div class="lob" id="lob-13586181" onclick="toggleLobbying(this, event)">
-    <div class="lob-head">
-      <span class="lob-title">Registered lobbying</span>
-      <span class="lob-count">20 communications · 2 organizations</span>
-      <span class="lob-asof">as of Oct 26, 2026</span>
-      <span class="lob-toggle">the 10 most recent +</span>
-    </div>
-    <div class="lob-orgs"><span class="lob-org">NATIONAL ASSOCIATION OF WOMEN AND THE LAW<b>16</b></span><span class="lob-org">Women's Legal Education and Action Fund<b>4</b></span></div>
-    <div class="lob-body">
-      
-      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=703968" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-09-30 · House of Commons</div>
-      <div class="lob-who">NATIONAL ASSOCIATION OF WOMEN AND THE LAW</div>
-      <div class="lob-met">Met with : Marie-Gabrielle Ménard — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=703965" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-09-30 · House of Commons</div>
-      <div class="lob-who">NATIONAL ASSOCIATION OF WOMEN AND THE LAW</div>
-      <div class="lob-met">Met with : Karina Gould — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=703963" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-09-29 · House of Commons</div>
-      <div class="lob-who">NATIONAL ASSOCIATION OF WOMEN AND THE LAW</div>
-      <div class="lob-met">Met with : Lisa Hepfner — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=703961" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-09-23 · House of Commons</div>
-      <div class="lob-who">NATIONAL ASSOCIATION OF WOMEN AND THE LAW</div>
-      <div class="lob-met">Met with : Lisa Hepfner — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=703959" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-09-23 · House of Commons</div>
-      <div class="lob-who">NATIONAL ASSOCIATION OF WOMEN AND THE LAW</div>
-      <div class="lob-met">Met with : Rachel Bendayan — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=703956" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-09-08 · Justice Canada (JC)</div>
-      <div class="lob-who">NATIONAL ASSOCIATION OF WOMEN AND THE LAW</div>
-      <div class="lob-met">Met with : Alicia Cooke — Policy advisor</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=697335" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-08-11 · House of Commons</div>
-      <div class="lob-who">NATIONAL ASSOCIATION OF WOMEN AND THE LAW</div>
-      <div class="lob-met">Met with : Lisa Hepfner — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=697332" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-07-23 · House of Commons</div>
-      <div class="lob-who">NATIONAL ASSOCIATION OF WOMEN AND THE LAW</div>
-      <div class="lob-met">Met with : Doly Begum — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=694291" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-05-28 · Justice Canada (JC)</div>
-      <div class="lob-who">NATIONAL ASSOCIATION OF WOMEN AND THE LAW</div>
-      <div class="lob-met">Met with : Alicia Cooke — Policy advisor</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=687677" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-05-28 · Prime Minister's Office (PMO)</div>
-      <div class="lob-who">NATIONAL ASSOCIATION OF WOMEN AND THE LAW</div>
-      <div class="lob-met">Met with : Laura Colleony — Conseillère régionale, Québec</div>
-    </a>
-      <p class="lob-note">Communications reported to the Office of the Commissioner of Lobbying that name this bill. Lobbying is a lawful, publicly registered activity — this count is a fact, not a verdict. Only communications whose description names both the bill number and its title are counted, so the real total may be higher. Registry archive read on October 26, 2026; the Commissioner republishes it about monthly, and we refresh it by hand.</p>
-    </div>
-  </div>
-      </div>
-    </div>
-  </div>
-  </div><!--/ssr--></div>
+    <div id="billsList"><!--ssr--><!--/ssr--></div>
 
     <!-- Ce que « challenger » veut dire, en bas de la liste — comme sur
          DossierQuébec. Le texte dit le VRAI mécanisme : compte requis, une
@@ -510,6 +408,19 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <ol class="maj-liste" id="journalListe"><!--ssr--><!--/ssr--></ol>
       <button type="button" class="maj-plus" id="journalPlus" hidden></button>
     </div>
+  </section>
+
+  <!-- ARCHIVES (/archives, /en/archives) — une carte par législature terminée (projets de loi et
+       votes figés, lus dans data/archives/<n>/). Contenu écrit par renderArchives() dans assets/app.js. -->
+  <section class="view" id="view-archives">
+    <div class="page-band">
+      <div>
+        <nav class="crumbs" aria-label="Breadcrumb"><a data-view="apercu" href="/en">DossierCanada</a> <span aria-hidden="true">›</span> <span aria-current="page" data-i18n="nav.archives">Archives</span></nav>
+        <h2 class="band-title" id="archivesTitle" data-i18n="arch.h1">Parliament archives</h2>
+        <div class="sub" data-i18n="arch.sub">Bills and votes from Parliaments that have ended</div>
+      </div>
+    </div>
+    <ul class="archives-liste" id="archivesListe"></ul>
   </section>
 
   <!-- LES RÈGLES DE SOURCES DU SITE (/regles, /en/rules) — comme sur DossierQuébec, on y
@@ -655,7 +566,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=681a757423"></script>
+<script defer src="/assets/app.js?v=c762005df2"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

@@ -18,6 +18,7 @@
 
 import { readFileSync, writeFileSync, existsSync, statSync, mkdirSync, readdirSync, rmSync } from 'node:fs';
 import { detectOmnibus } from './omnibus.js';
+import { archiveLegislature } from '../scripts/archive-legislature.js';
 
 // Listes nominatives (qui a voté quoi) : un fichier PAR VOTE, chargé au clic.
 // Recopiées dans site-data.js, elles pesaient 1 Mo téléchargé sur chaque page
@@ -777,3 +778,5 @@ function main() {
 }
 
 main();
+// Archives : copie de la législature en direct (data/archives/<n>/), après l'écriture des données.
+archiveLegislature();
