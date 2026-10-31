@@ -23,6 +23,8 @@ export const VIEWS = [
   { view: 'cabinet',   slug: 'ministres',       en: 'ministers' },
   { view: 'projets',   slug: 'projets-de-loi',  en: 'bills' },
   { view: 'votes',     slug: 'votes',           en: 'votes' },
+  // Législatures terminées : leurs projets de loi et leurs votes, figés (data/archives/<n>/).
+  { view: 'archives',  slug: 'archives',        en: 'archives' },
   { view: 'lexique',   slug: 'lexique',         en: 'glossary' },
   // Promesses du parti au pouvoir, en regard des lois qui ont suivi.
   { view: 'promesses', slug: 'promesses',       en: 'promises' },
@@ -61,6 +63,7 @@ export const SSR = {
   cabinet:   { regions: ['ministresGrid', 'ministresCount2'], h1: 'cabinetTitle', title: 'cabinetTitle' },
   projets:   { regions: ['sortToggle', 'statusFilters', 'stepFilters', 'billsList'], h1: 'projetsCountTitle', title: 'projetsCountTitle' },
   votes:     { regions: ['petitionsToggle', 'votesList'], h1: 'votesCountTitle', title: 'votesCountTitle' },
+  archives:  { regions: [], h1: 'archivesTitle', title: null },
   lexique:   { regions: ['accountBox', 'lexiqueList'], h1: 'lexiqueCountTitle', title: 'lexiqueCountTitle' },
   promesses: { regions: ['promThemeFilters', 'promisesList'], h1: 'promessesCountTitle', title: 'promessesCountTitle' },
   bd:        { regions: ['journalListe'], h1: 'majTitle', title: null },

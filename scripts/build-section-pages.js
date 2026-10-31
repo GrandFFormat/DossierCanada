@@ -43,7 +43,7 @@ const TITLE_FALLBACK = {
   votesCountTitle: { fr: 'Votes aux Communes', en: 'Votes in the Commons' },
   lexiqueCountTitle: { fr: 'Lexique du Parlement', en: 'Parliament glossary' },
 };
-const NAV_KEY = { apercu: 'nav.apercu', ministres: 'nav.ministres', cabinet: 'nav.cabinet', projets: 'nav.projets', votes: 'nav.votes', lexique: 'nav.lexique', promesses: 'nav.promesses', bd: 'maj.h', regles: 'regles.fil' };
+const NAV_KEY = { apercu: 'nav.apercu', ministres: 'nav.ministres', cabinet: 'nav.cabinet', projets: 'nav.projets', votes: 'nav.votes', archives: 'nav.archives', lexique: 'nav.lexique', promesses: 'nav.promesses', bd: 'maj.h', regles: 'regles.fil' };
 
 function headBlock({ view, lang, path }) {
   const m = PAGE_META[view];

@@ -179,7 +179,7 @@
   /* ---------- NAV TABS ---------- */
   nav.tabs{
     max-width:1280px;margin:0 auto; padding:0;
-    display:grid; grid-template-columns:repeat(6,1fr); gap:0;
+    display:grid; grid-template-columns:repeat(7,1fr); gap:0;
     border-bottom:5px solid var(--ink); background:var(--card);
    color:var(--ink);}
   nav.tabs::-webkit-scrollbar{height:32px; width:32px;}
@@ -202,6 +202,7 @@
   nav.tabs a[data-view='projets']:hover, nav.tabs a[data-view='projets'].active{background:var(--lime); color:var(--on-candy);}
   nav.tabs a[data-view='votes']:hover, nav.tabs a[data-view='votes'].active{background:var(--yellow); color:var(--on-candy);}
   nav.tabs a[data-view='cabinet']:hover, nav.tabs a[data-view='cabinet'].active{background:var(--cyan); color:var(--on-candy);}
+  nav.tabs a[data-view='archives']:hover, nav.tabs a[data-view='archives'].active{background:var(--cyan); color:var(--on-candy);}
   nav.tabs a[data-view='lexique']:hover, nav.tabs a[data-view='lexique'].active{background:var(--pink); color:var(--on-candy);}
   nav.tabs a .n{
     font-family:'IBM Plex Mono',monospace; font-weight:700; font-size:12.5px;
@@ -1359,3 +1360,13 @@
 .leg-ruban.leg-ruban-ligne{display:inline; gap:0;}
 .leg-lien{color:inherit; text-decoration:underline; text-underline-offset:2px;}
 .leg-lien:hover{background:var(--yellow);}
+
+/* ARCHIVES (30 oct. 2026) — bande « vous êtes dans les archives » sur /projets-de-loi?archives=N et
+   /votes?archives=N ; page /archives : une carte par législature terminée. */
+.archives-note{max-width:1280px; margin:14px auto 0; padding:12px 16px; border:3px solid var(--ink); background:var(--yellow); color:var(--on-candy); font-family:'Archivo',system-ui,sans-serif; font-size:15px; line-height:1.5;}
+.archives-note a{color:inherit; font-weight:800; text-decoration:underline; text-underline-offset:3px; margin-left:6px;}
+.archives-liste{list-style:none; padding:0; margin:0 0 30px; display:grid; gap:16px; max-width:75ch;}
+.archives-carte{border:3px solid var(--ink); background:var(--card); padding:16px 18px;}
+.archives-carte h3{margin:0 0 8px; font-family:'Archivo',system-ui,sans-serif;}
+.archives-liens{line-height:1.9; margin:0;}
+.archives-liens a, #archivesListe a{color:var(--ink); font-weight:800; text-decoration:underline; text-underline-offset:3px;}

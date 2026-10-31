@@ -3,7 +3,7 @@ const translations = {
   fr: {
     'nav.close':"Fermer",'nav.apercu':"Aperçu",'nav.ministres':"Députés",'nav.cabinet':"Ministres",'h.cabinet':"Le Cabinet fédéral",'cabinet.sub':"Qui décide quoi, depuis quand, et comment iel vote.",'nav.projets':"Projets de loi",
     'nav.votes':"Votes",'nav.quoideneuf':"Quoi de neuf",'nav.compte':"Compte & à propos",'nav.trouve':"Trouvez votre député",
-    'nav.promesses':"Promesses",'filter.sujets':"Sujets",'prom.bandsub':"Ce qui a été promis en 2025, et ce que la législature en a fait. Sans verdict.",'prom.h':"Pourquoi aucun verdict ?",'prom.p1':"Parce qu'une mesure écrite dans une loi sanctionnée n'est pas forcément appliquée, ni financée comme promis — et parce que trancher « tenue » ou « brisée » à votre place, avec les seules données d'un site de veille, serait malhonnête.",'prom.p2':"Vous avez donc les deux côtés, chacun sourcé : <b>à gauche</b>, la promesse citée mot pour mot dans la plateforme du parti, avec le lien vers le document. <b>À droite</b>, les projets de loi qui la mettent en œuvre, avec la phrase du sommaire officiel qui le prouve. Le jugement vous revient.",'h.promesses':"Promesses électorales",'prom.lex':"Les engagements du parti au pouvoir à l'élection du 28 avril 2025, cités mot pour mot dans sa plateforme, en regard des lois qui ont suivi. Sans verdict.",'prom.lex.cta':"Voir les promesses →",'footer.promesses':"Promesses",'droits.h':"Qui défend vos droits devant les tribunaux",'droits.intro':"Des organismes de bienfaisance qui contestent des lois et des décisions gouvernementales devant les tribunaux. Ils ne défendent pas les mêmes positions — c'est voulu. DossierCanada n'est lié à aucun d'eux et n'en recommande aucun ; ils sont classés par ordre alphabétique.",'droits.ccla.n':"Association canadienne des libertés civiles (CCLA)",'droits.ccla.d':"défend les droits de la personne et les libertés civiles, notamment en matière de sécurité nationale, de vie privée, de police et de justice pénale.",'droits.ccf.d':"se consacre à la défense des droits et libertés constitutionnels, et conteste en cour les actions gouvernementales qu'elle juge inconstitutionnelles.",'droits.jccf.d':"défend les droits et libertés constitutionnels des Canadiens par des recours devant les tribunaux et de l'éducation.",'droits.leaf.d':"utilise les recours judiciaires, la réforme du droit et l'éducation juridique pour faire avancer l'égalité des genres, depuis 1985.",'footer.droits':"Vos droits",'nav.lexique':"Lexique",'nav.personnes':"Qui gravite autour",'nav.lobby':"Registre des lobbyistes",'nav.petitions':"Pétitions",'nav.apropos':"D'où viennent ces données",
+    'nav.promesses':"Promesses",'filter.sujets':"Sujets",'prom.bandsub':"Ce qui a été promis en 2025, et ce que la législature en a fait. Sans verdict.",'prom.h':"Pourquoi aucun verdict ?",'prom.p1':"Parce qu'une mesure écrite dans une loi sanctionnée n'est pas forcément appliquée, ni financée comme promis — et parce que trancher « tenue » ou « brisée » à votre place, avec les seules données d'un site de veille, serait malhonnête.",'prom.p2':"Vous avez donc les deux côtés, chacun sourcé : <b>à gauche</b>, la promesse citée mot pour mot dans la plateforme du parti, avec le lien vers le document. <b>À droite</b>, les projets de loi qui la mettent en œuvre, avec la phrase du sommaire officiel qui le prouve. Le jugement vous revient.",'h.promesses':"Promesses électorales",'prom.lex':"Les engagements du parti au pouvoir à l'élection du 28 avril 2025, cités mot pour mot dans sa plateforme, en regard des lois qui ont suivi. Sans verdict.",'prom.lex.cta':"Voir les promesses →",'footer.promesses':"Promesses",'droits.h':"Qui défend vos droits devant les tribunaux",'droits.intro':"Des organismes de bienfaisance qui contestent des lois et des décisions gouvernementales devant les tribunaux. Ils ne défendent pas les mêmes positions — c'est voulu. DossierCanada n'est lié à aucun d'eux et n'en recommande aucun ; ils sont classés par ordre alphabétique.",'droits.ccla.n':"Association canadienne des libertés civiles (CCLA)",'droits.ccla.d':"défend les droits de la personne et les libertés civiles, notamment en matière de sécurité nationale, de vie privée, de police et de justice pénale.",'droits.ccf.d':"se consacre à la défense des droits et libertés constitutionnels, et conteste en cour les actions gouvernementales qu'elle juge inconstitutionnelles.",'droits.jccf.d':"défend les droits et libertés constitutionnels des Canadiens par des recours devant les tribunaux et de l'éducation.",'droits.leaf.d':"utilise les recours judiciaires, la réforme du droit et l'éducation juridique pour faire avancer l'égalité des genres, depuis 1985.",'footer.droits':"Vos droits",'nav.lexique':"Lexique",'nav.archives':"Archives",'arch.h1':"Archives du Parlement",'arch.sub':"Les projets de loi et les votes des législatures terminées",'nav.personnes':"Qui gravite autour",'nav.lobby':"Registre des lobbyistes",'nav.petitions':"Pétitions",'nav.apropos':"D'où viennent ces données",
     'stat.ministres':"Députés",'stat.projets':"Projets de loi",'stat.votes':"Votes enregistrés",
     'h.composition':"Composition de la Chambre des communes",
     'h.billsrecent':"Projets de loi récemment actifs",
@@ -115,7 +115,7 @@ const translations = {
   en: {
     'nav.close':"Close",'nav.apercu':"Overview",'nav.ministres':"MPs",'nav.cabinet':"Ministers",'h.cabinet':"The federal Cabinet",'cabinet.sub':"Who decides what, since when, and how they vote.",'nav.projets':"Bills",
     'nav.votes':"Votes",'nav.quoideneuf':"What's new",'nav.compte':"Account & about",'nav.trouve':"Find your MP",
-    'nav.promesses':"Promises",'filter.sujets':"Topics",'prom.bandsub':"What was promised in 2025, and what Parliament did with it. No verdict.",'prom.h':"Why no verdict?",'prom.p1':"Because a measure written into an assented law is not necessarily applied, or funded as promised — and because calling it “kept” or “broken” on your behalf, using only what a monitoring site can read, would be dishonest.",'prom.p2':"So you get both sides, each sourced: <b>on the left</b>, the promise quoted word for word from the party's own platform, with a link to the document. <b>On the right</b>, the bills that implement it, with the sentence from the official summary that proves it. The judgment is yours.",'h.promesses':"Election promises",'prom.lex':"The governing party's commitments in the April 28, 2025 election, quoted word for word from its platform, beside the laws that followed. No verdict.",'prom.lex.cta':"See the promises →",'footer.promesses':"Promises",'droits.h':"Who defends your rights in court",'droits.intro':"Charities that challenge laws and government decisions in court. They do not hold the same positions — on purpose. DossierCanada is not affiliated with any of them and recommends none; they are listed alphabetically.",'droits.ccla.n':"Canadian Civil Liberties Association (CCLA)",'droits.ccla.d':"defends human rights and civil liberties, including on national security, privacy, policing and criminal justice.",'droits.ccf.d':"is dedicated to defending constitutional rights and freedoms, and challenges in court government action it considers unconstitutional.",'droits.jccf.d':"defends Canadians' constitutional rights and freedoms through litigation and education.",'droits.leaf.d':"uses litigation, law reform and public legal education to advance gender equality, since 1985.",'footer.droits':"Your rights",'nav.lexique':"Glossary",'nav.personnes':"Who's involved",'nav.lobby':"Lobbyist registry",'nav.petitions':"Petitions",'nav.apropos':"Where this data comes from",
+    'nav.promesses':"Promises",'filter.sujets':"Topics",'prom.bandsub':"What was promised in 2025, and what Parliament did with it. No verdict.",'prom.h':"Why no verdict?",'prom.p1':"Because a measure written into an assented law is not necessarily applied, or funded as promised — and because calling it “kept” or “broken” on your behalf, using only what a monitoring site can read, would be dishonest.",'prom.p2':"So you get both sides, each sourced: <b>on the left</b>, the promise quoted word for word from the party's own platform, with a link to the document. <b>On the right</b>, the bills that implement it, with the sentence from the official summary that proves it. The judgment is yours.",'h.promesses':"Election promises",'prom.lex':"The governing party's commitments in the April 28, 2025 election, quoted word for word from its platform, beside the laws that followed. No verdict.",'prom.lex.cta':"See the promises →",'footer.promesses':"Promises",'droits.h':"Who defends your rights in court",'droits.intro':"Charities that challenge laws and government decisions in court. They do not hold the same positions — on purpose. DossierCanada is not affiliated with any of them and recommends none; they are listed alphabetically.",'droits.ccla.n':"Canadian Civil Liberties Association (CCLA)",'droits.ccla.d':"defends human rights and civil liberties, including on national security, privacy, policing and criminal justice.",'droits.ccf.d':"is dedicated to defending constitutional rights and freedoms, and challenges in court government action it considers unconstitutional.",'droits.jccf.d':"defends Canadians' constitutional rights and freedoms through litigation and education.",'droits.leaf.d':"uses litigation, law reform and public legal education to advance gender equality, since 1985.",'footer.droits':"Your rights",'nav.lexique':"Glossary",'nav.archives':"Archives",'arch.h1':"Parliament archives",'arch.sub':"Bills and votes from Parliaments that have ended",'nav.personnes':"Who's involved",'nav.lobby':"Lobbyist registry",'nav.petitions':"Petitions",'nav.apropos':"Where this data comes from",
     'stat.ministres':"MPs",'stat.projets':"Bills",'stat.votes':"Votes recorded",
     'h.composition':"Composition of the House of Commons",
     'h.billsrecent':"Recently active bills",
@@ -513,11 +513,26 @@ function rouvrirTemoins(){
 const DATA_FILES = { bills: '/data/d-bills.js', people: '/data/d-people.js', votes: '/data/d-votes.js', promesses: '/data/d-promises.js' };
 const VIEW_DATA = {
   apercu: ['bills'], projets: ['bills'], ministres: ['people'],
-  cabinet: ['people', 'bills'], votes: ['votes'], lexique: [], bd: [], regles: [],
+  cabinet: ['people', 'bills'], votes: ['votes'], archives: [], lexique: [], bd: [], regles: [],
   // Promesses : le texte de l'engagement vient de d-promises.js, mais l'étape du
   // projet de loi qui le met en oeuvre vient du jeu « bills ». D'où les deux.
   promesses: ['promesses', 'bills'],
 };
+/* ARCHIVES — /projets-de-loi?archives=45 et /votes?archives=45 (/en/bills, /en/votes) lisent
+   les projets et les votes figés d'une législature terminée, dans data/archives/<n>/ (copiés à
+   chaque build par scripts/archive-legislature.js). ARCHIVES vient du noyau (site-data.js).
+   Seulement sur ces deux pages, et seulement pour une législature terminée : sinon, le direct. */
+let _archiveN;
+function archiveN(){
+  if(_archiveN !== undefined) return _archiveN;
+  _archiveN = null;
+  const n = parseInt(new URLSearchParams(location.search).get('archives'), 10);
+  const fini = (typeof ARCHIVES !== 'undefined' && ARCHIVES && ARCHIVES.legislatures) || [];
+  let v; try { v = viewFromPath(); } catch(e){ _archiveN = undefined; return null; }   // routage pas encore prêt
+  if(n && fini.includes(n) && (v === 'projets' || v === 'votes')) _archiveN = n;
+  return _archiveN;
+}
+const archiveBase = () => archiveN() ? '/data/archives/' + archiveN() : '/data';
 const dataLoaded = {}, dataLoading = {};
 const hasData = (name) => dataLoaded[name] === true;
 function ensureData(names){
@@ -525,7 +540,7 @@ function ensureData(names){
     if(dataLoaded[name]) return Promise.resolve();
     if(!dataLoading[name]) dataLoading[name] = new Promise((resolve, reject) => {
       const el = document.createElement('script');
-      el.src = DATA_FILES[name];
+      el.src = (archiveN() && (name === 'bills' || name === 'votes')) ? archiveBase() + '/d-' + name + '.js' : DATA_FILES[name];
       el.onload = () => { dataLoaded[name] = true; rehydrate(name); buildIndexes(); resolve(); };
       el.onerror = () => { dataLoading[name] = null; reject(new Error('données « ' + name + ' » indisponibles')); };
       document.head.appendChild(el);
@@ -2211,11 +2226,13 @@ function pctLeg(b, isEn, detail){
   const p = Math.round(b.cast / b.eligible * 100);
   return (isEn ? `${p}%` : `${p} %`) + (detail ? ` (${b.cast}/${b.eligible})` : '');
 }
-// « 3 PL » mène aux projets de ce·tte parrain·e (?parrain=Nom). Pas d'archive des
-// législatures passées sur DossierCanada : le lien ne vaut que pour la législature en cours.
+// « 3 PL » mène aux projets de ce·tte parrain·e (?parrain=Nom). Législature passée : vers son
+// archive (?archives=N&parrain=Nom), seulement si elle existe (ARCHIVES.legislatures).
 function lienParrain(d, b, texte, isEn){
-  if(!b.pl || b.passe || !d) return texte;
-  const q = new URLSearchParams({ parrain: d.name });
+  if(!b.pl || !d) return texte;
+  const fini = (typeof ARCHIVES !== 'undefined' && ARCHIVES && ARCHIVES.legislatures) || [];
+  if(b.passe && !fini.includes(Number(b.leg))) return texte;
+  const q = new URLSearchParams(b.passe ? { archives: b.leg, parrain: d.name } : { parrain: d.name });
   return `<a class="leg-lien" href="${isEn ? '/en/bills' : '/projets-de-loi'}?${q}" onclick="event.stopPropagation()">${texte}</a>`;
 }
 function pastillesLegislatures(d, isEn, presidingShort){
@@ -2450,7 +2467,7 @@ let billTextsPromise = null;
 function ensureBillTexts(){
   if(billTexts) return Promise.resolve(billTexts);
   if(!billTextsPromise){
-    billTextsPromise = fetch('/data/bill-texts.json')
+    billTextsPromise = fetch(archiveBase() + '/bill-texts.json')
       .then(r => r.ok ? r.json() : Promise.reject(new Error(r.status)))
       .catch(() => ({}))            // hors ligne ou fichier absent : on dégrade, on ne casse pas
       .then(d => { billTexts = d || {}; return billTexts; });
@@ -3210,14 +3227,62 @@ function renderBills(keyword){
   document.getElementById('statProjets').textContent = bills.length;
 }
 
+// La bande « vous êtes dans les archives », sous le titre de /projets-de-loi et de /votes.
+// Hors archives, rien : l'onglet Archives mène aux législatures terminées.
+function renderArchivesNote(){
+  const n = archiveN(), isEn = currentLang === 'en';
+  const leg = n ? (isEn ? `the ${ordinalLeg(n, true)} Parliament` : `${ordinalLeg(n, false)} législature`) : '';
+  for(const [view, en, fr] of [
+    ['projets', `These bills belong to a Parliament that has ended. <a href="/en/bills">← Current bills</a>`, `Ces projets datent d'une législature terminée. <a href="/projets-de-loi">← Projets de loi en cours</a>`],
+    ['votes', `These votes belong to a Parliament that has ended. <a href="/en/votes">← Current votes</a>`, `Ces votes datent d'une législature terminée. <a href="/votes">← Votes en cours</a>`],
+  ]){
+    const sec = document.getElementById('view-' + view);
+    if(!sec) continue;
+    let note = sec.querySelector(':scope > .archives-note');
+    if(!n){ if(note) note.remove(); continue; }
+    if(!note){
+      note = document.createElement('div');
+      note.className = 'archives-note';
+      const band = sec.querySelector(':scope > .page-band');
+      band ? band.after(note) : sec.prepend(note);
+    }
+    note.innerHTML = isEn ? `<b>Archive of ${leg}.</b> ${en}` : `<b>Archives de la ${leg}.</b> ${fr}`;
+  }
+  // Les pétitions sont celles d'aujourd'hui : pas de place dans une archive.
+  const pt = document.getElementById('petitionsToggle');
+  if(pt && n) pt.style.display = 'none';
+}
+// La page /archives : une carte par législature terminée, la plus récente d'abord. Avant la
+// première, une ligne dit quand la législature en cours y entrera.
+function renderArchives(){
+  const liste = document.getElementById('archivesListe');
+  if(!liste) return;
+  const isEn = currentLang === 'en';
+  const A = (typeof ARCHIVES !== 'undefined' && ARCHIVES) || {};
+  const fini = (A.legislatures || []).slice().sort((a, b) => b - a);
+  const cour = A.enDirect || parseInt(String(typeof SESSION !== 'undefined' ? SESSION : ''), 10);
+  const nom = (l) => isEn ? `${ordinalLeg(l, true)} Parliament` : `${ordinalLeg(l, false)} législature`;
+  const pB = isEn ? '/en/bills' : '/projets-de-loi', pV = isEn ? '/en/votes' : '/votes';
+  if(!fini.length){
+    liste.innerHTML = cour ? `<li><p class="regles-intro">${isEn
+      ? `The ${nom(cour)} will be archived here when the ${nom(cour + 1)} opens. Until then, its bills and votes are on the <a href="${pB}">Bills</a> and <a href="${pV}">Votes</a> pages.`
+      : `La ${nom(cour)} sera archivée ici à l'ouverture de la ${nom(cour + 1)}. D'ici là, ses projets de loi et ses votes sont sur les pages <a href="${pB}">Projets de loi</a> et <a href="${pV}">Votes</a>.`}</p></li>` : '';
+    return;
+  }
+  liste.innerHTML = fini.map(l => `<li class="archives-carte"><h3>${isEn ? 'The ' + nom(l) : 'La ' + nom(l)}</h3>
+    <p class="archives-liens"><a href="${pB}?archives=${l}">${isEn ? 'Bills of the ' + nom(l) : 'Projets de loi de la ' + nom(l)} →</a><br>
+    <a href="${pV}?archives=${l}">${isEn ? 'Votes of the ' + nom(l) : 'Votes de la ' + nom(l)} →</a></p></li>`).join('');
+}
 function renderPageBandCounts(){
   const isEn = currentLang === 'en';
   const loc = isEn ? 'en-CA' : 'fr-CA';
   // COUNTS (noyau) et non la longueur des tableaux : sur une page dont l'onglet
   // n'est pas chargé, ceux-ci sont vides et le titre afficherait « 0 ».
   const n = arr => (typeof arr === 'number' ? arr : (arr ? arr.length : 0)).toLocaleString(loc);
-  const C = typeof COUNTS !== 'undefined' ? COUNTS : {};
+  const C = archiveN() ? { bills, votes, senateVotes } : (typeof COUNTS !== 'undefined' ? COUNTS : {});
   const set = (id, txt) => { const e = document.getElementById(id); if(e) e.textContent = txt; };
+  renderArchivesNote();
+  renderArchives();
   // Titres de bande = le H1 de chaque page : toujours ancrés au fédéral (Communes,
   // Parlement…) pour ne pas se confondre avec DossierQuébec dans les résultats.
   // Sur la page d'un projet, le grand titre nomme le projet — c'est le sujet de
@@ -3932,7 +3997,7 @@ function setVoteChamber(c){
 const ballotCache = new Map();
 function loadBallots(key){
   if(ballotCache.has(key)) return Promise.resolve(ballotCache.get(key));
-  return fetch('/data/votes/' + key + '.json')
+  return fetch(archiveBase() + '/votes/' + key + '.json')
     .then(r => { if(!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
     .then(j => { ballotCache.set(key, j); return j; });
 }
@@ -4338,12 +4403,12 @@ document.getElementById('journalPlus')?.addEventListener('click', () => { journa
    anglais. Une page anglaise sous une adresse française se lit mal, et Google
    associe les mots de l'adresse à la langue de la page. Doit rester identique
    à VIEWS dans scripts/seo-pages.js, qui génère les fichiers et le sitemap. */
-const VIEW_SLUGS = { apercu:'/', ministres:'/deputes', cabinet:'/ministres', projets:'/projets-de-loi', votes:'/votes', lexique:'/lexique', promesses:'/promesses', bd:'/mises-a-jour', regles:'/regles' };
-const VIEW_SLUGS_EN = { apercu:'/', ministres:'/mps', cabinet:'/ministers', projets:'/bills', votes:'/votes', lexique:'/glossary', promesses:'/promises', bd:'/updates', regles:'/rules' };
-const SLUG_VIEWS = { '':'apercu', 'deputes':'ministres', 'ministres':'cabinet', 'projets-de-loi':'projets', 'votes':'votes', 'lexique':'lexique', 'promesses':'promesses', 'mises-a-jour':'bd', 'regles':'regles' };
+const VIEW_SLUGS = { apercu:'/', ministres:'/deputes', cabinet:'/ministres', projets:'/projets-de-loi', votes:'/votes', archives:'/archives', lexique:'/lexique', promesses:'/promesses', bd:'/mises-a-jour', regles:'/regles' };
+const VIEW_SLUGS_EN = { apercu:'/', ministres:'/mps', cabinet:'/ministers', projets:'/bills', votes:'/votes', archives:'/archives', lexique:'/glossary', promesses:'/promises', bd:'/updates', regles:'/rules' };
+const SLUG_VIEWS = { '':'apercu', 'deputes':'ministres', 'ministres':'cabinet', 'projets-de-loi':'projets', 'votes':'votes', 'archives':'archives', 'lexique':'lexique', 'promesses':'promesses', 'mises-a-jour':'bd', 'regles':'regles' };
 // L'ancienne adresse anglaise (/en/deputes) reste comprise : Vercel la redirige,
 // mais un lien partagé avant le changement doit aussi s'ouvrir sans recharger.
-const SLUG_VIEWS_EN = { '':'apercu', 'mps':'ministres', 'ministers':'cabinet', 'bills':'projets', 'votes':'votes', 'glossary':'lexique', 'promises':'promesses', 'updates':'bd', 'rules':'regles', ...SLUG_VIEWS };
+const SLUG_VIEWS_EN = { '':'apercu', 'mps':'ministres', 'ministers':'cabinet', 'bills':'projets', 'votes':'votes', 'archives':'archives', 'glossary':'lexique', 'promises':'promesses', 'updates':'bd', 'rules':'regles', ...SLUG_VIEWS };
 // Hôte canonique : l'apex dossiercanada.ca renvoie un 308 vers www, donc
 // canonical, hreflang, og:url et sitemap pointent sur www (jamais sur une redirection).
 const SITE_ORIGIN = 'https://www.dossiercanada.ca';
@@ -4373,6 +4438,10 @@ const PAGE_META = {
                en:"Recorded votes in Canada's House of Commons — DossierCanada",
                dfr:"Chaque vote par appel nominal de la Chambre des communes du Canada : résultat, marge et vote de chaque député·e, regroupé par parti. Source : noscommunes.ca.",
                den:"Every recorded division in Canada's House of Commons: which MPs voted yea, nay or were paired, and by what margin. The official record, as published." },
+  archives:  { fr:"Archives du Parlement du Canada, par législature — DossierCanada",
+               en:"Canada's Parliament archives, by Parliament — DossierCanada",
+               dfr:"Les projets de loi fédéraux et les votes aux Communes des législatures terminées du Parlement du Canada, figés tels qu'à la fin de chaque législature.",
+               den:"Federal bills and House of Commons votes from Parliaments that have ended, frozen as they stood at the end of each Parliament of Canada." },
   lexique:   { fr:"Lexique du Parlement du Canada, sans jargon — DossierCanada",
                en:"Glossary of Canada's Parliament, jargon-free — DossierCanada",
                dfr:"Le vocabulaire du Parlement du Canada traduit en mots de tous les jours : étapes d'un projet de loi, vote nominal, sanction royale, et qui fait quoi.",
@@ -4477,7 +4546,7 @@ function syncNavHrefs(view){
   const other = currentLang === 'fr' ? 'en' : 'fr';
   const lt = document.getElementById('langToggle');
   if(lt){
-    lt.setAttribute('href', pathForView(view, other));
+    lt.setAttribute('href', pathForView(view, other) + (archiveN() ? location.search : ''));
     lt.setAttribute('hreflang', other); lt.setAttribute('lang', other);
     lt.textContent = other.toUpperCase();
   }
@@ -4529,6 +4598,7 @@ window.addEventListener('popstate', ()=>{
 document.addEventListener('click', e=>{
   const a = e.target.closest && e.target.closest('a[data-view]');
   if(!a || e.defaultPrevented || !isPlainLeftClick(e)) return;
+  if(archiveN()) return;   // archive chargée : on recharge, pour retrouver les données en direct
   e.preventDefault();
   goToTab(a.dataset.view);
 });
