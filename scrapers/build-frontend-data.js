@@ -462,8 +462,38 @@ function main() {
   const WIKI_PATH = 'data/wikipedia.json';
   const wikiById = existsSync(WIKI_PATH) ? read(WIKI_PATH).liens : {};
 
+  // Historique par législature (data/presences-par-legislature.json) : la
+  // législature en cours est réécrite à chaque passage, les précédentes restent
+  // figées. Chaque entrée : { cast, eligible, pl } (pl = projets parrainés).
+  const HIST_PATH = 'data/presences-par-legislature.json';
+  const legCourante = String(session || '').split('-')[0] || null;
+  const hist = existsSync(HIST_PATH) ? read(HIST_PATH) : { legislatures: {} };
+  if (!hist.legislatures) hist.legislatures = {};
+  if (legCourante) {
+    const plParPid = new Map();
+    for (const b of bills) {
+      if (b.sponsorPersonId == null || String(b.parliament) !== legCourante) continue;
+      const k = String(b.sponsorPersonId);
+      plParPid.set(k, (plParPid.get(k) || 0) + 1);
+    }
+    const courante = {};
+    for (const d of deputesOut) {
+      const vr = d.votingRecord;
+      courante[d.id] = { cast: vr.cast, eligible: vr.eligible, pl: plParPid.get(String(d.id)) || 0 };
+    }
+    hist.courante = Number(legCourante);
+    hist.legislatures[legCourante] = courante;
+    writeFileSync(HIST_PATH, JSON.stringify(hist, null, 1) + '\n');
+  }
+  // Par député·e : [[législature, votes, admissibles, PL], ...], la plus récente d'abord.
+  const legsDe = (pid) => Object.keys(hist.legislatures)
+    .map(Number).sort((a, z) => z - a)
+    .map((n) => { const r = hist.legislatures[n][pid]; return r ? [n, r.cast, r.eligible, r.pl] : null; })
+    .filter(Boolean);
+
   // Députés prêts pour le rendu (roster fédéral + bilan de votes précalculé).
   const frontendDeputes = deputesOut.map((d) => ({
+    legs: legsDe(d.id),
     id: d.id,
     email: emailById[d.id] ?? null,
     name: d.name,
