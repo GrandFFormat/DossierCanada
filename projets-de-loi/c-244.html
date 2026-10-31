@@ -65,7 +65,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=fe5ce0a446">
+<link rel="stylesheet" href="/assets/app.css?v=4f379b8c62">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -307,7 +307,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <div class="expand-hint" id="hint-bill-details-pr13596532-13596532">− Masquer le résumé</div>
       <div class="bill-summary open" id="bill-details-pr13596532-13596532">
         <div class="bill-cols">
-          <div class="bill-col-main"><div class="bill-sum-slot" data-bill="13596532"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Donne au projet un nom court : la « Loi sur la propreté des côtes ».</li><li>Élargit l'interdiction de jeter des substances en mer : il sera aussi interdit de laisser quelqu'un d'autre le faire.</li><li>Vise autant les personnes que les navires, dans les zones marines sous responsabilité du Canada.</li><li>Interdit au propriétaire d'un bateau de le céder à quelqu'un qui n'a pas les moyens, les ressources ou l'intention de bien l'entretenir.</li><li>Couvre aussi le propriétaire qui ferme les yeux sur cette situation au lieu de vérifier.</li><li>Cherche ainsi à éviter que des bateaux deviennent des épaves ou soient abandonnés après une vente.</li><li>Ajoute cette nouvelle interdiction à la liste des infractions punissables prévue par la Loi sur les épaves et les bâtiments abandonnés ou dangereux.</li></ul><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div><details class="bvote bill-divs" data-bill="13596532" onclick="event.stopPropagation()" ontoggle="if(this.open) remplirVotesProjet(this)"><summary><span class="bvote-title">Qui a voté pour, contre ou s’est abstenu : 202 / 125 / 0<span class="bdiv-tally"></span></span></summary><div class="bvote-body"></div></details></div>
+          <div class="bill-col-main"><div class="bill-sum-slot" data-bill="13596532"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Donne au projet un nom court : la « Loi sur la propreté des côtes ».</li><li>Élargit l'interdiction de jeter des substances en mer : il sera aussi interdit de laisser quelqu'un d'autre le faire.</li><li>Vise autant les personnes que les navires, dans les zones marines sous responsabilité du Canada.</li><li>Interdit au propriétaire d'un bateau de le céder à quelqu'un qui n'a pas les moyens, les ressources ou l'intention de bien l'entretenir.</li><li>Couvre aussi le propriétaire qui ferme les yeux sur cette situation au lieu de vérifier.</li><li>Cherche ainsi à éviter que des bateaux deviennent des épaves ou soient abandonnés après une vente.</li><li>Ajoute cette nouvelle interdiction à la liste des infractions punissables prévue par la Loi sur les épaves et les bâtiments abandonnés ou dangereux.</li></ul><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div><details class="bvote bill-divs" data-bill="13596532" data-sujet="Projet de loi C-244, Loi modifiant la Loi canadienne sur la protection de I'environnement (1999) et la Loi sur les épaves et les bâtiments abandonnés ou dangereux" onclick="event.stopPropagation()" ontoggle="if(this.open) remplirVotesProjet(this)"><summary><span class="bvote-title">Qui a voté pour, contre ou s’est abstenu : 202 / 125 / 0<span class="bdiv-tally"></span></span></summary><div class="bvote-body"></div></details></div>
           <aside class="bill-col-side">
             <div class="bill-side-label">Dernière activité</div>
             <div class="bill-side-box">2026-02-25 — À l'étape du rapport à la Chambre des communes</div>
@@ -315,7 +315,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
             <div class="bill-share-row">
     <span class="bill-share-label">Partager :</span>
     <button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13596532, 'x', event)" aria-label="Partager sur X">𝕏</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13596532, 'fb', event)" aria-label="Partager sur Facebook">FB</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13596532, 'copy', event)" aria-label="Copier le lien">⧉</button>
-  </div><div class="bill-cafe-row"><a class="bill-cafe-btn" href="https://donate.stripe.com/fZu6oH4pt5OY3sY5Fy9fW01" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="Offrez-nous un café (s’ouvre dans un nouvel onglet)">☕ Donnez un coup de pouce</a></div>
+  </div><div class="bill-cafe-row"><a class="bill-cafe-btn" href="https://donate.stripe.com/fZu6oH4pt5OY3sY5Fy9fW01" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="Offrez-nous un café (s’ouvre dans un nouvel onglet)">☕ Soutenez la cause</a></div>
           </aside>
         </div>
         
@@ -616,7 +616,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=a961150e67"></script>
+<script defer src="/assets/app.js?v=5cf1bdc094"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->
