@@ -582,7 +582,10 @@
   .bvote-body p{margin:0 0 8px;}
   .bvote-note{font-size:11px; color:var(--slate);}
   .bvote-part{font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:700; margin:12px 0 6px;}
-  /* Case des votes nominaux d'un projet (billDivisionsBox, 30 oct. 2026) : décompte du dernier vote au titre, cartes de /votes dedans. */
+  /* Lien vers /votes sous la bande des étapes (l'onglet Votes a quitté la barre du haut, 30 oct. 2026). */
+.tous-votes{margin:4px 0 14px; font-family:'IBM Plex Mono',monospace; font-size:12px;}
+.tous-votes a{color:var(--ink); font-weight:700; text-decoration:underline; text-underline-offset:3px;}
+/* Case des votes nominaux d'un projet (billDivisionsBox, 30 oct. 2026) : décompte du dernier vote au titre, cartes de /votes dedans. */
 .bdiv-tally{font-weight:400; text-transform:none; letter-spacing:0; color:var(--slate);}
 .bill-divs .vote-card{margin:10px 0 0; box-shadow:none;}
 .bill-divs .vc-nrow .bill-votes-mail, .bill-divs .vc-nrow .bill-votes-copie{margin-left:4px; text-decoration:none;}

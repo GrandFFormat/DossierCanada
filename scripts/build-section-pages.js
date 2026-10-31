@@ -190,7 +190,8 @@ function buildPage(page, previous) {
     h = h.replace('<a class="active" data-view="apercu" href="/" aria-current="page">', '<a data-view="apercu" href="/">');
     // Les mises à jour (« et moi »), les promesses et les règles n'ont pas d'onglet :
     // on y arrive du pied de page ou du lexique. Aucun lien de menu à activer.
-    if (view !== 'bd' && view !== 'promesses' && view !== 'regles') {
+    // Votes non plus depuis le 30 oct. 2026 (pied de page et page des projets de loi).
+    if (view !== 'bd' && view !== 'promesses' && view !== 'regles' && view !== 'votes') {
       const navRe = new RegExp('<a data-view="' + view + '" href="([^"]*)">');
       must(navRe.test(h), 'lien de menu data-view="' + view + '" absent');
       h = h.replace(navRe, '<a class="active" data-view="' + view + '" href="$1" aria-current="page">');
