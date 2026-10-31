@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T01:41:14.567Z",
+  "generatedAt": "2026-10-31T14:34:11.609Z",
   "session": "45-1",
   "meta": {
     "counts": {
@@ -301,8 +301,8 @@
         "fr": "L’hon. Marc Miller"
       },
       "status": {
-        "en": "At second reading in the House of Commons",
-        "fr": "À la deuxième lecture à la Chambre des communes"
+        "en": "At consideration in committee in the House of Commons",
+        "fr": "À l'examen en comité à la Chambre des communes"
       },
       "state": "encours",
       "milestones": [
@@ -322,8 +322,8 @@
       "royalAssent": null,
       "reinstated": false,
       "latestActivity": {
-        "en": "At second reading in the House of Commons",
-        "fr": "À la deuxième lecture à la Chambre des communes",
+        "en": "At consideration in committee in the House of Commons",
+        "fr": "À l'examen en comité à la Chambre des communes",
         "date": "2026-10-29"
       },
       "lastActivity": "2026-10-29",
@@ -6076,8 +6076,8 @@
         "fr": "L’hon. François-Philippe Champagne"
       },
       "status": {
-        "en": "At consideration in committee in the House of Commons",
-        "fr": "À l'examen en comité à la Chambre des communes"
+        "en": "At report stage in the House of Commons",
+        "fr": "À l'étape du rapport à la Chambre des communes"
       },
       "state": "encours",
       "milestones": [
@@ -6097,8 +6097,8 @@
       "royalAssent": null,
       "reinstated": false,
       "latestActivity": {
-        "en": "At consideration in committee in the House of Commons",
-        "fr": "À l'examen en comité à la Chambre des communes",
+        "en": "At report stage in the House of Commons",
+        "fr": "À l'étape du rapport à la Chambre des communes",
         "date": "2026-06-03"
       },
       "lastActivity": "2026-06-03",
@@ -9535,10 +9535,10 @@
         "fr": "L'hon. Rosemary Moodie"
       },
       "status": {
-        "en": "At second reading in the House of Commons",
-        "fr": "À la deuxième lecture à la Chambre des communes"
+        "en": "Bill not proceeded with",
+        "fr": "Projet de loi abandonné"
       },
-      "state": "encours",
+      "state": "rejete",
       "milestones": [
         {
           "stage": "senate_first_reading",
@@ -9568,8 +9568,8 @@
       "royalAssent": null,
       "reinstated": false,
       "latestActivity": {
-        "en": "At second reading in the House of Commons",
-        "fr": "À la deuxième lecture à la Chambre des communes",
+        "en": "Bill not proceeded with",
+        "fr": "Projet de loi abandonné",
         "date": "2026-03-12"
       },
       "lastActivity": "2026-03-12",
