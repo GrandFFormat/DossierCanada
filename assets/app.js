@@ -2586,7 +2586,7 @@ function billDivisionsBox(b, isEn){
   const count = isEn ? `${n} recorded division${n > 1 ? 's' : ''}` : `${n} vote${n > 1 ? 's' : ''} nomina${n > 1 ? 'ux' : 'l'}`;
   const paren = n > 1 ? ` (${[senat, stage, count].filter(Boolean).join(' · ')})` : (senat ? ` (${senat})` : '');
   const title = isEn ? 'Who voted for, against or abstained' : 'Qui a voté pour, contre ou s’est abstenu';
-  return `<details class="bvote bill-divs" data-bill="${b.id}" onclick="event.stopPropagation()" ontoggle="if(this.open) remplirVotesProjet(this)"><summary><span class="bvote-title">${title}${isEn ? ':' : ' :'} ${tally}<span class="bdiv-tally">${paren}</span></span></summary><div class="bvote-body"></div></details>`;
+  return `<details class="bvote bill-divs" data-bill="${b.id}" data-sujet="${String((isEn ? 'Bill' : 'Projet de loi') + ' ' + b.num + ', ' + ((isEn ? b.title?.en : b.title?.fr) || b.title?.fr || b.title?.en || '')).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;')}" onclick="event.stopPropagation()" ontoggle="if(this.open) remplirVotesProjet(this)"><summary><span class="bvote-title">${title}${isEn ? ':' : ' :'} ${tally}<span class="bdiv-tally">${paren}</span></span></summary><div class="bvote-body"></div></details>`;
 }
 function remplirVotesProjet(box){
   const corps = box.querySelector('.bvote-body');
@@ -4234,11 +4234,20 @@ function fillVoteNames(detail){
   const bodies = [...wrap.querySelectorAll('.vc-nbody')];
   const vide = currentLang === 'en' ? 'Nobody' : 'Personne';
   bodies.forEach(b => { b.innerHTML = `<div class="vc-empty">${currentLang === 'en' ? 'Loading…' : 'Chargement…'}</div>`; });
+  // Dans la case d'un projet seulement : ✉ (objet = le projet) et ⧉ pour les élu·e·s en poste, gris pour les ancien·ne·s.
+  const boite = detail.closest('.bill-divs');
+  const sujet = boite ? encodeURIComponent(boite.dataset.sujet || '') : '';
+  const isEn = currentLang === 'en';
+  const extra = r => {
+    if(!boite) return '';
+    if(!r.m) return '';
+    return ` <a class="bill-votes-mail" href="mailto:${r.m}?subject=${sujet}" onclick="event.stopPropagation()" title="${isEn ? 'Write to' : 'Écrire à'} ${r.n}" aria-label="${isEn ? 'Write to' : 'Écrire à'} ${r.n}">✉</a><button type="button" class="bill-votes-copie" onclick="event.stopPropagation(); copierCourriel(this, '${r.m}')" title="${isEn ? 'Copy the address' : 'Copier l’adresse'}" aria-label="${isEn ? 'Copy the address of' : 'Copier l’adresse de'} ${r.n}">⧉</button>`;
+  };
   loadBallots(key)
     .then(names => bodies.forEach(b => {
       const rows = names[b.dataset.group] || [];
       b.innerHTML = rows.length
-        ? rows.map(r => `<div class="vc-nrow"><span class="vc-chip" style="background:${colorOf(r.c)}"></span>${r.n}</div>`).join('')
+        ? rows.map(r => `<div class="vc-nrow${boite && r.f ? ' former' : ''}"><span class="vc-chip" style="background:${colorOf(r.c)}"></span>${r.n}${extra(r)}</div>`).join('')
         : `<div class="vc-empty">${vide}</div>`;
     }))
     .catch(() => { bodies.forEach(b => { b.innerHTML = `<div class="vc-empty">${currentLang === 'en' ? 'Names unavailable' : 'Noms indisponibles'}</div>`; }); delete wrap.dataset.built; });

@@ -585,6 +585,8 @@
   /* Case des votes nominaux d'un projet (billDivisionsBox, 30 oct. 2026) : décompte du dernier vote au titre, cartes de /votes dedans. */
 .bdiv-tally{font-weight:400; text-transform:none; letter-spacing:0; color:var(--slate);}
 .bill-divs .vote-card{margin:10px 0 0; box-shadow:none;}
+.bill-divs .vc-nrow .bill-votes-mail, .bill-divs .vc-nrow .bill-votes-copie{margin-left:4px; text-decoration:none;}
+.bill-divs .vc-nrow.former{color:var(--slate); opacity:.75;}
 .bvote-cols{display:grid; grid-template-columns:repeat(auto-fit, minmax(190px, 1fr)); gap:12px;}
   .bvote-col h5{margin:0 0 5px; font-family:'IBM Plex Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:0.04em;}
   .bvote-col ul{list-style:none; margin:0; padding:0;}

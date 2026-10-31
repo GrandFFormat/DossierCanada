@@ -566,7 +566,11 @@ function main() {
       const g = raw === 'yea' ? 'yea' : raw === 'nay' ? 'nay' : 'third';
       const code = partyOfPid.get(pid) || CAUCUS_CODE[votesData.people?.[pid]?.caucus] || 'IND';
       (per[code] = per[code] || { yea: 0, nay: 0, third: 0 })[g]++;
-      names[g].push({ n: nameOfPid.get(pid) || (votesData.people?.[pid]?.name) || '#' + pid, c: code });
+      // m = courriel (député·e en poste), f = ne siège plus : les ✉ / ⧉ de la case des votes d'un projet.
+      const row = { n: nameOfPid.get(pid) || (votesData.people?.[pid]?.name) || '#' + pid, c: code };
+      if (!nameOfPid.has(pid)) row.f = 1;
+      else if (voteEmails[pid]) row.m = voteEmails[pid];
+      names[g].push(row);
     }
     writeBallots('c-' + v.number, names);
     return {
