@@ -31,7 +31,7 @@ function page(message) {
 }
 
 async function optOut(userId) {
-  const res = await fetch(`${process.env.SUPABASE_URL}/rest/v1/email_optout?on_conflict=user_id`, {
+  const res = await fetch(`${process.env.SUPABASE_URL}/rest/v1/ca_email_optout?on_conflict=user_id`, {
     method: 'POST',
     headers: {
       apikey: process.env.SUPABASE_SERVICE_ROLE_KEY,
