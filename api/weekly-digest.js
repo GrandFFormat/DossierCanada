@@ -160,12 +160,12 @@ export default async function handler(req, res) {
   try {
     // 1. Comptes actuels par projet (RPC service_role) + état de campagne.
     const counts = new Map(
-      (await supaFetch('/rest/v1/rpc/flag_counts_all', { method: 'POST', body: {} }))
+      (await supaFetch('/rest/v1/rpc/ca_flag_counts_all', { method: 'POST', body: {} }))
         .map((r) => [Number(r.bill_id), Number(r.cnt)])
     );
     if (counts.size === 0) return res.status(200).json({ ok: true, emailsSent: 0, reason: 'no flags' });
 
-    const campaignRows = await supaFetch('/rest/v1/bill_campaign?select=bill_id,last_count,threshold,escalation_pending,terminal_notified');
+    const campaignRows = await supaFetch('/rest/v1/ca_bill_campaign?select=bill_id,last_count,threshold,escalation_pending,terminal_notified');
     const campaign = new Map(campaignRows.map((r) => [Number(r.bill_id), r]));
 
     // 2. Pour chaque projet flaggé : y a-t-il une « nouvelle » depuis le dernier digest ?
@@ -202,7 +202,7 @@ export default async function handler(req, res) {
       };
     });
     if (upsert.length) {
-      await supaFetch('/rest/v1/bill_campaign?on_conflict=bill_id', {
+      await supaFetch('/rest/v1/ca_bill_campaign?on_conflict=bill_id', {
         method: 'POST',
         headers: { Prefer: 'resolution=merge-duplicates,return=minimal' },
         body: upsert,
@@ -213,7 +213,7 @@ export default async function handler(req, res) {
 
     // 4. Qui a demandé quoi (bill_flags) — seulement les projets avec une nouvelle.
     const newsIds = [...reportByBill.keys()];
-    const flags = await supaFetch(`/rest/v1/bill_flags?select=user_id,bill_id&bill_id=in.(${newsIds.join(',')})`);
+    const flags = await supaFetch(`/rest/v1/ca_bill_flags?select=user_id,bill_id&bill_id=in.(${newsIds.join(',')})`);
     const userBills = new Map();
     for (const f of flags) {
       if (!userBills.has(f.user_id)) userBills.set(f.user_id, []);
@@ -222,7 +222,7 @@ export default async function handler(req, res) {
     if (userBills.size === 0) return res.status(200).json({ ok: true, emailsSent: 0 });
 
     // 5. Désabonnées + courriels.
-    const optedOut = new Set((await supaFetch('/rest/v1/email_optout?select=user_id')).map((r) => r.user_id));
+    const optedOut = new Set((await supaFetch('/rest/v1/ca_email_optout?select=user_id')).map((r) => r.user_id));
     const emailById = await getAllUserEmails();
     const siteUrl = process.env.PUBLIC_SITE_URL || 'https://www.dossiercanada.ca';
 
