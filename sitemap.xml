@@ -143,6 +143,20 @@
   </url>
   <!-- PROJETS:START -->
   <url>
+    <loc>https://www.dossiercanada.ca/projets-de-loi/s-214</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-214"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-214"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-214"/>
+    <lastmod>2026-11-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/bills/s-214</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-214"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-214"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-214"/>
+    <lastmod>2026-11-02</lastmod>
+  </url>
+  <url>
     <loc>https://www.dossiercanada.ca/projets-de-loi/s-210</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-210"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-210"/>
@@ -1289,20 +1303,6 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-242"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-242"/>
     <lastmod>2026-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://www.dossiercanada.ca/projets-de-loi/s-214</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-214"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-214"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-214"/>
-    <lastmod>2026-05-26</lastmod>
-  </url>
-  <url>
-    <loc>https://www.dossiercanada.ca/en/bills/s-214</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/projets-de-loi/s-214"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/bills/s-214"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/projets-de-loi/s-214"/>
-    <lastmod>2026-05-26</lastmod>
   </url>
   <url>
     <loc>https://www.dossiercanada.ca/projets-de-loi/s-235</loc>

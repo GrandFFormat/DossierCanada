@@ -204,7 +204,19 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
           <h2 data-i18n="h.billsrecent">Recently active bills</h2>
           <a class="a3-seeall" data-view="projets" href="/en/bills" data-i18n="a3.seeall">See all →</a>
         </div>
-        <div id="apercuBills"><!--ssr--><div class="ab-row" id="abrow-ap-13541964">
+        <div id="apercuBills"><!--ssr--><div class="ab-row" id="abrow-ap-13541851">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13541851')">
+      <span class="ab-num">S-214</span>
+      <span class="ab-title">An Act to amend the Special Economic Measures Act (disposal of foreign state assets)</span>
+      
+      
+      
+      
+      <span class="status-pill status-encours">In progress</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"></div>
+  </div><div class="ab-row" id="abrow-ap-13541964">
     <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13541964')">
       <span class="ab-num">S-210</span>
       <span class="ab-title">An Act respecting Ukrainian Heritage Month</span>
@@ -240,18 +252,6 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-caret">▾</span>
     </div>
     <div class="ab-detail"></div>
-  </div><div class="ab-row" id="abrow-ap-14159600">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-14159600')">
-      <span class="ab-num">C-34</span>
-      <span class="ab-title">An Act to enact the Digital Safety Act and the Digital Safety Commission of Canada Act and to make consequential amendments to other Acts</span>
-      
-      <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Omnibus bill — 2 parts: it changes several different acts. Click to show only omnibus bills">Omnibus · 2 parts</button>
-      <span class="ab-lob" title="32 reported lobbying communications">32</span>
-      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-      <span class="status-pill status-encours">In progress</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"></div>
   </div><!--/ssr--></div>
         <div class="a3-tiles">
           <a class="a3-tile" data-view="votes" href="/en/votes">
@@ -268,12 +268,12 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
         <h2 class="a3-hiw-h" data-i18n="h.quoideneuf">What's new</h2>
         <div id="sittingBox"></div>
         <div id="newsList"><!--ssr--><div class="news-item">
-      <div class="news-date">2026-10-29</div>
-      <div class="news-body"><p><b>S-210</b> — Royal assent received</p></div>
+      <div class="news-date">2026-11-02</div>
+      <div class="news-body"><p><b>S-214</b> — At second reading in the House of Commons</p></div>
     </div>
     <div class="news-item">
       <div class="news-date">2026-10-29</div>
-      <div class="news-body"><p><b>S-237</b> — Senate bill awaiting first reading in the House of Commons</p></div>
+      <div class="news-body"><p><b>S-210</b> — Royal assent received</p></div>
     </div><button class="bill-more" style="margin-top:14px; border:none; cursor:pointer;" onclick="loadMoreNews()">+ Show more</button><!--/ssr--></div>
       </aside>
     </div>
