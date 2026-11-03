@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-11-03",
+    "volet": "projets",
+    "fr": {
+      "titre": "Partager un projet de loi sur six réseaux",
+      "texte": "Sous chaque projet de loi, des boutons aux couleurs de X, Facebook, LinkedIn, Reddit, Threads et Bluesky, plus un bouton pour copier le lien. Un projet ouvert remonte en haut de l’écran."
+    },
+    "en": {
+      "titre": "Share a bill on six networks",
+      "texte": "Under each bill, buttons in the colours of X, Facebook, LinkedIn, Reddit, Threads and Bluesky, plus a button to copy the link. An opened bill scrolls to the top of the screen."
+    }
+  },
+  {
     "date": "2026-10-30",
     "volet": "votes",
     "fr": {

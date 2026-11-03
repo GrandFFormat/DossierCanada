@@ -65,7 +65,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=6dfbd55415">
+<link rel="stylesheet" href="/assets/app.css?v=6a1e88db9f">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -271,106 +271,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     </div>
     <p class="tous-votes" id="lienTousVotes"><a data-view="votes" href="/en/votes" data-i18n="projets.tousvotes">All recorded votes, motions included →</a></p>
 
-    <div id="billsList"><!--ssr--><div class="ab-row open" id="abrow-pr-13878167">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13878167')">
-      <span class="ab-num">C-20</span>
-      <span class="ab-title">An Act respecting the establishment of Build Canada Homes</span>
-      
-      
-      <span class="ab-lob" title="9 reported lobbying communications">9</span>
-      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-      <span class="status-pill status-sanctionne">Assented to</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail open">
-    <div class="bill" onclick="toggleBillSummary('bill-details-pr13878167-13878167', event)">
-      <div class="head">
-        <div>
-          <div class="num">BILL C-20</div>
-          <h3>An Act respecting the establishment of Build Canada Homes</h3>
-          <div class="last-activity">Last activity : <b>Royal assent received</b></div>
-          <div class="meta">House Government Bill · Sponsor : Hon. Gregor Robertson</div>
-        </div>
-        <div style="display:flex; align-items:center; gap:6px; flex:none; flex-wrap:wrap; justify-content:flex-end;">
-          <span class="depute-party" style="background:#D71920; color:#fff" title="Liberal — Hon. Gregor Robertson">LPC</span>
-          <span class="status-pill status-sanctionne">Assented to</span>
-        </div>
-      </div>
-      
-      <div class="bill-meta-top">Sponsor : Hon. Gregor Robertson · House of Commons · House Government Bill</div>
-      <div class="bill-stages"><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Commons · 1st<b>2026-02-05</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Commons · 2nd<b>2026-03-13</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Commons · 3rd<b>2026-06-10</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Senate · 1st<b>2026-06-11</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Senate · 2nd<b>2026-06-16</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Senate · 3rd<b>2026-06-18</b></span><span style="display:inline-flex; gap:5px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 7px; border-radius:2px; background:var(--green-soft); color:var(--on-candy);">Royal assent<b>2026-06-18</b></span></div>
-      <div class="bill-follow-row">
-    <span class="follow-hint">Sign-in required — one request per person, no anonymous requests</span>
-    <button class="follow-btn " id="demand-pr13878167-13878167" onclick="event.stopPropagation(); goToTab('lexique')">🔒 Sign in to ask</button>
-  </div>
-      <div class="expand-hint" id="hint-bill-details-pr13878167-13878167">− Hide summary</div>
-      <div class="bill-summary open" id="bill-details-pr13878167-13878167">
-        <div class="bill-cols">
-          <div class="bill-col-main"><div class="bill-sum-slot" data-bill="13878167"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Creates a new federal Crown corporation, Build Canada Homes, to increase the supply of affordable housing in Canada.</li><li>Gives the new corporation a second job: promoting faster, more efficient home-building methods.</li><li>Lets the corporation fund projects, invest in companies, develop land and build housing itself.</li><li>Allows the Minister of Finance to pay out up to $11.5 billion to run Build Canada Homes.</li><li>Caps borrowing from private lenders at $400 million, unless the federal Cabinet sets a different limit.</li><li>Lets the Cabinet move property and debts from Canada Lands Company Limited to Build Canada Homes and order its reorganization.</li><li>Sets aside up to $1.515 billion for Canada Lands Company Limited or another body helping with the corporation's work.</li><li>Requires a review of the law after five years, then every ten years, with a report tabled in Parliament.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div><details class="bvote bill-divs" data-bill="13878167" data-sujet="Bill C-20, An Act respecting the establishment of Build Canada Homes" onclick="event.stopPropagation()" ontoggle="if(this.open) remplirVotesProjet(this)"><summary><span class="bvote-title">Who voted for, against or abstained: 71 / 9 / 2<span class="bdiv-tally"> (Senate · 3rd reading · 3 recorded divisions)</span></span></summary><div class="bvote-body"></div></details></div>
-          <aside class="bill-col-side">
-            <div class="bill-side-label">Last activity</div>
-            <div class="bill-side-box">2026-06-18 — Royal assent received</div>
-            <a class="bill-cta" href="https://www.parl.ca/legisinfo/en/bill/45-1/c-20" target="_blank" rel="noopener" onclick="event.stopPropagation()">Read the full text on LEGISinfo →</a>
-            <div class="bill-share-row">
-    <span class="bill-share-label">Share:</span>
-    <button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13878167, 'x', event)" aria-label="Share on X">𝕏</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13878167, 'fb', event)" aria-label="Share on Facebook">FB</button><button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(13878167, 'copy', event)" aria-label="Copy the link">⧉</button>
-  </div><div class="bill-cafe-row"><a class="bill-cafe-btn" href="https://donate.stripe.com/fZu6oH4pt5OY3sY5Fy9fW01" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="Buy us a coffee (opens in a new tab)">☕ Long live public information</a></div>
-          </aside>
-        </div>
-        <div class="lob" id="lob-13878167" onclick="toggleLobbying(this, event)">
-    <div class="lob-head">
-      <span class="lob-title">Registered lobbying</span>
-      <span class="lob-count">9 communications · 1 organization</span>
-      <span class="lob-asof">as of Oct 26, 2026</span>
-      <span class="lob-toggle">the 9 most recent +</span>
-    </div>
-    <div class="lob-orgs"><span class="lob-org">National Apartment Council of Canada<b>9</b></span></div>
-    <div class="lob-body">
-      
-      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=705588" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-09-24 · House of Commons</div>
-      <div class="lob-who">National Apartment Council of Canada</div>
-      <div class="lob-met">Met with : Robert Morrisey — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=705578" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-09-24 · House of Commons</div>
-      <div class="lob-who">National Apartment Council of Canada</div>
-      <div class="lob-met">Met with : Arnold Viersen — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=697793" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-07-30 · Housing, Infrastructure and Communities Canada (HICC)</div>
-      <div class="lob-who">National Apartment Council of Canada</div>
-      <div class="lob-met">Met with : Eamonn Schwartz — Policy Advisor</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=689832" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-05-27 · Senate of Canada</div>
-      <div class="lob-who">National Apartment Council of Canada</div>
-      <div class="lob-met">Met with : Daryl Fridhandler — Senator</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=689838" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-05-26 · House of Commons</div>
-      <div class="lob-who">National Apartment Council of Canada</div>
-      <div class="lob-met">Met with : Jenny Kwan — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=689835" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-05-26 · Senate of Canada</div>
-      <div class="lob-who">National Apartment Council of Canada</div>
-      <div class="lob-met">Met with : Dawn Arnold — Senator</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=689804" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-05-26 · House of Commons</div>
-      <div class="lob-who">National Apartment Council of Canada</div>
-      <div class="lob-met">Met with : Robert Morrisey — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=689801" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-05-26 · Prime Minister's Office (PMO)</div>
-      <div class="lob-who">National Apartment Council of Canada</div>
-      <div class="lob-met">Met with : Yash Nanda — Senior Policy Advisor</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=689646" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-05-26 · House of Commons</div>
-      <div class="lob-who">National Apartment Council of Canada</div>
-      <div class="lob-met">Met with : Colin Reynolds — Member of Parliament</div>
-    </a>
-      <p class="lob-note">Communications reported to the Office of the Commissioner of Lobbying that name this bill. Lobbying is a lawful, publicly registered activity — this count is a fact, not a verdict. Only communications whose description names both the bill number and its title are counted, so the real total may be higher. Registry archive read on October 26, 2026; the Commissioner republishes it about monthly, and we refresh it by hand.</p>
-    </div>
-  </div>
-      </div>
-    </div>
-  </div>
-  </div><!--/ssr--></div>
+    <div id="billsList"><!--ssr--><!--/ssr--></div>
 
     <!-- Ce que « challenger » veut dire, en bas de la liste — comme sur
          DossierQuébec. Le texte dit le VRAI mécanisme : compte requis, une
@@ -635,6 +536,8 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.04-.02-2.05-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.31-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.87.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.62-5.48 5.92.43.37.81 1.1.81 2.22 0 1.6-.01 2.89-.01 3.29 0 .32.22.7.83.58A12.01 12.01 0 0 0 24 12.5C24 5.87 18.63.5 12 .5Z"/></svg>
       <span data-i18n="footer.source">Source code</span>
     </a>
+    <!-- Crédit exigé par la licence gratuite de Flaticon (icônes du bouton café, 3 nov. 2026). -->
+    <a class="footer-gh" href="https://www.flaticon.com/fr/icones-gratuites/cafe" target="_blank" rel="noopener" data-i18n="footer.flaticon">Icons: Flaticon</a>
     <button type="button" class="footer-temoins" onclick="rouvrirTemoins()" data-i18n="footer.temoins">Cookies</button>
     <a class="footer-etmoi" data-view="promesses" href="/en/promises" data-i18n="footer.promesses">Promises</a>
     <a class="footer-etmoi" href="/lexique#sec-droits" data-i18n="footer.droits">Your rights</a>
@@ -665,7 +568,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=ebd361fd2d"></script>
+<script defer src="/assets/app.js?v=8c722d8081"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->
