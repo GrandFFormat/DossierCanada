@@ -204,7 +204,19 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
           <h2 data-i18n="h.billsrecent">Projets de loi récemment actifs</h2>
           <a class="a3-seeall" data-view="projets" href="/projets-de-loi" data-i18n="a3.seeall">Tout voir →</a>
         </div>
-        <div id="apercuBills"><!--ssr--><div class="ab-row" id="abrow-ap-13541964">
+        <div id="apercuBills"><!--ssr--><div class="ab-row" id="abrow-ap-13541851">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13541851')">
+      <span class="ab-num">S-214</span>
+      <span class="ab-title">Loi modifiant la Loi sur les mesures économiques spéciales (disposition des biens d’un État étranger)</span>
+      
+      
+      
+      
+      <span class="status-pill status-encours">En cours</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"></div>
+  </div><div class="ab-row" id="abrow-ap-13541964">
     <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13541964')">
       <span class="ab-num">S-210</span>
       <span class="ab-title">Loi instituant le Mois du patrimoine ukrainien</span>
@@ -240,18 +252,6 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-caret">▾</span>
     </div>
     <div class="ab-detail"></div>
-  </div><div class="ab-row" id="abrow-ap-14159600">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-14159600')">
-      <span class="ab-num">C-34</span>
-      <span class="ab-title">Loi édictant la Loi sur la sécurité numérique et la Loi sur la Commission canadienne de la sécurité numérique et apportant des modifications corrélatives à d'autres lois</span>
-      
-      <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Projet omnibus — 2 parties : il modifie plusieurs lois différentes. Cliquer pour ne voir que les omnibus">Omnibus · 2 parties</button>
-      <span class="ab-lob" title="32 communications de lobbying déclarées">32</span>
-      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-      <span class="status-pill status-encours">En cours</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"></div>
   </div><!--/ssr--></div>
         <div class="a3-tiles">
           <a class="a3-tile" data-view="votes" href="/votes">
@@ -268,12 +268,12 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
         <h2 class="a3-hiw-h" data-i18n="h.quoideneuf">Quoi de neuf</h2>
         <div id="sittingBox"></div>
         <div id="newsList"><!--ssr--><div class="news-item">
-      <div class="news-date">2026-10-29</div>
-      <div class="news-body"><p><b>S-210</b> — Sanction royale reçue</p></div>
+      <div class="news-date">2026-11-02</div>
+      <div class="news-body"><p><b>S-214</b> — À la deuxième lecture à la Chambre des communes</p></div>
     </div>
     <div class="news-item">
       <div class="news-date">2026-10-29</div>
-      <div class="news-body"><p><b>S-237</b> — Projet de loi du Sénat en attente de la première lecture à la Chambre des communes</p></div>
+      <div class="news-body"><p><b>S-210</b> — Sanction royale reçue</p></div>
     </div><button class="bill-more" style="margin-top:14px; border:none; cursor:pointer;" onclick="loadMoreNews()">+ Voir plus</button><!--/ssr--></div>
       </aside>
     </div>

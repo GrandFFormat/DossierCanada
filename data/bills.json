@@ -1,9 +1,85 @@
 {
   "source": "https://www.parl.ca/legisinfo/en/bills/json?parlsession=45-1",
   "session": "45-1",
-  "scrapedAt": "2026-11-02T18:07:14.210Z",
+  "scrapedAt": "2026-11-03T16:02:36.187Z",
   "count": 196,
   "bills": [
+    {
+      "id": 13541851,
+      "num": "S-214",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "senate",
+      "type": {
+        "en": "Senate Public Bill",
+        "fr": "Projet de loi d'intérêt public du Sénat"
+      },
+      "isGovernment": false,
+      "title": {
+        "en": "An Act to amend the Special Economic Measures Act (disposal of foreign state assets)",
+        "fr": "Loi modifiant la Loi sur les mesures économiques spéciales (disposition des biens d’un État étranger)"
+      },
+      "shortTitle": null,
+      "sponsor": {
+        "en": "Donna Dasko",
+        "fr": "Donna Dasko"
+      },
+      "status": {
+        "en": "At second reading in the House of Commons",
+        "fr": "À la deuxième lecture à la Chambre des communes"
+      },
+      "state": "encours",
+      "milestones": [
+        {
+          "stage": "senate_first_reading",
+          "chamber": "senate",
+          "reading": 1,
+          "date": "2025-05-27"
+        },
+        {
+          "stage": "senate_second_reading",
+          "chamber": "senate",
+          "reading": 2,
+          "date": "2026-03-26"
+        },
+        {
+          "stage": "senate_third_reading",
+          "chamber": "senate",
+          "reading": 3,
+          "date": "2026-05-26"
+        },
+        {
+          "stage": "commons_first_reading",
+          "chamber": "commons",
+          "reading": 1,
+          "date": "2026-11-02"
+        }
+      ],
+      "royalAssent": null,
+      "reinstated": false,
+      "latestActivity": {
+        "en": "At second reading in the House of Commons",
+        "fr": "À la deuxième lecture à la Chambre des communes",
+        "date": "2026-11-02"
+      },
+      "lastActivity": "2026-11-02",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/s-214",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/s-214"
+      },
+      "sponsorPersonId": 23145,
+      "sponsorName": {
+        "first": "Donna",
+        "last": "Dasko"
+      },
+      "fullSummaryAvailable": true,
+      "summary": {
+        "en": "This enactment amends the Special Economic Measures Act to allow the Governor in Council to dispose of a foreign state’s assets seized under the Act if the seizure occurred without a judicial order.",
+        "fr": "Le texte modifie la Loi sur les mesures économiques spéciales afin d’autoriser le gouverneur en conseil à disposer des biens d’un État étranger qui ont été saisis sous le régime de cette loi en l’absence d’ordonnance judiciaire."
+      },
+      "summarySource": "bill"
+    },
     {
       "id": 13541964,
       "num": "S-210",
@@ -6083,76 +6159,6 @@
       "summary": {
         "en": "This enactment provides for the continuation of national action for the prevention of intimate partner violence.",
         "fr": "Le texte prévoit la continuation d’une action nationale pour la prévention de la violence entre partenaires intimes."
-      },
-      "summarySource": "bill"
-    },
-    {
-      "id": 13541851,
-      "num": "S-214",
-      "session": "45-1",
-      "parliament": 45,
-      "sessionNumber": 1,
-      "chamber": "senate",
-      "type": {
-        "en": "Senate Public Bill",
-        "fr": "Projet de loi d'intérêt public du Sénat"
-      },
-      "isGovernment": false,
-      "title": {
-        "en": "An Act to amend the Special Economic Measures Act (disposal of foreign state assets)",
-        "fr": "Loi modifiant la Loi sur les mesures économiques spéciales (disposition des biens d’un État étranger)"
-      },
-      "shortTitle": null,
-      "sponsor": {
-        "en": "Donna Dasko",
-        "fr": "Donna Dasko"
-      },
-      "status": {
-        "en": "Senate bill awaiting first reading in the House of Commons",
-        "fr": "Projet de loi du Sénat en attente de la première lecture à la Chambre des communes"
-      },
-      "state": "encours",
-      "milestones": [
-        {
-          "stage": "senate_first_reading",
-          "chamber": "senate",
-          "reading": 1,
-          "date": "2025-05-27"
-        },
-        {
-          "stage": "senate_second_reading",
-          "chamber": "senate",
-          "reading": 2,
-          "date": "2026-03-26"
-        },
-        {
-          "stage": "senate_third_reading",
-          "chamber": "senate",
-          "reading": 3,
-          "date": "2026-05-26"
-        }
-      ],
-      "royalAssent": null,
-      "reinstated": false,
-      "latestActivity": {
-        "en": "Senate bill awaiting first reading in the House of Commons",
-        "fr": "Projet de loi du Sénat en attente de la première lecture à la Chambre des communes",
-        "date": "2026-05-26"
-      },
-      "lastActivity": "2026-05-26",
-      "url": {
-        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/s-214",
-        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/s-214"
-      },
-      "sponsorPersonId": 23145,
-      "sponsorName": {
-        "first": "Donna",
-        "last": "Dasko"
-      },
-      "fullSummaryAvailable": true,
-      "summary": {
-        "en": "This enactment amends the Special Economic Measures Act to allow the Governor in Council to dispose of a foreign state’s assets seized under the Act if the seizure occurred without a judicial order.",
-        "fr": "Le texte modifie la Loi sur les mesures économiques spéciales afin d’autoriser le gouverneur en conseil à disposer des biens d’un État étranger qui ont été saisis sous le régime de cette loi en l’absence d’ordonnance judiciaire."
       },
       "summarySource": "bill"
     },
@@ -13665,5 +13671,5 @@
       "summarySource": null
     }
   ],
-  "summariesScrapedAt": "2026-11-02T18:13:50.678Z"
+  "summariesScrapedAt": "2026-11-03T16:05:01.877Z"
 }
