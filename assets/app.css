@@ -1378,3 +1378,44 @@
 .archives-carte h3{margin:0 0 8px; font-family:'Archivo',system-ui,sans-serif;}
 .archives-liens{line-height:1.9; margin:0;}
 .archives-liens a, #archivesListe a{color:var(--ink); font-weight:800; text-decoration:underline; text-underline-offset:3px;}
+
+/* ---------- BOUTON CAFÉ ANIMÉ ET PARTAGE (porté de DQ, 3 nov. 2026) ---------- */
+/* Même hauteur que la case « Dernière activité » ; icône à gauche, texte fixe, bulle de 5 points à droite. */
+.bill-cafe-btn{display:flex; align-items:center; gap:12px; padding:6px 16px; font-size:13px; text-align:left; box-sizing:border-box; flex-wrap:wrap; row-gap:6px; min-width:0; --duree:8s;}
+.bill-cafe-row{min-width:0;}
+.bill-cafe-btn .txt{min-width:0; overflow-wrap:anywhere;}
+.bill-cafe-btn .icone{flex:none; width:34px; height:34px; object-fit:contain; mix-blend-mode:multiply; transition:transform .3s ease-in;}
+.bill-cafe-btn .icone.tourne{transform:rotateY(90deg);}
+.bill-cafe-btn .bulle{flex:none; margin-left:auto; position:relative; width:118px; height:22px; background:#fff; border:2px solid #131313; border-radius:11px; overflow:hidden;}
+.bill-cafe-btn .pt{position:absolute; top:5.5px; width:7px; height:7px; border-radius:50%; background:#F2B705; animation:var(--a) var(--duree) linear 1 both;}
+.bill-cafe-btn .pt:nth-child(1){left:12px; --a:mange1} .bill-cafe-btn .pt:nth-child(2){left:33px; --a:mange2} .bill-cafe-btn .pt:nth-child(3){left:54px; --a:mange3}
+.bill-cafe-btn .pt:nth-child(4){left:75px; --a:mange4} .bill-cafe-btn .pt:nth-child(5){left:96px; --a:mange5}
+.bill-cafe-btn .passant{position:absolute; top:0; left:0; line-height:0; transform:translateX(-26px); animation:traverse var(--duree) linear 1 both; animation-delay:calc(var(--suite, 0) * .75s);}
+.bill-cafe-btn .couvercle{transform-origin:3px 6px; animation:croque .22s steps(2) infinite;}
+@keyframes croque{50%{transform:rotate(-28deg);}}
+@keyframes traverse{0%{transform:translateX(-26px)} 36%,100%{transform:translateX(124px)}}
+@keyframes mange1{0%,9.1%{background:#F2B705; transform:scale(1)} 10.6%{transform:scale(.6)} 12.1%,70%{background:#6B4A3A; transform:scale(1)} 73%,100%{background:#F2B705}}
+@keyframes mange2{0%,14.2%{background:#F2B705; transform:scale(1)} 15.7%{transform:scale(.6)} 17.2%,74%{background:#6B4A3A; transform:scale(1)} 77%,100%{background:#F2B705}}
+@keyframes mange3{0%,19.2%{background:#F2B705; transform:scale(1)} 20.7%{transform:scale(.6)} 22.2%,78%{background:#6B4A3A; transform:scale(1)} 81%,100%{background:#F2B705}}
+@keyframes mange4{0%,24.2%{background:#F2B705; transform:scale(1)} 25.7%{transform:scale(.6)} 27.2%,82%{background:#6B4A3A; transform:scale(1)} 85%,100%{background:#F2B705}}
+@keyframes mange5{0%,29.3%{background:#F2B705; transform:scale(1)} 30.8%{transform:scale(.6)} 32.3%,86%{background:#6B4A3A; transform:scale(1)} 89%,100%{background:#F2B705}}
+@media (prefers-reduced-motion: reduce){ .bill-cafe-btn .pt, .bill-cafe-btn .passant, .bill-cafe-btn .couvercle, .bill-cafe-btn .icone{animation:none; transition:none;} .bill-cafe-btn .passant{display:none;} }
+/* Sur téléphone : la bulle passe sous le texte, tout est centré. */
+@media (max-width:860px){ .bill-cafe-btn{justify-content:center; text-align:center;} .bill-cafe-btn .bulle{margin-left:0;} }
+/* Partage centré, aux couleurs des réseaux ; ⧉ reste neutre. */
+.bill-share-row, .bill-col-side .bill-share-row{justify-content:center;}
+@media (max-width:860px){ .bill-col-side .bill-share-row{justify-content:center;} }
+.bill-share-btn[data-reseau]{color:#fff; display:inline-flex; align-items:center; justify-content:center;}
+.bill-share-btn[data-reseau="x"], .bill-share-btn[data-reseau="threads"]{background:#000;}
+.bill-share-btn[data-reseau="fb"]{background:#1877F2;}
+.bill-share-btn[data-reseau="li"]{background:#0A66C2;}
+.bill-share-btn[data-reseau="reddit"]{background:#FF4500;}
+.bill-share-btn[data-reseau="bsky"]{background:#1185FE;}
+.bill-share-btn[data-reseau]:hover{filter:brightness(1.15); color:#fff;}
+.bill-col-main, .bill-col-side{min-width:0;}
+/* Téléphone étroit (480 px et moins) ou avec le zoom A+ : le logo seul sur sa rangée, puis A−/A+, langue et menu, puis les provinces. Plus rien ne chevauche le logo. */
+@media (max-width:480px){ html header.top{grid-template-columns:minmax(0,1fr) !important; row-gap:10px;} html header.top .brand{grid-column:1; grid-row:1; text-align:center;} html header.top .header-right{grid-column:1; grid-row:2; justify-content:center; flex-wrap:wrap; row-gap:6px; min-width:0;} html header.top .header-left{grid-column:1; grid-row:3; margin-top:0;} }
+@media (max-width:640px){ html.zoom-fort header.top{grid-template-columns:minmax(0,1fr) !important; row-gap:10px;} html.zoom-fort header.top .brand{grid-column:1; grid-row:1; text-align:center;} html.zoom-fort header.top .header-right{grid-column:1; grid-row:2; justify-content:center; flex-wrap:wrap; row-gap:6px; min-width:0;} html.zoom-fort header.top .header-left{grid-column:1; grid-row:3; margin-top:0;} }
+/* En-tête entre 641 et 1 279 px (et avec le zoom A+ jusqu'à 1 700 px) : la rangée à trois colonnes n'y tient pas (la date chevauchait le logo, les provinces s'empilaient). Logo et boutons sur la 1re rangée, date et provinces sur une 2e rangée. */
+@media (min-width:641px) and (max-width:1279px){ html header.top{grid-template-columns:auto minmax(0,1fr); row-gap:10px;} html header.top .brand{grid-column:1; grid-row:1; text-align:left;} html header.top .header-right{grid-column:2; grid-row:1; flex-wrap:wrap; row-gap:6px; min-width:0;} html header.top .header-left{grid-column:1 / -1; grid-row:2; justify-content:center; flex-wrap:wrap; row-gap:6px;} html #provinceNetwork .pn-2{display:inline-flex;} html #provinceNetworkR{display:none;} }
+@media (min-width:641px) and (max-width:1700px){ html.zoom-fort header.top{grid-template-columns:auto minmax(0,1fr); row-gap:10px;} html.zoom-fort header.top .brand{grid-column:1; grid-row:1; text-align:left;} html.zoom-fort header.top .header-right{grid-column:2; grid-row:1; flex-wrap:wrap; row-gap:6px; min-width:0;} html.zoom-fort header.top .header-left{grid-column:1 / -1; grid-row:2; justify-content:center; flex-wrap:wrap; row-gap:6px;} html.zoom-fort #provinceNetwork .pn-2{display:inline-flex;} html.zoom-fort #provinceNetworkR{display:none;} }
