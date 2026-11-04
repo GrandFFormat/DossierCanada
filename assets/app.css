@@ -487,7 +487,7 @@
      et le partage. Une seule colonne sous 860 px. */
   .bill-meta-top{ font-family:'IBM Plex Mono',monospace; font-size:11.5px; font-weight:600; text-transform:uppercase; letter-spacing:0.03em; color:var(--slate); margin:0 0 10px; }
   .bill-stages{ display:flex; flex-wrap:wrap; gap:4px; margin:0 0 4px; }
-  .bill-cols{ display:grid; grid-template-columns:minmax(0,1.5fr) minmax(0,1fr); gap:32px; align-items:start; }
+  .bill-cols{ display:grid; grid-template-columns:minmax(0,1fr) 340px; gap:32px; align-items:start; }
   .bill-col-main{ min-width:0; }
   .bill-side-label{ font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.04em; color:var(--ink); margin:0 0 8px; }
   .bill-side-box{ border:3px solid var(--ink); background:var(--paper-2); padding:13px 16px; font-family:'Archivo',system-ui,sans-serif; font-weight:600; font-size:14.5px; line-height:1.4; color:var(--ink); }
@@ -1334,7 +1334,7 @@
 /* Même gabarit que le bouton jaune « Lire le texte complet » (.bill-cta) : pleine
    largeur, même rembourrage, même bordure, même ombre — seule la couleur change. */
 .bill-cafe-row{display:block; margin-top:14px;}
-.bill-cafe-btn{display:block; padding:12px 16px; text-align:center; background:#B0D4E8; color:#131313; border:2px solid #131313; box-shadow:3px 3px 0 #131313; font-family:'IBM Plex Mono',monospace; font-size:12.5px; font-weight:700; letter-spacing:0.02em; text-decoration:none;}
+.bill-cafe-btn{display:block; padding:14px 16px; text-align:center; background:#B0D4E8; color:#131313; border:3px solid #131313; box-shadow:5px 5px 0 #131313; font-family:'IBM Plex Mono',monospace; font-size:12.5px; font-weight:700; letter-spacing:0.02em; text-decoration:none;}
 .bill-cafe-btn:hover{background:#FFD24D;}
 
   /* « Site propulsé par DAFRSolution.com » : lien surligné jaune (21 oct. 2026). */
@@ -1381,9 +1381,9 @@
 
 /* ---------- BOUTON CAFÉ ANIMÉ ET PARTAGE (porté de DQ, 3 nov. 2026) ---------- */
 /* Même hauteur que la case « Dernière activité » ; icône à gauche, texte fixe, bulle de 5 points à droite. */
-.bill-cafe-btn{display:flex; align-items:center; gap:10px; padding:7px 14px; font-size:13px; text-align:left; box-sizing:border-box; flex-wrap:nowrap; white-space:nowrap; row-gap:6px; min-width:0; --duree:8s;}
+.bill-cafe-btn{display:flex; align-items:center; gap:10px; padding:16px 18px; min-height:76px; font-size:13px; text-align:left; box-sizing:border-box; flex-wrap:nowrap; row-gap:6px; min-width:0; --duree:8s;}
 .bill-cafe-row{min-width:0;}
-.bill-cafe-btn .txt{min-width:0; overflow-wrap:anywhere;}
+.bill-cafe-btn .txt{flex:1; min-width:0; line-height:1.3;}
 .bill-cafe-btn .icone{flex:none; width:34px; height:34px; object-fit:contain; mix-blend-mode:multiply; transition:transform .3s ease-in;}
 .bill-cafe-btn .icone.tourne{transform:rotateY(90deg);}
 .bill-cafe-btn .bulle{flex:none; margin-left:auto; position:relative; width:118px; height:22px; background:#fff; border:2px solid #131313; border-radius:11px; overflow:hidden;}
