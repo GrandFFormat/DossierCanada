@@ -80,7 +80,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=6a1e88db9f">
+<link rel="stylesheet" href="/assets/app.css?v=ba047d630d">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -191,7 +191,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
 
     <div class="apercu-3col">
       <aside class="a3-left">
-        <p class="a3-intro" id="a3intro"><!--ssr-->Le Parlement du Canada sans jargon : <b>337</b> député·e·s, <b>196</b> projets de loi fédéraux et <b>187</b> votes nominaux aux Communes, tirés des sources officielles.<!--/ssr--></p>
+        <p class="a3-intro" id="a3intro"><!--ssr-->Le Parlement du Canada sans jargon : <b>337</b> député·e·s, <b>197</b> projets de loi fédéraux et <b>188</b> votes nominaux aux Communes, tirés des sources officielles.<!--/ssr--></p>
         <h2 class="a3-hiw-h" data-i18n="a3.hiw">Comment ça marche</h2>
         <div class="a3-steps">
           <div class="a3-step"><span class="a3-step-n" style="background:var(--yellow)">1</span><p data-i18n="a3.step1">Un projet de loi vous semble opaque ? Demandez une explication.</p></div>
@@ -204,34 +204,10 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
           <h2 data-i18n="h.billsrecent">Projets de loi récemment actifs</h2>
           <a class="a3-seeall" data-view="projets" href="/projets-de-loi" data-i18n="a3.seeall">Tout voir →</a>
         </div>
-        <div id="apercuBills"><!--ssr--><div class="ab-row" id="abrow-ap-13541851">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13541851')">
-      <span class="ab-num">S-214</span>
-      <span class="ab-title">Loi modifiant la Loi sur les mesures économiques spéciales (disposition des biens d’un État étranger)</span>
-      
-      
-      
-      
-      <span class="status-pill status-encours">En cours</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"></div>
-  </div><div class="ab-row" id="abrow-ap-13541964">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13541964')">
-      <span class="ab-num">S-210</span>
-      <span class="ab-title">Loi instituant le Mois du patrimoine ukrainien</span>
-      
-      
-      
-      
-      <span class="status-pill status-sanctionne">Sanctionnée</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"></div>
-  </div><div class="ab-row" id="abrow-ap-13623903">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13623903')">
-      <span class="ab-num">S-237</span>
-      <span class="ab-title">Loi instituant la Journée des villes et des municipalités</span>
+        <div id="apercuBills"><!--ssr--><div class="ab-row" id="abrow-ap-13541987">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13541987')">
+      <span class="ab-num">S-220</span>
+      <span class="ab-title">Loi désignant le mois de mars comme Mois du patrimoine hellénique</span>
       
       
       
@@ -240,14 +216,38 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-caret">▾</span>
     </div>
     <div class="ab-detail"></div>
-  </div><div class="ab-row" id="abrow-ap-14297192">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-14297192')">
-      <span class="ab-num">S-253</span>
-      <span class="ab-title">Loi modifiant la Loi de l’impôt sur le revenu (indexation de la déduction pour frais de garde d’enfants)</span>
+  </div><div class="ab-row" id="abrow-ap-13583642">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13583642')">
+      <span class="ab-num">C-219</span>
+      <span class="ab-title">Loi modifiant la Loi sur le ministère des Affaires étrangères, du Commerce et du Développement, la Loi sur la justice pour les victimes de dirigeants étrangers corrompus (loi de Sergueï Magnitski) et la Loi sur les mesures économiques spéciales</span>
       
       
       
+      <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
+      <span class="status-pill status-encours">En cours</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"></div>
+  </div><div class="ab-row" id="abrow-ap-13583696">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13583696')">
+      <span class="ab-num">C-234</span>
+      <span class="ab-title">Loi prévoyant la création et l’attribution d’une médaille de reconnaissance pour les donneurs vivants</span>
       
+      
+      
+      <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
+      <span class="status-pill status-encours">En cours</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"></div>
+  </div><div class="ab-row" id="abrow-ap-13588449">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13588449')">
+      <span class="ab-num">C-235</span>
+      <span class="ab-title">Loi modifiant le Code criminel (prolongation du délai préalable à la libération conditionnelle)</span>
+      
+      
+      
+      <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
       <span class="status-pill status-encours">En cours</span>
       <span class="ab-caret">▾</span>
     </div>
@@ -268,12 +268,12 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
         <h2 class="a3-hiw-h" data-i18n="h.quoideneuf">Quoi de neuf</h2>
         <div id="sittingBox"></div>
         <div id="newsList"><!--ssr--><div class="news-item">
-      <div class="news-date">2026-11-02</div>
-      <div class="news-body"><p><b>S-214</b> — À la deuxième lecture à la Chambre des communes</p></div>
+      <div class="news-date">2026-11-03</div>
+      <div class="news-body"><p><b>S-220</b> — Projet de loi du Sénat en attente de la première lecture à la Chambre des communes</p></div>
     </div>
     <div class="news-item">
-      <div class="news-date">2026-10-29</div>
-      <div class="news-body"><p><b>S-210</b> — Sanction royale reçue</p></div>
+      <div class="news-date">2026-11-03</div>
+      <div class="news-body"><p><b>C-219</b> — À l'examen en comité au Sénat</p></div>
     </div><button class="bill-more" style="margin-top:14px; border:none; cursor:pointer;" onclick="loadMoreNews()">+ Voir plus</button><!--/ssr--></div>
       </aside>
     </div>

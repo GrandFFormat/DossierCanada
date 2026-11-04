@@ -62,7 +62,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=6a1e88db9f">
+<link rel="stylesheet" href="/assets/app.css?v=ba047d630d">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -248,7 +248,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     <div class="page-band">
       <div>
         <nav class="crumbs" aria-label="Fil d'Ariane"><a data-view="apercu" href="/">DossierCanada</a> <span aria-hidden="true">›</span> <span aria-current="page" data-i18n="nav.projets">Projets de loi</span></nav>
-        <h1 class="band-title" id="projetsCountTitle">196 projets de loi fédéraux</h1>
+        <h1 class="band-title" id="projetsCountTitle">197 projets de loi fédéraux</h1>
         <div class="sub" data-i18n="proj.bandsub">Chaque loi résumée en clair. Pas assez clair ? Demandez une explication.</div>
       </div>
     </div>
@@ -263,12 +263,72 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       </div>
       <div class="filter-group">
         <button class="filter-hamburger" id="stepFilterBtn" onclick="toggleFilterPanel('step')" aria-expanded="false">☰ <span data-i18n="filter.etapes">Chambre</span></button>
-        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">Chambre des communes</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Sénat</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Projets avec des communications déclarées au Commissariat au lobbying">Lobbying <b>50</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Projets qui modifient plusieurs lois différentes à la fois, une par partie">Omnibus <b>15</b></span><!--/ssr--></div>
+        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">Chambre des communes</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Sénat</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Projets avec des communications déclarées au Commissariat au lobbying">Lobbying <b>50</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Projets qui modifient plusieurs lois différentes à la fois, une par partie">Omnibus <b>16</b></span><!--/ssr--></div>
       </div>
     </div>
     <p class="tous-votes" id="lienTousVotes"><a data-view="votes" href="/votes" data-i18n="projets.tousvotes">Tous les votes nominaux, motions comprises →</a></p>
 
-    <div id="billsList"><!--ssr--><div class="ab-row" id="abrow-pr-13541851">
+    <div id="billsList"><!--ssr--><div class="ab-row" id="abrow-pr-13541987">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13541987')">
+      <span class="ab-num">S-220</span>
+      <span class="ab-title">Loi désignant le mois de mars comme Mois du patrimoine hellénique</span>
+      
+      
+      
+      <span class="depute-party" style="background:#6D5BA6; color:#fff">GSI</span>
+      <span class="status-pill status-encours">En cours</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13541987"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Fait du mois de mars le « Mois du patrimoine hellénique » partout au Canada, chaque année.</li><li>Crée une nouvelle loi, courte, appelée Loi sur le Mois du patrimoine hellénique.</li><li>Vise à souligner l'apport des Canadiens d'origine grecque, dont le texte dit qu'ils sont plus de 260 000.</li><li>Rappelle que la démocratie canadienne tire ses racines de la cité grecque antique d'Athènes.</li><li>Choisit mars parce que la guerre d'indépendance de la Grèce a commencé le 25 mars 1821.</li><li>Encourage le partage de la culture et des traditions grecques avec l'ensemble de la population.</li><li>N'impose aucune obligation, aucune dépense et aucun congé : il s'agit d'une désignation symbolique.</li></ul><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div></div>
+  </div><div class="ab-row" id="abrow-pr-13583642">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13583642')">
+      <span class="ab-num">C-219</span>
+      <span class="ab-title">Loi modifiant la Loi sur le ministère des Affaires étrangères, du Commerce et du Développement, la Loi sur la justice pour les victimes de dirigeants étrangers corrompus (loi de Sergueï Magnitski) et la Loi sur les mesures économiques spéciales</span>
+      
+      
+      
+      <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
+      <span class="status-pill status-encours">En cours</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13583642"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Oblige le ministre des Affaires étrangères à publier chaque année un rapport sur les droits de la personne dans le monde.</li><li>Exige que ce rapport nomme les « prisonniers d'opinion » que le Canada tente de faire libérer, avec le pays qui les détient.</li><li>Permet de sanctionner la « répression transnationale », soit le fait pour un pays étranger de menacer, espionner ou harceler des gens vivant au Canada ou ailleurs à l'étranger.</li><li>Interdit de délivrer un visa aux proches d'une personne sanctionnée, sauf si le ministre croit qu'ils n'ont tiré aucun avantage de cette personne.</li><li>Oblige la GRC et le CANAFE, l'organisme qui surveille les transactions financières suspectes, à transmettre au ministre l'information utile pour sanctionner quelqu'un.</li><li>Donne au ministre 30 jours pour recommander au gouvernement (le Cabinet) d'imposer ou non la sanction après avoir reçu cette information.</li><li>Renomme la Loi sur les mesures économiques spéciales, qui devient la « Loi sur les sanctions internationales de type Sergueï Magnitski ».</li><li>Fait passer la peine maximale pour une infraction à cette loi à 100 000 $ d'amende et trois ans de prison.</li><li>Interdit au CRTC d'accorder ou de renouveler une licence de radiodiffusion à une entreprise fortement influencée par un étranger sanctionné ou reconnu responsable d'un génocide par le Parlement.</li></ul><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div></div>
+  </div><div class="ab-row" id="abrow-pr-13583696">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13583696')">
+      <span class="ab-num">C-234</span>
+      <span class="ab-title">Loi prévoyant la création et l’attribution d’une médaille de reconnaissance pour les donneurs vivants</span>
+      
+      
+      
+      <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
+      <span class="status-pill status-encours">En cours</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13583696"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Crée une nouvelle médaille fédérale, la Médaille de reconnaissance pour les donneurs vivants.</li><li>Permet de remettre la médaille aux citoyens canadiens et aux résidents permanents vivants qui ont donné un ou plusieurs organes au Canada.</li><li>Précise que le mot « organe » comprend aussi tout type de tissu humain.</li><li>Interdit de remettre la médaille plus d'une fois à la même personne, et exclut les sénateurs et les députés.</li><li>Prévoit que la médaille soit remise, autant que possible, lors d'une cérémonie publique par un représentant de la Couronne, un sénateur ou un député.</li><li>Permet au gouvernement (le Cabinet) de fixer le dessin de la médaille et du ruban, ainsi que les règles de mise en candidature, sans nouveau vote au Parlement.</li><li>Oblige le ministre responsable à déposer chaque année au Parlement le nombre de personnes décorées, dans les 15 premiers jours de séance après le 15 avril.</li><li>Exige aussi un rapport sur la mise en œuvre un an après l'entrée en vigueur, avec les raisons du retard si aucune médaille n'a été remise.</li></ul><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div></div>
+  </div><div class="ab-row" id="abrow-pr-13588449">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13588449')">
+      <span class="ab-num">C-235</span>
+      <span class="ab-title">Loi modifiant le Code criminel (prolongation du délai préalable à la libération conditionnelle)</span>
+      
+      
+      
+      <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
+      <span class="status-pill status-encours">En cours</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13588449"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Modifie le Code criminel pour allonger le temps à purger avant de pouvoir demander une libération conditionnelle.</li><li>Vise la personne reconnue coupable à la fois d'enlèvement, d'agression sexuelle et de meurtre, contre la même victime, lors des mêmes événements.</li><li>Maintient la peine d'emprisonnement à perpétuité, avec un minimum de 25 ans avant toute demande de libération conditionnelle.</li><li>Permet au juge du procès de porter ce délai à plus de 25 ans, jusqu'à un maximum de 40 ans.</li><li>Oblige le juge à demander au jury, avant de le libérer, s'il souhaite recommander un nombre d'années.</li><li>Précise que le jury n'est pas obligé de faire une recommandation, mais que le juge doit en tenir compte s'il y en a une.</li><li>Exige que le juge examine le caractère de l'accusé, la nature des crimes et les circonstances avant de fixer le délai.</li><li>Donne à la loi le titre abrégé de Loi sur le respect des familles de personnes assassinées et brutalisées.</li></ul><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div></div>
+  </div><div class="ab-row" id="abrow-pr-14310361">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14310361')">
+      <span class="ab-num">S-8</span>
+      <span class="ab-title">Loi concernant certaines mesures liées au recyclage des produits de la criminalité, au financement des activités terroristes, au contournement de sanctions et à la détection d’objets inadmissibles dans les transmissions postales</span>
+      
+      <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Projet omnibus — 2 parties : il modifie plusieurs lois différentes. Cliquer pour ne voir que les omnibus">Omnibus · 2 parties</button>
+      
+      <span class="depute-party" style="background:#5B6B7A; color:#fff">BRG</span>
+      <span class="status-pill status-encours">En cours</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="14310361"><p>La partie 1 modifie la Loi sur le recyclage des produits de la criminalité et le financement des activités terroristes afin, notamment&nbsp;:</p><p>a) d’interdire à certaines entités d’accepter les dépôts en espèces de la part d’un tiers et à certaines personnes ou entités d’accepter les paiements, dons ou dépôts en espèces de 10&nbsp;000&nbsp;$ ou plus;</p><p>b) d’ajouter de nouvelles circonstances d’inadmissibilité à l’inscription auprès du Centre d’analyse des opérations et déclarations financières du Canada (ci-après le «&nbsp;Centre&nbsp;») sous le régime de l’article 11.‍1 de cette loi;</p><p>c) d’exiger que les personnes ou entités nouvellement inscrites sous le régime de l’article 11.‍1 de cette loi fournissent au Centre des renseignements sur leurs activités;</p><p class="src-note">📘 Sommaire officiel — le texte de loi (officiel) (extrait ; texte complet au lien ci-dessous).</p></div></div>
+  </div><div class="ab-row" id="abrow-pr-13541851">
     <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13541851')">
       <span class="ab-num">S-214</span>
       <span class="ab-title">Loi modifiant la Loi sur les mesures économiques spéciales (disposition des biens d’un État étranger)</span>
@@ -328,67 +388,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-caret">▾</span>
     </div>
     <div class="ab-detail"><div class="bill-sum-slot" data-bill="14159600"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Crée deux nouvelles lois pour encadrer la sécurité en ligne, avec une attention particulière aux enfants.</li><li>Vise les entreprises qui exploitent des médias sociaux, des agents conversationnels (robots de discussion) et d'autres services en ligne visés par la loi.</li></ul><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 1</span>nouvelle Loi sur la sécurité numérique</h5><ul class="bill-sum-list"><li>Oblige les médias sociaux à réduire le risque que les gens voient du contenu préjudiciable, à offrir des outils pour bloquer d'autres usagers et signaler du contenu, et à étiqueter le contenu créé par ordinateur.</li><li>Oblige les agents conversationnels à limiter le risque d'envoyer du contenu préjudiciable et à prévoir une intervention en cas de crise.</li><li>Exige un âge minimum pour accéder à du contenu pornographique et impose des caractéristiques de conception qui protègent les enfants.</li><li>Oblige les médias sociaux à rendre inaccessible au Canada le contenu de victimisation sexuelle d'enfants et les images intimes partagées sans consentement.</li><li>Permet à toute personne au Canada de porter plainte pour ce type de contenu, après avoir d'abord tenté de régler la situation avec l'entreprise.</li><li>Oblige les entreprises à remettre un plan de sécurité numérique pour montrer qu'elles respectent leurs obligations.</li><li>Permet au gouvernement (le Cabinet) d'ajouter d'autres services en ligne à ces règles, sans nouveau vote au Parlement.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 2</span>nouvelle Loi sur la Commission canadienne de la sécurité numérique</h5><ul class="bill-sum-list"><li>Crée la Commission canadienne de la sécurité numérique, chargée de surveiller l'application des nouvelles règles.</li><li>Donne à la Commission le pouvoir d'ordonner à une entreprise de rendre un contenu inaccessible aux personnes au Canada.</li><li>Permet à toute personne au Canada d'envoyer ses commentaires à la Commission sur ce que font les entreprises visées.</li><li>Modifie d'autres lois pour tenir compte de la création de la Commission.</li></ul></section><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div></div>
-  </div><div class="ab-row" id="abrow-pr-14223235">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14223235')">
-      <span class="ab-num">C-38</span>
-      <span class="ab-title">Loi modifiant la Loi sur la taxe d'accise (prolongation de l'allègement de la taxe d'accise fédérale sur les carburants)</span>
-      
-      
-      
-      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-      <span class="status-pill status-sanctionne">Sanctionnée</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"><div class="bill-sum-slot" data-bill="14223235"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Prolonge jusqu'au 31 janvier 2027 la pause de la taxe fédérale d'accise sur les carburants, qui était déjà en place.</li><li>Touche l'essence sans plomb, l'essence d'aviation avec ou sans plomb, le carburant diesel et le carburant d'aviation.</li><li>Fixe ensuite la taxe à la moitié des taux normaux, du 1er février 2027 au 31 mars 2027.</li><li>Fait passer le taux de 10 cents le litre à 5 cents pendant ces deux mois.</li><li>Fait passer le taux de 11 cents le litre à 5,5 cents pendant la même période.</li><li>Fait passer le taux de 4 cents le litre à 2 cents pendant la même période.</li><li>Donne à la nouvelle loi le nom de Loi sur l'abordabilité des carburants au Canada.</li><li>Applique la prolongation de façon rétroactive, à partir du 8 septembre 2026.</li></ul><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div></div>
-  </div><div class="ab-row" id="abrow-pr-13586188">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13586188')">
-      <span class="ab-num">C-222</span>
-      <span class="ab-title">Loi modifiant la Loi sur l’assurance-emploi et le Code canadien du travail (décès d’un enfant)</span>
-      
-      
-      
-      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-      <span class="status-pill status-encours">En cours</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13586188"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Permet à un parent qui touche des prestations d'assurance-emploi pour un nouveau-né ou un enfant en voie d'adoption de les garder si l'enfant meurt pendant la période de prestations.</li><li>Traite le parent comme s'il prenait encore soin de l'enfant jusqu'à la fin normale de la période de prestations.</li><li>Dispense ce parent de faire une nouvelle demande ou de remplir des rapports pour prouver son droit aux prestations.</li><li>Étend la même protection aux travailleurs autonomes qui reçoivent ces prestations.</li><li>Retire cette protection si l'enfant est mort à cause d'une infraction et que le parent est reconnu coupable de cette infraction.</li><li>Maintient le congé de maternité prévu par le Code canadien du travail, pour les emplois encadrés par Ottawa (banques, transport aérien, télécoms, etc.), même si le nouveau-né meurt pendant le congé.</li><li>Maintient aussi le congé parental jusqu'à sa fin normale si l'enfant meurt durant ce congé.</li><li>Donne à la nouvelle loi le titre abrégé de Loi sur l'allègement du fardeau administratif des parents endeuillés (Loi d'Evan).</li></ul><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div></div>
-  </div><div class="ab-row" id="abrow-pr-13592619">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13592619')">
-      <span class="ab-num">C-241</span>
-      <span class="ab-title">Loi prévoyant l’élaboration d’une stratégie nationale sur la prévision des inondations et des sécheresses</span>
-      
-      
-      
-      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-      <span class="status-pill status-encours">En cours</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13592619"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Crée une nouvelle loi qui oblige le ministre de l'Environnement à bâtir une stratégie nationale pour prévoir les inondations et les sécheresses.</li><li>Fait travailler ensemble les ministres de l'Agriculture, de l'Infrastructure, des Ressources naturelles et de la Sécurité publique sur cette stratégie.</li><li>Exige des consultations avec les provinces, les municipalités, les corps dirigeants autochtones, les universités, l'industrie et les assureurs.</li><li>Demande d'évaluer les avantages d'une coordination nationale, de nouveaux investissements et de nouvelles technologies de prévision.</li><li>Prévoit d'évaluer le besoin de modèles qui repèrent les maisons et les infrastructures menacées par les inondations.</li><li>Oblige à proposer un service national de prévision de l'eau, partagé entre Ottawa et les provinces.</li><li>Fixe un délai de deux ans pour déposer la stratégie au Parlement, avec publication en ligne dans les 10 jours.</li><li>Exige un second rapport sur les résultats de la stratégie, cinq ans après le dépôt du premier.</li></ul><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div></div>
-  </div><div class="ab-row" id="abrow-pr-13541954">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13541954')">
-      <span class="ab-num">S-209</span>
-      <span class="ab-title">Loi limitant l’accès en ligne des jeunes au matériel pornographique</span>
-      
-      
-      <span class="ab-lob" title="2 communications de lobbying déclarées">2</span>
-      <span class="depute-party" style="background:#B0568C; color:#fff">GPS</span>
-      <span class="status-pill status-encours">En cours</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13541954"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Crée une nouvelle loi, la Loi sur la protection des jeunes contre l'exposition à la pornographie, qui vise les sites pornographiques commerciaux.</li><li>Rend illégal, pour une entreprise, de laisser une personne de moins de 18 ans accéder à du matériel pornographique en ligne à des fins commerciales.</li><li>Fixe les amendes à un maximum de 250 000 $ pour une première infraction et de 500 000 $ pour les suivantes.</li><li>Protège l'entreprise des poursuites si elle utilise une méthode de vérification ou d'estimation de l'âge approuvée par le gouvernement.</li><li>Prévoit aussi une défense quand le contenu sert à la science, à la médecine, à l'éducation ou aux arts, et épargne les moteurs de recherche ou services qui donnent accès au contenu sans le vouloir.</li><li>Permet à un organisme fédéral chargé de l'application d'envoyer un avis à l'entreprise fautive, qui a 20 jours pour corriger la situation.</li><li>Autorise cet organisme à demander à la Cour fédérale d'ordonner aux fournisseurs Internet de bloquer l'accès au contenu au Canada si rien n'est corrigé.</li><li>Exige que les méthodes de vérification de l'âge soient gérées par un tiers indépendant, qu'elles protègent la vie privée et détruisent les renseignements après usage.</li><li>Oblige le ministre responsable à déposer chaque année au Parlement un rapport sur les avis envoyés et les demandes faites à la Cour.</li><li>S'applique un an après la sanction royale.</li></ul><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div></div>
-  </div><div class="ab-row" id="abrow-pr-14279940">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14279940')">
-      <span class="ab-num">C-41</span>
-      <span class="ab-title">Loi modifiant le Code criminel et la Loi modifiant le Code criminel (aide médicale à mourir) et apportant des modifications connexes à d'autres lois</span>
-      
-      
-      
-      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-      <span class="status-pill status-encours">En cours</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"><div class="bill-sum-slot" data-bill="14279940"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Confirme qu'une personne ne peut pas obtenir l'aide médicale à mourir si sa seule raison est une maladie mentale, et supprime la date de fin de cette exclusion.</li><li>Permet à un médecin ou à une infirmière praticienne de donner l'aide médicale à mourir à une personne qui a perdu la capacité de consentir, si elle avait signé une demande à l'avance.</li><li>Exige que la personne ait reçu, avant de signer, un diagnostic de maladie grave et incurable qui allait lui faire perdre sa capacité de décider.</li><li>Oblige la personne à décrire dans sa demande les signes précis de la maladie qui, selon elle, causeraient des souffrances insupportables.</li><li>Interdit de donner l'aide médicale à mourir si la personne montre un refus ou une résistance par des mots, des sons ou des gestes; en cas de doute, il faut attendre au moins 30 jours.</li><li>Exige une seconde opinion écrite d'un autre médecin ou d'une autre infirmière praticienne confirmant que la personne remplit tous les critères.</li><li>Limite ces demandes faites à l'avance aux provinces qui ont leurs propres règles en vigueur et un registre officiel où ces demandes sont conservées.</li><li>Punit d'une peine pouvant aller jusqu'à cinq ans de prison le professionnel qui ne respecte pas sciemment ces mesures de protection.</li><li>Précise que personne n'est obligé de fournir cette aide, et que les anciens combattants concernés sont réputés être morts de leur maladie.</li></ul><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div></div>
-  </div><button class="votes-more" onclick="loadMoreBills()">Voir 20 de plus — 10 sur 196 affichés</button><!--/ssr--></div>
+  </div><button class="votes-more" onclick="loadMoreBills()">Voir 20 de plus — 10 sur 197 affichés</button><!--/ssr--></div>
 
     <!-- Ce que « challenger » veut dire, en bas de la liste — comme sur
          DossierQuébec. Le texte dit le VRAI mécanisme : compte requis, une

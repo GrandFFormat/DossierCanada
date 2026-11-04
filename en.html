@@ -80,7 +80,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=6a1e88db9f">
+<link rel="stylesheet" href="/assets/app.css?v=ba047d630d">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -191,7 +191,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
 
     <div class="apercu-3col">
       <aside class="a3-left">
-        <p class="a3-intro" id="a3intro"><!--ssr-->Canada's Parliament without the jargon: <b>337</b> MPs, <b>196</b> federal bills and <b>187</b> recorded votes in the House of Commons, straight from official sources.<!--/ssr--></p>
+        <p class="a3-intro" id="a3intro"><!--ssr-->Canada's Parliament without the jargon: <b>337</b> MPs, <b>197</b> federal bills and <b>188</b> recorded votes in the House of Commons, straight from official sources.<!--/ssr--></p>
         <h2 class="a3-hiw-h" data-i18n="a3.hiw">How it works</h2>
         <div class="a3-steps">
           <div class="a3-step"><span class="a3-step-n" style="background:var(--yellow)">1</span><p data-i18n="a3.step1">A bill seems opaque? Ask for an explanation.</p></div>
@@ -204,34 +204,10 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
           <h2 data-i18n="h.billsrecent">Recently active bills</h2>
           <a class="a3-seeall" data-view="projets" href="/en/bills" data-i18n="a3.seeall">See all →</a>
         </div>
-        <div id="apercuBills"><!--ssr--><div class="ab-row" id="abrow-ap-13541851">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13541851')">
-      <span class="ab-num">S-214</span>
-      <span class="ab-title">An Act to amend the Special Economic Measures Act (disposal of foreign state assets)</span>
-      
-      
-      
-      
-      <span class="status-pill status-encours">In progress</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"></div>
-  </div><div class="ab-row" id="abrow-ap-13541964">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13541964')">
-      <span class="ab-num">S-210</span>
-      <span class="ab-title">An Act respecting Ukrainian Heritage Month</span>
-      
-      
-      
-      
-      <span class="status-pill status-sanctionne">Assented to</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"></div>
-  </div><div class="ab-row" id="abrow-ap-13623903">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13623903')">
-      <span class="ab-num">S-237</span>
-      <span class="ab-title">An Act respecting a Cities and Municipalities Day</span>
+        <div id="apercuBills"><!--ssr--><div class="ab-row" id="abrow-ap-13541987">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13541987')">
+      <span class="ab-num">S-220</span>
+      <span class="ab-title">An Act to designate the month of March as Hellenic Heritage Month</span>
       
       
       
@@ -240,14 +216,38 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-caret">▾</span>
     </div>
     <div class="ab-detail"></div>
-  </div><div class="ab-row" id="abrow-ap-14297192">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-14297192')">
-      <span class="ab-num">S-253</span>
-      <span class="ab-title">An Act to amend the Income Tax Act (child care expense deduction indexation)</span>
+  </div><div class="ab-row" id="abrow-ap-13583642">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13583642')">
+      <span class="ab-num">C-219</span>
+      <span class="ab-title">An Act to amend the Department of Foreign Affairs, Trade and Development Act, the Justice for Victims of Corrupt Foreign Officials Act (Sergei Magnitsky Law) and the Special Economic Measures Act</span>
       
       
       
+      <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
+      <span class="status-pill status-encours">In progress</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"></div>
+  </div><div class="ab-row" id="abrow-ap-13583696">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13583696')">
+      <span class="ab-num">C-234</span>
+      <span class="ab-title">An Act respecting the establishment and award of a Living Donor Recognition Medal</span>
       
+      
+      
+      <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
+      <span class="status-pill status-encours">In progress</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"></div>
+  </div><div class="ab-row" id="abrow-ap-13588449">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13588449')">
+      <span class="ab-num">C-235</span>
+      <span class="ab-title">An Act to amend the Criminal Code (increasing parole ineligibility)</span>
+      
+      
+      
+      <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
       <span class="status-pill status-encours">In progress</span>
       <span class="ab-caret">▾</span>
     </div>
@@ -268,12 +268,12 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
         <h2 class="a3-hiw-h" data-i18n="h.quoideneuf">What's new</h2>
         <div id="sittingBox"></div>
         <div id="newsList"><!--ssr--><div class="news-item">
-      <div class="news-date">2026-11-02</div>
-      <div class="news-body"><p><b>S-214</b> — At second reading in the House of Commons</p></div>
+      <div class="news-date">2026-11-03</div>
+      <div class="news-body"><p><b>S-220</b> — Senate bill awaiting first reading in the House of Commons</p></div>
     </div>
     <div class="news-item">
-      <div class="news-date">2026-10-29</div>
-      <div class="news-body"><p><b>S-210</b> — Royal assent received</p></div>
+      <div class="news-date">2026-11-03</div>
+      <div class="news-body"><p><b>C-219</b> — At consideration in committee in the Senate</p></div>
     </div><button class="bill-more" style="margin-top:14px; border:none; cursor:pointer;" onclick="loadMoreNews()">+ Show more</button><!--/ssr--></div>
       </aside>
     </div>
