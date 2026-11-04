@@ -62,7 +62,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=6a1e88db9f">
+<link rel="stylesheet" href="/assets/app.css?v=ba047d630d">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -248,7 +248,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     <div class="page-band">
       <div>
         <nav class="crumbs" aria-label="Breadcrumb"><a data-view="apercu" href="/en">DossierCanada</a> <span aria-hidden="true">›</span> <span aria-current="page" data-i18n="nav.projets">Bills</span></nav>
-        <h1 class="band-title" id="projetsCountTitle">196 federal bills</h1>
+        <h1 class="band-title" id="projetsCountTitle">197 federal bills</h1>
         <div class="sub" data-i18n="proj.bandsub">Every bill summarized in plain language. Not clear enough? Ask for an explanation.</div>
       </div>
     </div>
@@ -263,12 +263,72 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       </div>
       <div class="filter-group">
         <button class="filter-hamburger" id="stepFilterBtn" onclick="toggleFilterPanel('step')" aria-expanded="false">☰ <span data-i18n="filter.etapes">Chamber</span></button>
-        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">House of Commons</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Senate</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Bills with communications reported to the Commissioner of Lobbying">Lobbying <b>50</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Bills that change several different acts at once, one per part">Omnibus <b>15</b></span><!--/ssr--></div>
+        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">House of Commons</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Senate</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Bills with communications reported to the Commissioner of Lobbying">Lobbying <b>50</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Bills that change several different acts at once, one per part">Omnibus <b>16</b></span><!--/ssr--></div>
       </div>
     </div>
     <p class="tous-votes" id="lienTousVotes"><a data-view="votes" href="/en/votes" data-i18n="projets.tousvotes">All recorded votes, motions included →</a></p>
 
-    <div id="billsList"><!--ssr--><div class="ab-row" id="abrow-pr-13541851">
+    <div id="billsList"><!--ssr--><div class="ab-row" id="abrow-pr-13541987">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13541987')">
+      <span class="ab-num">S-220</span>
+      <span class="ab-title">An Act to designate the month of March as Hellenic Heritage Month</span>
+      
+      
+      
+      <span class="depute-party" style="background:#6D5BA6; color:#fff">ISG</span>
+      <span class="status-pill status-encours">In progress</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13541987"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Names March as "Hellenic Heritage Month" across Canada, every year.</li><li>Creates a short new law called the Hellenic Heritage Month Act.</li><li>Highlights the contributions of Greek Canadians, who number more than 260,000 according to the text.</li><li>Notes that Canadian democracy traces its roots to the ancient Greek city of Athens.</li><li>Picks March because Greece began its war of independence on March 25, 1821.</li><li>Encourages Greek Canadians to share their culture and traditions with other Canadians.</li><li>Sets no new duties, no spending and no day off: the month is purely symbolic.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
+  </div><div class="ab-row" id="abrow-pr-13583642">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13583642')">
+      <span class="ab-num">C-219</span>
+      <span class="ab-title">An Act to amend the Department of Foreign Affairs, Trade and Development Act, the Justice for Victims of Corrupt Foreign Officials Act (Sergei Magnitsky Law) and the Special Economic Measures Act</span>
+      
+      
+      
+      <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
+      <span class="status-pill status-encours">In progress</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13583642"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Requires the Minister of Foreign Affairs to publish a yearly report on Canada's work for human rights abroad.</li><li>Requires that report to name the "prisoners of conscience" Canada is trying to free, and the countries holding them.</li><li>Allows sanctions for "transnational repression", when a foreign state threatens, spies on or harasses people living outside its borders.</li><li>Bars visas for the close family of a sanctioned person, unless the Minister believes they got no money or benefit from that person.</li><li>Requires the RCMP and FINTRAC, the agency that tracks suspicious financial activity, to give the Minister information useful for sanctions.</li><li>Gives the Minister 30 days after getting that information to recommend to the federal Cabinet whether to impose the sanction.</li><li>Renames the Special Economic Measures Act as the "Sergei Magnitsky Global Sanctions Act".</li><li>Raises the maximum penalty under that law to a $100,000 fine and three years in prison.</li><li>Blocks broadcast licences for any station strongly influenced by a foreign person or group under sanctions, or found by Parliament to have committed genocide.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
+  </div><div class="ab-row" id="abrow-pr-13583696">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13583696')">
+      <span class="ab-num">C-234</span>
+      <span class="ab-title">An Act respecting the establishment and award of a Living Donor Recognition Medal</span>
+      
+      
+      
+      <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
+      <span class="status-pill status-encours">In progress</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13583696"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Creates a new federal medal, the Living Donor Recognition Medal.</li><li>Allows the medal to go to living Canadian citizens and permanent residents who donated one or more organs in Canada.</li><li>States that "organ" also covers any form of human tissue.</li><li>Bars giving the medal to the same person twice, and rules out senators and members of Parliament.</li><li>Calls for the medal to be handed out, whenever possible, at a public ceremony by a representative of the Crown, a senator or an MP.</li><li>Lets the federal Cabinet decide the look of the medal and ribbon, plus the nomination process, without a new vote in Parliament.</li><li>Requires the responsible minister to table a yearly report on how many people received the medal, within 15 sitting days after April 15.</li><li>Requires a report on how the law is being put in place one year after it takes effect, with reasons if no medal has been given yet.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
+  </div><div class="ab-row" id="abrow-pr-13588449">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13588449')">
+      <span class="ab-num">C-235</span>
+      <span class="ab-title">An Act to amend the Criminal Code (increasing parole ineligibility)</span>
+      
+      
+      
+      <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
+      <span class="status-pill status-encours">In progress</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13588449"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Changes the Criminal Code to lengthen the time served before an offender can ask for parole.</li><li>Applies to a person convicted of kidnapping, sexual assault and murder against the same victim in the same events.</li><li>Keeps the life sentence, with at least 25 years served before any parole request is possible.</li><li>Lets the trial judge raise that waiting period above 25 years, up to a maximum of 40 years.</li><li>Requires the judge to ask the jury, before dismissing it, whether it wants to recommend a number of years.</li><li>States the jury does not have to make a recommendation, but the judge must consider one if given.</li><li>Requires the judge to weigh the offender's character, the nature of the crimes and the circumstances.</li><li>Gives the law the short title Respecting Families of Murdered and Brutalized Persons Act.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
+  </div><div class="ab-row" id="abrow-pr-14310361">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14310361')">
+      <span class="ab-num">S-8</span>
+      <span class="ab-title">An Act respecting certain measures relating to proceeds of crime, terrorist financing, sanctions evasion and the detection of non-mailable matter transmitted by post</span>
+      
+      <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Omnibus bill — 2 parts: it changes several different acts. Click to show only omnibus bills">Omnibus · 2 parts</button>
+      
+      <span class="depute-party" style="background:#5B6B7A; color:#fff">GRO</span>
+      <span class="status-pill status-encours">In progress</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="14310361"><p>Part 1 amends the Proceeds of Crime (Money Laundering) and Terrorist Financing Act to, among other things,</p><p>(a) prohibit certain entities from accepting cash deposits from third parties and certain persons or entities from accepting cash payments, donations or deposits of $10,000 or more;</p><p>(b) add new grounds of ineligibility for registration with the Financial Transactions and Reports Analysis Centre of Canada (FINTRAC);</p><p>(c) require persons or entities that are newly registered to provide information to FINTRAC on their activities;</p><p>(d) add new powers and duties for the Minister of Finance in relation to national security and to safeguarding the integrity of Canada’s financial system;</p><p>(e) permit a person or entity referred to in section 5 of that Act to collect and use an individual’s personal information without that individual’s knowledge or consent if</p><p class="src-note">📘 Official summary — the bill's own text (official) (excerpt; full text at the link below).</p></div></div>
+  </div><div class="ab-row" id="abrow-pr-13541851">
     <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13541851')">
       <span class="ab-num">S-214</span>
       <span class="ab-title">An Act to amend the Special Economic Measures Act (disposal of foreign state assets)</span>
@@ -328,67 +388,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-caret">▾</span>
     </div>
     <div class="ab-detail"><div class="bill-sum-slot" data-bill="14159600"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Creates two new laws to set rules for online safety, with a focus on protecting children.</li><li>Applies to companies running social media services, chatbot services and other online services covered by the law.</li></ul><section class="bill-part"><h5 class="bill-sum-part"><span>Part 1</span>new Digital Safety Act</h5><ul class="bill-sum-list"><li>Requires social media services to lower the risk that users see harmful content, to offer tools to block users and flag content, and to label computer-generated content.</li><li>Requires chatbot services to lower the risk of sending harmful content and to step in during a crisis.</li><li>Sets a minimum age to view pornographic content and requires design features that protect children.</li><li>Requires social media services to block, in Canada, content that sexually victimizes a child and intimate images shared without consent.</li><li>Lets anyone in Canada file a complaint about that content, after first trying to resolve it with the company.</li><li>Requires companies to file a digital safety plan showing they are meeting their duties.</li><li>Lets the federal Cabinet add other online services to these rules, without a new vote in Parliament.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Part 2</span>new Digital Safety Commission of Canada Act</h5><ul class="bill-sum-list"><li>Creates the Digital Safety Commission of Canada to oversee how the new rules are followed.</li><li>Gives the Commission power to order a company to make content inaccessible to people in Canada.</li><li>Lets anyone in Canada send the Commission comments on what covered companies are doing.</li><li>Updates other laws to reflect the creation of the Commission.</li></ul></section><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
-  </div><div class="ab-row" id="abrow-pr-14223235">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14223235')">
-      <span class="ab-num">C-38</span>
-      <span class="ab-title">An Act to amend the Excise Tax Act (extension of the federal fuel excise tax relief)</span>
-      
-      
-      
-      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-      <span class="status-pill status-sanctionne">Assented to</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"><div class="bill-sum-slot" data-bill="14223235"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Extends the pause on the federal fuel excise tax, already in place, until January 31, 2027.</li><li>Applies to unleaded gasoline, leaded and unleaded aviation gasoline, diesel fuel and aviation fuel.</li><li>Sets the tax at half the normal rates from February 1, 2027 to March 31, 2027.</li><li>Cuts the 10-cents-per-litre rate to 5 cents during those two months.</li><li>Cuts the 11-cents-per-litre rate to 5.5 cents over the same period.</li><li>Cuts the 4-cents-per-litre rate to 2 cents over the same period.</li><li>Names the new law the Canadian Fuel Affordability Act.</li><li>Makes the extension retroactive, starting September 8, 2026.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
-  </div><div class="ab-row" id="abrow-pr-13586188">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13586188')">
-      <span class="ab-num">C-222</span>
-      <span class="ab-title">An Act to amend the Employment Insurance Act and the Canada Labour Code (death of a child)</span>
-      
-      
-      
-      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-      <span class="status-pill status-encours">In progress</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13586188"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Lets a parent receiving employment insurance benefits for a newborn or a child being adopted keep those benefits if the child dies during the benefit period.</li><li>Treats the parent as still caring for the child until the benefit period would normally end.</li><li>Frees that parent from filing a new claim or reports to prove they still qualify for benefits.</li><li>Extends the same protection to self-employed people receiving these benefits.</li><li>Removes this protection if the child died because of a crime and the parent is convicted of that crime.</li><li>Keeps maternity leave under the Canada Labour Code, for jobs regulated by Ottawa (banks, airlines, telecoms, etc.), even if the newborn dies during the leave.</li><li>Keeps parental leave running to its normal end if the child dies during that leave.</li><li>Gives the new law the short title Relieving Grieving Parents of an Administrative Burden Act (Evan's Law).</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
-  </div><div class="ab-row" id="abrow-pr-13592619">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13592619')">
-      <span class="ab-num">C-241</span>
-      <span class="ab-title">An Act to establish a national strategy respecting flood and drought forecasting</span>
-      
-      
-      
-      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-      <span class="status-pill status-encours">In progress</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13592619"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Creates a new law requiring the Minister of the Environment to build a national strategy for forecasting floods and droughts.</li><li>Brings in the ministers of Agriculture, Infrastructure, Natural Resources and Public Safety to help develop the strategy.</li><li>Requires talks with provinces, municipalities, Indigenous governing bodies, universities, industry and insurance companies.</li><li>Calls for a look at the benefits of national coordination, new spending and new forecasting technology.</li><li>Calls for a review of the need for modelling that flags homes and infrastructure at risk of flooding.</li><li>Requires a proposal for a national water forecasting service shared between Ottawa and the provinces.</li><li>Sets a two-year deadline to table the strategy in Parliament, with online publication within 10 days.</li><li>Requires a second report on how well the strategy works, five years after the first one is tabled.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
-  </div><div class="ab-row" id="abrow-pr-13541954">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13541954')">
-      <span class="ab-num">S-209</span>
-      <span class="ab-title">An Act to restrict young persons’ online access to pornographic material</span>
-      
-      
-      <span class="ab-lob" title="2 reported lobbying communications">2</span>
-      <span class="depute-party" style="background:#B0568C; color:#fff">PSG</span>
-      <span class="status-pill status-encours">In progress</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13541954"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Creates a new law, the Protecting Young Persons from Exposure to Pornography Act, aimed at commercial porn websites.</li><li>Makes it a crime for a business to let anyone under 18 access pornographic material online for commercial purposes.</li><li>Sets fines of up to $250,000 for a first offence and up to $500,000 for later ones.</li><li>Shields a business from conviction if it uses an age-verification or age-estimation method approved by the government.</li><li>Allows a defence when the content serves science, medicine, education or the arts, and spares search or hosting services that only incidentally give access.</li><li>Lets a federal enforcement body send a notice to the offending business, which then has 20 days to fix the problem.</li><li>Allows that body to ask the Federal Court to order Internet providers to block access to the material in Canada if nothing is fixed.</li><li>Requires age checks to be run by an independent third party, to protect privacy and to delete personal information once the check is done.</li><li>Requires the responsible minister to table a yearly report to Parliament on notices issued and court applications made.</li><li>Takes effect one year after the bill receives royal assent.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
-  </div><div class="ab-row" id="abrow-pr-14279940">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14279940')">
-      <span class="ab-num">C-41</span>
-      <span class="ab-title">An Act to amend the Criminal Code and An Act to amend the Criminal Code (medical assistance in dying) and to make related amendments to other Acts</span>
-      
-      
-      
-      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-      <span class="status-pill status-encours">In progress</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"><div class="bill-sum-slot" data-bill="14279940"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Confirms that a person cannot get medical assistance in dying when mental illness is the only reason, and removes the end date on that exclusion.</li><li>Lets a doctor or nurse practitioner provide medical assistance in dying to someone who has lost the ability to consent, if they signed a request ahead of time.</li><li>Requires that the person was diagnosed, before signing, with a serious and incurable illness expected to take away their ability to decide.</li><li>Requires the person to describe in the request the specific signs of the illness that they expect would cause unbearable suffering.</li><li>Bars going ahead if the person shows refusal or resistance through words, sounds or gestures; if there is doubt, a wait of at least 30 days applies.</li><li>Requires a second written opinion from another doctor or nurse practitioner confirming the person meets every criterion.</li><li>Allows these advance requests only in provinces that have their own rules in force and an official place where the requests are stored.</li><li>Sets a penalty of up to five years in prison for a practitioner who knowingly ignores these safeguards.</li><li>States that no one is forced to provide this service, and that affected veterans are treated as having died from their illness.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
-  </div><button class="votes-more" onclick="loadMoreBills()">See 20 more — 10 of 196 shown</button><!--/ssr--></div>
+  </div><button class="votes-more" onclick="loadMoreBills()">See 20 more — 10 of 197 shown</button><!--/ssr--></div>
 
     <!-- Ce que « challenger » veut dire, en bas de la liste — comme sur
          DossierQuébec. Le texte dit le VRAI mécanisme : compte requis, une

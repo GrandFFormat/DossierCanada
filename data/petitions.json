@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-11-03T16:05:52.015Z",
+  "scrapedAt": "2026-11-04T16:10:54.784Z",
   "count": 20,
   "petitions": [
     {
@@ -18,10 +18,31 @@
         "fr": "Ouverte pour signature jusqu'au 24 février 2027 à 13 h 02 (HAE)"
       },
       "sponsor": "Scot Davidson",
-      "signatures": 3935,
+      "signatures": 4950,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7880",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7880"
+      }
+    },
+    {
+      "code": "e-7902",
+      "topic": {
+        "en": "National defence and military operations",
+        "fr": "Défense nationale et opérations militaires"
+      },
+      "keywords": {
+        "en": "Canadian Forces Chaplaincy services and chaplains Religious heritage Remembrance Day",
+        "fr": "Forces canadiennes Jour du Souvenir Patrimoine religieux Services d'aumônerie et aumôniers"
+      },
+      "status": {
+        "en": "Open for signature until January 31, 2027, at 3:54 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 31 janvier 2027 à 15 h 54 (HAE)"
+      },
+      "sponsor": "Stephanie Kusie",
+      "signatures": 2678,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7902",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7902"
       }
     },
     {
@@ -39,10 +60,52 @@
         "fr": "Ouverte pour signature jusqu'au 27 janvier 2027 à 10 h 50 (HAE)"
       },
       "sponsor": "Scott Anderson",
-      "signatures": 544,
+      "signatures": 762,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7885",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7885"
+      }
+    },
+    {
+      "code": "e-7877",
+      "topic": {
+        "en": "Environment",
+        "fr": "Environnement"
+      },
+      "keywords": {
+        "en": "C-39, An Act respecting certain measures ... Economic development Environmental protection",
+        "fr": "C-39, Loi concernant certaines mesures v ... Développement économique Protection de l'environnement"
+      },
+      "status": {
+        "en": "Open for signature until December 2, 2026, at 2:16 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 2 décembre 2026 à 14 h 16 (HAE)"
+      },
+      "sponsor": "Iqra Khalid",
+      "signatures": 650,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7877",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7877"
+      }
+    },
+    {
+      "code": "e-7895",
+      "topic": {
+        "en": "Justice",
+        "fr": "Justice"
+      },
+      "keywords": {
+        "en": "Nudity",
+        "fr": "Nudité"
+      },
+      "status": {
+        "en": "Open for signature until March 2, 2027, at 3:53 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 2 mars 2027 à 15 h 53 (HAE)"
+      },
+      "sponsor": "Elizabeth May",
+      "signatures": 613,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7895",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7895"
       }
     },
     {
@@ -60,7 +123,7 @@
         "fr": "Ouverte pour signature jusqu'au 25 janvier 2027 à 13 h 02 (HAE)"
       },
       "sponsor": "Marilène Gill",
-      "signatures": 356,
+      "signatures": 375,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7868",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7868"
@@ -81,7 +144,7 @@
         "fr": "Ouverte pour signature jusqu'au 24 février 2027 à 13 h 02 (HAE)"
       },
       "sponsor": "Patrick Weiler",
-      "signatures": 308,
+      "signatures": 328,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7879",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7879"
@@ -102,31 +165,10 @@
         "fr": "Ouverte pour signature jusqu'au 26 novembre 2026 à 13 h 03 (HAE)"
       },
       "sponsor": "Kathy Borrelli",
-      "signatures": 289,
+      "signatures": 302,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7863",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7863"
-      }
-    },
-    {
-      "code": "e-7895",
-      "topic": {
-        "en": "Justice",
-        "fr": "Justice"
-      },
-      "keywords": {
-        "en": "Nudity",
-        "fr": "Nudité"
-      },
-      "status": {
-        "en": "Open for signature until March 2, 2027, at 3:53 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 2 mars 2027 à 15 h 53 (HAE)"
-      },
-      "sponsor": "Elizabeth May",
-      "signatures": 242,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7895",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7895"
       }
     },
     {
@@ -144,31 +186,10 @@
         "fr": "Ouverte pour signature jusqu'au 28 décembre 2026 à 10 h 49 (HAE)"
       },
       "sponsor": "Richard Bragdon",
-      "signatures": 213,
+      "signatures": 268,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7870",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7870"
-      }
-    },
-    {
-      "code": "e-7877",
-      "topic": {
-        "en": "Environment",
-        "fr": "Environnement"
-      },
-      "keywords": {
-        "en": "C-39, An Act respecting certain measures ... Economic development Environmental protection",
-        "fr": "C-39, Loi concernant certaines mesures v ... Développement économique Protection de l'environnement"
-      },
-      "status": {
-        "en": "Open for signature until December 2, 2026, at 2:16 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 2 décembre 2026 à 14 h 16 (HAE)"
-      },
-      "sponsor": "Iqra Khalid",
-      "signatures": 188,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7877",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7877"
       }
     },
     {
@@ -186,220 +207,31 @@
         "fr": "Ouverte pour signature jusqu'au 26 décembre 2026 à 13 h 03 (HAE)"
       },
       "sponsor": "Jaime Battiste",
-      "signatures": 185,
+      "signatures": 202,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7850",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7850"
       }
     },
     {
-      "code": "e-7576",
+      "code": "e-7918",
       "topic": {
-        "en": "Natural resources and energy",
-        "fr": "Ressources naturelles et énergie"
+        "en": "Environment",
+        "fr": "Environnement"
       },
       "keywords": {
-        "en": "Canadian companies Critical minerals National security",
-        "fr": "Entreprises canadiennes Minéraux critiques Sécurité nationale"
+        "en": "Layoffs and job losses Parks Canada Agency",
+        "fr": "Agence Parcs Canada Mises à pied et pertes d'emplois"
       },
       "status": {
-        "en": "Open for signature until February 19, 2027, at 4:20 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 19 février 2027 à 16 h 20 (HAE)"
+        "en": "Open for signature until January 2, 2027, at 3:26 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 2 janvier 2027 à 15 h 26 (HAE)"
       },
-      "sponsor": "Elizabeth May",
-      "signatures": 158,
+      "sponsor": "Brendan Hanley",
+      "signatures": 195,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7576",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7576"
-      }
-    },
-    {
-      "code": "e-7839",
-      "topic": {
-        "en": "Justice",
-        "fr": "Justice"
-      },
-      "keywords": {
-        "en": "Domestic violence Financial hardship Human trafficking Sexual abuse and exploitation Victims",
-        "fr": "Difficulté financière Traite de personnes Victimes Violence et exploitation sexuelle Violence familiale"
-      },
-      "status": {
-        "en": "Open for signature until February 19, 2027, at 4:22 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 19 février 2027 à 16 h 22 (HAE)"
-      },
-      "sponsor": "Danielle Martin",
-      "signatures": 123,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7839",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7839"
-      }
-    },
-    {
-      "code": "e-7875",
-      "topic": {
-        "en": "Foreign affairs",
-        "fr": "Affaires étrangères"
-      },
-      "keywords": {
-        "en": "Army of the Guardians of the Islamic Rev ... Economic sanctions Foreign companies Iran",
-        "fr": "Gardiens de la Révolution islamique Iran Sanctions économiques Sociétés étrangères"
-      },
-      "status": {
-        "en": "Open for signature until February 19, 2027, at 4:24 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 19 février 2027 à 16 h 24 (HAE)"
-      },
-      "sponsor": "Anthony Housefather",
-      "signatures": 109,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7875",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7875"
-      }
-    },
-    {
-      "code": "e-7869",
-      "topic": {
-        "en": "Fisheries",
-        "fr": "Pêches"
-      },
-      "keywords": {
-        "en": "Fisheries policy Hunting and sport fishing Killer whales",
-        "fr": "Chasse et pêche de loisir Épaulards Politique sur les pêches"
-      },
-      "status": {
-        "en": "Open for signature until February 24, 2027, at 1:02 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 24 février 2027 à 13 h 02 (HAE)"
-      },
-      "sponsor": "Tamara Kronis",
-      "signatures": 68,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7869",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7869"
-      }
-    },
-    {
-      "code": "e-7866",
-      "topic": {
-        "en": "Business and trade",
-        "fr": "Affaires et commerce"
-      },
-      "keywords": {
-        "en": "Black Canadians Black Entrepreneurship Program Entrepreneurship and entrepreneurs",
-        "fr": "Canadiens de race noire Entreprenariat et entrepreneurs Programme pour l'entrepreneuriat des com ..."
-      },
-      "status": {
-        "en": "Open for signature until February 24, 2027, at 1:05 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 24 février 2027 à 13 h 05 (HAE)"
-      },
-      "sponsor": "Amandeep Sodhi",
-      "signatures": 49,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7866",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7866"
-      }
-    },
-    {
-      "code": "e-7827",
-      "topic": {
-        "en": "National defence and military operations",
-        "fr": "Défense nationale et opérations militaires"
-      },
-      "keywords": {
-        "en": "Government contracts Military equipment and facilities Product of Canada Remotely piloted aircraft",
-        "fr": "Aéronefs téléguidés Équipement et installations militaires Marchés publics Produit du Canada"
-      },
-      "status": {
-        "en": "Open for signature until February 26, 2027, at 10:49 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 26 février 2027 à 10 h 49 (HAE)"
-      },
-      "sponsor": "Patrick Weiler",
-      "signatures": 39,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7827",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7827"
-      }
-    },
-    {
-      "code": "e-7867",
-      "topic": {
-        "en": "Business and trade",
-        "fr": "Affaires et commerce"
-      },
-      "keywords": {
-        "en": "Canada-United States relations Customs tariff and customs duties International trade",
-        "fr": "Commerce international Relations Canada-États-Unis Tarif des douanes et droits de douane"
-      },
-      "status": {
-        "en": "Open for signature until February 19, 2027, at 4:22 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 19 février 2027 à 16 h 22 (HAE)"
-      },
-      "sponsor": "Stephanie Kusie",
-      "signatures": 34,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7867",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7867"
-      }
-    },
-    {
-      "code": "e-7854",
-      "topic": {
-        "en": "National defence and military operations",
-        "fr": "Défense nationale et opérations militaires"
-      },
-      "keywords": {
-        "en": "Canadian Forces Chaplaincy services and chaplains Religious heritage Remembrance Day",
-        "fr": "Forces canadiennes Jour du Souvenir Patrimoine religieux Services d'aumônerie et aumôniers"
-      },
-      "status": {
-        "en": "Open for signature until March 2, 2027, at 1:54 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 2 mars 2027 à 13 h 54 (HAE)"
-      },
-      "sponsor": "Rosemarie Falk",
-      "signatures": 19,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7854",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7854"
-      }
-    },
-    {
-      "code": "e-7902",
-      "topic": {
-        "en": "National defence and military operations",
-        "fr": "Défense nationale et opérations militaires"
-      },
-      "keywords": {
-        "en": "Canadian Forces Chaplaincy services and chaplains Religious heritage Remembrance Day",
-        "fr": "Forces canadiennes Jour du Souvenir Patrimoine religieux Services d'aumônerie et aumôniers"
-      },
-      "status": {
-        "en": "Open for signature until January 31, 2027, at 3:54 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 31 janvier 2027 à 15 h 54 (HAE)"
-      },
-      "sponsor": "Stephanie Kusie",
-      "signatures": 18,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7902",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7902"
-      }
-    },
-    {
-      "code": "e-7883",
-      "topic": {
-        "en": "Justice",
-        "fr": "Justice"
-      },
-      "keywords": {
-        "en": "Advertising Child pornography Digital safety",
-        "fr": "Pornographie juvénile Publicité Sécurité numérique"
-      },
-      "status": {
-        "en": "Open for signature until March 2, 2027, at 3:45 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 2 mars 2027 à 15 h 45 (HAE)"
-      },
-      "sponsor": "Anita Vandenbeld",
-      "signatures": 18,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7883",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7883"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7918",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7918"
       }
     },
     {
@@ -417,10 +249,178 @@
         "fr": "Ouverte pour signature jusqu'au 31 janvier 2027 à 13 h 59 (HAE)"
       },
       "sponsor": "Jessica Fancy",
-      "signatures": 12,
+      "signatures": 115,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7865",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7865"
+      }
+    },
+    {
+      "code": "e-7883",
+      "topic": {
+        "en": "Justice",
+        "fr": "Justice"
+      },
+      "keywords": {
+        "en": "Advertising Child pornography Digital safety",
+        "fr": "Pornographie juvénile Publicité Sécurité numérique"
+      },
+      "status": {
+        "en": "Open for signature until March 2, 2027, at 3:45 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 2 mars 2027 à 15 h 45 (HAE)"
+      },
+      "sponsor": "Anita Vandenbeld",
+      "signatures": 90,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7883",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7883"
+      }
+    },
+    {
+      "code": "e-7866",
+      "topic": {
+        "en": "Business and trade",
+        "fr": "Affaires et commerce"
+      },
+      "keywords": {
+        "en": "Black Canadians Black Entrepreneurship Program Entrepreneurship and entrepreneurs",
+        "fr": "Canadiens de race noire Entreprenariat et entrepreneurs Programme pour l'entrepreneuriat des com ..."
+      },
+      "status": {
+        "en": "Open for signature until February 24, 2027, at 1:05 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 24 février 2027 à 13 h 05 (HAE)"
+      },
+      "sponsor": "Amandeep Sodhi",
+      "signatures": 77,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7866",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7866"
+      }
+    },
+    {
+      "code": "e-7869",
+      "topic": {
+        "en": "Fisheries",
+        "fr": "Pêches"
+      },
+      "keywords": {
+        "en": "Fisheries policy Hunting and sport fishing Killer whales",
+        "fr": "Chasse et pêche de loisir Épaulards Politique sur les pêches"
+      },
+      "status": {
+        "en": "Open for signature until February 24, 2027, at 1:02 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 24 février 2027 à 13 h 02 (HAE)"
+      },
+      "sponsor": "Tamara Kronis",
+      "signatures": 69,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7869",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7869"
+      }
+    },
+    {
+      "code": "e-7827",
+      "topic": {
+        "en": "National defence and military operations",
+        "fr": "Défense nationale et opérations militaires"
+      },
+      "keywords": {
+        "en": "Government contracts Military equipment and facilities Product of Canada Remotely piloted aircraft",
+        "fr": "Aéronefs téléguidés Équipement et installations militaires Marchés publics Produit du Canada"
+      },
+      "status": {
+        "en": "Open for signature until February 26, 2027, at 10:49 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 26 février 2027 à 10 h 49 (HAE)"
+      },
+      "sponsor": "Patrick Weiler",
+      "signatures": 40,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7827",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7827"
+      }
+    },
+    {
+      "code": "e-7854",
+      "topic": {
+        "en": "National defence and military operations",
+        "fr": "Défense nationale et opérations militaires"
+      },
+      "keywords": {
+        "en": "Canadian Forces Chaplaincy services and chaplains Religious heritage Remembrance Day",
+        "fr": "Forces canadiennes Jour du Souvenir Patrimoine religieux Services d'aumônerie et aumôniers"
+      },
+      "status": {
+        "en": "Open for signature until March 2, 2027, at 1:54 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 2 mars 2027 à 13 h 54 (HAE)"
+      },
+      "sponsor": "Rosemarie Falk",
+      "signatures": 34,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7854",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7854"
+      }
+    },
+    {
+      "code": "e-7896",
+      "topic": {
+        "en": "Citizenship and immigration",
+        "fr": "Citoyenneté et immigration"
+      },
+      "keywords": {
+        "en": "Immigration policy Passports and visas Venezuela",
+        "fr": "Passeports et visas Politique en matière d'immigration Vénézuéla"
+      },
+      "status": {
+        "en": "Open for signature until February 1, 2027, at 3:51 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 1 février 2027 à 15 h 51 (HAE)"
+      },
+      "sponsor": "Jenna Sudds",
+      "signatures": 9,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7896",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7896"
+      }
+    },
+    {
+      "code": "e-7898",
+      "topic": {
+        "en": "Business and trade",
+        "fr": "Affaires et commerce"
+      },
+      "keywords": {
+        "en": "BioWare ULC Canadian companies Cultural industry Video games",
+        "fr": "BioWare ULC Entreprises canadiennes Industrie culturelle Jeux vidéo"
+      },
+      "status": {
+        "en": "Open for signature until March 4, 2027, at 9:44 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 4 mars 2027 à 9 h 44 (HAE)"
+      },
+      "sponsor": "Don Davies",
+      "signatures": 8,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7898",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7898"
+      }
+    },
+    {
+      "code": "e-7920",
+      "topic": {
+        "en": "National defence and military operations",
+        "fr": "Défense nationale et opérations militaires"
+      },
+      "keywords": {
+        "en": "Access to information Oversight mechanism Unidentified aerial phenomena",
+        "fr": "Accès à l'information Mécanisme de surveillance Phénomène aérien non identifié"
+      },
+      "status": {
+        "en": "Open for signature until March 4, 2027, at 9:47 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 4 mars 2027 à 9 h 47 (HAE)"
+      },
+      "sponsor": "Adam Chambers",
+      "signatures": 6,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7920",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7920"
       }
     }
   ]
