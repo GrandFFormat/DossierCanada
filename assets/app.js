@@ -3185,9 +3185,6 @@ function ouvrirDepute(btn, billId){
       .sort((a, c) => a.lib.localeCompare(c.lib, isEn ? 'en' : 'fr'));
     const idListe = 'depListe' + billId;
     panel.innerHTML = `
-      <label class="bill-dep-lab">${isEn ? 'Your postal code' : 'Votre code postal'}
-        <span class="bill-dep-cp"><input class="bill-dep-in bill-dep-code" maxlength="7" placeholder="A1A 1A1" autocomplete="postal-code"><button type="button" class="bill-dep-go bill-dep-find">${isEn ? 'Find my MP' : 'Trouver mon député'}</button></span></label>
-      <p class="bill-dep-note bill-dep-res">${isEn ? 'Your postal code is sent only to Open North (represent.opennorth.ca), a non-profit that matches it to your riding. We never see it.' : 'Votre code postal est envoyé seulement à Open North (represent.opennorth.ca), un organisme sans but lucratif qui le relie à votre circonscription. Nous ne le voyons jamais.'}</p>
       <label class="bill-dep-lab">${isEn ? 'Your riding or your MP' : 'Votre circonscription ou votre député'}
         <input class="bill-dep-in" list="${idListe}" placeholder="${isEn ? 'Start typing…' : 'Commencez à taper…'}" autocomplete="off"></label>
       <datalist id="${idListe}">${liste.map(x => `<option value="${echapperTexte(x.lib)}">`).join('')}</datalist>
@@ -3200,30 +3197,10 @@ function ouvrirDepute(btn, billId){
         </select></label>
       <button type="button" class="bill-dep-go">${isEn ? 'Open my email' : 'Ouvrir mon courriel'}</button>
       <p class="bill-dep-note">${isEn ? 'The message opens in your own email app. You write your reasons and you send it. Nothing passes through us.' : 'Le message s’ouvre dans votre propre courriel. Vous écrivez vos raisons et vous l’envoyez. Rien ne passe par nous.'}</p>`;
-    const champ = panel.querySelector('.bill-dep-in:not(.bill-dep-code)');
-    const res = panel.querySelector('.bill-dep-res');
-    const sansAccent = s => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
-    panel.querySelector('.bill-dep-find').onclick = () => {
-      const code = panel.querySelector('.bill-dep-code').value.toUpperCase().replace(/[^A-Z0-9]/g, '');
-      if(!/^[A-Z]\d[A-Z]\d[A-Z]\d$/.test(code)){ res.textContent = isEn ? 'Enter a postal code like A1A 1A1.' : 'Entrez un code postal comme A1A 1A1.'; return; }
-      res.textContent = isEn ? 'Searching…' : 'Recherche…';
-      fetch(`https://represent.opennorth.ca/postcodes/${code}/`).then(r => r.ok ? r.json() : Promise.reject())
-        .then(j => {
-          // La circonscription vient d'Open North, le député de nos données : leurs noms d'élus retardent parfois.
-          const circ = (j.boundaries_centroid || []).find(x => /\/federal-electoral-districts\/$/.test(x.related && x.related.boundary_set_url || ''));
-          if(!circ) return Promise.reject();
-          const cle = s => sansAccent(s).replace(/[^a-z0-9]/g, '');
-          const trouve = liste.find(y => cle(y.d.constituency && y.d.constituency.fr) === cle(circ.name) || cle(y.d.constituency && y.d.constituency.en) === cle(circ.name));
-          if(!trouve){ res.textContent = (isEn ? 'Your riding: ' : 'Votre circonscription : ') + circ.name + (isEn ? '. No MP email address on file (the seat may be vacant).' : '. Aucune adresse de député connue (le siège est peut-être vacant).'); return; }
-          champ.value = trouve.lib;
-          res.textContent = (isEn ? 'Your MP: ' : 'Votre député : ') + trouve.lib;
-        })
-        .catch(() => { res.textContent = isEn ? 'Not found. Choose your riding in the list below.' : 'Introuvable. Choisissez votre circonscription dans la liste ci-dessous.'; });
-    };
-    panel.querySelector('.bill-dep-go:not(.bill-dep-find)').onclick = () => {
-      const val = champ.value.trim();
+    panel.querySelector('.bill-dep-go').onclick = () => {
+      const val = panel.querySelector('.bill-dep-in').value.trim();
       const x = liste.find(y => y.lib === val) || liste.find(y => val && y.lib.toLowerCase().includes(val.toLowerCase()));
-      if(!x){ champ.focus(); return; }
+      if(!x){ panel.querySelector('.bill-dep-in').focus(); return; }
       const bill = bills.find(y => y.id === Number(billId));
       const titre = `${bill.num} — ${L(bill.title)}`;
       const pos = panel.querySelector('.bill-dep-pos').value;
