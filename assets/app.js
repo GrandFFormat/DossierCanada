@@ -2850,7 +2850,7 @@ function billCard(b, ctx){
     + `<button class="bill-share-btn ic" data-reseau="threads" onclick="event.stopPropagation(); shareBill(${b.id}, 'threads', event)" aria-label="${isEn ? 'Share on Threads' : 'Partager sur Threads'}"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.2 11.2c-.4-3-2.3-4.4-5-4.4-2 0-3.5.9-4.3 2.3M16.8 11.3c-2.6-.6-7.3-.5-7.3 2.2 0 2.6 4.6 2.7 6 .3 1-1.6 1.1-4 .6-5.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M17 11.4c3.2 1.3 3.6 5 1.2 7.3-2.6 2.5-8.9 2.7-11.7-.9C4 14.7 4.2 7.6 7.3 4.6c2.6-2.6 8.3-2.8 11.2.3 1 1 1.6 2.2 1.9 3.4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>`
     + `<button class="bill-share-btn ic" data-reseau="bsky" onclick="event.stopPropagation(); shareBill(${b.id}, 'bsky', event)" aria-label="${isEn ? 'Share on Bluesky' : 'Partager sur Bluesky'}"><svg width="15" height="14" viewBox="0 0 24 22" aria-hidden="true"><path fill="currentColor" d="M12 9.6C10.6 6.9 6.8 1.9 3.6 1.3 1.3.9 1 3 1 4.4c0 1.3.8 6.2 1.3 7.1 1 1.9 3.5 2.4 5.9 2-4 .8-5.6 3-3 5.4 3.6 3.3 5.6-.6 6.8-3.2.1.2 0 0 0 0 1.2 2.6 3.2 6.5 6.8 3.2 2.6-2.4 1-4.6-3-5.4 2.4.4 4.9-.1 5.9-2 .5-.9 1.3-5.8 1.3-7.1 0-1.4-.3-3.5-2.6-3.1-3.2.6-7 5.6-8.4 8.3z"/></svg></button>`
     + `<button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(${b.id}, 'copy', event)" aria-label="${isEn ? 'Copy the link' : 'Copier le lien'}">⧉</button>`;
-  const shareRow = `<div class="bill-share-row">${shareCtrls}</div>${boutonCafe(isEn)}`;
+  const shareRow = `<div class="bill-share-row">${shareCtrls}</div>${boutonDepute(b, isEn)}${boutonCafe(isEn)}`;
 
   // Timeline bicamérale : toutes les étapes canoniques, celles franchies portent
   // leur date réelle (issue de b.milestones), les autres restent en attente.
@@ -3167,6 +3167,56 @@ const ORDRE_ICONES = ICONES_CAFE.map((_, i) => i);
 for(let i = ORDRE_ICONES.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [ORDRE_ICONES[i], ORDRE_ICONES[j]] = [ORDRE_ICONES[j], ORDRE_ICONES[i]]; }
 var _rangCafe = 0;
 // Le texte reste fixe : seule l'icône change.
+/* ÉCRIRE À VOTRE DÉPUTÉ (4 nov. 2026) — neutre : appui, opposition ou question, même gabarit,
+   un seul mot change, et la place des raisons reste vide. On ouvre le courriel de la personne
+   (mailto:), on n'envoie rien et on ne garde rien, ni le choix ni la circonscription. */
+function boutonDepute(b, isEn){
+  return `<div class="bill-dep-row" onclick="event.stopPropagation()"><button type="button" class="bill-dep-btn" onclick="ouvrirDepute(this, ${b.id})">✉ ${isEn ? 'Write to your MP about this bill' : 'Écrire à votre député sur ce projet'}</button><div class="bill-dep-panel" hidden></div></div>`;
+}
+function ouvrirDepute(btn, billId){
+  const isEn = currentLang === 'en';
+  const panel = btn.nextElementSibling;
+  if(!panel.hidden){ panel.hidden = true; return; }
+  panel.hidden = false;
+  panel.innerHTML = `<p class="bill-dep-note">${isEn ? 'Loading MPs…' : 'Chargement des députés…'}</p>`;
+  ensureData(['people']).then(() => {
+    const L = o => (o && typeof o === 'object') ? (isEn ? (o.en || o.fr) : (o.fr || o.en)) : (o || '');
+    const liste = deputes.filter(d => d.email).map(d => ({ d, lib: `${L(d.constituency)} — ${d.name}` }))
+      .sort((a, c) => a.lib.localeCompare(c.lib, isEn ? 'en' : 'fr'));
+    const idListe = 'depListe' + billId;
+    panel.innerHTML = `
+      <label class="bill-dep-lab">${isEn ? 'Your riding or your MP' : 'Votre circonscription ou votre député'}
+        <input class="bill-dep-in" list="${idListe}" placeholder="${isEn ? 'Start typing…' : 'Commencez à taper…'}" autocomplete="off"></label>
+      <datalist id="${idListe}">${liste.map(x => `<option value="${echapperTexte(x.lib)}">`).join('')}</datalist>
+      <p class="bill-dep-note">${isEn ? 'Don’t know your riding?' : 'Vous ne connaissez pas votre circonscription ?'} <a href="https://www.elections.ca/Scripts/vis/FindED?L=${isEn ? 'e' : 'f'}" target="_blank" rel="noopener">${isEn ? 'Find it with your postal code (Elections Canada)' : 'Trouvez-la avec votre code postal (Élections Canada)'}</a></p>
+      <label class="bill-dep-lab">${isEn ? 'Your position' : 'Votre position'}
+        <select class="bill-dep-pos">
+          <option value="pour">${isEn ? 'I support this bill' : 'J’appuie ce projet de loi'}</option>
+          <option value="contre">${isEn ? 'I oppose this bill' : 'Je m’oppose à ce projet de loi'}</option>
+          <option value="question">${isEn ? 'I have a question' : 'J’ai une question'}</option>
+        </select></label>
+      <button type="button" class="bill-dep-go">${isEn ? 'Open my email' : 'Ouvrir mon courriel'}</button>
+      <p class="bill-dep-note">${isEn ? 'The message opens in your own email app. You write your reasons and you send it. Nothing passes through us.' : 'Le message s’ouvre dans votre propre courriel. Vous écrivez vos raisons et vous l’envoyez. Rien ne passe par nous.'}</p>`;
+    panel.querySelector('.bill-dep-go').onclick = () => {
+      const val = panel.querySelector('.bill-dep-in').value.trim();
+      const x = liste.find(y => y.lib === val) || liste.find(y => val && y.lib.toLowerCase().includes(val.toLowerCase()));
+      if(!x){ panel.querySelector('.bill-dep-in').focus(); return; }
+      const bill = bills.find(y => y.id === Number(billId));
+      const titre = `${bill.num} — ${L(bill.title)}`;
+      const pos = panel.querySelector('.bill-dep-pos').value;
+      const circ = L(x.d.constituency);
+      const phrase = isEn
+        ? { pour: 'I support this bill.', contre: 'I oppose this bill.', question: 'I have a question about this bill.' }[pos]
+        : { pour: 'J’appuie ce projet de loi.', contre: 'Je m’oppose à ce projet de loi.', question: 'J’ai une question sur ce projet de loi.' }[pos];
+      const sujet = isEn ? `Bill ${titre}` : `Projet de loi ${titre}`;
+      const corps = isEn
+        ? `Dear ${x.d.name},\n\nI am a constituent of ${circ}. I am writing to you about Bill ${titre}.\n\n${phrase}\n\n[Your reasons]\n\nPlease let me know your position.\n\n[Your name]\n[Your address]`
+        : `Bonjour ${x.d.name},\n\nJe suis une personne de votre circonscription, ${circ}. Je vous écris au sujet du projet de loi ${titre}.\n\n${phrase}\n\n[Vos raisons]\n\nMerci de me faire connaître votre position.\n\n[Votre nom]\n[Votre adresse]`;
+      location.href = `mailto:${x.d.email}?subject=${encodeURIComponent(sujet)}&body=${encodeURIComponent(corps)}`;
+    };
+  }).catch(() => { panel.innerHTML = `<p class="bill-dep-note">${isEn ? 'MP list unavailable. Try again later.' : 'Liste des députés indisponible. Réessayez plus tard.'}</p>`; });
+}
+
 function boutonCafe(isEn){
   const rangIcone = ORDRE_ICONES[_rangCafe % ORDRE_ICONES.length];
   const [fr, en] = LIBELLES_CAFE[ORDRE_CAFE[_rangCafe++ % ORDRE_CAFE.length]];
