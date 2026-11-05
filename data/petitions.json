@@ -1,29 +1,8 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-11-04T16:10:54.784Z",
+  "scrapedAt": "2026-11-05T16:26:20.713Z",
   "count": 20,
   "petitions": [
-    {
-      "code": "e-7880",
-      "topic": {
-        "en": "Animals",
-        "fr": "Animaux"
-      },
-      "keywords": {
-        "en": "Crime and criminality Cruelty to animals Federal-provincial-territorial relations Information collection",
-        "fr": "Crime et criminalité Cruauté envers les animaux Cueillette de l'information Relations fédérales-provinciales-territo ..."
-      },
-      "status": {
-        "en": "Open for signature until February 24, 2027, at 1:02 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 24 février 2027 à 13 h 02 (HAE)"
-      },
-      "sponsor": "Scot Davidson",
-      "signatures": 4950,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7880",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7880"
-      }
-    },
     {
       "code": "e-7902",
       "topic": {
@@ -39,31 +18,31 @@
         "fr": "Ouverte pour signature jusqu'au 31 janvier 2027 à 15 h 54 (HAE)"
       },
       "sponsor": "Stephanie Kusie",
-      "signatures": 2678,
+      "signatures": 4605,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7902",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7902"
       }
     },
     {
-      "code": "e-7885",
+      "code": "e-7898",
       "topic": {
-        "en": "Culture and heritage",
-        "fr": "Culture et patrimoine"
+        "en": "Business and trade",
+        "fr": "Affaires et commerce"
       },
       "keywords": {
-        "en": "Heritage sites and buildings Historic O'Keefe Ranch",
-        "fr": "Ranch historique O'Keefe Sites et édifices patrimoniaux"
+        "en": "BioWare ULC Canadian companies Cultural industry Video games",
+        "fr": "BioWare ULC Entreprises canadiennes Industrie culturelle Jeux vidéo"
       },
       "status": {
-        "en": "Open for signature until January 27, 2027, at 10:50 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 27 janvier 2027 à 10 h 50 (HAE)"
+        "en": "Open for signature until March 4, 2027, at 9:44 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 4 mars 2027 à 9 h 44 (HAE)"
       },
-      "sponsor": "Scott Anderson",
-      "signatures": 762,
+      "sponsor": "Don Davies",
+      "signatures": 1945,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7885",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7885"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7898",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7898"
       }
     },
     {
@@ -81,10 +60,31 @@
         "fr": "Ouverte pour signature jusqu'au 2 décembre 2026 à 14 h 16 (HAE)"
       },
       "sponsor": "Iqra Khalid",
-      "signatures": 650,
+      "signatures": 897,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7877",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7877"
+      }
+    },
+    {
+      "code": "e-7885",
+      "topic": {
+        "en": "Culture and heritage",
+        "fr": "Culture et patrimoine"
+      },
+      "keywords": {
+        "en": "Heritage sites and buildings Historic O'Keefe Ranch",
+        "fr": "Ranch historique O'Keefe Sites et édifices patrimoniaux"
+      },
+      "status": {
+        "en": "Open for signature until January 27, 2027, at 10:50 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 27 janvier 2027 à 10 h 50 (HAE)"
+      },
+      "sponsor": "Scott Anderson",
+      "signatures": 869,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7885",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7885"
       }
     },
     {
@@ -102,31 +102,31 @@
         "fr": "Ouverte pour signature jusqu'au 2 mars 2027 à 15 h 53 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 613,
+      "signatures": 807,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7895",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7895"
       }
     },
     {
-      "code": "e-7868",
+      "code": "e-7918",
       "topic": {
-        "en": "Employment and labour",
-        "fr": "Travail et emploi"
+        "en": "Environment",
+        "fr": "Environnement"
       },
       "keywords": {
-        "en": "Employment insurance Part-time workers",
-        "fr": "Assurance-emploi Travailleurs à temps partiel"
+        "en": "Layoffs and job losses Parks Canada Agency",
+        "fr": "Agence Parcs Canada Mises à pied et pertes d'emplois"
       },
       "status": {
-        "en": "Open for signature until January 25, 2027, at 1:02 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 25 janvier 2027 à 13 h 02 (HAE)"
+        "en": "Open for signature until January 2, 2027, at 3:26 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 2 janvier 2027 à 15 h 26 (HAE)"
       },
-      "sponsor": "Marilène Gill",
-      "signatures": 375,
+      "sponsor": "Brendan Hanley",
+      "signatures": 771,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7868",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7868"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7918",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7918"
       }
     },
     {
@@ -144,10 +144,31 @@
         "fr": "Ouverte pour signature jusqu'au 24 février 2027 à 13 h 02 (HAE)"
       },
       "sponsor": "Patrick Weiler",
-      "signatures": 328,
+      "signatures": 435,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7879",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7879"
+      }
+    },
+    {
+      "code": "e-7868",
+      "topic": {
+        "en": "Employment and labour",
+        "fr": "Travail et emploi"
+      },
+      "keywords": {
+        "en": "Employment insurance Part-time workers",
+        "fr": "Assurance-emploi Travailleurs à temps partiel"
+      },
+      "status": {
+        "en": "Open for signature until January 25, 2027, at 1:02 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 25 janvier 2027 à 13 h 02 (HAE)"
+      },
+      "sponsor": "Marilène Gill",
+      "signatures": 402,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7868",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7868"
       }
     },
     {
@@ -165,7 +186,7 @@
         "fr": "Ouverte pour signature jusqu'au 26 novembre 2026 à 13 h 03 (HAE)"
       },
       "sponsor": "Kathy Borrelli",
-      "signatures": 302,
+      "signatures": 333,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7863",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7863"
@@ -186,10 +207,31 @@
         "fr": "Ouverte pour signature jusqu'au 28 décembre 2026 à 10 h 49 (HAE)"
       },
       "sponsor": "Richard Bragdon",
-      "signatures": 268,
+      "signatures": 282,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7870",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7870"
+      }
+    },
+    {
+      "code": "e-7865",
+      "topic": {
+        "en": "Media and telecommunications",
+        "fr": "Médias et télécommunications"
+      },
+      "keywords": {
+        "en": "Public safety Rural communities Telecommunications networks Wireless communication",
+        "fr": "Communautés rurales Communication sans fil Réseaux de télécommunications Sécurité publique"
+      },
+      "status": {
+        "en": "Open for signature until January 31, 2027, at 1:59 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 31 janvier 2027 à 13 h 59 (HAE)"
+      },
+      "sponsor": "Jessica Fancy",
+      "signatures": 245,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7865",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7865"
       }
     },
     {
@@ -207,52 +249,10 @@
         "fr": "Ouverte pour signature jusqu'au 26 décembre 2026 à 13 h 03 (HAE)"
       },
       "sponsor": "Jaime Battiste",
-      "signatures": 202,
+      "signatures": 213,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7850",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7850"
-      }
-    },
-    {
-      "code": "e-7918",
-      "topic": {
-        "en": "Environment",
-        "fr": "Environnement"
-      },
-      "keywords": {
-        "en": "Layoffs and job losses Parks Canada Agency",
-        "fr": "Agence Parcs Canada Mises à pied et pertes d'emplois"
-      },
-      "status": {
-        "en": "Open for signature until January 2, 2027, at 3:26 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 2 janvier 2027 à 15 h 26 (HAE)"
-      },
-      "sponsor": "Brendan Hanley",
-      "signatures": 195,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7918",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7918"
-      }
-    },
-    {
-      "code": "e-7865",
-      "topic": {
-        "en": "Media and telecommunications",
-        "fr": "Médias et télécommunications"
-      },
-      "keywords": {
-        "en": "Emergency services Rural communities Telecommunications networks Wireless communication",
-        "fr": "Communautés rurales Communication sans fil Réseaux de télécommunications Services d'urgence"
-      },
-      "status": {
-        "en": "Open for signature until January 31, 2027, at 1:59 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 31 janvier 2027 à 13 h 59 (HAE)"
-      },
-      "sponsor": "Jessica Fancy",
-      "signatures": 115,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7865",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7865"
       }
     },
     {
@@ -270,7 +270,7 @@
         "fr": "Ouverte pour signature jusqu'au 2 mars 2027 à 15 h 45 (HAE)"
       },
       "sponsor": "Anita Vandenbeld",
-      "signatures": 90,
+      "signatures": 121,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7883",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7883"
@@ -291,7 +291,7 @@
         "fr": "Ouverte pour signature jusqu'au 24 février 2027 à 13 h 05 (HAE)"
       },
       "sponsor": "Amandeep Sodhi",
-      "signatures": 77,
+      "signatures": 86,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7866",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7866"
@@ -312,31 +312,31 @@
         "fr": "Ouverte pour signature jusqu'au 24 février 2027 à 13 h 02 (HAE)"
       },
       "sponsor": "Tamara Kronis",
-      "signatures": 69,
+      "signatures": 72,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7869",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7869"
       }
     },
     {
-      "code": "e-7827",
+      "code": "e-7718",
       "topic": {
-        "en": "National defence and military operations",
-        "fr": "Défense nationale et opérations militaires"
+        "en": "Intellectual property",
+        "fr": "Propriété intellectuelle"
       },
       "keywords": {
-        "en": "Government contracts Military equipment and facilities Product of Canada Remotely piloted aircraft",
-        "fr": "Aéronefs téléguidés Équipement et installations militaires Marchés publics Produit du Canada"
+        "en": "Copyright and copyright law Technological protection measures",
+        "fr": "Droit d'auteur et loi sur le droit d'auteur Mesures de protection technologiques"
       },
       "status": {
-        "en": "Open for signature until February 26, 2027, at 10:49 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 26 février 2027 à 10 h 49 (HAE)"
+        "en": "Open for signature until February 2, 2027, at 1:40 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 2 février 2027 à 13 h 40 (HAE)"
       },
-      "sponsor": "Patrick Weiler",
-      "signatures": 40,
+      "sponsor": "Heather McPherson",
+      "signatures": 59,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7827",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7827"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7718",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7718"
       }
     },
     {
@@ -354,52 +354,31 @@
         "fr": "Ouverte pour signature jusqu'au 2 mars 2027 à 13 h 54 (HAE)"
       },
       "sponsor": "Rosemarie Falk",
-      "signatures": 34,
+      "signatures": 55,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7854",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7854"
       }
     },
     {
-      "code": "e-7896",
+      "code": "e-7827",
       "topic": {
-        "en": "Citizenship and immigration",
-        "fr": "Citoyenneté et immigration"
+        "en": "National defence and military operations",
+        "fr": "Défense nationale et opérations militaires"
       },
       "keywords": {
-        "en": "Immigration policy Passports and visas Venezuela",
-        "fr": "Passeports et visas Politique en matière d'immigration Vénézuéla"
+        "en": "Government contracts Military equipment and facilities Product of Canada Remotely piloted aircraft",
+        "fr": "Aéronefs téléguidés Équipement et installations militaires Marchés publics Produit du Canada"
       },
       "status": {
-        "en": "Open for signature until February 1, 2027, at 3:51 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 1 février 2027 à 15 h 51 (HAE)"
+        "en": "Open for signature until February 26, 2027, at 10:49 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 26 février 2027 à 10 h 49 (HAE)"
       },
-      "sponsor": "Jenna Sudds",
-      "signatures": 9,
+      "sponsor": "Patrick Weiler",
+      "signatures": 43,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7896",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7896"
-      }
-    },
-    {
-      "code": "e-7898",
-      "topic": {
-        "en": "Business and trade",
-        "fr": "Affaires et commerce"
-      },
-      "keywords": {
-        "en": "BioWare ULC Canadian companies Cultural industry Video games",
-        "fr": "BioWare ULC Entreprises canadiennes Industrie culturelle Jeux vidéo"
-      },
-      "status": {
-        "en": "Open for signature until March 4, 2027, at 9:44 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 4 mars 2027 à 9 h 44 (HAE)"
-      },
-      "sponsor": "Don Davies",
-      "signatures": 8,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7898",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7898"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7827",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7827"
       }
     },
     {
@@ -417,10 +396,31 @@
         "fr": "Ouverte pour signature jusqu'au 4 mars 2027 à 9 h 47 (HAE)"
       },
       "sponsor": "Adam Chambers",
-      "signatures": 6,
+      "signatures": 36,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7920",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7920"
+      }
+    },
+    {
+      "code": "e-7896",
+      "topic": {
+        "en": "Citizenship and immigration",
+        "fr": "Citoyenneté et immigration"
+      },
+      "keywords": {
+        "en": "Immigration policy Passports and visas Venezuela",
+        "fr": "Passeports et visas Politique en matière d'immigration Vénézuéla"
+      },
+      "status": {
+        "en": "Open for signature until February 1, 2027, at 3:51 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 1 février 2027 à 15 h 51 (HAE)"
+      },
+      "sponsor": "Jenna Sudds",
+      "signatures": 17,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7896",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7896"
       }
     }
   ]
