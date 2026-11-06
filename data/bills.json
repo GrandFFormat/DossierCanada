@@ -1,9 +1,76 @@
 {
   "source": "https://www.parl.ca/legisinfo/en/bills/json?parlsession=45-1",
   "session": "45-1",
-  "scrapedAt": "2026-11-05T16:21:34.914Z",
+  "scrapedAt": "2026-11-06T15:57:15.911Z",
   "count": 198,
   "bills": [
+    {
+      "id": 13985244,
+      "num": "S-245",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "senate",
+      "type": {
+        "en": "Senate Public Bill",
+        "fr": "Projet de loi d'intérêt public du Sénat"
+      },
+      "isGovernment": false,
+      "title": {
+        "en": "An Act respecting a National Blanket Ceremony Day",
+        "fr": "Loi instituant la journée nationale de la cérémonie des couvertures"
+      },
+      "shortTitle": {
+        "en": "National Blanket Ceremony Day Act",
+        "fr": "Loi sur la journée nationale de la cérémonie des couvertures"
+      },
+      "sponsor": {
+        "en": "Hon. Mary Jane McCallum",
+        "fr": "L'hon. Mary Jane McCallum"
+      },
+      "status": {
+        "en": "At consideration in committee in the Senate",
+        "fr": "À l'examen en comité au Sénat"
+      },
+      "state": "encours",
+      "milestones": [
+        {
+          "stage": "senate_first_reading",
+          "chamber": "senate",
+          "reading": 1,
+          "date": "2026-03-23"
+        },
+        {
+          "stage": "senate_second_reading",
+          "chamber": "senate",
+          "reading": 2,
+          "date": "2026-11-05"
+        }
+      ],
+      "royalAssent": null,
+      "reinstated": false,
+      "latestActivity": {
+        "en": "At consideration in committee in the Senate",
+        "fr": "À l'examen en comité au Sénat",
+        "date": "2026-11-05"
+      },
+      "lastActivity": "2026-11-05",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/s-245",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/s-245"
+      },
+      "sponsorPersonId": 98804,
+      "sponsorName": {
+        "first": "Mary Jane",
+        "last": "McCallum"
+      },
+      "fullSummaryAvailable": false,
+      "summary": {
+        "en": "This enactment designates the 30th day of June in each and every year as “National Blanket Ceremony Day”.",
+        "fr": "Le texte désigne le 30 juin comme « Journée nationale de la cérémonie des couvertures »."
+      },
+      "summarySource": "bill"
+    },
     {
       "id": 14019015,
       "num": "S-246",
@@ -2097,8 +2164,8 @@
         "fr": "L’hon. Rebecca Alty"
       },
       "status": {
-        "en": "At consideration in committee in the Senate",
-        "fr": "À l'examen en comité au Sénat"
+        "en": "At third reading in the Senate",
+        "fr": "À la troisième lecture au Sénat"
       },
       "state": "encours",
       "milestones": [
@@ -2136,8 +2203,8 @@
       "royalAssent": null,
       "reinstated": false,
       "latestActivity": {
-        "en": "At consideration in committee in the Senate",
-        "fr": "À l'examen en comité au Sénat",
+        "en": "At third reading in the Senate",
+        "fr": "À la troisième lecture au Sénat",
         "date": "2026-10-06"
       },
       "lastActivity": "2026-10-06",
@@ -8210,67 +8277,6 @@
       "summarySource": "bill"
     },
     {
-      "id": 13985244,
-      "num": "S-245",
-      "session": "45-1",
-      "parliament": 45,
-      "sessionNumber": 1,
-      "chamber": "senate",
-      "type": {
-        "en": "Senate Public Bill",
-        "fr": "Projet de loi d'intérêt public du Sénat"
-      },
-      "isGovernment": false,
-      "title": {
-        "en": "An Act respecting a National Blanket Ceremony Day",
-        "fr": "Loi instituant la journée nationale de la cérémonie des couvertures"
-      },
-      "shortTitle": {
-        "en": "National Blanket Ceremony Day Act",
-        "fr": "Loi sur la journée nationale de la cérémonie des couvertures"
-      },
-      "sponsor": {
-        "en": "Hon. Mary Jane McCallum",
-        "fr": "L'hon. Mary Jane McCallum"
-      },
-      "status": {
-        "en": "At second reading in the Senate",
-        "fr": "À la deuxième lecture au Sénat"
-      },
-      "state": "encours",
-      "milestones": [
-        {
-          "stage": "senate_first_reading",
-          "chamber": "senate",
-          "reading": 1,
-          "date": "2026-03-23"
-        }
-      ],
-      "royalAssent": null,
-      "reinstated": false,
-      "latestActivity": {
-        "en": "At second reading in the Senate",
-        "fr": "À la deuxième lecture au Sénat",
-        "date": "2026-03-23"
-      },
-      "lastActivity": "2026-03-23",
-      "url": {
-        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/s-245",
-        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/s-245"
-      },
-      "sponsorPersonId": 98804,
-      "sponsorName": {
-        "first": "Mary Jane",
-        "last": "McCallum"
-      },
-      "fullSummaryAvailable": false,
-      "summary": {
-        "en": "This enactment designates the 30th day of June in each and every year as “National Blanket Ceremony Day”.",
-        "fr": "Le texte désigne le 30 juin comme « Journée nationale de la cérémonie des couvertures »."
-      },
-      "summarySource": "bill"
-    },
-    {
       "id": 13960784,
       "num": "C-271",
       "session": "45-1",
@@ -9412,8 +9418,8 @@
         "fr": "L'hon. Jim Quinn"
       },
       "status": {
-        "en": "At consideration in committee in the Senate",
-        "fr": "À l'examen en comité au Sénat"
+        "en": "At report stage in the Senate",
+        "fr": "À l'étape du rapport au Sénat"
       },
       "state": "encours",
       "milestones": [
@@ -9433,8 +9439,8 @@
       "royalAssent": null,
       "reinstated": false,
       "latestActivity": {
-        "en": "At consideration in committee in the Senate",
-        "fr": "À l'examen en comité au Sénat",
+        "en": "At report stage in the Senate",
+        "fr": "À l'étape du rapport au Sénat",
         "date": "2026-02-10"
       },
       "lastActivity": "2026-02-10",
@@ -13826,5 +13832,5 @@
       "summarySource": null
     }
   ],
-  "summariesScrapedAt": "2026-11-05T16:24:15.495Z"
+  "summariesScrapedAt": "2026-11-06T16:01:27.730Z"
 }
