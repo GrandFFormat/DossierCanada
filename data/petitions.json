@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-11-05T16:26:20.713Z",
+  "scrapedAt": "2026-11-06T16:02:40.254Z",
   "count": 20,
   "petitions": [
     {
@@ -18,7 +18,7 @@
         "fr": "Ouverte pour signature jusqu'au 31 janvier 2027 à 15 h 54 (HAE)"
       },
       "sponsor": "Stephanie Kusie",
-      "signatures": 4605,
+      "signatures": 6651,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7902",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7902"
@@ -39,10 +39,31 @@
         "fr": "Ouverte pour signature jusqu'au 4 mars 2027 à 9 h 44 (HAE)"
       },
       "sponsor": "Don Davies",
-      "signatures": 1945,
+      "signatures": 2836,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7898",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7898"
+      }
+    },
+    {
+      "code": "e-7918",
+      "topic": {
+        "en": "Environment",
+        "fr": "Environnement"
+      },
+      "keywords": {
+        "en": "Layoffs and job losses Parks Canada Agency",
+        "fr": "Agence Parcs Canada Mises à pied et pertes d'emplois"
+      },
+      "status": {
+        "en": "Open for signature until January 2, 2027, at 3:26 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 2 janvier 2027 à 15 h 26 (HAE)"
+      },
+      "sponsor": "Brendan Hanley",
+      "signatures": 1108,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7918",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7918"
       }
     },
     {
@@ -60,7 +81,7 @@
         "fr": "Ouverte pour signature jusqu'au 2 décembre 2026 à 14 h 16 (HAE)"
       },
       "sponsor": "Iqra Khalid",
-      "signatures": 897,
+      "signatures": 1090,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7877",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7877"
@@ -81,7 +102,7 @@
         "fr": "Ouverte pour signature jusqu'au 27 janvier 2027 à 10 h 50 (HAE)"
       },
       "sponsor": "Scott Anderson",
-      "signatures": 869,
+      "signatures": 904,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7885",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7885"
@@ -102,31 +123,10 @@
         "fr": "Ouverte pour signature jusqu'au 2 mars 2027 à 15 h 53 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 807,
+      "signatures": 889,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7895",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7895"
-      }
-    },
-    {
-      "code": "e-7918",
-      "topic": {
-        "en": "Environment",
-        "fr": "Environnement"
-      },
-      "keywords": {
-        "en": "Layoffs and job losses Parks Canada Agency",
-        "fr": "Agence Parcs Canada Mises à pied et pertes d'emplois"
-      },
-      "status": {
-        "en": "Open for signature until January 2, 2027, at 3:26 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 2 janvier 2027 à 15 h 26 (HAE)"
-      },
-      "sponsor": "Brendan Hanley",
-      "signatures": 771,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7918",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7918"
       }
     },
     {
@@ -144,7 +144,7 @@
         "fr": "Ouverte pour signature jusqu'au 24 février 2027 à 13 h 02 (HAE)"
       },
       "sponsor": "Patrick Weiler",
-      "signatures": 435,
+      "signatures": 452,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7879",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7879"
@@ -165,7 +165,7 @@
         "fr": "Ouverte pour signature jusqu'au 25 janvier 2027 à 13 h 02 (HAE)"
       },
       "sponsor": "Marilène Gill",
-      "signatures": 402,
+      "signatures": 416,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7868",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7868"
@@ -186,10 +186,31 @@
         "fr": "Ouverte pour signature jusqu'au 26 novembre 2026 à 13 h 03 (HAE)"
       },
       "sponsor": "Kathy Borrelli",
-      "signatures": 333,
+      "signatures": 338,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7863",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7863"
+      }
+    },
+    {
+      "code": "e-7718",
+      "topic": {
+        "en": "Intellectual property",
+        "fr": "Propriété intellectuelle"
+      },
+      "keywords": {
+        "en": "Copyright and copyright law Technological protection measures",
+        "fr": "Droit d'auteur et loi sur le droit d'auteur Mesures de protection technologiques"
+      },
+      "status": {
+        "en": "Open for signature until February 2, 2027, at 1:40 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 2 février 2027 à 13 h 40 (HAE)"
+      },
+      "sponsor": "Heather McPherson",
+      "signatures": 332,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7718",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7718"
       }
     },
     {
@@ -207,7 +228,7 @@
         "fr": "Ouverte pour signature jusqu'au 28 décembre 2026 à 10 h 49 (HAE)"
       },
       "sponsor": "Richard Bragdon",
-      "signatures": 282,
+      "signatures": 299,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7870",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7870"
@@ -228,7 +249,7 @@
         "fr": "Ouverte pour signature jusqu'au 31 janvier 2027 à 13 h 59 (HAE)"
       },
       "sponsor": "Jessica Fancy",
-      "signatures": 245,
+      "signatures": 297,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7865",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7865"
@@ -249,7 +270,7 @@
         "fr": "Ouverte pour signature jusqu'au 26 décembre 2026 à 13 h 03 (HAE)"
       },
       "sponsor": "Jaime Battiste",
-      "signatures": 213,
+      "signatures": 249,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7850",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7850"
@@ -270,7 +291,7 @@
         "fr": "Ouverte pour signature jusqu'au 2 mars 2027 à 15 h 45 (HAE)"
       },
       "sponsor": "Anita Vandenbeld",
-      "signatures": 121,
+      "signatures": 131,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7883",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7883"
@@ -291,52 +312,31 @@
         "fr": "Ouverte pour signature jusqu'au 24 février 2027 à 13 h 05 (HAE)"
       },
       "sponsor": "Amandeep Sodhi",
-      "signatures": 86,
+      "signatures": 129,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7866",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7866"
       }
     },
     {
-      "code": "e-7869",
+      "code": "e-7920",
       "topic": {
-        "en": "Fisheries",
-        "fr": "Pêches"
+        "en": "National defence and military operations",
+        "fr": "Défense nationale et opérations militaires"
       },
       "keywords": {
-        "en": "Fisheries policy Hunting and sport fishing Killer whales",
-        "fr": "Chasse et pêche de loisir Épaulards Politique sur les pêches"
+        "en": "Access to information Oversight mechanism Unidentified aerial phenomena",
+        "fr": "Accès à l'information Mécanisme de surveillance Phénomène aérien non identifié"
       },
       "status": {
-        "en": "Open for signature until February 24, 2027, at 1:02 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 24 février 2027 à 13 h 02 (HAE)"
+        "en": "Open for signature until March 4, 2027, at 9:47 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 4 mars 2027 à 9 h 47 (HAE)"
       },
-      "sponsor": "Tamara Kronis",
-      "signatures": 72,
+      "sponsor": "Adam Chambers",
+      "signatures": 109,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7869",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7869"
-      }
-    },
-    {
-      "code": "e-7718",
-      "topic": {
-        "en": "Intellectual property",
-        "fr": "Propriété intellectuelle"
-      },
-      "keywords": {
-        "en": "Copyright and copyright law Technological protection measures",
-        "fr": "Droit d'auteur et loi sur le droit d'auteur Mesures de protection technologiques"
-      },
-      "status": {
-        "en": "Open for signature until February 2, 2027, at 1:40 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 2 février 2027 à 13 h 40 (HAE)"
-      },
-      "sponsor": "Heather McPherson",
-      "signatures": 59,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7718",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7718"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7920",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7920"
       }
     },
     {
@@ -354,7 +354,7 @@
         "fr": "Ouverte pour signature jusqu'au 2 mars 2027 à 13 h 54 (HAE)"
       },
       "sponsor": "Rosemarie Falk",
-      "signatures": 55,
+      "signatures": 66,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7854",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7854"
@@ -375,31 +375,31 @@
         "fr": "Ouverte pour signature jusqu'au 26 février 2027 à 10 h 49 (HAE)"
       },
       "sponsor": "Patrick Weiler",
-      "signatures": 43,
+      "signatures": 48,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7827",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7827"
       }
     },
     {
-      "code": "e-7920",
+      "code": "e-7916",
       "topic": {
-        "en": "National defence and military operations",
-        "fr": "Défense nationale et opérations militaires"
+        "en": "Indigenous affairs",
+        "fr": "Affaires autochtones"
       },
       "keywords": {
-        "en": "Access to information Oversight mechanism Unidentified aerial phenomena",
-        "fr": "Accès à l'information Mécanisme de surveillance Phénomène aérien non identifié"
+        "en": "C-254, An Act to amend the Criminal Code ... Hate propaganda Indigenous peoples Indigenous residential schools",
+        "fr": "C-254, Loi modifiant le Code criminel (f ... Pensionnats pour Autochtones Peuples autochtones Propagande haineuse"
       },
       "status": {
-        "en": "Open for signature until March 4, 2027, at 9:47 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 4 mars 2027 à 9 h 47 (HAE)"
+        "en": "Open for signature until March 5, 2027, at 2:02 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 5 mars 2027 à 14 h 02 (HAE)"
       },
-      "sponsor": "Adam Chambers",
-      "signatures": 36,
+      "sponsor": "Leah Gazan",
+      "signatures": 23,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7920",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7920"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7916",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7916"
       }
     },
     {
@@ -417,7 +417,7 @@
         "fr": "Ouverte pour signature jusqu'au 1 février 2027 à 15 h 51 (HAE)"
       },
       "sponsor": "Jenna Sudds",
-      "signatures": 17,
+      "signatures": 21,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7896",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7896"
