@@ -1337,8 +1337,8 @@
 .bill-cafe-btn{display:block; padding:14px 16px; text-align:center; background:#B0D4E8; color:#131313; border:3px solid #131313; box-shadow:5px 5px 0 #131313; font-family:'IBM Plex Mono',monospace; font-size:12.5px; font-weight:700; letter-spacing:0.02em; text-decoration:none;}
 .bill-cafe-btn:hover{background:#FFD24D;}
 
-  /* « Site propulsé par DAFRSolution.com » : lien surligné jaune (21 oct. 2026). */
-  #footerDafr{ background:var(--yellow); color:#131313; font-weight:700; padding:1px 5px; margin-left:4px; text-decoration:none; }
+  /* « Une réalisation de DAFR Solution » : signature de l éditeur, sans surlignage (6 nov. 2026). */
+  #footerDafr{ color:inherit; margin-left:4px; }
   #footerDafr:hover{ text-decoration:underline; }
 
 /* Partager la fiche d'un·e député·e (23 oct. 2026), à gauche de Suivre. */
