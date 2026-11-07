@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T16:02:47.384Z",
+  "generatedAt": "2026-11-07T14:53:31.920Z",
   "session": "45-1",
   "meta": {
     "counts": {
@@ -4694,8 +4694,8 @@
         "fr": "Marianne Dandurand"
       },
       "status": {
-        "en": "At report stage in the House of Commons",
-        "fr": "À l'étape du rapport à la Chambre des communes"
+        "en": "At third reading in the House of Commons",
+        "fr": "À l'étape de la troisième lecture à la Chambre des communes"
       },
       "state": "encours",
       "milestones": [
@@ -4715,8 +4715,8 @@
       "royalAssent": null,
       "reinstated": false,
       "latestActivity": {
-        "en": "At report stage in the House of Commons",
-        "fr": "À l'étape du rapport à la Chambre des communes",
+        "en": "At third reading in the House of Commons",
+        "fr": "À l'étape de la troisième lecture à la Chambre des communes",
         "date": "2026-06-17"
       },
       "lastActivity": "2026-06-17",
