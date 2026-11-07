@@ -2616,6 +2616,36 @@ function remplirVotesProjet(box){
     corps.innerHTML = `<p class="bvote-note">${isEn ? 'The votes could not be loaded. Try again.' : 'Les votes n’ont pas pu être chargés. Réessayez.'}</p>`;
   });
 }
+// LOIS ET RÈGLEMENTS TOUCHÉS (7 nov. 2026, portée de DossierQuébec, case bill-lois) : les lois et
+// règlements que le texte de première lecture MODIFIE (pas ceux qu'il cite). Le nombre (b.lo =
+// [anglais, français]) vient de build-frontend-data.js ; la liste de data/bill-laws.json
+// (scrapers/bill-laws.js), chargé à l'ouverture. Affichée à partir de 2 textes touchés.
+let billLawsPromise = null;
+function billLawsCount(b, isEn){ return b.lo ? (isEn ? b.lo[0] : (b.lo[1] || b.lo[0])) : 0; }
+function billLawsBox(b, isEn){
+  const n = billLawsCount(b, isEn);
+  if(n < 2) return '';
+  const title = isEn ? `Laws and regulations affected (${n})` : `Lois et règlements touchés (${n})`;
+  return `<details class="bvote bill-lois" data-bill="${b.id}" onclick="event.stopPropagation()" ontoggle="if(this.open) remplirLoisProjet(this)"><summary><span class="bvote-title">${title}</span></summary><div class="bvote-body"></div></details>`;
+}
+function remplirLoisProjet(box){
+  const corps = box.querySelector('.bvote-body');
+  if(!corps || corps.dataset.built) return;
+  const isEn = currentLang === 'en';
+  const esc = s => String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  corps.innerHTML = `<p class="bvote-note">${isEn ? 'Loading…' : 'Chargement…'}</p>`;
+  if(!billLawsPromise) billLawsPromise = fetch('/data/bill-laws.json').then(r => r.ok ? r.json() : Promise.reject(new Error(r.status)));
+  billLawsPromise.then(d => {
+    const e = d?.bills?.[box.dataset.bill] || {};
+    const liste = isEn ? (e.en || []) : ((e.fr && e.fr.length) ? e.fr : (e.en || []));
+    corps.dataset.built = '1';
+    const src = e.xml ? ` <a href="${esc(isEn ? e.xml : e.xml.replace(/_E\.xml$/i, '_F.xml'))}" target="_blank" rel="noopener">XML</a>` : '';
+    corps.innerHTML = `<p class="bvote-note">${isEn ? 'First reading text.' : 'Texte de la première lecture.'}${src}</p><ul class="bbrief-list">${liste.map(t => `<li>${esc(t)}</li>`).join('')}</ul>`;
+  }).catch(() => {
+    billLawsPromise = null;
+    corps.innerHTML = `<p class="bvote-note">${isEn ? 'The list could not be loaded. Try again.' : 'La liste n’a pas pu être chargée. Réessayez.'}</p>`;
+  });
+}
 // MÉMOIRES DÉPOSÉS EN COMITÉ (7 nov. 2026, portée de DossierQuébec) : Communes seulement.
 // Le nombre (b.mb) vient de build-frontend-data.js ; la liste (auteur + lien vers le mémoire
 // officiel) de data/bill-briefs.json (scrapers/bill-briefs.js), chargé à l'ouverture de la case.
@@ -2937,7 +2967,7 @@ function billCard(b, ctx){
       <div class="expand-hint" id="hint-${domId}">${isEn ? 'View summary & details' : 'Voir le sommaire et les détails'}</div>
       <div class="bill-summary" id="${domId}">
         <div class="bill-cols">
-          <div class="bill-col-main">${billSummarySlot(b, isEn)}${b.dv ? billDivisionsBox(b, isEn) : billVotesSlot(b, isEn)}${b.mb ? billBriefsBox(b, isEn) : ''}</div>
+          <div class="bill-col-main">${billSummarySlot(b, isEn)}${billLawsBox(b, isEn)}${b.dv ? billDivisionsBox(b, isEn) : billVotesSlot(b, isEn)}${b.mb ? billBriefsBox(b, isEn) : ''}</div>
           <aside class="bill-col-side">
             <div class="bill-side-label">${lastActivityLabel}</div>
             <div class="bill-side-box">${lastActivityFull}</div>

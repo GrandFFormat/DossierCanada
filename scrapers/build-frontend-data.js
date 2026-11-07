@@ -449,6 +449,18 @@ function main() {
     }
     console.log(`  case des mémoires : ${mbBills} projets`);
   }
+  // LOIS ET RÈGLEMENTS TOUCHÉS (7 nov. 2026) : les nombres [anglais, français] seulement (fb.lo) ;
+  // la liste vit dans data/bill-laws.json (scrapers/bill-laws.js). Case affichée à partir de 2.
+  if (existsSync('data/bill-laws.json')) {
+    const bl = read('data/bill-laws.json').bills || {};
+    let loBills = 0;
+    for (const fb of frontendBills) {
+      const e = bl[fb.id];
+      const n = [e?.en?.length || 0, e?.fr?.length || 0];
+      if (n[0] >= 2 || n[1] >= 2) { fb.lo = n; loBills++; }
+    }
+    console.log(`  case des lois touchées : ${loBills} projets`);
+  }
   const sponsorResolved = frontendBills.filter((b) => b.sponsorParty).length;
 
   // TEXTES DES PROJETS — fichier séparé, chargé par le navigateur seulement quand

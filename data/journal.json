@@ -3,6 +3,18 @@
     "date": "2026-11-07",
     "volet": "projets",
     "fr": {
+      "titre": "Lois et règlements touchés",
+      "texte": "Sous chaque projet de loi qui modifie au moins deux lois ou règlements, une case dépliable les nomme, d’après le texte de la première lecture."
+    },
+    "en": {
+      "titre": "Laws and regulations affected",
+      "texte": "Under each bill that amends at least two laws or regulations, a box names them, from the first reading text."
+    }
+  },
+  {
+    "date": "2026-11-07",
+    "volet": "projets",
+    "fr": {
       "titre": "Mémoires déposés en comité",
       "texte": "Sous chaque projet de loi étudié en comité aux Communes, une case dépliable liste les mémoires déposés : qui les a soumis, avec le lien vers chaque mémoire officiel."
     },
