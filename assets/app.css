@@ -1421,4 +1421,33 @@
 @media (min-width:641px) and (max-width:1700px){ html.zoom-fort header.top{grid-template-columns:auto minmax(0,1fr); row-gap:10px;} html.zoom-fort header.top .brand{grid-column:1; grid-row:1; text-align:left;} html.zoom-fort header.top .header-right{grid-column:2; grid-row:1; flex-wrap:wrap; row-gap:6px; min-width:0;} html.zoom-fort header.top .header-left{grid-column:1 / -1; grid-row:2; justify-content:center; flex-wrap:wrap; row-gap:6px;} html.zoom-fort #provinceNetwork .pn-2{display:inline-flex;} html.zoom-fort #provinceNetworkR{display:none;} }
 
 /* Onglet « 07 Représentez votre ville » : formulaire sur DossierQuébec (nouvel onglet). */
-nav.tabs a.nav-rtv:hover{background:#1F9D55; color:#fff;}
+/* Menu des villes (7 nov. 2026), copié de l'en-tête de DossierQuébec (commun/dq.css,
+   .villes-menu / .city-flip) : remplace l'onglet « Représentez votre ville ». Un seul lien, en vert. */
+.villes-menu{position:relative; flex:none; margin-right:6px;}
+.villes-menu summary{list-style:none;}
+.villes-menu summary::-webkit-details-marker{display:none;}
+.city-flip{
+  display:inline-flex; align-items:center; justify-content:center; gap:5px;
+  height:26px; padding:0 11px; border-radius:13px !important;
+  background:var(--gold); color:var(--card);
+  font-family:'Archivo',sans-serif; font-weight:900; font-size:10px;
+  letter-spacing:0.04em; text-transform:uppercase; text-decoration:none; cursor:pointer;
+  transition:transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+}
+.city-flip::after{content:""; width:0; height:0; border-left:4px solid transparent; border-right:4px solid transparent; border-top:5px solid currentColor; opacity:.85;}
+.city-flip:hover, .villes-menu[open] .city-flip{transform:scale(1.06); background:var(--yellow); color:#131313;}
+.villes-menu ul{
+  position:absolute; top:calc(100% + 8px); right:0; z-index:60; margin:0; padding:6px;
+  list-style:none; min-width:180px; text-align:left;
+  background:var(--card); border:1px solid var(--line); border-radius:10px;
+  box-shadow:0 10px 30px rgba(0,0,0,.14);
+}
+.villes-menu li a{
+  display:block; padding:8px 12px; border-radius:7px; text-decoration:none; white-space:nowrap;
+  color:var(--ink); font-family:'Archivo',sans-serif; font-weight:700; font-size:14px;
+}
+.villes-menu li a:hover, .villes-menu li a:focus-visible{background:var(--paper-2); color:var(--gold);}
+.villes-menu li.villes-rtv a, .villes-menu li.villes-rtv a:hover{color:#1F9D55;}
+/* L'en-tête est en overflow:hidden (repli au défilement) : il s'ouvre le temps que le menu est ouvert. */
+#dq-topbar:not(.compact) header.top:has(.villes-menu[open]){overflow:visible;}
+@media (max-width:640px){ .city-flip{height:24px; padding:0 8px; font-size:9px;} .villes-menu ul{left:0; right:auto;} }
