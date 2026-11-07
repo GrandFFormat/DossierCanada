@@ -1451,3 +1451,20 @@
 /* L'en-tête est en overflow:hidden (repli au défilement) : il s'ouvre le temps que le menu est ouvert. */
 #dq-topbar:not(.compact) header.top:has(.villes-menu[open]){overflow:visible;}
 @media (max-width:640px){ .city-flip{height:24px; padding:0 8px; font-size:9px;} .villes-menu ul{left:0; right:auto;} }
+
+/* Le menu des villes devient l'onglet 07 de la barre (7 nov. 2026). */
+nav.tabs .tab-villes{position:relative; margin:0;}
+nav.tabs .tab-villes summary{
+  display:flex; align-items:center; justify-content:center; gap:6px; height:100%;
+  font-family:'IBM Plex Mono',monospace; font-size:12.5px; font-weight:700; text-transform:uppercase;
+  letter-spacing:0.01em; padding:12px 6px; color:var(--ink); cursor:pointer; white-space:nowrap;
+}
+nav.tabs .tab-villes summary .n{margin-right:5px;}
+nav.tabs .tab-villes summary::after{content:""; border-left:4px solid transparent; border-right:4px solid transparent; border-top:5px solid currentColor;}
+nav.tabs .tab-villes summary:hover, nav.tabs .tab-villes[open] summary{background:var(--yellow); color:var(--on-candy);}
+nav.tabs .tab-villes ul{top:calc(100% + 5px); right:0; text-transform:none; letter-spacing:0;}
+nav.tabs .tab-villes li a{border:none; padding:8px 12px; font-family:'Archivo',sans-serif; font-size:14px; text-align:left; text-transform:none;}
+@media (max-width:640px){
+  nav.tabs .tab-villes summary{justify-content:flex-start; padding:16px 24px; font-size:15px; border-bottom:1px solid var(--line); height:auto;}
+  nav.tabs .tab-villes ul{position:static; box-shadow:none; border:none; border-radius:0; padding:4px 24px 12px;}
+}
