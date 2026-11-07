@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-11-07",
+    "volet": "projets",
+    "fr": {
+      "titre": "Mémoires déposés en comité",
+      "texte": "Sous chaque projet de loi étudié en comité aux Communes, une case dépliable liste les mémoires déposés : qui les a soumis, avec le lien vers chaque mémoire officiel."
+    },
+    "en": {
+      "titre": "Briefs submitted in committee",
+      "texte": "Under each bill studied by a House of Commons committee, a box lists the briefs submitted: who submitted them, with a link to each official brief."
+    }
+  },
+  {
     "date": "2026-11-03",
     "volet": "projets",
     "fr": {

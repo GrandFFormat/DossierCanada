@@ -9,6 +9,7 @@
     "scrape:bills": "node scrapers/bills.js",
     "scrape:bill-details": "node scrapers/bill-details.js",
     "scrape:bill-summaries": "node scrapers/bill-summaries.js",
+    "scrape:bill-briefs": "node scrapers/bill-briefs.js",
     "scrape:bill-ai-summaries": "node scrapers/bill-ai-summaries.js",
     "build:frontend": "node scrapers/build-frontend-data.js",
     "scrape:depute-emails": "node scrapers/depute-emails.js",

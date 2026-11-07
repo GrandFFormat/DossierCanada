@@ -26,6 +26,8 @@ import { appendFileSync, readFileSync } from 'node:fs';
 const SCRAPERS = [
   'scrape:bills',
   'scrape:bill-summaries',
+  // Mémoires déposés en comité (Communes, GetBriefs) : cache, ~1,2 s entre requêtes.
+  'scrape:bill-briefs',
   'scrape:bill-ai-summaries',
   'scrape:deputes',
   'scrape:depute-emails',

@@ -2616,6 +2616,37 @@ function remplirVotesProjet(box){
     corps.innerHTML = `<p class="bvote-note">${isEn ? 'The votes could not be loaded. Try again.' : 'Les votes n’ont pas pu être chargés. Réessayez.'}</p>`;
   });
 }
+// MÉMOIRES DÉPOSÉS EN COMITÉ (7 nov. 2026, portée de DossierQuébec) : Communes seulement.
+// Le nombre (b.mb) vient de build-frontend-data.js ; la liste (auteur + lien vers le mémoire
+// officiel) de data/bill-briefs.json (scrapers/bill-briefs.js), chargé à l'ouverture de la case.
+let billBriefsPromise = null;
+function billBriefsBox(b, isEn){
+  const title = isEn ? `Briefs submitted in committee (${b.mb})` : `Mémoires déposés en commission (${b.mb})`;
+  return `<details class="bvote bill-briefs" data-bill="${b.id}" onclick="event.stopPropagation()" ontoggle="if(this.open) remplirMemoiresProjet(this)"><summary><span class="bvote-title">${title}</span></summary><div class="bvote-body"></div></details>`;
+}
+function remplirMemoiresProjet(box){
+  const corps = box.querySelector('.bvote-body');
+  if(!corps || corps.dataset.built) return;
+  const isEn = currentLang === 'en';
+  const esc = s => String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  corps.innerHTML = `<p class="bvote-note">${isEn ? 'Loading…' : 'Chargement…'}</p>`;
+  if(!billBriefsPromise) billBriefsPromise = fetch('/data/bill-briefs.json').then(r => r.ok ? r.json() : Promise.reject(new Error(r.status)));
+  billBriefsPromise.then(d => {
+    const liste = d?.bills?.[box.dataset.bill]?.briefs || [];
+    corps.dataset.built = '1';
+    const note = isEn
+      ? `<p class="bvote-note">Briefs submitted to the House of Commons committee that studied the bill. Each link opens the official brief (PDF).</p>`
+      : `<p class="bvote-note">Mémoires déposés au comité de la Chambre des communes qui a étudié le projet. Chaque lien ouvre le mémoire officiel (PDF).</p>`;
+    corps.innerHTML = note + `<ul class="bbrief-list">${liste.map(x => {
+      const nom = isEn ? x.n.en : (x.n.fr || x.n.en);
+      const url = isEn ? x.u.en : (x.u.fr || x.u.en);
+      return `<li><a href="${esc(url)}" target="_blank" rel="noopener">${esc(nom)}</a></li>`;
+    }).join('')}</ul>`;
+  }).catch(() => {
+    billBriefsPromise = null;
+    corps.innerHTML = `<p class="bvote-note">${isEn ? 'The briefs could not be loaded. Try again.' : 'Les mémoires n’ont pas pu être chargés. Réessayez.'}</p>`;
+  });
+}
 // Enveloppe posée par billCard : garde une cible stable à remplir plus tard.
 function billSummarySlot(b, isEn){
   const attenteUtile = billTexts === null && b.state !== 'proforma';
@@ -2906,7 +2937,7 @@ function billCard(b, ctx){
       <div class="expand-hint" id="hint-${domId}">${isEn ? 'View summary & details' : 'Voir le sommaire et les détails'}</div>
       <div class="bill-summary" id="${domId}">
         <div class="bill-cols">
-          <div class="bill-col-main">${billSummarySlot(b, isEn)}${b.dv ? billDivisionsBox(b, isEn) : billVotesSlot(b, isEn)}</div>
+          <div class="bill-col-main">${billSummarySlot(b, isEn)}${b.dv ? billDivisionsBox(b, isEn) : billVotesSlot(b, isEn)}${b.mb ? billBriefsBox(b, isEn) : ''}</div>
           <aside class="bill-col-side">
             <div class="bill-side-label">${lastActivityLabel}</div>
             <div class="bill-side-box">${lastActivityFull}</div>
