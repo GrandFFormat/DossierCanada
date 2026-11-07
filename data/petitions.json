@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-11-06T16:02:40.254Z",
+  "scrapedAt": "2026-11-07T14:53:09.462Z",
   "count": 20,
   "petitions": [
     {
@@ -18,7 +18,7 @@
         "fr": "Ouverte pour signature jusqu'au 31 janvier 2027 à 15 h 54 (HAE)"
       },
       "sponsor": "Stephanie Kusie",
-      "signatures": 6651,
+      "signatures": 8812,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7902",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7902"
@@ -39,7 +39,7 @@
         "fr": "Ouverte pour signature jusqu'au 4 mars 2027 à 9 h 44 (HAE)"
       },
       "sponsor": "Don Davies",
-      "signatures": 2836,
+      "signatures": 5006,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7898",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7898"
@@ -60,7 +60,7 @@
         "fr": "Ouverte pour signature jusqu'au 2 janvier 2027 à 15 h 26 (HAE)"
       },
       "sponsor": "Brendan Hanley",
-      "signatures": 1108,
+      "signatures": 1748,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7918",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7918"
@@ -81,31 +81,10 @@
         "fr": "Ouverte pour signature jusqu'au 2 décembre 2026 à 14 h 16 (HAE)"
       },
       "sponsor": "Iqra Khalid",
-      "signatures": 1090,
+      "signatures": 1296,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7877",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7877"
-      }
-    },
-    {
-      "code": "e-7885",
-      "topic": {
-        "en": "Culture and heritage",
-        "fr": "Culture et patrimoine"
-      },
-      "keywords": {
-        "en": "Heritage sites and buildings Historic O'Keefe Ranch",
-        "fr": "Ranch historique O'Keefe Sites et édifices patrimoniaux"
-      },
-      "status": {
-        "en": "Open for signature until January 27, 2027, at 10:50 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 27 janvier 2027 à 10 h 50 (HAE)"
-      },
-      "sponsor": "Scott Anderson",
-      "signatures": 904,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7885",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7885"
       }
     },
     {
@@ -123,10 +102,31 @@
         "fr": "Ouverte pour signature jusqu'au 2 mars 2027 à 15 h 53 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 889,
+      "signatures": 962,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7895",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7895"
+      }
+    },
+    {
+      "code": "e-7885",
+      "topic": {
+        "en": "Culture and heritage",
+        "fr": "Culture et patrimoine"
+      },
+      "keywords": {
+        "en": "Heritage sites and buildings Historic O'Keefe Ranch",
+        "fr": "Ranch historique O'Keefe Sites et édifices patrimoniaux"
+      },
+      "status": {
+        "en": "Open for signature until January 27, 2027, at 10:50 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 27 janvier 2027 à 10 h 50 (HAE)"
+      },
+      "sponsor": "Scott Anderson",
+      "signatures": 926,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7885",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7885"
       }
     },
     {
@@ -144,7 +144,7 @@
         "fr": "Ouverte pour signature jusqu'au 24 février 2027 à 13 h 02 (HAE)"
       },
       "sponsor": "Patrick Weiler",
-      "signatures": 452,
+      "signatures": 460,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7879",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7879"
@@ -165,31 +165,10 @@
         "fr": "Ouverte pour signature jusqu'au 25 janvier 2027 à 13 h 02 (HAE)"
       },
       "sponsor": "Marilène Gill",
-      "signatures": 416,
+      "signatures": 425,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7868",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7868"
-      }
-    },
-    {
-      "code": "e-7863",
-      "topic": {
-        "en": "Media and telecommunications",
-        "fr": "Médias et télécommunications"
-      },
-      "keywords": {
-        "en": "Call centres Service standards Telecommunications service providers",
-        "fr": "Centres d'appels Fournisseurs de services de télécommunication Normes de service"
-      },
-      "status": {
-        "en": "Open for signature until November 26, 2026, at 1:03 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 26 novembre 2026 à 13 h 03 (HAE)"
-      },
-      "sponsor": "Kathy Borrelli",
-      "signatures": 338,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7863",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7863"
       }
     },
     {
@@ -207,31 +186,31 @@
         "fr": "Ouverte pour signature jusqu'au 2 février 2027 à 13 h 40 (HAE)"
       },
       "sponsor": "Heather McPherson",
-      "signatures": 332,
+      "signatures": 381,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7718",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7718"
       }
     },
     {
-      "code": "e-7870",
+      "code": "e-7863",
       "topic": {
-        "en": "Veterans' affairs",
-        "fr": "Anciens combattants"
+        "en": "Media and telecommunications",
+        "fr": "Médias et télécommunications"
       },
       "keywords": {
-        "en": "National War Memorial Persian Gulf War Veterans",
-        "fr": "Anciens combattants Guerre du golfe Persique Monument commémoratif de guerre du Canada"
+        "en": "Call centres Service standards Telecommunications service providers",
+        "fr": "Centres d'appels Fournisseurs de services de télécommunication Normes de service"
       },
       "status": {
-        "en": "Open for signature until December 28, 2026, at 10:49 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 28 décembre 2026 à 10 h 49 (HAE)"
+        "en": "Open for signature until November 26, 2026, at 1:03 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 26 novembre 2026 à 13 h 03 (HAE)"
       },
-      "sponsor": "Richard Bragdon",
-      "signatures": 299,
+      "sponsor": "Kathy Borrelli",
+      "signatures": 343,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7870",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7870"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7863",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7863"
       }
     },
     {
@@ -249,10 +228,31 @@
         "fr": "Ouverte pour signature jusqu'au 31 janvier 2027 à 13 h 59 (HAE)"
       },
       "sponsor": "Jessica Fancy",
-      "signatures": 297,
+      "signatures": 313,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7865",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7865"
+      }
+    },
+    {
+      "code": "e-7870",
+      "topic": {
+        "en": "Veterans' affairs",
+        "fr": "Anciens combattants"
+      },
+      "keywords": {
+        "en": "National War Memorial Persian Gulf War Veterans",
+        "fr": "Anciens combattants Guerre du golfe Persique Monument commémoratif de guerre du Canada"
+      },
+      "status": {
+        "en": "Open for signature until December 28, 2026, at 10:49 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 28 décembre 2026 à 10 h 49 (HAE)"
+      },
+      "sponsor": "Richard Bragdon",
+      "signatures": 312,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7870",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7870"
       }
     },
     {
@@ -270,31 +270,10 @@
         "fr": "Ouverte pour signature jusqu'au 26 décembre 2026 à 13 h 03 (HAE)"
       },
       "sponsor": "Jaime Battiste",
-      "signatures": 249,
+      "signatures": 272,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7850",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7850"
-      }
-    },
-    {
-      "code": "e-7883",
-      "topic": {
-        "en": "Justice",
-        "fr": "Justice"
-      },
-      "keywords": {
-        "en": "Advertising Child pornography Digital safety",
-        "fr": "Pornographie juvénile Publicité Sécurité numérique"
-      },
-      "status": {
-        "en": "Open for signature until March 2, 2027, at 3:45 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 2 mars 2027 à 15 h 45 (HAE)"
-      },
-      "sponsor": "Anita Vandenbeld",
-      "signatures": 131,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7883",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7883"
       }
     },
     {
@@ -312,7 +291,7 @@
         "fr": "Ouverte pour signature jusqu'au 24 février 2027 à 13 h 05 (HAE)"
       },
       "sponsor": "Amandeep Sodhi",
-      "signatures": 129,
+      "signatures": 154,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7866",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7866"
@@ -333,10 +312,31 @@
         "fr": "Ouverte pour signature jusqu'au 4 mars 2027 à 9 h 47 (HAE)"
       },
       "sponsor": "Adam Chambers",
-      "signatures": 109,
+      "signatures": 149,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7920",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7920"
+      }
+    },
+    {
+      "code": "e-7883",
+      "topic": {
+        "en": "Justice",
+        "fr": "Justice"
+      },
+      "keywords": {
+        "en": "Advertising Child pornography Digital safety",
+        "fr": "Pornographie juvénile Publicité Sécurité numérique"
+      },
+      "status": {
+        "en": "Open for signature until March 2, 2027, at 3:45 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 2 mars 2027 à 15 h 45 (HAE)"
+      },
+      "sponsor": "Anita Vandenbeld",
+      "signatures": 136,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7883",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7883"
       }
     },
     {
@@ -354,7 +354,7 @@
         "fr": "Ouverte pour signature jusqu'au 2 mars 2027 à 13 h 54 (HAE)"
       },
       "sponsor": "Rosemarie Falk",
-      "signatures": 66,
+      "signatures": 85,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7854",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7854"
@@ -375,7 +375,7 @@
         "fr": "Ouverte pour signature jusqu'au 26 février 2027 à 10 h 49 (HAE)"
       },
       "sponsor": "Patrick Weiler",
-      "signatures": 48,
+      "signatures": 49,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7827",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7827"
@@ -396,7 +396,7 @@
         "fr": "Ouverte pour signature jusqu'au 5 mars 2027 à 14 h 02 (HAE)"
       },
       "sponsor": "Leah Gazan",
-      "signatures": 23,
+      "signatures": 35,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7916",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7916"
@@ -417,7 +417,7 @@
         "fr": "Ouverte pour signature jusqu'au 1 février 2027 à 15 h 51 (HAE)"
       },
       "sponsor": "Jenna Sudds",
-      "signatures": 21,
+      "signatures": 22,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7896",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7896"
