@@ -438,6 +438,17 @@ function main() {
     dvBills++;
   }
   console.log(`  case des votes nominaux : ${dvBills} projets`);
+  // MÉMOIRES DÉPOSÉS EN COMITÉ (7 nov. 2026) : seul le NOMBRE va dans la page (fb.mb) ;
+  // la liste vit dans data/bill-briefs.json (scrapers/bill-briefs.js), chargée à l'ouverture de la case.
+  if (existsSync('data/bill-briefs.json')) {
+    const bb = read('data/bill-briefs.json').bills || {};
+    let mbBills = 0;
+    for (const fb of frontendBills) {
+      const n = bb[fb.id]?.briefs?.length || 0;
+      if (n) { fb.mb = n; mbBills++; }
+    }
+    console.log(`  case des mémoires : ${mbBills} projets`);
+  }
   const sponsorResolved = frontendBills.filter((b) => b.sponsorParty).length;
 
   // TEXTES DES PROJETS — fichier séparé, chargé par le navigateur seulement quand
