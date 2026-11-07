@@ -28,6 +28,8 @@ const SCRAPERS = [
   'scrape:bill-summaries',
   // Mémoires déposés en comité (Communes, GetBriefs) : cache, ~1,2 s entre requêtes.
   'scrape:bill-briefs',
+  // Lois et règlements touchés (XML de première lecture, parl.ca) : cache permanent par projet.
+  'scrape:bill-laws',
   'scrape:bill-ai-summaries',
   'scrape:deputes',
   'scrape:depute-emails',

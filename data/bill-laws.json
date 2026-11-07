@@ -1,0 +1,2632 @@
+{
+ "source": "https://www.parl.ca/DocumentViewer (XML de première lecture)",
+ "session": "45-1",
+ "parser": 2,
+ "scrapedAt": "2026-11-07T18:12:37.790Z",
+ "bills": {
+  "13538627": {
+   "num": "C-201",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-201/C-201_1/C-201_E.xml",
+   "en": [
+    "Canada Health Act"
+   ],
+   "fr": [
+    "Loi canadienne sur la santé"
+   ]
+  },
+  "13538631": {
+   "num": "C-204",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-204/C-204_1/C-204_E.xml",
+   "en": [
+    "Income Tax Act"
+   ],
+   "fr": [
+    "Loi de l’impôt sur le revenu"
+   ]
+  },
+  "13539341": {
+   "num": "C-1",
+   "xml": null,
+   "en": [],
+   "fr": []
+  },
+  "13539458": {
+   "num": "S-1",
+   "xml": null,
+   "en": [],
+   "fr": []
+  },
+  "13539592": {
+   "num": "C-202",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-202/C-202_1/C-202_E.xml",
+   "en": [
+    "Department of Foreign Affairs, Trade and Development Act"
+   ],
+   "fr": [
+    "Loi sur le ministère des Affaires étrangères, du Commerce et du Développement"
+   ]
+  },
+  "13539746": {
+   "num": "C-4",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/C-4/C-4_1/C-4_E.xml",
+   "en": [
+    "Income Tax Act",
+    "Excise Tax Act",
+    "Nova Scotia HST Regulations, 2010",
+    "New Harmonized Value-added Tax System Regulations, No. 2",
+    "Greenhouse Gas Pollution Pricing Act",
+    "Fuel Charge Regulations",
+    "Canada Elections Act"
+   ],
+   "fr": [
+    "Loi de l’impôt sur le revenu",
+    "Loi sur la taxe d’accise",
+    "Règlement de 2010 sur la TVH applicable à la Nouvelle-Écosse",
+    "Règlement no 2 sur le nouveau régime de la taxe à valeur ajoutée harmonisée",
+    "Loi sur la tarification de la pollution causée par les gaz à effet de serre",
+    "Règlement sur la redevance sur les combustibles",
+    "Loi électorale du Canada"
+   ]
+  },
+  "13540152": {
+   "num": "C-207",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-207/C-207_1/C-207_E.xml",
+   "en": [
+    "Canada Pension Plan"
+   ],
+   "fr": [
+    "Régime de pensions du Canada"
+   ]
+  },
+  "13540330": {
+   "num": "S-212",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-212/S-212_1/S-212_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13540346": {
+   "num": "S-201",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-201/S-201_1/S-201_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13540351": {
+   "num": "S-213",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-213/S-213_1/S-213_E.xml",
+   "en": [
+    "Canada Elections Act"
+   ],
+   "fr": [
+    "Loi électorale du Canada"
+   ]
+  },
+  "13540359": {
+   "num": "S-202",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-202/S-202_1/S-202_E.xml",
+   "en": [
+    "Food and Drugs Act"
+   ],
+   "fr": [
+    "Loi sur les aliments et drogues"
+   ]
+  },
+  "13541848": {
+   "num": "S-203",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-203/S-203_1/S-203_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13541851": {
+   "num": "S-214",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-214/S-214_1/S-214_E.xml",
+   "en": [
+    "Special Economic Measures Act"
+   ],
+   "fr": [
+    "Loi sur les mesures économiques spéciales"
+   ]
+  },
+  "13541857": {
+   "num": "S-204",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-204/S-204_1/S-204_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13541873": {
+   "num": "S-215",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-215/S-215_1/S-215_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13541884": {
+   "num": "S-205",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-205/S-205_1/S-205_E.xml",
+   "en": [
+    "Corrections and Conditional Release Act"
+   ],
+   "fr": [
+    "Loi sur le système correctionnel et la mise en liberté sous condition"
+   ]
+  },
+  "13541900": {
+   "num": "S-206",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-206/S-206_1/S-206_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13541901": {
+   "num": "S-216",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-216/S-216_1/S-216_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13541931": {
+   "num": "S-207",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-207/S-207_1/S-207_E.xml",
+   "en": [
+    "Criminal Records Act",
+    "Criminal Code",
+    "Canadian Human Rights Act",
+    "National Defence Act",
+    "Income Tax Act",
+    "DNA Identification Act",
+    "Immigration and Refugee Protection Act",
+    "Youth Criminal Justice Act",
+    "Pardon Services Fees Order"
+   ],
+   "fr": [
+    "Loi sur le casier judiciaire",
+    "Code criminel",
+    "Loi canadienne sur les droits de la personne",
+    "Loi sur la défense nationale",
+    "Loi de l’impôt sur le revenu",
+    "Loi sur l’identification par les empreintes génétiques",
+    "Loi sur l’immigration et la protection des réfugiés",
+    "Loi sur le système de justice pénale pour les adolescents",
+    "Arrêté sur le prix à payer pour des services en vue d’une réhabilitation"
+   ]
+  },
+  "13541944": {
+   "num": "S-208",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-208/S-208_1/S-208_E.xml",
+   "en": [
+    "Criminal Code"
+   ],
+   "fr": [
+    "Code criminel"
+   ]
+  },
+  "13541945": {
+   "num": "S-217",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-217/S-217_1/S-217_E.xml",
+   "en": [
+    "Canada Revenue Agency Act"
+   ],
+   "fr": [
+    "Loi sur l’Agence du revenu du Canada"
+   ]
+  },
+  "13541954": {
+   "num": "S-209",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-209/S-209_1/S-209_E.xml",
+   "en": [
+    "An Act to amend the Criminal Code and to make consequential amendments to other Acts (child sexual abuse and exploitation material)"
+   ],
+   "fr": [
+    "Loi modifiant le Code criminel et d’autres lois en conséquence (matériel d’abus et d’exploitation pédosexuels)"
+   ]
+  },
+  "13541955": {
+   "num": "S-218",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-218/S-218_1/S-218_E.xml",
+   "en": [
+    "Constitution Act, 1982",
+    "Canada Act 1982"
+   ],
+   "fr": [
+    "Loi constitutionnelle de 1982",
+    "Loi de 1982 sur le Canada"
+   ]
+  },
+  "13541964": {
+   "num": "S-210",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-210/S-210_1/S-210_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13541971": {
+   "num": "S-219",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-219/S-219_1/S-219_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13541972": {
+   "num": "S-211",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-211/S-211_1/S-211_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13541987": {
+   "num": "S-220",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-220/S-220_1/S-220_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13541991": {
+   "num": "S-221",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-221/S-221_1/S-221_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13542628": {
+   "num": "S-2",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/S-2/S-2_1/S-2_E.xml",
+   "en": [
+    "Indian Act"
+   ],
+   "fr": [
+    "Loi sur les Indiens"
+   ]
+  },
+  "13542654": {
+   "num": "S-222",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-222/S-222_1/S-222_E.xml",
+   "en": [
+    "Canada Elections Act",
+    "Regulation Adapting the Canada Elections Act for the Purposes of a Referendum"
+   ],
+   "fr": [
+    "Loi électorale du Canada",
+    "Règlement adaptant la Loi électorale du Canada aux fins d’un référendum"
+   ]
+  },
+  "13543368": {
+   "num": "C-203",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-203/C-203_1/C-203_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13543613": {
+   "num": "C-2",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/C-2/C-2_1/C-2_E.xml",
+   "en": [
+    "Customs Act",
+    "Controlled Drugs and Substances Act",
+    "Controlled Drugs and Substances Act (Police Enforcement) Regulations",
+    "Precursor Control Regulations",
+    "Order Amending Schedule V to the Controlled Drugs and Substances Act (Fentanyl Precursors and Carisoprodol)",
+    "Cannabis Act",
+    "Canada Post Corporation Act",
+    "Oceans Act",
+    "Department of Citizenship and Immigration Act",
+    "Immigration and Refugee Protection Act",
+    "Budget Implementation Act, 2023, No. 1",
+    "Proceeds of Crime (Money Laundering) and Terrorist Financing Act",
+    "Retail Payment Activities Act",
+    "Budget Implementation Act, 2024, No. 1",
+    "Proceeds of Crime (Money Laundering) and Terrorist Financing Administrative Monetary Penalties Regulations",
+    "Office of the Superintendent of Financial Institutions Act",
+    "Sex Offender Information Registration Act",
+    "Criminal Code",
+    "Foreign Publishers Advertising Services Act",
+    "Mutual Legal Assistance in Criminal Matters Act",
+    "Canadian Security Intelligence Service Act",
+    "Personal Information Protection and Electronic Documents Act"
+   ],
+   "fr": [
+    "Loi sur les douanes",
+    "Loi réglementant certaines drogues et autres substances",
+    "Règlement sur l’exécution policière de la Loi réglementant certaines drogues et autres substances",
+    "Règlement sur les précurseurs",
+    "Arrêté modifiant l’annexe V de la Loi réglementant certaines drogues et autres substances (précurseurs du fentanyl et carisoprodol)",
+    "Loi sur le cannabis",
+    "Loi sur la Société canadienne des postes",
+    "Loi sur les océans",
+    "Loi sur le ministère de la Citoyenneté et de l’Immigration",
+    "Loi sur l’immigration et la protection des réfugiés",
+    "Loi no 1 d’exécution du budget de 2023",
+    "Loi sur le recyclage des produits de la criminalité et le financement des activités terroristes",
+    "Loi sur les activités associées aux paiements de détail",
+    "Loi no 1 d’exécution du budget de 2024",
+    "Règlement sur les pénalités administratives — recyclage des produits de la criminalité et financement des activités terroristes",
+    "Loi sur le Bureau du surintendant des institutions financières",
+    "Loi sur l’enregistrement de renseignements sur les délinquants sexuels",
+    "Code criminel",
+    "Loi sur les services publicitaires fournis par des éditeurs étrangers",
+    "Loi sur l’entraide juridique en matière criminelle",
+    "Loi sur le Service canadien du renseignement de sécurité",
+    "Loi sur la protection des renseignements personnels et les documents électroniques"
+   ]
+  },
+  "13544328": {
+   "num": "C-210",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-210/C-210_1/C-210_E.xml",
+   "en": [
+    "Constitution Act, 1867"
+   ],
+   "fr": [
+    "Loi constitutionnelle de 1867"
+   ]
+  },
+  "13545225": {
+   "num": "C-229",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-229/C-229_1/C-229_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13545905": {
+   "num": "S-223",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-223/S-223_1/S-223_E.xml",
+   "en": [
+    "Royal Canadian Mounted Police Act"
+   ],
+   "fr": [
+    "Loi sur la Gendarmerie royale du Canada"
+   ]
+  },
+  "13545907": {
+   "num": "S-225",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-225/S-225_1/S-225_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13545922": {
+   "num": "S-1001",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-1001/S-1001_1/S-1001_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13545940": {
+   "num": "S-224",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-224/S-224_1/S-224_E.xml",
+   "en": [
+    "Director of Public Prosecutions Act"
+   ],
+   "fr": [
+    "Loi sur le directeur des poursuites pénales"
+   ]
+  },
+  "13546143": {
+   "num": "C-3",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/C-3/C-3_1/C-3_E.xml",
+   "en": [
+    "Citizenship Act"
+   ],
+   "fr": [
+    "Loi sur la citoyenneté"
+   ]
+  },
+  "13546896": {
+   "num": "C-206",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-206/C-206_1/C-206_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13547622": {
+   "num": "C-5",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/C-5/C-5_1/C-5_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13548190": {
+   "num": "S-226",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-226/S-226_1/S-226_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13548201": {
+   "num": "S-227",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-227/S-227_1/S-227_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13548203": {
+   "num": "S-228",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-228/S-228_1/S-228_E.xml",
+   "en": [
+    "Criminal Code"
+   ],
+   "fr": [
+    "Code criminel"
+   ]
+  },
+  "13550483": {
+   "num": "C-205",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-205/C-205_1/C-205_E.xml",
+   "en": [
+    "National Housing Strategy Act"
+   ],
+   "fr": [
+    "Loi sur la stratégie nationale sur le logement"
+   ]
+  },
+  "13551147": {
+   "num": "C-208",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-208/C-208_1/C-208_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13551324": {
+   "num": "C-213",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-213/C-213_1/C-213_E.xml",
+   "en": [
+    "Immigration and Refugee Protection Act"
+   ],
+   "fr": [
+    "Loi sur l’immigration et la protection des réfugiés"
+   ]
+  },
+  "13551707": {
+   "num": "C-212",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-212/C-212_1/C-212_E.xml",
+   "en": [
+    "Language Skills Act",
+    "Access to Information Act",
+    "Financial Administration Act",
+    "Privacy Act",
+    "Public Service Superannuation Act",
+    "Public Sector Compensation Act"
+   ],
+   "fr": [
+    "Loi sur les compétences linguistiques",
+    "Loi sur l’accès à l’information",
+    "Loi sur la gestion des finances publiques",
+    "Loi sur la protection des renseignements personnels",
+    "Loi sur la pension de la fonction publique",
+    "Loi sur la rémunération du secteur public"
+   ]
+  },
+  "13551940": {
+   "num": "C-211",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-211/C-211_1/C-211_E.xml",
+   "en": [
+    "Income Tax Act",
+    "Canada Pension Plan"
+   ],
+   "fr": [
+    "Loi de l’impôt sur le revenu",
+    "Régime de pensions du Canada"
+   ]
+  },
+  "13554118": {
+   "num": "C-283",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-283/C-283_1/C-283_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13554119": {
+   "num": "C-209",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-209/C-209_1/C-209_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13554320": {
+   "num": "S-229",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-229/S-229_1/S-229_E.xml",
+   "en": [
+    "National Capital Act"
+   ],
+   "fr": [
+    "Loi sur la capitale nationale"
+   ]
+  },
+  "13554334": {
+   "num": "S-230",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-230/S-230_1/S-230_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13559562": {
+   "num": "S-231",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-231/S-231_1/S-231_E.xml",
+   "en": [
+    "Criminal Code"
+   ],
+   "fr": [
+    "Code criminel"
+   ]
+  },
+  "13559594": {
+   "num": "S-232",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-232/S-232_1/S-232_E.xml",
+   "en": [
+    "Financial Administration Act",
+    "Parliament of Canada Act"
+   ],
+   "fr": [
+    "Loi sur la gestion des finances publiques",
+    "Loi sur le Parlement du Canada"
+   ]
+  },
+  "13561553": {
+   "num": "C-6",
+   "xml": null,
+   "en": [],
+   "fr": []
+  },
+  "13561557": {
+   "num": "C-7",
+   "xml": null,
+   "en": [],
+   "fr": []
+  },
+  "13561665": {
+   "num": "C-214",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-214/C-214_1/C-214_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13562824": {
+   "num": "C-215",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-215/C-215_1/C-215_E.xml",
+   "en": [
+    "Marine Liability Act"
+   ],
+   "fr": [
+    "Loi sur la responsabilité en matière maritime"
+   ]
+  },
+  "13563649": {
+   "num": "C-8",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/C-8/C-8_1/C-8_E.xml",
+   "en": [
+    "Telecommunications Act",
+    "Office of the Superintendent of Financial Institutions Act",
+    "Nuclear Safety and Control Act",
+    "Transportation Appeal Tribunal of Canada Act"
+   ],
+   "fr": [
+    "Loi sur les télécommunications",
+    "Loi sur le Bureau du surintendant des institutions financières",
+    "Loi sur la sûreté et la réglementation nucléaires",
+    "Loi sur le Tribunal d’appel des transports du Canada"
+   ]
+  },
+  "13564930": {
+   "num": "C-217",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-217/C-217_1/C-217_E.xml",
+   "en": [
+    "Canada Student Financial Assistance Act",
+    "Income Tax Act"
+   ],
+   "fr": [
+    "Loi fédérale sur l’aide financière aux étudiants",
+    "Loi de l’impôt sur le revenu"
+   ]
+  },
+  "13565288": {
+   "num": "C-216",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-216/C-216_1/C-216_E.xml",
+   "en": [
+    "An Act respecting the mandatory reporting of Internet child sexual abuse and exploitation material by persons who provide an Internet service",
+    "Criminal Code"
+   ],
+   "fr": [
+    "Loi concernant la déclaration obligatoire du matériel d’abus et d’exploitation pédosexuels sur Internet par les personnes qui fournissent des services Internet",
+    "Code criminel"
+   ]
+  },
+  "13568723": {
+   "num": "C-218",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-218/C-218_1/C-218_E.xml",
+   "en": [
+    "Criminal Code"
+   ],
+   "fr": [
+    "Code criminel"
+   ]
+  },
+  "13569694": {
+   "num": "C-251",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-251/C-251_1/C-251_E.xml",
+   "en": [
+    "Customs Act",
+    "Customs Tariff"
+   ],
+   "fr": [
+    "Loi sur les douanes",
+    "Tarif des douanes"
+   ]
+  },
+  "13583158": {
+   "num": "C-226",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-226/C-226_1/C-226_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13583642": {
+   "num": "C-219",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-219/C-219_1/C-219_E.xml",
+   "en": [
+    "Department of Foreign Affairs, Trade and Development Act",
+    "Justice for Victims of Corrupt Foreign Officials Act (Sergei Magnitsky Law)",
+    "Special Economic Measures Act",
+    "Broadcasting Act"
+   ],
+   "fr": [
+    "Loi sur le ministère des Affaires étrangères, du Commerce et du Développement",
+    "Loi sur la justice pour les victimes de dirigeants étrangers corrompus (loi de Sergueï Magnitski)",
+    "Loi sur les mesures économiques spéciales",
+    "Loi sur la radiodiffusion"
+   ]
+  },
+  "13583696": {
+   "num": "C-234",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-234/C-234_1/C-234_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13583780": {
+   "num": "C-220",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-220/C-220_1/C-220_E.xml",
+   "en": [
+    "Criminal Code"
+   ],
+   "fr": [
+    "Code criminel"
+   ]
+  },
+  "13583805": {
+   "num": "C-239",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-239/C-239_1/C-239_E.xml",
+   "en": [
+    "Canada Health Act"
+   ],
+   "fr": [
+    "Loi canadienne sur la santé"
+   ]
+  },
+  "13584104": {
+   "num": "C-225",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-225/C-225_1/C-225_E.xml",
+   "en": [
+    "Criminal Code"
+   ],
+   "fr": [
+    "Code criminel"
+   ]
+  },
+  "13585232": {
+   "num": "C-224",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-224/C-224_1/C-224_E.xml",
+   "en": [
+    "Food and Drugs Act"
+   ],
+   "fr": [
+    "Loi sur les aliments et drogues"
+   ]
+  },
+  "13585237": {
+   "num": "C-221",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-221/C-221_1/C-221_E.xml",
+   "en": [
+    "Corrections and Conditional Release Act"
+   ],
+   "fr": [
+    "Loi sur le système correctionnel et la mise en liberté sous condition"
+   ]
+  },
+  "13585516": {
+   "num": "C-232",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-232/C-232_1/C-232_E.xml",
+   "en": [
+    "Corrections and Conditional Release Act"
+   ],
+   "fr": [
+    "Loi sur le système correctionnel et la mise en liberté sous condition"
+   ]
+  },
+  "13586181": {
+   "num": "C-223",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-223/C-223_1/C-223_E.xml",
+   "en": [
+    "Divorce Act"
+   ],
+   "fr": [
+    "Loi sur le divorce"
+   ]
+  },
+  "13586188": {
+   "num": "C-222",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-222/C-222_1/C-222_E.xml",
+   "en": [
+    "Employment Insurance Act",
+    "Canada Labour Code"
+   ],
+   "fr": [
+    "Loi sur l’assurance-emploi",
+    "Code canadien du travail"
+   ]
+  },
+  "13587241": {
+   "num": "C-236",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-236/C-236_1/C-236_E.xml",
+   "en": [
+    "Criminal Code",
+    "Corrections and Conditional Release Act",
+    "Prisons and Reformatories Act"
+   ],
+   "fr": [
+    "Code criminel",
+    "Loi sur le système correctionnel et la mise en liberté sous condition",
+    "Loi sur les prisons et les maisons de correction"
+   ]
+  },
+  "13587256": {
+   "num": "C-227",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-227/C-227_1/C-227_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13588449": {
+   "num": "C-235",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-235/C-235_1/C-235_E.xml",
+   "en": [
+    "Criminal Code"
+   ],
+   "fr": [
+    "Code criminel"
+   ]
+  },
+  "13588503": {
+   "num": "C-246",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-246/C-246_1/C-246_E.xml",
+   "en": [
+    "Criminal Code"
+   ],
+   "fr": [
+    "Code criminel"
+   ]
+  },
+  "13588678": {
+   "num": "C-228",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-228/C-228_1/C-228_E.xml",
+   "en": [
+    "Department of Foreign Affairs, Trade and Development Act"
+   ],
+   "fr": [
+    "Loi sur le ministère des Affaires étrangères, du Commerce et du Développement"
+   ]
+  },
+  "13589531": {
+   "num": "C-231",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-231/C-231_1/C-231_E.xml",
+   "en": [
+    "Youth Criminal Justice Act"
+   ],
+   "fr": [
+    "Loi sur le système de justice pénale pour les adolescents"
+   ]
+  },
+  "13589558": {
+   "num": "C-240",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-240/C-240_1/C-240_E.xml",
+   "en": [
+    "Criminal Code",
+    "Corrections and Conditional Release Act",
+    "Controlled Drugs and Substances Act"
+   ],
+   "fr": [
+    "Code criminel",
+    "Loi sur le système correctionnel et la mise en liberté sous condition",
+    "Loi réglementant certaines drogues et autres substances"
+   ]
+  },
+  "13589580": {
+   "num": "C-245",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-245/C-245_1/C-245_E.xml",
+   "en": [
+    "Canadian Multiculturalism Act"
+   ],
+   "fr": [
+    "Loi sur le multiculturalisme canadien"
+   ]
+  },
+  "13589584": {
+   "num": "C-233",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-233/C-233_1/C-233_E.xml",
+   "en": [
+    "Export and Import Permits Act"
+   ],
+   "fr": [
+    "Loi sur les licences d’exportation et d’importation"
+   ]
+  },
+  "13590170": {
+   "num": "C-230",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-230/C-230_1/C-230_E.xml",
+   "en": [
+    "Financial Administration Act",
+    "Income Tax Act",
+    "Excise Tax Act",
+    "Excise Act, 2001",
+    "Softwood Lumber Products Export Charge Act, 2006",
+    "Digital Services Tax Act",
+    "Global Minimum Tax Act"
+   ],
+   "fr": [
+    "Loi sur la gestion des finances publiques",
+    "Loi de l’impôt sur le revenu",
+    "Loi sur la taxe d’accise",
+    "Loi de 2001 sur l’accise",
+    "Loi de 2006 sur les droits d’exportation de produits de bois d’œuvre",
+    "Loi sur la taxe sur les services numériques",
+    "Loi sur l’impôt minimum mondial"
+   ]
+  },
+  "13590474": {
+   "num": "C-238",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-238/C-238_1/C-238_E.xml",
+   "en": [
+    "Criminal Code"
+   ],
+   "fr": [
+    "Code criminel"
+   ]
+  },
+  "13590613": {
+   "num": "C-9",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/C-9/C-9_1/C-9_E.xml",
+   "en": [
+    "Criminal Code"
+   ],
+   "fr": [
+    "Code criminel"
+   ]
+  },
+  "13591570": {
+   "num": "C-237",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-237/C-237_1/C-237_E.xml",
+   "en": [
+    "Fisheries Act"
+   ],
+   "fr": [
+    "Loi sur les pêches"
+   ]
+  },
+  "13591943": {
+   "num": "C-242",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-242/C-242_1/C-242_E.xml",
+   "en": [
+    "Criminal Code",
+    "Department of Justice Act"
+   ],
+   "fr": [
+    "Code criminel",
+    "Loi sur le ministère de la Justice"
+   ]
+  },
+  "13592619": {
+   "num": "C-241",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-241/C-241_1/C-241_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13595422": {
+   "num": "C-243",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-243/C-243_1/C-243_E.xml",
+   "en": [
+    "Corrections and Conditional Release Act"
+   ],
+   "fr": [
+    "Loi sur le système correctionnel et la mise en liberté sous condition"
+   ]
+  },
+  "13596532": {
+   "num": "C-244",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-244/C-244_1/C-244_E.xml",
+   "en": [
+    "Canadian Environmental Protection Act, 1999",
+    "Wrecked, Abandoned or Hazardous Vessels Act"
+   ],
+   "fr": [
+    "Loi canadienne sur la protection de l’environnement (1999)",
+    "Loi sur les épaves et les bâtiments abandonnés ou dangereux"
+   ]
+  },
+  "13597539": {
+   "num": "C-249",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-249/C-249_1/C-249_E.xml",
+   "en": [
+    "Employment Insurance Act"
+   ],
+   "fr": [
+    "Loi sur l’assurance-emploi"
+   ]
+  },
+  "13602805": {
+   "num": "S-233",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-233/S-233_1/S-233_E.xml",
+   "en": [
+    "Criminal Code"
+   ],
+   "fr": [
+    "Code criminel"
+   ]
+  },
+  "13602863": {
+   "num": "S-234",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-234/S-234_1/S-234_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13603482": {
+   "num": "C-253",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-253/C-253_1/C-253_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13605049": {
+   "num": "C-10",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/C-10/C-10_1/C-10_E.xml",
+   "en": [
+    "Access to Information Act",
+    "Financial Administration Act",
+    "Privacy Act",
+    "Public Service Superannuation Act",
+    "Official Languages Act"
+   ],
+   "fr": [
+    "Loi sur l’accès à l’information",
+    "Loi sur la gestion des finances publiques",
+    "Loi sur la protection des renseignements personnels",
+    "Loi sur la pension de la fonction publique",
+    "Loi sur les langues officielles"
+   ]
+  },
+  "13608745": {
+   "num": "C-11",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/C-11/C-11_1/C-11_E.xml",
+   "en": [
+    "National Defence Act",
+    "Criminal Code",
+    "Strengthening Military Justice in the Defence of Canada Act",
+    "Sex Offender Information Registration Act",
+    "An Act to amend the Criminal Code and to make consequential amendments to other Acts (child sexual abuse and exploitation material)"
+   ],
+   "fr": [
+    "Loi sur la défense nationale",
+    "Code criminel",
+    "Loi visant à renforcer la justice militaire pour la défense du Canada",
+    "Loi sur l’enregistrement de renseignements sur les délinquants sexuels",
+    "Loi modifiant le Code criminel et d’autres lois en conséquence (matériel d’abus et d’exploitation pédosexuels)"
+   ]
+  },
+  "13611963": {
+   "num": "S-235",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-235/S-235_1/S-235_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13619775": {
+   "num": "S-236",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-236/S-236_1/S-236_E.xml",
+   "en": [
+    "Canadian Victims Bill of Rights"
+   ],
+   "fr": [
+    "Charte canadienne des droits des victimes"
+   ]
+  },
+  "13621852": {
+   "num": "C-247",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-247/C-247_1/C-247_E.xml",
+   "en": [
+    "Canada Labour Code"
+   ],
+   "fr": [
+    "Code canadien du travail"
+   ]
+  },
+  "13623903": {
+   "num": "S-237",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-237/S-237_1/S-237_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13628491": {
+   "num": "C-248",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-248/C-248_1/C-248_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13632066": {
+   "num": "C-250",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-250/C-250_1/C-250_E.xml",
+   "en": [
+    "Canada Labour Code"
+   ],
+   "fr": [
+    "Code canadien du travail"
+   ]
+  },
+  "13632609": {
+   "num": "C-12",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/C-12/C-12_1/C-12_E.xml",
+   "en": [
+    "Customs Act",
+    "Controlled Drugs and Substances Act",
+    "Controlled Drugs and Substances Act (Police Enforcement) Regulations",
+    "Precursor Control Regulations",
+    "Order Amending Schedule V to the Controlled Drugs and Substances Act (Fentanyl Precursors and Carisoprodol)",
+    "Cannabis Act",
+    "Oceans Act",
+    "Department of Citizenship and Immigration Act",
+    "Immigration and Refugee Protection Act",
+    "Budget Implementation Act, 2023, No. 1",
+    "Proceeds of Crime (Money Laundering) and Terrorist Financing Act",
+    "Retail Payment Activities Act",
+    "Proceeds of Crime (Money Laundering) and Terrorist Financing Administrative Monetary Penalties Regulations",
+    "Office of the Superintendent of Financial Institutions Act",
+    "Sex Offender Information Registration Act"
+   ],
+   "fr": [
+    "Loi sur les douanes",
+    "Loi réglementant certaines drogues et autres substances",
+    "Règlement sur l’exécution policière de la Loi réglementant certaines drogues et autres substances",
+    "Règlement sur les précurseurs",
+    "Arrêté modifiant l’annexe V de la Loi réglementant certaines drogues et autres substances (précurseurs du fentanyl et carisoprodol)",
+    "Loi sur le cannabis",
+    "Loi sur les océans",
+    "Loi sur le ministère de la Citoyenneté et de l’Immigration",
+    "Loi sur l’immigration et la protection des réfugiés",
+    "Loi no 1 d’exécution du budget de 2023",
+    "Loi sur le recyclage des produits de la criminalité et le financement des activités terroristes",
+    "Loi sur les activités associées aux paiements de détail",
+    "Règlement sur les pénalités administratives — recyclage des produits de la criminalité et financement des activités terroristes",
+    "Loi sur le Bureau du surintendant des institutions financières",
+    "Loi sur l’enregistrement de renseignements sur les délinquants sexuels"
+   ]
+  },
+  "13668620": {
+   "num": "C-252",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-252/C-252_1/C-252_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13669451": {
+   "num": "C-13",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/C-13/C-13_1/C-13_E.xml",
+   "en": [
+    "Financial Administration Act",
+    "Commercial Arbitration Act",
+    "Trust and Loan Companies Act",
+    "Bank Act",
+    "Insurance Companies Act",
+    "Customs Tariff",
+    "Comprehensive and Progressive Agreement for Trans-Pacific Partnership Implementation Act"
+   ],
+   "fr": [
+    "Loi sur la gestion des finances publiques",
+    "Loi sur l’arbitrage commercial",
+    "Loi sur les sociétés de fiducie et de prêt",
+    "Loi sur les banques",
+    "Loi sur les sociétés d’assurances",
+    "Tarif des douanes",
+    "Loi de mise en oeuvre de l’Accord de partenariat transpacifique global et progressiste"
+   ]
+  },
+  "13679516": {
+   "num": "C-14",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/C-14/C-14_1/C-14_E.xml",
+   "en": [
+    "Criminal Code",
+    "Youth Criminal Justice Act",
+    "National Defence Act"
+   ],
+   "fr": [
+    "Code criminel",
+    "Loi sur le système de justice pénale pour les adolescents",
+    "Loi sur la défense nationale"
+   ]
+  },
+  "13698308": {
+   "num": "S-3",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/S-3/S-3_1/S-3_E.xml",
+   "en": [
+    "Weights and Measures Act",
+    "Electricity and Gas Inspection Act",
+    "Weights and Measures Regulations",
+    "Electricity and Gas Inspection Regulations"
+   ],
+   "fr": [
+    "Loi sur les poids et mesures",
+    "Loi sur l’inspection de l’électricité et du gaz",
+    "Règlement sur les poids et mesures",
+    "Règlement sur l’inspection de l’électricité et du gaz"
+   ]
+  },
+  "13701896": {
+   "num": "C-255",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-255/C-255_1/C-255_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13702272": {
+   "num": "S-238",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-238/S-238_1/S-238_E.xml",
+   "en": [
+    "Bank of Canada Act",
+    "Export Development Act",
+    "Financial Administration Act",
+    "Office of the Superintendent of Financial Institutions Act",
+    "Public Sector Pension Investment Board Act",
+    "Business Development Bank of Canada Act",
+    "Canada Pension Plan Investment Board Act",
+    "Canada Infrastructure Bank Act"
+   ],
+   "fr": [
+    "Loi sur la Banque du Canada",
+    "Loi sur le développement des exportations",
+    "Loi sur la gestion des finances publiques",
+    "Loi sur le Bureau du surintendant des institutions financières",
+    "Loi sur l’Office d’investissement des régimes de pensions du secteur public",
+    "Loi sur la Banque de développement du Canada",
+    "Loi sur l’Office d’investissement du régime de pensions du Canada",
+    "Loi sur la Banque de l’infrastructure du Canada"
+   ]
+  },
+  "13703329": {
+   "num": "C-254",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-254/C-254_1/C-254_E.xml",
+   "en": [
+    "Criminal Code",
+    "Combatting Hate Act"
+   ],
+   "fr": [
+    "Code criminel",
+    "Loi visant à lutter contre la haine"
+   ]
+  },
+  "13707662": {
+   "num": "S-239",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-239/S-239_1/S-239_E.xml",
+   "en": [
+    "Competition Act"
+   ],
+   "fr": [
+    "Loi sur la concurrence"
+   ]
+  },
+  "13726738": {
+   "num": "S-240",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-240/S-240_1/S-240_E.xml",
+   "en": [
+    "Criminal Code"
+   ],
+   "fr": [
+    "Code criminel"
+   ]
+  },
+  "13727227": {
+   "num": "C-256",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-256/C-256_1/C-256_E.xml",
+   "en": [
+    "Canadian Forces Superannuation Act",
+    "Judges Act",
+    "Members of Parliament Retiring Allowances Act",
+    "Public Service Superannuation Act",
+    "Royal Canadian Mounted Police Superannuation Act",
+    "Pension Benefits Standards Act, 1985",
+    "Pooled Registered Pension Plans Act"
+   ],
+   "fr": [
+    "Loi sur la pension de retraite des Forces canadiennes",
+    "Loi sur les juges",
+    "Loi sur les allocations de retraite des parlementaires",
+    "Loi sur la pension de la fonction publique",
+    "Loi sur la pension de retraite de la Gendarmerie royale du Canada",
+    "Loi de 1985 sur les normes de prestation de pension",
+    "Loi sur les régimes de pensions agréés collectifs"
+   ]
+  },
+  "13731554": {
+   "num": "C-257",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-257/C-257_1/C-257_E.xml",
+   "en": [
+    "Criminal Code"
+   ],
+   "fr": [
+    "Code criminel"
+   ]
+  },
+  "13740928": {
+   "num": "C-15",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/C-15/C-15_1/C-15_E.xml",
+   "en": [
+    "Income Tax Act",
+    "Excise Tax Act",
+    "Income Tax Regulations",
+    "Digital Services Tax Act",
+    "Digital Services Tax Regulations",
+    "Access to Information Act",
+    "Bankruptcy and Insolvency Act",
+    "Criminal Code",
+    "Export Development Act",
+    "Financial Administration Act",
+    "Tax Court of Canada Act",
+    "Canada Revenue Agency Act",
+    "Air Travellers Security Charge Act",
+    "Excise Act, 2001",
+    "Underused Housing Tax Act",
+    "Select Luxury Items Tax Act",
+    "Global Minimum Tax Act",
+    "Real Property (GST/HST) Regulations",
+    "Underused Housing Tax Regulations",
+    "First Nations Goods and Services Tax Act",
+    "Federal-Provincial Fiscal Arrangements Act",
+    "High-Speed Rail Network Act",
+    "Canada Post Corporation Act",
+    "Canada Infrastructure Bank Act",
+    "Red Tape Reduction Act",
+    "Public Service Superannuation Act",
+    "Farm Credit Canada Act",
+    "Financial Consumer Agency of Canada Act",
+    "Budget Implementation Act, 2024, No. 1",
+    "Trust and Loan Companies Act",
+    "Bank Act",
+    "Insurance Companies Act",
+    "Office of the Superintendent of Financial Institutions Act",
+    "Canada Deposit Insurance Corporation Act",
+    "Special Economic Measures Act",
+    "Proceeds of Crime (Money Laundering) and Terrorist Financing Act",
+    "Pension Act",
+    "Royal Canadian Mounted Police Superannuation Act",
+    "Department of Veterans Affairs Act",
+    "Veterans Health Care Regulations",
+    "Veterans Well-being Regulations",
+    "Personal Information Protection and Electronic Documents Act",
+    "Broadcasting Act",
+    "Human Pathogens and Toxins Act",
+    "Human Pathogens and Toxins Regulations",
+    "Customs Tariff",
+    "Export and Import Permits Act",
+    "Aeronautics Act",
+    "Budget Implementation Act, 2019, No. 1",
+    "Canada Transportation Act",
+    "Judges Act",
+    "Administrative Tribunals Support Service of Canada Act",
+    "Canadian Environmental Protection Act, 1999",
+    "International River Improvements Act",
+    "Canada Wildlife Act",
+    "Migratory Birds Convention Act, 1994",
+    "Antarctic Environmental Protection Act",
+    "Environmental Violations Administrative Monetary Penalties Act",
+    "Greenhouse Gas Pollution Pricing Act",
+    "Payments in Lieu of Taxes Act",
+    "Freshwater Fish Marketing Act",
+    "Government Annuities Improvement Act",
+    "Naskapi and the Cree-Naskapi Commission Act",
+    "Canada Student Financial Assistance Act",
+    "Proceeds of Crime (Money Laundering) and Terrorist Financing Regulations",
+    "Borrowing Authority Act",
+    "Canada Business Corporations Act",
+    "Canada Cooperatives Act",
+    "Canada Not-for-profit Corporations Act",
+    "Building Canada Act",
+    "Canadian Energy Regulator Act",
+    "Competition Act",
+    "Retail Payment Activities Act"
+   ],
+   "fr": [
+    "Loi de l’impôt sur le revenu",
+    "Loi sur la taxe d’accise",
+    "Règlement de l’impôt sur le revenu",
+    "Loi sur la taxe sur les services numériques",
+    "Règlement sur la taxe sur les services numériques",
+    "Loi sur l’accès à l’information",
+    "Loi sur la faillite et l’insolvabilité",
+    "Code criminel",
+    "Loi sur le développement des exportations",
+    "Loi sur la gestion des finances publiques",
+    "Loi sur la Cour canadienne de l’impôt",
+    "Loi sur l’Agence du revenu du Canada",
+    "Loi sur le droit pour la sécurité des passagers du transport aérien",
+    "Loi de 2001 sur l’accise",
+    "Loi sur la taxe sur les logements sous-utilisés",
+    "Loi sur la taxe sur certains biens de luxe",
+    "Loi sur l’impôt minimum mondial",
+    "Règlement sur les immeubles (TPS/TVH)",
+    "Règlement sur la taxe sur les logements sous-utilisés",
+    "Loi sur la taxe sur les produits et services des premières nations",
+    "Loi sur les arrangements fiscaux entre le gouvernement fédéral et les provinces",
+    "Loi sur le réseau ferroviaire à grande vitesse",
+    "Loi sur la Société canadienne des postes",
+    "Loi sur la Banque de l’infrastructure du Canada",
+    "Loi sur la réduction de la paperasse",
+    "Loi sur la pension de la fonction publique",
+    "Loi sur Financement agricole Canada",
+    "Loi sur l’Agence de la consommation en matière financière du Canada",
+    "Loi no 1 d’exécution du budget de 2024",
+    "Loi sur les sociétés de fiducie et de prêt",
+    "Loi sur les banques",
+    "Loi sur les sociétés d’assurances",
+    "Loi sur le Bureau du surintendant des institutions financières",
+    "Loi sur la Société d’assurance-dépôts du Canada",
+    "Loi sur les mesures économiques spéciales",
+    "Loi sur le recyclage des produits de la criminalité et le financement des activités terroristes",
+    "Loi sur les pensions",
+    "Loi sur la pension de retraite de la Gendarmerie royale du Canada",
+    "Loi sur le ministère des Anciens Combattants",
+    "Règlement sur le bien-être des vétérans",
+    "Loi sur la protection des renseignements personnels et les documents électroniques",
+    "Loi sur la radiodiffusion",
+    "Loi sur les agents pathogènes humains et les toxines",
+    "Règlement sur les agents pathogènes humains et les toxines",
+    "Tarif des douanes",
+    "Loi sur les licences d’exportation et d’importation",
+    "Loi sur l’aéronautique",
+    "Loi no 1 d’exécution du budget de 2019",
+    "Loi sur les transports au Canada",
+    "Loi sur les juges",
+    "Loi sur le Service canadien d’appui aux tribunaux administratifs",
+    "Loi canadienne sur la protection de l’environnement (1999)",
+    "Loi sur les ouvrages destinés à l’amélioration des cours d’eau internationaux",
+    "Loi sur les espèces sauvages du Canada",
+    "Loi de 1994 sur la convention concernant les oiseaux migrateurs",
+    "Loi sur la protection de l’environnement en Antarctique",
+    "Loi sur les pénalités administratives en matière d’environnement",
+    "Loi sur la tarification de la pollution causée par les gaz à effet de serre",
+    "Loi sur les paiements versés en remplacement d’impôts",
+    "Loi sur la commercialisation du poisson d’eau douce",
+    "Loi sur l’augmentation du rendement des rentes sur l’État",
+    "Loi sur les Naskapis et la Commission crie-naskapie",
+    "Loi fédérale sur l’aide financière aux étudiants",
+    "Règlement sur le recyclage des produits de la criminalité et le financement des activités terroristes",
+    "Loi autorisant certains emprunts",
+    "Loi canadienne sur les sociétés par actions",
+    "Loi canadienne sur les coopératives",
+    "Loi canadienne sur les organisations à but non lucratif",
+    "Loi visant à bâtir le Canada",
+    "Loi sur la Régie canadienne de l’énergie",
+    "Loi sur la concurrence",
+    "Loi sur les activités associées aux paiements de détail"
+   ]
+  },
+  "13760362": {
+   "num": "S-241",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-241/S-241_1/S-241_E.xml",
+   "en": [
+    "Criminal Code",
+    "Indian Act"
+   ],
+   "fr": [
+    "Code criminel",
+    "Loi sur les Indiens"
+   ]
+  },
+  "13779589": {
+   "num": "S-4",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/S-4/S-4_1/S-4_E.xml",
+   "en": [
+    "Energy Efficiency Act"
+   ],
+   "fr": [
+    "Loi sur l’efficacité énergétique"
+   ]
+  },
+  "13794076": {
+   "num": "C-258",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-258/C-258_1/C-258_E.xml",
+   "en": [
+    "Criminal Code"
+   ],
+   "fr": [
+    "Code criminel"
+   ]
+  },
+  "13797949": {
+   "num": "S-242",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-242/S-242_1/S-242_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13813004": {
+   "num": "C-17",
+   "xml": null,
+   "en": [],
+   "fr": []
+  },
+  "13813664": {
+   "num": "C-16",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/C-16/C-16_1/C-16_E.xml",
+   "en": [
+    "Criminal Code",
+    "Excise Tax Act",
+    "Income Tax Act",
+    "Corrections and Conditional Release Act",
+    "Firearms Act",
+    "Controlled Drugs and Substances Act",
+    "Excise Act, 2001",
+    "Youth Criminal Justice Act",
+    "Canadian Victims Bill of Rights",
+    "National Defence Act",
+    "An Act respecting the mandatory reporting of Internet child sexual abuse and exploitation material by persons who provide an Internet service",
+    "Mutual Legal Assistance in Criminal Matters Act"
+   ],
+   "fr": [
+    "Code criminel",
+    "Loi sur la taxe d’accise",
+    "Loi de l’impôt sur le revenu",
+    "Loi sur le système correctionnel et la mise en liberté sous condition",
+    "Loi sur les armes à feu",
+    "Loi réglementant certaines drogues et autres substances",
+    "Loi de 2001 sur l’accise",
+    "Loi sur le système de justice pénale pour les adolescents",
+    "Charte canadienne des droits des victimes",
+    "Loi sur la défense nationale",
+    "Loi concernant la déclaration obligatoire de matériel d’abus et d’exploitation pédosexuels sur Internet par les personnes qui fournissent des services Internet",
+    "Loi sur l’entraide juridique en matière criminelle"
+   ]
+  },
+  "13822755": {
+   "num": "S-243",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-243/S-243_1/S-243_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13824752": {
+   "num": "C-18",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/C-18/C-18_1/C-18_E.xml",
+   "en": [
+    "Financial Administration Act",
+    "Investment Canada Act",
+    "Customs Act",
+    "Customs Tariff",
+    "Commercial Arbitration Act",
+    "Canadian International Trade Tribunal Act"
+   ],
+   "fr": [
+    "Loi sur la gestion des finances publiques",
+    "Loi sur Investissement Canada",
+    "Loi portant mise en oeuvre de l’Accord de partenariat économique global entre le Canada et l’Indonésie",
+    "Loi sur les douanes",
+    "Tarif des douanes",
+    "Loi sur l’arbitrage commercial",
+    "Loi sur le Tribunal canadien du commerce extérieur"
+   ]
+  },
+  "13827943": {
+   "num": "S-244",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-244/S-244_1/S-244_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13854949": {
+   "num": "C-259",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-259/C-259_1/C-259_E.xml",
+   "en": [
+    "Canada Labour Code"
+   ],
+   "fr": [
+    "Code canadien du travail"
+   ]
+  },
+  "13859405": {
+   "num": "C-19",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/C-19/C-19_1/C-19_E.xml",
+   "en": [
+    "Income Tax Act"
+   ],
+   "fr": [
+    "Loi de l’impôt sur le revenu"
+   ]
+  },
+  "13865078": {
+   "num": "C-21",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/C-21/C-21_1/C-21_E.xml",
+   "en": [
+    "Access to Information Act",
+    "Privacy Act",
+    "Commissioner for Modern Treaty Implementation Act"
+   ],
+   "fr": [
+    "Loi sur l’accès à l’information",
+    "Loi sur la protection des renseignements personnels",
+    "Loi sur le commissaire à la mise en oeuvre des traités modernes"
+   ]
+  },
+  "13865920": {
+   "num": "C-274",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-274/C-274_1/C-274_E.xml",
+   "en": [
+    "Citizenship Act",
+    "Immigration and Refugee Protection Act"
+   ],
+   "fr": [
+    "Loi sur la citoyenneté",
+    "Loi sur l’immigration et la protection des réfugiés"
+   ]
+  },
+  "13870255": {
+   "num": "C-260",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-260/C-260_1/C-260_E.xml",
+   "en": [
+    "Criminal Code"
+   ],
+   "fr": [
+    "Code criminel"
+   ]
+  },
+  "13878167": {
+   "num": "C-20",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/C-20/C-20_1/C-20_E.xml",
+   "en": [
+    "Financial Administration Act"
+   ],
+   "fr": [
+    "Loi sur la gestion des finances publiques"
+   ]
+  },
+  "13881240": {
+   "num": "S-5",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/S-5/S-5_1/S-5_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13888588": {
+   "num": "C-261",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-261/C-261_1/C-261_E.xml",
+   "en": [
+    "Old Age Security Act"
+   ],
+   "fr": [
+    "Loi sur la sécurité de la vieillesse"
+   ]
+  },
+  "13922919": {
+   "num": "C-262",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-262/C-262_1/C-262_E.xml",
+   "en": [
+    "Canada Post Corporation Act"
+   ],
+   "fr": [
+    "Loi sur la Société canadienne des postes"
+   ]
+  },
+  "13932352": {
+   "num": "C-27",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/C-27/C-27_1/C-27_E.xml",
+   "en": [
+    "Access to Information Act",
+    "Payments in Lieu of Taxes Act",
+    "Privacy Act",
+    "Mackenzie Valley Resource Management Act",
+    "First Nations Goods and Services Tax Act",
+    "Commissioner for Modern Treaty Implementation Act"
+   ],
+   "fr": [
+    "Loi sur l’accès à l’information",
+    "Loi sur les paiements versés en remplacement d’impôts",
+    "Loi sur la protection des renseignements personnels",
+    "Loi sur la gestion des ressources de la vallée du Mackenzie",
+    "Loi sur la taxe sur les produits et services des premières nations",
+    "Loi sur le commissaire à la mise en oeuvre des traités modernes"
+   ]
+  },
+  "13933510": {
+   "num": "C-264",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-264/C-264_1/C-264_E.xml",
+   "en": [
+    "Oil Tanker Moratorium Act"
+   ],
+   "fr": [
+    "Loi sur le moratoire relatif aux pétroliers"
+   ]
+  },
+  "13933855": {
+   "num": "S-6",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/S-6/S-6_1/S-6_E.xml",
+   "en": [
+    "Bank Act",
+    "Cooperative Credit Associations Act",
+    "Insurance Companies Act",
+    "Trust and Loan Companies Act",
+    "Canada Business Corporations Act",
+    "Canada Cooperatives Act",
+    "Canada Not-for-profit Corporations Act",
+    "Budget Implementation Act, 2018, No. 1",
+    "An Act respecting the National Battlefields at Quebec",
+    "The National Battlefields at Quebec Act, 1914",
+    "Access to Information Act",
+    "Auditor General Act",
+    "Canada Evidence Act",
+    "Canadian Dairy Commission Act",
+    "Telefilm Canada Act",
+    "Canadian Radio-television and Telecommunications Commission Act",
+    "Crown Liability and Proceedings Act",
+    "Cultural Property Export and Import Act",
+    "Dry Docks Subsidies Act",
+    "Escheats Act",
+    "Farm Products Agencies Act",
+    "Financial Administration Act",
+    "Food and Drugs Act",
+    "Canadian Human Rights Act",
+    "Interpretation Act",
+    "Privacy Act",
+    "Radiation Emitting Devices Act",
+    "Surplus Crown Assets Act",
+    "Visiting Forces Act",
+    "Hazardous Materials Information Review Act",
+    "Official Languages Act",
+    "Lobbying Act",
+    "Canadian Centre on Substance Abuse Act",
+    "Bell Canada Act",
+    "Museums Act",
+    "Plant Protection Act",
+    "Farm Income Protection Act",
+    "Federal Real Property and Federal Immovables Act",
+    "Status of the Artist Act",
+    "Contraventions Act",
+    "Department of Canadian Heritage Act",
+    "Agriculture and Agri-Food Administrative Monetary Penalties Act",
+    "Canadian Food Inspection Agency Act",
+    "Tobacco and Vaping Products Act",
+    "Agricultural Marketing Programs Act",
+    "Anti-Personnel Mines Convention Implementation Act",
+    "Foreign Publishers Advertising Services Act",
+    "Pest Control Products Act",
+    "Public Servants Disclosure Protection Act",
+    "Conflict of Interest Act"
+   ],
+   "fr": [
+    "Loi sur les banques",
+    "Loi sur les associations coopératives de crédit",
+    "Loi sur les sociétés d’assurances",
+    "Loi sur les sociétés de fiducie et de prêt",
+    "Loi canadienne sur les sociétés par actions",
+    "Loi canadienne sur les coopératives",
+    "Loi canadienne sur les organisations à but non lucratif",
+    "Loi no 1 d’exécution du budget de 2018",
+    "Loi concernant les champs de bataille nationaux de Québec",
+    "Loi concernant les champs de bataille nationaux à Québec",
+    "Lois des champs de bataille nationaux à Québec, 1914",
+    "Loi sur l’accès à l’information",
+    "Loi sur le vérificateur général",
+    "Loi sur la preuve au Canada",
+    "Loi sur la Commission canadienne du lait",
+    "Loi sur Téléfilm Canada",
+    "Loi sur le Conseil de la radiodiffusion et des télécommunications canadiennes",
+    "Loi sur la responsabilité civile de l’État et le contentieux administratif",
+    "Loi sur l’exportation et l’importation de biens culturels",
+    "Loi sur les subventions aux bassins de radoub",
+    "Loi sur les biens en déshérence",
+    "Loi sur les offices des produits agricoles",
+    "Loi sur la gestion des finances publiques",
+    "Loi sur les aliments et drogues",
+    "Loi canadienne sur les droits de la personne",
+    "Loi d’interprétation",
+    "Loi sur la protection des renseignements personnels",
+    "Loi sur les dispositifs émettant des radiations",
+    "Loi sur les biens de surplus de la Couronne",
+    "Loi sur les forces étrangères présentes au Canada",
+    "Loi sur le contrôle des renseignements relatifs aux matières dangereuses",
+    "Loi sur les langues officielles",
+    "Loi sur le lobbying",
+    "Loi sur le Centre canadien de lutte contre les toxicomanies",
+    "Loi sur Bell Canada",
+    "Loi sur les musées",
+    "Loi sur la protection des végétaux",
+    "Loi sur la protection du revenu agricole",
+    "Loi sur les immeubles fédéraux et les biens réels fédéraux",
+    "Loi sur le statut de l’artiste",
+    "Loi sur les contraventions",
+    "Loi sur le ministère du Patrimoine canadien",
+    "Loi sur les sanctions administratives pécuniaires en matière d’agriculture et d’agroalimentaire",
+    "Loi sur l’Agence canadienne d’inspection des aliments",
+    "Loi sur le tabac et les produits de vapotage",
+    "Loi sur les programmes de commercialisation agricole",
+    "Loi de mise en oeuvre de la Convention sur les mines antipersonnel",
+    "Loi sur les services publicitaires fournis par des éditeurs étrangers",
+    "Loi sur les produits antiparasitaires",
+    "Loi sur la protection des fonctionnaires divulgateurs d’actes répréhensibles",
+    "Loi sur les conflits d’intérêts"
+   ]
+  },
+  "13948667": {
+   "num": "C-263",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-263/C-263_1/C-263_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13951565": {
+   "num": "C-268",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-268/C-268_1/C-268_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13951690": {
+   "num": "C-266",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-266/C-266_1/C-266_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13953578": {
+   "num": "C-265",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-265/C-265_1/C-265_E.xml",
+   "en": [
+    "Food and Drugs Act"
+   ],
+   "fr": [
+    "Loi sur les aliments et drogues"
+   ]
+  },
+  "13954018": {
+   "num": "C-267",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-267/C-267_1/C-267_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13954296": {
+   "num": "C-270",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-270/C-270_1/C-270_E.xml",
+   "en": [
+    "Criminal Code"
+   ],
+   "fr": [
+    "Code criminel"
+   ]
+  },
+  "13956772": {
+   "num": "C-269",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-269/C-269_1/C-269_E.xml",
+   "en": [
+    "Income Tax Act"
+   ],
+   "fr": [
+    "Loi de l’impôt sur le revenu"
+   ]
+  },
+  "13957880": {
+   "num": "C-22",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/C-22/C-22_1/C-22_E.xml",
+   "en": [
+    "Criminal Code",
+    "Foreign Publishers Advertising Services Act",
+    "Mutual Legal Assistance in Criminal Matters Act",
+    "Canadian Security Intelligence Service Act",
+    "Controlled Drugs and Substances Act",
+    "Cannabis Act",
+    "Intelligence Commissioner Act"
+   ],
+   "fr": [
+    "Code criminel",
+    "Loi sur les services publicitaires fournis par des éditeurs étrangers",
+    "Loi sur l’entraide juridique en matière criminelle",
+    "Loi sur le Service canadien du renseignement de sécurité",
+    "Loi réglementant certaines drogues et autres substances",
+    "Loi sur le cannabis",
+    "Loi sur le commissaire au renseignement"
+   ]
+  },
+  "13960784": {
+   "num": "C-271",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-271/C-271_1/C-271_E.xml",
+   "en": [
+    "Criminal Code"
+   ],
+   "fr": [
+    "Code criminel"
+   ]
+  },
+  "13978480": {
+   "num": "C-23",
+   "xml": null,
+   "en": [],
+   "fr": []
+  },
+  "13978563": {
+   "num": "C-24",
+   "xml": null,
+   "en": [],
+   "fr": []
+  },
+  "13983245": {
+   "num": "C-272",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-272/C-272_1/C-272_E.xml",
+   "en": [
+    "Controlled Drugs and Substances Act"
+   ],
+   "fr": [
+    "Loi réglementant certaines drogues et autres substances"
+   ]
+  },
+  "13985244": {
+   "num": "S-245",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-245/S-245_1/S-245_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13986875": {
+   "num": "C-26",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/C-26/C-26_1/C-26_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "13986893": {
+   "num": "C-25",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/C-25/C-25_1/C-25_E.xml",
+   "en": [
+    "Canada Elections Act"
+   ],
+   "fr": [
+    "Loi électorale du Canada"
+   ]
+  },
+  "14006658": {
+   "num": "C-273",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-273/C-273_1/C-273_E.xml",
+   "en": [
+    "Feeds Act",
+    "Fertilizers Act",
+    "Seeds Act",
+    "Pest Control Products Act",
+    "Food and Drugs Act"
+   ],
+   "fr": [
+    "Loi relative aux aliments du bétail",
+    "Loi sur les engrais",
+    "Loi sur les semences",
+    "Loi sur les produits antiparasitaires",
+    "Loi sur les aliments et drogues"
+   ]
+  },
+  "14019015": {
+   "num": "S-246",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-246/S-246_1/S-246_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "14019746": {
+   "num": "C-277",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-277/C-277_1/C-277_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "14023030": {
+   "num": "C-28",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/C-28/C-28_1/C-28_E.xml",
+   "en": [
+    "Aeronautics Act",
+    "Carriage by Air Act",
+    "Canada Transportation Act",
+    "Secure Air Travel Act"
+   ],
+   "fr": [
+    "Loi sur l’aéronautique",
+    "Loi sur le transport aérien",
+    "Loi sur les transports au Canada",
+    "Loi sur la sûreté des déplacements aériens"
+   ]
+  },
+  "14026794": {
+   "num": "C-284",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-284/C-284_1/C-284_E.xml",
+   "en": [
+    "Canada Labour Code"
+   ],
+   "fr": [
+    "Code canadien du travail"
+   ]
+  },
+  "14031568": {
+   "num": "C-29",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/C-29/C-29_1/C-29_E.xml",
+   "en": [
+    "Object of Act",
+    "Access to Information Act",
+    "Criminal Code",
+    "Financial Administration Act",
+    "Privacy Act",
+    "Public Service Superannuation Act",
+    "Special Economic Measures Act",
+    "Immigration and Refugee Protection Act",
+    "Security of Canada Information Disclosure Act",
+    "Justice for Victims of Corrupt Foreign Officials Act (Sergei Magnitsky Law)",
+    "Public Complaints and Review Commission Act",
+    "Access to Information Regulations",
+    "Privacy Regulations",
+    "Federal Real Property and Federal Immovables Regulations",
+    "Citizenship Regulations",
+    "Department of Employment and Social Development Regulations",
+    "National Security Review of Investments Regulations"
+   ],
+   "fr": [
+    "Loi sur l’accès à l’information",
+    "Code criminel",
+    "Loi sur la gestion des finances publiques",
+    "Loi sur la protection des renseignements personnels",
+    "Loi sur la pension de la fonction publique",
+    "Loi sur les mesures économiques spéciales",
+    "Loi sur l’immigration et la protection des réfugiés",
+    "Loi sur la communication d’information ayant trait à la sécurité du Canada",
+    "Loi sur la justice pour les victimes de dirigeants étrangers corrompus (loi de Sergueï Magnitski)",
+    "Loi sur la Commission d’examen et de traitement des plaintes du public",
+    "Règlement sur l’accès à l’information",
+    "Règlement sur la protection des renseignements personnels",
+    "Règlement sur les immeubles fédéraux et les biens réels fédéraux",
+    "Règlement sur la citoyenneté",
+    "Règlement sur le ministère de l’Emploi et du Développement social",
+    "Règlement sur les investissements susceptibles de porter atteinte à la sécurité nationale (examen)"
+   ]
+  },
+  "14034077": {
+   "num": "C-275",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-275/C-275_1/C-275_E.xml",
+   "en": [
+    "Criminal Code"
+   ],
+   "fr": [
+    "Code criminel"
+   ]
+  },
+  "14049789": {
+   "num": "C-30",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/C-30/C-30_1/C-30_E.xml",
+   "en": [
+    "Income Tax Act",
+    "Income Tax Regulations",
+    "Excise Tax Act",
+    "Excise Act",
+    "Excise Act, 2001",
+    "Bank Act",
+    "Bank of Canada Act",
+    "Payment Clearing and Settlement Act",
+    "Retail Payment Activities Act",
+    "Consumer-Driven Banking Act",
+    "Stablecoin Act",
+    "Canadian Payments Act",
+    "Employment Insurance Act",
+    "Canada Pension Plan",
+    "Canada Transportation Act",
+    "Canadian Food Inspection Agency Act",
+    "Agriculture and Agri-Food Administrative Monetary Penalties Act",
+    "Pest Control Products Act"
+   ],
+   "fr": [
+    "Loi de l’impôt sur le revenu",
+    "Règlement de l’impôt sur le revenu",
+    "Loi sur la taxe d’accise",
+    "Loi sur l’accise",
+    "Loi de 2001 sur l’accise",
+    "Loi sur les banques",
+    "Loi sur la Banque du Canada",
+    "Loi sur la compensation et le règlement des paiements",
+    "Loi sur les activités associées aux paiements de détail",
+    "Loi sur les services bancaires axés sur les consommateurs",
+    "Loi sur les cryptomonnaies stables",
+    "Loi canadienne sur les paiements",
+    "Loi sur l’assurance-emploi",
+    "Régime de pensions du Canada",
+    "Loi sur les transports au Canada",
+    "Loi sur l’Agence canadienne d’inspection des aliments",
+    "Loi sur les sanctions administratives pécuniaires en matière d’agriculture et d’agroalimentaire",
+    "Loi sur les produits antiparasitaires"
+   ]
+  },
+  "14053824": {
+   "num": "C-276",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-276/C-276_1/C-276_E.xml",
+   "en": [
+    "Currency Act",
+    "Bank of Canada Act"
+   ],
+   "fr": [
+    "Loi sur la monnaie",
+    "Loi sur la Banque du Canada"
+   ]
+  },
+  "14071880": {
+   "num": "C-31",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/C-31/C-31_1/C-31_E.xml",
+   "en": [
+    "Income Tax Act",
+    "Excise Tax Act",
+    "Income Tax Conventions Implementation Act, 1996",
+    "Air Travellers Security Charge Act",
+    "Excise Act, 2001",
+    "Select Luxury Items Tax Act",
+    "Income Tax Regulations",
+    "Global Minimum Tax Act",
+    "Access to Information Act",
+    "Income Tax Conventions Interpretation Act",
+    "Tax Court of Canada Act",
+    "Financial Services and Financial Institutions (GST/HST) Regulations",
+    "Amalgamations and Windings-Up Continuation (GST/HST) Regulations",
+    "Selected Listed Financial Institutions Attribution Method (GST/HST) Regulations",
+    "Excise Act",
+    "Regulations Respecting Excise Licences and Registrations",
+    "Stamping and Marking of Tobacco, Cannabis and Vaping Products Regulations",
+    "Trust and Loan Companies Act",
+    "Bank Act",
+    "Insurance Companies Act",
+    "Financial Administration Act",
+    "Department of Public Works and Government Services Act",
+    "National Capital Act",
+    "Maximum Amounts for Informal Procedure Regulations",
+    "National Housing Act",
+    "Protection of Residential Mortgage or Hypothecary Insurance Act",
+    "Bankruptcy and Insolvency Act",
+    "Canada Labour Code",
+    "Canadian Human Rights Act",
+    "International Development Research Centre Act",
+    "Tobacco and Vaping Products Act",
+    "Pest Control Products Act",
+    "Territorial Lands Act",
+    "Red Tape Reduction Act",
+    "Privacy Act",
+    "Public Service Superannuation Act",
+    "Public Sector Compensation Act",
+    "Customs Tariff",
+    "Defence Production Act",
+    "Canada Transportation Act"
+   ],
+   "fr": [
+    "Loi de l’impôt sur le revenu",
+    "Loi sur la taxe d’accise",
+    "Loi de 1996 pour la mise en oeuvre de conventions fiscales",
+    "Loi sur le droit pour la sécurité des passagers du transport aérien",
+    "Loi de 2001 sur l’accise",
+    "Loi sur la taxe sur certains biens de luxe",
+    "Règlement de l’impôt sur le revenu",
+    "Loi sur l’impôt minimum mondial",
+    "Loi sur l’accès à l’information",
+    "Loi sur l’interprétation des conventions en matière d’impôts sur le revenu",
+    "Loi sur la Cour canadienne de l’impôt",
+    "Règlement sur les services financiers et les institutions financières (TPS/TVH)",
+    "Règlement sur la continuation des personnes morales fusionnantes ou liquidées (TPS/TVH)",
+    "Règlement sur la méthode d’attribution applicable aux institutions financières désignées particulières (TPS/TVH)",
+    "Loi sur l’accise",
+    "Règlement sur les licences, agréments et autorisations d’accise",
+    "Règlement sur l’estampillage et le marquage des produits du tabac, du cannabis et de vapotage",
+    "Loi sur les sociétés de fiducie et de prêt",
+    "Loi sur les banques",
+    "Loi sur les sociétés d’assurances",
+    "Loi sur la gestion des finances publiques",
+    "Loi sur le ministère des Travaux publics et des Services gouvernementaux",
+    "Loi sur la capitale nationale",
+    "Règlement sur les montants plafonds applicables à la procédure informelle",
+    "Loi nationale sur l’habitation",
+    "Loi sur la protection de l’assurance hypothécaire résidentielle",
+    "Loi sur la faillite et l’insolvabilité",
+    "Code canadien du travail",
+    "Loi canadienne sur les droits de la personne",
+    "Loi sur le Centre de recherches pour le développement international",
+    "Loi sur le tabac et les produits de vapotage",
+    "Loi sur les produits antiparasitaires",
+    "Loi sur les terres territoriales",
+    "Loi sur la réduction de la paperasse",
+    "Loi sur la protection des renseignements personnels",
+    "Loi sur la pension de la fonction publique",
+    "Loi sur la rémunération du secteur public",
+    "Tarif des douanes",
+    "Loi sur la production de défense",
+    "Loi sur les transports au Canada"
+   ]
+  },
+  "14075197": {
+   "num": "S-247",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-247/S-247_1/S-247_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "14116162": {
+   "num": "C-280",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-280/C-280_1/C-280_E.xml",
+   "en": [
+    "Federal-Provincial Fiscal Arrangements Act"
+   ],
+   "fr": [
+    "Loi sur les arrangements fiscaux entre le gouvernement fédéral et les provinces"
+   ]
+  },
+  "14118205": {
+   "num": "S-248",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-248/S-248_1/S-248_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "14123056": {
+   "num": "C-281",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-281/C-281_1/C-281_E.xml",
+   "en": [
+    "Textile Labelling Act",
+    "Consumer Packaging and Labelling Act"
+   ],
+   "fr": [
+    "Loi sur l’étiquetage des textiles",
+    "Loi sur l’emballage et l’étiquetage des produits de consommation"
+   ]
+  },
+  "14126734": {
+   "num": "C-278",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-278/C-278_1/C-278_E.xml",
+   "en": [
+    "Parliament of Canada Act"
+   ],
+   "fr": [
+    "Loi sur le Parlement du Canada"
+   ]
+  },
+  "14131708": {
+   "num": "C-279",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-279/C-279_1/C-279_E.xml",
+   "en": [
+    "Clarity Act"
+   ],
+   "fr": [
+    "Loi de clarification"
+   ]
+  },
+  "14132840": {
+   "num": "C-282",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-282/C-282_1/C-282_E.xml",
+   "en": [
+    "Veterans Well-being Act"
+   ],
+   "fr": [
+    "Loi sur le bien-être des vétérans"
+   ]
+  },
+  "14136538": {
+   "num": "C-32",
+   "xml": null,
+   "en": [],
+   "fr": []
+  },
+  "14136541": {
+   "num": "C-33",
+   "xml": null,
+   "en": [],
+   "fr": []
+  },
+  "14148702": {
+   "num": "C-290",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-290/C-290_1/C-290_E.xml",
+   "en": [
+    "Criminal Code"
+   ],
+   "fr": [
+    "Code criminel"
+   ]
+  },
+  "14159600": {
+   "num": "C-34",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/C-34/C-34_1/C-34_E.xml",
+   "en": [
+    "Protecting Victims Act",
+    "Digital Safety Act",
+    "Access to Information Act",
+    "Financial Administration Act",
+    "Privacy Act",
+    "Public Service Superannuation Act"
+   ],
+   "fr": [
+    "Loi visant à protéger les victimes",
+    "Loi sur la sécurité numérique",
+    "Loi sur l’accès à l’information",
+    "Loi sur la gestion des finances publiques",
+    "Loi sur la protection des renseignements personnels",
+    "Loi sur la pension de la fonction publique"
+   ]
+  },
+  "14163420": {
+   "num": "C-285",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-285/C-285_1/C-285_E.xml",
+   "en": [
+    "Excise Tax Act"
+   ],
+   "fr": [
+    "Loi sur la taxe d’accise"
+   ]
+  },
+  "14167474": {
+   "num": "S-249",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-249/S-249_1/S-249_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "14169384": {
+   "num": "C-291",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-291/C-291_1/C-291_E.xml",
+   "en": [
+    "Department of Industry Act"
+   ],
+   "fr": [
+    "Loi sur le ministère de l'Industrie"
+   ]
+  },
+  "14170774": {
+   "num": "C-35",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/C-35/C-35_1/C-35_E.xml",
+   "en": [
+    "Customs Tariff",
+    "Fighting Against Forced Labour and Child Labour in Supply Chains Act"
+   ],
+   "fr": [
+    "Tarif des douanes",
+    "loi sur la lutte contre le travail forcé et le travail des enfants dans les chaines d’approvisionnement"
+   ]
+  },
+  "14171102": {
+   "num": "C-287",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-287/C-287_1/C-287_E.xml",
+   "en": [
+    "National Research Council Act"
+   ],
+   "fr": [
+    "Loi sur le Conseil national de recherches"
+   ]
+  },
+  "14173470": {
+   "num": "C-288",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-288/C-288_1/C-288_E.xml",
+   "en": [
+    "Criminal Code"
+   ],
+   "fr": [
+    "Code criminel"
+   ]
+  },
+  "14175644": {
+   "num": "C-286",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-286/C-286_1/C-286_E.xml",
+   "en": [
+    "Controlled Drugs and Substances Act",
+    "Food and Drugs Act"
+   ],
+   "fr": [
+    "Loi réglementant certaines drogues et autres substances",
+    "Loi sur les aliments et drogues"
+   ]
+  },
+  "14182080": {
+   "num": "C-36",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/C-36/C-36_1/C-36_E.xml",
+   "en": [
+    "Personal Information Protection and Electronic Documents Act",
+    "Digital Safety Commission of Canada Act",
+    "Digital Safety Act",
+    "Access to Information Act",
+    "Financial Administration Act",
+    "Privacy Act",
+    "Public Service Superannuation Act",
+    "Aeronautics Act",
+    "Canada Evidence Act",
+    "Canadian Radio-television and Telecommunications Commission Act",
+    "Competition Act",
+    "Canada Business Corporations Act",
+    "Railway Safety Act",
+    "Broadcasting Act",
+    "Telecommunications Act",
+    "Public Servants Disclosure Protection Act",
+    "An Act to promote the efficiency and adaptability of the Canadian economy by regulating certain activities that discourage reliance on electronic means of carrying out commercial activities, and to amend the Canadian Radio-television and Telecommunications Commission Act, the Competition Act, the Personal Information Protection and Electronic Documents Act and the Telecommunications Act"
+   ],
+   "fr": [
+    "Loi sur la protection des renseignements personnels et les documents électroniques",
+    "Loi sur la Commission canadienne de la sécurité numérique",
+    "Loi sur l’accès à l’information",
+    "Loi sur l’aéronautique",
+    "Loi sur la preuve au Canada",
+    "Loi sur le Conseil de la radiodiffusion et des télécommunications canadiennes",
+    "Loi sur la concurrence",
+    "Loi canadienne sur les sociétés par actions",
+    "Loi sur la sécurité ferroviaire",
+    "Loi sur la radiodiffusion",
+    "Loi sur les télécommunications",
+    "Loi sur la protection des fonctionnaires divulgateurs d’actes répréhensibles",
+    "Loi visant à promouvoir l’efficacité et la capacité d’adaptation de l’économie canadienne par la réglementation de certaines pratiques qui découragent l’exercice des activités commerciales par voie électronique et modifiant la Loi sur le Conseil de la radiodiffusion et des télécommunications canadiennes, la Loi sur la concurrence, la Loi sur la protection des renseignements personnels et les documents électroniques et la Loi sur les télécommunications"
+   ]
+  },
+  "14182606": {
+   "num": "C-37",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/C-37/C-37_1/C-37_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "14186137": {
+   "num": "C-289",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-289/C-289_1/C-289_E.xml",
+   "en": [
+    "Controlled Drugs and Substances Act",
+    "Criminal Code"
+   ],
+   "fr": [
+    "Loi réglementant certaines drogues et autres substances",
+    "Code criminel"
+   ]
+  },
+  "14203313": {
+   "num": "S-250",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-250/S-250_1/S-250_E.xml",
+   "en": [
+    "Department of Justice Act"
+   ],
+   "fr": [
+    "Loi sur le ministère de la Justice"
+   ]
+  },
+  "14209079": {
+   "num": "C-295",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-295/C-295_1/C-295_E.xml",
+   "en": [
+    "Canada Pension Plan Investment Board Act"
+   ],
+   "fr": [
+    "Loi sur l’Office d’investissement du régime de pensions du Canada"
+   ]
+  },
+  "14223235": {
+   "num": "C-38",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/C-38/C-38_1/C-38_E.xml",
+   "en": [
+    "Excise Tax Act"
+   ],
+   "fr": [
+    "Loi sur la taxe d’accise"
+   ]
+  },
+  "14223396": {
+   "num": "C-39",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/C-39/C-39_1/C-39_E.xml",
+   "en": [
+    "Impact Assessment Act",
+    "Building Canada Act",
+    "Federal Courts Act",
+    "Canadian Energy Regulator Act",
+    "Northern Pipeline Act",
+    "Canadian Navigable Waters Act",
+    "Canadian Environmental Protection Act, 1999",
+    "Species at Risk Act",
+    "Fisheries Act",
+    "Authorizations Concerning Fish and Fish Habitat Protection Regulations",
+    "Department of Transport Act",
+    "Canada Transportation Act",
+    "Canada Marine Act",
+    "Port Authorities Operations Regulations",
+    "Marine Liability Act",
+    "Safeguarding Canada’s Seas and Skies Act",
+    "Coasting Trade Act",
+    "Shipping Conferences Exemption Act, 1987",
+    "Access to Information Act",
+    "International Bridges and Tunnels Act",
+    "Canada Labour Code",
+    "Canada Industrial Relations Board Regulations, 2012",
+    "Canada Industrial Relations Regulations",
+    "Pay Equity Regulations",
+    "Wage Earner Protection Program Act"
+   ],
+   "fr": [
+    "Loi sur l’évaluation d’impact",
+    "Loi visant à bâtir le Canada",
+    "Loi sur les Cours fédérales",
+    "Loi sur la Régie canadienne de l’énergie",
+    "Loi sur le pipe-line du Nord",
+    "Loi sur les eaux navigables canadiennes",
+    "Loi canadienne sur la protection de l’environnement (1999)",
+    "Loi sur les espèces en péril",
+    "Loi sur les pêches",
+    "Loi sur le ministère des Transports",
+    "Loi sur les transports au Canada",
+    "Loi maritime du Canada",
+    "Règlement sur l’exploitation des administrations portuaires",
+    "Loi sur la responsabilité en matière maritime",
+    "Loi visant la protection des mers et ciel canadiens",
+    "Loi sur le cabotage",
+    "Loi dérogatoire de 1987 sur les conférences maritimes",
+    "Loi sur l’accès à l’information",
+    "Loi sur les ponts et tunnels internationaux",
+    "Code canadien du travail",
+    "Règlement de 2012 sur le Conseil canadien des relations industrielles",
+    "Règlement du Canada sur les relations industrielles",
+    "Règlement sur l’équité salariale",
+    "Loi sur le Programme de protection des salariés"
+   ]
+  },
+  "14240227": {
+   "num": "S-251",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-251/S-251_1/S-251_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "14240249": {
+   "num": "C-40",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/C-40/C-40_1/C-40_E.xml",
+   "en": [
+    "National Defence Act",
+    "Salaries Act",
+    "Financial Administration Act",
+    "Public Service Superannuation Act",
+    "Customs Tariff",
+    "Defence Production Act",
+    "Access to Information Act",
+    "Budget 2025 Implementation Act, No. 2",
+    "Defence Investment Agency Act"
+   ],
+   "fr": [
+    "Loi sur la défense nationale",
+    "Loi sur les traitements",
+    "Loi sur la gestion des finances publiques",
+    "Loi sur la pension de la fonction publique",
+    "Tarif des douanes",
+    "Loi sur la production de défense",
+    "Loi sur l’accès à l’information",
+    "Loi no 2 d’exécution du budget de 2025",
+    "Loi sur l’Agence de l’investissement pour la défense"
+   ]
+  },
+  "14246258": {
+   "num": "C-292",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-292/C-292_1/C-292_E.xml",
+   "en": [
+    "Criminal Code"
+   ],
+   "fr": [
+    "Code criminel"
+   ]
+  },
+  "14247466": {
+   "num": "C-293",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-293/C-293_1/C-293_E.xml",
+   "en": [
+    "Criminal Code"
+   ],
+   "fr": [
+    "Code criminel"
+   ]
+  },
+  "14250015": {
+   "num": "S-7",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/S-7/S-7_1/S-7_E.xml",
+   "en": [
+    "Agricultural Products Marketing Act",
+    "Canadian Dairy Commission Act",
+    "Farm Products Agencies Act",
+    "Feeds Act",
+    "Fertilizers Act",
+    "Seeds Act",
+    "Health of Animals Act",
+    "Canadian Food Inspection Agency Act",
+    "Agricultural Marketing Programs Act",
+    "Agricultural Marketing Programs Regulations",
+    "Department of the Environment Act",
+    "Explosives Act",
+    "Fisheries Act",
+    "Northern Pipeline Act",
+    "Canada–Newfoundland and Labrador Atlantic Accord Implementation and Offshore Renewable Energy Management Act",
+    "Canada–Nova Scotia Offshore Petroleum Resources Accord Implementation and Offshore Renewable Energy Management Act",
+    "Wild Animal and Plant Protection and Regulation of International and Interprovincial Trade Act",
+    "Canada Lands Surveyors Act",
+    "Environmental Violations Administrative Monetary Penalties Act",
+    "Radiocommunication Act",
+    "Statutory Instruments Act",
+    "Legislation Revision and Consolidation Act",
+    "Statutory Instruments Regulations",
+    "Canadian Charter of Rights and Freedoms Examination Regulations",
+    "Canadian Bill of Rights Examination Regulations",
+    "Designation of Place of Inspection and Sale",
+    "Canada Border Services Agency Act",
+    "Canadian Navigable Waters Act",
+    "Railway Safety Act",
+    "Marine Transportation Security Act",
+    "Food and Drugs Act",
+    "Aeronautics Act",
+    "Canadian Space Launch Act",
+    "Canada Transportation Act",
+    "Boards of Trade Act",
+    "Bankruptcy and Insolvency Act",
+    "Canadian Agricultural Loans Act",
+    "Canadian Agricultural Loans Regulations"
+   ],
+   "fr": [
+    "Loi sur la commercialisation des produits agricoles",
+    "Loi sur la Commission canadienne du lait",
+    "Loi sur les offices des produits agricoles",
+    "Loi relative aux aliments du bétail",
+    "Loi sur les engrais",
+    "Loi sur les semences",
+    "Loi sur la santé des animaux",
+    "Loi sur l’Agence canadienne d’inspection des aliments",
+    "Loi sur les programmes de commercialisation agricole",
+    "Règlement sur les programmes de commercialisation agricole",
+    "Loi sur le ministère de l’Environnement",
+    "Loi sur les explosifs",
+    "Loi sur les pêches",
+    "Loi sur le pipe-line du Nord",
+    "Loi de mise en oeuvre de l’Accord atlantique Canada — Terre-Neuve-et-Labrador et sur la gestion de l’énergie renouvelable extracôtière",
+    "Loi de mise en œuvre de l’Accord atlantique Canada — Terre-Neuve-et-Labrador et sur la gestion de l’énergie renouvelable extracôtière",
+    "Loi de mise en œuvre de l’Accord Canada — Nouvelle-Écosse sur les hydrocarbures extracôtiers et sur la gestion de l’énergie renouvelable extracôtière",
+    "Loi sur la protection d’espèces animales ou végétales sauvages et la réglementation de leur commerce international et interprovincial",
+    "Loi sur les arpenteurs des terres du Canada",
+    "Loi sur les pénalités administratives en matière d’environnement",
+    "Loi sur la radiocommunication",
+    "Loi sur les textes réglementaires",
+    "Loi sur la révision et la codification des textes législatifs",
+    "Règlement sur les textes réglementaires",
+    "Règlement d’examen de compatibilité avec la Charte canadienne des droits et libertés",
+    "Règlement relatif à l’examen fait conformément à la Déclaration canadienne des droits",
+    "Désignation d’un lieu d’examen et de vente",
+    "Loi sur l’Agence des services frontaliers du Canada",
+    "Loi sur les eaux navigables canadiennes",
+    "Loi sur la sécurité ferroviaire",
+    "Loi sur la sûreté du transport maritime",
+    "Loi sur les aliments et drogues",
+    "Loi sur l’aéronautique",
+    "Loi sur les lancements spatiaux canadiens",
+    "Loi sur les transports au Canada",
+    "Loi sur les chambres de commerce",
+    "Loi sur la faillite et l’insolvabilité",
+    "Loi canadienne sur les prêts agricoles",
+    "Règlement canadien sur les prêts agricoles"
+   ]
+  },
+  "14252999": {
+   "num": "C-294",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-294/C-294_1/C-294_E.xml",
+   "en": [],
+   "fr": []
+  },
+  "14268770": {
+   "num": "S-252",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-252/S-252_1/S-252_E.xml",
+   "en": [
+    "Criminal Code"
+   ],
+   "fr": [
+    "Code criminel"
+   ]
+  },
+  "14279940": {
+   "num": "C-41",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/C-41/C-41_1/C-41_E.xml",
+   "en": [
+    "Criminal Code",
+    "An Act to amend the Criminal Code (medical assistance in dying)",
+    "Pension Act",
+    "Corrections and Conditional Release Act",
+    "Veterans Well-being Act"
+   ],
+   "fr": [
+    "Code criminel",
+    "Loi modifiant le Code criminel (aide médicale à mourir)",
+    "Loi sur les pensions",
+    "Loi sur le système correctionnel et la mise en liberté sous condition",
+    "Loi sur le bien-être des vétérans"
+   ]
+  },
+  "14297192": {
+   "num": "S-253",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/S-253/S-253_1/S-253_E.xml",
+   "en": [
+    "Income Tax Act"
+   ],
+   "fr": [
+    "Loi de l’impôt sur le revenu"
+   ]
+  },
+  "14310361": {
+   "num": "S-8",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/S-8/S-8_1/S-8_E.xml",
+   "en": [
+    "Proceeds of Crime (Money Laundering) and Terrorist Financing Act",
+    "Personal Information Protection and Electronic Documents Act",
+    "Proceeds of Crime (Money Laundering) and Terrorist Financing Regulations",
+    "Proceeds of Crime (Money Laundering) and Terrorist Financing Registration Regulations",
+    "Proceeds of Crime (Money Laundering) and Terrorist Financing Administrative Monetary Penalties Regulations",
+    "Strengthening Canada’s Immigration System and Borders Act",
+    "Protecting Privacy and Consumer Data Act",
+    "Canada Post Corporation Act"
+   ],
+   "fr": [
+    "Loi sur le recyclage des produits de la criminalité et le financement des activités terroristes",
+    "Loi sur la protection des renseignements personnels et les documents électroniques",
+    "Règlement sur le recyclage des produits de la criminalité et le financement des activités terroristes",
+    "Règlement sur l’inscription — recyclage des produits de la criminalité et financement des activités terroristes",
+    "Règlement sur les pénalités administratives — recyclage des produits de la criminalité et financement des activités terroristes",
+    "Loi visant à renforcer le système d’immigration et la frontière du Canada",
+    "Loi visant à protéger la vie privée et les données des consommateurs",
+    "Loi sur la Société canadienne des postes"
+   ]
+  }
+ }
+}
