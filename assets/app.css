@@ -161,6 +161,8 @@
   .pn-dot:hover{transform:scale(1.15);}
   /* NB : rouge et jaune, les couleurs du drapeau provincial (9 nov. 2026) ; ombre pour lire « NB » sur le jaune. */
   .pn-dot[href*="dossiernbrunswick"]{ text-shadow:0 0 2px #000, 0 0 2px #000; }
+  /* QC : bleu poudre (9 nov. 2026) ; texte foncé, le blanc ne se lit pas sur ce bleu pâle. */
+  .pn-dot[href^="https://dossierquebec.ca"]{ color:var(--ink); }
   #provinceNetwork .pn-2{ display:none; }
   @media (max-width:640px){ #provinceNetwork .pn-2{ display:inline-flex; } #provinceNetworkR{ display:none; } }
   .pn-dot.pn-off{ background:transparent !important; color:var(--slate); border-color:var(--slate); opacity:.5; cursor:default; }
