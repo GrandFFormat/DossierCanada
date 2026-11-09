@@ -1317,7 +1317,7 @@ const provinceNetwork = [
   { code: 'MB', name: 'Manitoba',             url: null, color: null },
   { code: 'ON', name: 'DossierOntario', url: 'https://www.dossierontario.ca/', color: '#C8102E' },
   { code: 'QC', name: 'DossierQuébec', url: 'https://dossierquebec.ca/', color: '#0B3D91' },
-  { code: 'NB', name: 'DossierNouveauBrunswick', url: 'https://dossiernbrunswick.ca/', color: '#0033A0' },
+  { code: 'NB', name: 'DossierNouveauBrunswick', url: 'https://dossiernbrunswick.ca/', color: 'linear-gradient(#D52B1E 0 50%,#FCD116 50% 100%)' },
   { code: 'NS', name: 'Nouvelle-Écosse',          url: null, color: null },
   { code: 'PE', name: 'Île-du-Prince-Édouard',    url: null, color: null },
   { code: 'NL', name: 'Terre-Neuve-et-Labrador',  url: null, color: null }

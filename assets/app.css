@@ -159,6 +159,8 @@
   .province-network{display:flex; flex-direction:row; flex-wrap:wrap; align-content:center; max-height:none; gap:6px;}
   .pn-dot{width:26px; height:26px; border-radius:50%; border:2px solid var(--ink); display:inline-flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono',monospace; font-size:10.5px; font-weight:800; letter-spacing:-0.04em; color:#fff; text-decoration:none; box-shadow:none; transition:transform .12s;}
   .pn-dot:hover{transform:scale(1.15);}
+  /* NB : rouge et jaune, les couleurs du drapeau provincial (9 nov. 2026) ; ombre pour lire « NB » sur le jaune. */
+  .pn-dot[href*="dossiernbrunswick"]{ text-shadow:0 0 2px #000, 0 0 2px #000; }
   #provinceNetwork .pn-2{ display:none; }
   @media (max-width:640px){ #provinceNetwork .pn-2{ display:inline-flex; } #provinceNetworkR{ display:none; } }
   .pn-dot.pn-off{ background:transparent !important; color:var(--slate); border-color:var(--slate); opacity:.5; cursor:default; }
