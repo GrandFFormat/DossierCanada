@@ -1311,7 +1311,7 @@ let newsShown = 2;
 // url = null tant que le site n'existe pas — la pastille reste éteinte et inerte
 // (on n'annonce jamais un site qui n'est pas en ligne). Seule QC est active.
 const provinceNetwork = [
-  { code: 'BC', name: 'Colombie-Britannique', url: null, color: null },
+  { code: 'BC', name: 'DossierBC', url: 'https://dossierbc.ca/', color: 'linear-gradient(#e3b528 0 50%,#fff 50% 56%,#1f4f8a 56% 66%,#fff 66% 72%,#1f4f8a 72% 82%,#fff 82% 88%,#1f4f8a 88% 100%)' },
   { code: 'AB', name: 'Alberta',              url: null, color: null },
   { code: 'SK', name: 'DossierSaskatchewan', url: 'https://dossiersaskatchewan.ca/', color: '#00843D' },
   { code: 'MB', name: 'Manitoba',             url: null, color: null },
