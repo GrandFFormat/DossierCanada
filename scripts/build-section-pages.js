@@ -155,7 +155,6 @@ function translateMarkup(body, lang) {
   body = setAttr(body, /<button class="cb-more" id="challengeMoreBtn"[^>]*>/, 'aria-label', t('aria.challengeMore'));
   body = setAttr(body, /<button class="cb-more" id="challengeMoreBtn"[^>]*>/, 'title', t('aria.challengeMore'));
   body = setAttr(body, /<a class="footer-gh" href="https:\/\/www\.facebook\.com[^>]*>/, 'aria-label', t('aria.fb'));
-  body = setAttr(body, /<a class="footer-gh footer-coffee"[^>]*>/, 'aria-label', t('aria.coffee'));
   body = setAttr(body, /<button id="backToTop"[^>]*>/, 'aria-label', t('aria.top'));
   body = setAttr(body, /<button id="backToTop"[^>]*>/, 'title', t('aria.top'));
   body = body.replace(/(<nav class="crumbs" aria-label=")[^"]*(")/g, (_, p, q) => p + escAttr(t('aria.crumbs')) + q);
