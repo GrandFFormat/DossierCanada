@@ -52,14 +52,12 @@ const translations = {
     'footer.left':"Site non officiel — données publiques du Parlement du Canada : <a href=\"https://www.parl.ca/legisinfo/fr\" rel=\"noopener\">LEGISinfo</a>, <a href=\"https://www.noscommunes.ca/fr\" rel=\"noopener\">Chambre des communes</a>, <a href=\"https://sencanada.ca/fr\" rel=\"noopener\">Sénat</a>, <a href=\"https://lobbycanada.gc.ca/fr/\" rel=\"noopener\">Commissariat au lobbying</a>. Site lié : <a href=\"https://dossierquebec.ca/\" rel=\"noopener\">DossierQuébec</a>",
     'footer.right':"Une réalisation de",
     'footer.source':"Code source",
-    'footer.coffee':"Offre-moi un café",
     'footer.flaticon':"Icônes : Flaticon",
     'aria.back':"Retour à l'aperçu",
     'aria.fontMinus':"Réduire le texte",
     'aria.fontPlus':"Agrandir le texte",
     'aria.challengeMore':"Voir un autre projet challengé",
     'aria.fb':"DossierCanada sur Facebook",
-    'aria.coffee':"Offre-moi un café — soutenir le projet",
     'aria.menu':"Ouvrir le menu",
     'aria.menuClose':"Fermer le menu",
     'aria.crumbs':"Fil d'Ariane",
@@ -208,14 +206,12 @@ const translations = {
     'footer.left':"Unofficial site — public data from the Parliament of Canada: <a href=\"https://www.parl.ca/legisinfo/en\" rel=\"noopener\">LEGISinfo</a>, <a href=\"https://www.ourcommons.ca/en\" rel=\"noopener\">House of Commons</a>, <a href=\"https://sencanada.ca/en\" rel=\"noopener\">Senate</a>, <a href=\"https://lobbycanada.gc.ca/en/\" rel=\"noopener\">Commissioner of Lobbying</a>. Related site: <a href=\"https://dossierquebec.ca/\" rel=\"noopener\">DossierQuébec</a>",
     'footer.right':"A project by",
     'footer.source':"Source code",
-    'footer.coffee':"Buy me a coffee",
     'footer.flaticon':"Icons: Flaticon",
     'aria.back':"Back to overview",
     'aria.fontMinus':"Decrease text size",
     'aria.fontPlus':"Increase text size",
     'aria.challengeMore':"See another challenged bill",
     'aria.fb':"DossierCanada on Facebook",
-    'aria.coffee':"Buy me a coffee — support the project",
     'aria.menu':"Open menu",
     'aria.menuClose':"Close menu",
     'aria.crumbs':"Breadcrumb",
@@ -358,7 +354,6 @@ function applyLanguage(){
     ['#fontPlus', 'aria.fontPlus'],
     ['#challengeMoreBtn', 'aria.challengeMore'],
     ['a.footer-gh[href*="facebook"]', 'aria.fb'],
-    ['a.footer-coffee', 'aria.coffee'],
   ];
   ariaMap.forEach(([sel, key])=>{
     document.querySelectorAll(sel).forEach(el=>{
@@ -2911,7 +2906,7 @@ function billCard(b, ctx){
     + `<button class="bill-share-btn ic" data-reseau="threads" onclick="event.stopPropagation(); shareBill(${b.id}, 'threads', event)" aria-label="${isEn ? 'Share on Threads' : 'Partager sur Threads'}"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.2 11.2c-.4-3-2.3-4.4-5-4.4-2 0-3.5.9-4.3 2.3M16.8 11.3c-2.6-.6-7.3-.5-7.3 2.2 0 2.6 4.6 2.7 6 .3 1-1.6 1.1-4 .6-5.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M17 11.4c3.2 1.3 3.6 5 1.2 7.3-2.6 2.5-8.9 2.7-11.7-.9C4 14.7 4.2 7.6 7.3 4.6c2.6-2.6 8.3-2.8 11.2.3 1 1 1.6 2.2 1.9 3.4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>`
     + `<button class="bill-share-btn ic" data-reseau="bsky" onclick="event.stopPropagation(); shareBill(${b.id}, 'bsky', event)" aria-label="${isEn ? 'Share on Bluesky' : 'Partager sur Bluesky'}"><svg width="15" height="14" viewBox="0 0 24 22" aria-hidden="true"><path fill="currentColor" d="M12 9.6C10.6 6.9 6.8 1.9 3.6 1.3 1.3.9 1 3 1 4.4c0 1.3.8 6.2 1.3 7.1 1 1.9 3.5 2.4 5.9 2-4 .8-5.6 3-3 5.4 3.6 3.3 5.6-.6 6.8-3.2.1.2 0 0 0 0 1.2 2.6 3.2 6.5 6.8 3.2 2.6-2.4 1-4.6-3-5.4 2.4.4 4.9-.1 5.9-2 .5-.9 1.3-5.8 1.3-7.1 0-1.4-.3-3.5-2.6-3.1-3.2.6-7 5.6-8.4 8.3z"/></svg></button>`
     + `<button class="bill-share-btn ic" onclick="event.stopPropagation(); shareBill(${b.id}, 'copy', event)" aria-label="${isEn ? 'Copy the link' : 'Copier le lien'}">⧉</button>`;
-  const shareRow = `<div class="bill-share-row">${shareCtrls}</div>${boutonCafe(isEn)}`;
+  const shareRow = `<div class="bill-share-row">${shareCtrls}</div>`;
 
   // Timeline bicamérale : toutes les étapes canoniques, celles franchies portent
   // leur date réelle (issue de b.milestones), les autres restent en attente.
@@ -3194,86 +3189,6 @@ const BILLS_FIRST = 10, BILLS_STEP = 20;
 let billsShown = BILLS_FIRST, billsSignature = '';
 function loadMoreBills(){ billsShown += BILLS_STEP; renderBills(); }
 
-// LE BOUTON CAFÉ sous « Partager » (Martin, 18 oct. 2026), comme sur DossierQuébec : bleu poudre,
-// vers le lien de don Stripe de DossierCanada, sur chaque projet de loi. Les libellés sont ceux de
-// Martin, mélangés une fois par chargement de page, et défilent sans répétition d'un projet à l'autre.
-const LIEN_CAFE = 'https://donate.stripe.com/fZu6oH4pt5OY3sY5Fy9fW01';
-const LIBELLES_CAFE = [
-  ['Soutenez-nous !', 'Support us!'],
-  ['Aidez DC à rester gratuit !', 'Help keep DC free!'],
-  ['Gardez DC vivant !', 'Keep DC alive!'],
-  ['Vive DC libre !', 'Long live a free DC!'],
-  ['Contribuez au site !', 'Contribute to the site!'],
-  ['Vive l’information publique !', 'Long live public information!'],
-  ['Donnez un coup de pouce !', 'Give us a hand!'],
-  ['Soutenez la cause !', 'Support the cause!'],
-  ['Un café pour l’équipe ?', 'A coffee for the team?'],
-  ['Cappuccino ou espresso ?', 'Cappuccino or espresso?'],
-  ['Appuyez-nous !', 'Back us!'],
-  ['La démocratie, lisible !', 'Democracy, readable!'],
-  ['Un petit geste !', 'A small gesture!'],
-  ['Appuyez la cause !', 'Back the cause!'],
-  ['Croyez au projet !', 'Believe in the project!'],
-  ['Allongé ou serré ?', 'Long or short?'],
-  ['Latté ou espresso ?', 'Latte or espresso?'],
-  ['Un double, peut-être ?', 'A double, maybe?'],
-];
-const ORDRE_CAFE = LIBELLES_CAFE.map((_, i) => i);
-for(let i = ORDRE_CAFE.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [ORDRE_CAFE[i], ORDRE_CAFE[j]] = [ORDRE_CAFE[j], ORDRE_CAFE[i]]; }
-// Icônes de gauche (Flaticon, crédit au pied de page), copiées de DQ le 3 nov. 2026.
-const ICONES_CAFE = ['cafe-croissant', 'cafe-carafe', 'cafe-moulin', 'cafe-filtre', 'cafe-coeur',
-  'cafe-machine4', 'cafe-terrasse', 'cafe-tasse-or', 'cafe-latte', 'cafe-the', 'cafe-pastille'].map((n) => `/assets/${n}.png`);
-// Chaque case ouvre sur une icône différente de ses voisines : ordre mélangé une fois par chargement.
-const ORDRE_ICONES = ICONES_CAFE.map((_, i) => i);
-for(let i = ORDRE_ICONES.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [ORDRE_ICONES[i], ORDRE_ICONES[j]] = [ORDRE_ICONES[j], ORDRE_ICONES[i]]; }
-var _rangCafe = 0;
-// Le texte reste fixe : seule l'icône change.
-function boutonCafe(isEn){
-  return '';   // Bouton café retiré partout (Martin, 10 nov. 2026).
-  const rangIcone = ORDRE_ICONES[_rangCafe % ORDRE_ICONES.length];
-  const [fr, en] = LIBELLES_CAFE[ORDRE_CAFE[_rangCafe++ % ORDRE_CAFE.length]];
-  return `<div class="bill-cafe-row"><a class="bill-cafe-btn" href="${LIEN_CAFE}" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="${isEn ? 'Buy us a coffee (opens in a new tab)' : 'Offrez-nous un café (s’ouvre dans un nouvel onglet)'}"><img class="icone" src="${ICONES_CAFE[rangIcone]}" data-rang="${rangIcone}" width="34" height="34" alt=""><span class="txt">${isEn ? en : fr}</span><span class="bulle" aria-hidden="true">${'<i class="pt" style="animation:none"></i>'.repeat(5)}</span></a></div>`;
-}
-
-// La bulle (comme sur DQ, 3 nov. 2026) : toutes les 8 s, à un moment propre à chaque bouton, 1 à 3 cafés
-// tirés au hasard la traversent ; les points mangés virent au brun puis redeviennent jaunes.
-// L'icône se retourne 4 s après le passage. Rien si l'onglet est caché ou si l'appareil coupe les animations.
-const DUREE_CAFE = 8;
-const CAFE_tasse = `<svg width="18" height="18" viewBox="0 0 18 18"><g class="couvercle"><rect x="1" y="3" width="12" height="3" fill="#131313"/></g><path d="M2 7h10v7a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3z" fill="#fff" stroke="#131313" stroke-width="1.6"/><path d="M12 9h2a2 2 0 0 1 0 4h-2" fill="none" stroke="#131313" stroke-width="1.6"/></svg>`;
-const CAFE_emporter = `<svg width="14" height="18" viewBox="0 0 14 18"><rect x="1" y="1" width="12" height="3" rx="1" fill="#6B4A3A" stroke="#3A2A22" stroke-width="1"/><path d="M2 4h10l-1.3 13H3.3z" fill="#F6D7A7" stroke="#3A2A22" stroke-width="1"/><path d="M2.5 7.5h9l-.5 5h-8z" fill="#C88A55"/><ellipse cx="7" cy="10" rx="1.4" ry="2" fill="#5A3A2A"/></svg>`;
-const CAFE_brune = `<svg width="18" height="18" viewBox="0 0 18 18"><path d="M5 4c-1-1.5 1-2 0-3.5M8 4c-1-1.5 1-2 0-3.5" fill="none" stroke="#9A9A9A" stroke-width="1.1"/><path d="M2 6h10v8a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3z" fill="#8A5A3B" stroke="#3A2A22" stroke-width="1"/><path d="M12 8h1.5a2 2 0 0 1 0 4H12" fill="none" stroke="#8A5A3B" stroke-width="1.8"/><ellipse cx="7" cy="6.3" rx="4.4" ry=".8" fill="#fff"/></svg>`;
-const CAFE_glace = `<svg width="14" height="19" viewBox="0 0 14 19"><path d="M8 6l2-5h2" fill="none" stroke="#555" stroke-width="1.4"/><path d="M2 7a5 4 0 0 1 10 0z" fill="#E4E4E4" stroke="#131313" stroke-width="1"/><rect x="1" y="7" width="12" height="2" fill="#D0D0D0" stroke="#131313" stroke-width="1"/><path d="M2 9h10l-1 9H3z" fill="#fff" stroke="#131313" stroke-width="1"/><path d="M2.4 12h9.2l-.7 6H3.1z" fill="#C9A27E"/><rect x="4" y="13" width="2" height="2" fill="#fff" stroke="#131313" stroke-width=".6"/><rect x="7.5" y="14.5" width="2" height="2" fill="#fff" stroke="#131313" stroke-width=".6"/></svg>`;
-const CAFES_BULLE = [CAFE_tasse, CAFE_emporter, CAFE_brune, CAFE_glace];
-ICONES_CAFE.forEach((u) => { const p = new Image(); p.src = u; });
-function flipIcone(bouton){
-  const i = bouton && bouton.querySelector('.icone');
-  if(!i) return;
-  // Au hasard, jamais la même deux fois de suite.
-  const avant = Number(i.dataset.rang || 0);
-  const rang = (avant + 1 + Math.floor(Math.random() * (ICONES_CAFE.length - 1))) % ICONES_CAFE.length;
-  i.dataset.rang = rang;
-  i.classList.add('tourne');
-  setTimeout(() => { i.src = ICONES_CAFE[rang]; i.classList.remove('tourne'); }, 300);
-}
-function passageCafe(bulle){
-  const file = CAFES_BULLE.slice().sort(() => Math.random() - .5).slice(0, 1 + Math.floor(Math.random() * 3));
-  bulle.innerHTML = '<i class="pt"></i>'.repeat(5)
-    + file.map((ic, i) => `<span class="passant" style="--suite:${i}">${ic}</span>`).reverse().join('');
-}
-setInterval(() => {
-  if(document.hidden || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  const maintenant = Date.now();
-  document.querySelectorAll('.bill-cafe-btn .bulle').forEach((bulle) => {
-    if(!bulle.offsetParent) return; // carte fermée : rien à animer
-    if(!bulle.dataset.prochain) bulle.dataset.prochain = maintenant + Math.random() * DUREE_CAFE * 1000;
-    else if(maintenant >= Number(bulle.dataset.prochain)){
-      bulle.dataset.prochain = maintenant + DUREE_CAFE * 1000;
-      passageCafe(bulle);
-      setTimeout(() => flipIcone(bulle.closest('.bill-cafe-btn')), DUREE_CAFE * 500);
-    }
-  });
-}, 400);
-
 var billsParrain = new URLSearchParams(location.search).get('parrain') || '';
 document.addEventListener('DOMContentLoaded', () => {
   if(!billsParrain) return;
@@ -3287,7 +3202,6 @@ document.addEventListener('DOMContentLoaded', () => {
   remplir();
 });
 function renderBills(keyword){
-  _rangCafe = 0;   // les libellés du bouton café repartent du premier (boutonCafe)
   keyword = keyword !== undefined ? keyword : (document.getElementById('searchBills')?.value || '');
   const kw = norm(keyword);
   const signature = [kw, billsStatusFilter, billsStepFilter, billsLobbyFilter, billsOmnibusFilter, billsChallengeFilter, billsSortDir].join('|');
