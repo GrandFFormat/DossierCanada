@@ -3,9 +3,8 @@ name: Rafraîchir les données fédérales
 # Relance tous les scrapers + le build, puis committe et pousse les données
 # mises à jour (ce qui déclenche un redéploiement Vercel si le dépôt y est connecté).
 on:
-  # EN PAUSE jusqu'au 18 nov. 2026 (limite Vercel de Martin, 7 nov.) : remettre les 3 lignes ci-dessous.
-  # schedule:
-    # - cron: '0 8 * * *' # tous les jours à 08:00 UTC (~3-4 h, heure de l'Est)
+  schedule:
+    - cron: '0 8 * * *' # tous les jours à 08:00 UTC (~3-4 h, heure de l'Est)
   workflow_dispatch: {} # bouton « Run workflow » pour un lancement manuel
 
 # Jamais deux exécutions en parallèle.
