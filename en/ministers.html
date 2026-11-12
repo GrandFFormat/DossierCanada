@@ -62,7 +62,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=6cf488c4f8">
+<link rel="stylesheet" href="/assets/app.css?v=e2863c374c">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -249,7 +249,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     </div>
     <div class="grid" id="ministresGrid"><!--ssr--><div class="m-card">
       <div class="top-row"><a class="avatar" style="background:var(--cyan)" href="https://www.ourcommons.ca/members/en/28286" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Official profile on ourcommons.ca">MC</a><span class="mp-actions"><button class="part-btn" type="button" title="Share" aria-label="Share the profile of Mark Carney" onclick="event.stopPropagation(); partageDepute(this, 28286)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="currentColor"><circle cx="18" cy="5" r="3.2"></circle><circle cx="6" cy="12" r="3.2"></circle><circle cx="18" cy="19" r="3.2"></circle><path d="M8.6 10.7l6.8-3.9 1 1.7-6.8 3.9zM8.6 13.3l1-1.7 6.8 3.9-1 1.7z"></path></svg></button><a class="wiki-btn" href="https://en.wikipedia.org/wiki/Mark_Carney" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Wikipédia" aria-label="Wikipedia page of Mark Carney">W</a><button class="follow-btn " onclick="toggleFollowDepute('mp-28286')">+ Follow</button></span></div>
-      <h3>Mark Carney</h3>
+      <h3><a class="m-fiche" href="/en/ministers/mark-carney" onclick="event.stopPropagation()">Mark Carney</a></h3>
       <div class="mc-role-wrap"><span class="mc-role" style="background:var(--ink); color:var(--yellow)">Prime Minister of Canada</span></div>
       <div class="meta-row">
         <a class="depute-email" href="mailto:mark.carney@parl.gc.ca" onclick="event.stopPropagation()" title="mark.carney@parl.gc.ca">mark.carney@parl.gc.ca</a>
@@ -259,7 +259,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
   
     <div class="m-card">
       <div class="top-row"><a class="avatar" style="background:var(--lime)" href="https://www.ourcommons.ca/members/en/1813" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Official profile on ourcommons.ca">DL</a><span class="mp-actions"><button class="part-btn" type="button" title="Share" aria-label="Share the profile of Dominic LeBlanc" onclick="event.stopPropagation(); partageDepute(this, 1813)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="currentColor"><circle cx="18" cy="5" r="3.2"></circle><circle cx="6" cy="12" r="3.2"></circle><circle cx="18" cy="19" r="3.2"></circle><path d="M8.6 10.7l6.8-3.9 1 1.7-6.8 3.9zM8.6 13.3l1-1.7 6.8 3.9-1 1.7z"></path></svg></button><a class="wiki-btn" href="https://en.wikipedia.org/wiki/Dominic_LeBlanc" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Wikipédia" aria-label="Wikipedia page of Dominic LeBlanc">W</a><button class="follow-btn " onclick="toggleFollowDepute('mp-1813')">+ Follow</button></span></div>
-      <h3>Dominic LeBlanc</h3>
+      <h3><a class="m-fiche" href="/en/ministers/dominic-leblanc" onclick="event.stopPropagation()">Dominic LeBlanc</a></h3>
       <div class="mc-role-wrap"><span class="mc-role" style="background:var(--lime); color:var(--ink)">President of the King’s Privy Council for Canada and Minister responsible for Canada-U.S. Trade, Intergovernmental Affairs, Internal Trade and One Canadian Economy</span></div>
       <div class="meta-row">
         <a class="depute-email" href="mailto:dominic.leblanc@parl.gc.ca" onclick="event.stopPropagation()" title="dominic.leblanc@parl.gc.ca">dominic.leblanc@parl.gc.ca</a>
@@ -269,7 +269,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
   
     <div class="m-card">
       <div class="top-row"><a class="avatar" style="background:var(--pink)" href="https://www.ourcommons.ca/members/en/88384" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Official profile on ourcommons.ca">MJ</a><span class="mp-actions"><button class="part-btn" type="button" title="Share" aria-label="Share the profile of Mélanie Joly" onclick="event.stopPropagation(); partageDepute(this, 88384)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="currentColor"><circle cx="18" cy="5" r="3.2"></circle><circle cx="6" cy="12" r="3.2"></circle><circle cx="18" cy="19" r="3.2"></circle><path d="M8.6 10.7l6.8-3.9 1 1.7-6.8 3.9zM8.6 13.3l1-1.7 6.8 3.9-1 1.7z"></path></svg></button><a class="wiki-btn" href="https://en.wikipedia.org/wiki/M%C3%A9lanie_Joly" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Wikipédia" aria-label="Wikipedia page of Mélanie Joly">W</a><button class="follow-btn " onclick="toggleFollowDepute('mp-88384')">+ Follow</button></span></div>
-      <h3>Mélanie Joly</h3>
+      <h3><a class="m-fiche" href="/en/ministers/melanie-joly" onclick="event.stopPropagation()">Mélanie Joly</a></h3>
       <div class="mc-role-wrap"><span class="mc-role" style="background:var(--pink); color:var(--ink)">Minister of Industry and Minister responsible for Canada Economic Development for Quebec Regions</span></div>
       <div class="meta-row">
         <a class="depute-email" href="mailto:melanie.joly@parl.gc.ca" onclick="event.stopPropagation()" title="melanie.joly@parl.gc.ca">melanie.joly@parl.gc.ca</a>
@@ -279,7 +279,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
   
     <div class="m-card">
       <div class="top-row"><a class="avatar" style="background:var(--yellow)" href="https://www.ourcommons.ca/members/en/88633" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Official profile on ourcommons.ca">FC</a><span class="mp-actions"><button class="part-btn" type="button" title="Share" aria-label="Share the profile of François-Philippe Champagne" onclick="event.stopPropagation(); partageDepute(this, 88633)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="currentColor"><circle cx="18" cy="5" r="3.2"></circle><circle cx="6" cy="12" r="3.2"></circle><circle cx="18" cy="19" r="3.2"></circle><path d="M8.6 10.7l6.8-3.9 1 1.7-6.8 3.9zM8.6 13.3l1-1.7 6.8 3.9-1 1.7z"></path></svg></button><a class="wiki-btn" href="https://en.wikipedia.org/wiki/Fran%C3%A7ois-Philippe_Champagne" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Wikipédia" aria-label="Wikipedia page of François-Philippe Champagne">W</a><button class="follow-btn " onclick="toggleFollowDepute('mp-88633')">+ Follow</button></span></div>
-      <h3>François-Philippe Champagne</h3>
+      <h3><a class="m-fiche" href="/en/ministers/francois-philippe-champagne" onclick="event.stopPropagation()">François-Philippe Champagne</a></h3>
       <div class="mc-role-wrap"><span class="mc-role" style="background:var(--yellow); color:var(--ink)">Minister of Finance and National Revenue</span></div>
       <div class="meta-row">
         <a class="depute-email" href="mailto:francois-philippe.champagne@parl.gc.ca" onclick="event.stopPropagation()" title="francois-philippe.champagne@parl.gc.ca">francois-philippe.champagne@parl.gc.ca</a>
@@ -289,7 +289,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
   
     <div class="m-card">
       <div class="top-row"><a class="avatar" style="background:var(--cyan)" href="https://www.ourcommons.ca/members/en/96081" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Official profile on ourcommons.ca">AA</a><span class="mp-actions"><button class="part-btn" type="button" title="Share" aria-label="Share the profile of Anita Anand" onclick="event.stopPropagation(); partageDepute(this, 96081)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="currentColor"><circle cx="18" cy="5" r="3.2"></circle><circle cx="6" cy="12" r="3.2"></circle><circle cx="18" cy="19" r="3.2"></circle><path d="M8.6 10.7l6.8-3.9 1 1.7-6.8 3.9zM8.6 13.3l1-1.7 6.8 3.9-1 1.7z"></path></svg></button><a class="wiki-btn" href="https://en.wikipedia.org/wiki/Anita_Anand" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Wikipédia" aria-label="Wikipedia page of Anita Anand">W</a><button class="follow-btn " onclick="toggleFollowDepute('mp-96081')">+ Follow</button></span></div>
-      <h3>Anita Anand</h3>
+      <h3><a class="m-fiche" href="/en/ministers/anita-anand" onclick="event.stopPropagation()">Anita Anand</a></h3>
       <div class="mc-role-wrap"><span class="mc-role" style="background:var(--cyan); color:var(--ink)">Minister of Foreign Affairs</span></div>
       <div class="meta-row">
         <a class="depute-email" href="mailto:anita.anand@parl.gc.ca" onclick="event.stopPropagation()" title="anita.anand@parl.gc.ca">anita.anand@parl.gc.ca</a>
@@ -299,7 +299,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
   
     <div class="m-card">
       <div class="top-row"><a class="avatar" style="background:var(--lime)" href="https://www.ourcommons.ca/members/en/88984" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Official profile on ourcommons.ca">PH</a><span class="mp-actions"><button class="part-btn" type="button" title="Share" aria-label="Share the profile of Patty Hajdu" onclick="event.stopPropagation(); partageDepute(this, 88984)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="currentColor"><circle cx="18" cy="5" r="3.2"></circle><circle cx="6" cy="12" r="3.2"></circle><circle cx="18" cy="19" r="3.2"></circle><path d="M8.6 10.7l6.8-3.9 1 1.7-6.8 3.9zM8.6 13.3l1-1.7 6.8 3.9-1 1.7z"></path></svg></button><a class="wiki-btn" href="https://en.wikipedia.org/wiki/Patty_Hajdu" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Wikipédia" aria-label="Wikipedia page of Patty Hajdu">W</a><button class="follow-btn " onclick="toggleFollowDepute('mp-88984')">+ Follow</button></span></div>
-      <h3>Patty Hajdu</h3>
+      <h3><a class="m-fiche" href="/en/ministers/patty-hajdu" onclick="event.stopPropagation()">Patty Hajdu</a></h3>
       <div class="mc-role-wrap"><span class="mc-role" style="background:var(--lime); color:var(--ink)">Minister of Jobs and Families and Minister responsible for the Federal Economic Development Agency for Northern Ontario</span></div>
       <div class="meta-row">
         <a class="depute-email" href="mailto:patty.hajdu@parl.gc.ca" onclick="event.stopPropagation()" title="patty.hajdu@parl.gc.ca">patty.hajdu@parl.gc.ca</a>
@@ -309,7 +309,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
   
     <div class="m-card">
       <div class="top-row"><a class="avatar" style="background:var(--pink)" href="https://www.ourcommons.ca/members/en/88660" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Official profile on ourcommons.ca">MM</a><span class="mp-actions"><button class="part-btn" type="button" title="Share" aria-label="Share the profile of Marc Miller" onclick="event.stopPropagation(); partageDepute(this, 88660)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="currentColor"><circle cx="18" cy="5" r="3.2"></circle><circle cx="6" cy="12" r="3.2"></circle><circle cx="18" cy="19" r="3.2"></circle><path d="M8.6 10.7l6.8-3.9 1 1.7-6.8 3.9zM8.6 13.3l1-1.7 6.8 3.9-1 1.7z"></path></svg></button><a class="wiki-btn" href="https://en.wikipedia.org/wiki/Marc_Miller_(politician)" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Wikipédia" aria-label="Wikipedia page of Marc Miller">W</a><button class="follow-btn " onclick="toggleFollowDepute('mp-88660')">+ Follow</button></span></div>
-      <h3>Marc Miller</h3>
+      <h3><a class="m-fiche" href="/en/ministers/marc-miller" onclick="event.stopPropagation()">Marc Miller</a></h3>
       <div class="mc-role-wrap"><span class="mc-role" style="background:var(--pink); color:var(--ink)">Minister of Canadian Identity and Culture and Minister responsible for Official Languages</span></div>
       <div class="meta-row">
         <a class="depute-email" href="mailto:marc.miller@parl.gc.ca" onclick="event.stopPropagation()" title="marc.miller@parl.gc.ca">marc.miller@parl.gc.ca</a>
@@ -319,7 +319,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
   
     <div class="m-card">
       <div class="top-row"><a class="avatar" style="background:var(--yellow)" href="https://www.ourcommons.ca/members/en/88316" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Official profile on ourcommons.ca">SF</a><span class="mp-actions"><button class="part-btn" type="button" title="Share" aria-label="Share the profile of Sean Fraser" onclick="event.stopPropagation(); partageDepute(this, 88316)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="currentColor"><circle cx="18" cy="5" r="3.2"></circle><circle cx="6" cy="12" r="3.2"></circle><circle cx="18" cy="19" r="3.2"></circle><path d="M8.6 10.7l6.8-3.9 1 1.7-6.8 3.9zM8.6 13.3l1-1.7 6.8 3.9-1 1.7z"></path></svg></button><a class="wiki-btn" href="https://en.wikipedia.org/wiki/Sean_Fraser_(politician)" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Wikipédia" aria-label="Wikipedia page of Sean Fraser">W</a><button class="follow-btn " onclick="toggleFollowDepute('mp-88316')">+ Follow</button></span></div>
-      <h3>Sean Fraser</h3>
+      <h3><a class="m-fiche" href="/en/ministers/sean-fraser" onclick="event.stopPropagation()">Sean Fraser</a></h3>
       <div class="mc-role-wrap"><span class="mc-role" style="background:var(--yellow); color:var(--ink)">Minister of Justice and Attorney General of Canada and Minister responsible for the Atlantic Canada Opportunities Agency</span></div>
       <div class="meta-row">
         <a class="depute-email" href="mailto:sean.fraser@parl.gc.ca" onclick="event.stopPropagation()" title="sean.fraser@parl.gc.ca">sean.fraser@parl.gc.ca</a>
@@ -646,7 +646,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=00acd39cfa"></script>
+<script defer src="/assets/app.js?v=be3ab280b1"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

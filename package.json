@@ -32,6 +32,7 @@
     "build:prerender": "node scripts/prerender-pages.js",
     "scrape:past-bill-titles": "node scrapers/past-bill-titles.js",
     "build:bills": "node scripts/build-bill-pages.js",
+    "build:ministres": "node scripts/build-minister-pages.js",
     "verifier:promesses": "node scripts/verifier-promesses.mjs"
   },
   "dependencies": {

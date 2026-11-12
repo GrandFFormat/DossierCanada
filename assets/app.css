@@ -1475,3 +1475,23 @@ nav.tabs .tab-villes li a{border:none; padding:8px 12px; font-family:'Archivo',s
   nav.tabs .tab-villes summary{justify-content:flex-start; padding:16px 24px; font-size:15px; border-bottom:1px solid var(--line); height:auto;}
   nav.tabs .tab-villes ul{position:static; box-shadow:none; border:none; border-radius:0; padding:4px 24px 12px;}
 }
+
+/* Fiches de ministres (/ministres/<slug>), générées par scripts/build-minister-pages.js. */
+.m-card h3 a.m-fiche{color:inherit; text-decoration:none;}
+.m-card h3 a.m-fiche:hover{text-decoration:underline;}
+.min-corps{display:flex; flex-wrap:wrap; gap:28px; padding:24px 0; align-items:flex-start;}
+.min-colphoto{flex:0 0 200px; max-width:100%;}
+.min-avatar{display:flex; align-items:center; justify-content:center; width:120px; height:120px; font-size:40px; background:var(--cyan); color:#131313; border:2px solid var(--ink); font-family:'Archivo Black',sans-serif;}
+.min-reseaux{display:flex; flex-wrap:wrap; gap:6px; margin:10px 0 0;}
+.min-reseaux a{display:inline-flex; align-items:center; justify-content:center; width:32px; height:32px; border:2px solid var(--ink); color:var(--ink); background:var(--card); text-decoration:none;}
+.min-reseaux a:hover{background:#FFE88A; color:#131313;}
+.min-src{font-size:12px; opacity:.75; margin:6px 0 0;}
+.min-texte{flex:1 1 360px; min-width:0;}
+.min-texte h2{font-size:18px; margin:22px 0 8px;}
+.min-dl{display:grid; grid-template-columns:max-content 1fr; gap:6px 16px; margin:0;}
+.min-dl dt{font-weight:600;}
+.min-dl dd{margin:0;}
+.min-liste{padding-left:18px;}
+.min-liste li{margin:4px 0;}
+.min-etat{opacity:.7; font-size:.9em;}
+@media (max-width:600px){ .min-dl{grid-template-columns:1fr;} .min-dl dd{margin-bottom:6px;} }
