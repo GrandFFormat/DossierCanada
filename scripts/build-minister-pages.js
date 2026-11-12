@@ -59,10 +59,17 @@ const T = {
     reseaux: 'Official social media', srcRes: "Links taken from the minister's official website.", retour: '← The whole Cabinet',
     desc: (m, r) => `${m.name}, ${r}. Role, riding, bills sponsored, voting attendance and official social media.` },
 };
+// Chef·fe·s de parti (data/chefs.json) : même fiche, sous /chefs/<slug> et /en/leaders/<slug>.
+const chefsData = lire('data/chefs.json', { chefs: [], gouvernement: {} });
+const TC = {
+  fr: { srcRes: 'Liens relevés sur une page officielle (parti ou site du chef).', dossier: '/chefs', liste: 'Députés', listeUrl: '/deputes', retour: '← Tous les députés', profil: 'Fiche sur ourcommons.ca' },
+  en: { srcRes: 'Links taken from an official page (party or leader website).', dossier: '/en/leaders', liste: 'MPs', listeUrl: '/en/mps', retour: '← All MPs', profil: 'Profile on ourcommons.ca' },
+};
 const pick = (o, l) => (o && typeof o === 'object' ? o[l] || o.fr || o.en : o) || '';
 
 function fiche(m, lang) {
-  const t = T[lang]; const en = lang === 'en';
+  const t = m.chef ? { ...T[lang], ...TC[lang] } : { ...T[lang], listeUrl: T[lang].dossier }; const en = lang === 'en';
+  const chefGouv = chefsData.gouvernement?.[slugMinistre(m.name)];
   const slug = slugMinistre(m.name);
   const d = depParId.get(m.personId) || {};
   const role = pick(m.role, lang);
@@ -70,26 +77,27 @@ function fiche(m, lang) {
   const parraines = bills.filter((b) => b.sponsor && norm(pick(b.sponsor, 'fr')).endsWith(norm(m.name)));
   const vr = d.votingRecord;
   const pres = vr && vr.participationRate != null ? `${Math.round(vr.participationRate * 100)}${en ? '%' : ' %'} (${vr.cast}/${vr.eligible})` : (en ? 'not available' : 'non disponible');
-  const res = reseaux[slug] || [];
-  const site = sources[slug]?.site;
+  const res = m.chef ? (m.reseaux || []) : (reseaux[slug] || []);
+  const site = m.chef ? null : sources[slug]?.site;
   const ini = m.name.split(/\s+/).filter((w) => /^[A-ZÉÈ]/.test(w)).map((w) => w[0]).slice(0, 2).join('');
   const lignes = [
     [t.role, esc(role)], [t.parti, esc(parti)],
     d.constituency ? [t.circ, esc(pick(d.constituency, lang))] : null,
     d.province ? [t.prov, esc(pick(d.province, lang))] : null,
-    [t.pres, esc(pres)],
+    m.chef && !m.personId ? null : [t.pres, esc(pres)],
   ].filter(Boolean).map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join('');
   const liens = [
-    `<li><a href="${esc(pick(m.url, lang))}" rel="noopener">${t.profil}</a></li>`,
+    m.url ? `<li><a href="${esc(pick(m.url, lang))}" rel="noopener">${t.profil}</a></li>` : '',
+    m.source ? `<li><a href="${esc(m.source)}" rel="noopener">${en ? 'Party page' : 'Page du parti'}</a></li>` : '',
     site ? `<li><a href="${esc(site)}" rel="noopener">${t.site}</a></li>` : '',
     d.email ? `<li>${t.courriel} : <a href="mailto:${esc(d.email)}">${esc(d.email)}</a></li>` : '',
   ].join('');
   const html = `
   <section class="view active min-fiche" id="view-ministre">
     <div class="page-band"><div>
-      <nav class="crumbs" aria-label="${en ? 'Breadcrumb' : "Fil d'Ariane"}"><a href="${en ? '/en' : '/'}">DossierCanada</a> <span aria-hidden="true">›</span> <a href="${t.dossier}">${t.liste}</a> <span aria-hidden="true">›</span> <span aria-current="page">${esc(m.name)}</span></nav>
+      <nav class="crumbs" aria-label="${en ? 'Breadcrumb' : "Fil d'Ariane"}"><a href="${en ? '/en' : '/'}">DossierCanada</a> <span aria-hidden="true">›</span> <a href="${t.listeUrl}">${t.liste}</a> <span aria-hidden="true">›</span> <span aria-current="page">${esc(m.name)}</span></nav>
       <h1 class="band-title">${esc(m.name)}</h1>
-      <div class="sub">${esc(role)}</div>
+      <div class="sub">${esc(role)}${chefGouv ? ` · ${esc(chefGouv[lang])}` : ''}</div>
     </div></div>
     <div class="min-corps">
       <div class="min-colphoto"><span class="min-avatar" aria-hidden="true">${esc(ini)}</span>${res.length ? `<p class="min-reseaux" aria-label="${t.reseaux}">${res.map((u) => `<a href="${esc(u)}" target="_blank" rel="noopener" title="${nomReseau(u)}" aria-label="${nomReseau(u)}">${ICONES_RESEAUX[nomReseau(u)] || nomReseau(u)}</a>`).join('')}</p><p class="min-src">${t.srcRes}</p>` : ''}</div>
@@ -99,21 +107,21 @@ function fiche(m, lang) {
         ${parraines.length ? `<ul class="min-liste">${parraines.map((b) => `<li><a href="${billPathFor(b.num, lang)}">${esc(b.num)}</a> — ${esc(pick(b.shortTitle, lang) || pick(b.title, lang))} <span class="min-etat">(${esc(pick(b.status, lang))})</span></li>`).join('')}</ul>` : `<p>${t.aucun}</p>`}
         <h2>${t.liens}</h2>
         <ul class="min-liste">${liens}</ul>
-        <p><a href="${t.dossier}">${t.retour}</a></p>
+        <p><a href="${t.listeUrl}">${t.retour}</a></p>
       </div>
     </div>
   </section>`;
   const url = abs(`${t.dossier}/${slug}`);
   const titre = `${m.name} — ${role.length > 60 ? role.slice(0, 57).replace(/\s+\S*$/, '') + '…' : role} — DossierCanada`;
   const desc = t.desc(m, role).slice(0, 300);
-  const sameAs = [pick(m.url, lang), ...(site ? [site] : []), ...res];
+  const sameAs = [...(m.url ? [pick(m.url, lang)] : []), ...(site ? [site] : []), ...res];
   const ld = { '@context': 'https://schema.org', '@graph': [
     { '@type': 'Person', name: m.name, jobTitle: role, url, affiliation: { '@type': 'PoliticalParty', name: parti }, sameAs },
     { '@type': 'BreadcrumbList', itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'DossierCanada', item: abs(en ? '/en' : '/') },
-      { '@type': 'ListItem', position: 2, name: t.liste, item: abs(t.dossier) },
+      { '@type': 'ListItem', position: 2, name: t.liste, item: abs(t.listeUrl) },
       { '@type': 'ListItem', position: 3, name: m.name, item: url } ] } ] };
-  const autre = (l) => abs(`${T[l].dossier}/${slug}`);
+  const autre = (l) => abs(`${(m.chef ? TC : T)[l].dossier}/${slug}`);
   const head = [
     '<!-- SEO:START — fiche de ministre, GÉNÉRÉE par scripts/build-minister-pages.js. Ne pas éditer à la main. -->',
     `<title>${esc(titre)}</title>`, `<meta name="description" content="${esc(desc)}">`,
@@ -130,6 +138,8 @@ function fiche(m, lang) {
 }
 
 const DEBUT = '  <!-- MINISTRES:START -->', FIN = '  <!-- MINISTRES:END -->';
+// Un·e chef·fe a la même forme qu'un ministre pour fiche() : rôle, parti, fiche ourcommons (si élu·e).
+const chefs = (chefsData.chefs || []).map((c) => ({ ...c, chef: true, url: c.personId ? { fr: `https://www.ourcommons.ca/members/fr/${c.personId}`, en: `https://www.ourcommons.ca/members/en/${c.personId}` } : null }));
 let n = 0;
 for (const lang of ['fr', 'en']) {
   const base = readFileSync(lang === 'en' ? 'en/ministers.html' : 'ministres.html', 'utf8');
@@ -152,8 +162,33 @@ for (const lang of ['fr', 'en']) {
     writeFileSync(`${dossier}/${slug}.html`, h, 'utf8'); attendus.add(slug + '.html'); n++;
   }
   for (const f of readdirSync(dossier)) if (!attendus.has(f)) rmSync(`${dossier}/${f}`);
+  // Fiches des chef·fe·s de parti (data/chefs.json).
+  const dossierC = lang === 'en' ? 'en/leaders' : 'chefs';
+  mkdirSync(dossierC, { recursive: true });
+  const attendusC = new Set();
+  for (const c of chefs) {
+    const { slug, head, html } = fiche(c, lang);
+    let h = base.replace(/<!-- SEO:START[\s\S]*?<!-- SEO:END -->/, () => head);
+    const i = h.indexOf('<div class="app">'); const j = h.indexOf('<footer>');
+    h = h.slice(0, i) + '<div class="app">' + html + '\n</div>\n\n' + h.slice(j);
+    h = h.replace(/<script defer src="\/data\/site-data\.js"><\/script>\r?\n?/, '')
+      .replace(/<script defer src="https:\/\/cdn\.jsdelivr\.net\/npm\/@supabase[^"]*"><\/script>\r?\n?/, '')
+      .replace(/<script defer src="\/assets\/app\.js[^"]*"><\/script>\r?\n?/, '')
+      .replace(/\s*<button type="button" class="footer-temoins"[^>]*>[^<]*<\/button>/, '')
+      .replace(/<div class="font-size-ctrl" id="fontSizeCtrl">[\s\S]*?<\/div>\s*/, '')
+      .replace(/<a class="active" data-view="cabinet" href="[^"]*" aria-current="page">/, (x) => x.replace(' class="active"', '').replace(' aria-current="page"', ''))
+      .replace(/(id="langToggle" href=")[^"]*"/, `$1${TC[lang === 'en' ? 'fr' : 'en'].dossier}/${slug}"`);
+    writeFileSync(`${dossierC}/${slug}.html`, h, 'utf8'); attendusC.add(slug + '.html'); n++;
+  }
+  for (const f of readdirSync(dossierC)) if (!attendusC.has(f)) rmSync(`${dossierC}/${f}`);
 }
 const today = new Date().toISOString().slice(0, 10);
+const blocC = chefs.flatMap((m) => ['fr', 'en'].map((lang) => { const s = slugMinistre(m.name); return [
+  '  <url>', `    <loc>${abs(`${TC[lang].dossier}/${s}`)}</loc>`,
+  `    <xhtml:link rel="alternate" hreflang="fr" href="${abs(`/chefs/${s}`)}"/>`,
+  `    <xhtml:link rel="alternate" hreflang="en" href="${abs(`/en/leaders/${s}`)}"/>`,
+  `    <xhtml:link rel="alternate" hreflang="x-default" href="${abs(`/chefs/${s}`)}"/>`,
+  `    <lastmod>${new Date().toISOString().slice(0, 10)}</lastmod>`, '  </url>'].join('\n'); }));
 const bloc = ministres.flatMap((m) => ['fr', 'en'].map((lang) => { const s = slugMinistre(m.name); return [
   '  <url>', `    <loc>${abs(`${T[lang].dossier}/${s}`)}</loc>`,
   `    <xhtml:link rel="alternate" hreflang="fr" href="${abs(`/ministres/${s}`)}"/>`,
@@ -163,6 +198,6 @@ const bloc = ministres.flatMap((m) => ['fr', 'en'].map((lang) => { const s = slu
 let sm = readFileSync('sitemap.xml', 'utf8');
 const a = sm.indexOf(DEBUT), b = sm.indexOf(FIN);
 if (a >= 0 && b > a) sm = sm.slice(0, a) + sm.slice(b + FIN.length + 1);
-sm = sm.replace('</urlset>', [DEBUT, ...bloc, FIN, '</urlset>'].join('\n'));
+sm = sm.replace('</urlset>', [DEBUT, ...bloc, ...blocC, FIN, '</urlset>'].join('\n'));
 writeFileSync('sitemap.xml', sm, 'utf8');
 console.log(`ok ${n} fiches de ministres · ${Object.keys(reseaux).length} avec réseaux · sitemap +${bloc.length}`);

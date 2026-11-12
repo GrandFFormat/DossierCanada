@@ -1,0 +1,68 @@
+{
+ "_note": "Chef·fe·s des partis représentés aux Communes. Le premier ministre garde sa fiche de ministre (mention de chef dans « gouvernement »). Réseaux : liens lus sur une page officielle seulement (reseauxSource).",
+ "chefs": [
+  {
+   "name": "Pierre Poilievre",
+   "personId": 25524,
+   "party": "CPC",
+   "role": {
+    "fr": "Chef de l'opposition officielle et du Parti conservateur du Canada",
+    "en": "Leader of the Official Opposition and of the Conservative Party of Canada"
+   },
+   "source": "https://www.ourcommons.ca/members/en/pierre-poilievre(25524)/roles",
+   "reseaux": [],
+   "reseauxSource": null
+  },
+  {
+   "name": "Yves-François Blanchet",
+   "personId": 104669,
+   "party": "BQ",
+   "role": {
+    "fr": "Chef du Bloc Québécois",
+    "en": "Leader of the Bloc Québécois"
+   },
+   "source": "https://www.blocquebecois.org/?bloc_candidate=yves-francois-blanchet",
+   "reseaux": [],
+   "reseauxSource": null
+  },
+  {
+   "name": "Avi Lewis",
+   "personId": null,
+   "party": "NDP",
+   "role": {
+    "fr": "Chef du Nouveau Parti démocratique (sans siège aux Communes)",
+    "en": "Leader of the New Democratic Party (no seat in the House)"
+   },
+   "source": "https://www.ndp.ca/news/ndp-leader-avi-lewis-announces-critic-and-house-leadership-roles/",
+   "reseaux": [
+    "https://www.facebook.com/AviLewisOfficial",
+    "https://www.instagram.com/avi.lewis",
+    "https://www.tiktok.com/@avi.d.lewis",
+    "https://x.com/avilewis"
+   ],
+   "reseauxSource": "https://lewisisleader.ca/"
+  },
+  {
+   "name": "Elizabeth May",
+   "personId": 2897,
+   "party": "GPC",
+   "role": {
+    "fr": "Cheffe du Parti vert du Canada",
+    "en": "Leader of the Green Party of Canada"
+   },
+   "source": "https://www.greenparty.ca/en/leadership-race-2026",
+   "reseaux": [
+    "https://www.facebook.com/ElizabethMaySGI",
+    "https://x.com/elizabethmay"
+   ],
+   "reseauxSource": "https://elizabethmaymp.ca/"
+  }
+ ],
+ "gouvernement": {
+  "mark-carney": {
+   "fr": "Chef du Parti libéral du Canada",
+   "en": "Leader of the Liberal Party of Canada",
+   "source": "https://liberal.ca/"
+  }
+ }
+}

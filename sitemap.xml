@@ -3308,5 +3308,61 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/ministres/evan-solomon"/>
     <lastmod>2026-11-12</lastmod>
   </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/chefs/pierre-poilievre</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/chefs/pierre-poilievre"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/leaders/pierre-poilievre"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/chefs/pierre-poilievre"/>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/leaders/pierre-poilievre</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/chefs/pierre-poilievre"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/leaders/pierre-poilievre"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/chefs/pierre-poilievre"/>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/chefs/yves-francois-blanchet</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/chefs/yves-francois-blanchet"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/leaders/yves-francois-blanchet"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/chefs/yves-francois-blanchet"/>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/leaders/yves-francois-blanchet</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/chefs/yves-francois-blanchet"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/leaders/yves-francois-blanchet"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/chefs/yves-francois-blanchet"/>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/chefs/avi-lewis</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/chefs/avi-lewis"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/leaders/avi-lewis"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/chefs/avi-lewis"/>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/leaders/avi-lewis</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/chefs/avi-lewis"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/leaders/avi-lewis"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/chefs/avi-lewis"/>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/chefs/elizabeth-may</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/chefs/elizabeth-may"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/leaders/elizabeth-may"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/chefs/elizabeth-may"/>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dossiercanada.ca/en/leaders/elizabeth-may</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dossiercanada.ca/chefs/elizabeth-may"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dossiercanada.ca/en/leaders/elizabeth-may"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dossiercanada.ca/chefs/elizabeth-may"/>
+    <lastmod>2026-11-12</lastmod>
+  </url>
   <!-- MINISTRES:END -->
 </urlset>
