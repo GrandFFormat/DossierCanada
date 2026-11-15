@@ -179,6 +179,16 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
           <a class="a3-seeall" data-view="projets" href="/en/bills" data-i18n="a3.seeall">See all →</a>
         </div>
         <div id="apercuBills"><!--ssr--><!--/ssr--></div>
+        <div class="a3-tiles">
+          <a class="a3-tile" data-view="lexique" href="/en/glossary">
+            <span class="a3-tile-tag" style="background:var(--cyan)" data-i18n="nav.lexique">Glossary</span>
+            <p data-i18n="a3.tileLex">Parliamentary jargon translated into plain language, no poli-sci degree needed.</p>
+          </a>
+          <a class="a3-tile" data-view="archives" href="/en/archives">
+            <span class="a3-tile-tag" style="background:var(--lime)" data-i18n="nav.archives">Archives</span>
+            <p data-i18n="a3.tileArch">Committee meetings day by day, and past Parliaments.</p>
+          </a>
+        </div>
       </main>
       <!-- Colonne de droite (Martin, 14 nov. 2026) : « Aux comités des Communes » remplace « Comment ça marche »
            et « Quoi de neuf ». Réunions de comité sur un projet de loi, résumées depuis les Témoignages
@@ -545,7 +555,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
 <script defer src="/data/site-data.js"></script>
 <script type="module" src="/assets/debats.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=3b1d0ea8a6"></script>
+<script defer src="/assets/app.js?v=f4e3ba57ae"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->
