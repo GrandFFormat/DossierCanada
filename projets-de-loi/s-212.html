@@ -65,7 +65,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=8b612b5569">
+<link rel="stylesheet" href="/assets/app.css?v=6dddafdca3">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -182,22 +182,14 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
           <a class="a3-seeall" data-view="projets" href="/projets-de-loi" data-i18n="a3.seeall">Tout voir →</a>
         </div>
         <div id="apercuBills"><!--ssr--><!--/ssr--></div>
-        <div class="a3-tiles">
-          <a class="a3-tile" data-view="votes" href="/votes">
-            <span class="a3-tile-tag" style="background:var(--lime)" data-i18n="nav.votes">Votes</span>
-            <p data-i18n="a3.tileVotes">Chaque vote nominal — qui a voté quoi, et par quelle marge.</p>
-          </a>
-          <a class="a3-tile" data-view="lexique" href="/lexique">
-            <span class="a3-tile-tag" style="background:var(--cyan)" data-i18n="nav.lexique">Lexique</span>
-            <p data-i18n="a3.tileLex">Le jargon parlementaire traduit en langage clair, sans cours de science po.</p>
-          </a>
-        </div>
       </main>
       <!-- Colonne de droite (Martin, 14 nov. 2026) : « Aux comités des Communes » remplace « Comment ça marche »
            et « Quoi de neuf ». Réunions de comité sur un projet de loi, résumées depuis les Témoignages
            (scrapers/debats.js → data/debats-site.json, assets/debats.js). -->
       <aside class="a3-right a3-comites"><div id="debats" data-src="/data/debats-site.json" data-max="4" hidden></div></aside>
     </div>
+    <!-- Ce qu'on ouvre à gauche ou à droite descend ici, sur toute la largeur (a3Deplacer, assets/app.js). -->
+    <div id="a3Ouvert" class="a3-ouvert"></div>
 
   </section>
 
@@ -620,7 +612,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
 <script defer src="/data/site-data.js"></script>
 <script type="module" src="/assets/debats.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=4e1e19c544"></script>
+<script defer src="/assets/app.js?v=48111e7e45"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->
