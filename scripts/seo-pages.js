@@ -58,7 +58,7 @@ export const LANGS = ['fr', 'en'];
 // index.html. `h1` = id du titre promu en <h1> sur la page de la vue ; `title` = id d'un
 // titre dont le TEXTE est écrit par le JavaScript (il porte le compte) et donc pré-rendu.
 export const SSR = {
-  apercu:    { regions: ['a3intro', 'apercuBills', 'newsList'], h1: null, title: null },
+  apercu:    { regions: ['a3intro', 'apercuBills'], h1: null, title: null },
   ministres: { regions: ['partyFilters', 'deputesList'], h1: 'deputesCountTitle', title: 'deputesCountTitle' },
   cabinet:   { regions: ['ministresGrid', 'ministresCount2'], h1: 'cabinetTitle', title: 'cabinetTitle' },
   projets:   { regions: ['sortToggle', 'statusFilters', 'stepFilters', 'billsList'], h1: 'projetsCountTitle', title: 'projetsCountTitle' },

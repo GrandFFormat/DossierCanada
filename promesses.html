@@ -62,7 +62,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=e2863c374c">
+<link rel="stylesheet" href="/assets/app.css?v=2c35695898">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -179,25 +179,14 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <div id="challengedList"></div>
     </section>
 
-    <div class="apercu-3col">
-      <aside class="a3-left">
-        <p class="a3-intro" id="a3intro"><!--ssr--><!--/ssr--></p>
-        <h2 class="a3-hiw-h" data-i18n="a3.hiw">Comment ça marche</h2>
-        <div class="a3-steps">
-          <div class="a3-step"><span class="a3-step-n" style="background:var(--yellow)">1</span><p data-i18n="a3.step1">Un projet de loi vous semble opaque ? Demandez une explication.</p></div>
-          <div class="a3-step"><span class="a3-step-n" style="background:var(--pink)">2</span><p data-i18n="a3.step2">Les demandes s'additionnent — les plus demandés passent en priorité.</p></div>
-          <div class="a3-step"><span class="a3-step-n" style="background:var(--cyan)">3</span><p data-i18n="a3.step3">On pousse pour une explication en langage clair, sourcée.</p></div>
-        </div>
-      </aside>
+    <div class="apercu-3col apercu-2col">
       <main class="a3-main">
+        <p class="a3-intro" id="a3intro"><!--ssr--><!--/ssr--></p>
         <div class="a3-main-head">
           <h2 data-i18n="h.billsrecent">Projets de loi récemment actifs</h2>
           <a class="a3-seeall" data-view="projets" href="/projets-de-loi" data-i18n="a3.seeall">Tout voir →</a>
         </div>
         <div id="apercuBills"><!--ssr--><!--/ssr--></div>
-        <!-- « Aux comités des Communes » (14 nov. 2026) : les réunions de comité sur un projet de loi, résumées
-             depuis les Témoignages (scrapers/debats.js → data/debats-site.json, assets/debats.js). Caché s'il n'y a rien. -->
-        <div id="debats" data-src="/data/debats-site.json" data-max="3" data-compact="1" hidden></div>
         <div class="a3-tiles">
           <a class="a3-tile" data-view="votes" href="/votes">
             <span class="a3-tile-tag" style="background:var(--lime)" data-i18n="nav.votes">Votes</span>
@@ -209,11 +198,10 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
           </a>
         </div>
       </main>
-      <aside class="a3-right">
-        <h2 class="a3-hiw-h" data-i18n="h.quoideneuf">Quoi de neuf</h2>
-        <div id="sittingBox"></div>
-        <div id="newsList"><!--ssr--><!--/ssr--></div>
-      </aside>
+      <!-- Colonne de droite (Martin, 14 nov. 2026) : « Aux comités des Communes » remplace « Comment ça marche »
+           et « Quoi de neuf ». Réunions de comité sur un projet de loi, résumées depuis les Témoignages
+           (scrapers/debats.js → data/debats-site.json, assets/debats.js). -->
+      <aside class="a3-right a3-comites"><div id="debats" data-src="/data/debats-site.json" data-max="4" hidden></div></aside>
     </div>
 
   </section>
@@ -361,7 +349,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     <div class="page-band">
       <div>
         <nav class="crumbs" aria-label="Fil d'Ariane"><a data-view="apercu" href="/">DossierCanada</a> <span aria-hidden="true">›</span> <span aria-current="page" data-i18n="nav.promesses">Promesses</span></nav>
-        <h1 class="band-title" id="promessesCountTitle">Promesses électorales</h1>
+        <h1 class="band-title" id="promessesCountTitle">12 promesses, et ce qui a suivi</h1>
         <div class="sub" data-i18n="prom.bandsub">Ce qui a été promis en 2025, et ce que la législature en a fait. Sans verdict.</div>
       </div>
     </div>
