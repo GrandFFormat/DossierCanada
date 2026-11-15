@@ -36,6 +36,8 @@ const BASE = 'https://www.ourcommons.ca';
 const UA = { 'User-Agent': 'Mozilla/5.0 (compatible; DossierCanada/1.0; +https://dossiercanada.ca/)' };
 const SORTIE = 'data/debats.json';
 const SORTIE_SITE = 'data/debats-site.json';
+// Toutes les réunions résumées, sans limite de jours : la page Archives les montre jour par jour.
+const SORTIE_ARCHIVES = 'data/debats-archives.json';
 const attendre = (ms) => new Promise((r) => setTimeout(r, ms));
 
 const decoder = (s) => String(s ?? '').replace(/[‐‑‒–]/g, '-').replace(/&nbsp;/g, ' ').replace(/&#0?39;|&rsquo;|&#8217;/g, '’').replace(/&laquo;|&#171;/g, '«').replace(/&raquo;|&#187;/g, '»')
@@ -203,14 +205,16 @@ async function main() {
     writeFileSync(SORTIE, JSON.stringify({ generatedAt: new Date().toISOString(), source: `${BASE}/Committees/fr/Meetings`, modele: MODELE, dernierPassage: { appels, entree, sortie, coutUSD: Number(cout.toFixed(4)) }, seances }, null, 1), 'utf8');
     const resumees = seances.filter((s) => s.resume);
     const joursSite = [...new Set(resumees.map((s) => s.date))].slice(0, 12);
-    writeFileSync(SORTIE_SITE, JSON.stringify({ generatedAt: new Date().toISOString(), seances: resumees.filter((s) => joursSite.includes(s.date)).slice(0, 80).map((s) => {
+    const pourSite = (s) => {
       const b = billDe(s.pls[0]);
       return {
         id: s.id, date: s.date, url: s.url, commissionNom: /^projet de loi/i.test(s.comiteNom ?? '') || !s.comiteNom ? `Comité législatif (${s.comite})` : `${s.comiteNom} (${s.comite})`, commissionNomEn: /^projet de loi/i.test(s.comiteNom ?? '') || !s.comiteNom ? `Legislative committee (${s.comite})` : `${s.comite} committee`,
         comite: s.comite, typeNom: 'Comité', typeNomEn: 'Committee', sujets: s.sujets, pls: s.pls, titreLoi: b?.shortTitle?.fr || b?.title?.fr || null, titreLoiEn: b?.shortTitle?.en || b?.title?.en || null,
         heures: s.heures ? { debut: null, fin: null, texte: s.heures } : null, resume: s.resume,
       };
-    }) }), 'utf8');
+    };
+    writeFileSync(SORTIE_SITE, JSON.stringify({ generatedAt: new Date().toISOString(), seances: resumees.filter((s) => joursSite.includes(s.date)).slice(0, 80).map(pourSite) }), 'utf8');
+    writeFileSync(SORTIE_ARCHIVES, JSON.stringify({ generatedAt: new Date().toISOString(), seances: resumees.map(pourSite) }), 'utf8');
   }
   console.log(`Débats (Communes) : ${seances.filter((s) => s.resume).length} résumées · ce passage : ${appels} appel(s), ${entree} + ${sortie} jetons ≈ ${cout.toFixed(3)} $ US.`);
 }

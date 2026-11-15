@@ -72,6 +72,18 @@ export async function rendreDebats(zone) {
   if (pl) seances = seances.filter((s) => s.pls?.includes(pl));
   if (!seances.length) { zone.hidden = true; return; }
   seances.sort((a, b) => b.date.localeCompare(a.date) || (a.commissionNom ?? '').localeCompare(b.commissionNom ?? ''));
+  // Page Archives (data-archive="1") : toutes les réunions résumées, regroupées par jour, le plus récent ouvert.
+  if (zone.dataset.archive === '1') {
+    const jours = [...new Set(seances.map((s) => s.date))];
+    zone.innerHTML = `<section class="db db-archives" aria-labelledby="dbArchTitre">
+      <div class="db-tete"><h2 id="dbArchTitre">${lang === 'en' ? 'In House of Commons committees, day by day' : 'Aux comités des Communes, jour par jour'}</h2></div>
+      ${jours.map((j, i) => { const du = seances.filter((s) => s.date === j); return `<details class="db-jour"${i === 0 ? ' open' : ''}><summary>${echapper(dateLongue(j, lang))} · ${du.length} ${lang === 'en' ? (du.length > 1 ? 'meetings' : 'meeting') : (du.length > 1 ? 'réunions' : 'réunion')}</summary>
+        <div class="db-cartes">${du.map((s) => carte(s, lang, t, { lienFiche: true, compact: false })).join('')}</div></details>`; }).join('')}
+      <p class="db-note">${t.note}</p>
+    </section>`;
+    zone.hidden = false;
+    return;
+  }
   const jour = seances[0].date;
   const hier = new Date(Date.now() - 864e5).toISOString().slice(0, 10);
   const auj = new Date().toISOString().slice(0, 10);
