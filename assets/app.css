@@ -1498,8 +1498,13 @@ nav.tabs .tab-villes li a{border:none; padding:8px 12px; font-family:'Archivo',s
 
 /* Accueil (14 nov. 2026, Martin) : une seule colonne. Sous la bande « challenge », les projets
    récemment actifs, chacun sur une ligne ; puis les 4 réunions « Aux comités des Communes », 2 par 2. */
-.apercu-3col.apercu-2col{ grid-template-columns:1fr; }
-.apercu-2col .a3-main{ border-right:none; border-bottom:3px solid var(--ink); }
+.apercu-3col.apercu-2col{ grid-template-columns:minmax(0,1fr) minmax(0,1fr); }
+.apercu-2col .a3-main{ border-right:3px solid var(--ink); }
+.a3-ouvert{ max-width:1280px; margin:0 auto; padding:0 20px; }
+.a3-ouvert:not(:empty){ padding:20px; border-top:3px solid var(--ink); }
+.a3-ouvert .db-carte{ margin:0; }
+.a3-ouvert .ab-row .ab-title{ white-space:normal; }
+@media (max-width:900px){ .apercu-3col.apercu-2col{ grid-template-columns:1fr; } .apercu-2col .a3-main{ border-right:none; border-bottom:3px solid var(--ink); } }
 .apercu-2col #apercuBills .ab-head{ flex-wrap:nowrap; padding:8px 14px; }
 .apercu-2col #apercuBills .ab-title{ order:0; flex:1 1 auto; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-size:15px; }
 .a3-comites .db{ margin:0; }
@@ -1509,7 +1514,8 @@ nav.tabs .tab-villes li a{border:none; padding:8px 12px; font-family:'Archivo',s
 .archives-comites .db-jour[open] > summary{ border-bottom:3px solid var(--ink); }
 .archives-comites .db-jour .db-cartes{ display:grid; grid-template-columns:1fr; gap:12px; padding:14px; }
 /* Fermées côte à côte, 2 par 2, en haut ; l'ouverte passe dessous, sur toute la largeur. */
-.a3-comites .db-cartes, .archives-comites .db-jour .db-cartes{ grid-template-columns:repeat(2, minmax(0,1fr)); align-items:start; }
+.archives-comites .db-jour .db-cartes{ grid-template-columns:repeat(2, minmax(0,1fr)); align-items:start; }
+.a3-comites .db-cartes{ grid-template-columns:1fr !important; }
 .a3-comites .db-cartes{ display:grid; gap:12px; }
 .a3-comites details.db-carte[open], .archives-comites details.db-carte[open]{ grid-column:1 / -1; order:99; }
 @media (max-width:700px){ .a3-comites .db-cartes, .archives-comites .db-jour .db-cartes{ grid-template-columns:1fr; } }

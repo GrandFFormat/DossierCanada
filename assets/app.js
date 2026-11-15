@@ -3424,10 +3424,30 @@ function apercuBillRow(b, ctx){
     <div class="ab-detail">${full}</div>
   </div>`;
 }
+/* ACCUEIL (14 nov. 2026, Martin) : projets et comités côte à côte, fermés ; ce qu'on ouvre (un
+   projet ou une réunion) descend dans #a3Ouvert, sur toute la largeur, et remonte à sa place en se
+   refermant. Un seul à la fois : ouvrir l'un referme celui qui y était. */
+function a3Deplacer(el, ouvert){
+  const zone = document.getElementById('a3Ouvert');
+  if(!zone || !el) return;
+  if(ouvert){
+    if(el.parentElement === zone) return;
+    const deja = zone.firstElementChild;
+    if(deja){ if(deja.tagName === 'DETAILS') deja.open = false; else { deja.classList.remove('open'); a3Deplacer(deja, false); } }
+    document.querySelectorAll('.a3-comites details.db-carte[open]').forEach(d => { if(d !== el) d.open = false; });
+    const marque = document.createComment('a3');
+    el.before(marque); el._a3 = marque;
+    zone.appendChild(el);
+  } else if(el._a3){
+    el._a3.replaceWith(el); el._a3 = null;
+  }
+}
+window.a3Deplacer = a3Deplacer;
 function toggleApercuBill(rowId){
   const r = document.getElementById(rowId);
   if(!r) return;
   const opened = r.classList.toggle('open');
+  if(r.closest('#apercuBills') || r._a3) a3Deplacer(r, opened);
   // À l'ouverture on déplie aussi le résumé : sinon la description restait
   // cachée derrière un second clic, ce qui n'était pas devinable.
   if(opened){

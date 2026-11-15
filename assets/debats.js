@@ -45,8 +45,14 @@ function surligner(texte) {
 function accordeon(boite) {
   if (!boite) return;
   const cartes = [...boite.querySelectorAll(':scope > details.db-carte')];
-  if (cartes[0]) cartes[0].open = true;
-  for (const d of cartes) d.addEventListener('toggle', () => { if (d.open) for (const x of cartes) if (x !== d) x.open = false; });
+  const accueil = !!boite.closest('.a3-comites');
+  // Sur l'accueil, la première s'ouvre en bas une fois app.js chargé (a3Deplacer).
+  const ouvrir = () => { if (cartes[0]) cartes[0].open = true; };
+  if (!accueil || window.a3Deplacer) ouvrir(); else window.addEventListener('load', ouvrir, { once: true });
+  for (const d of cartes) d.addEventListener('toggle', () => {
+    if (d.open) for (const x of cartes) if (x !== d) x.open = false;
+    if (accueil && window.a3Deplacer) window.a3Deplacer(d, d.open);
+  });
 }
 
 function carte(s, lang, t, { lienFiche = true, compact = false } = {}) {
