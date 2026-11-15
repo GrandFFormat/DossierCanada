@@ -31,6 +31,8 @@ const SCRAPERS = [
   // Lois et règlements touchés (XML de première lecture, parl.ca) : cache permanent par projet.
   'scrape:bill-laws',
   'scrape:bill-ai-summaries',
+  // Réunions de comité sur un projet de loi, résumées par Haiku depuis les Témoignages (≈ 4 ¢ la réunion).
+  'scrape:debats',
   'scrape:deputes',
   'scrape:depute-emails',
   'scrape:votes',

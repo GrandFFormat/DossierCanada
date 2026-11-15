@@ -62,7 +62,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=08ff4ef3cf">
+<link rel="stylesheet" href="/assets/app.css?v=e2863c374c">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -195,6 +195,9 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
           <a class="a3-seeall" data-view="projets" href="/en/bills" data-i18n="a3.seeall">See all →</a>
         </div>
         <div id="apercuBills"><!--ssr--><!--/ssr--></div>
+        <!-- « Aux comités des Communes » (14 nov. 2026) : les réunions de comité sur un projet de loi, résumées
+             depuis les Témoignages (scrapers/debats.js → data/debats-site.json, assets/debats.js). Caché s'il n'y a rien. -->
+        <div id="debats" data-src="/data/debats-site.json" data-max="3" data-compact="1" hidden></div>
         <div class="a3-tiles">
           <a class="a3-tile" data-view="votes" href="/en/votes">
             <span class="a3-tile-tag" style="background:var(--lime)" data-i18n="nav.votes">Votes</span>
@@ -645,8 +648,9 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages et mis en cache, au lieu d'être recopié dans chacune. Chemin ABSOLU : les
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
+<script type="module" src="/assets/debats.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=a2e614c0e4"></script>
+<script defer src="/assets/app.js?v=4e1e19c544"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

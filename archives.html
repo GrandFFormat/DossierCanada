@@ -195,6 +195,9 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
           <a class="a3-seeall" data-view="projets" href="/projets-de-loi" data-i18n="a3.seeall">Tout voir →</a>
         </div>
         <div id="apercuBills"><!--ssr--><!--/ssr--></div>
+        <!-- « Aux comités des Communes » (14 nov. 2026) : les réunions de comité sur un projet de loi, résumées
+             depuis les Témoignages (scrapers/debats.js → data/debats-site.json, assets/debats.js). Caché s'il n'y a rien. -->
+        <div id="debats" data-src="/data/debats-site.json" data-max="3" data-compact="1" hidden></div>
         <div class="a3-tiles">
           <a class="a3-tile" data-view="votes" href="/votes">
             <span class="a3-tile-tag" style="background:var(--lime)" data-i18n="nav.votes">Votes</span>
@@ -566,6 +569,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages et mis en cache, au lieu d'être recopié dans chacune. Chemin ABSOLU : les
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
+<script type="module" src="/assets/debats.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script defer src="/assets/app.js?v=4e1e19c544"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
