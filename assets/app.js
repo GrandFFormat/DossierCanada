@@ -347,6 +347,8 @@ function applyLanguage(){
   document.documentElement.lang = currentLang === 'en' ? 'en' : 'fr';
   { const _e = document.getElementById('footerDafr'); if(_e) _e.href = currentLang === 'en' ? 'https://dafrsolution.com/en' : 'https://dafrsolution.com'; }
   if(typeof renderHeaderDate === 'function') renderHeaderDate(currentLang);
+  // Réunions de comité (assets/debats.js) : on vide la zone « ouverte » de l'accueil et on redessine dans la langue.
+  { const o = document.getElementById('a3Ouvert'); if(o) [...o.children].forEach(x => { x.classList.remove('open'); if(x.tagName === 'DETAILS') x.open = false; a3Deplacer(x, false); }); if(window.rendreTousDebats) window.rendreTousDebats(); }
   if(typeof syncHead === 'function') syncHead(viewFromPath()); else document.title = t('meta.title');
   // Aria-labels that live outside data-i18n (buttons with icon-only content).
   const ariaMap = [

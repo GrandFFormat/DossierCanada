@@ -63,7 +63,7 @@ function carte(s, lang, t, { lienFiche = true, compact = false } = {}) {
   const titre = s.sujets?.[0] ?? '';
   // « Étude détaillée du projet de loi n° 1, Loi constitutionnelle… » → le titre de loi, après la virgule.
   const loi = (en ? s.titreLoiEn : s.titreLoi) || titre.replace(/^.*?projet de loi\s+[CS]-\d+\s*,?\s*/i, '');
-  const heures = s.heures?.texte || '';
+  const heures = en ? (s.heures?.texte || '').replace(/(\d+) h (\d+)/g, '$1:$2').replace(/(\d+) h\b/g, '$1:00').replace(/\((HNE|HAE)\)/, '(ET)') : (s.heures?.texte || '');
   const votes = (r.votes ?? []).map((v) => {
     const total = v.pour + v.contre + v.abstentions || 1;
     return `<div class="db-vote">
@@ -88,7 +88,7 @@ function carte(s, lang, t, { lienFiche = true, compact = false } = {}) {
 export async function rendreDebats(zone) {
   if (!zone) return;
   chargerStyle();
-  const lang = zone.dataset.lang || (location.pathname === '/en' || location.pathname.startsWith('/en/') || document.documentElement.lang === 'en' ? 'en' : 'fr');
+  const lang = zone.dataset.lang || (document.documentElement.lang === 'en' ? 'en' : 'fr');
   const t = T[lang];
   const max = Number(zone.dataset.max || 4);
   const pl = zone.dataset.pl ? String(zone.dataset.pl).toUpperCase() : null;
@@ -127,4 +127,6 @@ export async function rendreDebats(zone) {
   zone.hidden = false;
 }
 
-for (const zone of document.querySelectorAll('[data-debats], #debats')) rendreDebats(zone);
+// Le bouton FR/EN de app.js redessine les blocs (window.rendreTousDebats).
+window.rendreTousDebats = () => { for (const zone of document.querySelectorAll('[data-debats], #debats')) rendreDebats(zone); };
+window.rendreTousDebats();
