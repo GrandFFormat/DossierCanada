@@ -3502,7 +3502,7 @@ function toggleApercuBill(rowId){
 function renderApercuBills(){
   const el = document.getElementById('apercuBills');
   if(!el) return;
-  el.innerHTML = bills.slice(0,4).map(b => apercuBillRow(b, 'ap')).join('');
+  el.innerHTML = bills.slice(0,8).map(b => apercuBillRow(b, 'ap')).join('');
 }
 
 // Partage d'un projet de loi. Message neutre + lien profond /projets-de-loi?pl=NUM
