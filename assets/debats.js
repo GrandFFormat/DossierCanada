@@ -30,6 +30,25 @@ function chargerStyle() {
   const l = document.createElement('link'); l.rel = 'stylesheet'; l.href = FEUILLE; document.head.appendChild(l);
 }
 
+// Surlignement (14 nov. 2026, Martin) : les personnes nommées « Prénom Nom (Organisme ou parti) » en jaune,
+// les amendements (G-3, BQ-4, NPD-1…) en bleu, adopté en vert, rejeté en rouge. Sur du texte déjà échappé.
+const NOM = /((?:M\.|Mme|Mr\.|Ms\.)\s+)?([A-ZÀ-Ý][\p{L}’'-]+(?:\s+(?:de |du |van |von |le |la )?[A-ZÀ-Ý][\p{L}’'-]+){1,3})(\s*\()/gu;
+function surligner(texte) {
+  return echapper(texte)
+    .replace(NOM, (m, titre, nom, par) => `${titre ?? ''}<mark class="db-nom">${nom}</mark>${par}`)
+    .replace(/\b((?:G|BQ|NPD|NDP|PCC|CPC|PV|GP|LIB|PL|L)[-‑]\d+(?:\.\d+)?)\b/g, '<span class="db-code">$1</span>')
+    .replace(/\b(adopté(?:e|s|es)?|carried|adopted|agreed to)\b/gi, '<span class="db-oui">$1</span>')
+    .replace(/\b(rejeté(?:e|s|es)?|defeated|negatived|rejected)\b/gi, '<span class="db-non">$1</span>');
+}
+
+// Menu déroulant : la première réunion ouverte, les autres fermées ; en ouvrir une ferme les autres.
+function accordeon(boite) {
+  if (!boite) return;
+  const cartes = [...boite.querySelectorAll(':scope > details.db-carte')];
+  if (cartes[0]) cartes[0].open = true;
+  for (const d of cartes) d.addEventListener('toggle', () => { if (d.open) for (const x of cartes) if (x !== d) x.open = false; });
+}
+
 function carte(s, lang, t, { lienFiche = true, compact = false } = {}) {
   const en = lang === 'en';
   const r = s.resume;
@@ -42,7 +61,7 @@ function carte(s, lang, t, { lienFiche = true, compact = false } = {}) {
   const votes = (r.votes ?? []).map((v) => {
     const total = v.pour + v.contre + v.abstentions || 1;
     return `<div class="db-vote">
-      <div class="db-vote-objet">${echapper(en ? v.objetEn || v.objet : v.objet)} <span class="db-vote-res db-vote-${v.resultat}">${t[v.resultat] ?? t.autre}</span>${v.appelNominal ? ` <span class="db-vote-nominal">${t.nominal}</span>` : ''}</div>
+      <div class="db-vote-objet">${surligner(en ? v.objetEn || v.objet : v.objet)} <span class="db-vote-res db-vote-${v.resultat}">${t[v.resultat] ?? t.autre}</span>${v.appelNominal ? ` <span class="db-vote-nominal">${t.nominal}</span>` : ''}</div>
       <div class="db-barre" role="img" aria-label="${v.pour} ${t.pour}, ${v.contre} ${t.contre}, ${v.abstentions} ${v.abstentions > 1 ? t.absts : t.abst}"><i class="db-pour" style="width:${(v.pour / total) * 100}%"></i><i class="db-contre" style="width:${(v.contre / total) * 100}%"></i></div>
       <div class="db-legende"><b>${v.pour} ${t.pour}</b><b>${v.contre} ${t.contre}</b>${v.abstentions ? `<span>${v.abstentions} ${v.abstentions > 1 ? t.absts : t.abst}</span>` : ''}</div>
       ${v.qui ? `<div class="db-qui">${[['pour', v.qui.pour], ['contre', v.qui.contre]].map(([c, l]) => `<p><b>${t[c][0].toUpperCase() + t[c].slice(1)} :</b> ${l.map((p) => `${echapper(p.nom)}${p.parti ? ` <span class="db-parti">${echapper(p.parti)}</span>` : ''}`).join(', ')}</p>`).join('')}</div>` : ''}
@@ -50,14 +69,14 @@ function carte(s, lang, t, { lienFiche = true, compact = false } = {}) {
   }).join('');
   const pls = (s.pls ?? []).map((n) => `${t.pl} ${n}`).join(', ');
   const fiche = lienFiche && s.pls?.length ? `<a href="${en ? '/en/bills/' : '/projets-de-loi/'}${String(s.pls[0]).toLowerCase()}">${t.fiche} ${s.pls[0]} →</a>` : '';
-  return `<article class="db-carte">
-    <div class="db-haut"><span class="db-tag db-tag-type">${echapper(en ? s.typeNomEn : s.typeNom)}</span><span class="db-tag">${echapper(en ? s.commissionNomEn : s.commissionNom)}</span><span class="db-heure">${echapper(dateLongue(s.date, lang))}${heures ? ` · ${echapper(heures)}` : ''}</span></div>
-    <h3>${echapper(pls)}${loi ? ` — ${echapper(loi)}` : ''}</h3>
-    <ul>${puces.map((p) => `<li>${echapper(p)}</li>`).join('')}</ul>
+  return `<details class="db-carte">
+    <summary><div class="db-haut"><span class="db-tag db-tag-type">${echapper(en ? s.typeNomEn : s.typeNom)}</span><span class="db-tag">${echapper(en ? s.commissionNomEn : s.commissionNom)}</span><span class="db-heure">${echapper(dateLongue(s.date, lang))}${heures ? ` · ${echapper(heures)}` : ''}</span></div>
+    <h3>${echapper(pls)}${loi ? ` — ${echapper(loi)}` : ''}</h3></summary>
+    <ul>${puces.map((p) => `<li>${surligner(p)}</li>`).join('')}</ul>
     ${compact ? (r.votes?.length ? `<div class="db-votes-ligne">${en ? 'Votes' : 'Votes'} : ${[['adopte', en ? 'carried' : (r.votes.filter((v) => v.resultat === 'adopte').length > 1 ? 'adoptés' : 'adopté')], ['rejete', en ? 'defeated' : (r.votes.filter((v) => v.resultat === 'rejete').length > 1 ? 'rejetés' : 'rejeté')]].map(([k, mot]) => { const n = r.votes.filter((v) => v.resultat === k).length; return n ? `${n} ${mot}` : ''; }).filter(Boolean).join(', ')}</div>` : '') : votes ? `<div class="db-votes"><div class="db-votes-titre">${(r.votes.length > 1 ? t.votes : t.vote)}</div>${votes}</div>` : ''}
-    ${aSuivre && !compact ? `<div class="db-suite"><strong>${t.aSuivre} :</strong> ${echapper(aSuivre)}</div>` : ''}
+    ${aSuivre && !compact ? `<div class="db-suite"><strong>${t.aSuivre} :</strong> ${surligner(aSuivre)}</div>` : ''}
     <div class="db-liens">${fiche}<a href="${echapper(s.url)}" rel="noopener" target="_blank">${t.transcription} ↗</a></div>
-  </article>`;
+  </details>`;
 }
 
 export async function rendreDebats(zone) {
@@ -82,6 +101,7 @@ export async function rendreDebats(zone) {
         <div class="db-cartes">${du.map((s) => carte(s, lang, t, { lienFiche: true, compact: false })).join('')}</div></details>`; }).join('')}
       <p class="db-note">${t.note}</p>
     </section>`;
+    zone.querySelectorAll('.db-jour .db-cartes').forEach(accordeon);
     zone.hidden = false;
     return;
   }
@@ -97,6 +117,7 @@ export async function rendreDebats(zone) {
     <div class="db-cartes">${duJour.map((s) => carte(s, lang, t, { lienFiche: !pl, compact: zone.dataset.compact === '1' })).join('')}</div>
     <p class="db-note">${t.note}${auj !== jour && !pl ? '' : ''}</p>
   </section>`;
+  accordeon(zone.querySelector('.db-cartes'));
   zone.hidden = false;
 }
 

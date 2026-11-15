@@ -44,3 +44,15 @@
 .a3-main .db-carte ul{font-size:13.5px}
 .a3-main .db-tete h2{font-size:18px}
 .db-qui{margin-top:4px;font-size:12.5px;line-height:1.45}.db-qui p{margin:2px 0}.db-parti{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:700;padding:0 4px;border:1px solid currentColor}
+
+/* Menus déroulants et surlignement (14 nov. 2026, Martin). */
+details.db-carte > summary{list-style:none;cursor:pointer;position:relative;padding-right:28px}
+details.db-carte > summary::-webkit-details-marker{display:none}
+details.db-carte > summary::after{content:'▾';position:absolute;right:0;top:0;font-size:18px;transition:transform .15s}
+details.db-carte[open] > summary::after{transform:rotate(180deg)}
+details.db-carte:not([open]) h3{margin-bottom:0}
+details.db-carte:not([open]){box-shadow:3px 3px 0 var(--ink,var(--encre,#131313))}
+mark.db-nom{background:#FFE36E;color:#131313;padding:0 3px;font-weight:700;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.db-code{font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:.92em;background:#B0D4E8;color:#131313;padding:0 4px;border:1px solid #131313}
+.db-oui{color:#1d7a3a;font-weight:800}
+.db-non{color:#C8102E;font-weight:800}
