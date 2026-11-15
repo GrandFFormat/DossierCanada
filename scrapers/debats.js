@@ -169,10 +169,18 @@ async function main() {
     const d = new Date(Date.now() - i * 864e5);
     if (d.getUTCDay() !== 0 && d.getUTCDay() !== 6) jours.push(d.toISOString().slice(0, 10));
   }
+  // Engagement envers la Chambre (oct. 2026) : seulement le neuf, une requête à la fois, une seconde
+  // de pause. Un jour déjà lu n'est relu que s'il a une réunion sans Témoignages publiés ni résumé
+  // (ils paraissent une à trois semaines plus tard), ou au plus une fois en 7 jours s'il est récent.
+  const joursLus = ancien.joursLus ?? {};
+  const enAttente = new Set(ancien.seances.filter((s) => !s.resume && (s.rejets ?? 0) < 2).map((s) => s.date));
+  const ilYa = (d) => (Date.now() - Date.parse(d)) / 864e5;
+  const aLire = jours.filter((d) => !joursLus[d] || enAttente.has(d) || (ilYa(d) < 21 && ilYa(joursLus[d]) >= 7));
+  console.log(`  calendrier : ${aLire.length} jour(s) à lire sur ${jours.length}`);
   const trouvees = [];
-  for (const date of jours) {
-    try { trouvees.push(...await reunionsDu(date)); } catch (e) { console.warn(`  ${date} : calendrier illisible (${e.message})`); }
-    await attendre(400);
+  for (const date of aLire) {
+    try { trouvees.push(...await reunionsDu(date)); joursLus[date] = new Date().toISOString().slice(0, 10); } catch (e) { console.warn(`  ${date} : calendrier illisible (${e.message})`); }
+    await attendre(1000);
   }
   const aFaire = trouvees.filter((r) => r.url && !connues.get(r.id)?.resume && (connues.get(r.id)?.rejets ?? 0) < 2).sort((a, b) => b.date.localeCompare(a.date)).slice(0, MAX);
   console.log(`Débats (Communes) : ${trouvees.length} réunions de comité sur un projet de loi en ${jours.length} jours, ${trouvees.filter((r) => r.url).length} avec Témoignages, ${aFaire.length} à résumer.`);
@@ -197,12 +205,12 @@ async function main() {
       else { fiche = { ...fiche, resume, modele: MODELE, genereLe: new Date().toISOString(), rejets: 0 }; console.log(`  ${r.id} : ${r.date}, ${mots} mots, ${resume.puces.length} puces, ${resume.votes.length} vote(s)`); }
     } catch (e) { console.log(`  ${r.id} : échec (${e.message})`); }
     connues.set(r.id, fiche);
-    await attendre(600);
+    await attendre(1000);
   }
   const seances = [...connues.values()].sort((a, b) => b.date.localeCompare(a.date) || a.comite.localeCompare(b.comite));
   const cout = (entree * TARIF.entree + sortie * TARIF.sortie) / 1e6;
   if (!DRY) {
-    writeFileSync(SORTIE, JSON.stringify({ generatedAt: new Date().toISOString(), source: `${BASE}/Committees/fr/Meetings`, modele: MODELE, dernierPassage: { appels, entree, sortie, coutUSD: Number(cout.toFixed(4)) }, seances }, null, 1), 'utf8');
+    writeFileSync(SORTIE, JSON.stringify({ generatedAt: new Date().toISOString(), source: `${BASE}/Committees/fr/Meetings`, modele: MODELE, dernierPassage: { appels, entree, sortie, coutUSD: Number(cout.toFixed(4)) }, joursLus, seances }, null, 1), 'utf8');
     const resumees = seances.filter((s) => s.resume);
     const joursSite = [...new Set(resumees.map((s) => s.date))].slice(0, 12);
     const pourSite = (s) => {
