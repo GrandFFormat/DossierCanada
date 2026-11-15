@@ -45,6 +45,7 @@ function carte(s, lang, t, { lienFiche = true, compact = false } = {}) {
       <div class="db-vote-objet">${echapper(en ? v.objetEn || v.objet : v.objet)} <span class="db-vote-res db-vote-${v.resultat}">${t[v.resultat] ?? t.autre}</span>${v.appelNominal ? ` <span class="db-vote-nominal">${t.nominal}</span>` : ''}</div>
       <div class="db-barre" role="img" aria-label="${v.pour} ${t.pour}, ${v.contre} ${t.contre}, ${v.abstentions} ${v.abstentions > 1 ? t.absts : t.abst}"><i class="db-pour" style="width:${(v.pour / total) * 100}%"></i><i class="db-contre" style="width:${(v.contre / total) * 100}%"></i></div>
       <div class="db-legende"><b>${v.pour} ${t.pour}</b><b>${v.contre} ${t.contre}</b>${v.abstentions ? `<span>${v.abstentions} ${v.abstentions > 1 ? t.absts : t.abst}</span>` : ''}</div>
+      ${v.qui ? `<div class="db-qui">${[['pour', v.qui.pour], ['contre', v.qui.contre]].map(([c, l]) => `<p><b>${t[c][0].toUpperCase() + t[c].slice(1)} :</b> ${l.map((p) => `${echapper(p.nom)}${p.parti ? ` <span class="db-parti">${echapper(p.parti)}</span>` : ''}`).join(', ')}</p>`).join('')}</div>` : ''}
     </div>`;
   }).join('');
   const pls = (s.pls ?? []).map((n) => `${t.pl} ${n}`).join(', ');

@@ -161,6 +161,40 @@ async function resumer(client, r, texte) {
   return { resume: res, usage };
 }
 
+// QUI A VOTÉ (14 nov. 2026) : les noms d'un vote par appel nominal ne sont que dans le procès-verbal,
+// publié après les Témoignages. Lecture sans IA : « POUR : noms — 5 ; CONTRE : noms — 6 ». On ne garde
+// une liste que si son compte égale le décompte du résumé, vote par vote dans l'ordre ; sinon rien.
+const DEPUTES = (() => {
+  const d = existsSync('data/deputes.json') ? JSON.parse(readFileSync('data/deputes.json', 'utf8')) : [];
+  return (Array.isArray(d) ? d : d.deputes ?? []).map((x) => ({ cle: norm(x.name), parti: x.party?.code ?? null }));
+})();
+const partiDe = (nom) => DEPUTES.find((x) => x.cle === norm(nom))?.parti ?? null;
+function nominauxDe(html) {
+  const t = decoder(html.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/g, '').replace(/<[^>]+>/g, ' '));
+  const liste = (s) => s.split(/\s*,\s*/).map((n) => n.trim()).filter(Boolean).map((nom) => ({ nom, parti: partiDe(nom) }));
+  return [...t.matchAll(/POUR\s*:\s*(.+?)\s*[—-]\s*(\d+)\s*;?\s*CONTRE\s*:\s*(.+?)\s*[—-]\s*(\d+)/g)]
+    .map((m) => ({ pour: liste(m[1]), contre: liste(m[3]), nPour: Number(m[2]), nContre: Number(m[4]) }))
+    .filter((v) => v.pour.length === v.nPour && v.contre.length === v.nContre);
+}
+async function lireNominaux(connues) {
+  const cibles = [...connues.values()].filter((s) => s.url && !s.nominauxLus && s.resume?.votes?.some((v) => v.appelNominal));
+  for (const s of cibles) {
+    let html;
+    try { html = await page(s.url.replace(/\/temoignages$/, '/proces-verbal')); } catch (e) { continue; } // pas encore publié : on réessaie la nuit suivante
+    const trouves = nominauxDe(html);
+    const votes = s.resume.votes.filter((v) => v.appelNominal);
+    let k = 0, poses = 0;
+    for (const v of votes) {
+      const i = trouves.findIndex((x, j) => j >= k && x.nPour === v.pour && x.nContre === v.contre);
+      if (i < 0) continue;
+      v.qui = { pour: trouves[i].pour, contre: trouves[i].contre }; k = i + 1; poses++;
+    }
+    s.nominauxLus = new Date().toISOString().slice(0, 10);
+    console.log(`  ${s.id} : procès-verbal lu, ${poses}/${votes.length} vote(s) nominal(aux) avec les noms`);
+    await attendre(1000);
+  }
+}
+
 async function main() {
   const ancien = existsSync(SORTIE) ? JSON.parse(readFileSync(SORTIE, 'utf8')) : { seances: [] };
   const connues = new Map(ancien.seances.map((s) => [s.id, s]));
@@ -207,6 +241,7 @@ async function main() {
     connues.set(r.id, fiche);
     await attendre(1000);
   }
+  if (!DRY && JOURS > 0) await lireNominaux(connues);
   const seances = [...connues.values()].sort((a, b) => b.date.localeCompare(a.date) || a.comite.localeCompare(b.comite));
   const cout = (entree * TARIF.entree + sortie * TARIF.sortie) / 1e6;
   if (!DRY) {
