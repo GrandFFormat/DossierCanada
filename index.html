@@ -80,7 +80,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=8b612b5569">
+<link rel="stylesheet" href="/assets/app.css?v=0e6ad5640c">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -245,16 +245,6 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     </div>
     <div class="ab-detail"></div>
   </div><!--/ssr--></div>
-        <div class="a3-tiles">
-          <a class="a3-tile" data-view="votes" href="/votes">
-            <span class="a3-tile-tag" style="background:var(--lime)" data-i18n="nav.votes">Votes</span>
-            <p data-i18n="a3.tileVotes">Chaque vote nominal — qui a voté quoi, et par quelle marge.</p>
-          </a>
-          <a class="a3-tile" data-view="lexique" href="/lexique">
-            <span class="a3-tile-tag" style="background:var(--cyan)" data-i18n="nav.lexique">Lexique</span>
-            <p data-i18n="a3.tileLex">Le jargon parlementaire traduit en langage clair, sans cours de science po.</p>
-          </a>
-        </div>
       </main>
       <!-- Colonne de droite (Martin, 14 nov. 2026) : « Aux comités des Communes » remplace « Comment ça marche »
            et « Quoi de neuf ». Réunions de comité sur un projet de loi, résumées depuis les Témoignages
