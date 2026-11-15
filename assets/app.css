@@ -1496,8 +1496,12 @@ nav.tabs .tab-villes li a{border:none; padding:8px 12px; font-family:'Archivo',s
 .min-etat{opacity:.7; font-size:.9em;}
 @media (max-width:600px){ .min-dl{grid-template-columns:1fr;} .min-dl dd{margin-bottom:6px;} }
 
-/* Accueil (14 nov. 2026) : deux colonnes, les projets de loi et « Aux comités des Communes ». */
-.apercu-3col.apercu-2col{ grid-template-columns:minmax(0,5fr) minmax(0,6fr); }
-.apercu-2col .a3-main{ border-right:3px solid var(--ink); }
+/* Accueil (14 nov. 2026, Martin) : une seule colonne. Sous la bande « challenge », les projets
+   récemment actifs, chacun sur une ligne ; puis les 4 réunions « Aux comités des Communes », 2 par 2. */
+.apercu-3col.apercu-2col{ grid-template-columns:1fr; }
+.apercu-2col .a3-main{ border-right:none; border-bottom:3px solid var(--ink); }
+.apercu-2col #apercuBills .ab-head{ flex-wrap:nowrap; padding:8px 14px; }
+.apercu-2col #apercuBills .ab-title{ order:0; flex:1 1 auto; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-size:15px; }
 .a3-comites .db{ margin:0; }
-@media (max-width:900px){ .apercu-3col.apercu-2col{ grid-template-columns:1fr; } .apercu-2col .a3-main{ border-right:none; } }
+.a3-comites .db-cartes{ display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:14px; }
+@media (max-width:700px){ .a3-comites .db-cartes{ grid-template-columns:1fr; } }
