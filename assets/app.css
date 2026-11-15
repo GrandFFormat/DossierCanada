@@ -183,7 +183,7 @@
   /* ---------- NAV TABS ---------- */
   nav.tabs{
     max-width:1280px;margin:0 auto; padding:0;
-    display:grid; grid-template-columns:repeat(7,1fr); gap:0;
+    display:grid; grid-template-columns:repeat(6,1fr); gap:0;
     border-bottom:5px solid var(--ink); background:var(--card);
    color:var(--ink);}
   nav.tabs::-webkit-scrollbar{height:32px; width:32px;}

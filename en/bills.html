@@ -62,7 +62,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=a2bfef0b6f">
+<link rel="stylesheet" href="/assets/app.css?v=8b612b5569">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -122,14 +122,6 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
   <a class="active" data-view="projets" href="/en/bills" aria-current="page"><span class="n">04</span><span data-i18n="nav.projets">Bills</span></a>
   <a data-view="archives" href="/en/archives"><span class="n">05</span><span data-i18n="nav.archives">Archives</span></a>
   <a data-view="lexique" href="/en/glossary"><span class="n">06</span><span data-i18n="nav.lexique">Glossary</span></a>
-  <!-- Onglet 07 : menu des villes (7 nov. 2026). Aucune ville ici : un seul lien vers « Représentez votre ville » sur DQ. -->
-  <details class="villes-menu tab-villes" id="villesMenu">
-    <summary><span class="n">07</span><span data-i18n="nav.villes">Cities</span></summary>
-    <ul>
-      <li class="villes-rtv"><a href="https://dossierquebec.ca/represente-ta-ville?province=ca" target="_blank" rel="noopener">+ <span data-i18n="nav.rtv">Represent your city</span></a></li>
-    </ul>
-  </details>
-  <script>(function(){var m=document.getElementById('villesMenu');if(!m)return;var a=m.querySelector('a');function maj(){a.href='https://dossierquebec.ca/represente-ta-ville?province=ca'+(/^en/i.test(document.documentElement.lang)?'&lang=en':'');}maj();m.addEventListener('toggle',function(){if(m.open)maj();});document.addEventListener('click',function(e){if(m.open&&!m.contains(e.target))m.open=false;});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&m.open){m.open=false;m.querySelector('summary').focus();}});})();</script>
 </nav>
 </div>
 <script>

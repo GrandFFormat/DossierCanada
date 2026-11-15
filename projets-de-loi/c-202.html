@@ -65,7 +65,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=08ff4ef3cf">
+<link rel="stylesheet" href="/assets/app.css?v=8b612b5569">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -125,14 +125,6 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
   <a class="active" data-view="projets" href="/projets-de-loi" aria-current="page"><span class="n">04</span><span data-i18n="nav.projets">Projets de loi</span></a>
   <a data-view="archives" href="/archives"><span class="n">05</span><span data-i18n="nav.archives">Archives</span></a>
   <a data-view="lexique" href="/lexique"><span class="n">06</span><span data-i18n="nav.lexique">Lexique</span></a>
-  <!-- Onglet 07 : menu des villes (7 nov. 2026). Aucune ville ici : un seul lien vers « Représentez votre ville » sur DQ. -->
-  <details class="villes-menu tab-villes" id="villesMenu">
-    <summary><span class="n">07</span><span data-i18n="nav.villes">Villes</span></summary>
-    <ul>
-      <li class="villes-rtv"><a href="https://dossierquebec.ca/represente-ta-ville?province=ca" target="_blank" rel="noopener">+ <span data-i18n="nav.rtv">Représentez votre ville</span></a></li>
-    </ul>
-  </details>
-  <script>(function(){var m=document.getElementById('villesMenu');if(!m)return;var a=m.querySelector('a');function maj(){a.href='https://dossierquebec.ca/represente-ta-ville?province=ca'+(/^en/i.test(document.documentElement.lang)?'&lang=en':'');}maj();m.addEventListener('toggle',function(){if(m.open)maj();});document.addEventListener('click',function(e){if(m.open&&!m.contains(e.target))m.open=false;});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&m.open){m.open=false;m.querySelector('summary').focus();}});})();</script>
 </nav>
 </div>
 <script>
@@ -182,17 +174,9 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <div id="challengedList"></div>
     </section>
 
-    <div class="apercu-3col">
-      <aside class="a3-left">
-        <p class="a3-intro" id="a3intro"><!--ssr--><!--/ssr--></p>
-        <h2 class="a3-hiw-h" data-i18n="a3.hiw">Comment ça marche</h2>
-        <div class="a3-steps">
-          <div class="a3-step"><span class="a3-step-n" style="background:var(--yellow)">1</span><p data-i18n="a3.step1">Un projet de loi vous semble opaque ? Demandez une explication.</p></div>
-          <div class="a3-step"><span class="a3-step-n" style="background:var(--pink)">2</span><p data-i18n="a3.step2">Les demandes s'additionnent — les plus demandés passent en priorité.</p></div>
-          <div class="a3-step"><span class="a3-step-n" style="background:var(--cyan)">3</span><p data-i18n="a3.step3">On pousse pour une explication en langage clair, sourcée.</p></div>
-        </div>
-      </aside>
+    <div class="apercu-3col apercu-2col">
       <main class="a3-main">
+        <p class="a3-intro" id="a3intro"><!--ssr--><!--/ssr--></p>
         <div class="a3-main-head">
           <h2 data-i18n="h.billsrecent">Projets de loi récemment actifs</h2>
           <a class="a3-seeall" data-view="projets" href="/projets-de-loi" data-i18n="a3.seeall">Tout voir →</a>
@@ -209,11 +193,10 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
           </a>
         </div>
       </main>
-      <aside class="a3-right">
-        <h2 class="a3-hiw-h" data-i18n="h.quoideneuf">Quoi de neuf</h2>
-        <div id="sittingBox"></div>
-        <div id="newsList"><!--ssr--><!--/ssr--></div>
-      </aside>
+      <!-- Colonne de droite (Martin, 14 nov. 2026) : « Aux comités des Communes » remplace « Comment ça marche »
+           et « Quoi de neuf ». Réunions de comité sur un projet de loi, résumées depuis les Témoignages
+           (scrapers/debats.js → data/debats-site.json, assets/debats.js). -->
+      <aside class="a3-right a3-comites"><div id="debats" data-src="/data/debats-site.json" data-max="4" hidden></div></aside>
     </div>
 
   </section>
@@ -477,6 +460,8 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       </div>
     </div>
     <ul class="archives-liste" id="archivesListe"></ul>
+    <!-- Réunions de comité, jour par jour (14 nov. 2026) : scrapers/debats.js → data/debats-archives.json. -->
+    <div class="archives-comites" data-debats data-archive="1" data-src="/data/debats-archives.json" hidden></div>
   </section>
 
   <!-- LES RÈGLES DE SOURCES DU SITE (/regles, /en/rules) — comme sur DossierQuébec, on y
@@ -618,8 +603,9 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
      pages et mis en cache, au lieu d'être recopié dans chacune. Chemin ABSOLU : les
      pages /en/… sont un niveau plus bas. Doit précéder le script principal. -->
 <script defer src="/data/site-data.js"></script>
+<script type="module" src="/assets/debats.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=a2e614c0e4"></script>
+<script defer src="/assets/app.js?v=4e1e19c544"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->
