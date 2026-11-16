@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-15T15:08:23.775Z",
+ "generatedAt": "2026-11-16T17:39:16.757Z",
  "source": "https://www.ourcommons.ca/Committees/fr/Meetings",
  "modele": "claude-haiku-4-5",
  "dernierPassage": {
@@ -254,7 +254,57 @@
       "contre": 6,
       "abstentions": 0,
       "resultat": "rejete",
-      "appelNominal": true
+      "appelNominal": true,
+      "qui": {
+       "pour": [
+        {
+         "nom": "Xavier Barsalou-Duval",
+         "parti": "BQ"
+        },
+        {
+         "nom": "Adam Chambers",
+         "parti": "CPC"
+        },
+        {
+         "nom": "Harb Gill",
+         "parti": "CPC"
+        },
+        {
+         "nom": "Jason Groleau",
+         "parti": "CPC"
+        },
+        {
+         "nom": "Arnold Viersen",
+         "parti": "CPC"
+        }
+       ],
+       "contre": [
+        {
+         "nom": "Karim Bardeesy",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Doly Begum",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Michael Ma",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Bienvenu-Olivier Ntumba",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Dominique O'Rourke",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Patrick Weiler",
+         "parti": "LPC"
+        }
+       ]
+      }
      },
      {
       "objet": "Amendement BQ-1 incluant les véhicules dans la définition de produit électronique",
@@ -263,7 +313,57 @@
       "contre": 6,
       "abstentions": 0,
       "resultat": "rejete",
-      "appelNominal": true
+      "appelNominal": true,
+      "qui": {
+       "pour": [
+        {
+         "nom": "Xavier Barsalou-Duval",
+         "parti": "BQ"
+        },
+        {
+         "nom": "Adam Chambers",
+         "parti": "CPC"
+        },
+        {
+         "nom": "Harb Gill",
+         "parti": "CPC"
+        },
+        {
+         "nom": "Jason Groleau",
+         "parti": "CPC"
+        },
+        {
+         "nom": "Arnold Viersen",
+         "parti": "CPC"
+        }
+       ],
+       "contre": [
+        {
+         "nom": "Karim Bardeesy",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Doly Begum",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Michael Ma",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Bienvenu-Olivier Ntumba",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Dominique O'Rourke",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Patrick Weiler",
+         "parti": "LPC"
+        }
+       ]
+      }
      },
      {
       "objet": "Amendement G-1 précisant une loi existante",
@@ -281,7 +381,57 @@
       "contre": 1,
       "abstentions": 0,
       "resultat": "adopte",
-      "appelNominal": true
+      "appelNominal": true,
+      "qui": {
+       "pour": [
+        {
+         "nom": "Karim Bardeesy",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Doly Begum",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Adam Chambers",
+         "parti": "CPC"
+        },
+        {
+         "nom": "Harb Gill",
+         "parti": "CPC"
+        },
+        {
+         "nom": "Jason Groleau",
+         "parti": "CPC"
+        },
+        {
+         "nom": "Michael Ma",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Bienvenu-Olivier Ntumba",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Dominique O'Rourke",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Arnold Viersen",
+         "parti": "CPC"
+        },
+        {
+         "nom": "Patrick Weiler",
+         "parti": "LPC"
+        }
+       ],
+       "contre": [
+        {
+         "nom": "Xavier Barsalou-Duval",
+         "parti": "BQ"
+        }
+       ]
+      }
      },
      {
       "objet": "Projet de loi modifié",
@@ -298,7 +448,8 @@
    },
    "modele": "claude-haiku-4-5",
    "genereLe": "2026-11-15T02:33:43.169Z",
-   "rejets": 0
+   "rejets": 0,
+   "nominauxLus": "2026-11-16"
   },
   {
    "id": "CC-2026-11-02",
