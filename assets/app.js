@@ -217,7 +217,7 @@ const translations = {
     'aria.menu':"Open menu",
     'aria.menuClose':"Close menu",
     'aria.crumbs':"Breadcrumb",
-    'aria.top':"Back to top",
+    'aria.top':"Go to the top of the page",
     'cb.title':"Challenged bills",
     'cb.cta':"Challenge a bill",
     'maj.h':"Site updates",
