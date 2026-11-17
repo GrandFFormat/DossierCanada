@@ -1,6 +1,6 @@
 {
   "model": "claude-opus-5",
-  "generatedAt": "2026-11-16T17:38:47.481Z",
+  "generatedAt": "2026-11-17T17:16:11.212Z",
   "summaries": {
     "13538627": {
       "num": "C-201",
@@ -550,10 +550,10 @@
     },
     "13589531": {
       "num": "C-231",
-      "hash": "55b37382e7d438f89939e2f5c25336b521400816826125adc2bc44feae351395",
-      "fr": "- Vise les jeunes accusés d'une infraction liée à la drogue ou au cannabis, dans le système de justice pour adolescents.\n- Oblige le policier à se demander s'il convient d'orienter le jeune vers un programme de traitement de la toxicomanie approuvé par les autorités.\n- Exige le consentement du jeune avant une telle orientation par le policier.\n- Permet au tribunal pour adolescents, après un verdict de culpabilité, de retarder la peine pour que le jeune suive un programme de traitement.\n- Exige, pour ce report, l'accord du procureur général et du jeune lui-même.\n- Oblige le juge à tenir compte de la participation du jeune au programme au moment de fixer la peine.\n- Permet d'ajouter un traitement de la toxicomanie comme condition d'une ordonnance de surveillance ou d'un programme à suivre.\n- Interdit d'envoyer un jeune sous garde uniquement parce qu'il n'a pas respecté cette condition de traitement.",
-      "en": "- Targets young people accused of an offence linked to drugs or cannabis under the youth justice system.\n- Requires police officers to consider referring the young person to an approved addiction treatment program.\n- Makes the young person's consent necessary before any such police referral.\n- Lets the youth court delay sentencing after a guilty finding so the young person can take part in treatment.\n- Requires both the Attorney General and the young person to agree to that delay.\n- Requires the judge to take the young person's participation in the program into account when setting the sentence.\n- Allows courts to add addiction treatment as a condition of supervision orders or programs a young person must attend.\n- Bars putting a young person in custody solely for failing or refusing to follow that treatment condition.",
-      "at": "2026-10-16T10:00:51.447Z"
+      "hash": "7478369999dfc0bf54cfe3496db8cd80771a7a514978b972e1c4a14de05a6b42",
+      "fr": "- Modifie la loi qui encadre la justice pour les jeunes de 12 à 17 ans accusés d'un crime.\n- Oblige le policier à se demander s'il devrait diriger le jeune vers un programme de traitement de la toxicomanie, quand le geste reproché est lié à la drogue ou au cannabis.\n- Exige l'accord du jeune avant une telle orientation vers un programme de traitement.\n- Permet au tribunal pour adolescents de retarder la peine pour que le jeune suive un programme de traitement, si le crime est lié à la drogue ou au cannabis.\n- Exige l'accord du jeune et du procureur général avant de reporter ainsi la peine.\n- Oblige le juge à tenir compte de la participation du jeune au programme au moment de choisir la peine.\n- Permet au juge d'ajouter à certaines ordonnances l'obligation de suivre un programme de traitement de la toxicomanie.\n- Interdit d'envoyer un jeune en détention pour la seule raison qu'il n'a pas respecté cette obligation de traitement.",
+      "en": "- Changes the law that governs how young people aged 12 to 17 are handled when accused of a crime.\n- Requires a police officer to consider sending the young person to an addiction treatment program when the alleged offence is linked to drugs or cannabis.\n- Requires the young person's consent before any such referral to treatment.\n- Lets the youth court put off sentencing so the young person can take part in an addiction treatment program, when the offence is tied to drugs or cannabis.\n- Requires the agreement of both the young person and the Attorney General before sentencing is delayed.\n- Requires the judge to take the young person's participation in the program into account when deciding the sentence.\n- Lets the judge add attending an addiction treatment program as a condition in certain orders.\n- Bars the court from placing a young person in custody just because they failed or refused to follow that treatment condition.",
+      "at": "2026-11-17T17:15:40.910Z"
     },
     "13589558": {
       "num": "C-240",
