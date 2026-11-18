@@ -1,7 +1,7 @@
 {
  "source": "https://www.ourcommons.ca/committees (GetBriefs)",
  "session": "45-1",
- "scrapedAt": "2026-11-17T17:11:13.516Z",
+ "scrapedAt": "2026-11-18T16:47:50.277Z",
  "bills": {
   "13538627": {
    "num": "C-201",
@@ -338,7 +338,7 @@
   },
   "13541955": {
    "num": "S-218",
-   "activite": "\"2025-05-27\"",
+   "activite": "\"2026-11-17\"",
    "studies": [],
    "checked": {},
    "briefs": []
@@ -5300,7 +5300,7 @@
   },
   "13602863": {
    "num": "S-234",
-   "activite": "\"2025-11-25\"",
+   "activite": "\"2026-11-17\"",
    "studies": [],
    "checked": {},
    "briefs": []
@@ -9866,7 +9866,7 @@
   },
   "14167474": {
    "num": "S-249",
-   "activite": "\"2026-06-09\"",
+   "activite": "\"2026-06-08\"",
    "studies": [],
    "checked": {},
    "briefs": []
