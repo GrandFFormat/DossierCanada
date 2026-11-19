@@ -1519,3 +1519,4 @@ nav.tabs .tab-villes li a{border:none; padding:8px 12px; font-family:'Archivo',s
 .a3-comites .db-cartes{ display:grid; gap:12px; }
 .a3-comites details.db-carte[open], .archives-comites details.db-carte[open]{ grid-column:1 / -1; order:99; }
 @media (max-width:700px){ .a3-comites .db-cartes, .archives-comites .db-jour .db-cartes{ grid-template-columns:1fr; } }
+

@@ -381,6 +381,7 @@ function applyLanguage(){
   essai(() => renderStatusFilters());
   essai(() => renderStepFilters());
   essai(() => updateSortToggleLabel());
+  essai(() => updatePopularLabel());
   essai(() => updateMotionsToggleLabel()); essai(() => updatePetitionsToggleLabel());
   essai(() => updateMinistresSortLabel());
   essai(() => renderAccountBox());
@@ -3025,6 +3026,7 @@ let billsStepFilter = null;
 let billsLobbyFilter = false;
 let billsOmnibusFilter = false;
 let billsChallengeFilter = false;
+let billsPopular = false; // 🚀 classe par nombre de demandes d'explication
 // Projets challengés = ceux qui ont au moins une demande d'explication. La source
 // est l'agrégat Supabase flag_counts (challengedCache), chargé par renderChallenged :
 // tant qu'il n'est pas là, le filtre ne s'affiche pas plutôt que d'annoncer 0.
@@ -3107,7 +3109,7 @@ function renderStepFilters(){
   // Challengés : projets pour lesquels au moins une explication a été demandée.
   const nCh = challengedIds().size;
   const chChip = nCh ? `<span class="step-chip ch-chip ${billsChallengeFilter?'active':''}" onclick="setBillsChallengeFilter()" title="${isEn?'Bills citizens have asked to have explained':'Projets dont des citoyen·ne·s ont demandé l’explication'}">🔥 ${isEn?'Challenged':'Challengés'} <b>${nCh}</b></span>` : '';
-  el.innerHTML = opts.map(([val,label])=>`<span class="step-chip ${billsStepFilter===val?'active':''}" onclick="setBillsStepFilter('${val}')">${label}</span>`).join('') + lobChip + omChip + chChip;
+  el.innerHTML = opts.map(([val,label])=>`<span class="step-chip ${billsStepFilter===val?'active':''}" onclick="setBillsStepFilter('${val}')">${label}</span>`).join('') + lobChip + omChip + chChip + `<span class="step-chip pop-chip ${billsPopular?'active':''}" onclick="toggleBillsPopular()" title="${isEn?'Sorted by number of explanation requests from citizens':'Classés selon le nombre de demandes d’explication des citoyens'}">🚀 ${isEn?'Most popular':'Les plus populaires'}</span>`;
 }
 
 function setBillsStepFilter(n){
@@ -3155,6 +3157,12 @@ function updateSortToggleLabel(){
     : (isEn ? '↓ Most recent activity first' : '↓ Activité la plus récente');
   btn.textContent = billsSortDir === 'desc' ? desc : asc;
 }
+function toggleBillsPopular(){
+  billsPopular = !billsPopular;
+  updatePopularLabel();
+  renderBills();
+}
+function updatePopularLabel(){ renderStepFilters(); }
 function toggleBillsSort(){
   billsSortDir = billsSortDir === 'desc' ? 'asc' : 'desc';
   updateSortToggleLabel();
@@ -3213,7 +3221,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function renderBills(keyword){
   keyword = keyword !== undefined ? keyword : (document.getElementById('searchBills')?.value || '');
   const kw = norm(keyword);
-  const signature = [kw, billsStatusFilter, billsStepFilter, billsLobbyFilter, billsOmnibusFilter, billsChallengeFilter, billsSortDir].join('|');
+  const signature = [kw, billsStatusFilter, billsStepFilter, billsLobbyFilter, billsOmnibusFilter, billsChallengeFilter, billsSortDir, billsPopular].join('|');
   if(signature !== billsSignature){ billsSignature = signature; billsShown = BILLS_FIRST; }
   // Mémorisé pour que le bloc de lobbying puisse mettre en avant l'organisation
   // cherchée : trouver un projet sans voir pourquoi serait pire que ne rien trouver.
@@ -3247,6 +3255,11 @@ function renderBills(keyword){
     if(numeroCherche){
       const ea = String(a.num).toUpperCase() === numeroCherche, eb = String(b.num).toUpperCase() === numeroCherche;
       if(ea !== eb) return ea ? -1 : 1;
+    }
+    // 🚀 Populaires : le plus de demandes d'explication d'abord, puis l'activité récente.
+    if(billsPopular){
+      const ca = challengeCount(a.id), cb = challengeCount(b.id);
+      if(ca !== cb) return cb - ca;
     }
     // Filtre lobbying actif : on classe du plus lobbyé au moins lobbyé — c'est
     // la question qu'on pose en cliquant. Le sens du tri reste celui du bouton.
