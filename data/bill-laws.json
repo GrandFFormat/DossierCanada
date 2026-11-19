@@ -2,7 +2,7 @@
  "source": "https://www.parl.ca/DocumentViewer (XML de première lecture)",
  "session": "45-1",
  "parser": 2,
- "scrapedAt": "2026-11-18T16:52:06.271Z",
+ "scrapedAt": "2026-11-19T16:59:20.854Z",
  "bills": {
   "13538627": {
    "num": "C-201",
@@ -2626,6 +2626,28 @@
     "Loi visant à renforcer le système d’immigration et la frontière du Canada",
     "Loi visant à protéger la vie privée et les données des consommateurs",
     "Loi sur la Société canadienne des postes"
+   ]
+  },
+  "14332783": {
+   "num": "C-296",
+   "xml": null,
+   "en": [],
+   "fr": []
+  },
+  "14335040": {
+   "num": "C-42",
+   "xml": "https://www.parl.ca/Content/Bills/451/Government/C-42/C-42_1/C-42_E.xml",
+   "en": [
+    "Income Tax Act",
+    "Prohibition on the Purchase of Residential Property by Non-Canadians Act",
+    "Budget Implementation Act, 2022, No. 1",
+    "Prohibition on the Purchase of Residential Property by Non-Canadians Regulations"
+   ],
+   "fr": [
+    "Loi de l’impôt sur le revenu",
+    "Loi sur l’interdiction d’achat d’immeubles résidentiels par des non-Canadiens",
+    "Loi no 1 d’exécution du budget de 2022",
+    "Règlement sur l’interdiction d’achat d’immeubles résidentiels par des non-Canadiens"
    ]
   }
  }

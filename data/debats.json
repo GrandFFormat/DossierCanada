@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-18T16:53:23.485Z",
+ "generatedAt": "2026-11-19T17:01:14.074Z",
  "source": "https://www.ourcommons.ca/Committees/fr/Meetings",
  "modele": "claude-haiku-4-5",
  "dernierPassage": {
@@ -125,7 +125,53 @@
       "contre": 4,
       "abstentions": 0,
       "resultat": "adopte",
-      "appelNominal": true
+      "appelNominal": true,
+      "qui": {
+       "pour": [
+        {
+         "nom": "Fares Al Soud",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Tatiana Auguste",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Alana Hirtle",
+         "parti": "LPC"
+        },
+        {
+         "nom": "David Myles",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Bienvenu-Olivier Ntumba",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Zoe Royer",
+         "parti": "LPC"
+        }
+       ],
+       "contre": [
+        {
+         "nom": "Mel Arnold",
+         "parti": "CPC"
+        },
+        {
+         "nom": "Gabriel Hardy",
+         "parti": "CPC"
+        },
+        {
+         "nom": "Ned Kuruc",
+         "parti": "CPC"
+        },
+        {
+         "nom": "Andrew Lawton",
+         "parti": "CPC"
+        }
+       ]
+      }
      },
      {
       "objet": "Amendement CPC-1 (article 3, interdiction publicité paris en cours de match).",
@@ -134,7 +180,53 @@
       "contre": 6,
       "abstentions": 0,
       "resultat": "rejete",
-      "appelNominal": true
+      "appelNominal": true,
+      "qui": {
+       "pour": [
+        {
+         "nom": "Mel Arnold",
+         "parti": "CPC"
+        },
+        {
+         "nom": "Gabriel Hardy",
+         "parti": "CPC"
+        },
+        {
+         "nom": "Ned Kuruc",
+         "parti": "CPC"
+        },
+        {
+         "nom": "Andrew Lawton",
+         "parti": "CPC"
+        }
+       ],
+       "contre": [
+        {
+         "nom": "Fares Al Soud",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Tatiana Auguste",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Alana Hirtle",
+         "parti": "LPC"
+        },
+        {
+         "nom": "David Myles",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Bienvenu-Olivier Ntumba",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Zoe Royer",
+         "parti": "LPC"
+        }
+       ]
+      }
      },
      {
       "objet": "Amendement article 4 (délai deux ans au lieu d'un an, rapport au Parlement).",
@@ -143,7 +235,53 @@
       "contre": 4,
       "abstentions": 0,
       "resultat": "adopte",
-      "appelNominal": true
+      "appelNominal": true,
+      "qui": {
+       "pour": [
+        {
+         "nom": "Fares Al Soud",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Tatiana Auguste",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Alana Hirtle",
+         "parti": "LPC"
+        },
+        {
+         "nom": "David Myles",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Bienvenu-Olivier Ntumba",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Zoe Royer",
+         "parti": "LPC"
+        }
+       ],
+       "contre": [
+        {
+         "nom": "Mel Arnold",
+         "parti": "CPC"
+        },
+        {
+         "nom": "Gabriel Hardy",
+         "parti": "CPC"
+        },
+        {
+         "nom": "Ned Kuruc",
+         "parti": "CPC"
+        },
+        {
+         "nom": "Andrew Lawton",
+         "parti": "CPC"
+        }
+       ]
+      }
      },
      {
       "objet": "Amendement CPC-2 article 5 (délai trois ans au lieu de cinq, évaluation résultats).",
@@ -152,7 +290,57 @@
       "contre": 6,
       "abstentions": 0,
       "resultat": "rejete",
-      "appelNominal": true
+      "appelNominal": true,
+      "qui": {
+       "pour": [
+        {
+         "nom": "Mel Arnold",
+         "parti": "CPC"
+        },
+        {
+         "nom": "Martin Champoux",
+         "parti": "BQ"
+        },
+        {
+         "nom": "Gabriel Hardy",
+         "parti": "CPC"
+        },
+        {
+         "nom": "Ned Kuruc",
+         "parti": "CPC"
+        },
+        {
+         "nom": "Andrew Lawton",
+         "parti": "CPC"
+        }
+       ],
+       "contre": [
+        {
+         "nom": "Fares Al Soud",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Tatiana Auguste",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Alana Hirtle",
+         "parti": "LPC"
+        },
+        {
+         "nom": "David Myles",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Bienvenu-Olivier Ntumba",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Zoe Royer",
+         "parti": "LPC"
+        }
+       ]
+      }
      },
      {
       "objet": "Amendement G-1 article 2 (définition ministre).",
@@ -167,7 +355,8 @@
     "aSuivre": "Étude article par article complétée et projet de loi modifié rapporté à la Chambre; rédaction des rapports sur projets de loi jeudi; après la pause, examen du projet de loi C-34 (listes de témoins dues au greffier).\"",
     "aSuivreEn": "Article-by-article study completed and amended bill reported to the House; draft reports to be written Thursday; after break, examination of bill C-34 (witness lists due to clerk).\""
    },
-   "rejets": 0
+   "rejets": 0,
+   "nominauxLus": "2026-11-19"
   },
   {
    "id": "INDU-45-1-54",

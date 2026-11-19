@@ -269,7 +269,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     <div class="page-band">
       <div>
         <nav class="crumbs" aria-label="Fil d'Ariane"><a data-view="apercu" href="/">DossierCanada</a> <span aria-hidden="true">›</span> <span aria-current="page" data-i18n="nav.votes">Votes</span></nav>
-        <h1 class="band-title" id="votesCountTitle">194 votes aux Communes</h1>
+        <h1 class="band-title" id="votesCountTitle">195 votes aux Communes</h1>
         <div class="sub" data-i18n="votes.bandsub">Chaque vote nominatif — qui a voté quoi, et par quelle marge.</div>
       </div>
     </div>
@@ -296,6 +296,68 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
 
 
     <div id="votesList"><!--ssr--><div class="vote-card">
+    <div class="vc-head" onclick="toggleVoteCard('vc-c195', event)">
+      <span class="result-badge rejete">Rejetée</span>
+      <div class="vc-head-main">
+        <h3>Politique budgétaire (amendement)</h3>
+        <div class="vc-meta">2026-11-18 · Vote nominal · Motion</div>
+      </div>
+      <div class="vc-counts">
+        <span class="vcc pour"><b>129</b> Pour</span>
+        <span class="vcc contre"><b>189</b> Contre</span>
+        <span class="vcc abst"><b>12</b> pairés</span>
+      </div>
+      <span class="vc-toggle" id="vctog-vc-c195">+</span>
+    </div>
+    <div class="bar vc-bar" onclick="toggleVoteCard('vc-c195', event)">
+      <div class="seg pour" style="width:39.09%"></div>
+      <div class="seg contre" style="width:57.27%"></div>
+      <div class="seg abst" style="width:3.64%"></div>
+    </div>
+    <div class="vc-detail" id="vc-c195">
+      <div class="vc-pgrid"><div class="vc-pbox">
+        <div class="vc-phead" style="background:#D71920; color:#fff">LPC</div>
+        <div class="vc-pbody">
+          <div class="vc-prow"><span>Pour</span><b>0</b></div>
+          <div class="vc-prow"><span>Contre</span><b>166</b></div>
+          <div class="vc-prow"><span>Pairés</span><b>6</b></div>
+        </div>
+      </div><div class="vc-pbox">
+        <div class="vc-phead" style="background:#1A4782; color:#fff">CPC</div>
+        <div class="vc-pbody">
+          <div class="vc-prow"><span>Pour</span><b>129</b></div>
+          <div class="vc-prow"><span>Contre</span><b>0</b></div>
+          <div class="vc-prow"><span>Pairés</span><b>5</b></div>
+        </div>
+      </div><div class="vc-pbox">
+        <div class="vc-phead" style="background:#33B2CC; color:#fff">BQ</div>
+        <div class="vc-pbody">
+          <div class="vc-prow"><span>Pour</span><b>0</b></div>
+          <div class="vc-prow"><span>Contre</span><b>19</b></div>
+          <div class="vc-prow"><span>Pairés</span><b>1</b></div>
+        </div>
+      </div><div class="vc-pbox">
+        <div class="vc-phead" style="background:#F58220; color:var(--on-candy)">NDP</div>
+        <div class="vc-pbody">
+          <div class="vc-prow"><span>Pour</span><b>0</b></div>
+          <div class="vc-prow"><span>Contre</span><b>3</b></div>
+          <div class="vc-prow"><span>Pairés</span><b>0</b></div>
+        </div>
+      </div><div class="vc-pbox">
+        <div class="vc-phead" style="background:#3D9B35; color:#fff">GPC</div>
+        <div class="vc-pbody">
+          <div class="vc-prow"><span>Pour</span><b>0</b></div>
+          <div class="vc-prow"><span>Contre</span><b>1</b></div>
+          <div class="vc-prow"><span>Pairés</span><b>0</b></div>
+        </div>
+      </div></div>
+      
+      <div class="vc-foot">
+      <span class="vc-foot-note">Pairé n'est pas absent : deux élu·e·s de camps opposés s'entendent pour ne pas voter.</span>
+      <a class="bill-more" href="https://www.ourcommons.ca/members/fr/votes/45/1/195" target="_blank" rel="noopener" onclick="event.stopPropagation()">Procès-verbal officiel → ourcommons.ca</a>
+    </div>
+    </div>
+  </div><div class="vote-card">
     <div class="vc-head" onclick="toggleVoteCard('vc-c194', event)">
       <span class="result-badge rejete">Rejetée</span>
       <div class="vc-head-main">
@@ -605,69 +667,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <a class="bill-more" href="https://www.ourcommons.ca/members/fr/votes/45/1/190" target="_blank" rel="noopener" onclick="event.stopPropagation()">Procès-verbal officiel → ourcommons.ca</a>
     </div>
     </div>
-  </div><div class="vote-card">
-    <div class="vc-head" onclick="toggleVoteCard('vc-c189', event)">
-      <span class="result-badge adopte">Adoptée</span>
-      <div class="vc-head-main">
-        <h3>Neuvième rapport du Comité permanent de la justice et des droits de la personne</h3>
-        <div class="vc-meta">2026-11-04 · Vote nominal · Motion</div>
-      </div>
-      <div class="vc-counts">
-        <span class="vcc pour"><b>192</b> Pour</span>
-        <span class="vcc contre"><b>126</b> Contre</span>
-        <span class="vcc abst"><b>12</b> pairés</span>
-      </div>
-      <span class="vc-toggle" id="vctog-vc-c189">+</span>
-    </div>
-    <div class="bar vc-bar" onclick="toggleVoteCard('vc-c189', event)">
-      <div class="seg pour" style="width:58.18%"></div>
-      <div class="seg contre" style="width:38.18%"></div>
-      <div class="seg abst" style="width:3.64%"></div>
-    </div>
-    <div class="vc-detail" id="vc-c189">
-      <div class="vc-pgrid"><div class="vc-pbox">
-        <div class="vc-phead" style="background:#D71920; color:#fff">LPC</div>
-        <div class="vc-pbody">
-          <div class="vc-prow"><span>Pour</span><b>166</b></div>
-          <div class="vc-prow"><span>Contre</span><b>0</b></div>
-          <div class="vc-prow"><span>Pairés</span><b>6</b></div>
-        </div>
-      </div><div class="vc-pbox">
-        <div class="vc-phead" style="background:#1A4782; color:#fff">CPC</div>
-        <div class="vc-pbody">
-          <div class="vc-prow"><span>Pour</span><b>0</b></div>
-          <div class="vc-prow"><span>Contre</span><b>126</b></div>
-          <div class="vc-prow"><span>Pairés</span><b>5</b></div>
-        </div>
-      </div><div class="vc-pbox">
-        <div class="vc-phead" style="background:#33B2CC; color:#fff">BQ</div>
-        <div class="vc-pbody">
-          <div class="vc-prow"><span>Pour</span><b>20</b></div>
-          <div class="vc-prow"><span>Contre</span><b>0</b></div>
-          <div class="vc-prow"><span>Pairés</span><b>1</b></div>
-        </div>
-      </div><div class="vc-pbox">
-        <div class="vc-phead" style="background:#F58220; color:var(--on-candy)">NDP</div>
-        <div class="vc-pbody">
-          <div class="vc-prow"><span>Pour</span><b>5</b></div>
-          <div class="vc-prow"><span>Contre</span><b>0</b></div>
-          <div class="vc-prow"><span>Pairés</span><b>0</b></div>
-        </div>
-      </div><div class="vc-pbox">
-        <div class="vc-phead" style="background:#3D9B35; color:#fff">GPC</div>
-        <div class="vc-pbody">
-          <div class="vc-prow"><span>Pour</span><b>1</b></div>
-          <div class="vc-prow"><span>Contre</span><b>0</b></div>
-          <div class="vc-prow"><span>Pairés</span><b>0</b></div>
-        </div>
-      </div></div>
-      
-      <div class="vc-foot">
-      <span class="vc-foot-note">Pairé n'est pas absent : deux élu·e·s de camps opposés s'entendent pour ne pas voter.</span>
-      <a class="bill-more" href="https://www.ourcommons.ca/members/fr/votes/45/1/189" target="_blank" rel="noopener" onclick="event.stopPropagation()">Procès-verbal officiel → ourcommons.ca</a>
-    </div>
-    </div>
-  </div><button class="votes-more" onclick="loadMoreVotes()">Voir 6 de plus — 6 sur 194 affichés</button><!--/ssr--></div>
+  </div><button class="votes-more" onclick="loadMoreVotes()">Voir 6 de plus — 6 sur 195 affichés</button><!--/ssr--></div>
     <div class="info-box" id="votesInfoBox">
       <b data-i18n="votes.info.b">D'où vient le « qui a voté quoi »</b> <span data-i18n="votes.info.text">— pour chaque vote par appel nominal, la Chambre des communes publie le choix de chaque député·e : Pour, Contre ou pairé. Le détail derrière le bouton « + » de chaque vote reprend cette liste officielle (noscommunes.ca) telle quelle, sans estimation. Le parti indiqué est celui de la liste actuelle des député·e·s ; les personnes qui ont quitté la Chambre depuis sont regroupées à part, sous « Ancien·ne·s député·e·s ».</span>
     </div>
