@@ -65,7 +65,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=50d9259758">
+<link rel="stylesheet" href="/assets/app.css?v=7edbca76f7">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -249,7 +249,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       </div>
       <div class="filter-group">
         <button class="filter-hamburger" id="stepFilterBtn" onclick="toggleFilterPanel('step')" aria-expanded="false">☰ <span data-i18n="filter.etapes">Chambre</span></button>
-        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">Chambre des communes</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Sénat</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Projets avec des communications déclarées au Commissariat au lobbying">Lobbying <b>50</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Projets qui modifient plusieurs lois différentes à la fois, une par partie">Omnibus <b>16</b></span><span class="step-chip pop-chip " onclick="toggleBillsPopular()" title="Classés selon le nombre de demandes d’explication des citoyens">🚀 Les plus populaires</span><!--/ssr--></div>
+        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">Chambre des communes</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Sénat</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Projets avec des communications déclarées au Commissariat au lobbying">Lobbying <b>52</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Projets qui modifient plusieurs lois différentes à la fois, une par partie">Omnibus <b>16</b></span><span class="step-chip pop-chip " onclick="toggleBillsPopular()" title="Classés selon le nombre de demandes d’explication des citoyens">🚀 Les plus populaires</span><!--/ssr--></div>
       </div>
     </div>
     <p class="tous-votes" id="lienTousVotes"><a data-view="votes" href="/votes" data-i18n="projets.tousvotes">Tous les votes nominaux, motions comprises →</a></p>
@@ -301,7 +301,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     <div class="lob-head">
       <span class="lob-title">Lobbying déclaré</span>
       <span class="lob-count">36 communications · 7 organisations</span>
-      <span class="lob-asof">au 26 oct. 2026</span>
+      <span class="lob-asof">au 16 nov. 2026</span>
       <span class="lob-toggle">les 10 plus récentes +</span>
     </div>
     <div class="lob-orgs"><span class="lob-org">Canadian Gaming Association (CGA)<b>16</b></span><span class="lob-org">Canadian Gaming Association<b>11</b></span><span class="lob-org">Cardus<b>3</b></span><span class="lob-org">Société canadienne de médecine de laddiction<b>2</b></span><span class="lob-org">Canadian Lottery Coalition<b>2</b></span></div>
@@ -348,7 +348,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <div class="lob-who">Canadian Gaming Association (CGA)</div>
       <div class="lob-met">A rencontré : Andrew Scheer — Member of Parliament · Kenzie Potter — Chief of Staff</div>
     </a>
-      <p class="lob-note">Communications déclarées au Commissariat au lobbying du Canada qui nomment ce projet de loi. Le lobbying est une activité légale et publiquement enregistrée — ce décompte est un fait, pas un verdict. On ne compte que les communications dont la description nomme le numéro <em>et</em> le titre du projet : le total réel peut être plus élevé. Archive du registre lue le 26 octobre 2026 ; le Commissariat la republie environ tous les mois, et on la rafraîchit à la main.</p>
+      <p class="lob-note">Communications déclarées au Commissariat au lobbying du Canada qui nomment ce projet de loi. Le lobbying est une activité légale et publiquement enregistrée — ce décompte est un fait, pas un verdict. On ne compte que les communications dont la description nomme le numéro <em>et</em> le titre du projet : le total réel peut être plus élevé. Archive du registre lue le 16 novembre 2026 ; le Commissariat la republie environ tous les mois, et on la rafraîchit à la main.</p>
     </div>
   </div>
       </div>
@@ -648,7 +648,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
 <script defer src="/data/site-data.js"></script>
 <script type="module" src="/assets/debats.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=b505296775"></script>
+<script defer src="/assets/app.js?v=956b608d5b"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

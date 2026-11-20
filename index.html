@@ -80,7 +80,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=50d9259758">
+<link rel="stylesheet" href="/assets/app.css?v=7edbca76f7">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -191,27 +191,27 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
 
     <div class="apercu-3col apercu-2col">
       <main class="a3-main">
-        <p class="a3-intro" id="a3intro"><!--ssr-->Le Parlement du Canada sans jargon : <b>337</b> député·e·s, <b>198</b> projets de loi fédéraux et <b>190</b> votes nominaux aux Communes, tirés des sources officielles.<!--/ssr--></p>
+        <p class="a3-intro" id="a3intro"><!--ssr-->Le Parlement du Canada sans jargon : <b>337</b> député·e·s, <b>200</b> projets de loi fédéraux et <b>196</b> votes nominaux aux Communes, tirés des sources officielles.<!--/ssr--></p>
         <div class="a3-main-head">
           <h2 data-i18n="h.billsrecent">Projets de loi récemment actifs</h2>
           <a class="a3-seeall" data-view="projets" href="/projets-de-loi" data-i18n="a3.seeall">Tout voir →</a>
         </div>
-        <div id="apercuBills"><!--ssr--><div class="ab-row" id="abrow-ap-13985244">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13985244')">
-      <span class="ab-num">S-245</span>
-      <span class="ab-title">Loi instituant la journée nationale de la cérémonie des couvertures</span>
+        <div id="apercuBills"><!--ssr--><div class="ab-row" id="abrow-ap-13933855">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13933855')">
+      <span class="ab-num">S-6</span>
+      <span class="ab-title">Loi n° 4 visant à harmoniser le droit fédéral avec le droit civil du Québec et modifiant certaines lois pour que chaque version linguistique tienne compte du droit civil et de la common law</span>
       
       
       
-      <span class="depute-party" style="background:#1A4782; color:#fff">C</span>
+      <span class="depute-party" style="background:#5B6B7A; color:#fff">BRG</span>
       <span class="status-pill status-encours">En cours</span>
       <span class="ab-caret">▾</span>
     </div>
     <div class="ab-detail"></div>
-  </div><div class="ab-row" id="abrow-ap-14019015">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-14019015')">
-      <span class="ab-num">S-246</span>
-      <span class="ab-title">Loi concernant la reconnaissance du service en temps de guerre</span>
+  </div><div class="ab-row" id="abrow-ap-13602863">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13602863')">
+      <span class="ab-num">S-234</span>
+      <span class="ab-title">Loi concernant un cadre national sur les troubles du spectre de l’alcoolisation fœtale</span>
       
       
       
@@ -220,51 +220,27 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-caret">▾</span>
     </div>
     <div class="ab-detail"></div>
-  </div><div class="ab-row" id="abrow-ap-13588449">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13588449')">
-      <span class="ab-num">C-235</span>
-      <span class="ab-title">Loi modifiant le Code criminel (prolongation du délai préalable à la libération conditionnelle)</span>
+  </div><div class="ab-row" id="abrow-ap-13707662">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13707662')">
+      <span class="ab-num">S-239</span>
+      <span class="ab-title">Loi modifiant la Loi sur la concurrence</span>
       
       
       
-      <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
+      
       <span class="status-pill status-encours">En cours</span>
       <span class="ab-caret">▾</span>
     </div>
     <div class="ab-detail"></div>
-  </div><div class="ab-row" id="abrow-ap-14209079">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-14209079')">
-      <span class="ab-num">C-295</span>
-      <span class="ab-title">Loi modifiant la Loi sur l’Office d’investissement du régime de pensions du Canada (placements)</span>
+  </div><div class="ab-row" id="abrow-ap-13605049">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13605049')">
+      <span class="ab-num">C-10</span>
+      <span class="ab-title">Loi concernant le commissaire à la mise en œuvre des traités modernes</span>
       
       
-      
-      <span class="depute-party" style="background:#F58220; color:var(--on-candy)">NDP</span>
-      <span class="status-pill status-encours">En cours</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"></div>
-  </div><div class="ab-row" id="abrow-ap-13541987">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13541987')">
-      <span class="ab-num">S-220</span>
-      <span class="ab-title">Loi désignant le mois de mars comme Mois du patrimoine hellénique</span>
-      
-      
-      
-      <span class="depute-party" style="background:#6D5BA6; color:#fff">GSI</span>
-      <span class="status-pill status-encours">En cours</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"></div>
-  </div><div class="ab-row" id="abrow-ap-13583642">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13583642')">
-      <span class="ab-num">C-219</span>
-      <span class="ab-title">Loi modifiant la Loi sur le ministère des Affaires étrangères, du Commerce et du Développement, la Loi sur la justice pour les victimes de dirigeants étrangers corrompus (loi de Sergueï Magnitski) et la Loi sur les mesures économiques spéciales</span>
-      
-      
-      
-      <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
-      <span class="status-pill status-encours">En cours</span>
+      <span class="ab-lob" title="23 communications de lobbying déclarées">23</span>
+      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
+      <span class="status-pill status-sanctionne">Sanctionnée</span>
       <span class="ab-caret">▾</span>
     </div>
     <div class="ab-detail"></div>
@@ -276,18 +252,42 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       
       
       <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
+      <span class="status-pill status-sanctionne">Sanctionnée</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"></div>
+  </div><div class="ab-row" id="abrow-ap-14332783">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-14332783')">
+      <span class="ab-num">C-296</span>
+      <span class="ab-title">Loi édictant la Loi sur la non-régression des lois sur la protection de l’environnement, apportant des modifications corrélatives à la Loi sur le vérificateur général et à la Loi d’interprétation et des modifications connexes à la Loi visant à bâtir le Canada</span>
+      
+      
+      
+      <span class="depute-party" style="background:#33B2CC; color:#fff">BQ</span>
       <span class="status-pill status-encours">En cours</span>
       <span class="ab-caret">▾</span>
     </div>
     <div class="ab-detail"></div>
-  </div><div class="ab-row" id="abrow-ap-14310361">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-14310361')">
-      <span class="ab-num">S-8</span>
-      <span class="ab-title">Loi concernant certaines mesures liées au recyclage des produits de la criminalité, au financement des activités terroristes, au contournement de sanctions et à la détection d’objets inadmissibles dans les transmissions postales</span>
+  </div><div class="ab-row" id="abrow-ap-14250015">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-14250015')">
+      <span class="ab-num">S-7</span>
+      <span class="ab-title">Loi visant à moderniser certains processus réglementaires et administratifs</span>
       
-      <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Projet omnibus — 2 parties : il modifie plusieurs lois différentes. Cliquer pour ne voir que les omnibus">Omnibus · 2 parties</button>
+      <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Projet omnibus — 6 parties, 8 sections : il modifie plusieurs lois différentes. Cliquer pour ne voir que les omnibus">Omnibus · 6 parties</button>
       
       <span class="depute-party" style="background:#5B6B7A; color:#fff">BRG</span>
+      <span class="status-pill status-encours">En cours</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"></div>
+  </div><div class="ab-row" id="abrow-ap-14335040">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-14335040')">
+      <span class="ab-num">C-42</span>
+      <span class="ab-title">Loi visant certaines mesures liées à l'abordabilité et au logement</span>
+      
+      
+      
+      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
       <span class="status-pill status-encours">En cours</span>
       <span class="ab-caret">▾</span>
     </div>
@@ -659,7 +659,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
 <script defer src="/data/site-data.js"></script>
 <script type="module" src="/assets/debats.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=b505296775"></script>
+<script defer src="/assets/app.js?v=956b608d5b"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

@@ -65,7 +65,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=50d9259758">
+<link rel="stylesheet" href="/assets/app.css?v=7edbca76f7">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -249,7 +249,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       </div>
       <div class="filter-group">
         <button class="filter-hamburger" id="stepFilterBtn" onclick="toggleFilterPanel('step')" aria-expanded="false">☰ <span data-i18n="filter.etapes">Chambre</span></button>
-        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">Chambre des communes</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Sénat</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Projets avec des communications déclarées au Commissariat au lobbying">Lobbying <b>50</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Projets qui modifient plusieurs lois différentes à la fois, une par partie">Omnibus <b>16</b></span><span class="step-chip pop-chip " onclick="toggleBillsPopular()" title="Classés selon le nombre de demandes d’explication des citoyens">🚀 Les plus populaires</span><!--/ssr--></div>
+        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">Chambre des communes</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Sénat</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Projets avec des communications déclarées au Commissariat au lobbying">Lobbying <b>52</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Projets qui modifient plusieurs lois différentes à la fois, une par partie">Omnibus <b>16</b></span><span class="step-chip pop-chip " onclick="toggleBillsPopular()" title="Classés selon le nombre de demandes d’explication des citoyens">🚀 Les plus populaires</span><!--/ssr--></div>
       </div>
     </div>
     <p class="tous-votes" id="lienTousVotes"><a data-view="votes" href="/votes" data-i18n="projets.tousvotes">Tous les votes nominaux, motions comprises →</a></p>
@@ -260,7 +260,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-title">Loi prévoyant l’établissement d’un cadre national sur la santé des femmes au Canada</span>
       
       
-      <span class="ab-lob" title="44 communications de lobbying déclarées">44</span>
+      <span class="ab-lob" title="49 communications de lobbying déclarées">49</span>
       <span class="depute-party" style="background:#B0568C; color:#fff">GPS</span>
       <span class="status-pill status-encours">En cours</span>
       <span class="ab-caret">▾</span>
@@ -300,14 +300,34 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
         <div class="lob" id="lob-13822755" onclick="toggleLobbying(this, event)">
     <div class="lob-head">
       <span class="lob-title">Lobbying déclaré</span>
-      <span class="lob-count">44 communications · 7 organisations</span>
-      <span class="lob-asof">au 26 oct. 2026</span>
+      <span class="lob-count">49 communications · 7 organisations</span>
+      <span class="lob-asof">au 16 nov. 2026</span>
       <span class="lob-toggle">les 10 plus récentes +</span>
     </div>
-    <div class="lob-orgs"><span class="lob-org">National Council of Indigenous Midwives<b>15</b></span><span class="lob-org">Alliance des femmes de la francophonie canadienne<b>9</b></span><span class="lob-org">Cancer d'ovaire canada<b>6</b></span><span class="lob-org">Women's Health Coalition of Canada<b>6</b></span><span class="lob-org">Women's  Health Coalition of Canada<b>5</b></span></div>
+    <div class="lob-orgs"><span class="lob-org">National Council of Indigenous Midwives<b>15</b></span><span class="lob-org">Cancer d'ovaire canada<b>11</b></span><span class="lob-org">Alliance des femmes de la francophonie canadienne<b>9</b></span><span class="lob-org">Women's Health Coalition of Canada<b>6</b></span><span class="lob-org">Women's  Health Coalition of Canada<b>5</b></span></div>
     <div class="lob-body">
       <div class="lob-orgs" style="margin:0 0 10px;"><span class="lob-org">Organon Canada Inc.<b>2</b></span><span class="lob-org">Bayer Inc.<b>1</b></span></div>
-      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=702985" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=708662" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-29 · House of Commons</div>
+      <div class="lob-who">Cancer d'ovaire canada</div>
+      <div class="lob-met">A rencontré : Aslam Rana — Member of Parliament</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=707527" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-29 · House of Commons</div>
+      <div class="lob-who">Cancer d'ovaire canada</div>
+      <div class="lob-met">A rencontré : Aslam Rana — Member of Parliament</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=707341" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-26 · House of Commons</div>
+      <div class="lob-who">Cancer d'ovaire canada</div>
+      <div class="lob-met">A rencontré : Marilyn Gladu — Member of Parliament</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=707340" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-22 · Women and Gender Equality (WAGE)</div>
+      <div class="lob-who">Cancer d'ovaire canada</div>
+      <div class="lob-met">A rencontré : Carina Gabriele — Director of Policy</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=706791" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-22 · Employment and Social Development Canada (ESDC)</div>
+      <div class="lob-who">Cancer d'ovaire canada</div>
+      <div class="lob-met">A rencontré : Carina Gabriele — Director of Policy</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=702985" target="_blank" rel="noopener" onclick="event.stopPropagation()">
       <div class="lob-when">2026-09-25 · House of Commons</div>
       <div class="lob-who">Cancer d'ovaire canada</div>
       <div class="lob-met">A rencontré : Francis Scarpaleggia — Member of Parliament</div>
@@ -327,28 +347,8 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <div class="lob-when">2026-05-27 · Senate of Canada</div>
       <div class="lob-who">National Council of Indigenous Midwives</div>
       <div class="lob-met">A rencontré : Katherine Hay — Senator</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=672687" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-02-27 · House of Commons</div>
-      <div class="lob-who">Women's Health Coalition of Canada</div>
-      <div class="lob-met">A rencontré : Salma Zahid — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=670871" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-02-27 · Public Health Agency of Canada (PHAC)</div>
-      <div class="lob-who">Women's  Health Coalition of Canada</div>
-      <div class="lob-met">A rencontré : Nancy Hamzawi — President · Ernie Klassen — Member of Parliament · Michael Collins — Vice-President</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=670722" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-02-27 · House of Commons</div>
-      <div class="lob-who">National Council of Indigenous Midwives</div>
-      <div class="lob-met">A rencontré : Salma Zahid — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=670721" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-02-27 · Public Health Agency of Canada (PHAC)</div>
-      <div class="lob-who">National Council of Indigenous Midwives</div>
-      <div class="lob-met">A rencontré : Nancy Hamzawi — President</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=670719" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-02-27 · House of Commons</div>
-      <div class="lob-who">National Council of Indigenous Midwives</div>
-      <div class="lob-met">A rencontré : Ernie Klassen — Member of Parliament</div>
     </a>
-      <p class="lob-note">Communications déclarées au Commissariat au lobbying du Canada qui nomment ce projet de loi. Le lobbying est une activité légale et publiquement enregistrée — ce décompte est un fait, pas un verdict. On ne compte que les communications dont la description nomme le numéro <em>et</em> le titre du projet : le total réel peut être plus élevé. Archive du registre lue le 26 octobre 2026 ; le Commissariat la republie environ tous les mois, et on la rafraîchit à la main.</p>
+      <p class="lob-note">Communications déclarées au Commissariat au lobbying du Canada qui nomment ce projet de loi. Le lobbying est une activité légale et publiquement enregistrée — ce décompte est un fait, pas un verdict. On ne compte que les communications dont la description nomme le numéro <em>et</em> le titre du projet : le total réel peut être plus élevé. Archive du registre lue le 16 novembre 2026 ; le Commissariat la republie environ tous les mois, et on la rafraîchit à la main.</p>
     </div>
   </div>
       </div>
@@ -648,7 +648,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
 <script defer src="/data/site-data.js"></script>
 <script type="module" src="/assets/debats.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=b505296775"></script>
+<script defer src="/assets/app.js?v=956b608d5b"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

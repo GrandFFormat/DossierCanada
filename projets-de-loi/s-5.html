@@ -65,7 +65,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=50d9259758">
+<link rel="stylesheet" href="/assets/app.css?v=7edbca76f7">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -249,7 +249,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       </div>
       <div class="filter-group">
         <button class="filter-hamburger" id="stepFilterBtn" onclick="toggleFilterPanel('step')" aria-expanded="false">☰ <span data-i18n="filter.etapes">Chambre</span></button>
-        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">Chambre des communes</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Sénat</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Projets avec des communications déclarées au Commissariat au lobbying">Lobbying <b>50</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Projets qui modifient plusieurs lois différentes à la fois, une par partie">Omnibus <b>16</b></span><span class="step-chip pop-chip " onclick="toggleBillsPopular()" title="Classés selon le nombre de demandes d’explication des citoyens">🚀 Les plus populaires</span><!--/ssr--></div>
+        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">Chambre des communes</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Sénat</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Projets avec des communications déclarées au Commissariat au lobbying">Lobbying <b>52</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Projets qui modifient plusieurs lois différentes à la fois, une par partie">Omnibus <b>16</b></span><span class="step-chip pop-chip " onclick="toggleBillsPopular()" title="Classés selon le nombre de demandes d’explication des citoyens">🚀 Les plus populaires</span><!--/ssr--></div>
       </div>
     </div>
     <p class="tous-votes" id="lienTousVotes"><a data-view="votes" href="/votes" data-i18n="projets.tousvotes">Tous les votes nominaux, motions comprises →</a></p>
@@ -260,7 +260,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-title">Loi concernant l’interopérabilité des technologies de l’information sur la santé et visant à interdire le blocage de données par les fournisseurs de technologies de l’information sur la santé</span>
       
       
-      <span class="ab-lob" title="44 communications de lobbying déclarées">44</span>
+      <span class="ab-lob" title="60 communications de lobbying déclarées">60</span>
       <span class="depute-party" style="background:#5B6B7A; color:#fff">BRG</span>
       <span class="status-pill status-encours">En cours</span>
       <span class="ab-caret">▾</span>
@@ -300,55 +300,55 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
         <div class="lob" id="lob-13881240" onclick="toggleLobbying(this, event)">
     <div class="lob-head">
       <span class="lob-title">Lobbying déclaré</span>
-      <span class="lob-count">44 communications · 4 organisations</span>
-      <span class="lob-asof">au 26 oct. 2026</span>
+      <span class="lob-count">60 communications · 4 organisations</span>
+      <span class="lob-asof">au 16 nov. 2026</span>
       <span class="lob-toggle">les 10 plus récentes +</span>
     </div>
-    <div class="lob-orgs"><span class="lob-org">Le Collège des médecins de famille du Canada<b>37</b></span><span class="lob-org">Association canadienne des compagnies d'assurances de personnes inc.<b>5</b></span><span class="lob-org">The Canadian Society of Respiratory Therapists<b>1</b></span><span class="lob-org">Becton Dickinson Canada Inc<b>1</b></span></div>
+    <div class="lob-orgs"><span class="lob-org">Le Collège des médecins de famille du Canada<b>51</b></span><span class="lob-org">Association canadienne des compagnies d'assurances de personnes inc.<b>7</b></span><span class="lob-org">The Canadian Society of Respiratory Therapists<b>1</b></span><span class="lob-org">Becton Dickinson Canada Inc<b>1</b></span></div>
     <div class="lob-body">
       
-      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=706753" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=710243" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-19 · Health Canada (HC)</div>
+      <div class="lob-who">Association canadienne des compagnies d'assurances de personnes inc.</div>
+      <div class="lob-met">A rencontré : Jibril Hussein — Senior Policy Advisor</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=710232" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-07 · Health Canada (HC)</div>
+      <div class="lob-who">Association canadienne des compagnies d'assurances de personnes inc.</div>
+      <div class="lob-met">A rencontré : Justine Frame — Policy Advisor</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=708221" target="_blank" rel="noopener" onclick="event.stopPropagation()">
       <div class="lob-when">2026-10-06 · Health Canada (HC)</div>
       <div class="lob-who">Le Collège des médecins de famille du Canada</div>
       <div class="lob-met">A rencontré : Marjorie Michel — Minister of Health · Maggie Chi — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=706752" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-10-06 · Finance Canada (FIN)</div>
-      <div class="lob-who">Le Collège des médecins de famille du Canada</div>
-      <div class="lob-met">A rencontré : Mackenzy Metcalfe — Policy Advisor</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=706751" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-10-06 · Senate of Canada</div>
-      <div class="lob-who">Le Collège des médecins de famille du Canada</div>
-      <div class="lob-met">A rencontré : Rosemary Moodie — Senator</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=706749" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=708220" target="_blank" rel="noopener" onclick="event.stopPropagation()">
       <div class="lob-when">2026-10-06 · House of Commons</div>
       <div class="lob-who">Le Collège des médecins de famille du Canada</div>
-      <div class="lob-met">A rencontré : Helena Jaczek — Member of Parliament · Marcus Powlowski — Member of Parliament · Brendan Hanley — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=706748" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-10-06 · House of Commons</div>
-      <div class="lob-who">Le Collège des médecins de famille du Canada</div>
-      <div class="lob-met">A rencontré : Gord Johns — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=706747" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-met">A rencontré : Brendan Hanley — Member of Parliament · Helena Jaczek — Member of Parliament · Marcus Powlowski — Member of Parliament</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=708219" target="_blank" rel="noopener" onclick="event.stopPropagation()">
       <div class="lob-when">2026-10-06 · Senate of Canada</div>
       <div class="lob-who">Le Collège des médecins de famille du Canada</div>
       <div class="lob-met">A rencontré : Rodney Ouellette — Senator</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=706746" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=708218" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-06 · House of Commons</div>
+      <div class="lob-who">Le Collège des médecins de famille du Canada</div>
+      <div class="lob-met">A rencontré : Jake Sawatzky — Member of Parliament</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=707917" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-06 · Health Canada (HC)</div>
+      <div class="lob-who">Le Collège des médecins de famille du Canada</div>
+      <div class="lob-met">A rencontré : Marjorie Michel — Minister of Health · Maggie Chi — Member of Parliament</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=707916" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-06 · House of Commons</div>
+      <div class="lob-who">Le Collège des médecins de famille du Canada</div>
+      <div class="lob-met">A rencontré : Brendan Hanley — Member of Parliament · Marcus Powlowski — Member of Parliament · Helena Jaczek — Member of Parliament</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=707915" target="_blank" rel="noopener" onclick="event.stopPropagation()">
       <div class="lob-when">2026-10-06 · Senate of Canada</div>
       <div class="lob-who">Le Collège des médecins de famille du Canada</div>
       <div class="lob-met">A rencontré : Tracy Muggli — Senator</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=706745" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=707913" target="_blank" rel="noopener" onclick="event.stopPropagation()">
       <div class="lob-when">2026-10-06 · House of Commons</div>
       <div class="lob-who">Le Collège des médecins de famille du Canada</div>
-      <div class="lob-met">A rencontré : Charles Sousa — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=706744" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-10-06 · Senate of Canada</div>
-      <div class="lob-who">Le Collège des médecins de famille du Canada</div>
-      <div class="lob-met">A rencontré : Joan Kingston — Senator</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=704918" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-10-06 · Prime Minister's Office (PMO)</div>
-      <div class="lob-who">Le Collège des médecins de famille du Canada</div>
-      <div class="lob-met">A rencontré : Julie Harb — Health Policy Advisor</div>
+      <div class="lob-met">A rencontré : Ted Falk — Member of Parliament</div>
     </a>
-      <p class="lob-note">Communications déclarées au Commissariat au lobbying du Canada qui nomment ce projet de loi. Le lobbying est une activité légale et publiquement enregistrée — ce décompte est un fait, pas un verdict. On ne compte que les communications dont la description nomme le numéro <em>et</em> le titre du projet : le total réel peut être plus élevé. Archive du registre lue le 26 octobre 2026 ; le Commissariat la republie environ tous les mois, et on la rafraîchit à la main.</p>
+      <p class="lob-note">Communications déclarées au Commissariat au lobbying du Canada qui nomment ce projet de loi. Le lobbying est une activité légale et publiquement enregistrée — ce décompte est un fait, pas un verdict. On ne compte que les communications dont la description nomme le numéro <em>et</em> le titre du projet : le total réel peut être plus élevé. Archive du registre lue le 16 novembre 2026 ; le Commissariat la republie environ tous les mois, et on la rafraîchit à la main.</p>
     </div>
   </div>
       </div>
@@ -648,7 +648,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
 <script defer src="/data/site-data.js"></script>
 <script type="module" src="/assets/debats.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=b505296775"></script>
+<script defer src="/assets/app.js?v=956b608d5b"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

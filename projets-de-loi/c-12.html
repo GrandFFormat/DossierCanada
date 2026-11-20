@@ -65,7 +65,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=50d9259758">
+<link rel="stylesheet" href="/assets/app.css?v=7edbca76f7">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -249,7 +249,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       </div>
       <div class="filter-group">
         <button class="filter-hamburger" id="stepFilterBtn" onclick="toggleFilterPanel('step')" aria-expanded="false">☰ <span data-i18n="filter.etapes">Chambre</span></button>
-        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">Chambre des communes</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Sénat</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Projets avec des communications déclarées au Commissariat au lobbying">Lobbying <b>50</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Projets qui modifient plusieurs lois différentes à la fois, une par partie">Omnibus <b>16</b></span><span class="step-chip pop-chip " onclick="toggleBillsPopular()" title="Classés selon le nombre de demandes d’explication des citoyens">🚀 Les plus populaires</span><!--/ssr--></div>
+        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">Chambre des communes</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Sénat</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Projets avec des communications déclarées au Commissariat au lobbying">Lobbying <b>52</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Projets qui modifient plusieurs lois différentes à la fois, une par partie">Omnibus <b>16</b></span><span class="step-chip pop-chip " onclick="toggleBillsPopular()" title="Classés selon le nombre de demandes d’explication des citoyens">🚀 Les plus populaires</span><!--/ssr--></div>
       </div>
     </div>
     <p class="tous-votes" id="lienTousVotes"><a data-view="votes" href="/votes" data-i18n="projets.tousvotes">Tous les votes nominaux, motions comprises →</a></p>
@@ -260,7 +260,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-title">Loi concernant certaines mesures liées à la sécurité de la frontière canadienne et à l'intégrité du système d'immigration canadien et d'autres mesures connexes liées à la sécurité</span>
       
       <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Projet omnibus — 11 parties : il modifie plusieurs lois différentes. Cliquer pour ne voir que les omnibus">Omnibus · 11 parties</button>
-      <span class="ab-lob" title="58 communications de lobbying déclarées">58</span>
+      <span class="ab-lob" title="62 communications de lobbying déclarées">62</span>
       <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
       <span class="status-pill status-sanctionne">Sanctionnée</span>
       <span class="ab-caret">▾</span>
@@ -300,14 +300,30 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
         <div class="lob" id="lob-13632609" onclick="toggleLobbying(this, event)">
     <div class="lob-head">
       <span class="lob-title">Lobbying déclaré</span>
-      <span class="lob-count">58 communications · 9 organisations</span>
-      <span class="lob-asof">au 26 oct. 2026</span>
+      <span class="lob-count">62 communications · 9 organisations</span>
+      <span class="lob-asof">au 16 nov. 2026</span>
       <span class="lob-toggle">les 10 plus récentes +</span>
     </div>
-    <div class="lob-orgs"><span class="lob-org">Buffalo and Fort Erie Public Bridge Authority<b>16</b></span><span class="lob-org">Association Canadienne Des Libertes Civiles<b>10</b></span><span class="lob-org">Le Centre de réfugiés<b>9</b></span><span class="lob-org">WoodGreen Community Services<b>7</b></span><span class="lob-org">Conseil canadien pour les réfugiés<b>5</b></span></div>
+    <div class="lob-orgs"><span class="lob-org">Buffalo and Fort Erie Public Bridge Authority<b>16</b></span><span class="lob-org">Association Canadienne Des Libertes Civiles<b>14</b></span><span class="lob-org">Le Centre de réfugiés<b>9</b></span><span class="lob-org">WoodGreen Community Services<b>7</b></span><span class="lob-org">Conseil canadien pour les réfugiés<b>5</b></span></div>
     <div class="lob-body">
       <div class="lob-orgs" style="margin:0 0 10px;"><span class="lob-org">Canadian Gaming Association (CGA)<b>4</b></span><span class="lob-org">Centre canadien de protection de lenfance inc.<b>4</b></span><span class="lob-org">Coalition pour la surveillance internationale des libertés civiles<b>2</b></span><span class="lob-org">Fonds d'action et d'éducation juridiques pour les femmes (FAEJ)<b>1</b></span></div>
-      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=703391" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=708769" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-27 · Senate of Canada</div>
+      <div class="lob-who">Association Canadienne Des Libertes Civiles</div>
+      <div class="lob-met">A rencontré : Emily Grant — Director of Parliamentary Affairs · Andrew Osborne — Parliamentary Research Assistant</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=708768" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-15 · House of Commons</div>
+      <div class="lob-who">Association Canadienne Des Libertes Civiles</div>
+      <div class="lob-met">A rencontré : Amarjot Johal — Parliamentary Assistant</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=708770" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-05 · Senate of Canada</div>
+      <div class="lob-who">Association Canadienne Des Libertes Civiles</div>
+      <div class="lob-met">A rencontré : Paula Simons — Senator · Yuen Pau Woo — Senator · Dina Dong — Parliamentary Affairs Advisor</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=708767" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-02 · Senate of Canada</div>
+      <div class="lob-who">Association Canadienne Des Libertes Civiles</div>
+      <div class="lob-met">A rencontré : Claudine Santos — Director of Parliamentary Affairs</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=703391" target="_blank" rel="noopener" onclick="event.stopPropagation()">
       <div class="lob-when">2026-09-29 · Prime Minister's Office (PMO)</div>
       <div class="lob-who">Buffalo and Fort Erie Public Bridge Authority</div>
       <div class="lob-met">A rencontré : Andrew Green — Regional Advisor, Ontario</div>
@@ -331,24 +347,8 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <div class="lob-when">2026-09-11 · Public Safety Canada (PS)</div>
       <div class="lob-who">Buffalo and Fort Erie Public Bridge Authority</div>
       <div class="lob-met">A rencontré : Nina Sartor — Senior Policy Advisor</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=699740" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-08-28 · Senate of Canada</div>
-      <div class="lob-who">Association Canadienne Des Libertes Civiles</div>
-      <div class="lob-met">A rencontré : Paula Simons — Senator · Dina Dong — Parliamentary Affairs Advisor · Shawn Abel — Director of Parliamentary Affairs</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=692374" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-07-02 · Privy Council Office (PCO)</div>
-      <div class="lob-who">Buffalo and Fort Erie Public Bridge Authority</div>
-      <div class="lob-met">A rencontré : Galen Richardson — Senior Advisor, Stakeholder Relations · Miro Froehlich — Director of Policy</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=692753" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-06-25 · Prime Minister's Office (PMO)</div>
-      <div class="lob-who">Buffalo and Fort Erie Public Bridge Authority</div>
-      <div class="lob-met">A rencontré : Alyth Roos — Special Assistant, Policy</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=692755" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-06-16 · Canada Border Services Agency (CBSA)</div>
-      <div class="lob-who">Buffalo and Fort Erie Public Bridge Authority</div>
-      <div class="lob-met">A rencontré : Marie-Eve Pelchat — Executive Director · Charles Chenard — Director General · Graeme Hamilton — Director General</div>
     </a>
-      <p class="lob-note">Communications déclarées au Commissariat au lobbying du Canada qui nomment ce projet de loi. Le lobbying est une activité légale et publiquement enregistrée — ce décompte est un fait, pas un verdict. On ne compte que les communications dont la description nomme le numéro <em>et</em> le titre du projet : le total réel peut être plus élevé. Archive du registre lue le 26 octobre 2026 ; le Commissariat la republie environ tous les mois, et on la rafraîchit à la main.</p>
+      <p class="lob-note">Communications déclarées au Commissariat au lobbying du Canada qui nomment ce projet de loi. Le lobbying est une activité légale et publiquement enregistrée — ce décompte est un fait, pas un verdict. On ne compte que les communications dont la description nomme le numéro <em>et</em> le titre du projet : le total réel peut être plus élevé. Archive du registre lue le 16 novembre 2026 ; le Commissariat la republie environ tous les mois, et on la rafraîchit à la main.</p>
     </div>
   </div>
       </div>
@@ -648,7 +648,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
 <script defer src="/data/site-data.js"></script>
 <script type="module" src="/assets/debats.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=b505296775"></script>
+<script defer src="/assets/app.js?v=956b608d5b"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

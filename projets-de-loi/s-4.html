@@ -65,7 +65,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=50d9259758">
+<link rel="stylesheet" href="/assets/app.css?v=7edbca76f7">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -249,7 +249,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       </div>
       <div class="filter-group">
         <button class="filter-hamburger" id="stepFilterBtn" onclick="toggleFilterPanel('step')" aria-expanded="false">☰ <span data-i18n="filter.etapes">Chambre</span></button>
-        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">Chambre des communes</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Sénat</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Projets avec des communications déclarées au Commissariat au lobbying">Lobbying <b>50</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Projets qui modifient plusieurs lois différentes à la fois, une par partie">Omnibus <b>16</b></span><span class="step-chip pop-chip " onclick="toggleBillsPopular()" title="Classés selon le nombre de demandes d’explication des citoyens">🚀 Les plus populaires</span><!--/ssr--></div>
+        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">Chambre des communes</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Sénat</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Projets avec des communications déclarées au Commissariat au lobbying">Lobbying <b>52</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Projets qui modifient plusieurs lois différentes à la fois, une par partie">Omnibus <b>16</b></span><span class="step-chip pop-chip " onclick="toggleBillsPopular()" title="Classés selon le nombre de demandes d’explication des citoyens">🚀 Les plus populaires</span><!--/ssr--></div>
       </div>
     </div>
     <p class="tous-votes" id="lienTousVotes"><a data-view="votes" href="/votes" data-i18n="projets.tousvotes">Tous les votes nominaux, motions comprises →</a></p>
@@ -260,7 +260,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-title">Loi modifiant la Loi sur l’efficacité énergétique</span>
       
       
-      <span class="ab-lob" title="25 communications de lobbying déclarées">25</span>
+      <span class="ab-lob" title="36 communications de lobbying déclarées">36</span>
       <span class="depute-party" style="background:#5B6B7A; color:#fff">BRG</span>
       <span class="status-pill status-encours">En cours</span>
       <span class="ab-caret">▾</span>
@@ -300,55 +300,55 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
         <div class="lob" id="lob-13779589" onclick="toggleLobbying(this, event)">
     <div class="lob-head">
       <span class="lob-title">Lobbying déclaré</span>
-      <span class="lob-count">25 communications · 3 organisations</span>
-      <span class="lob-asof">au 26 oct. 2026</span>
+      <span class="lob-count">36 communications · 4 organisations</span>
+      <span class="lob-asof">au 16 nov. 2026</span>
       <span class="lob-toggle">les 10 plus récentes +</span>
     </div>
-    <div class="lob-orgs"><span class="lob-org">Association of Home Appliance Manufacturers<b>17</b></span><span class="lob-org">Whirlpool Canada LP<b>6</b></span><span class="lob-org">Association des produits électroniques du Canada<b>2</b></span></div>
+    <div class="lob-orgs"><span class="lob-org">Association of Home Appliance Manufacturers<b>25</b></span><span class="lob-org">Whirlpool Canada LP<b>6</b></span><span class="lob-org">Association of Home Appliances Manufacturers<b>3</b></span><span class="lob-org">Association des produits électroniques du Canada<b>2</b></span></div>
     <div class="lob-body">
       
-      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=703868" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-10-07 · House of Commons</div>
+      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=711968" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-29 · House of Commons</div>
       <div class="lob-who">Association of Home Appliance Manufacturers</div>
-      <div class="lob-met">A rencontré : Saad Hussain — Legislative Assistant</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=703776" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-10-07 · House of Commons</div>
-      <div class="lob-who">Whirlpool Canada LP</div>
-      <div class="lob-met">A rencontré : Gurbux Saini — Member of Parliament · Jeremy Patzer — Member of Parliament · Doly Begum — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=703330" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-10-07 · House of Commons</div>
-      <div class="lob-who">Association of Home Appliance Manufacturers</div>
-      <div class="lob-met">A rencontré : Branden Leslie — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=703329" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-10-07 · House of Commons</div>
-      <div class="lob-who">Association of Home Appliance Manufacturers</div>
-      <div class="lob-met">A rencontré : Jason Smedvik — Senior Assistant</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=703328" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-10-07 · House of Commons</div>
-      <div class="lob-who">Association of Home Appliance Manufacturers</div>
-      <div class="lob-met">A rencontré : Roman Baber — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=703327" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-10-07 · House of Commons</div>
-      <div class="lob-who">Association of Home Appliance Manufacturers</div>
-      <div class="lob-met">A rencontré : Parm Bains — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=703325" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-met">A rencontré : Kathy Borrelli — Member of Parliament</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=711967" target="_blank" rel="noopener" onclick="event.stopPropagation()">
       <div class="lob-when">2026-10-07 · House of Commons</div>
       <div class="lob-who">Association of Home Appliance Manufacturers</div>
       <div class="lob-met">A rencontré : David Small — Director of Parliamentary Affairs</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=703323" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=711966" target="_blank" rel="noopener" onclick="event.stopPropagation()">
       <div class="lob-when">2026-10-07 · House of Commons</div>
       <div class="lob-who">Association of Home Appliance Manufacturers</div>
       <div class="lob-met">A rencontré : Arnold Viersen — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=703319" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=711965" target="_blank" rel="noopener" onclick="event.stopPropagation()">
       <div class="lob-when">2026-10-07 · House of Commons</div>
       <div class="lob-who">Association of Home Appliance Manufacturers</div>
       <div class="lob-met">A rencontré : Michael D. Chong — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=703169" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-10-07 · Environment and Climate Change Canada (ECCC)</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=711964" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-07 · House of Commons</div>
       <div class="lob-who">Association of Home Appliance Manufacturers</div>
-      <div class="lob-met">A rencontré : Nyagua Chiek — Director of Parliamentary Affairs · Claire Rochon — Policy Advisor</div>
+      <div class="lob-met">A rencontré : Saad Hussain — Legislative Assistant</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=705732" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-07 · House of Commons</div>
+      <div class="lob-who">Association of Home Appliances Manufacturers</div>
+      <div class="lob-met">A rencontré : Doly Begum — Member of Parliament</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=705729" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-07 · House of Commons</div>
+      <div class="lob-who">Association of Home Appliances Manufacturers</div>
+      <div class="lob-met">A rencontré : Jeremy Patzer — Member of Parliament</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=705723" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-07 · House of Commons</div>
+      <div class="lob-who">Association of Home Appliances Manufacturers</div>
+      <div class="lob-met">A rencontré : Gurbux Saini — Member of Parliament</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=703868" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-07 · House of Commons</div>
+      <div class="lob-who">Association of Home Appliance Manufacturers</div>
+      <div class="lob-met">A rencontré : Saad Hussain — Legislative Assistant</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=703809" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-07 · House of Commons</div>
+      <div class="lob-who">Association of Home Appliance Manufacturers</div>
+      <div class="lob-met">A rencontré : Branden Leslie — Member of Parliament</div>
     </a>
-      <p class="lob-note">Communications déclarées au Commissariat au lobbying du Canada qui nomment ce projet de loi. Le lobbying est une activité légale et publiquement enregistrée — ce décompte est un fait, pas un verdict. On ne compte que les communications dont la description nomme le numéro <em>et</em> le titre du projet : le total réel peut être plus élevé. Archive du registre lue le 26 octobre 2026 ; le Commissariat la republie environ tous les mois, et on la rafraîchit à la main.</p>
+      <p class="lob-note">Communications déclarées au Commissariat au lobbying du Canada qui nomment ce projet de loi. Le lobbying est une activité légale et publiquement enregistrée — ce décompte est un fait, pas un verdict. On ne compte que les communications dont la description nomme le numéro <em>et</em> le titre du projet : le total réel peut être plus élevé. Archive du registre lue le 16 novembre 2026 ; le Commissariat la republie environ tous les mois, et on la rafraîchit à la main.</p>
     </div>
   </div>
       </div>
@@ -648,7 +648,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
 <script defer src="/data/site-data.js"></script>
 <script type="module" src="/assets/debats.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=b505296775"></script>
+<script defer src="/assets/app.js?v=956b608d5b"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

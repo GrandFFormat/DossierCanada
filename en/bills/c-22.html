@@ -65,7 +65,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=50d9259758">
+<link rel="stylesheet" href="/assets/app.css?v=7edbca76f7">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -249,7 +249,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       </div>
       <div class="filter-group">
         <button class="filter-hamburger" id="stepFilterBtn" onclick="toggleFilterPanel('step')" aria-expanded="false">☰ <span data-i18n="filter.etapes">Chamber</span></button>
-        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">House of Commons</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Senate</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Bills with communications reported to the Commissioner of Lobbying">Lobbying <b>50</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Bills that change several different acts at once, one per part">Omnibus <b>16</b></span><span class="step-chip pop-chip " onclick="toggleBillsPopular()" title="Sorted by number of explanation requests from citizens">🚀 Most popular</span><!--/ssr--></div>
+        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">House of Commons</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Senate</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Bills with communications reported to the Commissioner of Lobbying">Lobbying <b>52</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Bills that change several different acts at once, one per part">Omnibus <b>16</b></span><span class="step-chip pop-chip " onclick="toggleBillsPopular()" title="Sorted by number of explanation requests from citizens">🚀 Most popular</span><!--/ssr--></div>
       </div>
     </div>
     <p class="tous-votes" id="lienTousVotes"><a data-view="votes" href="/en/votes" data-i18n="projets.tousvotes">All recorded votes, motions included →</a></p>
@@ -260,7 +260,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-title">An Act respecting lawful access</span>
       
       <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Omnibus bill — 3 parts: it changes several different acts. Click to show only omnibus bills">Omnibus · 3 parts</button>
-      <span class="ab-lob" title="57 reported lobbying communications">57</span>
+      <span class="ab-lob" title="79 reported lobbying communications">79</span>
       <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
       <span class="status-pill status-encours">In progress</span>
       <span class="ab-caret">▾</span>
@@ -300,55 +300,55 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
         <div class="lob" id="lob-13957880" onclick="toggleLobbying(this, event)">
     <div class="lob-head">
       <span class="lob-title">Registered lobbying</span>
-      <span class="lob-count">57 communications · 9 organizations</span>
-      <span class="lob-asof">as of Oct 26, 2026</span>
+      <span class="lob-count">79 communications · 11 organizations</span>
+      <span class="lob-asof">as of Nov 16, 2026</span>
       <span class="lob-toggle">the 10 most recent +</span>
     </div>
-    <div class="lob-orgs"><span class="lob-org">Google Canada Corporation<b>23</b></span><span class="lob-org">Amazon Web Services Canada, Inc.<b>17</b></span><span class="lob-org">International Civil Liberties Monitoring Group<b>4</b></span><span class="lob-org">Québecor Média inc.<b>3</b></span><span class="lob-org">Canadian Civil Liberties Association<b>3</b></span></div>
+    <div class="lob-orgs"><span class="lob-org">Google Canada Corporation<b>23</b></span><span class="lob-org">Amazon Web Services Canada, Inc.<b>17</b></span><span class="lob-org">Québecor Média inc.<b>8</b></span><span class="lob-org">Internet Society<b>8</b></span><span class="lob-org">Canadian Civil Liberties Association<b>7</b></span></div>
     <div class="lob-body">
-      <div class="lob-orgs" style="margin:0 0 10px;"><span class="lob-org">Internet Society<b>3</b></span><span class="lob-org">National Police Federation<b>2</b></span><span class="lob-org">The Canadian Centre to End Human Trafficking<b>1</b></span><span class="lob-org">Canadian Muslim Public Affairs Council<b>1</b></span></div>
-      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=704600" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-09-29 · Senate of Canada</div>
-      <div class="lob-who">Amazon Web Services Canada, Inc.</div>
-      <div class="lob-met">Met with : Claude Carignan — Senator</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=703715" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-09-24 · Senate of Canada</div>
-      <div class="lob-who">Canadian Civil Liberties Association</div>
-      <div class="lob-met">Met with : Claudine Santos — Director of Parliamentary Affairs</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=706044" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-09-23 · Senate of Canada</div>
-      <div class="lob-who">Google Canada Corporation</div>
-      <div class="lob-met">Met with : Andrew Cardozo — Senator</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=704593" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-09-23 · Senate of Canada</div>
-      <div class="lob-who">Amazon Web Services Canada, Inc.</div>
-      <div class="lob-met">Met with : Andrew Cardozo — Senator</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=703912" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-09-23 · Senate of Canada</div>
-      <div class="lob-who">Canadian Civil Liberties Association</div>
-      <div class="lob-met">Met with : Dina Dong — Parliamentary Affairs Advisor</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=703908" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-09-23 · Senate of Canada</div>
-      <div class="lob-who">Internet Society</div>
-      <div class="lob-met">Met with : Dina Dong — Parliamentary Affairs Advisor</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=702492" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-09-22 · Senate of Canada</div>
-      <div class="lob-who">Internet Society</div>
-      <div class="lob-met">Met with : Andrew Cardozo — Senator</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=705009" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-09-16 · Canadian Radio-television and Telecommunications Commission (CRTC)</div>
+      <div class="lob-orgs" style="margin:0 0 10px;"><span class="lob-org">International Civil Liberties Monitoring Group<b>5</b></span><span class="lob-org">National Police Federation<b>5</b></span><span class="lob-org">Canadian Centre for Child Protection Inc.<b>3</b></span><span class="lob-org">Microsoft Canada Inc.<b>1</b></span><span class="lob-org">The Canadian Centre to End Human Trafficking<b>1</b></span><span class="lob-org">Canadian Muslim Public Affairs Council<b>1</b></span></div>
+      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=709296" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-30 · Privy Council Office (PCO)</div>
       <div class="lob-who">Québecor Média inc.</div>
-      <div class="lob-met">Met with : Vicky Eatrides — Présidente et Première Dirigeante · Adam Scott — Vice-President Telecommunications · Stéphanie Paquette — Advisor - Quebec</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=705014" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-09-11 · Privy Council Office (PCO)</div>
+      <div class="lob-met">Met with : Ian Baggley — General Director - Project Management · Cameron Mitchell — Project Management · Grace Torrie — Project Management</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=709007" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-28 · Senate of Canada</div>
+      <div class="lob-who">International Civil Liberties Monitoring Group</div>
+      <div class="lob-met">Met with : Paula Simons — Senator · Dina Dong — Parliamentary Affairs Advisor · Shawn Abel — Director of Parliamentary Affairs</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=708042" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-28 · Senate of Canada</div>
+      <div class="lob-who">National Police Federation</div>
+      <div class="lob-met">Met with : Geeta Tucker — Senator</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=708769" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-27 · Senate of Canada</div>
+      <div class="lob-who">Canadian Civil Liberties Association</div>
+      <div class="lob-met">Met with : Emily Grant — Director of Parliamentary Affairs · Andrew Osborne — Parliamentary Research Assistant</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=708046" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-21 · Senate of Canada</div>
+      <div class="lob-who">National Police Federation</div>
+      <div class="lob-met">Met with : Hassan Yussuff — Senator · Ceanray Harris-Read — Director of Parliamentary Affairs</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=709286" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-20 · Innovation, Science and Economic Development Canada (ISED)</div>
       <div class="lob-who">Québecor Média inc.</div>
-      <div class="lob-met">Met with : Cameron Mitchell — Project Management · Grace Torrie — Analyst · Anne David — Advisor</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=706034" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-09-03 · Prime Minister's Office (PMO)</div>
-      <div class="lob-who">Google Canada Corporation</div>
-      <div class="lob-met">Met with : Shaili Patel — Director of Policy · Ramiz Razzak — Policy Advisor</div>
+      <div class="lob-met">Met with : Paul Moen — Chief of Staff · David McFarlane — Director of Policy</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=709265" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-20 · Privy Council Office (PCO)</div>
+      <div class="lob-who">Québecor Média inc.</div>
+      <div class="lob-met">Met with : Cathy Hawara — Assistant Secretary to the Cabinet (Machinery of Government and Democratic Institutions)</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=709258" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-20 · Innovation, Science and Economic Development Canada (ISED)</div>
+      <div class="lob-who">Québecor Média inc.</div>
+      <div class="lob-met">Met with : André Arbour — Directeur général des opérations de la gestion du spectre</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=707678" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-20 · Prime Minister's Office (PMO)</div>
+      <div class="lob-who">Canadian Centre for Child Protection Inc.</div>
+      <div class="lob-met">Met with : Brian Peebles — Senior Policy Advisor · Julie Harb — Policy Advisor</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=707676" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-20 · House of Commons</div>
+      <div class="lob-who">Canadian Centre for Child Protection Inc.</div>
+      <div class="lob-met">Met with : David Myles — Member of Parliament · Darren Choi — Senior Policy Advisor · Anika Riopel — Parliamentary Secretary Assistant</div>
     </a>
-      <p class="lob-note">Communications reported to the Office of the Commissioner of Lobbying that name this bill. Lobbying is a lawful, publicly registered activity — this count is a fact, not a verdict. Only communications whose description names both the bill number and its title are counted, so the real total may be higher. Registry archive read on October 26, 2026; the Commissioner republishes it about monthly, and we refresh it by hand.</p>
+      <p class="lob-note">Communications reported to the Office of the Commissioner of Lobbying that name this bill. Lobbying is a lawful, publicly registered activity — this count is a fact, not a verdict. Only communications whose description names both the bill number and its title are counted, so the real total may be higher. Registry archive read on November 16, 2026; the Commissioner republishes it about monthly, and we refresh it by hand.</p>
     </div>
   </div>
       </div>
@@ -648,7 +648,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
 <script defer src="/data/site-data.js"></script>
 <script type="module" src="/assets/debats.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=b505296775"></script>
+<script defer src="/assets/app.js?v=956b608d5b"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

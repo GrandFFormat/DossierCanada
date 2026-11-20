@@ -65,7 +65,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=50d9259758">
+<link rel="stylesheet" href="/assets/app.css?v=7edbca76f7">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -249,7 +249,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       </div>
       <div class="filter-group">
         <button class="filter-hamburger" id="stepFilterBtn" onclick="toggleFilterPanel('step')" aria-expanded="false">☰ <span data-i18n="filter.etapes">Chambre</span></button>
-        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">Chambre des communes</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Sénat</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Projets avec des communications déclarées au Commissariat au lobbying">Lobbying <b>50</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Projets qui modifient plusieurs lois différentes à la fois, une par partie">Omnibus <b>16</b></span><span class="step-chip pop-chip " onclick="toggleBillsPopular()" title="Classés selon le nombre de demandes d’explication des citoyens">🚀 Les plus populaires</span><!--/ssr--></div>
+        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">Chambre des communes</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Sénat</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Projets avec des communications déclarées au Commissariat au lobbying">Lobbying <b>52</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Projets qui modifient plusieurs lois différentes à la fois, une par partie">Omnibus <b>16</b></span><span class="step-chip pop-chip " onclick="toggleBillsPopular()" title="Classés selon le nombre de demandes d’explication des citoyens">🚀 Les plus populaires</span><!--/ssr--></div>
       </div>
     </div>
     <p class="tous-votes" id="lienTousVotes"><a data-view="votes" href="/votes" data-i18n="projets.tousvotes">Tous les votes nominaux, motions comprises →</a></p>
@@ -260,7 +260,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-title">Loi concernant certaines mesures visant à renforcer l'économie</span>
       
       <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Projet omnibus — 3 parties, 8 sections : il modifie plusieurs lois différentes. Cliquer pour ne voir que les omnibus">Omnibus · 3 parties</button>
-      <span class="ab-lob" title="7 communications de lobbying déclarées">7</span>
+      <span class="ab-lob" title="99 communications de lobbying déclarées">99</span>
       <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
       <span class="status-pill status-encours">En cours</span>
       <span class="ab-caret">▾</span>
@@ -300,43 +300,55 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
         <div class="lob" id="lob-14223396" onclick="toggleLobbying(this, event)">
     <div class="lob-head">
       <span class="lob-title">Lobbying déclaré</span>
-      <span class="lob-count">7 communications · 5 organisations</span>
-      <span class="lob-asof">au 26 oct. 2026</span>
-      <span class="lob-toggle">les 7 plus récentes +</span>
+      <span class="lob-count">99 communications · 11 organisations</span>
+      <span class="lob-asof">au 16 nov. 2026</span>
+      <span class="lob-toggle">les 10 plus récentes +</span>
     </div>
-    <div class="lob-orgs"><span class="lob-org">Association Canadienne des Producteurs Pétroliers<b>2</b></span><span class="lob-org">ÉLECTRICITÉ CANADA<b>2</b></span><span class="lob-org">Société pour la nature et les parcs du Canada<b>1</b></span><span class="lob-org">British Columbia Maritime Employers Association<b>1</b></span><span class="lob-org">Canadian Pacific Railway Company<b>1</b></span></div>
+    <div class="lob-orgs"><span class="lob-org">Canadian Pacific Railway Company<b>22</b></span><span class="lob-org">Saskatchewan Association of Rural Municipalities<b>22</b></span><span class="lob-org">ÉLECTRICITÉ CANADA<b>20</b></span><span class="lob-org">Environmental Defence Canada<b>18</b></span><span class="lob-org">Société pour la nature et les parcs du Canada<b>7</b></span></div>
     <div class="lob-body">
-      
-      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=706294" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-09-23 · House of Commons</div>
+      <div class="lob-orgs" style="margin:0 0 10px;"><span class="lob-org">British Columbia Maritime Employers Association<b>2</b></span><span class="lob-org">L'Association Internationale Des Hydrogéologues - Section Nationale Canadienne Inc.<b>2</b></span><span class="lob-org">Ontario Federation of Anglers and Hunters Membership<b>2</b></span><span class="lob-org">Association Canadienne des Producteurs Pétroliers<b>2</b></span><span class="lob-org">Fondation David Suzuki<b>1</b></span><span class="lob-org">Skeena Watershed Conservation Coalition<b>1</b></span></div>
+      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=711101" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-29 · House of Commons</div>
       <div class="lob-who">Société pour la nature et les parcs du Canada</div>
-      <div class="lob-met">A rencontré : Patrick Weiler — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=705166" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-09-23 · Privy Council Office (PCO)</div>
-      <div class="lob-who">ÉLECTRICITÉ CANADA</div>
-      <div class="lob-met">A rencontré : Michelle Chislett — Executive Vice President, Electricity and Infrastructure</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=703931" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-09-23 · House of Commons</div>
-      <div class="lob-who">British Columbia Maritime Employers Association</div>
-      <div class="lob-met">A rencontré : Patty Hajdu — Minister of Jobs and Families</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=703296" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-09-23 · Federal Economic Development Agency for Northern Ontario</div>
+      <div class="lob-met">A rencontré : Leah Gazan — Member of the House of Commons</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=709682" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-29 · House of Commons</div>
       <div class="lob-who">Canadian Pacific Railway Company</div>
-      <div class="lob-met">A rencontré : Patty Hajdu — Minister · Keiran Gibbs — Chief of Staff · Amen Ben Ahmouda — Policy Advisor</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=705695" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-09-22 · Transport Canada (TC)</div>
-      <div class="lob-who">Association Canadienne des Producteurs Pétroliers</div>
-      <div class="lob-met">A rencontré : Serge Bijimine — Assistant Deputy Minister, Policy · Peter Feldberg — Vice President, Regulatory Affairs, Major Projects Office</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=705165" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-09-22 · Impact Assessment Agency of Canada (IAAC)</div>
+      <div class="lob-met">A rencontré : Leslie Church — Member of Parliament</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=709680" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-29 · Senate of Canada</div>
+      <div class="lob-who">Canadian Pacific Railway Company</div>
+      <div class="lob-met">A rencontré : Paul Prosper — Senator</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=709679" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-29 · Senate of Canada</div>
+      <div class="lob-who">Canadian Pacific Railway Company</div>
+      <div class="lob-met">A rencontré : Farah Mohamed — Senator · Dawn Arnold — Senator</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=709678" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-29 · Senate of Canada</div>
+      <div class="lob-who">Canadian Pacific Railway Company</div>
+      <div class="lob-met">A rencontré : Robert Black — Senator</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=709677" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-29 · House of Commons</div>
+      <div class="lob-who">Canadian Pacific Railway Company</div>
+      <div class="lob-met">A rencontré : Gurbux Saini — Member of Parliament</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=709676" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-29 · Senate of Canada</div>
+      <div class="lob-who">Canadian Pacific Railway Company</div>
+      <div class="lob-met">A rencontré : Pierre Dalphond — Senator</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=708982" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-29 · Impact Assessment Agency of Canada (IAAC)</div>
       <div class="lob-who">ÉLECTRICITÉ CANADA</div>
-      <div class="lob-met">A rencontré : Terrence Hubbard — President</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=705688" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-09-21 · Natural Resources Canada (NRCan)</div>
-      <div class="lob-who">Association Canadienne des Producteurs Pétroliers</div>
-      <div class="lob-met">A rencontré : Martin Kolacz — Senior Policy Advisor, Energy &amp; Electricity</div>
+      <div class="lob-met">A rencontré : Terrence Hubbard — President · Peter Feldberg — Vice President, Regulatory Affairs, Major Projects Office · Nasser Haidar — Senior Policy Advisor</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=708736" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-29 · Environment and Climate Change Canada (ECCC)</div>
+      <div class="lob-who">Environmental Defence Canada</div>
+      <div class="lob-met">A rencontré : Mollie Johnson — Deputy Minister ECCC</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=708716" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-29 · House of Commons</div>
+      <div class="lob-who">Environmental Defence Canada</div>
+      <div class="lob-met">A rencontré : Leah Gazan — Member of Parliament</div>
     </a>
-      <p class="lob-note">Communications déclarées au Commissariat au lobbying du Canada qui nomment ce projet de loi. Le lobbying est une activité légale et publiquement enregistrée — ce décompte est un fait, pas un verdict. On ne compte que les communications dont la description nomme le numéro <em>et</em> le titre du projet : le total réel peut être plus élevé. Archive du registre lue le 26 octobre 2026 ; le Commissariat la republie environ tous les mois, et on la rafraîchit à la main.</p>
+      <p class="lob-note">Communications déclarées au Commissariat au lobbying du Canada qui nomment ce projet de loi. Le lobbying est une activité légale et publiquement enregistrée — ce décompte est un fait, pas un verdict. On ne compte que les communications dont la description nomme le numéro <em>et</em> le titre du projet : le total réel peut être plus élevé. Archive du registre lue le 16 novembre 2026 ; le Commissariat la republie environ tous les mois, et on la rafraîchit à la main.</p>
     </div>
   </div>
       </div>
@@ -636,7 +648,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
 <script defer src="/data/site-data.js"></script>
 <script type="module" src="/assets/debats.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=b505296775"></script>
+<script defer src="/assets/app.js?v=956b608d5b"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

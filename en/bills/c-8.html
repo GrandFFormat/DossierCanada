@@ -65,7 +65,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=50d9259758">
+<link rel="stylesheet" href="/assets/app.css?v=7edbca76f7">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -249,7 +249,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       </div>
       <div class="filter-group">
         <button class="filter-hamburger" id="stepFilterBtn" onclick="toggleFilterPanel('step')" aria-expanded="false">☰ <span data-i18n="filter.etapes">Chamber</span></button>
-        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">House of Commons</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Senate</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Bills with communications reported to the Commissioner of Lobbying">Lobbying <b>50</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Bills that change several different acts at once, one per part">Omnibus <b>16</b></span><span class="step-chip pop-chip " onclick="toggleBillsPopular()" title="Sorted by number of explanation requests from citizens">🚀 Most popular</span><!--/ssr--></div>
+        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">House of Commons</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Senate</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Bills with communications reported to the Commissioner of Lobbying">Lobbying <b>52</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Bills that change several different acts at once, one per part">Omnibus <b>16</b></span><span class="step-chip pop-chip " onclick="toggleBillsPopular()" title="Sorted by number of explanation requests from citizens">🚀 Most popular</span><!--/ssr--></div>
       </div>
     </div>
     <p class="tous-votes" id="lienTousVotes"><a data-view="votes" href="/en/votes" data-i18n="projets.tousvotes">All recorded votes, motions included →</a></p>
@@ -260,7 +260,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-title">An Act respecting cyber security, amending the Telecommunications Act and making consequential amendments to other Acts</span>
       
       <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Omnibus bill — 2 parts: it changes several different acts. Click to show only omnibus bills">Omnibus · 2 parts</button>
-      <span class="ab-lob" title="31 reported lobbying communications">31</span>
+      <span class="ab-lob" title="32 reported lobbying communications">32</span>
       <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
       <span class="status-pill status-sanctionne">Assented to</span>
       <span class="ab-caret">▾</span>
@@ -302,14 +302,18 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
         <div class="lob" id="lob-13563649" onclick="toggleLobbying(this, event)">
     <div class="lob-head">
       <span class="lob-title">Registered lobbying</span>
-      <span class="lob-count">31 communications · 9 organizations</span>
-      <span class="lob-asof">as of Oct 26, 2026</span>
+      <span class="lob-count">32 communications · 9 organizations</span>
+      <span class="lob-asof">as of Nov 16, 2026</span>
       <span class="lob-toggle">the 10 most recent +</span>
     </div>
-    <div class="lob-orgs"><span class="lob-org">Qorsa Corp.<b>6</b></span><span class="lob-org">Canadian Union of Public Employees<b>6</b></span><span class="lob-org">Kyndryl Canada Limited<b>5</b></span><span class="lob-org">ELECTRICITY CANADA<b>4</b></span><span class="lob-org">International Information System Security Certification Consortium, Inc. (ISC2)<b>4</b></span></div>
+    <div class="lob-orgs"><span class="lob-org">Qorsa Corp.<b>6</b></span><span class="lob-org">Canadian Union of Public Employees<b>6</b></span><span class="lob-org">ELECTRICITY CANADA<b>5</b></span><span class="lob-org">Kyndryl Canada Limited<b>5</b></span><span class="lob-org">International Information System Security Certification Consortium, Inc. (ISC2)<b>4</b></span></div>
     <div class="lob-body">
       <div class="lob-orgs" style="margin:0 0 10px;"><span class="lob-org">Amazon Web Services Canada, Inc.<b>2</b></span><span class="lob-org">Cisco Systems Canada Co.<b>2</b></span><span class="lob-org">Google Canada Corporation<b>1</b></span><span class="lob-org">Canadian Internet Registration Authority (CIRA)<b>1</b></span></div>
-      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=704437" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=708953" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-14 · Finance Canada (FIN)</div>
+      <div class="lob-who">ELECTRICITY CANADA</div>
+      <div class="lob-met">Met with : Robert Sample — Acting Associate Assistant Deputy Minister · Frank Lofranco — Deputy Commissioner · Rajiv Gupta — Associate Head</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=704437" target="_blank" rel="noopener" onclick="event.stopPropagation()">
       <div class="lob-when">2026-09-29 · Innovation, Science and Economic Development Canada (ISED)</div>
       <div class="lob-who">Amazon Web Services Canada, Inc.</div>
       <div class="lob-met">Met with : Mark Schaan — Associate Deputy Minister</div>
@@ -345,12 +349,8 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <div class="lob-when">2026-03-03 · Communications Security Establishment Canada (CSEC)</div>
       <div class="lob-who">Qorsa Corp.</div>
       <div class="lob-met">Met with : Sami Khoury — Senior Official, Communications Security Establishment</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=680900" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-02-23 · Canadian Radio-television and Telecommunications Commission (CRTC)</div>
-      <div class="lob-who">Canadian Union of Public Employees</div>
-      <div class="lob-met">Met with : Nathalie Théberge — Vice-President · Stéphanie Paquette — Commissioner · Scott Shortliffe — Vice President</div>
     </a>
-      <p class="lob-note">Communications reported to the Office of the Commissioner of Lobbying that name this bill. Lobbying is a lawful, publicly registered activity — this count is a fact, not a verdict. Only communications whose description names both the bill number and its title are counted, so the real total may be higher. Registry archive read on October 26, 2026; the Commissioner republishes it about monthly, and we refresh it by hand.</p>
+      <p class="lob-note">Communications reported to the Office of the Commissioner of Lobbying that name this bill. Lobbying is a lawful, publicly registered activity — this count is a fact, not a verdict. Only communications whose description names both the bill number and its title are counted, so the real total may be higher. Registry archive read on November 16, 2026; the Commissioner republishes it about monthly, and we refresh it by hand.</p>
     </div>
   </div>
       </div>
@@ -650,7 +650,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
 <script defer src="/data/site-data.js"></script>
 <script type="module" src="/assets/debats.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=b505296775"></script>
+<script defer src="/assets/app.js?v=956b608d5b"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

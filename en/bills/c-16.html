@@ -65,7 +65,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=50d9259758">
+<link rel="stylesheet" href="/assets/app.css?v=7edbca76f7">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -249,7 +249,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       </div>
       <div class="filter-group">
         <button class="filter-hamburger" id="stepFilterBtn" onclick="toggleFilterPanel('step')" aria-expanded="false">☰ <span data-i18n="filter.etapes">Chamber</span></button>
-        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">House of Commons</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Senate</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Bills with communications reported to the Commissioner of Lobbying">Lobbying <b>50</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Bills that change several different acts at once, one per part">Omnibus <b>16</b></span><span class="step-chip pop-chip " onclick="toggleBillsPopular()" title="Sorted by number of explanation requests from citizens">🚀 Most popular</span><!--/ssr--></div>
+        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">House of Commons</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Senate</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Bills with communications reported to the Commissioner of Lobbying">Lobbying <b>52</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Bills that change several different acts at once, one per part">Omnibus <b>16</b></span><span class="step-chip pop-chip " onclick="toggleBillsPopular()" title="Sorted by number of explanation requests from citizens">🚀 Most popular</span><!--/ssr--></div>
       </div>
     </div>
     <p class="tous-votes" id="lienTousVotes"><a data-view="votes" href="/en/votes" data-i18n="projets.tousvotes">All recorded votes, motions included →</a></p>
@@ -260,7 +260,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-title">An Act to amend certain Acts in relation to criminal and correctional matters (child protection, gender-based violence, delays and other measures)</span>
       
       
-      <span class="ab-lob" title="46 reported lobbying communications">46</span>
+      <span class="ab-lob" title="55 reported lobbying communications">55</span>
       <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
       <span class="status-pill status-sanctionne">Assented to</span>
       <span class="ab-caret">▾</span>
@@ -300,55 +300,55 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
         <div class="lob" id="lob-13813664" onclick="toggleLobbying(this, event)">
     <div class="lob-head">
       <span class="lob-title">Registered lobbying</span>
-      <span class="lob-count">46 communications · 9 organizations</span>
-      <span class="lob-asof">as of Oct 26, 2026</span>
+      <span class="lob-count">55 communications · 9 organizations</span>
+      <span class="lob-asof">as of Nov 16, 2026</span>
       <span class="lob-toggle">the 10 most recent +</span>
     </div>
-    <div class="lob-orgs"><span class="lob-org">Google Canada Corporation<b>16</b></span><span class="lob-org">Canadian Civil Liberties Association<b>8</b></span><span class="lob-org">Ending Sexual Violence Association of Canada<b>7</b></span><span class="lob-org">Elder Abuse Prevention Ontario (EAPO)<b>4</b></span><span class="lob-org">Canadian Network for the Prevention of Elder Abuse (CNPEA)<b>3</b></span></div>
+    <div class="lob-orgs"><span class="lob-org">Ending Sexual Violence Association of Canada<b>16</b></span><span class="lob-org">Google Canada Corporation<b>16</b></span><span class="lob-org">Canadian Civil Liberties Association<b>8</b></span><span class="lob-org">Elder Abuse Prevention Ontario (EAPO)<b>4</b></span><span class="lob-org">Canadian Network for the Prevention of Elder Abuse (CNPEA)<b>3</b></span></div>
     <div class="lob-body">
       <div class="lob-orgs" style="margin:0 0 10px;"><span class="lob-org">Women's Legal Education and Action Fund<b>2</b></span><span class="lob-org">Ontario Child Sexual Exploitation Investigators Association (OCSEIA)<b>2</b></span><span class="lob-org">Canadian Federation of Humane Societies (also known as Humane Canada)<b>2</b></span><span class="lob-org">Canadian Centre for Child Protection Inc.<b>2</b></span></div>
-      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=704279" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=709310" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-21 · Senate of Canada</div>
+      <div class="lob-who">Ending Sexual Violence Association of Canada</div>
+      <div class="lob-met">Met with : Kim Pate — Senator · Lucie Moncion — Senator · Iris Petten — Senator</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=709314" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-20 · Prime Minister's Office (PMO)</div>
+      <div class="lob-who">Ending Sexual Violence Association of Canada</div>
+      <div class="lob-met">Met with : Rachel Bendayan — Parliamentary Secretary</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=709306" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-20 · House of Commons</div>
+      <div class="lob-who">Ending Sexual Violence Association of Canada</div>
+      <div class="lob-met">Met with : Taleeb Noormohamed — Member of Parliament</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=709302" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-20 · House of Commons</div>
+      <div class="lob-who">Ending Sexual Violence Association of Canada</div>
+      <div class="lob-met">Met with : Kent MacDonald — Member of Parliament</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=709299" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-20 · House of Commons</div>
+      <div class="lob-who">Ending Sexual Violence Association of Canada</div>
+      <div class="lob-met">Met with : Adam Chambers — Member of Parliament</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=709291" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-20 · House of Commons</div>
+      <div class="lob-who">Ending Sexual Violence Association of Canada</div>
+      <div class="lob-met">Met with : Lori Idlout — Member of Parliament · Benjamin Wiles — Chief of Staff to the Minister · Salma Ayoub — Parliamentary Assistant</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=709285" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-20 · House of Commons</div>
+      <div class="lob-who">Ending Sexual Violence Association of Canada</div>
+      <div class="lob-met">Met with : Andréanne Larouche — Member of Parliament</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=709280" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-20 · House of Commons</div>
+      <div class="lob-who">Ending Sexual Violence Association of Canada</div>
+      <div class="lob-met">Met with : Karina Gould — Member of Parliament · Julie Dzerowicz — Member of Parliament</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=709226" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+      <div class="lob-when">2026-10-20 · Privy Council Office (PCO)</div>
+      <div class="lob-who">Ending Sexual Violence Association of Canada</div>
+      <div class="lob-met">Met with : Shannon Ablett — Stakeholder Relations Manager · Ariane Mallet — Senior Operations Advisor</div>
+    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=704279" target="_blank" rel="noopener" onclick="event.stopPropagation()">
       <div class="lob-when">2026-09-29 · House of Commons</div>
       <div class="lob-who">Women's Legal Education and Action Fund</div>
       <div class="lob-met">Met with : Patricia Lattanzio — Member of Parliament · Alicia Cooke — Policy Advisor · Faye Ali — Parliamentary Secretary Assistant and Quebec Regional Advisor</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=703536" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-09-09 · Public Safety Canada (PS)</div>
-      <div class="lob-who">Ending Sexual Violence Association of Canada</div>
-      <div class="lob-met">Met with : Nina Sartor — Deputy Director of Policy · Sarah Cozzi — Director of Policy</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=703534" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-09-08 · Women and Gender Equality (WAGE)</div>
-      <div class="lob-who">Ending Sexual Violence Association of Canada</div>
-      <div class="lob-met">Met with : Carina Gabriele — Director of Policy · Alice Zheng — Deputy Director of Policy</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=703531" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-09-01 · House of Commons</div>
-      <div class="lob-who">Ending Sexual Violence Association of Canada</div>
-      <div class="lob-met">Met with : Yasir Naqvi — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=701324" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-08-14 · Canadian Heritage (PCH)</div>
-      <div class="lob-who">Google Canada Corporation</div>
-      <div class="lob-met">Met with : Brian MacKay — Deputy Chief of Staff</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=700370" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-08-10 · House of Commons</div>
-      <div class="lob-who">Ending Sexual Violence Association of Canada</div>
-      <div class="lob-met">Met with : Rechie Valdez — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=700368" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-08-06 · House of Commons</div>
-      <div class="lob-who">Ending Sexual Violence Association of Canada</div>
-      <div class="lob-met">Met with : Rechie Valdez — Member of Parliament</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=696630" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-07-28 · Employment and Social Development Canada (ESDC)</div>
-      <div class="lob-who">Ending Sexual Violence Association of Canada</div>
-      <div class="lob-met">Met with : Alana Powell — Senior Policy Advisor</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=697947" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-07-21 · Justice Canada (JC)</div>
-      <div class="lob-who">Google Canada Corporation</div>
-      <div class="lob-met">Met with : Thomas Law — Senior Policy Advisor</div>
-    </a><a class="lob-item" href="https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/cmmLgPblcVw?comlogId=694670" target="_blank" rel="noopener" onclick="event.stopPropagation()">
-      <div class="lob-when">2026-06-12 · House of Commons</div>
-      <div class="lob-who">Google Canada Corporation</div>
-      <div class="lob-met">Met with : Jacob Mantle — Member of Parliament</div>
     </a>
-      <p class="lob-note">Communications reported to the Office of the Commissioner of Lobbying that name this bill. Lobbying is a lawful, publicly registered activity — this count is a fact, not a verdict. Only communications whose description names both the bill number and its title are counted, so the real total may be higher. Registry archive read on October 26, 2026; the Commissioner republishes it about monthly, and we refresh it by hand.</p>
+      <p class="lob-note">Communications reported to the Office of the Commissioner of Lobbying that name this bill. Lobbying is a lawful, publicly registered activity — this count is a fact, not a verdict. Only communications whose description names both the bill number and its title are counted, so the real total may be higher. Registry archive read on November 16, 2026; the Commissioner republishes it about monthly, and we refresh it by hand.</p>
     </div>
   </div>
       </div>
@@ -648,7 +648,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
 <script defer src="/data/site-data.js"></script>
 <script type="module" src="/assets/debats.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=b505296775"></script>
+<script defer src="/assets/app.js?v=956b608d5b"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

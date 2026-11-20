@@ -1,7 +1,7 @@
 {
   "source": "https://www.parl.ca/legisinfo/en/bills/json?parlsession=45-1",
   "session": "45-1",
-  "scrapedAt": "2026-11-19T16:53:07.420Z",
+  "scrapedAt": "2026-11-20T16:28:19.661Z",
   "count": 200,
   "bills": [
     {
@@ -163,6 +163,273 @@
       "summarySource": "bill"
     },
     {
+      "id": 13707662,
+      "num": "S-239",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "senate",
+      "type": {
+        "en": "Senate Public Bill",
+        "fr": "Projet de loi d'intérêt public du Sénat"
+      },
+      "isGovernment": false,
+      "title": {
+        "en": "An Act to amend the Competition Act",
+        "fr": "Loi modifiant la Loi sur la concurrence"
+      },
+      "shortTitle": {
+        "en": "Canadian Prosperity Act",
+        "fr": "Loi sur la prospérité du Canada"
+      },
+      "sponsor": {
+        "en": "Martin Klyne",
+        "fr": "Martin Klyne"
+      },
+      "status": {
+        "en": "Senate bill awaiting first reading in the House of Commons",
+        "fr": "Projet de loi du Sénat en attente de la première lecture à la Chambre des communes"
+      },
+      "state": "encours",
+      "milestones": [
+        {
+          "stage": "senate_first_reading",
+          "chamber": "senate",
+          "reading": 1,
+          "date": "2025-10-29"
+        },
+        {
+          "stage": "senate_second_reading",
+          "chamber": "senate",
+          "reading": 2,
+          "date": "2026-06-09"
+        },
+        {
+          "stage": "senate_third_reading",
+          "chamber": "senate",
+          "reading": 3,
+          "date": "2026-11-19"
+        }
+      ],
+      "royalAssent": null,
+      "reinstated": false,
+      "latestActivity": {
+        "en": "Senate bill awaiting first reading in the House of Commons",
+        "fr": "Projet de loi du Sénat en attente de la première lecture à la Chambre des communes",
+        "date": "2026-11-19"
+      },
+      "lastActivity": "2026-11-19",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/s-239",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/s-239"
+      },
+      "sponsorPersonId": 101320,
+      "sponsorName": {
+        "first": "Martin",
+        "last": "Klyne"
+      },
+      "fullSummaryAvailable": false,
+      "summary": {
+        "en": "This enactment amends section 10.‍1 of the Competition Act to provide that the Commissioner of Competition may, in a market or industry inquiry report, make recommendations to a responsible federal or provincial institution respecting barriers to trade within Canada that, in the Commissioner’s opinion, unduly affect the state of competition in the market or industry.\n\nIt provides that the head of a federal institution must respond to any recommendation made to the institution within 120 days. It requires the Commissioner to publish the response received on a publicly available website.\n\nIt provides that the head of a provincial institution may respond to any recommendation made to the institution within 120 days. It requires the Commissioner to publish the response — or, if no response is received, a notice to this effect — on a publicly available website.",
+        "fr": "Le texte modifie l’article 10.‍1 de la Loi sur la concurrence afin de prévoir que le commissaire de la concurrence peut, dans un rapport d’enquête sur un marché ou une industrie, adresser à une institution fédérale ou provinciale responsable des recommandations au sujet d’entraves au commerce intérieur au Canada qui, à son avis, ont une incidence indue sur l’état de concurrence dans ce marché ou cette industrie.\n\nIl prévoit que le responsable d’une institution fédérale visée par une recommandation doit y répondre dans un délai de cent vingt jours et que le commissaire doit publier la réponse sur un site Web accessible au public.\n\nEnfin, le texte prévoit que le responsable d’une institution provinciale visée par une recommandation peut y répondre dans un délai de cent vingt jours et que le commissaire doit publier la réponse — ou, en l’absence de réponse, un avis en ce sens — sur un site Web accessible au public."
+      },
+      "summarySource": "bill"
+    },
+    {
+      "id": 13605049,
+      "num": "C-10",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "commons",
+      "type": {
+        "en": "House Government Bill",
+        "fr": "Projet de loi émanant du gouvernement (Cdc)"
+      },
+      "isGovernment": true,
+      "title": {
+        "en": "An Act respecting the Commissioner for Modern Treaty Implementation",
+        "fr": "Loi concernant le commissaire à la mise en œuvre des traités modernes"
+      },
+      "shortTitle": {
+        "en": "Commissioner for Modern Treaty Implementation Act",
+        "fr": "Loi sur le commissaire à la mise en œuvre des traités modernes"
+      },
+      "sponsor": {
+        "en": "Hon. Rebecca Alty",
+        "fr": "L’hon. Rebecca Alty"
+      },
+      "status": {
+        "en": "Royal assent received",
+        "fr": "Sanction royale reçue"
+      },
+      "state": "loi",
+      "milestones": [
+        {
+          "stage": "commons_first_reading",
+          "chamber": "commons",
+          "reading": 1,
+          "date": "2025-09-25"
+        },
+        {
+          "stage": "commons_second_reading",
+          "chamber": "commons",
+          "reading": 2,
+          "date": "2026-02-09"
+        },
+        {
+          "stage": "commons_third_reading",
+          "chamber": "commons",
+          "reading": 3,
+          "date": "2026-09-21"
+        },
+        {
+          "stage": "senate_first_reading",
+          "chamber": "senate",
+          "reading": 1,
+          "date": "2026-09-28"
+        },
+        {
+          "stage": "senate_second_reading",
+          "chamber": "senate",
+          "reading": 2,
+          "date": "2026-10-06"
+        },
+        {
+          "stage": "senate_third_reading",
+          "chamber": "senate",
+          "reading": 3,
+          "date": "2026-11-19"
+        },
+        {
+          "stage": "royal_assent",
+          "chamber": null,
+          "reading": null,
+          "date": "2026-11-19"
+        }
+      ],
+      "royalAssent": "2026-11-19",
+      "reinstated": false,
+      "latestActivity": {
+        "en": "Royal assent received",
+        "fr": "Sanction royale reçue",
+        "date": "2026-11-19"
+      },
+      "lastActivity": "2026-11-19",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-10",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-10"
+      },
+      "sponsorPersonId": 123675,
+      "sponsorName": {
+        "first": "Rebecca",
+        "last": "Alty"
+      },
+      "fullSummaryAvailable": true,
+      "summary": {
+        "en": "A legislative summary is currently being prepared for this bill by the Parliamentary Information, Education and Research Services of the Library of Parliament. Meanwhile, the following executive summary is available.\n\nOn 25 September 2025, the Minister of Crown-Indigenous Relations introduced Bill C-10, An Act respecting the Commissioner for Modern Treaty Implementation (Commissioner for Modern Treaty Implementation Act) and it was given first reading.\n\nBill C-10 provides for the appointment of a Commissioner for Modern Treaty Implementation to conduct reviews and performance audits of the activities of government institutions related to the implementation of modern treaties. It also establishes the Office of the Commissioner for Modern Treaty Implementation for the purpose of assisting the Commissioner in the fulfillment of their mandate and the exercise of their powers and the performance of their duties and functions. Finally, it makes consequential amendments to other Acts.A legislative summary is currently being prepared for this bill by the Parliamentary Information, Education and Research Services of the Library of Parliament. Meanwhile, the following executive summary is available.\n\nOn 25 September 2025, the Minister of Crown-Indigenous Relations introduced Bill C-10, An Act respecting the Commissioner for Modern Treaty Implementation (Commissioner for Modern Treaty Implementation Act) and it was given first reading.\n\nBill C-10 provides for the appointment of a Commissioner for Modern Treaty Implementation to conduct reviews and performance audits of the activities of government institutions related to the implementation of modern treaties. It also establishes the Office of the Commissioner for Modern Treaty Implementation for the purpose of assisting the Commissioner in the fulfillment of their mandate and the exercise of their powers and the performance of their duties and functions. Finally, it makes consequential amendments to other Acts.",
+        "fr": "Les Service d’information, d’éducation et de recherche parlementaires de la Bibliothèque du Parlement rédige actuellement le résumé législatif de ce projet de loi. Entre-temps, le Service met à votre disposition le sommaire suivant.\n\nLe 25 septembre 2025, le ministre des Relations Couronne-Autochtones a déposé le projet de loi C-10, Loi concernant le commissaire à la mise en œuvre des traités modernes (Loi sur le commissaire à la mise en œuvre des traités modernes) à la Chambre des communes en première lecture.\n\nLe projet de loi C-10 confie au commissaire à la mise en œuvre des traités modernes la charge d’effectuer des examens et des vérifications de performance à l’égard des activités des institutions fédérales liées à la mise en œuvre de ces traités. De plus, il constitue le Commissariat à la mise en œuvre des traités modernes afin de soutenir le commissaire dans l’accomplissement de sa mission et l’exercice de ses attributions. Enfin, il apporte des modifications corrélatives à d’autres lois.Les Service d’information, d’éducation et de recherche parlementaires de la Bibliothèque du Parlement rédige actuellement le résumé législatif de ce projet de loi. Entre-temps, le Service met à votre disposition le sommaire suivant.\n\nLe 25 septembre 2025, le ministre des Relations Couronne-Autochtones a déposé le projet de loi C-10, Loi concernant le commissaire à la mise en œuvre des traités modernes (Loi sur le commissaire à la mise en œuvre des traités modernes) à la Chambre des communes en première lecture.\n\nLe projet de loi C-10 confie au commissaire à la mise en œuvre des traités modernes la charge d’effectuer des examens et des vérifications de performance à l’égard des activités des institutions fédérales liées à la mise en œuvre de ces traités. De plus, il constitue le Commissariat à la mise en œuvre des traités modernes afin de soutenir le commissaire dans l’accomplissement de sa mission et l’exercice de ses attributions. Enfin, il apporte des modifications corrélatives à d’autres lois."
+      },
+      "summarySource": "library"
+    },
+    {
+      "id": 13583696,
+      "num": "C-234",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "commons",
+      "type": {
+        "en": "Private Member’s Bill",
+        "fr": "Projet de loi émanant d'un député"
+      },
+      "isGovernment": false,
+      "title": {
+        "en": "An Act respecting the establishment and award of a Living Donor Recognition Medal",
+        "fr": "Loi prévoyant la création et l’attribution d’une médaille de reconnaissance pour les donneurs vivants"
+      },
+      "shortTitle": {
+        "en": "Living Donor Recognition Medal Act",
+        "fr": "Loi sur la médaille de reconnaissance pour les donneurs vivants"
+      },
+      "sponsor": {
+        "en": "Ziad Aboultaif",
+        "fr": "Ziad Aboultaif"
+      },
+      "status": {
+        "en": "Royal assent received",
+        "fr": "Sanction royale reçue"
+      },
+      "state": "loi",
+      "milestones": [
+        {
+          "stage": "commons_first_reading",
+          "chamber": "commons",
+          "reading": 1,
+          "date": "2025-09-22"
+        },
+        {
+          "stage": "commons_second_reading",
+          "chamber": "commons",
+          "reading": 2,
+          "date": "2025-12-11"
+        },
+        {
+          "stage": "commons_third_reading",
+          "chamber": "commons",
+          "reading": 3,
+          "date": "2026-04-22"
+        },
+        {
+          "stage": "senate_first_reading",
+          "chamber": "senate",
+          "reading": 1,
+          "date": "2026-04-23"
+        },
+        {
+          "stage": "senate_second_reading",
+          "chamber": "senate",
+          "reading": 2,
+          "date": "2026-06-02"
+        },
+        {
+          "stage": "senate_third_reading",
+          "chamber": "senate",
+          "reading": 3,
+          "date": "2026-11-03"
+        },
+        {
+          "stage": "royal_assent",
+          "chamber": null,
+          "reading": null,
+          "date": "2026-11-19"
+        }
+      ],
+      "royalAssent": "2026-11-19",
+      "reinstated": false,
+      "latestActivity": {
+        "en": "Royal assent received",
+        "fr": "Sanction royale reçue",
+        "date": "2026-11-19"
+      },
+      "lastActivity": "2026-11-19",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-234",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-234"
+      },
+      "sponsorPersonId": 89156,
+      "sponsorName": {
+        "first": "Ziad",
+        "last": "Aboultaif"
+      },
+      "fullSummaryAvailable": false,
+      "summary": {
+        "en": "This enactment establishes a medal to be awarded to Canadian citizens and permanent residents who have donated one or more organs in Canada during their lifetime.",
+        "fr": "Le texte crée une médaille à l’intention des citoyens canadiens et des résidents permanents qui ont fait don d’au moins un de leurs organes au Canada de leur vivant."
+      },
+      "summarySource": "bill"
+    },
+    {
       "id": 14332783,
       "num": "C-296",
       "session": "45-1",
@@ -218,10 +485,10 @@
       },
       "fullSummaryAvailable": false,
       "summary": {
-        "en": null,
-        "fr": null
+        "en": "This enactment enacts the Non-regression of Environmental Protection Laws Act to implement the principle of non-regression in Canadian legislation by providing for the review of environmental protection Acts and regulations to ensure that any amendments to them are consistent with the principle of non-regression.\n\nIt also makes consequential amendments to the Auditor General Act and the Interpretation Act.\n\nLastly, the enactment amends the Building Canada Act to make it consistent with the principle of non-regression.",
+        "fr": "Le texte édicte la Loi sur la non-régression des lois sur la protection de l’environnement afin de mettre en œuvre le principe de non-régression dans les lois canadiennes en prévoyant l’examen des lois et des règlements qui portent sur la protection de l’environnement pour faire en sorte que toute modification à ceux-ci soit conforme au principe de non-régression.\n\nIl modifie également la Loi sur le vérificateur général et la Loi d’interprétation pour y apporter des modifications corrélatives.\n\nEnfin, il modifie la Loi visant à bâtir le Canada afin de prévoir le respect du principe de non-régression."
       },
-      "summarySource": null
+      "summarySource": "bill"
     },
     {
       "id": 14250015,
@@ -346,10 +613,10 @@
       },
       "fullSummaryAvailable": false,
       "summary": {
-        "en": "Part 1 amends the Income Tax Act in order to increase the maximum annual Canada Groceries and Essentials Benefit amounts by 50 % for the 2026-2027 benefit year.\n\nPart 2 provides for the repeal of the Prohibition on the Purchase of Residential Property by Non-Canadians Act on January 1, 2029. It also makes related amendments to the Budget Implementation Act, 2022, No. 1 and the Prohibition on the Purchase of Residential Property by Non-Canadians Regulations.",
-        "fr": "La partie 1 modifie la Loi de l’impôt sur le revenu afin d’augmenter les montants annuels maximaux de l’allocation canadienne pour l’épicerie et les besoins essentiels de 50 % pour l’année de prestations 2026-2027.\n\nLa partie 2 prévoit l’abrogation de la Loi sur l’interdiction d’achat d’immeubles résidentiels par des non-Canadiens le 1er janvier 2029. Elle apporte également des modifications connexes à la Loi no 1 d’exécution du budget de 2022 et au Règlement sur l’interdiction d’achat d’immeubles résidentiels par des non-Canadiens."
+        "en": "The Library of Parliament does not prepare Legislative Summaries for self-explanatory measures. The following is a short summary:\n\nOn 18 November 2026, the Minister of Housing and Infrastructure and Minister responsible for Pacific Economic Development Canada introduced Bill C-42, An Act respecting certain measures related to affordability and housing (Grocery and Housing Affordability Act) in the House of Commons and it was given first reading.\n\nBill C-42 amends the Income Tax Act to increase the maximum annual Canada Groceries and Essentials Benefit amounts by 50?% for the 2026-2027 benefit year. It also provides for the repeal of the Prohibition on the Purchase of Residential Property by Non-Canadians Act on 1 January 2029, and makes related amendments to the Budget Implementation Act, 2022, No. 1 and the Prohibition on the Purchase of Residential Property by Non-Canadians Regulations.The Library of Parliament does not prepare Legislative Summaries for self-explanatory measures. The following is a short summary:\n\nOn 18 November 2026, the Minister of Housing and Infrastructure and Minister responsible for Pacific Economic Development Canada introduced Bill C-42, An Act respecting certain measures related to affordability and housing (Grocery and Housing Affordability Act) in the House of Commons and it was given first reading.\n\nBill C-42 amends the Income Tax Act to increase the maximum annual Canada Groceries and Essentials Benefit amounts by 50?% for the 2026-2027 benefit year. It also provides for the repeal of the Prohibition on the Purchase of Residential Property by Non-Canadians Act on 1 January 2029, and makes related amendments to the Budget Implementation Act, 2022, No. 1 and the Prohibition on the Purchase of Residential Property by Non-Canadians Regulations.",
+        "fr": "La Bibliothèque du Parlement ne prépare pas de Résumés législatifs pour les mesures qui sont suffisamment explicites. Ce qui suit est un court résumé :\n\nLe 18 novembre 2026, le ministre du Logement et de l’Infrastructure et ministre responsable de Développement économique Canada pour le Pacifique a déposé le projet de loi C-42, Loi visant certaines mesures liées à l'abordabilité et au logement (Loi sur l'abordabilité des produits d'épicerie et du logement) à la Chambre des communes en première lecture.\n\nLe projet de loi C-42 modifie la Loi de l’impôt sur le revenu afin d’augmenter les montants annuels maximaux de l’allocation canadienne pour l’épicerie et les besoins essentiels de 50?% pour l’année de prestations 2026-2027. Il prévoit également l’abrogation de la Loi sur l’interdiction d’achat d’immeubles résidentiels par des non-Canadiens le 1er janvier 2029, et apporte des modifications connexes à la Loi no 1 d’exécution du budget de 2022 et au Règlement sur l’interdiction d’achat d’immeubles résidentiels par des non-Canadiens.La Bibliothèque du Parlement ne prépare pas de Résumés législatifs pour les mesures qui sont suffisamment explicites. Ce qui suit est un court résumé :\n\nLe 18 novembre 2026, le ministre du Logement et de l’Infrastructure et ministre responsable de Développement économique Canada pour le Pacifique a déposé le projet de loi C-42, Loi visant certaines mesures liées à l'abordabilité et au logement (Loi sur l'abordabilité des produits d'épicerie et du logement) à la Chambre des communes en première lecture.\n\nLe projet de loi C-42 modifie la Loi de l’impôt sur le revenu afin d’augmenter les montants annuels maximaux de l’allocation canadienne pour l’épicerie et les besoins essentiels de 50?% pour l’année de prestations 2026-2027. Il prévoit également l’abrogation de la Loi sur l’interdiction d’achat d’immeubles résidentiels par des non-Canadiens le 1er janvier 2029, et apporte des modifications connexes à la Loi no 1 d’exécution du budget de 2022 et au Règlement sur l’interdiction d’achat d’immeubles résidentiels par des non-Canadiens."
       },
-      "summarySource": "bill"
+      "summarySource": "library"
     },
     {
       "id": 13541955,
@@ -556,10 +823,10 @@
       },
       "fullSummaryAvailable": false,
       "summary": {
-        "en": "This enactment amends the Criminal Code to, among other things,\n\n(a) clarify that a person cannot receive medical assistance in dying on the basis of a mental illness; and\n\n(b) create exemptions from the offences of culpable homicide and administering a noxious thing, in order to permit a medical practitioner or a nurse practitioner to provide medical assistance in dying to a person who has lost the capacity to consent to the procedure if the person made an advance request to receive medical assistance in dying when they had that capacity and if\n\n(i) the person is eligible to receive medical assistance in dying and the medical practitioner or nurse practitioner ensures that the applicable safeguards are complied with,\n\n(ii) the person prepared their advance request in accordance with the applicable criteria, including that the person was diagnosed, before the request was signed, with a serious and incurable illness or disease that was reasonably expected to lead to an irreversible loss of the capacity to consent to receiving medical assistance in dying, and\n\n(iii) the province in which the person would receive medical assistance in dying has in force a provincial legislative regime that identifies the repository in which advance requests are stored and that includes rules in relation to, among other things, making, storing, withdrawing and amending or replacing advance requests.\n\nThe enactment also amends An Act to amend the Criminal Code (medical assistance in dying) so that the exclusion from eligibility to receive medical assistance in dying in relation to a mental illness remains in force.\n\nFinally, the enactment makes related amendments to other Acts.",
-        "fr": "Le texte modifie le Code criminel afin, notamment :\n\na) de clarifier qu’une personne ne peut recevoir l’aide médicale à mourir sur le fondement d’une maladie mentale;\n\nb) de créer de nouvelles exemptions à l’égard des infractions d’homicide coupable et d’administration d’une substance délétère dans le but de permettre à un médecin ou à un infirmier praticien de fournir l’aide médicale à mourir à une personne qui a perdu la capacité d’y consentir si celle-ci a fait une demande anticipée d’aide médicale à mourir alors qu’elle avait cette capacité et si :\n\n(i) la personne est admissible à l’aide médicale à mourir et le médecin ou l’infirmier praticien s’assure que les mesures de sauvegarde qui s’appliquent sont respectées,\n\n(ii) la personne a préparé sa demande anticipée en conformité avec les critères qui s’appliquent, notamment suite au diagnostic, avant la signature de la demande, d’une maladie ou d’une affection grave et incurable dont l’évolution laissait raisonnablement présager une perte irréversible de sa capacité à consentir à l’aide médicale à mourir,\n\n(iii) la province où la personne recevrait l’aide médicale à mourir a un régime législatif provincial en vigueur concernant les demandes anticipées qui identifie un registre dans lequel ces demandes sont conservées et qui comprend des règles portant notamment sur la formulation, la conservation, le retrait et la modification ou substitution des demandes anticipées.\n\nIl modifie également la Loi modifiant le Code criminel (aide médicale à mourir) afin de faire en sorte que l’exclusion de l’admissibilité à recevoir l’aide médicale à mourir en lien avec une maladie mentale demeure en vigueur.\n\nIl prévoit enfin des modifications connexes à d’autres lois."
+        "en": "A legislative summary is currently being prepared for this bill by the Parliamentary Information, Education and Research Services of the Library of Parliament. Meanwhile, the following executive summary is available.\n\nOn 27 October 2026, the Minister of Justice introduced Bill C-41, An Act to amend the Criminal Code and An Act to amend the Criminal Code (medical assistance in dying) and to make related amendments to other Acts (Medical Assistance in Dying Safeguards Act) in the House of Commons and it was given first reading.\n\nBill C-41 amends the Criminal Code to, among other things,\n\n(a) clarify that a person cannot receive medical assistance in dying on the basis of a mental illness; and\n\n(b) create exemptions from the offences of culpable homicide and administering a noxious thing, in order to permit a medical practitioner or a nurse practitioner to provide medical assistance in dying to a person who has lost the capacity to consent to the procedure if the person made an advance request to receive medical assistance in dying when they had that capacity and if\n\n(i) the person is eligible to receive medical assistance in dying and the medical practitioner or nurse practitioner ensures that the applicable safeguards are complied with,\n\n(ii) the person prepared their advance request in accordance with the applicable criteria, including that the person was diagnosed, before the request was signed, with a serious and incurable illness or disease that was reasonably expected to lead to an irreversible loss of the capacity to consent to receiving medical assistance in dying, and\n\n(iii) the province in which the person would receive medical assistance in dying has in force a provincial legislative regime that identifies the repository in which advance requests are stored and that includes rules in relation to, among other things, making, storing, withdrawing and amending or replacing advance requests.\n\nThe enactment also amends An Act to amend the Criminal Code (medical assistance in dying) so that the exclusion from eligibility to receive medical assistance in dying in relation to a mental illness remains in force.\n\nFinally, the enactment makes related amendments to other Acts.A legislative summary is currently being prepared for this bill by the Parliamentary Information, Education and Research Services of the Library of Parliament. Meanwhile, the following executive summary is available.\n\nOn 27 October 2026, the Minister of Justice introduced Bill C-41, An Act to amend the Criminal Code and An Act to amend the Criminal Code (medical assistance in dying) and to make related amendments to other Acts (Medical Assistance in Dying Safeguards Act) in the House of Commons and it was given first reading.\n\nBill C-41 amends the Criminal Code to, among other things,\n\n(a) clarify that a person cannot receive medical assistance in dying on the basis of a mental illness; and\n\n(b) create exemptions from the offences of culpable homicide and administering a noxious thing, in order to permit a medical practitioner or a nurse practitioner to provide medical assistance in dying to a person who has lost the capacity to consent to the procedure if the person made an advance request to receive medical assistance in dying when they had that capacity and if\n\n(i) the person is eligible to receive medical assistance in dying and the medical practitioner or nurse practitioner ensures that the applicable safeguards are complied with,\n\n(ii) the person prepared their advance request in accordance with the applicable criteria, including that the person was diagnosed, before the request was signed, with a serious and incurable illness or disease that was reasonably expected to lead to an irreversible loss of the capacity to consent to receiving medical assistance in dying, and\n\n(iii) the province in which the person would receive medical assistance in dying has in force a provincial legislative regime that identifies the repository in which advance requests are stored and that includes rules in relation to, among other things, making, storing, withdrawing and amending or replacing advance requests.\n\nThe enactment also amends An Act to amend the Criminal Code (medical assistance in dying) so that the exclusion from eligibility to receive medical assistance in dying in relation to a mental illness remains in force.\n\nFinally, the enactment makes related amendments to other Acts.",
+        "fr": "Les Service d’information, d’éducation et de recherche parlementaires de la Bibliothèque du Parlement rédige actuellement le résumé législatif de ce projet de loi. Entre-temps, le Service met à votre disposition le sommaire suivant.\n\nLe 27 octobre 2026, le ministre de la Justice a déposé le projet de loi C-41, Loi modifiant le Code criminel et la Loi modifiant le Code criminel (aide médicale à mourir) et apportant des modifications connexes à d'autres lois (Loi sur les mesures de sauvegarde à l'égard de l'aide médicale à mourir) à la Chambre des communes en première lecture.\n\nLe projet de loi C-41 modifie le Code criminel afin, notamment?:\n\na) de clarifier qu’une personne ne peut recevoir l’aide médicale à mourir sur le fondement d’une maladie mentale;\n\nb) de créer de nouvelles exemptions à l’égard des infractions d’homicide coupable et d’administration d’une substance délétère dans le but de permettre à un médecin ou à un infirmier praticien de fournir l’aide médicale à mourir à une personne qui a perdu la capacité d’y consentir si celle-ci a fait une demande anticipée d’aide médicale à mourir alors qu’elle avait cette capacité et si?:\n\n(i) la personne est admissible à l’aide médicale à mourir et le médecin ou l’infirmier praticien s’assure que les mesures de sauvegarde qui s’appliquent sont respectées,\n\n(ii) la personne a préparé sa demande anticipée en conformité avec les critères qui s’appliquent, notamment suite au diagnostic, avant la signature de la demande, d’une maladie ou d’une affection grave et incurable dont l’évolution laissait raisonnablement présager une perte irréversible de sa capacité à consentir à l’aide médicale à mourir,\n\n(iii) la province où la personne recevrait l’aide médicale à mourir a un régime législatif provincial en vigueur concernant les demandes anticipées qui identifie un registre dans lequel ces demandes sont conservées et qui comprend des règles portant notamment sur la formulation, la conservation, le retrait et la modification ou substitution des demandes anticipées.\n\nIl modifie également la Loi modifiant le Code criminel (aide médicale à mourir) afin de faire en sorte que l’exclusion de l’admissibilité à recevoir l’aide médicale à mourir en lien avec une maladie mentale demeure en vigueur.\n\nIl prévoit enfin des modifications connexes à d’autres lois.Les Service d’information, d’éducation et de recherche parlementaires de la Bibliothèque du Parlement rédige actuellement le résumé législatif de ce projet de loi. Entre-temps, le Service met à votre disposition le sommaire suivant.\n\nLe 27 octobre 2026, le ministre de la Justice a déposé le projet de loi C-41, Loi modifiant le Code criminel et la Loi modifiant le Code criminel (aide médicale à mourir) et apportant des modifications connexes à d'autres lois (Loi sur les mesures de sauvegarde à l'égard de l'aide médicale à mourir) à la Chambre des communes en première lecture.\n\nLe projet de loi C-41 modifie le Code criminel afin, notamment?:\n\na) de clarifier qu’une personne ne peut recevoir l’aide médicale à mourir sur le fondement d’une maladie mentale;\n\nb) de créer de nouvelles exemptions à l’égard des infractions d’homicide coupable et d’administration d’une substance délétère dans le but de permettre à un médecin ou à un infirmier praticien de fournir l’aide médicale à mourir à une personne qui a perdu la capacité d’y consentir si celle-ci a fait une demande anticipée d’aide médicale à mourir alors qu’elle avait cette capacité et si?:\n\n(i) la personne est admissible à l’aide médicale à mourir et le médecin ou l’infirmier praticien s’assure que les mesures de sauvegarde qui s’appliquent sont respectées,\n\n(ii) la personne a préparé sa demande anticipée en conformité avec les critères qui s’appliquent, notamment suite au diagnostic, avant la signature de la demande, d’une maladie ou d’une affection grave et incurable dont l’évolution laissait raisonnablement présager une perte irréversible de sa capacité à consentir à l’aide médicale à mourir,\n\n(iii) la province où la personne recevrait l’aide médicale à mourir a un régime législatif provincial en vigueur concernant les demandes anticipées qui identifie un registre dans lequel ces demandes sont conservées et qui comprend des règles portant notamment sur la formulation, la conservation, le retrait et la modification ou substitution des demandes anticipées.\n\nIl modifie également la Loi modifiant le Code criminel (aide médicale à mourir) afin de faire en sorte que l’exclusion de l’admissibilité à recevoir l’aide médicale à mourir en lien avec une maladie mentale demeure en vigueur.\n\nIl prévoit enfin des modifications connexes à d’autres lois."
       },
-      "summarySource": "bill"
+      "summarySource": "library"
     },
     {
       "id": 13586188,
@@ -1163,97 +1430,6 @@
       "summary": {
         "en": "This enactment amends the Department of Foreign Affairs, Trade and Development Act to impose certain requirements on the Minister of Foreign Affairs in relation to international human rights.\n\nIt also amends the Justice for Victims of Corrupt Foreign Officials Act (Sergei Magnitsky Law) to provide that\n\n(a) transnational repression be sanctioned;\n\n(b) visas or other documents must not be issued to immediate family members of a foreign national who is the subject of an order or regulation made under section 4 of the Act;\n\n(c) a copy of each order or regulation made under paragraph 4(1)‍(b) of the Act must be tabled in each House of Parliament;\n\n(d) the Minister must respond to a report submitted by a parliamentary committee that recommends that sanctions be imposed under the Act against a foreign national; and\n\n(e) the Commissioner of the Royal Canadian Mounted Police and the Financial Transactions and Reports Analysis Centre of Canada must provide the Minister with information that is relevant to the making, administering or enforcing of the order or regulation against a foreign national.\n\nIt also amends the Special Economic Measures Act to change that Act’s long title to “An Act to provide for the imposition of economic measures against a person, entity or foreign state for grave breaches of international peace and security, gross and systematic human rights violations or acts of significant corruption” and its short title to the “Sergei Magnitsky Global Sanctions Act”. It further amends that Act to provide that\n\n(a) transnational repression be sanctioned;\n\n(b) visas or other documents must not be issued to immediate family members of a foreign national who is the subject of an order or regulation made under section 4 of the Act;\n\n(c) the Commissioner of the Royal Canadian Mounted Police and the Financial Transactions and Reports Analysis Centre of Canada must provide the Minister with information that is relevant to the making, administering or enforcing of the order or regulation against a foreign state or person;\n\n(d) every order or regulation made under paragraph 4(1)‍(b) of the Act must be tabled in each House of Parliament; and\n\n(e) the punishment under paragraph 8(a) of the Act be increased.\n\nFinally, it amends the Broadcasting Act to prohibit the issue or renewal of a licence in relation to a broadcasting undertaking, or to revoke the licence of a broadcasting undertaking, that is vulnerable to being significantly influenced by a foreign national or entity that has committed acts or omissions that the Senate or the House of Commons has recognized as genocide or that is the subject of sanctions under the Justice for Victims of Corrupt Foreign Officials Act (Sergei Magnitsky Law) or under the Special Economic Measures Act.‍‍",
         "fr": "Le texte modifie la Loi sur le ministère des Affaires étrangères, du Commerce et du Développement afin d’imposer certaines exigences au ministre des Affaires étrangères relativement aux droits de la personne à l’échelle internationale.\n\nIl modifie également la Loi sur la justice pour les victimes de dirigeants étrangers corrompus (loi de Sergueï Magnitski) afin de prévoir :\n\na) que les actes de répression transnationale soient sanctionnés;\n\nb) qu’il ne peut être délivré de visa ou autre document aux membres de la famille immédiate d’un étranger visé par un décret ou règlement pris en vertu de l’article 4 de la loi;\n\nc) qu’une copie de tout décret ou règlement pris en vertu de l’alinéa 4(1)b) de la loi doit être déposée devant chaque chambre du Parlement;\n\nd) que le ministre est tenu de répondre à tout rapport soumis par un comité parlementaire qui recommande l’imposition de sanctions contre un étranger au titre de la loi;\n\ne) que le commissaire de la Gendarmerie royale du Canada et le Centre d’analyse des opérations et déclarations financières du Canada sont tenus de fournir au ministre tout renseignement utile à la prise, à l’exécution ou au contrôle d’application d’un décret ou règlement à l’encontre d’un étranger.\n\nLe texte modifie par ailleurs la Loi sur les mesures économiques spéciales afin d’en changer le titre intégral pour la « Loi autorisant la prise de mesures économiques contre des personnes, des entités et des États étrangers en cas de rupture sérieuse de la paix et de la sécurité internationales, de violations graves et systématiques des droits de la personne ou d’actes de corruption à grande échelle » et le titre abrégé pour la « Loi sur les sanctions internationales de type Sergueï Magnitski ». Il modifie aussi cette loi afin de prévoir :\n\na) que les actes de répression transnationale soient sanctionnés;\n\nb) qu’il ne peut être délivré de visa ou autre document aux membres de la famille immédiate d’un étranger visé par un décret ou règlement pris en vertu de l’article 4 de la loi;\n\nc) que le commissaire de la Gendarmerie royale du Canada et le Centre d’analyse des opérations et déclarations financières du Canada sont tenus de fournir au ministre tout renseignement utile à la prise, à l’exécution ou au contrôle d’application d’un décret ou règlement à l’encontre d’un État étranger ou d’une personne;\n\nd) que les décrets et règlements pris en vertu de l’alinéa 4(1)b) de la loi doivent être déposés devant chaque chambre du Parlement;\n\ne) que la peine prévue à l’alinéa 8a) de la loi est alourdie.\n\nEnfin, le texte modifie la Loi sur la radiodiffusion afin d’interdire l’attribution ou le renouvellement d’une licence — ou de prévoir la révocation d’une telle licence — à l’égard de toute entreprise de radiodiffusion qui est susceptible d’être considérablement influencée par un étranger ou une entité étrangère qui a commis des faits — actes ou omissions — reconnus par le Sénat ou la Chambre des communes comme constituant un génocide ou qui est visé par des sanctions sous le régime de la Loi sur la justice pour les victimes de dirigeants étrangers corrompus (loi de Sergueï Magnitski) ou de la Loi sur les mesures économiques spéciales.‍‍"
-      },
-      "summarySource": "bill"
-    },
-    {
-      "id": 13583696,
-      "num": "C-234",
-      "session": "45-1",
-      "parliament": 45,
-      "sessionNumber": 1,
-      "chamber": "commons",
-      "type": {
-        "en": "Private Member’s Bill",
-        "fr": "Projet de loi émanant d'un député"
-      },
-      "isGovernment": false,
-      "title": {
-        "en": "An Act respecting the establishment and award of a Living Donor Recognition Medal",
-        "fr": "Loi prévoyant la création et l’attribution d’une médaille de reconnaissance pour les donneurs vivants"
-      },
-      "shortTitle": {
-        "en": "Living Donor Recognition Medal Act",
-        "fr": "Loi sur la médaille de reconnaissance pour les donneurs vivants"
-      },
-      "sponsor": {
-        "en": "Ziad Aboultaif",
-        "fr": "Ziad Aboultaif"
-      },
-      "status": {
-        "en": "Awaiting royal assent",
-        "fr": "En attente de la sanction royale"
-      },
-      "state": "encours",
-      "milestones": [
-        {
-          "stage": "commons_first_reading",
-          "chamber": "commons",
-          "reading": 1,
-          "date": "2025-09-22"
-        },
-        {
-          "stage": "commons_second_reading",
-          "chamber": "commons",
-          "reading": 2,
-          "date": "2025-12-11"
-        },
-        {
-          "stage": "commons_third_reading",
-          "chamber": "commons",
-          "reading": 3,
-          "date": "2026-04-22"
-        },
-        {
-          "stage": "senate_first_reading",
-          "chamber": "senate",
-          "reading": 1,
-          "date": "2026-04-23"
-        },
-        {
-          "stage": "senate_second_reading",
-          "chamber": "senate",
-          "reading": 2,
-          "date": "2026-06-02"
-        },
-        {
-          "stage": "senate_third_reading",
-          "chamber": "senate",
-          "reading": 3,
-          "date": "2026-11-03"
-        }
-      ],
-      "royalAssent": null,
-      "reinstated": false,
-      "latestActivity": {
-        "en": "Awaiting royal assent",
-        "fr": "En attente de la sanction royale",
-        "date": "2026-11-03"
-      },
-      "lastActivity": "2026-11-03",
-      "url": {
-        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-234",
-        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-234"
-      },
-      "sponsorPersonId": 89156,
-      "sponsorName": {
-        "first": "Ziad",
-        "last": "Aboultaif"
-      },
-      "fullSummaryAvailable": false,
-      "summary": {
-        "en": "This enactment establishes a medal to be awarded to Canadian citizens and permanent residents who have donated one or more organs in Canada during their lifetime.",
-        "fr": "Le texte crée une médaille à l’intention des citoyens canadiens et des résidents permanents qui ont fait don d’au moins un de leurs organes au Canada de leur vivant."
       },
       "summarySource": "bill"
     },
@@ -2652,91 +2828,6 @@
         "fr": "Le texte modifie le Code criminel afin de renforcer la protection des victimes, notamment :\n\na) en prévoyant que les personnes déclarées coupables d’une infraction relative à la traite des personnes sont passibles, en plus de toute autre peine prévue par cette loi, d’une amende maximale de 100 000 $;\n\nb) en éliminant, lorsqu’il s’agit d’établir si une personne a commis une infraction relative à la traite des personnes, l’exigence que la victime démontre une crainte raisonnable;\n\nc) en prévoyant des peines consécutives pour les infractions relatives à la traite des personnes;\n\nd) en précisant qu’une ordonnance rendue afin qu’un témoin témoigne à l’extérieur de la salle d’audience peut préciser que le témoignage sera rendu dans un lieu autre que le bâtiment où se trouve la salle d’audience;\n\ne) en élargissant la liste des infractions à l’égard desquelles il ne peut être tenu d’enquête préliminaire;\n\nf) en élargissant les circonstances dans lesquelles un enregistrement vidéo réalisé dans un délai raisonnable après la perpétration d’une infraction reprochée et montrant la victime en train de décrire les faits à l’origine de l’accusation est admissible en preuve."
       },
       "summarySource": "bill"
-    },
-    {
-      "id": 13605049,
-      "num": "C-10",
-      "session": "45-1",
-      "parliament": 45,
-      "sessionNumber": 1,
-      "chamber": "commons",
-      "type": {
-        "en": "House Government Bill",
-        "fr": "Projet de loi émanant du gouvernement (Cdc)"
-      },
-      "isGovernment": true,
-      "title": {
-        "en": "An Act respecting the Commissioner for Modern Treaty Implementation",
-        "fr": "Loi concernant le commissaire à la mise en œuvre des traités modernes"
-      },
-      "shortTitle": {
-        "en": "Commissioner for Modern Treaty Implementation Act",
-        "fr": "Loi sur le commissaire à la mise en œuvre des traités modernes"
-      },
-      "sponsor": {
-        "en": "Hon. Rebecca Alty",
-        "fr": "L’hon. Rebecca Alty"
-      },
-      "status": {
-        "en": "At third reading in the Senate",
-        "fr": "À la troisième lecture au Sénat"
-      },
-      "state": "encours",
-      "milestones": [
-        {
-          "stage": "commons_first_reading",
-          "chamber": "commons",
-          "reading": 1,
-          "date": "2025-09-25"
-        },
-        {
-          "stage": "commons_second_reading",
-          "chamber": "commons",
-          "reading": 2,
-          "date": "2026-02-09"
-        },
-        {
-          "stage": "commons_third_reading",
-          "chamber": "commons",
-          "reading": 3,
-          "date": "2026-09-21"
-        },
-        {
-          "stage": "senate_first_reading",
-          "chamber": "senate",
-          "reading": 1,
-          "date": "2026-09-28"
-        },
-        {
-          "stage": "senate_second_reading",
-          "chamber": "senate",
-          "reading": 2,
-          "date": "2026-10-06"
-        }
-      ],
-      "royalAssent": null,
-      "reinstated": false,
-      "latestActivity": {
-        "en": "At third reading in the Senate",
-        "fr": "À la troisième lecture au Sénat",
-        "date": "2026-10-06"
-      },
-      "lastActivity": "2026-10-06",
-      "url": {
-        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-10",
-        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-10"
-      },
-      "sponsorPersonId": 123675,
-      "sponsorName": {
-        "first": "Rebecca",
-        "last": "Alty"
-      },
-      "fullSummaryAvailable": true,
-      "summary": {
-        "en": "A legislative summary is currently being prepared for this bill by the Parliamentary Information, Education and Research Services of the Library of Parliament. Meanwhile, the following executive summary is available.\n\nOn 25 September 2025, the Minister of Crown-Indigenous Relations introduced Bill C-10, An Act respecting the Commissioner for Modern Treaty Implementation (Commissioner for Modern Treaty Implementation Act) and it was given first reading.\n\nBill C-10 provides for the appointment of a Commissioner for Modern Treaty Implementation to conduct reviews and performance audits of the activities of government institutions related to the implementation of modern treaties. It also establishes the Office of the Commissioner for Modern Treaty Implementation for the purpose of assisting the Commissioner in the fulfillment of their mandate and the exercise of their powers and the performance of their duties and functions. Finally, it makes consequential amendments to other Acts.A legislative summary is currently being prepared for this bill by the Parliamentary Information, Education and Research Services of the Library of Parliament. Meanwhile, the following executive summary is available.\n\nOn 25 September 2025, the Minister of Crown-Indigenous Relations introduced Bill C-10, An Act respecting the Commissioner for Modern Treaty Implementation (Commissioner for Modern Treaty Implementation Act) and it was given first reading.\n\nBill C-10 provides for the appointment of a Commissioner for Modern Treaty Implementation to conduct reviews and performance audits of the activities of government institutions related to the implementation of modern treaties. It also establishes the Office of the Commissioner for Modern Treaty Implementation for the purpose of assisting the Commissioner in the fulfillment of their mandate and the exercise of their powers and the performance of their duties and functions. Finally, it makes consequential amendments to other Acts.",
-        "fr": "Les Service d’information, d’éducation et de recherche parlementaires de la Bibliothèque du Parlement rédige actuellement le résumé législatif de ce projet de loi. Entre-temps, le Service met à votre disposition le sommaire suivant.\n\nLe 25 septembre 2025, le ministre des Relations Couronne-Autochtones a déposé le projet de loi C-10, Loi concernant le commissaire à la mise en œuvre des traités modernes (Loi sur le commissaire à la mise en œuvre des traités modernes) à la Chambre des communes en première lecture.\n\nLe projet de loi C-10 confie au commissaire à la mise en œuvre des traités modernes la charge d’effectuer des examens et des vérifications de performance à l’égard des activités des institutions fédérales liées à la mise en œuvre de ces traités. De plus, il constitue le Commissariat à la mise en œuvre des traités modernes afin de soutenir le commissaire dans l’accomplissement de sa mission et l’exercice de ses attributions. Enfin, il apporte des modifications corrélatives à d’autres lois.Les Service d’information, d’éducation et de recherche parlementaires de la Bibliothèque du Parlement rédige actuellement le résumé législatif de ce projet de loi. Entre-temps, le Service met à votre disposition le sommaire suivant.\n\nLe 25 septembre 2025, le ministre des Relations Couronne-Autochtones a déposé le projet de loi C-10, Loi concernant le commissaire à la mise en œuvre des traités modernes (Loi sur le commissaire à la mise en œuvre des traités modernes) à la Chambre des communes en première lecture.\n\nLe projet de loi C-10 confie au commissaire à la mise en œuvre des traités modernes la charge d’effectuer des examens et des vérifications de performance à l’égard des activités des institutions fédérales liées à la mise en œuvre de ces traités. De plus, il constitue le Commissariat à la mise en œuvre des traités modernes afin de soutenir le commissaire dans l’accomplissement de sa mission et l’exercice de ses attributions. Enfin, il apporte des modifications corrélatives à d’autres lois."
-      },
-      "summarySource": "library"
     },
     {
       "id": 14240227,
@@ -5683,73 +5774,6 @@
       "summary": {
         "en": "This enactment amends the Food and Drugs Act to establish a list of therapeutic products pre-approved for special access to allow streamlined access to treatment for patients with serious or life-threatening conditions or where there is an unmet need. It also provides parameters to guide the Minister of Health in issuing letters of authorization for the sale of new drugs for emergency treatment under the Food and Drug Regulations.",
         "fr": "Le texte modifie la Loi sur les aliments et drogues afin d’établir une liste des produits thérapeutiques préapprouvés aux fins d’accès spécial pour simplifier l’accès à des traitements en cas d’affection grave ou potentiellement mortelle et dans les cas où un besoin n’est pas comblé. Il prévoit également des paramètres pour guider le ministre de la Santé dans la délivrance de lettres d’autorisation permettant la vente de drogues nouvelles pour soins d’urgence en vertu du Règlement sur les aliments et drogues."
-      },
-      "summarySource": "bill"
-    },
-    {
-      "id": 13707662,
-      "num": "S-239",
-      "session": "45-1",
-      "parliament": 45,
-      "sessionNumber": 1,
-      "chamber": "senate",
-      "type": {
-        "en": "Senate Public Bill",
-        "fr": "Projet de loi d'intérêt public du Sénat"
-      },
-      "isGovernment": false,
-      "title": {
-        "en": "An Act to amend the Competition Act",
-        "fr": "Loi modifiant la Loi sur la concurrence"
-      },
-      "shortTitle": {
-        "en": "Canadian Prosperity Act",
-        "fr": "Loi sur la prospérité du Canada"
-      },
-      "sponsor": {
-        "en": "Martin Klyne",
-        "fr": "Martin Klyne"
-      },
-      "status": {
-        "en": "At third reading in the Senate",
-        "fr": "À la troisième lecture au Sénat"
-      },
-      "state": "encours",
-      "milestones": [
-        {
-          "stage": "senate_first_reading",
-          "chamber": "senate",
-          "reading": 1,
-          "date": "2025-10-29"
-        },
-        {
-          "stage": "senate_second_reading",
-          "chamber": "senate",
-          "reading": 2,
-          "date": "2026-06-09"
-        }
-      ],
-      "royalAssent": null,
-      "reinstated": false,
-      "latestActivity": {
-        "en": "At third reading in the Senate",
-        "fr": "À la troisième lecture au Sénat",
-        "date": "2026-06-09"
-      },
-      "lastActivity": "2026-06-09",
-      "url": {
-        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/s-239",
-        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/s-239"
-      },
-      "sponsorPersonId": 101320,
-      "sponsorName": {
-        "first": "Martin",
-        "last": "Klyne"
-      },
-      "fullSummaryAvailable": false,
-      "summary": {
-        "en": "This enactment amends section 10.‍1 of the Competition Act to provide that the Commissioner of Competition may, in a market or industry inquiry report, make recommendations to a responsible federal or provincial institution respecting barriers to trade within Canada that, in the Commissioner’s opinion, unduly affect the state of competition in the market or industry.\n\nIt provides that the head of a federal institution must respond to any recommendation made to the institution within 120 days. It requires the Commissioner to publish the response received on a publicly available website.\n\nIt provides that the head of a provincial institution may respond to any recommendation made to the institution within 120 days. It requires the Commissioner to publish the response — or, if no response is received, a notice to this effect — on a publicly available website.",
-        "fr": "Le texte modifie l’article 10.‍1 de la Loi sur la concurrence afin de prévoir que le commissaire de la concurrence peut, dans un rapport d’enquête sur un marché ou une industrie, adresser à une institution fédérale ou provinciale responsable des recommandations au sujet d’entraves au commerce intérieur au Canada qui, à son avis, ont une incidence indue sur l’état de concurrence dans ce marché ou cette industrie.\n\nIl prévoit que le responsable d’une institution fédérale visée par une recommandation doit y répondre dans un délai de cent vingt jours et que le commissaire doit publier la réponse sur un site Web accessible au public.\n\nEnfin, le texte prévoit que le responsable d’une institution provinciale visée par une recommandation peut y répondre dans un délai de cent vingt jours et que le commissaire doit publier la réponse — ou, en l’absence de réponse, un avis en ce sens — sur un site Web accessible au public."
       },
       "summarySource": "bill"
     },
@@ -9638,7 +9662,7 @@
       "fullSummaryAvailable": false,
       "summary": {
         "en": "The Library of Parliament does not prepare Legislative Summaries for self-explanatory measures. The following is a short summary:\n\nOn 28 January 2026, the Minister of Finance and National Revenue introduced Bill C-19, An Act to amend the Income Tax Act (Canada Groceries and Essentials Benefit Act) in the House of Commons and it was given first reading.\n\nBill C-19 amends the Income Tax Act in order to increase the maximum annual Goods and Services Tax/Harmonized Sales Tax credit (GSTC) amounts by 50% for the 2025-2026 benefit year. It also amends that Act to increase the maximum annual GSTC amounts by 25% as of the 2026-2027 benefit year for a period of five years.The Library of Parliament does not prepare Legislative Summaries for self-explanatory measures. The following is a short summary:\n\nOn 28 January 2026, the Minister of Finance and National Revenue introduced Bill C-19, An Act to amend the Income Tax Act (Canada Groceries and Essentials Benefit Act) in the House of Commons and it was given first reading.\n\nBill C-19 amends the Income Tax Act in order to increase the maximum annual Goods and Services Tax/Harmonized Sales Tax credit (GSTC) amounts by 50% for the 2025-2026 benefit year. It also amends that Act to increase the maximum annual GSTC amounts by 25% as of the 2026-2027 benefit year for a period of five years.",
-        "fr": "La Bibliothèque du Parlement ne prépare pas de Résumés législatifs pour les mesures qui sont suffisamment explicites. Ce qui suit est un court résumé :\n\nLe 28 janvier 2026, le ministre des Finances et du Revenu national a déposé le projet de loi C-19, Loi modifiant la Loi de l'impôt sur le revenu (Loi sur l'allocation canadienne pour l'épicerie et les besoins essentiels) à la Chambre des communes en première lecture.\n\nLe projet de loi C-19 modifie la Loi de l’impôt sur le revenu afin d’augmenter les montants du crédit annuel maximal de la taxe sur les produits et services/taxe de vente harmonisée (TPS/TVH) de 50?% pour l’année de prestations 2025-2026. Il modifie également cette Loi afin d’augmenter le montant annuel maximal du crédit de TPS/TVH de 25?% à partir de l’année de prestations 2026-2027 pour une période de cinq ans.La Bibliothèque du Parlement ne prépare pas de Résumés législatifs pour les mesures qui sont suffisamment explicites. Ce qui suit est un court résumé :\n\nLe 28 janvier 2026, le ministre des Finances et du Revenu national a déposé le projet de loi C-19, Loi modifiant la Loi de l'impôt sur le revenu (Loi sur l'allocation canadienne pour l'épicerie et les besoins essentiels) à la Chambre des communes en première lecture.\n\nLe projet de loi C-19 modifie la Loi de l’impôt sur le revenu afin d’augmenter les montants du crédit annuel maximal de la taxe sur les produits et services/taxe de vente harmonisée (TPS/TVH) de 50?% pour l’année de prestations 2025-2026. Il modifie également cette Loi afin d’augmenter le montant annuel maximal du crédit de TPS/TVH de 25?% à partir de l’année de prestations 2026-2027 pour une période de cinq ans."
+        "fr": "La Bibliothèque du Parlement ne prépare pas de Résumés législatifs pour les mesures qui sont suffisamment explicites. Ce qui suit est un court résumé :\n\nLe 28 janvier 2026, le ministre des Finances et du Revenu national a déposé le projet de loi C-19, Loi modifiant la Loi de l'impôt sur le revenu (Loi sur l'allocation canadienne pour l'épicerie et les besoins essentiels) à la Chambre des communes en première lecture.\n\nLe projet de loi C-19 modifie la Loi de l’impôt sur le revenu afin d’augmenter les montants du crédit annuel maximal de la taxe sur les produits et services/taxe de vente harmonisée (TPS/TVH) de 50 % pour l’année de prestations 2025-2026. Il modifie également cette Loi afin d’augmenter le montant annuel maximal du crédit de TPS/TVH de 25 % à partir de l’année de prestations 2026-2027 pour une période de cinq ans.La Bibliothèque du Parlement ne prépare pas de Résumés législatifs pour les mesures qui sont suffisamment explicites. Ce qui suit est un court résumé :\n\nLe 28 janvier 2026, le ministre des Finances et du Revenu national a déposé le projet de loi C-19, Loi modifiant la Loi de l'impôt sur le revenu (Loi sur l'allocation canadienne pour l'épicerie et les besoins essentiels) à la Chambre des communes en première lecture.\n\nLe projet de loi C-19 modifie la Loi de l’impôt sur le revenu afin d’augmenter les montants du crédit annuel maximal de la taxe sur les produits et services/taxe de vente harmonisée (TPS/TVH) de 50 % pour l’année de prestations 2025-2026. Il modifie également cette Loi afin d’augmenter le montant annuel maximal du crédit de TPS/TVH de 25 % à partir de l’année de prestations 2026-2027 pour une période de cinq ans."
       },
       "summarySource": "library"
     },
@@ -10019,7 +10043,7 @@
       "fullSummaryAvailable": false,
       "summary": {
         "en": "This enactment amends the Divorce Act to, among other things,\n\n(a) require legal advisers who undertake to act on a spouse’s behalf in a divorce proceeding to assess the risk of family violence and, if there is a risk, to take steps to implement an appropriate plan;\n\n(b) provide the means by which a court may more accurately assess the impact of coercive control on a parent-child relationship so as to ensure that children are protected from domestic violence after a separation or divorce;\n\n(c) allow a court, if certain conditions are met, to obtain information or evidence directly from a child in writing or by means of an interview with the child for the purpose of determining the child’s views and preferences; and\n\n(d) address certain myths or stereotypes regarding family violence by providing that courts, in determining its impact, are not to make certain inferences, including that violence no longer occurs once spouses have separated or a divorce proceeding has commenced.",
-        "fr": "Le texte modifie la Loi sur le divorce afin, notamment :\n\na) d’obliger les conseillers juridiques qui acceptent de représenter un époux dans une action en divorce à procéder à une évaluation du risque de violence familiale et, le cas échéant, à mettre en œuvre un plan adéquat;\n\nb) de donner au tribunal des moyens d’évaluer plus précisément les effets du contrôle coercitif sur la relation parent-enfant pour que les enfants soient protégés de la violence familiale après une séparation ou un divorce;\n\nc) d’autoriser le tribunal, sous réserve de certaines conditions, à obtenir directement de l’enfant, par écrit ou au moyen d’un entretien, des renseignements ou des éléments de preuve afin de déterminer le point de vue et les préférences de celui-ci;\n\nd) de combattre certains mythes et stéréotypes concernant la violence familiale en interdisant aux tribunaux, au moment d’évaluer les effets de cette violence, de tirer certaines conclusions, notamment que la violence n’a plus lieu après que les époux se sont séparés ou qu’une action en divorce a été intentée."
+        "fr": "Le texte modifie la Loi sur le divorce afin, notamment :\n\na) d’obliger les conseillers juridiques qui acceptent de représenter un époux dans une action en divorce à procéder à une évaluation du risque de violence familiale et, le cas échéant, à mettre en œuvre un plan adéquat;\n\nb) de donner au tribunal des moyens d’évaluer plus précisément les effets du contrôle cœrcitif sur la relation parent-enfant pour que les enfants soient protégés de la violence familiale après une séparation ou un divorce;\n\nc) d’autoriser le tribunal, sous réserve de certaines conditions, à obtenir directement de l’enfant, par écrit ou au moyen d’un entretien, des renseignements ou des éléments de preuve afin de déterminer le point de vue et les préférences de celui-ci;\n\nd) de combattre certains mythes et stéréotypes concernant la violence familiale en interdisant aux tribunaux, au moment d’évaluer les effets de cette violence, de tirer certaines conclusions, notamment que la violence n’a plus lieu après que les époux se sont séparés ou qu’une action en divorce a été intentée."
       },
       "summarySource": "bill"
     },
@@ -14023,5 +14047,5 @@
       "summarySource": null
     }
   ],
-  "summariesScrapedAt": "2026-11-19T16:55:02.347Z"
+  "summariesScrapedAt": "2026-11-20T16:32:27.468Z"
 }

@@ -2,7 +2,7 @@
  "source": "https://www.parl.ca/DocumentViewer (XML de première lecture)",
  "session": "45-1",
  "parser": 2,
- "scrapedAt": "2026-11-19T16:59:20.854Z",
+ "scrapedAt": "2026-11-20T16:36:43.607Z",
  "bills": {
   "13538627": {
    "num": "C-201",
@@ -2630,9 +2630,17 @@
   },
   "14332783": {
    "num": "C-296",
-   "xml": null,
-   "en": [],
-   "fr": []
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-296/C-296_1/C-296_E.xml",
+   "en": [
+    "Auditor General Act",
+    "Interpretation Act",
+    "Building Canada Act"
+   ],
+   "fr": [
+    "Loi sur le vérificateur général",
+    "Loi d’interprétation",
+    "Loi visant à bâtir le Canada"
+   ]
   },
   "14335040": {
    "num": "C-42",

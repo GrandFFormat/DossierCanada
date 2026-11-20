@@ -62,7 +62,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=50d9259758">
+<link rel="stylesheet" href="/assets/app.css?v=7edbca76f7">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -269,7 +269,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     <div class="page-band">
       <div>
         <nav class="crumbs" aria-label="Breadcrumb"><a data-view="apercu" href="/en">DossierCanada</a> <span aria-hidden="true">›</span> <span aria-current="page" data-i18n="nav.votes">Votes</span></nav>
-        <h1 class="band-title" id="votesCountTitle">190 votes in the Commons</h1>
+        <h1 class="band-title" id="votesCountTitle">196 votes in the Commons</h1>
         <div class="sub" data-i18n="votes.bandsub">Every recorded vote — who voted what, and by what margin.</div>
       </div>
     </div>
@@ -296,25 +296,87 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
 
 
     <div id="votesList"><!--ssr--><div class="vote-card">
-    <div class="vc-head" onclick="toggleVoteCard('vc-c190', event)">
-      <span class="result-badge rejete">Negatived</span>
+    <div class="vc-head" onclick="toggleVoteCard('vc-c196', event)">
+      <span class="result-badge adopte">Agreed To</span>
       <div class="vc-head-main">
-        <h3>2nd reading of Bill C-269, An Act to amend the Income Tax Act (heat recovery tax credit)</h3>
-        <div class="vc-meta">2026-11-04 · Recorded vote · C-269</div>
+        <h3>Budgetary policy</h3>
+        <div class="vc-meta">2026-11-19 · Recorded vote · Motion</div>
       </div>
       <div class="vc-counts">
-        <span class="vcc pour"><b>152</b> Yea</span>
-        <span class="vcc contre"><b>166</b> Nay</span>
+        <span class="vcc pour"><b>162</b> Yea</span>
+        <span class="vcc contre"><b>151</b> Nay</span>
+        <span class="vcc abst"><b>16</b> paired</span>
+      </div>
+      <span class="vc-toggle" id="vctog-vc-c196">+</span>
+    </div>
+    <div class="bar vc-bar" onclick="toggleVoteCard('vc-c196', event)">
+      <div class="seg pour" style="width:49.24%"></div>
+      <div class="seg contre" style="width:45.90%"></div>
+      <div class="seg abst" style="width:4.86%"></div>
+    </div>
+    <div class="vc-detail" id="vc-c196">
+      <div class="vc-pgrid"><div class="vc-pbox">
+        <div class="vc-phead" style="background:#D71920; color:#fff">LPC</div>
+        <div class="vc-pbody">
+          <div class="vc-prow"><span>Yea</span><b>162</b></div>
+          <div class="vc-prow"><span>Nay</span><b>0</b></div>
+          <div class="vc-prow"><span>Paired</span><b>8</b></div>
+        </div>
+      </div><div class="vc-pbox">
+        <div class="vc-phead" style="background:#1A4782; color:#fff">CPC</div>
+        <div class="vc-pbody">
+          <div class="vc-prow"><span>Yea</span><b>0</b></div>
+          <div class="vc-prow"><span>Nay</span><b>126</b></div>
+          <div class="vc-prow"><span>Paired</span><b>7</b></div>
+        </div>
+      </div><div class="vc-pbox">
+        <div class="vc-phead" style="background:#33B2CC; color:#fff">BQ</div>
+        <div class="vc-pbody">
+          <div class="vc-prow"><span>Yea</span><b>0</b></div>
+          <div class="vc-prow"><span>Nay</span><b>20</b></div>
+          <div class="vc-prow"><span>Paired</span><b>1</b></div>
+        </div>
+      </div><div class="vc-pbox">
+        <div class="vc-phead" style="background:#F58220; color:var(--on-candy)">NDP</div>
+        <div class="vc-pbody">
+          <div class="vc-prow"><span>Yea</span><b>0</b></div>
+          <div class="vc-prow"><span>Nay</span><b>4</b></div>
+          <div class="vc-prow"><span>Paired</span><b>0</b></div>
+        </div>
+      </div><div class="vc-pbox">
+        <div class="vc-phead" style="background:#3D9B35; color:#fff">GPC</div>
+        <div class="vc-pbody">
+          <div class="vc-prow"><span>Yea</span><b>0</b></div>
+          <div class="vc-prow"><span>Nay</span><b>1</b></div>
+          <div class="vc-prow"><span>Paired</span><b>0</b></div>
+        </div>
+      </div></div>
+      
+      <div class="vc-foot">
+      <span class="vc-foot-note">Paired is not absent: two members from opposing sides agree not to vote.</span>
+      <a class="bill-more" href="https://www.ourcommons.ca/members/en/votes/45/1/196" target="_blank" rel="noopener" onclick="event.stopPropagation()">Official record → ourcommons.ca</a>
+    </div>
+    </div>
+  </div><div class="vote-card">
+    <div class="vc-head" onclick="toggleVoteCard('vc-c195', event)">
+      <span class="result-badge rejete">Negatived</span>
+      <div class="vc-head-main">
+        <h3>Budgetary policy (amendment)</h3>
+        <div class="vc-meta">2026-11-18 · Recorded vote · Motion</div>
+      </div>
+      <div class="vc-counts">
+        <span class="vcc pour"><b>129</b> Yea</span>
+        <span class="vcc contre"><b>189</b> Nay</span>
         <span class="vcc abst"><b>12</b> paired</span>
       </div>
-      <span class="vc-toggle" id="vctog-vc-c190">+</span>
+      <span class="vc-toggle" id="vctog-vc-c195">+</span>
     </div>
-    <div class="bar vc-bar" onclick="toggleVoteCard('vc-c190', event)">
-      <div class="seg pour" style="width:46.06%"></div>
-      <div class="seg contre" style="width:50.30%"></div>
+    <div class="bar vc-bar" onclick="toggleVoteCard('vc-c195', event)">
+      <div class="seg pour" style="width:39.09%"></div>
+      <div class="seg contre" style="width:57.27%"></div>
       <div class="seg abst" style="width:3.64%"></div>
     </div>
-    <div class="vc-detail" id="vc-c190">
+    <div class="vc-detail" id="vc-c195">
       <div class="vc-pgrid"><div class="vc-pbox">
         <div class="vc-phead" style="background:#D71920; color:#fff">LPC</div>
         <div class="vc-pbody">
@@ -325,64 +387,64 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       </div><div class="vc-pbox">
         <div class="vc-phead" style="background:#1A4782; color:#fff">CPC</div>
         <div class="vc-pbody">
-          <div class="vc-prow"><span>Yea</span><b>126</b></div>
+          <div class="vc-prow"><span>Yea</span><b>129</b></div>
           <div class="vc-prow"><span>Nay</span><b>0</b></div>
           <div class="vc-prow"><span>Paired</span><b>5</b></div>
         </div>
       </div><div class="vc-pbox">
         <div class="vc-phead" style="background:#33B2CC; color:#fff">BQ</div>
         <div class="vc-pbody">
-          <div class="vc-prow"><span>Yea</span><b>20</b></div>
-          <div class="vc-prow"><span>Nay</span><b>0</b></div>
+          <div class="vc-prow"><span>Yea</span><b>0</b></div>
+          <div class="vc-prow"><span>Nay</span><b>19</b></div>
           <div class="vc-prow"><span>Paired</span><b>1</b></div>
         </div>
       </div><div class="vc-pbox">
         <div class="vc-phead" style="background:#F58220; color:var(--on-candy)">NDP</div>
         <div class="vc-pbody">
-          <div class="vc-prow"><span>Yea</span><b>5</b></div>
-          <div class="vc-prow"><span>Nay</span><b>0</b></div>
+          <div class="vc-prow"><span>Yea</span><b>0</b></div>
+          <div class="vc-prow"><span>Nay</span><b>3</b></div>
           <div class="vc-prow"><span>Paired</span><b>0</b></div>
         </div>
       </div><div class="vc-pbox">
         <div class="vc-phead" style="background:#3D9B35; color:#fff">GPC</div>
         <div class="vc-pbody">
-          <div class="vc-prow"><span>Yea</span><b>1</b></div>
-          <div class="vc-prow"><span>Nay</span><b>0</b></div>
+          <div class="vc-prow"><span>Yea</span><b>0</b></div>
+          <div class="vc-prow"><span>Nay</span><b>1</b></div>
           <div class="vc-prow"><span>Paired</span><b>0</b></div>
         </div>
       </div></div>
       
       <div class="vc-foot">
       <span class="vc-foot-note">Paired is not absent: two members from opposing sides agree not to vote.</span>
-      <a class="bill-more" href="https://www.ourcommons.ca/members/en/votes/45/1/190" target="_blank" rel="noopener" onclick="event.stopPropagation()">Official record → ourcommons.ca</a>
+      <a class="bill-more" href="https://www.ourcommons.ca/members/en/votes/45/1/195" target="_blank" rel="noopener" onclick="event.stopPropagation()">Official record → ourcommons.ca</a>
     </div>
     </div>
   </div><div class="vote-card">
-    <div class="vc-head" onclick="toggleVoteCard('vc-c189', event)">
-      <span class="result-badge adopte">Agreed To</span>
+    <div class="vc-head" onclick="toggleVoteCard('vc-c194', event)">
+      <span class="result-badge rejete">Negatived</span>
       <div class="vc-head-main">
-        <h3>Ninth report of the Standing Committee on Justice and Human Rights</h3>
-        <div class="vc-meta">2026-11-04 · Recorded vote · Motion</div>
+        <h3>Budgetary policy (subamendment)</h3>
+        <div class="vc-meta">2026-11-17 · Recorded vote · Motion</div>
       </div>
       <div class="vc-counts">
-        <span class="vcc pour"><b>192</b> Yea</span>
-        <span class="vcc contre"><b>126</b> Nay</span>
-        <span class="vcc abst"><b>12</b> paired</span>
+        <span class="vcc pour"><b>20</b> Yea</span>
+        <span class="vcc contre"><b>294</b> Nay</span>
+        <span class="vcc abst"><b>14</b> paired</span>
       </div>
-      <span class="vc-toggle" id="vctog-vc-c189">+</span>
+      <span class="vc-toggle" id="vctog-vc-c194">+</span>
     </div>
-    <div class="bar vc-bar" onclick="toggleVoteCard('vc-c189', event)">
-      <div class="seg pour" style="width:58.18%"></div>
-      <div class="seg contre" style="width:38.18%"></div>
-      <div class="seg abst" style="width:3.64%"></div>
+    <div class="bar vc-bar" onclick="toggleVoteCard('vc-c194', event)">
+      <div class="seg pour" style="width:6.10%"></div>
+      <div class="seg contre" style="width:89.63%"></div>
+      <div class="seg abst" style="width:4.27%"></div>
     </div>
-    <div class="vc-detail" id="vc-c189">
+    <div class="vc-detail" id="vc-c194">
       <div class="vc-pgrid"><div class="vc-pbox">
         <div class="vc-phead" style="background:#D71920; color:#fff">LPC</div>
         <div class="vc-pbody">
-          <div class="vc-prow"><span>Yea</span><b>166</b></div>
-          <div class="vc-prow"><span>Nay</span><b>0</b></div>
-          <div class="vc-prow"><span>Paired</span><b>6</b></div>
+          <div class="vc-prow"><span>Yea</span><b>0</b></div>
+          <div class="vc-prow"><span>Nay</span><b>164</b></div>
+          <div class="vc-prow"><span>Paired</span><b>7</b></div>
         </div>
       </div><div class="vc-pbox">
         <div class="vc-phead" style="background:#1A4782; color:#fff">CPC</div>
@@ -394,15 +456,15 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       </div><div class="vc-pbox">
         <div class="vc-phead" style="background:#33B2CC; color:#fff">BQ</div>
         <div class="vc-pbody">
-          <div class="vc-prow"><span>Yea</span><b>20</b></div>
+          <div class="vc-prow"><span>Yea</span><b>19</b></div>
           <div class="vc-prow"><span>Nay</span><b>0</b></div>
-          <div class="vc-prow"><span>Paired</span><b>1</b></div>
+          <div class="vc-prow"><span>Paired</span><b>2</b></div>
         </div>
       </div><div class="vc-pbox">
         <div class="vc-phead" style="background:#F58220; color:var(--on-candy)">NDP</div>
         <div class="vc-pbody">
-          <div class="vc-prow"><span>Yea</span><b>5</b></div>
-          <div class="vc-prow"><span>Nay</span><b>0</b></div>
+          <div class="vc-prow"><span>Yea</span><b>0</b></div>
+          <div class="vc-prow"><span>Nay</span><b>4</b></div>
           <div class="vc-prow"><span>Paired</span><b>0</b></div>
         </div>
       </div><div class="vc-pbox">
@@ -416,104 +478,42 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       
       <div class="vc-foot">
       <span class="vc-foot-note">Paired is not absent: two members from opposing sides agree not to vote.</span>
-      <a class="bill-more" href="https://www.ourcommons.ca/members/en/votes/45/1/189" target="_blank" rel="noopener" onclick="event.stopPropagation()">Official record → ourcommons.ca</a>
+      <a class="bill-more" href="https://www.ourcommons.ca/members/en/votes/45/1/194" target="_blank" rel="noopener" onclick="event.stopPropagation()">Official record → ourcommons.ca</a>
     </div>
     </div>
   </div><div class="vote-card">
-    <div class="vc-head" onclick="toggleVoteCard('vc-c188', event)">
-      <span class="result-badge rejete">Negatived</span>
+    <div class="vc-head" onclick="toggleVoteCard('vc-c193', event)">
+      <span class="result-badge adopte">Agreed To</span>
       <div class="vc-head-main">
-        <h3>Opposition Motion (Federal procurement)</h3>
-        <div class="vc-meta">2026-11-03 · Recorded vote · Motion</div>
+        <h3>2nd reading of Bill C-41, An Act to amend the Criminal Code and An Act to amend the Criminal Code (medical assistance in dying) and to make related amendments to other Acts</h3>
+        <div class="vc-meta">2026-11-17 · Recorded vote · C-41</div>
       </div>
       <div class="vc-counts">
-        <span class="vcc pour"><b>155</b> Yea</span>
-        <span class="vcc contre"><b>163</b> Nay</span>
+        <span class="vcc pour"><b>225</b> Yea</span>
+        <span class="vcc contre"><b>89</b> Nay</span>
         <span class="vcc abst"><b>14</b> paired</span>
       </div>
-      <span class="vc-toggle" id="vctog-vc-c188">+</span>
+      <span class="vc-toggle" id="vctog-vc-c193">+</span>
     </div>
-    <div class="bar vc-bar" onclick="toggleVoteCard('vc-c188', event)">
-      <div class="seg pour" style="width:46.69%"></div>
-      <div class="seg contre" style="width:49.10%"></div>
-      <div class="seg abst" style="width:4.22%"></div>
+    <div class="bar vc-bar" onclick="toggleVoteCard('vc-c193', event)">
+      <div class="seg pour" style="width:68.60%"></div>
+      <div class="seg contre" style="width:27.13%"></div>
+      <div class="seg abst" style="width:4.27%"></div>
     </div>
-    <div class="vc-detail" id="vc-c188">
+    <div class="vc-detail" id="vc-c193">
       <div class="vc-pgrid"><div class="vc-pbox">
         <div class="vc-phead" style="background:#D71920; color:#fff">LPC</div>
         <div class="vc-pbody">
-          <div class="vc-prow"><span>Yea</span><b>0</b></div>
-          <div class="vc-prow"><span>Nay</span><b>163</b></div>
+          <div class="vc-prow"><span>Yea</span><b>164</b></div>
+          <div class="vc-prow"><span>Nay</span><b>0</b></div>
           <div class="vc-prow"><span>Paired</span><b>7</b></div>
         </div>
       </div><div class="vc-pbox">
         <div class="vc-phead" style="background:#1A4782; color:#fff">CPC</div>
         <div class="vc-pbody">
-          <div class="vc-prow"><span>Yea</span><b>129</b></div>
-          <div class="vc-prow"><span>Nay</span><b>0</b></div>
-          <div class="vc-prow"><span>Paired</span><b>6</b></div>
-        </div>
-      </div><div class="vc-pbox">
-        <div class="vc-phead" style="background:#33B2CC; color:#fff">BQ</div>
-        <div class="vc-pbody">
-          <div class="vc-prow"><span>Yea</span><b>20</b></div>
-          <div class="vc-prow"><span>Nay</span><b>0</b></div>
-          <div class="vc-prow"><span>Paired</span><b>1</b></div>
-        </div>
-      </div><div class="vc-pbox">
-        <div class="vc-phead" style="background:#F58220; color:var(--on-candy)">NDP</div>
-        <div class="vc-pbody">
-          <div class="vc-prow"><span>Yea</span><b>5</b></div>
-          <div class="vc-prow"><span>Nay</span><b>0</b></div>
-          <div class="vc-prow"><span>Paired</span><b>0</b></div>
-        </div>
-      </div><div class="vc-pbox">
-        <div class="vc-phead" style="background:#3D9B35; color:#fff">GPC</div>
-        <div class="vc-pbody">
-          <div class="vc-prow"><span>Yea</span><b>1</b></div>
-          <div class="vc-prow"><span>Nay</span><b>0</b></div>
-          <div class="vc-prow"><span>Paired</span><b>0</b></div>
-        </div>
-      </div></div>
-      
-      <div class="vc-foot">
-      <span class="vc-foot-note">Paired is not absent: two members from opposing sides agree not to vote.</span>
-      <a class="bill-more" href="https://www.ourcommons.ca/members/en/votes/45/1/188" target="_blank" rel="noopener" onclick="event.stopPropagation()">Official record → ourcommons.ca</a>
-    </div>
-    </div>
-  </div><div class="vote-card">
-    <div class="vc-head" onclick="toggleVoteCard('vc-c187', event)">
-      <span class="result-badge adopte">Agreed To</span>
-      <div class="vc-head-main">
-        <h3>3rd reading and adoption of Bill C-222, An Act to amend the Employment Insurance Act and the Canada Labour Code (death of a child)</h3>
-        <div class="vc-meta">2026-10-28 · Recorded vote · C-222</div>
-      </div>
-      <div class="vc-counts">
-        <span class="vcc pour"><b>325</b> Yea</span>
-        <span class="vcc contre"><b>0</b> Nay</span>
-        <span class="vcc abst"><b>8</b> paired</span>
-      </div>
-      <span class="vc-toggle" id="vctog-vc-c187">+</span>
-    </div>
-    <div class="bar vc-bar" onclick="toggleVoteCard('vc-c187', event)">
-      <div class="seg pour" style="width:97.60%"></div>
-      <div class="seg contre" style="width:0.00%"></div>
-      <div class="seg abst" style="width:2.40%"></div>
-    </div>
-    <div class="vc-detail" id="vc-c187">
-      <div class="vc-pgrid"><div class="vc-pbox">
-        <div class="vc-phead" style="background:#D71920; color:#fff">LPC</div>
-        <div class="vc-pbody">
-          <div class="vc-prow"><span>Yea</span><b>167</b></div>
-          <div class="vc-prow"><span>Nay</span><b>0</b></div>
-          <div class="vc-prow"><span>Paired</span><b>3</b></div>
-        </div>
-      </div><div class="vc-pbox">
-        <div class="vc-phead" style="background:#1A4782; color:#fff">CPC</div>
-        <div class="vc-pbody">
-          <div class="vc-prow"><span>Yea</span><b>134</b></div>
-          <div class="vc-prow"><span>Nay</span><b>0</b></div>
-          <div class="vc-prow"><span>Paired</span><b>1</b></div>
+          <div class="vc-prow"><span>Yea</span><b>37</b></div>
+          <div class="vc-prow"><span>Nay</span><b>89</b></div>
+          <div class="vc-prow"><span>Paired</span><b>5</b></div>
         </div>
       </div><div class="vc-pbox">
         <div class="vc-phead" style="background:#33B2CC; color:#fff">BQ</div>
@@ -527,7 +527,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
         <div class="vc-pbody">
           <div class="vc-prow"><span>Yea</span><b>4</b></div>
           <div class="vc-prow"><span>Nay</span><b>0</b></div>
-          <div class="vc-prow"><span>Paired</span><b>1</b></div>
+          <div class="vc-prow"><span>Paired</span><b>0</b></div>
         </div>
       </div><div class="vc-pbox">
         <div class="vc-phead" style="background:#3D9B35; color:#fff">GPC</div>
@@ -540,42 +540,42 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       
       <div class="vc-foot">
       <span class="vc-foot-note">Paired is not absent: two members from opposing sides agree not to vote.</span>
-      <a class="bill-more" href="https://www.ourcommons.ca/members/en/votes/45/1/187" target="_blank" rel="noopener" onclick="event.stopPropagation()">Official record → ourcommons.ca</a>
+      <a class="bill-more" href="https://www.ourcommons.ca/members/en/votes/45/1/193" target="_blank" rel="noopener" onclick="event.stopPropagation()">Official record → ourcommons.ca</a>
     </div>
     </div>
   </div><div class="vote-card">
-    <div class="vc-head" onclick="toggleVoteCard('vc-c186', event)">
-      <span class="result-badge rejete">Negatived</span>
+    <div class="vc-head" onclick="toggleVoteCard('vc-c192', event)">
+      <span class="result-badge adopte">Agreed To</span>
       <div class="vc-head-main">
-        <h3>2nd reading of Bill C-264, An Act to repeal certain restrictions on shipping</h3>
-        <div class="vc-meta">2026-10-28 · Recorded vote · C-264</div>
+        <h3>Motion to proceed to Orders of the Day</h3>
+        <div class="vc-meta">2026-11-17 · Recorded vote · Motion</div>
       </div>
       <div class="vc-counts">
-        <span class="vcc pour"><b>132</b> Yea</span>
-        <span class="vcc contre"><b>191</b> Nay</span>
-        <span class="vcc abst"><b>8</b> paired</span>
+        <span class="vcc pour"><b>161</b> Yea</span>
+        <span class="vcc contre"><b>150</b> Nay</span>
+        <span class="vcc abst"><b>16</b> paired</span>
       </div>
-      <span class="vc-toggle" id="vctog-vc-c186">+</span>
+      <span class="vc-toggle" id="vctog-vc-c192">+</span>
     </div>
-    <div class="bar vc-bar" onclick="toggleVoteCard('vc-c186', event)">
-      <div class="seg pour" style="width:39.88%"></div>
-      <div class="seg contre" style="width:57.70%"></div>
-      <div class="seg abst" style="width:2.42%"></div>
+    <div class="bar vc-bar" onclick="toggleVoteCard('vc-c192', event)">
+      <div class="seg pour" style="width:49.24%"></div>
+      <div class="seg contre" style="width:45.87%"></div>
+      <div class="seg abst" style="width:4.89%"></div>
     </div>
-    <div class="vc-detail" id="vc-c186">
+    <div class="vc-detail" id="vc-c192">
       <div class="vc-pgrid"><div class="vc-pbox">
         <div class="vc-phead" style="background:#D71920; color:#fff">LPC</div>
         <div class="vc-pbody">
-          <div class="vc-prow"><span>Yea</span><b>0</b></div>
-          <div class="vc-prow"><span>Nay</span><b>167</b></div>
-          <div class="vc-prow"><span>Paired</span><b>4</b></div>
+          <div class="vc-prow"><span>Yea</span><b>161</b></div>
+          <div class="vc-prow"><span>Nay</span><b>0</b></div>
+          <div class="vc-prow"><span>Paired</span><b>8</b></div>
         </div>
       </div><div class="vc-pbox">
         <div class="vc-phead" style="background:#1A4782; color:#fff">CPC</div>
         <div class="vc-pbody">
-          <div class="vc-prow"><span>Yea</span><b>132</b></div>
-          <div class="vc-prow"><span>Nay</span><b>0</b></div>
-          <div class="vc-prow"><span>Paired</span><b>1</b></div>
+          <div class="vc-prow"><span>Yea</span><b>0</b></div>
+          <div class="vc-prow"><span>Nay</span><b>126</b></div>
+          <div class="vc-prow"><span>Paired</span><b>6</b></div>
         </div>
       </div><div class="vc-pbox">
         <div class="vc-phead" style="background:#33B2CC; color:#fff">BQ</div>
@@ -589,7 +589,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
         <div class="vc-pbody">
           <div class="vc-prow"><span>Yea</span><b>0</b></div>
           <div class="vc-prow"><span>Nay</span><b>4</b></div>
-          <div class="vc-prow"><span>Paired</span><b>1</b></div>
+          <div class="vc-prow"><span>Paired</span><b>0</b></div>
         </div>
       </div><div class="vc-pbox">
         <div class="vc-phead" style="background:#3D9B35; color:#fff">GPC</div>
@@ -602,72 +602,72 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       
       <div class="vc-foot">
       <span class="vc-foot-note">Paired is not absent: two members from opposing sides agree not to vote.</span>
-      <a class="bill-more" href="https://www.ourcommons.ca/members/en/votes/45/1/186" target="_blank" rel="noopener" onclick="event.stopPropagation()">Official record → ourcommons.ca</a>
+      <a class="bill-more" href="https://www.ourcommons.ca/members/en/votes/45/1/192" target="_blank" rel="noopener" onclick="event.stopPropagation()">Official record → ourcommons.ca</a>
     </div>
     </div>
   </div><div class="vote-card">
-    <div class="vc-head" onclick="toggleVoteCard('vc-c185', event)">
+    <div class="vc-head" onclick="toggleVoteCard('vc-c191', event)">
       <span class="result-badge adopte">Agreed To</span>
       <div class="vc-head-main">
-        <h3>3rd reading and adoption of Bill C-241, An Act to establish a national strategy respecting flood and drought forecasting</h3>
-        <div class="vc-meta">2026-10-28 · Recorded vote · C-241</div>
+        <h3>Time allocation for Bill C-41, An Act to amend the Criminal Code and An Act to amend the Criminal Code (medical assistance in dying) and to make related amendments to other Acts</h3>
+        <div class="vc-meta">2026-11-16 · Recorded vote · C-41</div>
       </div>
       <div class="vc-counts">
-        <span class="vcc pour"><b>303</b> Yea</span>
-        <span class="vcc contre"><b>19</b> Nay</span>
-        <span class="vcc abst"><b>8</b> paired</span>
+        <span class="vcc pour"><b>163</b> Yea</span>
+        <span class="vcc contre"><b>149</b> Nay</span>
+        <span class="vcc abst"><b>16</b> paired</span>
       </div>
-      <span class="vc-toggle" id="vctog-vc-c185">+</span>
+      <span class="vc-toggle" id="vctog-vc-c191">+</span>
     </div>
-    <div class="bar vc-bar" onclick="toggleVoteCard('vc-c185', event)">
-      <div class="seg pour" style="width:91.82%"></div>
-      <div class="seg contre" style="width:5.76%"></div>
-      <div class="seg abst" style="width:2.42%"></div>
+    <div class="bar vc-bar" onclick="toggleVoteCard('vc-c191', event)">
+      <div class="seg pour" style="width:49.70%"></div>
+      <div class="seg contre" style="width:45.43%"></div>
+      <div class="seg abst" style="width:4.88%"></div>
     </div>
-    <div class="vc-detail" id="vc-c185">
+    <div class="vc-detail" id="vc-c191">
       <div class="vc-pgrid"><div class="vc-pbox">
         <div class="vc-phead" style="background:#D71920; color:#fff">LPC</div>
         <div class="vc-pbody">
-          <div class="vc-prow"><span>Yea</span><b>166</b></div>
+          <div class="vc-prow"><span>Yea</span><b>163</b></div>
           <div class="vc-prow"><span>Nay</span><b>0</b></div>
-          <div class="vc-prow"><span>Paired</span><b>4</b></div>
+          <div class="vc-prow"><span>Paired</span><b>8</b></div>
         </div>
       </div><div class="vc-pbox">
         <div class="vc-phead" style="background:#1A4782; color:#fff">CPC</div>
         <div class="vc-pbody">
-          <div class="vc-prow"><span>Yea</span><b>132</b></div>
-          <div class="vc-prow"><span>Nay</span><b>0</b></div>
-          <div class="vc-prow"><span>Paired</span><b>1</b></div>
+          <div class="vc-prow"><span>Yea</span><b>0</b></div>
+          <div class="vc-prow"><span>Nay</span><b>126</b></div>
+          <div class="vc-prow"><span>Paired</span><b>6</b></div>
         </div>
       </div><div class="vc-pbox">
         <div class="vc-phead" style="background:#33B2CC; color:#fff">BQ</div>
         <div class="vc-pbody">
           <div class="vc-prow"><span>Yea</span><b>0</b></div>
-          <div class="vc-prow"><span>Nay</span><b>19</b></div>
+          <div class="vc-prow"><span>Nay</span><b>18</b></div>
           <div class="vc-prow"><span>Paired</span><b>2</b></div>
         </div>
       </div><div class="vc-pbox">
         <div class="vc-phead" style="background:#F58220; color:var(--on-candy)">NDP</div>
         <div class="vc-pbody">
-          <div class="vc-prow"><span>Yea</span><b>4</b></div>
-          <div class="vc-prow"><span>Nay</span><b>0</b></div>
-          <div class="vc-prow"><span>Paired</span><b>1</b></div>
+          <div class="vc-prow"><span>Yea</span><b>0</b></div>
+          <div class="vc-prow"><span>Nay</span><b>4</b></div>
+          <div class="vc-prow"><span>Paired</span><b>0</b></div>
         </div>
       </div><div class="vc-pbox">
         <div class="vc-phead" style="background:#3D9B35; color:#fff">GPC</div>
         <div class="vc-pbody">
-          <div class="vc-prow"><span>Yea</span><b>1</b></div>
-          <div class="vc-prow"><span>Nay</span><b>0</b></div>
+          <div class="vc-prow"><span>Yea</span><b>0</b></div>
+          <div class="vc-prow"><span>Nay</span><b>1</b></div>
           <div class="vc-prow"><span>Paired</span><b>0</b></div>
         </div>
       </div></div>
       
       <div class="vc-foot">
       <span class="vc-foot-note">Paired is not absent: two members from opposing sides agree not to vote.</span>
-      <a class="bill-more" href="https://www.ourcommons.ca/members/en/votes/45/1/185" target="_blank" rel="noopener" onclick="event.stopPropagation()">Official record → ourcommons.ca</a>
+      <a class="bill-more" href="https://www.ourcommons.ca/members/en/votes/45/1/191" target="_blank" rel="noopener" onclick="event.stopPropagation()">Official record → ourcommons.ca</a>
     </div>
     </div>
-  </div><button class="votes-more" onclick="loadMoreVotes()">See 6 more — 6 of 190 shown</button><!--/ssr--></div>
+  </div><button class="votes-more" onclick="loadMoreVotes()">See 6 more — 6 of 196 shown</button><!--/ssr--></div>
     <div class="info-box" id="votesInfoBox">
       <b data-i18n="votes.info.b">On the “who voted what” detail</b> <span data-i18n="votes.info.text">— the House of Commons publishes each member's name for every recorded (nominal) vote (Yea / Nay / paired). The by-member breakdown above (the "+" button on each row) comes directly from that official source (ourcommons.ca), not an estimate. The party shown next to each name is taken from the current House roster; people who have since left the House appear separately under "Former members".</span>
     </div>
@@ -917,7 +917,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
 <script defer src="/data/site-data.js"></script>
 <script type="module" src="/assets/debats.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=b505296775"></script>
+<script defer src="/assets/app.js?v=956b608d5b"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->

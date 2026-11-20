@@ -80,7 +80,7 @@
 try{ var t = JSON.parse(localStorage.getItem('dossiercanada:theme') || localStorage.getItem('dossierquebec:theme') || 'null');
      if(t === 'clair' || t === 'sombre') document.documentElement.setAttribute('data-theme', t); }catch(e){}
 </script>
-<link rel="stylesheet" href="/assets/app.css?v=50d9259758">
+<link rel="stylesheet" href="/assets/app.css?v=7edbca76f7">
 <!-- Google Analytics (gtag.js) — il DÉPOSE DES COOKIES, donc il ne se charge
      QU'APRÈS un oui explicite (Loi 25). Tant que personne n'a répondu, ou si on
      a refusé, rien n'est chargé et aucun témoin n'est déposé. Le choix est
@@ -191,27 +191,27 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
 
     <div class="apercu-3col apercu-2col">
       <main class="a3-main">
-        <p class="a3-intro" id="a3intro"><!--ssr-->Canada's Parliament without the jargon: <b>337</b> MPs, <b>198</b> federal bills and <b>190</b> recorded votes in the House of Commons, straight from official sources.<!--/ssr--></p>
+        <p class="a3-intro" id="a3intro"><!--ssr-->Canada's Parliament without the jargon: <b>337</b> MPs, <b>200</b> federal bills and <b>196</b> recorded votes in the House of Commons, straight from official sources.<!--/ssr--></p>
         <div class="a3-main-head">
           <h2 data-i18n="h.billsrecent">Recently active bills</h2>
           <a class="a3-seeall" data-view="projets" href="/en/bills" data-i18n="a3.seeall">See all →</a>
         </div>
-        <div id="apercuBills"><!--ssr--><div class="ab-row" id="abrow-ap-13985244">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13985244')">
-      <span class="ab-num">S-245</span>
-      <span class="ab-title">An Act respecting a National Blanket Ceremony Day</span>
+        <div id="apercuBills"><!--ssr--><div class="ab-row" id="abrow-ap-13933855">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13933855')">
+      <span class="ab-num">S-6</span>
+      <span class="ab-title">A fourth Act to harmonize federal law with the civil law of Quebec and to amend certain Acts in order to ensure that each language version takes into account the common law and the civil law</span>
       
       
       
-      <span class="depute-party" style="background:#1A4782; color:#fff">C</span>
+      <span class="depute-party" style="background:#5B6B7A; color:#fff">GRO</span>
       <span class="status-pill status-encours">In progress</span>
       <span class="ab-caret">▾</span>
     </div>
     <div class="ab-detail"></div>
-  </div><div class="ab-row" id="abrow-ap-14019015">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-14019015')">
-      <span class="ab-num">S-246</span>
-      <span class="ab-title">An Act respecting the recognition of wartime service</span>
+  </div><div class="ab-row" id="abrow-ap-13602863">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13602863')">
+      <span class="ab-num">S-234</span>
+      <span class="ab-title">An Act respecting a national framework for fetal alcohol spectrum disorder</span>
       
       
       
@@ -220,51 +220,27 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-caret">▾</span>
     </div>
     <div class="ab-detail"></div>
-  </div><div class="ab-row" id="abrow-ap-13588449">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13588449')">
-      <span class="ab-num">C-235</span>
-      <span class="ab-title">An Act to amend the Criminal Code (increasing parole ineligibility)</span>
+  </div><div class="ab-row" id="abrow-ap-13707662">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13707662')">
+      <span class="ab-num">S-239</span>
+      <span class="ab-title">An Act to amend the Competition Act</span>
       
       
       
-      <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
+      
       <span class="status-pill status-encours">In progress</span>
       <span class="ab-caret">▾</span>
     </div>
     <div class="ab-detail"></div>
-  </div><div class="ab-row" id="abrow-ap-14209079">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-14209079')">
-      <span class="ab-num">C-295</span>
-      <span class="ab-title">An Act to amend the Canada Pension Plan Investment Board Act (investments)</span>
+  </div><div class="ab-row" id="abrow-ap-13605049">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13605049')">
+      <span class="ab-num">C-10</span>
+      <span class="ab-title">An Act respecting the Commissioner for Modern Treaty Implementation</span>
       
       
-      
-      <span class="depute-party" style="background:#F58220; color:var(--on-candy)">NDP</span>
-      <span class="status-pill status-encours">In progress</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"></div>
-  </div><div class="ab-row" id="abrow-ap-13541987">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13541987')">
-      <span class="ab-num">S-220</span>
-      <span class="ab-title">An Act to designate the month of March as Hellenic Heritage Month</span>
-      
-      
-      
-      <span class="depute-party" style="background:#6D5BA6; color:#fff">ISG</span>
-      <span class="status-pill status-encours">In progress</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"></div>
-  </div><div class="ab-row" id="abrow-ap-13583642">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-13583642')">
-      <span class="ab-num">C-219</span>
-      <span class="ab-title">An Act to amend the Department of Foreign Affairs, Trade and Development Act, the Justice for Victims of Corrupt Foreign Officials Act (Sergei Magnitsky Law) and the Special Economic Measures Act</span>
-      
-      
-      
-      <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
-      <span class="status-pill status-encours">In progress</span>
+      <span class="ab-lob" title="23 reported lobbying communications">23</span>
+      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
+      <span class="status-pill status-sanctionne">Assented to</span>
       <span class="ab-caret">▾</span>
     </div>
     <div class="ab-detail"></div>
@@ -276,18 +252,42 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       
       
       <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
+      <span class="status-pill status-sanctionne">Assented to</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"></div>
+  </div><div class="ab-row" id="abrow-ap-14332783">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-14332783')">
+      <span class="ab-num">C-296</span>
+      <span class="ab-title">An Act to enact the Non-regression of Environmental Protection Laws Act, to make consequential amendments to the Auditor General Act and the Interpretation Act and to make related amendments to the Building Canada Act</span>
+      
+      
+      
+      <span class="depute-party" style="background:#33B2CC; color:#fff">BQ</span>
       <span class="status-pill status-encours">In progress</span>
       <span class="ab-caret">▾</span>
     </div>
     <div class="ab-detail"></div>
-  </div><div class="ab-row" id="abrow-ap-14310361">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-14310361')">
-      <span class="ab-num">S-8</span>
-      <span class="ab-title">An Act respecting certain measures relating to proceeds of crime, terrorist financing, sanctions evasion and the detection of non-mailable matter transmitted by post</span>
+  </div><div class="ab-row" id="abrow-ap-14250015">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-14250015')">
+      <span class="ab-num">S-7</span>
+      <span class="ab-title">An Act to modernize certain regulatory and administrative processes</span>
       
-      <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Omnibus bill — 2 parts: it changes several different acts. Click to show only omnibus bills">Omnibus · 2 parts</button>
+      <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Omnibus bill — 6 parts, 8 divisions: it changes several different acts. Click to show only omnibus bills">Omnibus · 6 parts</button>
       
       <span class="depute-party" style="background:#5B6B7A; color:#fff">GRO</span>
+      <span class="status-pill status-encours">In progress</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"></div>
+  </div><div class="ab-row" id="abrow-ap-14335040">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-ap-14335040')">
+      <span class="ab-num">C-42</span>
+      <span class="ab-title">An Act respecting certain measures related to affordability and housing</span>
+      
+      
+      
+      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
       <span class="status-pill status-encours">In progress</span>
       <span class="ab-caret">▾</span>
     </div>
@@ -659,7 +659,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
 <script defer src="/data/site-data.js"></script>
 <script type="module" src="/assets/debats.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script defer src="/assets/app.js?v=b505296775"></script>
+<script defer src="/assets/app.js?v=956b608d5b"></script>
 <!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
      bannière de consentement requise). Le script est servi automatiquement par
      Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->
