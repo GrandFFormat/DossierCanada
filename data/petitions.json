@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-11-21T15:53:05.994Z",
+  "scrapedAt": "2026-11-22T15:54:50.636Z",
   "count": 20,
   "petitions": [
     {
@@ -18,7 +18,7 @@
         "fr": "Ouverte pour signature jusqu'au 31 janvier 2027 à 15 h 54 (HAE)"
       },
       "sponsor": "Stephanie Kusie",
-      "signatures": 15317,
+      "signatures": 15339,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7902",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7902"
@@ -39,7 +39,7 @@
         "fr": "Ouverte pour signature jusqu'au 2 janvier 2027 à 15 h 26 (HAE)"
       },
       "sponsor": "Brendan Hanley",
-      "signatures": 9019,
+      "signatures": 9072,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7918",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7918"
@@ -60,7 +60,7 @@
         "fr": "Ouverte pour signature jusqu'au 4 mars 2027 à 9 h 44 (HAE)"
       },
       "sponsor": "Don Davies",
-      "signatures": 7058,
+      "signatures": 7064,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7898",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7898"
@@ -81,7 +81,7 @@
         "fr": "Ouverte pour signature jusqu'au 12 décembre 2026 à 9 h 06 (HAE)"
       },
       "sponsor": "Wade Chang",
-      "signatures": 6609,
+      "signatures": 6815,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7940",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7940"
@@ -102,7 +102,7 @@
         "fr": "Ouverte pour signature jusqu'au 2 décembre 2026 à 14 h 16 (HAE)"
       },
       "sponsor": "Iqra Khalid",
-      "signatures": 5066,
+      "signatures": 5207,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7877",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7877"
@@ -123,7 +123,7 @@
         "fr": "Ouverte pour signature jusqu'au 2 mars 2027 à 15 h 53 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 1314,
+      "signatures": 1320,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7895",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7895"
@@ -144,7 +144,7 @@
         "fr": "Ouverte pour signature jusqu'au 8 février 2027 à 16 h 28 (HAE)"
       },
       "sponsor": "Glen Motz",
-      "signatures": 1084,
+      "signatures": 1110,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7935",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7935"
@@ -165,7 +165,7 @@
         "fr": "Ouverte pour signature jusqu'au 5 mars 2027 à 14 h 02 (HAE)"
       },
       "sponsor": "Leah Gazan",
-      "signatures": 989,
+      "signatures": 1019,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7916",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7916"
@@ -186,31 +186,10 @@
         "fr": "Ouverte pour signature jusqu'au 2 février 2027 à 13 h 40 (HAE)"
       },
       "sponsor": "Heather McPherson",
-      "signatures": 620,
+      "signatures": 622,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7718",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7718"
-      }
-    },
-    {
-      "code": "e-7920",
-      "topic": {
-        "en": "National defence and military operations",
-        "fr": "Défense nationale et opérations militaires"
-      },
-      "keywords": {
-        "en": "Access to information Oversight mechanism Unidentified aerial phenomena",
-        "fr": "Accès à l'information Mécanisme de surveillance Phénomène aérien non identifié"
-      },
-      "status": {
-        "en": "Open for signature until March 4, 2027, at 9:47 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 4 mars 2027 à 9 h 47 (HAE)"
-      },
-      "sponsor": "Adam Chambers",
-      "signatures": 343,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7920",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7920"
       }
     },
     {
@@ -228,10 +207,31 @@
         "fr": "Ouverte pour signature jusqu'au 19 mars 2027 à 10 h 31 (HAE)"
       },
       "sponsor": "Tamara Kronis",
-      "signatures": 309,
+      "signatures": 389,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7971",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7971"
+      }
+    },
+    {
+      "code": "e-7920",
+      "topic": {
+        "en": "National defence and military operations",
+        "fr": "Défense nationale et opérations militaires"
+      },
+      "keywords": {
+        "en": "Access to information Oversight mechanism Unidentified aerial phenomena",
+        "fr": "Accès à l'information Mécanisme de surveillance Phénomène aérien non identifié"
+      },
+      "status": {
+        "en": "Open for signature until March 4, 2027, at 9:47 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 4 mars 2027 à 9 h 47 (HAE)"
+      },
+      "sponsor": "Adam Chambers",
+      "signatures": 351,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7920",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7920"
       }
     },
     {
@@ -249,10 +249,31 @@
         "fr": "Ouverte pour signature jusqu'au 10 mars 2027 à 16 h 46 (HAE)"
       },
       "sponsor": "Gord Johns",
-      "signatures": 266,
+      "signatures": 281,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7922",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7922"
+      }
+    },
+    {
+      "code": "e-7955",
+      "topic": {
+        "en": "Health",
+        "fr": "Santé"
+      },
+      "keywords": {
+        "en": "Adenomyosis Endometriosis Health services accessibility Medical research",
+        "fr": "Accessibilité des services de santé Adénomyose Endométriose Recherche médicale"
+      },
+      "status": {
+        "en": "Open for signature until March 18, 2027, at 2:15 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 18 mars 2027 à 14 h 15 (HAE)"
+      },
+      "sponsor": "Eric Duncan",
+      "signatures": 182,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7955",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7955"
       }
     },
     {
@@ -277,24 +298,24 @@
       }
     },
     {
-      "code": "e-7955",
+      "code": "e-7969",
       "topic": {
-        "en": "Health",
-        "fr": "Santé"
+        "en": "Economy and finance",
+        "fr": "Économie et finance"
       },
       "keywords": {
-        "en": "Adenomyosis Endometriosis Health services accessibility Medical research",
-        "fr": "Accessibilité des services de santé Adénomyose Endométriose Recherche médicale"
+        "en": "Airports Canada Strong Fund Investment Public finance",
+        "fr": "Aéroports Finances publiques Fonds pour un Canada fort Investissement"
       },
       "status": {
-        "en": "Open for signature until March 18, 2027, at 2:15 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 18 mars 2027 à 14 h 15 (HAE)"
+        "en": "Open for signature until March 19, 2027, at 10:28 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 19 mars 2027 à 10 h 28 (HAE)"
       },
-      "sponsor": "Eric Duncan",
-      "signatures": 166,
+      "sponsor": "Fred Davies",
+      "signatures": 103,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7955",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7955"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7969",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7969"
       }
     },
     {
@@ -333,31 +354,10 @@
         "fr": "Ouverte pour signature jusqu'au 16 mars 2027 à 17 h 08 (HAE)"
       },
       "sponsor": "Warren Steinley",
-      "signatures": 85,
+      "signatures": 87,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7925",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7925"
-      }
-    },
-    {
-      "code": "e-7969",
-      "topic": {
-        "en": "Economy and finance",
-        "fr": "Économie et finance"
-      },
-      "keywords": {
-        "en": "Airports Canada Strong Fund Investment Public finance",
-        "fr": "Aéroports Finances publiques Fonds pour un Canada fort Investissement"
-      },
-      "status": {
-        "en": "Open for signature until March 19, 2027, at 10:28 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 19 mars 2027 à 10 h 28 (HAE)"
-      },
-      "sponsor": "Fred Davies",
-      "signatures": 81,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7969",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7969"
       }
     },
     {
@@ -375,7 +375,7 @@
         "fr": "Ouverte pour signature jusqu'au 10 février 2027 à 9 h 05 (HAE)"
       },
       "sponsor": "Mel Arnold",
-      "signatures": 77,
+      "signatures": 79,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7873",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7873"
@@ -396,7 +396,7 @@
         "fr": "Ouverte pour signature jusqu'au 19 mars 2027 à 10 h 26 (HAE)"
       },
       "sponsor": "Tim Watchorn",
-      "signatures": 44,
+      "signatures": 53,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7892",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7892"
@@ -417,7 +417,7 @@
         "fr": "Ouverte pour signature jusqu'au 15 janvier 2027 à 17 h 08 (HAE)"
       },
       "sponsor": "Warren Steinley",
-      "signatures": 40,
+      "signatures": 48,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7945",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7945"
