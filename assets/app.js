@@ -1312,15 +1312,15 @@ let newsShown = 2;
 // (on n'annonce jamais un site qui n'est pas en ligne). Seule QC est active.
 const provinceNetwork = [
   { code: 'BC', name: 'DossierBC', url: 'https://dossierbc.ca/', color: 'linear-gradient(#e3b528 0 50%,#fff 50% 56%,#1f4f8a 56% 66%,#fff 66% 72%,#1f4f8a 72% 82%,#fff 82% 88%,#1f4f8a 88% 100%)' },
-  { code: 'AB', name: 'Alberta',              url: null, color: null },
+  { code: 'AB', name: 'DossierAlberta',              url: null, color: null },
   { code: 'SK', name: 'DossierSaskatchewan', url: 'https://dossiersaskatchewan.ca/', color: '#00843D' },
-  { code: 'MB', name: 'Manitoba',             url: null, color: null },
+  { code: 'MB', name: 'DossierManitoba',             url: null, color: null },
   { code: 'ON', name: 'DossierOntario', url: 'https://www.dossierontario.ca/', color: '#C8102E' },
   { code: 'QC', name: 'DossierQuébec', url: 'https://dossierquebec.ca/', color: '#C9DEF2' },
   { code: 'NB', name: 'DossierNouveauBrunswick', url: 'https://dossiernbrunswick.ca/', color: 'linear-gradient(#D52B1E 0 50%,#FCD116 50% 100%)' },
-  { code: 'NS', name: 'Nouvelle-Écosse',          url: null, color: null },
-  { code: 'PE', name: 'Île-du-Prince-Édouard',    url: null, color: null },
-  { code: 'NL', name: 'Terre-Neuve-et-Labrador',  url: null, color: null }
+  { code: 'NS', name: 'DossierNovaScotia',          url: null, color: null },
+  { code: 'PE', name: 'DossierPEI',    url: null, color: null },
+  { code: 'NL', name: 'DossierNFDL',  url: null, color: null }
 ];
 function renderTicker(){
   const el = document.getElementById('tickerTrack');
