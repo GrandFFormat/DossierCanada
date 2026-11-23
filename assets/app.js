@@ -1320,7 +1320,10 @@ const provinceNetwork = [
   { code: 'NB', name: 'DossierNouveauBrunswick', url: 'https://dossiernbrunswick.ca/', color: 'linear-gradient(#D52B1E 0 50%,#FCD116 50% 100%)' },
   { code: 'NS', name: 'DossierNovaScotia',          url: null, color: null },
   { code: 'PE', name: 'DossierPEI',    url: null, color: null },
-  { code: 'NL', name: 'DossierNFDL',  url: null, color: null }
+  { code: 'NL', name: 'DossierNFDL',  url: null, color: null },
+  { code: 'YT', name: 'DossierYukon', url: null, color: null },
+  { code: 'NT', name: 'DossierNWT', url: null, color: null },
+  { code: 'NU', name: 'DossierNunavut', url: null, color: null }
 ];
 function renderTicker(){
   const el = document.getElementById('tickerTrack');
@@ -1341,7 +1344,7 @@ function renderProvinceNetwork(){
   const dot = (p, cls) => p.url
     ? `<a class="pn-dot pn-live${cls}" href="${p.url}" target="_blank" rel="noopener" title="${p.name}" style="background:${p.color}" onclick="event.stopPropagation()">${p.code}</a>`
     : `<span class="pn-dot pn-off${cls}" title="${p.name} — ${soon}" aria-disabled="true">${p.code}</span>`;
-  // Desktop : 5 à gauche du logo, 5 à droite. Mobile : les 10 sous le logo. Le balisage
+  // Desktop : 7 à gauche du logo, 6 à droite. Mobile : les 13 sous le logo. Le balisage
   // est le MÊME aux deux largeurs (la 2e moitié est aussi dans la rangée de gauche,
   // marquée .pn-2) et c'est le CSS qui choisit : le pré-rendu, fait en largeur desktop,
   // correspond donc aussi au téléphone et l'en-tête ne saute plus au chargement.
