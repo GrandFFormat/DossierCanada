@@ -167,7 +167,7 @@
   @media (max-width:640px){ #provinceNetwork .pn-2{ display:inline-flex; } #provinceNetworkR{ display:none; } }
   .pn-dot.pn-off{ background:transparent !important; color:var(--slate); border-color:var(--slate); opacity:.5; cursor:default; }
   .pn-dot.pn-off:hover{ transform:none; }
-  /* Les pastilles qui mènent à un site se retournent pour se signaler — mais JAMAIS
+  /* Toutes les pastilles, grises comprises, se retournent pour se signaler — mais JAMAIS
      ensemble : c'est le JavaScript (animerPastilles) qui les appelle une à une, dans
      un ordre mêlé. La classe est posée le temps d'un tour, puis retirée. */
   .pn-dot.pn-flip{ animation:pnFlip 1.1s ease-in-out 1; }

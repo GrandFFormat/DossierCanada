@@ -1361,7 +1361,7 @@ function animerPastilles(){
   if(pnMinuterie){ clearInterval(pnMinuterie); pnMinuterie = null; }
   // Quelqu'un qui a demandé moins d'animations n'en reçoit aucune.
   if(typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  const codes = provinceNetwork.filter(p => p.url).map(p => p.code);
+  const codes = provinceNetwork.map(p => p.code); // les 10, les ronds gris aussi
   if(!codes.length) return;
   const melanger = (a) => { const t = a.slice(); for(let i = t.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [t[i], t[j]] = [t[j], t[i]]; } return t; };
   let ordre = melanger(codes), i = 0;
@@ -1370,7 +1370,7 @@ function animerPastilles(){
     if(document.hidden) return; // onglet caché : rien à signaler
     if(i >= ordre.length){ ordre = melanger(codes); i = 0; }
     const code = ordre[i++];
-    document.querySelectorAll('.pn-dot.pn-live').forEach(d => {
+    document.querySelectorAll('.pn-dot').forEach(d => {
       if(d.textContent.trim() !== code) return;
       d.classList.remove('pn-flip');
       void d.offsetWidth; // force le navigateur à rejouer l'animation
