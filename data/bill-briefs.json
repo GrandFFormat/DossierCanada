@@ -1,7 +1,7 @@
 {
  "source": "https://www.ourcommons.ca/committees (GetBriefs)",
  "session": "45-1",
- "scrapedAt": "2026-11-23T19:36:20.146Z",
+ "scrapedAt": "2026-11-24T19:12:30.531Z",
  "bills": {
   "13538627": {
    "num": "C-201",
@@ -12742,6 +12742,13 @@
   "14335040": {
    "num": "C-42",
    "activite": "\"2026-11-20\"",
+   "studies": [],
+   "checked": {},
+   "briefs": []
+  },
+  "14336621": {
+   "num": "C-297",
+   "activite": "\"2026-11-23\"",
    "studies": [],
    "checked": {},
    "briefs": []

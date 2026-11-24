@@ -1,9 +1,70 @@
 {
   "source": "https://www.parl.ca/legisinfo/en/bills/json?parlsession=45-1",
   "session": "45-1",
-  "scrapedAt": "2026-11-23T19:34:28.330Z",
-  "count": 200,
+  "scrapedAt": "2026-11-24T19:09:51.588Z",
+  "count": 201,
   "bills": [
+    {
+      "id": 14336621,
+      "num": "C-297",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "commons",
+      "type": {
+        "en": "Private Member’s Bill",
+        "fr": "Projet de loi émanant d'un député"
+      },
+      "isGovernment": false,
+      "title": {
+        "en": "An Act to amend the Competition Act (automated personalized pricing)",
+        "fr": "Loi modifiant la Loi sur la concurrence (personnalisation des prix automatisée)"
+      },
+      "shortTitle": {
+        "en": "An Act to amend the Competition Act (automated personalized pricing)",
+        "fr": "Loi modifiant la Loi sur la concurrence (personnalisation des prix automatisée)"
+      },
+      "sponsor": {
+        "en": "Jenny Kwan",
+        "fr": "Jenny Kwan"
+      },
+      "status": {
+        "en": "Outside the Order of Precedence",
+        "fr": "Ne fait pas partie de l'Ordre de priorité"
+      },
+      "state": "encours",
+      "milestones": [
+        {
+          "stage": "commons_first_reading",
+          "chamber": "commons",
+          "reading": 1,
+          "date": "2026-11-23"
+        }
+      ],
+      "royalAssent": null,
+      "reinstated": false,
+      "latestActivity": {
+        "en": "Outside the Order of Precedence",
+        "fr": "Ne fait pas partie de l'Ordre de priorité",
+        "date": "2026-11-23"
+      },
+      "lastActivity": "2026-11-23",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-297",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-297"
+      },
+      "sponsorPersonId": 89346,
+      "sponsorName": {
+        "first": "Jenny",
+        "last": "Kwan"
+      },
+      "fullSummaryAvailable": false,
+      "summary": {
+        "en": "This enactment amends the Competition Act to provide that the use of automated decision-making systems and consumer data to determine or adjust the price of goods or services offered to an individual consumer constitutes reviewable conduct under Part VII.‍1 of that Act.",
+        "fr": "Le texte modifie la Loi sur la concurrence afin que l’utilisation de systèmes décisionnels automatisés et des données des consommateurs pour déterminer ou rajuster le prix de biens ou de services offerts à un consommateur constitue un comportement susceptible d’examen visé à la partie VII.‍1 de cette loi."
+      },
+      "summarySource": "bill"
+    },
     {
       "id": 14335040,
       "num": "C-42",
@@ -1772,7 +1833,10 @@
         "en": "Making Child Care More Affordable for Canadian Families Act",
         "fr": "Loi sur des services de garde d’enfants plus abordables pour les familles canadiennes"
       },
-      "sponsor": null,
+      "sponsor": {
+        "en": "Hon. Jim Quinn",
+        "fr": "L'hon. Jim Quinn"
+      },
       "status": {
         "en": "At second reading in the Senate",
         "fr": "À la deuxième lecture au Sénat"
@@ -1798,8 +1862,11 @@
         "en": "https://www.parl.ca/legisinfo/en/bill/45-1/s-253",
         "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/s-253"
       },
-      "sponsorPersonId": null,
-      "sponsorName": null,
+      "sponsorPersonId": 109826,
+      "sponsorName": {
+        "first": "Jim",
+        "last": "Quinn"
+      },
       "fullSummaryAvailable": false,
       "summary": {
         "en": "This enactment amends the Income Tax Act to adjust the child care expense deduction amounts for the 2027 taxation year and, for all subsequent taxation years, to index the amounts to the Consumer Price Index, using the amounts for the 2027 taxation year as a baseline.",
@@ -7674,8 +7741,8 @@
         "fr": "Gurbux Saini"
       },
       "status": {
-        "en": "At report stage in the House of Commons",
-        "fr": "À l'étape du rapport à la Chambre des communes"
+        "en": "At third reading in the House of Commons",
+        "fr": "À l'étape de la troisième lecture à la Chambre des communes"
       },
       "state": "encours",
       "milestones": [
@@ -7695,8 +7762,8 @@
       "royalAssent": null,
       "reinstated": false,
       "latestActivity": {
-        "en": "At report stage in the House of Commons",
-        "fr": "À l'étape du rapport à la Chambre des communes",
+        "en": "At third reading in the House of Commons",
+        "fr": "À l'étape de la troisième lecture à la Chambre des communes",
         "date": "2026-04-22"
       },
       "lastActivity": "2026-04-22",
@@ -14050,5 +14117,5 @@
       "summarySource": null
     }
   ],
-  "summariesScrapedAt": "2026-11-23T19:36:19.926Z"
+  "summariesScrapedAt": "2026-11-24T19:12:30.270Z"
 }

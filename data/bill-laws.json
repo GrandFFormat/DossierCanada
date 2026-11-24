@@ -2,7 +2,7 @@
  "source": "https://www.parl.ca/DocumentViewer (XML de première lecture)",
  "session": "45-1",
  "parser": 2,
- "scrapedAt": "2026-11-23T19:40:36.081Z",
+ "scrapedAt": "2026-11-24T19:16:47.980Z",
  "bills": {
   "13538627": {
    "num": "C-201",
@@ -2656,6 +2656,18 @@
     "Loi sur l’interdiction d’achat d’immeubles résidentiels par des non-Canadiens",
     "Loi no 1 d’exécution du budget de 2022",
     "Règlement sur l’interdiction d’achat d’immeubles résidentiels par des non-Canadiens"
+   ]
+  },
+  "14336621": {
+   "num": "C-297",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-297/C-297_1/C-297_E.xml",
+   "en": [
+    "Competition Act",
+    "An Act to promote the efficiency and adaptability of the Canadian economy by regulating certain activities that discourage reliance on electronic means of carrying out commercial activities, and to amend the Canadian Radio-television and Telecommunications Commission Act, the Competition Act, the Personal Information Protection and Electronic Documents Act and the Telecommunications Act"
+   ],
+   "fr": [
+    "Loi sur la concurrence",
+    "Loi visant à promouvoir l’efficacité et la capacité d’adaptation de l’économie canadienne par la réglementation de certaines pratiques qui découragent l’exercice des activités commerciales par voie électronique et modifiant la Loi sur le Conseil de la radiodiffusion et des télécommunications canadiennes, la Loi sur la concurrence, la Loi sur la protection des renseignements personnels et les documents électroniques et la Loi sur les télécommunications"
    ]
   }
  }
