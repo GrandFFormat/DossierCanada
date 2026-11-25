@@ -1,6 +1,6 @@
 {
   "source": "https://www.ourcommons.ca/petitions/",
-  "scrapedAt": "2026-11-24T19:22:03.562Z",
+  "scrapedAt": "2026-11-25T18:26:37.704Z",
   "count": 20,
   "petitions": [
     {
@@ -18,73 +18,10 @@
         "fr": "Ouverte pour signature jusqu'au 12 décembre 2026 à 9 h 06 (HAE)"
       },
       "sponsor": "Wade Chang",
-      "signatures": 7523,
+      "signatures": 7629,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7940",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7940"
-      }
-    },
-    {
-      "code": "e-7916",
-      "topic": {
-        "en": "Indigenous affairs",
-        "fr": "Affaires autochtones"
-      },
-      "keywords": {
-        "en": "C-254, An Act to amend the Criminal Code ... Hate propaganda Indigenous peoples Indigenous residential schools",
-        "fr": "C-254, Loi modifiant le Code criminel (f ... Pensionnats pour Autochtones Peuples autochtones Propagande haineuse"
-      },
-      "status": {
-        "en": "Open for signature until March 5, 2027, at 2:02 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 5 mars 2027 à 14 h 02 (HAE)"
-      },
-      "sponsor": "Leah Gazan",
-      "signatures": 1938,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7916",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7916"
-      }
-    },
-    {
-      "code": "e-7935",
-      "topic": {
-        "en": "Citizenship and immigration",
-        "fr": "Citoyenneté et immigration"
-      },
-      "keywords": {
-        "en": "Immigration policy",
-        "fr": "Politique en matière d'immigration"
-      },
-      "status": {
-        "en": "Open for signature until February 8, 2027, at 4:28 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 8 février 2027 à 16 h 28 (HAE)"
-      },
-      "sponsor": "Glen Motz",
-      "signatures": 1248,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7935",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7935"
-      }
-    },
-    {
-      "code": "e-7718",
-      "topic": {
-        "en": "Intellectual property",
-        "fr": "Propriété intellectuelle"
-      },
-      "keywords": {
-        "en": "Copyright and copyright law Technological protection measures",
-        "fr": "Droit d'auteur et loi sur le droit d'auteur Mesures de protection technologiques"
-      },
-      "status": {
-        "en": "Open for signature until February 2, 2027, at 1:40 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 2 février 2027 à 13 h 40 (HAE)"
-      },
-      "sponsor": "Heather McPherson",
-      "signatures": 765,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7718",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7718"
       }
     },
     {
@@ -102,52 +39,10 @@
         "fr": "Ouverte pour signature jusqu'au 19 mars 2027 à 10 h 31 (HAE)"
       },
       "sponsor": "Tamara Kronis",
-      "signatures": 480,
+      "signatures": 494,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7971",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7971"
-      }
-    },
-    {
-      "code": "e-7920",
-      "topic": {
-        "en": "National defence and military operations",
-        "fr": "Défense nationale et opérations militaires"
-      },
-      "keywords": {
-        "en": "Access to information Oversight mechanism Unidentified aerial phenomena",
-        "fr": "Accès à l'information Mécanisme de surveillance Phénomène aérien non identifié"
-      },
-      "status": {
-        "en": "Open for signature until March 4, 2027, at 9:47 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 4 mars 2027 à 9 h 47 (HAE)"
-      },
-      "sponsor": "Adam Chambers",
-      "signatures": 357,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7920",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7920"
-      }
-    },
-    {
-      "code": "e-7922",
-      "topic": {
-        "en": "Health",
-        "fr": "Santé"
-      },
-      "keywords": {
-        "en": "Care for the elderly Health services accessibility Senior citizens",
-        "fr": "Accessibilité des services de santé Personnes âgées Services aux personnes âgées"
-      },
-      "status": {
-        "en": "Open for signature until March 10, 2027, at 4:46 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 10 mars 2027 à 16 h 46 (HAE)"
-      },
-      "sponsor": "Gord Johns",
-      "signatures": 318,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7922",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7922"
       }
     },
     {
@@ -165,31 +60,31 @@
         "fr": "Ouverte pour signature jusqu'au 18 mars 2027 à 14 h 15 (HAE)"
       },
       "sponsor": "Eric Duncan",
-      "signatures": 243,
+      "signatures": 258,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7955",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7955"
       }
     },
     {
-      "code": "e-7969",
+      "code": "e-7947",
       "topic": {
-        "en": "Economy and finance",
-        "fr": "Économie et finance"
+        "en": "Infrastructure",
+        "fr": "Infrastructure"
       },
       "keywords": {
-        "en": "Airports Canada Strong Fund Investment Public finance",
-        "fr": "Aéroports Finances publiques Fonds pour un Canada fort Investissement"
+        "en": "Skating rinks Victoria",
+        "fr": "Patinoires Victoria"
       },
       "status": {
-        "en": "Open for signature until March 19, 2027, at 10:28 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 19 mars 2027 à 10 h 28 (HAE)"
+        "en": "Open for signature until February 22, 2027, at 2:14 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 22 février 2027 à 14 h 14 (HAE)"
       },
-      "sponsor": "Fred Davies",
-      "signatures": 131,
+      "sponsor": "Will Greaves",
+      "signatures": 243,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7969",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7969"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7947",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7947"
       }
     },
     {
@@ -207,115 +102,10 @@
         "fr": "Ouverte pour signature jusqu'au 15 janvier 2027 à 17 h 08 (HAE)"
       },
       "sponsor": "Warren Steinley",
-      "signatures": 131,
+      "signatures": 234,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7945",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7945"
-      }
-    },
-    {
-      "code": "e-7925",
-      "topic": {
-        "en": "Health",
-        "fr": "Santé"
-      },
-      "keywords": {
-        "en": "Endometriosis Medical research",
-        "fr": "Endométriose Recherche médicale"
-      },
-      "status": {
-        "en": "Open for signature until March 16, 2027, at 5:08 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 16 mars 2027 à 17 h 08 (HAE)"
-      },
-      "sponsor": "Warren Steinley",
-      "signatures": 106,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7925",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7925"
-      }
-    },
-    {
-      "code": "e-7873",
-      "topic": {
-        "en": "Employment and labour",
-        "fr": "Travail et emploi"
-      },
-      "keywords": {
-        "en": "Employment opportunities Foreign workers Labour policy",
-        "fr": "Politique du travail Possibilités d'emploi Travailleurs étrangers"
-      },
-      "status": {
-        "en": "Open for signature until February 10, 2027, at 9:05 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 10 février 2027 à 9 h 05 (HAE)"
-      },
-      "sponsor": "Mel Arnold",
-      "signatures": 88,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7873",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7873"
-      }
-    },
-    {
-      "code": "e-7892",
-      "topic": {
-        "en": "Transportation",
-        "fr": "Transport"
-      },
-      "keywords": {
-        "en": "Shoreline erosion and protection Wakesurf boats",
-        "fr": "Bateaux de wakesurf Érosion et protection des berges"
-      },
-      "status": {
-        "en": "Open for signature until March 19, 2027, at 10:26 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 19 mars 2027 à 10 h 26 (HAE)"
-      },
-      "sponsor": "Tim Watchorn",
-      "signatures": 72,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7892",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7892"
-      }
-    },
-    {
-      "code": "e-7942",
-      "topic": {
-        "en": "Science and technology",
-        "fr": "Sciences et technologie"
-      },
-      "keywords": {
-        "en": "Advisor Engineering and engineers",
-        "fr": "Conseiller Ingénierie et ingénieurs"
-      },
-      "status": {
-        "en": "Open for signature until March 24, 2027, at 11:45 a.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 24 mars 2027 à 11 h 45 (HAE)"
-      },
-      "sponsor": "Don Davies",
-      "signatures": 7,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7942",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7942"
-      }
-    },
-    {
-      "code": "e-7947",
-      "topic": {
-        "en": "Infrastructure",
-        "fr": null
-      },
-      "keywords": {
-        "en": "Skating rinks Victoria",
-        "fr": null
-      },
-      "status": {
-        "en": "Open for signature until February 22, 2027, at 2:14 p.m. (EDT)",
-        "fr": null
-      },
-      "sponsor": "Will Greaves",
-      "signatures": 6,
-      "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7947",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7947"
       }
     },
     {
@@ -333,31 +123,157 @@
         "fr": "Ouverte pour signature jusqu'au 24 décembre 2026 à 14 h 06 (HAE)"
       },
       "sponsor": "Patrick Bonin",
-      "signatures": 6,
+      "signatures": 178,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7951",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7951"
       }
     },
     {
-      "code": "e-7944",
+      "code": "e-7969",
+      "topic": {
+        "en": "Economy and finance",
+        "fr": "Économie et finance"
+      },
+      "keywords": {
+        "en": "Airports Canada Strong Fund Investment Public finance",
+        "fr": "Aéroports Finances publiques Fonds pour un Canada fort Investissement"
+      },
+      "status": {
+        "en": "Open for signature until March 19, 2027, at 10:28 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 19 mars 2027 à 10 h 28 (HAE)"
+      },
+      "sponsor": "Fred Davies",
+      "signatures": 141,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7969",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7969"
+      }
+    },
+    {
+      "code": "e-7960",
+      "topic": {
+        "en": "Justice",
+        "fr": "Justice"
+      },
+      "keywords": {
+        "en": "C-39, An Act respecting certain measures ... Economic development Indigenous peoples Labour unions Public consultation",
+        "fr": "C-39, Loi concernant certaines mesures v ... Consultation du public Développement économique Peuples autochtones Syndicats"
+      },
+      "status": {
+        "en": "Open for signature until March 24, 2027, at 2:40 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 24 mars 2027 à 14 h 40 (HAE)"
+      },
+      "sponsor": "Leah Gazan",
+      "signatures": 122,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7960",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7960"
+      }
+    },
+    {
+      "code": "e-7925",
       "topic": {
         "en": "Health",
         "fr": "Santé"
       },
       "keywords": {
-        "en": "Drug addiction treatment Federal-provincial-territorial relations Health services accessibility",
-        "fr": "Accessibilité des services de santé Relations fédérales-provinciales-territo ... Traitement de la toxicomanie"
+        "en": "Endometriosis Medical research",
+        "fr": "Endométriose Recherche médicale"
       },
       "status": {
-        "en": "Open for signature until February 22, 2027, at 12:13 p.m. (EDT)",
-        "fr": "Ouverte pour signature jusqu'au 22 février 2027 à 12 h 13 (HAE)"
+        "en": "Open for signature until March 16, 2027, at 5:08 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 16 mars 2027 à 17 h 08 (HAE)"
       },
-      "sponsor": "Leah Gazan",
-      "signatures": 6,
+      "sponsor": "Warren Steinley",
+      "signatures": 109,
       "url": {
-        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7944",
-        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7944"
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7925",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7925"
+      }
+    },
+    {
+      "code": "e-7892",
+      "topic": {
+        "en": "Transportation",
+        "fr": "Transport"
+      },
+      "keywords": {
+        "en": "Shoreline erosion and protection Wakesurf boats",
+        "fr": "Bateaux de wakesurf Érosion et protection des berges"
+      },
+      "status": {
+        "en": "Open for signature until March 19, 2027, at 10:26 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 19 mars 2027 à 10 h 26 (HAE)"
+      },
+      "sponsor": "Tim Watchorn",
+      "signatures": 106,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7892",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7892"
+      }
+    },
+    {
+      "code": "e-7991",
+      "topic": {
+        "en": "Foreign affairs",
+        "fr": "Affaires étrangères"
+      },
+      "keywords": {
+        "en": "Economic sanctions Foreign policy Gaza Humanitarian assistance and workers International conflict and international ... Israel",
+        "fr": "Aide humanitaire et travailleurs humanitaires Conflits internationaux et résolution de ... Gaza Israël Politique étrangère Sanctions économiques"
+      },
+      "status": {
+        "en": "Open for signature until December 25, 2026, at 11:48 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 25 décembre 2026 à 11 h 48 (HAE)"
+      },
+      "sponsor": "Salma Zahid",
+      "signatures": 52,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7991",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7991"
+      }
+    },
+    {
+      "code": "e-7942",
+      "topic": {
+        "en": "Science and technology",
+        "fr": "Sciences et technologie"
+      },
+      "keywords": {
+        "en": "Advisor Engineering and engineers",
+        "fr": "Conseiller Ingénierie et ingénieurs"
+      },
+      "status": {
+        "en": "Open for signature until March 24, 2027, at 11:45 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 24 mars 2027 à 11 h 45 (HAE)"
+      },
+      "sponsor": "Don Davies",
+      "signatures": 29,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7942",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7942"
+      }
+    },
+    {
+      "code": "e-7876",
+      "topic": {
+        "en": "Health",
+        "fr": "Santé"
+      },
+      "keywords": {
+        "en": "Microwaves Public health Radio frequencies",
+        "fr": "Micro-ondes Radiofréquences Santé publique"
+      },
+      "status": {
+        "en": "Open for signature until March 24, 2027, at 2:36 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 24 mars 2027 à 14 h 36 (HAE)"
+      },
+      "sponsor": "John Brassard",
+      "signatures": 23,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7876",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7876"
       }
     },
     {
@@ -375,10 +291,52 @@
         "fr": "Ouverte pour signature jusqu'au 22 février 2027 à 12 h 05 (HAE)"
       },
       "sponsor": "Elizabeth May",
-      "signatures": 6,
+      "signatures": 22,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7949",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7949"
+      }
+    },
+    {
+      "code": "e-7826",
+      "topic": {
+        "en": "Business and trade",
+        "fr": "Affaires et commerce"
+      },
+      "keywords": {
+        "en": "Country of origin Packaging and labelling Product of Canada Signs",
+        "fr": "Affiches Emballage et étiquetage Pays d'origine Produit du Canada"
+      },
+      "status": {
+        "en": "Open for signature until March 24, 2027, at 2:46 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 24 mars 2027 à 14 h 46 (HAE)"
+      },
+      "sponsor": "Kody Blois",
+      "signatures": 17,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7826",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7826"
+      }
+    },
+    {
+      "code": "e-7944",
+      "topic": {
+        "en": "Health",
+        "fr": "Santé"
+      },
+      "keywords": {
+        "en": "Drug addiction treatment Federal-provincial-territorial relations Health services accessibility",
+        "fr": "Accessibilité des services de santé Relations fédérales-provinciales-territo ... Traitement de la toxicomanie"
+      },
+      "status": {
+        "en": "Open for signature until February 22, 2027, at 12:13 p.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 22 février 2027 à 12 h 13 (HAE)"
+      },
+      "sponsor": "Leah Gazan",
+      "signatures": 13,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7944",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7944"
       }
     },
     {
@@ -396,7 +354,7 @@
         "fr": "Ouverte pour signature jusqu'au 24 mars 2027 à 11 h 57 (HAE)"
       },
       "sponsor": "Will Greaves",
-      "signatures": 6,
+      "signatures": 11,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7857",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7857"
@@ -417,10 +375,52 @@
         "fr": "Ouverte pour signature jusqu'au 24 mars 2027 à 11 h 52 (HAE)"
       },
       "sponsor": "John Williamson",
-      "signatures": 6,
+      "signatures": 10,
       "url": {
         "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7910",
         "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7910"
+      }
+    },
+    {
+      "code": "e-7995",
+      "topic": {
+        "en": "Health",
+        "fr": "Santé"
+      },
+      "keywords": {
+        "en": "Drug review process Parkinson's disease",
+        "fr": "Maladie de Parkinson Processus d'examen des médicaments"
+      },
+      "status": {
+        "en": "Open for signature until March 25, 2027, at 11:40 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 25 mars 2027 à 11 h 40 (HAE)"
+      },
+      "sponsor": "Greg McLean",
+      "signatures": 8,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7995",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7995"
+      }
+    },
+    {
+      "code": "e-7972",
+      "topic": {
+        "en": "Taxation",
+        "fr": "Fiscalité"
+      },
+      "keywords": {
+        "en": "Cost of living International development and aid Public finance",
+        "fr": "Aide au développement international Coût de la vie Finances publiques"
+      },
+      "status": {
+        "en": "Open for signature until March 25, 2027, at 11:32 a.m. (EDT)",
+        "fr": "Ouverte pour signature jusqu'au 25 mars 2027 à 11 h 32 (HAE)"
+      },
+      "sponsor": "Rob Morrison",
+      "signatures": 8,
+      "url": {
+        "en": "https://www.ourcommons.ca/petitions/en/Petition/Details?Petition=e-7972",
+        "fr": "https://www.ourcommons.ca/petitions/fr/Petition/Details?Petition=e-7972"
       }
     }
   ]

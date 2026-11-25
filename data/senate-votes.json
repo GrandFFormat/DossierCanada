@@ -4,9 +4,491 @@
     "fr": "https://sencanada.ca/fr/dans-la-chambre/votes/45-1"
   },
   "session": "45-1",
-  "scrapedAt": "2026-11-24T19:22:08.058Z",
-  "count": 36,
+  "scrapedAt": "2026-11-25T18:26:42.478Z",
+  "count": 37,
   "votes": [
+    {
+      "id": 712243,
+      "date": "2026-11-24",
+      "title": {
+        "en": "An Act to amend the Food and Drugs Act (warning label on alcoholic beverages) – S-202 – Third Reading",
+        "fr": "Loi modifiant la Loi sur les aliments et drogues (étiquette de mise en garde sur les boissons alcooliques) – S-202 – Troisième lecture"
+      },
+      "billNumber": "S-202",
+      "totals": {
+        "yea": 31,
+        "nay": 39,
+        "abstention": 6,
+        "total": 76
+      },
+      "result": {
+        "en": "Defeated",
+        "fr": "Rejeté"
+      },
+      "passed": false,
+      "url": {
+        "en": "https://sencanada.ca/en/in-the-chamber/votes/details/712243/45-1",
+        "fr": "https://sencanada.ca/fr/dans-la-chambre/votes/details/712243/45-1"
+      },
+      "ballots": [
+        {
+          "name": "Ringuette, Pierrette",
+          "affiliation": "ISG",
+          "province": "New Brunswick",
+          "vote": "nay"
+        },
+        {
+          "name": "Manning, Fabian",
+          "affiliation": "C",
+          "province": "Newfoundland and Labrador",
+          "vote": "nay"
+        },
+        {
+          "name": "MacDonald, Michael L.",
+          "affiliation": "C",
+          "province": "Nova Scotia",
+          "vote": "nay"
+        },
+        {
+          "name": "Martin, Yonah",
+          "affiliation": "C",
+          "province": "British Columbia",
+          "vote": "nay"
+        },
+        {
+          "name": "Brazeau, Patrick",
+          "affiliation": "Non-affiliated",
+          "province": "Quebec",
+          "vote": "yea"
+        },
+        {
+          "name": "Housakos, Leo",
+          "affiliation": "C",
+          "province": "Quebec",
+          "vote": "nay"
+        },
+        {
+          "name": "Ataullahjan, Salma",
+          "affiliation": "C",
+          "province": "Ontario",
+          "vote": "yea"
+        },
+        {
+          "name": "Verner, Josée",
+          "affiliation": "CSG",
+          "province": "Quebec",
+          "vote": "nay"
+        },
+        {
+          "name": "Wells, David M.",
+          "affiliation": "C",
+          "province": "Newfoundland and Labrador",
+          "vote": "nay"
+        },
+        {
+          "name": "Batters, Denise",
+          "affiliation": "C",
+          "province": "Saskatchewan",
+          "vote": "yea"
+        },
+        {
+          "name": "Tannas, Scott",
+          "affiliation": "CSG",
+          "province": "Alberta",
+          "vote": "abstention"
+        },
+        {
+          "name": "Harder, Peter",
+          "affiliation": "PSG",
+          "province": "Ontario",
+          "vote": "nay"
+        },
+        {
+          "name": "Woo, Yuen Pau",
+          "affiliation": "ISG",
+          "province": "British Columbia",
+          "vote": "yea"
+        },
+        {
+          "name": "Cormier, René",
+          "affiliation": "ISG",
+          "province": "New Brunswick",
+          "vote": "abstention"
+        },
+        {
+          "name": "Pate, Kim",
+          "affiliation": "ISG",
+          "province": "Ontario",
+          "vote": "yea"
+        },
+        {
+          "name": "Dean, Tony",
+          "affiliation": "ISG",
+          "province": "Ontario",
+          "vote": "yea"
+        },
+        {
+          "name": "Bernard, Wanda Thomas",
+          "affiliation": "PSG",
+          "province": "Nova Scotia",
+          "vote": "abstention"
+        },
+        {
+          "name": "Moncion, Lucie",
+          "affiliation": "ISG",
+          "province": "Ontario",
+          "vote": "yea"
+        },
+        {
+          "name": "Forest, Éric",
+          "affiliation": "ISG",
+          "province": "Quebec",
+          "vote": "yea"
+        },
+        {
+          "name": "McCallum, Mary Jane",
+          "affiliation": "C",
+          "province": "Manitoba",
+          "vote": "yea"
+        },
+        {
+          "name": "Coyle, Mary",
+          "affiliation": "ISG",
+          "province": "Nova Scotia",
+          "vote": "yea"
+        },
+        {
+          "name": "Deacon, Marty",
+          "affiliation": "ISG",
+          "province": "Ontario",
+          "vote": "nay"
+        },
+        {
+          "name": "Ravalia, Mohamed-Iqbal",
+          "affiliation": "ISG",
+          "province": "Newfoundland and Labrador",
+          "vote": "abstention"
+        },
+        {
+          "name": "Dalphond, Pierre J.",
+          "affiliation": "ISG",
+          "province": "Quebec",
+          "vote": "nay"
+        },
+        {
+          "name": "Deacon, Colin",
+          "affiliation": "CSG",
+          "province": "Nova Scotia",
+          "vote": "nay"
+        },
+        {
+          "name": "Miville-Dechêne, Julie",
+          "affiliation": "PSG",
+          "province": "Quebec",
+          "vote": "yea"
+        },
+        {
+          "name": "Klyne, Marty",
+          "affiliation": "PSG",
+          "province": "Saskatchewan",
+          "vote": "abstention"
+        },
+        {
+          "name": "Boehm, Peter M.",
+          "affiliation": "ISG",
+          "province": "Ontario",
+          "vote": "nay"
+        },
+        {
+          "name": "LaBoucane-Benson, Patti",
+          "affiliation": "GRO",
+          "province": "Alberta",
+          "vote": "nay"
+        },
+        {
+          "name": "Simons, Paula",
+          "affiliation": "ISG",
+          "province": "Alberta",
+          "vote": "yea"
+        },
+        {
+          "name": "Francis, Brian",
+          "affiliation": "PSG",
+          "province": "Prince Edward Island",
+          "vote": "nay"
+        },
+        {
+          "name": "Moodie, Rosemary",
+          "affiliation": "ISG",
+          "province": "Ontario",
+          "vote": "yea"
+        },
+        {
+          "name": "Duncan, Pat",
+          "affiliation": "GRO",
+          "province": "Yukon",
+          "vote": "nay"
+        },
+        {
+          "name": "Loffreda, Tony",
+          "affiliation": "ISG",
+          "province": "Quebec",
+          "vote": "nay"
+        },
+        {
+          "name": "Quinn, Jim",
+          "affiliation": "C",
+          "province": "New Brunswick",
+          "vote": "nay"
+        },
+        {
+          "name": "Yussuff, Hassan",
+          "affiliation": "ISG",
+          "province": "Ontario",
+          "vote": "nay"
+        },
+        {
+          "name": "Clement, Bernadette",
+          "affiliation": "ISG",
+          "province": "Ontario",
+          "vote": "yea"
+        },
+        {
+          "name": "Arnot, David M.",
+          "affiliation": "ISG",
+          "province": "Saskatchewan",
+          "vote": "yea"
+        },
+        {
+          "name": "Audette, Michèle",
+          "affiliation": "PSG",
+          "province": "Quebec",
+          "vote": "yea"
+        },
+        {
+          "name": "Gerba, Amina",
+          "affiliation": "PSG",
+          "province": "Quebec",
+          "vote": "yea"
+        },
+        {
+          "name": "Gignac, Clément",
+          "affiliation": "CSG",
+          "province": "Quebec",
+          "vote": "yea"
+        },
+        {
+          "name": "Sorensen, Karen",
+          "affiliation": "PSG",
+          "province": "Alberta",
+          "vote": "nay"
+        },
+        {
+          "name": "Osler, Flordeliz (Gigi)",
+          "affiliation": "CSG",
+          "province": "Manitoba",
+          "vote": "abstention"
+        },
+        {
+          "name": "Burey, Sharon",
+          "affiliation": "CSG",
+          "province": "Ontario",
+          "vote": "yea"
+        },
+        {
+          "name": "Cardozo, Andrew",
+          "affiliation": "PSG",
+          "province": "Ontario",
+          "vote": "yea"
+        },
+        {
+          "name": "Patterson, Rebecca",
+          "affiliation": "CSG",
+          "province": "Ontario",
+          "vote": "yea"
+        },
+        {
+          "name": "Petten, Iris G.",
+          "affiliation": "GRO",
+          "province": "Newfoundland and Labrador",
+          "vote": "nay"
+        },
+        {
+          "name": "MacAdam, Jane",
+          "affiliation": "ISG",
+          "province": "Prince Edward Island",
+          "vote": "yea"
+        },
+        {
+          "name": "McNair, John M.",
+          "affiliation": "ISG",
+          "province": "New Brunswick",
+          "vote": "nay"
+        },
+        {
+          "name": "Ross, Krista",
+          "affiliation": "CSG",
+          "province": "New Brunswick",
+          "vote": "nay"
+        },
+        {
+          "name": "Kingston, Joan",
+          "affiliation": "ISG",
+          "province": "New Brunswick",
+          "vote": "nay"
+        },
+        {
+          "name": "Cuzner, Rodger",
+          "affiliation": "PSG",
+          "province": "Nova Scotia",
+          "vote": "nay"
+        },
+        {
+          "name": "Aucoin, Réjean",
+          "affiliation": "CSG",
+          "province": "Nova Scotia",
+          "vote": "yea"
+        },
+        {
+          "name": "McBean, Marnie",
+          "affiliation": "ISG",
+          "province": "Ontario",
+          "vote": "nay"
+        },
+        {
+          "name": "Senior, Paulette",
+          "affiliation": "ISG",
+          "province": "Ontario",
+          "vote": "yea"
+        },
+        {
+          "name": "Varone, Toni",
+          "affiliation": "ISG",
+          "province": "Ontario",
+          "vote": "nay"
+        },
+        {
+          "name": "Robinson, Mary",
+          "affiliation": "CSG",
+          "province": "Prince Edward Island",
+          "vote": "nay"
+        },
+        {
+          "name": "Oudar, Manuelle",
+          "affiliation": "ISG",
+          "province": "Quebec",
+          "vote": "yea"
+        },
+        {
+          "name": "Boudreau, Victor",
+          "affiliation": "ISG",
+          "province": "New Brunswick",
+          "vote": "yea"
+        },
+        {
+          "name": "Muggli, Tracy",
+          "affiliation": "PSG",
+          "province": "Saskatchewan",
+          "vote": "nay"
+        },
+        {
+          "name": "Adler, Charles S.",
+          "affiliation": "CSG",
+          "province": "Manitoba",
+          "vote": "nay"
+        },
+        {
+          "name": "Fridhandler, Daryl S.",
+          "affiliation": "PSG",
+          "province": "Alberta",
+          "vote": "yea"
+        },
+        {
+          "name": "Wells, Kristopher",
+          "affiliation": "PSG",
+          "province": "Alberta",
+          "vote": "nay"
+        },
+        {
+          "name": "Moreau, Pierre",
+          "affiliation": "GRO",
+          "province": "Quebec",
+          "vote": "nay"
+        },
+        {
+          "name": "Youance, Suze",
+          "affiliation": "ISG",
+          "province": "Quebec",
+          "vote": "yea"
+        },
+        {
+          "name": "Surette, Allister",
+          "affiliation": "ISG",
+          "province": "Nova Scotia",
+          "vote": "nay"
+        },
+        {
+          "name": "Karetak-Lindell, Nancy",
+          "affiliation": "ISG",
+          "province": "Nunavut",
+          "vote": "yea"
+        },
+        {
+          "name": "Dhillon, Baltej S.",
+          "affiliation": "ISG",
+          "province": "British Columbia",
+          "vote": "nay"
+        },
+        {
+          "name": "Hébert, Martine",
+          "affiliation": "ISG",
+          "province": "Quebec",
+          "vote": "nay"
+        },
+        {
+          "name": "Henkel, Danièle",
+          "affiliation": "PSG",
+          "province": "Quebec",
+          "vote": "yea"
+        },
+        {
+          "name": "Wilson, Duncan",
+          "affiliation": "PSG",
+          "province": "British Columbia",
+          "vote": "nay"
+        },
+        {
+          "name": "Arnold, Dawn",
+          "affiliation": "ISG",
+          "province": "New Brunswick",
+          "vote": "yea"
+        },
+        {
+          "name": "Mohamed, Farah",
+          "affiliation": "ISG",
+          "province": "Ontario",
+          "vote": "nay"
+        },
+        {
+          "name": "Pupatello, Sandra",
+          "affiliation": "GRO",
+          "province": "Ontario",
+          "vote": "nay"
+        },
+        {
+          "name": "Ouellette, Rodney",
+          "affiliation": "Non-affiliated",
+          "province": "New Brunswick",
+          "vote": "nay"
+        },
+        {
+          "name": "Tucker, Geeta",
+          "affiliation": "Non-affiliated",
+          "province": "Manitoba",
+          "vote": "nay"
+        }
+      ]
+    },
     {
       "id": 702799,
       "date": "2026-06-18",
