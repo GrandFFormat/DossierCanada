@@ -1,9 +1,292 @@
 {
   "source": "https://www.parl.ca/legisinfo/en/bills/json?parlsession=45-1",
   "session": "45-1",
-  "scrapedAt": "2026-11-25T18:15:05.291Z",
-  "count": 201,
+  "scrapedAt": "2026-11-26T17:56:12.859Z",
+  "count": 203,
   "bills": [
+    {
+      "id": 14368367,
+      "num": "C-43",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "commons",
+      "type": {
+        "en": "House Government Bill",
+        "fr": "Projet de loi émanant du gouvernement (Cdc)"
+      },
+      "isGovernment": true,
+      "title": {
+        "en": "An Act to implement certain provisions of the budget tabled in Parliament on November 5, 2026",
+        "fr": "Loi portant exécution de certaines dispositions du budget déposé au Parlement le 5 novembre 2026"
+      },
+      "shortTitle": {
+        "en": "Budget 2026 Implementation Act, No. 1",
+        "fr": "Loi no 1 d'exécution du budget de 2026"
+      },
+      "sponsor": {
+        "en": "Hon. François-Philippe Champagne",
+        "fr": "L’hon. François-Philippe Champagne"
+      },
+      "status": {
+        "en": "At second reading in the House of Commons",
+        "fr": "À la deuxième lecture à la Chambre des communes"
+      },
+      "state": "encours",
+      "milestones": [
+        {
+          "stage": "commons_first_reading",
+          "chamber": "commons",
+          "reading": 1,
+          "date": "2026-11-26"
+        }
+      ],
+      "royalAssent": null,
+      "reinstated": false,
+      "latestActivity": {
+        "en": "At second reading in the House of Commons",
+        "fr": "À la deuxième lecture à la Chambre des communes",
+        "date": "2026-11-26"
+      },
+      "lastActivity": "2026-11-26",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-43",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-43"
+      },
+      "sponsorPersonId": 88633,
+      "sponsorName": {
+        "first": "François-Philippe",
+        "last": "Champagne"
+      },
+      "fullSummaryAvailable": false,
+      "summary": {
+        "en": null,
+        "fr": null
+      },
+      "summarySource": null
+    },
+    {
+      "id": 13583642,
+      "num": "C-219",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "commons",
+      "type": {
+        "en": "Private Member’s Bill",
+        "fr": "Projet de loi émanant d'un député"
+      },
+      "isGovernment": false,
+      "title": {
+        "en": "An Act to amend the Department of Foreign Affairs, Trade and Development Act, the Justice for Victims of Corrupt Foreign Officials Act (Sergei Magnitsky Law) and the Special Economic Measures Act",
+        "fr": "Loi modifiant la Loi sur le ministère des Affaires étrangères, du Commerce et du Développement, la Loi sur la justice pour les victimes de dirigeants étrangers corrompus (loi de Sergueï Magnitski) et la Loi sur les mesures économiques spéciales"
+      },
+      "shortTitle": {
+        "en": "International Anti-Corruption and Human Rights Act (Sergei Magnitsky Law No. 3)",
+        "fr": "Loi sur la lutte contre la corruption et la défense des droits de la personne à l’échelle internationale (loi no 3 de Sergueï Magnitski)"
+      },
+      "sponsor": {
+        "en": "James Bezan",
+        "fr": "James Bezan"
+      },
+      "status": {
+        "en": "Awaiting royal assent",
+        "fr": "En attente de la sanction royale"
+      },
+      "state": "encours",
+      "milestones": [
+        {
+          "stage": "commons_first_reading",
+          "chamber": "commons",
+          "reading": 1,
+          "date": "2025-09-16"
+        },
+        {
+          "stage": "commons_second_reading",
+          "chamber": "commons",
+          "reading": 2,
+          "date": "2026-02-24"
+        },
+        {
+          "stage": "commons_third_reading",
+          "chamber": "commons",
+          "reading": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "stage": "senate_first_reading",
+          "chamber": "senate",
+          "reading": 1,
+          "date": "2026-10-20"
+        },
+        {
+          "stage": "senate_second_reading",
+          "chamber": "senate",
+          "reading": 2,
+          "date": "2026-11-03"
+        },
+        {
+          "stage": "senate_third_reading",
+          "chamber": "senate",
+          "reading": 3,
+          "date": "2026-11-25"
+        }
+      ],
+      "royalAssent": null,
+      "reinstated": false,
+      "latestActivity": {
+        "en": "Awaiting royal assent",
+        "fr": "En attente de la sanction royale",
+        "date": "2026-11-25"
+      },
+      "lastActivity": "2026-11-25",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-219",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-219"
+      },
+      "sponsorPersonId": 25475,
+      "sponsorName": {
+        "first": "James",
+        "last": "Bezan"
+      },
+      "fullSummaryAvailable": false,
+      "summary": {
+        "en": "This enactment amends the Department of Foreign Affairs, Trade and Development Act to impose certain requirements on the Minister of Foreign Affairs in relation to international human rights.\n\nIt also amends the Justice for Victims of Corrupt Foreign Officials Act (Sergei Magnitsky Law) to provide that\n\n(a) transnational repression be sanctioned;\n\n(b) visas or other documents must not be issued to immediate family members of a foreign national who is the subject of an order or regulation made under section 4 of the Act;\n\n(c) a copy of each order or regulation made under paragraph 4(1)‍(b) of the Act must be tabled in each House of Parliament;\n\n(d) the Minister must respond to a report submitted by a parliamentary committee that recommends that sanctions be imposed under the Act against a foreign national; and\n\n(e) the Commissioner of the Royal Canadian Mounted Police and the Financial Transactions and Reports Analysis Centre of Canada must provide the Minister with information that is relevant to the making, administering or enforcing of the order or regulation against a foreign national.\n\nIt also amends the Special Economic Measures Act to change that Act’s long title to “An Act to provide for the imposition of economic measures against a person, entity or foreign state for grave breaches of international peace and security, gross and systematic human rights violations or acts of significant corruption” and its short title to the “Sergei Magnitsky Global Sanctions Act”. It further amends that Act to provide that\n\n(a) transnational repression be sanctioned;\n\n(b) visas or other documents must not be issued to immediate family members of a foreign national who is the subject of an order or regulation made under section 4 of the Act;\n\n(c) the Commissioner of the Royal Canadian Mounted Police and the Financial Transactions and Reports Analysis Centre of Canada must provide the Minister with information that is relevant to the making, administering or enforcing of the order or regulation against a foreign state or person;\n\n(d) every order or regulation made under paragraph 4(1)‍(b) of the Act must be tabled in each House of Parliament; and\n\n(e) the punishment under paragraph 8(a) of the Act be increased.\n\nFinally, it amends the Broadcasting Act to prohibit the issue or renewal of a licence in relation to a broadcasting undertaking, or to revoke the licence of a broadcasting undertaking, that is vulnerable to being significantly influenced by a foreign national or entity that has committed acts or omissions that the Senate or the House of Commons has recognized as genocide or that is the subject of sanctions under the Justice for Victims of Corrupt Foreign Officials Act (Sergei Magnitsky Law) or under the Special Economic Measures Act.‍‍",
+        "fr": "Le texte modifie la Loi sur le ministère des Affaires étrangères, du Commerce et du Développement afin d’imposer certaines exigences au ministre des Affaires étrangères relativement aux droits de la personne à l’échelle internationale.\n\nIl modifie également la Loi sur la justice pour les victimes de dirigeants étrangers corrompus (loi de Sergueï Magnitski) afin de prévoir :\n\na) que les actes de répression transnationale soient sanctionnés;\n\nb) qu’il ne peut être délivré de visa ou autre document aux membres de la famille immédiate d’un étranger visé par un décret ou règlement pris en vertu de l’article 4 de la loi;\n\nc) qu’une copie de tout décret ou règlement pris en vertu de l’alinéa 4(1)b) de la loi doit être déposée devant chaque chambre du Parlement;\n\nd) que le ministre est tenu de répondre à tout rapport soumis par un comité parlementaire qui recommande l’imposition de sanctions contre un étranger au titre de la loi;\n\ne) que le commissaire de la Gendarmerie royale du Canada et le Centre d’analyse des opérations et déclarations financières du Canada sont tenus de fournir au ministre tout renseignement utile à la prise, à l’exécution ou au contrôle d’application d’un décret ou règlement à l’encontre d’un étranger.\n\nLe texte modifie par ailleurs la Loi sur les mesures économiques spéciales afin d’en changer le titre intégral pour la « Loi autorisant la prise de mesures économiques contre des personnes, des entités et des États étrangers en cas de rupture sérieuse de la paix et de la sécurité internationales, de violations graves et systématiques des droits de la personne ou d’actes de corruption à grande échelle » et le titre abrégé pour la « Loi sur les sanctions internationales de type Sergueï Magnitski ». Il modifie aussi cette loi afin de prévoir :\n\na) que les actes de répression transnationale soient sanctionnés;\n\nb) qu’il ne peut être délivré de visa ou autre document aux membres de la famille immédiate d’un étranger visé par un décret ou règlement pris en vertu de l’article 4 de la loi;\n\nc) que le commissaire de la Gendarmerie royale du Canada et le Centre d’analyse des opérations et déclarations financières du Canada sont tenus de fournir au ministre tout renseignement utile à la prise, à l’exécution ou au contrôle d’application d’un décret ou règlement à l’encontre d’un État étranger ou d’une personne;\n\nd) que les décrets et règlements pris en vertu de l’alinéa 4(1)b) de la loi doivent être déposés devant chaque chambre du Parlement;\n\ne) que la peine prévue à l’alinéa 8a) de la loi est alourdie.\n\nEnfin, le texte modifie la Loi sur la radiodiffusion afin d’interdire l’attribution ou le renouvellement d’une licence — ou de prévoir la révocation d’une telle licence — à l’égard de toute entreprise de radiodiffusion qui est susceptible d’être considérablement influencée par un étranger ou une entité étrangère qui a commis des faits — actes ou omissions — reconnus par le Sénat ou la Chambre des communes comme constituant un génocide ou qui est visé par des sanctions sous le régime de la Loi sur la justice pour les victimes de dirigeants étrangers corrompus (loi de Sergueï Magnitski) ou de la Loi sur les mesures économiques spéciales.‍‍"
+      },
+      "summarySource": "bill"
+    },
+    {
+      "id": 13585237,
+      "num": "C-221",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "commons",
+      "type": {
+        "en": "Private Member’s Bill",
+        "fr": "Projet de loi émanant d'un député"
+      },
+      "isGovernment": false,
+      "title": {
+        "en": "An Act to amend the Corrections and Conditional Release Act (disclosure of information to victims)",
+        "fr": "Loi modifiant la Loi sur le système correctionnel et la mise en liberté sous condition (communication de renseignements à la victime)"
+      },
+      "shortTitle": null,
+      "sponsor": {
+        "en": "Mel Arnold",
+        "fr": "Mel Arnold"
+      },
+      "status": {
+        "en": "House of Commons bill awaiting first reading in the Senate",
+        "fr": "Projet de loi de la Chambre des communes en attente de la première lecture au Sénat"
+      },
+      "state": "encours",
+      "milestones": [
+        {
+          "stage": "commons_first_reading",
+          "chamber": "commons",
+          "reading": 1,
+          "date": "2025-09-17"
+        },
+        {
+          "stage": "commons_second_reading",
+          "chamber": "commons",
+          "reading": 2,
+          "date": "2026-02-27"
+        },
+        {
+          "stage": "commons_third_reading",
+          "chamber": "commons",
+          "reading": 3,
+          "date": "2026-11-25"
+        }
+      ],
+      "royalAssent": null,
+      "reinstated": false,
+      "latestActivity": {
+        "en": "House of Commons bill awaiting first reading in the Senate",
+        "fr": "Projet de loi de la Chambre des communes en attente de la première lecture au Sénat",
+        "date": "2026-11-25"
+      },
+      "lastActivity": "2026-11-25",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-221",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-221"
+      },
+      "sponsorPersonId": 89294,
+      "sponsorName": {
+        "first": "Mel",
+        "last": "Arnold"
+      },
+      "fullSummaryAvailable": false,
+      "summary": {
+        "en": "This enactment amends the Corrections and Conditional Release Act to provide that information that is disclosed to the victim of an offence regarding eligibility dates and review dates applicable to the offender in respect of temporary absences, releases or parole must include an explanation of how the dates were determined.",
+        "fr": "Le texte modifie la Loi sur le système correctionnel et la mise en liberté sous condition afin de prévoir que les renseignements communiqués à la victime d’une infraction concernant les dates d’admissibilité et d’examen applicables au délinquant relativement aux permissions de sortir, aux placements à l’extérieur, aux libérations conditionnelles ou aux libérations d’office comprennent une explication sur la manière dont ces dates ont été déterminées."
+      },
+      "summarySource": "bill"
+    },
+    {
+      "id": 14235835,
+      "num": "C-298",
+      "session": "45-1",
+      "parliament": 45,
+      "sessionNumber": 1,
+      "chamber": "commons",
+      "type": {
+        "en": "Private Member’s Bill",
+        "fr": "Projet de loi émanant d'un député"
+      },
+      "isGovernment": false,
+      "title": {
+        "en": "An Act to establish Scoliosis Awareness Month and Canadian Scoliosis Screening Day",
+        "fr": "Loi instituant le Mois de la sensibilisation à la scoliose et la Journée canadienne du dépistage de la scoliose"
+      },
+      "shortTitle": {
+        "en": "Scoliosis Awareness Act",
+        "fr": "Loi sur la sensibilisation à la scoliose"
+      },
+      "sponsor": {
+        "en": "Angelo Iacono",
+        "fr": "Angelo Iacono"
+      },
+      "status": {
+        "en": "Outside the Order of Precedence",
+        "fr": "Ne fait pas partie de l'Ordre de priorité"
+      },
+      "state": "encours",
+      "milestones": [
+        {
+          "stage": "commons_first_reading",
+          "chamber": "commons",
+          "reading": 1,
+          "date": "2026-11-25"
+        }
+      ],
+      "royalAssent": null,
+      "reinstated": false,
+      "latestActivity": {
+        "en": "Outside the Order of Precedence",
+        "fr": "Ne fait pas partie de l'Ordre de priorité",
+        "date": "2026-11-25"
+      },
+      "lastActivity": "2026-11-25",
+      "url": {
+        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-298",
+        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-298"
+      },
+      "sponsorPersonId": 71337,
+      "sponsorName": {
+        "first": "Angelo",
+        "last": "Iacono"
+      },
+      "fullSummaryAvailable": false,
+      "summary": {
+        "en": "This enactment designates the month of June as “Scoliosis Awareness Month” and the 26th day of June as “Canadian Scoliosis Screening Day”.",
+        "fr": "Le texte désigne le mois de juin comme « Mois de la sensibilisation à la scoliose » et le 26 juin comme « Journée canadienne du dépistage de la scoliose »."
+      },
+      "summarySource": "bill"
+    },
     {
       "id": 14335040,
       "num": "C-42",
@@ -1428,91 +1711,6 @@
       "summarySource": "bill"
     },
     {
-      "id": 13583642,
-      "num": "C-219",
-      "session": "45-1",
-      "parliament": 45,
-      "sessionNumber": 1,
-      "chamber": "commons",
-      "type": {
-        "en": "Private Member’s Bill",
-        "fr": "Projet de loi émanant d'un député"
-      },
-      "isGovernment": false,
-      "title": {
-        "en": "An Act to amend the Department of Foreign Affairs, Trade and Development Act, the Justice for Victims of Corrupt Foreign Officials Act (Sergei Magnitsky Law) and the Special Economic Measures Act",
-        "fr": "Loi modifiant la Loi sur le ministère des Affaires étrangères, du Commerce et du Développement, la Loi sur la justice pour les victimes de dirigeants étrangers corrompus (loi de Sergueï Magnitski) et la Loi sur les mesures économiques spéciales"
-      },
-      "shortTitle": {
-        "en": "International Anti-Corruption and Human Rights Act (Sergei Magnitsky Law No. 3)",
-        "fr": "Loi sur la lutte contre la corruption et la défense des droits de la personne à l’échelle internationale (loi no 3 de Sergueï Magnitski)"
-      },
-      "sponsor": {
-        "en": "James Bezan",
-        "fr": "James Bezan"
-      },
-      "status": {
-        "en": "At third reading in the Senate",
-        "fr": "À la troisième lecture au Sénat"
-      },
-      "state": "encours",
-      "milestones": [
-        {
-          "stage": "commons_first_reading",
-          "chamber": "commons",
-          "reading": 1,
-          "date": "2025-09-16"
-        },
-        {
-          "stage": "commons_second_reading",
-          "chamber": "commons",
-          "reading": 2,
-          "date": "2026-02-24"
-        },
-        {
-          "stage": "commons_third_reading",
-          "chamber": "commons",
-          "reading": 3,
-          "date": "2026-10-08"
-        },
-        {
-          "stage": "senate_first_reading",
-          "chamber": "senate",
-          "reading": 1,
-          "date": "2026-10-20"
-        },
-        {
-          "stage": "senate_second_reading",
-          "chamber": "senate",
-          "reading": 2,
-          "date": "2026-11-03"
-        }
-      ],
-      "royalAssent": null,
-      "reinstated": false,
-      "latestActivity": {
-        "en": "At third reading in the Senate",
-        "fr": "À la troisième lecture au Sénat",
-        "date": "2026-11-03"
-      },
-      "lastActivity": "2026-11-03",
-      "url": {
-        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-219",
-        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-219"
-      },
-      "sponsorPersonId": 25475,
-      "sponsorName": {
-        "first": "James",
-        "last": "Bezan"
-      },
-      "fullSummaryAvailable": false,
-      "summary": {
-        "en": "This enactment amends the Department of Foreign Affairs, Trade and Development Act to impose certain requirements on the Minister of Foreign Affairs in relation to international human rights.\n\nIt also amends the Justice for Victims of Corrupt Foreign Officials Act (Sergei Magnitsky Law) to provide that\n\n(a) transnational repression be sanctioned;\n\n(b) visas or other documents must not be issued to immediate family members of a foreign national who is the subject of an order or regulation made under section 4 of the Act;\n\n(c) a copy of each order or regulation made under paragraph 4(1)‍(b) of the Act must be tabled in each House of Parliament;\n\n(d) the Minister must respond to a report submitted by a parliamentary committee that recommends that sanctions be imposed under the Act against a foreign national; and\n\n(e) the Commissioner of the Royal Canadian Mounted Police and the Financial Transactions and Reports Analysis Centre of Canada must provide the Minister with information that is relevant to the making, administering or enforcing of the order or regulation against a foreign national.\n\nIt also amends the Special Economic Measures Act to change that Act’s long title to “An Act to provide for the imposition of economic measures against a person, entity or foreign state for grave breaches of international peace and security, gross and systematic human rights violations or acts of significant corruption” and its short title to the “Sergei Magnitsky Global Sanctions Act”. It further amends that Act to provide that\n\n(a) transnational repression be sanctioned;\n\n(b) visas or other documents must not be issued to immediate family members of a foreign national who is the subject of an order or regulation made under section 4 of the Act;\n\n(c) the Commissioner of the Royal Canadian Mounted Police and the Financial Transactions and Reports Analysis Centre of Canada must provide the Minister with information that is relevant to the making, administering or enforcing of the order or regulation against a foreign state or person;\n\n(d) every order or regulation made under paragraph 4(1)‍(b) of the Act must be tabled in each House of Parliament; and\n\n(e) the punishment under paragraph 8(a) of the Act be increased.\n\nFinally, it amends the Broadcasting Act to prohibit the issue or renewal of a licence in relation to a broadcasting undertaking, or to revoke the licence of a broadcasting undertaking, that is vulnerable to being significantly influenced by a foreign national or entity that has committed acts or omissions that the Senate or the House of Commons has recognized as genocide or that is the subject of sanctions under the Justice for Victims of Corrupt Foreign Officials Act (Sergei Magnitsky Law) or under the Special Economic Measures Act.‍‍",
-        "fr": "Le texte modifie la Loi sur le ministère des Affaires étrangères, du Commerce et du Développement afin d’imposer certaines exigences au ministre des Affaires étrangères relativement aux droits de la personne à l’échelle internationale.\n\nIl modifie également la Loi sur la justice pour les victimes de dirigeants étrangers corrompus (loi de Sergueï Magnitski) afin de prévoir :\n\na) que les actes de répression transnationale soient sanctionnés;\n\nb) qu’il ne peut être délivré de visa ou autre document aux membres de la famille immédiate d’un étranger visé par un décret ou règlement pris en vertu de l’article 4 de la loi;\n\nc) qu’une copie de tout décret ou règlement pris en vertu de l’alinéa 4(1)b) de la loi doit être déposée devant chaque chambre du Parlement;\n\nd) que le ministre est tenu de répondre à tout rapport soumis par un comité parlementaire qui recommande l’imposition de sanctions contre un étranger au titre de la loi;\n\ne) que le commissaire de la Gendarmerie royale du Canada et le Centre d’analyse des opérations et déclarations financières du Canada sont tenus de fournir au ministre tout renseignement utile à la prise, à l’exécution ou au contrôle d’application d’un décret ou règlement à l’encontre d’un étranger.\n\nLe texte modifie par ailleurs la Loi sur les mesures économiques spéciales afin d’en changer le titre intégral pour la « Loi autorisant la prise de mesures économiques contre des personnes, des entités et des États étrangers en cas de rupture sérieuse de la paix et de la sécurité internationales, de violations graves et systématiques des droits de la personne ou d’actes de corruption à grande échelle » et le titre abrégé pour la « Loi sur les sanctions internationales de type Sergueï Magnitski ». Il modifie aussi cette loi afin de prévoir :\n\na) que les actes de répression transnationale soient sanctionnés;\n\nb) qu’il ne peut être délivré de visa ou autre document aux membres de la famille immédiate d’un étranger visé par un décret ou règlement pris en vertu de l’article 4 de la loi;\n\nc) que le commissaire de la Gendarmerie royale du Canada et le Centre d’analyse des opérations et déclarations financières du Canada sont tenus de fournir au ministre tout renseignement utile à la prise, à l’exécution ou au contrôle d’application d’un décret ou règlement à l’encontre d’un État étranger ou d’une personne;\n\nd) que les décrets et règlements pris en vertu de l’alinéa 4(1)b) de la loi doivent être déposés devant chaque chambre du Parlement;\n\ne) que la peine prévue à l’alinéa 8a) de la loi est alourdie.\n\nEnfin, le texte modifie la Loi sur la radiodiffusion afin d’interdire l’attribution ou le renouvellement d’une licence — ou de prévoir la révocation d’une telle licence — à l’égard de toute entreprise de radiodiffusion qui est susceptible d’être considérablement influencée par un étranger ou une entité étrangère qui a commis des faits — actes ou omissions — reconnus par le Sénat ou la Chambre des communes comme constituant un génocide ou qui est visé par des sanctions sous le régime de la Loi sur la justice pour les victimes de dirigeants étrangers corrompus (loi de Sergueï Magnitski) ou de la Loi sur les mesures économiques spéciales.‍‍"
-      },
-      "summarySource": "bill"
-    },
-    {
       "id": 14310361,
       "num": "S-8",
       "session": "45-1",
@@ -2814,8 +3012,8 @@
         "fr": "L’hon. Steven MacKinnon"
       },
       "status": {
-        "en": "At consideration in committee in the House of Commons",
-        "fr": "À l'examen en comité à la Chambre des communes"
+        "en": "At report stage in the House of Commons",
+        "fr": "À l'étape du rapport à la Chambre des communes"
       },
       "state": "encours",
       "milestones": [
@@ -2835,8 +3033,8 @@
       "royalAssent": null,
       "reinstated": false,
       "latestActivity": {
-        "en": "At consideration in committee in the House of Commons",
-        "fr": "À l'examen en comité à la Chambre des communes",
+        "en": "At report stage in the House of Commons",
+        "fr": "À l'étape du rapport à la Chambre des communes",
         "date": "2026-10-08"
       },
       "lastActivity": "2026-10-08",
@@ -7093,8 +7291,8 @@
         "fr": "L'hon. Salma Ataullahjan"
       },
       "status": {
-        "en": "At consideration in committee in the Senate",
-        "fr": "À l'examen en comité au Sénat"
+        "en": "At report stage in the Senate",
+        "fr": "À l'étape du rapport au Sénat"
       },
       "state": "encours",
       "milestones": [
@@ -7114,8 +7312,8 @@
       "royalAssent": null,
       "reinstated": false,
       "latestActivity": {
-        "en": "At consideration in committee in the Senate",
-        "fr": "À l'examen en comité au Sénat",
+        "en": "At report stage in the Senate",
+        "fr": "À l'étape du rapport au Sénat",
         "date": "2026-05-26"
       },
       "lastActivity": "2026-05-26",
@@ -9519,70 +9717,6 @@
         "fr": "Le Service d'information et de recherche parlementaires de la Bibliothèque du Parlement rédige actuellement le résumé législatif de ce projet de loi. Entre-temps, le Service met à votre disposition le sommaire suivant.\n\nLe 29 mai 2025, Sénateur Marc Gold a déposé le projet de loi S-2, Loi modifiant la Loi sur les Indiens (nouveaux droits à l’inscription) au Sénat en première lecture.\n\nLe projet de loi S-2 modifie la Loi sur les Indiens, notamment en accordant de nouveaux droits à l’inscription au registre des Indiens pour donner suite à la contestation de certaines dispositions de cette loi fondée sur la Charte canadienne des droits et libertés dans l’affaire Nicholas c. Canada (Procureur général) et en accordant aux personnes visées le droit à ce que leur nom soit consigné dans une liste de bande tenue au ministère des Services aux Autochtones.Le Service d'information et de recherche parlementaires de la Bibliothèque du Parlement rédige actuellement le résumé législatif de ce projet de loi. Entre-temps, le Service met à votre disposition le sommaire suivant.\n\nLe 29 mai 2025, Sénateur Marc Gold a déposé le projet de loi S-2, Loi modifiant la Loi sur les Indiens (nouveaux droits à l’inscription) au Sénat en première lecture.\n\nLe projet de loi S-2 modifie la Loi sur les Indiens, notamment en accordant de nouveaux droits à l’inscription au registre des Indiens pour donner suite à la contestation de certaines dispositions de cette loi fondée sur la Charte canadienne des droits et libertés dans l’affaire Nicholas c. Canada (Procureur général) et en accordant aux personnes visées le droit à ce que leur nom soit consigné dans une liste de bande tenue au ministère des Services aux Autochtones."
       },
       "summarySource": "library"
-    },
-    {
-      "id": 13585237,
-      "num": "C-221",
-      "session": "45-1",
-      "parliament": 45,
-      "sessionNumber": 1,
-      "chamber": "commons",
-      "type": {
-        "en": "Private Member’s Bill",
-        "fr": "Projet de loi émanant d'un député"
-      },
-      "isGovernment": false,
-      "title": {
-        "en": "An Act to amend the Corrections and Conditional Release Act (disclosure of information to victims)",
-        "fr": "Loi modifiant la Loi sur le système correctionnel et la mise en liberté sous condition (communication de renseignements à la victime)"
-      },
-      "shortTitle": null,
-      "sponsor": {
-        "en": "Mel Arnold",
-        "fr": "Mel Arnold"
-      },
-      "status": {
-        "en": "At third reading in the House of Commons",
-        "fr": "À l'étape de la troisième lecture à la Chambre des communes"
-      },
-      "state": "encours",
-      "milestones": [
-        {
-          "stage": "commons_first_reading",
-          "chamber": "commons",
-          "reading": 1,
-          "date": "2025-09-17"
-        },
-        {
-          "stage": "commons_second_reading",
-          "chamber": "commons",
-          "reading": 2,
-          "date": "2026-02-27"
-        }
-      ],
-      "royalAssent": null,
-      "reinstated": false,
-      "latestActivity": {
-        "en": "At third reading in the House of Commons",
-        "fr": "À l'étape de la troisième lecture à la Chambre des communes",
-        "date": "2026-02-27"
-      },
-      "lastActivity": "2026-02-27",
-      "url": {
-        "en": "https://www.parl.ca/legisinfo/en/bill/45-1/c-221",
-        "fr": "https://www.parl.ca/legisinfo/fr/projet-de-loi/45-1/c-221"
-      },
-      "sponsorPersonId": 89294,
-      "sponsorName": {
-        "first": "Mel",
-        "last": "Arnold"
-      },
-      "fullSummaryAvailable": false,
-      "summary": {
-        "en": "This enactment amends the Corrections and Conditional Release Act to provide that information that is disclosed to the victim of an offence regarding eligibility dates and review dates applicable to the offender in respect of temporary absences, releases or parole must include an explanation of how the dates were determined.",
-        "fr": "Le texte modifie la Loi sur le système correctionnel et la mise en liberté sous condition afin de prévoir que les renseignements communiqués à la victime d’une infraction concernant les dates d’admissibilité et d’examen applicables au délinquant relativement aux permissions de sortir, aux placements à l’extérieur, aux libérations conditionnelles ou aux libérations d’office comprennent une explication sur la manière dont ces dates ont été déterminées."
-      },
-      "summarySource": "bill"
     },
     {
       "id": 13596532,
@@ -14129,5 +14263,5 @@
       "summarySource": null
     }
   ],
-  "summariesScrapedAt": "2026-11-25T18:17:37.696Z"
+  "summariesScrapedAt": "2026-11-26T17:58:21.459Z"
 }

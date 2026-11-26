@@ -2,7 +2,7 @@
  "source": "https://www.parl.ca/DocumentViewer (XML de première lecture)",
  "session": "45-1",
  "parser": 2,
- "scrapedAt": "2026-11-25T18:21:54.002Z",
+ "scrapedAt": "2026-11-26T18:02:41.380Z",
  "bills": {
   "13538627": {
    "num": "C-201",
@@ -2423,6 +2423,12 @@
     "Loi sur le Programme de protection des salariés"
    ]
   },
+  "14235835": {
+   "num": "C-298",
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-298/C-298_1/C-298_E.xml",
+   "en": [],
+   "fr": []
+  },
   "14240227": {
    "num": "S-251",
    "xml": "https://www.parl.ca/Content/Bills/451/Private/S-251/S-251_1/S-251_E.xml",
@@ -2669,6 +2675,12 @@
     "Loi sur la concurrence",
     "Loi visant à promouvoir l’efficacité et la capacité d’adaptation de l’économie canadienne par la réglementation de certaines pratiques qui découragent l’exercice des activités commerciales par voie électronique et modifiant la Loi sur le Conseil de la radiodiffusion et des télécommunications canadiennes, la Loi sur la concurrence, la Loi sur la protection des renseignements personnels et les documents électroniques et la Loi sur les télécommunications"
    ]
+  },
+  "14368367": {
+   "num": "C-43",
+   "xml": null,
+   "en": [],
+   "fr": []
   }
  }
 }
