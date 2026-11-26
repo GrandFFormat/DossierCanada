@@ -1,12 +1,12 @@
 {
- "generatedAt": "2026-11-26T15:40:08.642Z",
+ "generatedAt": "2026-11-26T17:02:58.827Z",
  "source": "https://www.ourcommons.ca/Committees/fr/Meetings",
  "modele": "claude-haiku-4-5",
  "dernierPassage": {
   "appels": 10,
-  "entree": 356113,
-  "sortie": 12466,
-  "coutUSD": 0.4184
+  "entree": 346333,
+  "sortie": 11207,
+  "coutUSD": 0.4024
  },
  "joursLus": {
   "2026-11-25": "2026-11-26",
@@ -1274,7 +1274,157 @@
    "heures": "11 h - 13 h 29 (HAE)",
    "url": "https://www.ourcommons.ca/DocumentViewer/fr/45-1/CHPC/reunion-50/temoignages",
    "mots": 23441,
-   "rejets": 1
+   "rejets": 0,
+   "resume": {
+    "puces": [
+     "Témoignage de la sénatrice Marty Deacon (ISG) : rapport que les jeunes de 16 à 34 ans sont 12 fois plus à risque de dépendance au jeu; étude CBC montrant 3 000 messages de jeu et 95 % sans info sur réduction des méfaits en sept matchs des Séries éliminatoires de la Coupe Stanley 2026.",
+     "Témoignage de la députée Bardish Chagger (Waterloo, Lib.) : depuis l'ouverture du marché ontarien en 2022 et de l'Alberta en juillet 2026, publicités pour paris omniprésentes; étude LNH-NBA : 3 500 messages de jeu en sept matchs; appels de jeunes hommes 15-24 ans pour jeu compulsif augmentés de 317 % en Ontario.",
+     "Kevin Desjardins (Association canadienne des radiodiffuseurs) : publicité sur paris déjà réglementée au Canada; préoccupation que restrictions ciblant diffuseurs canadiens poussent revenus vers plateformes extracôtières moins réglementées; recommande collaboration fédérale-provinciale avant nouvelles exigences.",
+     "Renze Nauta (Cardus) : comptes joueurs en Ontario : 1,3 million avec pertes moyennes de 300 $ mensuels (4 000 $ annuels); propose interdire publicité sports ou au moins durant retransmissions; exiger contributions financières des exploitants pour recherche et traitement dépendance.",
+     "Motion Hardy (PCC) : étude six réunions sur impacts statut « membre associé » UE sur souveraineté culturelle Canada, exemption culturelle, contenu canadien, langue française, mobilité jeunesse; adoptée par 6-5 après débat; ajournement du débat sur projet de loi S-211 proposé par Al Soud (Lib.) et adopté par 6-5."
+    ],
+    "pucesEn": [
+     "Testimony from Senator Marty Deacon (ISG): report that youth ages 16-34 are 12 times more at risk of gambling addiction; CBC study showing 3,000 gambling messages and 95% without harm reduction information in seven Stanley Cup Playoff games 2026.",
+     "Testimony from MP Bardish Chagger (Waterloo, Lib.): since Ontario market opened in 2022 and Alberta in July 2026, sports betting advertising widespread; NHL-NBA study: 3,500 gambling messages in seven games; calls from youth ages 15-24 for compulsive gambling increased 317% in Ontario.",
+     "Kevin Desjardins (Canadian Association of Broadcasters): sports betting advertising already regulated in Canada; concern that restrictions targeting Canadian broadcasters push revenue to less regulated offshore platforms; recommends federal-provincial collaboration before new requirements.",
+     "Renze Nauta (Cardus): player accounts in Ontario: 1.3 million with average monthly losses of 300 dollars (4,000 dollars annually); proposes banning sports advertising or at least during sports broadcasts; require operators to contribute financially to gambling addiction research and treatment.",
+     "Motion Hardy (CPC): study six meetings on impacts of EU \"associate member\" status on Canadian cultural sovereignty, cultural exemption, Canadian content, French language, youth mobility; adopted 6-5 after debate; adjournment of debate on Bill S-211 proposed by Al Soud (Lib.) and adopted 6-5."
+    ],
+    "votes": [
+     {
+      "objet": "Adoption de la motion d'ajournement du débat présentée par Fares Al Soud relativement à la motion Hardy sur une étude concernant le statut de membre associé de l'Union européenne",
+      "objetEn": "Adoption of adjournment motion presented by Fares Al Soud regarding Hardy motion on study concerning EU associate member status",
+      "pour": 6,
+      "contre": 5,
+      "abstentions": 0,
+      "resultat": "adopte",
+      "appelNominal": true,
+      "qui": {
+       "pour": [
+        {
+         "nom": "Fares Al Soud",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Tatiana Auguste",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Michael Coteau",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Bienvenu-Olivier Ntumba",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Zoe Royer",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Jenna Sudds",
+         "parti": "LPC"
+        }
+       ],
+       "contre": [
+        {
+         "nom": "Martin Champoux",
+         "parti": "BQ"
+        },
+        {
+         "nom": "Gabriel Hardy",
+         "parti": "CPC"
+        },
+        {
+         "nom": "Ned Kuruc",
+         "parti": "CPC"
+        },
+        {
+         "nom": "Andrew Lawton",
+         "parti": "CPC"
+        },
+        {
+         "nom": "Rachael Thomas",
+         "parti": "CPC"
+        }
+       ]
+      }
+     },
+     {
+      "objet": "Rejet de la motion d'ajournement de la séance présentée par Bienvenu-Olivier Ntumba",
+      "objetEn": "Rejection of adjournment motion presented by Bienvenu-Olivier Ntumba",
+      "pour": 0,
+      "contre": 0,
+      "abstentions": 0,
+      "resultat": "autre",
+      "appelNominal": false
+     },
+     {
+      "objet": "Maintien de la décision de la présidence que la motion Lawton sur les crimes haineux contre les lieux de culte est irrecevable car elle dépasse le mandat du Comité",
+      "objetEn": "Upholding of Speaker's decision that Lawton motion on hate crimes against places of worship is out of order as it exceeds Committee mandate",
+      "pour": 7,
+      "contre": 4,
+      "abstentions": 0,
+      "resultat": "adopte",
+      "appelNominal": true,
+      "qui": {
+       "pour": [
+        {
+         "nom": "Fares Al Soud",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Tatiana Auguste",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Martin Champoux",
+         "parti": "BQ"
+        },
+        {
+         "nom": "Michael Coteau",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Bienvenu-Olivier Ntumba",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Zoe Royer",
+         "parti": "LPC"
+        },
+        {
+         "nom": "Jenna Sudds",
+         "parti": "LPC"
+        }
+       ],
+       "contre": [
+        {
+         "nom": "Gabriel Hardy",
+         "parti": "CPC"
+        },
+        {
+         "nom": "Ned Kuruc",
+         "parti": "CPC"
+        },
+        {
+         "nom": "Andrew Lawton",
+         "parti": "CPC"
+        },
+        {
+         "nom": "Rachael Thomas",
+         "parti": "CPC"
+        }
+       ]
+      }
+     }
+    ],
+    "aSuivre": "Étude article par article du projet de loi S-211 prévue pour mardi; débat sur les motions relatives à la motion reconnaissant le rôle des communautés religieuses et de la motion Hardy sur l'Union européenne à reprendre lors de la prochaine réunion.\"",
+    "aSuivreEn": "Article-by-article study of Bill S-211 scheduled for Tuesday; debate on motions regarding motion recognizing role of religious communities and Hardy motion on European Union to resume at next meeting."
+   },
+   "modele": "claude-haiku-4-5",
+   "genereLe": "2026-11-26T17:00:55.072Z",
+   "nominauxLus": "2026-11-26"
   },
   {
    "id": "FINA-45-1-57",
@@ -1372,7 +1522,30 @@
    "heures": "8 h 21 - 10 h 18 (HAE)",
    "url": "https://www.ourcommons.ca/DocumentViewer/fr/45-1/JUST/reunion-42/temoignages",
    "mots": 18357,
-   "rejets": 1
+   "rejets": 0,
+   "resume": {
+    "puces": [
+     "Susan Chuang (University of Guelph) : les droits des enfants doivent primer lors de séparations; étude sur 288 cas en Ontario (2018-2019) montrant 70 % des allégations de violence formulées par des mères et 76 % des pères invoquant le contrôle d'accès, mais moins de 50 % des allégations crues par les juges.",
+     "Wayne Barkauskas (Alberta Family Lawyers Association) : dangereux de limiter le pouvoir discrétionnaire des juges; scenario posé : mère ayant antécédent de violence familiale pourrait déménager avec enfant impunément selon le projet de loi C-223, sans recours judiciaire valide.",
+     "Barreau du Québec (Marcel-Olivier Nadeau, Valérie Laberge, Nicolas Le Grand Alary) : appuie protection des enfants et victimes mais craint que projet n'impose aux avocats des tâches psychosociales (évaluation risque, plans sécurité) dépassant leurs compétences.",
+     "Bijan Rafii (Canadian Centre for Men and Families) : inquiet de dispositions restreignant pouvoir discrétionnaire des juges sur aliénation parentale, allégations violence et temps parental; données montrent égalité victimes hommes-femmes en violence conjugale.",
+     "Suzanne Zaccour (Association nationale Femmes et Droit) : appuie projet de loi C-223 pour protéger victimes de violence; recherches montrent aliénation parentale souvent utilisée pour occulter violence; témoignages de près de 300 mères privées de contact enfants plusieurs années ou décennies.",
+     "Regroupement des maisons pour femmes (Mathilde Trou, Elise Brien) : violence conjugale représente 34 % prises en charge par services protection enfance; projet nécessaire pour dépister risques, former avocats-juges sur contrôle coercitif, donner parole aux enfants."
+    ],
+    "pucesEn": [
+     "Susan Chuang (University of Guelph): children's rights must take priority in separations; study of 288 Ontario cases (2018-2019) showing 70% of domestic violence allegations made by mothers and 76% of fathers raising access control issues, but less than 50% of allegations believed by judges.",
+     "Wayne Barkauskas (Alberta Family Lawyers Association): dangerous to limit judges' discretion; scenario presented: mother with domestic violence history could relocate with child without consequence under Bill C-223, without effective judicial remedy.",
+     "Quebec Bar (Marcel-Olivier Nadeau, Valérie Laberge, Nicolas Le Grand Alary): supports child and victim protection but fears bill requires lawyers to perform psychosocial tasks (risk assessment, safety plans) beyond their competence.",
+     "Bijan Rafii (Canadian Centre for Men and Families): concerned about provisions restricting judges' discretion on parental alienation, domestic violence allegations and parental time; data show equal male-female victim rates in intimate partner violence.",
+     "Suzanne Zaccour (National Association of Women and Law): supports Bill C-223 to protect domestic violence victims; research shows parental alienation often used to obscure violence; testimonies from nearly 300 mothers denied child contact for years or decades.",
+     "Shelters for abused women (Mathilde Trou, Elise Brien): domestic violence represents 34% of child protection agency cases; bill necessary to screen risks, train lawyers-judges on coercive control, give children voice."
+    ],
+    "votes": [],
+    "aSuivre": "La réunion reprend pour l'examen article par article du projet de loi C-223.",
+    "aSuivreEn": "The meeting resumes for clause-by-clause examination of Bill C-223."
+   },
+   "modele": "claude-haiku-4-5",
+   "genereLe": "2026-11-26T17:00:37.241Z"
   },
   {
    "id": "CC-2026-10-27",
@@ -1427,7 +1600,32 @@
    "session": "45-1",
    "reunion": 53,
    "heures": "11 h - 13 h (HAE)",
-   "url": "https://www.ourcommons.ca/DocumentViewer/fr/45-1/INDU/reunion-53/temoignages"
+   "url": "https://www.ourcommons.ca/DocumentViewer/fr/45-1/INDU/reunion-53/temoignages",
+   "mots": 17442,
+   "resume": {
+    "puces": [
+     "Emily Chung (Association des industries de l'automobile du Canada) a demandé d'inclure les véhicules dans le projet de loi pour accroître le choix des consommateurs et la concurrence, citant que les ateliers indépendants offrent jusqu'à 30% d'économies sur les réparations.",
+     "Julie-Christine Denoncourt (Équiterre) a recommandé d'ajouter des obligations concrètes: rendre disponibles les pièces, outils et informations à prix raisonnable; interdire certaines pratiques de conception; afficher un indice obligatoire de durabilité inspiré du modèle français.",
+     "Meagan Hatch (Association des produits électroniques du Canada) a soulevé des préoccupations sur les coûts, l'applicabilité différente selon les catégories de produits, et l'importance de consulter les fabricants et experts en sécurité et cybersécurité.",
+     "Keldon Bester (Projet canadien anti-monopole) a appuyé l'élargissement du projet de loi aux véhicules et matériel agricole, appelant à des mesures contraignantes rapides et à la participation du Bureau de la concurrence aux consultations.",
+     "Matthew Abar (Microland) a recommandé d'exiger aux fabricants de distribuer pièces et réparations sous garantie au Canada, de rendre accessibles les pièces à conditions équitables, et de consulter les entreprises de réparation indépendantes.",
+     "Wai Chu Cheng (Repair Café Toronto) a partagé que ses activités ont réparé plus de 10 000 objets en 10 ans et demandé d'obliger les fabricants à indiquer la durée de vie des produits, de mettre à disposition pièces et informations, et d'afficher un indice de réparabilité."
+    ],
+    "pucesEn": [
+     "Emily Chung (Automotive Industries Association of Canada) requested including vehicles in the bill to increase consumer choice and competition, noting independent repair shops offer up to 30% savings on repairs.",
+     "Julie-Christine Denoncourt (Équiterre) recommended adding concrete obligations: make parts, tools and information available at reasonable price; prohibit certain design practices; display mandatory durability index modelled on French framework.",
+     "Meagan Hatch (Electronics Products Association of Canada) raised concerns about costs, different applicability by product category, and importance of consulting manufacturers and experts in safety and cybersecurity.",
+     "Keldon Bester (Canadian Anti-Monopoly Project) supported expanding the bill to vehicles and agricultural equipment, calling for rapid binding measures and participation of Competition Bureau in consultations.",
+     "Matthew Abar (Microland) recommended requiring manufacturers to distribute parts and warranty repairs in Canada, make parts accessible on fair terms, and consult independent repair businesses.",
+     "Wai Chu Cheng (Repair Café Toronto) shared her activities repaired over 10,000 items in 10 years and urged manufacturers to indicate product lifespan, make parts and repair information available, and display repairability index."
+    ],
+    "votes": [],
+    "aSuivre": "La date limite pour présenter les amendements est reportée à jeudi à 16 heures; aucune réunion le jeudi (sous-comité seulement pour certains membres); étude article par article commence mardi; pas de réunion le jeudi suivant (dépôt du budget).",
+    "aSuivreEn": "Amendment deadline postponed to Thursday at 4 p.m.; no meeting Thursday (sub-committee only for certain members); clause-by-clause study begins Tuesday; no meeting following Thursday (budget implementation)."
+   },
+   "modele": "claude-haiku-4-5",
+   "genereLe": "2026-11-26T17:01:06.941Z",
+   "rejets": 0
   },
   {
    "id": "CC-2026-10-26",
@@ -1443,7 +1641,9 @@
    "session": null,
    "reunion": null,
    "heures": "15 h 40 - 20 h 32 (HAE)",
-   "url": "https://www.ourcommons.ca/DocumentViewer/fr/45-1/CC39/reunion-4/temoignages"
+   "url": "https://www.ourcommons.ca/DocumentViewer/fr/45-1/CC39/reunion-4/temoignages",
+   "mots": 46655,
+   "rejets": 1
   },
   {
    "id": "FINA-45-1-56",
@@ -1459,7 +1659,28 @@
    "session": "45-1",
    "reunion": 56,
    "heures": "17 h 16 - 18 h 19 (HAE)",
-   "url": "https://www.ourcommons.ca/DocumentViewer/fr/45-1/FINA/reunion-56/temoignages"
+   "url": "https://www.ourcommons.ca/DocumentViewer/fr/45-1/FINA/reunion-56/temoignages",
+   "mots": 9773,
+   "resume": {
+    "puces": [
+     "Le ministre Steven MacKinnon (Transports) a présenté le projet de loi C-31 visant à simplifier la réglementation sur la protection des passagers aériens, résorber l'arriéré de 100 000 plaintes et renforcer la responsabilisation des compagnies aériennes en augmentant les amendes maximales à 1 million de dollars et en supprimant les exigences de confidentialité imposées aux passagers.",
+     "Dan Albas (Okanagan Lake-Ouest—Kelowna-Sud, PCC) a demandé qui a été tenu responsable de l'arriéré malgré 76 millions de dollars accordés à l'OTC et a questionnée l'impartialité d'un système où les compagnies aériennes choisissent parmi des arbitres privés qu'elles paieraient; le ministre a répondu que le système fonctionnait ailleurs et qu'il était ouvert à des mesures de rassurance.",
+     "Carlos Leitão (Marc-Aurèle-Fortin, Lib.) a soutenu que les amendes de 1 million de dollars et les entreprises privées ayant une réputation à préserver garantiraient l'impartialité; le ministre a confirmé que les entreprises seraient homologuées par le gouvernement et soumises à des vérifications ponctuelles.",
+     "Luc Thériault (Montcalm, BQ) a exprimé des préoccupations quant aux conflits d'intérêts avec arbitres privés payés par les transporteurs, invoquant l'avis du Comité sénatorial permanent des transports et demandant pourquoi ne pas renforcer l'OTC plutôt que de créer un nouveau processus; le ministre a rejeté ces préoccupations et affirmé qu'il était ouvert à intégrer au projet de loi des dispositions rassurantes sur l'indépendance.",
+     "Eric Lefebvre (Richmond—Arthabaska—des-Sources, PCC) a soulevé des enjeux autres que le projet de loi C-31 concernant Maritime Launch Services, l'aéroport de Charlottetown et le modèle « Chauffeurs inc. » dans le transport routier; le ministre a expliqué les mesures prises par son ministère et les provinces en matière d'inspections et d'application des normes du travail.",
+     "Kent MacDonald (Cardigan, Lib.) a félicité le gouvernement pour la dénomination de l'aéroport de Charlottetown en l'honneur d'Alex Campbell et a demandé comment les réformes protégeraient mieux les passagers de l'Île-du-Prince-Édouard; le ministre a décrit un système avec règles claires, amendes dissuasives, processus d'arbitrage rapide et indépendant, sans arriéré.",
+     "Greg McLean (Calgary-Centre, PCC) a questionnée le transfert des responsabilités réglementaires à Transports Canada, l'efficacité des amendes jamais imposées, et les risques de privatisation des aéroports augmentant les coûts; le ministre a précisé que l'OTC continuerait à gérer le traitement en temps réel et a rejeté le lien entre exploitation aéroportuaire et amendes aux compagnies aériennes.",
+     "Steeve Lavoie (Beauport—Limoilou, Lib.) a exprimé sa confiance dans le ministre et demandé quels mécanismes de suivi (tableaux de bord, signaux d'alarme) empêcheraient un nouvel arriérage; le ministre a souligné l'élimination de l'arriéré comme signal de confiance, la clarté du nouveau régime, et l'engagement de mettre en ligne des indicateurs de justice.",
+     "Michael Guglielmin (Vaughan—Woodbridge, PCC) a interpellé le ministre sur les estimations du coût du projet Alto (90 à 113 milliards de dollars) comparé au déficit fédéral (63,3 milliards) et demandé s'il y avait un plafond de coûts acceptables; le ministre a rejeté la notion de dépassements à ce stade et comparé le projet aux grands travaux d'infrastructure historiques.",
+     "Ryan Turnbull (Whitby, Lib.) a vérifié sa compréhension du plan en quatre volets (clarifier la réglementation, résorber l'arriéré, augmenter les amendes, améliorer la transparence) et a affirmé que cela résoudrait la frustration des électeurs; le ministre a confirmé et souligné que les compagnies aériennes seraient incitées à régler rapidement avant arbitrage.",
+     "Luc Thériault (Montcalm, BQ) a questionnée le fardeau de la preuve et obtenu du ministre qu'il reconnaisse que c'est au transporteur qu'il incombe, et a demandé si un droit d'appel devrait exister pour les plaignants en arbitrage; le ministre a considéré que l'arbitrage constituait l'appel et affirmé que le fardeau incombe au transporteur puisque le client a subi un retard."
+    ],
+    "votes": [],
+    "pucesEn": []
+   },
+   "modele": "claude-haiku-4-5",
+   "genereLe": "2026-11-26T17:02:16.322Z",
+   "rejets": 0
   },
   {
    "id": "JUST-45-1-41",
@@ -1476,7 +1697,9 @@
    "session": "45-1",
    "reunion": 41,
    "heures": "15 h 40 - 17 h 35 (HAE)",
-   "url": "https://www.ourcommons.ca/DocumentViewer/fr/45-1/JUST/reunion-41/temoignages"
+   "url": "https://www.ourcommons.ca/DocumentViewer/fr/45-1/JUST/reunion-41/temoignages",
+   "mots": 17287,
+   "rejets": 1
   },
   {
    "id": "SECU-45-1-52",
@@ -1492,7 +1715,49 @@
    "session": "45-1",
    "reunion": 52,
    "heures": "11 h 03 - 13 h 03 (HAE)",
-   "url": "https://www.ourcommons.ca/DocumentViewer/fr/45-1/SECU/reunion-52/temoignages"
+   "url": "https://www.ourcommons.ca/DocumentViewer/fr/45-1/SECU/reunion-52/temoignages",
+   "mots": 18105,
+   "resume": {
+    "puces": [
+     "Dane Lloyd (Parkland, PCC) demande l'adoption du projet de loi C-236 pour obliger les juges et commissions de libération conditionnelle à tenir compte du refus d'un délinquant de révéler l'emplacement des restes de victimes, s'inspirant de lois australiennes et britanniques similaires.",
+     "Bret McCann (à titre personnel), fils des victimes Lyle et Marie McCann, explique que l'absence de dépouilles depuis plus de 16 ans cause une victimisation continue : impossibilité de faire le deuil, de tenir des funérailles, et traumatisme familial durable.",
+     "Michael Cooper (St. Albert—Sturgeon River, PCC) affirme que le projet de loi établit un cadre mesuré et conforme aux principes de détermination de la peine, laissant la discrétion judiciaire intacte tout en reconnaissant le refus de coopérer comme facteur pertinent.",
+     "Benjamin Roebuck (ombudsman fédéral des victimes d'actes criminels) recommande trois mesures : transparence accrue des décisions de libération conditionnelle, participation des victimes aux révocations, et protocole de notification pour les familles lors de découvertes de dépouilles.",
+     "Kirstan Gagnon (SCC) confirme que le Service correctionnel tiendra compte de tout facteur pertinent et améliorera ses services aux victimes, notamment via le registre des décisions et un programme de mesures réparatrices."
+    ],
+    "pucesEn": [
+     "Dane Lloyd (Parkland, CPC) calls for adoption of Bill C-236 to require judges and parole boards to consider a offender's refusal to reveal victim remains location, following similar Australian and British legislation.",
+     "Bret McCann (in a personal capacity), son of victims Lyle and Marie McCann, explains that the absence of remains for over 16 years causes ongoing victimization: inability to grieve, hold funerals, and lasting family trauma.",
+     "Michael Cooper (St. Albert—Sturgeon River, CPC) states the bill establishes a measured framework consistent with sentencing principles, maintaining judicial discretion while acknowledging refusal to cooperate as a relevant factor.",
+     "Benjamin Roebuck (federal ombudsman for victims of crime) recommends three measures: increased transparency in parole decisions, victim participation in revocation proceedings, and notification protocol for families upon body discoveries.",
+     "Kirstan Gagnon (CSC) confirms the Correctional Service will consider all relevant factors and enhance victim services, including through the decision registry and restorative justice program."
+    ],
+    "votes": [
+     {
+      "objet": "Motion de demande de prolongation de trente jours de séance pour poursuivre l'examen du projet de loi C-236",
+      "objetEn": "Motion requesting thirty-day extension of sitting to continue examination of Bill C-236",
+      "pour": 0,
+      "contre": 0,
+      "abstentions": 0,
+      "resultat": "adopte",
+      "appelNominal": false
+     },
+     {
+      "objet": "Motion concernant les membres associés et l'accès aux documents",
+      "objetEn": "Motion regarding associate members and access to documents",
+      "pour": 0,
+      "contre": 0,
+      "abstentions": 0,
+      "resultat": "adopte",
+      "appelNominal": false
+     }
+    ],
+    "aSuivre": "L'étude article par article du projet de loi C-236 se poursuivra lors d'une prochaine réunion.",
+    "aSuivreEn": "Article-by-article examination of Bill C-236 will continue at a future meeting."
+   },
+   "modele": "claude-haiku-4-5",
+   "genereLe": "2026-11-26T17:01:19.639Z",
+   "rejets": 0
   },
   {
    "id": "AGRI-45-1-47",
@@ -1525,7 +1790,30 @@
    "session": "45-1",
    "reunion": 50,
    "heures": "11 h 01 - 12 h 12 (HAE)",
-   "url": "https://www.ourcommons.ca/DocumentViewer/fr/45-1/HUMA/reunion-50/temoignages"
+   "url": "https://www.ourcommons.ca/DocumentViewer/fr/45-1/HUMA/reunion-50/temoignages",
+   "mots": 12322,
+   "resume": {
+    "puces": [
+     "Warren Herntier (Fraternité internationale des ouvriers en électricité, Local 2085) a demandé que le cadre national du projet de loi C-266 préserve les normes professionnelles du Sceau rouge, reconnaisse les droits issus de la négociation collective et implique les représentants syndicaux dans son élaboration et sa mise en œuvre.",
+     "Chris Swick (Conseil national des métiers de l'industrie électrique) a recommandé d'harmoniser les régimes d'apprentissage à l'échelle nationale selon la norme Sceau rouge, de créer un comité consultatif national, d'améliorer la reconnaissance interprovinciale et de mettre en place un système national d'enregistrement des apprentis.",
+     "Le comité a entendu plusieurs députés poser des questions sur la mobilité interprovinciale des apprentis, les variations provinciales en matière de formation technique (960 à 1 800 heures) et les taux d'échec aux examens Sceau rouge (47 % d'échecs selon Swick).",
+     "Herntier et Swick ont confirmé que les apprentis ne peuvent pas transférer leur formation d'une province à l'autre sans recommencer depuis le début dans certains cas, et que les normes de sécurité ne sont pas harmonisées entre les provinces (exemple : Terre-Neuve n'accepte pas les certificats de travail en hauteur de l'Ontario malgré des normes similaires).",
+     "Le comité s'interroge sur les risques d'abaissement des normes, de dédoublements avec les régimes existants et sur le financement fédéral promis (Mise à jour économique du printemps 2026) pour améliorer les capacités de formation."
+    ],
+    "pucesEn": [
+     "Warren Herntier (International Brotherhood of Electrical Workers, Local 2085) requested that the national framework of Bill C-266 preserve Red Seal professional standards, recognize collective bargaining rights, and involve union representatives in its development and implementation.",
+     "Chris Swick (National Council of Electrical Trades) recommended harmonizing apprenticeship regimes nationally according to Red Seal standards, creating a national advisory committee, improving interprovincial recognition, and establishing a national apprentice registration system.",
+     "The committee heard several MPs ask questions about interprovincial mobility of apprentices, provincial variations in technical training (960 to 1,800 hours), and Red Seal exam failure rates (47% failure rate according to Swick).",
+     "Herntier and Swick confirmed that apprentices cannot transfer their training from one province to another without starting over in some cases, and that safety standards are not harmonized between provinces (example: Newfoundland does not accept fall protection certificates from Ontario despite similar standards).",
+     "The committee questions risks of lowering standards, duplication with existing regimes, and federal funding promised (Spring 2026 Economic Update) to improve training capacity."
+    ],
+    "votes": [],
+    "aSuivre": "La prochaine réunion du comité aura lieu le mardi 27 octobre et portera sur l'inflation du prix des aliments et le Programme national d'alimentation scolaire. La date limite pour soumettre les mémoires relatifs à l'étude du projet de loi C-266 est la fin de la journée du 23 octobre.",
+    "aSuivreEn": "The committee's next meeting will be held on Tuesday, October 27 and will focus on food price inflation and the National School Food Program. The deadline for submitting briefs related to Bill C-266 is the end of the day on October 23."
+   },
+   "modele": "claude-haiku-4-5",
+   "genereLe": "2026-11-26T17:02:55.844Z",
+   "rejets": 0
   },
   {
    "id": "INAN-45-1-43",
@@ -1542,7 +1830,30 @@
    "session": "45-1",
    "reunion": 43,
    "heures": "8 h 17 - 10 h 16 (HAE)",
-   "url": "https://www.ourcommons.ca/DocumentViewer/fr/45-1/INAN/reunion-43/temoignages"
+   "url": "https://www.ourcommons.ca/DocumentViewer/fr/45-1/INAN/reunion-43/temoignages",
+   "mots": 19234,
+   "resume": {
+    "puces": [
+     "La ministre Mandy Gull-Masty a présenté le projet de loi C-37, Loi sur l'eau propre des Premières Nations, fruit de six années de collaboration avec les Premières Nations, visant à établir des normes minimales, un cadre de financement et une commission des eaux dirigée par les Premières Nations pour assurer l'autodétermination en matière d'eau.",
+     "Billy Morin (Edmonton-Nord-Ouest, PCC) a questionné le remplacement du terme « droit de la personne » par « réalisation progressive », et soulevé les préoccupations des chefs albertains signataires de traités quant au non-respect des ententes conclues avec le Canada sur l'eau.",
+     "Ginette Lavack (Saint-Boniface—Saint-Vital, Lib.) s'est enquise de la façon concrète dont le projet de loi changerait la situation sur le terrain, notamment concernant les normes contraignantes et le financement de la formation des opérateurs.",
+     "Marilène Gill (Côte-Nord—Kawawachikamach—Nitassinan, BQ) a soulevé les préoccupations du chef Francis Verreault-Paul de l'APNQL quant à l'affaiblissement du projet de loi C-37 par rapport au C-61, et les incohérences du gouvernement dans la protection de l'eau, notamment le cas de Kebaowek.",
+     "Jamie Schmale (Haliburton—Kawartha Lakes, PCC) a noté que malgré l'augmentation des dépenses ministérielles, les indicateurs de santé des Premières Nations n'ont pas progressé depuis 2022, remettant en question l'efficacité du ministère."
+    ],
+    "pucesEn": [
+     "Minister Mandy Gull-Masty presented Bill C-37, First Nations Clean Water Act, the result of six years of collaboration with First Nations, aiming to establish minimum standards, a financing framework, and a First Nations-led water commission to ensure self-determination on water matters.",
+     "Billy Morin (Edmonton-North-West, CPC) questioned the replacement of 'human right' with 'progressive realization' and raised concerns from Alberta treaty chiefs about Canada's failure to respect signed water agreements.",
+     "Ginette Lavack (Saint-Boniface—Saint-Vital, Lib.) inquired about how the bill would concretely change the situation on the ground, particularly regarding binding standards and funding for operator training.",
+     "Marilène Gill (Côte-Nord—Kawawachikamach—Nitassinan, BQ) raised concerns from Chief Francis Verreault-Paul of APNQL about the weakening of Bill C-37 compared to C-61, and inconsistencies in government water protection, particularly the Kebaowek case.",
+     "Jamie Schmale (Haliburton—Kawartha Lakes, CPC) noted that despite increased ministerial spending, First Nations health indicators have not improved since 2022, questioning the department's effectiveness."
+    ],
+    "votes": [],
+    "aSuivre": "La réunion reprend pour l'étude article par article du projet de loi C-37 et les questions posées par écrit par les députés à la ministre recevront des réponses écrites.",
+    "aSuivreEn": "The meeting resumes for clause-by-clause study of Bill C-37 and written questions from members to the minister will receive written responses."
+   },
+   "modele": "claude-haiku-4-5",
+   "genereLe": "2026-11-26T17:02:28.658Z",
+   "rejets": 0
   },
   {
    "id": "INDU-45-1-52",
@@ -1575,7 +1886,9 @@
    "session": "45-1",
    "reunion": 40,
    "heures": "8 h 17 - 10 h 15 (HAE)",
-   "url": "https://www.ourcommons.ca/DocumentViewer/fr/45-1/JUST/reunion-40/temoignages"
+   "url": "https://www.ourcommons.ca/DocumentViewer/fr/45-1/JUST/reunion-40/temoignages",
+   "mots": 17129,
+   "rejets": 1
   },
   {
    "id": "AGRI-45-1-46",
