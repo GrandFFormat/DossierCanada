@@ -1,15 +1,436 @@
 {
- "generatedAt": "2026-11-25T18:23:22.147Z",
+ "generatedAt": "2026-11-26T15:40:08.642Z",
  "source": "https://www.ourcommons.ca/Committees/fr/Meetings",
  "modele": "claude-haiku-4-5",
  "dernierPassage": {
-  "appels": 0,
-  "entree": 0,
-  "sortie": 0,
-  "coutUSD": 0
+  "appels": 10,
+  "entree": 356113,
+  "sortie": 12466,
+  "coutUSD": 0.4184
  },
- "joursLus": {},
+ "joursLus": {
+  "2026-11-25": "2026-11-26",
+  "2026-11-24": "2026-11-26",
+  "2026-11-23": "2026-11-26",
+  "2026-11-20": "2026-11-26",
+  "2026-11-19": "2026-11-26",
+  "2026-11-18": "2026-11-26",
+  "2026-11-17": "2026-11-26",
+  "2026-11-16": "2026-11-26",
+  "2026-11-13": "2026-11-26",
+  "2026-11-12": "2026-11-26",
+  "2026-11-11": "2026-11-26",
+  "2026-11-10": "2026-11-26",
+  "2026-11-09": "2026-11-26",
+  "2026-11-06": "2026-11-26",
+  "2026-11-05": "2026-11-26",
+  "2026-11-04": "2026-11-26",
+  "2026-11-03": "2026-11-26",
+  "2026-11-02": "2026-11-26",
+  "2026-10-30": "2026-11-26",
+  "2026-10-29": "2026-11-26",
+  "2026-10-28": "2026-11-26",
+  "2026-10-27": "2026-11-26",
+  "2026-10-26": "2026-11-26",
+  "2026-10-23": "2026-11-26",
+  "2026-10-22": "2026-11-26"
+ },
  "seances": [
+  {
+   "id": "SECU-45-1-58",
+   "date": "2026-11-25",
+   "comite": "SECU",
+   "comiteNom": "Sécurité publique et nationale",
+   "sujets": [
+    "Projet de loi C-236"
+   ],
+   "pls": [
+    "C-236"
+   ],
+   "session": "45-1",
+   "reunion": 58,
+   "heures": "17 h 52 - 18 h 45 (HNE)",
+   "url": null
+  },
+  {
+   "id": "CHPC-45-1-55",
+   "date": "2026-11-24",
+   "comite": "CHPC",
+   "comiteNom": "Patrimoine canadien",
+   "sujets": [
+    "Projet de loi C-34, Loi sur les médias sociaux sécuritaires"
+   ],
+   "pls": [
+    "C-34"
+   ],
+   "session": "45-1",
+   "reunion": 55,
+   "heures": "15 h 45 - 19 h 06 (HNE)",
+   "url": null
+  },
+  {
+   "id": "HUMA-45-1-57",
+   "date": "2026-11-24",
+   "comite": "HUMA",
+   "comiteNom": "Ressources humaines, développement des compétences, développement social et condition des personnes handicapées",
+   "sujets": [
+    "Projet de loi S-209"
+   ],
+   "pls": [
+    "S-209"
+   ],
+   "session": "45-1",
+   "reunion": 57,
+   "heures": "11 h 02 - 13 h 07 (HNE)",
+   "url": null
+  },
+  {
+   "id": "INAN-45-1-49",
+   "date": "2026-11-24",
+   "comite": "INAN",
+   "comiteNom": "Affaires autochtones et du Nord",
+   "sujets": [
+    "Projet de loi C-37, Loi sur l'eau propre des Premières Nations",
+    "Projet de loi C-37, Loi sur l’eau propre des Premières Nations"
+   ],
+   "pls": [
+    "C-37"
+   ],
+   "session": "45-1",
+   "reunion": 49,
+   "heures": "15 h 45 - 17 h 31 (HNE)",
+   "url": null
+  },
+  {
+   "id": "CC-2026-11-23",
+   "date": "2026-11-23",
+   "comite": "CC",
+   "comiteNom": "Projet de loi C-39 (CC39)",
+   "sujets": [
+    "Projet de loi C-39"
+   ],
+   "pls": [
+    "C-39"
+   ],
+   "session": null,
+   "reunion": null,
+   "heures": "9 h 11 - 21 h 08 (HNE)",
+   "url": null
+  },
+  {
+   "id": "JUST-45-1-47",
+   "date": "2026-11-23",
+   "comite": "JUST",
+   "comiteNom": "Justice et droits de la personne",
+   "sujets": [
+    "Projet de loi C-41"
+   ],
+   "pls": [
+    "C-41"
+   ],
+   "session": "45-1",
+   "reunion": 47,
+   "heures": "15 h 37 - 17 h 40 (HNE)",
+   "url": null
+  },
+  {
+   "id": "CC-2026-11-20",
+   "date": "2026-11-20",
+   "comite": "CC",
+   "comiteNom": "Projet de loi C-39 (CC39)",
+   "sujets": [
+    "Projet de loi C-39"
+   ],
+   "pls": [
+    "C-39"
+   ],
+   "session": null,
+   "reunion": null,
+   "heures": "9 h 12 - 23 h 51 (HNE)",
+   "url": null
+  },
+  {
+   "id": "CC-2026-11-19",
+   "date": "2026-11-19",
+   "comite": "CC",
+   "comiteNom": "Projet de loi C-39 (CC39)",
+   "sujets": [
+    "Projet de loi C-39"
+   ],
+   "pls": [
+    "C-39"
+   ],
+   "session": null,
+   "reunion": null,
+   "heures": "9 h 10 - 23 h 54 (HNE)",
+   "url": null
+  },
+  {
+   "id": "CHPC-45-1-54",
+   "date": "2026-11-19",
+   "comite": "CHPC",
+   "comiteNom": "Patrimoine canadien",
+   "sujets": [
+    "Projet de loi C-34, Loi sur les médias sociaux sécuritaires"
+   ],
+   "pls": [
+    "C-34"
+   ],
+   "session": "45-1",
+   "reunion": 54,
+   "heures": "11 h - 13 h 09 (HNE)",
+   "url": null
+  },
+  {
+   "id": "HUMA-45-1-56",
+   "date": "2026-11-19",
+   "comite": "HUMA",
+   "comiteNom": "Ressources humaines, développement des compétences, développement social et condition des personnes handicapées",
+   "sujets": [
+    "Projet de loi S-209"
+   ],
+   "pls": [
+    "S-209"
+   ],
+   "session": "45-1",
+   "reunion": 56,
+   "heures": "11 h - 13 h 11 (HNE)",
+   "url": null
+  },
+  {
+   "id": "JUST-45-1-46",
+   "date": "2026-11-19",
+   "comite": "JUST",
+   "comiteNom": "Justice et droits de la personne",
+   "sujets": [
+    "Projet de loi C-41"
+   ],
+   "pls": [
+    "C-41"
+   ],
+   "session": "45-1",
+   "reunion": 46,
+   "heures": "8 h 17 - 10 h 16 (HNE)",
+   "url": null
+  },
+  {
+   "id": "CC-2026-11-18",
+   "date": "2026-11-18",
+   "comite": "CC",
+   "comiteNom": "Projet de loi C-39 (CC39)",
+   "sujets": [
+    "Projet de loi C-39"
+   ],
+   "pls": [
+    "C-39"
+   ],
+   "session": null,
+   "reunion": null,
+   "heures": "16 h 35 - 23 h 59 (HNE)",
+   "url": null
+  },
+  {
+   "id": "SECU-45-1-57",
+   "date": "2026-11-18",
+   "comite": "SECU",
+   "comiteNom": "Sécurité publique et nationale",
+   "sujets": [
+    "Travaux du Comité",
+    "Projet de loi C-263"
+   ],
+   "pls": [
+    "C-263"
+   ],
+   "session": "45-1",
+   "reunion": 57,
+   "heures": "16 h 31 - 18 h 35 (HNE)",
+   "url": null
+  },
+  {
+   "id": "CHPC-45-1-53",
+   "date": "2026-11-17",
+   "comite": "CHPC",
+   "comiteNom": "Patrimoine canadien",
+   "sujets": [
+    "Projet de loi C-34, Loi sur les médias sociaux sécuritaires"
+   ],
+   "pls": [
+    "C-34"
+   ],
+   "session": "45-1",
+   "reunion": 53,
+   "heures": "15 h 56 - 17 h 57 (HNE)",
+   "url": null
+  },
+  {
+   "id": "HUMA-45-1-55",
+   "date": "2026-11-17",
+   "comite": "HUMA",
+   "comiteNom": "Ressources humaines, développement des compétences, développement social et condition des personnes handicapées",
+   "sujets": [
+    "Projet de loi C-266"
+   ],
+   "pls": [
+    "C-266"
+   ],
+   "session": "45-1",
+   "reunion": 55,
+   "heures": "11 h 28 - 13 h 21 (HNE)",
+   "url": "https://www.ourcommons.ca/DocumentViewer/fr/45-1/HUMA/reunion-55/temoignages",
+   "mots": 8427,
+   "resume": {
+    "puces": [
+     "Mme Koutrakis (Vimy, Lib.) a proposé l'amendement G-1 pour clarifier la définition du ministre comme ministre de l'Emploi et du Développement social, adopté avec dissidence.",
+     "L'amendement G-2 a remplacé le terme « national » par « stratégique fédéral » au titre de l'article 3, adopté avec dissidence.",
+     "L'amendement G-3 a remplacé « national » par « stratégique fédéral », reconnu les compétences territoriales et apporté des précisions. M. Genuis (Sherwood Park—Fort Saskatchewan, PCC) a proposé un sous-amendement pour ajouter les apprentis à la mobilité, adopté avec dissidence.",
+     "L'amendement CPC-2 de M. Genuis pour ajouter « publics et privés » aux établissements de formation a été rejeté par 7 contre 4.",
+     "L'amendement CPC-4 de M. Reynolds (Elmwood—Transcona, PCC) sur les programmes enrichis pour les jeunes dans les métiers spécialisés a été modifié par un sous-amendement de M. Genuis remplaçant « élèves du primaire et du secondaire » par « jeunes », adopté par 10 contre 1."
+    ],
+    "pucesEn": [
+     "Ms. Koutrakis (Vimy, Lib.) proposed amendment G-1 to clarify the definition of minister as the Minister of Employment and Social Development, adopted with dissent.",
+     "Amendment G-2 replaced the term 'national' with 'federal strategic' in the heading of section 3, adopted with dissent.",
+     "Amendment G-3 replaced 'national' with 'federal strategic', recognized territorial jurisdiction and provided clarification. Mr. Genuis (Sherwood Park—Fort Saskatchewan, CPC) proposed a sub-amendment to add apprentices to mobility, adopted with dissent.",
+     "Mr. Genuis's amendment CPC-2 to add 'public and private' to training establishments was rejected 7 to 4.",
+     "Mr. Reynolds's (Elmwood—Transcona, CPC) amendment CPC-4 on enhanced programs for youth in skilled trades was modified by a sub-amendment from Mr. Genuis replacing 'primary and secondary students' with 'youth', adopted 10 to 1."
+    ],
+    "votes": []
+   },
+   "modele": "claude-haiku-4-5",
+   "genereLe": "2026-11-26T15:37:53.423Z",
+   "rejets": 0
+  },
+  {
+   "id": "INAN-45-1-47",
+   "date": "2026-11-17",
+   "comite": "INAN",
+   "comiteNom": "Affaires autochtones et du Nord",
+   "sujets": [
+    "Projet de loi C-37, Loi sur l'eau propre des Premières Nations",
+    "Projet de loi C-37, Loi sur l’eau propre des Premières Nations"
+   ],
+   "pls": [
+    "C-37"
+   ],
+   "session": "45-1",
+   "reunion": 47,
+   "heures": "15 h 54 - 17 h 33 (HNE)",
+   "url": null
+  },
+  {
+   "id": "CC-2026-11-16",
+   "date": "2026-11-16",
+   "comite": "CC",
+   "comiteNom": "Projet de loi C-39 (CC39)",
+   "sujets": [
+    "Projet de loi C-39"
+   ],
+   "pls": [
+    "C-39"
+   ],
+   "session": null,
+   "reunion": null,
+   "heures": "15 h 35 - 23 h 58 (HNE)",
+   "url": "https://www.ourcommons.ca/DocumentViewer/fr/45-1/CC39/reunion-8/temoignages",
+   "mots": 112566,
+   "resume": {
+    "puces": [
+     "Comité législatif de la Chambre des communes étudiant le projet de loi C-39 en huitième réunion. Témoins de l'Agence canadienne d'évaluation d'impact présents. Gabriel Ste-Marie (Joliette—Manawan, BQ) dénonce 80 mémoires reçus après la date limite et l'insuffisance des délais de traduction. Leah Gazan (Winnipeg-Centre, NPD) et Elizabeth May (Saanich—Gulf Islands, PV) officiellement invitées comme observatrices.",
+     "Amendement NDP-1 de Leah Gazan propose d'ajouter à la Loi sur l'évaluation d'impact l'obligation explicite de respecter la Déclaration des Nations unies sur les droits des peuples autochtones, incluant le consentement préalable, donné librement et en connaissance de cause. Gabriel Ste-Marie (BQ) annonce voter pour. Caroline Desrochers (Trois-Rivières, Lib.) affirme que cet amendement est inutile, le principe étant déjà inscrit dans plusieurs lois fédérales.",
+     "Articles 2 et 4 réservés en attendant des réponses juridiques du ministère de la Justice sur la Loi sur la Déclaration des Nations unies sur les droits des peuples autochtones. Branden Leslie (Portage—Lisgar, PCC) et Leah Gazan jugent insuffisante l'absence d'expertise juridique au ministère. Barbara Winters (conseillère, ministère des Ressources naturelles) accepte de consulter des collègues.",
+     "Article 3 : amendement NDP-7 (hiérarchie des mesures d'atténuation selon Nature Canada) rejeté 6-1. Article 5 : amendement NDP-12 (préapprobation de travaux avant évaluation d'impact) rejeté 10-1. Amendement CPC-1 (souplesse pour travaux précoces) adopté avec sous-amendement de Danielle Martin supprimant les alinéas b), c), d), e). Amendement PV-1 (conditions d'environnement et habitat) rejeté 10-1.",
+     "Article 7 : amendement CPC-1.1 (plafond de 90 jours pour suspensions et prolongations) rejeté 7-4. Articles 8 à 14 adoptés. Article 15 : amendement CPC-3 (évaluations redondantes avec provinces) rejeté 7-4. Amendement CPC-4 (plan de coopération précoce avec gouvernements) rejeté 7-4."
+    ],
+    "pucesEn": [
+     "Committee session studying Bill C-39 for eighth meeting. Witnesses from Canadian Impact Assessment Agency present. Gabriel Ste-Marie (Joliette—Manawan, BQ) denounces 80 briefs received after deadline and insufficient translation delays. Leah Gazan (Winnipeg-Centre, NDP) and Elizabeth May (Saanich—Gulf Islands, GP) formally invited as observers.",
+     "NDP Amendment 1 by Leah Gazan proposes adding to Impact Assessment Act explicit obligation to respect UN Declaration on the Rights of Indigenous Peoples, including free, prior and informed consent. Gabriel Ste-Marie (BQ) announces voting for. Caroline Desrochers (Trois-Rivières, Lib.) states this amendment unnecessary, principle already in multiple federal laws.",
+     "Articles 2 and 4 reserved pending Justice Department legal responses on UN Declaration on the Rights of Indigenous Peoples Act. Branden Leslie (Portage—Lisgar, CPC) and Leah Gazan find insufficient absence of legal expertise at Justice Department. Barbara Winters (counsel, Natural Resources Ministry) agrees to consult colleagues.",
+     "Article 3: NDP Amendment 7 (mitigation hierarchy per Nature Canada) rejected 6-1. Article 5: NDP Amendment 12 (pre-approval of work before impact assessment) rejected 10-1. Conservative Amendment 1 (flexibility for early work) adopted with Danielle Martin sub-amendment deleting clauses b), c), d), e). Green Amendment 1 (environmental conditions and habitat) rejected 10-1.",
+     "Article 7: Conservative Amendment 1.1 (90-day cap on suspensions and extensions) rejected 7-4. Articles 8 to 14 adopted. Article 15: Conservative Amendment 3 (redundant assessments with provinces) rejected 7-4. Conservative Amendment 4 (early cooperation plan with governments) rejected 7-4."
+    ],
+    "votes": []
+   },
+   "modele": "claude-haiku-4-5",
+   "genereLe": "2026-11-26T15:38:44.944Z",
+   "rejets": 0
+  },
+  {
+   "id": "JUST-45-1-45",
+   "date": "2026-11-16",
+   "comite": "JUST",
+   "comiteNom": "Justice et droits de la personne",
+   "sujets": [
+    "Projet de loi C-29",
+    "Projet de loi C-223, Loi modifiant la Loi sur le divorce"
+   ],
+   "pls": [
+    "C-29",
+    "C-223"
+   ],
+   "session": "45-1",
+   "reunion": 45,
+   "heures": "15 h 30 - 18 h (HNE)",
+   "url": "https://www.ourcommons.ca/DocumentViewer/fr/45-1/JUST/reunion-45/temoignages",
+   "mots": 20049,
+   "resume": {
+    "puces": [
+     "Le ministre des Finances François-Philippe Champagne (Lib.) a témoigné en faveur du projet de loi C-29, créant une nouvelle Agence contre les crimes financiers dotée de pouvoirs policiers pour enquêter sur les crimes financiers graves et complexes, le blanchiment d'argent et la fraude au Canada, avec un budget de 400 millions de dollars et 150 enquêteurs transférés de la GRC.",
+     "Le syndicat de la GRC a critiqué le projet de loi, craignant le manque de ressources et l'impact sur les enquêtes en cours. Le ministre a dit ne pas avoir rencontré personnellement le commissaire de la GRC avant la rédaction du projet de loi, affirmant que l'Agence travaillerait en partenariat avec la GRC et les autres forces policières.",
+     "Le ministre a expliqué que l'Agence suivrait la stratégie du suivi des flux financiers, disposerait de spécialistes en comptabilité judiciaire et en actifs numériques, et collaborerait avec les partenaires étrangers du G7 pour récupérer les produits de la criminalité financière.",
+     "Les députés conservateurs Arpan Khanna (North York, PCC) et Roman Baber (North York, PCC) ont soulevé des préoccupations quant à la définition vague de « crimes financiers graves et complexes », l'absence de définition claire de la compétence de l'Agence, et le risque que le ministre des Finances donne des instructions au commissaire, notamment dans les cas impliquant des entreprises liées au premier ministre.",
+     "Les députés libéraux Patricia Lattanzio (Saint-Léonard—Saint-Michel, Lib.), Wade Chang (Burnaby Central, Lib.) et Braeden Caley (North Vancouver—Capilano, Lib.) ont appuyé le projet de loi en soulignant son importance pour lutter contre la fraude financière, protéger les aînés et l'intégrité du système financier, et combattre la criminalité organisée et le financement du terrorisme."
+    ],
+    "pucesEn": [
+     "Finance Minister François-Philippe Champagne (Lib.) testified in support of Bill C-29, creating a new Financial Crimes Agency with law enforcement powers to investigate serious and complex financial crimes, money laundering and fraud in Canada, with a 400 million dollar budget and 150 investigators transferred from the RCMP.",
+     "The RCMP union criticized the bill, fearing lack of resources and impact on ongoing investigations. The minister said he had not personally met with the RCMP Commissioner before drafting the bill, stating the Agency would work in partnership with the RCMP and other police forces.",
+     "The minister explained the Agency would follow a follow-the-money strategy, have specialists in forensic accounting and digital assets, and collaborate with G7 foreign partners to recover proceeds of financial crime.",
+     "Conservative MPs Arpan Khanna (North York, CPC) and Roman Baber (North York, CPC) raised concerns about the vague definition of 'serious and complex financial crimes', the lack of clear jurisdiction for the Agency, and the risk that the Finance Minister could issue instructions to the Commissioner, including in cases involving companies linked to the Prime Minister.",
+     "Liberal MPs Patricia Lattanzio (Saint-Léonard—Saint-Michel, Lib.), Wade Chang (Burnaby Central, Lib.) and Braeden Caley (North Vancouver—Capilano, Lib.) supported the bill, emphasizing its importance in combating financial fraud, protecting seniors and financial system integrity, and fighting organized crime and terrorism financing."
+    ],
+    "votes": []
+   },
+   "modele": "claude-haiku-4-5",
+   "genereLe": "2026-11-26T15:38:25.492Z",
+   "rejets": 0
+  },
+  {
+   "id": "SECU-45-1-56",
+   "date": "2026-11-16",
+   "comite": "SECU",
+   "comiteNom": "Sécurité publique et nationale",
+   "sujets": [
+    "Projet de loi C-240"
+   ],
+   "pls": [
+    "C-240"
+   ],
+   "session": "45-1",
+   "reunion": 56,
+   "heures": "11 h 02 - 12 h 53 (HNE)",
+   "url": "https://www.ourcommons.ca/DocumentViewer/fr/45-1/SECU/reunion-56/temoignages",
+   "mots": 17514,
+   "resume": {
+    "puces": [
+     "Kelly DeRidder (Kitchener-Centre, PCC) a présenté le projet de loi C-240 permettant aux tribunaux d'ordonner des mesures de réinsertion sociale (traitement, santé mentale, formation) pendant l'incarcération, comptabilisées à la libération conditionnelle, et rendant le trafic de fentanyl à grande échelle une circonstance aggravante.",
+     "Patrick Brazeau (sénateur, Québec/Repentigny) a appuyé le projet de loi en fondant son témoignage sur son rétablissement personnel de l'alcoolisme depuis 6 ans et a insisté sur une approche d'abstinence, les services adaptés à la culture des Premières Nations, et la prévention par l'étiquetage des boissons alcoolisées.",
+     "Kelly Gates a témoigné sur sa petite-fille Kay-Dee, aux prises avec le trouble du spectre de l'alcoolisation fœtale et dépendante depuis l'âge de 11 ans, soulignant les lacunes du système pour les enfants de moins de 16 ans et la nécessité d'une infrastructure de réadaptation de longue durée tenant compte des traumatismes.",
+     "Spencer St. Amand (directeur général, Building Blocks from Barriers) a appuyé le projet de loi en soulignant que la réinsertion doit être une possibilité concrète, que les programmes doivent être accessibles, et qu'il faut protéger les personnes contraintes de participer au trafic de fentanyl par la distinction entre organisateurs et exploités.",
+     "Anne-Marie Labalette (SCC) a confirmé que le service offre des programmes correctionnels variés, adaptés au genre et à la culture, que 78 % des hommes et 86 % des femmes admis ont un problème de consommation de substances, et que la participation aux programmes augmente les taux de libération discrétionnaire."
+    ],
+    "pucesEn": [
+     "Kelly DeRidder (Kitchener-Centre, CPC) presented Bill C-240 allowing courts to order social reintegration measures (treatment, mental health, training) during incarceration, counted toward parole, and making large-scale fentanyl trafficking an aggravating factor.",
+     "Patrick Brazeau (senator, Quebec/Repentigny) supported the bill based on his personal recovery from alcoholism for 6 years and emphasized an abstinence approach, services adapted to First Nations culture, and prevention through alcohol beverage labeling.",
+     "Kelly Gates testified about her granddaughter Kay-Dee, struggling with fetal alcohol spectrum disorder and dependent since age 11, highlighting gaps in services for children under 16 and the need for trauma-informed long-term rehabilitation infrastructure.",
+     "Spencer St. Amand (CEO, Building Blocks from Barriers) supported the bill emphasizing reintegration must be a concrete possibility, programs must be accessible, and distinction must be made between fentanyl trafficking organizers and exploited persons.",
+     "Anne-Marie Labalette (CSC) confirmed the service offers diverse correctional programs adapted by gender and culture, 78% of men and 86% of women admitted have substance use issues, and program participation increases discretionary release rates."
+    ],
+    "votes": [],
+    "aSuivre": "Le projet de loi C-240 sera étudié à nouveau lundi 7 décembre avec témoins, puis mercredi 9 décembre en étude article par article.",
+    "aSuivreEn": "Bill C-240 will be studied again Monday, December 7 with witnesses, then Wednesday, December 9 at clause-by-clause study."
+   },
+   "modele": "claude-haiku-4-5",
+   "genereLe": "2026-11-26T15:38:05.925Z",
+   "rejets": 0
+  },
   {
    "id": "JUST-45-1-44",
    "date": "2026-11-05",
@@ -25,7 +446,30 @@
    "session": "45-1",
    "reunion": 44,
    "heures": "8 h 19 - 10 h 12 (HNE)",
-   "url": null
+   "url": "https://www.ourcommons.ca/DocumentViewer/fr/45-1/JUST/reunion-44/temoignages",
+   "mots": 17742,
+   "resume": {
+    "puces": [
+     "Barreau du Québec appuie création agence contre crimes financiers et collaboration intergouvernementale. Recommande ententes rapides de partage d'informations avec ordres professionnels quand avocat visé; demande mécanisme judiciaire indépendant pour protéger secret professionnel et concepts fondamentaux en droits privés inscrits dans la loi plutôt qu'en règlement.",
+     "Transparency International Canada appuie projet de loi C-29. Agence doit harmoniser capacités d'enquête fragmentées, disposer mandat large et ressources suffisantes. Recommande stratégie opérationnelle, unités spécialisées corruption et fraude, protocoles participation obligatoires entités fédérales, données publiques sur crimes financiers et dialogue régulier avec société civile.",
+     "Association canadienne individus retraités affirme Canadiens ont perdu 14 milliards dollars fraude en 2025 (5-10 % seulement signalés). Demande gouvernement investisse 1 milliard dollars annuellement mesures antifraude, que institutions financières contribuent, que fraude organisée contre particuliers soit priorité explicite, que recouvrement fonds volés soit focus principal.",
+     "Conseil national musulmans canadiens appuie création agence bien dotée ressources. Propositions amendements: demandes enquête étrangères requièrent évaluation droits humains écrite; règles base échange renseignements dans loi avec consultation commissaire vie privée; critères article 17 publiés et examinés régulièrement pour détecter biais; mécanisme plaintes pour tous enquêteurs et examen parlementaire quinquennal (non ministériel).",
+     "Questrade Financial Group appuie projet de loi C-29. Recommande dispositions loi et règlements responsabilisent ceux facilitant crimes financiers comme pour violations droit d'auteur; agence habilité collaborer partenaires publics et privés utiliser technologies modernes y compris intelligence artificielle pour surveillance, enquête et poursuites contre acteurs malveillants."
+    ],
+    "pucesEn": [
+     "Quebec Bar supports creation of financial crimes agency and intergovernmental collaboration. Recommends rapid information-sharing agreements with professional orders when lawyer involved; requests independent judicial mechanism to protect solicitor-client privilege and fundamental rights concepts in statute rather than regulation.",
+     "Transparency International Canada supports Bill C-29. Agency must harmonize fragmented investigation capacity, have broad mandate and sufficient resources. Recommends operational strategy, specialized units for corruption and fraud, mandatory participation protocols for federal entities, public financial crime data and regular civil society dialogue.",
+     "Canadian Association of Retired Individuals states Canadians lost 14 billion dollars to fraud in 2025 (only 5-10 percent reported). Requests government invest 1 billion dollars annually in anti-fraud measures, financial institutions contribute, organized fraud against individuals be explicit priority, and asset recovery be main focus.",
+     "National Council of Canadian Muslims supports creating well-resourced agency. Amendment proposals: foreign investigation requests require written human rights assessment; basic information-sharing rules in statute with privacy commissioner consultation; article 17 criteria published and regularly reviewed for bias; complaint mechanism for all investigators and five-year parliamentary review (not ministerial).",
+     "Questrade Financial Group supports Bill C-29. Recommends statutory and regulatory provisions hold liable those facilitating financial crimes like copyright violations; agency empowered to collaborate with public and private partners using modern technologies including artificial intelligence for surveillance, investigation and prosecution of malicious actors."
+    ],
+    "votes": [],
+    "aSuivre": "La 44e réunion du Comité permanent de la justice et des droits de la personne a porté sur témoignages concernant projet de loi C-29. Motion d'Andrew Lawton (Elgin-St. Thomas-London-Sud, PCC) concernant articles 9, 10 et 14 projet de loi C-41 sur aide médicale mourir: débat ajourné par 7 voix contre 4 sur proposition dilatoire Marilyn Gladu (Sarnia-Lambton-Bkejwanong, Lib.). Prochaines réunions: lundi 16 novembre ministre Finances sur C-29 (1re heure) puis étude article par article C-223 (2e heure); jeudi 19 novembre à déterminer.",
+    "aSuivreEn": "The 44th meeting of the Standing Committee on Justice and Human Rights held hearings on Bill C-29. Motion by Andrew Lawton (Elgin-St. Thomas-London-South, CPC) regarding sections 9, 10, and 14 of Bill C-41 on medical assistance in dying: debate adjourned 7-4 on dilatory motion by Marilyn Gladu (Sarnia-Lambton-Bkejwanong, Lib.). Next meetings: Monday, November 16 Finance Minister on C-29 (1st hour) then clause-by-clause study of C-223 (2nd hour); Thursday, November 19 to be determined."
+   },
+   "modele": "claude-haiku-4-5",
+   "genereLe": "2026-11-26T15:39:00.976Z",
+   "rejets": 0
   },
   {
    "id": "CC-2026-11-03",
@@ -357,6 +801,48 @@
    },
    "rejets": 0,
    "nominauxLus": "2026-11-19"
+  },
+  {
+   "id": "INAN-45-1-46",
+   "date": "2026-11-03",
+   "comite": "INAN",
+   "comiteNom": "Affaires autochtones et du Nord",
+   "sujets": [
+    "Projet de loi C-37, Loi sur l'eau propre des Premières Nations",
+    "Défis liés à l'accessibilité financière dans le Nord du Canada",
+    "Projet de loi C-37, Loi sur l’eau propre des Premières Nations",
+    "Défis liés à l’accessibilité financière dans le Nord du Canada"
+   ],
+   "pls": [
+    "C-37"
+   ],
+   "session": "45-1",
+   "reunion": 46,
+   "heures": "15 h 40 - 17 h 44 (HNE)",
+   "url": "https://www.ourcommons.ca/DocumentViewer/fr/45-1/INAN/reunion-46/temoignages",
+   "mots": 14978,
+   "resume": {
+    "puces": [
+     "Clayton Leonard (JFK Law, à titre personnel) demande de rétablir l'article 3.1 du projet de loi C-61 reconnaissant l'accès à l'eau potable comme droit de la personne, remplacé par une réalisation progressive dans C-37. Il cite l'exemple d'Ermineskin : 90 M$ nécessaires, le Canada n'a investi que 32 M$ depuis 2010, 258 foyers sur 500 vivent sous avis d'ébullition quasi permanents.",
+     "La cheffe Linda Debassige (Nation Anishinabek) affirme que le projet de loi C-37 concentre le pouvoir discrétionnaire fédéral « faire de son mieux » sans obligations contraignantes ni responsabilité, transférant les risques aux Premières Nations. Elle demande des mécanismes d'exécution des droits, la protection des sources d'eau au-delà des réserves et l'élaboration conjointe des règlements.",
+     "Jessica Cheung (Conseil des Canadiens) nomme cinq améliorations nécessaires : rétablir le droit de la personne à l'article 3, protéger l'eau comme entité unique, retirer l'appel Shamattawa, remplacer « faire de son mieux » par un financement contraignant, rétablir l'élaboration conjointe des règlements.",
+     "James MacKinnon (Atlantic First Nations Water Authority) soutient l'établissement de normes claires et un financement adéquat durable. Il relève que les articles 30 et 31 s'appuient toujours sur « faire de son mieux » sans certitude de financement. Il demande un cadre de financement explicite pour les systèmes décentralisés.",
+     "Le chef Sheldon Sunshine (Sturgeon Lake Cree Nation, Traité 8) rejette le projet de loi C-37 car il limite la compétence inhérente en matière d'eau, ne garantit pas le financement (article 30), donne un droit de veto à l'Alberta (article 6) et affaiblit le droit de la personne à l'eau. Il demande le respect du Traité 8 et l'exercice de sa compétence sans conditions."
+    ],
+    "pucesEn": [
+     "Clayton Leonard (JFK Law, in personal capacity) calls for restoring article 3.1 of Bill C-61 recognizing access to safe drinking water as a human right, replaced by progressive realization in C-37. He cites Ermineskin example: $90M needed, Canada invested only $32M since 2010, 258 of 500 homes under permanent boil water notices.",
+     "Chief Linda Debassige (Anishinabek Nation) states Bill C-37 concentrates federal discretionary power \"do its best\" without binding commitments or accountability, transferring risks to First Nations. She demands enforcement mechanisms for rights, water source protection beyond reserves, and joint regulation development.",
+     "Jessica Cheung (Council of Canadians) names five necessary improvements: restore human right at article 3, protect water as single entity, withdraw Shamattawa appeal, replace \"do its best\" with binding funding, restore joint regulation development.",
+     "James MacKinnon (Atlantic First Nations Water Authority) supports clear standards and adequate sustainable funding. He notes articles 30 and 31 still rely on \"do its best\" without funding certainty. He requests explicit funding framework for decentralized systems.",
+     "Chief Sheldon Sunshine (Sturgeon Lake Cree Nation, Treaty 8) rejects Bill C-37 as it limits inherent water jurisdiction, does not guarantee funding (article 30), gives Alberta veto power (article 6), and weakens human right to water. He demands Treaty 8 respect and exercise of jurisdiction without conditions."
+    ],
+    "votes": [],
+    "aSuivre": "La réunion s'est poursuivie à huis clos pour discuter des travaux du Comité.",
+    "aSuivreEn": "The meeting continued in camera to discuss Committee business."
+   },
+   "modele": "claude-haiku-4-5",
+   "genereLe": "2026-11-26T15:39:15.112Z",
+   "rejets": 0
   },
   {
    "id": "INDU-45-1-54",
@@ -702,7 +1188,26 @@
    "session": "45-1",
    "reunion": 43,
    "heures": "15 h 32 - 17 h 26 (HNE)",
-   "url": null
+   "url": "https://www.ourcommons.ca/DocumentViewer/fr/45-1/JUST/reunion-43/temoignages",
+   "mots": 17693,
+   "resume": {
+    "puces": [
+     "L'Association des banquiers canadiens (ABC) appuie la création d'une agence contre les crimes financiers, estimant qu'elle renforcera la lutte contre le blanchiment d'argent complexe et la criminalité financière; elle recommande une meilleure coordination entre organismes, l'échange d'information public-privé et l'intégration de procureurs à l'agence.",
+     "La Fédération des ordres professionnels de juristes du Canada appuie l'agence mais demande de protéger explicitement le secret professionnel de l'avocat par un examen indépendant des perquisitions, de clarifier l'article 24 sur l'échange d'information avec les ordres professionnels et de consulter la Fédération lors de l'élaboration des règlements.",
+     "Le Service des poursuites pénales du Canada confirme que les pouvoirs du procureur général sont délégués en pratique au directeur des poursuites pénales depuis 20 ans; il n'a pas de recommandations spécifiques mais insiste sur l'indépendance du service et sur les ressources dédiées nécessaires pour les enquêteurs et procureurs spécialisés."
+    ],
+    "pucesEn": [
+     "The Canadian Bankers Association (CBA) supports the creation of a financial crime agency, believing it will strengthen the fight against complex money laundering and financial crime; it recommends better coordination between agencies, public-private information sharing, and the integration of prosecutors into the agency.",
+     "The Federation of Law Societies of Canada supports the agency but requests explicit protection of solicitor-client privilege through independent review of searches, clarification of section 24 on information sharing with law societies, and consultation with the Federation during regulatory development.",
+     "Public Prosecution Service of Canada confirms that the Attorney General's powers are delegated in practice to the Director of Public Prosecutions for 20 years; it has no specific recommendations but emphasizes the independence of the service and dedicated resources needed for specialized investigators and prosecutors."
+    ],
+    "votes": [],
+    "aSuivre": "L'étude article par article du projet de loi C-29 reprend à la prochaine réunion du comité.",
+    "aSuivreEn": "Article-by-article study of Bill C-29 resumes at the next committee meeting."
+   },
+   "modele": "claude-haiku-4-5",
+   "genereLe": "2026-11-26T15:39:24.761Z",
+   "rejets": 0
   },
   {
    "id": "AGRI-45-1-49",
@@ -767,7 +1272,9 @@
    "session": "45-1",
    "reunion": 50,
    "heures": "11 h - 13 h 29 (HAE)",
-   "url": null
+   "url": "https://www.ourcommons.ca/DocumentViewer/fr/45-1/CHPC/reunion-50/temoignages",
+   "mots": 23441,
+   "rejets": 1
   },
   {
    "id": "FINA-45-1-57",
@@ -807,6 +1314,46 @@
    "rejets": 0
   },
   {
+   "id": "INAN-45-1-45",
+   "date": "2026-10-29",
+   "comite": "INAN",
+   "comiteNom": "Affaires autochtones et du Nord",
+   "sujets": [
+    "Projet de loi C-37, Loi sur l'eau propre des Premières Nations",
+    "Projet de loi C-37, Loi sur l’eau propre des Premières Nations"
+   ],
+   "pls": [
+    "C-37"
+   ],
+   "session": "45-1",
+   "reunion": 45,
+   "heures": "8 h 15 - 10 h 18 (HAE)",
+   "url": "https://www.ourcommons.ca/DocumentViewer/fr/45-1/INAN/reunion-45/temoignages",
+   "mots": 18707,
+   "resume": {
+    "puces": [
+     "Philip Tangie (Aboriginal Water and Wastewater Association of Ontario) demande une formation continue des dirigeants des Premières Nations et davantage de consultation des exploitants de réseaux d'eau lors de l'élaboration de la loi.",
+     "Theresa McClenaghan (Association canadienne du droit de l'environnement) recommande de supprimer « adjacente » à l'article 6(1)b) et de remplacer l'article 3 pour reconnaître clairement le droit humain à l'eau sûre et propre.",
+     "Melinda Moch (Association du Barreau autochtone) soulève des risques juridiques, constitutionnels et financiers si le projet de loi ne tient pas compte des obligations fiduciaires du Canada et du consentement préalable donné librement et en connaissance de cause.",
+     "Emily Whetung-MacInnes (Comité consultatif des Premières Nations sur la salubrité de l'eau potable) demande un financement prévisible et fondé sur les besoins, une reconnaissance claire du droit humain à l'eau, et des mécanismes de reddition de comptes précis.",
+     "Chef Greg Gabriel (Penticton Indian Band) décrit la crise d'approvisionnement en eau de sa communauté malgré le titre sur le lac Okanagan, et demande clarté sur l'accès aux fonds du règlement du recours collectif et aux 4,6 milliards de dollars du projet de loi C-37."
+    ],
+    "pucesEn": [
+     "Philip Tangie (Aboriginal Water and Wastewater Association of Ontario) calls for continued training of First Nations leaders and greater consultation of water system operators in developing the legislation.",
+     "Theresa McClenaghan (Canadian Environmental Law Association) recommends removing 'adjacent' from section 6(1)b) and replacing section 3 to clearly recognize the human right to safe clean water.",
+     "Melinda Moch (Aboriginal Bar Association) raises legal, constitutional, and financial risks if the bill does not account for Canada's fiduciary obligations and free, prior, and informed consent.",
+     "Emily Whetung-MacInnes (First Nations Water Quality Advisory Committee) calls for predictable needs-based funding, clear recognition of the human right to water, and specific accountability mechanisms.",
+     "Chief Greg Gabriel (Penticton Indian Band) describes his community's water supply crisis despite title to Okanagan Lake, and seeks clarity on access to class action settlement funds and the 4.6 billion dollars in Bill C-37."
+    ],
+    "votes": [],
+    "aSuivre": "La réunion se poursuivra avec l'examen article par article du projet de loi C-37.",
+    "aSuivreEn": "The meeting will continue with clause-by-clause examination of Bill C-37."
+   },
+   "modele": "claude-haiku-4-5",
+   "genereLe": "2026-11-26T15:39:35.578Z",
+   "rejets": 0
+  },
+  {
    "id": "JUST-45-1-42",
    "date": "2026-10-29",
    "comite": "JUST",
@@ -823,7 +1370,9 @@
    "session": "45-1",
    "reunion": 42,
    "heures": "8 h 21 - 10 h 18 (HAE)",
-   "url": null
+   "url": "https://www.ourcommons.ca/DocumentViewer/fr/45-1/JUST/reunion-42/temoignages",
+   "mots": 18357,
+   "rejets": 1
   },
   {
    "id": "CC-2026-10-27",
@@ -977,6 +1526,23 @@
    "reunion": 50,
    "heures": "11 h 01 - 12 h 12 (HAE)",
    "url": "https://www.ourcommons.ca/DocumentViewer/fr/45-1/HUMA/reunion-50/temoignages"
+  },
+  {
+   "id": "INAN-45-1-43",
+   "date": "2026-10-22",
+   "comite": "INAN",
+   "comiteNom": "Affaires autochtones et du Nord",
+   "sujets": [
+    "Projet de loi C-37, Loi sur l'eau propre des Premières Nations",
+    "Projet de loi C-37, Loi sur l’eau propre des Premières Nations"
+   ],
+   "pls": [
+    "C-37"
+   ],
+   "session": "45-1",
+   "reunion": 43,
+   "heures": "8 h 17 - 10 h 16 (HAE)",
+   "url": "https://www.ourcommons.ca/DocumentViewer/fr/45-1/INAN/reunion-43/temoignages"
   },
   {
    "id": "INDU-45-1-52",
