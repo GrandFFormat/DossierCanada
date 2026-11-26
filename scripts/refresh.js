@@ -32,7 +32,8 @@ const SCRAPERS = [
   'scrape:bill-laws',
   'scrape:bill-ai-summaries',
   // Réunions de comité sur un projet de loi, résumées par Haiku depuis les Témoignages (≈ 4 ¢ la réunion).
-  'scrape:debats',
+  // 'scrape:debats' : retiré le 26 nov. 2026, la Chambre répond 403 aux serveurs de GitHub.
+  // Il roule depuis le PC de Martin (scripts/debats-local.cmd, tâche planifiée « DossierCanada comités »).
   'scrape:deputes',
   'scrape:depute-emails',
   'scrape:votes',
