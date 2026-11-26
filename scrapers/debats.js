@@ -213,7 +213,7 @@ async function main() {
   console.log(`  calendrier : ${aLire.length} jour(s) à lire sur ${jours.length}`);
   const trouvees = [];
   for (const date of aLire) {
-    try { trouvees.push(...await reunionsDu(date)); joursLus[date] = new Date().toISOString().slice(0, 10); } catch (e) { console.warn(`  ${date} : calendrier illisible (${e.message})`); }
+    try { trouvees.push(...await reunionsDu(date)); joursLus[date] = new Date().toISOString().slice(0, 10); } catch (e) { console.warn(`  ${date} : calendrier illisible (${e.message})`); if (/^403 /.test(e.message)) { console.warn('  403 : la Chambre refuse ce serveur, on arrête là (pas de requêtes inutiles).'); break; } }
     await attendre(1000);
   }
   const aFaire = trouvees.filter((r) => r.url && !connues.get(r.id)?.resume && (connues.get(r.id)?.rejets ?? 0) < 2).sort((a, b) => b.date.localeCompare(a.date)).slice(0, MAX);
