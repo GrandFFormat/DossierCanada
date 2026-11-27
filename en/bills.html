@@ -231,7 +231,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     <div class="page-band">
       <div>
         <nav class="crumbs" aria-label="Breadcrumb"><a data-view="apercu" href="/en">DossierCanada</a> <span aria-hidden="true">›</span> <span aria-current="page" data-i18n="nav.projets">Bills</span></nav>
-        <h1 class="band-title" id="projetsCountTitle">203 federal bills</h1>
+        <h1 class="band-title" id="projetsCountTitle">204 federal bills</h1>
         <div class="sub" data-i18n="proj.bandsub">Every bill summarized in plain language. Not clear enough? Ask for an explanation.</div>
       </div>
     </div>
@@ -246,27 +246,15 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       </div>
       <div class="filter-group">
         <button class="filter-hamburger" id="stepFilterBtn" onclick="toggleFilterPanel('step')" aria-expanded="false">☰ <span data-i18n="filter.etapes">Chamber</span></button>
-        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">House of Commons</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Senate</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Bills with communications reported to the Commissioner of Lobbying">Lobbying <b>52</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Bills that change several different acts at once, one per part">Omnibus <b>16</b></span><span class="step-chip pop-chip " onclick="toggleBillsPopular()" title="Sorted by number of explanation requests from citizens">🚀 Most popular</span><!--/ssr--></div>
+        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">House of Commons</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Senate</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Bills with communications reported to the Commissioner of Lobbying">Lobbying <b>52</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Bills that change several different acts at once, one per part">Omnibus <b>17</b></span><span class="step-chip pop-chip " onclick="toggleBillsPopular()" title="Sorted by number of explanation requests from citizens">🚀 Most popular</span><!--/ssr--></div>
       </div>
     </div>
     <p class="tous-votes" id="lienTousVotes"><a data-view="votes" href="/en/votes" data-i18n="projets.tousvotes">All recorded votes, motions included →</a></p>
 
-    <div id="billsList"><!--ssr--><div class="ab-row" id="abrow-pr-14368367">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14368367')">
-      <span class="ab-num">C-43</span>
-      <span class="ab-title">An Act to implement certain provisions of the budget tabled in Parliament on November 5, 2026</span>
-      
-      
-      
-      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-      <span class="status-pill status-encours">In progress</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"><div class="bill-sum-slot" data-bill="14368367"><p><em>No official summary available for this bill.</em></p></div></div>
-  </div><div class="ab-row" id="abrow-pr-13583642">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13583642')">
-      <span class="ab-num">C-219</span>
-      <span class="ab-title">An Act to amend the Department of Foreign Affairs, Trade and Development Act, the Justice for Victims of Corrupt Foreign Officials Act (Sergei Magnitsky Law) and the Special Economic Measures Act</span>
+    <div id="billsList"><!--ssr--><div class="ab-row" id="abrow-pr-14373970">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14373970')">
+      <span class="ab-num">C-299</span>
+      <span class="ab-title">An Act to amend the Canada Student Financial Assistance Act</span>
       
       
       
@@ -274,7 +262,55 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="status-pill status-encours">In progress</span>
       <span class="ab-caret">▾</span>
     </div>
-    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13583642"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Requires the Minister of Foreign Affairs to publish a yearly report on Canada's work for human rights abroad.</li><li>Requires that report to name the "prisoners of conscience" Canada is trying to free, and the countries holding them.</li><li>Allows sanctions for "transnational repression", when a foreign state threatens, spies on or harasses people living outside its borders.</li><li>Bars visas for the close family of a sanctioned person, unless the Minister believes they got no money or benefit from that person.</li><li>Requires the RCMP and FINTRAC, the agency that tracks suspicious financial activity, to give the Minister information useful for sanctions.</li><li>Gives the Minister 30 days after getting that information to recommend to the federal Cabinet whether to impose the sanction.</li><li>Renames the Special Economic Measures Act as the "Sergei Magnitsky Global Sanctions Act".</li><li>Raises the maximum penalty under that law to a $100,000 fine and three years in prison.</li><li>Blocks broadcast licences for any station strongly influenced by a foreign person or group under sanctions, or found by Parliament to have committed genocide.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="14373970"><p><em>No official summary available for this bill.</em></p></div></div>
+  </div><div class="ab-row" id="abrow-pr-14310361">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14310361')">
+      <span class="ab-num">S-8</span>
+      <span class="ab-title">An Act respecting certain measures relating to proceeds of crime, terrorist financing, sanctions evasion and the detection of non-mailable matter transmitted by post</span>
+      
+      <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Omnibus bill — 2 parts: it changes several different acts. Click to show only omnibus bills">Omnibus · 2 parts</button>
+      
+      <span class="depute-party" style="background:#5B6B7A; color:#fff">GRO</span>
+      <span class="status-pill status-encours">In progress</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="14310361"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Tightens the rules against money laundering, terrorist financing and sanctions evasion.</li><li>Also allows mail to be seized while it is still travelling through Canada Post.</li></ul><section class="bill-part"><h5 class="bill-sum-part"><span>Part 1</span>Proceeds of Crime (Money Laundering) and Terrorist Financing Act, Personal Information Protection and Electronic Documents Act</h5><ul class="bill-sum-list"><li>Bans certain businesses from taking cash deposits made by someone other than the account holder.</li><li>Bans accepting cash payments, donations or deposits of $10,000 or more.</li><li>Creates new rules and offences for virtual currency ATMs, such as crypto cash machines.</li><li>Lets banks and other covered businesses use personal information received from a government body or police, without telling the person, to spot these crimes.</li><li>Adds new reasons to refuse registration with FINTRAC, the federal agency that tracks suspicious financial transactions.</li><li>Requires newly registered businesses to tell FINTRAC about their activities, and increases the number of criminal record checks needed.</li><li>Gives the Minister of Finance new powers tied to national security and the health of Canada's financial system.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Part 2</span>Canada Post Corporation Act</h5><ul class="bill-sum-list"><li>Allows mail to be demanded, seized, detained or kept while it is still in the postal system.</li><li>These seizures would follow the Criminal Code, the Controlled Drugs and Substances Act or the Cannabis Act.</li></ul></section><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
+  </div><div class="ab-row" id="abrow-pr-14167474">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14167474')">
+      <span class="ab-num">S-249</span>
+      <span class="ab-title">An Act respecting Christian Heritage Month</span>
+      
+      
+      
+      <span class="depute-party" style="background:#1A4782; color:#fff">C</span>
+      <span class="status-pill status-encours">In progress</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="14167474"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Creates a new law, the Christian Heritage Month Act.</li><li>Names December "Christian Heritage Month" across Canada, every year.</li><li>Points to December as a month with key moments in the Christian calendar, from Advent to Christmas.</li><li>Notes that Christianity shaped values the country is built on, such as compassion, justice and service.</li><li>Recognizes the contributions of Canada's Christian community to the country's growth and prosperity.</li><li>Frames the month as a way to honour the different expressions of faith found in Canadian communities.</li><li>Adds no new duties, creates no statutory holiday and sets aside no money.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
+  </div><div class="ab-row" id="abrow-pr-14023030">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14023030')">
+      <span class="ab-num">C-28</span>
+      <span class="ab-title">An Act to amend the Aeronautics Act and other Acts</span>
+      
+      
+      
+      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
+      <span class="status-pill status-encours">In progress</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="14023030"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Creates Canada's first rules for rocket launches and for spacecraft returning to Earth, by changing the Aeronautics Act.</li><li>Widens the meaning of "aircraft" to cover rockets and vehicles that come back from orbit, bringing them under the Transport Minister's powers.</li><li>Requires companies to get a permit from the Minister to launch a rocket from Canada or bring a spacecraft back into the country.</li><li>Requires a certificate from the Minister before a site can be used for launches or for spacecraft returns.</li><li>Lets the Minister pay compensation to a launch company that owes money for harm caused to other people, if he or she decides it serves the public interest.</li><li>Lets the Minister also require a company to pay back the Government of Canada if Ottawa has to compensate victims after a launch.</li><li>Gives the Minister power to order a launch or a return stopped for safety or security reasons.</li><li>Lets the federal Cabinet restrict how nearby land is used around a launch site, mainly when no deal can be reached with the province.</li><li>Sets, through a government rule, the minimum amount operators must be able to cover for damage, with room for exemptions or lower amounts.</li><li>Keeps rockets and re-entry vehicles out of airline rules, including the Secure Air Travel Act and the Carriage by Air Act.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
+  </div><div class="ab-row" id="abrow-pr-14368367">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14368367')">
+      <span class="ab-num">C-43</span>
+      <span class="ab-title">An Act to implement certain provisions of the budget tabled in Parliament on November 5, 2026</span>
+      
+      <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Omnibus bill — 4 parts, 52 divisions: it changes several different acts. Click to show only omnibus bills">Omnibus · 4 parts</button>
+      
+      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
+      <span class="status-pill status-encours">In progress</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="14368367"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Puts into effect the budget tabled on November 5, 2026: income tax, sales tax, banking, the environment, pensions and new federal bodies.</li><li>Changes dozens of laws at once, from tax credits to environmental fines to the creation of new Crown corporations.</li></ul><section class="bill-part"><h5 class="bill-sum-part"><span>Part 1</span>Income Tax Act and Income Tax Regulations</h5><ul class="bill-sum-list"><li>Makes the Disability Tax Credit easier to apply for and lets more health professionals sign the certification.</li><li>Raises from $100,000 to $200,000 the level of foreign property that triggers the T1135 reporting form.</li><li>Extends for five years the 15% mining exploration credit and the 30% critical mineral credit, and adds antimony to the list.</li><li>Lets businesses write off the full cost of most depreciable property right away, permanently.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Part 2</span>Excise Tax Act, Excise Act, 2001 and other laws</h5><ul class="bill-sum-list"><li>Makes qualifying massage therapy services GST/HST-exempt and zero-rates alternating electric field therapy devices.</li><li>Raises from $100,000 to $150,000 the price at which the luxury tax hits fully electric or hydrogen-powered vehicles.</li><li>Creates a new common cannabis stamp and updates fines and penalties for cannabis products.</li><li>Lets the Minister of Finance change certain tax deals with provinces, territories and Indigenous governments on his own.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Part 3</span>Bank Act, new Canada Financing Corporation Act and other laws</h5><ul class="bill-sum-list"><li>Raises the deposit insurance limit and bans certain bank fees for customers of a branch set to close.</li><li>Lets the Minister of Finance order a bank to sell a holding seen as a threat to national security or the financial system.</li><li>Sharply increases fines under wildlife, fisheries, agriculture and environment laws, with money going to the Environmental Damages Fund.</li><li>Creates Digital Transformation Canada, the Canada Strong Fund, and the Canada Financing Corporation, which will merge BDC and EDC.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Part 4</span>No measures described</h5><ul class="bill-sum-list"><li>The official summary provided does not set out any measures under a fourth part.</li></ul></section><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
   </div><div class="ab-row" id="abrow-pr-13585237">
     <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13585237')">
       <span class="ab-num">C-221</span>
@@ -287,6 +323,18 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-caret">▾</span>
     </div>
     <div class="ab-detail"><div class="bill-sum-slot" data-bill="13585237"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Amends the Corrections and Conditional Release Act, the law covering federal prisons and release from them.</li><li>Requires Correctional Service Canada to tell victims how the offender's key dates were worked out.</li><li>Covers eligibility dates and review dates for temporary absences and parole.</li><li>Also requires an explanation of the planned release date: temporary absence, work release, parole or statutory release.</li><li>Places the same duty to explain on the Parole Board of Canada, which decides on releases.</li><li>Applies to unescorted temporary absences and to escorted absences approved by the Board.</li><li>Includes rules to line up with a 2015 law on victims of violent offenders, so the two laws do not clash.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
+  </div><div class="ab-row" id="abrow-pr-13583642">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13583642')">
+      <span class="ab-num">C-219</span>
+      <span class="ab-title">An Act to amend the Department of Foreign Affairs, Trade and Development Act, the Justice for Victims of Corrupt Foreign Officials Act (Sergei Magnitsky Law) and the Special Economic Measures Act</span>
+      
+      
+      
+      <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
+      <span class="status-pill status-encours">In progress</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13583642"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Requires the Minister of Foreign Affairs to publish a yearly report on Canada's work for human rights abroad.</li><li>Requires that report to name the "prisoners of conscience" Canada is trying to free, and the countries holding them.</li><li>Allows sanctions for "transnational repression", when a foreign state threatens, spies on or harasses people living outside its borders.</li><li>Bars visas for the close family of a sanctioned person, unless the Minister believes they got no money or benefit from that person.</li><li>Requires the RCMP and FINTRAC, the agency that tracks suspicious financial activity, to give the Minister information useful for sanctions.</li><li>Gives the Minister 30 days after getting that information to recommend to the federal Cabinet whether to impose the sanction.</li><li>Renames the Special Economic Measures Act as the "Sergei Magnitsky Global Sanctions Act".</li><li>Raises the maximum penalty under that law to a $100,000 fine and three years in prison.</li><li>Blocks broadcast licences for any station strongly influenced by a foreign person or group under sanctions, or found by Parliament to have committed genocide.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
   </div><div class="ab-row" id="abrow-pr-14235835">
     <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14235835')">
       <span class="ab-num">C-298</span>
@@ -323,55 +371,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-caret">▾</span>
     </div>
     <div class="ab-detail"><div class="bill-sum-slot" data-bill="14336621"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Creates a new rule in the Competition Act aimed at computer-set personalized prices.</li><li>Makes it reviewable conduct for a business to charge customers clearly different prices for the same product or service without telling them fairly and clearly.</li><li>Targets automated systems, including algorithms, artificial intelligence and machine learning, that set or adjust a price for a specific shopper.</li><li>Covers prices based on age, gender, where someone lives, family status, income, job, credit history, debts or spending habits.</li><li>Also covers prices based on devices, social media use, browsing and online shopping history, location, health or medical history.</li><li>Makes clear that price changes tied to stock levels, production costs, limited-time sales or general market conditions are not caught by the rule.</li><li>Lets the Commissioner of Competition, who enforces the law, look into these practices and share information with the CRTC and the Privacy Commissioner.</li><li>Allows tougher penalties for repeat offenders, since the new rule is added to the list used for subsequent orders.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
-  </div><div class="ab-row" id="abrow-pr-13933855">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13933855')">
-      <span class="ab-num">S-6</span>
-      <span class="ab-title">A fourth Act to harmonize federal law with the civil law of Quebec and to amend certain Acts in order to ensure that each language version takes into account the common law and the civil law</span>
-      
-      
-      
-      <span class="depute-party" style="background:#5B6B7A; color:#fff">GRO</span>
-      <span class="status-pill status-encours">In progress</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13933855"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Updates 51 federal laws so they fit with the Civil Code of Québec, which took effect in 1994.</li><li>Focuses on legal wording: each law must speak the language of both Quebec civil law and common law.</li><li>Covers the four main financial institution laws: the Bank Act, the Cooperative Credit Associations Act, the Insurance Companies Act and the Trust and Loan Companies Act.</li><li>Also changes business laws such as the Canada Business Corporations Act and the Canada Not-for-profit Corporations Act.</li><li>Touches widely used general laws, including the Access to Information Act, the Privacy Act, the Financial Administration Act, the Interpretation Act and the Official Languages Act.</li><li>Adds civil law terms beside common law ones, such as "hypothec" with "mortgage", "mandatary" with "agent", and "immovable" with "real property".</li><li>Clarifies practical rules, such as which documents work to transfer a dead shareholder's shares, including Quebec notarial wills and letters of verification.</li><li>Is the fourth bill in a series prepared by the Department of Justice for this harmonization work.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
-  </div><div class="ab-row" id="abrow-pr-13602863">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13602863')">
-      <span class="ab-num">S-234</span>
-      <span class="ab-title">An Act respecting a national framework for fetal alcohol spectrum disorder</span>
-      
-      
-      
-      <span class="depute-party" style="background:#6D5BA6; color:#fff">ISG</span>
-      <span class="status-pill status-encours">In progress</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13602863"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Requires the Minister of Health to build a national plan on fetal alcohol spectrum disorder (FASD), a lifelong disability caused by alcohol during pregnancy.</li><li>Says the plan must include training and guidance for doctors and other professionals on preventing and diagnosing FASD.</li><li>Calls for steps to boost research and information sharing between governments.</li><li>Requires national standards for prevention, diagnosis and support for people living with FASD.</li><li>Includes a plan to raise awareness of the risks of drinking during pregnancy, with suggested changes to alcohol sales and advertising rules.</li><li>Obliges the Minister to consult provinces and territories, other federal ministers, families, service providers, and Indigenous communities and organizations.</li><li>Gives the Minister 18 months to table the plan in Parliament, then 10 days to post it on the Health Department website.</li><li>Requires a second report within 5 years on which measures were put in place, how well they worked, and why others were not.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
-  </div><div class="ab-row" id="abrow-pr-13707662">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13707662')">
-      <span class="ab-num">S-239</span>
-      <span class="ab-title">An Act to amend the Competition Act</span>
-      
-      
-      
-      
-      <span class="status-pill status-encours">In progress</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13707662"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Changes the Competition Act, the law that keeps competition fair between businesses in Canada.</li><li>Lets the Commissioner of Competition, the federal official who studies markets, point out barriers to trade between provinces in market inquiry reports.</li><li>Covers any law, regulation, rule, order or municipal by-law that, in the Commissioner's view, hurts competition too much.</li><li>Requires the Commissioner to send a copy of the report to the head of each government body named in a recommendation.</li><li>Gives a federal department or agency 120 days after the report is published to answer the recommendation.</li><li>Leaves provincial departments, agencies and municipalities free to answer or not, within the same 120 days.</li><li>Requires the Commissioner to post every response on a public website, and to post a notice when a provincial body stays silent.</li><li>Gives the bill the short title Canadian Prosperity Act.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
-  </div><div class="ab-row" id="abrow-pr-13605049">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13605049')">
-      <span class="ab-num">C-10</span>
-      <span class="ab-title">An Act respecting the Commissioner for Modern Treaty Implementation</span>
-      
-      
-      <span class="ab-lob" title="23 reported lobbying communications">23</span>
-      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-      <span class="status-pill status-sanctionne">Assented to</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13605049"><div class="bill-sum-head">What it does, in plain language</div><ul class="bill-sum-list"><li>Creates a Commissioner for Modern Treaty Implementation to check whether Ottawa is living up to its modern treaty commitments with Indigenous peoples.</li><li>Lets the Commissioner review and audit the work of federal departments and agencies on these treaties, on their own initiative or at the request of a minister or an Indigenous treaty partner.</li><li>Sets up an office, the Office of the Commissioner for Modern Treaty Implementation, with staff hired under public service rules.</li><li>Requires the Commissioner to be appointed by the federal Cabinet after consulting Indigenous treaty partners and after a vote of approval in both the House and the Senate.</li><li>Limits the Commissioner's term to seven years, renewable once, with removal possible for cause.</li><li>Requires departments under review to respond in writing before the final report, which must be tabled in Parliament within 15 sitting days.</li><li>Gives the Commissioner free access to the federal information needed for the job, unless another law limits it.</li><li>Requires an independent review of the law within five years and every seven years after, plus a parliamentary committee review every ten years.</li><li>Sets an official list of 30 Indigenous modern treaty partners, which the federal Cabinet can change after consultation.</li></ul><p class="src-note">🤖 AI-generated from the bill’s official text as introduced — may not reflect amendments adopted since.</p></div></div>
-  </div><button class="votes-more" onclick="loadMoreBills()">See 20 more — 10 of 203 shown</button><!--/ssr--></div>
+  </div><button class="votes-more" onclick="loadMoreBills()">See 20 more — 10 of 204 shown</button><!--/ssr--></div>
 
     <!-- Ce que « challenger » veut dire, en bas de la liste — comme sur
          DossierQuébec. Le texte dit le VRAI mécanisme : compte requis, une

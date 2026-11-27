@@ -231,7 +231,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
     <div class="page-band">
       <div>
         <nav class="crumbs" aria-label="Fil d'Ariane"><a data-view="apercu" href="/">DossierCanada</a> <span aria-hidden="true">›</span> <span aria-current="page" data-i18n="nav.projets">Projets de loi</span></nav>
-        <h1 class="band-title" id="projetsCountTitle">203 projets de loi fédéraux</h1>
+        <h1 class="band-title" id="projetsCountTitle">204 projets de loi fédéraux</h1>
         <div class="sub" data-i18n="proj.bandsub">Chaque loi résumée en clair. Pas assez clair ? Demandez une explication.</div>
       </div>
     </div>
@@ -246,27 +246,15 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       </div>
       <div class="filter-group">
         <button class="filter-hamburger" id="stepFilterBtn" onclick="toggleFilterPanel('step')" aria-expanded="false">☰ <span data-i18n="filter.etapes">Chambre</span></button>
-        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">Chambre des communes</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Sénat</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Projets avec des communications déclarées au Commissariat au lobbying">Lobbying <b>52</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Projets qui modifient plusieurs lois différentes à la fois, une par partie">Omnibus <b>16</b></span><span class="step-chip pop-chip " onclick="toggleBillsPopular()" title="Classés selon le nombre de demandes d’explication des citoyens">🚀 Les plus populaires</span><!--/ssr--></div>
+        <div class="step-filters" id="stepFilters"><!--ssr--><span class="step-chip " onclick="setBillsStepFilter('commons')">Chambre des communes</span><span class="step-chip " onclick="setBillsStepFilter('senate')">Sénat</span><span class="step-chip lob-chip " onclick="setBillsLobbyFilter()" title="Projets avec des communications déclarées au Commissariat au lobbying">Lobbying <b>52</b></span><span class="step-chip om-chip " onclick="setBillsOmnibusFilter()" title="Projets qui modifient plusieurs lois différentes à la fois, une par partie">Omnibus <b>17</b></span><span class="step-chip pop-chip " onclick="toggleBillsPopular()" title="Classés selon le nombre de demandes d’explication des citoyens">🚀 Les plus populaires</span><!--/ssr--></div>
       </div>
     </div>
     <p class="tous-votes" id="lienTousVotes"><a data-view="votes" href="/votes" data-i18n="projets.tousvotes">Tous les votes nominaux, motions comprises →</a></p>
 
-    <div id="billsList"><!--ssr--><div class="ab-row" id="abrow-pr-14368367">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14368367')">
-      <span class="ab-num">C-43</span>
-      <span class="ab-title">Loi portant exécution de certaines dispositions du budget déposé au Parlement le 5 novembre 2026</span>
-      
-      
-      
-      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-      <span class="status-pill status-encours">En cours</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"><div class="bill-sum-slot" data-bill="14368367"><p><em>Sommaire officiel non disponible pour ce projet de loi.</em></p></div></div>
-  </div><div class="ab-row" id="abrow-pr-13583642">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13583642')">
-      <span class="ab-num">C-219</span>
-      <span class="ab-title">Loi modifiant la Loi sur le ministère des Affaires étrangères, du Commerce et du Développement, la Loi sur la justice pour les victimes de dirigeants étrangers corrompus (loi de Sergueï Magnitski) et la Loi sur les mesures économiques spéciales</span>
+    <div id="billsList"><!--ssr--><div class="ab-row" id="abrow-pr-14373970">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14373970')">
+      <span class="ab-num">C-299</span>
+      <span class="ab-title">Loi modifiant la Loi fédérale sur l’aide financière aux étudiants</span>
       
       
       
@@ -274,7 +262,55 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="status-pill status-encours">En cours</span>
       <span class="ab-caret">▾</span>
     </div>
-    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13583642"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Oblige le ministre des Affaires étrangères à publier chaque année un rapport sur les droits de la personne dans le monde.</li><li>Exige que ce rapport nomme les « prisonniers d'opinion » que le Canada tente de faire libérer, avec le pays qui les détient.</li><li>Permet de sanctionner la « répression transnationale », soit le fait pour un pays étranger de menacer, espionner ou harceler des gens vivant au Canada ou ailleurs à l'étranger.</li><li>Interdit de délivrer un visa aux proches d'une personne sanctionnée, sauf si le ministre croit qu'ils n'ont tiré aucun avantage de cette personne.</li><li>Oblige la GRC et le CANAFE, l'organisme qui surveille les transactions financières suspectes, à transmettre au ministre l'information utile pour sanctionner quelqu'un.</li><li>Donne au ministre 30 jours pour recommander au gouvernement (le Cabinet) d'imposer ou non la sanction après avoir reçu cette information.</li><li>Renomme la Loi sur les mesures économiques spéciales, qui devient la « Loi sur les sanctions internationales de type Sergueï Magnitski ».</li><li>Fait passer la peine maximale pour une infraction à cette loi à 100 000 $ d'amende et trois ans de prison.</li><li>Interdit au CRTC d'accorder ou de renouveler une licence de radiodiffusion à une entreprise fortement influencée par un étranger sanctionné ou reconnu responsable d'un génocide par le Parlement.</li></ul><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div></div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="14373970"><p><em>Sommaire officiel non disponible pour ce projet de loi.</em></p></div></div>
+  </div><div class="ab-row" id="abrow-pr-14310361">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14310361')">
+      <span class="ab-num">S-8</span>
+      <span class="ab-title">Loi concernant certaines mesures liées au recyclage des produits de la criminalité, au financement des activités terroristes, au contournement de sanctions et à la détection d’objets inadmissibles dans les transmissions postales</span>
+      
+      <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Projet omnibus — 2 parties : il modifie plusieurs lois différentes. Cliquer pour ne voir que les omnibus">Omnibus · 2 parties</button>
+      
+      <span class="depute-party" style="background:#5B6B7A; color:#fff">BRG</span>
+      <span class="status-pill status-encours">En cours</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="14310361"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Resserre les règles contre le blanchiment d'argent, le financement du terrorisme et le contournement des sanctions.</li><li>Permet aussi la saisie de colis et de lettres pendant leur transport par Postes Canada.</li></ul><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 1</span>Loi sur le recyclage des produits de la criminalité et le financement des activités terroristes, Loi sur la protection des renseignements personnels et les documents électroniques</h5><ul class="bill-sum-list"><li>Interdit à certaines entreprises d'accepter un dépôt en argent comptant fait par une autre personne que le titulaire du compte.</li><li>Interdit d'accepter des paiements, des dons ou des dépôts en argent comptant de 10 000 $ ou plus.</li><li>Crée des règles et des infractions pour les guichets automatiques de monnaie virtuelle, comme les guichets de cryptomonnaie.</li><li>Permet aux banques et autres entreprises visées d'utiliser des renseignements personnels reçus d'un ministère ou de la police, sans en avertir la personne, pour repérer ces crimes.</li><li>Ajoute des motifs de refus d'inscription auprès du CANAFE, l'organisme fédéral qui surveille les opérations financières suspectes.</li><li>Oblige les nouvelles entreprises inscrites à renseigner le CANAFE sur leurs activités, et augmente le nombre de vérifications de casier judiciaire exigées.</li><li>Donne au ministre des Finances de nouveaux pouvoirs liés à la sécurité nationale et à la solidité du système financier.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 2</span>Loi sur la Société canadienne des postes</h5><ul class="bill-sum-list"><li>Permet de réclamer, de saisir et de retenir un envoi pendant qu'il est encore dans le réseau postal.</li><li>Ces saisies se feront selon le Code criminel, la Loi réglementant certaines drogues et autres substances ou la Loi sur le cannabis.</li></ul></section><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div></div>
+  </div><div class="ab-row" id="abrow-pr-14167474">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14167474')">
+      <span class="ab-num">S-249</span>
+      <span class="ab-title">Loi instituant le Mois du patrimoine chrétien</span>
+      
+      
+      
+      <span class="depute-party" style="background:#1A4782; color:#fff">C</span>
+      <span class="status-pill status-encours">En cours</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="14167474"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Crée une nouvelle loi, la Loi sur le Mois du patrimoine chrétien.</li><li>Fait de décembre le « Mois du patrimoine chrétien » partout au Canada, chaque année.</li><li>Explique ce choix : décembre comprend des moments importants du calendrier chrétien, de l'Avent à Noël.</li><li>Souligne l'influence du christianisme sur des valeurs à la base du pays, comme la compassion, la justice et le service.</li><li>Reconnaît l'apport de la communauté chrétienne du Canada à la croissance et à la prospérité du pays.</li><li>Présente ce mois comme une façon d'honorer les diverses expressions de foi qui enrichissent les communautés.</li><li>N'impose aucune nouvelle obligation, ne crée aucun congé férié et ne prévoit aucune dépense.</li></ul><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div></div>
+  </div><div class="ab-row" id="abrow-pr-14023030">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14023030')">
+      <span class="ab-num">C-28</span>
+      <span class="ab-title">Loi modifiant la Loi sur l'aéronautique et d'autres lois en conséquence</span>
+      
+      
+      
+      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
+      <span class="status-pill status-encours">En cours</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="14023030"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Crée les premières règles canadiennes encadrant les lancements de fusées et le retour d'engins spatiaux sur Terre, en modifiant la Loi sur l'aéronautique.</li><li>Élargit la définition d'« aéronef » pour inclure les fusées et les véhicules qui reviennent de l'orbite, ce qui les soumet aux pouvoirs du ministre des Transports.</li><li>Oblige les entreprises à obtenir un permis du ministre pour lancer une fusée depuis le Canada ou faire revenir un engin spatial au pays.</li><li>Exige un certificat du ministre pour qu'un site serve de zone de lancement ou de retour d'engins spatiaux.</li><li>Permet au ministre de verser une indemnité à une entreprise de lancement qui doit payer pour des dommages causés à des tiers, s'il juge que c'est dans l'intérêt public.</li><li>Permet aussi au ministre d'exiger qu'une entreprise rembourse le gouvernement du Canada si celui-ci doit indemniser des victimes à cause d'un lancement.</li><li>Donne au ministre le pouvoir d'ordonner l'arrêt d'un lancement ou d'un retour pour des raisons de sécurité ou de sûreté.</li><li>Permet au gouvernement (le Cabinet) de limiter par règlement l'usage des terrains voisins d'un site de lancement, surtout s'il n'a pas pu s'entendre avec la province.</li><li>Fixe par une règle du gouvernement le montant minimal que les exploitants doivent pouvoir payer en cas de dommages, avec possibilité d'exemption ou de réduction.</li><li>Exclut les fusées et véhicules de rentrée des règles sur les transporteurs aériens, dont la Loi sur la sûreté des déplacements aériens et la Loi sur le transport aérien.</li></ul><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div></div>
+  </div><div class="ab-row" id="abrow-pr-14368367">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14368367')">
+      <span class="ab-num">C-43</span>
+      <span class="ab-title">Loi portant exécution de certaines dispositions du budget déposé au Parlement le 5 novembre 2026</span>
+      
+      <button type="button" class="ab-omni" onclick="event.stopPropagation(); setBillsOmnibusFilter(true)" title="Projet omnibus — 4 parties, 52 sections : il modifie plusieurs lois différentes. Cliquer pour ne voir que les omnibus">Omnibus · 4 parties</button>
+      
+      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
+      <span class="status-pill status-encours">En cours</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="14368367"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Met en œuvre le budget déposé le 5 novembre 2026 : impôts, taxes de vente, banques, environnement, pensions et nouveaux organismes fédéraux.</li><li>Touche des dizaines de lois à la fois, des crédits d'impôt aux amendes environnementales, en passant par la création de nouvelles sociétés d'État.</li></ul><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 1</span>Loi de l'impôt sur le revenu et Règlement de l'impôt sur le revenu</h5><ul class="bill-sum-list"><li>Facilite l'accès au crédit d'impôt pour personnes handicapées et permet à plus de professionnels de la santé de signer l'attestation.</li><li>Fait passer de 100 000 $ à 200 000 $ le seuil obligeant à déclarer ses biens étrangers (formulaire T1135).</li><li>Prolonge de cinq ans les crédits d'impôt de 15 % pour l'exploration minière et de 30 % pour les minéraux critiques, en y ajoutant l'antimoine.</li><li>Permet aux entreprises de déduire d'un coup le coût de la plupart de leurs biens amortissables, de façon permanente.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 2</span>Loi sur la taxe d'accise, Loi de 2001 sur l'accise et autres lois</h5><ul class="bill-sum-list"><li>Exempte de TPS/TVH les services admissibles de massothérapie et détaxe les appareils de thérapie par champs électriques alternatifs.</li><li>Fait passer de 100 000 $ à 150 000 $ le prix à partir duquel la taxe de luxe frappe les véhicules entièrement électriques ou à hydrogène.</li><li>Crée un nouveau timbre commun pour le cannabis et revoit les amendes liées aux produits du cannabis.</li><li>Permet au ministre des Finances de modifier seul certaines ententes fiscales avec les provinces, les territoires et les gouvernements autochtones.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 3</span>Loi sur les banques, nouvelle Loi sur la Société de financement du Canada et autres lois</h5><ul class="bill-sum-list"><li>Hausse la limite protégée par l'assurance-dépôts et interdit certains frais bancaires aux clients d'une succursale sur le point de fermer.</li><li>Permet au ministre des Finances d'ordonner à une banque de se départir d'un placement qui menace la sécurité nationale ou le système financier.</li><li>Augmente fortement les amendes dans les lois sur les espèces en péril, les pêches, l'agriculture et l'environnement, avec versement au Fonds pour dommages à l'environnement.</li><li>Crée le ministère Transformation numérique Canada, le Fonds pour un Canada fort et la Société de financement du Canada, qui regroupera la BDC et EDC.</li></ul></section><section class="bill-part"><h5 class="bill-sum-part"><span>Partie 4</span>Aucune mesure décrite</h5><ul class="bill-sum-list"><li>Le sommaire officiel fourni ne décrit aucune mesure sous une quatrième partie.</li></ul></section><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div></div>
   </div><div class="ab-row" id="abrow-pr-13585237">
     <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13585237')">
       <span class="ab-num">C-221</span>
@@ -287,6 +323,18 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-caret">▾</span>
     </div>
     <div class="ab-detail"><div class="bill-sum-slot" data-bill="13585237"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Modifie la Loi sur le système correctionnel et la mise en liberté sous condition, qui encadre les prisons fédérales et les libérations.</li><li>Oblige le Service correctionnel à expliquer à la victime comment ont été calculées les dates clés du dossier du délinquant.</li><li>Vise les dates d'admissibilité et d'examen pour les sorties temporaires et la libération conditionnelle.</li><li>Exige aussi une explication de la date prévue de sortie : permission de sortir, placement à l'extérieur, libération conditionnelle ou libération d'office.</li><li>Impose la même obligation d'explication à la Commission des libérations conditionnelles du Canada, qui décide des mises en liberté.</li><li>Couvre les sorties sans escorte et les sorties avec escorte approuvées par la Commission.</li><li>Prévoit des règles d'arrimage avec une autre loi de 2015 sur les victimes de délinquants violents, pour éviter que les deux textes se contredisent.</li></ul><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div></div>
+  </div><div class="ab-row" id="abrow-pr-13583642">
+    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13583642')">
+      <span class="ab-num">C-219</span>
+      <span class="ab-title">Loi modifiant la Loi sur le ministère des Affaires étrangères, du Commerce et du Développement, la Loi sur la justice pour les victimes de dirigeants étrangers corrompus (loi de Sergueï Magnitski) et la Loi sur les mesures économiques spéciales</span>
+      
+      
+      
+      <span class="depute-party" style="background:#1A4782; color:#fff">CPC</span>
+      <span class="status-pill status-encours">En cours</span>
+      <span class="ab-caret">▾</span>
+    </div>
+    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13583642"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Oblige le ministre des Affaires étrangères à publier chaque année un rapport sur les droits de la personne dans le monde.</li><li>Exige que ce rapport nomme les « prisonniers d'opinion » que le Canada tente de faire libérer, avec le pays qui les détient.</li><li>Permet de sanctionner la « répression transnationale », soit le fait pour un pays étranger de menacer, espionner ou harceler des gens vivant au Canada ou ailleurs à l'étranger.</li><li>Interdit de délivrer un visa aux proches d'une personne sanctionnée, sauf si le ministre croit qu'ils n'ont tiré aucun avantage de cette personne.</li><li>Oblige la GRC et le CANAFE, l'organisme qui surveille les transactions financières suspectes, à transmettre au ministre l'information utile pour sanctionner quelqu'un.</li><li>Donne au ministre 30 jours pour recommander au gouvernement (le Cabinet) d'imposer ou non la sanction après avoir reçu cette information.</li><li>Renomme la Loi sur les mesures économiques spéciales, qui devient la « Loi sur les sanctions internationales de type Sergueï Magnitski ».</li><li>Fait passer la peine maximale pour une infraction à cette loi à 100 000 $ d'amende et trois ans de prison.</li><li>Interdit au CRTC d'accorder ou de renouveler une licence de radiodiffusion à une entreprise fortement influencée par un étranger sanctionné ou reconnu responsable d'un génocide par le Parlement.</li></ul><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div></div>
   </div><div class="ab-row" id="abrow-pr-14235835">
     <div class="ab-head" onclick="toggleApercuBill('abrow-pr-14235835')">
       <span class="ab-num">C-298</span>
@@ -323,55 +371,7 @@ renderHeaderDate(/^\/en(\/|$)/.test(location.pathname)?'en':'fr');</script>
       <span class="ab-caret">▾</span>
     </div>
     <div class="ab-detail"><div class="bill-sum-slot" data-bill="14336621"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Crée une nouvelle règle dans la Loi sur la concurrence visant les prix personnalisés fixés par ordinateur.</li><li>Rend contrôlable le fait, pour une entreprise, de faire payer des prix nettement différents à des clients pour un même produit ou service, sans les en avoir clairement informés.</li><li>Vise les systèmes automatisés, y compris les algorithmes, l'intelligence artificielle et l'apprentissage machine, qui fixent ou ajustent un prix client par client.</li><li>Couvre les prix basés sur l'âge, le sexe, le lieu de résidence, la situation familiale, le revenu, l'emploi, le crédit, les dettes ou les habitudes d'achat.</li><li>Couvre aussi les prix basés sur les appareils, les réseaux sociaux, l'historique de navigation et d'achats en ligne, la localisation, la santé ou les antécédents médicaux.</li><li>Précise que les baisses ou hausses de prix liées aux stocks, aux coûts de production, aux promotions limitées ou au marché en général ne sont pas visées.</li><li>Permet au commissaire de la concurrence, qui applique la loi, d'enquêter sur ces pratiques et d'échanger de l'information avec le CRTC et le commissaire à la vie privée.</li><li>Prévoit des sanctions plus lourdes en cas de récidive, puisque la nouvelle règle est ajoutée à la liste des ordonnances subséquentes.</li></ul><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div></div>
-  </div><div class="ab-row" id="abrow-pr-13933855">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13933855')">
-      <span class="ab-num">S-6</span>
-      <span class="ab-title">Loi n° 4 visant à harmoniser le droit fédéral avec le droit civil du Québec et modifiant certaines lois pour que chaque version linguistique tienne compte du droit civil et de la common law</span>
-      
-      
-      
-      <span class="depute-party" style="background:#5B6B7A; color:#fff">BRG</span>
-      <span class="status-pill status-encours">En cours</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13933855"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Met à jour 51 lois fédérales pour qu'elles collent au Code civil du Québec, entré en vigueur en 1994.</li><li>Vise surtout le vocabulaire juridique : chaque loi doit parler autant le langage du droit civil québécois que celui de la common law.</li><li>Touche les quatre grandes lois sur les institutions financières : Loi sur les banques, Loi sur les associations coopératives de crédit, Loi sur les sociétés d'assurances et Loi sur les sociétés de fiducie et de prêt.</li><li>Modifie aussi des lois sur les entreprises, comme la Loi canadienne sur les sociétés par actions et la Loi canadienne sur les organisations à but non lucratif.</li><li>Retouche des lois générales très utilisées, dont la Loi sur l'accès à l'information, la Loi sur la protection des renseignements personnels, la Loi sur la gestion des finances publiques, la Loi d'interprétation et la Loi sur les langues officielles.</li><li>Ajoute des mots du droit québécois à côté des mots de common law : « hypothèque » avec « mortgage », « mandataire » avec « agent », « immeuble » avec « bien réel ».</li><li>Précise des règles pratiques, par exemple les documents acceptés pour transférer les actions d'une personne décédée, dont le testament notarié et les lettres de vérification du Québec.</li><li>S'agit du quatrième texte d'une série préparée par le ministère de la Justice pour ce travail d'harmonisation.</li></ul><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div></div>
-  </div><div class="ab-row" id="abrow-pr-13602863">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13602863')">
-      <span class="ab-num">S-234</span>
-      <span class="ab-title">Loi concernant un cadre national sur les troubles du spectre de l’alcoolisation fœtale</span>
-      
-      
-      
-      <span class="depute-party" style="background:#6D5BA6; color:#fff">GSI</span>
-      <span class="status-pill status-encours">En cours</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13602863"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Oblige le ministre de la Santé à créer un plan national sur les troubles du spectre de l'alcoolisation fœtale (TSAF), un handicap permanent causé par l'alcool durant la grossesse.</li><li>Exige que ce plan prévoie de la formation pour les médecins et autres professionnels, afin de mieux prévenir et diagnostiquer les TSAF.</li><li>Demande des mesures pour encourager la recherche et le partage d'information entre les gouvernements.</li><li>Fixe l'obligation d'établir des normes nationales pour la prévention, le diagnostic et le soutien aux personnes touchées.</li><li>Prévoit une stratégie de sensibilisation aux risques de l'alcool pendant la grossesse, incluant des changements suggérés aux règles sur la vente et la publicité d'alcool.</li><li>Oblige le ministre à consulter les provinces et territoires, d'autres ministres fédéraux, les familles, les intervenants, ainsi que les communautés et organismes autochtones.</li><li>Donne 18 mois au ministre pour déposer le plan au Parlement, puis 10 jours pour le publier sur le site du ministère de la Santé.</li><li>Exige un second rapport dans les 5 ans, qui dira quelles mesures ont été appliquées, si elles fonctionnent, et pourquoi d'autres ne l'ont pas été.</li></ul><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div></div>
-  </div><div class="ab-row" id="abrow-pr-13707662">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13707662')">
-      <span class="ab-num">S-239</span>
-      <span class="ab-title">Loi modifiant la Loi sur la concurrence</span>
-      
-      
-      
-      
-      <span class="status-pill status-encours">En cours</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13707662"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Modifie la Loi sur la concurrence, qui encadre la libre concurrence entre entreprises au Canada.</li><li>Permet au commissaire de la concurrence, le responsable fédéral qui enquête sur les marchés, de cibler les obstacles au commerce entre provinces dans ses rapports d'enquête.</li><li>Vise les lois, règlements, règles, ordonnances ou règlements municipaux qui nuisent trop, selon lui, à la concurrence dans un marché.</li><li>Oblige le commissaire à envoyer une copie du rapport au dirigeant de chaque ministère ou organisme visé par une recommandation.</li><li>Exige qu'un ministère ou organisme fédéral réponde à la recommandation dans les 120 jours suivant la publication du rapport.</li><li>Laisse les ministères, organismes et municipalités des provinces libres de répondre ou non, dans le même délai de 120 jours.</li><li>Oblige le commissaire à publier chaque réponse sur un site Web public, et à signaler publiquement l'absence de réponse d'une institution provinciale.</li><li>Donne au projet le titre abrégé de Loi sur la prospérité canadienne.</li></ul><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div></div>
-  </div><div class="ab-row" id="abrow-pr-13605049">
-    <div class="ab-head" onclick="toggleApercuBill('abrow-pr-13605049')">
-      <span class="ab-num">C-10</span>
-      <span class="ab-title">Loi concernant le commissaire à la mise en œuvre des traités modernes</span>
-      
-      
-      <span class="ab-lob" title="23 communications de lobbying déclarées">23</span>
-      <span class="depute-party" style="background:#D71920; color:#fff">LPC</span>
-      <span class="status-pill status-sanctionne">Sanctionnée</span>
-      <span class="ab-caret">▾</span>
-    </div>
-    <div class="ab-detail"><div class="bill-sum-slot" data-bill="13605049"><div class="bill-sum-head">Ce que ça fait, en clair</div><ul class="bill-sum-list"><li>Crée un poste de commissaire à la mise en œuvre des traités modernes, chargé de vérifier si Ottawa respecte ses engagements envers les peuples autochtones signataires.</li><li>Permet au commissaire d'examiner et de vérifier le travail des ministères et organismes fédéraux liés à ces traités, de sa propre initiative ou à la demande d'un ministre ou d'un partenaire autochtone.</li><li>Crée un bureau, le Commissariat à la mise en œuvre des traités modernes, avec du personnel embauché selon les règles de la fonction publique.</li><li>Exige que le commissaire soit nommé par le gouvernement après consultation des partenaires autochtones et approbation par vote de la Chambre et du Sénat.</li><li>Fixe le mandat du commissaire à sept ans au maximum, renouvelable une fois, avec possibilité de destitution pour un motif valable.</li><li>Oblige les ministères visés à répondre par écrit aux conclusions avant la publication du rapport final, qui est déposé au Parlement dans les 15 jours de séance.</li><li>Donne au commissaire un accès libre aux renseignements des institutions fédérales nécessaires à son travail, sauf si une autre loi le limite.</li><li>Prévoit un examen indépendant de la loi dans les cinq ans, puis tous les sept ans, et un examen par un comité parlementaire tous les dix ans.</li><li>Dresse une liste officielle de 30 partenaires autochtones signataires de traités modernes, que le gouvernement peut modifier après consultation.</li></ul><p class="src-note">🤖 Généré par IA à partir du texte officiel tel que déposé — peut ne pas refléter les amendements adoptés depuis.</p></div></div>
-  </div><button class="votes-more" onclick="loadMoreBills()">Voir 20 de plus — 10 sur 203 affichés</button><!--/ssr--></div>
+  </div><button class="votes-more" onclick="loadMoreBills()">Voir 20 de plus — 10 sur 204 affichés</button><!--/ssr--></div>
 
     <!-- Ce que « challenger » veut dire, en bas de la liste — comme sur
          DossierQuébec. Le texte dit le VRAI mécanisme : compte requis, une
