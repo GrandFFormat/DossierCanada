@@ -2,7 +2,7 @@
  "source": "https://www.parl.ca/DocumentViewer (XML de première lecture)",
  "session": "45-1",
  "parser": 2,
- "scrapedAt": "2026-11-27T17:48:26.872Z",
+ "scrapedAt": "2026-11-28T16:37:01.253Z",
  "bills": {
   "13538627": {
    "num": "C-201",
@@ -2890,9 +2890,13 @@
   },
   "14373970": {
    "num": "C-299",
-   "xml": null,
-   "en": [],
-   "fr": []
+   "xml": "https://www.parl.ca/Content/Bills/451/Private/C-299/C-299_1/C-299_E.xml",
+   "en": [
+    "Canada Student Financial Assistance Act"
+   ],
+   "fr": [
+    "Loi fédérale sur l’aide financière aux étudiants"
+   ]
   }
  }
 }
