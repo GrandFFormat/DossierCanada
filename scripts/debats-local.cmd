@@ -1,4 +1,6 @@
 @echo off
+title DossierCanada - comites des Communes (tache planifiee de midi)
+echo DossierCanada : resume des comites des Communes. Tache planifiee, se ferme toute seule.
 rem Reunions de comite des Communes, depuis le PC de Martin (26 nov. 2026).
 rem La Chambre refuse les serveurs de GitHub (403) : ce scraper roule ici, une fois par jour,
 rem par la tache planifiee « DossierCanada comites ». Seulement le neuf, une requete a la fois.
