@@ -92,7 +92,7 @@
   .brand{ display:block !important; font-family:'Archivo Black',sans-serif; font-size:38px; text-transform:uppercase; letter-spacing:-0.02em; text-align:center; cursor:pointer; line-height:1; color:var(--ink); text-decoration:none; }
   .brand .hl{ background:var(--yellow); padding:0 8px;  color:var(--on-candy);}
   .header-date{ font-size:12px; font-weight:600; text-transform:uppercase; color:var(--ink); white-space:nowrap; }
-  .header-left{ display:flex; align-items:center; gap:12px; min-width:0; }
+  .header-left{ display:flex; align-items:center; justify-content:center; gap:12px; min-width:0; }
   .header-right{ display:flex; gap:6px; justify-content:flex-end; align-items:center; }
   header.top .font-size-ctrl{ border:none !important; padding:0; gap:6px; background:transparent; }
   header.top .font-size-ctrl button, header.top .lang-toggle{ border:2px solid var(--ink) !important; border-radius:0 !important; background:var(--paper) !important; color:var(--ink) !important; font-weight:700; height:30px; box-shadow:none; }
